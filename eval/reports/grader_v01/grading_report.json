@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "source_report": "eval\\reports\\business_real_v01b\\business_report.json",
+    "mode": "real",
+    "graded": 1,
+    "accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "human_confirmed": false,
+    "note": "自动初步评分；最终业务验收需人工确认或显式策略放行"
+  },
+  "grades": [
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "accept",
+      "computed_verdict": "accept",
+      "dimensions": {
+        "correctness": {
+          "score": 5,
+          "rationale": "报告内容与证据一致：样本总人数40、32人完成问卷、满意率以32人为分母且24人满意、未设对照组、未控制工单难度变化、合成验收数据等表述均可在E-001、E-002、E-005、E-007、E-008、E-010中定位，未虚构来源，未做超出证据的肯定断言。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-005",
+            "E-007",
+            "E-008",
+            "E-010"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "报告章节为“样本规模与回收”“满意率”“方法限制与数据来源”，虽未按常规使用单一“摘要”标签，但整篇以压缩报告提纲形式覆盖必需摘要内容，段落围绕规模、满意率分母、无对照组限制与来源组织，层次清晰完整。",
+          "cited_evidence_ids": []
+        },
+        "citations": {
+          "score": 5,
+          "rationale": "正文中的引用标注如【[E-002]】【[E-007]】【[E-008]】【[E-005]】【[E-010]】【[E-001]】全部对应证据列表真实条目，未发现不可定位引用，也无引用与断言不一致之处。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-005",
+            "E-007",
+            "E-008",
+            "E-010"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "覆盖了任务要求保留的核心信息：试点总人数40、32人完成问卷、24人满意且满意率分母为32、未设对照组限制、合成验收数据来源；没有无谓的额外内容或未声明缺口，必要事实均已包含。",
+          "cited_evidence_ids": []
+        }
+      },
+      "issues": [
+        "标题“压缩报告提纲”和分节标签（事实/推断）体现报告元素而非严格单一“摘要”章节，但内容实质上是摘要，不构成实质缺失"
+      ],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-flash",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-flash",
+        "call_count": 1,
+        "estimated_cost_usd": 0.0014067300000000001,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-09T15:33:32",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v01",
+      "attempt": 1
+    }
+  ]
+}

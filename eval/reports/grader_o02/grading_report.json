@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "source_report": "eval\\reports\\business_real_o02\\business_report.json",
+    "mode": "real",
+    "graded": 1,
+    "accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "human_confirmed": false,
+    "note": "自动初步评分；最终业务验收需人工确认或显式策略放行"
+  },
+  "grades": [
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "accept",
+      "computed_verdict": "accept",
+      "dimensions": {
+        "correctness": {
+          "score": 5,
+          "rationale": "报告所有事实均与来源一致：试点规模40人、观察期及每周远程办公2天引自E-001/E-003；问卷回收率80%、满意率75%引自E-004；处理时长从10小时变为8小时及未控制工单难度引自E-005；未设置对照组引自E-002。未发现与资料不符或编造断言。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-002"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "报告包含必需章节，且实际标题即为“试点规模”“问卷结果”“处理时长”，并在“研究局限”中保留局限；结构完整、段落围绕各自提纲目的展开，符合三点摘要与局限的结构要求。",
+          "cited_evidence_ids": []
+        },
+        "citations": {
+          "score": 5,
+          "rationale": "每处事实性断言后均有可定位的引用标识，引用均存在于证据列表，且与正文陈述对应；局限推断处也结合E-005说明，无不可定位引用。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-002"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "报告覆盖任务要求的三个要点（试点规模、问卷结果、处理时长），并完整保留两项研究局限（未设置对照组、未控制工单难度变化）；未遗漏关键事实，且没有引入禁止项表述。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-002"
+          ]
+        }
+      },
+      "issues": [],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-flash",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-flash",
+        "call_count": 1,
+        "estimated_cost_usd": 0.0007352300000000001,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-09T15:33:23",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "o02",
+      "attempt": 1
+    }
+  ]
+}

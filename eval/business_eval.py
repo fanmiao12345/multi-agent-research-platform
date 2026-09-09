@@ -124,7 +124,8 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                       repeats: int = 3, fault_rounds: int = 2,
                       task_filter: str | None = None, max_cost: float | None = None,
                       out_dir: Path | None = None,
-                      settings=None, profile_name: str | None = None) -> dict:
+                      settings=None, profile_name: str | None = None,
+                      grader_llm=None) -> dict:
     if mode not in ("mock", "real"):
         raise ValueError("mode 必须为 mock 或 real")
     if repeats < 1:
@@ -204,6 +205,24 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                     evidence = json.loads(evidence_path.read_text(encoding="utf-8"))["items"]
                 pipeline = outcome.as_dict() if hasattr(outcome, "as_dict") else {}
                 checks = _machine_checks(task, outcome.final_text or "", evidence)
+                grader_record = None
+                if grader_llm is not None:
+                    # 专职评测 Agent：独立模型按评分表打分；失败不影响链结果
+                    try:
+                        from eval.grader import GraderError, grade_report
+                        grader_record = grade_report(
+                            task=task, goal=task["request"],
+                            source_texts=_case_source_texts(dataset, task["source_ids"]),
+                            final_report=outcome.final_text or "",
+                            evidence=evidence, machine_checks=checks,
+                            llm=grader_llm, workspace_root=root,
+                            mode=getattr(grader_llm, "run_mode", mode) or mode,
+                            writer_model=getattr(llm, "model_name", "?"))
+                    except GraderError as e:
+                        grader_record = {"grader": "agent", "human_confirmed": False,
+                                         "error": str(e)[:200]}
+                if grader_record is not None:
+                    entry["grader"] = grader_record
                 accepted = getattr(outcome, "draft_level", None) == "accepted"
                 entry.update(
                     status="passed" if accepted else "failed",
@@ -269,6 +288,19 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                                    "detail": f"{type(e).__name__}: {e}"})
 
     executed = [r for r in records if r.get("status") == "passed"]
+    grades = [r["grader"] for r in records
+              if isinstance(r.get("grader"), dict)
+              and isinstance(r["grader"].get("computed_verdict"), str)]
+    grader_meta = {}
+    if grades:
+        from eval.grader import dimension_means
+        grader_meta = {
+            "graded": len(grades),
+            "grader_accept": sum(1 for g in grades
+                                 if g["computed_verdict"] == "accept"),
+            "dimension_means": dimension_means(grades),
+            "human_confirmed": False,
+            "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"}
     report = {
         "meta": {
             "name": meta["name"], "dataset_version": meta.get("version"),
@@ -300,6 +332,7 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
         "records": records,
         "fault_rows": fault_rows,
         "samples_dir": str(samples_dir) if samples_dir else None,
+        "grader": grader_meta,
     }
     return report
 

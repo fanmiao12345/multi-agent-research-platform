@@ -276,3 +276,16 @@
 - r01 曾两轮失败：一次审校偶发两次空回复（未定位，重试仍失败记 failed，不假成功）；一次累计输出上限耗尽（放宽后通过）。
 - 已知：机器检查只做结构（章节覆盖低是因提纲由模型自定章节名而非数据集标签，语义/事实正确性需人工评分表）；test_workbench_s5 安全测试在高负载下偶发连接超时（单独重跑3/3通过，记录不修复）。
 - 估算总花费为本地保守价，非账单；真实账单以服务商为准。
+
+## 2026-09-09 / 专职评测 Agent（代替人工初步评分，S6-05 扩展）
+
+- 新增 eval/grader.py：独立评测模型按评分表（正确性/结构/引用/完整性 1~5 + 依据/引用/问题/伪造标记）对报告打分；
+  程序层交叉核验：分数钳位与维度完整、声称引用的 id 必须真实存在（不存在→记 problem+伪造标记）、
+  伪造标记任一存在 → computed_verdict=fail、规则重算 verdict 不信自报；
+  输出固定标记 grader:"agent" / human_confirmed:false（可审计、可被人工覆盖）；同模型打分时 meta 标注
+  independence 局限；真实模式评分走独立 grader 账本（grader_jobs，purpose=grader_eval）不混入被评任务账本。
+- business_eval 支持 grader_llm 内联评分（每记录附 grader 段；report.grader 汇总 graded/grader_accept/dimension_means/human_confirmed=false）；
+  独立 CLI：python -m eval.grader --report <business_report.json> --mode real --max-cost X [--task id]。
+- 真实演示（deepseek-v4-flash 作评测者，同模型局限已标注）：o02 与 v01 均 5/5/5/5 → computed accept；human_confirmed=false 待人工确认。
+- 验证：tests/test_grader.py 7 passed（accept 元信息、伪造→fail、低分→draft、缺维→fail、假引用 id 被程序拦截、越界处理与均值、两次不可解析报错留现场）+ business 集成 1；全量 pytest 400 passed。
+- 边界：这是"自动初步评分+程序核验"，不是最终盖章；最终业务验收仍须 human_confirmed 或显式策略放行（文档与报告均明示）。
