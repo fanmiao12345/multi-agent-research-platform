@@ -101,7 +101,14 @@ S5 说明与限制见`docs/S5_DELIVERY.md`。
 
 ```powershell
 # S6：业务评测（真实模式需 .env；缺Key整批 not_executed，不拿 Mock 顶替）
-.venv\Scripts\python -m eval.business_eval --mode real --max-cost 0.1
+.venv\Scripts\python -m eval.business_eval --mode real --max-cost 0.12 --repeats 3 --grade
+#    --grade        每个执行过的尝试由专职评测 Agent 自动打分（初步，需人工确认）
+#    --grader-model 评测者模型名（默认 GRADER_MODEL_NAME，再默认与主模型相同）
+# 人工确认（覆盖 Agent 初步分数 → human_confirmed=true）：
+.venv\Scripts\python -m eval.human_scores sheet --report <business_report.json> --out <sheets>
+.venv\Scripts\python -m eval.human_scores ingest --sheets <sheets> --report <business_report.json> --out <human_report.json>
+# 对已有报告补评分：
+.venv\Scripts\python -m eval.grader --report <business_report.json> --mode real --max-cost 0.06 --model deepseek-v4-pro
 # 运维：健康检查 / 备份 / 全新环境验证 / 锁依赖
 .venv\Scripts\python -m src.ops.health
 .venv\Scripts\python -m src.ops.backup --workspace workspaces --out .tmp\backup

@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.12,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "007bc2b5c618"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-09T16:14:21",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 415.7,
+  "results": [
+    {
+      "id": "o07",
+      "category": "organize",
+      "attempt": 1,
+      "task": "整理两方案隐私信息，指出哪些字段未给出，并拟定补充询问项。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实（方案甲未说明保存地区与删除周期、方案乙存储本地地区、方案乙无独立审计报告）基本正确；但把E-006当作‘原始来源仅提及方案甲’的事实并制造方案乙信息冲突，属错误或过度引申。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-006",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "structure": {
+            "score": 2,
+            "rationale": "有段落组织，但未使用任务要求的「已知信息」「缺失字段」「询问项」必需章节标题，章节命名与目的不对应。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "多数断言附有可定位ID，但E-006引用不恰当：其quote仅为‘本材料为合成验收数据’，却用于支持‘仅提及方案甲’的断言；E-004/E-005被标为事实也不准确。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "覆盖两方案主要隐私字段缺口与补充询问，但未按必需章节汇总，且方案乙删除周期等推断依据有缺陷；独立审计报告的缺失状态也未完全清晰列出。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-006",
+              "E-013",
+              "E-014"
+            ]
+          }
+        },
+        "issues": [
+          "报告未使用必需章节标题「已知信息」「缺失字段」「询问项」，而是使用自定义标题。",
+          "『证据冲突与开放状态』错误将E-006作为‘原始来源仅提及方案甲，方案乙隐私信息未提供’的事实，与E-013/E-014方案乙来源证据冲突。",
+          "E-006的quote仅为‘本材料为合成验收数据’，无法支持‘来源仅提及方案甲’的断言，属引用不当。",
+          "E-004/E-005被标为〔事实〕，但分别为字段缺口归纳和补充询问项，应属推断/行动项。",
+          "方案乙删除周期未给出的判断依赖E-006，但该依据不成立。"
+        ],
+        "fabrication_flags": [
+          "正文断言‘E-006表明原始来源仅提及方案甲，方案乙隐私信息未提供’与给定方案乙来源E-013/E-014矛盾，且E-006 quote无法支持该断言。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01534178,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-09T16:14:21",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 413.292,
+      "estimated_cost_usd": 0.04706060000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_0adb4192673e42cc827d7c7b92a0b57f",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 26,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 0,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 两方案隐私字段缺口与补充询问项\n\n## 方案甲隐私字段缺口\n\n方案甲页面未说明数据保存地区和删除周期【[E-003]】〔事实〕。资料明确列出，方案甲未给出的隐私字段为数据保存地区、删除周期【[E-004]】〔事实〕。E-005也提出需补充询问方案甲说明数据保存地区和删除周期【[E-005]】〔事实〕。因此该两项属于明确的补询事项〔推断〕。\n\n## 方案乙存储与审计信息\n\n供应商称方案乙数据存储"
+    }
+  ],
+  "records": [
+    {
+      "id": "o07",
+      "category": "organize",
+      "attempt": 1,
+      "task": "整理两方案隐私信息，指出哪些字段未给出，并拟定补充询问项。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实（方案甲未说明保存地区与删除周期、方案乙存储本地地区、方案乙无独立审计报告）基本正确；但把E-006当作‘原始来源仅提及方案甲’的事实并制造方案乙信息冲突，属错误或过度引申。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-006",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "structure": {
+            "score": 2,
+            "rationale": "有段落组织，但未使用任务要求的「已知信息」「缺失字段」「询问项」必需章节标题，章节命名与目的不对应。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "多数断言附有可定位ID，但E-006引用不恰当：其quote仅为‘本材料为合成验收数据’，却用于支持‘仅提及方案甲’的断言；E-004/E-005被标为事实也不准确。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "覆盖两方案主要隐私字段缺口与补充询问，但未按必需章节汇总，且方案乙删除周期等推断依据有缺陷；独立审计报告的缺失状态也未完全清晰列出。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-006",
+              "E-013",
+              "E-014"
+            ]
+          }
+        },
+        "issues": [
+          "报告未使用必需章节标题「已知信息」「缺失字段」「询问项」，而是使用自定义标题。",
+          "『证据冲突与开放状态』错误将E-006作为‘原始来源仅提及方案甲，方案乙隐私信息未提供’的事实，与E-013/E-014方案乙来源证据冲突。",
+          "E-006的quote仅为‘本材料为合成验收数据’，无法支持‘来源仅提及方案甲’的断言，属引用不当。",
+          "E-004/E-005被标为〔事实〕，但分别为字段缺口归纳和补充询问项，应属推断/行动项。",
+          "方案乙删除周期未给出的判断依赖E-006，但该依据不成立。"
+        ],
+        "fabrication_flags": [
+          "正文断言‘E-006表明原始来源仅提及方案甲，方案乙隐私信息未提供’与给定方案乙来源E-013/E-014矛盾，且E-006 quote无法支持该断言。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01534178,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-09T16:14:21",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 413.292,
+      "estimated_cost_usd": 0.04706060000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_0adb4192673e42cc827d7c7b92a0b57f",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 26,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 0,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 两方案隐私字段缺口与补充询问项\n\n## 方案甲隐私字段缺口\n\n方案甲页面未说明数据保存地区和删除周期【[E-003]】〔事实〕。资料明确列出，方案甲未给出的隐私字段为数据保存地区、删除周期【[E-004]】〔事实〕。E-005也提出需补充询问方案甲说明数据保存地区和删除周期【[E-005]】〔事实〕。因此该两项属于明确的补询事项〔推断〕。\n\n## 方案乙存储与审计信息\n\n供应商称方案乙数据存储"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\business_real_o07\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 3.0,
+      "structure": 2.0,
+      "citations": 3.0,
+      "completeness": 3.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

@@ -289,3 +289,13 @@
 - 真实演示（deepseek-v4-flash 作评测者，同模型局限已标注）：o02 与 v01 均 5/5/5/5 → computed accept；human_confirmed=false 待人工确认。
 - 验证：tests/test_grader.py 7 passed（accept 元信息、伪造→fail、低分→draft、缺维→fail、假引用 id 被程序拦截、越界处理与均值、两次不可解析报错留现场）+ business 集成 1；全量 pytest 400 passed。
 - 边界：这是"自动初步评分+程序核验"，不是最终盖章；最终业务验收仍须 human_confirmed 或显式策略放行（文档与报告均明示）。
+
+## 2026-09-09 / 真实业务全量批次（20/20 链执行通过）+ 独立评测 Agent 全量打分
+
+- 执行：剩余16案例（o03~o08,r02~r08,v02~v04）×1 真实运行，加上此前 o01/o02/r01/v01 → **20/20 全部链内 accepted**（runner 程序+同模型双层审校通过）。
+- 独立评测（GRADER_MODEL_NAME=deepseek-v4-pro，grader_jobs 独立账本）：16 例打分结果 1 accept（r02）、10 draft、5 fail；逐维均值待汇总表（structure/citations 维度普遍 3 分，completeness 普遍偏低）。
+- 重要发现（示例 o08）：报告仅 236 字且缺少任务要求的"资料目录/覆盖范围"内容——链内验收只对照模型自生成提纲，独立评测按任务注解判 3 分合理。=> 说明链内 accepted ≠ 业务达标，独立评测 Agent 有效拦截；下一步应把数据集必需章节/禁语传入链内程序层复验（hard_sections 校验），使"链内通过"与"独立评分"对齐。
+- 成本（本地保守估算，非账单）：链执行约 $1.29 + 评测者账本约 $0.18 ≈ $1.47（含此前失败尝试与 v4-pro 保守单价）。
+- 每例报告：eval/reports/business_real_<id>/business_report.json（含 grader 段与 dimension_means）。
+- ②③ 已交付：--grade/--grader-model/GRADER_MODEL_NAME；human_scores sheet/ingest 人工确认覆盖入口（human_confirmed=true）。全量 pytest 403 passed。
+- 人工确认（对 20 份抽查打分或全部确认）后即可得到权威业务完成率；未确认前不得声称业务通过率达标。

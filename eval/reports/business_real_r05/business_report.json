@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.12,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "007bc2b5c618"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-09T16:37:30",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 274.43,
+  "results": [
+    {
+      "id": "r05",
+      "category": "research",
+      "attempt": 1,
+      "task": "截至2026年9月2日，总结客服组与其他组的适用规则，说明旧材料为什么仍需保留。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告关键事实与来源一致：v2替代v1，客服组每周远程办公上限1天（E-003），其他组沿用v1（E-004），v1每周2天（E-001）；未出现禁止项“新规则覆盖所有员工”。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "报告段落清晰，但未按任务要求设置“截至时点”“分组规则”“版本来源”三个必需章节标题，相关内容散见于引言、规则版本沿革和现行规则适用范围等部分。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用E-001至E-005均可定位且存在于证据列表；E-005属推断性证据，用于支持保留旧材料的结论，引用基本恰当。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖截至时点、分组规则、版本来源及旧材料保留原因；两个关键事实均明确说明，无禁止项。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          }
+        },
+        "issues": [
+          "报告未使用任务指定的三个必需章节标题：截至时点、分组规则、版本来源，相关内容分散在引言、规则版本沿革和现行规则适用范围中。",
+          "E-005为推断性证据，报告将其作为事实引用；其quote仅显示“其他组沿用v1”，未直接显示“必须保留”。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00906857,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-09T16:37:29",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 271.968,
+      "estimated_cost_usd": 0.03130265,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_6e8a0c84fd10422187d02cc23ba6a267",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 15,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 0,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 客服组与其他组远程办公规则及旧材料保留说明\n\n## 引言与材料依据\n\n本报告基于素材包，回答截至2026年9月2日客服组与其他组远程办公规则的现状，以及旧材料是否仍需保留的问题。根据【[E-001]】，规则v1自2026年7月1日起生效，允许试点人员每周远程办公2天〔事实〕。根据【[E-002]】，规则v2自2026年9月1日起生效，并替代v1〔事实〕。\n\n## 规则版本沿革\n\n规则v1自20"
+    }
+  ],
+  "records": [
+    {
+      "id": "r05",
+      "category": "research",
+      "attempt": 1,
+      "task": "截至2026年9月2日，总结客服组与其他组的适用规则，说明旧材料为什么仍需保留。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告关键事实与来源一致：v2替代v1，客服组每周远程办公上限1天（E-003），其他组沿用v1（E-004），v1每周2天（E-001）；未出现禁止项“新规则覆盖所有员工”。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "报告段落清晰，但未按任务要求设置“截至时点”“分组规则”“版本来源”三个必需章节标题，相关内容散见于引言、规则版本沿革和现行规则适用范围等部分。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用E-001至E-005均可定位且存在于证据列表；E-005属推断性证据，用于支持保留旧材料的结论，引用基本恰当。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖截至时点、分组规则、版本来源及旧材料保留原因；两个关键事实均明确说明，无禁止项。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          }
+        },
+        "issues": [
+          "报告未使用任务指定的三个必需章节标题：截至时点、分组规则、版本来源，相关内容分散在引言、规则版本沿革和现行规则适用范围中。",
+          "E-005为推断性证据，报告将其作为事实引用；其quote仅显示“其他组沿用v1”，未直接显示“必须保留”。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00906857,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-09T16:37:29",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 271.968,
+      "estimated_cost_usd": 0.03130265,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_6e8a0c84fd10422187d02cc23ba6a267",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 15,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 0,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 客服组与其他组远程办公规则及旧材料保留说明\n\n## 引言与材料依据\n\n本报告基于素材包，回答截至2026年9月2日客服组与其他组远程办公规则的现状，以及旧材料是否仍需保留的问题。根据【[E-001]】，规则v1自2026年7月1日起生效，允许试点人员每周远程办公2天〔事实〕。根据【[E-002]】，规则v2自2026年9月1日起生效，并替代v1〔事实〕。\n\n## 规则版本沿革\n\n规则v1自20"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\business_real_r05\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 3.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

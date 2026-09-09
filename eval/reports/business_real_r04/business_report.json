@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.12,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "007bc2b5c618"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-09T16:32:54",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 321.32,
+  "results": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 4,
+            "rationale": "报告核心事实与证据一致，关键事实#1、#2均正确引用，未出现禁止项；但将E-005、E-006、E-007、E-016、E-017等推断或未知项标注为〔事实〕，存在证据等级判断过强。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-016",
+              "E-017"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "内容功能上覆盖建议、依据、冲突和下一步采集，但未采用任务指定的四个必需章节标题，机器检查未命中必需章节，需按指定章节名重组。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "正文引用均可定位且来源真实；但E-005、E-006、E-007、E-016、E-017等被标为事实引用，而证据列表标记为推断或未知，引用与证据等级不完全匹配。",
+            "cited_evidence_ids": [
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-016",
+              "E-017",
+              "E-012",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖了是否扩大试点、需补充的信息、冲突数据及结论限制，关键事实和禁止项处理正确，数据缺口已说明。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-015",
+              "E-009",
+              "E-012",
+              "E-010",
+              "E-011",
+              "E-014",
+              "E-017",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [
+          "未使用指定必需章节标题：建议、依据、冲突、下一步采集；现有标题如“结论与建议”“问卷满意度统计及冲突”等需调整。",
+          "E-005、E-006、E-007、E-016、E-017被标注为〔事实〕，但证据列表标签为推断或未知，应改为推断并限制措辞。",
+          "末段补充采集清单的具体项未逐项再次挂引，建议补充对应证据编号以强化可核查性。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.013455459999999999,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-09T16:32:54",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 319.226,
+      "estimated_cost_usd": 0.03860865,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_eba5d3df8c3f40839cf9d26fc44695c2",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 27,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 0,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 远程办公试点是否扩大：基于现有证据的评估与数据补充建议\n\n## 试点概况与观察期安排\n试点团队共有40人参与【[E-001]】；观察期为2026年7月1日至7月31日【[E-002]】；试点期间所有人每周远程办公2天【[E-003]】。试点没有设置对照组【[E-004]】。以上均为关于试点安排的基本事实〔事实〕。由于缺少对照组，观察期内任何变化均无法与不实行远程办公的情形进行比较〔推断〕。\n\n"
+    }
+  ],
+  "records": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 4,
+            "rationale": "报告核心事实与证据一致，关键事实#1、#2均正确引用，未出现禁止项；但将E-005、E-006、E-007、E-016、E-017等推断或未知项标注为〔事实〕，存在证据等级判断过强。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-016",
+              "E-017"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "内容功能上覆盖建议、依据、冲突和下一步采集，但未采用任务指定的四个必需章节标题，机器检查未命中必需章节，需按指定章节名重组。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "正文引用均可定位且来源真实；但E-005、E-006、E-007、E-016、E-017等被标为事实引用，而证据列表标记为推断或未知，引用与证据等级不完全匹配。",
+            "cited_evidence_ids": [
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-016",
+              "E-017",
+              "E-012",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖了是否扩大试点、需补充的信息、冲突数据及结论限制，关键事实和禁止项处理正确，数据缺口已说明。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-015",
+              "E-009",
+              "E-012",
+              "E-010",
+              "E-011",
+              "E-014",
+              "E-017",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [
+          "未使用指定必需章节标题：建议、依据、冲突、下一步采集；现有标题如“结论与建议”“问卷满意度统计及冲突”等需调整。",
+          "E-005、E-006、E-007、E-016、E-017被标注为〔事实〕，但证据列表标签为推断或未知，应改为推断并限制措辞。",
+          "末段补充采集清单的具体项未逐项再次挂引，建议补充对应证据编号以强化可核查性。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.013455459999999999,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-09T16:32:54",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 319.226,
+      "estimated_cost_usd": 0.03860865,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_eba5d3df8c3f40839cf9d26fc44695c2",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 27,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 0,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 远程办公试点是否扩大：基于现有证据的评估与数据补充建议\n\n## 试点概况与观察期安排\n试点团队共有40人参与【[E-001]】；观察期为2026年7月1日至7月31日【[E-002]】；试点期间所有人每周远程办公2天【[E-003]】。试点没有设置对照组【[E-004]】。以上均为关于试点安排的基本事实〔事实〕。由于缺少对照组，观察期内任何变化均无法与不实行远程办公的情形进行比较〔推断〕。\n\n"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\business_real_r04\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 4.0,
+      "structure": 3.0,
+      "citations": 4.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}
