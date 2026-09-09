@@ -42,8 +42,19 @@ def _version_snapshot() -> dict:
             packages[name] = importlib.metadata.version(name)
         except Exception:
             packages[name] = None
+    head_file = PROJECT_ROOT / ".git" / "HEAD"
+    revision = "no_git_commit_yet"
+    try:
+        if head_file.exists():
+            ref = head_file.read_text(encoding="utf-8").strip()
+            if ref.startswith("ref: "):
+                ref_path = PROJECT_ROOT / ".git" / ref[5:]
+                if ref_path.exists():
+                    revision = ref_path.read_text(encoding="utf-8").strip()[:12]
+    except Exception:
+        pass
     return {"python": sys.version.split()[0], "packages": packages,
-            "code_revision": "no_git_commit_yet"}
+            "code_revision": revision}
 
 
 def _config_snapshot(settings, mode: str, tools: list[str]) -> dict:

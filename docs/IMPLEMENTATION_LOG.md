@@ -239,3 +239,11 @@
 - 新增 docs/S6_DELIVERY.md、docs/TRIAL_LOG_TEMPLATE.md、docs/BROWSER_REGRESSION.md、requirements.lock.txt；同步 README、EXECUTION_STATUS、IMPLEMENTATION_TRACKER（S6行→部分完成；S6-01/03/08已验收（离线），S6-02/04/05/06/07/09部分完成，S6-10待实施；本批S6拆解表）。
 - 没有付费模型/搜索请求、没有新增第三方依赖（含浏览器工具未引入）、没有修改DSH。
 - 真实执行项（60次业务/联网冒烟/故障全量/人工评分/7天试用/全新venv/首次Git提交）待用户 Key、预算与时间。
+
+## 2026-09-09 / S0-06：首次 Git 基线（受控提交）
+
+- 审计 .gitignore：补充 node_modules/、legacy/webui/dist/、legacy/config.ini（本地含真实 Key，绝不提交）、*.sqlite-shm/-wal；修复行尾注释导致忽略规则失效的问题（gitignore 不支持行尾注释）。
+- 扫描仓库（排除 .venv/node_modules/workspaces/.tmp/.git）确认唯一 sk- 密钥位于 legacy/config.ini → 已忽略并保留本地。
+- 仓库级身份 agent-mvp-dev@local（不写全局）；受控 git add（核对 274 文件清单后提交）。
+- 首次提交：b821308（274 files, +34367）；校验：提交内无 sk- 密钥、无 .env/workspaces/config.ini/node_modules/构建产物；工作树干净。
+- eval/business_eval._version_snapshot 改为动态读取当前 HEAD（此前固定 no_git_commit_yet）。
