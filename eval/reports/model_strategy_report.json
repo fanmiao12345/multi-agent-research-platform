@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-09-07T09:18:10",
+  "rows": [
+    {
+      "case": "m1",
+      "mode": "low_budget",
+      "model_profile": "cheap",
+      "complexity": "complex",
+      "final_len": 71,
+      "termination_reason": "success",
+      "iterations": 2,
+      "degrade_actions": [
+        "无需降级"
+      ]
+    },
+    {
+      "case": "m1",
+      "mode": "balanced",
+      "model_profile": "balanced",
+      "complexity": "complex",
+      "final_len": 71,
+      "termination_reason": "success",
+      "iterations": 2,
+      "degrade_actions": [
+        "无需降级"
+      ]
+    },
+    {
+      "case": "m1",
+      "mode": "high_quality",
+      "model_profile": "balanced",
+      "complexity": "complex",
+      "final_len": 71,
+      "termination_reason": "success",
+      "iterations": 2,
+      "degrade_actions": [
+        "无需降级"
+      ]
+    }
+  ]
+}

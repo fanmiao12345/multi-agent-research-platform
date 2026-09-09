@@ -1,0 +1,567 @@
+{
+  "agent": {
+    "meta": {
+      "name": "benchmark_v1",
+      "dataset_tasks": 13,
+      "generated_at": "2026-09-09T11:41:38",
+      "brain": "mock-rule-v1",
+      "mode": "mock",
+      "provider": "mock",
+      "selected_ids": [
+        "b01",
+        "b02",
+        "b03",
+        "b04",
+        "b05",
+        "b06",
+        "b07",
+        "b08",
+        "b09",
+        "b10",
+        "b11",
+        "b12",
+        "b13"
+      ],
+      "max_cost_usd": null,
+      "estimated_cost_usd": 0.0,
+      "scope": "runtime_smoke_not_business_acceptance"
+    },
+    "totals": {
+      "executed": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 8,
+      "success_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "tool_argument_accuracy": 1.0,
+      "avg_llm_calls": 1.6
+    },
+    "by_category": {
+      "simple_qa": {
+        "executed": 1,
+        "passed": 1
+      },
+      "single_tool": {
+        "executed": 2,
+        "passed": 2
+      },
+      "long_text": {
+        "executed": 1,
+        "passed": 1
+      },
+      "tool_failure": {
+        "executed": 1,
+        "passed": 1
+      }
+    },
+    "results": [
+      {
+        "id": "b01",
+        "category": "single_tool",
+        "task": "帮我计算 27*43 等于多少",
+        "run_id": "20260909_114138_27d64b",
+        "root_job_id": "job_547af3c1d0b44f0191ebe69a814ea247",
+        "outcome": {
+          "final_text": "工具已返回内容：\n- 27*43 = 1161",
+          "termination_reason": "success",
+          "iterations": 2,
+          "messages": 4
+        },
+        "tool": {
+          "used_tools": [
+            "calculator"
+          ],
+          "tool_call_count": 1,
+          "selection_ok": true,
+          "argument_ok": true,
+          "arg_errors": []
+        },
+        "trajectory": {
+          "llm_calls": 2,
+          "duplicate_call_peak": 1,
+          "duplicate_flag": false,
+          "loop_flag": false,
+          "tool_error_count": 0,
+          "error_recovery": false
+        },
+        "e2e": {
+          "success": true,
+          "checks": {
+            "tool_usage": true,
+            "final_text": true
+          },
+          "text_detail": "",
+          "final_len": 23
+        },
+        "status": "passed"
+      },
+      {
+        "id": "b02",
+        "category": "single_tool",
+        "task": "现在几点了？",
+        "run_id": "20260909_114138_42922f",
+        "root_job_id": "job_f07e208ff598457aa68b8118f27b5f14",
+        "outcome": {
+          "final_text": "工具已返回内容：\n- 2026-09-09 11:41:38（Wednesday）",
+          "termination_reason": "success",
+          "iterations": 2,
+          "messages": 4
+        },
+        "tool": {
+          "used_tools": [
+            "current_time"
+          ],
+          "tool_call_count": 1,
+          "selection_ok": true,
+          "argument_ok": true,
+          "arg_errors": []
+        },
+        "trajectory": {
+          "llm_calls": 2,
+          "duplicate_call_peak": 1,
+          "duplicate_flag": false,
+          "loop_flag": false,
+          "tool_error_count": 0,
+          "error_recovery": false
+        },
+        "e2e": {
+          "success": true,
+          "checks": {
+            "tool_usage": true,
+            "final_text": true
+          },
+          "text_detail": "",
+          "final_len": 41
+        },
+        "status": "passed"
+      },
+      {
+        "id": "b03",
+        "category": "wrong_tool_bait",
+        "task": "不要调用任何工具，直接告诉我 2+2 等于几",
+        "status": "skipped",
+        "reason": "outside_smoke_subset"
+      },
+      {
+        "id": "b04",
+        "category": "multi_tool",
+        "task": "先看现在几点，再帮我计算 3*4 等于多少",
+        "status": "skipped",
+        "reason": "outside_smoke_subset"
+      },
+      {
+        "id": "b05",
+        "category": "simple_qa",
+        "task": "你好，你是谁？",
+        "run_id": "20260909_114138_85ccbd",
+        "root_job_id": "job_9346f2d289e342b29be9d8d3ec18c6ed",
+        "outcome": {
+          "final_text": "（mock）收到：你好 你是谁 ",
+          "termination_reason": "success",
+          "iterations": 1,
+          "messages": 2
+        },
+        "tool": {
+          "used_tools": [],
+          "tool_call_count": 0,
+          "selection_ok": true,
+          "argument_ok": true,
+          "arg_errors": []
+        },
+        "trajectory": {
+          "llm_calls": 1,
+          "duplicate_call_peak": 0,
+          "duplicate_flag": false,
+          "loop_flag": false,
+          "tool_error_count": 0,
+          "error_recovery": false
+        },
+        "e2e": {
+          "success": true,
+          "checks": {
+            "tool_usage": true,
+            "final_text": true
+          },
+          "text_detail": "",
+          "final_len": 16
+        },
+        "status": "passed"
+      },
+      {
+        "id": "b06",
+        "category": "long_text",
+        "task": "请把下面这段长文本总结成三点（这是一段很长很长的输入，内容需要被逐词扫描就会误判，因此考验长输入保护逻辑的健壮性。下面继续填充占位字符使其总长度必然超过两百个字符门槛：加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长）",
+        "run_id": "20260909_114138_a3da45",
+        "root_job_id": "job_8a4ed83af51244838e545d76d5c6a3b6",
+        "outcome": {
+          "final_text": "（模拟大脑）这是一段较长的输入，离线模式不做逐词路由。配置 API Key 后由真实模型处理。",
+          "termination_reason": "success",
+          "iterations": 1,
+          "messages": 2
+        },
+        "tool": {
+          "used_tools": [],
+          "tool_call_count": 0,
+          "selection_ok": true,
+          "argument_ok": true,
+          "arg_errors": []
+        },
+        "trajectory": {
+          "llm_calls": 1,
+          "duplicate_call_peak": 0,
+          "duplicate_flag": false,
+          "loop_flag": false,
+          "tool_error_count": 0,
+          "error_recovery": false
+        },
+        "e2e": {
+          "success": true,
+          "checks": {
+            "tool_usage": true,
+            "final_text": true
+          },
+          "text_detail": "",
+          "final_len": 47
+        },
+        "status": "passed"
+      },
+      {
+        "id": "b07",
+        "category": "multi_step",
+        "task": "先计算 5*6，再计算 7*8，把两个结果都告诉我",
+        "status": "skipped",
+        "reason": "outside_smoke_subset"
+      },
+      {
+        "id": "b08",
+        "category": "search_task",
+        "task": "帮我搜索一下 LangGraph 是什么，查点资料",
+        "status": "skipped",
+        "reason": "capability_missing"
+      },
+      {
+        "id": "b09",
+        "category": "parallel_task",
+        "task": "同时帮我算 (1+2)*3 和 4*5+6 两个式子",
+        "status": "skipped",
+        "reason": "outside_smoke_subset"
+      },
+      {
+        "id": "b10",
+        "category": "conflicting_evidence",
+        "task": "有资料说 A 方案成本低但见效慢，另说 B 方案见效快但成本高，帮我判断该选哪个",
+        "status": "skipped",
+        "reason": "outside_smoke_subset"
+      },
+      {
+        "id": "b11",
+        "category": "tool_failure",
+        "task": "帮我计算这个式子的值：2 +（括号不匹配",
+        "run_id": "20260909_114138_9ec25f",
+        "root_job_id": "job_b39fea62f95d4686a9e4e537fc093636",
+        "outcome": {
+          "final_text": "工具已返回内容：\n- [tool-error] 工具 calculator 执行失败（第 1 次尝试失败，错误分类：validation）：无法计算「2 +」：invalid syntax (<unknown>, line 1)",
+          "termination_reason": "success",
+          "iterations": 2,
+          "messages": 4
+        },
+        "tool": {
+          "used_tools": [
+            "calculator"
+          ],
+          "tool_call_count": 1,
+          "selection_ok": true,
+          "argument_ok": true,
+          "arg_errors": []
+        },
+        "trajectory": {
+          "llm_calls": 2,
+          "duplicate_call_peak": 1,
+          "duplicate_flag": false,
+          "loop_flag": false,
+          "tool_error_count": 1,
+          "error_recovery": true
+        },
+        "e2e": {
+          "success": true,
+          "checks": {
+            "tool_usage": true,
+            "final_text": true,
+            "termination": true
+          },
+          "text_detail": "",
+          "final_len": 114
+        },
+        "status": "passed"
+      },
+      {
+        "id": "b12",
+        "category": "needs_human",
+        "task": "帮我把这个文件删掉（高风险操作）",
+        "status": "skipped",
+        "reason": "outside_smoke_subset"
+      },
+      {
+        "id": "b13",
+        "category": "planning_needed",
+        "task": "帮我调研远程办公的现状并写一篇报告：先查资料再整理再成稿",
+        "status": "skipped",
+        "reason": "capability_missing"
+      }
+    ]
+  },
+  "orchestration": {
+    "generated_at": "2026-09-09T11:41:38",
+    "by_strategy": {
+      "single": {
+        "runs": 2,
+        "ok": 2,
+        "worker_calls": 2,
+        "final_len": 142
+      },
+      "pipeline": {
+        "runs": 2,
+        "ok": 2,
+        "worker_calls": 8,
+        "final_len": 142
+      },
+      "manager_worker": {
+        "runs": 2,
+        "ok": 2,
+        "worker_calls": 6,
+        "final_len": 544
+      },
+      "fanout": {
+        "runs": 2,
+        "ok": 2,
+        "worker_calls": 6,
+        "final_len": 512
+      },
+      "dynamic_team": {
+        "runs": 2,
+        "ok": 2,
+        "worker_calls": 6,
+        "final_len": 582
+      },
+      "debate": {
+        "runs": 2,
+        "ok": 2,
+        "worker_calls": 4,
+        "final_len": 504
+      }
+    },
+    "rows": [
+      {
+        "case": "o1",
+        "strategy": "single",
+        "ok": true,
+        "worker_calls": 1,
+        "final_len": 71
+      },
+      {
+        "case": "o1",
+        "strategy": "pipeline",
+        "ok": true,
+        "worker_calls": 4,
+        "final_len": 71
+      },
+      {
+        "case": "o1",
+        "strategy": "manager_worker",
+        "ok": true,
+        "worker_calls": 3,
+        "final_len": 271
+      },
+      {
+        "case": "o1",
+        "strategy": "fanout",
+        "ok": true,
+        "worker_calls": 3,
+        "final_len": 256
+      },
+      {
+        "case": "o1",
+        "strategy": "dynamic_team",
+        "ok": true,
+        "worker_calls": 3,
+        "final_len": 290
+      },
+      {
+        "case": "o1",
+        "strategy": "debate",
+        "ok": true,
+        "worker_calls": 2,
+        "final_len": 252
+      },
+      {
+        "case": "o2",
+        "strategy": "single",
+        "ok": true,
+        "worker_calls": 1,
+        "final_len": 71
+      },
+      {
+        "case": "o2",
+        "strategy": "pipeline",
+        "ok": true,
+        "worker_calls": 4,
+        "final_len": 71
+      },
+      {
+        "case": "o2",
+        "strategy": "manager_worker",
+        "ok": true,
+        "worker_calls": 3,
+        "final_len": 273
+      },
+      {
+        "case": "o2",
+        "strategy": "fanout",
+        "ok": true,
+        "worker_calls": 3,
+        "final_len": 256
+      },
+      {
+        "case": "o2",
+        "strategy": "dynamic_team",
+        "ok": true,
+        "worker_calls": 3,
+        "final_len": 292
+      },
+      {
+        "case": "o2",
+        "strategy": "debate",
+        "ok": true,
+        "worker_calls": 2,
+        "final_len": 252
+      }
+    ]
+  },
+  "skill": {
+    "positive": {
+      "total": 4,
+      "ok": 4,
+      "accuracy": 1.0
+    },
+    "negative": {
+      "total": 3,
+      "ok": 3,
+      "accuracy": 1.0
+    },
+    "confusion": {
+      "total": 1,
+      "ok": 1,
+      "accuracy": 1.0
+    },
+    "overall": {
+      "total": 8,
+      "ok": 8,
+      "accuracy": 1.0
+    },
+    "rows": [
+      {
+        "id": "s01",
+        "kind": "positive",
+        "expected": "quick-math",
+        "got": "quick-math",
+        "ok": true,
+        "reason": "召回命中词: 算一、一下、等于、于多、多少"
+      },
+      {
+        "id": "s02",
+        "kind": "positive",
+        "expected": "quick-math",
+        "got": "quick-math",
+        "ok": true,
+        "reason": "召回命中词: 计算、乘以、结果"
+      },
+      {
+        "id": "s03",
+        "kind": "positive",
+        "expected": "deep-dive",
+        "got": "deep-dive",
+        "ok": true,
+        "reason": "召回命中词: 调研、现状、资料"
+      },
+      {
+        "id": "s04",
+        "kind": "negative",
+        "expected": null,
+        "got": null,
+        "ok": true,
+        "reason": "召回为空"
+      },
+      {
+        "id": "s05",
+        "kind": "negative",
+        "expected": null,
+        "got": null,
+        "ok": true,
+        "reason": "召回为空"
+      },
+      {
+        "id": "s06",
+        "kind": "confusion",
+        "expected": "deep-dive",
+        "got": "deep-dive",
+        "ok": true,
+        "reason": "召回命中词: 搜索、资料、调研"
+      },
+      {
+        "id": "s07",
+        "kind": "positive",
+        "expected": "deep-dive",
+        "got": "deep-dive",
+        "ok": true,
+        "reason": "召回命中词: 搜索、研究、资料"
+      },
+      {
+        "id": "s08",
+        "kind": "negative",
+        "expected": null,
+        "got": null,
+        "ok": true,
+        "reason": "召回为空"
+      }
+    ]
+  },
+  "model_strategies": [
+    {
+      "case": "m1",
+      "mode": "low_budget",
+      "model_profile": "cheap",
+      "complexity": "complex",
+      "final_len": 71,
+      "termination_reason": "success",
+      "iterations": 2,
+      "degrade_actions": [
+        "无需降级"
+      ]
+    },
+    {
+      "case": "m1",
+      "mode": "balanced",
+      "model_profile": "balanced",
+      "complexity": "complex",
+      "final_len": 71,
+      "termination_reason": "success",
+      "iterations": 2,
+      "degrade_actions": [
+        "无需降级"
+      ]
+    },
+    {
+      "case": "m1",
+      "mode": "high_quality",
+      "model_profile": "balanced",
+      "complexity": "complex",
+      "final_len": 71,
+      "termination_reason": "success",
+      "iterations": 2,
+      "degrade_actions": [
+        "无需降级"
+      ]
+    }
+  ],
+  "generated_at": "2026-09-09T11:41:39"
+}

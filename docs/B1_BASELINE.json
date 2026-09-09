@@ -1,0 +1,103 @@
+{
+  "batch": "B1",
+  "tests_passed": 174,
+  "business_executed": 0,
+  "paid_model_requests": 0,
+  "git_commit": null,
+  "snapshot_scope": "Explicit B1 file list, not a full repository backup",
+  "archive": ".tmp/b1-baseline-20260907-160302.zip",
+  "python": "3.14.7",
+  "packages": {
+    "langgraph": "1.2.11",
+    "langchain-core": "1.6.1",
+    "openai": "3.8.0",
+    "python-dotenv": "1.2.3",
+    "pytest": "9.1.1"
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "0ea4e32b536345e8b09947dcad1c9599161c89147a215a5832b064375ed0df94"
+    },
+    {
+      "path": "README.md",
+      "sha256": "55c259d2de54e0a96dcc593305ccabcaf2e9b4ea785fcf46a0f71a6840588116"
+    },
+    {
+      "path": "config/settings.py",
+      "sha256": "11176eb4bfd318c3969471aff4f5be130b5b3e1a406d6a4b850b8f841a3615ee"
+    },
+    {
+      "path": "src/harness/models/factory.py",
+      "sha256": "0a97c4e6d29e4f83aa8e7a43f574dc87a0a9825d30a76214c9d330dbf9ab2f5b"
+    },
+    {
+      "path": "src/llm/mock.py",
+      "sha256": "ddc3b8dfccc6a21cced39e3199e7bb7d655de5af6d5907fbd1eb8355b6b3c113"
+    },
+    {
+      "path": "src/llm/provider.py",
+      "sha256": "09b03736cb8f11f3ceff893a403f13b9c74043dadf6caef71e83fa1bdb4108e6"
+    },
+    {
+      "path": "src/harness/runtime/agent_runtime.py",
+      "sha256": "8c5c92dccfe518d94d132b2d235272419057d61a57927353dd5c16e2dc8ebe78"
+    },
+    {
+      "path": "src/interfaces/web/workbench.py",
+      "sha256": "46195fbc440fa3e384bfc452f9c089057ff8f8ce9791faddb6c77b89f4bb0b9e"
+    },
+    {
+      "path": "eval/benchmark.py",
+      "sha256": "67d38d87a2dfa3cb56829f9e4dcaf75170f96c38cf233b5071c3fc5da10d261c"
+    },
+    {
+      "path": "eval/research_cases.py",
+      "sha256": "c8c31aacee87c4dc215908d3570caa852409b69ee3980be1f28125594e47c7b7"
+    },
+    {
+      "path": "eval/datasets/benchmark_v1.json",
+      "sha256": "3e3ec62ab5dcecf1fdc8107d42a73d3dec4a6621163ecc3295030ede942ed676"
+    },
+    {
+      "path": "eval/datasets/research_writing_v1.json",
+      "sha256": "d76bdf6dc3c82d9cf57b18b0a33a910361c55586ce23ebe81a2f7ac7c19f4c51"
+    },
+    {
+      "path": "eval/reports/benchmark_report.json",
+      "sha256": "4e0215caffdb5e21e7ee69359013f5673c1dc8d324a8360fd6ffbf9ea688858c"
+    },
+    {
+      "path": "eval/reports/benchmark_report.md",
+      "sha256": "9b6ea37d57f6599bea9d90c8c6a2ce14be489046039a06ad74fd8d0cf774e506"
+    },
+    {
+      "path": "tests/test_model_budget.py",
+      "sha256": "9a55e6e44a5b56520924790c2aa5da6e8f3c277324ae729d661e9b9b2ac819ac"
+    },
+    {
+      "path": "tests/test_model_config.py",
+      "sha256": "90c2c7d54c2d82b06c033745f5efa930988c8605f60f268423138c96f84f6108"
+    },
+    {
+      "path": "tests/test_research_cases.py",
+      "sha256": "40b81cbe2a36f248f03bc119cb1b5b87d26308642320f1870c099741875afe67"
+    },
+    {
+      "path": "tests/test_workbench.py",
+      "sha256": "2dfd10a4d585bef72478180533bfcc39405ff2ebee4bd33179a90259b28c41e9"
+    },
+    {
+      "path": "docs/RESEARCH_WRITING_ACCEPTANCE.md",
+      "sha256": "f34c1b8a48e1d995a8fb2c29e15a840ef8d10dbb840bc6fc5f8254d323a929ae"
+    },
+    {
+      "path": "docs/EXECUTION_STATUS.md",
+      "sha256": "c17c9a968a11250002de7aa67cbc478b3eceb07bf35325ab6165c9ca789dc10b"
+    },
+    {
+      "path": "docs/PRACTICAL_RESEARCH_WRITING_PLAN.md",
+      "sha256": "2d41931b162bc09364be61b997ac52349d52ddf6926fadab3db4aa90e69256b4"
+    }
+  ]
+}

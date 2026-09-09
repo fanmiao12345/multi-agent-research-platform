@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# --- 虚拟环境 / 本地依赖 ---
+.venv/
+.deps/
+
+# --- 本地临时目录（pip/ensurepip 等使用）---
+.tmp/
+
+# --- 密钥（只放字段名，绝不提交真实值）---
+.env
+
+# --- 运行产物（Run 工作区 / Trace / 旧实现产物）---
+workspaces/
+agent_runs/
+research_output/
+memos.json
+last_transcript.json
+legacy/research_output/
+legacy/agent_runs/
+
+# --- IDE / 系统 ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# --- S0-06 提交审计补充 ---
+node_modules/
+legacy/webui/dist/
+# legacy 本地配置：可能含真实 Key，绝不提交
+legacy/config.ini
+*.sqlite-shm
+*.sqlite-wal

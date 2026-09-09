@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "name": "orchestration_cases_v1",
+    "note": "同一任务集对比：Single/Pipeline/Manager-Worker/Fan-out/Dynamic Team（G10）。"
+  },
+  "cases": [
+    {"id": "o1", "task": "帮我调研远程办公的利弊并写一篇公众号文章", "kind": "research_write"},
+    {"id": "o2", "task": "帮我调研深空探测的意义，整理素材，写出报告", "kind": "research_write"}
+  ]
+}

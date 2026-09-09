@@ -1,0 +1,241 @@
+# 实施日志
+
+本文件追加记录完成步骤；已有历史证据保留在EXECUTION_STATUS.md与B1_BASELINE.json。
+
+## 2026-09-09 / P00：完整计划梳理
+
+- 已核对完整S0～S7计划和当前模型、Runtime、Web、评测、规划与编排调用点。
+- 新增IMPLEMENTATION_TRACKER.md，逐项保留原计划编号；B1完成范围和真实业务未验收分别标注。
+- 发现B2主要缺口：各入口单独装配Runtime，辅助LLM调用绕过run用量；线程分支也需继承同一根任务。
+- 验证：清单编号从主计划提取，覆盖全部编号项；旧174项为B1历史基线，本批稍后重新执行回归。
+- 下一步：B2-01统一请求和应用入口，随后接根账本；不在本批宣称已能读取资料或写出有引用的报告。
+
+## 2026-09-09 / B2-01a：统一请求契约
+
+- 新增src/application/request.py：明确任务、模式、档案与四类根限制，兼容显式force_mock。
+- 验证：.venv\Scripts\python -m pytest tests/test_application.py，8 passed。
+- 零预算合法，负数、NaN、布尔型次数及冲突模式均拒绝。应用执行入口待接账本后完成。
+
+## 2026-09-09 / B2-01：统一应用执行入口
+
+- 新增ResearchApplication：为每次提交创建jobs/job_id，统一请求、Runtime装配和终态保存；run保持原目录兼容历史查看。
+- 实际适配器模式必须与请求一致；run.json和返回值记录root_job_id。
+- 验证：test_application.py与test_model_config.py共40 passed，包含应用计算、运行关联、错误模式拦截。
+- 限制：入口当前执行现有Runtime，资料业务字段与成稿链在B3～B5实现。
+
+## 2026-09-09 / B2-02：根账本与初始限制
+
+- 新增model_gateway.py：请求前原子记录调用意图，记录角色/用途/实际模型/用量/耗时；不保存消息与供应商响应正文。
+- 根限制涵盖调用次数、输出Token、估算费用和时间；真实模式未指定费用阈值时默认0.05美元，Mock默认不限制费用。
+- 同根模型请求串行检查；缺用量或失败后的未知消耗阻止后续调用，未知价格不能在费用限制下请求。SDK隐藏重试关闭。
+- 验证：同上40 passed，其中覆盖四类零限额、未知用量、未知价格、线程共享次数、写盘失败前不发请求、已关闭任务不可再请求。
+- 限制：参考价格未实时核验；费用不是账单硬封顶；时间是调用边界检查，后台工具不能强杀。恢复账本仍待S4。
+
+## 2026-09-09 / B2-03：调用点与线程上下文接入
+
+- 主循环、Planner、Replanner、Judge、技能Rerank、历史摘要统一调用model_call；预算停止不能被普通异常兜底吞掉。
+- Worker/子Agent记录角色、根任务和父run；Fanout/Debate/Dynamic及工具等待线程复制根任务上下文。
+- 定向回归93 passed：辅助调用同账本、并发共享上限、工具线程父子关联、适配器收到剩余输出/时间限制。
+- 委派工具的角色标记补充随最终全量回归验证；这些实验策略没有自动加入当前研究业务链。
+
+## 2026-09-09 / B2-04：三个入口与用量展示
+
+- Web、CLI、Agent Benchmark共用ResearchApplication.run；评测批次从根账本累计费用，保留历史run目录与接口。
+- 新增python -m src.interfaces.cli命令；Web新增限额输入和/api/runs/id/job账本视图。
+- 定向回归93 passed包含真实CLI子进程计算42、HTTP零调用上限与根账本、模型配置和评测边界。
+- 页面实际浏览器验证留在B2-05；取消队列、SQLite持久恢复与会话暂未实现。
+
+## 2026-09-09 / B2-05：最终验证与交付
+
+- 全量回归：.venv\Scripts\python -m pytest，199 passed，16.98秒；B2-03的最终子委派角色补充也已覆盖。
+- 离线Agent Benchmark：5通过、8明确跳过。业务定义校验：20任务+10故障，definition_valid=true，business_executed=0。
+- 本地浏览器：调用上限0→cancelled、0次调用；恢复12→计算42、completed、根账本2次调用；页面最终状态与账本一致。
+- 新增B2_DELIVERY.md；同步README、EXECUTION_STATUS、总计划及72项清单；AGENTS记录了后续每步必须追加日志的约定。
+- 没有付费模型请求、没有新增第三方依赖、没有修改DSH或全局配置；没有批量Git提交。
+- 已知限制：无受控全局队列/持久取消；时间非强制终止，费用为旧参考估算；JSON非多文件事务；实际研究写作仍未验收。
+- 下一步B3：文本/TXT/Markdown导入，来源/完整产物、去重、原文定位及路径边界。
+
+## 2026-09-09 / B3-00：B2全量回归与偶发修复
+
+- 复核B2后基线：198 passed + 1 偶发失败（test_http_root_budget_and_ledger_view，单独重跑3次全过）。
+- 根因：/job 视图在 run.json 尚未写入 root_job_id 的窗口返回 {"note":…}，轮询谓词对 None 直接抛 AttributeError。
+- 修复：tests/test_workbench.py 谓词改为 (d.get("ledger") or {}).get("status")，容忍启动窗口；接口语义未变。
+- 验证：修复后定向测试通过；全量随B3批末回归。
+- 下一步：B3-01 路径边界工具。
+
+## 2026-09-09 / B3-01：受控路径边界（S2-08本地部分）
+
+- 新增 src/harness/storage/paths.py：canonical/_resolve_through_links/is_under/ensure_under/resolve_under/ensure_relative_name。
+- Windows junction 实测发现 os.path.realpath 对“最终段不存在”的路径不解析中间 junction，逃逸检查会被绕过；改为“最长已存在前缀解析 + 不存尾部拼接”再判定包含性，对将写入的新路径同样生效。
+- 校验输入白名单（单段文件名、禁 ../、绝对路径越界、root 自身）；全部写路径先通过 resolve_under。
+- 验证：tests/test_storage_paths.py 11 passed（含真实 mklink /J junction 逃逸拒绝、不存在尾部穿越 junction 拒绝）。
+- 限制：broken junction（目标已删）按普通名处理，只在 OS 写入时报错；URL 侧私网边界属 B4。
+- 下一步：B3-02 来源存储与导入。
+
+## 2026-09-09 / B3-02：来源登记、导入分类、定位与去重（S2-01/S2-05/S2-06本地部分）
+
+- 新增 src/harness/storage/sources.py：SourceRecord/索引/全文/meta；job_dir/sources/ + sources.json 布局。
+- 分类：ok/partial/duplicate/empty/unsupported/too_large/read_failed 全部登记索引；文件只读不回写；UTF-8→GB18030→替换式降级（partial）；扩展名黑名单（PDF 提示 S2-11、DOCX 等）+ 二进制嗅探先于文本解码。
+- S2-05：source_id/导入时间/内容哈希/规范化哈希/原始地址/存储相对路径/published_date=unknown 不冒充。
+- S2-06：Markdown 标题+段落切分，heading/paragraph/字符偏移定位；标题前无空行先收拢段落；重复识别=同 sha256 或空白折叠一致（转载），duplicate_of 指向原来源且不重复存全文。
+- 限制：单来源2MB/任务20来源/累计10MB 超限明确拒绝不静默截断（累计总量在 import_texts_and_files 内逐条核算）。
+- 修复过程中发现并处理：带前缀文件名误过 ensure_relative_name（先验裸名再拼前缀）、heading 正则未考虑多行与“.”不匹配换行、NUL 字节为合法 UTF-8 导致 .txt 二进制漏检。
+- 验证：tests/test_sources.py 13 passed（含累计总量上限）；tests/test_storage_paths.py 11 passed 仍绿。
+- 下一步：B3-03 受控产物(Artifact)存储。
+
+## 2026-09-09 / B3-03：受控产物存储（S2-07）
+
+- 新增 src/harness/storage/artifacts.py：ArtifactStore 按 job 管理 artifacts/<kind>.v<n>.<ext> + artifacts.json 索引。
+- artifact_id=kind.vN 版本自动递增，同 kind 永远不覆盖旧版本；content_hash 写入索引，读取时校验内容与索引一致；索引损坏/重复 id 一律拒绝继续写入与读取。
+- 读取入口两种：read(artifact_id) 只认索引；read_relative() 只接受 artifacts/ 下受控相对路径，绝对路径与任何 ../ 按路径边界拒绝，未登记文件拒绝读取（索引是权威，为 B4/B5 模型访问工具预留）。
+- 索引先文件后登记方向与来源模块一致：先原子写全文，再写索引，杜绝登记不存在的产物。
+- 验证：tests/test_artifacts.py 12 passed（版本/防覆盖/哈希篡改/越界/孤儿文件/损坏索引）。
+- 下一步：B3-04 任务请求携带资料字段并接入 ResearchApplication/CLI。
+
+## 2026-09-09 / B3-04：请求契约与统一入口导入接入
+
+- request.py：TaskRequest 增加 texts（粘贴正文）/files（本地文件路径）元组字段，JSON 列表自动转元组；类型/数量校验；snapshot() 落盘快照排除粘贴正文（全文以 sources/ 为准）。
+- model_gateway.py：request.json 使用 request.snapshot()（无则 asdict），避免正文双份存储。
+- research.py：run() 在启动 Runtime 前导入资料：0 个可用来源抛 SourceImportError（明确消息、job 记 failed），部分失败登记在 sources.json 并继续，job.json 增加 import 摘要（total/usable/statuses）。
+- cli.py：新增 --import-file/--import-text（可重复），stdout JSON 附带 sources 摘要；导入类业务错误打印完整 message（不再只给类型）；零可用来源退出码 1。
+- 验证：tests/test_imports.py 14 passed；tests/test_application.py 25 passed 无回归。
+- 限制：资料只登记存储，业务阅读/成稿链仍在 B5；任务间无持久会话隔离（S4）。
+- 下一步：B3-05 Web 查看资料与产物。
+
+## 2026-09-09 / B3-05：Web 资料/产物只读端点与页面
+
+- workbench.py：/api/jobs/<job_id>/sources、/sources/<sid>/text、/artifacts、/artifacts/<aid>/content；job_id/source_id/artifact_id 白名单正则，全文读取一律经 resolve_under 边界校验；GET 不做 mkdir 副作用。
+- 页面新增⑳资料与产物面板：任务带资料运行后列出来源（状态/名称/标题/字节/说明，重复与失败来源标明原因，无全文来源点击提示404原因）与产物清单，点击行查看全文/内容；同一 job 只加载一次。
+- 验证：tests/test_workbench_b3.py 5 passed；全量回归 254 passed，23.11秒（B2基线199）。
+- 限制：只做 HTTP/HTML 级验证，未做真实浏览器人工点检；资料段落明细存 <id>.meta.json，不在列表接口膨胀返回；任务资料全文仅在来源目录，job 页面不发送给模型（发送范围以配置提示为准，B5 成稿链再明确上下文组装）。
+- 下一步：B3_DELIVERY.md 交付记录 + TRACKER/README/EXECUTION_STATUS 同步；随后进入 B4（URL/搜索）或按用户优先级调整。
+
+## 2026-09-09 / B4-01：URL 策略与 SSRF/私网防护（S2-09 离线部分）
+
+- 新增 src/harness/ingest/url_policy.py：UrlPolicy（allowed_hosts 白名单/重定向上限/超时/下载上限）、parse_url（仅 http/https、禁 userinfo、IDNA/端口校验、默认端口补齐）、resolve_allowed（解析结果逐地址检查，任何私网/回环/链路本地/组播/保留/文档网段整体拒绝；IPv4-mapped IPv6 按 IPv4 判定）。
+- 与 fetcher 分工：本模块保证“解析集合法”；最后防线（直连解析出的 IP+连接后 peer 校验）在 fetcher。
+- 验证：tests/test_url_policy.py 49 passed（非法协议/格式、全套私网与保留地址、mapped 形式、名字与 IP 原文白名单放行、混合解析拒绝、DNS 失败）。
+- 限制：代理/证书以外的攻击面与真实公网服务验证待 S6；默认拒绝 intranet 材料，需要时须显式白名单（后续 S5 暴露配置）。
+- 下一步：B4-02 抓取器与 HTML 正文提取。
+
+## 2026-09-09 / B4-02：抓取器与正文提取（S2-02）
+
+- 新增 src/harness/ingest/fetcher.py：http.client 直连白名单 IP（HTTPS 用 server_hostname 保留证书校验）；每跳重定向重新 parse+resolve；连接/读取超时、下载字节上限超限即断、正文类 Content-Type 白名单；状态分类 ok/http_error/timeout/network_error/too_large/unsupported_type/redirect_limit。
+- 新增 src/harness/ingest/html_extract.py：标准库 HTMLParser 提取 title/段落/标题（h1-h6→Markdown #），剔除 script/style 等；text/html、xhtml、text/plain、markdown 内容类型 + 无类型嗅探；charset 声明/GB18030 兼容。
+- 验证：tests/test_fetcher.py 9 passed（提取质量/跳转复检/重定向环/404/图片类型拒绝/超限/默认策略拦截回环/协议与 DNS 错误）。
+- 限制：不渲染 JS/复杂表格；断连重试不做（网络层错误按来源登记失败并提示）；解析质量在 S6 用真实样本评估。
+- 下一步：B4-03 SourceStore 登记 URL 来源（kind=url、原始/最终URL、跨来源转载去重）。
+
+## 2026-09-09 / B4-03：SourceStore 登记 URL 来源
+
+- SourceRecord 增加 final_url/http_status/content_type（URL侧S2-05：原始URL在 original_address，重定向后URL在 final_url，published_date=unknown 不冒充）；索引与 meta 同步扩展（旧索引可读）。
+- 新增 SourceStore.add_url：抓取层状态映射为存储层分类（http_error/timeout/network_error/redirect_limit→read_failed；unsupported_type→unsupported）；ok/partial 存提取正文（跨本地/网页同文去重复用既有哈希判重，转载只留 duplicate_of）；空正文/超限明确分类。
+- 验证：tests/test_url_sources.py 6 passed；tests/test_sources.py 13 passed 无回归。
+- 下一步：B4-04 请求/应用/CLI/Web 接入与整链测试。
+
+## 2026-09-09 / B4-04：请求/应用/CLI/Web 接入 URL 导入
+
+- request.py：TaskRequest.urls（用户指定http(s)链接）+ allow_network（联网研究开关，搜索未配置时无效果）；空粘贴文本仍允许（导入器分类 empty），文件/URL 条目必须非空；总数上限含 urls。
+- 新增 src/application/imports.py：import_request_sources 统一导入 texts/files/urls：URL 走 fetch_url→extract_document→store.add_url，抓取失败逐条登记；累计总量逐条核算；零可用来源明确失败。research.py 改用该入口并接受 url_policy 注入（默认安全策略）。
+- cli.py：--import-url（可重复）与 --allow-network；Web 表单增加网页链接输入并随 startRun 发送。
+- 修正请求校验对空粘贴的误伤（保留 B3 的 empty 分类语义）。
+- 验证：tests/test_url_imports.py 7 passed（含 S2-10 网页指令惰性结构保证：文本原样入来源、不改系统指令/请求快照、工具注册表不变、任务目录外无新文件）。
+- 限制：Web/CLI 不暴露私网白名单开关（默认安全）；搜索引擎仍禁用；成稿链未接入，网页正文只是登记存储。
+- 下一步：B4-05 搜索占位网关与账本字段。
+
+## 2026-09-09 / B4-05：搜索服务占位（S2-03/04）与S2-10证据
+
+- 新增 src/harness/ingest/search.py：SEARCH_PROVIDER 未配置 → SearchNotConfigured 可操作提示（绝不假搜/不用Mock顶替）；未实现服务商显式报"尚未接入"；SearchRecord 预留根任务/排名/URL/费用字段，未知成本保持 None 不记零（S4-10 记账接口已对接字段）。
+- Settings 增加 SEARCH_PROVIDER/SEARCH_API_KEY(repr隐藏)/SEARCH_BASE_URL/SEARCH_MAX_RESULTS；.env.example 同步并注明选定服务商后才接入。
+- S2-10：网页资料作为不可信内容，目前无任何执行路径；以测试固化结构保证（见 B4-04 日志条目），B5 成稿链喂给模型时再按真实语义复验。
+- 验证：tests/test_search_gate.py 4 passed。
+- 限制：无真实搜索服务（需用户选定 provider 并按官方接口/费用核验）；真实模型行为验证待 S6。
+- 下一步：B4-06 全量回归与交付文档。
+
+## 2026-09-09 / B4-06：最终验证与交付
+
+- 全量回归：.venv\Scripts\python -m pytest，330 passed，32.64秒（B3基线255）。
+- 新增 tests/test_url_policy.py 49、test_fetcher.py 9、test_url_sources.py 6、test_url_imports.py 7、test_search_gate.py 4，共75项。
+- 新增 docs/B4_DELIVERY.md；同步 README、EXECUTION_STATUS、IMPLEMENTATION_TRACKER（S2-02/05/06/09/10 已验收（离线），S2-03/04 部分完成注明待选服务商；B4 拆解表）与 .env.example。
+- 没有付费模型/搜索请求、没有新增第三方依赖、没有修改 DSH；页面为 HTTP/HTML 级验证。
+- 已知限制：搜索服务商待选定；真实公网抓取质量与 DNS rebinding 真实样本待 S6；成稿链 B5 未接入。
+- 下一步 B5：证据→素材→提纲→初稿→审校，把登记资料接进研究写作链。
+
+## 2026-09-09 / B5-01~B5-07：研究写作链（S3）主体实现
+
+- B5-01 契约：新增 src/application/pipeline/{__init__,model,evidence,prompts}.py —— Evidence/MaterialPack/OutlineSection/ReviewIssue/PipelineResult 数据契约；evidence.json 权威存储；引用标记 [E-xxx] 与稳定编号 E-001…；提示词模板集中在 prompts.py（统一红线：只用给定资料、quote 逐字、禁编造 id、JSON 机器校验）。
+- B5-02 上下文预算（S3-07）：单来源提取调用 40k 字符预算并显式标注截断，禁止猜测未提供后段；素材/提纲块 20k 上限；证据索引始终带 evidence_id+fact+来源，列表摘要不作为唯一业务输入（S3-02 由 artifact_id 交接实现：每阶段产物落 ArtifactStore，report.v1→修订 report.v2 不覆盖）。
+- B5-03 证据与素材（S3-04/05）：程序先校验 quote 逐字存在于全文并计算段落定位（与 split_segments 同口径）再入库，未定位摘录丢弃记 error issue；素材包校验 evidence_id 存在性，冲突 status 强制 open（模型"解决"矛盾被拒绝并记 issue），重复来源由程序从登记补齐。
+- B5-04 提纲与初稿（S3-06）：章节 required_evidence 只保留真实 id；初稿产出 Markdown 并在 [E-编号] 后标注〔事实/推断/未知〕（要求节）；空/超短稿按阶段错误处理。
+- B5-05 双层审校（S3-09/10）：程序层校验引用可解析/必需证据全覆盖/章节齐全/标注存在；模型层检查 support/missing/conflict/style；error 存在即 needs_revision；修订最多2轮，每轮问题清单与新稿分别落 review.vN/report.v(N+1)。
+- B5-06 runner（S3-01/11/12/13）：固定阶段顺序（不由 LLM 生成执行架构）；阶段快照 pipeline.json；结果分级 accepted/draft/failed——预算停止或修订耗尽或证据缺失交付"待完善草稿"不假成功；阶段解析失败记 failed 不崩溃。
+- B5-07 入口（S1-01 延续）：TaskRequest.flow=agent|research；ResearchApplication 同根账本内跑链（全部模型调用过 model_call，purpose 记 evidence_extract/material_pack/outline/draft/review）；CLI --flow research（退出码语义不变）；Web 明确提示链暂未接入页面（随 S5）。
+- 验证：tests/test_pipeline_stages.py 12 passed（定位/去重守卫/引用与章节/修订轮/预算停止/无来源无证据）+ tests/test_research_flow.py 5 passed（端到端 accepted、账本用途、无来源不清零调用、CLI 退出码、Web 守卫）。
+- 限制：链在 Mock/桩 LLM 下离线验收；真实模型结构化输出质量与业务案例执行待 S6；整理与研究写作共用同一固定链（输出目标由任务目标引导）；改稿/追问需 S4 会话后接入。
+- 下一步：B5-08 全量回归与交付文档。
+
+## 2026-09-09 / B5-08：最终验证与交付
+
+- 全量回归：.venv\Scripts\python -m pytest，347 passed，34.94秒（B4基线330）。
+- 新增 docs/B5_DELIVERY.md；同步 README、EXECUTION_STATUS、IMPLEMENTATION_TRACKER（B5行→已验收（离线）；S3-04/05/06程序面/09/10/11/12已验收（离线），S3-01/02/03/07/08/13部分完成并注明剩余点；B5拆解表）。
+- 没有付费模型请求、没有新增第三方依赖、没有修改DSH；链在桩LLM下离线验收。
+- 已知限制：真实模型结构化输出质量与20业务案例待S6；S4会话改稿/追问未接入；Web链入口随S5；JSON产物非多文件事务。
+- 下一步 S4：SQLite 状态/会话/审批/操作账本、队列取消与恢复；随后 S5 工作台。
+
+## 2026-09-09 / S4核心：SQLite状态库、队列租约、操作账本、审批、会话（S4-01/02/03/06/08/09/13）
+
+- 新增 src/harness/state/：db.py（state.sqlite：jobs/sessions/session_jobs/approvals/operations + meta.schema_version；WAL、check_same_thread=False+写锁write_tx；损坏/高版本显式 StateDbError；在线备份与verify_backup）、states.py（9个业务状态词+合法迁移表+底层Run映射，不靠字符串相等猜测）、queue.py（提交落库、原子领取：queued/interrupted 或租约过期者；心跳续期；release 迁移校验；两段取消 queued→cancelled/运行中→cancel_requested→边界收敛；startup_scan 过期→interrupted并清租约）、ops.py（操作账本 pending/running/succeeded/failed/unknown；幂等键=job:action:version:params_hash；succeeded才回放、unknown拒绝自动重放）、approvals.py（审批绑定动作+参数哈希+scope+版本+到期；新审批自动失效旧pending；invalidate_for 供重规划/取消失效；有效授权须 granted+未过期+全匹配）、sessions.py（会话目标与任务归属；材料快照仅登记引用不跨会话共享）。
+- 验证：tests/test_state_core.py 14 passed（schema/损坏/高版本/备份、迁移表、双执行者并发唯一赢家、租约过期回收、取消两段、幂等回放与unknown、审批绑定/过期/scope、会话隔离）。
+- 限制：跨进程领取靠单条UPDATE原子性（进程内另有写锁串行）；WAL下理论上限仍以官方文档为准，真实多进程压力测试留待S6；链/Agent接入与Web队列视图在S4后续小步及S5。
+- 下一步：runner 阶段检查点与 resume（S4-04/12）、取消收敛注入（S4-06）、会话续写入口（S4-05）。
+
+## 2026-09-09 / S4链层恢复与入口：检查点/取消收敛/子进程/无进展（S4-04/06/07/11/12）
+
+- runner 扩展：产物先落盘→阶段检查点 stage_{material,outline,draft}.json→stage_hook 外部状态提交（顺序保证"文件先、状态后"，S4-04）；已有检查点目录默认拒绝无意识重跑；resume=True 按检查点跳过已完成阶段并复用证据/素材/提纲/初稿（S4-12：业务阶段恢复边界，非任意节点恢复）；evidence.json 作为证据恢复源，不重复抽取。
+- should_stop 阶段边界查询：收到取消 → 停止新调用、保留产物、termination_reason=cancelled（S4-06 已停止；等待 Web 队列接线在 S5）。
+- 新增 src/harness/control/subprocess_guard.py（S4-07：有界子进程、超时真实终止、输出截断）与 progress.py（S4-11：结构化调用+产物哈希的无进展检测，集成看门狗留给 S5 队列执行器）。
+- 新增 resume_research_job（S4-12 应用入口）：同 job 目录续跑、新开续接账本并载入原账本条目（次数/输出/费用延续原上限）；原账本未知用量如实阻止续跑（真实模式）；CLI --resume-job（需 --workspace）。
+- 修复 model_gateway：Mock 适配器失败已知零成本（不污染 unknown 用量账），真实模式失败仍阻止后续调用——崩溃续跑在 Mock/桩下可离线验收，真实模式保留"未知必须核实"语义。
+- 验证：tests/test_state_s4.py 8 passed（真实子进程 os._exit 崩溃→resume 完成且不重复抽取证据、检查点重跑拒绝、等价崩溃窗口恢复、取消收敛、钩子先文件后状态）+ test_resume_entry.py 3 passed（函数级续跑 accepted/账本续接/损坏显式错误、CLI 语义）。tests/_s4_pipeline_brain.py 为子进程复用的桩大脑。
+- 限制：CLI 默认 Mock 不能产出链式 JSON → 续跑明确 failed（不假成功），真实验收需 .env 模型；队列执行器/Web 接线随 S5；跨进程租约压力测试待 S6。
+
+## 2026-09-09 / S4最终验证与交付
+
+- 全量回归：.venv\Scripts\python -m pytest，372 passed，39.42秒（B5基线347）。
+- 新增 docs/S4_DELIVERY.md；同步 README、EXECUTION_STATUS、IMPLEMENTATION_TRACKER（S4行→部分完成（核心已验收，接线随S5）；S4-01/02/04/07/08/10/12/13已验收（离线），S4-03/05/06/09/11部分完成注明剩余接线；本批S4拆解表5行）。
+- 没有付费模型请求、没有新增第三方依赖、没有修改DSH；含真实子进程 os._exit 崩溃恢复测试。
+- 已知限制：常驻执行器与Web接线随S5；CLI默认Mock不能产出链式JSON（真实模式验收）；跨进程租约压力与真实模型验收随S6。
+- 下一步 S5：完整工作台（含 S4 队列/取消/审批/会话页面接线）。
+
+## 2026-09-09 / S5：研究写作链 Web 工作台接线
+
+- S5-01 入口扩展：ResearchApplication.run 支持 job_id/on_progress/stage_hook/should_stop（job_id 白名单校验+目录已存在拒绝）；research 链阶段边界取消收敛与进度钩子全部可注入。
+- S5-02/S4接线：WorkbenchState 挂 state.sqlite（默认 workspaces/state.sqlite）与 JobQueue；研究任务提交进队列，常驻 worker（submit→claim→执行 ResearchApplication.run(job_id=…)→按结果分级 release；cancel_requested 领取前直接收敛）；页面新增㉑研究任务卡：任务列表/状态阶段/停止/恢复/进度分级轮询/报告版本与导出；恢复走 resume_research_job（202 排队、done 拒绝、无检查点拒绝）。
+- S5-03/05 内容视图：/api/jobs/<id>/evidence（证据+原文摘录+定位）；报告正文按 [E-编号] 分词渲染为按钮，点击在来源面板显示摘录/定位/来源；版本列表旧稿不覆盖；下载只允许任务内登记产物（attachment + nosniff，渲染全走 textContent/DOM 不执行脚本）。
+- S5-09 写接口防护：Host 限回环（403）、Content-Length ≤1MB（413）、Content-Type 仅 application/json（415）；读接口不受限；服务默认绑定 127.0.0.1。
+- 验证：tests/test_workbench_s5.py 6 passed（生命周期+证据+导出头、运行中取消收敛并保留产物、失败后恢复、安全三连、重启后同一状态库任务可查、页面标记）；原 workbench/research suites 无回归。
+- 限制：agent 流程仍直跑不进队列；队列 worker 单实例且领取租约内不做心跳续期（S6 压力/HA 复验）；追问改稿（S5-04 会话式）、审批失效原因页面、大日志分页、SSE 未做；真实浏览器人工验收随 S6。
+
+## 2026-09-09 / S5-06：最终验证与交付
+
+- 全量回归：.venv\Scripts\python -m pytest，378 passed，46.61秒（S4基线372）。
+- 新增 docs/S5_DELIVERY.md；同步 README、EXECUTION_STATUS、IMPLEMENTATION_TRACKER（S5行→部分完成（核心接线已验收，剩余项列出）；S5-02/03/05/07/09已验收（离线），S5-01/04/06/08/10部分完成注明剩余点；本批S5拆解表+剩余行）。
+- 没有付费模型请求、没有新增第三方依赖、没有修改DSH。
+- 已知限制：追问改稿/审批失效原因页/读者长度折叠/大日志分页/HTML富预览/agent流程进队列/浏览器人工验收（部分随S6）。
+- 下一步 S6：真实评测与个人试用（20业务×3+10故障×2、人工评分、安装启动脚本、全新环境验证）。
+
+## 2026-09-09 / S6：真实评测运行器与运维（离线可验收部分）
+
+- S6-01/03/04/06 运行器 eval/business_eval.py：案例全走 ResearchApplication(flow=research)；真实模式必须 --max-cost，缺Key整批 not_executed 且零请求（探针不发请求）；repeats(默认3)/fault_rounds(默认2) 可配，失败样本整目录保存；逐次记录耗时/费用/未知用量/终止原因/机器检查（引用未解析、章节覆盖、事实命中、禁语命中，标注仅供参考）；报告带数据集版本/代码版本(no_git_commit_yet)/Python与包版本/模型工具/脱敏配置快照；改稿4案例因会话式改稿链未接通明确跳过(revision_flow_not_ready)。
+- S6-05 eval/human_scores.py：逐次 CSV 评分表（正确性/结构/引用/完整性1-5、人工改稿分钟、机器检查列），明确"不自动盖章"。
+- S6-07/08 src/ops/：health（只读健康检查 CLI）、backup（sqlite在线备份+jobs/sessions复制+manifest，roundtrip 测试通过）、verify（导入/CLI样例/诊断/健康的全新环境验证清单）；requirements.lock.txt 生成（Python 3.14.7+五依赖精确版本）。
+- S6-09/10 模板：docs/BROWSER_REGRESSION.md（覆盖矩阵+引入步骤）、docs/TRIAL_LOG_TEMPLATE.md（20任务+自查+判定）。
+- 验证：tests/test_ops_s6.py 9 passed（real缺Key not_executed 零请求、stub 2/2、Mock诚实失败、失败样本保存、改稿跳过、评分表、健康/备份roundtrip/verify）。
+- 限制：真实60次、联网冒烟、故障自动探针子集、人工评分执行、7天试用、单Agent基线对比、全新venv安装均需用户 Key/预算/时间执行；浏览器工具未引入（说明级清单）。
+
+## 2026-09-09 / S6-11：最终验证与交付
+
+- 全量回归：.venv\Scripts\python -m pytest，387 passed，44.95秒（S5基线378）。
+- 新增 docs/S6_DELIVERY.md、docs/TRIAL_LOG_TEMPLATE.md、docs/BROWSER_REGRESSION.md、requirements.lock.txt；同步 README、EXECUTION_STATUS、IMPLEMENTATION_TRACKER（S6行→部分完成；S6-01/03/08已验收（离线），S6-02/04/05/06/07/09部分完成，S6-10待实施；本批S6拆解表）。
+- 没有付费模型/搜索请求、没有新增第三方依赖（含浏览器工具未引入）、没有修改DSH。
+- 真实执行项（60次业务/联网冒烟/故障全量/人工评分/7天试用/全新venv/首次Git提交）待用户 Key、预算与时间。

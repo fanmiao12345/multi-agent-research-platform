@@ -1,0 +1,8 @@
+# 已验证依赖锁（S6-07）：pip install -r requirements.lock.txt
+# Python: 3.14.7（开发机 Windows x64；全新环境验证见 python -m src.ops.verify）
+
+langgraph==1.2.11
+langchain-core==1.6.1
+openai==3.8.0
+pytest==9.1.1
+python-dotenv==1.2.3

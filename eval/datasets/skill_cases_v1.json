@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "name": "skill_cases_v1",
+    "note": "kind: positive(该命中) / negative(不该命中任何技能) / confusion(两个技能都像，label 为期望命中的那个)"
+  },
+  "cases": [
+    {"id": "s01", "kind": "positive", "skill": "quick-math", "question": "帮我算一下 27*43 等于多少"},
+    {"id": "s02", "kind": "positive", "skill": "quick-math", "question": "计算 6 乘以 7 的结果"},
+    {"id": "s03", "kind": "positive", "skill": "deep-dive", "question": "帮我调研一下深海采矿的现状，查点资料"},
+    {"id": "s04", "kind": "negative", "skill": null, "question": "你好呀"},
+    {"id": "s05", "kind": "negative", "skill": null, "question": "现在几点了？"},
+    {"id": "s06", "kind": "confusion", "skill": "deep-dive", "question": "帮我搜索资料做背景调研，不用计算"},
+    {"id": "s07", "kind": "positive", "skill": "deep-dive", "question": "搜索一下远程办公的最新研究资料"},
+    {"id": "s08", "kind": "negative", "skill": null, "question": "你会作诗吗"}
+  ]
+}

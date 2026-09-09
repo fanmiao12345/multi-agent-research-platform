@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "name": "benchmark_v1",
+    "dataset_tasks": 13,
+    "generated_at": "2026-09-09T09:37:31",
+    "brain": "mock-rule-v1",
+    "mode": "mock",
+    "provider": "mock",
+    "selected_ids": [
+      "b01",
+      "b02",
+      "b03",
+      "b04",
+      "b05",
+      "b06",
+      "b07",
+      "b08",
+      "b09",
+      "b10",
+      "b11",
+      "b12",
+      "b13"
+    ],
+    "max_cost_usd": null,
+    "estimated_cost_usd": 0.0,
+    "scope": "runtime_smoke_not_business_acceptance"
+  },
+  "totals": {
+    "executed": 5,
+    "passed": 5,
+    "failed": 0,
+    "skipped": 8,
+    "success_rate": 1.0,
+    "tool_selection_accuracy": 1.0,
+    "tool_argument_accuracy": 1.0,
+    "avg_llm_calls": 1.6
+  },
+  "by_category": {
+    "simple_qa": {
+      "executed": 1,
+      "passed": 1
+    },
+    "single_tool": {
+      "executed": 2,
+      "passed": 2
+    },
+    "long_text": {
+      "executed": 1,
+      "passed": 1
+    },
+    "tool_failure": {
+      "executed": 1,
+      "passed": 1
+    }
+  },
+  "results": [
+    {
+      "id": "b01",
+      "category": "single_tool",
+      "task": "帮我计算 27*43 等于多少",
+      "run_id": "20260909_093731_4f6833",
+      "root_job_id": "job_fec844c5f8a04f578bd7d367ff2544bf",
+      "outcome": {
+        "final_text": "工具已返回内容：\n- 27*43 = 1161",
+        "termination_reason": "success",
+        "iterations": 2,
+        "messages": 4
+      },
+      "tool": {
+        "used_tools": [
+          "calculator"
+        ],
+        "tool_call_count": 1,
+        "selection_ok": true,
+        "argument_ok": true,
+        "arg_errors": []
+      },
+      "trajectory": {
+        "llm_calls": 2,
+        "duplicate_call_peak": 1,
+        "duplicate_flag": false,
+        "loop_flag": false,
+        "tool_error_count": 0,
+        "error_recovery": false
+      },
+      "e2e": {
+        "success": true,
+        "checks": {
+          "tool_usage": true,
+          "final_text": true
+        },
+        "text_detail": "",
+        "final_len": 23
+      },
+      "status": "passed"
+    },
+    {
+      "id": "b02",
+      "category": "single_tool",
+      "task": "现在几点了？",
+      "run_id": "20260909_093731_f7e3be",
+      "root_job_id": "job_971d359a4fb94f9fa1738866a689ae6e",
+      "outcome": {
+        "final_text": "工具已返回内容：\n- 2026-09-09 09:37:31（Wednesday）",
+        "termination_reason": "success",
+        "iterations": 2,
+        "messages": 4
+      },
+      "tool": {
+        "used_tools": [
+          "current_time"
+        ],
+        "tool_call_count": 1,
+        "selection_ok": true,
+        "argument_ok": true,
+        "arg_errors": []
+      },
+      "trajectory": {
+        "llm_calls": 2,
+        "duplicate_call_peak": 1,
+        "duplicate_flag": false,
+        "loop_flag": false,
+        "tool_error_count": 0,
+        "error_recovery": false
+      },
+      "e2e": {
+        "success": true,
+        "checks": {
+          "tool_usage": true,
+          "final_text": true
+        },
+        "text_detail": "",
+        "final_len": 41
+      },
+      "status": "passed"
+    },
+    {
+      "id": "b03",
+      "category": "wrong_tool_bait",
+      "task": "不要调用任何工具，直接告诉我 2+2 等于几",
+      "status": "skipped",
+      "reason": "outside_smoke_subset"
+    },
+    {
+      "id": "b04",
+      "category": "multi_tool",
+      "task": "先看现在几点，再帮我计算 3*4 等于多少",
+      "status": "skipped",
+      "reason": "outside_smoke_subset"
+    },
+    {
+      "id": "b05",
+      "category": "simple_qa",
+      "task": "你好，你是谁？",
+      "run_id": "20260909_093731_542098",
+      "root_job_id": "job_a9bb1041649d4bdeae7ba4dbdc4d9086",
+      "outcome": {
+        "final_text": "（mock）收到：你好 你是谁 ",
+        "termination_reason": "success",
+        "iterations": 1,
+        "messages": 2
+      },
+      "tool": {
+        "used_tools": [],
+        "tool_call_count": 0,
+        "selection_ok": true,
+        "argument_ok": true,
+        "arg_errors": []
+      },
+      "trajectory": {
+        "llm_calls": 1,
+        "duplicate_call_peak": 0,
+        "duplicate_flag": false,
+        "loop_flag": false,
+        "tool_error_count": 0,
+        "error_recovery": false
+      },
+      "e2e": {
+        "success": true,
+        "checks": {
+          "tool_usage": true,
+          "final_text": true
+        },
+        "text_detail": "",
+        "final_len": 16
+      },
+      "status": "passed"
+    },
+    {
+      "id": "b06",
+      "category": "long_text",
+      "task": "请把下面这段长文本总结成三点（这是一段很长很长的输入，内容需要被逐词扫描就会误判，因此考验长输入保护逻辑的健壮性。下面继续填充占位字符使其总长度必然超过两百个字符门槛：加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长）",
+      "run_id": "20260909_093731_a6bd58",
+      "root_job_id": "job_214c2a5e9ff64c209c5b4e0a6a07effe",
+      "outcome": {
+        "final_text": "（模拟大脑）这是一段较长的输入，离线模式不做逐词路由。配置 API Key 后由真实模型处理。",
+        "termination_reason": "success",
+        "iterations": 1,
+        "messages": 2
+      },
+      "tool": {
+        "used_tools": [],
+        "tool_call_count": 0,
+        "selection_ok": true,
+        "argument_ok": true,
+        "arg_errors": []
+      },
+      "trajectory": {
+        "llm_calls": 1,
+        "duplicate_call_peak": 0,
+        "duplicate_flag": false,
+        "loop_flag": false,
+        "tool_error_count": 0,
+        "error_recovery": false
+      },
+      "e2e": {
+        "success": true,
+        "checks": {
+          "tool_usage": true,
+          "final_text": true
+        },
+        "text_detail": "",
+        "final_len": 47
+      },
+      "status": "passed"
+    },
+    {
+      "id": "b07",
+      "category": "multi_step",
+      "task": "先计算 5*6，再计算 7*8，把两个结果都告诉我",
+      "status": "skipped",
+      "reason": "outside_smoke_subset"
+    },
+    {
+      "id": "b08",
+      "category": "search_task",
+      "task": "帮我搜索一下 LangGraph 是什么，查点资料",
+      "status": "skipped",
+      "reason": "capability_missing"
+    },
+    {
+      "id": "b09",
+      "category": "parallel_task",
+      "task": "同时帮我算 (1+2)*3 和 4*5+6 两个式子",
+      "status": "skipped",
+      "reason": "outside_smoke_subset"
+    },
+    {
+      "id": "b10",
+      "category": "conflicting_evidence",
+      "task": "有资料说 A 方案成本低但见效慢，另说 B 方案见效快但成本高，帮我判断该选哪个",
+      "status": "skipped",
+      "reason": "outside_smoke_subset"
+    },
+    {
+      "id": "b11",
+      "category": "tool_failure",
+      "task": "帮我计算这个式子的值：2 +（括号不匹配",
+      "run_id": "20260909_093731_897de6",
+      "root_job_id": "job_5bb89ae425b24fa2a4ac45c935a6ca8c",
+      "outcome": {
+        "final_text": "工具已返回内容：\n- [tool-error] 工具 calculator 执行失败（第 1 次尝试失败，错误分类：validation）：无法计算「2 +」：invalid syntax (<unknown>, line 1)",
+        "termination_reason": "success",
+        "iterations": 2,
+        "messages": 4
+      },
+      "tool": {
+        "used_tools": [
+          "calculator"
+        ],
+        "tool_call_count": 1,
+        "selection_ok": true,
+        "argument_ok": true,
+        "arg_errors": []
+      },
+      "trajectory": {
+        "llm_calls": 2,
+        "duplicate_call_peak": 1,
+        "duplicate_flag": false,
+        "loop_flag": false,
+        "tool_error_count": 1,
+        "error_recovery": true
+      },
+      "e2e": {
+        "success": true,
+        "checks": {
+          "tool_usage": true,
+          "final_text": true,
+          "termination": true
+        },
+        "text_detail": "",
+        "final_len": 114
+      },
+      "status": "passed"
+    },
+    {
+      "id": "b12",
+      "category": "needs_human",
+      "task": "帮我把这个文件删掉（高风险操作）",
+      "status": "skipped",
+      "reason": "outside_smoke_subset"
+    },
+    {
+      "id": "b13",
+      "category": "planning_needed",
+      "task": "帮我调研远程办公的现状并写一篇报告：先查资料再整理再成稿",
+      "status": "skipped",
+      "reason": "capability_missing"
+    }
+  ]
+}

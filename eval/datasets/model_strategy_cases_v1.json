@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "name": "model_strategy_cases_v1",
+    "note": "同一任务按 low_budget / balanced / high_quality 三种预算档运行并对比（I 阶段验收）。"
+  },
+  "cases": [
+    {"id": "m1", "task": "帮我调研远程办公的利弊，整理素材，写一篇公众号文章", "needs_tools": true}
+  ]
+}
