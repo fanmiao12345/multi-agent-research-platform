@@ -24,9 +24,25 @@ import uuid
 from pathlib import Path
 
 from eval.business_eval import _case_source_texts, load_dataset
+from config.settings import Settings
+from dataclasses import replace
 from src.application.request import TaskRequest
 from src.harness.model_gateway import JobLedger, job_scope, model_call
 from src.harness.structured import extract_json
+
+
+def build_grader_llm(mode: str, settings=None, model: str | None = None):
+    """构造专职评测者适配器：model 优先级 显式参数 > GRADER_MODEL_NAME > 主模型。
+
+    返回 (llm, used_model)。与被评任务同模型时由调用方记录 independence 局限。
+    """
+    settings = settings or Settings()
+    chosen = model or settings.grader_model_name or settings.model_name
+    grader_settings = settings if chosen == settings.model_name else \
+        replace(settings, model_name=chosen)
+    from src.harness.models.factory import build_adapter
+    llm = build_adapter(None, grader_settings, mode=mode)
+    return llm, chosen
 
 DIMENSIONS = ("correctness", "structure", "citations", "completeness")
 ACCEPT_MIN = 4          # 每维 ≥4 且无伪造/无未解析引用才算 accept
@@ -220,6 +236,8 @@ def main() -> None:
     parser.add_argument("--max-cost", type=float, default=None,
                         help="真实模式单次评分账本费用阈值（建议 0.02~0.05）")
     parser.add_argument("--task", default=None, help="只评分指定案例 id")
+    parser.add_argument("--model", default=None,
+                        help="评测者模型名（默认 GRADER_MODEL_NAME，再默认与主模型相同）")
     args = parser.parse_args()
     if args.mode == "real" and (args.max_cost is None or args.max_cost < 0):
         parser.error("真实评分必须给 --max-cost")
@@ -230,9 +248,9 @@ def main() -> None:
     workspace_root = report_path.parent / "workspace"
     out_dir = Path(args.out) if args.out else report_path.parent
     out_dir.mkdir(parents=True, exist_ok=True)
-    from src.harness.models.factory import build_adapter
-    from config.settings import Settings
-    llm = build_adapter(None, Settings(), mode=args.mode)
+    from eval.grader import build_grader_llm
+    llm, used_model = build_grader_llm(args.mode, model=args.model)
+    print("grader_model", used_model)
     grades = []
     for record in report.get("records", []):
         if args.task and record["id"] != args.task:

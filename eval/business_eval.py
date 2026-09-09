@@ -125,7 +125,8 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                       task_filter: str | None = None, max_cost: float | None = None,
                       out_dir: Path | None = None,
                       settings=None, profile_name: str | None = None,
-                      grader_llm=None) -> dict:
+                      grader_llm=None, grade: bool = False,
+                      grader_model: str | None = None) -> dict:
     if mode not in ("mock", "real"):
         raise ValueError("mode 必须为 mock 或 real")
     if repeats < 1:
@@ -151,6 +152,14 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
     from src.application.research import ResearchApplication
     from src.harness.models import factory
     from src.harness.tools.registry import ToolRegistry
+
+    # 专职评测 Agent 装配：显式 llm > grade/grader_model 自动构造（GRADER_MODEL_NAME > 主模型）
+    active_grader = grader_llm
+    grader_used_model = getattr(grader_llm, "model_name", None) if grader_llm else None
+    if active_grader is None and (grade or grader_model):
+        from eval.grader import build_grader_llm
+        active_grader, grader_used_model = build_grader_llm(mode, settings=settings,
+                                                            model=grader_model)
 
     ready, config_reason = (True, "") if mode == "mock" else \
         real_config_ready(settings=settings, profile_name=profile_name)
@@ -206,7 +215,7 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                 pipeline = outcome.as_dict() if hasattr(outcome, "as_dict") else {}
                 checks = _machine_checks(task, outcome.final_text or "", evidence)
                 grader_record = None
-                if grader_llm is not None:
+                if active_grader is not None:
                     # 专职评测 Agent：独立模型按评分表打分；失败不影响链结果
                     try:
                         from eval.grader import GraderError, grade_report
@@ -215,8 +224,8 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                             source_texts=_case_source_texts(dataset, task["source_ids"]),
                             final_report=outcome.final_text or "",
                             evidence=evidence, machine_checks=checks,
-                            llm=grader_llm, workspace_root=root,
-                            mode=getattr(grader_llm, "run_mode", mode) or mode,
+                            llm=active_grader, workspace_root=root,
+                            mode=getattr(active_grader, "run_mode", mode) or mode,
                             writer_model=getattr(llm, "model_name", "?"))
                     except GraderError as e:
                         grader_record = {"grader": "agent", "human_confirmed": False,
@@ -299,6 +308,8 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
             "grader_accept": sum(1 for g in grades
                                  if g["computed_verdict"] == "accept"),
             "dimension_means": dimension_means(grades),
+            "writer_model": getattr(llm, "model_name", None) if llm is not None else None,
+            "grader_model": grader_used_model,
             "human_confirmed": False,
             "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"}
     report = {
@@ -412,6 +423,10 @@ def main() -> None:
     parser.add_argument("--task", default=None)
     parser.add_argument("--max-cost", type=float, help="真实模式批次美元估算停止阈值（必填）")
     parser.add_argument("--out", default=str(DEFAULT_OUT))
+    parser.add_argument("--grade", action="store_true",
+                        help="每个执行过的尝试用专职评测 Agent 自动打分（初步，需人工确认）")
+    parser.add_argument("--grader-model", default=None,
+                        help="评测者模型名（默认 GRADER_MODEL_NAME，再默认与主模型相同）")
     args = parser.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -419,7 +434,8 @@ def main() -> None:
         report = run_business_eval(workspace_root=out / "workspace", mode=args.mode,
                                    repeats=args.repeats, fault_rounds=args.fault_rounds,
                                    task_filter=args.task, max_cost=args.max_cost,
-                                   out_dir=out)
+                                   out_dir=out, grade=args.grade,
+                                   grader_model=args.grader_model)
     except ValueError as e:
         parser.error(str(e))
     (out / "business_report.json").write_text(

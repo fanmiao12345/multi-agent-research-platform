@@ -56,6 +56,8 @@ class Settings:
     search_api_key: str = field(default_factory=lambda: _env("SEARCH_API_KEY", ""), repr=False)
     search_base_url: str = field(default_factory=lambda: _env("SEARCH_BASE_URL", ""), repr=False)
     search_max_results: int = field(default_factory=lambda: _number("SEARCH_MAX_RESULTS", "5", int))
+    # 专职评测 Agent 的独立模型（S6-05）：留空则与被评任务同模型（会标注局限）
+    grader_model_name: str = field(default_factory=lambda: _env("GRADER_MODEL_NAME", ""))
 
     @property
     def is_mock(self) -> bool:
