@@ -1,5 +1,5 @@
 # 技术报告（TECH REPORT）
-- 生成：2026-09-09T13:06:37
+- 生成：2026-09-09T13:29:56
 
 ## 里程碑验收映射
 | 里程碑 | 交付 | 落点 |
@@ -19,7 +19,7 @@
 | M12 | 最终实验与文档 | 本报告 + README/architecture |
 
 ## 质量证据
-- 自动化测试：pytest 389 passed（组件/轨迹/端到端/HTTP/子进程/故障实验）
+- 自动化测试：pytest 393 passed（组件/轨迹/端到端/HTTP/子进程/故障实验）
 - 运行留痕：每次 run 有 run.json/trace.jsonl/usage.json；benchmark 有 json+md 报告
 - 设计原则遵守：D-003 Mock First（全部评测离线可复现）；D-004 Runtime 与 Policy 分离；D-006 本地 Trace 优先
 

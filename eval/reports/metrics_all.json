@@ -3,7 +3,7 @@
     "meta": {
       "name": "benchmark_v1",
       "dataset_tasks": 13,
-      "generated_at": "2026-09-09T13:06:37",
+      "generated_at": "2026-09-09T13:29:55",
       "brain": "mock-rule-v1",
       "mode": "mock",
       "provider": "mock",
@@ -59,8 +59,8 @@
         "id": "b01",
         "category": "single_tool",
         "task": "帮我计算 27*43 等于多少",
-        "run_id": "20260909_130636_2124aa",
-        "root_job_id": "job_05b1faa24df8458f953efc88e4f6a47e",
+        "run_id": "20260909_132955_c35d75",
+        "root_job_id": "job_ebe49453fcd549579a558d953525abe0",
         "outcome": {
           "final_text": "工具已返回内容：\n- 27*43 = 1161",
           "termination_reason": "success",
@@ -99,10 +99,10 @@
         "id": "b02",
         "category": "single_tool",
         "task": "现在几点了？",
-        "run_id": "20260909_130636_49dc45",
-        "root_job_id": "job_082433bf57be4eed98f67cc636212073",
+        "run_id": "20260909_132955_2247a0",
+        "root_job_id": "job_145c5bd167c24c96819b21147f28a632",
         "outcome": {
-          "final_text": "工具已返回内容：\n- 2026-09-09 13:06:37（Wednesday）",
+          "final_text": "工具已返回内容：\n- 2026-09-09 13:29:55（Wednesday）",
           "termination_reason": "success",
           "iterations": 2,
           "messages": 4
@@ -153,8 +153,8 @@
         "id": "b05",
         "category": "simple_qa",
         "task": "你好，你是谁？",
-        "run_id": "20260909_130637_70cabe",
-        "root_job_id": "job_f507599f91c74da59e71501974831248",
+        "run_id": "20260909_132955_b5ce2f",
+        "root_job_id": "job_f81c608eb3244507949e7dcbf119ef05",
         "outcome": {
           "final_text": "（mock）收到：你好 你是谁 ",
           "termination_reason": "success",
@@ -191,8 +191,8 @@
         "id": "b06",
         "category": "long_text",
         "task": "请把下面这段长文本总结成三点（这是一段很长很长的输入，内容需要被逐词扫描就会误判，因此考验长输入保护逻辑的健壮性。下面继续填充占位字符使其总长度必然超过两百个字符门槛：加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长加长）",
-        "run_id": "20260909_130637_267f05",
-        "root_job_id": "job_0f56b0faea5e4720b6383f8771425216",
+        "run_id": "20260909_132955_338a63",
+        "root_job_id": "job_5ada229e2cc3456a96fc2956dd2aec74",
         "outcome": {
           "final_text": "（模拟大脑）这是一段较长的输入，离线模式不做逐词路由。配置 API Key 后由真实模型处理。",
           "termination_reason": "success",
@@ -257,8 +257,8 @@
         "id": "b11",
         "category": "tool_failure",
         "task": "帮我计算这个式子的值：2 +（括号不匹配",
-        "run_id": "20260909_130637_8c6340",
-        "root_job_id": "job_6ec797220d354c56bb768f13aae3870b",
+        "run_id": "20260909_132955_ed9620",
+        "root_job_id": "job_c1abc733fd6846a5ae15d20d426b5553",
         "outcome": {
           "final_text": "工具已返回内容：\n- [tool-error] 工具 calculator 执行失败（第 1 次尝试失败，错误分类：validation）：无法计算「2 +」：invalid syntax (<unknown>, line 1)",
           "termination_reason": "success",
@@ -311,7 +311,7 @@
     ]
   },
   "orchestration": {
-    "generated_at": "2026-09-09T13:06:37",
+    "generated_at": "2026-09-09T13:29:56",
     "by_strategy": {
       "single": {
         "runs": 2,
@@ -563,5 +563,5 @@
       ]
     }
   ],
-  "generated_at": "2026-09-09T13:06:37"
+  "generated_at": "2026-09-09T13:29:56"
 }
