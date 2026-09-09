@@ -15,12 +15,25 @@ from src.harness.structured import extract_json
 
 def run_outline_stage(llm, goal: str, material_block: str,
                       evidence_ids: set[str]) -> tuple[list[OutlineSection], str, list[dict]]:
-    reply = model_call(llm, build_outline_messages(goal, material_block),
-                       purpose="outline", role="outline")
-    data = extract_json(reply.content or "")
+    data = None
+    raw = ""
+    for attempt in (1, 2):
+        messages = build_outline_messages(goal, material_block)
+        if attempt == 2:
+            messages = messages[:1] + [{
+                "role": "system",
+                "content": "上一次输出无法解析为 JSON。这次只输出一个紧凑、完整的 JSON"
+                           "对象（sections 宁少勿多，最多8节），不要围栏与解释。"}] \
+                + messages[1:]
+        reply = model_call(llm, messages, purpose="outline", role="outline")
+        raw = reply.content or ""
+        data = extract_json(raw)
+        if data is not None:
+            break
     issues: list[dict] = []
     if not data:
-        raise StageError("outline", "提纲输出不是合法 JSON 对象")
+        raise StageError("outline", "提纲输出不是合法 JSON 对象"
+                         + (f"；原始回复片段：{raw[:200]}" if raw else ""))
     title = (data.get("title") or "").strip() or "未命名报告"
     sections: list[OutlineSection] = []
     for raw in data.get("sections") or []:

@@ -19,8 +19,8 @@ import time
 from pathlib import Path
 
 from src.application.pipeline.draft import run_draft_stage
-from src.application.pipeline.evidence import (EvidenceStore, extract_source_evidence,
-                                               make_id)
+from src.application.pipeline.evidence import (EvidenceStore, collect_citations,
+                                               extract_source_evidence, make_id)
 from src.application.pipeline.material import (fill_duplicates, render_material,
                                                run_material_stage)
 from src.application.pipeline.model import (OutlineSection, PipelineResult,
@@ -314,7 +314,7 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                          message=f"第 {round_index + 1} 轮修订后重审")
         errors = [i for i in final_issues if i.severity == "error"]
         result.final_text = report
-        citations = re.findall(r"\[(E-\d{3})\]", report)
+        citations = collect_citations(report)
         result.total_citations = len(citations)
         result.unresolved_citations = len(
             {c for c in citations if c not in evidence_store.ids()})

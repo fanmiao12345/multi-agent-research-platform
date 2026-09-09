@@ -17,6 +17,11 @@ _ESTIMATED_PRICES: dict[str, tuple[float, float]] = {
     "mock-rule-v1": (0.0, 0.0),
     "deepseek-chat": (0.27, 1.10),
     "deepseek-reasoner": (0.55, 2.19),
+    # 2026-09-09：官方多次下调 Flash 系列价格，此处按最保守档估算
+    # （宁高勿低，避免低估真实花费；正式价格请以官方页为准）
+    "deepseek-v4-flash": (0.27, 1.10),
+    "deepseek-v4-flash-vision-exp": (0.27, 1.10),
+    "deepseek-v4-pro": (0.55, 2.19),
 }
 
 

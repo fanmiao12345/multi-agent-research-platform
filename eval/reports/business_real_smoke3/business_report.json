@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.03,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "16088385c7c7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-09T14:04:28",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 141.97,
+  "results": [
+    {
+      "id": "o01",
+      "category": "organize",
+      "attempt": 1,
+      "task": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "budget_exceeded",
+      "elapsed_seconds": 139.647,
+      "estimated_cost_usd": 0.018246230000000002,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_b873a24bfae54b2baceee4bb0e1cf7d2",
+      "message": "根预算已停止（根任务已停止：output_token_limit）：保留已保存的阶段产物，不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 0,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": false,
+      "final_text_head": ""
+    }
+  ],
+  "records": [
+    {
+      "id": "o01",
+      "category": "organize",
+      "attempt": 1,
+      "task": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "budget_exceeded",
+      "elapsed_seconds": 139.647,
+      "estimated_cost_usd": 0.018246230000000002,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_b873a24bfae54b2baceee4bb0e1cf7d2",
+      "message": "根预算已停止（根任务已停止：output_token_limit）：保留已保存的阶段产物，不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 0,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": false,
+      "final_text_head": ""
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\business_real_smoke3\\samples"
+}

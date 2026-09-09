@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_00373ba6386a49a6aaa23641313d26b6",
+  "status": "cancelled",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": "cost_limit",
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "budget_exceeded",
+    "final_artifact_id": "report.v1",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "提取 15 条可定位证据，跳过 4 条问题摘录",
+        "finished_at": "2026-09-09T14:07:00"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，3 个缺口",
+        "finished_at": "2026-09-09T14:08:39"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "10 个章节",
+        "finished_at": "2026-09-09T14:09:20"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1046字）",
+        "finished_at": "2026-09-09T14:09:28"
+      },
+      {
+        "stage": "current",
+        "status": "budget_stopped",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "根任务已停止：cost_limit",
+        "finished_at": "2026-09-09T14:10:13"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "message": "根预算已停止（根任务已停止：cost_limit）：保留已保存的阶段产物，不视为验收成功"
+  }
+}

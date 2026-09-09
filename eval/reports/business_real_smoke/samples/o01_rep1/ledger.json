@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_8c367f711a1c4f1cbed88f3c62de1e20",
+  "status": "failed",
+  "stop_reason": null,
+  "mode": "real",
+  "run_ids": [],
+  "call_count": 2,
+  "prompt_tokens": 763,
+  "output_tokens": 7865,
+  "known_estimated_cost_usd": 0.00885751,
+  "estimated_cost_usd": 0.00885751,
+  "unknown_usage_calls": 0,
+  "price_version": "legacy-estimates-b2-v1-unverified",
+  "elapsed_seconds": 65.3984,
+  "limits": {
+    "max_calls": 60,
+    "max_output_tokens": 16384,
+    "max_seconds": 600,
+    "max_cost": 0.02
+  },
+  "calls": [
+    {
+      "call_id": "1a44c857de4f4868bb5728443d3934ad",
+      "root_job_id": "job_8c367f711a1c4f1cbed88f3c62de1e20",
+      "run_id": null,
+      "role": "evidence",
+      "purpose": "evidence_extract",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "mode": "real",
+      "status": "completed",
+      "usage_complete": true,
+      "estimated_cost_usd": 0.004245260000000001,
+      "prompt_tokens": 368,
+      "completion_tokens": 3769,
+      "elapsed_seconds": 32.8563
+    },
+    {
+      "call_id": "2681e13045884263b2d741722333b3d2",
+      "root_job_id": "job_8c367f711a1c4f1cbed88f3c62de1e20",
+      "run_id": null,
+      "role": "evidence",
+      "purpose": "evidence_extract",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "mode": "real",
+      "status": "completed",
+      "usage_complete": true,
+      "estimated_cost_usd": 0.00461225,
+      "prompt_tokens": 395,
+      "completion_tokens": 4096,
+      "elapsed_seconds": 32.4647
+    }
+  ]
+}

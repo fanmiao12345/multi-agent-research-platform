@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_b873a24bfae54b2baceee4bb0e1cf7d2",
+  "goal": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+  "started_at": "2026-09-09T14:02:08",
+  "result": {
+    "draft_level": "draft",
+    "termination_reason": "budget_exceeded",
+    "final_artifact_id": "",
+    "stages": [
+      {
+        "stage": "current",
+        "status": "budget_stopped",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "根任务已停止：output_token_limit",
+        "finished_at": "2026-09-09T14:04:28"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "message": "根预算已停止（根任务已停止：output_token_limit）：保留已保存的阶段产物，不视为验收成功"
+  }
+}

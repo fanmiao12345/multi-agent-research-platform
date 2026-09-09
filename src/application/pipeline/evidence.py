@@ -26,7 +26,8 @@ MAX_QUOTE = 400
 SOURCE_TEXT_BUDGET = 40_000   # 单来源喂给模型的字符预算（S3-07：按窗口控制长度）
 
 _ID_RE = re.compile(r"^E-\d{3}$")
-_CITE_RE = re.compile(r"\[(E-\d{3})\]")
+# 兼容 [E-001] 及全角/括号变体（【E-001】、（E-001）…）→ 统一按 E-001 计
+_CITE_RE = re.compile(r"[\[【（(]\s*(E-\d{3})\s*[\]】）)]")
 
 
 class EvidenceStore:
@@ -83,14 +84,27 @@ def build_evidence_block_for_source(source: dict) -> str:
 
 
 def extract_source_evidence(llm, goal: str, source: dict) -> tuple[list[EvidenceItem], list[dict]]:
-    """对单个来源调用证据提取器并做程序校验；返回 (通过项, issue 列表)。"""
-    messages = build_evidence_messages(goal, build_evidence_block_for_source(source))
-    reply = model_call(llm, messages, purpose="evidence_extract", role="evidence")
-    data = extract_json(reply.content or "")
+    """对单个来源调用证据提取器并做程序校验；返回 (通过项, issue 列表)。
+
+    解析失败（含截断）会自动重试一次并要求只输出 JSON，仍失败抛 StageError。
+    """
     issues: list[dict] = []
-    items: list[EvidenceItem] = []
+    data = None
+    for attempt in (1, 2):
+        messages = build_evidence_messages(goal, build_evidence_block_for_source(source))
+        if attempt == 2:
+            messages = messages[:1] + [{
+                "role": "system",
+                "content": "上一次输出无法解析为 JSON（可能被截断）。这次只输出一个完整、"
+                           "合法的 JSON 对象，items 数量宁少勿多（最多6条），不要任何解释。"}] \
+                + messages[1:]
+        reply = model_call(llm, messages, purpose="evidence_extract", role="evidence")
+        data = extract_json(reply.content or "")
+        if data and isinstance(data.get("items"), list):
+            break
     if not data or not isinstance(data.get("items"), list):
         raise StageError("evidence", "证据提取输出不是合法 JSON 对象（items 列表缺失）")
+    items: list[EvidenceItem] = []
     full_text = source.get("text") or ""
     segments = split_segments(full_text)
     for raw in data["items"]:

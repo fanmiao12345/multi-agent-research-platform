@@ -60,20 +60,33 @@ def program_checks(report: str, evidence_ids: set[str],
 
 def model_review(llm, goal: str, report: str, evidence_index: str,
                  sections: list[OutlineSection]) -> tuple[list[ReviewIssue], str]:
-    """第二层。返回 (issues, verdict)。"""
+    """第二层。返回 (issues, verdict)；解析失败自动重试一次并要求只输出 JSON。"""
     requirements = format_outline_requirements(sections)
-    reply = model_call(llm, build_review_messages(goal, report, evidence_index, requirements),
-                       purpose="review", role="reviewer")
-    data = extract_json(reply.content or "")
     issues: list[ReviewIssue] = []
+    data = None
+    raw = ""
+    for attempt in (1, 2):
+        messages = build_review_messages(goal, report, evidence_index, requirements)
+        if attempt == 2:
+            messages = messages[:1] + [{
+                "role": "system",
+                "content": "上一次输出无法解析为 JSON。这次只输出一个紧凑、完整、合法的"
+                           "JSON 对象：issues 宁少勿多（最多8条），不要围栏与解释。"}] \
+                + messages[1:]
+        reply = model_call(llm, messages, purpose="review", role="reviewer")
+        raw = reply.content or ""
+        data = extract_json(raw)
+        if data is not None:
+            break
     if not data:
-        raise StageError("review", "审校输出不是合法 JSON 对象")
-    for raw in data.get("issues") or []:
-        if not isinstance(raw, dict):
+        raise StageError("review", "审校输出不是合法 JSON 对象"
+                         + (f"；原始回复片段：{raw[:200]}" if raw else ""))
+    for raw_issue in data.get("issues") or []:
+        if not isinstance(raw_issue, dict):
             continue
-        severity = ReviewIssue.validate_severity(raw.get("severity"))
-        message = (raw.get("message") or "").strip()
-        code = (raw.get("code") or "style").strip()
+        severity = ReviewIssue.validate_severity(raw_issue.get("severity"))
+        message = (raw_issue.get("message") or "").strip()
+        code = (raw_issue.get("code") or "style").strip()
         if message:
             issues.append(ReviewIssue(severity, code, message))
     verdict = str(data.get("verdict") or "needs_revision").strip().lower()

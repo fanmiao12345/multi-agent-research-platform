@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.08,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "16088385c7c7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-09T14:27:26",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 531.56,
+  "results": [
+    {
+      "id": "o01",
+      "category": "organize",
+      "attempt": 1,
+      "task": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 528.672,
+      "estimated_cost_usd": 0.07254395000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_7841f17db05e4e4ba19b4aae93090e2e",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 6,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 1,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 资料目录\n\n## 标题\n\n材料以首句“本材料为合成验收数据”指代自身〔事实〕【[E-001]】。目录记录未提供单独标题字段，故未著录正式标题〔事实〕；该资料是否存在正式标题或文件名未知〔未知〕。\n\n## 日期\n\n观察期记录为2026年7月1日至7月31日〔事实〕【[E-002]】；该记录未提供资料制作或发布日期，也未提供日期类型说明〔事实〕。观察期是否等同资料制作或发布日期未知〔未知〕。\n\n#"
+    }
+  ],
+  "records": [
+    {
+      "id": "o01",
+      "category": "organize",
+      "attempt": 1,
+      "task": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 528.672,
+      "estimated_cost_usd": 0.07254395000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_7841f17db05e4e4ba19b4aae93090e2e",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+      "machine_checks": {
+        "citation_tokens": 6,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 1,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 资料目录\n\n## 标题\n\n材料以首句“本材料为合成验收数据”指代自身〔事实〕【[E-001]】。目录记录未提供单独标题字段，故未著录正式标题〔事实〕；该资料是否存在正式标题或文件名未知〔未知〕。\n\n## 日期\n\n观察期记录为2026年7月1日至7月31日〔事实〕【[E-002]】；该记录未提供资料制作或发布日期，也未提供日期类型说明〔事实〕。观察期是否等同资料制作或发布日期未知〔未知〕。\n\n#"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\business_real_o01b\\samples"
+}

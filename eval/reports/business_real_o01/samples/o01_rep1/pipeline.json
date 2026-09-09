@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_e993bc1923b54bf288419bb83ecbe7ea",
+  "goal": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+  "started_at": "2026-09-09T14:10:44",
+  "result": {
+    "draft_level": "failed",
+    "termination_reason": "error",
+    "final_artifact_id": "report.v1",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 18 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-09T14:12:56"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，3 个缺口",
+        "finished_at": "2026-09-09T14:13:37"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个章节",
+        "finished_at": "2026-09-09T14:14:42"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（483字）",
+        "finished_at": "2026-09-09T14:14:46"
+      },
+      {
+        "stage": "review",
+        "status": "failed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "审校输出不是合法 JSON 对象",
+        "finished_at": "2026-09-09T14:17:09"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "message": "阶段 review 失败：审校输出不是合法 JSON 对象"
+  }
+}

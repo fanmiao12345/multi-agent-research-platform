@@ -22,12 +22,26 @@ def run_material_stage(llm, goal: str, evidence_items: list[dict]) -> tuple[Mate
     from src.application.pipeline.prompts import format_evidence_block
     known = {item["evidence_id"] for item in evidence_items}
     block = format_evidence_block(evidence_items)
-    reply = model_call(llm, build_material_messages(goal, block),
-                       purpose="material_pack", role="material")
-    data = extract_json(reply.content or "")
+    data = None
+    raw = ""
+    for attempt in (1, 2):
+        messages = build_material_messages(goal, block)
+        if attempt == 2:
+            messages = messages[:1] + [{
+                "role": "system",
+                "content": "上一次输出无法解析为 JSON。这次只输出一个紧凑、完整的 JSON"
+                           "对象（topics≤6、每主题 points≤6），不要围栏与解释。"}] \
+                + messages[1:]
+        reply = model_call(llm, messages,
+                           purpose="material_pack", role="material")
+        raw = reply.content or ""
+        data = extract_json(raw)
+        if data is not None:
+            break
     issues: list[dict] = []
     if not data:
-        raise StageError("material", "素材包输出不是合法 JSON 对象")
+        raise StageError("material", "素材包输出不是合法 JSON 对象"
+                         + (f"；原始回复片段：{raw[:200]}" if raw else ""))
     topics = data.get("topics") if isinstance(data.get("topics"), list) else []
     pack = MaterialPack()
     for topic in topics:

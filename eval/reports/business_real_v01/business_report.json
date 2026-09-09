@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.08,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "16088385c7c7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-09T14:42:12",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 476.76,
+  "results": [
+    {
+      "id": "v01",
+      "category": "revision",
+      "attempt": 1,
+      "task": "将原稿压缩到180个汉字以内，保留规模、满意率分母、无对照组限制和来源。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 474.353,
+      "estimated_cost_usd": 0.06989012,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_73501c99743c4ed8a22a10f5444959b0",
+      "message": "交付待完善草稿：仍有 7 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 1,
+        "section_hits": 0,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 星桥团队试点结果摘要\n\n## 一、样本规模\n试点40人【E-002】〔事实〕；完成问卷32人【E-007】〔事实〕。\n\n## 二、满意率\n24名答卷者满意【E-008】〔事实〕；满意率75%，分母为32人【E-008】〔事实〕。\n\n## 三、研究限制\n未设对照组【E-005】〔事实〕；仅前后对比，未控制难度【E-009】〔事实〕。\n\n## 四、数据来源\n合成验收数据【E-001】【E-006】"
+    }
+  ],
+  "records": [
+    {
+      "id": "v01",
+      "category": "revision",
+      "attempt": 1,
+      "task": "将原稿压缩到180个汉字以内，保留规模、满意率分母、无对照组限制和来源。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 474.353,
+      "estimated_cost_usd": 0.06989012,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_73501c99743c4ed8a22a10f5444959b0",
+      "message": "交付待完善草稿：仍有 7 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 1,
+        "section_hits": 0,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 星桥团队试点结果摘要\n\n## 一、样本规模\n试点40人【E-002】〔事实〕；完成问卷32人【E-007】〔事实〕。\n\n## 二、满意率\n24名答卷者满意【E-008】〔事实〕；满意率75%，分母为32人【E-008】〔事实〕。\n\n## 三、研究限制\n未设对照组【E-005】〔事实〕；仅前后对比，未控制难度【E-009】〔事实〕。\n\n## 四、数据来源\n合成验收数据【E-001】【E-006】"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\business_real_v01\\samples"
+}

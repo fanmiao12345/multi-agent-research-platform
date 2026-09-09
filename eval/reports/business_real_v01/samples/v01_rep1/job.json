@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_73501c99743c4ed8a22a10f5444959b0",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 星桥团队试点结果摘要\n\n## 一、样本规模\n试点40人【E-002】〔事实〕；完成问卷32人【E-007】〔事实〕。\n\n## 二、满意率\n24名答卷者满意【E-008】〔事实〕；满意率75%，分母为32人【E-008】〔事实〕。\n\n## 三、研究限制\n未设对照组【E-005】〔事实〕；仅前后对比，未控制难度【E-009】〔事实〕。\n\n## 四、数据来源\n合成验收数据【E-001】【E-006】〔事实〕；来源ID：src_0c1f813d2d【E-001】、src_e1b1723728【E-006】〔事实〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 2,
+    "usable": 2,
+    "statuses": {
+      "ok": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 9 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-09T14:37:00"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，0 个缺口",
+        "finished_at": "2026-09-09T14:37:16"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个章节",
+        "finished_at": "2026-09-09T14:37:28"
+      },
+      {
+        "stage": "draft",
+        "status": "completed_revision",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "基于原稿改稿（256字）",
+        "finished_at": "2026-09-09T14:38:21"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 8,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-09T14:39:21"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-09T14:41:10"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 7,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 7 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-09T14:42:12"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "message": "交付待完善草稿：仍有 7 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "name": "benchmark_v1",
+    "dataset_tasks": 13,
+    "generated_at": "2026-09-09T13:57:33",
+    "brain": "deepseek-v4-flash",
+    "mode": "real",
+    "provider": "deepseek",
+    "selected_ids": [
+      "b01"
+    ],
+    "max_cost_usd": 0.02,
+    "estimated_cost_usd": 0.0003373,
+    "scope": "runtime_smoke_not_business_acceptance"
+  },
+  "totals": {
+    "executed": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0,
+    "success_rate": 1.0,
+    "tool_selection_accuracy": 1.0,
+    "tool_argument_accuracy": 1.0,
+    "avg_llm_calls": 2.0
+  },
+  "by_category": {
+    "single_tool": {
+      "executed": 1,
+      "passed": 1
+    }
+  },
+  "results": [
+    {
+      "id": "b01",
+      "category": "single_tool",
+      "task": "帮我计算 27*43 等于多少",
+      "run_id": "20260909_135728_a9ea17",
+      "root_job_id": "job_7a4866b51ac24b2887fa71ad8f29c2e2",
+      "outcome": {
+        "final_text": "27 × 43 = **1161**",
+        "termination_reason": "success",
+        "iterations": 2,
+        "messages": 4
+      },
+      "tool": {
+        "used_tools": [
+          "calculator"
+        ],
+        "tool_call_count": 1,
+        "selection_ok": true,
+        "argument_ok": true,
+        "arg_errors": []
+      },
+      "trajectory": {
+        "llm_calls": 2,
+        "duplicate_call_peak": 1,
+        "duplicate_flag": false,
+        "loop_flag": false,
+        "tool_error_count": 0,
+        "error_recovery": false
+      },
+      "e2e": {
+        "success": true,
+        "checks": {
+          "tool_usage": true,
+          "final_text": true
+        },
+        "text_detail": "",
+        "final_len": 18
+      },
+      "status": "passed"
+    }
+  ]
+}

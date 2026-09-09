@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_8c367f711a1c4f1cbed88f3c62de1e20",
+  "status": "failed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "failed",
+    "termination_reason": "error",
+    "final_artifact_id": "",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "failed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "证据提取输出不是合法 JSON 对象（items 列表缺失）",
+        "finished_at": "2026-09-09T13:58:33"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "message": "阶段 evidence 失败：证据提取输出不是合法 JSON 对象（items 列表缺失）"
+  }
+}

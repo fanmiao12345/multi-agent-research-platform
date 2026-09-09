@@ -184,8 +184,8 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                         llm = factory.build_adapter(profile_name, settings, mode="real")
                 request = TaskRequest(
                     task=task["request"], mode=mode, flow="research",
-                    max_iterations=8, max_calls=60, max_output_tokens=16384,
-                    max_seconds=600,
+                    max_iterations=8, max_calls=60, max_output_tokens=200000,
+                    max_seconds=1500,
                     max_cost=max_cost if mode == "real" else None,
                     texts=tuple(text for _, text in sources),
                     base_draft=task.get("initial_draft") or "",

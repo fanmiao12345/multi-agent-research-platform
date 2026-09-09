@@ -26,11 +26,25 @@ def run_draft_stage(llm, goal: str, sections, title: str,
                                     format_material_block(material_pack),
                                     previous_report=previous_report,
                                     revision_notes=issues_block)
-    reply = model_call(llm, messages, purpose="draft", role="writer")
-    data = extract_json(reply.content or "")
+    data = None
+    raw = ""
+    for attempt in (1, 2):
+        if attempt == 2:
+            messages = messages[:1] + [{
+                "role": "system",
+                "content": "上一次输出无法解析或缺少 report_markdown。这次只输出一个紧凑、"
+                           "完整的 JSON：报告正文尽量 ≤1500 字，只包含提纲要求的章节，"
+                           "不要围栏与解释。"}] + messages[1:]
+        reply = model_call(llm, messages, purpose="draft", role="writer")
+        raw = reply.content or ""
+        data = extract_json(raw)
+        if data and isinstance(data.get("report_markdown"), str) \
+                and data["report_markdown"].strip():
+            break
     if not data or not isinstance(data.get("report_markdown"), str) \
             or not data["report_markdown"].strip():
-        raise StageError("draft", "初稿输出缺少 report_markdown 字段或为空")
+        raise StageError("draft", "初稿输出缺少 report_markdown 字段或为空"
+                         + (f"；原始回复片段：{raw[:200]}" if raw else ""))
     report = data["report_markdown"].strip()
     if len(report) < 50:
         raise StageError("draft", "初稿过短，疑似未按提纲写作")
