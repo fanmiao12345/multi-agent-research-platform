@@ -1,11 +1,11 @@
-# 执行状态总账（EXECUTION STATUS）
+﻿# 执行状态总账（EXECUTION STATUS）
 
 > 本文件是 `DEV_PLAN_LangGraph_Harness_From_Scratch.md` 的落地对照表：
 > 每个里程碑/步骤组 → 交付物（代码/测试）→ 证据 → 已知缺口。
 > 更新规则：每完成一步优化后刷新测试计数与"最近更新"。
 
 - 最近更新：2026-09-09
-- 最近修复验证：**387 passed**（S6，44.95秒）：运维与评测离线测试9 等新增；S5基线378、S4基线372、B5基线347、B4基线330、B3基线255、B2基线199、B1基线174。
+- 最近修复验证：**389 passed**（改稿链，51.39秒）：运维与评测离线测试9 等新增；S5基线378、S4基线372、B5基线347、B4基线330、B3基线255、B2基线199、B1基线174。
 - 验证命令：`.venv\Scripts\python -m pytest`（期望全绿）
 - 评测命令：`python -m eval.benchmark` / `eval.benchmark_orchestration` /
   `eval.benchmark_model` / `eval.final_report` / `eval.business_eval --mode real --max-cost X`
@@ -179,3 +179,4 @@ Web 待审批请求只在当前服务进程中有效。真实模型费用和质�
 
 S7（按证据优化：有界并行/检索优化/模型路由/可选格式，不阻塞首版）与 S0-06 Git 基线、
 S2搜索服务商、追问改稿、真实评测执行与7天试用——均需真实 Key/预算/时间，按用户安排推进。
+

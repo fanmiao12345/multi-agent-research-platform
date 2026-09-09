@@ -26,6 +26,9 @@ class TaskRequest:
     # 执行流程（B5）：agent=通用 Agent 循环（默认）；research=资料整理/研究写作链
     # （证据→素材→提纲→初稿→审校→有限修订，需要可用资料）。
     flow: str = "agent"
+    # 改稿模式（S5-04 单次改稿）：携带"原稿文本"，research 链改为在 base_draft 上修订：
+    # 素材/提纲仍基于资料生成，初稿以原稿为上一稿并按任务要求改写；旧稿不覆盖。
+    base_draft: str = ""
 
     def __post_init__(self):
         if not isinstance(self.task, str) or not self.task.strip():
@@ -68,6 +71,8 @@ class TaskRequest:
             raise ValueError("allow_network必须为布尔值")
         if self.flow not in ("agent", "research"):
             raise ValueError("flow必须为agent或research")
+        if not isinstance(self.base_draft, str):
+            raise ValueError("base_draft必须为文本")
 
     @classmethod
     def from_payload(cls, payload):
@@ -83,7 +88,8 @@ class TaskRequest:
         return cls(**values)
 
     def snapshot(self) -> dict:
-        """落盘请求快照：不含粘贴正文（全文在 sources/ 下），其余字段保留。"""
+        """落盘请求快照：不含粘贴正文与 base_draft（内容在 sources/ 与任务产物），其余字段保留。"""
         snapshot = asdict(self)
         snapshot.pop("texts", None)
+        snapshot.pop("base_draft", None)
         return snapshot

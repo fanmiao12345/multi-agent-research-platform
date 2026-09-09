@@ -63,15 +63,19 @@ def test_business_eval_mock_failure_is_recorded_not_passed(tmp_path):
     assert samples and (samples[0] / "job.json").exists()
 
 
-def test_business_eval_revision_skipped_explicitly(tmp_path):
+def test_business_eval_revision_executes_as_change(tmp_path):
     from eval.business_eval import run_business_eval
     from tests._s4_pipeline_brain import S4Brain
     report = run_business_eval(workspace_root=tmp_path / "ws", mode="mock",
                                llm=S4Brain(), repeats=1, fault_rounds=1,
                                task_filter="v01", out_dir=tmp_path / "out")
-    assert report["totals"]["attempts_total"] == 0
-    assert report["totals"]["revision_skipped"] == 1
-    assert report["results"][0]["reason"] == "revision_flow_not_ready"
+    # 改稿案例经 base_draft 链执行（不再跳过）
+    assert report["totals"]["attempts_total"] == 1
+    assert report["totals"]["passed"] == 1
+    record = report["records"][0]
+    assert record["revision_of"] == "fixture-draft-v1"
+    assert record["changed"] is True
+    assert report["totals"]["revision_skipped"] == 0
 
 
 def test_fault_invalid_config_probe(tmp_path):

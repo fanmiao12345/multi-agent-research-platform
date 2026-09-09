@@ -78,8 +78,13 @@ def _latest_artifact_text(artifacts: ArtifactStore, kind: str) -> str | None:
 def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                           max_revision_rounds: int = DEFAULT_MAX_REVISION_ROUNDS,
                           on_progress=None, resume: bool = False,
-                          should_stop=None, stage_hook=None) -> PipelineResult:
+                          should_stop=None, stage_hook=None,
+                          initial_draft: str | None = None) -> PipelineResult:
     """执行整条链并返回结果；阶段快照写 pipeline.json。
+
+    initial_draft：改稿模式（S5-04 单次改稿）——以给定原稿为上一稿，
+    素材/提纲照常基于资料生成，写作者按任务要求改写；程序层额外检查
+    "必须产生实质变更"（原样返回视为 error，进修订轮）。
 
     stage_hook(stage, status, artifact_ids, message)：产物与检查点落盘后回调，
     供外部（SQLite job 行等）提交状态 —— 顺序保证"文件先、状态后"。
@@ -240,8 +245,9 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                          issues=outline_issues,
                          message=f"{len(sections)} 个章节")
 
-        # ---- 初稿 + 双层审校 + 有限修订（S3-09/10）------------------------
+        # ---- 初稿 + 双层审校 + 有限修订（S3-09/10；改稿见 S5-04）------------
         boundary("draft")
+        base = (initial_draft or "").strip()
         if resume and _load_cp(job_dir, "draft"):
             report = _load_cp(job_dir, "draft")["text"]
             resume_artifact = _latest_artifact(artifacts, "report")
@@ -251,11 +257,17 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
         else:
             progress("draft", "正在写作初稿")
             report = run_draft_stage(llm, goal, sections, title,
-                                     pack.as_dict())
+                                     pack.as_dict(),
+                                     previous_report=base or "",
+                                     issues_block=("请按任务要求修改这份原稿，"
+                                                   "保留可用引用并修正/删除不再受支持的表述。"
+                                                   if base else ""))
             artifact = artifacts.save("report", report,
                                       producer="pipeline-writer")
             write_json(_cp_path(job_dir, "draft"), {"text": report})
-            record_stage("draft", "completed", [artifact["artifact_id"]])
+            record_stage("draft", "completed" + ("_revision" if base else ""),
+                         [artifact["artifact_id"]],
+                         message=f"{'基于原稿改稿' if base else '新写初稿'}（{len(report)}字）")
             result.final_artifact_id = artifact["artifact_id"]
 
         verdict = "needs_revision"
@@ -263,7 +275,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
         for round_index in range(max_revision_rounds + 1):
             boundary("review")
             progress("review", f"双层审校 第 {round_index + 1} 轮")
-            program = program_checks(report, evidence_store.ids(), sections)
+            program = program_checks(report, evidence_store.ids(), sections,
+                                     base_draft=base or None)
             evidence_index = "\n".join(
                 f"- {item['evidence_id']} {item['fact']}"
                 f"（来源 {item['source_id']}）" for item in evidence_items)

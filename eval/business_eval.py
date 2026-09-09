@@ -159,12 +159,6 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
 
     selected = []
     for task in tasks:
-        if task["category"] == "revision":
-            results.append({"id": task["id"], "category": task["category"],
-                            "status": "skipped",
-                            "reason": "revision_flow_not_ready",
-                            "note": "改稿需要从 initial_draft 起步的会话式链（S5-04/S3 追问未接通）"})
-            continue
         if mode == "real" and not ready:
             for rep in range(repeats):
                 results.append({"id": task["id"], "category": task["category"],
@@ -194,6 +188,7 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                     max_seconds=600,
                     max_cost=max_cost if mode == "real" else None,
                     texts=tuple(text for _, text in sources),
+                    base_draft=task.get("initial_draft") or "",
                     system_extra="资料标题提示：" + "；".join(title for title, _ in sources))
                 app = ResearchApplication(request, settings=settings,
                                           workspace_root=root, llm=llm)
@@ -220,6 +215,9 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                     root_job_id=outcome.root_job_id,
                     message=(getattr(outcome, "message", "") or "")[:300],
                     machine_checks=checks,
+                    revision_of=task.get("revision_of"),
+                    changed=(outcome.final_text or "").strip()
+                    != (task.get("initial_draft") or "").strip(),
                     final_text_head=(outcome.final_text or "")[:200])
                 if mode == "real" and ledger.get("unknown_usage_calls"):
                     entry["note"] = "未知用量导致停止：结果不确定，不计通过"

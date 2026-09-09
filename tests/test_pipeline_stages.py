@@ -349,6 +349,44 @@ def _request_like():
     return TaskRequest("整理并写作", max_calls=1)
 
 
+def test_pipeline_revision_from_base_draft(tmp_path):
+    """S5-04 单次改稿：给定原稿 → 修订稿 accepted 且产生实质变更。"""
+    job_dir = tmp_path / "job"
+    store = _store_with(job_dir, TEXTS)
+    base = "试点40人[S:s01]；没有设置对照组，不能据此证明因果。"
+    result = run_research_pipeline(llm=PipelineBrain(), job_dir=job_dir,
+                                   store=SourceStore(job_dir),
+                                   goal="压缩并保留依据", max_revision_rounds=2,
+                                   initial_draft=base)
+    assert result.draft_level == "accepted"
+    assert result.final_text.strip() != base.strip()
+    assert any(s["status"].startswith("completed_revision")
+               or "原稿" in s.get("message", "") for s in result.stages)
+
+
+def test_pipeline_revision_no_change_guard(tmp_path):
+    """改稿不得原样返回：no_change 是 error，耗尽修订轮后交付 draft。"""
+    job_dir = tmp_path / "job"
+    _store_with(job_dir, TEXTS)
+    base = ("试点共40人参与问卷，答卷者满意率为75%，平均工单处理时长从10小时"
+            "降至8小时；没有设置对照组，不能据此证明因果，需注明局限。")
+    seen = {"drafts": 0}
+
+    class EchoBrain(PipelineBrain):
+        def _draft(self, user):
+            seen["drafts"] += 1
+            return json.dumps({"report_markdown": base}, ensure_ascii=False)
+    result = run_research_pipeline(llm=EchoBrain(), job_dir=job_dir,
+                                   store=SourceStore(job_dir),
+                                   goal="改稿", max_revision_rounds=2,
+                                   initial_draft=base)
+    assert result.draft_level == "draft"
+    assert result.revised_rounds == 2 and seen["drafts"] == 3
+    # no_change 错误进入最终审校问题清单
+    assert any(s.get("issue_counts", {}).get("error")
+               for s in result.stages)
+
+
 def test_pipeline_no_sources_and_no_evidence(tmp_path):
     job_dir = tmp_path / "job"
     empty = SourceStore(job_dir)

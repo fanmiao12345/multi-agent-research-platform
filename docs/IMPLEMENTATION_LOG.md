@@ -247,3 +247,11 @@
 - 仓库级身份 agent-mvp-dev@local（不写全局）；受控 git add（核对 274 文件清单后提交）。
 - 首次提交：b821308（274 files, +34367）；校验：提交内无 sk- 密钥、无 .env/workspaces/config.ini/node_modules/构建产物；工作树干净。
 - eval/business_eval._version_snapshot 改为动态读取当前 HEAD（此前固定 no_git_commit_yet）。
+
+## 2026-09-09 / 改稿链（base_draft 修订模式，S5-04 单次改稿 + 解锁 revision 业务案例）
+
+- TaskRequest.base_draft（快照排除，落 job.json/pipeline 记录）；ResearchApplication/CLI 同链路透传 initial_draft。
+- runner：initial_draft 存在时 draft 阶段以原稿为上一稿并按任务要求改写（素材/提纲照常生成）；阶段记录标注 completed_revision/基于原稿改稿；程序层新增 no_change error（改稿原样返回不通过，进修订轮）；恢复路径不变（检查点优先）。
+- business_eval：revision 案例不再跳过——携带 initial_draft 执行，记录 revision_of/changed；4 个改稿案例进入可执行集（真实模型验收仍待 Key）。
+- 验证：tests/test_pipeline_stages.py 新增改稿 accepted 与 no_change 守卫（draft、修订2轮、原样3次后仍失败）；tests/test_ops_s6.py 改稿案例断言执行通过（attempts=1/passed=1/revision_skipped=0/changed）。
+- 限制：仍为"单次改稿"；会话式追问（同一会话连续多轮）与 Web 改稿按钮随 S5-04 剩余项/试用期。

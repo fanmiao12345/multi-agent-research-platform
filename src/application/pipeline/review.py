@@ -24,9 +24,14 @@ _FACT_MARKER = re.compile(r"〔(事实|推断|未知)〕")
 
 
 def program_checks(report: str, evidence_ids: set[str],
-                   sections: list[OutlineSection]) -> list[ReviewIssue]:
+                   sections: list[OutlineSection],
+                   base_draft: str | None = None) -> list[ReviewIssue]:
     """第一层：不做语义判断，全部是结构事实检查。"""
     issues: list[ReviewIssue] = []
+    if base_draft is not None and report.strip() == base_draft.strip():
+        issues.append(ReviewIssue(
+            "error", "no_change",
+            "改稿结果与原稿完全相同：必须按任务要求产生实质变更"))
     citations = collect_citations(report)
     unknown = sorted({c for c in citations if c not in evidence_ids})
     for token in unknown:

@@ -54,7 +54,8 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
                           max_cost=snapshot.get("max_cost"),
                           system_extra=snapshot.get("system_extra") or "",
                           urls=tuple(snapshot.get("urls") or ()),
-                          flow="research")
+                          flow="research",
+                          base_draft=snapshot.get("base_draft") or "")
     settings = settings or Settings()
     llm = llm if llm is not None else factory.build_adapter(
         request.profile, settings, mode=request.mode)
@@ -140,14 +141,15 @@ class ResearchApplication:
                     import_summary = {"total": summary["total"], "usable": summary["usable"],
                                       "statuses": summary["statuses"]}
                 if request.flow == "research":
-                    # B5：研究写作链（固定阶段，产物全落 job 目录；预算停止由
-                    # runner 收敛为"待完善草稿"语义，不抛给调用方）。
+                    # B5/S5-04：研究写作链（固定阶段，产物全落 job 目录；预算停止由
+                    # runner 收敛为"待完善草稿"语义；base_draft 提供改稿模式）。
                     chain_result = run_research_pipeline(
                         llm=self.llm, job_dir=ledger.directory,
                         store=store or SourceStore(ledger.directory),
                         goal=request.task, max_revision_rounds=2,
                         on_progress=on_progress, stage_hook=stage_hook,
-                        should_stop=should_stop)
+                        should_stop=should_stop,
+                        initial_draft=request.base_draft or None)
                     outcome = chain_result
                     outcome.root_job_id = ledger.job_id
                     outcome.run_id = None
