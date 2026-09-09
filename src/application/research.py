@@ -24,6 +24,69 @@ _CHAIN_TO_STATUS = {"success": "completed", "incomplete": "partial",
 _JOB_ID_RE = re.compile(r"^job_[0-9a-f]{32}$")
 
 
+def follow_up_revision(*, workspace_root, job_id: str, instruction: str,
+                       llm=None, settings=None) -> object:
+    """S5-04 追问改稿：以 job_id 任务的最新报告为原稿，续用其同批资料改写。
+
+    - 原稿 = 原任务最新 report 产物全文（旧版本永不覆盖）；
+    - 资料 = 原任务来源全文（复制进新任务，独立可回溯）；
+    - 新任务 job.json 记录 revises_job 谱系；退出码/分级语义与 research 一致。
+    """
+    if not instruction or not instruction.strip():
+        raise ValueError("改稿指令不能为空")
+    root = Path(workspace_root)
+    origin = root / "jobs" / job_id
+    if not (origin / "sources.json").exists():
+        raise SourceImportError(f"任务 {job_id} 不存在或没有资料，无法追问改稿")
+    store = SourceStore(origin)
+    texts = [text for source in store.summary()["sources"]
+             if source.get("status") in ("ok", "partial") and source.get("file_name")
+             for text in [store.full_text(source["source_id"])] if text]
+    if not texts:
+        raise SourceImportError(f"任务 {job_id} 没有可用来源全文，无法追问改稿")
+    artifacts = _latest_report_text(origin)
+    if artifacts is None:
+        raise SourceImportError(f"任务 {job_id} 没有报告产物，无法作为原稿")
+    base_draft, base_kind = artifacts
+    snapshot = {}
+    request_path = origin / "request.json"
+    if request_path.exists():
+        try:
+            snapshot = json.loads(request_path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    request = TaskRequest(task=instruction, mode=snapshot.get("mode") or "mock",
+                          profile=snapshot.get("profile"),
+                          max_iterations=int(snapshot.get("max_iterations") or 8),
+                          max_calls=int(snapshot.get("max_calls") or 12),
+                          max_output_tokens=int(snapshot.get("max_output_tokens") or 8192),
+                          max_seconds=float(snapshot.get("max_seconds") or 300),
+                          max_cost=snapshot.get("max_cost"),
+                          texts=tuple(texts), flow="research",
+                          base_draft=base_draft, revises_job=job_id)
+    app = ResearchApplication(request, settings=settings or Settings(),
+                              workspace_root=root, llm=llm)
+    outcome = app.run()
+    setattr(outcome, "revises_job", job_id)
+    setattr(outcome, "base_kind", base_kind)
+    return outcome
+
+
+def _latest_report_text(job_dir: Path):
+    """返回 (文本, artifact_id)；没有 report 产物返回 None。"""
+    from src.harness.storage.artifacts import ArtifactStore
+    try:
+        store = ArtifactStore(job_dir)
+    except Exception:
+        return None
+    versions = [a for a in store.list() if a.get("kind") == "report"]
+    if not versions:
+        return None
+    latest = sorted(versions, key=lambda a: a.get("version") or 0)[-1]
+    try:
+        return store.read(latest["artifact_id"]).get("text", ""), latest["artifact_id"]
+    except Exception:
+        return None
 def resume_research_job(*, workspace_root, job_id: str, llm=None,
                         settings=None) -> object:
     """S4-12：对已有研究任务在同一 job 目录内续跑（按检查点跳过已完成阶段）。
@@ -186,4 +249,6 @@ class ResearchApplication:
                 payload["import"] = import_summary
             if chain_result is not None:
                 payload["pipeline"] = chain_result.as_dict()
+            if request.revises_job:
+                payload["revises_job"] = request.revises_job
             write_json(ledger.directory / "job.json", payload)

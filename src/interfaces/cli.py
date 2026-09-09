@@ -4,7 +4,8 @@ import json
 import sys
 
 from src.application.request import TaskRequest
-from src.application.research import ResearchApplication, resume_research_job
+from src.application.research import (ResearchApplication, follow_up_revision,
+                                      resume_research_job)
 from src.harness.models.factory import ModelConfigError
 
 
@@ -56,15 +57,29 @@ def main():
                         help="agent=通用Agent循环（默认）；research=资料整理/研究写作链（需资料）")
     parser.add_argument("--resume-job",
                         help="对指定研究写作任务续跑（按检查点跳过已完成阶段，需 --workspace）")
+    parser.add_argument("--revise-job",
+                        help="对指定任务追问改稿：以最新报告为原稿续用同批资料（需 --revise-text 与 --workspace）")
+    parser.add_argument("--revise-text",
+                        help="改稿指令文本（配合 --revise-job）")
     args = vars(parser.parse_args())
     workspace = args.pop("workspace")
     resume_job = args.pop("resume_job")
+    revise_job = args.pop("revise_job")
+    revise_text = args.pop("revise_text")
     task = args.pop("task")
     try:
         if resume_job:
             if not workspace:
                 parser.error("--resume-job 需要 --workspace 指向任务所在工作区")
             result = resume_research_job(workspace_root=workspace, job_id=resume_job)
+            raise SystemExit(_print_result(result, workspace=workspace))
+        if revise_job:
+            if not workspace:
+                parser.error("--revise-job 需要 --workspace 指向任务所在工作区")
+            if not revise_text:
+                parser.error("--revise-job 需要 --revise-text 改稿指令")
+            result = follow_up_revision(workspace_root=workspace, job_id=revise_job,
+                                        instruction=revise_text)
             raise SystemExit(_print_result(result, workspace=workspace))
         args["texts"] = tuple(args.pop("import_text"))
         args["files"] = tuple(args.pop("import_file"))

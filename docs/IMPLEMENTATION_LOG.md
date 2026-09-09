@@ -255,3 +255,10 @@
 - business_eval：revision 案例不再跳过——携带 initial_draft 执行，记录 revision_of/changed；4 个改稿案例进入可执行集（真实模型验收仍待 Key）。
 - 验证：tests/test_pipeline_stages.py 新增改稿 accepted 与 no_change 守卫（draft、修订2轮、原样3次后仍失败）；tests/test_ops_s6.py 改稿案例断言执行通过（attempts=1/passed=1/revision_skipped=0/changed）。
 - 限制：仍为"单次改稿"；会话式追问（同一会话连续多轮）与 Web 改稿按钮随 S5-04 剩余项/试用期。
+
+## 2026-09-09 / 追问改稿入口（S5-04 收口：CLI/Web/谱系）
+
+- TaskRequest.revises_job（谱系，落 job.json）；application.follow_up_revision：以原任务最新 report 产物为 base_draft、续用其来源全文建新任务；CLI --revise-job/--revise-text；Web POST /api/jobs/<id>/revise 入队 + ㉑卡"追问改稿"按钮（旧报告产物永不覆盖，可无限轮改稿，每轮新 job 独立回溯）。
+- S4Brain 桩增加改稿变异（否则与重写结果对称时会被 no_change 守卫真实拦截——守卫行为本身正确）。
+- 验证：tests/test_followup.py 4 passed（函数级谱系与资料复用、无报告/无任务错误、CLI 语义、Web 端点端到端 accepted 且原任务产物保留）。
+- 限制：仍非"同一会话多轮记忆"——每轮基于上一轮最新报告显式改稿（产物即记忆，符合 S3-12 快照语义）；会话表(S4-05)与 Web 历史树展示随试用反馈补充。

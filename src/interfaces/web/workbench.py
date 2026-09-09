@@ -46,6 +46,46 @@ def _load(path: Path) -> dict | list | None:
         return None
 
 
+def _revision_payload(workspaces: Path, job_id: str, instruction: str) -> dict:
+    """构造改稿队列负载：原稿=最新 report 产物全文，资料=原任务来源全文。"""
+    from src.harness.storage.sources import SourceStore
+    from src.harness.storage.artifacts import ArtifactStore
+    job_dir = workspaces / "jobs" / job_id
+    if not (job_dir / "sources.json").exists():
+        raise ValueError("任务不存在或没有资料，无法追问改稿")
+    store = SourceStore(job_dir)
+    texts = []
+    for source in store.summary()["sources"]:
+        if source.get("status") not in ("ok", "partial") or not source.get("file_name"):
+            continue
+        text = store.full_text(source["source_id"])
+        if text:
+            texts.append(text)
+    if not texts:
+        raise ValueError("原任务没有可用来源全文，无法追问改稿")
+    try:
+        reports = [a for a in ArtifactStore(job_dir).list() if a.get("kind") == "report"]
+        if not reports:
+            raise ValueError("原任务没有报告产物，无法作为改稿原稿")
+        latest = sorted(reports, key=lambda a: a.get("version") or 0)[-1]
+        base_draft = ArtifactStore(job_dir).read(latest["artifact_id"]).get("text", "")
+    except Exception as e:
+        raise ValueError(f"读取原任务报告失败：{type(e).__name__}") from e
+    snapshot = {}
+    request_path = job_dir / "request.json"
+    if request_path.exists():
+        try:
+            snapshot = json.loads(request_path.read_text(encoding="utf-8"))
+        except Exception:
+            snapshot = {}
+    return {"task": instruction, "mode": snapshot.get("mode") or "mock",
+            "flow": "research", "texts": texts, "base_draft": base_draft,
+            "revises_job": job_id,
+            "max_calls": int(snapshot.get("max_calls") or 12),
+            "max_output_tokens": int(snapshot.get("max_output_tokens") or 8192),
+            "max_seconds": float(snapshot.get("max_seconds") or 300)}
+
+
 def _host_ok(host_header: str) -> bool:
     """S5-09：写接口只接受本机回环 Host。"""
     host = (host_header or "").strip().lower()
@@ -318,6 +358,20 @@ class Handler(BaseHTTPRequestHandler):
             worker.start()
         return self._send(202, {"status": "resuming", "job_id": job_id})
 
+    def _revise_job(self, job_id: str, instruction: str):
+        """S5-04 追问改稿：入队新任务（原稿=最新报告，资料=同批来源）。"""
+        if not _JOB_ID.fullmatch(job_id or ""):
+            return self._send(404, {"error": "job 不存在或 id 格式无效"})
+        try:
+            payload = _revision_payload(self.state.workspaces, job_id, instruction)
+        except ValueError as e:
+            return self._send(409, {"error": str(e)})
+        new_job_id = self.state.queue.submit(kind="research", request=payload,
+                                             stage="queued")
+        self.state._ensure_worker()
+        return self._send(202, {"status": "queued", "job_id": new_job_id,
+                                "revises_job": job_id})
+
     def _resume_worker(self, job_id: str) -> None:
         from src.application.research import resume_research_job
         try:
@@ -514,6 +568,12 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(409, {"error": str(e)})
         if len(parts) == 4 and parts[:2] == ["api", "jobs"] and parts[3] == "resume":
             return self._resume_job(parts[2])
+        if len(parts) == 4 and parts[:2] == ["api", "jobs"] and parts[3] == "revise":
+            body = self._body()
+            instruction = (body.get("instruction") or "").strip()
+            if not instruction:
+                return self._send(400, {"error": "改稿指令不能为空"})
+            return self._revise_job(parts[2], instruction)
         if url.path == "/api/hitl/decide":
             body = self._body()
             run_id = body.get("run_id", "")
@@ -605,7 +665,9 @@ B3/B4 已接入本地资料与用户指定网页链接导入（默认安全策�
 <div>当前 job：<span id="curjob"></span><span id="jobstate"></span>
 <button id="btncancel" onclick="cancelJob()" disabled>停止</button>
 <button id="btnresume" onclick="resumeJob()" disabled>恢复</button>
-<button id="btnexport" onclick="exportReport()" disabled>导出 Markdown</button></div>
+<button id="btnexport" onclick="exportReport()" disabled>导出 Markdown</button>
+改稿指令：<input id="revinstr" size="28" placeholder="如：缩短到150字并保留引用">
+<button id="btnrevise" onclick="reviseJob()" disabled>追问改稿</button></div>
 <pre id="joblog"></pre>
 <div id="reportview"></div>
 <div id="rtok"></div>
@@ -721,6 +783,7 @@ async function pollJob(id){while(true){
 async function renderJobResults(id,pl){
  const a=await j('/api/jobs/'+encodeURIComponent(id)+'/artifacts');
  const reports=(a.artifacts||[]).filter(x=>x.kind==='report');
+ $('btnrevise').disabled=reports.length===0;
  const ev=((await j('/api/jobs/'+encodeURIComponent(id)+'/evidence')).evidence)||[];
  ev.forEach(x=>jobEvMap[x.evidence_id]=x);
  const box=document.createElement('div');
@@ -746,6 +809,11 @@ function renderReportMarkdown(md){const box=document.createElement('div');box.st
 function showEvidence(x){$('docview').textContent=`${x.evidence_id||''}\n事实：${x.fact||''}\n标注：${x.tag||''}\n摘录：${x.quote||''}\n定位：${JSON.stringify(x.locator||{})}\n来源：${x.source_id||''}\n说明：${x.note||''}`}
 async function cancelJob(){if(!curJobId)return;try{const d=await j('/api/jobs/'+encodeURIComponent(curJobId)+'/cancel',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});$('jobstate').textContent=d.status==='stopped'?'已停止（排队中直接取消）':'已请求停止（分阶段收敛中）'}catch(e){$('jobstate').textContent=e.message}}
 async function resumeJob(){if(!curJobId)return;try{const d=await j('/api/jobs/'+encodeURIComponent(curJobId)+'/resume',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});$('jobstate').textContent='恢复已排队：'+d.status;await pollJob(curJobId)}catch(e){$('jobstate').textContent=e.message}}
+async function reviseJob(){if(!curJobId)return;const instruction=$('revinstr').value.trim();
+ if(!instruction){$('jobstate').textContent='请先填写改稿指令';return}
+ try{const d=await j('/api/jobs/'+encodeURIComponent(curJobId)+'/revise',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({instruction:instruction})});
+  $('jobstate').textContent='改稿任务已排队：'+d.job_id+'（原稿=最新报告，旧版不覆盖）';$('revinstr').value='';
+  loadJobs().catch(()=>{});await showJob(d.job_id)}catch(e){$('jobstate').textContent=e.message}}
 async function loadEval(){const mode=$('mode').value,d=await j('/api/eval?mode='+mode); if(mode!==$('mode').value)return;
  $('eval').textContent=`评测模式：${d.meta?.mode||d.mode||'历史报告未标记'}；模型：${d.meta?.brain||'未记录'}。运行器冒烟测试，不代表研究写作业务验收。 `+JSON.stringify(d.totals||d)}
 loadRuns().catch(e=>$('status').textContent=e.message);

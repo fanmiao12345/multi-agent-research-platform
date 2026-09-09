@@ -61,7 +61,12 @@ class S4Brain:
                 ensure_ascii=False)
         if purpose == "draft":
             self._drafts += 1
+            revising = "上一稿开始" in user
             lines = ["# S4报告", ""]
+            if revising:
+                # 改稿模式：明确产生实质变更（追加修订说明，保留引用与结构）
+                lines.append("修订说明：本稿已按要求改写并保留可核查引用，"
+                             "删除不再受支持的表述。\n")
             for match in re.finditer(
                     r"^([^：\n]+)：([^\n]*?)；必须覆盖证据 ([^；\n]+)(；需事实/推断标注)?",
                     user, re.MULTILINE):

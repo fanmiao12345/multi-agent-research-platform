@@ -29,6 +29,8 @@ class TaskRequest:
     # 改稿模式（S5-04 单次改稿）：携带"原稿文本"，research 链改为在 base_draft 上修订：
     # 素材/提纲仍基于资料生成，初稿以原稿为上一稿并按任务要求改写；旧稿不覆盖。
     base_draft: str = ""
+    # 谱系（追问改稿）：本任务是哪个任务的最新报告改稿而来（job_id），job.json 记录供回溯。
+    revises_job: str = ""
 
     def __post_init__(self):
         if not isinstance(self.task, str) or not self.task.strip():
@@ -73,6 +75,8 @@ class TaskRequest:
             raise ValueError("flow必须为agent或research")
         if not isinstance(self.base_draft, str):
             raise ValueError("base_draft必须为文本")
+        if not isinstance(self.revises_job, str):
+            raise ValueError("revises_job必须为文本")
 
     @classmethod
     def from_payload(cls, payload):
