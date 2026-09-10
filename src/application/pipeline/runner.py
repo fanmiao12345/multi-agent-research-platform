@@ -23,11 +23,11 @@ from src.application.pipeline.evidence import (EvidenceStore, collect_citations,
                                                extract_source_evidence, make_id)
 from src.application.pipeline.material import (fill_duplicates, render_material,
                                                run_material_stage)
-from src.application.pipeline.model import (OutlineSection, PipelineResult,
-                                            StageError)
+from src.application.pipeline.model import (HardRequirements, OutlineSection,
+                                            PipelineResult, StageError)
 from src.application.pipeline.outline import render_outline, run_outline_stage
-from src.application.pipeline.review import (format_issues, model_review,
-                                             program_checks)
+from src.application.pipeline.review import (format_issues, hard_requirement_stats,
+                                             model_review, program_checks)
 from src.harness.model_gateway import BudgetStop
 from src.harness.run_store import write_json
 from src.harness.storage.artifacts import ArtifactStore
@@ -79,17 +79,25 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                           max_revision_rounds: int = DEFAULT_MAX_REVISION_ROUNDS,
                           on_progress=None, resume: bool = False,
                           should_stop=None, stage_hook=None,
-                          initial_draft: str | None = None) -> PipelineResult:
+                          initial_draft: str | None = None,
+                          hard_requirements: HardRequirements | None = None) -> PipelineResult:
     """执行整条链并返回结果；阶段快照写 pipeline.json。
 
     initial_draft：改稿模式（S5-04 单次改稿）——以给定原稿为上一稿，
     素材/提纲照常基于资料生成，写作者按任务要求改写；程序层额外检查
     "必须产生实质变更"（原样返回视为 error，进修订轮）。
 
+    hard_requirements：任务硬约束（必需章节/禁语/关键事实，S6-05 对齐）——
+    注入提纲与初稿提示词，并在程序层逐条复验；必需章节缺失或禁语出现是阻塞
+    error，不能判 accepted（缺章交付 draft）。缺省 None 表示无额外硬要求。
+
     stage_hook(stage, status, artifact_ids, message)：产物与检查点落盘后回调，
     供外部（SQLite job 行等）提交状态 —— 顺序保证"文件先、状态后"。
     """
     result = PipelineResult()
+    requirements = hard_requirements if (hard_requirements and not hard_requirements.is_empty) \
+        else None
+    requirements_block = requirements.prompt_block() if requirements else ""
     artifacts = ArtifactStore(job_dir)
     evidence_store = EvidenceStore(job_dir)
     started = _now()
@@ -126,6 +134,7 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
         write_json(job_dir / "pipeline.json",
                    {"schema_version": 1, "root_job_id": job_dir.name,
                     "goal": goal, "started_at": started,
+                    "hard_requirements": requirements.as_dict() if requirements else {},
                     "result": result.as_dict()})
 
     def cancel_outcome(stage: str, message: str):
@@ -235,7 +244,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
         else:
             progress("outline", "正在生成提纲")
             sections, title, outline_issues = run_outline_stage(
-                llm, goal, render_material(pack), evidence_store.ids())
+                llm, goal, render_material(pack), evidence_store.ids(),
+                requirements=requirements)
             artifact = artifacts.save("outline", render_outline(title, sections),
                                       producer="pipeline-outline")
             write_json(_cp_path(job_dir, "outline"),
@@ -261,7 +271,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                                      previous_report=base or "",
                                      issues_block=("请按任务要求修改这份原稿，"
                                                    "保留可用引用并修正/删除不再受支持的表述。"
-                                                   if base else ""))
+                                                   if base else ""),
+                                     requirements_block=requirements_block)
             artifact = artifacts.save("report", report,
                                       producer="pipeline-writer")
             write_json(_cp_path(job_dir, "draft"), {"text": report})
@@ -276,12 +287,14 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
             boundary("review")
             progress("review", f"双层审校 第 {round_index + 1} 轮")
             program = program_checks(report, evidence_store.ids(), sections,
-                                     base_draft=base or None)
+                                     base_draft=base or None,
+                                     requirements=requirements)
             evidence_index = "\n".join(
                 f"- {item['evidence_id']} {item['fact']}"
                 f"（来源 {item['source_id']}）" for item in evidence_items)
             model_issues, verdict = model_review(llm, goal, report,
-                                                 evidence_index, sections)
+                                                 evidence_index, sections,
+                                                 requirements_block=requirements_block)
             issues = program + model_issues
             final_issues = issues
             review_payload = {"schema_version": 1, "round": round_index + 1,
@@ -300,7 +313,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
             report = run_draft_stage(llm, goal, sections, title,
                                      pack.as_dict(),
                                      previous_report=report,
-                                     issues_block=format_issues(issues))
+                                     issues_block=format_issues(issues),
+                                     requirements_block=requirements_block)
             draft_artifact = artifacts.save("report", report,
                                             producer="pipeline-writer",
                                             parent_version=_version_of(
@@ -314,6 +328,7 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                          message=f"第 {round_index + 1} 轮修订后重审")
         errors = [i for i in final_issues if i.severity == "error"]
         result.final_text = report
+        result.hard_checks = hard_requirement_stats(report, requirements)
         citations = collect_citations(report)
         result.total_citations = len(citations)
         result.unresolved_citations = len(
@@ -322,6 +337,13 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
             result.draft_level = "accepted"
             result.termination_reason = "success"
             result.message = "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+            if requirements:
+                stats = result.hard_checks
+                result.message += (
+                    "；任务硬约束复验：必需章节 "
+                    f"{stats['required_section_hits']}/{stats['required_sections_total']}、"
+                    f"禁语命中 {stats['forbidden_hits']}、"
+                    f"关键事实 {stats['fact_hits']}/{stats['fact_total']}")
             record_stage("review", "accepted",
                          artifact_ids=[result.final_artifact_id or ""],
                          issues=final_issues, message=result.message)

@@ -4,21 +4,28 @@ application/pipeline/outline.py —— 提纲阶段（S3-06）
 
 模型给出报告结构；程序校验章节标题非空、required_evidence 都存在，
 并保留"区分事实/推断/未知"标注要求给审校程序层。
+任务硬约束（S6-05 对齐）：任务给出的必需章节在提纲中缺失时由程序补入，
+把"任务要求"变成提纲的一部分（模型自造结构不得替代任务要求）。
 """
 from __future__ import annotations
 
-from src.application.pipeline.model import OutlineSection, StageError
+from src.application.pipeline.model import (HardRequirements, OutlineSection,
+                                            StageError)
 from src.application.pipeline.prompts import build_outline_messages
+from src.application.pipeline.review import normalize_heading
 from src.harness.model_gateway import model_call
 from src.harness.structured import extract_json
 
 
 def run_outline_stage(llm, goal: str, material_block: str,
-                      evidence_ids: set[str]) -> tuple[list[OutlineSection], str, list[dict]]:
+                      evidence_ids: set[str],
+                      requirements: HardRequirements | None = None,
+                      ) -> tuple[list[OutlineSection], str, list[dict]]:
+    requirements_block = requirements.prompt_block() if requirements else ""
     data = None
     raw = ""
     for attempt in (1, 2):
-        messages = build_outline_messages(goal, material_block)
+        messages = build_outline_messages(goal, material_block, requirements_block)
         if attempt == 2:
             messages = messages[:1] + [{
                 "role": "system",
@@ -59,6 +66,17 @@ def run_outline_stage(llm, goal: str, material_block: str,
                                        require_fact_markers=require_markers))
     if not sections:
         raise StageError("outline", "提纲没有任何有效章节")
+    if requirements is not None:
+        existing = {normalize_heading(s.heading): s.heading for s in sections}
+        for name in requirements.required_sections:
+            needle = normalize_heading(name)
+            if not needle or any(needle in key for key in existing if key):
+                continue
+            sections.append(OutlineSection(
+                heading=name,
+                purpose="任务硬性要求的章节（程序按任务要求补入，标题不得改写）"))
+            issues.append({"severity": "warn", "code": "required_section",
+                           "message": f"提纲缺少任务要求章节「{name}」，已按任务要求补入"})
     return sections, title, issues
 
 

@@ -6,6 +6,7 @@ import uuid
 
 from config.settings import Settings
 from src.application.imports import import_request_sources
+from src.application.pipeline.model import HardRequirements
 from src.application.pipeline.runner import run_research_pipeline
 from src.application.request import TaskRequest
 from src.harness.ingest.url_policy import UrlPolicy
@@ -22,6 +23,13 @@ _CHAIN_TO_STATUS = {"success": "completed", "incomplete": "partial",
                     "budget_exceeded": "cancelled", "error": "failed",
                     "cancelled": "cancelled"}
 _JOB_ID_RE = re.compile(r"^job_[0-9a-f]{32}$")
+
+
+def _hard_requirements(request) -> HardRequirements:
+    """任务硬约束（S6-05 对齐）：请求中的必需章节/禁语/关键事实交给链内程序层复验。"""
+    return HardRequirements(required_sections=request.required_sections,
+                            forbidden_claims=request.forbidden_claims,
+                            key_facts=request.key_facts)
 
 
 def follow_up_revision(*, workspace_root, job_id: str, instruction: str,
@@ -63,7 +71,10 @@ def follow_up_revision(*, workspace_root, job_id: str, instruction: str,
                           max_seconds=float(snapshot.get("max_seconds") or 300),
                           max_cost=snapshot.get("max_cost"),
                           texts=tuple(texts), flow="research",
-                          base_draft=base_draft, revises_job=job_id)
+                          base_draft=base_draft, revises_job=job_id,
+                          required_sections=tuple(snapshot.get("required_sections") or ()),
+                          forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
+                          key_facts=tuple(snapshot.get("key_facts") or ()))
     app = ResearchApplication(request, settings=settings or Settings(),
                               workspace_root=root, llm=llm)
     outcome = app.run()
@@ -118,7 +129,10 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
                           system_extra=snapshot.get("system_extra") or "",
                           urls=tuple(snapshot.get("urls") or ()),
                           flow="research",
-                          base_draft=snapshot.get("base_draft") or "")
+                          base_draft=snapshot.get("base_draft") or "",
+                          required_sections=tuple(snapshot.get("required_sections") or ()),
+                          forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
+                          key_facts=tuple(snapshot.get("key_facts") or ()))
     settings = settings or Settings()
     llm = llm if llm is not None else factory.build_adapter(
         request.profile, settings, mode=request.mode)
@@ -139,7 +153,8 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
         try:
             result = run_research_pipeline(
                 llm=llm, job_dir=job_dir, store=SourceStore(job_dir),
-                goal=request.task, max_revision_rounds=2, resume=True)
+                goal=request.task, max_revision_rounds=2, resume=True,
+                hard_requirements=_hard_requirements(request))
         except BudgetStop:  # 防御：runner 内已收敛，这里兜底
             result = None
             raise
@@ -212,7 +227,8 @@ class ResearchApplication:
                         goal=request.task, max_revision_rounds=2,
                         on_progress=on_progress, stage_hook=stage_hook,
                         should_stop=should_stop,
-                        initial_draft=request.base_draft or None)
+                        initial_draft=request.base_draft or None,
+                        hard_requirements=_hard_requirements(request))
                     outcome = chain_result
                     outcome.root_job_id = ledger.job_id
                     outcome.run_id = None

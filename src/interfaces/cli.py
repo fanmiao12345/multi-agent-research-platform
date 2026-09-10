@@ -61,12 +61,21 @@ def main():
                         help="对指定任务追问改稿：以最新报告为原稿续用同批资料（需 --revise-text 与 --workspace）")
     parser.add_argument("--revise-text",
                         help="改稿指令文本（配合 --revise-job）")
+    parser.add_argument("--require-section", action="append", default=[],
+                        help="任务要求的必需章节名，可重复；研究写作链在程序层复验，缺失不算验收通过")
+    parser.add_argument("--forbid-claim", action="append", default=[],
+                        help="正文中不得出现的表述，可重复；出现即判为阻塞问题")
+    parser.add_argument("--key-fact", action="append", default=[],
+                        help="任务要求覆盖的关键事实，可重复；未逐字覆盖记 warn（不阻塞验收）")
     args = vars(parser.parse_args())
     workspace = args.pop("workspace")
     resume_job = args.pop("resume_job")
     revise_job = args.pop("revise_job")
     revise_text = args.pop("revise_text")
     task = args.pop("task")
+    args["required_sections"] = tuple(args.pop("require_section"))
+    args["forbidden_claims"] = tuple(args.pop("forbid_claim"))
+    args["key_facts"] = tuple(args.pop("key_fact"))
     try:
         if resume_job:
             if not workspace:

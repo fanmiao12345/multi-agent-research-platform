@@ -64,54 +64,75 @@ def build_material_messages(goal: str, evidence_block: str) -> list[dict]:
 
 
 # ---- 提纲（S3-06） ------------------------------------------------------
-def build_outline_messages(goal: str, material_block: str) -> list[dict]:
+def build_outline_messages(goal: str, material_block: str,
+                           requirements_block: str = "") -> list[dict]:
     schema = ('{"title":"报告标题","sections":[{"heading":"章节标题",'
               '"purpose":"本节要回答什么","required_evidence":["E-001"],'
               '"require_fact_markers":true}]}')
+    hard = ("【任务硬性要求】若任务列出了必须出现的章节，提纲必须逐字包含这些章节名"
+            "（可另加章节，但不能改名或省略）。" if requirements_block else "")
     return [
         _s(GOAL_RULES + " 你是提纲规划器。根据素材包设计固定顺序的报告提纲；"
            "每个章节给出必须覆盖的证据 id 与是否要求正文标注事实/推断/未知。"
            "不得使用素材包证据之外的 id。sections≤12，每节 purpose≤40字。"
-           + JSON_RULE + f" 输出结构：{schema}"),
-        _u(f"任务目标：{goal}\n\n素材包：\n{material_block}\n\n请输出提纲 JSON。"),
+           + hard + JSON_RULE + f" 输出结构：{schema}"),
+        _u(_join_blocks(f"任务目标：{goal}", requirements_block,
+                        f"素材包：\n{material_block}") + "\n\n请输出提纲 JSON。"),
     ]
 
 
 # ---- 初稿（S3-06/02） ---------------------------------------------------
 def build_draft_messages(goal: str, outline_block: str, material_block: str,
-                         previous_report: str = "", revision_notes: str = "") -> list[dict]:
+                         previous_report: str = "", revision_notes: str = "",
+                         requirements_block: str = "") -> list[dict]:
     schema = '{"report_markdown":"完整 Markdown 报告正文（含标题）"}'
     extra = ""
     if previous_report:
         extra = (f"\n\n这是需要修订的上一稿（请按问题清单修订，保持引用可定位）：\n"
                  f"--- 上一稿开始 ---\n{previous_report}\n--- 上一稿结束 ---"
                  f"\n\n问题清单：\n{revision_notes}")
+    hard = ("【任务硬性要求】必须逐条满足：必需章节的标题要与要求逐字一致"
+            "（不要加序号或改写），禁止表述一律不得出现。" if requirements_block else "")
     return [
         _s(GOAL_RULES + " 你是报告写作者。按提纲逐节写作；每个事实性断言后标注引用标记"
            "【[E-编号]】（只能使用素材包与提纲中出现的证据）；要求标注事实/推断的章节，"
-           "在相应表述后加〔事实〕/〔推断〕/〔未知〕。章节标题必须与提纲一致，不能缺节。"
+           "在相应表述后加〔事实〕/〔推断〕/〔未知〕。章节标题必须与提纲一致（逐字使用，"
+           "不要自行添加编号前缀或改写），不能缺节。"
+           + hard +
            "【篇幅】只写提纲要求的章节；整份 Markdown 正文尽量控制在 2500 字以内，超长请精简；"
            "引号等特殊字符无需转义（JSON 字符串内直接写中文标点）。"
            + JSON_RULE + f" 输出结构：{schema}"),
-        _u(f"任务目标：{goal}\n\n提纲：\n{outline_block}\n\n素材包：\n{material_block}{extra}"),
+        _u(_join_blocks(f"任务目标：{goal}", requirements_block,
+                        f"提纲：\n{outline_block}", f"素材包：\n{material_block}")
+           + extra),
     ]
 
 
 # ---- 审校（S3-09/10） ---------------------------------------------------
 def build_review_messages(goal: str, report: str, evidence_index: str,
-                          outline_requirements: str) -> list[dict]:
+                          outline_requirements: str,
+                          requirements_block: str = "") -> list[dict]:
     schema = ('{"issues":[{"severity":"error|warn","code":'
               '"support|missing|conflict|style","message":"问题与位置"}],'
               '"verdict":"accepted|needs_revision"}')
+    hard = ("任务硬性要求（请一并核对是否满足，未满足须报 error/missing）：\n"
+            + requirements_block if requirements_block else "")
     return [
         _s(GOAL_RULES + " 你是审校员。逐条检查：引用是否真的支持该断言（support）、"
            "必需内容是否缺失（missing）、是否有未标注的矛盾（conflict）、表述与格式（style）。"
            "error=会导致读者被误导/要求未满足；warn=建议改进。verdict：存在 error 必须 needs_revision。"
            "issues≤15 条且每条 message≤80字。"
            + JSON_RULE + f" 输出结构：{schema}"),
-        _u(f"任务目标：{goal}\n\n证据索引（evidence_id/fact/source）：\n{evidence_index}\n"
-           f"\n提纲要求：\n{outline_requirements}\n\n报告正文：\n{report}\n\n请给出审校 JSON。"),
+        _u(_join_blocks(f"任务目标：{goal}", hard,
+                        f"证据索引（evidence_id/fact/source）：\n{evidence_index}",
+                        f"提纲要求：\n{outline_requirements}")
+           + f"\n\n报告正文：\n{report}\n\n请给出审校 JSON。"),
     ]
+
+
+def _join_blocks(*blocks: str) -> str:
+    """按顺序拼接非空块，块间空一行（避免出现空块与重复空行）。"""
+    return "\n\n".join(block.strip() for block in blocks if block and block.strip())
 
 
 def format_evidence_block(items: list[dict]) -> str:

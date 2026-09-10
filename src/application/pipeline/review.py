@@ -3,6 +3,7 @@
 application/pipeline/review.py —— 双层审校与有限修订（S3-09/10/11）
 
 第一层（程序，无模型调用）：引用标记可解析、提纲必需证据全覆盖、章节齐全、
+任务硬约束（必需章节/禁语/关键事实，S6-05 对齐）、
 要求区分事实/推断/未知的章节有标注；
 第二层（模型）：支持关系、遗漏、矛盾、风格。
 error 级问题存在 → needs_revision；修订最多 max_revision_rounds 轮，每轮保存
@@ -14,24 +15,98 @@ from __future__ import annotations
 import re
 
 from src.application.pipeline.evidence import collect_citations
-from src.application.pipeline.model import OutlineSection, ReviewIssue, StageError
+from src.application.pipeline.model import (HardRequirements, OutlineSection,
+                                            ReviewIssue, StageError)
 from src.application.pipeline.prompts import (build_review_messages,
                                               format_outline_requirements)
 from src.harness.model_gateway import model_call
 from src.harness.structured import extract_json
 
 _FACT_MARKER = re.compile(r"〔(事实|推断|未知)〕")
+_HEADING_PREFIX = re.compile(r"^(?:#+\s*)?(?:[0-9]+[.、)）]|[一二三四五六七八九十]+[、.)）]|"
+                             r"[（(][0-9一二三四五六七八九十]+[)）])?\s*")
+_PUNCT = re.compile(r"[\s:：,，。.、;；\-—_*`\"'“”‘’()（）\[\]【】]+")
+
+
+def normalize_heading(text: str) -> str:
+    """章节名归一：去 #、去编号前缀、去空白与常见标点，便于跨写法比对。"""
+    value = _HEADING_PREFIX.sub("", (text or "").strip())
+    return _PUNCT.sub("", value).lower()
+
+
+def report_headings(report: str) -> list[str]:
+    """正文 Markdown 标题行（归一后）。"""
+    return [normalize_heading(re.sub(r"^#+\s*", "", line.strip()))
+            for line in (report or "").splitlines() if line.strip().startswith("#")]
+
+
+def section_in_report(report: str, name: str) -> bool:
+    """要求的章节名是否作为标题出现（归一后包含匹配，容忍编号与标点差异）。"""
+    needle = normalize_heading(name)
+    if not needle:
+        return False
+    return any(needle in heading for heading in report_headings(report) if heading)
+
+
+def hard_requirement_issues(report: str, requirements: HardRequirements | None,
+                            ) -> tuple[list[ReviewIssue], dict]:
+    """任务硬约束的程序层复验（S6-05 对齐）：
+
+    - 必需章节缺失 → error（阻塞，与程序层章节检查同一严重度）；
+    - 禁语出现 → error（阻塞）；
+    - 关键事实未逐字出现 → warn（记录但不阻塞；语义覆盖由评测/人工判定）。
+    返回 (issues, stats)。
+    """
+    issues: list[ReviewIssue] = []
+    stats = {"required_sections_total": 0, "required_section_hits": 0,
+             "forbidden_total": 0, "forbidden_hits": 0,
+             "fact_total": 0, "fact_hits": 0}
+    if requirements is None:
+        return issues, stats
+    text = report or ""
+    for name in requirements.required_sections:
+        stats["required_sections_total"] += 1
+        if section_in_report(text, name):
+            stats["required_section_hits"] += 1
+        else:
+            issues.append(ReviewIssue(
+                "error", "required_section",
+                f"正文缺少任务要求的章节「{name}」（标题需逐字保留该名称）"))
+    for claim in requirements.forbidden_claims:
+        stats["forbidden_total"] += 1
+        if claim and claim in text:
+            stats["forbidden_hits"] += 1
+            issues.append(ReviewIssue(
+                "error", "forbidden",
+                f"正文出现了任务禁止的表述「{claim}」（必须删除或改写）"))
+    for fact in requirements.key_facts:
+        stats["fact_total"] += 1
+        if fact and fact in text:
+            stats["fact_hits"] += 1
+        else:
+            issues.append(ReviewIssue(
+                "warn", "fact",
+                f"任务要求覆盖的关键事实未在正文中出现：「{fact}」（请核对并保留原文措辞）"))
+    return issues, stats
+
+
+def hard_requirement_stats(report: str, requirements: HardRequirements | None) -> dict:
+    """只取读数（不含问题清单），写入 pipeline.json/job.json 供对照独立评测。"""
+    return hard_requirement_issues(report, requirements)[1]
 
 
 def program_checks(report: str, evidence_ids: set[str],
                    sections: list[OutlineSection],
-                   base_draft: str | None = None) -> list[ReviewIssue]:
+                   base_draft: str | None = None,
+                   requirements: HardRequirements | None = None) -> list[ReviewIssue]:
     """第一层：不做语义判断，全部是结构事实检查。"""
     issues: list[ReviewIssue] = []
     if base_draft is not None and report.strip() == base_draft.strip():
         issues.append(ReviewIssue(
             "error", "no_change",
             "改稿结果与原稿完全相同：必须按任务要求产生实质变更"))
+    hard_issues, _ = hard_requirement_issues(report, requirements)
+    issues.extend(hard_issues)
     citations = collect_citations(report)
     unknown = sorted({c for c in citations if c not in evidence_ids})
     for token in unknown:
@@ -59,14 +134,16 @@ def program_checks(report: str, evidence_ids: set[str],
 
 
 def model_review(llm, goal: str, report: str, evidence_index: str,
-                 sections: list[OutlineSection]) -> tuple[list[ReviewIssue], str]:
+                 sections: list[OutlineSection],
+                 requirements_block: str = "") -> tuple[list[ReviewIssue], str]:
     """第二层。返回 (issues, verdict)；解析失败自动重试一次并要求只输出 JSON。"""
     requirements = format_outline_requirements(sections)
     issues: list[ReviewIssue] = []
     data = None
     raw = ""
     for attempt in (1, 2):
-        messages = build_review_messages(goal, report, evidence_index, requirements)
+        messages = build_review_messages(goal, report, evidence_index, requirements,
+                                         requirements_block=requirements_block)
         if attempt == 2:
             messages = messages[:1] + [{
                 "role": "system",
@@ -102,31 +179,22 @@ def model_review(llm, goal: str, report: str, evidence_index: str,
 
 
 def _heading_in_report(report: str, heading: str) -> bool:
-    needle = heading.strip().lower()
-    for line in report.splitlines():
-        stripped = line.strip()
-        if stripped.startswith("#"):
-            title = re.sub(r"^#+\s*", "", stripped).strip().lower()
-            # 提纲编号前缀（如 "1. 背景"）在正文中可能省略序号
-            if title == needle or title.endswith(" " + needle) or needle.endswith(" " + title):
-                return True
-    return False
+    return section_in_report(report, heading)
 
 
 def _section_body(report: str, heading: str) -> str:
-    lines = report.splitlines()
+    target = normalize_heading(heading)
     capture = False
     body: list[str] = []
-    for line in lines:
+    for line in report.splitlines():
         stripped = line.strip()
         if stripped.startswith("#"):
-            title = re.sub(r"^#+\s*", "", stripped).strip().lower()
-            target = heading.strip().lower()
-            hit = title == target or title.endswith(" " + target) or target.endswith(" " + title)
+            title = normalize_heading(re.sub(r"^#+\s*", "", stripped))
+            hit = bool(target) and target in title
             if hit:
                 capture = True
                 continue
-            if capture and stripped.startswith("#"):
+            if capture:
                 break
         elif capture:
             body.append(line)

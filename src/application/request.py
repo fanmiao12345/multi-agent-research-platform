@@ -3,6 +3,7 @@ from dataclasses import asdict, dataclass
 import math
 
 from src.harness.storage.sources import MAX_SOURCES
+from src.application.pipeline.model import MAX_HARD_ITEMS, MAX_HARD_ITEM_CHARS
 
 
 @dataclass(frozen=True)
@@ -31,6 +32,11 @@ class TaskRequest:
     base_draft: str = ""
     # 谱系（追问改稿）：本任务是哪个任务的最新报告改稿而来（job_id），job.json 记录供回溯。
     revises_job: str = ""
+    # 任务硬约束（S6-05 对齐）：必需章节/禁语/关键事实。研究写作链据此在程序层复验，
+    # 不达标不算 accepted；缺省为空表示不做额外硬性要求（结构仍按提纲与审校验收）。
+    required_sections: tuple[str, ...] = ()
+    forbidden_claims: tuple[str, ...] = ()
+    key_facts: tuple[str, ...] = ()
 
     def __post_init__(self):
         if not isinstance(self.task, str) or not self.task.strip():
@@ -77,6 +83,25 @@ class TaskRequest:
             raise ValueError("base_draft必须为文本")
         if not isinstance(self.revises_job, str):
             raise ValueError("revises_job必须为文本")
+        for name in ("required_sections", "forbidden_claims", "key_facts"):
+            value = getattr(self, name)
+            if isinstance(value, (list, tuple)):
+                object.__setattr__(self, name, tuple(value))
+                value = tuple(value)
+            elif isinstance(value, str):
+                value = (value,)
+                object.__setattr__(self, name, value)
+            else:
+                raise ValueError(name + "必须为文本元组或列表")
+            for item in value:
+                if not isinstance(item, str):
+                    raise ValueError(name + "每一项必须是文本")
+                if not item.strip():
+                    raise ValueError(name + "每一项必须为非空文本")
+                if len(item) > MAX_HARD_ITEM_CHARS:
+                    raise ValueError(f"{name}单项超过{MAX_HARD_ITEM_CHARS}字上限")
+            if len(value) > MAX_HARD_ITEMS:
+                raise ValueError(f"{name}超过{MAX_HARD_ITEMS}项上限")
 
     @classmethod
     def from_payload(cls, payload):

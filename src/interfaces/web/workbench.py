@@ -647,6 +647,11 @@ B3/B4 已接入本地资料与用户指定网页链接导入（默认安全策�
 文件路径（每行一个，TXT/Markdown，只读）：<textarea id="filepaths" rows="2" cols="60" placeholder="D:/资料/笔记.md"></textarea><br>
 网页链接（每行一个 http(s)，抓取正文并登记来源）：<textarea id="urls" rows="2" cols="60" placeholder="https://example.com/article"></textarea><br>
 粘贴文本：<textarea id="pastetext" rows="3" cols="60" placeholder="整段作为一份资料来源"></textarea></div>
+<div>任务硬约束（研究写作链，可选，每行一条）：
+必需章节：<textarea id="requireSections" rows="2" cols="50" placeholder="资料目录"></textarea><br>
+禁止表述：<textarea id="forbidClaims" rows="2" cols="50" placeholder="全体参与者75%满意"></textarea><br>
+关键事实：<textarea id="keyFacts" rows="2" cols="50" placeholder="试点共40人"></textarea>
+<p>必需章节缺失或禁止表述出现时，链内程序层判为阻塞问题（不算验收通过）；关键事实未逐字覆盖记警告。</p></div>
 <div>当前 run：<span id="cur"></span></div>
 <div id="status"></div><pre id="answer"></pre>
 <pre id="jobusage"></pre>
@@ -705,9 +710,12 @@ async function startRun(){const t=$('task').value;
  const files=$('filepaths').value.split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);
  const urls=$('urls').value.split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);
  const texts=$('pastetext').value.trim()?[$('pastetext').value]:[];
+ const lines=id=>$(id).value.split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);
  const r=await j('/api/runs',{method:'POST',headers:{'Content-Type':'application/json'},
  body:JSON.stringify({task:t,mode:$('mode').value,flow:$('flow').value,max_iterations:6,
   texts:texts,files:files,urls:urls,
+  required_sections:lines('requireSections'),forbidden_claims:lines('forbidClaims'),
+  key_facts:lines('keyFacts'),
   max_calls:Number($('maxcalls').value),max_output_tokens:Number($('maxtokens').value),
   max_seconds:Number($('maxseconds').value),max_cost:Number($('maxcost').value)})});
  if(r.job_id){loadJobs().catch(e=>$('status').textContent=e.message);showJob(r.job_id)}
@@ -772,7 +780,8 @@ async function pollJob(id){while(true){
  try{const d=await j('/api/jobs/'+encodeURIComponent(id)+'/progress');const row=d.job||{};const pl=(d.pipeline||{}).result;const jf=d.job_file||{};
   $('jobstate').textContent=row.status?` 状态:${row.status} 阶段:${row.stage||''} 取消请求:${row.cancel_requested?'是':'否'}`:'';
   const stages=(pl&&pl.stages||[]).map(s=>`[${s.stage}] ${s.status}${s.message?': '+s.message:''}`).join('\n');
-  $('joblog').textContent=(pl?`分级:${pl.draft_level} 修订:${pl.revised_rounds||0} 引用:${pl.total_citations||0} 未解析:${pl.unresolved_citations||0}\n`:'')+stages+(jf.error?`\n错误类型:${jf.error}`:'')+(jf.message?`\n${jf.message}`:'');
+  const hc=(pl&&pl.hard_checks||{});const hard=hc.required_sections_total!==undefined?`硬约束:必需章节 ${hc.required_section_hits}/${hc.required_sections_total} 禁语命中 ${hc.forbidden_hits} 关键事实 ${hc.fact_hits}/${hc.fact_total}\n`:'';
+  $('joblog').textContent=(pl?`分级:${pl.draft_level} 修订:${pl.revised_rounds||0} 引用:${pl.total_citations||0} 未解析:${pl.unresolved_citations||0}\n`:'')+hard+stages+(jf.error?`\n错误类型:${jf.error}`:'')+(jf.message?`\n${jf.message}`:'');
   if(pl&&pl.draft_level){renderJobResults(id,pl);$('btnresume').disabled=true;$('btncancel').disabled=true;$('btnexport').disabled=false;return}
   const active=['running','queued','waiting_human','cancel_requested','interrupted'].includes(row.status);
   $('btncancel').disabled=!active;

@@ -299,3 +299,15 @@
 - 每例报告：eval/reports/business_real_<id>/business_report.json（含 grader 段与 dimension_means）。
 - ②③ 已交付：--grade/--grader-model/GRADER_MODEL_NAME；human_scores sheet/ingest 人工确认覆盖入口（human_confirmed=true）。全量 pytest 403 passed。
 - 人工确认（对 20 份抽查打分或全部确认）后即可得到权威业务完成率；未确认前不得声称业务通过率达标。
+
+## 2026-09-09 / 链内硬约束闸门（S6-05 对齐：必需章节/禁语/关键事实程序层复验）
+
+- 动因：真实批次暴露"链内 accepted ≠ 业务达标"（o08 仅 236 字、缺任务要求的"资料目录/覆盖范围"，链内却放行）。根因是链内验收只对照模型自己生成的提纲，不校验任务注解的必需结构。
+- 契约：新增 `HardRequirements`（src/application/pipeline/model.py）——required_sections / forbidden_claims / key_facts，归一化去重、单项≤200字、每类≤40项；`prompt_block()` 生成注入提示词的硬要求块。`PipelineResult.hard_checks` 记录复验读数并进入 pipeline.json/job.json。
+- 请求：`TaskRequest.required_sections/forbidden_claims/key_facts`（校验非空/长度/数量；snapshot 保留，故 resume 与追问改稿都能还原）；CLI 新增 `--require-section/--forbid-claim/--key-fact`（可重复）。
+- 链：outline 阶段把硬要求写进提示词，并在模型提纲缺必需章节时由程序**补入同名章节**（记 warn，不让模型自造结构替代任务要求）；draft/review 提示词带同一硬要求块，且要求章节标题逐字一致（不得自行加编号或改写）；`program_checks` 新增三条程序检查——必需章节缺失 error、禁语出现 error、关键事实未逐字出现 warn（不阻塞，语义覆盖交评测/人工）。
+- 入口：ResearchApplication/resume/follow-up 全链路透传（`_hard_requirements`）；business_eval 把数据集标注（sections/forbidden_claims/facts[].claim）作为硬要求传给链，并把链内自检读数记入 `chain_hard_checks` 与独立机器检查并列，便于对照。
+- 验证：新增 tests/test_pipeline_stages.py 5 项（硬要求读数与严重度、提纲补入与不重复补入、达标 accepted 且 pipeline.json 记录硬要求、缺必需章节→两轮修订后仍 draft、禁语出现→draft 且事实缺失只记 warn）+ tests/test_research_flow.py 2 项（请求校验与快照、入口透传到 request.json/pipeline.json/job.json）+ tests/test_resume_entry.py 1 项（续跑不丢硬约束）。全量 pytest：411 项，除已知高负载偶发 `test_workbench_s5::test_write_api_security_guards`（单文件重跑 6/6 通过）外全绿。
+- 限制：关键事实仍是"逐字命中"口径且只记 warn（语义覆盖由独立评测/人工判定）；必需章节用"标题归一后包含匹配"（容忍编号与标点），比 eval 机器检查的严格相等口径宽松；Web 表单尚未暴露这三个字段（CLI 与评测已可用）；链内闸门只是把结构要求做实，不能替代事实正确性判定。
+- 下一步：用真实模型复跑 20 案例批次 + 独立评测，对比闸门前后"链内 accepted 与独立评分"的一致度。
+

@@ -4,6 +4,7 @@ application/pipeline/draft.py —— 初稿/修订写作（S3-06/02/10）
 
 - 写作者收到提纲+素材包（按需还有上一稿与问题清单），直接产出 Markdown 正文；
 - 引用必须使用提纲/素材中的 [E-编号]；章节标题与提纲一致（审校程序层复验）；
+- 任务硬约束（必需章节/禁语/关键事实）随提示注入，正文由程序层复验（S6-05 对齐）；
 - 修订通过 ArtifactStore 版本化保存：report.v1 →（问题）→ report.v2…，旧稿不覆盖。
 """
 from __future__ import annotations
@@ -18,14 +19,16 @@ from src.harness.structured import extract_json
 
 def run_draft_stage(llm, goal: str, sections, title: str,
                     material_pack: dict, *,
-                    previous_report: str = "", issues_block: str = "") -> str:
+                    previous_report: str = "", issues_block: str = "",
+                    requirements_block: str = "") -> str:
     outline_block = format_outline_requirements(sections)
     if title:
         outline_block = f"报告标题：{title}\n\n" + outline_block
     messages = build_draft_messages(goal, outline_block,
                                     format_material_block(material_pack),
                                     previous_report=previous_report,
-                                    revision_notes=issues_block)
+                                    revision_notes=issues_block,
+                                    requirements_block=requirements_block)
     data = None
     raw = ""
     for attempt in (1, 2):

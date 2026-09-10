@@ -228,3 +228,30 @@ def test_index_page_has_s5_panels(client):
     assert 'id="flow"' in html and 'id="jobtbl"' in html
     assert 'id="reportview"' in html and 'id="btnexport"' in html
     assert "loadJobs" in html and "renderReportMarkdown" in html
+    # 任务硬约束字段（S6-05 对齐）在表单上可用，且随 startRun 提交
+    assert 'id="requireSections"' in html and 'id="forbidClaims"' in html
+    assert 'id="keyFacts"' in html and "required_sections:lines(" in html
+
+
+def test_research_job_hard_requirements_round_trip(client):
+    """Web 表单的必需章节/禁语/关键事实进入请求、链内复验并可在进度里看到读数。"""
+    conn, ws, server, _ = client
+    job_id = _submit_research(conn, required_sections=["资料目录", "覆盖范围"],
+                              forbidden_claims=["全体满意"],
+                              key_facts=["不存在的事实"])
+    progress = _wait_job(conn, job_id,
+                         lambda d: (d.get("job_file") or {}).get("pipeline"))
+    flat = progress["job_file"]["pipeline"]
+    assert flat["draft_level"] == "accepted"
+    # S4Brain 按提纲写章节：缺的必需章节由程序补入提纲，故 2/2 命中；硬要求可查
+    assert flat["hard_checks"]["required_sections_total"] == 2
+    assert flat["hard_checks"]["required_section_hits"] == 2
+    assert flat["hard_checks"]["forbidden_hits"] == 0
+    job_dir = Path(ws) / "jobs" / job_id
+    saved = json.loads((job_dir / "request.json").read_text(encoding="utf-8"))
+    assert saved["required_sections"] == ["资料目录", "覆盖范围"]
+    assert saved["forbidden_claims"] == ["全体满意"] and saved["key_facts"] == ["不存在的事实"]
+    pipeline = json.loads((job_dir / "pipeline.json").read_text(encoding="utf-8"))
+    assert pipeline["hard_requirements"]["required_sections"] == ["资料目录", "覆盖范围"]
+    # 进度端点也把硬约束读数暴露给页面
+    assert (progress.get("pipeline") or {}).get("result", {}).get("hard_checks")

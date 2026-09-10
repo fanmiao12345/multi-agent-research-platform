@@ -1,11 +1,11 @@
-﻿# 执行状态总账（EXECUTION STATUS）
+# 执行状态总账（EXECUTION STATUS）
 
 > 本文件是 `DEV_PLAN_LangGraph_Harness_From_Scratch.md` 的落地对照表：
 > 每个里程碑/步骤组 → 交付物（代码/测试）→ 证据 → 已知缺口。
 > 更新规则：每完成一步优化后刷新测试计数与"最近更新"。
 
 - 最近更新：2026-09-09
-- 最近修复验证：**403 passed**（评测 Agent+人工确认，83.57秒）：运维与评测离线测试9 等新增；S5基线378、S4基线372、B5基线347、B4基线330、B3基线255、B2基线199、B1基线174。
+- 最近修复验证：**411 passed**（链内硬约束闸门，新增8项；已知 `test_workbench_s5::test_write_api_security_guards` 在全量高负载下偶发连接中断，单文件重跑 6/6 通过，记录不修复）。此前基线：评测 Agent+人工确认 403、S5 378、S4 372、B5 347、B4 330、B3 255、B2 199、B1 174。
 - 验证命令：`.venv\Scripts\python -m pytest`（期望全绿）
 - 评测命令：`python -m eval.benchmark` / `eval.benchmark_orchestration` /
   `eval.benchmark_model` / `eval.final_report` / `eval.business_eval --mode real --max-cost X`
@@ -175,10 +175,20 @@ Web 待审批请求只在当前服务进程中有效。真实模型费用和质�
 - 限制（真实执行待用户）：60次真实业务运行、联网冒烟、故障全量两轮、人工评分导入、7天试用、单Agent基线对比、全新venv安装验证、首次Git提交（S0-06）。
 - 完整说明见S6_DELIVERY.md，逐项状态见IMPLEMENTATION_TRACKER.md，逐步证据见IMPLEMENTATION_LOG.md。
 
+## S6链内硬约束闸门（2026-09-09，S6-05 对齐）
+
+- 动因：真实批次暴露"链内 accepted ≠ 业务达标"（o08 仅236字、缺任务要求的必需章节，链内仍放行）——链内验收只对照模型自生成的提纲。
+- 契约与入口：`HardRequirements`（required_sections/forbidden_claims/key_facts）→ `TaskRequest` 三个同名字段（校验+快照保留，续跑与追问改稿都能还原）→ CLI `--require-section/--forbid-claim/--key-fact`。
+- 链内行为：硬要求注入提纲/初稿/审校提示词；提纲缺必需章节时程序补入（记 warn，模型自造结构不得替代任务要求）；正文标题要求逐字一致；程序层新增"必需章节缺失=error、禁语出现=error、关键事实未逐字出现=warn"。
+- 读数与对照：`PipelineResult.hard_checks` 与 pipeline.json/job.json 记录必需章节/禁语/关键事实命中；business_eval 把数据集标注传入链，并同时记录 `chain_hard_checks` 与独立机器检查，便于比较链内自检与独立评测。
+- 证据：离线 411 项测试（新增8项：读数与严重度、提纲补入/不重复补入、达标 accepted、缺章节两轮修订后仍 draft、禁语阻塞、请求校验与快照、入口透传、续跑不丢硬约束）；真实单例复验 o08：闸门后链内 accepted 且必需章节 2/2、禁语 0、关键事实 2/2，独立评测（v4-pro）5/5/5/5 → accept（此前 3 分）；20 案例复跑批次进行中，结果随后入账。
+- 限制：关键事实仍是逐字命中口径且只记 warn（语义覆盖由评测/人工判定）；必需章节采用"标题归一后包含匹配"，比 eval 机器检查的严格相等口径宽松；Web 表单尚未暴露这三个字段（CLI 与评测已可用）。
+
 ## 下一步
 
-S7（按证据优化：有界并行/检索优化/模型路由/可选格式，不阻塞首版）与 S0-06 Git 基线、
-S2搜索服务商、追问改稿、真实评测执行与7天试用——均需真实 Key/预算/时间，按用户安排推进。
+S7（按证据优化：有界并行/检索优化/模型路由/可选格式，不阻塞首版）、S2搜索服务商、
+Web表单硬约束字段、真实评测扩批（20×3=60次）与10故障两轮、人工评分导入（human_confirmed）、
+7天个人试用——真实执行项需 Key/预算/时间，按用户安排推进；S0-06 Git 基线已完成。
 
 
 

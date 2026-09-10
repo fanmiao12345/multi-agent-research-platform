@@ -11,9 +11,12 @@ from src.application.pipeline.evidence import (EvidenceStore, collect_citations,
                                                extract_source_evidence, make_id)
 from src.application.pipeline.material import (fill_duplicates, render_material,
                                                run_material_stage)
-from src.application.pipeline.model import ReviewIssue, StageError
+from src.application.pipeline.model import (HardRequirements, ReviewIssue,
+                                            StageError)
 from src.application.pipeline.outline import run_outline_stage
-from src.application.pipeline.review import (model_review, program_checks)
+from src.application.pipeline.review import (hard_requirement_issues,
+                                             hard_requirement_stats, model_review,
+                                             program_checks, section_in_report)
 from src.application.pipeline.runner import run_research_pipeline
 from src.harness.model_gateway import JobLedger, job_scope
 from src.llm.base import ChatResult
@@ -403,3 +406,126 @@ def test_pipeline_no_sources_and_no_evidence(tmp_path):
                                    store=store, goal="研究", max_revision_rounds=2)
     assert result.draft_level == "draft" and result.termination_reason == "incomplete"
     assert "没有任何可定位证据" in result.message
+
+
+# ---- S6-05 对齐：任务硬约束（必需章节/禁语/关键事实）在链内程序层复验 ------------
+REQ_SECTIONS = HardRequirements(required_sections=("资料目录", "覆盖范围"))
+REQ_FULL = HardRequirements(required_sections=("资料目录", "覆盖范围"),
+                            forbidden_claims=("全体参与者75%满意",),
+                            key_facts=("试点共40人",))
+REQ_OK_REPORT = ("# 报告\n\n## 一、资料目录\n\n- 材料一 [E-001]\n\n"
+                 "## 2. 覆盖范围\n\n试点共40人参与 [E-001]。\n")
+
+
+def test_hard_requirement_issues_and_stats():
+    issues, stats = hard_requirement_issues(REQ_OK_REPORT, REQ_FULL)
+    assert issues == []  # 编号前缀不误伤；关键事实逐字出现
+    assert stats == {"required_sections_total": 2, "required_section_hits": 2,
+                     "forbidden_total": 1, "forbidden_hits": 0,
+                     "fact_total": 1, "fact_hits": 1}
+    assert section_in_report(REQ_OK_REPORT, "资料目录")
+    assert not section_in_report(REQ_OK_REPORT, "局限")
+
+    bad = "# 报告\n\n## 其他\n\n全体参与者75%满意 [E-001]。\n"
+    issues, stats = hard_requirement_issues(bad, REQ_FULL)
+    errors = {i.code for i in issues if i.severity == "error"}
+    warns = {i.code for i in issues if i.severity == "warn"}
+    assert errors == {"required_section", "forbidden"}
+    assert warns == {"fact"}          # 关键事实缺失只记 warn，不阻塞
+    assert stats["required_section_hits"] == 0 and stats["forbidden_hits"] == 1
+    assert stats["fact_hits"] == 0
+    # 没有硬要求时不产生任何问题与读数
+    assert hard_requirement_issues("# 报告\n\n正文\n", None)[0] == []
+    assert hard_requirement_stats(bad, None)["required_sections_total"] == 0
+
+
+def test_outline_stage_appends_task_required_sections():
+    seen: dict = {}
+
+    class OutlineBrain:
+        model_name = "stub"
+        run_mode = "mock"
+
+        def chat(self, messages, tools=None):
+            seen["user"] = next(m["content"] for m in messages if m["role"] == "user")
+            return ChatResult(content=json.dumps({"title": "报告", "sections": [
+                {"heading": "背景", "required_evidence": ["E-001"]}]},
+                ensure_ascii=False))
+
+    sections, _, issues = run_outline_stage(OutlineBrain(), "目标", "素材", {"E-001"},
+                                            requirements=REQ_SECTIONS)
+    headings = [s.heading for s in sections]
+    assert headings == ["背景", "资料目录", "覆盖范围"]
+    assert any(i["code"] == "required_section" for i in issues)
+    # 硬要求写进了提示词（模型能看见，不是只在事后判错）
+    assert "必须出现的章节" in seen["user"] and "资料目录" in seen["user"]
+
+    class AlreadyThereBrain(OutlineBrain):
+        def chat(self, messages, tools=None):
+            return ChatResult(content=json.dumps({"title": "报告", "sections": [
+                {"heading": "一、资料目录", "required_evidence": ["E-001"]},
+                {"heading": "覆盖范围", "required_evidence": ["E-001"]}]},
+                ensure_ascii=False))
+
+    sections, _, issues = run_outline_stage(AlreadyThereBrain(), "目标", "素材", {"E-001"},
+                                            requirements=REQ_SECTIONS)
+    assert [s.heading for s in sections] == ["一、资料目录", "覆盖范围"]  # 不重复补入
+    assert not [i for i in issues if i["code"] == "required_section"]
+
+
+def test_pipeline_accepts_when_hard_requirements_met(tmp_path):
+    result, _, job_dir, _ = _run_pipeline(tmp_path, hard_requirements=REQ_SECTIONS)
+    assert result.draft_level == "accepted"
+    assert result.hard_checks["required_section_hits"] == 2
+    assert "任务硬约束复验" in result.message
+    snapshot = json.loads((job_dir / "pipeline.json").read_text(encoding="utf-8"))
+    assert snapshot["hard_requirements"]["required_sections"] == ["资料目录", "覆盖范围"]
+    assert snapshot["result"]["hard_checks"]["required_sections_total"] == 2
+
+
+def test_pipeline_blocks_acceptance_when_required_section_missing(tmp_path):
+    """模拟 o08：正文缺任务要求的章节 → 程序层判 error，耗尽修订后交付 draft。"""
+
+    class DropRequiredSection(PipelineBrain):
+        def _draft(self, user):
+            report = super()._draft(user)
+            kept, skip = [], False
+            for line in report.splitlines():
+                if line.startswith("#"):
+                    skip = "覆盖范围" in line
+                if not skip:
+                    kept.append(line)
+            return "\n".join(kept)
+
+    result, _, job_dir, _ = _run_pipeline(tmp_path, brain_override=DropRequiredSection(),
+                                          hard_requirements=REQ_SECTIONS)
+    assert result.draft_level == "draft"
+    assert result.termination_reason == "incomplete"
+    assert result.revised_rounds == 2            # 已尝试两轮修订仍不达标
+    assert result.hard_checks["required_section_hits"] == 1
+    assert result.unresolved_citations == 0      # 阻塞来自硬要求，不是引用问题
+    reviews = sorted((job_dir / "artifacts").glob("review.*.json"))
+    payload = json.loads(reviews[-1].read_text(encoding="utf-8"))
+    codes = {i["code"] for i in payload["issues"]}
+    assert "required_section" in codes
+    assert any("覆盖范围" in i["message"] for i in payload["issues"])
+
+
+def test_pipeline_blocks_forbidden_claim_and_records_stats(tmp_path):
+    """禁语出现即阻塞：模型自审说 accepted 也不能翻案为验收成功。"""
+
+    class LeakForbidden(PipelineBrain):
+        def _draft(self, user):
+            return super()._draft(user) + "\n全体参与者75%满意。\n"
+
+    requirements = HardRequirements(forbidden_claims=("全体参与者75%满意",),
+                                    key_facts=("试点共40人",))
+    result, _, job_dir, _ = _run_pipeline(tmp_path, brain_override=LeakForbidden(),
+                                          hard_requirements=requirements)
+    assert result.draft_level == "draft"
+    assert result.hard_checks["forbidden_hits"] == 1
+    assert result.hard_checks["fact_hits"] == 0
+    reviews = sorted((job_dir / "artifacts").glob("review.*.json"))
+    issues = json.loads(reviews[-1].read_text(encoding="utf-8"))["issues"]
+    assert any(i["code"] == "forbidden" for i in issues)
+    assert any(i["code"] == "fact" and i["severity"] == "warn" for i in issues)

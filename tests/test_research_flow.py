@@ -88,6 +88,41 @@ def test_request_flow_validation():
     assert TaskRequest("t").flow == "agent"
 
 
+def test_request_hard_requirement_validation():
+    with pytest.raises(ValueError):
+        TaskRequest("t", required_sections=("",))
+    with pytest.raises(ValueError):
+        TaskRequest("t", forbidden_claims=("x" * 201,))
+    with pytest.raises(ValueError):
+        TaskRequest("t", key_facts=tuple(f"f{i}" for i in range(41)))
+    request = TaskRequest.from_payload({"task": "t",
+                                        "required_sections": ["资料目录", "覆盖范围"]})
+    assert request.required_sections == ("资料目录", "覆盖范围")
+    assert TaskRequest("t", key_facts="单个事实").key_facts == ("单个事实",)
+    assert request.snapshot()["required_sections"] == ("资料目录", "覆盖范围")
+
+
+def test_application_passes_hard_requirements_into_chain(tmp_path):
+    """任务硬约束经统一入口进入链：请求快照、pipeline 快照与复验读数都可查。"""
+    request = TaskRequest("写一份带引用的整理报告", flow="research",
+                          texts=("第一段正文：A 是 42。\n\n第二段正文：B 可验证。\n",),
+                          required_sections=("资料目录", "覆盖范围"),
+                          forbidden_claims=("全体满意",),
+                          key_facts=("A 是 42",))
+    result = ResearchApplication(request, llm=FlowBrain(), workspace_root=tmp_path).run()
+    assert result.draft_level == "accepted"
+    assert result.hard_checks["required_sections_total"] == 2
+    assert result.hard_checks["required_section_hits"] == 2
+    assert result.hard_checks["forbidden_hits"] == 0
+    job_dir = tmp_path / "jobs" / result.root_job_id
+    saved = json.loads((job_dir / "request.json").read_text(encoding="utf-8"))
+    assert saved["required_sections"] == ["资料目录", "覆盖范围"]
+    pipeline = json.loads((job_dir / "pipeline.json").read_text(encoding="utf-8"))
+    assert pipeline["hard_requirements"]["required_sections"] == ["资料目录", "覆盖范围"]
+    job = json.loads((job_dir / "job.json").read_text(encoding="utf-8"))
+    assert job["pipeline"]["hard_checks"]["required_section_hits"] == 2
+
+
 def test_application_research_flow_end_to_end(tmp_path):
     material = tmp_path / "材料.md"
     material.write_text("第一段正文：A 是 42。\n\n第二段正文：B 可验证。\n", encoding="utf-8")

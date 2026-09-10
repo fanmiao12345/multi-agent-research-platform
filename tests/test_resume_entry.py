@@ -20,11 +20,11 @@ class CrashAfterMaterial(S4Brain):
         return super()._reply(purpose, user)
 
 
-def _seed_failed_job(tmp_path):
+def _seed_failed_job(tmp_path, **request_kwargs):
     material = tmp_path / "材料.md"
     material.write_text("第一段：甲方案 42%。\n\n第二段：乙方法可验证。\n", encoding="utf-8")
     request = TaskRequest("写带引用的整理报告", flow="research",
-                          files=(str(material),))
+                          files=(str(material),), **request_kwargs)
     with pytest.raises(RuntimeError, match="模拟进程中断"):
         ResearchApplication(request, llm=CrashAfterMaterial(),
                             workspace_root=tmp_path).run()
@@ -52,6 +52,20 @@ def test_resume_research_job_continues_with_continuation_ledger(tmp_path):
     assert {"outline", "draft", "review"} <= purposes
     # 原账本调用被载入续接（次数延续，不归零）
     assert ledger["call_count"] >= 3
+
+
+def test_resume_keeps_hard_requirements(tmp_path):
+    """续跑不丢任务硬约束：快照恢复必需章节，复验读数与首次运行同口径。"""
+    job_id = _seed_failed_job(tmp_path, required_sections=("资料目录", "覆盖范围"))
+    result = resume_research_job(workspace_root=tmp_path, job_id=job_id, llm=S4Brain())
+    assert result.draft_level == "accepted"
+    assert result.hard_checks["required_sections_total"] == 2
+    assert result.hard_checks["required_section_hits"] == 2
+    job_dir = tmp_path / "jobs" / job_id
+    saved = json.loads((job_dir / "request.json").read_text(encoding="utf-8"))
+    assert saved["required_sections"] == ["资料目录", "覆盖范围"]
+    pipeline = json.loads((job_dir / "pipeline.json").read_text(encoding="utf-8"))
+    assert pipeline["hard_requirements"]["required_sections"] == ["资料目录", "覆盖范围"]
 
 
 def test_resume_research_job_missing_or_corrupt_is_explicit(tmp_path):

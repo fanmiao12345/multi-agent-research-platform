@@ -85,6 +85,18 @@ B2已接入统一任务入口与根账本。Web可设置调用次数、输出Tok
 说明与限制见`docs/B5_DELIVERY.md`。
 
 ```powershell
+# S6-05 对齐：任务硬约束（必需章节/禁止表述/关键事实）由链内程序层复验
+.venv\Scripts\python -m src.interfaces.cli "整理材料并写一份带引用的报告" --flow research `
+  --import-file D:\资料\笔记.md --require-section 资料目录 --require-section 覆盖范围 `
+  --forbid-claim "全体参与者75%满意" --key-fact "试点共40人"
+# 必需章节缺失或禁止表述出现 = 阻塞问题（不能判 accepted，交付 draft）；
+# 关键事实未逐字覆盖记 warn（语义覆盖由评测/人工判定）。
+# 硬要求会注入提纲/初稿/审校提示词，模型提纲缺必需章节时由程序补入同名章节；
+# 复验读数写入 pipeline.json 的 hard_checks，Web ㉑卡与评测报告都会展示。
+```
+Web 表单同一位置可填写这三个字段（每行一条）。
+
+```powershell
 # S4：任务在阶段边界崩溃后可续跑（跳过已完成阶段；真实模型模式验收）
 .venv\Scripts\python -m src.interfaces.cli --workspace workspaces --resume-job job_<id>
 # 状态库：workspaces/state.sqlite（任务/会话/审批/操作账本）

@@ -199,7 +199,13 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                     max_cost=max_cost if mode == "real" else None,
                     texts=tuple(text for _, text in sources),
                     base_draft=task.get("initial_draft") or "",
-                    system_extra="资料标题提示：" + "；".join(title for title, _ in sources))
+                    system_extra="资料标题提示：" + "；".join(title for title, _ in sources),
+                    # S6-05 对齐：把数据集标注的必需章节/禁语/关键事实传给链内程序层复验，
+                    # 避免"链内自审通过、独立评测不达标"（用例 o08 缺必需章节）。
+                    required_sections=tuple(task.get("sections") or ()),
+                    forbidden_claims=tuple(task.get("forbidden_claims") or ()),
+                    key_facts=tuple(f.get("claim", "") for f in task.get("facts") or ()
+                                    if f.get("claim")))
                 app = ResearchApplication(request, settings=settings,
                                           workspace_root=root, llm=llm)
                 outcome = app.run()
@@ -243,6 +249,7 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                     root_job_id=outcome.root_job_id,
                     message=(getattr(outcome, "message", "") or "")[:300],
                     machine_checks=checks,
+                    chain_hard_checks=pipeline.get("hard_checks") or {},
                     revision_of=task.get("revision_of"),
                     changed=(outcome.final_text or "").strip()
                     != (task.get("initial_draft") or "").strip(),
