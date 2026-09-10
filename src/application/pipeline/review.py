@@ -36,8 +36,41 @@ def normalize_heading(text: str) -> str:
 
 def report_headings(report: str) -> list[str]:
     """正文 Markdown 标题行（归一后）。"""
-    return [normalize_heading(re.sub(r"^#+\s*", "", line.strip()))
-            for line in (report or "").splitlines() if line.strip().startswith("#")]
+    return [title for _, title, _ in heading_index(report)]
+
+
+def heading_index(report: str) -> list[tuple[int, str, int]]:
+    """[(行号, 归一标题, 层级)]——层级用于按节取正文（含子标题内容）。"""
+    entries: list[tuple[int, str, int]] = []
+    for index, line in enumerate((report or "").splitlines()):
+        stripped = line.strip()
+        if not stripped.startswith("#"):
+            continue
+        level = len(stripped) - len(stripped.lstrip("#"))
+        title = normalize_heading(re.sub(r"^#+\s*", "", stripped))
+        if title:
+            entries.append((index, title, level))
+    return entries
+
+
+def best_heading(report: str, name: str) -> tuple[int, str, int] | None:
+    """选择与要求最匹配的标题：优先精确匹配，否则取最短的包含匹配。
+
+    这样"三点摘要"不会命中文档大标题「…三点摘要与研究局限」，也不会因父标题
+    抢位而导致本节正文取空（此前按行首匹配 + 遇标题即停，会把含子标题的章节
+    正文判成空，从而误报"没有标注"）。
+    """
+    target = normalize_heading(name)
+    if not target:
+        return None
+    headings = heading_index(report)
+    exact = [entry for entry in headings if entry[1] == target]
+    if exact:
+        return exact[0]
+    contains = [entry for entry in headings if target in entry[1]]
+    if not contains:
+        return None
+    return min(contains, key=lambda entry: len(entry[1]))
 
 
 def section_in_report(report: str, name: str) -> bool:
@@ -183,21 +216,24 @@ def _heading_in_report(report: str, heading: str) -> bool:
 
 
 def _section_body(report: str, heading: str) -> str:
-    target = normalize_heading(heading)
-    capture = False
+    """取该节正文：从最匹配的标题开始，直到下一个同级或更高级标题（含子标题内容）。
+
+    修复：此前"遇标题即停"会把只有子标题的章节正文取空（含子标题里的〔事实/推断/
+    未知〕标注），导致误报"章节要求标注但正文没有标注"。
+    """
+    chosen = best_heading(report, heading)
+    if chosen is None:
+        return ""
+    index, _, level = chosen
+    lines = (report or "").splitlines()
     body: list[str] = []
-    for line in report.splitlines():
-        stripped = line.strip()
+    for line_index in range(index + 1, len(lines)):
+        stripped = lines[line_index].strip()
         if stripped.startswith("#"):
-            title = normalize_heading(re.sub(r"^#+\s*", "", stripped))
-            hit = bool(target) and target in title
-            if hit:
-                capture = True
-                continue
-            if capture:
+            next_level = len(stripped) - len(stripped.lstrip("#"))
+            if next_level <= level:
                 break
-        elif capture:
-            body.append(line)
+        body.append(lines[line_index])
     return "\n".join(body)
 
 

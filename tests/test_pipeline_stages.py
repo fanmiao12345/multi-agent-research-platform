@@ -11,8 +11,8 @@ from src.application.pipeline.evidence import (EvidenceStore, collect_citations,
                                                extract_source_evidence, make_id)
 from src.application.pipeline.material import (fill_duplicates, render_material,
                                                run_material_stage)
-from src.application.pipeline.model import (HardRequirements, ReviewIssue,
-                                            StageError)
+from src.application.pipeline.model import (HardRequirements, OutlineSection,
+                                            ReviewIssue, StageError)
 from src.application.pipeline.outline import run_outline_stage
 from src.application.pipeline.review import (hard_requirement_issues,
                                              hard_requirement_stats, model_review,
@@ -388,6 +388,26 @@ def test_pipeline_revision_no_change_guard(tmp_path):
     # no_change 错误进入最终审校问题清单
     assert any(s.get("issue_counts", {}).get("error")
                for s in result.stages)
+
+
+def test_section_body_handles_subheadings_and_title_collision():
+    """回归：文档大标题含章节名、标注写在子标题下时不得误报"没有标注"。
+
+    真实批次 o02/o03 暴露：`_section_body` 遇标题即停 + 包含匹配命中大标题，
+    使「三点摘要」「局限」正文被判空 → 程序层误报缺标注 → 误判 draft。
+    """
+    from src.application.pipeline.review import _section_body, best_heading
+    report = ("# 星桥团队试点三点摘要与研究局限\n\n"
+              "## 三点摘要\n\n### 试点规模\n\n试点共40人 [E-002]〔事实〕。\n\n"
+              "## 局限\n\n没有设置对照组 [E-005]〔推断〕。\n")
+    assert best_heading(report, "三点摘要")[1] == "三点摘要"   # 精确匹配优先于大标题
+    assert best_heading(report, "不存在的章节") is None
+    body = _section_body(report, "三点摘要")
+    assert "〔事实〕" in body and "试点共40人" in body
+    assert "局限" not in body                                  # 同级标题处停止
+    assert "〔推断〕" in _section_body(report, "局限")
+    section = OutlineSection("三点摘要", "摘要", require_fact_markers=True)
+    assert program_checks(report, {"E-002", "E-005"}, [section]) == []
 
 
 def test_pipeline_no_sources_and_no_evidence(tmp_path):
