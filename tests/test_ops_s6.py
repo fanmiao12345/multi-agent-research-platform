@@ -50,6 +50,32 @@ def test_business_eval_stub_success_and_machine_checks(tmp_path):
     assert (out / "samples").exists()  # samples 目录由 out_dir 创建
 
 
+def test_business_eval_passes_dataset_hard_requirements(tmp_path):
+    """S6-05 对齐：数据集标注（必需章节/禁语/关键事实）进入链并由程序层复验。"""
+    from eval.business_eval import run_business_eval
+    out = tmp_path / "out"
+    report = run_business_eval(workspace_root=tmp_path / "ws", mode="mock",
+                               llm=S4Brain(), repeats=1, fault_rounds=1,
+                               task_filter="o01", out_dir=out)
+    record = report["records"][0]
+    assert record["status"] == "passed"
+    hard = record["chain_hard_checks"]
+    # o01 数据集标注：2 个必需章节、1 条禁语、2 条关键事实
+    assert hard["required_sections_total"] == 2 and hard["required_section_hits"] == 2
+    assert hard["forbidden_total"] == 1 and hard["forbidden_hits"] == 0
+    assert hard["fact_total"] == 2
+    # 独立机器检查（eval 自己的口径）与链内自检一致：章节 2/2
+    checks = record["machine_checks"]
+    assert checks["required_sections"] == 2 and checks["section_hits"] == 2
+    # 请求快照确实带上了数据集标注（不是只在报告层面记数）
+    job_dir = tmp_path / "ws" / "jobs" / record["root_job_id"]
+    saved = json.loads((job_dir / "request.json").read_text(encoding="utf-8"))
+    assert saved["required_sections"] == ["资料目录", "覆盖范围"]
+    assert saved["forbidden_claims"] and saved["key_facts"]
+    pipeline = json.loads((job_dir / "pipeline.json").read_text(encoding="utf-8"))
+    assert pipeline["hard_requirements"]["required_sections"] == ["资料目录", "覆盖范围"]
+
+
 def test_business_eval_mock_failure_is_recorded_not_passed(tmp_path):
     from eval.business_eval import run_business_eval
     from src.llm.mock import MockLLM
