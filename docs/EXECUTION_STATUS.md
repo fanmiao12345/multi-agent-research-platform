@@ -5,7 +5,7 @@
 > 更新规则：每完成一步优化后刷新测试计数与"最近更新"。
 
 - 最近更新：2026-09-09
-- 最近修复验证：**411 passed**（链内硬约束闸门，新增8项；已知 `test_workbench_s5::test_write_api_security_guards` 在全量高负载下偶发连接中断，单文件重跑 6/6 通过，记录不修复）。此前基线：评测 Agent+人工确认 403、S5 378、S4 372、B5 347、B4 330、B3 255、B2 199、B1 174。
+- 最近修复验证：**414 passed**（链内硬约束闸门 + 章节取法误报修复；已知 `test_workbench_s5::test_write_api_security_guards` 在全量高负载下偶发连接中断，单文件重跑 7/7 通过，记录不修复）。此前基线：链内闸门 412、评测 Agent+人工确认 403、S5 378、S4 372、B5 347、B4 330、B3 255、B2 199、B1 174。
 - 验证命令：`.venv\Scripts\python -m pytest`（期望全绿）
 - 评测命令：`python -m eval.benchmark` / `eval.benchmark_orchestration` /
   `eval.benchmark_model` / `eval.final_report` / `eval.business_eval --mode real --max-cost X`
@@ -181,8 +181,9 @@ Web 待审批请求只在当前服务进程中有效。真实模型费用和质�
 - 契约与入口：`HardRequirements`（required_sections/forbidden_claims/key_facts）→ `TaskRequest` 三个同名字段（校验+快照保留，续跑与追问改稿都能还原）→ CLI `--require-section/--forbid-claim/--key-fact`。
 - 链内行为：硬要求注入提纲/初稿/审校提示词；提纲缺必需章节时程序补入（记 warn，模型自造结构不得替代任务要求）；正文标题要求逐字一致；程序层新增"必需章节缺失=error、禁语出现=error、关键事实未逐字出现=warn"。
 - 读数与对照：`PipelineResult.hard_checks` 与 pipeline.json/job.json 记录必需章节/禁语/关键事实命中；business_eval 把数据集标注传入链，并同时记录 `chain_hard_checks` 与独立机器检查，便于比较链内自检与独立评测。
-- 证据：离线 411 项测试（新增8项：读数与严重度、提纲补入/不重复补入、达标 accepted、缺章节两轮修订后仍 draft、禁语阻塞、请求校验与快照、入口透传、续跑不丢硬约束）；真实单例复验 o08：闸门后链内 accepted 且必需章节 2/2、禁语 0、关键事实 2/2，独立评测（v4-pro）5/5/5/5 → accept（此前 3 分）；20 案例复跑批次进行中，结果随后入账。
-- 限制：关键事实仍是逐字命中口径且只记 warn（语义覆盖由评测/人工判定）；必需章节采用"标题归一后包含匹配"，比 eval 机器检查的严格相等口径宽松；Web 表单尚未暴露这三个字段（CLI 与评测已可用）。
+- 证据：离线 414 项测试（新增9项：读数与严重度、提纲补入/不重复补入、达标 accepted、缺章节两轮修订后仍 draft、禁语阻塞、请求校验与快照、入口透传、续跑不丢硬约束、评测路径 chain_hard_checks）；真实单例复验 o08：闸门后链内 accepted 且必需章节 2/2、禁语 0、关键事实 2/2，独立评测（v4-pro）5/5/5/5 → accept（此前 3 分）。
+- 闸门批次首轮（前3例）暴露并已修复"缺标注"**误报**：章节正文取法遇标题即停 + 包含匹配命中大标题，使含子标题章节的正文被判空（链内 draft 而独立评测判 accept）。修复为"精确匹配优先 + 取到下一个同级/更高级标题"，回归测试已加；受影响产物保留为 `eval/reports/gate_buggy_o01..o04`，20 案例批次用修复后代码重跑，结果随后入账。
+- 限制：关键事实仍是逐字命中口径且只记 warn（语义覆盖由评测/人工判定）；必需章节采用"标题归一后包含匹配"，比 eval 机器检查的严格相等口径宽松；评测批次把数据集关键事实也作为任务要求传入，事实命中率的提升含"提示效应"，结构（必需章节）部分是纯闸门收益，解释时须分开表述。
 
 ## 下一步
 
