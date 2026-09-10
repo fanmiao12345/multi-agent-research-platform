@@ -1,0 +1,17 @@
+case=o02 status=failed level=draft
+message=交付待完善草稿：仍有 3 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功
+chain={"required_sections_total": 2, "required_section_hits": 2, "forbidden_total": 2, "forbidden_hits": 0, "fact_total": 3, "fact_hits": 3}
+machine={"citation_tokens": 0, "unresolved_citations": 0, "required_sections": 2, "section_hits": 2, "fact_hits": 3, "fact_total": 3, "forbidden_claim_hits": 0, "forbidden_claims": [], "note": "机器检查仅供参考；事实支持/语义正确需人工评分"}
+grader=accept issues=[]
+job=job_99496866a9b3487cbfe72f3bbaa3800b reviews=['review.v1.json', 'review.v2.json', 'review.v3.json']
+final_verdict=needs_revision round=3
+  [error:section] 章节「三点摘要」要求区分事实/推断/未知，但正文没有标注
+  [error:section] 章节「局限」要求区分事实/推断/未知，但正文没有标注
+  [error:support] 试点规模段'是否有真实数据支持结论未知'引用E-001/E-006不支持；证据称材料为合成非真实数据
+stage evidence completed issues={'error': 0, 'warn': 2, 'info': 0} 提取 13 条可定位证据，跳过 2 条问题摘录
+stage material completed issues={'error': 0, 'warn': 0, 'info': 0} 4 个主题，0 个开放冲突，5 个缺口
+stage outline completed issues={'error': 0, 'warn': 0, 'info': 0} 5 个章节
+stage draft completed issues={'error': 0, 'warn': 0, 'info': 0} 新写初稿（640字）
+stage review revised issues={'error': 2, 'warn': 3, 'info': 0} 第 1 轮修订后重审
+stage review revised issues={'error': 7, 'warn': 0, 'info': 0} 第 2 轮修订后重审
+stage review needs_revision issues={'error': 3, 'warn': 0, 'info': 0} 交付待完善草稿：仍有 3 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功

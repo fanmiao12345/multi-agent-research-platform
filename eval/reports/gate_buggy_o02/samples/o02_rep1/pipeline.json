@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_99496866a9b3487cbfe72f3bbaa3800b",
+  "goal": "用三点总结试点规模、问卷结果和处理时长，保留研究局限。",
+  "started_at": "2026-09-10T13:45:18",
+  "hard_requirements": {
+    "required_sections": [
+      "三点摘要",
+      "局限"
+    ],
+    "forbidden_claims": [
+      "全体参与者75%满意",
+      "远程办公导致效率提升20%"
+    ],
+    "key_facts": [
+      "没有设置对照组",
+      "答卷者满意率为75%",
+      "从10小时变为8小时"
+    ]
+  },
+  "result": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "提取 13 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-10T13:45:25"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-10T13:45:36"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个章节",
+        "finished_at": "2026-09-10T13:45:51"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（640字）",
+        "finished_at": "2026-09-10T13:46:02"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-10T13:46:37"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 7,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-10T13:47:28"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 3,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 3 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-10T13:47:58"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 31,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 2,
+      "forbidden_hits": 0,
+      "fact_total": 3,
+      "fact_hits": 3
+    },
+    "message": "交付待完善草稿：仍有 3 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}
