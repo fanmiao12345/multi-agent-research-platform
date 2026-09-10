@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_5bc28880d4",
+      "fact": "本材料为合成验收数据，来源为单一粘贴文本。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_5bc28880d4",
+      "fact": "当前仅1份来源，独立资料数量为1。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_5bc28880d4",
+      "fact": "观察研究覆盖120人，为期4周。",
+      "tag": "F",
+      "quote": "观察研究覆盖120人，为期4周；",
+      "start": 11,
+      "end": 27,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_5bc28880d4",
+      "fact": "远程办公与自评专注度上升存在相关关系。",
+      "tag": "F",
+      "quote": "远程办公与自评专注度上升存在相关关系。",
+      "start": 27,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_5bc28880d4",
+      "fact": "样本自愿加入，未随机分组。",
+      "tag": "F",
+      "quote": "样本自愿加入，未随机分组。",
+      "start": 46,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_5bc28880d4",
+      "fact": "没有报告客观产出指标或长期效果。",
+      "tag": "F",
+      "quote": "没有报告客观产出指标或长期效果。",
+      "start": 59,
+      "end": 75,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_5bc28880d4",
+      "fact": "120人样本仅来自该份来源，不应按转载重复累加。",
+      "tag": "I",
+      "quote": "观察研究覆盖120人，为期4周；",
+      "start": 11,
+      "end": 27,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_ef3bc4d8f8",
+      "fact": "本材料声明为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 60
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_ef3bc4d8f8",
+      "fact": "本文转载外部观察摘要s08，未采集新数据。",
+      "tag": "F",
+      "quote": "本文转载外部观察摘要（s08），未采集新数据。",
+      "start": 11,
+      "end": 34,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 60
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_ef3bc4d8f8",
+      "fact": "所引用样本为同一批120人。",
+      "tag": "F",
+      "quote": "引用的样本仍是同一批120人",
+      "start": 34,
+      "end": 48,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 60
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_ef3bc4d8f8",
+      "fact": "该材料不能作为独立重复验证。",
+      "tag": "F",
+      "quote": "不能作为独立重复验证。",
+      "start": 49,
+      "end": 60,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 60
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_ef3bc4d8f8",
+      "fact": "可识别的独立外部资料仅涉及s08这一摘要。",
+      "tag": "I",
+      "quote": "转载外部观察摘要（s08）",
+      "start": 13,
+      "end": 26,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 60
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_ef3bc4d8f8",
+      "fact": "样本范围为同一批120人，非新增独立样本。",
+      "tag": "I",
+      "quote": "引用的样本仍是同一批120人，不能作为独立重复验证",
+      "start": 34,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 60
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_7d1fe4732b",
+      "fact": "本材料明确标注为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_7d1fe4732b",
+      "fact": "样本含5名受访者。",
+      "tag": "F",
+      "quote": "5名受访者",
+      "start": 11,
+      "end": 16,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_7d1fe4732b",
+      "fact": "5名受访者中3人表示通勤减少。",
+      "tag": "F",
+      "quote": "5名受访者中3人表示通勤减少",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_7d1fe4732b",
+      "fact": "2人提到跨组沟通等待。",
+      "tag": "F",
+      "quote": "2人提到跨组沟通等待",
+      "start": 26,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_7d1fe4732b",
+      "fact": "访谈不是随机抽样。",
+      "tag": "F",
+      "quote": "访谈不是随机抽样",
+      "start": 37,
+      "end": 45,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_7d1fe4732b",
+      "fact": "该访谈不能用于估计全员比例。",
+      "tag": "F",
+      "quote": "不能用于估计全员比例",
+      "start": 46,
+      "end": 56,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_7d1fe4732b",
+      "fact": "仅依据所给资料，独立来源数量为1，不能将转载重复计入样本量。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。5名受访者中3人表示通勤减少，2人提到跨组沟通等待。访谈不是随机抽样，不能用于估计全员比例。",
+      "start": 0,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    }
+  ]
+}

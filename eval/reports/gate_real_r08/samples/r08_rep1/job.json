@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_39c2e56ec6f44b3abc27e06515634470",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 独立资料数量与样本范围证据综述\n## 证据分组\n按独立来源、样本范围、结论局限与材料属性分组证据。本材料为合成验收数据〔事实〕【[E-001]】；本材料声明为合成验收数据〔事实〕【[E-008]】；本材料明确标注为合成验收数据〔事实〕【[E-014]】。\n### 独立资料数量与去重\n当前仅1份来源，独立资料数量为1〔事实〕【[E-002]】。仅依据所给资料，独立来源数量为1，不能将转载重复计入样本量〔事实〕【[E-020]】。可识别的独立外部资料仅涉及s08这一摘要〔事实〕【[E-012]】。本文转载外部观察摘要s08，未采集新数据〔事实〕【[E-009]】。该材料不能作为独立重复验证〔事实〕【[E-011]】。120人样本仅来自该份来源，不应按转载重复累加〔事实〕【[E-007]】。所引用样本为同一批120人〔事实〕【[E-010]】。样本范围为同一批120人，非新增独立样本〔事实〕【[E-013]】。所给E-001未出现“来源为单一粘贴文本”的表述〔未知〕【[E-001]】。\n### 样本范围\n观察研究覆盖120人，为期4周〔事实〕【[E-003]】。所引用样本为同一批120人〔事实〕【[E-010]】。样本范围为同一批120人，非新增独立样本〔事实〕【[E-013]】。样本含5名受访者〔事实〕【[E-015]】。5名受访者中3人表示通勤减少〔事实〕【[E-016]】。2人提到跨组沟通等待〔事实〕【[E-017]】。访谈不是随机抽样〔事实〕【[E-018]】。该访谈不能用于估计全员比例〔事实〕【[E-019]】。样本自愿加入，未随机分组〔事实〕【[E-005]】。资料未说明120人观察与5名受访者访谈的关系〔未知〕【[E-003]】【[E-015]】。\n### 结论局限与材料属性\n远程办公与自评专注度上升存在相关关系〔事实〕【[E-004]】。没有报告客观产出指标或长期效果〔事实〕【[E-006]】。本材料为合成验收数据〔事实〕【[E-001]】；本材料声明为合成验收数据〔事实〕【[E-008]】；本材料明确标注为合成验收数据〔事实〕【[E-014]】。\n## 综述\n本文转载外部观察摘要s08，未采集新数据〔事实〕【[E-009]】。远程办公与自评专注度上升存在相关关系〔事实〕【[E-004]】。没有报告客观产出指标或长期效果〔事实〕【[E-006]】。本材料为合成验收数据〔事实〕【[E-001]】；本材料声明为合成验收数据〔事实〕【[E-008]】；本材料明确标注为合成验收数据〔事实〕【[E-014]】。该材料不能作为独立重复验证〔事实〕【[E-011]】。相关结论受样本范围限制，不能外推〔推断〕【[E-003]】【[E-015]】【[E-006]】。\n## 限制\n资料未说明120人观察与5名受访者访谈的关系〔未知〕【[E-003]】【[E-015]】。该访谈不能用于估计全员比例〔事实〕【[E-019]】。没有报告客观产出指标或长期效果〔事实〕【[E-006]】。仅依据所给资料，独立来源数量为1，不能将转载重复计入样本量〔事实〕【[E-020]】。该材料不能作为独立重复验证〔事实〕【[E-011]】。可识别的独立外部资料仅涉及s08这一摘要，原始来源、作者与发表信息未在所给资料中给出〔未知〕【[E-012]】【[E-009]】。合成验收数据是否对应真实研究未知〔未知〕【[E-001]】【[E-008]】【[E-014]】。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 20 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-10T15:16:03"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，1 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-10T15:16:16"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个章节",
+        "finished_at": "2026-09-10T15:16:28"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1091字）",
+        "finished_at": "2026-09-10T15:16:49"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 53,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-10T15:18:08"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-10T15:19:26"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-10T15:20:01"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 49,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 3,
+      "forbidden_hits": 0,
+      "fact_total": 3,
+      "fact_hits": 3
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_31831d169a",
+      "fact": "本材料为合成验收数据，不是真实采购或业务数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_31831d169a",
+      "fact": "方案甲定价为每账号每月20元。",
+      "tag": "F",
+      "quote": "方案甲每账号每月20元",
+      "start": 11,
+      "end": 22,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_31831d169a",
+      "fact": "方案甲可以按月支付，不要求一次付清。",
+      "tag": "F",
+      "quote": "可按月支付",
+      "start": 23,
+      "end": 28,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_31831d169a",
+      "fact": "方案甲最低购买或开通数量为10个账号。",
+      "tag": "F",
+      "quote": "最低10个账号",
+      "start": 29,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_31831d169a",
+      "fact": "按最低10个账号计算，方案甲每月最低支出约200元。",
+      "tag": "I",
+      "quote": "方案甲每账号每月20元；可按月支付，最低10个账号。",
+      "start": 11,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_31831d169a",
+      "fact": "方案甲支持Markdown格式导出。",
+      "tag": "F",
+      "quote": "支持Markdown导出。",
+      "start": 37,
+      "end": 50,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_31831d169a",
+      "fact": "资料未说明数据保存地区，决策时属证据缺口。",
+      "tag": "F",
+      "quote": "页面未说明数据保存地区",
+      "start": 50,
+      "end": 61,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_31831d169a",
+      "fact": "资料未说明数据删除周期，决策时属证据缺口。",
+      "tag": "F",
+      "quote": "页面未说明数据保存地区和删除周期。",
+      "start": 50,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_1a6a852655",
+      "fact": "该材料本身标注为合成验收数据，不是真实业务数据",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_1a6a852655",
+      "fact": "方案乙单价为每账号每月15元",
+      "tag": "F",
+      "quote": "方案乙每账号每月15元",
+      "start": 11,
+      "end": 22,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_1a6a852655",
+      "fact": "付费方式为按年预付",
+      "tag": "F",
+      "quote": "按年预付",
+      "start": 23,
+      "end": 27,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_1a6a852655",
+      "fact": "采购设有最低50个账号的起订量",
+      "tag": "F",
+      "quote": "最低50个账号",
+      "start": 28,
+      "end": 35,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_1a6a852655",
+      "fact": "方案乙支持TXT格式导出",
+      "tag": "F",
+      "quote": "支持TXT导出",
+      "start": 36,
+      "end": 43,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_1a6a852655",
+      "fact": "Markdown导出功能目前尚未提供",
+      "tag": "F",
+      "quote": "Markdown导出尚未提供",
+      "start": 44,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_1a6a852655",
+      "fact": "数据存储位置仅为供应商单方面说法，称存于本地地区",
+      "tag": "F",
+      "quote": "供应商称数据存储在本地地区",
+      "start": 59,
+      "end": 72,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_1a6a852655",
+      "fact": "缺少独立审计报告，存储说法无第三方证据支撑",
+      "tag": "F",
+      "quote": "没有独立审计报告",
+      "start": 73,
+      "end": 81,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    }
+  ]
+}

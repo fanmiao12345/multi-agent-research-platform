@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_23a33de188",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "本材料为合成验收数据。40名参与者中32人完成问卷，24名答卷者表示满意。问卷回收率为80%，答卷者满意率为75%。观察期工单平均处理时长从10小时变为8小时；未控制工单难度变化。",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 240,
+      "content_hash": "d4fda303fd28ab9603f686c0c3abccda3c1842b0a9efdc4855b6b9746fb1346b",
+      "normalized_hash": "d4fda303fd28ab9603f686c0c3abccda3c1842b0a9efdc4855b6b9746fb1346b",
+      "captured_at": "2026-09-10T14:06:55",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_23a33de188.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": ""
+    },
+    {
+      "source_id": "src_1838a6acde",
+      "kind": "paste",
+      "display": "粘贴文本 2",
+      "original_address": "paste:2",
+      "title": "本材料为合成验收数据。40名参与者中32人完成问卷，24名答卷者表示满意。问卷回收率为80%，答卷者满意率为75%。观察期工单平均处理时长从10小时变为8小时；未控制工单难度变化。",
+      "content_format": "txt",
+      "status": "duplicate",
+      "status_message": "与现有来源内容完全相同",
+      "byte_size": 240,
+      "content_hash": "d4fda303fd28ab9603f686c0c3abccda3c1842b0a9efdc4855b6b9746fb1346b",
+      "normalized_hash": "d4fda303fd28ab9603f686c0c3abccda3c1842b0a9efdc4855b6b9746fb1346b",
+      "captured_at": "2026-09-10T14:06:55",
+      "published_date": "unknown",
+      "duplicate_of": "src_23a33de188",
+      "file_name": "",
+      "encoding": "utf-8",
+      "segment_count": 0,
+      "final_url": "",
+      "http_status": null,
+      "content_type": ""
+    }
+  ]
+}

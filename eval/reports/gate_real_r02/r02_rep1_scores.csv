@@ -1,0 +1,16 @@
+﻿# 评分说明：1=不可用 2=大量错误 3=可用但有明显不足 4=满足要求 5=可直接交付。correctness 需人工核对关键事实与禁止项；机器检查列仅供参考，不得作为自动盖章依据。填写方式：每个维度行第 3 列填入 1~5；revised_minutes 行第 3 列填人工改稿分钟数；其余列请勿改动。revised_minutes 记录你本次人工改稿花费的分钟数。
+case_id,r02,attempt,1,draft_level,draft
+correctness,正确性(1-5),,,备注,
+structure,结构(1-5),,,备注,
+citations,引用(1-5),,,备注,
+completeness,完整性(1-5),,,备注,
+revised_minutes,人工改稿分钟,,,备注,
+machine_citation_tokens,0,机器检查,
+machine_unresolved_citations,0,机器检查,
+machine_sections,4/4,机器检查,
+machine_facts,3/3,机器检查,
+machine_forbidden_hits,0,机器检查,
+termination_reason,incomplete,程序记录,
+elapsed_seconds,508.312,程序记录,
+estimated_cost_usd,0.11065308000000001,程序记录,
+message,交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功,程序记录,

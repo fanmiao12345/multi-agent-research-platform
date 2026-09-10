@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_0983d28433c242f0b8b2a03b9c29d64b",
+  "goal": "为40人团队比较甲乙，重点为真实采购成本、导出能力与证据缺口。只使用提供的网页快照。",
+  "started_at": "2026-09-10T14:42:15",
+  "hard_requirements": {
+    "required_sections": [
+      "比较表",
+      "条件性建议",
+      "资料来源"
+    ],
+    "forbidden_claims": [
+      "乙40人每月仅需600元",
+      "甲已通过独立隐私审计"
+    ],
+    "key_facts": [
+      "每账号每月20元",
+      "最低50个账号",
+      "Markdown导出尚未提供"
+    ]
+  },
+  "result": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 15 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-10T14:42:30"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，2 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-10T14:42:50"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "9 个章节",
+        "finished_at": "2026-09-10T14:43:09"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2507字）",
+        "finished_at": "2026-09-10T14:43:40"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-10T14:44:46"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-10T14:46:16"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-10T14:46:57"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 110,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 2,
+      "forbidden_hits": 0,
+      "fact_total": 3,
+      "fact_hits": 3
+    },
+    "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}
