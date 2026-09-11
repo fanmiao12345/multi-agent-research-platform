@@ -126,7 +126,8 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                       out_dir: Path | None = None,
                       settings=None, profile_name: str | None = None,
                       grader_llm=None, grade: bool = False,
-                      grader_model: str | None = None) -> dict:
+                      grader_model: str | None = None,
+                      open_book: bool = False) -> dict:
     if mode not in ("mock", "real"):
         raise ValueError("mode 必须为 mock 或 real")
     if repeats < 1:
@@ -200,12 +201,14 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                     texts=tuple(text for _, text in sources),
                     base_draft=task.get("initial_draft") or "",
                     system_extra="资料标题提示：" + "；".join(title for title, _ in sources),
-                    # S6-05 对齐：把数据集标注的必需章节/禁语/关键事实传给链内程序层复验，
-                    # 避免"链内自审通过、独立评测不达标"（用例 o08 缺必需章节）。
+                    # 必需章节是用户可见的任务要求，正常传入（S6-05 闸门）。
                     required_sections=tuple(task.get("sections") or ()),
-                    forbidden_claims=tuple(task.get("forbidden_claims") or ()),
-                    key_facts=tuple(f.get("claim", "") for f in task.get("facts") or ()
-                                    if f.get("claim")))
+                    # S8-B 关闭开卷：关键事实/禁止断言属于评分答案，默认留在评测端，
+                    # 不注入写作提示词；open_book=True 仅作对照实验并在报告 meta 标记。
+                    forbidden_claims=(tuple(task.get("forbidden_claims") or ())
+                                      if open_book else ()),
+                    key_facts=(tuple(f.get("claim", "") for f in task.get("facts") or ()
+                                     if f.get("claim")) if open_book else ()))
                 app = ResearchApplication(request, settings=settings,
                                           workspace_root=root, llm=llm)
                 outcome = app.run()
@@ -326,6 +329,10 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
             "real_config_reason": config_reason if mode == "real" else "",
             "repeats": repeats, "fault_rounds": fault_rounds,
             "max_cost_usd": max_cost if mode == "real" else None,
+            "open_book": bool(open_book),
+            "open_book_note": ("对照实验：关键事实/禁止断言已注入写作端（开卷），"
+                               "结果不可与闭卷批次合并比较" if open_book
+                               else "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）"),
             "versions": _version_snapshot(),
             "config": _config_snapshot(settings, mode,
                                        sorted(t.name for t in
@@ -434,6 +441,9 @@ def main() -> None:
                         help="每个执行过的尝试用专职评测 Agent 自动打分（初步，需人工确认）")
     parser.add_argument("--grader-model", default=None,
                         help="评测者模型名（默认 GRADER_MODEL_NAME，再默认与主模型相同）")
+    parser.add_argument("--open-book", action="store_true",
+                        help="对照开关：把数据集关键事实/禁止断言注入写作端（开卷）；"
+                             "默认闭卷（S8-B），开卷批次在 meta 标记、不可与闭卷合并比较")
     args = parser.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -442,7 +452,8 @@ def main() -> None:
                                    repeats=args.repeats, fault_rounds=args.fault_rounds,
                                    task_filter=args.task, max_cost=args.max_cost,
                                    out_dir=out, grade=args.grade,
-                                   grader_model=args.grader_model)
+                                   grader_model=args.grader_model,
+                                   open_book=args.open_book)
     except ValueError as e:
         parser.error(str(e))
     (out / "business_report.json").write_text(

@@ -78,7 +78,8 @@ class HardRequirements:
     """任务硬约束（S6-05 对齐）：由调用方显式给出，链内程序层逐条复验。
 
     - required_sections：正文标题必须出现的章节名（逐字，程序层判 error）；
-    - forbidden_claims：正文中不得出现的表述（程序层判 error）；
+    - forbidden_claims：正文中不得出现的表述（S8-C：程序层只提示字面疑似命中
+      （warn），是否构成语义违规由人工/独立评测判定，不因疑似命中阻塞验收）；
     - key_facts：必须覆盖的关键事实（尽量保留原文措辞；未覆盖记 warn 不阻塞，
       语义覆盖由人工/独立评测判定）。
 
@@ -172,8 +173,8 @@ class ReviewIssue:
 @dataclass
 class PipelineResult:
     """整条链的结果与等级（S3-11：执行结束≠业务成功）。"""
-    draft_level: str = "failed"      # accepted | draft | failed
-    termination_reason: str = ""     # success | incomplete | budget_exceeded | error
+    draft_level: str = "failed"      # accepted | draft | failed | unable（S8：证据完全无法支撑任务时主动声明）
+    termination_reason: str = ""     # success | incomplete | unable | budget_exceeded | error
     final_artifact_id: str = ""
     stages: list[dict] = field(default_factory=list)
     issue_counts: dict = field(default_factory=dict)

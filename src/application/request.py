@@ -27,6 +27,9 @@ class TaskRequest:
     # 执行流程（B5）：agent=通用 Agent 循环（默认）；research=资料整理/研究写作链
     # （证据→素材→提纲→初稿→审校→有限修订，需要可用资料）。
     flow: str = "agent"
+    # 执行方式（D1-01 统一请求）：auto=调度智能体读题选型（仅 research 流生效）；
+    # 也可显式指定 fixed/fanout 等；agent 流忽略该字段。进入请求快照，CLI/Web/评测同源。
+    orchestration: str = "auto"
     # 改稿模式（S5-04 单次改稿）：携带"原稿文本"，research 链改为在 base_draft 上修订：
     # 素材/提纲仍基于资料生成，初稿以原稿为上一稿并按任务要求改写；旧稿不覆盖。
     base_draft: str = ""
@@ -37,6 +40,9 @@ class TaskRequest:
     required_sections: tuple[str, ...] = ()
     forbidden_claims: tuple[str, ...] = ()
     key_facts: tuple[str, ...] = ()
+    # 工具白名单（D2-03）：None=不限（由入口按流程决定）；非空元组=仅允许列表内工具。
+    # 子任务/角色在此基础上取交集，权限只能缩小不能放大。
+    allowed_tools: tuple[str, ...] | None = None
 
     def __post_init__(self):
         if not isinstance(self.task, str) or not self.task.strip():
@@ -79,6 +85,18 @@ class TaskRequest:
             raise ValueError("allow_network必须为布尔值")
         if self.flow not in ("agent", "research"):
             raise ValueError("flow必须为agent或research")
+        if self.orchestration not in ("auto", "fixed", "single", "manager_worker",
+                                      "fanout", "dynamic_team", "debate"):
+            raise ValueError("orchestration必须为auto/fixed/single/manager_worker/"
+                             "fanout/dynamic_team/debate之一")
+        if self.allowed_tools is not None:
+            if isinstance(self.allowed_tools, (list, tuple)):
+                object.__setattr__(self, "allowed_tools", tuple(self.allowed_tools))
+            if not isinstance(self.allowed_tools, tuple):
+                raise ValueError("allowed_tools必须为元组、列表或None")
+            for item in self.allowed_tools:
+                if not isinstance(item, str) or not item.strip():
+                    raise ValueError("allowed_tools每一项必须为非空工具名")
         if not isinstance(self.base_draft, str):
             raise ValueError("base_draft必须为文本")
         if not isinstance(self.revises_job, str):

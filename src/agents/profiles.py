@@ -50,6 +50,13 @@ PROFILES: dict[str, AgentProfile] = {
         prompt="你是审校：对照素材四查（事实/来源/结构/表达），输出「通过」或编号问题清单。",
         output_schema="通过 / 问题清单",
     ),
+    # D2-03：editor 与契约角色白名单（researcher/organizer/writer/editor/agent）对齐；
+    # 审校类角色默认无工具（写作链内审校以素材包为界）。
+    "editor": AgentProfile(
+        name="editor", title="编辑",
+        prompt="你是编辑：对照素材核查事实、来源与结构，输出「通过」或编号问题清单，不新增事实。",
+        output_schema="通过 / 问题清单",
+    ),
 }
 
 

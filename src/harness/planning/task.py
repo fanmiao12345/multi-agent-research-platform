@@ -91,17 +91,26 @@ class Task:
 class Plan:
     goal: str
     tasks: list[Task] = field(default_factory=list)
+    version: int = 1
+    parent_version: int = 0
+    invalidated_task_ids: list[str] = field(default_factory=list)
 
     def by_id(self, task_id: str) -> Task | None:
         return next((t for t in self.tasks if t.id == task_id), None)
 
     def to_dict(self) -> dict:
-        return {"goal": self.goal, "tasks": [t.to_dict() for t in self.tasks]}
+        return {"goal": self.goal, "version": self.version,
+                "parent_version": self.parent_version,
+                "invalidated_task_ids": list(self.invalidated_task_ids),
+                "tasks": [t.to_dict() for t in self.tasks]}
 
     @classmethod
     def from_dict(cls, d: dict) -> "Plan":
         return cls(goal=d.get("goal", ""),
-                   tasks=[Task.from_dict(t) for t in d.get("tasks", [])])
+                   tasks=[Task.from_dict(t) for t in d.get("tasks", [])],
+                   version=int(d.get("version", 1)),
+                   parent_version=int(d.get("parent_version", 0)),
+                   invalidated_task_ids=list(d.get("invalidated_task_ids") or []))
 
     @classmethod
     def from_llm_json(cls, data: dict, fallback_task: str) -> "Plan":

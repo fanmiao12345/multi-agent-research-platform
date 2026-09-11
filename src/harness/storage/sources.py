@@ -3,7 +3,7 @@
 harness/storage/sources.py —— 来源登记、导入与去重（S2-01/S2-05/S2-06 本地部分）
 
 一次导入的边界：
-- kind=file：读用户显式给出的本地 TXT/Markdown 文件（只读原文，从不回写）；
+- kind=file：读用户显式给出的本地 TXT/Markdown/PDF 文件（只读原文，从不回写）；
 - kind=paste：粘贴文本。
 - 每个来源登记 id、获取时间、内容哈希、原始地址与最终存储位置；
 - 结果分类：ok / partial / duplicate / empty / unsupported / too_large / read_failed，
@@ -35,7 +35,6 @@ MAX_TOTAL_BYTES = 10 * 1024 * 1024
 
 # 明确不支持的扩展名：给出可操作提示，而不是按二进制乱码导入。
 _BLOCKED_EXTS = {
-    "pdf": "PDF 需要单独接入解析器（文本型 PDF 见 S2-11），扫描件需 OCR",
     "doc": "DOC 旧格式不受支持，请另存为 .txt/.md 或文本粘贴",
     "docx": "DOCX 不受首批支持，请另存为 .txt/.md 或文本粘贴",
     "xls": "表格格式不受支持", "xlsx": "表格格式不受支持",
@@ -67,7 +66,7 @@ class SourceRecord:
     original_address: str          # 原文件规范路径 / "paste:N" / 请求的原始URL
     title: str
     content_format: str            # txt | md
-    status: str                    # ok|partial|duplicate|empty|unsupported|too_large|read_failed
+    status: str                    # ok|partial|duplicate|empty|unsupported|too_large|read_failed|withdrawn|expired|superseded
     status_message: str = ""
     byte_size: int = 0
     content_hash: str = ""
@@ -83,6 +82,17 @@ class SourceRecord:
     final_url: str = ""
     http_status: int | None = None
     content_type: str = ""
+    # D3-04/05：PDF 页范围、来源版本与共享来源血缘
+    page_count: int = 0
+    source_version: int = 1
+    root_source_id: str = ""
+    source_job_id: str = ""
+    retrieved_at: str = ""
+    withdrawn_at: str = ""
+    withdrawal_reason: str = ""
+    expires_at: str = ""
+    superseded_by: str = ""
+    supersedes: str = ""
 
     def meta(self) -> dict:
         return asdict(self)
@@ -117,11 +127,12 @@ def detect_format(text: str, ext: str = "") -> str:
     return "txt"
 
 
-def split_segments(text: str, *, max_heading=120) -> list[dict]:
+def split_segments(text: str, *, max_heading=120,
+                   page_spans: list[dict] | None = None) -> list[dict]:
     """按标题与空行切分，返回可定位原文的段落。
 
-    每条：{"heading": 所在最近标题(无则 "")、"paragraph": 段落序号、
-    "start"、"end"：原始文本字符偏移}。标题行本身不算段落。
+    每条包含 heading/paragraph/start/end；PDF 来源额外包含 page 页码，
+    非 PDF 来源 page=None。标题行本身不算段落。
     """
     segments = []
     current_heading = ""
@@ -150,7 +161,22 @@ def split_segments(text: str, *, max_heading=120) -> list[dict]:
     if buf_start is not None:
         segments.append({"heading": current_heading, "paragraph": paragraph_index,
                          "start": buf_start, "end": offset})
+    if page_spans:
+        for segment in segments:
+            segment["page"] = _page_for_offset(segment["start"], page_spans)
+    else:
+        for segment in segments:
+            segment["page"] = None
     return segments
+
+
+def _page_for_offset(offset: int, page_spans: list[dict]) -> int | None:
+    for span in page_spans:
+        start = int(span.get("start") or 0)
+        end = int(span.get("end") or start)
+        if start <= offset < end or (start == end == offset):
+            return int(span.get("page") or 0) or None
+    return None
 
 
 def _title_of(text: str) -> str:
@@ -222,6 +248,33 @@ class SourceStore:
         except Exception:
             raise SourceImportError("sources.json 无法解析，拒绝覆盖未知历史索引") from None
 
+    @staticmethod
+    def _index_record(meta: dict) -> dict:
+        return {k: meta.get(k) for k in (
+            "source_id", "kind", "display", "original_address", "title",
+            "content_format", "status", "status_message", "byte_size",
+            "content_hash", "normalized_hash", "captured_at", "published_date",
+            "duplicate_of", "file_name", "encoding", "segment_count",
+            "final_url", "http_status", "content_type", "page_count",
+            "source_version", "root_source_id", "source_job_id", "retrieved_at",
+            "withdrawn_at", "withdrawal_reason", "expires_at", "superseded_by",
+            "supersedes")}
+
+    def _replace_record(self, record: SourceRecord) -> None:
+        """覆盖同一来源的 meta 与索引摘要；用于版本、撤回和过期状态。"""
+        meta = record.meta()
+        write_json(self.directory / f"{record.source_id}.meta.json", meta)
+        index = self.load_index()
+        found = False
+        for position, item in enumerate(index):
+            if item.get("source_id") == record.source_id:
+                index[position] = self._index_record(meta)
+                found = True
+                break
+        if not found:
+            raise SourceImportError(f"来源不存在：{record.source_id}")
+        write_json(self.index_path, {"schema_version": 1, "sources": index})
+
     def _commit(self, record: SourceRecord, text: str | None) -> None:
         """持久化一个来源：有全文先原子写全文，再写 meta 与索引。"""
         if text is not None:
@@ -234,12 +287,7 @@ class SourceStore:
         index = self.load_index()
         if any(item.get("source_id") == record.source_id for item in index):
             raise SourceImportError(f"来源 id 冲突：{record.source_id}")
-        index.append({k: meta[k] for k in (
-            "source_id", "kind", "display", "original_address", "title",
-            "content_format", "status", "status_message", "byte_size",
-            "content_hash", "normalized_hash", "captured_at", "published_date",
-            "duplicate_of", "file_name", "encoding", "segment_count",
-            "final_url", "http_status", "content_type")})
+        index.append(self._index_record(meta))
         write_json(self.index_path, {"schema_version": 1, "sources": index})
 
     # ---- 重复识别 -------------------------------------------------------
@@ -276,10 +324,12 @@ class SourceStore:
 
         def failed(message: str) -> SourceRecord:
             # 失败来源也要登记进索引，页面才能显示“读取失败/不支持”
+            now = _now()
             return SourceRecord(
                 source_id=_new_source_id(), kind="file", display=display,
                 original_address=str(original), title="", content_format="txt",
-                status="read_failed", status_message=message)
+                status="read_failed", status_message=message,
+                captured_at=now, retrieved_at=now)
 
         if not original.exists():
             record = failed(f"文件不存在或不可读：{display}")
@@ -312,6 +362,25 @@ class SourceStore:
                                                   "请拆分或缩小范围，不会静默截断"))
             self._commit(record, None)
             return record
+        if ext == "pdf":
+            from src.harness.ingest.pdf_extract import extract_pdf
+            extracted = extract_pdf(data)
+            pdf_status = extracted.get("status") or "read_failed"
+            if pdf_status not in ("ok", "partial"):
+                record = SourceRecord(
+                    source_id=_new_source_id(), kind="file", display=display,
+                    original_address=str(original), title="", content_format="txt",
+                    status=pdf_status, status_message=extracted.get("message") or "PDF 不可读取",
+                    page_count=int(extracted.get("page_count") or 0),
+                    captured_at=_now(), retrieved_at=_now())
+                self._commit(record, None)
+                return record
+            return self._add(
+                text=extracted.get("text") or "", kind="file", display=display,
+                original_address=str(original), ext="txt", encoding="utf-8",
+                base_status=pdf_status, base_message=extracted.get("message") or "",
+                page_count=int(extracted.get("page_count") or 0),
+                page_spans=extracted.get("pages") or [])
         # 二进制嗅探先于文本解码：NUL/控制字符占比高的“文本扩展名”文件仍是二进制
         if _looks_binary(data):
             record = SourceRecord(source_id=_new_source_id(), kind="file",
@@ -380,17 +449,20 @@ class SourceStore:
     def _add(self, text: str, *, kind: str, display: str, original_address: str,
              ext: str = "", encoding: str = "utf-8",
              base_status: str = "ok", base_message: str = "",
-             url_fields: dict | None = None) -> SourceRecord:
+             url_fields: dict | None = None, page_count: int = 0,
+             page_spans: list[dict] | None = None) -> SourceRecord:
         byte_size = len(text.encode("utf-8"))
         content_format = detect_format(text, ext)
-        segments = split_segments(text)
+        segments = split_segments(text, page_spans=page_spans)
+        now = _now()
         if base_status not in ("ok", "partial"):
             record = SourceRecord(
                 source_id=_new_source_id(), kind=kind, display=display,
                 original_address=original_address, title=_title_of(text),
                 content_format=content_format, status=base_status,
-                status_message=base_message, byte_size=0, captured_at=_now(),
-                published_date="unknown", encoding=encoding)
+                status_message=base_message, byte_size=0, captured_at=now,
+                retrieved_at=now, published_date="unknown", encoding=encoding,
+                page_count=page_count)
             self._merge_url_fields(record, url_fields)
             self._commit(record, None)
             return record
@@ -400,8 +472,8 @@ class SourceStore:
                 original_address=original_address, title="",
                 content_format="txt", status="too_large",
                 status_message=(f"超过单来源 {MAX_BYTES_PER_SOURCE // (1024 * 1024)}MB 上限，"
-                                "请拆分或缩小范围，不会静默截断"), captured_at=_now(),
-                published_date="unknown")
+                                "请拆分或缩小范围，不会静默截断"), captured_at=now,
+                retrieved_at=now, published_date="unknown", page_count=page_count)
             self._merge_url_fields(record, url_fields)
             self._commit(record, None)
             return record
@@ -411,7 +483,8 @@ class SourceStore:
             content_format=content_format, status=base_status,
             status_message=base_message, byte_size=byte_size,
             content_hash=_sha256(text), normalized_hash=_sha256(_normalize(text)),
-            captured_at=_now(), published_date="unknown", encoding=encoding,
+            captured_at=now, retrieved_at=now, published_date="unknown",
+            encoding=encoding, page_count=page_count,
             segment_count=len(segments), segments=segments)
         self._merge_url_fields(record, url_fields)
         duplicate = self.find_duplicate(record.content_hash, record.normalized_hash)
@@ -428,7 +501,144 @@ class SourceStore:
         self._commit(record, text)
         return record
 
+    # ---- D3-05：版本、撤回、过期与共享血缘 -------------------------------
+    def _load_record(self, source_id: str) -> SourceRecord:
+        safe_name = ensure_relative_name(source_id)
+        path = self.directory / f"{safe_name}.meta.json"
+        if not path.exists():
+            raise SourceImportError(f"来源不存在：{source_id}")
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            fields = SourceRecord.__dataclass_fields__
+            return SourceRecord(**{k: v for k, v in data.items() if k in fields})
+        except Exception:  # noqa: BLE001
+            raise SourceImportError(f"来源元数据无法解析：{source_id}") from None
+
+    def usable_texts(self) -> list[tuple[dict, str]]:
+        """返回可用来源的索引记录与全文；消费者不得把失败/撤回来源当证据。"""
+        result = []
+        for record in self.load_index():
+            if record.get("status") not in ("ok", "partial") or not record.get("file_name"):
+                continue
+            text = self.full_text(record["source_id"])
+            if text is not None:
+                result.append((record, text))
+        return result
+
+    def link_source_library(self, library: "SourceStore", *, source_job_id: str = "") -> int:
+        """按正文哈希把本地来源关联到根共享库；不复制全文，不改变原始证据。"""
+        by_hash = {}
+        for record in library.load_index():
+            if record.get("content_hash"):
+                by_hash[record["content_hash"]] = record
+            if record.get("normalized_hash"):
+                by_hash.setdefault(record["normalized_hash"], record)
+        linked = 0
+        for item in self.load_index():
+            if item.get("status") not in ("ok", "partial"):
+                continue
+            root = (by_hash.get(item.get("content_hash"))
+                    or by_hash.get(item.get("normalized_hash")))
+            if not root:
+                continue
+            record = self._load_record(item["source_id"])
+            record.root_source_id = root.get("source_id") or ""
+            record.source_version = int(root.get("source_version") or 1)
+            record.source_job_id = source_job_id or root.get("source_job_id") or ""
+            record.retrieved_at = (root.get("retrieved_at")
+                                   or root.get("captured_at") or record.retrieved_at)
+            self._replace_record(record)
+            linked += 1
+        return linked
+
+    def withdraw(self, source_id: str, reason: str) -> dict:
+        """撤回来源并返回其下游引用；状态改为 withdrawn，后续不得继续作为证据。"""
+        record = self._load_record(source_id)
+        dependents = self.find_dependents(source_id)
+        if record.status not in ("withdrawn", "expired"):
+            record.status = "withdrawn"
+            record.withdrawn_at = _now()
+            record.withdrawal_reason = (reason or "用户撤回来源").strip()
+            record.status_message = f"来源已撤回：{record.withdrawal_reason}"
+            self._replace_record(record)
+        return {"source": record.meta(), "dependents": dependents}
+
+    def set_expiry(self, source_id: str, expires_at: str) -> SourceRecord:
+        """登记来源失效时间；到期后由 expire_due 统一标记，不静默继续引用。"""
+        if not expires_at or not expires_at.strip():
+            raise SourceImportError("expires_at不能为空")
+        record = self._load_record(source_id)
+        record.expires_at = expires_at.strip()
+        self._replace_record(record)
+        return record
+
+    def expire_due(self, *, now: str = "") -> list[dict]:
+        """把已到 expires_at 的来源标为 expired，并返回状态变化清单。"""
+        current = now or datetime.datetime.now().isoformat(timespec="seconds")
+        changed = []
+        for item in self.load_index():
+            expires_at = (item.get("expires_at") or "").strip()
+            if not expires_at or item.get("status") not in ("ok", "partial"):
+                continue
+            if expires_at <= current:
+                record = self._load_record(item["source_id"])
+                record.status = "expired"
+                record.withdrawn_at = current
+                record.withdrawal_reason = f"来源于 {expires_at} 过期"
+                record.status_message = record.withdrawal_reason
+                self._replace_record(record)
+                changed.append(record.meta())
+        return changed
+
+    def add_version(self, source_id: str, text: str, *, title: str = "",
+                    published_date: str = "unknown") -> SourceRecord:
+        """新增来源版本：旧版标 superseded，新版保留来源血缘和递增版本号。"""
+        old = self._load_record(source_id)
+        new = self._add(text=text, kind=old.kind, display=old.display,
+                        original_address=old.original_address,
+                        ext=old.content_format, encoding=old.encoding,
+                        base_status="ok", base_message="", page_count=old.page_count)
+        if new.status == "duplicate":
+            raise SourceImportError("新版本正文与库内其他来源相同，不能作为独立版本")
+        now = _now()
+        new.title = (title or _title_of(text))[:200]
+        new.published_date = published_date or "unknown"
+        new.source_version = int(old.source_version or 1) + 1
+        new.root_source_id = old.root_source_id or old.source_id
+        new.source_job_id = old.source_job_id
+        new.supersedes = old.source_id
+        new.retrieved_at = now
+        self._replace_record(new)
+        old.status = "superseded"
+        old.superseded_by = new.source_id
+        old.status_message = f"已被新版本 {new.source_id} 替代"
+        self._replace_record(old)
+        return new
+
+    def find_dependents(self, source_id: str) -> list[dict]:
+        """扫描任务 JSON 产物，找引用该来源或其共享根来源的下游文件。"""
+        if not source_id:
+            return []
+        jobs_root = (self.job_dir.parent.parent
+                     if self.job_dir.name == "shared_sources"
+                     else self.job_dir.parent)
+        refs = []
+        for path in jobs_root.rglob("*.json"):
+            try:
+                raw = path.read_text(encoding="utf-8")
+            except OSError:
+                continue
+            if source_id not in raw:
+                continue
+            refs.append({"path": path.relative_to(jobs_root).as_posix(),
+                         "kind": path.stem})
+        return sorted(refs, key=lambda item: item["path"])
+
     # ---- 读取 -----------------------------------------------------------
+    def segments(self, source_id: str) -> list[dict]:
+        """返回来源段落定位；PDF 记录的 page 字段用于生成页码定位。"""
+        return list(self._load_record(source_id).segments)
+
     def full_text(self, source_id: str) -> str | None:
         """按 source_id 返回全文；失败/重复来源没有全文（返回 None）。"""
         for record in self.load_index():

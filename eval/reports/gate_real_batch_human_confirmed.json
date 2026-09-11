@@ -1,0 +1,2506 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "de4bdb51bde7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-10T14:02:32",
+    "scope": "business_acceptance_pending_human_scoring",
+    "note": "gate_real 批次 20 例合并（供人工评分导入）；原报告逐例保留在 eval/reports/gate_real_<id>/business_report.json",
+    "human_confirm": {
+      "applied": 20,
+      "accept_human": 9,
+      "graded_human": 20,
+      "note": "分数为 AI 预填、用户认可采用（human_confirmed=true 表示用户已确认采用该评分）；revised_minutes 为估算，非实测工时",
+      "provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+    }
+  },
+  "totals": {
+    "attempts_total": 20,
+    "passed": 14,
+    "failed": 6,
+    "note": "passed 只计链内 accepted；人工评分见 human 段"
+  },
+  "records": [
+    {
+      "id": "o01",
+      "category": "organize",
+      "attempt": 1,
+      "task": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "报告覆盖两个关键事实：试点40人（E-003）和每账号每月20元（E-016），多数统计与商务条款与来源一致；但将“本材料为合成验收数据”误作“资料标题字段”，并多处把推断性证据E-007、E-008、E-021标为事实，属于过度引申，故不高于3。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-016",
+              "E-001",
+              "E-008",
+              "E-021"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "必需章节“资料目录”“覆盖范围”齐全，但报告重复设置“资料标题与类型”“日期与观察期”“冲突状态”等非要求章节，段落大量交叉重复，未围绕资料目录目的组织。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "正文引用均可定位到证据列表中的E编号，未见不可定位引用；但若干引用使用不当：E-007、E-008、E-021为推断（tag=I），正文却多处标注为〔事实〕；E-001被用于支持“标题字段”，其quote不足以支持。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007",
+              "E-008",
+              "E-021"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "报告虽包含“资料目录”“覆盖范围”并列出标题、日期、类型、用途，也覆盖关键事实与商务条款；但“标题”条目建立在无依据的“标题字段”上，日期与主要用途的缺口声明被推断项和冲突状态干扰，未能干净完成任务要求。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-016",
+              "E-008",
+              "E-021"
+            ]
+          }
+        },
+        "issues": [
+          "在“资料目录”和“资料标题与类型”中，将首句“本材料为合成验收数据”当作“资料标题字段”，并据此列出标题条目，原始来源未提供标题字段。",
+          "多处将证据列表中tag=I的推断项如E-007、E-008、E-021标记为〔事实〕，混淆事实与推断；例如“目录记录日期未说明【E-008】〔事实〕”。",
+          "“冲突状态”“主要用途说明”等章节超出建立资料目录和覆盖范围的任务，重复并引入标题/日期/用途的开放冲突。",
+          "“覆盖范围”中“未提供对应字段的来源如何归入，资料未说明【E-008】【E-021】〔推断〕”使用推断性摘要作为依据，来源支持不充分。"
+        ],
+        "fabrication_flags": [
+          "将“本材料为合成验收数据”称为“资料标题字段”并作为目录标题条目的依据，无原文支持。",
+          "“目录记录标题为‘本材料为合成验收数据’”“目录记录日期和主要用途未说明”等断言基于E-008推断，却被标为事实；其quote仅“本材料为合成验收数据。”。",
+          "将“来源自称为合成验收数据，可作为验收用材料”（E-015）作为直接事实引用，原quote仅“本材料为合成验收数据。”。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.012019759999999999,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:02:32",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 313.15,
+      "estimated_cost_usd": 0.0618913,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_18ef4e51342a462ea61ad0b028d3252d",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 合成验收数据资料目录与覆盖范围\n## 资料目录\n- 标题：资料标题字段标注为“本材料为合成验收数据”【E-001】〔事实〕；目录记录标题为“本材料为合成验收数据”【E-008】〔事实〕；另有资料中未出现标题【E-021】〔事实〕。\n- 日期：观察期为2026年7月1日至7月31日【E-004】〔事实〕；目录记录日期未说明【E-008】〔事实〕；另有资料中未出现日期【E-021】〔事实〕。\n- ",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 3,
+          "citations": 3,
+          "completeness": 3
+        },
+        "revised_minutes": 20,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "o02",
+      "category": "organize",
+      "attempt": 1,
+      "task": "用三点总结试点规模、问卷结果和处理时长，保留研究局限。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实均与证据一致：40人试点、32人完成问卷、答卷者满意率75%、平均处理时长从10小时变为8小时、未设对照组与未控制工单难度等均被准确表述；未使用禁止项。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节“三点摘要”与“局限”，三点摘要分别覆盖试点规模、问卷结果和处理时长；额外“证据冲突与缺口”章节不影响结构完整性。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-009",
+              "E-012",
+              "E-013"
+            ]
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用的E-001至E-015均可在给定证据列表中定位，关键事实均有对应引用；未发现编造或不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-009",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的三点摘要及研究局限，保留未设对照组、未控制工单难度、合成数据等限制，并主动声明缺口。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-005",
+              "E-008",
+              "E-014",
+              "E-015"
+            ]
+          }
+        },
+        "issues": [
+          "额外“证据冲突与缺口”章节将来源缺失与具体数据并列，略显冗余但未扭曲关键事实。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01291323,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:06:53",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 259.384,
+      "estimated_cost_usd": 0.041267200000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_c1009247d43f47f0ba35bdecc824ffad",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 3/3",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 试点结果三点摘要与研究局限\n\n## 三点摘要\n- 试点规模：星桥团队试点共40人【E-002】〔事实〕；试点共40名参与者，其中32人完成问卷【E-009】〔事实〕；观察期为2026年7月1日至7月31日【E-003】〔事实〕；试点人员所有人每周远程办公2天【E-004】〔事实〕。\n- 问卷结果：问卷回收率为80%【E-010】〔事实〕；32名答卷者中有24人表示满意【E-011】〔事实〕；答",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 4
+        },
+        "revised_minutes": 8,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "o03",
+      "category": "organize",
+      "attempt": 1,
+      "task": "合并重复材料，输出去重记录；同一统计不得计为两份独立证据。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "报告正确陈述核心统计：40名参与者中32人完成问卷、24人满意、回收率80%、满意率75%，且未出现禁止项；但将“非真实业务数据”作为直接事实标注，E-001仅称“合成验收数据”，属过度引申；去重记录出现无来源的“素材包 duplicates 字段记录”，使部分事实无据。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节“合并结果”和“去重记录”均存在，另有范围、缺口与核验说明，段落围绕合并和核验目的，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "多数事实句附有可定位的E-001至E-004；但去重记录中“素材包 duplicates 字段记录：显示项粘贴文本 2”无任何可定位引用，且“非真实业务数据”对E-001的引用超出原文，引用适当性不足。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "覆盖合并结果、去重记录、关键事实和缺口声明，禁止项未出现；但去重记录中虚构字段使交付质量下降，未完全满足基于给定来源进行可靠去重。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004"
+            ]
+          }
+        },
+        "issues": [
+          "材料性质与范围将“非真实业务数据”标为事实，但E-001仅称“合成验收数据”。",
+          "去重记录段落声称“素材包 duplicates 字段记录：显示项粘贴文本 2……”在给定来源与证据列表中不存在。",
+          "去重记录将无E-编号的字段信息作事实陈述，并与〔未知〕标注相互矛盾。"
+        ],
+        "fabrication_flags": [
+          "去重记录中“素材包 duplicates 字段记录：显示项粘贴文本 2……”属于无来源依据的编造/无依据断言。",
+          "报告将“非真实业务数据”作为直接事实断言，但E-001未明确出现该表述，属于未经证据支持的断言。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00840343,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:11:06",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 250.712,
+      "estimated_cost_usd": 0.0472508,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_9bc58901eae544bdab1def5ca8ef9fd0",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 1,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 1,
+        "fact_hits": 1
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 重复材料合并与去重记录\n\n## 材料性质与范围\n材料为合成验收数据，非真实业务数据【E-001】〔事实〕。本报告范围限于给定材料中的主题、证据、缺口与重复记录，不对合成数据作真实业务外推〔推断〕。\n\n## 合并结果\n去重后保留主题：材料性质【E-001】、问卷统计【E-002】、处理时长与混杂【E-003】【E-004】〔推断〕。合并口径：同一统计或同一证据只保留一条，重复材料并入来源，不重复",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 4,
+          "citations": 3,
+          "completeness": 4
+        },
+        "revised_minutes": 15,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "o04",
+      "category": "organize",
+      "attempt": 1,
+      "task": "列出规则发布日期与生效日，说明2026年8月25日和9月2日客服组分别适用哪条规则。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "报告覆盖了关键事实（v1 2026-07-01生效并允许每周远程办公2天；v2 2026-09-01生效、适用客服组并限1天），未触犯禁止项；但把E-010（推断）标为〔事实〕并称来源直接陈述，且对9月2日虚构E-006与E-011/E-008冲突未决，属于部分错误或过度引申。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-007",
+              "E-008",
+              "E-010",
+              "E-011",
+              "E-006"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "章节齐全，包含必需章节时间线和适用规则，另有缺口与冲突，段落围绕任务目的组织。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "引用均可定位且未发现虚构来源，但E-010被错误标注为事实/来源直接陈述，E-006与E-011/E-008的冲突推理引用恰当性不足。",
+            "cited_evidence_ids": [
+              "E-010",
+              "E-006",
+              "E-011",
+              "E-008"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的发布日期与生效日，发布日未知缺口如实声明；说明了8月25日与9月2日客服组适用规则及依据；必要关键事实全部出现。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-013",
+              "E-010",
+              "E-011",
+              "E-008"
+            ]
+          }
+        },
+        "issues": [
+          "适用规则-2026年8月25日客服组小节将E-010标注为〔事实〕并称来源直接陈述，但E-010在证据列表为推断，源文仅给出v2于2026年9月1日生效替代v1。",
+          "适用规则-2026年9月2日客服组小节称E-006与E-011/E-008存在未决冲突；E-006仅涉及旧版是否覆盖客服组，并不能否定新版‘适用客服组’的明确陈述，该冲突判断不成立。",
+          "适用规则-依据与冲突小节重复了上述未决冲突表述，导致9月2日结论被不当模糊。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01217609,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:15:39",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 270.861,
+      "estimated_cost_usd": 0.04602471,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_a63dd758672041e18e662f269e99973b",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 3/3",
+      "machine_checks": {
+        "citation_tokens": 36,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 规则发布日期、生效日及2026年8月25日与9月2日客服组适用规则\n## 时间线\n- 规则v1：生效日为2026年7月1日【[E-001]】〔事实〕；来源未给出规则v1的发布日期【[E-003]】〔未知〕。\n- 规则v2：生效日为2026年9月1日，替代v1【[E-007]】〔事实〕；资料未说明规则v2发布日期，仅给出生效日【[E-013]】〔未知〕。\n- 日期关系：2026年8月25日早于v",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 3,
+          "completeness": 4
+        },
+        "revised_minutes": 10,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "o05",
+      "category": "organize",
+      "attempt": 1,
+      "task": "制作事实表，保留分母、金额单位、付款周期和最低购买数量。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实如24名满意、最低10账号、按年预付/最低50账号均保留并准确，分母、金额单位、付款周期也有呈现；但将方案甲支持Markdown与方案乙尚未提供Markdown表述为未解决矛盾，并将E-005、E-013等U/I证据升格为事实，属部分过度引申。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-003",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-015",
+              "E-016",
+              "E-017",
+              "E-010",
+              "E-019",
+              "E-005",
+              "E-013"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需的“事实表”和“口径说明”，并补充商务条款、指标、导出、存储与待补等小节，结构层次清晰。",
+            "cited_evidence_ids": [
+              "E-001"
+            ]
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "正文证据编号均可定位到证据列表，未发现虚构出处；但E-005的引用未直接支持否定性商务判断，E-013等推断条目在事实表中被当作事实引用，引用强度不够准确。",
+            "cited_evidence_ids": [
+              "E-005",
+              "E-013",
+              "E-006"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "任务要求的分母、金额单位、付款周期和最低购买数量均已覆盖，三项关键事实也出现，未知缺口有声明。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-003",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-015",
+              "E-016",
+              "E-017"
+            ]
+          }
+        },
+        "issues": [
+          "“导出功能”与“冲突与待补”将方案甲支持Markdown与方案乙尚未提供Markdown表述为‘存在矛盾’，未明确按方案区分。",
+          "“口径说明”和“冲突与待补”称E-005所称来源在素材中未给出名称、E-013未声明适用来源，与证据列表中已提供来源ID及允许来源名称不完全一致。",
+          "“事实表”将E-005（tag=U）和E-013（tag=I）标注为〔事实〕，证据强度被升格。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.030652299999999997,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:25:22",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 579.7,
+      "estimated_cost_usd": 0.08357483,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_688adcc5ea48478cb47865c3b6cc5cee",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 2/3",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 合成验收数据事实表：分母、金额单位、付款周期与最低购买数量\n\n## 事实表\n\n| 核心事实 | 证据编号 | 标注 |\n|---|---|---|\n| 本材料为合成验收数据。〔事实〕【E-001】 | E-001 | 〔事实〕 |\n| 40名参与者中32人完成问卷，24名答卷者表示满意。〔事实〕【E-002】 | E-002 | 〔事实〕 |\n| 问卷回收率为80%，答卷者满意率为75%。〔事",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 4,
+          "citations": 3,
+          "completeness": 5
+        },
+        "revised_minutes": 15,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "o06",
+      "category": "organize",
+      "attempt": 1,
+      "task": "整理满意率冲突，分别列出原文、分母和证据强弱，不擅自把冲突合并成平均值。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实#1 75%（E-005）与关键事实#2 90%（E-010）均准确列出；未出现禁项82.5%或“全部数据一致”；未将冲突合并平均，与给定来源一致。",
+            "cited_evidence_ids": [
+              "E-005",
+              "E-010",
+              "E-014"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节“冲突表”“核查建议”齐全，冲突表分列原文、分母、证据强弱和开放状态，整体围绕任务目的组织。",
+            "cited_evidence_ids": [
+              "E-005",
+              "E-010"
+            ]
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "正文断言均使用可定位的证据编号，引用真实存在；但E-014（tag=I推断）在正文多处被标为〔事实〕，引用标签有轻微不一致。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖关键事实、原文、分母、证据强弱和开放状态；包含必需章节，未合并平均，并对缺口作了声明。",
+            "cited_evidence_ids": [
+              "E-005",
+              "E-010",
+              "E-014"
+            ]
+          }
+        },
+        "issues": [
+          "多处将E-014（证据列表标注为tag=I推断）标为〔事实〕，属轻微标签不一致；位置主要在“任务范围与材料性质”“冲突表”“原文数值与出处”“不合并平均的处理”等小节。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01830256,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:31:56",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 390.902,
+      "estimated_cost_usd": 0.06015340000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_a0e834a8727941d3bd79c4207b6bd282",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 报告标题：满意率冲突核查提纲：原文、分母与证据强弱\n## 任务范围与材料性质\n原文称本材料为合成验收数据【E-001】〔事实〕；另一来源原文也称本材料为合成验收数据【E-009】〔事实〕。本报告仅据给定证据整理，不作合并；资料未给出其他满意率数值，不能合并平均【E-014】〔事实〕。满意率冲突保持开放，不擅自平均【E-005】【E-010】【E-014】〔推断〕。\n## 冲突表\n| 冲突项 |",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 5
+        },
+        "revised_minutes": 8,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "o07",
+      "category": "organize",
+      "attempt": 1,
+      "task": "整理两方案隐私信息，指出哪些字段未给出，并拟定补充询问项。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实#1、#2均已覆盖，禁止项未出现，方案甲/乙主要事实符合来源；但报告将多个tag=I推断描述当作事实引用，尤其E-006、E-013与原文quote不符，并与已知方案甲信息形成矛盾，属部分过度引申和错误。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-006",
+              "E-013"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节‘已知信息、缺失字段、询问项’齐全，另有合理说明性小节，段落围绕各章节目清晰展开。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "引用均可定位且无假来源编号，但多处引用不恰当：E-006 quote仅‘本材料为合成验收数据’，不能支持‘资料仅涉及方案甲’；E-013 quote仅‘方案乙’，不能支持‘来源未提供方案甲任何信息’；E-007/E-012/E-014/E-015为tag=I推断项却被标为〔事实〕引用。",
+            "cited_evidence_ids": [
+              "E-006",
+              "E-007",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "completeness": {
+            "score": 4,
+            "rationale": "任务要求的两方案已知信息、缺失字段、补充询问项均覆盖，关键缺口（保存地区、删除周期、独立审计报告）已列出并声明合成数据限制；但部分缺失字段表述与引用冲突，使整理可靠性略受影响。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-007",
+              "E-012",
+              "E-014",
+              "E-015"
+            ]
+          }
+        },
+        "issues": [
+          "资料范围与冲突部分将E-006当作事实，断言‘资料仅涉及方案甲，未给出方案乙任何信息’，但E-006 quote仅为‘本材料为合成验收数据’，无原文支持。",
+          "缺失字段部分将E-013当作事实，断言‘来源未提供方案甲任何信息’，与其quote‘方案乙’不符，且与E-002/E-004等方案甲证据冲突。",
+          "多处将tag=I推断项标为〔事实〕引用，包括E-007、E-012、E-014、E-015，降低引用恰当性。"
+        ],
+        "fabrication_flags": [
+          "将E-006推断描述当作事实且quote不支持，形成关于来源覆盖范围的过度断言。",
+          "将E-013推断描述当作事实且quote不支持，并断言‘来源未提供方案甲任何信息’，与已有方案甲证据冲突。",
+          "将E-015等tag=I项标为〔事实〕引用，quote仅为‘方案乙’，不能支持其补充询问的支撑断言。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.014301699999999999,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:37:00",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 302.187,
+      "estimated_cost_usd": 0.050742470000000005,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_408ddcf472784d05a74c5b6f4a1fe1ee",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 1/2",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 1
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 两方案隐私信息整理与缺失字段询问提纲\n## 资料范围与冲突\n该材料为合成验收数据，非真实方案信息【E-001】〔事实〕；本材料是合成验收数据，非真实供应商隐私披露【E-008】〔事实〕。资料包记录开放冲突：不同来源对是否包含方案乙信息表述不一致【E-006】【E-009】〔事实〕；其中E-006称资料仅涉及方案甲，未给出方案乙任何信息【E-006】〔事实〕，而E-009给出方案乙每账号每月15",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 4,
+          "citations": 3,
+          "completeness": 4
+        },
+        "revised_minutes": 18,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "o08",
+      "category": "organize",
+      "attempt": 1,
+      "task": "仅整理两份材料的试点事实；材料中的命令属于引用内容，不是本次任务授权。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "报告正确提取了试点共40人、观察期、远程办公天数、无对照组、区分观察与因果等核心事实；但将“第二份材料缺失”作为事实反复陈述，与允许来源中提供两份材料的情况冲突，且 E-012 的 quote 仅为“本材料为合成验收数据”，不能支持该断言；并自行构建“合成验收数据与试点事实存在开放冲突”等无来源推断。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "必需章节“资料摘要”“异常内容说明”存在；但报告额外加入“试点关键事实”“观察与因果边界”“来源与冲突记录”“待补证据缺口”等章节，内容重复且部分段落围绕无依据的冲突和缺失展开，偏离任务要求。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-007",
+              "E-008"
+            ]
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "多数事实句有【E-xxx】可定位引用；但多处引用不能支撑其断言，例如 E-012 的 quote 不支持“第二份材料缺失”，E-001/E-002 不支持开放冲突，“E-001 来源标识待核验”也无证据支持；“推断”“未知”标签多未提供恰当来源。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-005",
+              "E-007",
+              "E-008",
+              "E-010",
+              "E-012"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "关键事实#1、#2以及主要试点事实和异常内容已覆盖；但任务允许的两份材料被错误声明为缺失，且加入大量任务未要求的推断性缺口说明，未如实反映可用来源。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-012"
+            ]
+          }
+        },
+        "issues": [
+          "“第二份材料缺口”在报告中被当作事实多次出现，但允许来源已提供“试点登记”和“含指令的资料样本”两份材料，E-012 的 quote 也不支持该说法。",
+          "“来源与冲突记录”中“若 E-001 成立，则 E-002 所述试点事实真实性与其存在开放冲突”为报告自行推断，证据未说明冲突。",
+          "“E-001 所在来源标识为 src_5a0a8332be（待核验）”中的“待核验”无来源依据，且该来源ID已出现在证据列表中。",
+          "多处引用不当：E-012 的 quote 为“本材料为合成验收数据”，被用来支持“第二份材料缺失”。",
+          "报告超出“仅整理两份材料的试点事实”的范围，加入多段推断、冲突和缺口分析。"
+        ],
+        "fabrication_flags": [
+          "无依据断言“任务称有两份材料，但实际只提供1份来源，第二份材料缺失”。",
+          "无依据断言“若 E-001 成立，则 E-002 所述试点事实真实性与其存在开放冲突”。",
+          "无依据标注“E-001 所在来源标识为 src_5a0a8332be（待核验）”。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01089117,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:42:13",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 311.144,
+      "estimated_cost_usd": 0.06271249000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_1ea17b7ecf604625bf04c3ee9ee635e8",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 两份材料试点事实与异常内容整理报告\n\n## 资料摘要\n材料声明自身为合成验收数据〔事实〕【E-001】；该来源材料是合成验收数据，不是真实业务资料〔事实〕【E-006】。E-001 所在来源标识为 src_5a0a8332be（待核验）〔未知〕【E-001】；E-006、E-012 的来源标识为 src_03151c57c5〔事实〕【E-006】【E-012】。星桥团队试点共有40人（试点共4",
+      "human": {
+        "dimensions": {
+          "correctness": 2,
+          "structure": 3,
+          "citations": 2,
+          "completeness": 3
+        },
+        "revised_minutes": 30,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r01",
+      "category": "research",
+      "attempt": 1,
+      "task": "为40人团队比较甲乙，重点为真实采购成本、导出能力与证据缺口。只使用提供的网页快照。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实#1-#3均正确，禁止项未出现；但把E-006、E-007、E-011等tag=I推断项在正文/比较表中标为〔事实〕，并错误称跨来源记录'存在矛盾'（实际只是各自快照未包含对方条款），属于部分错误或过度引申。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "报告有明确标题与分节，必需章节'比较表''条件性建议''资料来源'齐全，段落围绕成本、导出、证据缺口等任务目的展开。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "引用均可定位到E-001至E-015，多数恰当；但E-006/E-007/E-011等推断项被标注为事实，另有'未使用外部资料〔事实〕'无引用，个别引用仅支持部分断言。",
+            "cited_evidence_ids": [
+              "E-006",
+              "E-007",
+              "E-011"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖甲/乙成本与条款、40人推算成本、导出能力、存储与合规证据缺口、比较表、条件性建议和资料来源；关键事实#1-#3全覆盖且无禁止项。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          }
+        },
+        "issues": [
+          "E-006为tag=I推断，正文与比较表标为〔事实〕",
+          "E-007/E-011为tag=I推断，正文中均标为〔事实〕",
+          "跨来源冲突节声称不同来源对是否包含乙/甲条款'存在矛盾'，实为各自快照缺失对方内容，非矛盾",
+          "资料来源节'未使用外部资料〔事实〕'无证据引用"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01227399,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:48:11",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 355.914,
+      "estimated_cost_usd": 0.07676670000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_0983d28433c242f0b8b2a03b9c29d64b",
+      "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 40人团队甲乙方案采购成本、导出能力与证据缺口比较报告\n## 任务范围与资料性质\n本报告仅基于合成验收数据，不构成真实采购结论【E-005】【E-008】〔事实〕。材料自称是合成验收数据，非真实采购资料【E-005】〔事实〕；本材料为合成验收数据【E-008】〔事实〕。40人真实采购决策需另行补证【E-005】【E-008】〔推断〕。\n## 甲采购成本与条款\n方案甲定价为每账号每月20元【E-",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 5,
+          "citations": 4,
+          "completeness": 4
+        },
+        "revised_minutes": 15,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r02",
+      "category": "research",
+      "attempt": 1,
+      "task": "写一份研究简报，回答远程办公是否提升效率；区分相关关系、观察到的变化和因果结论。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 4,
+            "rationale": "依据给定证据，关键事实#1-#3均被覆盖，结论谨慎且未出现禁止项；但正文将E-006、E-014、E-021、E-022等推断性条目标为事实，且“未提供任何效率指标或效率变化数据”与工单平均处理时长变化存在未完全消解的张力。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-006",
+              "E-012",
+              "E-014",
+              "E-019",
+              "E-021",
+              "E-022",
+              "E-005",
+              "E-015"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "具备必需章节，并增设“观察到的变化”与“相关关系”以完成区分任务；段落围绕提纲目的，逻辑清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "引用编号均存在于证据列表且可定位；但部分引用强度不足或标记不当，如E-015的quote仅显示“本材料为合成验收数据”，却被当作“资料未说明远程办公”的事实支持。",
+            "cited_evidence_ids": [
+              "E-015",
+              "E-006",
+              "E-014",
+              "E-021",
+              "E-022",
+              "E-012"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖三项关键事实、禁止项未出现，区分了相关关系、观察到的变化与因果限制，缺口已声明。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-013",
+              "E-019",
+              "E-018",
+              "E-012",
+              "E-021"
+            ]
+          }
+        },
+        "issues": [
+          "研究问题部分将“资料未说明远程办公”表述为事实，但E-015引用仅quote“本材料为合成验收数据”，支持不足且表述可能误导。",
+          "多处推断性证据被标为“事实”（如E-006、E-014、E-021、E-022），淡化逻辑推断性质。",
+          "正文中“未提供任何效率指标或效率变化数据”与E-012工单平均处理时长从10小时变为8小时存在矛盾，作者虽加解释但处理较绕。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01524571,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:56:42",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 508.312,
+      "estimated_cost_usd": 0.11065308000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_bb1023273a8a4b2ebcb39fb649f5ae01",
+      "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 远程办公是否提升效率：相关关系、观察变化与因果限制简报\n## 研究问题\n本简报按材料可回答范围，仅区分相关关系、观察到的变化与因果结论〔推断〕。给定来源未提供任何效率指标或效率变化数据【E-005】〔事实〕；资料不足以回答远程办公是否提升效率【E-007】〔事实〕；资料未说明远程办公，无法回答其是否提升效率【E-015】〔事实〕；材料仅显示相关关系，不能得出远程办公提升效率的因果结论【E-02",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 3,
+          "completeness": 5
+        },
+        "revised_minutes": 10,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 1,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实#1、#2分别引用E-013、E-014，未出现禁止项；但报告将E-008、E-015、E-007、E-016等tag=I或tag=U的推断性结论标为〔事实〕，并将方案甲报价的“页面未说明数据保存地区/删除周期”与方案乙报价的“供应商称本地存储”并列推断为“披露不一致/冲突”，混淆不同方案信息，属部分错误与过度引申。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-014",
+              "E-005",
+              "E-006",
+              "E-008",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "报告包含必需章节“已知承诺”“证据缺口”“批准条件”，并设结论、商务功能、安全合规、冲突、后续核验等章节，层次清楚，围绕任务目的展开。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-014",
+              "E-016"
+            ]
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "引用均可定位且多数恰当，但部分引用的证据条目为推断或未核验（如E-008、E-015、E-016），且被直接标为事实，引用支撑强度有所高估。",
+            "cited_evidence_ids": [
+              "E-008",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求：判断不能据现有资料批准采购并处理内部敏感资料，列出关键事实与批准前缺失证据，必需章节齐全，并如实声明合成数据来源限制。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-009",
+              "E-013",
+              "E-014",
+              "E-016"
+            ]
+          }
+        },
+        "issues": [
+          "报告多处将推断性结论E-008、E-015、E-007、E-016标为〔事实〕；位置：报告结论与批准判断、敏感资料处理证据缺口、证据缺口、批准条件、资料真实性与来源限制。",
+          "报告混淆方案甲与方案乙信息，将方案甲报价“页面未说明数据保存地区/删除周期”与方案乙报价“供应商称数据存储在本地地区”并列并称“披露不一致/冲突”；位置：已知承诺、安全与合规透明度、冲突与未决事项。",
+          "引用E-016的原文不直接支持“合规认证证据也不在现有资料中”，该句为缺口推断性陈述却标为〔事实〕；位置：安全与合规透明度。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.015895259999999998,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:00:47",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 242.92,
+      "estimated_cost_usd": 0.03672609,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_92a09fad3548423ebcc4f4574bf5d156",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 41,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购与内部敏感资料处理尽调报告\n## 报告结论与批准判断\n现有资料不足以批准采购并处理内部敏感资料【[E-008]】【[E-015]】〔事实〕。本材料为合成验收数据【[E-001]】【[E-009]】〔事实〕。因此，不能据现有资料批准采购与内部敏感资料处理；该结论仅基于合成材料，不能用于真实决策〔推断〕。\n## 采购方案商务与功能\n方案甲每账号每月20元【[E-002]】〔事实〕；可按月支付，",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 4
+        },
+        "revised_minutes": 12,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "核心数据与来源一致，关键禁止项未出现；但冲突段‘上述两组冲突均标注为开放状态’无来源支持，且‘现有数据不足以支持扩大试点’被标为事实而实为推断，存在局部错误/过度标记。",
+            "cited_evidence_ids": [
+              "E-011",
+              "E-018",
+              "E-021",
+              "E-016",
+              "E-007",
+              "E-031"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "四必需章节齐全，段落围绕建议、依据、冲突、下一步采集，层次清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "多数断言有可定位引用且引用存在；但‘开放状态’标注引用的E-011/E-018/E-021/E-016不支撑该断言，且部分〔事实〕/〔推断〕标签与证据标签不符，引用不当。",
+            "cited_evidence_ids": [
+              "E-011",
+              "E-018",
+              "E-021",
+              "E-016",
+              "E-007",
+              "E-031"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求：是否扩大、依据、冲突数据、下一步采集；关键事实#1/#2均已纳入，缺口与局限已说明。",
+            "cited_evidence_ids": [
+              "E-022",
+              "E-029"
+            ]
+          }
+        },
+        "issues": [
+          "冲突段‘上述两组冲突均标注为开放状态’被标为事实，但给定来源中无‘开放状态’表述，所引证据不支撑。",
+          "冲突段‘分析建议暂不扩大试点【E-016】’标为〔事实〕，但E-016为推断性建议，引用不当。",
+          "建议段‘现有数据不足以支持扩大试点【E-007】【E-031】’标为〔事实〕，但两项证据为推断，标签不够准确。"
+        ],
+        "fabrication_flags": [
+          "冲突段末‘上述两组冲突均标注为开放状态【E-011】【E-018】【E-021】【E-016】〔事实〕’在给定来源中无依据。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01571837,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:05:02",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 252.668,
+      "estimated_cost_usd": 0.035175490000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_308f20526cf641e9a869c3ec4692c857",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 42,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 星桥团队远程办公试点是否扩大试点的管理层建议\n\n## 建议\n现有数据不足以支持扩大试点【[E-007]】【[E-031]】〔事实〕；建议暂不扩大试点【[E-016]】〔推断〕。管理层尚未批准全员推行【[E-022]】〔事实〕，管理层建议先延长试点【[E-021]】〔事实〕；建议先延长试点，并补充满意率分母和问卷统计后再评估扩大【[E-024]】〔推断〕；同时需补充工单难度控制数据【[E-016",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 5,
+          "citations": 3,
+          "completeness": 5
+        },
+        "revised_minutes": 8,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r05",
+      "category": "research",
+      "attempt": 1,
+      "task": "截至2026年9月2日，总结客服组与其他组的适用规则，说明旧材料为什么仍需保留。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 4,
+            "rationale": "核心事实与给定来源一致：v2自2026-09-01生效并适用客服组、客服组每周远程办公上限1天、其他组沿用v1、v1允许试点人员每周2天等均有对应证据；但将推理性证据E-013标为〔事实〕，略有过度，且部分结论为合理推断而非直接来源断言。",
+            "cited_evidence_ids": [
+              "E-007",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-003",
+              "E-012"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节截至时点、分组规则、版本来源齐全，并增设旧材料保留理由、冲突与未决事项、证据边界与缺口，结构清楚。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "关键断言大多有可定位引用，E编号与证据列表对应；但E-013为推理性证据却被标为事实引用，部分推断虽已标注但缺少直接来源。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-011",
+              "E-008",
+              "E-004",
+              "E-005"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的截至时点、客服组与其他组适用规则、旧材料保留理由，并如实声明分组定义、保留期限、v2完整文本等缺口。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-006",
+              "E-011",
+              "E-013"
+            ]
+          }
+        },
+        "issues": [
+          "报告中把推理性证据E-013标为〔事实〕（旧材料保留理由部分），应标为推断/推理。",
+          "'并行状态'等结论无直接来源但已标注为推断，不构成编造。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.009602729999999999,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:07:33",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 148.728,
+      "estimated_cost_usd": 0.020937590000000002,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_e000cd55e288498cb260a7c227ca7e88",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 1/2",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 1
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 截至2026年9月2日客服组与其他组适用规则及旧材料保留说明\n\n## 截至时点\n截至2026年9月2日，客服组应适用已生效的v2【E-012】〔事实〕。v2自2026年9月1日起生效【E-007】〔事实〕，因此截至该时点v2已生效〔推断〕。其他组沿用v1【E-011】〔事实〕。由此，客服组与其他组的规则适用在时点上出现并行状态〔推断〕。\n\n## 分组规则\n规则v2适用客服组【E-009】〔事实",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 5,
+          "citations": 4,
+          "completeness": 5
+        },
+        "revised_minutes": 5,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r06",
+      "category": "research",
+      "attempt": 1,
+      "task": "比较团队从40人增到60人时甲乙首年费用，并说明预付和最低席位造成的差异。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "核心首年费用计算与给定价格和12个月口径相符，但多处将计算/推断项标为事实，存在过度引申。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-004",
+              "E-009",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节假设、费用表、结论齐全，另有差异解释和冲突缺口，段落围绕任务目的。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-004",
+              "E-009",
+              "E-013",
+              "E-014"
+            ]
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "引用编号均可定位，但多项推断被标为事实且引用不足以直接支持，如E-004只含报价却支持首年计算，E-013/E-014为推断却称事实。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-004",
+              "E-007",
+              "E-008",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖甲乙40/60首年费用、增幅、预付和最低席位影响，并声明冲突与待补缺口。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014"
+            ]
+          }
+        },
+        "issues": [
+          "费用表中将E-004/E-013/E-014的推断计算标为事实。",
+          "结论与差异解释把乙9000/10800及甲9600/14400等计算项称作事实，宜标推断。",
+          "‘不引入材料未给出的条款’以E-001为据，但E-001仅说明合成验收数据，不支撑该口径。",
+          "冲突与缺口引用E-007/E-008表述‘来源称未提供乙数据/无法比较’，与对应quote不完全一致，引用不够恰当。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01100333,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:13:20",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 344.68,
+      "estimated_cost_usd": 0.06862133000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_ef145ffe4f0f41f6a7c497fe680524e1",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 105,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 报告标题：甲乙方案首年费用比较：40人增至60人、预付与最低席位差异\n\n## 任务与口径\n- 本材料为合成验收数据〔事实〕[E-001]。\n- 比较对象为方案甲与方案乙；人员规模为40人和60人；本报告在给定数据下比较首年费用，不引入材料未给出的条款〔推断〕[E-001]。\n- 方案甲每账号每月20元，40人首年9600元、60人14400元、增加4800元〔事实〕[E-002][E-004]",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 5,
+          "citations": 4,
+          "completeness": 5
+        },
+        "revised_minutes": 5,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r07",
+      "category": "research",
+      "attempt": 1,
+      "task": "查询截至2026年9月7日新增的独立研究并给出最新结论。本例搜索服务不可用，只提供一份旧摘要。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告与给定来源一致：仅将旧摘要描述为合成验收数据，明确无法给出截至2026-09-07的新增研究结论，关键事实‘为期4周’准确引用E-002；未声称已检索最新文献或编造新增论文标题/链接。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节‘无法完成的部分’‘已有证据’‘后续所需’，另有‘限制与推断’但不影响结构，段落围绕核查目的展开。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用均能在证据列表中找到，E-001至E-007引用位置与对应断言相符，未发现不可定位或编造引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "任务因搜索不可用而预期无法完成，报告如实声明无法给出新增研究结论，覆盖所需章节、关键事实及禁止项要求，并列出后续所需证据。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00594181,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:15:33",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 130.57,
+      "estimated_cost_usd": 0.020751360000000003,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_af049b26c311494abee898ca90bba1e9",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 1/1",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 1,
+        "fact_hits": 1
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 截至2026年9月7日远程办公新增独立研究结论核查提纲\n\n## 无法完成的部分\n\n本次任务的检索服务不可用，因此无法给出截至2026年9月7日新增的独立研究结论〔事实〕【E-001】【E-007】。现有材料为合成验收数据，属于旧摘要性质，其内容不足以支持“截至2026年9月7日最新结论”的判断〔事实〕【E-001】【E-007】。由此，“截至该日期有哪些新增独立研究”这一问题仍无答案：缺少该日",
+      "human": {
+        "dimensions": {
+          "correctness": 5,
+          "structure": 5,
+          "citations": 5,
+          "completeness": 5
+        },
+        "revised_minutes": 0,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "r08",
+      "category": "research",
+      "attempt": 1,
+      "task": "写证据综述，说明独立资料数量与样本范围，避免将转载重复计入样本量。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实#1-#3均有对应证据支持（E-009、E-003、E-015），禁止项未出现；独立来源数量为1、转载不能重复计入样本量的表述与E-002、E-007、E-010、E-013、E-020一致；未知与推断均已标注。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-007",
+              "E-009",
+              "E-010",
+              "E-013",
+              "E-015",
+              "E-020"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需的证据分组、综述、限制章节，段落围绕独立资料数量、样本范围、材料属性与局限展开，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "引用编号均可定位，未发现不可定位引用；主要断言有引用。个别引用如E-001、E-002的原始quote与其宣称内容的支撑关系略弱，且部分证据引用重复冗余。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-009",
+              "E-020"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的独立资料数量与样本范围，明确避免将转载重复计入样本量；关键事实与禁止项处理正确，并在限制中如实声明样本关系未知等缺口。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-009",
+              "E-015",
+              "E-020"
+            ]
+          }
+        },
+        "issues": [
+          "正文出现“所给E-001未出现“来源为单一粘贴文本”的表述〔未知〕”，但证据列表E-001的描述中包含该表述，易造成混淆。",
+          "多处理重复引用三项“本材料为合成验收数据”证据，表述略冗余；引用E-001、E-002的原始quote与其断言之间的支撑关系偏弱。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.010263360000000001,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:21:16",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 340.294,
+      "estimated_cost_usd": 0.07207632000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_39c2e56ec6f44b3abc27e06515634470",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 49,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 3,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 独立资料数量与样本范围证据综述\n## 证据分组\n按独立来源、样本范围、结论局限与材料属性分组证据。本材料为合成验收数据〔事实〕【[E-001]】；本材料声明为合成验收数据〔事实〕【[E-008]】；本材料明确标注为合成验收数据〔事实〕【[E-014]】。\n### 独立资料数量与去重\n当前仅1份来源，独立资料数量为1〔事实〕【[E-002]】。仅依据所给资料，独立来源数量为1，不能将转载重复计入",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 5
+        },
+        "revised_minutes": 8,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "v01",
+      "category": "revision",
+      "attempt": 1,
+      "task": "将原稿压缩到180个汉字以内，保留规模、满意率分母、无对照组限制和来源。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实均与证据一致：40人规模、无对照组、32人完成问卷、24名答卷者满意、满意率分母为答卷者；时长下降不能归因于干预作为推断明确标注，并对应E-012，无编造断言。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-006",
+              "E-007",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "仅包含必需章节“摘要”，信息按规模、对照限制、满意率及工单结果递进，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文断言均附来源ID和证据编号，所引E-001、E-003、E-004、E-006、E-007、E-009、E-010、E-011、E-012均可定位且真实存在。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-004",
+              "E-006",
+              "E-007",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求：压缩至180个汉字以内、保留规模、满意率分母、无对照组限制和来源；必需章节“摘要”已包含。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-006",
+              "E-007",
+              "E-009"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01005348,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:28:10",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 411.745,
+      "estimated_cost_usd": 0.08976844,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_466f6a43a98f4ab2bdfa97da09bdd637",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 1/1、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 9,
+        "unresolved_citations": 0,
+        "required_sections": 1,
+        "section_hits": 1,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 1,
+        "required_section_hits": 1,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 星桥试点结果摘要（180字内）\n## 摘要\n星桥团队试点40人，观察期2026年7月1日至7月31日（src_0df07577c0）【[E-001]】〔事实〕；没有设置对照组（src_0df07577c0）【[E-003]】〔事实〕；材料自述为合成验收数据（src_0df07577c0）【[E-004]】〔事实〕。40名参与者中32人完成问卷，24名答卷者表示满意；满意率分母为答卷者，满意率为",
+      "human": {
+        "dimensions": {
+          "correctness": 5,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 5
+        },
+        "revised_minutes": 5,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "v02",
+      "category": "revision",
+      "attempt": 1,
+      "task": "保留7月结果，增加8月结果并比较趋势；输出改动说明。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实均准确引用：7月工单从10小时变为8小时（E-014）、8月平均9小时（E-021）、满意率75%（E-013/E-020）；未出现‘8月仍为8小时’或两月80名独立参与者等禁止项，并明确不能合并两月答卷人数。比较多以并列/推断/未知表述，未作超出证据的因果结论。",
+            "cited_evidence_ids": [
+              "E-014",
+              "E-021",
+              "E-013",
+              "E-020",
+              "E-022",
+              "E-018",
+              "E-001"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节‘7月结果’‘8月结果’‘比较与局限’‘改动说明’均齐全，另有资料口径和冲突/缺口说明；段落围绕各节目的，层次清晰。",
+            "cited_evidence_ids": [
+              "E-010",
+              "E-018",
+              "E-013",
+              "E-014",
+              "E-021"
+            ]
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文事实性断言均配有可定位的证据编号，且编号均存在于给定证据列表；计算与推断被标注为〔计算〕/〔推断〕，缺口标注〔未知〕；机器复核未发现不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-018",
+              "E-019",
+              "E-020",
+              "E-021",
+              "E-022",
+              "E-024"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "任务要求保留7月结果、新增8月结果、比较趋势并输出改动说明均已覆盖；关键事实与禁止项处理正确；局限性（无对照组、难度未控制、两月不可合并为独立人数）已如实声明。",
+            "cited_evidence_ids": [
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-018",
+              "E-019",
+              "E-020",
+              "E-021",
+              "E-022",
+              "E-005",
+              "E-015"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01458911,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:34:11",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 359.001,
+      "estimated_cost_usd": 0.07767596,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_093c15305cdf49fca15ed39af4f58685",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 3/3",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 星桥团队试点7月与8月结果及趋势比较改动说明\n## 资料性质与口径\n材料为合成验收数据，非真实业务数据【E-001】〔事实〕；另一来源也标明材料为合成验收数据【E-009】〔事实〕；第三来源同样标明材料为合成验收数据【E-017】〔事实〕。星桥团队试点共40人【E-002】〔事实〕；观察期为2026年7月1日至7月31日【E-003】〔事实〕；所有人每周远程办公2天【E-004】〔事实〕；试点",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 5
+        },
+        "revised_minutes": 10,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "v03",
+      "category": "revision",
+      "attempt": 1,
+      "task": "把原稿改成面向非技术管理者的决策摘要，保留价格约束与证据缺口，不扩充新事实。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 4,
+            "rationale": "关键事实#1-#3均被正确保留，禁止项未出现；价格约束与证据缺口表述基本与E-002/E-005/E-006/E-012/E-016一致。但“冲突与开放问题”节将方案甲支持Markdown导出与方案乙尚未提供并读为“表面冲突”，略有过度引申并可能误导非技术读者。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-006",
+              "E-012",
+              "E-014",
+              "E-016"
+            ]
+          },
+          "structure": {
+            "score": 4,
+            "rationale": "必需章节“决策摘要”“待确认事项”齐全，段落围绕价格约束、导出能力和证据缺口展开；但多处重复价格与材料性质信息，可更精简以符合决策摘要用途。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "所有事实性断言均附可定位引用，引用编号与证据列表一致；推断已标注；未发现不可定位或编造引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖三项关键事实、价格约束与证据缺口，并有待确认事项；未遗漏要求内容，未出现禁止项。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-006",
+              "E-012",
+              "E-016"
+            ]
+          }
+        },
+        "issues": [
+          "“冲突与开放问题”节将方案甲支持Markdown导出与方案乙尚未提供并读为“表面冲突”，易使非技术管理者误认为存在同一对象的功能矛盾，建议明确区分供应商。",
+          "报告多处重复同一价格/材料性质信息，如“价格与付费约束”与“方案甲价格与最低支出”“方案乙价格与起订量”，可进一步精简。",
+          "“决策摘要”中“资料未说明数据保存地区、未说明数据删除周期”主要来自方案甲报价，未同时点明方案乙仅有供应商单方面存储地点声明；后文有区分但摘要措辞可更准确。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01328477,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:41:41",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 447.788,
+      "estimated_cost_usd": 0.09074173,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_24366c44c84043a18cddef578e49abb6",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 38,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 决策摘要：方案甲与方案乙价格约束、导出能力与证据缺口\n## 决策摘要\n方案甲定价为每账号每月20元【[E-002]】〔事实〕，按最低10个账号计算月最低支出约200元【[E-005]】〔事实〕；方案甲支持Markdown格式导出，即支持Markdown导出【[E-006]】〔事实〕。方案乙采购设有最低50个账号的起订量【[E-012]】〔事实〕。资料未说明数据保存地区、未说明数据删除周期，均为",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 5,
+          "completeness": 5
+        },
+        "revised_minutes": 8,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    },
+    {
+      "id": "v04",
+      "category": "revision",
+      "attempt": 1,
+      "task": "撤回旧稿使用的s02来源，只使用仍有效的s01重写，并说明删除了哪些无法再支持的结论。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告保留的40人和无对照组与E-002、E-005一致；观察期、远程办公天数、合成数据声明分别与E-003、E-004、E-001一致；未出现禁止项，未在保留结论引用s02，也未保留75%或8小时；无对照组无法支持因果结论的推断与E-006一致，s02具体内容缺失的声明也与证据边界一致。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必备章节“保留结论”“删除说明”均已出现，且额外设置方法学限制、证据来源与有效性、待补缺口，层次围绕撤回s02后仅用s01展开，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "主要事实与推断均有可定位引用，E-002至E-006直接支撑对应条目；未发现s02引用或不可定位ID。但“待补缺口”中“s01与s02分别对应哪些证据ID”未附引用，且E-007对s02缺失的引用更接近列表化缺口归纳而非严格quote支撑，故扣一档。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖关键事实#1/#2及来源中全部描述性事实；提供了保留结论和删除说明；对s02缺失造成的无法逐条说明缺口如实声明；未出现禁止项。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [
+          "删除说明中“须删除远程办公与结果之间的因果结论”为合理推断，但该结论是否确实存在于旧稿s02未被资料证实，建议将措辞限定为“若旧稿含此结论则不可再支持”。",
+          "待补缺口章节中“s01与s02分别对应哪些证据ID”一条缺少可定位引用。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.022302480000000003,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:47:57",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 373.164,
+      "estimated_cost_usd": 0.046331800000000006,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_45ea4f766e6145ca994a40c35d9b53b4",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 22,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 撤回s02后仅用s01的结论重写提纲\n## 保留结论\n- 星桥团队试点参与人数为40人，即试点共40人【[E-002]】〔事实〕。\n- 观察期为2026年7月1日至7月31日【[E-003]】〔事实〕。\n- 试点期间所有人每周远程办公2天【[E-004]】〔事实〕。\n- 该试点没有设置对照组【[E-005]】〔事实〕。\n- 在仅当前可用证据的边界下，上述描述性事实可保留；超出该范围的效果解释不",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 3
+        },
+        "revised_minutes": 12,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:19:08",
+        "note": "AI 预填评分（模型判读报告 + 机器核对），用户 2026-09-10 认可采用；改稿分钟为估算值",
+        "scoring_provenance": "ai_prefilled_human_approved：分数由 AI 预填（模型判读报告全文与机器检查），用户 2026-09-10 认可后采用；不是逐例人工评分；revised_minutes 为模型估算"
+      }
+    }
+  ]
+}

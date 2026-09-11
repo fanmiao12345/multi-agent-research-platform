@@ -2,9 +2,11 @@
 
 ## 实用化开发记录（用户要求，2026-09-09）
 
-- 按 `docs/PRACTICAL_RESEARCH_WRITING_PLAN.md` 推进，逐项状态见 `docs/IMPLEMENTATION_TRACKER.md`。
+- 按 `docs/PROJECT_MASTER_PLAN.md` 推进完整个人 AI 智能体系统；`docs/PRACTICAL_RESEARCH_WRITING_PLAN.md` 是首个研究写作场景说明，逐项状态见 `docs/IMPLEMENTATION_TRACKER.md`。
+- 用户要求（2026-09-11）：先完成 D0～D10 全部功能并冻结，再执行 Q1～Q4 整体测试与优化。开发中只做必要的最小功能/关键边界验证和阻塞性修复；不反复跑全量、真实批次或局部调参。非阻塞优化登记 `docs/OPTIMIZATION_BACKLOG.md`。
 - 每完成一步，立即在 `docs/IMPLEMENTATION_LOG.md` 追加日期、步骤编号、修改、验证结果、限制与下一步。
 - 每批完成同步 README 和 EXECUTION_STATUS；未验证不能标已验收，离线测试不能替代真实业务验收。
+- 历史 S/B/01～130 编号与排期只用于追溯；按总计划映射新步骤。不能把模块存在、Mock 通过或固定链完成写成整个项目完成。
 
 ## 第一条：一切改动都属于「这个项目」
 

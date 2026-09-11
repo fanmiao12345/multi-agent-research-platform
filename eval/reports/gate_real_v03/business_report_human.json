@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "de4bdb51bde7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-10T15:41:41",
+    "scope": "business_acceptance_pending_human_scoring",
+    "human_confirm": {
+      "applied": 1,
+      "accept_human": 1,
+      "graded_human": 1,
+      "note": "已人工确认的分数可以用于业务通过率计算（human_confirmed=true）"
+    }
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 449.17,
+  "results": [
+    {
+      "id": "v03",
+      "category": "revision",
+      "attempt": 1,
+      "task": "把原稿改成面向非技术管理者的决策摘要，保留价格约束与证据缺口，不扩充新事实。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 4,
+            "rationale": "关键事实#1-#3均被正确保留，禁止项未出现；价格约束与证据缺口表述基本与E-002/E-005/E-006/E-012/E-016一致。但“冲突与开放问题”节将方案甲支持Markdown导出与方案乙尚未提供并读为“表面冲突”，略有过度引申并可能误导非技术读者。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-006",
+              "E-012",
+              "E-014",
+              "E-016"
+            ]
+          },
+          "structure": {
+            "score": 4,
+            "rationale": "必需章节“决策摘要”“待确认事项”齐全，段落围绕价格约束、导出能力和证据缺口展开；但多处重复价格与材料性质信息，可更精简以符合决策摘要用途。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "所有事实性断言均附可定位引用，引用编号与证据列表一致；推断已标注；未发现不可定位或编造引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖三项关键事实、价格约束与证据缺口，并有待确认事项；未遗漏要求内容，未出现禁止项。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-006",
+              "E-012",
+              "E-016"
+            ]
+          }
+        },
+        "issues": [
+          "“冲突与开放问题”节将方案甲支持Markdown导出与方案乙尚未提供并读为“表面冲突”，易使非技术管理者误认为存在同一对象的功能矛盾，建议明确区分供应商。",
+          "报告多处重复同一价格/材料性质信息，如“价格与付费约束”与“方案甲价格与最低支出”“方案乙价格与起订量”，可进一步精简。",
+          "“决策摘要”中“资料未说明数据保存地区、未说明数据删除周期”主要来自方案甲报价，未同时点明方案乙仅有供应商单方面存储地点声明；后文有区分但摘要措辞可更准确。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01328477,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:41:41",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 447.788,
+      "estimated_cost_usd": 0.09074173,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_24366c44c84043a18cddef578e49abb6",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 38,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 决策摘要：方案甲与方案乙价格约束、导出能力与证据缺口\n## 决策摘要\n方案甲定价为每账号每月20元【[E-002]】〔事实〕，按最低10个账号计算月最低支出约200元【[E-005]】〔事实〕；方案甲支持Markdown格式导出，即支持Markdown导出【[E-006]】〔事实〕。方案乙采购设有最低50个账号的起订量【[E-012]】〔事实〕。资料未说明数据保存地区、未说明数据删除周期，均为"
+    }
+  ],
+  "records": [
+    {
+      "id": "v03",
+      "category": "revision",
+      "attempt": 1,
+      "task": "把原稿改成面向非技术管理者的决策摘要，保留价格约束与证据缺口，不扩充新事实。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 4,
+            "rationale": "关键事实#1-#3均被正确保留，禁止项未出现；价格约束与证据缺口表述基本与E-002/E-005/E-006/E-012/E-016一致。但“冲突与开放问题”节将方案甲支持Markdown导出与方案乙尚未提供并读为“表面冲突”，略有过度引申并可能误导非技术读者。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-006",
+              "E-012",
+              "E-014",
+              "E-016"
+            ]
+          },
+          "structure": {
+            "score": 4,
+            "rationale": "必需章节“决策摘要”“待确认事项”齐全，段落围绕价格约束、导出能力和证据缺口展开；但多处重复价格与材料性质信息，可更精简以符合决策摘要用途。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "所有事实性断言均附可定位引用，引用编号与证据列表一致；推断已标注；未发现不可定位或编造引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖三项关键事实、价格约束与证据缺口，并有待确认事项；未遗漏要求内容，未出现禁止项。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-006",
+              "E-012",
+              "E-016"
+            ]
+          }
+        },
+        "issues": [
+          "“冲突与开放问题”节将方案甲支持Markdown导出与方案乙尚未提供并读为“表面冲突”，易使非技术管理者误认为存在同一对象的功能矛盾，建议明确区分供应商。",
+          "报告多处重复同一价格/材料性质信息，如“价格与付费约束”与“方案甲价格与最低支出”“方案乙价格与起订量”，可进一步精简。",
+          "“决策摘要”中“资料未说明数据保存地区、未说明数据删除周期”主要来自方案甲报价，未同时点明方案乙仅有供应商单方面存储地点声明；后文有区分但摘要措辞可更准确。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01328477,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:41:41",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 447.788,
+      "estimated_cost_usd": 0.09074173,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_24366c44c84043a18cddef578e49abb6",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 38,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 决策摘要：方案甲与方案乙价格约束、导出能力与证据缺口\n## 决策摘要\n方案甲定价为每账号每月20元【[E-002]】〔事实〕，按最低10个账号计算月最低支出约200元【[E-005]】〔事实〕；方案甲支持Markdown格式导出，即支持Markdown导出【[E-006]】〔事实〕。方案乙采购设有最低50个账号的起订量【[E-012]】〔事实〕。资料未说明数据保存地区、未说明数据删除周期，均为",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 5,
+          "completeness": 5
+        },
+        "revised_minutes": 8,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:22:29",
+        "note": "人工评分（覆盖/确认 Agent 初步评分）"
+      }
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\gate_real_v03\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 4.0,
+      "structure": 4.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

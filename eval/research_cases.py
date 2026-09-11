@@ -20,10 +20,15 @@ def validate_dataset(data: dict) -> list[str]:
     rows = data["tasks"] + data["faults"]
     if len({r["id"] for r in rows}) != len(rows):
         errors.append("任务 ID 重复")
-    if Counter(t["category"] for t in data["tasks"]) != {"organize": 8, "research": 8, "revision": 4}:
-        errors.append("业务案例必须为8个整理、8个研究、4个改稿")
-    if len(data["faults"]) != 10:
-        errors.append("故障案例必须为10个")
+    # v2 起数量以 meta.counts 为准（v1 的 8/8/4 仍是冻结基线子集；扩充不得静默改动）
+    counts = data["meta"].get("counts") or {}
+    expected_categories = {k: v for k, v in counts.items() if k != "fault"}
+    actual_categories = dict(Counter(t["category"] for t in data["tasks"]))
+    if expected_categories and actual_categories != expected_categories:
+        errors.append(f"业务案例分布与 meta.counts 不符：{actual_categories} vs {expected_categories}")
+    expected_faults = counts.get("fault", 10)
+    if len(data["faults"]) != expected_faults:
+        errors.append(f"故障案例必须为{expected_faults}个")
     for t in data["tasks"]:
         prefix = t["id"] + ": "
         if not t["request"] or not t["sections"] or not t["facts"] or not t["forbidden_claims"]:
@@ -55,10 +60,15 @@ def validate_dataset(data: dict) -> list[str]:
 def main():
     dataset = load_dataset()
     errors = validate_dataset(dataset)
-    print(json.dumps({"dataset": dataset["meta"]["name"], "definition_valid": not errors,
+    print(json.dumps({"dataset": dataset["meta"]["name"],
+                      "dataset_version": dataset["meta"].get("version", 1),
+                      "definition_valid": not errors,
                       "business_tasks": len(dataset["tasks"]), "fault_cases": len(dataset["faults"]),
-                      "business_executed": 0, "business_passed": None,
-                      "status": "not_run", "errors": errors}, ensure_ascii=False, indent=2))
+                      "v1_frozen_baseline": len(dataset["meta"].get("v1_baseline",
+                                                                    {}).get("frozen_ids", [])),
+                      "execution_status": "实际执行状态见 docs/EXECUTION_STATUS.md；"
+                                          "本命令只校验案例定义，不运行业务流程",
+                      "errors": errors}, ensure_ascii=False, indent=2))
     raise SystemExit(1 if errors else 0)
 
 

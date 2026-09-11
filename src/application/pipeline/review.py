@@ -86,7 +86,7 @@ def hard_requirement_issues(report: str, requirements: HardRequirements | None,
     """任务硬约束的程序层复验（S6-05 对齐）：
 
     - 必需章节缺失 → error（阻塞，与程序层章节检查同一严重度）；
-    - 禁语出现 → error（阻塞）；
+    - 禁语疑似命中 → warn（S8-C：关键词命中≠语义违规，程序层只提示；判定交评测/人工）；
     - 关键事实未逐字出现 → warn（记录但不阻塞；语义覆盖由评测/人工判定）。
     返回 (issues, stats)。
     """
@@ -110,8 +110,9 @@ def hard_requirement_issues(report: str, requirements: HardRequirements | None,
         if claim and claim in text:
             stats["forbidden_hits"] += 1
             issues.append(ReviewIssue(
-                "error", "forbidden",
-                f"正文出现了任务禁止的表述「{claim}」（必须删除或改写）"))
+                "warn", "forbidden",
+                f"正文疑似命中任务禁止的表述「{claim}」（程序层只按字面提示；"
+                "是否构成语义违规由评测/人工判定，请自行复核语境）"))
     for fact in requirements.key_facts:
         stats["fact_total"] += 1
         if fact and fact in text:

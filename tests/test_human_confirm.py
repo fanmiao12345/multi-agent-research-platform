@@ -73,3 +73,30 @@ def test_grader_model_config_resolution(monkeypatch):
     assert used_env == "deepseek-v4-pro"
     _, used_arg = build_grader_llm("mock", model="deepseek-v4-flash")
     assert used_arg == "deepseek-v4-flash"
+
+
+def test_combined_sheet_roundtrip(tmp_path):
+    """consolidate 合并总表：填一处即可导入；combined 存在时优先于逐例表。"""
+    from eval.human_scores import build_combined_sheet
+    report = _stub_report(tmp_path)
+    workbench = tmp_path / "workbench"
+    build_combined_sheet([(report, None)], workbench)
+    combined = workbench / "combined_scores.csv"
+    assert combined.exists()
+    rows = list(csv.reader(combined.open(encoding="utf-8-sig", newline="")))
+    header = next(r for r in rows if r and r[0] == "case_id")
+    idx = {name: i for i, name in enumerate(header)}
+    data = [r for r in rows if r and r[idx["case_id"]] not in ("", "case_id")
+            and not r[0].startswith("#")]
+    assert len(data) == 1
+    data[0][idx["correctness"]] = "5"
+    data[0][idx["structure"]] = "3"       # 有一维 <4 → verdict 应为 draft
+    data[0][idx["revised_minutes"]] = "9"
+    with combined.open("w", encoding="utf-8-sig", newline="") as f:
+        csv.writer(f).writerows(rows)
+    updated = ingest_sheets(report, workbench)   # 目录里没有逐例表，只有 combined
+    record = updated["records"][0]
+    assert record["human"]["dimensions"]["structure"] == 3
+    assert record["human"]["revised_minutes"] == 9
+    assert record["human"]["human_verdict"] == "draft"
+    assert updated["meta"]["human_confirm"]["applied"] == 1

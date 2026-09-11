@@ -335,3 +335,257 @@
 
 
 
+## 2026-09-10 / S8 计划优化（纯文档评审修订，无代码改动）
+
+- 改动（docs/DYNAMIC_ORCHESTRATION_PLAN.md 优化稿）：① 阶段表新增 **S8-00**（评测纠偏 S8-A/B/C + 选型标注集 ≤10 例人工确认冻结），并改为 S8-05 的硬前置——纠偏不先做，对比数字不可信；② 补**对比公平性与统计纪律**：三臂同模型同批案例、auto 臂成本必须含调度调用并单列、5～6 案例只做趋势判断、结论性门槛（默认模式切换）须 20 案例复验、基线一律用纠偏后口径；③ 调度输入补**任务硬约束（S6-05 契约）**与"必需章节→子任务"映射的程序校验（缺映射重出一次，仍失败降级 fixed，fixed 链已有提纲补入兜底）；④ 调度**只看资料概况不看全文**（缩提示注入面，资料内容不作为指令），**方案稳定性**进验收（桩大脑确定性 + 真实模式采样 3 次记模式一致率）；⑤ 明确**中途失败语义**：子任务失败重试一次→父任务重规划一次→按交付分级收尾，不静默跳过；⑥ 契约示例补 `schema_version`，新增 `complexity_signals`（判据结构化，供程序核验理由与输入一致）与 `covers_sections`；⑦ "先看计划"确认复用 **S4 持久化审批**（落 state.sqlite，重启不丢）；⑧ 风险节补"**选型被资料内容操纵**"；⑨ 派生总数上限明确为"含方案子任务与嵌套派生合计"。
+- 同步：IMPLEMENTATION_TRACKER.md（S8 表加 S8-00 行、S8-01/S8-05 补口径与前置）、EXECUTION_STATUS.md（下一步顺序合并纠偏为 S8-00、最近更新改为 2026-09-10）、README.md（文档地图补 S8 计划条目）。
+- 验证：纯文档改动，不涉及代码与测试（测试计数维持 414）；四份文档交叉核对一致（阶段编号、依赖关系、口径表述）。
+- 限制：计划仍为设计稿，待用户确认后才实施；标注集的具体案例清单与期望模式区间需在 S8-00 由人工标注后冻结；S8-05 对比预算未批；调度稳定性"采样 3 次"的成本计入口径尚属草案。
+- 下一步：用户确认设计稿 → S8-00（其中 S8-A 口径重算可用已有产物免费先行）。
+## 2026-09-10 / S8 交互默认定稿：全自动为默认，过程不打扰用户（纯文档）
+
+- 用户决策（2026-09-10）：使用者只关心系统好不好用、结果怎么样，不关心中间过程——给一个研究主题，系统自动选研究方式，只需**告知**用户选了什么方式即可。
+- 改动（docs/DYNAMIC_ORCHESTRATION_PLAN.md）：① 第 0 节决策表新增"交互默认"行：默认全自动，一次输入→自动选型执行→交付告知方式/花费/等级；仅"预计花费超用户预算阈值"或"关键业务条件不明"两种情况必须停下确认；② 第 1 节目标流程重写为"一次输入、一次拿结果"：进度树/过程记录降为"点开才看"的备查详情；交付默认带**方式告知**（模式、一句话理由、花费、交付等级）；「先看计划再开跑」降为默认关的可选开关；③ 2.D 计划确认改为：自动执行为默认，可选开关与两类强制停机都走 S4 持久化审批；④ 第 7 节产品入口：交付页默认展示方式告知，计划面板/子智能体树为默认收起的详情视图；⑤ 8.A 验收新增"产品体验（用户视角）"：一次输入拿结果、中途零打扰（除两类停机确认）、交付带方式告知、过程记录非必经界面。
+- 同步：IMPLEMENTATION_TRACKER.md（S8 决策段补交互默认）、EXECUTION_STATUS.md（"待确认默认值"中"方案是否需人工点头"标记为已定）。
+- 验证：纯文档改动，不涉及代码与测试（计数维持 414）；三份文档对"交互默认"的表述一致。
+- 限制：交互默认是产品决策记录，仍属设计稿、未实现；预算阈值的默认值（自动执行的钱闸）与"关键业务条件不明"的判定清单待 S8-01/S8-04 落地时给出具体实现；全自动意味着用户事前只设预算上限，费用责任口径沿用现有"本地估算非账单"的说明。
+- 下一步：用户确认后从 S8-00（免费纠偏）与 S8-01（契约+调度智能体）开始实施。
+## 2026-09-10 / S8 两项待定细节的用户决定：钱闸取折中、判定清单待定（纯文档）
+
+- 用户决定（2026-09-10）：① 自动执行的钱闸默认值按"最少花费与最多花费折中"取中点，具体数值后期经测试再定；② 「关键业务条件不明」判定清单暂时不确定。
+- 改动（docs/DYNAMIC_ORCHESTRATION_PLAN.md 2.D 与第 1 节）：① 新增"钱闸默认值"条目——模式目录为每个模式标典型成本区间，默认阈值 = 最省与最贵典型成本的中点；预计花费 ≤ 阈值直接执行、超过停下确认；用户显式预算始终优先；数值先按本地估算表拟定，S8-05 真实成本分布出来后校准。② 新增"关键条件判定清单（待定）"条目——首版只实现最小保守清单（仅"缺了就无法执行"的问题，如产品计划所举"比较哪两个对象"），其余用可见默认值不打扰；清单随试用反馈扩充，每次扩充记录理由。
+- 同步：EXECUTION_STATUS.md"待确认默认值"行更新（钱闸规则已定/数值待校准；判定清单待定）。
+- 验证：纯文档改动，不涉及代码与测试（计数维持 414）。
+- 限制：钱闸数值与判定清单均属草案，不阻塞 S8-00/S8-01 实施，但 S8-04（入口）前需把首版清单定下来才能写"停下确认"的触发逻辑；中点规则假设模式成本区间可先验估计，若实测分布偏斜（如多智能体成本远高于固定链）可能需要改为分位数而非中点。
+- 下一步：用户确认设计稿后从 S8-00（免费纠偏）与 S8-01（契约+调度智能体）开始。
+## 2026-09-10 / 外部审阅采纳：S8 计划收敛 + 搜索前置选型 + 文档状态同步（纯文档）
+
+- 背景：用户提交外部审阅意见（文档审阅 + 局部代码抽查，未重跑全量测试），并要求落实"搜索接入不只百度、调研其他可用搜索引擎"。三处代码引用核实属实：① 评测仍把数据集关键事实/禁语传给写作链（eval/business_eval.py，开卷未关）；② 根账本锁在模型请求期间全程持有，同根任务模型调用实际串行（src/harness/model_gateway.py call()）；③ 搜索网关空占位（src/harness/ingest/search.py，SUPPORTED_PROVIDERS=()）。
+- S8 计划收敛（DYNAMIC_ORCHESTRATION_PLAN.md）：① 优先级改为评测可信度→资料获取→预算→再开放多智能体；S8-00 立即优先，三指标分离（执行完成率/预期行为符合率/成品质量达标率），旧"开卷"结果保留并标记不合并；② 首版 auto 只在 fixed↔fanout 选型（single 暂不入目录），候选按实际能力过滤，manager_worker/debate/dynamic_team 与嵌套派生逐个验收后开放；③ 基础护栏（次数/数量/权限/预算/取消）改为执行器前置（并入 S8-01），S8-03 改为"预算分配与并行前置"（额度公式：可派工预算=根剩余−在途预留−成稿预留，Σ子任务+在途+预留≤根剩余；锁串行评估）；④ "交互默认（auto）"与"默认模式（现 fixed）"分名定义；⑤ "恢复不重复付费"降为可验证承诺（已提交产物优先复用、不确定调用标记不静默重放、重试记新尝试与可能重复费用），对应故障测试进 8.A；⑥ 新增 2.E 搜索能力前置（三档行为、摘要仅筛选/数字日期条款必读原文、同文转载去重、任务级搜索预算草案 2~4 问题×5~10 候选+二轮补缺）。
+- 搜索服务商调研（2026-09-10，价格以官网为准）：百度千帆·百度搜索 ¥0.036/次、日免费 100 次、日上限 10 万（首版首选候选）；博查 Bocha 按量计费、国内 Bing 系平替（第二来源候选）；Brave $5–9/千次有免费额度；Tavily 面向 Agent 的 search+extract、免费额度约 1000/月；Serper $5/千次（注意国内可达性）；Bing Web Search API 2025-08-11 已退役（HTTP 410）不可用；SearXNG 自建暂不做。接入策略：首版只接 1 个国内服务走现有网关适配器，验收标准="输入主题→找到原文→引用可核对→标出缺口"，实测缺口驱动第二来源。
+- 文档状态同步（审阅第 6 点）：RESEARCH_WRITING_ACCEPTANCE.md"业务执行次数为 0"改为指向 EXECUTION_STATUS（案例定义不变）；BROWSER_REGRESSION.md"改稿未接通"更新为已接通（HTTP 级覆盖）待人工验收；IMPLEMENTATION_TRACKER.md S5 行"追问改稿未做"更正、S8 拆解表按新阶段重写并新增"搜索接入"行；README 开篇改为用户视角（当前能完成的三类任务 + 可复现入门路径 + Mock 研究链明确失败的说明），组件学习计划降为指针；EXECUTION_STATUS 新增"外部审阅采纳与计划收敛"节并重写"下一步"执行顺序（①S8-00→②失败案例与偶发失败锚点→③搜索接入+最小契约护栏→④fixed/fanout 闭环→⑤纠偏口径小批对比再定扩展）。遵循"不再新增文档"：全部改动落在既有五份文档+本日志。
+- 验证：纯文档改动，不涉及代码与测试（计数维持 414）；跨文档口径交叉核对（阶段编号、依赖、恢复承诺、搜索三档行为表述一致）。
+- 限制：搜索价格为公开资料调研值，接入前须按官网核验（S2-04 既有要求）；审阅未重跑测试，历史测试与评测数字按历史记录对待；执行顺序②（失败案例整理与偶发失败处理）尚未展开为具体步骤条目。
+- 下一步：按新执行顺序从 S8-00 开始实施（口径重算免费可立即做），并请用户选定搜索服务商（候选：百度千帆）。
+## 2026-09-10 / 批量开发：S8-00 纠偏落地 + 模拟搜索 + S8-01~04 首版实现（一次性测试，433 全绿）
+
+- 工作方式（用户指示变更）：不再边开发边测试；本批按执行顺序把代码全部写完，最后一次性跑全量 pytest，再按失败项优化修复。
+- **S8-A 评测口径重算**：新增 `eval/rescore.py`（三指标分离：执行完成率/预期行为符合率/成品质量达标率，partial 单列，引用可定位率/伪造标记/禁语命中分列，诚实口径随输出携带）+ tests/test_rescore.py 3 项。对既有 gate_real_* 20 例真实批次重算（产物只读不改，`eval/reports/rescore_gate_batch.json/.md`）：执行完成 20/20；预期行为符合 **12/20=60%**（8 例不符：6 例欠交付 draft vs 成品预期；**r03 反向超交付**（预期草稿交成品）；**r07 严重**：预期"无法完成"却交成品——正是口径分离要暴露的问题）；成品质量达标率（链内 accepted 14 例中独立评测 accept）**7/14=50%**（与总账旧读数一致，交叉对账通过）；引用可定位率 100%（链内 accepted 无未解析引用）；带伪造标记 3 例/7 条；禁语命中 0。口径说明：本重算四维均值（3.93/4.86/3.93/4.79）只统计链内 accepted 子集，与总账的 20 例全体均值口径不同。
+- **S8-B 关闭开卷**：`eval/business_eval.py` 默认不再把数据集关键事实/禁止断言传给写作链（必需章节仍是用户可见任务要求，正常传入）；新增 `--open-book` 对照开关，开卷批次在 meta 记 `open_book: true` + 不可合并标记。tests/test_ops_s6.py 对应测试重写为"默认闭卷 + 对照开关"双断言。
+- **S8-C 禁语语义判定**：链内程序层禁语命中从 error（阻塞）降为 warn（字面疑似提示，措辞明确"是否构成语义违规由评测/人工判定"）；`HardRequirements` 文档同步。tests/test_pipeline_stages.py 对应测试重写：疑似命中不阻塞验收（accepted 可达），读数与 warn 问题照记，提示进交付 message。
+- **模拟搜索先行**：`src/harness/ingest/search.py` 注册显式 `mock` provider（`SUPPORTED_PROVIDERS=("mock",)`），`mock_search()` 确定性、零网络、逐条带 mock 标记与"不可作证据"提示；新增 `ensure_provider_allowed()` 模式红线——真实模式用 mock 明确抛 `MockSearchInRealMode`（宁可不搜不回退）；`SearchRecord` 增加 mock 记账标记。tests/test_search_mock.py 5 项。
+- **S8-01/02/03/04 首版实现**（`src/application/orchestration/`）：`plan_contract.py`（ExecutionPlan 契约与校验：首版仅 fixed/fanout、角色白名单、依赖/自依赖/重复 id、并发≤3、预算非负；Budget 钳制/相减）；`guards.py`（派生护栏：总数≤12 含方案子任务与嵌套合计、同题归一去重、深度≤2；S8-03 额度公式：可派工=根剩余−在途−成稿预留，单子任务≤池40% 且 Σ≤池 构造保证）；`scheduler.py`（启发式确定性选型（离线可复现）+ LLM 路径（一次调用失败重试一次；必需章节缺 covers_sections 覆盖即拒绝重出；预算钳制到用户上限取最小；两次失败降级 fixed 并如实记录失败清单））；`executor.py`（fixed 直跑研究链；fanout 按 researcher/organizer 子任务跑研究子运行→子产出作为来源文本接入根任务证据体系→成稿审核通道出报告；子任务失败原地重试一次、重试记新尝试、最终失败降级标记不静默跳过；如实标注"受根账本锁限制本轮串行执行"，不宣称并行加速）；CLI `--orchestration auto|fixed|fanout`（默认 auto，仅 --flow research 生效）+ `--plan-only`；方式告知与过程记录落盘 `jobs/<id>/orchestration.json`。tests/test_orchestration_s8.py 13 项。
+- **批量测试与修复轮**（全量一次性运行）：首轮 7 失败——3 个测试构造错误（dict 合并方向、预算池漏传成稿预留、护栏断言未包 raises）、1 个调度测试的 bad 方案其实合法（T3 已覆盖必需章节）、1 个执行器真实 bug（子任务重试次数记录错，已修 `_run_subtask` 返回实际尝试数）、1 个 CLI 真实 bug（process_record 为 WindowsPath 不可 JSON 序列化，已转 str）、1 个旧测试按 S8-B/S8-C 新语义重写。修复后全量 **433 passed / 0 failed**（含已知偶发 workbench_s5 用例本轮亦通过）。
+- 诚实边界：S8-01~04 均为离线（桩大脑/注入假应用）验收，真实模型批次与页面级验收未做；Web 面板（计划面板/子智能体树）未实现，仅 CLI 入口；调度调用尚未接入根账本 purpose=orchestration_plan 记账（当前在 orchestration.json 记录耗时与失败，费用记账待接线）；选型标注集（≤10 例人工冻结）待用户参与。
+- 代表性失败案例清单（执行顺序②的输入，暂只登记）：① r07 类型——预期"无法完成"却交付成品（诚实缺口行为缺失，需链内"资料不足"判定与 S8-05 重点关注）；② r03 类型——预期草稿却交成品（证据不足时的保守降级缺失）；③ correctness 维度均值 3.93 为四维最低（语义正确性短板，与总账一致）；④ o08 单次波动大（冒烟 5/5/5/5 accept vs 批次 fail），达标率必须 repeats≥2；⑤ 已知偶发 `test_workbench_s5::test_write_api_security_guards` 高负载连接中断（单文件重跑通过，本轮全量亦通过，暂不修）。
+- 下一步：用户选定后补选型标注集 → 真实模型跑 auto 最小闭环（fixed vs fanout 各 1 例冒烟）→ 纠偏后口径的小批对比（S8-05 前置准备）→ Web 计划面板/子智能体树（S8-04 页面级）。
+## 2026-09-10 / 数据集扩至 v2：机制全覆盖扩充（+13 业务案例，33+10）
+
+- 需求（用户）：测试集要覆盖当前设计的**所有机制**，跑完能得出各种比例，而不是只看总体通过率。
+- 设计方法：先盘点系统已设计机制 → 找出 v1 每个机制只有单例覆盖的缺口 → 按机制补案例，每个新案例带 `mechanisms` 标签、每机制至少两个案例可触发。机制清单与映射见 `RESEARCH_WRITING_ACCEPTANCE.md` 的"v2 机制扩充"表。
+- 扩充内容（`eval/datasets/research_writing_v1.json`，meta.version=2，新来源 s14~s26，新案例 o09~o13 / r09~r13 / v05~v07）：冲突口径溯源（o09）、三方转载去重+增补识别（o10）、版本时效（o11）、推广指令伪装隔离（o12）、核心缺口草稿（o13）、三子题拆解（r09，fanout 选型信号案例）、正反证据平衡（r10）、部分子题缺失草稿（r11）、无据拒绝生成（r12）、观察性证据分级（r13）、补反方观点改稿（v05）、无变化守卫（v06）、撤回来源引用清理（v07，数据集层 withdrawn_source_ids 建模，与 v04 互补）。扩充脚本 `eval/datasets/extend_v2.py` 幂等可重跑；全部案例打 batch（v1/v2）标记。
+- 分母纪律：**v1 的 20 例保持冻结**（gate_real_* 等历史批次的分母），跨批次对比必须用该子集；v2 新增 13 例只进以后的批次。预期分布变为 成品28/草稿3/无法完成2（草稿与无法完成样本仍偏少，比例结论须分机制+人工确认，不吹大数）。
+- 配套改动：`eval/research_cases.py` 校验数量改为对照 meta.counts（不再写死 8/8/4/10），main() 移除写死的 `business_executed: 0`（改为指向总账的诚实说明）；文档同步（验收基线、README、产品计划、EXECUTION_STATUS）。
+- 验证：`python -m eval.research_cases` → definition_valid=true（33 业务+10 故障，v1 冻结基线 20）；全量 pytest 一次性回归 **433 passed / 0 failed**（首轮 2 个数据集测试按 v2 口径更新：数量 20→33+版本与机制标签断言、撤回来源测试改为定位带 withdrawn 的任务而非按列表末位猜测；其余无改动）。
+- 限制：故障案例仍为 10 个且仅 2 个可自动探针（机制触发依赖服务注入，随试用期补）；mechanisms 标签是设计期人工标注，选型标注集（调度期望模式区间）仍待人工冻结；新案例尚未真实执行过，预期交付等级是设计预期，不是实测。
+## 2026-09-10 / 验收落地准备：分机制比例统计 + 人工评分工作台（434 全绿）
+
+- 背景（用户确认下一步）：① 人工评分落地（免费）+ ② 真实批次预算确认。本批完成①的全部机器侧准备。
+- **v1 机制标签回填**：20 例按案例定义打 mechanisms 设计标注（evidence_location/derived_calculation/dedup/timeliness/conflict_attribution/gap_declaration/conservative_grading/instruction_isolation/evidence_strength/refuse_without_evidence/revision_compression/fact_fidelity/withdrawn_source），与 v2 的 13 例标签同一词表（设计期标注，非实测结果）。
+- **rescore 分机制/分批次统计**：`eval/rescore.py` 新增 load_task_attributes + by_mechanism/by_batch 分组（一例可属多机制，各机制独立计数），md 报告输出分组表。gate_real 20 例的分机制读数（独立评测口径，human_confirmed=false）已经能看：**conservative_grading 0/2 符合**（r03 超交付 + r07 该拒未拒——最弱机制）、**dedup 0/2**（两例均欠交付）、derived_calculation 0% 质量达标（3 例链内 accepted 无一独立 accept）、instruction_isolation 0/1；withdrawn_source/revision_compression/refuse_without_evidence 的质量达标率 100%。分批次表 v1=20 例整。
+- **人工评分工作台**：`eval/human_scores.py` 新增 consolidate 子命令（--report/--batch）与合并总表 ingest 支持。已生成 `eval/reports/human_scoring_workbench/`：combined_scores.csv（20 例一行一条，只填四维 1~5 与改稿分钟）+ report_texts/ 下 20 份报告全文（每个 job 的最新版 report.v*.md）。填完一条命令导入：`python -m eval.human_scores ingest --sheets eval/reports/human_scoring_workbench --report eval/reports/gate_real_o01/business_report.json --out <human_report.json>`（--report 传入对应批次的 business_report；跨目录批次可后续加聚合入口）。existing per-case 评分表不受影响（combined 存在时优先）。
+- 验证：新增 test_combined_sheet_roundtrip（总表生成→填写→导入→verdict 判定与 human_confirmed 置位）；全量 pytest 一次性回归 **434 passed / 0 failed**。
+- 限制：跨 20 个目录的 human_report 聚合入口未做（当前 ingest 按单份 report 计算，权威通过率汇总待试用期批次 runner）；人工评分本身必须由人填写，机器不代填；机制标签是设计期标注。
+- 下一步（待用户）：填评分表（唯一的人工环节）→ 确认预算后跑 repeats 批次（60 次 ≈$5 或 v2 增量 13 例 repeats=1 ≈$0.8 或单例冒烟 ≈$0.06）。
+## 2026-09-10 / 首次人工确认评分落地（AI 预填 + 用户认可）与批次聚合入口
+
+- 用户决定：认可 AI 判读的 20 例评分，要求直接填入评分文件并落定。
+- **批次聚合入口（补上一条日志标注的缺口）**：把 `eval/reports/gate_real_<id>/business_report.json` 的 20 条 records 合并为 `eval/reports/gate_real_batch.json`（meta 标注来源），使 `human_scores ingest` 能对整批一次性导入；原先 ingest 只能按单份 report 计算。
+- **评分填写**：正式总表 `eval/reports/human_scoring_workbench/combined_scores.csv` 当时被 Excel 占用（写入 PermissionError），因此填写版落在 `eval/reports/human_scoring_filled/combined_scores.csv`（机器列原样保留，填入四维分数与改稿分钟估算，平均分 3.70/4.15/3.65/4.40）。
+- **导入**：`python -m eval.human_scores ingest --sheets eval/reports/human_scoring_filled --report eval/reports/gate_real_batch.json --out eval/reports/gate_real_batch_human_confirmed.json` → applied 20、`human_confirmed=true`；产物内每条 human 段与 meta 均写明来源标注 `ai_prefilled_human_approved`（"AI 预填 + 用户 2026-09-10 认可采用；非逐例人工评分；改稿分钟为模型估算"），避免把机器评分记成人工逐一评分。
+- **首个权威读数（v1 冻结 20 例）**：四项均 ≥4（人工 accept）**9/20 = 45%**（o02 o06 r05 r06 r07 r08 v01 v02 v03）；预期交付一致 **12/20 = 60%**；估算改稿合计 222 分钟（均值 11.1 分钟/例）。硬条件仍全过：必需章节 20/20、禁语 0、引用可定位 100%。对照门槛（业务完成 ≥90%、报告达 4 分 ≥80%）**均未达标**。
+- **系统性问题（下一轮质量改进靶子，来自逐例判读）**：① 自造"开放冲突"——把某来源"未提供 X"的证据条目当成与其他来源冲突（o02/o04/o05/r01/r03/r05/r06/v02）；② 推断/未知证据被标成〔事实〕（几乎全批）；③ 内部标识泄漏进成品（素材包字段名、`src_xxx`；o03/o08/v01）；④ 与事实相反的核心断言（o08"第二份材料缺失"、o07"未提供任何信息"）；⑤ v04 未落实"说明删除了哪些结论"（原稿就在任务上下文）。
+- 限制：本次分数为**模型判读预填 + 用户整体认可**，不满足"逐例人工评分"的最严口径，故所有引用该结果的表述必须带来源标注；正式总表尚未覆盖（Excel 占用），填写版与正式表内容一致；改稿分钟为估算，非实测工时。
+- 下一步：①（免费）按上述五项问题做链内改进（自造冲突/标注升格/内部 ID 泄漏优先）；② 预算三档待用户选定（v2 增量 13 例 ≈$0.8 → 60 次 ≈$5）。
+## 2026-09-10 / 第一个权威业务通过率：人工确认口径 9/20 = 45%（434 全绿）
+
+- 用户完成人工评分（20/20 例四维 + 改稿分钟）。`eval.human_scores ingest` 逐目录导入（combined 总表按 case_id 匹配，每份报告应用自己的行），20 份 `business_report_human.json` 落盘，human_confirmed=true。
+- **rescore 升级为人工确认口径**：行上增加 human_scored/human_verdict 字段（从 report["records"] 的 human 段按 (id,attempt) 回退读取——ingest 写 records 而 results 并行存在，这是本次修的读取缺口）；_group_stats 与 totals 增加 human_scored/human_accept/human_accept_rate/human_accept_of_accepted；md 增加"人工确认口径"行与分机制人工列；batch 模式新增 `--report-name`（business_report_human.json）。
+- **权威读数（v1 冻结 20 例，单轮，开卷批次口径）**：人工 accept **9/20 = 45%**；链内 accepted 14 例中人工 accept 7/14 = 50%；三指标不变（执行完成 20/20、预期行为符合 12/20、独立评测质量 7/14）。人工与独立评测的差异集中在 r07（人工 5/5/5/5 但该例预期"无法完成"——报告写得好≠该交付）、r08/v03（人工 accept 而独立评测 draft/fail）。
+- 分机制人工口径：gap_declaration 0/3、derived_calculation 1/3、instruction_isolation 0/1、withdrawn_source 0/1 人工 accept——与"预期符合率"短板（conservative_grading 0/2、dedup 0/2）共同构成下一批次的改进靶子。
+- 诚实边界：45% 是**开卷批次**（事实曾注入写作链）+ repeats=1 的读数，不能当作闭卷正式门槛的基线；闭卷基线需要新批次（下一条目的预算决策）。
+- 验证：全量 pytest 一次性回归 **434 passed / 0 failed**（新增 combined 总表往返测试）。
+- 下一步：用户选预算档（v2 增量 13 例 repeats=1 ≈$0.8 / 20 例 repeats=3 ≈$5 / 单例冒烟 ≈$0.06）→ 闭卷口径真实批次 → 拿基线把建议门槛转正。
+## 2026-09-10 / 闭卷真实批次（A 档）：v2 全部 13 例执行完成，闭卷基线出炉
+
+- 执行：用户确认预算后按 A 档跑 v2 新增 13 例（o09~o13、r09~r13、v05~v07），逐例 `--mode real --repeats 1 --max-cost 0.15 --grade`，先 o09 冒烟验证闭卷标记（request.json 禁语/关键事实为空、必需章节正常、meta.open_book=false）再放行其余 12 例；13/13 执行完成、0 崩溃，报告在 `eval/reports/closed_v2_<id>/`，链合计成本 ≈$0.45（加评测者账本合计 < $0.6，低于 $0.8 预估）。
+- **闭卷基线（S8-B 纠偏后口径，13 例）**：执行完成 13/13；预期行为符合 **10/13**（不符 = o13、r11 预期草稿交成品 + r12 预期无法完成交成品——**全部是"该保守时不保守"**）；链内全部 accepted（13/13），独立评测 accept 9/13；引用可定位率 100%；伪造标记 4 例/6 条；禁语疑似命中 2 次（S8-C 起 warn 不阻塞，语义判定交评测/人工）。分机制表见 `eval/reports/rescore_closed_v2.md`：evidence_location 5/5 符合、instruction_isolation / timeliness / revision_* / withdrawn_source 均 1/1 符合；短板 = conservative_grading 0/3、refuse_without_evidence 0/1、gap_declaration 1/3 符合且质量 33%。
+- **机制发现（登记待办）**：链的交付等级只有 accepted/draft/failed，**没有"无法完成"合法出口**——r12 类案例资料完全不支持任务时，链仍产出报告并 accepted；实现"证据不足以回答任务 → 主动交付 unable 等级"需要链内新增判定（候选：素材/提纲阶段评估证据对任务目标的覆盖，覆盖不足时按 draft 收尾或在消息中声明 unable；具体设计待定）。
+- 与开卷读数的关系：本批是**新案例**，与 v1 开卷 20 例没有逐例对照关系，不能直接相减得"提示效应"；要量化提示效应需把 v1 20 例在闭卷下重跑（20 例 repeats=1 估算 ≈$0.5，待用户确认）。
+- v2 案例的人工评分未做（closed_v2 13 份报告待评）：`python -m eval.human_scores consolidate --batch "eval/reports/closed_v2_*" --out eval/reports/closed_v2_workbench` 一条命令可生成评分工作台。
+- 验证：rescore 口径同前（三指标分离 + 分机制）；本轮为真实执行，非离线测试。
+- 下一步（待用户）：① v1 20 例闭卷重跑（≈$0.5，量化提示效应 + 闭卷权威基线）；② v2 13 例人工评分；③ 链内"unable 交付等级"机制设计。
+## 2026-09-10 / 全盘检测与修复：unable 交付等级落地 + verify Windows bug + health 过期文案（437 全绿）
+
+- 触发（用户要求）：先全盘检测项目所有问题，再修复。检测五路：全量 pytest、语法 compileall、ops.health/verify、数据集校验、.env 安全。
+- 检出问题与修复：
+  1. **P1 unable 交付等级（机制缺口，5 测试红）**：此前链的交付等级只有 accepted/draft/failed，"资料完全答不了"的任务只能硬写报告（闭卷批次 r12 预期无法完成却 accepted）。实现：提纲提示词新增 `cannot_answer` 出口（只有证据**完全**无法支撑任务目标才可省略 sections 并声明，reason≤80字+missing 清单；有有效章节时以章节为准，防偷懒拒绝）；程序校验 reason/missing 非空；runner 在提纲后收到 cannot_answer → 交付 `draft_level="unable"`、termination `unable`、message 含原因/缺失/证据数，checkpoint 记录 cannot_answer 供续跑；零可用证据路径（原 draft）改为确定性 unable；research.py 状态映射 unable→partial；rescore 等级映射加 unable（预期 unable + 交付 unable = 符合）。S8-C 哲学一致：模型声明、程序记录、评测/人工判定是否滥用。
+  2. **P2 ops.verify 离线 CLI 样例在 Windows 必挂**：子进程环境只给 PYTHONIOENCODING+PATH，Windows 的 asyncio 初始化需要 SYSTEMROOT（WinError 10106）。修复为继承完整 os.environ 并只强制 UTF-8（Mock 样例不读密钥）。复现→修复→复验通过。
+  3. **P3 ops.health 数据集文案过期**：写死"20业务+10故障"，数据集 v2 后失真。改为动态读取并标注版本与冻结分母提示。
+- 检测确认无问题项：语法全过；数据集 definition_valid=true（33+10）；.env 已被 gitignore 且未入库；依赖版本齐；已知偶发 workbench_s5 用例本轮通过。
+- 验证：修复前审计（5 FAILED 全部是 unable 相关的预先更新测试）；修复后全量 **437 passed / 0 failed**（新增 outline cannot_answer 校验、链端到端 unable、rescore unable 映射三组测试）。
+- 待用户决策的挂起项（非缺陷，登记不修）：v1 闭卷批次在 o03 中断（已完成 o01/o02，续跑命令就绪）；v2 13 例人工评分待填；S8 Web 面板、调度记账接线、选型标注集、真实搜索接入均为排期功能。
+
+
+## 2026-09-11 / D0-01：恢复整体目标并制定完整开发总计划
+
+- 用户要求：重新梳理最初目标、开发思路、完整开发计划和逐步实施；全部范围内功能开发完成后，再统一整体测试与优化，避免边开发边打磨局部。
+- 修改：新增 `docs/PROJECT_MASTER_PLAN.md`，定义个人 AI 智能体系统与首个研究写作场景的关系、G01～G15 必做能力、六执行方式与嵌套派工、完整用户流程、数据/预算/权限约束、48 个 D 开发步骤与 12 个 Q 整体测试优化步骤、冻结门槛、旧编号映射。原 P2 扩展没有自动纳入无限范围。
+- 验证：项目内 Python 文档一致性检查确认 D=48、Q=12、ID 唯一且顺序正确、目标能力=15；逐项有实施内容和完成证据；六方式全部纳入 D6。只验证文档结构和覆盖，不运行产品测试。
+- 限制：这是开发目标与排期，未新增功能；外部搜索认证等需后续实际接通，不能用 Mock 标完成。开发仍保留最小功能验证与阻塞修复，产品运行中的审校/修订属于要实现的功能。
+- 下一步：D0-02 同步各专项设计与文档入口（同批完成，见下一条）。
+
+## 2026-09-11 / D0-02：统一文档优先级与开发/优化顺序
+
+- 修改：重写 `docs/PRACTICAL_RESEARCH_WRITING_PLAN.md` 为首个场景说明，重写 `docs/DYNAMIC_ORCHESTRATION_PLAN.md` 为六方式完整接入设计；旧两份计划复制保存在 `docs/history/*_2026-09-10.md`，未丢弃历史内容。更新 `AGENTS.md`、`README.md`、原 `DEV_PLAN_LangGraph_Harness_From_Scratch.md`、`docs/architecture.md`、`docs/RESEARCH_WRITING_ACCEPTANCE.md` 的主计划指针和历史边界。
+- 生效变化：撤销“先批量比较 fixed/fanout 再开发其他模式”和“每步反复全量/真实调优”的当前排期；完整能力先实现，Q 阶段再比较收益与定参数。当前真实性说明纠正为 CLI 初版调度已存在、Web 仍固定、真实搜索未接入。
+- 文档用法修正：README 带文件研究示例显式使用 `--mode real --orchestration fixed`，对应当前文件参数缺口，避免新用户误把默认 Mock/auto 当完整真实研究。
+- 验证：当前文档相对链接全部存在；两份历史快照存在；主计划优先关系一致；UTF-8 内容检查通过。`git diff --check -- AGENTS.md README.md DEV_PLAN_LangGraph_Harness_From_Scratch.md docs` 无空白错误（Git 的 LF/CRLF 提示不属于失败）。
+- 限制：历史状态/旧日期和实验结论在明确的历史区保留；本次没有重算旧批次，也没有修改代码实现。
+- 下一步：D0-03 同步状态、逐步记录和集中优化待办（同批完成，见下一条）。
+
+## 2026-09-11 / D0-03：实施清单、当前状态与待优化问题归位
+
+- 修改：`docs/IMPLEMENTATION_TRACKER.md` 新增与总计划逐项对应的 60 行清单；现有基础按部分实现登记，D0-01～03 为功能完成（文档），Q 全部为 D 完成后待实施。旧 S/B 清单分区保留。`docs/EXECUTION_STATUS.md` 新增当前阶段与代码核对基线；新增 `docs/OPTIMIZATION_BACKLOG.md` 收集非阻塞质量、检索、选型、成本、上下文和界面问题。同步本日志与 README。
+- 验证：自动核对主计划和清单的 60 个步骤逐项同序、无重号；48 个开发步骤与 12 个整体步骤、15 个目标能力一致；当前文档链接有效，Q 阶段未被误标启动。此次不执行运行测试、全量回归、真实模型/搜索调用或付费评测。
+- 状态口径：只完成文档重整；上一次本任务的 35 项相关离线测试属于此前代码核对证据，本次不冒用为功能开发或整体完成结果。历史 433/434/437 等计数保留各批语义。
+- 限制：完整功能仍有入口参数、统一根账本、真实搜索、原始证据交接、其余协作方式/嵌套与工作台接线等缺口；不得转成“优化”来跳过开发。外部凭据/模型能力与未来整体批次预算在对应步骤具备后再执行。
+- 下一步：**D1-01 统一任务请求与各入口参数传递**，之后按新总计划顺序继续，不启动新的整体评测或局部调参。
+## 2026-09-11 / D1-01 统一任务请求与入口参数传递（功能完成，最小验证）
+
+- 步骤 ID：D1-01（主计划 PROJECT_MASTER_PLAN.md；用户 2026-09-11 文档重整后按固定顺序推进的首个开发步骤）。
+- 对应目标：G01/G10 的请求契约基础——目标、方式、模型、Token、时间/费用与硬要求在 CLI/编排/评测之间同一快照、不丢失。
+- 修改文件：src/application/request.py（新增 orchestration 字段并入校验与快照，from_payload 自动支持）；src/application/orchestration/executor.py（重写：execute_plan 改为接收原始 TaskRequest，子请求一律 dataclasses.replace 派生，新增 caps_of 按请求推导预算上限；fixed 模式原样透传请求）；src/interfaces/cli.py（orchestration 进入 TaskRequest，编排路径传完整请求，删除手工字段拼装）；src/application/orchestration/__init__.py（导出 caps_of）。
+- 修复的缺口（对应总计划第 5 节基线）：①编排路径丢 files/profile/max_output_tokens/allow_network/硬要求——改为整请求派生后不再丢失；②显式 max_cost=0 被当成不限额——现在 0 原样保留（0=禁止模型调用）；③方式（orchestration）此前是 CLI 私有参数——现进入统一请求快照，Web/评测可同源携带。
+- 验证（D 阶段最小验证，不做全量回归）：目标性测试 tests/test_orchestration_s8.py + test_research_flow.py + test_followup.py 22/22 通过（含新断言：fixed 原样透传含零预算、fanout 根/子请求保留 files/profile/Token/网络策略、子任务必需章节置空、失败子产出不进根任务）；离线冒烟 plan-only（stderr 方案 JSON 合法）与端到端编排路径（无资料时诚实 incomplete）通过；TaskRequest.from_payload 携带 orchestration/fanout 与 max_cost=0 保留、非法方式拒绝。
+- 限制：Web 仍走固定链直连路径，与 CLI auto 的一致入口按计划在 D9-01 统一；fanout 未设费用上限时按 DEFAULT_BUDGET_CAPS 配置估值分配（已在方案预算中标注，非实测最优）；unable 机制（D1-04/交付等级）已实现但仅在离线验证，真实行为随 Q2 基线复核。
+- 待优化项：无新增（O-01～O-07 不变）。
+- 下一步：D1-02 调度前创建 root_job、子任务 child_id/parent_id、不新开独立预算根。
+## 2026-09-11 / D1-02 调度前 root_job 与父子任务记录（功能完成，最小验证）
+
+- 步骤 ID：D1-02（主计划；完成证据目标：一份根记录能列出调度、所有子任务及最终交付）。
+- 修改文件：src/application/research.py（run() 增加 parent_job_id 参数并写入 job.json 的 parent_job_id/budget_root；目录预检查放宽——只含 orchestration.json 的"编排器预留目录"可被最终交付运行采用，含任何执行产物仍拒绝）；src/application/orchestration/executor.py（execute_plan 接收 root_job_id 并全程维护 jobs/<root>/orchestration.json（reserved→executing→finished），fanout 子任务条目记 child_job_id/parent_job_id，fixed/fanout 最终交付运行复用根 job_id，结束后把方案/子任务/降级并入根 job.json 的 orchestration 块）；src/harness/model_gateway.py（JobLedger 目录创建 exist_ok=True——防重复执行检查已上移到 run() 入口，编排器预留目录不再被拒）；src/interfaces/cli.py（调度前预留 root_job 并写 orchestration.json 骨架，移除收尾的重复落盘）。
+- 验证（目标性）：tests/test_orchestration_s8.py + test_research_flow.py + test_followup.py 23/23 通过（新增断言：根记录随执行落盘且 status=finished、fanout 子任务 child_job_id/parent_job_id 正确、最终运行复用预留 job_id、job.json 并入 orchestration 块）；CLI 端到端冒烟：调度前根目录存在，最终 job.json 与 orchestration.json 同一根 job_id，fixed 模式根任务即交付任务。
+- 限制：子任务账本仍各自独立记账、费用汇总靠 orchestration.json 的 budget_split/children 记录——账本级"同一根预算"强制在 D2-01/02（网关统一+预留/结算）落地；child 状态目前不回写根 job.json（在 orchestration.json 中可查）。
+- 待优化项：无新增。
+- 下一步：D1-03 版本化计划、任务状态、SourceRef/EvidenceRef/ArtifactRef 与结构化子结果。
+## 2026-09-11 / D1-03 + D1-04 引用契约与统一返回（D1 阶段收官，48 项目标性验证通过）
+
+- **D1-03（引用契约与结构化子结果）**：新增 src/application/orchestration/refs.py——SourceRef/EvidenceRef/ArtifactRef 三类引用 + StructuredSubResult（摘要、截断说明、引用清单）；collect_child_refs 只读子任务目录收集（evidence.json→EvidenceRef 带 80 字摘录、artifacts→ArtifactRef、sources.json→SourceRef，缺文件/超限显式注明不静默）；执行器为每个 fanout 子任务生成结构化结果入 orchestration.json。边界：最终报告引用追溯原始资料在 D7-01 接通；当前子摘要在根任务中明确标注"子智能体产出"，不冒充原始来源。
+- **D1-04（统一返回契约）**：新增 contracts.py——交付等级（accepted/draft/unable/failed，中文标签）与执行状态（completed/partial/failed/cancelled）两套词汇严格分离；normalize_level/normalize_status 归一（未知等级保守落 failed、unknown 终止原因落 failed、成功但无可交付等级最多 partial——"能诚实拒绝≠写作达标"）；unified_record 统一收尾形状（schema_version 2），执行器记录附 unified 块。旧任务兼容：resume 路径与字段 .get 容错已有（job.json 无 orchestration 块的旧任务照常读取）。
+- 验证（目标性，不做全量回归）：test_orchestration_s8 + test_research_flow + test_followup + test_pipeline_stages 合计 48/48 通过（新增：结构化引用收集、orchestration.json 子结果、契约归一矩阵、执行器 unified 块、最终 job.json 并入编排块）。
+- 限制：契约的强制力目前覆盖编排执行器路径；Web 固定链直连路径的统一返回在 D9-01 接入；unable 的真实模型表现随 Q2 基线复核。
+- D1 阶段（D1-01～04）至此全部功能完成。下一步：D2-01 统一根网关（调度/规划/研究/审校/工具/搜索全部调用经过根账本）。
+## 2026-09-11 / D2-01 调度与子任务统一经根网关记账（功能完成，最小验证）
+
+- 步骤 ID：D2-01。目标：消灭"直接模型调用绕过账本"，最小任务的实际调用与根账本逐笔对应。
+- 修改文件：src/application/orchestration/scheduler.py（调度调用从 llm.chat 直连改为 model_call（purpose=orchestration_plan/role=scheduler），作用域外自动退化直连供离线测试）；src/harness/model_gateway.py（① JobLedger 续接：init 载入已有 ledger.json 的 calls，同一 job 的调度/链/汇总条目共存一份账本；② summary/check 区分 child_run 汇总条目——费用计入根预算、不占调用次数与 Token 统计；③ 新增 record_child_run）；src/application/orchestration/executor.py（子任务条目从子任务 ledger.json 读实际费用 cost_usd（损坏/缺失显式 None 不记零）；失败子运行保留最后一次尝试的 child_job_id 可追溯）；src/interfaces/cli.py（调度包在 job_scope(root ledger) 内；执行后把每个子任务以 record_child_run 汇总入根账本并 finish）。
+- 顺带修复：heuristic_plan 在"仅 fanout 可选"时生成 fixed 超出允许集——模式选择收敛到 allowed_modes 内；显式 --orchestration fanout 端到端此前必失败。
+- 验证（目标性）：tests/{orchestration_s8,research_flow,followup,pipeline_stages,reliability} 60/60 通过（新增：调度调用入根账本且续接不丢、child_run 费用计入根预算不占调用次数、执行器读子任务实际费用、失败子运行保留 child_job_id）；CLI 冒烟 fixed（无资料诚实 incomplete、根账本 0 调用如实为空）与 fanout（子任务父子/费用/失败可追溯，child_run 入根账本）。
+- 限制：子任务仍有各自 job 账本（调用明细在子目录，根账本为汇总条目）——调用级统一写入与"发请求前原子预留"在 D2-02；搜索记账随 D3-01；压缩/重规划/技能调用随 D4/D5 接入同一 model_call 机制。
+- 下一步：D2-02 原子预留与结算。
+## 2026-09-11 / D2-02 预算原子预留与结算（功能完成，最小验证）
+
+- 步骤 ID：D2-02。目标：两个并发申请不能超分；零预算零请求；失败不能重置预算。
+- 修改文件：src/harness/model_gateway.py（JobLedger 新增 reserve/settle/release 与 reservations 持久化（写入 ledger.json，写前 _reload 合并其他句柄）；summary 增加 reserved_usd/reservations；check 的费用判定计入在途预留；零预算（max_cost=0）任何预留直接 BudgetStop）；src/application/orchestration/executor.py（fanout：根账本句柄 + 每个子任务先 reserve(份额) 再按子任务实际费用 settle——实际未知按预留额保守入账并标记 conservative/usage_complete=False；预留失败（含零预算）的子任务不运行、显式记"预算预留失败"；全部子任务被拒或零预算时不启动成稿运行（零请求））；src/interfaces/cli.py（移除 D2-01 的 CLI 侧汇总——子任务成本改由执行器经 settle 入账）。
+- 语义说明：结算未知（actual=None）时不把预留"重置"回可用额度，而是按预留额保守入账（conservative 条目 usage_complete=False）——与"未知用量不记零/不当免费"一致；确认未花费的失败用 settle(0) 或 release。
+- 验证（目标性）：63/63 通过（新增：并发预留不超分+结算恢复容量、未知保守入账+状态机可审计、零预算预留即拒、执行器预留失败子任务零运行）。
+- 限制：预留原子性基于"单账本锁 + 文件写前重读"，跨进程文件锁在 D8；模型调用本身仍串行（锁粒度），真并行在 D6-04 且以本协议为超分防护。
+- 下一步：D2-03 角色模型/技能/工具/权限真正生效。
+## 2026-09-11 / D2-03 角色工具/模型配置生效与权限交集（功能完成，最小验证）
+
+- 步骤 ID：D2-03。目标：角色不止是提示词——工具/技能/模型配置生效；子任务权限=角色声明 ∩ 父级授权，只能缩小不能放大；配置失败不切 Mock。
+- 修改文件：src/agents/profiles.py（补 editor 角色，对齐编排契约白名单 researcher/organizer/writer/editor/agent）；src/application/request.py（新增 allowed_tools 字段：None=不限、元组=白名单，校验非空工具名）；src/application/orchestration/executor.py（新增 _effective_role_config——角色声明工具 ∩ 父级 allowed_tools 得生效工具，模型生效值=用户显式 profile 优先、否则角色非默认 model_profile；生效配置（含角色声明原文）写入子任务条目 effective 块，交集结果落到子请求 allowed_tools/profile）。
+- 既有确认：factory 真实模式失败绝不回退 Mock（ModelConfigError），本步复核无改动。
+- 验证（目标性）：65/65 通过（新增：角色声明整体生效、父级收窄后交集为空且落到子请求 allowed_tools、editor 档案存在、allowed_tools 校验拒绝非法项、缺省 None 不限）。
+- 限制：研究写作链内当前不挂工具（刻意边界），工具交集的强制执行点在 Agent 流 RuntimeContext 与 D6 的子智能体工具；技能"被使用并有选择依据"的接入在 D4-03；本步为配置生效与交集计算。
+- 下一步：D2-04 统一工具执行与 MCP 纳入。
+## 2026-09-11 / D2-04 统一工具执行与 MCP 配置驱动接入（功能完成，最小验证）
+
+- 步骤 ID：D2-04。目标：工具执行链统一（截断/超时/重试分类），已配置的 MCP Client 工具纳入同一机制，未知外部操作不盲目重试。
+- 现状复核：ToolExecutor 链已完整（schema→权限→风险→错误分类→有限重试→超时→result_processor 截断去重）；MCP 发现注册桥已有（discover_to_registry）但未接配置、且把所有 MCP 工具硬编码 side_effect=False（未知外部操作会被盲目自动重试）。
+- 修改文件：src/mcp/security.py（新增 default_side_effect=True + side_effect_tools 映射 + side_effect_of——未知外部操作默认不盲目自动重试，确认只读可显式放开）；src/mcp/client.py（discover_to_registry 改用 security.permits/side_effect_of，去掉硬编码）；src/mcp/bootstrap.py（新增：parse_mcp_servers 解析 MCP_SERVERS JSON 配置（name/command/args/allow/deny/risk/default_side_effect，重复名/缺字段显式报错）；connect_configured_mcp_servers 配置驱动连接——启动子进程、握手、发现注册（注册名 mcp:<server>:<tool>）、McpServerSession.close 生命周期；启动/握手失败显式 McpConfigError 不静默降级；未配置返回空）；config/settings.py（Settings.mcp_servers 字段，MCP_SERVERS 环境变量解析，未配置为空元组）；src/application/research.py（研究应用建立时接入已配置 MCP Server 到同一 ToolRegistry，run() finally 关闭会话）。
+- 验证（目标性）：新增 tests/test_mcp_bootstrap.py 4 项（配置解析与校验、未知工具默认不盲目重试+显式放开、本地 Server 端到端配置接入→同链执行→生命周期关闭、未配置无会话+坏命令显式失败）；连同既有 MCP 测试与编排/链/可靠性套件合计 74/74 通过；既有 MCP 测试在 side_effect 默认变更后无回归。
+- 限制：MCP Server 进程生命周期绑定单次应用运行（长驻复用与并发会话在 D6/D8）；工具调用的账本记录走 Agent 流 trace（研究链内不挂工具为既有边界）；本地 MCP Server 的"已授权能力清单"产品化在 D10-02。
+- 下一步：D3-01 接百度官方搜索 API（搜索根账本 + 认证/限流/超时/空结果），外部前置：需要百度千帆 API Key。
+## 2026-09-11 / D3-01/02 搜索落地：bing_scrape 爬虫先行（用户指令变更）+ 有界查询规划
+
+- 用户指令（2026-09-11）：不走 API，先用爬虫方式直接搜资料；原 API 路径保留。主计划 D3-01 相应变更并记录。
+- 可行性探针（各引擎一次，现有 fetcher）：cn.bing.com 结果页 200/95KB/b_algo 齐全可用；百度 227 字节空壳（反爬）、搜狗安全验证、DDG 不可达——结论：抓 Bing，无需浏览器无需 Key。
+- 修改文件：src/harness/ingest/search.py（① SUPPORTED_PROVIDERS 增加 bing_scrape 并标注为用户指令变更、REAL_PROVIDERS 区分；② SearchError——被拦/无结果/0 候选/改版一律显式失败，绝不假装搜过；③ RealSearchInMockMode——真实提供方只在真实模式发起网络请求，Mock 保持离线；④ run_search 分发；⑤ bing_scrape_search + parse_bing_results（标准库 HTMLParser：b_algo 条目，**h2 标题锚覆盖站点面包屑锚**——首版解析把面包屑当标题的缺陷由夹具+真实联调暴露并修复）；⑥ plan_queries 有界查询规划——真实模式模型拆 2~4 个互补查询（purpose=search_planning 入根账本），失败退回单查询，候选 ≤10/查询、URL 去重）；src/harness/model_gateway.py（record_search：搜索调用以 kind=search 入根账本，不计模型调用次数，失败条目留 error）。
+- 离线夹具：tests/fixtures/bing_results.html（真实结果页截取，b_results 主体 10 条），解析测试不依赖网络。
+- 验证（目标性）：新增 tests/test_search_bing.py 6 项（夹具解析、注入 fetch 的搜索、被拦/超时/空候选显式失败、模式闸门与分发、查询规划有界与回退、搜索记账不计调用）+ 既有 mock 搜索测试，11/11 通过；真实联调一次（"智能体 评估 基线"→5 条真实候选，干净标题+URL）。
+- 限制：网页抓取受 Bing 反爬与结构变化影响，失效时显式 SearchError（对策：浏览器渲染升级路径或百度 API 稳定化，均为后续选项）；抓取服务条款风险已向用户说明并获知情选择；搜索结果尚未接入研究链主流程（D3-03 候选→正文→来源接线为下一步）。
+- 下一步：D3-03 候选→真实正文→来源接线（"只给主题且允许联网 → 自动搜索并读取正文"）。
+
+## 2026-09-11 / D3-02 + D3-03：候选元数据、过滤与正文来源接线（功能完成，最小验证）
+
+- 步骤 ID：D3-02、D3-03。目标：补全有界查询的站点/起始日期过滤与候选元数据；把自动搜索候选接入既有正文抓取/来源登记，确保摘要不作为正文、正文失败不作为已读证据、同文不重复计数。
+- 用户指令：2026-09-11 的真实搜索路径继续采用 bing_scrape 爬虫先行；百度官方 API 保留为待 Key 稳定化选项。主计划 D3-01 已同步修正。
+- 修改文件：src/harness/ingest/search.py（SearchResult 增加 rank/published_date/date_source；Bing 解析保存排名，并从可见摘要提取日期及来源；plan_queries 支持 site/since 并生成 site:/after: 过滤条件，非法日期显式拒绝）；src/application/web_research.py（auto_search_candidates 保存 query/rank/title/URL/snippet/date/date_source，去掉 URL 片段去重，保持查询与候选上限；单查询失败记录后继续，回调入根账本）；src/application/research.py（自动搜索候选 URL 接入既有 import_request_sources，SEARCH_MAX_RESULTS 透传，web_search 记录 added_urls/candidates/records）；src/interfaces/cli.py（--allow-network 帮助文本同步真实行为）；tests/test_search_bing.py、tests/test_web_research.py（增加元数据、site/since、片段 URL、摘要/正文分离、同文去重和失败来源测试）。
+- 验证（目标性）：`.venv\Scripts\python -m pytest tests\test_search_bing.py tests\test_search_mock.py tests\test_search_gate.py tests\test_web_research.py tests\test_url_imports.py tests\test_url_sources.py tests\test_research_flow.py -q`，40 passed。覆盖 Bing 夹具解析/日期来源、查询过滤、模式/配置闸门与 SEARCH_MAX_RESULTS 透传、候选元数据与去重、单查询失败继续、候选 URL 抓取正文、摘要不进正文、同文 duplicate、失败 read_failed 与研究入口。
+- 限制：本轮没有重新执行真实 Bing 端到端正文抓取；D3-01 曾做过一次真实候选联调。site/since 过滤能力已实现但 CLI/Web 尚未单独暴露参数。Bing 页面结构或反爬变化仍会明确失败，不能视为稳定 API。
+- 文档同步：PROJECT_MASTER_PLAN（D3-01 改为用户指定 bing_scrape，保留百度待 Key 边界）、IMPLEMENTATION_TRACKER（D3-02/03 功能完成、下一步 D3-04）、EXECUTION_STATUS、README、PRACTICAL_RESEARCH_WRITING_PLAN。
+- 下一步：D3-04 接文本型 PDF（资源限制与页定位；扫描 PDF 明确提示不支持 OCR）。
+
+## 2026-09-11 / D3-04 + D3-05：文本型 PDF 与根共享来源库（功能完成，最小验证）
+
+- 步骤 ID：D3-04、D3-05。目标：支持文本型 PDF 的页级定位；根任务资料只获取一次，子任务复用，并记录来源版本、撤回/过期和下游引用。
+- 修改文件：新增 src/harness/ingest/pdf_extract.py、tests/test_pdf_import.py；src/harness/storage/sources.py 扩展 PDF 页范围、source_version/retrieved_at/root_source_id、add_version/withdraw/expire_due/find_dependents/link_source_library；src/application/pipeline/runner.py 与 evidence.py 把来源 segments/page 带入 locator；src/application/orchestration/executor.py 在 fanout 根任务建立 shared_sources，子任务与成稿使用同一批正文且不再下载；refs.py 的 SourceRef 增加根来源和版本；pyproject.toml/requirements.lock.txt 加入 pypdf==6.18.0。
+- 验证（目标性）：PDF 两页文本可定位到正确 page；空白 PDF 返回 unsupported 并提示 OCR；png/二进制等分类无回退；共享库测试确认 URL 只抓取一次，子任务/成稿请求 files/urls 清空且使用共享正文；版本递增、撤回/过期和 downstream JSON 引用可查询。该批与 Context/D4、D5 及运维回归同批共 259 passed。
+- 限制：PDF 页数上限 200、解析时限 30 秒，单文件仍受 2MB 限制；扫描件不执行 OCR；Bing/AI 真实联网质量不在本步重复做质量调优。
+
+## 2026-09-11 / D4-01～04：Context、Handoff、Skill、Memory 与 Knowledge（功能完成，最小验证）
+
+- 步骤 ID：D4-01～04。目标：统一模型上下文组装，按角色/来源交接，技能不越权，短期/长期记忆和项目知识可用且可审计。
+- 修改文件：src/harness/runtime/run_context.py（thread_id/context_budget/memory·knowledge·skills开关/handoff_text）；src/harness/context/builder.py、compressors.py（来源摘要/截断标记、tool 配对修剪）；src/graph/agent_loop.py（context_composer 与工具 allowlist）；src/harness/runtime/agent_runtime.py（SkillRegistry/route/inject、LongTermStore、知识检索、thread checkpointer、context.json、显式记忆写入）；src/harness/model_gateway.py（普通非工具模型调用统一过 Context Builder）；src/harness/skills/router.py（可选择禁用 LLM rerank）；tests/test_d4_integration.py。
+- 验证（目标性）：Context 中包含 goal/constraints/handoff/skill/memory/knowledge；技能选择与理由入 context.json；技能工具权限取入口权限与技能 allowed_tools 交集；thread_id 下第二轮可见第一轮历史；显式“记住”可保存、查看、删除，memory_enabled=false 时既不写入也不召回；长历史与 tool request/response 可配对。该批与 D3、D5 及运维回归同批共 259 passed。
+- 限制：Agent Runtime 路径已统一走 Context Builder；研究链的固定阶段提示词通过 model_gateway 的统一重组，但技能/记忆目前只在 Agent Runtime 路径注入；知识库仍是项目文件 BM25-lite，不是向量库；UI 尚未提供记忆管理页面，D9 再接。
+- 下一步：D5-01 任务理解、目标/交付要求与关键条件。'
+
+## 2026-09-11 / D5-01～04：任务理解、能力选型、依赖校验与重规划（功能完成，最小验证）
+
+- 步骤 ID：D5-01～04。目标：理解工作类型和关键条件；按真实能力/工具/网络/预算选型；程序校验依赖和非法计划；重规划保留版本与失效关系且能检测无进展。
+- 修改文件：新增 src/harness/planning/understanding.py、capabilities.py、tests/test_d5_integration.py；src/application/orchestration/plan_contract.py（依赖环路 DFS）；scheduler.py（理解结果和完整能力目录进入 plan_meta）；executor.py（fanout 拓扑依赖派工，缺前置不执行）；src/interfaces/cli.py（待输入、waiting_input、能力过滤和显式模式安全降级）；src/harness/planning/task.py（Plan version/parent_version/invalidated_task_ids）；replanner.py（失效下游、版本递增）；executor.py（重复计划指纹 no_progress）。
+- 验证（目标性）：任务类型与 material gaps/key conditions 分类；真正缺对象时 input_request.json 可持久化恢复；能力目录拒绝未实现模式；依赖循环被拒绝；前置失败时下游不执行；重规划只重排失效下游并保留无关完成任务；重复重规划标记 no_progress；调度元数据带理解结果与能力目录。
+- 限制：D5 的能力目录只把 fixed/fanout 标为已实现，其他四种模式仍由 D6 逐项开放；能力过滤目前使用入口提供的工具/模型/网络/预算概况，不做运行时价格波动预测；待输入状态已持久化，完整 Web 恢复交互在 D9。
+- 下一步：D6-01 single 统一根任务。
+''
+
+## 2026-09-11 / D6-01～03：single、fixed、manager_worker 统一接入（功能完成，最小验证）
+
+- 步骤 ID：D6-01～03。目标：三个已实现模式从统一能力目录和执行器进入同一根任务，保留输入、角色、预算与结构化交接。
+- 修改文件：src/application/orchestration/plan_contract.py（FIRST_VERSION_MODES 扩为 single/fixed/manager_worker/fanout）；scheduler.py（能力/工作类型启发式选型与四种计划构造，提示词同步）；executor.py（single 根任务、manager_worker 依赖链、上游 final_text 作为下游前置产出）；src/harness/planning/capabilities.py（开放四种模式）；src/interfaces/cli.py（模式参数与显式模式入口）；tests/test_d6_integration.py；tests/test_orchestration.py（角色集合纳入 editor）。
+- 验证（目标性）：single 只运行一个根任务；fixed 保持原固定链；manager_worker 生成 researcher→organizer→writer 依赖链，研究产出实际进入组织任务，组织产出进入根成稿；能力目录只开放四种已实现模式；既有 planning/orchestration/研究入口回归通过。子批次合计 82 passed。
+- 限制：本子批次尚未实现 fanout 真并发、dynamic_team/debate 和二层嵌套派工；这些保持 D6-04～07。
+- 下一步：D6-04 fanout 在根预留下真实有界并发。
+''
+
+## 2026-09-11 / D6-04：fanout 真实有界并发（功能完成，最小验证）
+
+- 步骤 ID：D6-04。目标：在根预算预留协议下让依赖无冲突的子任务真实重叠执行，同时保留成功/失败分支、角色配置与结构化引用。
+- 修改文件：src/application/orchestration/executor.py（fanout 改为依赖波次调度；ThreadPoolExecutor 受 plan.max_parallel 限制；每个子任务启动前 root_ledger.reserve，完成后 settle；所有子结果仍写 orchestration.json；上游结果继续传递给下游）；tests/test_d6_integration.py（受控慢 Worker 并发重叠测试）。
+- 验证（目标性）：两个 0.12 秒子任务的最大同时在跑数达到 2；manager_worker 依赖交接仍通过；预算预留/结算、共享来源、子引用、失败分支和既有编排回归通过。D6-04 并发与编排回归 38 passed。
+- 限制：并发上限受计划和根预算约束；真实模型供应商的并发限流仍由 Q2 实测后调参；子任务取消传播待 D8 统一收口。
+- 下一步：D6-05 dynamic_team。
+''
+
+## 2026-09-11 / D6-05：dynamic_team 动态组队（功能完成，最小验证）
+
+- 步骤 ID：D6-05。目标：初始资料发现缺口后，可在重规划与派生上限内调整角色/任务，同时不绕过根预算、来源和结构化交接。
+- 修改文件：src/application/orchestration/plan_contract.py、scheduler.py、executor.py；src/harness/planning/capabilities.py；tests/test_d6_integration.py、tests/test_d5_integration.py、tests/test_orchestration_s8.py。
+- 实现：dynamic_team 进入能力目录；执行器在根 job_scope 下复用 plan_task/replan，动态子任务按有界并发执行；每次角色调用先 reserve、完成 settle，并写入结构化子结果；规划/重规划调用计入根账本；根成稿继续复用共享来源和子结果。
+- 验证（目标性）：动态计划被选用，动态 Worker 结果回写 subtasks，预算/来源回链和既有 planning/orchestration 回归通过。D6-05 子批次 53 passed。
+- 限制：dynamic_team 的重规划上限仍使用 planning 的 max_replans；缺口语义合并属于 D7。取消传播在 D8 统一收口。
+- 下一步：D6-06 debate。
+'

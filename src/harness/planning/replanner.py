@@ -45,6 +45,7 @@ def apply_delta(plan: Plan, delta: dict) -> Plan:
     remove = set(delta.get("remove_tasks", []))
     plan.tasks = [t for t in plan.tasks if t.id not in remove]
 
+    modified_ids: set[str] = set()
     for mod in delta.get("modify_tasks", []):
         task = plan.by_id(str(mod["id"]))
         if task:
@@ -52,11 +53,30 @@ def apply_delta(plan: Plan, delta: dict) -> Plan:
             task.reset()  # FAILED -> PENDING（attempts+1，防死循环由执行器控制）
             if mod.get("depends_on") is not None:
                 task.depends_on = list(mod["depends_on"])
+            modified_ids.add(task.id)
 
     for tid, priority in (delta.get("reprioritize") or {}).items():
         task = plan.by_id(str(tid))
         if task:
             task.priority = int(priority)
+
+    # 上游任务被修改时，已完成的后继成果视为失效，保留尝试次数但重新排队。
+    invalidated: set[str] = set()
+    frontier = list(modified_ids)
+    while frontier:
+        parent = frontier.pop(0)
+        for child in [t for t in plan.tasks if parent in t.depends_on]:
+            if child.id in invalidated:
+                continue
+            invalidated.add(child.id)
+            child.status = PENDING
+            child.result = ""
+            child.error = f"上游任务 {parent} 已重规划，旧成果失效"
+            frontier.append(child.id)
+    plan.invalidated_task_ids = sorted(
+        set(plan.invalidated_task_ids) | invalidated | modified_ids)
+    plan.parent_version = plan.version
+    plan.version += 1
     return plan
 
 

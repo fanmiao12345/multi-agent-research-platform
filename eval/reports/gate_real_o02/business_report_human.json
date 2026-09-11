@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "de4bdb51bde7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-10T14:06:53",
+    "scope": "business_acceptance_pending_human_scoring",
+    "human_confirm": {
+      "applied": 1,
+      "accept_human": 1,
+      "graded_human": 1,
+      "note": "已人工确认的分数可以用于业务通过率计算（human_confirmed=true）"
+    }
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 260.9,
+  "results": [
+    {
+      "id": "o02",
+      "category": "organize",
+      "attempt": 1,
+      "task": "用三点总结试点规模、问卷结果和处理时长，保留研究局限。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实均与证据一致：40人试点、32人完成问卷、答卷者满意率75%、平均处理时长从10小时变为8小时、未设对照组与未控制工单难度等均被准确表述；未使用禁止项。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节“三点摘要”与“局限”，三点摘要分别覆盖试点规模、问卷结果和处理时长；额外“证据冲突与缺口”章节不影响结构完整性。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-009",
+              "E-012",
+              "E-013"
+            ]
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用的E-001至E-015均可在给定证据列表中定位，关键事实均有对应引用；未发现编造或不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-009",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的三点摘要及研究局限，保留未设对照组、未控制工单难度、合成数据等限制，并主动声明缺口。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-005",
+              "E-008",
+              "E-014",
+              "E-015"
+            ]
+          }
+        },
+        "issues": [
+          "额外“证据冲突与缺口”章节将来源缺失与具体数据并列，略显冗余但未扭曲关键事实。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01291323,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:06:53",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 259.384,
+      "estimated_cost_usd": 0.041267200000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_c1009247d43f47f0ba35bdecc824ffad",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 3/3",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 试点结果三点摘要与研究局限\n\n## 三点摘要\n- 试点规模：星桥团队试点共40人【E-002】〔事实〕；试点共40名参与者，其中32人完成问卷【E-009】〔事实〕；观察期为2026年7月1日至7月31日【E-003】〔事实〕；试点人员所有人每周远程办公2天【E-004】〔事实〕。\n- 问卷结果：问卷回收率为80%【E-010】〔事实〕；32名答卷者中有24人表示满意【E-011】〔事实〕；答"
+    }
+  ],
+  "records": [
+    {
+      "id": "o02",
+      "category": "organize",
+      "attempt": 1,
+      "task": "用三点总结试点规模、问卷结果和处理时长，保留研究局限。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实均与证据一致：40人试点、32人完成问卷、答卷者满意率75%、平均处理时长从10小时变为8小时、未设对照组与未控制工单难度等均被准确表述；未使用禁止项。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-009",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节“三点摘要”与“局限”，三点摘要分别覆盖试点规模、问卷结果和处理时长；额外“证据冲突与缺口”章节不影响结构完整性。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-005",
+              "E-009",
+              "E-012",
+              "E-013"
+            ]
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用的E-001至E-015均可在给定证据列表中定位，关键事实均有对应引用；未发现编造或不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-009",
+              "E-012",
+              "E-013",
+              "E-014",
+              "E-015"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的三点摘要及研究局限，保留未设对照组、未控制工单难度、合成数据等限制，并主动声明缺口。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-005",
+              "E-008",
+              "E-014",
+              "E-015"
+            ]
+          }
+        },
+        "issues": [
+          "额外“证据冲突与缺口”章节将来源缺失与具体数据并列，略显冗余但未扭曲关键事实。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01291323,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:06:53",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 259.384,
+      "estimated_cost_usd": 0.041267200000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_c1009247d43f47f0ba35bdecc824ffad",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 3/3",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 3,
+        "fact_hits": 3
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 试点结果三点摘要与研究局限\n\n## 三点摘要\n- 试点规模：星桥团队试点共40人【E-002】〔事实〕；试点共40名参与者，其中32人完成问卷【E-009】〔事实〕；观察期为2026年7月1日至7月31日【E-003】〔事实〕；试点人员所有人每周远程办公2天【E-004】〔事实〕。\n- 问卷结果：问卷回收率为80%【E-010】〔事实〕；32名答卷者中有24人表示满意【E-011】〔事实〕；答",
+      "human": {
+        "dimensions": {
+          "correctness": 4,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 4
+        },
+        "revised_minutes": 8,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:22:27",
+        "note": "人工评分（覆盖/确认 Agent 初步评分）"
+      }
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\gate_real_o02\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

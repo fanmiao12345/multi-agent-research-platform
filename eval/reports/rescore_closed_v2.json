@@ -1,0 +1,1848 @@
+{
+ "reports": [
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T10:32:36",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_o09\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "o09",
+     "category": "organize",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "conflict_attribution",
+      "evidence_location"
+     ],
+     "batch": "v2",
+     "grader_verdict": "draft",
+     "grader_accept": false,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 3,
+      "structure": 5,
+      "citations": 3,
+      "completeness": 3
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 1,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.02602598,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "o09"
+    ],
+    "quality_grader_accept_rate": 0.0,
+    "dimension_means_accepted": {
+     "correctness": 3.0,
+     "structure": 5.0,
+     "citations": 3.0,
+     "completeness": 3.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 1,
+    "chain_accepted_fabrication_flags_total": 1,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "conflict_attribution": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "evidence_location": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T10:41:09",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_o10\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "o10",
+     "category": "organize",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "dedup",
+      "gap_declaration"
+     ],
+     "batch": "v2",
+     "grader_verdict": "fail",
+     "grader_accept": false,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 1,
+      "structure": 4,
+      "citations": 2,
+      "completeness": 2
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 2,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.05415462,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "o10"
+    ],
+    "quality_grader_accept_rate": 0.0,
+    "dimension_means_accepted": {
+     "correctness": 1.0,
+     "structure": 4.0,
+     "citations": 2.0,
+     "completeness": 2.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 1,
+    "chain_accepted_fabrication_flags_total": 2,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "dedup": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "gap_declaration": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T10:42:36",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_o11\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "o11",
+     "category": "organize",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "timeliness",
+      "evidence_location"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 5,
+      "citations": 5,
+      "completeness": 5
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.017194720000000004,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "o11"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 5.0,
+     "citations": 5.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "evidence_location": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "timeliness": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T10:46:09",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_o12\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "o12",
+     "category": "organize",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "instruction_isolation",
+      "evidence_location"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 5,
+      "citations": 5,
+      "completeness": 5
+     },
+     "citation_tokens": 19,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 2,
+     "estimated_cost_usd": 0.035232160000000005,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "o12"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 5.0,
+     "citations": 5.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": 1.0,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 2,
+    "by_mechanism": {
+     "evidence_location": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "instruction_isolation": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T10:47:36",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_o13\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "o13",
+     "category": "organize",
+     "expected_outcome": "draft",
+     "expected_cn": "草稿",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": false,
+     "partial_expected": false,
+     "mechanisms": [
+      "gap_declaration",
+      "conservative_grading"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 5,
+      "citations": 5,
+      "completeness": 5
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.01109829,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 0,
+    "expected_behavior_conformance_rate": 0.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "o13"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 5.0,
+     "citations": 5.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "conservative_grading": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "gap_declaration": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T10:53:34",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_r09\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "r09",
+     "category": "research",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "subtopic_decomposition",
+      "evidence_location"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 5,
+      "citations": 5,
+      "completeness": 5
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.06815901,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "r09"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 5.0,
+     "citations": 5.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "evidence_location": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "subtopic_decomposition": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T10:58:14",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_r10\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "r10",
+     "category": "research",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "controversy_balance",
+      "evidence_strength"
+     ],
+     "batch": "v2",
+     "grader_verdict": "fail",
+     "grader_accept": false,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 3,
+      "structure": 5,
+      "citations": 3,
+      "completeness": 3
+     },
+     "citation_tokens": 31,
+     "unresolved_citations": 0,
+     "fabrication_flags": 1,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.03665211,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "r10"
+    ],
+    "quality_grader_accept_rate": 0.0,
+    "dimension_means_accepted": {
+     "correctness": 3.0,
+     "structure": 5.0,
+     "citations": 3.0,
+     "completeness": 3.0
+    },
+    "citation_locate_rate": 1.0,
+    "chain_accepted_with_fabrication_flags": 1,
+    "chain_accepted_fabrication_flags_total": 1,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "controversy_balance": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "evidence_strength": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T11:03:33",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_r11\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "r11",
+     "category": "research",
+     "expected_outcome": "draft",
+     "expected_cn": "草稿",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": false,
+     "partial_expected": false,
+     "mechanisms": [
+      "gap_declaration",
+      "conservative_grading",
+      "subtopic_decomposition"
+     ],
+     "batch": "v2",
+     "grader_verdict": "draft",
+     "grader_accept": false,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 3,
+      "structure": 5,
+      "citations": 3,
+      "completeness": 1
+     },
+     "citation_tokens": 60,
+     "unresolved_citations": 0,
+     "fabrication_flags": 2,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.048816200000000004,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 0,
+    "expected_behavior_conformance_rate": 0.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "r11"
+    ],
+    "quality_grader_accept_rate": 0.0,
+    "dimension_means_accepted": {
+     "correctness": 3.0,
+     "structure": 5.0,
+     "citations": 3.0,
+     "completeness": 1.0
+    },
+    "citation_locate_rate": 1.0,
+    "chain_accepted_with_fabrication_flags": 1,
+    "chain_accepted_fabrication_flags_total": 2,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "conservative_grading": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "gap_declaration": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "subtopic_decomposition": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 0,
+      "quality_accept_rate": 0.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T11:04:52",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_r12\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "r12",
+     "category": "research",
+     "expected_outcome": "unable",
+     "expected_cn": "无法完成",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": false,
+     "partial_expected": false,
+     "mechanisms": [
+      "refuse_without_evidence",
+      "conservative_grading"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 5,
+      "citations": 5,
+      "completeness": 5
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.00819647,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 0,
+    "expected_behavior_conformance_rate": 0.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "r12"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 5.0,
+     "citations": 5.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "conservative_grading": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "refuse_without_evidence": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 0,
+      "conformance_rate": 0.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T11:08:43",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_r13\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "r13",
+     "category": "research",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "evidence_strength",
+      "evidence_location"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 5,
+      "citations": 4,
+      "completeness": 5
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.03853781,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "r13"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 5.0,
+     "citations": 4.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "evidence_location": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "evidence_strength": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T11:12:10",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_v05\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "v05",
+     "category": "revision",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "revision_add_perspective",
+      "controversy_balance"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 4,
+      "citations": 4,
+      "completeness": 5
+     },
+     "citation_tokens": 51,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.03387057,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "v05"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 4.0,
+     "citations": 4.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": 1.0,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "controversy_balance": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "revision_add_perspective": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T11:16:38",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_v06\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "v06",
+     "category": "revision",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "revision_no_change_guard"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 4,
+      "structure": 5,
+      "citations": 4,
+      "completeness": 5
+     },
+     "citation_tokens": 0,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.03879262,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "v06"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 4.0,
+     "structure": 5.0,
+     "citations": 4.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": null,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "revision_no_change_guard": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  },
+  {
+   "meta": {
+    "name": "research_writing_v1",
+    "mode": "real",
+    "generated_at": "2026-09-11T11:19:36",
+    "code_revision": "62cc7f507d32",
+    "report_path": "eval/reports\\closed_v2_v07\\business_report.json"
+   },
+   "rows": [
+    {
+     "id": "v07",
+     "category": "revision",
+     "expected_outcome": "final",
+     "expected_cn": "成品",
+     "delivered_level": "accepted",
+     "delivered_cn": "成品",
+     "executed": true,
+     "level_match": true,
+     "partial_expected": false,
+     "mechanisms": [
+      "withdrawn_source",
+      "revision_cleanup"
+     ],
+     "batch": "v2",
+     "grader_verdict": "accept",
+     "grader_accept": true,
+     "human_scored": false,
+     "human_verdict": null,
+     "human_accept": false,
+     "human_confirmed": false,
+     "dimension_means": {
+      "correctness": 5,
+      "structure": 5,
+      "citations": 5,
+      "completeness": 5
+     },
+     "citation_tokens": 13,
+     "unresolved_citations": 0,
+     "fabrication_flags": 0,
+     "program_problems": 0,
+     "forbidden_claim_hits": 0,
+     "estimated_cost_usd": 0.033204580000000004,
+     "termination_reason": "success"
+    }
+   ],
+   "totals": {
+    "attempts_total": 1,
+    "executed": 1,
+    "execution_completion_rate": 1.0,
+    "conformance_denominator": 1,
+    "expected_match": 1,
+    "expected_behavior_conformance_rate": 1.0,
+    "partial_single_listed": [],
+    "chain_accepted_ids": [
+     "v07"
+    ],
+    "quality_grader_accept_rate": 1.0,
+    "dimension_means_accepted": {
+     "correctness": 5.0,
+     "structure": 5.0,
+     "citations": 5.0,
+     "completeness": 5.0
+    },
+    "citation_locate_rate": 1.0,
+    "chain_accepted_with_fabrication_flags": 0,
+    "chain_accepted_fabrication_flags_total": 0,
+    "chain_accepted_forbidden_hits": 0,
+    "by_mechanism": {
+     "revision_cleanup": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     },
+     "withdrawn_source": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "by_batch": {
+     "v2": {
+      "cases": 1,
+      "executed": 1,
+      "expected_match": 1,
+      "conformance_rate": 1.0,
+      "chain_accepted": 1,
+      "grader_accept_of_accepted": 1,
+      "quality_accept_rate": 1.0,
+      "human_scored": 0,
+      "human_accept": 0,
+      "human_accept_rate": null,
+      "human_accept_of_accepted": 0
+     }
+    },
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0,
+    "human_confirmed": false,
+    "caveats": [
+     "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+     "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+     "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+    ]
+   }
+  }
+ ],
+ "totals": {
+  "attempts_total": 13,
+  "executed": 13,
+  "execution_completion_rate": 1.0,
+  "conformance_denominator": 13,
+  "expected_match": 10,
+  "expected_behavior_conformance_rate": 0.7692,
+  "partial_single_listed": [],
+  "chain_accepted_ids": [
+   "o09",
+   "o10",
+   "o11",
+   "o12",
+   "o13",
+   "r09",
+   "r10",
+   "r11",
+   "r12",
+   "r13",
+   "v05",
+   "v06",
+   "v07"
+  ],
+  "quality_grader_accept_rate": 0.6923,
+  "dimension_means_accepted": {
+   "correctness": 4.15,
+   "structure": 4.85,
+   "citations": 4.08,
+   "completeness": 4.15
+  },
+  "citation_locate_rate": 1.0,
+  "chain_accepted_with_fabrication_flags": 4,
+  "chain_accepted_fabrication_flags_total": 6,
+  "chain_accepted_forbidden_hits": 2,
+  "by_mechanism": {
+   "conflict_attribution": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 0,
+    "quality_accept_rate": 0.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "conservative_grading": {
+    "cases": 3,
+    "executed": 3,
+    "expected_match": 0,
+    "conformance_rate": 0.0,
+    "chain_accepted": 3,
+    "grader_accept_of_accepted": 2,
+    "quality_accept_rate": 0.6667,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "controversy_balance": {
+    "cases": 2,
+    "executed": 2,
+    "expected_match": 2,
+    "conformance_rate": 1.0,
+    "chain_accepted": 2,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 0.5,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "dedup": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 0,
+    "quality_accept_rate": 0.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "evidence_location": {
+    "cases": 5,
+    "executed": 5,
+    "expected_match": 5,
+    "conformance_rate": 1.0,
+    "chain_accepted": 5,
+    "grader_accept_of_accepted": 4,
+    "quality_accept_rate": 0.8,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "evidence_strength": {
+    "cases": 2,
+    "executed": 2,
+    "expected_match": 2,
+    "conformance_rate": 1.0,
+    "chain_accepted": 2,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 0.5,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "gap_declaration": {
+    "cases": 3,
+    "executed": 3,
+    "expected_match": 1,
+    "conformance_rate": 0.3333,
+    "chain_accepted": 3,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 0.3333,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "instruction_isolation": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 1.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "refuse_without_evidence": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 0,
+    "conformance_rate": 0.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 1.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "revision_add_perspective": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 1.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "revision_cleanup": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 1.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "revision_no_change_guard": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 1.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "subtopic_decomposition": {
+    "cases": 2,
+    "executed": 2,
+    "expected_match": 1,
+    "conformance_rate": 0.5,
+    "chain_accepted": 2,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 0.5,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "timeliness": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 1.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   },
+   "withdrawn_source": {
+    "cases": 1,
+    "executed": 1,
+    "expected_match": 1,
+    "conformance_rate": 1.0,
+    "chain_accepted": 1,
+    "grader_accept_of_accepted": 1,
+    "quality_accept_rate": 1.0,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   }
+  },
+  "by_batch": {
+   "v2": {
+    "cases": 13,
+    "executed": 13,
+    "expected_match": 10,
+    "conformance_rate": 0.7692,
+    "chain_accepted": 13,
+    "grader_accept_of_accepted": 9,
+    "quality_accept_rate": 0.6923,
+    "human_scored": 0,
+    "human_accept": 0,
+    "human_accept_rate": null,
+    "human_accept_of_accepted": 0
+   }
+  },
+  "human_scored": 0,
+  "human_accept": 0,
+  "human_accept_rate": null,
+  "human_accept_of_accepted": 0,
+  "human_confirmed": false,
+  "caveats": [
+   "独立评测 Agent 的评分 human_confirmed=false，属初步自动评分；业务通过率以人工确认为准。",
+   "开卷提示效应：旧批次把数据集关键事实作为任务要求传入写作链，事实命中率的提升含提示效应；本重算只改统计口径，不能消除旧运行已获得参考答案的影响。",
+   "本工具只读历史报告，不修改、不重跑、不合并任何产物；新旧口径数字不可直接相加或平均。"
+  ],
+  "report_count": 13
+ }
+}

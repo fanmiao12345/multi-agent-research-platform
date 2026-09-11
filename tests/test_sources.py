@@ -47,7 +47,8 @@ def test_empty_and_binary_and_blocked_are_classified(tmp_path):
     store.add_file(binary)
     summary = store.summary()
     statuses = summary["statuses"]
-    assert statuses.get("empty") == 2 and statuses.get("unsupported") == 2
+    assert statuses.get("empty") == 2
+    assert statuses.get("unsupported") == 1 and statuses.get("read_failed") == 1
     assert summary["usable"] == 0
     messages = [s["status_message"] for s in summary["sources"]]
     assert any("PDF" in m for m in messages)

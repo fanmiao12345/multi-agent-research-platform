@@ -50,30 +50,39 @@ def test_business_eval_stub_success_and_machine_checks(tmp_path):
     assert (out / "samples").exists()  # samples 目录由 out_dir 创建
 
 
-def test_business_eval_passes_dataset_hard_requirements(tmp_path):
-    """S6-05 对齐：数据集标注（必需章节/禁语/关键事实）进入链并由程序层复验。"""
+def test_business_eval_closed_book_by_default_and_open_book_switch(tmp_path):
+    """S8-B：默认闭卷——关键事实/禁止断言留在评测端；open_book=True 仅作对照并标记。"""
     from eval.business_eval import run_business_eval
     out = tmp_path / "out"
     report = run_business_eval(workspace_root=tmp_path / "ws", mode="mock",
                                llm=S4Brain(), repeats=1, fault_rounds=1,
                                task_filter="o01", out_dir=out)
+    assert report["meta"]["open_book"] is False           # 默认闭卷，报告自描述
     record = report["records"][0]
     assert record["status"] == "passed"
     hard = record["chain_hard_checks"]
-    # o01 数据集标注：2 个必需章节、1 条禁语、2 条关键事实
+    # 必需章节仍是用户可见任务要求，正常传入（o01：2 个必需章节）
     assert hard["required_sections_total"] == 2 and hard["required_section_hits"] == 2
-    assert hard["forbidden_total"] == 1 and hard["forbidden_hits"] == 0
-    assert hard["fact_total"] == 2
-    # 独立机器检查（eval 自己的口径）与链内自检一致：章节 2/2
-    checks = record["machine_checks"]
-    assert checks["required_sections"] == 2 and checks["section_hits"] == 2
-    # 请求快照确实带上了数据集标注（不是只在报告层面记数）
+    # 关键事实/禁止断言不再注入写作端（开卷关闭）
+    assert hard["forbidden_total"] == 0 and hard["fact_total"] == 0
     job_dir = tmp_path / "ws" / "jobs" / record["root_job_id"]
     saved = json.loads((job_dir / "request.json").read_text(encoding="utf-8"))
     assert saved["required_sections"] == ["资料目录", "覆盖范围"]
-    assert saved["forbidden_claims"] and saved["key_facts"]
-    pipeline = json.loads((job_dir / "pipeline.json").read_text(encoding="utf-8"))
-    assert pipeline["hard_requirements"]["required_sections"] == ["资料目录", "覆盖范围"]
+    assert saved["forbidden_claims"] == [] and saved["key_facts"] == []
+
+    # 对照开关：open_book=True 恢复旧行为，且 meta 显式标记不可与闭卷合并
+    out2 = tmp_path / "out2"
+    report2 = run_business_eval(workspace_root=tmp_path / "ws2", mode="mock",
+                                llm=S4Brain(), repeats=1, fault_rounds=1,
+                                task_filter="o01", out_dir=out2, open_book=True)
+    assert report2["meta"]["open_book"] is True
+    assert "开卷" in report2["meta"]["open_book_note"]
+    record2 = report2["records"][0]
+    hard2 = record2["chain_hard_checks"]
+    assert hard2["forbidden_total"] == 1 and hard2["fact_total"] == 2
+    saved2 = json.loads(((tmp_path / "ws2" / "jobs" / record2["root_job_id"])
+                         / "request.json").read_text(encoding="utf-8"))
+    assert saved2["forbidden_claims"] and saved2["key_facts"]
 
 
 def test_business_eval_mock_failure_is_recorded_not_passed(tmp_path):

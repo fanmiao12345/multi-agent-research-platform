@@ -1,9 +1,41 @@
-# agent-mvp —— 从零基于 LangGraph 的 Agent Harness
+# agent-mvp —— 个人 AI 智能体系统（Agent Harness）
 
-> 主线规划与逐步骤执行状态见 **`DEV_PLAN_LangGraph_Harness_From_Scratch.md`**（文档编号 01~130）。
-> 旧版零依赖实现（单/多智能体 CLI 等）保留在 `legacy/` 供参考与教学。
+> 完整目标与唯一开发排期见 [开发总计划](docs/PROJECT_MASTER_PLAN.md)，当前逐项状态见 [实施清单](docs/IMPLEMENTATION_TRACKER.md)，代码基线与限制见 [执行状态](docs/EXECUTION_STATUS.md)。研究写作是首个完整落地场景；旧版零依赖实现保留在 `legacy/`。
 
-## 这是什么
+## 整体目标与当前开发阶段（2026-09-11）
+
+用户提出目标，系统自行判断所需资料与工具、选择单智能体或多智能体工作方式、安排执行、检查并交付成果。最终覆盖 single/fixed/manager_worker/fanout/dynamic_team/debate、有界嵌套派工，以及统一上下文、技能、记忆、预算、恢复和工作台。
+
+按用户最新要求：**先完成 48 个功能开发步骤（D0～D10），冻结全功能候选版，再执行 12 个整体测试与优化步骤（Q1～Q4）**。D 阶段只做最小功能验证和阻塞性修复，不边扩功能边反复调优。非阻塞问题进入 [优化待办](docs/OPTIMIZATION_BACKLOG.md)。
+
+截至本次更新，D0～D5 已完成，D6-01～05 已接通：真实搜索/PDF/共享来源、Context 与记忆、任务理解与重规划、single/fixed/manager_worker/fanout（含真实有界并发）及 dynamic_team 均可运行。下一步是 D6-06 debate；嵌套、Web 自动选型和整体验收仍未完成。
+
+## 当前能做什么（用户视角）
+
+真实模型模式下（`.env` 配好 Key），现在可完成四类任务：
+
+| 你给什么 | 系统交付什么 |
+|---|---|
+| 一批资料（粘贴/文件/链接）+ "整理" | 素材包、来源清单、冲突与缺口，证据可定位原文 |
+| 一个研究主题 + 资料/链接 + "写报告" | 带可核查引用的报告（必需章节/禁语/关键事实可作硬约束），分级 成品/草稿 |
+| 一份旧报告 + 修改要求 | 新版本 + 变更说明，旧版不覆盖 |
+| 一个研究主题（无需预给资料）+ 允许联网 | 有界查询→Bing 候选→读取正文并登记来源，失败来源明确可查 |
+| 一批资料（含文本型 PDF） | PDF 页码进入证据定位；扫描件明确提示需要 OCR，不伪造正文 |
+
+可复现的入门路径（5 分钟）：
+
+```powershell
+# 1) 配置真实模型：copy .env.example .env 并填 MODEL_API_KEY
+# 2) 带资料跑一次研究写作链（产物在 workspaces\jobs\job_<id>\，含 report.v1.md 与 evidence.json）
+.venv\Scripts\python -m src.interfaces.cli "整理材料并写一份带引用的报告" --mode real --flow research --orchestration fixed `
+  --import-file D:\资料\笔记.md --import-url https://example.com/article
+# 3) 打开页面看进度与产物
+.venv\Scripts\python -m src.interfaces.web.workbench --port 8765
+```
+
+注意：Mock（默认）用于离线演示，不能当真实研究；离线工具演示可用 `--flow agent "计算6*7"`。CLI 已有 auto 初版及 fixed/fanout 路径，统一请求、根任务账本和搜索记账已接通；其余协作方式、嵌套派工与 Web 自动选型仍未完成。bing_scrape 真实搜索已接通：配置 SEARCH_PROVIDER=bing_scrape 并使用 --mode real --allow-network 后，只给主题可以自动搜索并读取正文；PDF 输入使用 pypdf 提取文本和页码，扫描件不执行 OCR。抓取和分析仍受外部结构、模型与预算影响，失败会明确记录。
+
+## 这是什么（架构定位）
 
 一套 **轻量 Agent Harness + Multi-Agent Runtime**：LangGraph 负责 Graph 如何运行
 （State/Node/Edge/Checkpointer/条件路由），本项目负责 Agent 如何运行——看到什么
@@ -26,7 +58,7 @@ LLM Adapter / Tools / MCP / 外部服务
 ```bash
 # 1) 依赖（虚拟环境就绪时跳过）
 python -m venv .venv
-.venv\Scripts\python -m pip install langgraph langchain-core openai pytest python-dotenv
+.venv\Scripts\python -m pip install langgraph langchain-core openai pytest python-dotenv pypdf
 
 # 2) 配置（真实模式必需；离线演示需明确选择 Mock）
 copy .env.example .env          # 填 MODEL_API_KEY / MODEL_PROVIDER 等
@@ -69,7 +101,7 @@ B2已接入统一任务入口与根账本。Web可设置调用次数、输出Tok
 资料分类：ok/partial/duplicate/empty/unsupported/too_large/read_failed 全部可查；
 单任务≤20来源、单来源≤2MB、单页下载≤10MB，超限明确拒绝不静默截断；同文转载自动去重。
 网页抓取默认安全策略：仅 http(s)、拒绝私网/回环/链路本地地址、重定向逐跳复检；
-未配置搜索服务时搜索明确禁用（不会假装搜过）。
+配置 SEARCH_PROVIDER=bing_scrape 后，真实模式配合 --allow-network 会先搜索候选再读取正文；未配置时明确禁用（不会假装搜过）。
 完整说明见`docs/B3_DELIVERY.md`与`docs/B4_DELIVERY.md`。
 
 ```powershell
@@ -132,7 +164,7 @@ S6 说明与限制见`docs/S6_DELIVERY.md`。
 ```powershell
 # 只检查配置，不发送模型请求
 .venv\Scripts\python -m src.harness.models.factory --mode real
-# 检查20个业务案例和10个故障案例的定义，不等于执行业务验收
+# 检查33个业务案例（v1冻结20 + v2扩充13）和10个故障案例的定义，不等于执行业务验收
 .venv\Scripts\python -m eval.research_cases
 ```
 
@@ -197,7 +229,10 @@ S6 说明与限制见`docs/S6_DELIVERY.md`。
 
 ## 文档地图
 
-- `docs/PRACTICAL_RESEARCH_WRITING_PLAN.md`：**实用化优化计划**——产品边界、分阶段任务、发布门槛（B1~B5、S4核心与链恢复、S5核心工作台、S6评测运行器与运维已完成离线验收；真实执行项与 S7 待实施/按证据）。
+- `docs/PROJECT_MASTER_PLAN.md`：**唯一开发总计划**——整体目标、完整范围、48 个开发步骤、功能冻结门槛、12 个整体测试与优化步骤。
+- `docs/OPTIMIZATION_BACKLOG.md`：**集中优化待办**——非阻塞质量/效率/体验问题，D 完成后在 Q 阶段处理。
+
+- `docs/PRACTICAL_RESEARCH_WRITING_PLAN.md`：**首个落地场景说明**——资料整理/研究写作的输入、交付与 D/Q 对应关系，不代替整体目标。
 - `docs/IMPLEMENTATION_TRACKER.md`：**完整实施清单**——72项计划的当前状态、阶段顺序和未完成点。
 - `docs/IMPLEMENTATION_LOG.md`：**逐步实施日志**——每完成一步追加改动、验证证据、限制与下一步。
 - `docs/B2_DELIVERY.md`：**B2交付说明**——统一入口、根账本、限制、用法与兼容性。
@@ -207,10 +242,11 @@ S6 说明与限制见`docs/S6_DELIVERY.md`。
 - `docs/S4_DELIVERY.md`：**S4交付说明**——SQLite状态库/队列租约/审批/操作账本、两段取消与阶段恢复。
 - `docs/S5_DELIVERY.md`：**S5交付说明**——研究任务 Web 工作台（队列/进度/停止/恢复/引用对照/版本/导出/写接口安全）。
 - `docs/S6_DELIVERY.md`：**S6交付说明**——真实评测运行器/人工评分表/运维工具/试用模板（离线验收；真实执行待 Key）。
+- `docs/DYNAMIC_ORCHESTRATION_PLAN.md`：**完整编排接入设计**——六方式、嵌套派工、共享契约/预算/证据/恢复，功能完成后统一比较效果。
 - `docs/TRIAL_LOG_TEMPLATE.md`：**7 天个人试用日志模板**（S6-10，待真实执行）。
 - `docs/RESEARCH_WRITING_ACCEPTANCE.md`：**业务验收基线**——20个业务案例、10个故障案例、评分和模式边界；业务尚未执行。
-- `DEV_PLAN_LangGraph_Harness_From_Scratch.md`：**总计划**（项目定位、13 个里程碑、编号步骤 01~130、ADR、Ablation 设计；顶部挂执行状态指针）
-- `docs/EXECUTION_STATUS.md`：**执行状态总账**——里程碑↔代码↔测试对照、离线评测基线、已知缺口与待办（最近更新 2026-09-09）
+- `DEV_PLAN_LangGraph_Harness_From_Scratch.md`：**原始组件设计与学习记录**——保留 01～130、ADR 和实验背景；旧执行顺序已由新总计划替代。
+- `docs/EXECUTION_STATUS.md`：**执行状态总账**——当前阶段、代码基线与下一步；历史交付和测试证据分区保存。
 - `docs/architecture.md`：分层架构 + 一次运行的数据流 + 设计决策
 - `docs/TECH_REPORT.md`：技术报告（里程碑验收映射 + 质量证据，测试计数每次生成时自动实测刷新）
 - `eval/reports/`：Benchmark 与最终实验报告（json + md）

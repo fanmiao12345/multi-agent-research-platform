@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "de4bdb51bde7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-10T14:02:32",
+    "scope": "business_acceptance_pending_human_scoring",
+    "human_confirm": {
+      "applied": 1,
+      "accept_human": 0,
+      "graded_human": 1,
+      "note": "已人工确认的分数可以用于业务通过率计算（human_confirmed=true）"
+    }
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 314.46,
+  "results": [
+    {
+      "id": "o01",
+      "category": "organize",
+      "attempt": 1,
+      "task": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "报告覆盖两个关键事实：试点40人（E-003）和每账号每月20元（E-016），多数统计与商务条款与来源一致；但将“本材料为合成验收数据”误作“资料标题字段”，并多处把推断性证据E-007、E-008、E-021标为事实，属于过度引申，故不高于3。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-016",
+              "E-001",
+              "E-008",
+              "E-021"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "必需章节“资料目录”“覆盖范围”齐全，但报告重复设置“资料标题与类型”“日期与观察期”“冲突状态”等非要求章节，段落大量交叉重复，未围绕资料目录目的组织。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "正文引用均可定位到证据列表中的E编号，未见不可定位引用；但若干引用使用不当：E-007、E-008、E-021为推断（tag=I），正文却多处标注为〔事实〕；E-001被用于支持“标题字段”，其quote不足以支持。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007",
+              "E-008",
+              "E-021"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "报告虽包含“资料目录”“覆盖范围”并列出标题、日期、类型、用途，也覆盖关键事实与商务条款；但“标题”条目建立在无依据的“标题字段”上，日期与主要用途的缺口声明被推断项和冲突状态干扰，未能干净完成任务要求。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-016",
+              "E-008",
+              "E-021"
+            ]
+          }
+        },
+        "issues": [
+          "在“资料目录”和“资料标题与类型”中，将首句“本材料为合成验收数据”当作“资料标题字段”，并据此列出标题条目，原始来源未提供标题字段。",
+          "多处将证据列表中tag=I的推断项如E-007、E-008、E-021标记为〔事实〕，混淆事实与推断；例如“目录记录日期未说明【E-008】〔事实〕”。",
+          "“冲突状态”“主要用途说明”等章节超出建立资料目录和覆盖范围的任务，重复并引入标题/日期/用途的开放冲突。",
+          "“覆盖范围”中“未提供对应字段的来源如何归入，资料未说明【E-008】【E-021】〔推断〕”使用推断性摘要作为依据，来源支持不充分。"
+        ],
+        "fabrication_flags": [
+          "将“本材料为合成验收数据”称为“资料标题字段”并作为目录标题条目的依据，无原文支持。",
+          "“目录记录标题为‘本材料为合成验收数据’”“目录记录日期和主要用途未说明”等断言基于E-008推断，却被标为事实；其quote仅“本材料为合成验收数据。”。",
+          "将“来源自称为合成验收数据，可作为验收用材料”（E-015）作为直接事实引用，原quote仅“本材料为合成验收数据。”。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.012019759999999999,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:02:32",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 313.15,
+      "estimated_cost_usd": 0.0618913,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_18ef4e51342a462ea61ad0b028d3252d",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 合成验收数据资料目录与覆盖范围\n## 资料目录\n- 标题：资料标题字段标注为“本材料为合成验收数据”【E-001】〔事实〕；目录记录标题为“本材料为合成验收数据”【E-008】〔事实〕；另有资料中未出现标题【E-021】〔事实〕。\n- 日期：观察期为2026年7月1日至7月31日【E-004】〔事实〕；目录记录日期未说明【E-008】〔事实〕；另有资料中未出现日期【E-021】〔事实〕。\n- "
+    }
+  ],
+  "records": [
+    {
+      "id": "o01",
+      "category": "organize",
+      "attempt": 1,
+      "task": "建立资料目录：列出标题、日期、类型、主要用途，不添加背景知识。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "报告覆盖两个关键事实：试点40人（E-003）和每账号每月20元（E-016），多数统计与商务条款与来源一致；但将“本材料为合成验收数据”误作“资料标题字段”，并多处把推断性证据E-007、E-008、E-021标为事实，属于过度引申，故不高于3。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-016",
+              "E-001",
+              "E-008",
+              "E-021"
+            ]
+          },
+          "structure": {
+            "score": 3,
+            "rationale": "必需章节“资料目录”“覆盖范围”齐全，但报告重复设置“资料标题与类型”“日期与观察期”“冲突状态”等非要求章节，段落大量交叉重复，未围绕资料目录目的组织。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "正文引用均可定位到证据列表中的E编号，未见不可定位引用；但若干引用使用不当：E-007、E-008、E-021为推断（tag=I），正文却多处标注为〔事实〕；E-001被用于支持“标题字段”，其quote不足以支持。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007",
+              "E-008",
+              "E-021"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "报告虽包含“资料目录”“覆盖范围”并列出标题、日期、类型、用途，也覆盖关键事实与商务条款；但“标题”条目建立在无依据的“标题字段”上，日期与主要用途的缺口声明被推断项和冲突状态干扰，未能干净完成任务要求。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-016",
+              "E-008",
+              "E-021"
+            ]
+          }
+        },
+        "issues": [
+          "在“资料目录”和“资料标题与类型”中，将首句“本材料为合成验收数据”当作“资料标题字段”，并据此列出标题条目，原始来源未提供标题字段。",
+          "多处将证据列表中tag=I的推断项如E-007、E-008、E-021标记为〔事实〕，混淆事实与推断；例如“目录记录日期未说明【E-008】〔事实〕”。",
+          "“冲突状态”“主要用途说明”等章节超出建立资料目录和覆盖范围的任务，重复并引入标题/日期/用途的开放冲突。",
+          "“覆盖范围”中“未提供对应字段的来源如何归入，资料未说明【E-008】【E-021】〔推断〕”使用推断性摘要作为依据，来源支持不充分。"
+        ],
+        "fabrication_flags": [
+          "将“本材料为合成验收数据”称为“资料标题字段”并作为目录标题条目的依据，无原文支持。",
+          "“目录记录标题为‘本材料为合成验收数据’”“目录记录日期和主要用途未说明”等断言基于E-008推断，却被标为事实；其quote仅“本材料为合成验收数据。”。",
+          "将“来源自称为合成验收数据，可作为验收用材料”（E-015）作为直接事实引用，原quote仅“本材料为合成验收数据。”。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.012019759999999999,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T14:02:32",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 313.15,
+      "estimated_cost_usd": 0.0618913,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_18ef4e51342a462ea61ad0b028d3252d",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 1,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 合成验收数据资料目录与覆盖范围\n## 资料目录\n- 标题：资料标题字段标注为“本材料为合成验收数据”【E-001】〔事实〕；目录记录标题为“本材料为合成验收数据”【E-008】〔事实〕；另有资料中未出现标题【E-021】〔事实〕。\n- 日期：观察期为2026年7月1日至7月31日【E-004】〔事实〕；目录记录日期未说明【E-008】〔事实〕；另有资料中未出现日期【E-021】〔事实〕。\n- ",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 3,
+          "citations": 3,
+          "completeness": 3
+        },
+        "revised_minutes": 20,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:22:27",
+        "note": "人工评分（覆盖/确认 Agent 初步评分）"
+      }
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\gate_real_o01\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 3.0,
+      "structure": 3.0,
+      "citations": 3.0,
+      "completeness": 3.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

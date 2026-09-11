@@ -1,5 +1,7 @@
 # agent-mvp：从零搭建 LangGraph Agent Harness & Multi-Agent 系统
 
+> **2026-09-11 排期替代说明**：本文保留原始目标、组件设计与学习步骤。当前完整目标、范围与唯一实施顺序以 [PROJECT_MASTER_PLAN.md](docs/PROJECT_MASTER_PLAN.md) 为准：先完成 D0～D10 全部功能，再执行 Q1～Q4 整体测试与优化。下文“Eval 先行”、每步评测、旧里程碑完成状态属于历史组件阶段，不再作为当前产品开发排期；必要的最小功能验证仍保留。
+
 > **项目目标**：从一个空目录开始，基于 LangGraph 搭建一套完整、可运行、可评测、可恢复、可扩展的 Agent Harness，并在其上实现多种 Multi-Agent Orchestration。
 >
 > **学习目标**：系统覆盖 Agent Loop、ReAct、Tool Calling、Skills、Planning、Context Engineering、Memory、Multi-Agent、Human-in-the-loop、Durable Execution、Guardrails、Evaluation、Tracing、MCP 等核心知识。

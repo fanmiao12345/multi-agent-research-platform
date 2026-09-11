@@ -109,11 +109,12 @@ def test_outline_stage_filters_bad_ids_and_requires_sections():
                      "require_fact_markers": True},
                     {"heading": ""},
                 ]}, ensure_ascii=False))
-    sections, title, issues = run_outline_stage(
+    sections, title, issues, cannot_answer = run_outline_stage(
         Brain(), "目标", "素材", {"E-001"})
     assert len(sections) == 1 and title == "报告"
     assert sections[0].required_evidence == ["E-001"]
     assert any(issue["code"] == "citation" for issue in issues)
+    assert cannot_answer is None
 
     class EmptyBrain:
         model_name = "stub"
@@ -124,6 +125,46 @@ def test_outline_stage_filters_bad_ids_and_requires_sections():
                 {"sections": [{"heading": "", "required_evidence": []}]}))
     with pytest.raises(StageError):
         run_outline_stage(EmptyBrain(), "目标", "素材", {"E-001"})
+
+
+def test_outline_stage_cannot_answer_honored_only_without_sections():
+    """S8 unable 机制：证据完全无法支撑任务时，模型可声明 cannot_answer（须带原因与缺失）。"""
+    class CannotAnswerBrain:
+        model_name = "stub"
+        run_mode = "mock"
+
+        def chat(self, messages, tools=None):
+            prompt = "\n".join(m["content"] or "" for m in messages)
+            assert "cannot_answer" in prompt          # 提示词已声明该出口
+            return ChatResult(content=json.dumps({"cannot_answer": {
+                "reason": "资料不含竞品X任何报价信息",
+                "missing": ["竞品X定价"]}}, ensure_ascii=False))
+
+    sections, title, issues, cannot_answer = run_outline_stage(
+        CannotAnswerBrain(), "报告竞品X定价", "素材", {"E-001"})
+    assert sections == [] and cannot_answer == {
+        "reason": "资料不含竞品X任何报价信息", "missing": ["竞品X定价"]}
+
+    class BothBrain(CannotAnswerBrain):
+        def chat(self, messages, tools=None):
+            return ChatResult(content=json.dumps({
+                "title": "报告",
+                "sections": [{"heading": "背景", "required_evidence": ["E-001"]}],
+                "cannot_answer": {"reason": "偷懒理由", "missing": ["x"]}},
+                ensure_ascii=False))
+
+    sections2, _, issues2, cannot_answer2 = run_outline_stage(
+        BothBrain(), "目标", "素材", {"E-001"})
+    assert len(sections2) == 1 and cannot_answer2 is None   # 有章节时以章节为准，防偷懒
+    assert any(i["code"] == "cannot_answer" for i in issues2)
+
+    class IncompleteBrain(CannotAnswerBrain):
+        def chat(self, messages, tools=None):
+            return ChatResult(content=json.dumps(
+                {"cannot_answer": {"reason": "只有理由没有缺失清单"}}))
+
+    with pytest.raises(StageError):
+        run_outline_stage(IncompleteBrain(), "目标", "素材", {"E-001"})
 
 
 def test_draft_stage_rejects_bad_outputs():
@@ -424,8 +465,28 @@ def test_pipeline_no_sources_and_no_evidence(tmp_path):
     store = _store_with(job_dir.parent / "job2", TEXTS)
     result = run_research_pipeline(llm=EmptyEvidenceBrain(), job_dir=job_dir.parent / "job2",
                                    store=store, goal="研究", max_revision_rounds=2)
-    assert result.draft_level == "draft" and result.termination_reason == "incomplete"
+    # S8 unable 机制：零可用证据是确定性"无法完成"，不再降为草稿
+    assert result.draft_level == "unable" and result.termination_reason == "unable"
     assert "没有任何可定位证据" in result.message
+
+
+def test_pipeline_cannot_answer_yields_unable(tmp_path):
+    """提纲阶段声明 cannot_answer（原因+缺失清单）→ 链交付 unable，不写编造报告。"""
+
+    class CannotAnswerBrain(PipelineBrain):
+        def _reply(self, purpose, system, user):
+            if purpose == "outline":
+                return json.dumps({"cannot_answer": {
+                    "reason": "资料不含竞品X定价信息", "missing": ["竞品X定价"]}},
+                    ensure_ascii=False)
+            return super()._reply(purpose, system, user)
+
+    result, _, job_dir, _ = _run_pipeline(tmp_path, brain_override=CannotAnswerBrain())
+    assert result.draft_level == "unable" and result.termination_reason == "unable"
+    assert "无法完成" in result.message
+    assert "资料不含竞品X定价信息" in result.message and "竞品X定价" in result.message
+    outlines = sorted((job_dir / "artifacts").glob("outline.*.md"))
+    assert outlines                                        # 提纲产物保留（记录判定依据）
 
 
 # ---- S6-05 对齐：任务硬约束（必需章节/禁语/关键事实）在链内程序层复验 ------------
@@ -450,8 +511,8 @@ def test_hard_requirement_issues_and_stats():
     issues, stats = hard_requirement_issues(bad, REQ_FULL)
     errors = {i.code for i in issues if i.severity == "error"}
     warns = {i.code for i in issues if i.severity == "warn"}
-    assert errors == {"required_section", "forbidden"}
-    assert warns == {"fact"}          # 关键事实缺失只记 warn，不阻塞
+    assert errors == {"required_section"}  # S8-C：必需章节缺失仍阻塞
+    assert warns == {"fact", "forbidden"}  # 禁语只按字面提示疑似命中，关键事实缺失记 warn，均不阻塞
     assert stats["required_section_hits"] == 0 and stats["forbidden_hits"] == 1
     assert stats["fact_hits"] == 0
     # 没有硬要求时不产生任何问题与读数
@@ -472,8 +533,8 @@ def test_outline_stage_appends_task_required_sections():
                 {"heading": "背景", "required_evidence": ["E-001"]}]},
                 ensure_ascii=False))
 
-    sections, _, issues = run_outline_stage(OutlineBrain(), "目标", "素材", {"E-001"},
-                                            requirements=REQ_SECTIONS)
+    sections, _, issues, _ = run_outline_stage(OutlineBrain(), "目标", "素材", {"E-001"},
+                                               requirements=REQ_SECTIONS)
     headings = [s.heading for s in sections]
     assert headings == ["背景", "资料目录", "覆盖范围"]
     assert any(i["code"] == "required_section" for i in issues)
@@ -487,8 +548,8 @@ def test_outline_stage_appends_task_required_sections():
                 {"heading": "覆盖范围", "required_evidence": ["E-001"]}]},
                 ensure_ascii=False))
 
-    sections, _, issues = run_outline_stage(AlreadyThereBrain(), "目标", "素材", {"E-001"},
-                                            requirements=REQ_SECTIONS)
+    sections, _, issues, _ = run_outline_stage(AlreadyThereBrain(), "目标", "素材", {"E-001"},
+                                               requirements=REQ_SECTIONS)
     assert [s.heading for s in sections] == ["一、资料目录", "覆盖范围"]  # 不重复补入
     assert not [i for i in issues if i["code"] == "required_section"]
 
@@ -531,8 +592,8 @@ def test_pipeline_blocks_acceptance_when_required_section_missing(tmp_path):
     assert any("覆盖范围" in i["message"] for i in payload["issues"])
 
 
-def test_pipeline_blocks_forbidden_claim_and_records_stats(tmp_path):
-    """禁语出现即阻塞：模型自审说 accepted 也不能翻案为验收成功。"""
+def test_pipeline_flags_forbidden_claim_without_blocking(tmp_path):
+    """S8-C：禁语疑似命中只记 warn 与读数，程序层不自行阻塞验收；判定交评测/人工。"""
 
     class LeakForbidden(PipelineBrain):
         def _draft(self, user):
@@ -542,10 +603,13 @@ def test_pipeline_blocks_forbidden_claim_and_records_stats(tmp_path):
                                     key_facts=("试点共40人",))
     result, _, job_dir, _ = _run_pipeline(tmp_path, brain_override=LeakForbidden(),
                                           hard_requirements=requirements)
-    assert result.draft_level == "draft"
-    assert result.hard_checks["forbidden_hits"] == 1
+    assert result.draft_level == "accepted"       # 疑似命中不再是阻塞问题
+    assert result.hard_checks["forbidden_hits"] == 1  # 读数仍如实记录
     assert result.hard_checks["fact_hits"] == 0
+    assert "禁语命中 1" in result.message         # 提示写入交付消息，供评测/人工复核
     reviews = sorted((job_dir / "artifacts").glob("review.*.json"))
     issues = json.loads(reviews[-1].read_text(encoding="utf-8"))["issues"]
-    assert any(i["code"] == "forbidden" for i in issues)
+    flagged = [i for i in issues if i["code"] == "forbidden"]
+    assert flagged and flagged[0]["severity"] == "warn"   # 只提示疑似，不定性
+    assert "疑似" in flagged[0]["message"]
     assert any(i["code"] == "fact" and i["severity"] == "warn" for i in issues)

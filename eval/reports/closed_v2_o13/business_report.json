@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "62cc7f507d32"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-11T10:47:36",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 86.47,
+  "results": [
+    {
+      "id": "o13",
+      "category": "organize",
+      "attempt": 1,
+      "task": "评估本次试点的成本收益：资料只有人员规模，没有任何成本或收益数据，如实交付缺口。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告事实与证据E-001至E-006一致：材料为合成数据、团队45人、一线坐席32人、其余管理与质检岗位、未提供成本或收益数据；未作出禁止性推断。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节'已知信息'与'成本收益缺口'齐全，并增设待补数据清单与结论，段落紧扣任务目的，逻辑清楚。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文各断言均标注可定位证据编号，编号均存在于证据列表，引用内容与断言匹配，无不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖必需章节、关键事实32人、合成数据背景及成本收益数据缺口，未触发禁止项，且如实声明无法评估成本收益。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          }
+        },
+        "issues": [
+          "无明显问题；新增章节不损害结构完整性。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.0059362,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T10:47:36",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 85.025,
+      "estimated_cost_usd": 0.01109829,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_c925e124768c47f3961984b144025c8c",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 1,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 本次试点成本收益评估提纲\n\n## 已知信息\n- 该材料自述为合成验收数据，并非真实业务数据【E-001】〔事实〕。\n- 客服团队2026年人员规模为45人【E-002】〔事实〕。\n- 45人中一线坐席为32人【E-003】〔事实〕。\n- 其余13人属管理与质检岗位，由45减32推得【E-004】〔推断〕。\n\n## 成本收益缺口\n- 资料未提供任何人员成本、系统或培训费用数据【E-005】〔事实"
+    }
+  ],
+  "records": [
+    {
+      "id": "o13",
+      "category": "organize",
+      "attempt": 1,
+      "task": "评估本次试点的成本收益：资料只有人员规模，没有任何成本或收益数据，如实交付缺口。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告事实与证据E-001至E-006一致：材料为合成数据、团队45人、一线坐席32人、其余管理与质检岗位、未提供成本或收益数据；未作出禁止性推断。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节'已知信息'与'成本收益缺口'齐全，并增设待补数据清单与结论，段落紧扣任务目的，逻辑清楚。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文各断言均标注可定位证据编号，编号均存在于证据列表，引用内容与断言匹配，无不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖必需章节、关键事实32人、合成数据背景及成本收益数据缺口，未触发禁止项，且如实声明无法评估成本收益。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          }
+        },
+        "issues": [
+          "无明显问题；新增章节不损害结构完整性。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.0059362,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T10:47:36",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 85.025,
+      "estimated_cost_usd": 0.01109829,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_c925e124768c47f3961984b144025c8c",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 1,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 本次试点成本收益评估提纲\n\n## 已知信息\n- 该材料自述为合成验收数据，并非真实业务数据【E-001】〔事实〕。\n- 客服团队2026年人员规模为45人【E-002】〔事实〕。\n- 45人中一线坐席为32人【E-003】〔事实〕。\n- 其余13人属管理与质检岗位，由45减32推得【E-004】〔推断〕。\n\n## 成本收益缺口\n- 资料未提供任何人员成本、系统或培训费用数据【E-005】〔事实"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\closed_v2_o13\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

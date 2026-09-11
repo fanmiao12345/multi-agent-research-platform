@@ -16,13 +16,14 @@ from __future__ import annotations
 from src.harness.context import budget as budget_mod
 from src.harness.context.compressors import trim_messages
 from src.harness.context.policy import (SUMMARY_ONLY, ContextSource,
-                                        visible_to_model)
+                                        summarize_or_drop, visible_to_model)
 
 
 def compose_context(question: str, sources: list[ContextSource], *,
                     history: list[dict] | None = None,
                     total_budget: int = 6000,
-                    base_system: str = "") -> tuple[list[dict], dict]:
+                    base_system: str = "",
+                    append_question: bool = True) -> tuple[list[dict], dict]:
     """组装最终 messages（OpenAI 风格）并返回每来源统计。
 
     sources 的 kind 建议取 budget 表里的键（instructions/task/evidence/memory/tools）。
@@ -42,10 +43,13 @@ def compose_context(question: str, sources: list[ContextSource], *,
         if not visible_to_model(src):
             stats[f"{src.kind}:(跳过 {src.policy})"] = 0
             continue
-        text = src.content
+        text = summarize_or_drop(src) if src.policy == SUMMARY_ONLY else src.content
         lim = limits.get(src.kind)
         if lim is not None:
+            original = text
             text = budget_mod.truncate_to(text, lim)
+            if text != original:
+                stats[f"{src.kind}:(截断)"] = 1
         if src.kind == "system" or src.kind == "instructions":
             system_parts.append(text)
         else:
@@ -60,9 +64,12 @@ def compose_context(question: str, sources: list[ContextSource], *,
     if system_parts:
         messages.append({"role": "system", "content": "\n\n".join(system_parts)})
     messages.extend(history)
-    messages.append({"role": "user",
-                     "content": question + (task_suffix or "")})
+    if append_question:
+        context_marker = "\n\n<<CONTEXT>>\n" if task_suffix else ""
+        messages.append({"role": "user",
+                         "content": question + context_marker + (task_suffix or "")})
     stats["total_estimated"] = sum(stats.values()) + \
-        budget_mod.estimate_tokens(messages[-1]["content"]) + \
+        (budget_mod.estimate_tokens(messages[-1]["content"])
+         if append_question and messages else 0) + \
         sum(budget_mod.estimate_tokens(str(m.get("content"))) for m in history)
     return messages, stats

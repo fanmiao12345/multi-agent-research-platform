@@ -28,6 +28,13 @@ class RuntimeContext:
     permissions: frozenset = DEFAULT_PERMISSIONS
     workspace_path: Path = field(default_factory=lambda: Settings().workspace_dir)
     trace_level: str = "INFO"
+    # D4：短期会话与上下文边界
+    thread_id: str = ""
+    context_budget: int = 6000
+    memory_enabled: bool = True
+    knowledge_enabled: bool = True
+    skills_enabled: bool = True
+    handoff_text: str = ""
 
     def __post_init__(self):
         if isinstance(self.max_iterations, bool) or not isinstance(self.max_iterations, int) \
@@ -37,6 +44,9 @@ class RuntimeContext:
                 or not isinstance(self.max_cost, (int, float))
                 or not math.isfinite(self.max_cost) or self.max_cost < 0):
             raise ValueError("max_cost 必须是非负有限数或 None")
+        if isinstance(self.context_budget, bool) or not isinstance(self.context_budget, int) \
+                or self.context_budget < 500:
+            raise ValueError("context_budget 必须是至少 500 的整数")
 
     @classmethod
     def from_settings(cls, settings: Settings | None = None, **overrides) -> "RuntimeContext":
@@ -57,7 +67,11 @@ class RuntimeContext:
             "model_profile": self.model_profile,
             "max_iterations": self.max_iterations, "max_cost": self.max_cost,
             "permissions": self.permissions, "workspace_path": self.workspace_path,
-            "trace_level": self.trace_level,
+            "trace_level": self.trace_level, "thread_id": self.thread_id,
+            "context_budget": self.context_budget,
+            "memory_enabled": self.memory_enabled,
+            "knowledge_enabled": self.knowledge_enabled,
+            "skills_enabled": self.skills_enabled, "handoff_text": self.handoff_text,
         }
         base.update(overrides)
         return RuntimeContext(**base)

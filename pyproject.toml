@@ -12,6 +12,7 @@ dependencies = [
     "langchain-core",
     "openai",
     "python-dotenv",
+    "pypdf",
 ]
 
 [project.optional-dependencies]

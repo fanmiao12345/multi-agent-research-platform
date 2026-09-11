@@ -52,7 +52,8 @@ def build_agent_graph(llm: LLMAdapter, max_iterations: int = 5,
                       tool_executor: ToolExecutor | None = None,
                       permissions: set | frozenset | None = None,
                       usage=None, on_event=None, checkpointer=None,
-                      max_cost=None, approval_handler=None) -> object:
+                      max_cost=None, approval_handler=None,
+                      context_composer=None, tool_allowlist=None) -> object:
     """用闭包把 llm / 限制 / tracer / 工具执行器 / 用量统计 / 事件回调绑进 graph。
 
     工具执行默认走 ToolExecutor（ToolRegistry 内置两工具）；传 permissions 后
@@ -61,8 +62,11 @@ def build_agent_graph(llm: LLMAdapter, max_iterations: int = 5,
     checkpointer：LangGraph Checkpointer（步骤 66）——同一 thread 跨调用保持 State。
     """
     executor = tool_executor or ToolExecutor(ToolRegistry.with_builtins())
-    schemas = (executor.registry.to_openai_tools() if tool_executor
-               else TOOL_SCHEMAS)
+    if tool_executor:
+        only = list(tool_allowlist) if tool_allowlist is not None else None
+        schemas = executor.registry.to_openai_tools(only=only)
+    else:
+        schemas = TOOL_SCHEMAS
 
     def budget_stop(iteration: int) -> dict:
         if tracer:
@@ -73,8 +77,14 @@ def build_agent_graph(llm: LLMAdapter, max_iterations: int = 5,
     def agent_node(state: AgentState) -> dict:
         if usage is not None and usage.cost_limit_reached(max_cost):
             return budget_stop(state.get("iteration", 0))
+        call_messages = state["messages"]
+        context_stats = {}
+        if context_composer is not None:
+            call_messages, context_stats = context_composer(state)
+            if tracer:
+                tracer.event("context_build", node="agent", **context_stats)
         t0 = time.perf_counter()
-        reply = model_call(llm, state["messages"], tools=schemas)
+        reply = model_call(llm, call_messages, tools=schemas)
         latency = time.perf_counter() - t0
         iteration = state.get("iteration", 0) + 1
         if usage is not None:

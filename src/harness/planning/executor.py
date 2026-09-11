@@ -32,6 +32,7 @@ class PlanResult:
     replans: int = 0
     attempts_total: int = 0
     failures: list = field(default_factory=list)   # [(task_id, error)]
+    no_progress: bool = False
 
     def metrics(self) -> dict:
         """Planning Eval（C7 雏形 / 步骤 44）。"""
@@ -48,6 +49,9 @@ class PlanResult:
             "replan_count": self.replans,
             "executed_steps": self.executed,
             "replan_success": self.replans > 0 and self.success,
+            "plan_version": self.plan.version,
+            "invalidated_tasks": list(self.plan.invalidated_task_ids),
+            "no_progress": self.no_progress,
         }
 
 
@@ -79,6 +83,20 @@ def execute_plan(llm, plan: Plan, *, runner=None,
     replans = 0
     executed = 0
     guard = 0
+    no_progress = False
+
+    def plan_fingerprint(candidate: Plan) -> tuple:
+        return tuple((t.id, t.description, tuple(t.depends_on), t.priority)
+                     for t in candidate.tasks)
+
+    seen_plans = {plan_fingerprint(plan)}
+    no_progress = False
+
+    def plan_fingerprint(candidate: Plan) -> tuple:
+        return tuple((t.id, t.description, tuple(t.depends_on), t.priority)
+                     for t in candidate.tasks)
+
+    seen_plans = {plan_fingerprint(plan)}
 
     while not graph.is_finished() and guard < len(plan.tasks) * 6 + 6:
         guard += 1
@@ -88,7 +106,13 @@ def execute_plan(llm, plan: Plan, *, runner=None,
             blocked = graph.blocked_tasks()
             if blocked and replans < max_replans:
                 replans += 1
-                plan = replan(llm, plan, [b for b in blocked if b.status == PENDING])
+                new_plan = replan(llm, plan, [b for b in blocked if b.status == PENDING])
+                fingerprint = plan_fingerprint(new_plan)
+                if fingerprint in seen_plans:
+                    no_progress = True
+                    break
+                seen_plans.add(fingerprint)
+                plan = new_plan
                 graph = TaskGraph(plan)
                 scheduler = Scheduler(graph)
                 continue
@@ -108,9 +132,15 @@ def execute_plan(llm, plan: Plan, *, runner=None,
             if len(failures) and replans < max_replans \
                     and task.attempts < max_attempts_per_task:
                 replans += 1
-                plan = replan(llm, plan, [task])
-                graph = TaskGraph(plan)
-                scheduler = Scheduler(graph)
+                new_plan = replan(llm, plan, [task])
+                fingerprint = plan_fingerprint(new_plan)
+                if fingerprint in seen_plans:
+                    no_progress = True
+                else:
+                    seen_plans.add(fingerprint)
+                    plan = new_plan
+                    graph = TaskGraph(plan)
+                    scheduler = Scheduler(graph)
                 # 重规划后从当前节点继续循环（失败任务已 reset 为 PENDING）
         # 更新 graph/scheduler 引用（可能被重规划替换）
         graph = TaskGraph(plan)
@@ -119,7 +149,7 @@ def execute_plan(llm, plan: Plan, *, runner=None,
     graph.mark_blocked_cascade()
     success = graph.all_completed()
     return PlanResult(success=success, plan=plan, executed=executed,
-                      replans=replans, failures=failures)
+                      replans=replans, failures=failures, no_progress=no_progress)
 
 
 def plan_and_execute(llm, user_task: str, *, runner=None,

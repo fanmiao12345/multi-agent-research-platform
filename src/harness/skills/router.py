@@ -35,12 +35,13 @@ def _candidate_lines(cands: list[dict]) -> str:
     return "\n".join(f"- {c['name']}（候选分 {c['score']}）" for c in cands)
 
 
-def route(registry: SkillRegistry, llm, question: str, top_k: int = 5) -> dict:
+def route(registry: SkillRegistry, llm, question: str, top_k: int = 5,
+          *, allow_llm: bool = True) -> dict:
     cands = recall(registry, question, top_k=top_k)
     if not cands:
         return {"skill": None, "candidates": [], "reason": "召回为空"}
 
-    if isinstance(llm, MockLLM):
+    if not allow_llm or isinstance(llm, MockLLM) or getattr(llm, "run_mode", "") != "real":
         chosen = cands[0]
         return {"skill": chosen["name"],
                 "candidates": cands,

@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "62cc7f507d32"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-11T11:19:36",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 177.4,
+  "results": [
+    {
+      "id": "v07",
+      "category": "revision",
+      "attempt": 1,
+      "task": "原稿中引用的转载摘要（s09）已作为重复来源被撤回，不再作为可用资料提供。改写为只依据原始观察摘要（s08），并移除对撤回来源的引用。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告只使用原始观察摘要的事实，关键事实“为期4周”已表述为“持续4周”并引用E-002；合成验收数据、120人、相关关系、自愿未随机、未报告客观产出与长期效果均与E-001至E-005一致，未出现禁止项或编造来源。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节“修订稿”，并分段说明资料性质与用途、研究设计与样本、主要观察结果、局限与解释、待补问题与缺口；段落围绕提纲目的，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用【[E-001]】至【[E-006]】均可定位到证据列表且出处属实；事实性断言与推断性断言分别标注来源，未发现不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求：只依据原始观察摘要、移除对已撤回转载摘要的引用、包含必需章节“修订稿”，呈现关键事实4周及全部证据要点，并如实声明效应量、客观产出、长期效果等缺口。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00616509,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:19:36",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 175.92,
+      "estimated_cost_usd": 0.033204580000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_11a47f4989834252b8726d698d7c50c2",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 1/1、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 13,
+        "unresolved_citations": 0,
+        "required_sections": 1,
+        "section_hits": 1,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 1,
+        "required_section_hits": 1,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": "fixture-draft-v7",
+      "changed": true,
+      "final_text_head": "# 仅依据原始观察摘要的修订稿提纲\n\n## 修订稿\n本修订稿只依据原始观察摘要，移除对已撤回转载摘要的引用〔事实〕。材料为合成验收数据，用于验收测试【[E-001]】〔事实〕。因此，修订后的表述仅在此资料性质和原始观察摘要范围内成立〔推断〕。\n\n## 资料性质与用途\n材料为合成验收数据，用于验收测试【[E-001]】〔事实〕。据此，其用途边界是验收测试，不宜直接外推为真实世界证据〔推断〕。\n\n##"
+    }
+  ],
+  "records": [
+    {
+      "id": "v07",
+      "category": "revision",
+      "attempt": 1,
+      "task": "原稿中引用的转载摘要（s09）已作为重复来源被撤回，不再作为可用资料提供。改写为只依据原始观察摘要（s08），并移除对撤回来源的引用。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告只使用原始观察摘要的事实，关键事实“为期4周”已表述为“持续4周”并引用E-002；合成验收数据、120人、相关关系、自愿未随机、未报告客观产出与长期效果均与E-001至E-005一致，未出现禁止项或编造来源。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节“修订稿”，并分段说明资料性质与用途、研究设计与样本、主要观察结果、局限与解释、待补问题与缺口；段落围绕提纲目的，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用【[E-001]】至【[E-006]】均可定位到证据列表且出处属实；事实性断言与推断性断言分别标注来源，未发现不可定位引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求：只依据原始观察摘要、移除对已撤回转载摘要的引用、包含必需章节“修订稿”，呈现关键事实4周及全部证据要点，并如实声明效应量、客观产出、长期效果等缺口。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00616509,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:19:36",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 175.92,
+      "estimated_cost_usd": 0.033204580000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_11a47f4989834252b8726d698d7c50c2",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 1/1、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 13,
+        "unresolved_citations": 0,
+        "required_sections": 1,
+        "section_hits": 1,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 1,
+        "required_section_hits": 1,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": "fixture-draft-v7",
+      "changed": true,
+      "final_text_head": "# 仅依据原始观察摘要的修订稿提纲\n\n## 修订稿\n本修订稿只依据原始观察摘要，移除对已撤回转载摘要的引用〔事实〕。材料为合成验收数据，用于验收测试【[E-001]】〔事实〕。因此，修订后的表述仅在此资料性质和原始观察摘要范围内成立〔推断〕。\n\n## 资料性质与用途\n材料为合成验收数据，用于验收测试【[E-001]】〔事实〕。据此，其用途边界是验收测试，不宜直接外推为真实世界证据〔推断〕。\n\n##"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\closed_v2_v07\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

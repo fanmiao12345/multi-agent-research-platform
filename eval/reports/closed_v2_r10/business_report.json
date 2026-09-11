@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "62cc7f507d32"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-11T10:58:14",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 279.73,
+  "results": [
+    {
+      "id": "r10",
+      "category": "research",
+      "attempt": 1,
+      "task": "评估A方法对响应时长的影响：正反两方证据都必须呈现，说明当季共同因素，结论加限定词。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实1和2均呈现，禁止项未出现；但正文多处将E-013的推断当事实称资料未提供A方法采用组数据、正面效应证据缺失，与E-002内容相矛盾且来源未直接支持；另将当季存在工具升级等共同因素标为事实略过度。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-010",
+              "E-013",
+              "E-011"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节支持证据、反方证据、结论限定齐全，并有当季共同因素等小节，段落围绕各节目的。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-010",
+              "E-008"
+            ]
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "正文引用均在证据列表中可定位，未发现不可定位引用；但E-013作为推断性证据被当事实引用以支撑资料未提供A方法采用组数据，属于引用不恰当；部分推断句无直接引用。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-002",
+              "E-005"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "正反证据、B团队12%、当季共同因素和结论限定均覆盖；但对数据缺口的声明失实，称A方法采用组数据缺失，未能如实说明缺口。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-010",
+              "E-008",
+              "E-013"
+            ]
+          }
+        },
+        "issues": [
+          "材料性质与范围、数据缺口、开放冲突、结论限定等处反复将资料未提供A方法采用组数据、正面效应证据缺失作为事实断言，与E-002矛盾。",
+          "当季共同因素部分将当季存在工具升级等共同因素标为事实，来源仅称提示当季存在，属过度引申。",
+          "开放冲突一节基于上述失实的A方法采用组数据缺失构建伪冲突。"
+        ],
+        "fabrication_flags": [
+          "正文多次将资料未提供A方法采用组数据、正面效应证据缺失作为事实断言，与E-002相矛盾且所引E-013来源未提供此内容。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.02004931,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T10:58:14",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 277.963,
+      "estimated_cost_usd": 0.03665211,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_17c90248824b47e29d30b60f0a53dd2f",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 31,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 评估A方法对响应时长影响的证据提纲\n## 材料性质与范围\n本材料为合成验收数据【[E-001]】【[E-009]】〔事实〕；数据来源为 src_bbb3dc9e87、src_8b1f494fc6【[E-001]】【[E-009]】〔事实〕。评估边界限于该合成验收材料所载A方法试点、同期B团队与相关共同因素信息〔推断〕。资料未提供A方法采用组数据，正面效应证据缺失【[E-013]】〔事实〕，故不"
+    }
+  ],
+  "records": [
+    {
+      "id": "r10",
+      "category": "research",
+      "attempt": 1,
+      "task": "评估A方法对响应时长的影响：正反两方证据都必须呈现，说明当季共同因素，结论加限定词。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实1和2均呈现，禁止项未出现；但正文多处将E-013的推断当事实称资料未提供A方法采用组数据、正面效应证据缺失，与E-002内容相矛盾且来源未直接支持；另将当季存在工具升级等共同因素标为事实略过度。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-010",
+              "E-013",
+              "E-011"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节支持证据、反方证据、结论限定齐全，并有当季共同因素等小节，段落围绕各节目的。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-010",
+              "E-008"
+            ]
+          },
+          "citations": {
+            "score": 3,
+            "rationale": "正文引用均在证据列表中可定位，未发现不可定位引用；但E-013作为推断性证据被当事实引用以支撑资料未提供A方法采用组数据，属于引用不恰当；部分推断句无直接引用。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-002",
+              "E-005"
+            ]
+          },
+          "completeness": {
+            "score": 3,
+            "rationale": "正反证据、B团队12%、当季共同因素和结论限定均覆盖；但对数据缺口的声明失实，称A方法采用组数据缺失，未能如实说明缺口。",
+            "cited_evidence_ids": [
+              "E-002",
+              "E-010",
+              "E-008",
+              "E-013"
+            ]
+          }
+        },
+        "issues": [
+          "材料性质与范围、数据缺口、开放冲突、结论限定等处反复将资料未提供A方法采用组数据、正面效应证据缺失作为事实断言，与E-002矛盾。",
+          "当季共同因素部分将当季存在工具升级等共同因素标为事实，来源仅称提示当季存在，属过度引申。",
+          "开放冲突一节基于上述失实的A方法采用组数据缺失构建伪冲突。"
+        ],
+        "fabrication_flags": [
+          "正文多次将资料未提供A方法采用组数据、正面效应证据缺失作为事实断言，与E-002相矛盾且所引E-013来源未提供此内容。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.02004931,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T10:58:14",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 277.963,
+      "estimated_cost_usd": 0.03665211,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_17c90248824b47e29d30b60f0a53dd2f",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 31,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 评估A方法对响应时长影响的证据提纲\n## 材料性质与范围\n本材料为合成验收数据【[E-001]】【[E-009]】〔事实〕；数据来源为 src_bbb3dc9e87、src_8b1f494fc6【[E-001]】【[E-009]】〔事实〕。评估边界限于该合成验收材料所载A方法试点、同期B团队与相关共同因素信息〔推断〕。资料未提供A方法采用组数据，正面效应证据缺失【[E-013]】〔事实〕，故不"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\closed_v2_r10\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 3.0,
+      "structure": 5.0,
+      "citations": 3.0,
+      "completeness": 3.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

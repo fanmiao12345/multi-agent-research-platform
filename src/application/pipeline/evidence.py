@@ -106,7 +106,7 @@ def extract_source_evidence(llm, goal: str, source: dict) -> tuple[list[Evidence
         raise StageError("evidence", "证据提取输出不是合法 JSON 对象（items 列表缺失）")
     items: list[EvidenceItem] = []
     full_text = source.get("text") or ""
-    segments = split_segments(full_text)
+    segments = source.get("segments") or split_segments(full_text)
     for raw in data["items"]:
         if not isinstance(raw, dict):
             issues.append({"severity": "warn", "code": "format",
@@ -139,6 +139,8 @@ def extract_source_evidence(llm, goal: str, source: dict) -> tuple[list[Evidence
                 locator = {"heading": seg.get("heading", ""),
                            "paragraph": seg.get("paragraph", -1),
                            "start": seg["start"], "end": seg["end"]}
+                if seg.get("page") is not None:
+                    locator["page"] = seg["page"]
                 break
         items.append(EvidenceItem(evidence_id="", source_id=source.get("source_id", ""),
                                   fact=fact, tag=tag, quote=quote,

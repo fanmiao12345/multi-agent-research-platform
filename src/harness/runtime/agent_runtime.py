@@ -17,7 +17,13 @@ from pathlib import Path
 from config.settings import Settings
 from src.graph.agent_loop import build_agent_graph
 from src.graph.state import new_state
-from src.harness.run_store import finish_run, start_run, update_run
+from src.harness.context.builder import compose_context
+from src.harness.context.policy import ContextSource
+from src.harness.memory.checkpointer import make_checkpointer, thread_config
+from src.harness.memory.knowledge import KNOWLEDGE_DIR, retrieve as retrieve_knowledge
+from src.harness.memory.long_term import KIND_SEMANTIC, LongTermStore
+from src.harness.memory.policy import should_write
+from src.harness.run_store import finish_run, start_run, update_run, write_json
 from src.harness.runtime import termination
 from src.harness.runtime.lifecycle import (COMPLETED, FAILED, CANCELLED, RUNNING,
                                          WAITING_HUMAN, RunRecord)
@@ -27,6 +33,8 @@ from src.harness.tools.registry import ToolRegistry
 from src.harness.tracer import EV_RUN_END, EV_RUN_START, Tracer
 from src.harness.usage import UsageTracker
 from src.harness.model_gateway import ACTIVE_JOB, RUN_ID, ROLE, BudgetStop
+from src.harness.skills.registry import SkillRegistry
+from src.harness.skills.router import inject, route
 
 
 @dataclass
@@ -64,11 +72,19 @@ class AgentRuntime:
     """把任何 LLMAdapter 包装成有明确运行规范的 Agent。"""
 
     def __init__(self, llm, settings: Settings | None = None, *,
-                 tool_executor: ToolExecutor | None = None):
+                 tool_executor: ToolExecutor | None = None,
+                 skill_registry: SkillRegistry | None = None,
+                 memory_store: LongTermStore | None = None,
+                 knowledge_root=None):
         self.llm = llm
         self.settings = settings or Settings()
         self.model_name = getattr(llm, "model_name", "")
         self.tool_executor = tool_executor or ToolExecutor(ToolRegistry.with_builtins())
+        self.skill_registry = skill_registry or SkillRegistry()
+        self.memory_store = memory_store or LongTermStore(
+            self.settings.workspace_dir / "memory_store.json")
+        self.knowledge_root = knowledge_root or KNOWLEDGE_DIR
+        self._checkpointer = make_checkpointer()
 
     # ---- 公共 API ----
     def run_task(self, task: str, context: RuntimeContext | None = None,
@@ -81,6 +97,25 @@ class AgentRuntime:
         """流式执行：边跑边把节点/LLM/工具事件推给 on_event(ev: dict)。"""
         return self._execute(task, context, streaming=True, on_event=on_event,
                              approval_handler=approval_handler)
+
+    @staticmethod
+    def _history_without_current(messages: list[dict], task: str) -> list[dict]:
+        """去掉 system 与最新用户问题；其余消息交给 Context Builder 限窗。"""
+        history = [m for m in messages if m.get("role") != "system"]
+        for index in range(len(history) - 1, -1, -1):
+            msg = history[index]
+            if msg.get("role") == "user" and (msg.get("content") or "") == task:
+                return history[:index] + history[index + 1:]
+        return history
+
+    @staticmethod
+    def _explicit_memory(task: str) -> tuple[bool, str]:
+        for marker in ("请记住", "记住", "以后都", "今后都"):
+            if marker in task:
+                content = task.split(marker, 1)[1].strip(" ：:，,。")
+                if content:
+                    return True, content
+        return False, ""
 
     # ---- 内部实现 ----
     def _execute(self, task: str, context: RuntimeContext | None,
@@ -111,6 +146,78 @@ class AgentRuntime:
         reason = termination.UNRECOVERABLE_ERROR
         status = FAILED
         error = None
+        context_records: list[dict] = []
+
+        skill_decision = {"skill": None, "candidates": [], "reason": "技能未启用"}
+        selected_skill = None
+        if ctx.skills_enabled:
+            skill_decision = route(self.skill_registry, self.llm, task,
+                                   top_k=5, allow_llm=False)
+            if skill_decision.get("skill"):
+                selected_skill = self.skill_registry.get(skill_decision["skill"])
+            tracer.event("skill_route", node="context",
+                         selected=skill_decision.get("skill"),
+                         reason=skill_decision.get("reason", ""),
+                         candidates=[c.get("name") for c in skill_decision.get("candidates", [])])
+
+        effective_permissions = frozenset(ctx.permissions)
+        if selected_skill and selected_skill.allowed_tools:
+            effective_permissions = effective_permissions.intersection(selected_skill.allowed_tools)
+
+        explicit, explicit_text = self._explicit_memory(task)
+        if explicit and ctx.memory_enabled:
+            allowed, policy_reason = should_write(KIND_SEMANTIC, explicit=True)
+            if allowed:
+                self.memory_store.remember(
+                    KIND_SEMANTIC, explicit_text,
+                    source=f"explicit:{run['run_id']}", confidence=1.0)
+                tracer.event("memory_write", node="context", kind=KIND_SEMANTIC,
+                             reason=policy_reason, source=f"explicit:{run['run_id']}")
+        memories = (self.memory_store.search(task, top_k=3)
+                    if ctx.memory_enabled else [])
+        knowledge = (retrieve_knowledge(task, root=self.knowledge_root, top_k=3)
+                     if ctx.knowledge_enabled else [])
+
+        sources: list[ContextSource] = []
+        if system_extra:
+            sources.append(ContextSource(kind="instructions", content=system_extra))
+        if selected_skill:
+            sources.append(ContextSource(kind="skill", content=inject(selected_skill),
+                                         meta={"name": selected_skill.name,
+                                               "allowed_tools": selected_skill.allowed_tools}))
+        if memories:
+            sources.append(ContextSource(
+                kind="memory", content="\n".join(
+                    f"- [{m.id}] {m.content}（来源：{m.source or '未标注'}）" for m in memories),
+                policy="RETRIEVE_IF_RELEVANT"))
+        if knowledge:
+            sources.append(ContextSource(
+                kind="evidence", content="\n".join(
+                    f"- [{item['name']}] {item['snippet']}" for item in knowledge),
+                policy="RETRIEVE_IF_RELEVANT"))
+        if ctx.handoff_text:
+            sources.append(ContextSource(kind="handoff", content=ctx.handoff_text))
+        if effective_permissions:
+            sources.append(ContextSource(kind="tools", content="本次允许工具：" +
+                                         "、".join(sorted(effective_permissions))))
+
+        def compose_for_call(state):
+            history = self._history_without_current(
+                state.get("messages", []), state.get("user_task") or task)
+            continuing_tool = bool(history and history[-1].get("role") == "tool")
+            messages, stats = compose_context(
+                state.get("user_task") or task, sources, history=history,
+                total_budget=ctx.context_budget,
+                append_question=not continuing_tool)
+            context_records.append({
+                "round": len(context_records) + 1,
+                "skill": skill_decision.get("skill"),
+                "skill_reason": skill_decision.get("reason", ""),
+                "memory_ids": [m.id for m in memories],
+                "knowledge": [item["name"] for item in knowledge],
+                "stats": stats,
+            })
+            return messages, stats
 
         def request_approval(spec, arguments):
             record.transition(WAITING_HUMAN)
@@ -134,10 +241,15 @@ class AgentRuntime:
             app = build_agent_graph(
                 self.llm, max_iterations=ctx.max_iterations, tracer=tracer,
                 run_id=run["run_id"], tool_executor=self.tool_executor,
-                permissions=ctx.permissions, usage=usage, on_event=on_event,
+                permissions=effective_permissions, usage=usage, on_event=on_event,
                 max_cost=ctx.max_cost,
-                approval_handler=request_approval if approval_handler is not None else None)
+                approval_handler=request_approval if approval_handler is not None else None,
+                context_composer=compose_for_call,
+                tool_allowlist=tuple(effective_permissions),
+                checkpointer=(self._checkpointer if ctx.thread_id else None))
             graph_config = {"recursion_limit": ctx.max_iterations * 2 + 2}
+            if ctx.thread_id:
+                graph_config.update(thread_config(ctx.thread_id))
             if streaming:
                 for chunk in app.stream(initial, config=graph_config, stream_mode="updates"):
                     for node, update in chunk.items():
@@ -171,6 +283,14 @@ class AgentRuntime:
             record.transition(status, reason)
             run.update(final_text=final_text, termination_reason=reason, error=error,
                        iterations=usage.llm_calls)
+            if context_records:
+                write_json(Path(run["dir"]) / "context.json", {
+                    "schema_version": 1, "run_id": run["run_id"],
+                    "thread_id": ctx.thread_id or None,
+                    "skill": skill_decision, "records": context_records,
+                    "memory_ids": [m.id for m in memories],
+                    "knowledge": [item["name"] for item in knowledge],
+                })
             # 终态在产物写完后可见；写入出错时也尝试保存终态，避免永久 running。
             try:
                 usage_path = str(usage.write(Path(run["dir"]), run_id=run["run_id"]))

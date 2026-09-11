@@ -1,5 +1,6 @@
 """统一应用入口。B2接Runtime；B3/B4资料导入；B5研究写作链；S4续跑入口；S5Web接线参数。"""
 from pathlib import Path
+import dataclasses
 import json
 import re
 import uuid
@@ -9,6 +10,7 @@ from src.application.imports import import_request_sources
 from src.application.pipeline.model import HardRequirements
 from src.application.pipeline.runner import run_research_pipeline
 from src.application.request import TaskRequest
+from src.harness.ingest.search import search_enabled
 from src.harness.ingest.url_policy import UrlPolicy
 from src.harness.models import factory
 from src.harness.model_gateway import BudgetStop, JobLedger, job_scope, check_root_budget
@@ -20,6 +22,7 @@ from src.harness.tools.executor import ToolExecutor
 from src.harness.tools.registry import ToolRegistry
 
 _CHAIN_TO_STATUS = {"success": "completed", "incomplete": "partial",
+                    "unable": "partial",
                     "budget_exceeded": "cancelled", "error": "failed",
                     "cancelled": "cancelled"}
 _JOB_ID_RE = re.compile(r"^job_[0-9a-f]{32}$")
@@ -190,8 +193,16 @@ class ResearchApplication:
         # B4：抓取地址策略。默认拒绝私网/回环/链路本地；测试或受信intranet
         # 场景由调用方显式传入 UrlPolicy(allowed_hosts=...)（S2-09 独立策略）。
         self.url_policy = url_policy
+        # D2-04：已配置的 MCP Server 纳入同一工具注册表（未配置 = 不接入）。
+        # 会话随 run() 结束关闭；配置/启动失败显式报错，不静默降级。
+        self.mcp_sessions = []
+        if getattr(self.settings, "mcp_servers", None):
+            from src.mcp.bootstrap import connect_configured_mcp_servers
+            self.mcp_sessions = connect_configured_mcp_servers(
+                self.settings, self.executor.registry)
 
     def run(self, *, on_event=None, approval_handler=None, job_id: str | None = None,
+            parent_job_id: str | None = None,
             on_progress=None, stage_hook=None, should_stop=None):
         request = self.request
         jobs = self.root / "jobs"
@@ -200,15 +211,51 @@ class ResearchApplication:
             raise ValueError("job_id 格式无效（必须是 job_ + 32位十六进制）")
         directory = jobs / (job_id or ("job_" + uuid.uuid4().hex))
         if directory.exists():
-            raise FileExistsError(f"任务目录已存在：{directory}；如需续跑请使用 resume 入口")
+            # D1-02：允许采用编排器"调度前预留"的根任务目录——调度阶段只写
+            # orchestration.json/request.json/ledger.json（D2-01 调度入账）；
+            # 出现链执行产物（pipeline/sources/artifacts/阶段检查点等）仍拒绝。
+            pre_schedule = {"orchestration.json", "request.json", "ledger.json"}
+            reserved = {p.name for p in directory.iterdir()} - pre_schedule
+            if reserved:
+                raise FileExistsError(
+                    f"任务目录已存在且含执行产物：{directory}；如需续跑请使用 resume 入口")
         ledger = JobLedger(directory, request)
         outcome = None
         chain_result = None
         error = None
         status = "failed"
         import_summary = None
+        web_search_info = None
         try:
             with job_scope(ledger):
+                # D3-03 自动联网研究：只给主题且允许联网、且已配置搜索提供方时，
+                # 先拆查询→真实搜索→候选 URL 并入导入清单（正文读取/去重/分类
+                # 沿用既有来源管线；搜索调用经 record_search 入根账本）。
+                if (request.flow == "research" and request.allow_network
+                        and search_enabled(self.settings.search_provider)):
+                    from src.application.web_research import auto_search_candidates
+                    try:
+                        found, records = auto_search_candidates(
+                            request.task, provider=self.settings.search_provider,
+                            run_mode=request.mode, llm=self.llm,
+                            max_results=self.settings.search_max_results,
+                            known_urls=set(request.urls),
+                            on_search=ledger.record_search)
+                        found_urls = [item["url"] for item in found]
+                        if found_urls:
+                            request = dataclasses.replace(
+                                request, urls=request.urls + tuple(found_urls))
+                        all_failed = bool(records) and all(
+                            record.get("error") for record in records)
+                        web_search_info = {
+                            "status": "ok" if found_urls else
+                                      ("failed" if all_failed else "no_results"),
+                            "provider": self.settings.search_provider,
+                            "added_urls": found_urls, "candidates": found,
+                            "records": records}
+                    except Exception as e:  # noqa: BLE001 —— 搜索失败显式呈现，继续用给定资料
+                        web_search_info = {"status": "failed",
+                                           "error": f"{type(e).__name__}: {e}"[:200]}
                 # B3/B4：资料（文本/文件/用户URL）先导入并登记；失败来源明确分类；
                 # 一个可用来源都没有时任务不启动，不会带着"空资料"假成功。
                 store = None
@@ -255,6 +302,9 @@ class ResearchApplication:
             raise
         finally:
             ledger.finish(status)
+            for session in getattr(self, "mcp_sessions", []):
+                session.close()     # D2-04：MCP 子进程生命周期收尾
+            self.mcp_sessions = []
             payload = {
                 "schema_version": 1, "root_job_id": ledger.job_id, "status": status,
                 "mode": getattr(self.llm, "run_mode", "custom"), "model": self.llm.model_name,
@@ -267,4 +317,10 @@ class ResearchApplication:
                 payload["pipeline"] = chain_result.as_dict()
             if request.revises_job:
                 payload["revises_job"] = request.revises_job
+            if web_search_info is not None:
+                payload["web_search"] = web_search_info
+            if parent_job_id:
+                # D1-02：子任务只记父子关系，不新开独立预算根（预算根见 job 的 budget_root 链）
+                payload["parent_job_id"] = parent_job_id
+                payload["budget_root"] = parent_job_id
             write_json(ledger.directory / "job.json", payload)

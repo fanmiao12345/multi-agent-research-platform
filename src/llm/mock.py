@@ -42,7 +42,9 @@ class MockLLM(LLMAdapter):
             if m.get("role") == "user" and m.get("content"):
                 text = m["content"]
                 break
-        text = (text or "").replace("，", " ").replace("？", " ")
+        # Context Builder 的附加块不能改变规则大脑对原始用户请求的判断。
+        text = (text or "").split("<<CONTEXT>>", 1)[0]
+        text = text.replace("，", " ").replace("？", " ")
 
         # 长文本保护：>200 字不做逐词路由（模拟"长输入交给真实模型"的语义，
         # 避免长文里的零散关键词误触发工具）

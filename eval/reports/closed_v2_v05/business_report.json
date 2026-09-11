@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "62cc7f507d32"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-11T11:12:10",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 206.25,
+  "results": [
+    {
+      "id": "v05",
+      "category": "revision",
+      "attempt": 1,
+      "task": "原稿只呈现了正方证据。补充反方证据与当季共同因素说明，结论加限定，不得删除原有引用。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实B团队自然下降12%、无对照组均准确呈现；补充了反方证据和当季共同因素，结论加限定，未发现编造或事实错误。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009"
+            ]
+          },
+          "structure": {
+            "score": 4,
+            "rationale": "必需章节'修订稿'存在，章节标题齐全且围绕任务目标；但多节重复陈述同一反方与共同因素内容，略显冗余。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007",
+              "E-008"
+            ]
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "主体断言均有证据编号支撑，引用基本可定位；但正文出现[S:s23]与证据列表ID体系不一致，且部分来源句的〔事实/推断〕标签与证据列表事实标签不完全吻合。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "任务要求的补充反方证据、当季共同因素说明、结论限定及保留原有引用均已完成，并对未知缺口作了声明。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009"
+            ]
+          }
+        },
+        "issues": [
+          "修订稿前多个章节重复陈述同一反方证据与共同因素内容，结构略冗余。",
+          "正文使用[S:s23]标签与证据列表E-xxx/src_体系不一致，可定位性稍弱。",
+          "E-008、E-009等来源句被正文标为〔推断〕，与证据列表的fact标签存在轻微措辞出入。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01054157,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:12:10",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 204.75,
+      "estimated_cost_usd": 0.03387057,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_73f116f44d5b4d2996f4d018767b2b17",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 1/1、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 51,
+        "unresolved_citations": 0,
+        "required_sections": 1,
+        "section_hits": 1,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 1,
+        "required_section_hits": 1,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": "fixture-draft-v5",
+      "changed": true,
+      "final_text_head": "# A方法试点效果修订稿\n## 原有正方证据保留\n采用A方法的团队响应时长较试点前下降15%【[E-001]】[S:s23]〔事实〕。该试点设有前后对照，但没有设置不接受A方法的对照组【[E-002]】[S:s23]〔事实〕。因缺对照组，15%的下降不能单独归因于A方法【[E-004]】〔推断〕。\n## 反方证据补充\n同期未采用A方法的B团队，响应时长自然下降12%【[E-007]】〔事实〕。该降"
+    }
+  ],
+  "records": [
+    {
+      "id": "v05",
+      "category": "revision",
+      "attempt": 1,
+      "task": "原稿只呈现了正方证据。补充反方证据与当季共同因素说明，结论加限定，不得删除原有引用。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "关键事实B团队自然下降12%、无对照组均准确呈现；补充了反方证据和当季共同因素，结论加限定，未发现编造或事实错误。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009"
+            ]
+          },
+          "structure": {
+            "score": 4,
+            "rationale": "必需章节'修订稿'存在，章节标题齐全且围绕任务目标；但多节重复陈述同一反方与共同因素内容，略显冗余。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007",
+              "E-008"
+            ]
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "主体断言均有证据编号支撑，引用基本可定位；但正文出现[S:s23]与证据列表ID体系不一致，且部分来源句的〔事实/推断〕标签与证据列表事实标签不完全吻合。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "任务要求的补充反方证据、当季共同因素说明、结论限定及保留原有引用均已完成，并对未知缺口作了声明。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009"
+            ]
+          }
+        },
+        "issues": [
+          "修订稿前多个章节重复陈述同一反方证据与共同因素内容，结构略冗余。",
+          "正文使用[S:s23]标签与证据列表E-xxx/src_体系不一致，可定位性稍弱。",
+          "E-008、E-009等来源句被正文标为〔推断〕，与证据列表的fact标签存在轻微措辞出入。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01054157,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:12:10",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 204.75,
+      "estimated_cost_usd": 0.03387057,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_73f116f44d5b4d2996f4d018767b2b17",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 1/1、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 51,
+        "unresolved_citations": 0,
+        "required_sections": 1,
+        "section_hits": 1,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 1,
+        "required_section_hits": 1,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": "fixture-draft-v5",
+      "changed": true,
+      "final_text_head": "# A方法试点效果修订稿\n## 原有正方证据保留\n采用A方法的团队响应时长较试点前下降15%【[E-001]】[S:s23]〔事实〕。该试点设有前后对照，但没有设置不接受A方法的对照组【[E-002]】[S:s23]〔事实〕。因缺对照组，15%的下降不能单独归因于A方法【[E-004]】〔推断〕。\n## 反方证据补充\n同期未采用A方法的B团队，响应时长自然下降12%【[E-007]】〔事实〕。该降"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\closed_v2_v05\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 4.0,
+      "citations": 4.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

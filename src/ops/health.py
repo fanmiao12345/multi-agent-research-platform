@@ -55,9 +55,19 @@ def run_checks(workspace_root: str | Path | None = None,
     else:
         add("状态库(SQLite)", True, "尚未创建（首次研究任务提交时自动建立）")
     samples = PROJECT_ROOT / "eval" / "datasets" / "research_writing_v1.json"
-    add("业务数据集", samples.exists(), "20业务+10故障定义可用" if samples.exists() else "缺失")
+    if samples.exists():
+        try:
+            dataset = json.loads(samples.read_text(encoding="utf-8"))
+            version = (dataset.get("meta") or {}).get("version", 1)
+            add("业务数据集", True,
+                f"{len(dataset.get('tasks', []))}业务+{len(dataset.get('faults', []))}故障"
+                f"定义可用（数据集 v{version}；历史批次冻结分母见 meta.v1_baseline）")
+        except Exception as e:  # noqa: BLE001
+            add("业务数据集", False, f"读取失败：{type(e).__name__}: {e}")
+    else:
+        add("业务数据集", False, "缺失")
     import importlib.metadata
-    required = ["langgraph", "langchain-core", "openai", "python-dotenv"]
+    required = ["langgraph", "langchain-core", "openai", "python-dotenv", "pypdf"]
     for package in required:
         try:
             version = importlib.metadata.version(package)

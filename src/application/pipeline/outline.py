@@ -20,7 +20,13 @@ from src.harness.structured import extract_json
 def run_outline_stage(llm, goal: str, material_block: str,
                       evidence_ids: set[str],
                       requirements: HardRequirements | None = None,
-                      ) -> tuple[list[OutlineSection], str, list[dict]]:
+                      ) -> tuple[list[OutlineSection], str, list[dict], dict | None]:
+    """返回 (sections, title, issues, cannot_answer)。
+
+    cannot_answer 非 None 表示模型判定证据完全无法支撑任务目标（S8 unable 出口）：
+    此时 sections 必为空；程序校验 reason/missing 非空，且"有章节则以章节为准"
+    （防止用拒绝偷懒）。
+    """
     requirements_block = requirements.prompt_block() if requirements else ""
     data = None
     raw = ""
@@ -41,6 +47,17 @@ def run_outline_stage(llm, goal: str, material_block: str,
     if not data:
         raise StageError("outline", "提纲输出不是合法 JSON 对象"
                          + (f"；原始回复片段：{raw[:200]}" if raw else ""))
+    cannot_answer = None
+    raw_ca = data.get("cannot_answer")
+    if isinstance(raw_ca, dict):
+        reason = str(raw_ca.get("reason") or "").strip()
+        missing = [str(m).strip() for m in (raw_ca.get("missing") or [])
+                   if str(m).strip()]
+        if reason and missing:
+            cannot_answer = {"reason": reason, "missing": missing}
+        else:
+            issues.append({"severity": "warn", "code": "cannot_answer",
+                           "message": "cannot_answer 缺少 reason 或 missing，已忽略"})
     title = (data.get("title") or "").strip() or "未命名报告"
     sections: list[OutlineSection] = []
     for raw in data.get("sections") or []:
@@ -64,8 +81,15 @@ def run_outline_stage(llm, goal: str, material_block: str,
                                        purpose=(raw.get("purpose") or "").strip(),
                                        required_evidence=required,
                                        require_fact_markers=require_markers))
-    if not sections:
+    if not sections and cannot_answer is None:
         raise StageError("outline", "提纲没有任何有效章节")
+    if cannot_answer and sections:
+        # 防偷懒：能给出有效提纲就以章节为准，不接受同时拒绝
+        cannot_answer = None
+        issues.append({"severity": "warn", "code": "cannot_answer",
+                       "message": "提纲同时给出章节与 cannot_answer，以章节为准继续写作"})
+    if cannot_answer:
+        return [], title, issues, cannot_answer
     if requirements is not None:
         existing = {normalize_heading(s.heading): s.heading for s in sections}
         for name in requirements.required_sections:
@@ -77,7 +101,7 @@ def run_outline_stage(llm, goal: str, material_block: str,
                 purpose="任务硬性要求的章节（程序按任务要求补入，标题不得改写）"))
             issues.append({"severity": "warn", "code": "required_section",
                            "message": f"提纲缺少任务要求章节「{name}」，已按任务要求补入"})
-    return sections, title, issues
+    return sections, title, issues, None
 
 
 def render_outline(title: str, sections: list[OutlineSection]) -> str:

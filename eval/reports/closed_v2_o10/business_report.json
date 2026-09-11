@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "62cc7f507d32"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-11T10:41:09",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 304.44,
+  "results": [
+    {
+      "id": "o10",
+      "category": "organize",
+      "attempt": 1,
+      "task": "合并三份材料：相同内容只计一份来源；单独指出转载C独有的增补信息及其未获确认状态。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 1,
+            "rationale": "报告核心断言“本次仅提供一份来源，缺少另两份材料，无法完成三源去重合并”与给定三份材料（供应商、转载A、转载B）直接矛盾；E-004/E-005的quote仅为第一段合成验收数据文本，并不包含该断言。虽有批量导入和500行上限等正确转述，但大量关键来源范围与转载C判断错误，故判1。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-005",
+              "E-002",
+              "E-003",
+              "E-008",
+              "E-009"
+            ]
+          },
+          "structure": {
+            "score": 4,
+            "rationale": "必需章节“去重结果”“独有增补”均出现，且有明确标题层级；但“冲突与开放状态”“缺口与待补材料”等有重复冗余，略影响围绕提纲的清晰度。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 2,
+            "rationale": "多数断言虽给出E编号，但E-004/E-005被引用为“仅一份来源”“无法判定转载C”等，与其quote字段不符，引用不恰当；整体引用支撑不足。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-005"
+            ]
+          },
+          "completeness": {
+            "score": 2,
+            "rationale": "必需章节存在且转述了批量导入、模板导入和500行未确认，但未完成三份材料真实去重，也未明确“转载C/转载B独有增补”的主体，核心任务覆盖不足。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-005",
+              "E-008",
+              "E-009"
+            ]
+          }
+        },
+        "issues": [
+          "在‘去重结果’‘冲突与开放状态’等处反复断言仅提供一份来源，与给定三份来源严重矛盾，未完成合并。",
+          "‘独有增补’未具体指出转载C或转载B编辑注的500行上限为独有增补，而只称无法判定。",
+          "引用E-004/E-005的文本与其quote‘本材料为合成验收数据。甲工具支持批量导入…’不匹配。",
+          "结论称‘不能完成三源合并’，与任务已给出三份材料的事实不符。"
+        ],
+        "fabrication_flags": [
+          "报告断言‘本次仅提供一份来源，缺少另两份材料，无法完成三源去重合并’多处引用E-004，但E-004的quote未包含该内容，且与给定三份来源矛盾。",
+          "报告断言‘是否存在转载C及其增补信息，本次资料无法判定’引用E-005，但E-005的quote未包含该内容，缺乏依据。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01350621,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T10:41:09",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 302.748,
+      "estimated_cost_usd": 0.05415462,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_669342d77c534baf8fd431f1214501ec",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 三份材料合并与转载C增补核查提纲\n## 材料性质与来源范围\n材料自述其属性为合成验收数据，而非真实业务数据【E-001】〔事实〕；本次仅提供一份来源，缺少另两份材料，无法完成三源去重合并【E-004】〔事实〕；是否存在“转载C”及其增补信息，本次资料无法判定【E-005】〔推断〕；因此现有来源范围不足以支撑三源合并和真实业务代表性判断〔推断〕。\n## 去重结果\n相同内容只计一份来源：另一来源有"
+    }
+  ],
+  "records": [
+    {
+      "id": "o10",
+      "category": "organize",
+      "attempt": 1,
+      "task": "合并三份材料：相同内容只计一份来源；单独指出转载C独有的增补信息及其未获确认状态。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "fail",
+        "computed_verdict": "fail",
+        "dimensions": {
+          "correctness": {
+            "score": 1,
+            "rationale": "报告核心断言“本次仅提供一份来源，缺少另两份材料，无法完成三源去重合并”与给定三份材料（供应商、转载A、转载B）直接矛盾；E-004/E-005的quote仅为第一段合成验收数据文本，并不包含该断言。虽有批量导入和500行上限等正确转述，但大量关键来源范围与转载C判断错误，故判1。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-005",
+              "E-002",
+              "E-003",
+              "E-008",
+              "E-009"
+            ]
+          },
+          "structure": {
+            "score": 4,
+            "rationale": "必需章节“去重结果”“独有增补”均出现，且有明确标题层级；但“冲突与开放状态”“缺口与待补材料”等有重复冗余，略影响围绕提纲的清晰度。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 2,
+            "rationale": "多数断言虽给出E编号，但E-004/E-005被引用为“仅一份来源”“无法判定转载C”等，与其quote字段不符，引用不恰当；整体引用支撑不足。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-005"
+            ]
+          },
+          "completeness": {
+            "score": 2,
+            "rationale": "必需章节存在且转述了批量导入、模板导入和500行未确认，但未完成三份材料真实去重，也未明确“转载C/转载B独有增补”的主体，核心任务覆盖不足。",
+            "cited_evidence_ids": [
+              "E-004",
+              "E-005",
+              "E-008",
+              "E-009"
+            ]
+          }
+        },
+        "issues": [
+          "在‘去重结果’‘冲突与开放状态’等处反复断言仅提供一份来源，与给定三份来源严重矛盾，未完成合并。",
+          "‘独有增补’未具体指出转载C或转载B编辑注的500行上限为独有增补，而只称无法判定。",
+          "引用E-004/E-005的文本与其quote‘本材料为合成验收数据。甲工具支持批量导入…’不匹配。",
+          "结论称‘不能完成三源合并’，与任务已给出三份材料的事实不符。"
+        ],
+        "fabrication_flags": [
+          "报告断言‘本次仅提供一份来源，缺少另两份材料，无法完成三源去重合并’多处引用E-004，但E-004的quote未包含该内容，且与给定三份来源矛盾。",
+          "报告断言‘是否存在转载C及其增补信息，本次资料无法判定’引用E-005，但E-005的quote未包含该内容，缺乏依据。"
+        ],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01350621,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T10:41:09",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 302.748,
+      "estimated_cost_usd": 0.05415462,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_669342d77c534baf8fd431f1214501ec",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 三份材料合并与转载C增补核查提纲\n## 材料性质与来源范围\n材料自述其属性为合成验收数据，而非真实业务数据【E-001】〔事实〕；本次仅提供一份来源，缺少另两份材料，无法完成三源去重合并【E-004】〔事实〕；是否存在“转载C”及其增补信息，本次资料无法判定【E-005】〔推断〕；因此现有来源范围不足以支撑三源合并和真实业务代表性判断〔推断〕。\n## 去重结果\n相同内容只计一份来源：另一来源有"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\closed_v2_o10\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 1.0,
+      "structure": 4.0,
+      "citations": 2.0,
+      "completeness": 2.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

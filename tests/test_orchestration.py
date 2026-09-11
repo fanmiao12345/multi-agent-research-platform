@@ -37,7 +37,7 @@ class RecordingWorker:
 
 # ---------- 74 Role Registry ----------
 def test_profiles_registry():
-    assert set(PROFILES) == {"researcher", "organizer", "writer", "reviewer"}
+    assert set(PROFILES) == {"researcher", "organizer", "writer", "reviewer", "editor"}
     assert "研究员" in get_profile("researcher").prompt
     assert "web_search" in get_profile("researcher").tools
 

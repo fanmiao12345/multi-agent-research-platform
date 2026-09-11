@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "de4bdb51bde7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-10T15:00:47",
+    "scope": "business_acceptance_pending_human_scoring",
+    "human_confirm": {
+      "applied": 1,
+      "accept_human": 0,
+      "graded_human": 1,
+      "note": "已人工确认的分数可以用于业务通过率计算（human_confirmed=true）"
+    }
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 244.52,
+  "results": [
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 1,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实#1、#2分别引用E-013、E-014，未出现禁止项；但报告将E-008、E-015、E-007、E-016等tag=I或tag=U的推断性结论标为〔事实〕，并将方案甲报价的“页面未说明数据保存地区/删除周期”与方案乙报价的“供应商称本地存储”并列推断为“披露不一致/冲突”，混淆不同方案信息，属部分错误与过度引申。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-014",
+              "E-005",
+              "E-006",
+              "E-008",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "报告包含必需章节“已知承诺”“证据缺口”“批准条件”，并设结论、商务功能、安全合规、冲突、后续核验等章节，层次清楚，围绕任务目的展开。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-014",
+              "E-016"
+            ]
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "引用均可定位且多数恰当，但部分引用的证据条目为推断或未核验（如E-008、E-015、E-016），且被直接标为事实，引用支撑强度有所高估。",
+            "cited_evidence_ids": [
+              "E-008",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求：判断不能据现有资料批准采购并处理内部敏感资料，列出关键事实与批准前缺失证据，必需章节齐全，并如实声明合成数据来源限制。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-009",
+              "E-013",
+              "E-014",
+              "E-016"
+            ]
+          }
+        },
+        "issues": [
+          "报告多处将推断性结论E-008、E-015、E-007、E-016标为〔事实〕；位置：报告结论与批准判断、敏感资料处理证据缺口、证据缺口、批准条件、资料真实性与来源限制。",
+          "报告混淆方案甲与方案乙信息，将方案甲报价“页面未说明数据保存地区/删除周期”与方案乙报价“供应商称数据存储在本地地区”并列并称“披露不一致/冲突”；位置：已知承诺、安全与合规透明度、冲突与未决事项。",
+          "引用E-016的原文不直接支持“合规认证证据也不在现有资料中”，该句为缺口推断性陈述却标为〔事实〕；位置：安全与合规透明度。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.015895259999999998,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:00:47",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 242.92,
+      "estimated_cost_usd": 0.03672609,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_92a09fad3548423ebcc4f4574bf5d156",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 41,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购与内部敏感资料处理尽调报告\n## 报告结论与批准判断\n现有资料不足以批准采购并处理内部敏感资料【[E-008]】【[E-015]】〔事实〕。本材料为合成验收数据【[E-001]】【[E-009]】〔事实〕。因此，不能据现有资料批准采购与内部敏感资料处理；该结论仅基于合成材料，不能用于真实决策〔推断〕。\n## 采购方案商务与功能\n方案甲每账号每月20元【[E-002]】〔事实〕；可按月支付，"
+    }
+  ],
+  "records": [
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 1,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实#1、#2分别引用E-013、E-014，未出现禁止项；但报告将E-008、E-015、E-007、E-016等tag=I或tag=U的推断性结论标为〔事实〕，并将方案甲报价的“页面未说明数据保存地区/删除周期”与方案乙报价的“供应商称本地存储”并列推断为“披露不一致/冲突”，混淆不同方案信息，属部分错误与过度引申。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-014",
+              "E-005",
+              "E-006",
+              "E-008",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "报告包含必需章节“已知承诺”“证据缺口”“批准条件”，并设结论、商务功能、安全合规、冲突、后续核验等章节，层次清楚，围绕任务目的展开。",
+            "cited_evidence_ids": [
+              "E-013",
+              "E-014",
+              "E-016"
+            ]
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "引用均可定位且多数恰当，但部分引用的证据条目为推断或未核验（如E-008、E-015、E-016），且被直接标为事实，引用支撑强度有所高估。",
+            "cited_evidence_ids": [
+              "E-008",
+              "E-015",
+              "E-016"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求：判断不能据现有资料批准采购并处理内部敏感资料，列出关键事实与批准前缺失证据，必需章节齐全，并如实声明合成数据来源限制。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-009",
+              "E-013",
+              "E-014",
+              "E-016"
+            ]
+          }
+        },
+        "issues": [
+          "报告多处将推断性结论E-008、E-015、E-007、E-016标为〔事实〕；位置：报告结论与批准判断、敏感资料处理证据缺口、证据缺口、批准条件、资料真实性与来源限制。",
+          "报告混淆方案甲与方案乙信息，将方案甲报价“页面未说明数据保存地区/删除周期”与方案乙报价“供应商称数据存储在本地地区”并列并称“披露不一致/冲突”；位置：已知承诺、安全与合规透明度、冲突与未决事项。",
+          "引用E-016的原文不直接支持“合规认证证据也不在现有资料中”，该句为缺口推断性陈述却标为〔事实〕；位置：安全与合规透明度。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.015895259999999998,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:00:47",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "draft"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 242.92,
+      "estimated_cost_usd": 0.03672609,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_92a09fad3548423ebcc4f4574bf5d156",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 2/2",
+      "machine_checks": {
+        "citation_tokens": 41,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 2,
+        "fact_hits": 2
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购与内部敏感资料处理尽调报告\n## 报告结论与批准判断\n现有资料不足以批准采购并处理内部敏感资料【[E-008]】【[E-015]】〔事实〕。本材料为合成验收数据【[E-001]】【[E-009]】〔事实〕。因此，不能据现有资料批准采购与内部敏感资料处理；该结论仅基于合成材料，不能用于真实决策〔推断〕。\n## 采购方案商务与功能\n方案甲每账号每月20元【[E-002]】〔事实〕；可按月支付，",
+      "human": {
+        "dimensions": {
+          "correctness": 3,
+          "structure": 4,
+          "citations": 4,
+          "completeness": 4
+        },
+        "revised_minutes": 12,
+        "human_verdict": "draft",
+        "confirmed_at": "2026-09-11T10:22:28",
+        "note": "人工评分（覆盖/确认 Agent 初步评分）"
+      }
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\gate_real_r03\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 3.0,
+      "structure": 5.0,
+      "citations": 4.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

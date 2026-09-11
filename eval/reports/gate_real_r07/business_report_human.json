@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 1,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "de4bdb51bde7"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-10T15:15:33",
+    "scope": "business_acceptance_pending_human_scoring",
+    "human_confirm": {
+      "applied": 1,
+      "accept_human": 1,
+      "graded_human": 1,
+      "note": "已人工确认的分数可以用于业务通过率计算（human_confirmed=true）"
+    }
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 132.09,
+  "results": [
+    {
+      "id": "r07",
+      "category": "research",
+      "attempt": 1,
+      "task": "查询截至2026年9月7日新增的独立研究并给出最新结论。本例搜索服务不可用，只提供一份旧摘要。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告与给定来源一致：仅将旧摘要描述为合成验收数据，明确无法给出截至2026-09-07的新增研究结论，关键事实‘为期4周’准确引用E-002；未声称已检索最新文献或编造新增论文标题/链接。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节‘无法完成的部分’‘已有证据’‘后续所需’，另有‘限制与推断’但不影响结构，段落围绕核查目的展开。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用均能在证据列表中找到，E-001至E-007引用位置与对应断言相符，未发现不可定位或编造引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "任务因搜索不可用而预期无法完成，报告如实声明无法给出新增研究结论，覆盖所需章节、关键事实及禁止项要求，并列出后续所需证据。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00594181,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:15:33",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 130.57,
+      "estimated_cost_usd": 0.020751360000000003,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_af049b26c311494abee898ca90bba1e9",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 1/1",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 1,
+        "fact_hits": 1
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 截至2026年9月7日远程办公新增独立研究结论核查提纲\n\n## 无法完成的部分\n\n本次任务的检索服务不可用，因此无法给出截至2026年9月7日新增的独立研究结论〔事实〕【E-001】【E-007】。现有材料为合成验收数据，属于旧摘要性质，其内容不足以支持“截至2026年9月7日最新结论”的判断〔事实〕【E-001】【E-007】。由此，“截至该日期有哪些新增独立研究”这一问题仍无答案：缺少该日"
+    }
+  ],
+  "records": [
+    {
+      "id": "r07",
+      "category": "research",
+      "attempt": 1,
+      "task": "查询截至2026年9月7日新增的独立研究并给出最新结论。本例搜索服务不可用，只提供一份旧摘要。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": true,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "报告与给定来源一致：仅将旧摘要描述为合成验收数据，明确无法给出截至2026-09-07的新增研究结论，关键事实‘为期4周’准确引用E-002；未声称已检索最新文献或编造新增论文标题/链接。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节‘无法完成的部分’‘已有证据’‘后续所需’，另有‘限制与推断’但不影响结构，段落围绕核查目的展开。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用均能在证据列表中找到，E-001至E-007引用位置与对应断言相符，未发现不可定位或编造引用。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "任务因搜索不可用而预期无法完成，报告如实声明无法给出新增研究结论，覆盖所需章节、关键事实及禁止项要求，并列出后续所需证据。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.00594181,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-10T15:15:33",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        },
+        "human_verdict": "accept"
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 130.57,
+      "estimated_cost_usd": 0.020751360000000003,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_af049b26c311494abee898ca90bba1e9",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 1/1",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 2,
+        "forbidden_hits": 0,
+        "fact_total": 1,
+        "fact_hits": 1
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 截至2026年9月7日远程办公新增独立研究结论核查提纲\n\n## 无法完成的部分\n\n本次任务的检索服务不可用，因此无法给出截至2026年9月7日新增的独立研究结论〔事实〕【E-001】【E-007】。现有材料为合成验收数据，属于旧摘要性质，其内容不足以支持“截至2026年9月7日最新结论”的判断〔事实〕【E-001】【E-007】。由此，“截至该日期有哪些新增独立研究”这一问题仍无答案：缺少该日",
+      "human": {
+        "dimensions": {
+          "correctness": 5,
+          "structure": 5,
+          "citations": 5,
+          "completeness": 5
+        },
+        "revised_minutes": 0,
+        "human_verdict": "accept",
+        "confirmed_at": "2026-09-11T10:22:29",
+        "note": "人工评分（覆盖/确认 Agent 初步评分）"
+      }
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\gate_real_r07\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

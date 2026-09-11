@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "62cc7f507d32"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-11T11:08:43",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 229.38,
+  "results": [
+    {
+      "id": "r13",
+      "category": "research",
+      "attempt": 1,
+      "task": "综述该研究关于绿茶与心血管发病率的关系：区分关联与因果，写明研究的自我选择偏差局限。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "正文准确表述观察性低20%关联、自我选择偏差及不能确立因果关系，未出现禁止的因果宣称；关键事实与E-003、E-004、E-005、E-006、E-007一致。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节‘研究发现’‘证据强度’‘局限’齐全，另有材料性质与研究设计、研究缺口等补充小节，段落紧扣标题。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "核心事实均有可定位证据编号且引用基本恰当；研究缺口部分的若干建议性断言未附证据编号，导致引用完整性略不足。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求和禁止项规避：区分关联与因果、写明自我选择偏差局限，并完成三大必需章节；对未知信息以研究缺口声明。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [
+          "研究缺口部分‘需补充真实人群原始数据/多变量模型/RCT…’等建议性断言未标注证据编号。",
+          "正文将E-007推断性证据项标为〔事实〕，建议改为推断或注明转述依据。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01080066,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:08:42",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 227.883,
+      "estimated_cost_usd": 0.03853781,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_677d801c0f8c41ea903aa55dac5c655f",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 绿茶与心血管发病率关系综述：关联、因果与局限\n\n## 材料性质与研究设计\n该材料为合成验收数据，并非真实研究结果〔事实〕【E-001】。所涉研究设计被描述为观察性研究〔事实〕【E-002】。因此，证据边界限于合成材料中的观察性描述，不能直接外推至真实人群〔推断〕【E-001】【E-002】。\n\n## 研究发现\n长期饮用绿茶人群的心血管发病率低20%〔事实〕【E-003】。这一结果提示绿茶饮用与"
+    }
+  ],
+  "records": [
+    {
+      "id": "r13",
+      "category": "research",
+      "attempt": 1,
+      "task": "综述该研究关于绿茶与心血管发病率的关系：区分关联与因果，写明研究的自我选择偏差局限。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "正文准确表述观察性低20%关联、自我选择偏差及不能确立因果关系，未出现禁止的因果宣称；关键事实与E-003、E-004、E-005、E-006、E-007一致。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "必需章节‘研究发现’‘证据强度’‘局限’齐全，另有材料性质与研究设计、研究缺口等补充小节，段落紧扣标题。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 4,
+            "rationale": "核心事实均有可定位证据编号且引用基本恰当；研究缺口部分的若干建议性断言未附证据编号，导致引用完整性略不足。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求和禁止项规避：区分关联与因果、写明自我选择偏差局限，并完成三大必需章节；对未知信息以研究缺口声明。",
+            "cited_evidence_ids": [
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007"
+            ]
+          }
+        },
+        "issues": [
+          "研究缺口部分‘需补充真实人群原始数据/多变量模型/RCT…’等建议性断言未标注证据编号。",
+          "正文将E-007推断性证据项标为〔事实〕，建议改为推断或注明转述依据。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.01080066,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:08:42",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 227.883,
+      "estimated_cost_usd": 0.03853781,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_677d801c0f8c41ea903aa55dac5c655f",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 0,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 绿茶与心血管发病率关系综述：关联、因果与局限\n\n## 材料性质与研究设计\n该材料为合成验收数据，并非真实研究结果〔事实〕【E-001】。所涉研究设计被描述为观察性研究〔事实〕【E-002】。因此，证据边界限于合成材料中的观察性描述，不能直接外推至真实人群〔推断〕【E-001】【E-002】。\n\n## 研究发现\n长期饮用绿茶人群的心血管发病率低20%〔事实〕【E-003】。这一结果提示绿茶饮用与"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\closed_v2_r13\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 4.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

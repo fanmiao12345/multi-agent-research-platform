@@ -181,7 +181,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                     llm, goal, {"source_id": record["source_id"],
                                 "title": record.get("title", ""),
                                 "display": record.get("display", record["source_id"]),
-                                "text": text})
+                                "text": text,
+                                "segments": store.segments(record["source_id"])})
                 all_issues.extend(issues)
                 for item in items:
                     sequence += 1
@@ -189,8 +190,9 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                     all_items.append(item)
             evidence_store.save_all(all_items)
             if not all_items:
-                result.draft_level = "draft"
-                result.termination_reason = "incomplete"
+                # S8 unable 机制：零可用证据是确定性"无法完成"，不写编造报告
+                result.draft_level = "unable"
+                result.termination_reason = "unable"
                 result.message = "证据提取后没有任何可定位证据，无法继续写作（详见问题记录）"
                 record_stage("evidence", "no_evidence", issues=all_issues,
                              message=result.message)
@@ -231,6 +233,7 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
 
         # ---- 提纲（S3-06）-----------------------------------------------
         boundary("outline")
+        cannot_answer = None
         if resume and _load_cp(job_dir, "outline"):
             outline_cp = _load_cp(job_dir, "outline")
             sections = [OutlineSection(**{k: s[k] for k in
@@ -239,21 +242,36 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                                            "require_fact_markers")})
                         for s in outline_cp["sections"]]
             title = outline_cp["title"]
+            cannot_answer = outline_cp.get("cannot_answer") or None
             record_stage("outline", "resumed",
                          message=f"复用提纲（{len(sections)} 个章节）")
         else:
             progress("outline", "正在生成提纲")
-            sections, title, outline_issues = run_outline_stage(
+            sections, title, outline_issues, cannot_answer = run_outline_stage(
                 llm, goal, render_material(pack), evidence_store.ids(),
                 requirements=requirements)
             artifact = artifacts.save("outline", render_outline(title, sections),
                                       producer="pipeline-outline")
             write_json(_cp_path(job_dir, "outline"),
                        {"title": title,
-                        "sections": [s.as_dict() for s in sections]})
+                        "sections": [s.as_dict() for s in sections],
+                        "cannot_answer": cannot_answer})
             record_stage("outline", "completed", [artifact["artifact_id"]],
                          issues=outline_issues,
-                         message=f"{len(sections)} 个章节")
+                         message=(f"无法完成：{cannot_answer['reason']}" if cannot_answer
+                                  else f"{len(sections)} 个章节"))
+        if cannot_answer and not sections:
+            # S8 unable 机制：证据完全无法支撑任务目标 → 主动交付"无法完成"
+            missing = "、".join(cannot_answer.get("missing") or [])
+            result.draft_level = "unable"
+            result.termination_reason = "unable"
+            result.final_text = ""
+            result.message = (f"无法完成：{cannot_answer.get('reason', '')}"
+                              + (f"；缺失信息：{missing}" if missing else "")
+                              + f"（可用证据 {len(evidence_store.ids())} 条不足以支撑"
+                                "任务目标，按任务要求不编造内容）")
+            snapshot()
+            return result
 
         # ---- 初稿 + 双层审校 + 有限修订（S3-09/10；改稿见 S5-04）------------
         boundary("draft")

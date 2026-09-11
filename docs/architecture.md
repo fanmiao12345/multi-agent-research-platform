@@ -1,5 +1,7 @@
 # 架构说明（architecture）
 
+> 更新说明（2026-09-11）：下文保留组件分层与设计背景，不能据此认为每项已接入用户主流程。完整应用接入目标见 [PROJECT_MASTER_PLAN.md](PROJECT_MASTER_PLAN.md)，状态见 [EXECUTION_STATUS.md](EXECUTION_STATUS.md)。当前只有初版 CLI fixed/fanout 编排，Web 仍直跑固定链；全部方式、根预算与原始证据交接在 D 阶段补齐，整体测试与性能优化在功能冻结后进行。
+
 ## 分层
 
 ```

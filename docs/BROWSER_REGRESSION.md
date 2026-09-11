@@ -13,7 +13,7 @@
 | 停止任务 | ㉑停止按钮 | 阶段边界收敛，产物保留 | test_workbench_s5 | 待执行 |
 | 恢复任务 | ㉑恢复按钮 | 中断任务续跑 accepted | test_workbench_s5 | 待执行 |
 | 审批 | HITL 面板 | 展示动作/参数；批准/拒绝生效 | test_workbench | 待执行 |
-| 改稿 | （会话式追问未接通） | — | — | 待 S5-04 接通后补 |
+| 改稿 | 单次改稿与追问改稿已接通（CLI --revise-job / Web revise，revises_job 谱系；HTTP 级有等价覆盖） | — | — | 浏览器人工验收随试用补 |
 | 导出 | 下载 Markdown | 附件头；内容仅任务内产物 | test_workbench_s5 | 待执行 |
 | 安全字符串 | 报告/来源渲染 | 文本不当作 HTML 执行 | test_workbench(HTML) | 待执行 |
 

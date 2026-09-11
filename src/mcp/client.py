@@ -77,16 +77,17 @@ class MCPClient:
 
 def discover_to_registry(client: MCPClient, registry: ToolRegistry,
                          security: McpSecurity | None = None) -> list[str]:
-    """发现远端工具并注册进 Harness（名字加前缀 mcp_<server>:<tool> 防冲突）。"""
+    """发现远端工具并注册进 Harness（名字加前缀 mcp_<server>:<tool> 防冲突）。
+
+    D2-04：side_effect 由安全配置决定——未知外部操作默认 True（不盲目自动重试）。
+    """
     security = security or McpSecurity()
     names = []
     for tool in client.list_tools():
         name = tool.get("name", "")
-        if security.deny_tools and name in security.deny_tools:
+        if not security.permits(name):
             continue
-        if security.allow_tools and name not in security.allow_tools:
-            continue
-        risk = (security.tool_risk or {}).get(name, RISK_MEDIUM)
+        risk = security.risk_of(name)
         registered = f"mcp:{name}"
 
         def fn(_name=name, **kwargs):   # Executor 用 spec.func(**arguments) 展开调用
@@ -99,7 +100,7 @@ def discover_to_registry(client: MCPClient, registry: ToolRegistry,
             func=fn,
             parameters=input_schema.get("parameters") or input_schema,
             risk_level=risk,
-            side_effect=False,
+            side_effect=security.side_effect_of(name),
             timeout=30.0))
         names.append(registered)
     return names

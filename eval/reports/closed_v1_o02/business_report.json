@@ -1,0 +1,291 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "62cc7f507d32"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-11T11:35:30",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 92.46,
+  "results": [
+    {
+      "id": "o02",
+      "category": "organize",
+      "attempt": 1,
+      "task": "用三点总结试点规模、问卷结果和处理时长，保留研究局限。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "三点摘要与局限均准确反映证据；未出现禁止表述，关键事实#1-#3均正确呈现；将推断与未知内容明确标注，无证据不支持的事实断言。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节“三点摘要”和“局限”，三点分别覆盖试点规模、问卷结果、处理时长，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用均可定位到证据列表，引用编号与对应事实匹配，未发现引用不可定位或编造来源。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的三点总结与保留研究局限，关键事实和已知局限均包含，未遗漏核心内容。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.006082730000000001,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:35:30",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 90.718,
+      "estimated_cost_usd": 0.014043900000000002,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_b7c0457c2a444d84b1b899ab6dd0b35a",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 星桥试点三点摘要与局限\n\n## 三点摘要\n1. 试点规模：星桥团队共40人【E-001】，观察期为2026年7月1日至7月31日【E-002】，期间所有人每周远程办公2天【E-003】。〔事实〕\n2. 问卷结果：40名参与者中32人完成问卷【E-007】，回收率为80%【E-008】；24名答卷者满意，答卷者满意率为75%【E-009】。〔事实〕未完成问卷者人数可由40减32得出为8人【E-0"
+    }
+  ],
+  "records": [
+    {
+      "id": "o02",
+      "category": "organize",
+      "attempt": 1,
+      "task": "用三点总结试点规模、问卷结果和处理时长，保留研究局限。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "accept",
+        "computed_verdict": "accept",
+        "dimensions": {
+          "correctness": {
+            "score": 5,
+            "rationale": "三点摘要与局限均准确反映证据；未出现禁止表述，关键事实#1-#3均正确呈现；将推断与未知内容明确标注，无证据不支持的事实断言。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "包含必需章节“三点摘要”和“局限”，三点分别覆盖试点规模、问卷结果、处理时长，结构清晰。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用均可定位到证据列表，引用编号与对应事实匹配，未发现引用不可定位或编造来源。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-002",
+              "E-003",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖任务要求的三点总结与保留研究局限，关键事实和已知局限均包含，未遗漏核心内容。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-004",
+              "E-005",
+              "E-006",
+              "E-007",
+              "E-008",
+              "E-009",
+              "E-010",
+              "E-011"
+            ]
+          }
+        },
+        "issues": [],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.006082730000000001,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-11T11:35:30",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 90.718,
+      "estimated_cost_usd": 0.014043900000000002,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_b7c0457c2a444d84b1b899ab6dd0b35a",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 星桥试点三点摘要与局限\n\n## 三点摘要\n1. 试点规模：星桥团队共40人【E-001】，观察期为2026年7月1日至7月31日【E-002】，期间所有人每周远程办公2天【E-003】。〔事实〕\n2. 问卷结果：40名参与者中32人完成问卷【E-007】，回收率为80%【E-008】；24名答卷者满意，答卷者满意率为75%【E-009】。〔事实〕未完成问卷者人数可由40减32得出为8人【E-0"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\closed_v1_o02\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 1,
+    "dimension_means": {
+      "correctness": 5.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

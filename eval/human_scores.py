@@ -63,9 +63,64 @@ def build_sheets(report: dict, out_dir: Path) -> list[Path]:
     return sheets
 
 
+COMBINED_COLUMNS = ["case_id", "attempt", "draft_level", "termination_reason",
+                    "machine_citation_tokens", "machine_unresolved_citations",
+                    "machine_sections", "machine_facts", "machine_forbidden_hits",
+                    "correctness", "structure", "citations", "completeness",
+                    "revised_minutes", "note"]
+
+
+def _latest_report_text(workspace: Path | None, job_id: str) -> str | None:
+    """取任务最新报告全文（report.v*，旧版永不覆盖所以取最高版）。"""
+    if not workspace or not job_id:
+        return None
+    arts = Path(workspace) / "jobs" / job_id / "artifacts"
+    versions = sorted(arts.glob("report.*.md")) if arts.is_dir() else []
+    return versions[-1].read_text(encoding="utf-8") if versions else None
+
+
+def build_combined_sheet(report_workspace_pairs, out_dir: Path) -> Path:
+    """合并总表：一例一行，人工只填一个文件；顺带导出报告全文供对照阅读。
+
+    report_workspace_pairs: [(business_report_dict, workspace_dir_or_None), ...]
+    输出：out_dir/combined_scores.csv 与 out_dir/report_texts/<id>_rep<n>.md。
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    texts_dir = out_dir / "report_texts"
+    rows = [["# " + INSTRUCTIONS],
+            ["# 只填每行的 correctness/structure/citations/completeness（1~5）与 "
+             "revised_minutes（分钟）；未评的行留空；其余列勿改。"],
+            COMBINED_COLUMNS]
+    exported = 0
+    for report, workspace in report_workspace_pairs:
+        for case in report.get("records", []):
+            checks = case.get("machine_checks", {})
+            rows.append([
+                case["id"], case.get("attempt", 1), case.get("draft_level", ""),
+                case.get("termination_reason", ""),
+                checks.get("citation_tokens", ""), checks.get("unresolved_citations", ""),
+                f"{checks.get('section_hits')}/{checks.get('required_sections')}",
+                f"{checks.get('fact_hits')}/{checks.get('fact_total')}",
+                checks.get("forbidden_claim_hits", ""),
+                "", "", "", "", "", ""])
+            text = _latest_report_text(workspace, case.get("root_job_id", ""))
+            if text:
+                texts_dir.mkdir(parents=True, exist_ok=True)
+                (texts_dir / f"{case['id']}_rep{case.get('attempt', 1)}.md").write_text(
+                    text, encoding="utf-8")
+                exported += 1
+    path = out_dir / "combined_scores.csv"
+    with path.open("w", newline="", encoding="utf-8-sig") as f:
+        csv.writer(f).writerows(rows)
+    print(f"合并总表：{path}（{len(rows) - 3} 例；报告全文导出 {exported} 份 → {texts_dir}）")
+    return path
+
+
 def ingest_sheets(report: dict, sheets_dir: Path) -> dict:
     """读取人工填写的评分表（第3列为 1~5 / 改稿分钟），合并回报告副本。
 
+    支持两种表：逐例 `*_scores.csv`（行式），或 `consolidate` 生成的合并总表
+    `combined_scores.csv`（列式，一行一例；存在时优先，其余逐例表忽略）。
     返回更新后的 report（records 增加 human 段；grader 段标记 human_confirmed=True 表示已人工复核）。
     """
     import copy
@@ -74,39 +129,11 @@ def ingest_sheets(report: dict, sheets_dir: Path) -> dict:
     by_key = {}
     for record in updated.get("records", []):
         by_key[(str(record.get("id")), int(record.get("attempt") or 1))] = record
-    applied = 0
-    for sheet in sorted(Path(sheets_dir).glob("*_scores.csv")):
-        rows = []
-        with sheet.open(encoding="utf-8-sig", newline="") as f:
-            rows = list(csv.reader(f))
-        case_id, attempt = None, 1
-        dims: dict[str, int] = {}
-        revised_minutes = None
-        for row in rows:
-            if not row:
-                continue
-            key = (row[0] or "").strip()
-            if key == "case_id" and len(row) >= 2:
-                case_id = row[1].strip()
-                if len(row) >= 4 and str(row[3]).strip().isdigit():
-                    attempt = int(row[3])
-            elif key in CRITERIA and len(row) >= 3:
-                value = str(row[2]).strip()
-                if value.isdigit():
-                    score = int(value)
-                    if 1 <= score <= 5:
-                        dims[key] = score
-                    else:
-                        raise ValueError(f"{case_id}#{attempt} 维度 {key} 分数越界：{score}")
-            elif key == "revised_minutes" and len(row) >= 3:
-                value = str(row[2]).strip()
-                if value.isdigit():
-                    revised_minutes = int(value)
-        if case_id is None or not dims:
-            continue
+
+    def apply(case_id, attempt, dims, revised_minutes):
         record = by_key.get((case_id, attempt))
-        if record is None:
-            continue
+        if record is None or not dims:
+            return False
         verdict = "accept" if all(dims[d] >= 4 for d in CRITERIA) else "draft"
         record["human"] = {
             "dimensions": dims,
@@ -117,7 +144,63 @@ def ingest_sheets(report: dict, sheets_dir: Path) -> dict:
         if isinstance(record.get("grader"), dict):
             record["grader"]["human_confirmed"] = True
             record["grader"]["human_verdict"] = verdict
-        applied += 1
+        return True
+
+    applied = 0
+    combined = Path(sheets_dir) / "combined_scores.csv"
+    if combined.exists():
+        with combined.open(encoding="utf-8-sig", newline="") as f:
+            rows = [r for r in csv.reader(f) if r and not (r[0] or "").startswith("#")]
+        header = None
+        for row in rows:
+            key = (row[0] or "").strip()
+            if key == "case_id" and header is None:
+                header = [c.strip() for c in row]
+                continue
+            if header is None or not key:
+                continue
+            item = dict(zip(header, [c.strip() for c in row]))
+            case_id, attempt = item.get("case_id", ""), 1
+            if item.get("attempt", "").isdigit():
+                attempt = int(item["attempt"])
+            dims = {}
+            for d in CRITERIA:
+                v = item.get(d, "")
+                if v.isdigit() and 1 <= int(v) <= 5:
+                    dims[d] = int(v)
+            minutes = int(item["revised_minutes"]) if item.get("revised_minutes", "").isdigit() else None
+            applied += 1 if apply(case_id, attempt, dims, minutes) else 0
+    else:
+        for sheet in sorted(Path(sheets_dir).glob("*_scores.csv")):
+            rows = []
+            with sheet.open(encoding="utf-8-sig", newline="") as f:
+                rows = list(csv.reader(f))
+            case_id, attempt = None, 1
+            dims: dict[str, int] = {}
+            revised_minutes = None
+            for row in rows:
+                if not row:
+                    continue
+                key = (row[0] or "").strip()
+                if key == "case_id" and len(row) >= 2:
+                    case_id = row[1].strip()
+                    if len(row) >= 4 and str(row[3]).strip().isdigit():
+                        attempt = int(row[3])
+                elif key in CRITERIA and len(row) >= 3:
+                    value = str(row[2]).strip()
+                    if value.isdigit():
+                        score = int(value)
+                        if 1 <= score <= 5:
+                            dims[key] = score
+                        else:
+                            raise ValueError(f"{case_id}#{attempt} 维度 {key} 分数越界：{score}")
+                elif key == "revised_minutes" and len(row) >= 3:
+                    value = str(row[2]).strip()
+                    if value.isdigit():
+                        revised_minutes = int(value)
+            if case_id is None or not dims:
+                continue
+            applied += 1 if apply(case_id, attempt, dims, revised_minutes) else 0
     updated["meta"] = dict(updated.get("meta", {}))
     updated["meta"]["human_confirm"] = {
         "applied": applied,
@@ -135,11 +218,33 @@ def main() -> None:
     gen = sub.add_parser("sheet", help="从 business_report.json 生成评分表")
     gen.add_argument("--report", required=True)
     gen.add_argument("--out", default="eval/reports/business/sheets")
+    con = sub.add_parser("consolidate", help="生成合并总表（combined_scores.csv）+ 报告全文导出")
+    con.add_argument("--report", help="单份 business_report.json")
+    con.add_argument("--batch", help="报告目录通配（每个目录含 business_report.json 与 workspace/）")
+    con.add_argument("--workspace",
+                     help="配合 --report：报告所在工作区目录（用于导出报告全文）")
+    con.add_argument("--out", required=True, help="评分工作台输出目录")
     ing = sub.add_parser("ingest", help="读取人工填写的评分表并合并（human_confirmed=true）")
-    ing.add_argument("--sheets", required=True, help="评分表目录（*_scores.csv）")
+    ing.add_argument("--sheets", required=True,
+                     help="评分表目录（含 combined_scores.csv 或 *_scores.csv）")
     ing.add_argument("--report", required=True)
     ing.add_argument("--out", required=True, help="合并后报告输出路径（json）")
     args = parser.parse_args()
+    if args.command == "consolidate":
+        pairs = []
+        if args.batch:
+            import glob as _glob
+            for d in sorted(_glob.glob(args.batch)):
+                rp = Path(d) / "business_report.json"
+                if rp.exists():
+                    pairs.append((json.loads(rp.read_text(encoding="utf-8")), Path(d) / "workspace"))
+        elif args.report:
+            pairs.append((json.loads(Path(args.report).read_text(encoding="utf-8")),
+                          Path(args.workspace) if args.workspace else None))
+        else:
+            parser.error("consolidate 需要 --report 或 --batch 之一")
+        build_combined_sheet(pairs, Path(args.out))
+        return
     report = json.loads(Path(args.report).read_text(encoding="utf-8"))
     if args.command == "sheet":
         sheets = build_sheets(report, Path(args.out))

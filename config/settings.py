@@ -38,6 +38,14 @@ def _number(key: str, default: str, convert):
         raise ValueError(f"{key} 必须是有效数字，请检查项目配置") from None
 
 
+def _parse_mcp_servers(raw: str):
+    """MCP_SERVERS（JSON 数组）解析；延迟导入避免设置层依赖 MCP 模块。"""
+    if not raw.strip():
+        return ()
+    from src.mcp.bootstrap import parse_mcp_servers
+    return parse_mcp_servers(raw)
+
+
 @dataclass(frozen=True)
 class Settings:
     """一次进程的静态配置。Runtime Context 会引用它，但不再重复造轮子。"""
@@ -58,6 +66,10 @@ class Settings:
     search_max_results: int = field(default_factory=lambda: _number("SEARCH_MAX_RESULTS", "5", int))
     # 专职评测 Agent 的独立模型（S6-05）：留空则与被评任务同模型（会标注局限）
     grader_model_name: str = field(default_factory=lambda: _env("GRADER_MODEL_NAME", ""))
+    # D2-04 MCP 配置驱动接入：MCP_SERVERS 为 JSON 数组（name/command/args/allow_tools/
+    # deny_tools/tool_risk/default_side_effect）；未配置 = 不接入任何 MCP Server
+    mcp_servers: tuple = field(default_factory=lambda: _parse_mcp_servers(
+        _env("MCP_SERVERS", "")))
 
     @property
     def is_mock(self) -> bool:

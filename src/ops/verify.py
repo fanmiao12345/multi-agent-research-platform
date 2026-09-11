@@ -36,11 +36,15 @@ def run_verify(*, python: str | None = None) -> dict:
         step("导入冒烟", False, f"{type(e).__name__}: {e}")
     # 2) 离线 CLI 样例（默认 Mock，不应失败）
     with tempfile.TemporaryDirectory() as tmp:
+        # 继承完整环境（Windows 上 asyncio 初始化需要 SYSTEMROOT，精简环境会崩），
+        # 只强制 UTF-8 输出；Mock 样例不读取密钥。
+        import os
+        env = dict(os.environ)
+        env["PYTHONIOENCODING"] = "utf-8"
         proc = subprocess.run(
             [python, "-m", "src.interfaces.cli", "计算6*7", "--workspace", tmp],
             capture_output=True, text=True, encoding="utf-8",
-            env={"PYTHONIOENCODING": "utf-8", "PATH": __import__("os").environ.get("PATH", "")},
-            timeout=60)
+            env=env, timeout=60)
         ok = proc.returncode == 0 and "42" in proc.stdout
         step("离线 CLI 样例", ok, proc.stdout.strip()[:120] if not ok else "计算6*7→42")
     # 3) 配置诊断

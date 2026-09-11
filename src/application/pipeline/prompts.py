@@ -68,14 +68,19 @@ def build_outline_messages(goal: str, material_block: str,
                            requirements_block: str = "") -> list[dict]:
     schema = ('{"title":"报告标题","sections":[{"heading":"章节标题",'
               '"purpose":"本节要回答什么","required_evidence":["E-001"],'
-              '"require_fact_markers":true}]}')
+              '"require_fact_markers":true}],'
+              '"cannot_answer":{"reason":"证据完全无法回答任务的原因",'
+              '"missing":["缺失的信息"]}}')
     hard = ("【任务硬性要求】若任务列出了必须出现的章节，提纲必须逐字包含这些章节名"
             "（可另加章节，但不能改名或省略）。" if requirements_block else "")
+    refuse = ("【无法完成出口】只有当素材包证据完全无法支撑任务目标（不是部分不足）"
+              "时，才可省略 sections 并输出 cannot_answer，reason≤80字，"
+              "missing 列出缺失信息；不得为了省事而拒绝能完成的任务。")
     return [
         _s(GOAL_RULES + " 你是提纲规划器。根据素材包设计固定顺序的报告提纲；"
            "每个章节给出必须覆盖的证据 id 与是否要求正文标注事实/推断/未知。"
            "不得使用素材包证据之外的 id。sections≤12，每节 purpose≤40字。"
-           + hard + JSON_RULE + f" 输出结构：{schema}"),
+           + hard + refuse + JSON_RULE + f" 输出结构：{schema}"),
         _u(_join_blocks(f"任务目标：{goal}", requirements_block,
                         f"素材包：\n{material_block}") + "\n\n请输出提纲 JSON。"),
     ]

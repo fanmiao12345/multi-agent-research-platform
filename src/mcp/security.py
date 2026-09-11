@@ -20,6 +20,10 @@ class McpSecurity:
     deny_tools: set = field(default_factory=set)
     tool_risk: dict = field(default_factory=dict)      # name -> LOW/MEDIUM/HIGH
     default_risk: str = RISK_MEDIUM
+    # D2-04：未知外部操作默认 side_effect=True（不盲目自动重试）；
+    # 已确认只读的工具可用 side_effect_tools 显式放开。
+    default_side_effect: bool = True
+    side_effect_tools: dict = field(default_factory=dict)   # name -> True/False
 
     def permits(self, tool_name: str) -> bool:
         if tool_name in self.deny_tools:
@@ -27,6 +31,9 @@ class McpSecurity:
         if self.allow_tools and tool_name not in self.allow_tools:
             return False
         return True
+
+    def side_effect_of(self, tool_name: str) -> bool:
+        return self.side_effect_tools.get(tool_name, self.default_side_effect)
 
     def risk_of(self, tool_name: str) -> str:
         return self.tool_risk.get(tool_name, self.default_risk)
