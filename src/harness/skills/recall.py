@@ -35,8 +35,13 @@ def score_doc(query_tokens: list[str], doc_tokens: list[str],
 
 def recall(registry, question: str, top_k: int = 5) -> list[dict]:
     """返回 [{name, score, matched}] 按分数降序（0 分不返回）。"""
-    qt = tokenize(question)
+    raw_tokens = tokenize(question)
+    qt = [token for token in raw_tokens if not token.isdigit()]
     if not qt:
+        if registry.get("quick-math") and any(ch.isdigit() for ch in question) \
+                and any(op in question for op in ("+", "-", "*", "/", "%", "**")):
+            return [{"name": "quick-math", "score": 1,
+                     "matched": ["numeric-expression"]}]
         return []
     scored = []
     for skill in registry.list():

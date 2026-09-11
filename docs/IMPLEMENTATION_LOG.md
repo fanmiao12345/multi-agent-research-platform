@@ -633,7 +633,6 @@
 - Q1-03：修复工作台内嵌 JS 换行转义；隐藏启动真实浏览器会话，完成 agent `6*7` 结果展示、真实模型研究任务（合成资料、deepseek-v4-flash、collection.v1、2 引用、accepted）、失败状态显示、刷新与服务重启历史保留、Markdown/HTML/过程记录链接。`src.ops.verify` 通过；MCP 与备份恢复测试通过。报告 eval/reports/q1_browser_install.json/.md。
 - 限制：Q1-03 是功能旅程验证，不是质量评分；Q2-01 真实 99 次批次需要预算授权与人工评分，Q4-01 连续 7 天试用无法由本轮代码替代。
 - 下一步：Q2-01；执行前确认预算和人工评分负责人。
-'';
 
 ## 2026-09-11 / Q2～Q4 用户自测工具链准备
 
@@ -641,4 +640,17 @@
 - 新增 eval/q2_summary.py、eval/q3_compare.py、eval/trial_log.py、eval/q4_signoff.py：业务/联网汇总、同条件前后对比、7 天 20 任务试用日志、最终签收草稿检查。
 - 新增 scripts/q2_real.ps1、q2_web.ps1、q2_ingest.ps1、q3_compare.ps1、q4_trial.ps1、q4_signoff.ps1 和 docs/Q2_Q4_USER_RUNBOOK.md。
 - 验证：工具结构、汇总/对比/试用状态和文档脚本存在，18 项离线工具测试通过；未执行真实收费批次、人工评分或 7 天试用。
-'
+
+## 2026-09-11 / 技能扩展：来源审计、文献综述、决策简报、数据核对、风险审查与项目复盘
+
+- 新增 skills/source-audit.md、literature-review.md、decision-brief.md、data-check.md、risk-review.md、project-retrospective.md。
+- 新增 docs/SKILL_CATALOG.md，说明适用场景、工具、权限交集和证据边界；README 增加技能目录入口。
+- 验证：SkillRegistry 热加载无校验问题；6 个新技能按预期场景召回；技能不能扩大父级权限；目录覆盖全部技能。定向测试 18 passed。
+- 限制：技能是工作方法和输出契约，不新增工具能力；真实搜索/模型仍受入口权限、预算和来源规则约束。
+
+## 2026-09-11 / 技能扩展第二批：研究设计、比较、调研、指标与工程交付
+
+- 新增 skills/research-question.md、comparison-matrix.md、survey-design.md、metric-definition.md、incident-triage.md、change-review.md、release-checklist.md、meeting-actions.md、scenario-planning.md。
+- 更新 docs/SKILL_CATALOG.md 和 README 入口；新增解析、召回、权限交集与目录覆盖测试。
+- 修正 Skill Recall 的纯数字噪声：文本技能不再把题号/数字当关键词；纯算式仍回退 quick-math。
+- 验证：技能相关测试 18 passed；全部技能可解析、全部六种核心场景可召回，权限仍只收窄不放大。
