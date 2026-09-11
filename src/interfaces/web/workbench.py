@@ -113,6 +113,8 @@ class WorkbenchState:
             state_db = StateDb(workspaces / "state.sqlite")
         self.state_db = state_db
         self.queue = JobQueue(state_db)
+        from src.harness.state.pending_inputs import PendingInputStore
+        self.pending_inputs = PendingInputStore(state_db)
         self._worker_stop = threading.Event()
         self._worker_thread: threading.Thread | None = None
 
@@ -207,9 +209,37 @@ class WorkbenchState:
 
     def start_run(self, payload: dict) -> dict:
         from src.application.request import TaskRequest
+        from src.harness.planning.understanding import (persist_input_request,
+                                                        understand_task)
         request = TaskRequest.from_payload(payload)
+        plan_only = bool(payload.get("plan_only"))
         if request.flow == "research":
-            # S5：研究写作链任务进入队列（worker 领取后执行；进度/取消/恢复可查）
+            understanding = understand_task(
+                request, network_available=bool(getattr(self.settings, "search_provider", "")))
+            if understanding.needs_input:
+                job_id = self.queue.submit(kind="research", request=payload,
+                                           stage="waiting_input")
+                job_dir = self.workspaces / "jobs" / job_id
+                persist_input_request(job_dir, understanding)
+                self.pending_inputs.create(
+                    job_id=job_id, questions=understanding.questions,
+                    target=request.task, params=payload,
+                    budget={"max_calls": request.max_calls,
+                            "max_cost": request.max_cost,
+                            "max_seconds": request.max_seconds},
+                    plan_version=1)
+                self.queue.update_progress(job_id, stage="waiting_input",
+                                           message="waiting_input")
+                return {"status": "waiting_input", "job_id": job_id,
+                        "task": request.task, "understanding": understanding.to_dict()}
+            if plan_only:
+                from src.application.orchestration import (OrchestrationScheduler,
+                                                           caps_of)
+                plan, meta = OrchestrationScheduler(None).plan(
+                    request.task, required_sections=request.required_sections,
+                    budget_caps=caps_of(request), understanding=understanding)
+                return {"status": "planned", "plan": plan.as_dict(), "meta": meta,
+                        "task": request.task}
             job_id = self.queue.submit(kind="research", request=payload,
                                        stage="queued")
             self._ensure_worker()
@@ -431,8 +461,28 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, {"evidence": items})
         if len(segments) == 2 and segments[1] == "progress":
             row = self.state.queue.get(job_dir.name) if _JOB_ID.fullmatch(job_dir.name) else None
+            pending = self.state.pending_inputs.list(job_dir.name)
             return self._send(200, {"job": row, "job_file": _load(job_dir / "job.json"),
-                                    "pipeline": _load(job_dir / "pipeline.json")})
+                                    "pipeline": _load(job_dir / "pipeline.json"),
+                                    "pending_inputs": pending})
+        if len(segments) == 2 and segments[1] == "export.html":
+            import html
+            index = _load(job_dir / "artifacts.json") or {}
+            reports = [a for a in index.get("artifacts", [])
+                       if a.get("kind") in ("report", "analysis", "collection")]
+            if not reports:
+                return self._send(404, {"error": "没有可导出的交付产物"})
+            latest = sorted(reports, key=lambda a: a.get("version") or 0)[-1]
+            try:
+                text = resolve_under(job_dir, latest["file_name"]).read_text(encoding="utf-8")
+            except Exception:
+                return self._send(404, {"error": "交付产物不可读"})
+            page = "<!doctype html><meta charset='utf-8'><title>Report</title><pre>" + html.escape(text) + "</pre>"
+            return self._send(200, page, "text/html; charset=utf-8",
+                              {"Content-Disposition": "attachment; filename=report.html"})
+        if len(segments) == 2 and segments[1] == "process":
+            return self._send(200, _load(job_dir / "orchestration.json") or
+                              _load(job_dir / "job.json") or {"note": "无过程记录"})
         if len(segments) == 4 and segments[1] == "artifacts" and segments[3] == "content":
             artifact_id = segments[2]
             if not _ITEM_ID.fullmatch(artifact_id):
@@ -558,6 +608,21 @@ class Handler(BaseHTTPRequestHandler):
             except Exception as e:  # noqa: BLE001
                 return self._send(400, {"error": f"无法启动任务，请检查输入和配置（{type(e).__name__}）"})
         parts = [p for p in url.path.split("/") if p]
+        if len(parts) == 4 and parts[:2] == ["api", "jobs"] and parts[3] == "input":
+            body = self._body()
+            answer = body.get("answer")
+            if not isinstance(answer, dict) or not answer:
+                return self._send(400, {"error": "answer 必须为非空对象"})
+            pending = self.state.pending_inputs.list(parts[2])
+            active = next((item for item in pending if item["status"] == "pending"), None)
+            if active is None:
+                return self._send(404, {"error": "没有待输入项"})
+            self.state.pending_inputs.answer(active["input_id"], answer)
+            self.state.queue.merge_request(parts[2], answer)
+            self.state.queue.update_progress(parts[2], stage="queued",
+                                             message="input answered")
+            self.state._ensure_worker()
+            return self._send(200, {"status": "queued", "job_id": parts[2]})
         if len(parts) == 4 and parts[:2] == ["api", "jobs"] and parts[3] == "cancel":
             try:
                 outcome = self.state.queue.request_cancel(parts[2])
@@ -779,9 +844,9 @@ async function showJob(id){curJobId=id;$('curjob').textContent=id;$('jobstate').
 async function pollJob(id){while(true){
  try{const d=await j('/api/jobs/'+encodeURIComponent(id)+'/progress');const row=d.job||{};const pl=(d.pipeline||{}).result;const jf=d.job_file||{};
   $('jobstate').textContent=row.status?` 状态:${row.status} 阶段:${row.stage||''} 取消请求:${row.cancel_requested?'是':'否'}`:'';
-  const stages=(pl&&pl.stages||[]).map(s=>`[${s.stage}] ${s.status}${s.message?': '+s.message:''}`).join('\n');
-  const hc=(pl&&pl.hard_checks||{});const hard=hc.required_sections_total!==undefined?`硬约束:必需章节 ${hc.required_section_hits}/${hc.required_sections_total} 禁语命中 ${hc.forbidden_hits} 关键事实 ${hc.fact_hits}/${hc.fact_total}\n`:'';
-  $('joblog').textContent=(pl?`分级:${pl.draft_level} 修订:${pl.revised_rounds||0} 引用:${pl.total_citations||0} 未解析:${pl.unresolved_citations||0}\n`:'')+hard+stages+(jf.error?`\n错误类型:${jf.error}`:'')+(jf.message?`\n${jf.message}`:'');
+  const stages=(pl&&pl.stages||[]).map(s=>`[${s.stage}] ${s.status}${s.message?': '+s.message:''}`).join('\\n');
+  const hc=(pl&&pl.hard_checks||{});const hard=hc.required_sections_total!==undefined?`硬约束:必需章节 ${hc.required_section_hits}/${hc.required_sections_total} 禁语命中 ${hc.forbidden_hits} 关键事实 ${hc.fact_hits}/${hc.fact_total}\\n`:'';
+  $('joblog').textContent=(pl?`分级:${pl.draft_level} 修订:${pl.revised_rounds||0} 引用:${pl.total_citations||0} 未解析:${pl.unresolved_citations||0}\\n`:'')+hard+stages+(jf.error?`\\n错误类型:${jf.error}`:'')+(jf.message?`\\n${jf.message}`:'');
   if(pl&&pl.draft_level){renderJobResults(id,pl);$('btnresume').disabled=true;$('btncancel').disabled=true;$('btnexport').disabled=false;return}
   const active=['running','queued','waiting_human','cancel_requested','interrupted'].includes(row.status);
   $('btncancel').disabled=!active;
@@ -791,7 +856,7 @@ async function pollJob(id){while(true){
  }catch(e){$('jobstate').textContent=e.message;await new Promise(r=>setTimeout(r,1200))}}}
 async function renderJobResults(id,pl){
  const a=await j('/api/jobs/'+encodeURIComponent(id)+'/artifacts');
- const reports=(a.artifacts||[]).filter(x=>x.kind==='report');
+ const reports=(a.artifacts||[]).filter(x=>['report','analysis','collection'].includes(x.kind));
  $('btnrevise').disabled=reports.length===0;
  const ev=((await j('/api/jobs/'+encodeURIComponent(id)+'/evidence')).evidence)||[];
  ev.forEach(x=>jobEvMap[x.evidence_id]=x);
@@ -802,7 +867,7 @@ async function renderJobResults(id,pl){
  box.append(textElement('span','   '));
  if(reports.length){const dl=textElement('a','下载最新 Markdown');
   dl.href='/api/jobs/'+encodeURIComponent(id)+'/artifacts/'+encodeURIComponent(reports[reports.length-1].artifact_id)+'/download';
-  box.append(dl)}
+  box.append(dl);const html=textElement('a',' 导出 HTML');html.href='/api/jobs/'+encodeURIComponent(id)+'/export.html';box.append(html);const proc=textElement('a',' 下载过程记录');proc.href='/api/jobs/'+encodeURIComponent(id)+'/process';box.append(proc)}
  $('reportview').replaceChildren(box);
  const el=document.createElement('div');el.append(textElement('b','证据清单（点击查看原文摘录与定位）：'));
  ev.slice(0,60).forEach(x=>{const b=textElement('button',`${x.evidence_id} ${(x.fact||'').slice(0,28)}`);
@@ -815,7 +880,7 @@ function renderReportMarkdown(md){const box=document.createElement('div');box.st
   b.addEventListener('click',()=>showEvidence(jobEvMap[key]||{evidence_id:key,quote:'该证据不在本任务证据库',fact:'?',tag:'?'}));box.append(b)}
   else box.append(textElement('span',part))});
  $('rtok').replaceChildren(box)}
-function showEvidence(x){$('docview').textContent=`${x.evidence_id||''}\n事实：${x.fact||''}\n标注：${x.tag||''}\n摘录：${x.quote||''}\n定位：${JSON.stringify(x.locator||{})}\n来源：${x.source_id||''}\n说明：${x.note||''}`}
+function showEvidence(x){$('docview').textContent=`${x.evidence_id||''}\\n事实：${x.fact||''}\\n标注：${x.tag||''}\\n摘录：${x.quote||''}\\n定位：${JSON.stringify(x.locator||{})}\\n来源：${x.source_id||''}\\n说明：${x.note||''}`}
 async function cancelJob(){if(!curJobId)return;try{const d=await j('/api/jobs/'+encodeURIComponent(curJobId)+'/cancel',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});$('jobstate').textContent=d.status==='stopped'?'已停止（排队中直接取消）':'已请求停止（分阶段收敛中）'}catch(e){$('jobstate').textContent=e.message}}
 async function resumeJob(){if(!curJobId)return;try{const d=await j('/api/jobs/'+encodeURIComponent(curJobId)+'/resume',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});$('jobstate').textContent='恢复已排队：'+d.status;await pollJob(curJobId)}catch(e){$('jobstate').textContent=e.message}}
 async function reviseJob(){if(!curJobId)return;const instruction=$('revinstr').value.trim();

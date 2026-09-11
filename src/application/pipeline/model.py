@@ -176,6 +176,7 @@ class PipelineResult:
     draft_level: str = "failed"      # accepted | draft | failed | unable（S8：证据完全无法支撑任务时主动声明）
     termination_reason: str = ""     # success | incomplete | unable | budget_exceeded | error
     final_artifact_id: str = ""
+    delivery_kind: str = "report"
     stages: list[dict] = field(default_factory=list)
     issue_counts: dict = field(default_factory=dict)
     revised_rounds: int = 0
@@ -190,6 +191,7 @@ class PipelineResult:
         return {"draft_level": self.draft_level,
                 "termination_reason": self.termination_reason,
                 "final_artifact_id": self.final_artifact_id,
+                "delivery_kind": self.delivery_kind,
                 "stages": self.stages, "issue_counts": self.issue_counts,
                 "revised_rounds": self.revised_rounds,
                 "total_citations": self.total_citations,

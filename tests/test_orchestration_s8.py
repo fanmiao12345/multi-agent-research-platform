@@ -49,7 +49,7 @@ def test_contract_accepts_valid_plan_and_rejects_illegal_ones():
     assert plan.budget.max_cost_usd == 0.20
 
     bad_cases = [
-        ("mode 必须取已开放模式", _fanout_plan_dict(mode="debate")),
+        ("mode 必须取已开放模式", _fanout_plan_dict(mode="unknown")),
         ("role 必须取", _fanout_plan_dict() | {"subtasks": [
             {"id": "T1", "role": "wizard", "description": "x"}]}),
         ("依赖未定义", _fanout_plan_dict() | {"subtasks": [
@@ -69,7 +69,7 @@ def test_contract_accepts_valid_plan_and_rejects_illegal_ones():
 
 def test_first_version_mode_catalog_is_filtered():
     with pytest.raises(PlanValidationError):
-        from_plan_dict(_fanout_plan_dict(mode="debate"))  # 未开放模式必须被过滤
+        from_plan_dict(_fanout_plan_dict(mode="unknown"))  # 未注册模式必须被过滤
 
 
 # ---- 预算分配（S8-03 公式）---------------------------------------------------

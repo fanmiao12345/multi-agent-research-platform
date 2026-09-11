@@ -35,6 +35,11 @@ from src.application.orchestration.refs import (  # noqa: F401
     StructuredSubResult,
     collect_child_refs,
 )
+from src.application.orchestration.registry import (  # noqa: F401
+    MODE_HANDLERS,
+    MODE_LABELS,
+    handler_name,
+)
 from src.application.orchestration.contracts import (  # noqa: F401
     DELIVERY_LABELS,
     DELIVERY_LEVELS,

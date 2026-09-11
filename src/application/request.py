@@ -27,6 +27,8 @@ class TaskRequest:
     # 执行流程（B5）：agent=通用 Agent 循环（默认）；research=资料整理/研究写作链
     # （证据→素材→提纲→初稿→审校→有限修订，需要可用资料）。
     flow: str = "agent"
+    # D7-02：交付类型；auto 根据任务推断 collection/analysis/report。
+    delivery_kind: str = "auto"
     # 执行方式（D1-01 统一请求）：auto=调度智能体读题选型（仅 research 流生效）；
     # 也可显式指定 fixed/fanout 等；agent 流忽略该字段。进入请求快照，CLI/Web/评测同源。
     orchestration: str = "auto"
@@ -85,6 +87,8 @@ class TaskRequest:
             raise ValueError("allow_network必须为布尔值")
         if self.flow not in ("agent", "research"):
             raise ValueError("flow必须为agent或research")
+        if self.delivery_kind not in ("auto", "collection", "analysis", "report"):
+            raise ValueError("delivery_kind必须为auto/collection/analysis/report")
         if self.orchestration not in ("auto", "fixed", "single", "manager_worker",
                                       "fanout", "dynamic_team", "debate"):
             raise ValueError("orchestration必须为auto/fixed/single/manager_worker/"

@@ -56,11 +56,13 @@ def caps_of(request: TaskRequest) -> Budget:
 class OrchestrationExecutor:
     """按方案派工；app_factory 可注入以便离线测试（默认为研究写作链应用）。"""
 
-    def __init__(self, *, workspace_root, settings=None, llm=None, app_factory=None):
+    def __init__(self, *, workspace_root, settings=None, llm=None, app_factory=None,
+                 state_queue=None):
         self.workspace_root = workspace_root
         self.settings = settings
         self.llm = llm
         self._app_factory = app_factory or self._default_app_factory
+        self.state_queue = state_queue
 
     # ---- 应用装配 -----------------------------------------------------------
     @staticmethod
@@ -133,7 +135,8 @@ class OrchestrationExecutor:
     def execute_plan(self, request: TaskRequest, plan: ExecutionPlan, *,
                      budget_caps: Budget | None = None,
                      plan_meta: dict | None = None,
-                     root_job_id: str | None = None) -> dict:
+                     root_job_id: str | None = None,
+                     should_stop=None) -> dict:
         """执行方案，返回研究过程记录（方案、派工、花费、失败与降级，全部落盘可查）。
 
         D1-02：root_job_id 应由入口在**调度前**预留（见 reserve_root_job）并传入；
@@ -143,6 +146,12 @@ class OrchestrationExecutor:
         """
         if root_job_id is None:
             root_job_id = "job_" + uuid.uuid4().hex
+        if should_stop is None and self.state_queue is not None:
+            def should_stop():
+                row = self.state_queue.get(root_job_id) or {}
+                return bool(row.get("cancel_requested"))
+        self._should_stop = should_stop or (lambda: False)
+        self._cancelled = False
         caps = budget_caps if budget_caps is not None else caps_of(request)
         record: dict = {
             "schema_version": 2, "root_job_id": root_job_id,
@@ -155,19 +164,22 @@ class OrchestrationExecutor:
             "execution_note": "受根账本锁限制，本轮子任务按序执行（并行开放见 D2-02）",
         }
         self._write_root_record(record)
-        if plan.mode == "single":
-            self._execute_single(request, plan, caps=caps, record=record)
-        elif plan.mode == "fixed":
-            self._execute_fixed(request, plan, caps=caps, record=record)
-        elif plan.mode == "fanout":
-            self._execute_fanout(request, plan, caps=caps, record=record)
-        elif plan.mode == "manager_worker":
-            self._execute_fanout(request, plan, caps=caps, record=record)
-        elif plan.mode == "dynamic_team":
-            self._execute_dynamic_team(request, plan, caps=caps, record=record)
-        else:
-            raise PlanValidationError(
-                f"执行器尚未支持模式 {plan.mode!r}（当前开放 single/fixed/manager_worker/fanout）")
+        if self.state_queue is not None:
+            try:
+                self.state_queue.submit(
+                    job_id=root_job_id, kind="research",
+                    request=request.snapshot(), stage="orchestration", plan_version=1)
+            except Exception:
+                if self.state_queue.get(root_job_id) is None:
+                    raise
+        from src.application.orchestration.registry import handler_name
+        handler = handler_name(plan.mode)
+        if not handler:
+            raise PlanValidationError(f"执行器尚未注册模式 {plan.mode!r}")
+        getattr(self, handler)(request, plan, caps=caps, record=record)
+        if self._cancelled:
+            record["draft_level"] = record.get("draft_level") or "draft"
+            record["termination_reason"] = "cancelled"
         record["status"] = "finished"
         from src.application.orchestration.contracts import unified_record
         record["unified"] = unified_record(
@@ -179,6 +191,13 @@ class OrchestrationExecutor:
 
     # ---- 根任务记录（D1-02）-------------------------------------------------
     def _write_root_record(self, record: dict) -> None:
+        if self.state_queue is not None:
+            try:
+                self.state_queue.update_progress(
+                    record["root_job_id"], stage=record.get("status", ""),
+                    message=record.get("message", ""))
+            except LookupError:
+                pass
         if not self.workspace_root:
             return
         job_dir = Path(self.workspace_root) / "jobs" / record["root_job_id"]
@@ -191,12 +210,19 @@ class OrchestrationExecutor:
         if not job_json.exists():
             return
         payload = json.loads(job_json.read_text(encoding="utf-8"))
+        from src.application.orchestration.refs import build_root_lineage
+        lineage = build_root_lineage(job_dir.parent.parent, job_dir.name,
+                                     record.get("subtasks", []))
         payload["orchestration"] = {
             "plan": plan.as_dict(), "plan_meta": record.get("plan_meta") or {},
             "children": record.get("subtasks", []),
+            "citation_lineage": lineage,
             "degraded": record.get("degraded", False),
             "failures": record.get("failures", []),
             "budget_split": record.get("budget_split") or {}}
+        write_json(job_dir / "citation_lineage.json", {
+            "schema_version": 1, "root_job_id": job_dir.name,
+            "lineage": lineage})
         write_json(job_json, payload)
 
     # ---- D3-05：根任务共享来源库 -------------------------------------------
@@ -249,9 +275,29 @@ class OrchestrationExecutor:
         return store, [text for _, text in store.usable_texts()]
 
     # ---- 模式实现 -----------------------------------------------------------
+    def _register_child_state(self, child_id: str, parent_id: str,
+                              request, outcome) -> None:
+        if self.state_queue is None or not child_id:
+            return
+        stage = getattr(outcome, "termination_reason", "") or "child_running"
+        try:
+            self.state_queue.submit(
+                job_id=child_id, kind="research", request=request.snapshot(),
+                stage=stage, parent_job_id=parent_id, plan_version=1)
+        except Exception:
+            self.state_queue.update_progress(child_id, stage=stage,
+                                             message="child resumed/updated")
+
     def _root_job_dir(self, record: dict):
         return (Path(self.workspace_root) / "jobs" / record["root_job_id"]
                 if self.workspace_root else None)
+
+    def _mark_cancelled(self, record: dict, message: str = "收到取消请求，停止新分支") -> None:
+        self._cancelled = True
+        record["degraded"] = True
+        record["termination_reason"] = "cancelled"
+        record["message"] = message
+        record["failures"].append(message)
 
     def _execute_single(self, request, plan, *, caps, record) -> None:
         """D6-01：简单任务直接进入统一根任务，不走多子任务运行时。"""
@@ -273,6 +319,127 @@ class OrchestrationExecutor:
         if job_dir:
             self._adopt_root_payload(job_dir, plan, record)
 
+    def _execute_debate(self, request, plan, *, caps, record) -> None:
+        """D6-06：正反双方并发引据，再由审查/裁决调用汇总支持与争议。"""
+        from contextlib import nullcontext
+        from src.application.orchestration.plan_contract import SubTask
+        from src.harness.model_gateway import JobLedger, job_scope, model_call
+        from src.harness.storage.sources import SourceStore
+
+        guards = OrchestrationGuards()
+        for st in plan.subtasks:
+            try:
+                guards.register_subtask(st.id, st.description, depth=1)
+            except GuardViolation as e:
+                record["failures"].append(f"护栏拒绝派生：{e}")
+                record["degraded"] = True
+
+        root_ledger = None
+        if self.workspace_root:
+            root_ledger = JobLedger(
+                Path(self.workspace_root) / "jobs" / record["root_job_id"], request)
+        shared_store, shared_texts = self._prepare_shared_sources(
+            request, record, root_ledger=root_ledger)
+        reserve = final_reserve_of(caps)
+        pool_budget = compute_dispatchable_pool(caps, final_reserve=reserve)
+        shares = allocate_budget(pool_budget, 2)
+        if self._should_stop():
+            self._mark_cancelled(record)
+            return
+        sides = [
+            SubTask(id="PRO", role="researcher", description=f"支持方论据：{request.task}",
+                    parallel=True),
+            SubTask(id="CON", role="editor", description=f"反对方论据与反驳：{request.task}",
+                    parallel=True),
+        ]
+
+        def run_side(item):
+            side, share = item
+            effective = self._effective_role_config(request, side.role)
+            reservation_id = None
+            if root_ledger is not None:
+                reservation_id = root_ledger.reserve(
+                    share.max_cost_usd, purpose=f"debate:{side.id}", ref_id=side.id)
+            outcome, failure, attempts, child_id = self._run_subtask(
+                request, side, share, attempts=1,
+                parent_job_id=record["root_job_id"], shared_texts=shared_texts,
+                effective_tools=(tuple(effective["tools"])
+                                 if effective.get("role_declared") else None),
+                effective_profile=effective.get("profile_override"))
+            draft_level = getattr(outcome, "draft_level", None) if outcome else None
+            cost_usd = None
+            if child_id and self.workspace_root:
+                ledger_path = (Path(self.workspace_root) / "jobs" / child_id
+                               / "ledger.json")
+                if ledger_path.exists():
+                    try:
+                        cost_usd = json.loads(
+                            ledger_path.read_text(encoding="utf-8")).get("estimated_cost_usd")
+                    except ValueError:
+                        cost_usd = None
+            if reservation_id and root_ledger is not None:
+                root_ledger.settle(reservation_id, cost_usd, child_job_id=child_id,
+                                   role=side.role, draft_level=draft_level,
+                                   attempts=attempts)
+            if child_id and self.workspace_root and shared_store is not None:
+                SourceStore(Path(self.workspace_root) / "jobs" / child_id)\
+                    .link_source_library(shared_store, source_job_id=record["root_job_id"])
+            entry = {"id": side.id, "role": side.role, "description": side.description,
+                     "child_job_id": child_id, "parent_job_id": record["root_job_id"],
+                     "budget": share.as_dict(), "cost_usd": cost_usd,
+                     "draft_level": draft_level, "attempts": attempts,
+                     "failure": failure or "", "effective": effective, "result": None}
+            if child_id and self.workspace_root:
+                from src.application.orchestration.refs import collect_child_refs
+                sub_result = collect_child_refs(Path(self.workspace_root), child_id)
+                sub_result.role = side.role
+                sub_result.draft_level = draft_level or ""
+                text = getattr(outcome, "final_text", "") or ""
+                sub_result.summary = text[:500]
+                entry["result"] = sub_result.to_dict()
+            return entry, outcome, failure
+
+        with ThreadPoolExecutor(max_workers=2) as side_pool:
+            futures = [side_pool.submit(copy_context().run, run_side, item)
+                       for item in zip(sides, shares)]
+            side_results = [future.result() for future in futures]
+        for entry, _, _ in side_results:
+            record["subtasks"].append(entry)
+        self._write_root_record(record)
+        pro_text = getattr(side_results[0][1], "final_text", "") or ""
+        con_text = getattr(side_results[1][1], "final_text", "") or ""
+        judge_prompt = (
+            f"问题：{request.task}\n\n【支持方】\n{pro_text}\n\n"
+            f"【反对方】\n{con_text}\n\n请形成“支持点、争议点、证据缺口”清单；"
+            "不得凭角色投票宣布事实成立，信息不足就明确写出缺口。")
+        with (job_scope(root_ledger) if root_ledger is not None else nullcontext()):
+            judge = model_call(self.llm, [{"role": "user", "content": judge_prompt}],
+                               purpose="judge", role="judge")
+        verdict = (judge.content or "").strip() or "（裁决者未输出）"
+        if self._should_stop():
+            self._mark_cancelled(record)
+            return
+        record["debate"] = {"verdict": verdict, "pro": pro_text[:500],
+                            "con": con_text[:500]}
+        integrated = tuple(shared_texts) + (
+            f"[辩论支持方]\n{pro_text}",
+            f"[辩论反对方]\n{con_text}",
+            f"[辩论审查清单]\n{verdict}",
+        )
+        root = self._derive(
+            request, task=request.task, budget=reserve, texts=integrated,
+            files=(), urls=(), allow_network=False,
+            required_sections=request.required_sections)
+        with (job_scope(root_ledger) if root_ledger is not None else nullcontext()):
+            outcome = self._run_request(root, job_id=record["root_job_id"])
+        record["draft_level"] = getattr(outcome, "draft_level", None)
+        record["termination_reason"] = getattr(outcome, "termination_reason", "")
+        record["message"] = getattr(outcome, "message", "")
+        record["budget_split"] = {"root": caps.as_dict(), "final_reserve": reserve.as_dict(),
+                                  "pool": pool_budget.as_dict()}
+        job_dir = self._root_job_dir(record)
+        if job_dir:
+            self._adopt_root_payload(job_dir, plan, record)
     def _execute_dynamic_team(self, request, plan, *, caps, record) -> None:
         """D6-05：动态规划/重规划 + 有界并发；新增任务仍受根预算和派生护栏限制。"""
         from contextlib import nullcontext
@@ -360,14 +527,19 @@ class OrchestrationExecutor:
             outputs.append(text)
             return text
 
-        scope = job_scope(root_ledger) if root_ledger is not None else nullcontext()
-        with scope:
+        if self._should_stop():
+            self._mark_cancelled(record)
+            return
+        with (job_scope(root_ledger) if root_ledger is not None else nullcontext()):
             strategy = run_dynamic_team(request.task, worker, self.llm,
                                         max_parallel=max_parallel)
         record["dynamic_team"] = {
             "worker_calls": strategy.worker_calls,
             "stages": strategy.stages,
         }
+        if self._should_stop():
+            self._mark_cancelled(record)
+            return
         if not outputs:
             record["degraded"] = True
         integrated = tuple(shared_texts) + tuple(
@@ -430,6 +602,9 @@ class OrchestrationExecutor:
                 effective_profile=effective.get("profile_override"))
 
         while remaining:
+            if self._should_stop():
+                self._mark_cancelled(record)
+                return
             ready = []
             for st in remaining.values():
                 deps = list(st.depends_on)
@@ -492,6 +667,9 @@ class OrchestrationExecutor:
 
             if not prepared:
                 continue
+            if self._should_stop():
+                self._mark_cancelled(record)
+                return
 
             with ThreadPoolExecutor(max_workers=len(prepared)) as wave_pool:
                 futures = []
@@ -557,6 +735,9 @@ class OrchestrationExecutor:
                     record["degraded"] = True
                 remaining.pop(st.id, None)
 
+        if self._should_stop():
+            self._mark_cancelled(record)
+            return
         if caps.max_cost_usd <= 0:
             record["degraded"] = True
             record["failures"].append("零预算：成稿与审核运行未启动（零请求）")
@@ -606,6 +787,7 @@ class OrchestrationExecutor:
                     allowed_tools=effective_tools, profile=effective_profile)
                 outcome = self._run_request(sub, parent_job_id=parent_job_id)
                 child_id = (getattr(outcome, "root_job_id", "") or child_id)
+                self._register_child_state(child_id, parent_job_id, sub, outcome)
                 if getattr(outcome, "draft_level", None) in ("accepted", "draft", "unable"):
                     return outcome, None, attempt, child_id
                 last_error = (f"第{attempt}次子运行未达标："

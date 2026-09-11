@@ -34,12 +34,16 @@ class QueueClaim:
     cancel_requested: bool
     lease_owner: str
     message: str = ""
+    parent_job_id: str = ""
+    plan_version: int = 1
 
     def as_dict(self) -> dict:
         return {"job_id": self.job_id, "session_id": self.session_id,
                 "kind": self.kind, "stage": self.stage, "status": self.status,
                 "cancel_requested": self.cancel_requested,
-                "lease_owner": self.lease_owner, "message": self.message}
+                "lease_owner": self.lease_owner, "message": self.message,
+                "parent_job_id": self.parent_job_id,
+                "plan_version": self.plan_version}
 
 
 class JobQueue:
@@ -48,7 +52,8 @@ class JobQueue:
 
     # ---- 提交 ------------------------------------------------------------
     def submit(self, *, job_id: str | None = None, session_id: str = "",
-               kind: str = "agent", request: dict, stage: str = "") -> str:
+               kind: str = "agent", request: dict, stage: str = "",
+               parent_job_id: str = "", plan_version: int = 1) -> str:
         job_id = job_id or ("job_" + uuid.uuid4().hex)
         import json
         now = self.db.now()
@@ -56,11 +61,13 @@ class JobQueue:
             with self.db.write_tx() as conn:
                 conn.execute(
                     "INSERT INTO jobs(job_id, session_id, kind, status, stage,"
-                    " request_json, cancel_requested, lease_owner, lease_expires,"
+                    " request_json, parent_job_id, plan_version, stage_history_json,"
+                    " cancel_requested, lease_owner, lease_expires,"
                     " error, message, created_at, updated_at)"
-                    " VALUES(?,?,?,?,?,?,0,'',0,'','',?,?)",
+                    " VALUES(?,?,?,?,?,?,?,?,'[]',0,'',0,'','',?,?)",
                     (job_id, session_id, kind, states.QUEUED, stage,
-                     json.dumps(request, ensure_ascii=False), now, now))
+                     json.dumps(request, ensure_ascii=False), parent_job_id,
+                     int(plan_version), now, now))
         except Exception as e:
             from src.harness.state.db import StateDbError
             if "UNIQUE" in str(e).upper():
@@ -77,7 +84,8 @@ class JobQueue:
             with self.db.write_tx() as conn:
                 candidate = conn.execute(
                     "SELECT job_id, session_id, kind, stage, request_json,"
-                    " status, cancel_requested FROM jobs WHERE "
+                    " status, cancel_requested, parent_job_id, plan_version"
+                    " FROM jobs WHERE "
                     + _ELIGIBLE + " ORDER BY created_at, rowid LIMIT 1",
                     (states.QUEUED, states.INTERRUPTED,
                      states.RUNNING, states.WAITING_HUMAN,
@@ -100,7 +108,9 @@ class JobQueue:
                 request_json=candidate["request_json"],
                 status=states.RUNNING,
                 cancel_requested=bool(candidate["cancel_requested"]),
-                lease_owner=owner))
+                lease_owner=owner,
+                parent_job_id=candidate["parent_job_id"] or "",
+                plan_version=int(candidate["plan_version"] or 1)))
         return rows
 
     def heartbeat(self, owner: str, job_id: str, *, lease_seconds: float) -> bool:
@@ -133,6 +143,47 @@ class JobQueue:
                 " lease_expires=0, error=?, message=?, updated_at=?"
                 " WHERE job_id=? AND lease_owner=?",
                 (to, stage, error, message, now, job_id, owner))
+
+    def update_progress(self, job_id: str, *, stage: str = "",
+                       plan_version: int | None = None, message: str = "") -> None:
+        """持久化阶段/计划版本，并追加可审计的阶段历史。"""
+        import json
+        now = self.db.now()
+        with self.db.write_tx() as conn:
+            row = conn.execute(
+                "SELECT stage_history_json FROM jobs WHERE job_id=?", (job_id,)).fetchone()
+            if row is None:
+                raise LookupError(job_id)
+            try:
+                history = json.loads(row["stage_history_json"] or "[]")
+            except ValueError:
+                history = []
+            if stage:
+                history.append({"stage": stage, "at": now})
+            if plan_version is None:
+                conn.execute(
+                    "UPDATE jobs SET stage=?, stage_history_json=?, message=?, updated_at=? WHERE job_id=?",
+                    (stage or "", json.dumps(history, ensure_ascii=False), message, now, job_id))
+            else:
+                conn.execute(
+                    "UPDATE jobs SET stage=?, plan_version=?, stage_history_json=?, message=?, updated_at=? WHERE job_id=?",
+                    (stage or "", int(plan_version), json.dumps(history, ensure_ascii=False), message, now, job_id))
+
+    def merge_request(self, job_id: str, patch: dict) -> None:
+        import json
+        with self.db.write_tx() as conn:
+            row = conn.execute(
+                "SELECT request_json FROM jobs WHERE job_id=?", (job_id,)).fetchone()
+            if row is None:
+                raise LookupError(job_id)
+            try:
+                payload = json.loads(row["request_json"] or "{}")
+            except ValueError:
+                payload = {}
+            payload.update(patch or {})
+            conn.execute(
+                "UPDATE jobs SET request_json=?, updated_at=? WHERE job_id=?",
+                (json.dumps(payload, ensure_ascii=False), self.db.now(), job_id))
 
     # ---- 取消（S4-06 分两段） ---------------------------------------------
     def request_cancel(self, job_id: str) -> dict:

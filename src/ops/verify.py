@@ -72,7 +72,7 @@ def run_verify(*, python: str | None = None) -> dict:
 def main() -> None:
     result = run_verify()
     for check in result["checks"]:
-        print(f"[{'✓' if check['ok'] else '✗'}] {check['name']}：{check['detail']}")
+        print(f"[{'OK' if check['ok'] else 'FAIL'}] {check['name']}：{check['detail']}")
     print(json.dumps({"ok": result["ok"]}))
     raise SystemExit(0 if result["ok"] else 1)
 

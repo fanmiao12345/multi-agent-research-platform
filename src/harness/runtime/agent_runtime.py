@@ -35,6 +35,7 @@ from src.harness.usage import UsageTracker
 from src.harness.model_gateway import ACTIVE_JOB, RUN_ID, ROLE, BudgetStop
 from src.harness.skills.registry import SkillRegistry
 from src.harness.skills.router import inject, route
+from src.harness.tools.subagent import subagent_permission_scope
 
 
 @dataclass
@@ -250,15 +251,17 @@ class AgentRuntime:
             graph_config = {"recursion_limit": ctx.max_iterations * 2 + 2}
             if ctx.thread_id:
                 graph_config.update(thread_config(ctx.thread_id))
-            if streaming:
-                for chunk in app.stream(initial, config=graph_config, stream_mode="updates"):
-                    for node, update in chunk.items():
-                        result = _merge_state(result, update)
-                        if on_event:
-                            on_event({"type": "node_end", "node": node,
-                                      "state_delta": sorted(update.keys())})
-            else:
-                result = app.invoke(initial, config=graph_config)
+            with subagent_permission_scope(effective_permissions):
+                if streaming:
+                    for chunk in app.stream(initial, config=graph_config,
+                                            stream_mode="updates"):
+                        for node, update in chunk.items():
+                            result = _merge_state(result, update)
+                            if on_event:
+                                on_event({"type": "node_end", "node": node,
+                                          "state_delta": sorted(update.keys())})
+                else:
+                    result = app.invoke(initial, config=graph_config)
             final_text = result["messages"][-1].get("content") or ""
             reason = result.get("termination_reason") or termination.SUCCESS
             tracer.event("final", node="runtime", content=final_text, reason=reason)

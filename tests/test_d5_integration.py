@@ -34,10 +34,9 @@ def test_capability_catalog_filters_unimplemented_modes():
     decision = default_capability_catalog().available(
         has_sources=True, network_available=True,
         available_tools={"calculator"}, model_available=True, max_cost_usd=1.0)
-    assert decision.available == ["single", "fixed", "manager_worker", "fanout", "dynamic_team"]
+    assert decision.available == ["single", "fixed", "manager_worker", "fanout", "dynamic_team", "debate"]
     rejected = {item["mode"]: item["reason"] for item in decision.rejected}
-    assert rejected["debate"] == "尚未实现"
-    assert "debate" in rejected
+    assert decision.rejected == []
 
 
 def test_plan_contract_rejects_dependency_cycle():

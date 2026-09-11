@@ -58,12 +58,12 @@ class CapabilityCatalog:
 
 
 def default_capability_catalog() -> CapabilityCatalog:
-    """全量目录；D6 当前开放 single/fixed/manager_worker/fanout/dynamic_team。"""
+    """全量目录；D6 六种模式全部实现，是否可用由运行条件过滤。"""
     return CapabilityCatalog((
         Capability("single", "单智能体工具任务与简单资料处理", True, 5),
         Capability("fixed", "固定研究写作链，单点整理/成稿最稳", True, 10),
         Capability("manager_worker", "统筹者按依赖派工并检查成果", True, 15),
         Capability("fanout", "多个独立子题分别研究后汇总", True, 20),
         Capability("dynamic_team", "根据缺口动态调整团队", True, 50),
-        Capability("debate", "多方观点与反驳", False, 60),
+        Capability("debate", "多方观点与证据反驳", True, 60),
     ))

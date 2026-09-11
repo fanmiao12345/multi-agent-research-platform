@@ -80,7 +80,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                           on_progress=None, resume: bool = False,
                           should_stop=None, stage_hook=None,
                           initial_draft: str | None = None,
-                          hard_requirements: HardRequirements | None = None) -> PipelineResult:
+                          hard_requirements: HardRequirements | None = None,
+                          delivery_kind: str = "auto", repair_callback=None) -> PipelineResult:
     """执行整条链并返回结果；阶段快照写 pipeline.json。
 
     initial_draft：改稿模式（S5-04 单次改稿）——以给定原稿为上一稿，
@@ -94,7 +95,21 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
     stage_hook(stage, status, artifact_ids, message)：产物与检查点落盘后回调，
     供外部（SQLite job 行等）提交状态 —— 顺序保证"文件先、状态后"。
     """
-    result = PipelineResult()
+    def infer_delivery_kind() -> str:
+        if delivery_kind in ("collection", "analysis", "report"):
+            return delivery_kind
+        if hard_requirements and hard_requirements.required_sections:
+            return "report"
+        low = (goal or "").lower()
+        if any(word in low for word in ("报告", "写作", "成稿", "论文", "初稿")):
+            return "report"
+        if any(word in low for word in ("整理", "目录", "清单", "分类", "归纳")):
+            return "collection"
+        if any(word in low for word in ("分析", "研判", "评估", "比较", "结论")):
+            return "analysis"
+        return "report"
+
+    result = PipelineResult(delivery_kind=infer_delivery_kind())
     requirements = hard_requirements if (hard_requirements and not hard_requirements.is_empty) \
         else None
     requirements_block = requirements.prompt_block() if requirements else ""
@@ -230,6 +245,113 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                                  f"{len(pack.conflicts)} 个开放冲突，"
                                  f"{len(pack.gaps)} 个缺口")
             pack_artifact = artifact
+
+        # ---- D7-03：一次有界补做（明确缺口 -> 新来源 -> 更新素材）---------
+        repair_result = None
+        if pack.gaps and repair_callback is not None:
+            boundary("repair")
+            try:
+                repaired = repair_callback([dict(g) for g in pack.gaps])
+                if isinstance(repaired, str):
+                    repaired = [repaired]
+                repaired = [str(text).strip() for text in (repaired or []) if str(text).strip()]
+                added_evidence = []
+                for text in repaired:
+                    display_index = len(store.summary()["sources"]) + 1
+                    record = store.add_paste(text, display_index=display_index)
+                    if record.status not in ("ok", "partial"):
+                        continue
+                    items, issues = extract_source_evidence(
+                        llm, goal, {"source_id": record.source_id,
+                                    "title": record.title, "display": record.display,
+                                    "text": store.full_text(record.source_id) or "",
+                                    "segments": store.segments(record.source_id)})
+                    all_issues.extend(issues)
+                    for item in items:
+                        sequence += 1
+                        item.evidence_id = make_id(sequence)
+                        all_items.append(item)
+                        added_evidence.append(item)
+                if added_evidence:
+                    evidence_store.save_all(all_items)
+                    evidence_items = [item if isinstance(item, dict) else item.as_dict()
+                                      for item in all_items]
+                    pack, pack_issues = run_material_stage(llm, goal, evidence_items)
+                    fill_duplicates(pack, store.summary()["sources"])
+                    artifact = artifacts.save("material_pack", render_material(pack),
+                                              producer="pipeline-repair")
+                    pack_artifact = artifact
+                    repair_result = {"added_sources": len(repaired),
+                                     "added_evidence": len(added_evidence),
+                                     "remaining_gaps": len(pack.gaps)}
+                    record_stage("repair", "completed", [artifact["artifact_id"]],
+                                 issues=pack_issues, message=str(repair_result))
+                else:
+                    repair_result = {"added_sources": len(repaired), "added_evidence": 0}
+                    record_stage("repair", "no_new_evidence", issues=all_issues,
+                                 message="补做未产生可定位新证据")
+            except BudgetStop:
+                raise
+            except Exception as e:  # noqa: BLE001
+                repair_result = {"error": f"{type(e).__name__}: {e}"}
+                record_stage("repair", "failed", message=repair_result["error"])
+
+        if repair_result is not None:
+            result.message = (result.message + "；" if result.message else "") + f"补做：{repair_result}"
+
+        # ---- D7-02：短交付路径（整理/分析）-------------------------------
+        if result.delivery_kind == "collection":
+            final_text = render_material(pack)
+            artifact = artifacts.save("collection", final_text,
+                                      producer="pipeline-collection")
+            result.final_artifact_id = artifact["artifact_id"]
+            result.final_text = final_text
+            result.draft_level = "accepted" if evidence_items else "draft"
+            result.termination_reason = "success" if evidence_items else "incomplete"
+            result.message = "已按整理清单交付可追溯素材、冲突与缺口"
+            result.total_citations = len(collect_citations(final_text))
+            result.unresolved_citations = len(
+                {c for c in collect_citations(final_text)
+                 if c not in evidence_store.ids()})
+            record_stage("delivery", "completed", [artifact["artifact_id"]],
+                         message=result.message)
+            snapshot()
+            return result
+        if result.delivery_kind == "analysis":
+            evidence_ids = list(evidence_store.ids())
+            sections = [
+                OutlineSection("核心结论", purpose="直接回答任务目标",
+                               required_evidence=evidence_ids[:8],
+                               require_fact_markers=True),
+                OutlineSection("依据与限制", purpose="列出来源、推断和未知",
+                               required_evidence=evidence_ids[:8]),
+            ]
+            for name in (requirements.required_sections if requirements else ()):
+                if all(name != section.heading for section in sections):
+                    sections.append(OutlineSection(name))
+            analysis = run_draft_stage(
+                llm, goal, sections, "分析", pack.as_dict(),
+                requirements_block=requirements_block)
+            artifact = artifacts.save("analysis", analysis,
+                                      producer="pipeline-analysis")
+            program = program_checks(analysis, evidence_ids, sections,
+                                     requirements=requirements)
+            errors = [issue for issue in program if issue.severity == "error"]
+            result.final_artifact_id = artifact["artifact_id"]
+            result.final_text = analysis
+            result.hard_checks = hard_requirement_stats(analysis, requirements)
+            result.total_citations = len(collect_citations(analysis))
+            result.unresolved_citations = len(
+                {c for c in collect_citations(analysis) if c not in evidence_ids})
+            result.draft_level = "accepted" if not errors else "draft"
+            result.termination_reason = "success" if not errors else "incomplete"
+            result.message = ("分析交付完成" if not errors else
+                              "已交付待完善分析，仍有引用或覆盖问题")
+            record_stage("delivery", "completed" if not errors else "needs_revision",
+                         [artifact["artifact_id"]], issues=[i.as_dict() for i in program],
+                         message=result.message)
+            snapshot()
+            return result
 
         # ---- 提纲（S3-06）-----------------------------------------------
         boundary("outline")

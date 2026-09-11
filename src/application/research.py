@@ -74,6 +74,7 @@ def follow_up_revision(*, workspace_root, job_id: str, instruction: str,
                           max_seconds=float(snapshot.get("max_seconds") or 300),
                           max_cost=snapshot.get("max_cost"),
                           texts=tuple(texts), flow="research",
+                          delivery_kind=snapshot.get("delivery_kind") or "auto",
                           base_draft=base_draft, revises_job=job_id,
                           required_sections=tuple(snapshot.get("required_sections") or ()),
                           forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
@@ -85,6 +86,59 @@ def follow_up_revision(*, workspace_root, job_id: str, instruction: str,
     setattr(outcome, "base_kind", base_kind)
     return outcome
 
+
+def revise_with_source_update(*, workspace_root, job_id: str, source_id: str,
+                               reason: str, instruction: str,
+                               llm=None, settings=None) -> object:
+    """D7-04：撤回/更新来源后，以剩余已提交来源和最新原稿创建新版本。"""
+    if not instruction or not instruction.strip():
+        raise ValueError("来源更新后的改稿指令不能为空")
+    root = Path(workspace_root)
+    origin = root / "jobs" / job_id
+    store = SourceStore(origin)
+    withdrawal = store.withdraw(source_id, reason)
+    texts = []
+    for record, text in store.usable_texts():
+        if text:
+            texts.append(text)
+    if not texts:
+        raise SourceImportError("撤回来源后已没有可用资料，拒绝继续改稿")
+    latest = _latest_report_text(origin)
+    if latest is None:
+        raise SourceImportError(f"任务 {job_id} 没有报告产物，无法基于来源更新改稿")
+    base_draft, _ = latest
+    snapshot = {}
+    request_path = origin / "request.json"
+    if request_path.exists():
+        try:
+            snapshot = json.loads(request_path.read_text(encoding="utf-8"))
+        except Exception:
+            snapshot = {}
+    request = TaskRequest(
+        task=instruction, mode=snapshot.get("mode") or "mock",
+        profile=snapshot.get("profile"),
+        max_iterations=int(snapshot.get("max_iterations") or 8),
+        max_calls=int(snapshot.get("max_calls") or 12),
+        max_output_tokens=int(snapshot.get("max_output_tokens") or 8192),
+        max_seconds=float(snapshot.get("max_seconds") or 300),
+        max_cost=snapshot.get("max_cost"), texts=tuple(texts),
+        flow="research", delivery_kind=snapshot.get("delivery_kind") or "auto",
+        base_draft=base_draft, revises_job=job_id,
+        required_sections=tuple(snapshot.get("required_sections") or ()),
+        forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
+        key_facts=tuple(snapshot.get("key_facts") or ()))
+    app = ResearchApplication(request, settings=settings or Settings(),
+                              workspace_root=root, llm=llm)
+    outcome = app.run()
+    new_job = root / "jobs" / outcome.root_job_id
+    write_json(new_job / "source_update.json", {
+        "schema_version": 1, "origin_job_id": job_id,
+        "withdrawn": withdrawal,
+        "remaining_sources": [r.get("source_id") for r, _ in store.usable_texts()],
+        "policy": "原稿和来源版本保留；新稿仅使用未撤回来源",
+    })
+    setattr(outcome, "source_update", {"withdrawn": source_id, "reason": reason})
+    return outcome
 
 def _latest_report_text(job_dir: Path):
     """返回 (文本, artifact_id)；没有 report 产物返回 None。"""
@@ -102,7 +156,7 @@ def _latest_report_text(job_dir: Path):
     except Exception:
         return None
 def resume_research_job(*, workspace_root, job_id: str, llm=None,
-                        settings=None) -> object:
+                        settings=None, state_db=None) -> object:
     """S4-12：对已有研究任务在同一 job 目录内续跑（按检查点跳过已完成阶段）。
 
     账本续接：新开续跑账本并把原账本调用条目载入（次数/输出Token/费用延续原上限），
@@ -113,6 +167,9 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
     job_dir = root / "jobs" / job_id
     if not (job_dir / "sources.json").exists():
         raise SourceImportError(f"任务 {job_id} 没有资料或不存在，无法续跑研究写作链")
+    from src.harness.state.resume import inspect_resume_state
+    resume_state = inspect_resume_state(job_dir, state_db=state_db)
+    write_json(job_dir / "resume_notes.json", resume_state)
     request_path = job_dir / "request.json"
     if request_path.exists():
         try:
@@ -132,6 +189,7 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
                           system_extra=snapshot.get("system_extra") or "",
                           urls=tuple(snapshot.get("urls") or ()),
                           flow="research",
+                          delivery_kind=snapshot.get("delivery_kind") or "auto",
                           base_draft=snapshot.get("base_draft") or "",
                           required_sections=tuple(snapshot.get("required_sections") or ()),
                           forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
@@ -147,6 +205,7 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
         try:
             old = json.loads(old_ledger_path.read_text(encoding="utf-8"))
             ledger.calls = list(old.get("calls") or [])
+            ledger.reservations = list(old.get("reservations") or [])
             ledger.run_ids = list(old.get("run_ids") or [])
             ledger.write()
         except Exception:
@@ -157,7 +216,9 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
             result = run_research_pipeline(
                 llm=llm, job_dir=job_dir, store=SourceStore(job_dir),
                 goal=request.task, max_revision_rounds=2, resume=True,
-                hard_requirements=_hard_requirements(request))
+                hard_requirements=_hard_requirements(request),
+                delivery_kind=request.delivery_kind,
+                repair_callback=None)
         except BudgetStop:  # 防御：runner 内已收敛，这里兜底
             result = None
             raise
@@ -200,6 +261,39 @@ class ResearchApplication:
             from src.mcp.bootstrap import connect_configured_mcp_servers
             self.mcp_sessions = connect_configured_mcp_servers(
                 self.settings, self.executor.registry)
+
+    def _repair_callback(self):
+        """D7-03：允许联网且有搜索配置时，对明确缺口做一次有界补搜。"""
+        if not self.request.allow_network or not self.settings.search_provider:
+            return None
+
+        def repair(gaps):
+            from src.application.web_research import auto_search_candidates
+            from src.harness.ingest.fetcher import fetch_url
+            from src.harness.ingest.html_extract import extract_document
+            from src.harness.model_gateway import ACTIVE_JOB
+            query = "；".join((g or {}).get("question", "") for g in gaps).strip()
+            if not query:
+                return []
+            ledger = ACTIVE_JOB.get()
+            found, _ = auto_search_candidates(
+                query, provider=self.settings.search_provider,
+                run_mode=self.request.mode, llm=self.llm,
+                max_results=self.settings.search_max_results,
+                max_candidates=2,
+                on_search=(ledger.record_search if ledger else None))
+            texts = []
+            for item in found[:2]:
+                result = fetch_url(item["url"], self.url_policy)
+                if result.status != "ok":
+                    continue
+                extracted = extract_document(result.raw or b"",
+                                             result.content_type, result.charset)
+                if extracted.get("text", "").strip():
+                    texts.append(extracted["text"])
+            return texts
+
+        return repair
 
     def run(self, *, on_event=None, approval_handler=None, job_id: str | None = None,
             parent_job_id: str | None = None,
@@ -275,7 +369,9 @@ class ResearchApplication:
                         on_progress=on_progress, stage_hook=stage_hook,
                         should_stop=should_stop,
                         initial_draft=request.base_draft or None,
-                        hard_requirements=_hard_requirements(request))
+                        hard_requirements=_hard_requirements(request),
+                        delivery_kind=request.delivery_kind,
+                        repair_callback=self._repair_callback())
                     outcome = chain_result
                     outcome.root_job_id = ledger.job_id
                     outcome.run_id = None

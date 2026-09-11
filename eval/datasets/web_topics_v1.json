@@ -1,0 +1,17 @@
+{
+  "meta": {"name": "web_topics_v1", "version": 1, "created": "2026-09-11", "policy": "真实联网测试；允许公开主题，不放入个人或敏感信息。"},
+  "cases": [
+    {"id":"w01","topic":"2026年人工智能治理政策的主要争议","mode":"single"},
+    {"id":"w02","topic":"远程办公对团队协作影响的近期研究","mode":"fixed"},
+    {"id":"w03","topic":"新能源汽车电池回收行业现状与监管","mode":"manager_worker"},
+    {"id":"w04","topic":"生成式人工智能在软件测试中的应用趋势","mode":"fanout"},
+    {"id":"w05","topic":"企业数据出境合规的主要变化","mode":"dynamic_team"},
+    {"id":"w06","topic":"远程医疗推广中的支持和反对观点","mode":"debate"},
+    {"id":"w07","topic":"开源大模型生态的商业模式","mode":"fixed"},
+    {"id":"w08","topic":"城市低碳交通政策的效果与限制","mode":"manager_worker"},
+    {"id":"w09","topic":"教育领域使用生成式AI的收益与风险","mode":"fanout"},
+    {"id":"w10","topic":"机器人流程自动化与智能体的边界","mode":"dynamic_team"},
+    {"id":"w11","topic":"是否应强制公开算法推荐规则","mode":"debate"},
+    {"id":"w12","topic":"个人知识管理系统中的检索与记忆设计","mode":"single"}
+  ]
+}

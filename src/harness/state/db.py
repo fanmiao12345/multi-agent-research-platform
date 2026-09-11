@@ -18,7 +18,7 @@ import threading
 from contextlib import contextmanager
 from pathlib import Path
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 3
 
 
 class StateDbError(RuntimeError):
@@ -65,10 +65,34 @@ class StateDb:
             raise StateDbError(
                 f"状态库 meta 不可读：{self.path}（{e}），禁止猜测后写入") from e
         version = int(row[0]) if row else 0
+        if version and version < SCHEMA_VERSION:
+            self._migrate(version)
         if version > SCHEMA_VERSION:
             raise StateDbError(
                 f"状态库版本 {version} 高于本程序支持的 {SCHEMA_VERSION}："
                 "请升级程序或使用兼容版本打开，禁止降级写入")
+
+    def _migrate(self, version: int) -> None:
+        with self._lock, self.conn:
+            columns = {row[1] for row in self.conn.execute("PRAGMA table_info(jobs)")}
+            if "parent_job_id" not in columns:
+                self.conn.execute("ALTER TABLE jobs ADD COLUMN parent_job_id TEXT NOT NULL DEFAULT ''")
+            if "plan_version" not in columns:
+                self.conn.execute("ALTER TABLE jobs ADD COLUMN plan_version INTEGER NOT NULL DEFAULT 1")
+            if "stage_history_json" not in columns:
+                self.conn.execute("ALTER TABLE jobs ADD COLUMN stage_history_json TEXT NOT NULL DEFAULT '[]'")
+            self.conn.executescript("""
+            CREATE TABLE IF NOT EXISTS pending_inputs (
+                input_id TEXT PRIMARY KEY, job_id TEXT NOT NULL,
+                questions_json TEXT NOT NULL, target TEXT NOT NULL DEFAULT '',
+                params_hash TEXT NOT NULL, budget_json TEXT NOT NULL DEFAULT '{}',
+                plan_version INTEGER NOT NULL DEFAULT 1, status TEXT NOT NULL,
+                answer_json TEXT NOT NULL DEFAULT '', created_at REAL NOT NULL,
+                updated_at REAL NOT NULL, expires_at REAL NOT NULL DEFAULT 0);
+            CREATE INDEX IF NOT EXISTS idx_pending_inputs_job
+                ON pending_inputs(job_id, status);
+            """)
+            self.conn.execute("INSERT OR REPLACE INTO meta(key, value) VALUES('schema_version', ?)", (str(SCHEMA_VERSION),))
 
     def _create_schema(self) -> None:
         with self._lock, self.conn:
@@ -82,6 +106,9 @@ class StateDb:
                 status TEXT NOT NULL,                 -- S4-02 状态词
                 stage TEXT NOT NULL DEFAULT '',
                 request_json TEXT NOT NULL DEFAULT '{}',
+                parent_job_id TEXT NOT NULL DEFAULT '',
+                plan_version INTEGER NOT NULL DEFAULT 1,
+                stage_history_json TEXT NOT NULL DEFAULT '[]',
                 cancel_requested INTEGER NOT NULL DEFAULT 0,
                 lease_owner TEXT NOT NULL DEFAULT '',
                 lease_expires REAL NOT NULL DEFAULT 0,
@@ -111,6 +138,15 @@ class StateDb:
                 decided_at REAL NOT NULL DEFAULT 0);
             CREATE INDEX IF NOT EXISTS idx_approvals_job
                 ON approvals(job_id, status);
+            CREATE TABLE IF NOT EXISTS pending_inputs (
+                input_id TEXT PRIMARY KEY, job_id TEXT NOT NULL,
+                questions_json TEXT NOT NULL, target TEXT NOT NULL DEFAULT '',
+                params_hash TEXT NOT NULL, budget_json TEXT NOT NULL DEFAULT '{}',
+                plan_version INTEGER NOT NULL DEFAULT 1, status TEXT NOT NULL,
+                answer_json TEXT NOT NULL DEFAULT '', created_at REAL NOT NULL,
+                updated_at REAL NOT NULL, expires_at REAL NOT NULL DEFAULT 0);
+            CREATE INDEX IF NOT EXISTS idx_pending_inputs_job
+                ON pending_inputs(job_id, status);
             CREATE TABLE IF NOT EXISTS operations (
                 op_key TEXT PRIMARY KEY,
                 job_id TEXT NOT NULL,

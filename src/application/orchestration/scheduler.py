@@ -71,6 +71,8 @@ def heuristic_plan(topic: str, *, complexity_signals: dict | None = None,
         mode = allowed_modes[0]
     elif work_type in ("simple_tool", "simple_qa") and "single" in allowed_modes:
         mode = "single"
+    elif signals.get("debate") and "debate" in allowed_modes:
+        mode = "debate"
     elif signals.get("dynamic_team") and "dynamic_team" in allowed_modes:
         mode = "dynamic_team"
     elif sub_n > 1 and "fanout" in allowed_modes:
@@ -100,6 +102,14 @@ def heuristic_plan(topic: str, *, complexity_signals: dict | None = None,
                                  depends=[f"T{i + 1}" for i in range(sub_n)],
                                  covers=list(required_sections)))
         calls = 4 + 4 * max(1, sub_n)
+    elif mode == "debate":
+        subtasks.extend([
+            _subtask(1, "researcher", f"提出支持方论据（{topic[:40]}）", parallel=True),
+            _subtask(2, "editor", f"提出反对方论据与反驳（{topic[:40]}）", parallel=True),
+            _subtask(3, "writer", "汇总支持与争议清单并成稿", depends=["T1", "T2"],
+                     covers=list(required_sections)),
+        ])
+        calls = 10
     elif mode == "dynamic_team":
         subtasks.extend([
             _subtask(1, "researcher", f"检索初始资料（{topic[:40]}）", parallel=True),
@@ -127,6 +137,7 @@ def heuristic_plan(topic: str, *, complexity_signals: dict | None = None,
         "manager_worker": "任务存在整理到成稿的依赖链，由统筹规划顺序派工",
         "fanout": f"主题含 {sub_n} 个独立子题，可并行研究",
         "dynamic_team": "初始资料可能暴露新缺口，需要动态补派并重规划",
+        "debate": "资料可能存在冲突或高不确定性，需要正反论证与审查汇总",
     }[mode]
     data = {
         "schema_version": "1", "mode": mode, "reason": reason,
@@ -135,7 +146,7 @@ def heuristic_plan(topic: str, *, complexity_signals: dict | None = None,
                                "material_ready": bool(signals.get("material_ready", True)),
                                "controversial": bool(signals.get("controversial", False))},
         "subtasks": subtasks, "needs_reviewer": True,
-        "max_parallel": 2 if mode in ("fanout", "manager_worker", "dynamic_team") else 1,
+        "max_parallel": 2 if mode in ("fanout", "manager_worker", "dynamic_team", "debate") else 1,
         "budget": caps.as_dict(),
         "fallback_mode": "fixed" if "fixed" in allowed_modes else mode,
         "expected": {"calls": calls, "cost_usd": round(caps.max_cost_usd * 0.5, 4),

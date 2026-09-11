@@ -65,10 +65,10 @@ def test_mode_catalog_exposes_only_d6_open_modes():
     decision = default_capability_catalog().available(
         has_sources=True, network_available=True,
         available_tools=set(), model_available=True, max_cost_usd=1.0)
-    assert decision.available == ["single", "fixed", "manager_worker", "fanout", "dynamic_team"]
+    assert decision.available == ["single", "fixed", "manager_worker", "fanout", "dynamic_team", "debate"]
     rejected = {item["mode"]: item["reason"] for item in decision.rejected}
-    assert rejected["debate"] == "尚未实现"
-    assert rejected["debate"] == "尚未实现"
+    assert decision.rejected == []
+    assert decision.rejected == []
 
 def test_fanout_wave_runs_children_concurrently(tmp_path):
     import threading
@@ -134,3 +134,71 @@ def test_dynamic_team_replans_and_returns_structured_children(tmp_path):
     assert record["subtasks"] and all(item["result"] is not None
                                       for item in record["subtasks"])
     assert record["draft_level"] == "accepted"
+
+def test_debate_mode_records_two_sides_and_review(tmp_path):
+    from src.llm.mock import MockLLM
+    from tests.test_orchestration_s8 import _Outcome
+
+    root = "job_" + "f" * 32
+    def script(current):
+        if "pro side" in current.task:
+            return ("job_pro", "pro evidence", "accepted")
+        if "con side" in current.task:
+            return ("job_con", "con evidence", "accepted")
+        return (root, "debate report", "accepted")
+    def factory(workspace_root, settings, llm):
+        def build(current):
+            class App:
+                def run(self, job_id=None, parent_job_id=None):
+                    return _Outcome(*script(current))
+            return App()
+        return build
+    plan = from_plan_dict({
+        "schema_version": "1", "mode": "debate", "reason": "test",
+        "subtasks": [
+            {"id": "PRO", "role": "researcher", "description": "pro side", "depends_on": []},
+            {"id": "CON", "role": "editor", "description": "con side", "depends_on": []},
+            {"id": "W", "role": "writer", "description": "write", "depends_on": ["PRO", "CON"]},
+        ],
+        "needs_reviewer": True, "max_parallel": 2,
+        "budget": CAPS.as_dict(), "fallback_mode": "fixed", "expected": {},
+    })
+    ex = OrchestrationExecutor(workspace_root=tmp_path, llm=MockLLM(),
+                               app_factory=factory)
+    record = ex.execute_plan(_req(), plan, budget_caps=CAPS, root_job_id=root)
+    assert [item["id"] for item in record["subtasks"]] == ["PRO", "CON"]
+    assert record["debate"]["verdict"] and record["draft_level"] == "accepted"
+
+
+def test_nested_subagent_depth_dedupe_count_and_permissions():
+    from types import SimpleNamespace
+    from src.harness.tools.subagent import (build_delegate_spec,
+                                            subagent_permission_scope)
+
+    seen_permissions = []
+    holder = {}
+    class RecursiveRuntime:
+        def run_task(self, text, context=None, **kwargs):
+            seen_permissions.append(tuple(sorted(context.permissions)))
+            nested = holder["spec"].func("agent", text + " nested", 2)
+            return SimpleNamespace(final_text=nested, status="completed",
+                                   termination_reason="success")
+    spec = build_delegate_spec(RecursiveRuntime(), max_depth=2, max_total=3)
+    holder["spec"] = spec
+    with subagent_permission_scope({"calculator"}):
+        result = spec.func("agent", "root task", 3)
+    assert "[depth-limit]" in result
+    assert seen_permissions and all(p == ("calculator",) for p in seen_permissions)
+
+    class StubRuntime:
+        def run_task(self, text, context=None, **kwargs):
+            return SimpleNamespace(final_text="ok", status="completed",
+                                   termination_reason="success")
+    stub = build_delegate_spec(StubRuntime(), max_depth=2, max_total=2)
+    with subagent_permission_scope({"calculator"}):
+        assert stub.func("agent", "same")
+        duplicate = stub.func("agent", "same")
+        assert "[duplicate]" in duplicate
+        assert stub.func("agent", "other")
+        limited = stub.func("agent", "third")
+        assert "[count-limit]" in limited

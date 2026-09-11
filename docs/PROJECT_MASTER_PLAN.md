@@ -144,7 +144,7 @@ Handoff、Blackboard、Generator–Critic 是交接、共享成果和生成审�
 | ResearchApplication、TaskRequest、CLI/Web | CLI 已接统一请求与初版 auto；Web 仍走固定链，其余协作方式与嵌套派工未统一 |
 | 统一模型/调度/搜索根账本、预算预留 | 重试/在途/跨进程并发保护和完整子任务恢复仍待 D6/D8 |
 | TXT/MD/文本/URL/文本型 PDF、bing_scrape、来源版本/撤回与共享库 | site/since 入口参数与 Web 自动选型待后续；扫描 PDF 明确不支持 OCR |
-| single/fixed/manager_worker/fanout 执行器、任务理解、能力目录与版本化重规划 | fanout 真并发、dynamic_team/debate 与嵌套派工在 D6 后半完成 |
+| 六模式、引用/交付、补做/来源更新、持久状态/取消/恢复、待输入/审批与工作台 | D10 装配、冻结清点与整体验收尚未完成 |
 | 素材包、报告、审校、版本 | 子报告当原始来源的问题、跨任务证据映射、自动缺口补做需接通 |
 | AgentRuntime 已统一接入 Context/Skill/Memory/Knowledge；MCP 已进统一工具链 | 研究场景的专项技能/记忆产品化与工作台管理留待后续步骤 |
 | 队列、阶段检查点、停止、改稿与工作台 | 根/子任务恢复、持久审批、自动模式展示与统一交付仍有缺口 |

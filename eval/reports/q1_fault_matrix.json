@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-11T18:08:32",
+  "rounds_per_case": 2,
+  "rows": [
+    {
+      "name": "f01-无效配置",
+      "round": 1,
+      "node": "tests/test_ops_s6.py::test_fault_invalid_config_probe",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f01-无效配置",
+      "round": 2,
+      "node": "tests/test_ops_s6.py::test_fault_invalid_config_probe",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f02-网络故障",
+      "round": 1,
+      "node": "tests/test_fetcher.py::test_fetch_scheme_and_dns_errors",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f02-网络故障",
+      "round": 2,
+      "node": "tests/test_fetcher.py::test_fetch_scheme_and_dns_errors",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f03-空正文",
+      "round": 1,
+      "node": "tests/test_url_sources.py::test_add_url_empty_and_oversize",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f03-空正文",
+      "round": 2,
+      "node": "tests/test_url_sources.py::test_add_url_empty_and_oversize",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f04-来源冲突",
+      "round": 1,
+      "node": "tests/test_pipeline_stages.py::test_material_stage_validates_ids_and_forces_conflict_open",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f04-来源冲突",
+      "round": 2,
+      "node": "tests/test_pipeline_stages.py::test_material_stage_validates_ids_and_forces_conflict_open",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f05-预算不足",
+      "round": 1,
+      "node": "tests/test_application.py::test_application_zero_budget_never_calls_model",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": "....                                                                     [100%]\n"
+    },
+    {
+      "name": "f05-预算不足",
+      "round": 2,
+      "node": "tests/test_application.py::test_application_zero_budget_never_calls_model",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": "....                                                                     [100%]\n"
+    },
+    {
+      "name": "f06-用户取消",
+      "round": 1,
+      "node": "tests/test_d8_integration.py::test_cancel_stops_later_branches",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f06-用户取消",
+      "round": 2,
+      "node": "tests/test_d8_integration.py::test_cancel_stops_later_branches",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f07-重启恢复",
+      "round": 1,
+      "node": "tests/test_state_s4.py::test_pipeline_real_subprocess_crash_then_resume",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f07-重启恢复",
+      "round": 2,
+      "node": "tests/test_state_s4.py::test_pipeline_real_subprocess_crash_then_resume",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f08-重复提交",
+      "round": 1,
+      "node": "tests/test_state_core.py::test_queue_concurrent_claims_single_winner",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f08-重复提交",
+      "round": 2,
+      "node": "tests/test_state_core.py::test_queue_concurrent_claims_single_winner",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f09-路径越界",
+      "round": 1,
+      "node": "tests/test_artifacts.py::test_read_relative_path_within_artifacts_and_index",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f09-路径越界",
+      "round": 2,
+      "node": "tests/test_artifacts.py::test_read_relative_path_within_artifacts_and_index",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f10-指令注入",
+      "round": 1,
+      "node": "tests/test_url_imports.py::test_web_content_instructions_remain_inert",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "f10-指令注入",
+      "round": 2,
+      "node": "tests/test_url_imports.py::test_web_content_instructions_remain_inert",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m01-并发预留",
+      "round": 1,
+      "node": "tests/test_orchestration_s8.py::test_reserve_is_atomic_and_settlement_restores_capacity",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m01-并发预留",
+      "round": 2,
+      "node": "tests/test_orchestration_s8.py::test_reserve_is_atomic_and_settlement_restores_capacity",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m02-子任务取消",
+      "round": 1,
+      "node": "tests/test_d8_integration.py::test_cancel_stops_later_branches",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m02-子任务取消",
+      "round": 2,
+      "node": "tests/test_d8_integration.py::test_cancel_stops_later_branches",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m03-未知操作",
+      "round": 1,
+      "node": "tests/test_state_core.py::test_op_ledger_crash_window_marks_unknown_no_autoreplay",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m03-未知操作",
+      "round": 2,
+      "node": "tests/test_state_core.py::test_op_ledger_crash_window_marks_unknown_no_autoreplay",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m04-审批过期",
+      "round": 1,
+      "node": "tests/test_state_core.py::test_approval_expiry_and_scope",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    },
+    {
+      "name": "m04-审批过期",
+      "round": 2,
+      "node": "tests/test_state_core.py::test_approval_expiry_and_scope",
+      "passed": true,
+      "returncode": 0,
+      "output_tail": ".                                                                        [100%]\n"
+    }
+  ],
+  "passed": true,
+  "failed": [],
+  "policy": "失败不跳过、不隐藏；每类至少两轮"
+}

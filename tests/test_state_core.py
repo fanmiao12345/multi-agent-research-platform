@@ -26,7 +26,7 @@ def db(tmp_path):
 def test_db_creates_schema_and_version(db):
     version = db.conn.execute(
         "SELECT value FROM meta WHERE key='schema_version'").fetchone()
-    assert version[0] == "1"
+    assert version[0] == "3"
     tables = {r[0] for r in db.conn.execute(
         "SELECT name FROM sqlite_master WHERE type='table'")}
     assert {"jobs", "sessions", "session_jobs", "approvals", "operations"} <= tables

@@ -16,6 +16,7 @@ side_effect=True（不盲目自动重试），可用 tool_risk/default_side_effe
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -79,10 +80,12 @@ def parse_mcp_servers(raw: str) -> tuple:
 
 
 def _default_spawn(cfg: dict):
+    env = dict(os.environ)
+    env["PYTHONIOENCODING"] = "utf-8"
     return subprocess.Popen(
         [cfg["command"], *cfg["args"]], cwd=str(PROJECT_ROOT),
         stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-        text=True, encoding="utf-8")
+        text=True, encoding="utf-8", env=env)
 
 
 def connect_configured_mcp_servers(settings, registry: ToolRegistry,

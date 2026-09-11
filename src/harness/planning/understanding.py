@@ -91,7 +91,7 @@ def understand_task(request, *, network_available: bool | None = None) -> TaskUn
             r"(?:与|和|vs\.?|、)", task, re.I):
         key_conditions.append("比较对象不明确")
         key_questions.append("请说明要比较的具体对象或范围。")
-    if task in ("继续", "继续处理", "优化一下", "处理一下") or len(task) < 4:
+    if task in ("继续", "继续处理", "优化一下", "处理一下"):
         key_conditions.append("任务对象/动作不明确")
         key_questions.append("请补充要处理的对象和期望结果。")
 

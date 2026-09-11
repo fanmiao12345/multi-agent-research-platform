@@ -84,7 +84,7 @@ def main() -> None:
     args = parser.parse_args()
     result = run_checks(args.workspace)
     for check in result["checks"]:
-        print(f"[{'✓' if check['ok'] else '✗'}] {check['name']}：{check['detail']}")
+        print(f"[{'OK' if check['ok'] else 'FAIL'}] {check['name']}：{check['detail']}")
     print(json.dumps({"ok": result["ok"]}))
     raise SystemExit(0 if result["ok"] else 1)
 

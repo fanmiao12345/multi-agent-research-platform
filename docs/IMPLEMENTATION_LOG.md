@@ -588,4 +588,57 @@
 - 验证（目标性）：动态计划被选用，动态 Worker 结果回写 subtasks，预算/来源回链和既有 planning/orchestration 回归通过。D6-05 子批次 53 passed。
 - 限制：dynamic_team 的重规划上限仍使用 planning 的 max_replans；缺口语义合并属于 D7。取消传播在 D8 统一收口。
 - 下一步：D6-06 debate。
+''
+
+## 2026-09-11 / D6-06～08 + D7-01～02：六模式收口、嵌套与引用谱系（功能完成，最小验证）
+
+- 步骤 ID：D6-06 debate、D6-07 嵌套、D6-08 统一注册、D7-01 引用谱系、D7-02 多交付类型。
+- 修改文件：src/application/orchestration/registry.py（六模式处理器）；executor.py（debate 双子任务并发、统一注册分派、引用谱系落盘）；scheduler.py、plan_contract.py、capabilities.py（六模式开放与选型）；src/harness/tools/subagent.py（深度/总量/同题去重/权限继承）；src/harness/runtime/agent_runtime.py、src/application/research.py（子智能体工具接线）；refs.py（EvidenceRef 原始来源字段与 build_root_lineage）；src/application/request.py、pipeline/model.py、pipeline/runner.py（delivery_kind 与 collection/analysis/report 分支）；tests/test_d6_integration.py、tests/test_d7_integration.py。
+- 验证（目标性）：debate 双方并发并产生审查清单；嵌套超过二层、同题重复和总量超限均被拒绝，权限按父运行继承；六模式均可通过统一注册表分派；根报告证据按摘录映射到子证据及原始来源；collection 在素材包后直接交付，analysis 走精简章节，report 保持完整固定链；显式必需章节不会被短交付路径绕过。定向批次 97 passed，D3～D7 联合回归 279 passed。
+- 限制：引用谱系按摘录前 80 字匹配，语义改写后的证据仍由 D7-03/审校处理；debate 裁判是模型审查，不是独立事实裁决；嵌套子运行仍使用 AgentRuntime 的工具权限快照，完整跨进程取消/审批在 D8。
+- 下一步：D7-03 运行中检查与有限补搜/补派/修订。
+''
+
+## 2026-09-11 / D7-03～04 + D8-01～03：有限补做、来源更新与恢复状态（功能完成，最小验证）
+
+- 步骤 ID：D7-03 有界补做、D7-04 来源更新改稿、D8-01 持久父子/计划状态、D8-02 取消传播、D8-03 恢复审计。
+- 修改文件：src/application/pipeline/runner.py（一次 repair_callback 补源→重抽证据→更新素材）；src/application/research.py（联网补搜回调、revise_with_source_update、resume_notes）；src/harness/state/db.py（schema v2：parent_job_id/plan_version/stage_history_json）；queue.py（父子登记、计划版本和阶段历史）；resume.py（可复用来源/阶段/子结果/预算历史/unknown 操作审计）；orchestration/executor.py（state_queue、should_stop、波次间取消）；tests/test_d8_integration.py。
+- 验证（目标性）：明确缺口触发一次补做并新增来源；撤回来源后只用剩余资料生成新 job，旧稿保留且 source_update.json 记录谱系；父子任务和计划版本持久化；取消后后续分支不启动；恢复审计保留 unknown 操作、历史调用和未知费用。定向批次 50 passed，D3～D8 联合回归 325 passed。
+- 限制：补做固定最多一次，完整“缺口→补搜→复验”策略调优留 Q3；来源更新当前重跑受影响研究链而非按章节最小重算；unknown 操作只审计不自动重放。
+- 下一步：D8-04 待输入与审批持久化。
+''
+
+## 2026-09-11 / D8-04 + D9-01～04：待输入持久化与统一工作台（功能完成，最小验证）
+
+- 步骤 ID：D8-04、D9-01～04。
+- 修改文件：src/harness/state/db.py（schema v3 + pending_inputs）；pending_inputs.py（目标/参数指纹/预算/计划版本/到期/回答/失效）；queue.py（未完成等待项可合并补充参数后重新入队）；src/interfaces/web/workbench.py（waiting_input、plan_only、待输入回答、HTML/过程导出、方式与状态展示）；tests/test_d9_integration.py、test_state_core.py。
+- 验证（目标性）：待输入可持久化、回答、过期和被变更失效；审批仅 granted 可放行，过期/变更不能重放；Web 只看计划不创建任务；缺对象任务进入 waiting_input，回答后重新排队；HTML 和过程记录可下载；工作台显示实际方式、阶段、取消和待输入。定向批次 41 passed，D3～D9 联合回归 333 passed（高负载偶发 workbench 用例单跑通过后完整复跑通过）。
+- 限制：页面仍是标准库基础可读实现，视觉和交互优化留 Q3/Q4；本轮未做真实浏览器全旅程验收。
+- 下一步：D10-01 安装/启动/配置诊断/备份恢复与依赖迁移说明。
+''
+
+## 2026-09-11 / D10-01～04 + Q1-01：交付装配、功能冻结与全量离线回归
+
+- 步骤 ID：D10-01 安装运维、D10-02 MCP、D10-03 评测/冻结工具、D10-04 候选版清点、Q1-01 全量离线回归。
+- 修改/新增：scripts/install、start_workbench、backup、restore；src/ops/restore.py 与 restore_cli；docs/INSTALL_AND_RECOVERY.md；docs/MCP_USAGE.md；src/mcp/bootstrap.py 子进程 UTF-8；eval/freeze_manifest.py；eval/q1_regression.py；docs/FEATURE_FREEZE.md；tests/test_d10_integration.py。
+- D10 验证：备份恢复往返、MCP 授权工具发现、冻结清单哈希和文档/脚本存在；定向 13 passed。freeze_manifest 检查所有 D 步骤功能完成，冻结 151 个源码/配置文件、依赖哈希和数据集版本。
+- Q1-01：执行 `.venv\Scripts\python -m eval.q1_regression`，全量 pytest 506 passed / 0 failed，用时 63.18 秒；报告 eval/reports/q1_offline_regression.json/.md。未跳过失败、未隐藏失败。
+- 限制：Q1-01 是离线全量回归，不等于 Q1-02 故障注入、Q1-03 真实浏览器/安装验收、Q2 真实业务质量或 Q4 试用验收。
+- 下一步：Q1-02 故障注入与对账。
+''
+
+## 2026-09-11 / Q1-02～03：故障矩阵与真实浏览器验收
+
+- Q1-02：新增 eval/q1_faults.py；14 类故障（10 类既有 + 并发预留/子任务取消/未知操作/审批过期）各两轮，28/28 通过，报告 eval/reports/q1_fault_matrix.json。
+- Q1-03：修复工作台内嵌 JS 换行转义；隐藏启动真实浏览器会话，完成 agent `6*7` 结果展示、真实模型研究任务（合成资料、deepseek-v4-flash、collection.v1、2 引用、accepted）、失败状态显示、刷新与服务重启历史保留、Markdown/HTML/过程记录链接。`src.ops.verify` 通过；MCP 与备份恢复测试通过。报告 eval/reports/q1_browser_install.json/.md。
+- 限制：Q1-03 是功能旅程验证，不是质量评分；Q2-01 真实 99 次批次需要预算授权与人工评分，Q4-01 连续 7 天试用无法由本轮代码替代。
+- 下一步：Q2-01；执行前确认预算和人工评分负责人。
+'';
+
+## 2026-09-11 / Q2～Q4 用户自测工具链准备
+
+- 新增 eval/web_baseline.py 与 eval/datasets/web_topics_v1.json：12 个公开主题，六模式各至少 2 个；真实联网批次使用统一 CLI 入口并保存来源/引用谱系。
+- 新增 eval/q2_summary.py、eval/q3_compare.py、eval/trial_log.py、eval/q4_signoff.py：业务/联网汇总、同条件前后对比、7 天 20 任务试用日志、最终签收草稿检查。
+- 新增 scripts/q2_real.ps1、q2_web.ps1、q2_ingest.ps1、q3_compare.ps1、q4_trial.ps1、q4_signoff.ps1 和 docs/Q2_Q4_USER_RUNBOOK.md。
+- 验证：工具结构、汇总/对比/试用状态和文档脚本存在，18 项离线工具测试通过；未执行真实收费批次、人工评分或 7 天试用。
 '

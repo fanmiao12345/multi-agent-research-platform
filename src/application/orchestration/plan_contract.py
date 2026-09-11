@@ -10,8 +10,8 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass, field
 
-# 当前已开放模式；dynamic_team/debate 在 D6 后半开放
-FIRST_VERSION_MODES: tuple[str, ...] = ("single", "fixed", "manager_worker", "fanout", "dynamic_team")
+# D6-08：六种协作方式全部开放，是否可用再由能力/预算过滤
+FIRST_VERSION_MODES: tuple[str, ...] = ("single", "fixed", "manager_worker", "fanout", "dynamic_team", "debate")
 # 全量目录（调度提示词展示用，但候选按 allowed_modes 过滤——按能力选型，不是见名就选）
 KNOWN_MODES: tuple[str, ...] = ("fixed", "fanout", "manager_worker", "debate",
                                 "dynamic_team", "single")

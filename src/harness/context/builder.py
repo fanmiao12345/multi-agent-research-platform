@@ -65,9 +65,10 @@ def compose_context(question: str, sources: list[ContextSource], *,
         messages.append({"role": "system", "content": "\n\n".join(system_parts)})
     messages.extend(history)
     if append_question:
-        context_marker = "\n\n<<CONTEXT>>\n" if task_suffix else ""
-        messages.append({"role": "user",
-                         "content": question + context_marker + (task_suffix or "")})
+        if task_suffix:
+            messages.append({"role": "system",
+                             "content": "<<CONTEXT>>\n" + task_suffix.strip()})
+        messages.append({"role": "user", "content": question})
     stats["total_estimated"] = sum(stats.values()) + \
         (budget_mod.estimate_tokens(messages[-1]["content"])
          if append_question and messages else 0) + \

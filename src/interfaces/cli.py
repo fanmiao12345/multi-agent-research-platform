@@ -143,7 +143,7 @@ def main():
                         help="正文中不得出现的表述，可重复；S8-C 起程序层只提示疑似命中，判定交评测/人工")
     parser.add_argument("--key-fact", action="append", default=[],
                         help="任务要求覆盖的关键事实，可重复；未逐字覆盖记 warn（不阻塞验收）")
-    parser.add_argument("--orchestration", choices=("auto", "single", "fixed", "manager_worker", "fanout"), default="auto",
+    parser.add_argument("--orchestration", choices=("auto", "single", "fixed", "manager_worker", "fanout", "dynamic_team", "debate"), default="auto",
                         help="执行方式（仅 --flow research 生效，S8 首版）：auto=调度智能体在 "
                              "fixed/fanout 间选型；fixed=固定研究链；fanout=拆子题并行研究后成稿。"
                              "选型失败自动降级 fixed；调度调用在真实模式计一次模型调用")
