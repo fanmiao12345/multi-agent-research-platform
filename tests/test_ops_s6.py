@@ -50,6 +50,31 @@ def test_business_eval_stub_success_and_machine_checks(tmp_path):
     assert (out / "samples").exists()  # samples 目录由 out_dir 创建
 
 
+def test_business_eval_batch_cap_stops_remaining(tmp_path):
+    """O-09：--batch-max-cost 是整批累计上限（--max-cost 只是单任务上限）。"""
+    from eval.business_eval import run_business_eval
+    report = run_business_eval(workspace_root=tmp_path / "ws", mode="mock",
+                               llm=S4Brain(), repeats=3, fault_rounds=1,
+                               task_filter="o01", out_dir=tmp_path / "out",
+                               batch_max_cost=0.0)
+    assert report["totals"]["attempts_total"] == 0
+    assert report["totals"]["skipped_or_not_executed"] == 3
+    assert any("batch_max_cost" in (r.get("reason") or "") for r in report["results"])
+    assert report["meta"]["batch_max_cost_usd"] == 0.0
+    assert report["meta"]["batch_spent_usd"] == 0.0
+    # 未设上限时行为不变（向后兼容）
+    ok = run_business_eval(workspace_root=tmp_path / "ws2", mode="mock",
+                           llm=S4Brain(), repeats=1, fault_rounds=1,
+                           task_filter="o01", out_dir=tmp_path / "out2")
+    assert ok["totals"]["passed"] == 1
+    assert ok["meta"]["batch_max_cost_usd"] is None
+    with pytest.raises(ValueError):
+        run_business_eval(workspace_root=tmp_path / "ws3", mode="mock",
+                          llm=S4Brain(), repeats=1, fault_rounds=1,
+                          task_filter="o01", out_dir=tmp_path / "out3",
+                          batch_max_cost=-1)
+
+
 def test_business_eval_closed_book_by_default_and_open_book_switch(tmp_path):
     """S8-B：默认闭卷——关键事实/禁止断言留在评测端；open_book=True 仅作对照并标记。"""
     from eval.business_eval import run_business_eval

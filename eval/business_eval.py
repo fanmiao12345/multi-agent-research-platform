@@ -127,16 +127,22 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                       settings=None, profile_name: str | None = None,
                       grader_llm=None, grade: bool = False,
                       grader_model: str | None = None,
-                      open_book: bool = False) -> dict:
+                      open_book: bool = False,
+                      batch_max_cost: float | None = None) -> dict:
     if mode not in ("mock", "real"):
         raise ValueError("mode 必须为 mock 或 real")
     if repeats < 1:
         raise ValueError("repeats 必须 ≥1")
     if fault_rounds < 1:
         raise ValueError("fault_rounds 必须 ≥1")
-    if mode == "real" and (isinstance(max_cost, bool) or not isinstance(max_cost, (int, float))
+    if mode == "real" and (isinstance(max_cost, bool) or not isinstance(max_cost, int | float)
                            or not math.isfinite(max_cost) or max_cost < 0):
-        raise ValueError("真实评测必须设置非负有限 --max-cost（批次美元估算停止阈值）")
+        raise ValueError("真实评测必须设置非负有限 --max-cost（单任务美元估算停止阈值）")
+    if batch_max_cost is not None and (isinstance(batch_max_cost, bool)
+                                       or not isinstance(batch_max_cost, int | float)
+                                       or not math.isfinite(batch_max_cost)
+                                       or batch_max_cost < 0):
+        raise ValueError("--batch-max-cost 必须为非负有限数（整批累计美元估算停止阈值）")
     dataset = load_dataset()
     meta = dataset["meta"]
     started = time.time()
@@ -169,6 +175,12 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
         raise ValueError("指定的业务案例不存在")
 
     selected = []
+    batch_spent = 0.0
+    batch_stop = ""
+
+    def cap_reached() -> bool:
+        return batch_max_cost is not None and batch_spent >= batch_max_cost
+
     for task in tasks:
         if mode == "real" and not ready:
             for rep in range(repeats):
@@ -179,6 +191,13 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                                 "note": "真实模式配置不可用：整批未执行，未用 Mock 顶替"})
             continue
         for rep in range(repeats):
+            if batch_stop or cap_reached():
+                results.append({"id": task["id"], "category": task["category"],
+                                "attempt": rep + 1, "status": "not_executed",
+                                "reason": batch_stop or
+                                f"批次累计上限（batch_max_cost={batch_max_cost}）已用尽",
+                                "note": "批次累计限额或未知用量：剩余尝试未执行，未用 Mock 顶替"})
+                continue
             selected.append(task["id"])
             entry = {"id": task["id"], "category": task["category"],
                      "attempt": rep + 1, "task": task["request"]}
@@ -282,6 +301,13 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                 if samples_dir is not None:
                     (samples_dir / f"{task['id']}_rep{rep + 1}").mkdir(exist_ok=True)
             results.append(entry)
+            # O-09：批次累计限额（--max-cost 只是单任务上限，不能封顶整批花费）
+            batch_spent += entry.get("estimated_cost_usd") or 0
+            if batch_max_cost is not None and batch_spent >= batch_max_cost:
+                batch_stop = (f"批次累计上限已达（batch_max_cost={batch_max_cost}，"
+                              f"估算已用 {batch_spent:.4f}）")
+            if mode == "real" and entry.get("unknown_usage_calls"):
+                batch_stop = "未知用量：按纪律停止剩余真实任务（不得静默当作零成本）"
 
     # ---- 故障案例：至少 fault_rounds 轮（可自动化的探针列在此，其余记 manual）-----
     fault_rows: list[dict] = []
@@ -329,6 +355,11 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
             "real_config_reason": config_reason if mode == "real" else "",
             "repeats": repeats, "fault_rounds": fault_rounds,
             "max_cost_usd": max_cost if mode == "real" else None,
+            "batch_max_cost_usd": batch_max_cost,
+            "batch_spent_usd": round(batch_spent, 6),
+            "batch_stop_reason": batch_stop,
+            "batch_cost_note": ("max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限"
+                                "（O-09）；两者均为本地保守估算，非账单"),
             "open_book": bool(open_book),
             "open_book_note": ("对照实验：关键事实/禁止断言已注入写作端（开卷），"
                                "结果不可与闭卷批次合并比较" if open_book
@@ -396,7 +427,9 @@ def render_markdown(report: dict) -> str:
         f"# 业务评测：{m['name']}",
         f"- 生成时间：{m['generated_at']}｜模式：{m['mode']}｜数据集版本：{m['dataset_version']}",
         f"- 真实配置可用：{m['real_config_ready']}{'（' + m['real_config_reason'] + '）' if m['real_config_reason'] else ''}",
-        f"- 重复次数：{m['repeats']}｜故障轮数：{m['fault_rounds']}｜批次限额：{m['max_cost_usd']} 美元（真实模式）",
+        f"- 重复次数：{m['repeats']}｜故障轮数：{m['fault_rounds']}｜单任务上限：{m['max_cost_usd']} 美元｜"
+        f"整批累计上限：{m.get('batch_max_cost_usd')} 美元（已用估算 {m.get('batch_spent_usd')}）",
+        f"- 批次停止原因：{m.get('batch_stop_reason') or '（未触发）'}",
         f"- 代码版本：{m['versions']['code_revision']}｜Python {m['versions']['python']}｜"
         f"包：{json.dumps(m['versions']['packages'], ensure_ascii=False)}",
         f"- 模型/工具快照：{json.dumps(m['config'], ensure_ascii=False)}", "",
@@ -435,7 +468,10 @@ def main() -> None:
     parser.add_argument("--repeats", type=int, default=3)
     parser.add_argument("--fault-rounds", type=int, default=2)
     parser.add_argument("--task", default=None)
-    parser.add_argument("--max-cost", type=float, help="真实模式批次美元估算停止阈值（必填）")
+    parser.add_argument("--max-cost", type=float, help="真实模式单任务美元估算停止阈值（必填）")
+    parser.add_argument("--batch-max-cost", type=float, default=None,
+                        help="真实模式整批累计美元估算上限（O-09）：达到后剩余尝试记 not_executed，"
+                             "不静默继续花费")
     parser.add_argument("--out", default=str(DEFAULT_OUT))
     parser.add_argument("--grade", action="store_true",
                         help="每个执行过的尝试用专职评测 Agent 自动打分（初步，需人工确认）")
@@ -453,7 +489,8 @@ def main() -> None:
                                    task_filter=args.task, max_cost=args.max_cost,
                                    out_dir=out, grade=args.grade,
                                    grader_model=args.grader_model,
-                                   open_book=args.open_book)
+                                   open_book=args.open_book,
+                                   batch_max_cost=args.batch_max_cost)
     except ValueError as e:
         parser.error(str(e))
     (out / "business_report.json").write_text(
