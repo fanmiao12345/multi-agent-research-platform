@@ -5,11 +5,12 @@
 ## Q2-01 真实业务 99 次
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\q2_real.ps1 -MaxCost 5
+powershell -ExecutionPolicy Bypass -File .\scripts\q2_real.ps1 -MaxCost 0.25 -BatchMaxCost 6
 ```
 
 - 33 个业务案例各 3 次，共 99 次；v1 20 例的 60 次在报告元数据中单列。
 - 默认闭卷，不把关键事实/禁止断言注入写作端。
+- `-MaxCost` 是**单任务**上限（美元估算），`-BatchMaxCost` 是**整批累计**上限（缺省 = 单任务上限 × 3）。达到整批上限或出现未知用量后，剩余尝试记 `not_executed`，不会静默继续花费（O-09）。
 - 执行后生成 `eval/reports/q2_human_workbench/combined_scores.csv`。
 - 人工填写正确性、结构、引用、完整性、改稿分钟后：
 
