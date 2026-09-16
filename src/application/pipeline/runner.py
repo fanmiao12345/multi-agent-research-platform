@@ -424,18 +424,35 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
 
         verdict = "needs_revision"
         final_issues: list = []
+        review_unavailable = ""
+        evidence_tags = {item["evidence_id"]: item.get("tag", "F") for item in evidence_items}
         for round_index in range(max_revision_rounds + 1):
             boundary("review")
             progress("review", f"双层审校 第 {round_index + 1} 轮")
             program = program_checks(report, evidence_store.ids(), sections,
                                      base_draft=base or None,
-                                     requirements=requirements)
+                                     requirements=requirements,
+                                     evidence_tags=evidence_tags,
+                                     source_count=len(usable))
             evidence_index = "\n".join(
                 f"- {item['evidence_id']} {item['fact']}"
                 f"（来源 {item['source_id']}）" for item in evidence_items)
-            model_issues, verdict = model_review(llm, goal, report,
-                                                 evidence_index, sections,
-                                                 requirements_block=requirements_block)
+            try:
+                model_issues, verdict = model_review(llm, goal, report,
+                                                     evidence_index, sections,
+                                                     requirements_block=requirements_block)
+            except StageError as e:
+                # O-13：审校模型两次都没给出合法 JSON 时，不能把已经写好的稿子整篇丢掉
+                # （此前直接 StageError → failed，实测 r11 即如此）。降级：只用程序层结论，
+                # 交付草稿并如实说明"模型层未完成复核"，不声称验收通过。
+                if e.stage != "review":
+                    raise
+                review_unavailable = str(e)
+                model_issues, verdict = [], "needs_revision"
+                record_stage("review", "reviewer_unavailable",
+                             issues=[i.as_dict() for i in program],
+                             message=f"审校不可用：{review_unavailable[:120]}")
+                break
             issues = program + model_issues
             final_issues = issues
             review_payload = {"schema_version": 1, "round": round_index + 1,
@@ -474,6 +491,16 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
         result.total_citations = len(citations)
         result.unresolved_citations = len(
             {c for c in citations if c not in evidence_store.ids()})
+        if review_unavailable:
+            # O-13：审校不可用时保留草稿（而非 failed 丢稿），但不声称验收通过
+            result.draft_level = "draft"
+            result.termination_reason = "incomplete"
+            result.message = ("审校不可用（模型层两次输出均无法解析）：保留已写好的草稿，"
+                              "仅按程序层结论交付，不视为验收成功")
+            record_stage("review", "reviewer_unavailable", issues=final_issues,
+                         message=result.message)
+            snapshot()
+            return result
         if not errors and verdict == "accepted":
             cap, cap_reason = delivery_cap(report, sections)
             if cap != "accepted":

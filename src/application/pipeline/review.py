@@ -150,6 +150,18 @@ _INSUFFICIENT_DECISION = (
     re.compile(r"(补齐|补充)[^。；\n]{0,20}(前|之前)[^。；\n]{0,10}(不予批准|不批准|无法批准)"),
 )
 
+# Q3-01 第 2 批（O-08）用到的模式：内部标识泄漏 / 对输入规模的错误断言
+_INTERNAL_LEAK_PATTERNS = (
+    (re.compile(r"src_[0-9a-f]{6,}"), "内部来源 id"),
+    (re.compile(r"job_[0-9a-f]{8,}"), "内部任务 id"),
+    (re.compile(r"\b(evidence_id|artifact_id|pipeline\.json|stage_(material|outline|draft))\b"),
+     "内部字段名"),
+    (re.compile(r"duplicates\s*字段"), "素材包内部字段"),
+)
+_SOURCE_COUNT_CLAIM = re.compile(
+    r"(只提供了?\s*1\s*份|仅有?\s*一份|只有一份(来源|材料)|第二份(材料)?(缺失|未提供)"
+    r"|实际只提供\s*1\s*份)")
+
 
 def delivery_cap(report: str, sections: list[OutlineSection] | None = None
                  ) -> tuple[str, str]:
@@ -184,8 +196,14 @@ def delivery_cap(report: str, sections: list[OutlineSection] | None = None
 def program_checks(report: str, evidence_ids: set[str],
                    sections: list[OutlineSection],
                    base_draft: str | None = None,
-                   requirements: HardRequirements | None = None) -> list[ReviewIssue]:
-    """第一层：不做语义判断，全部是结构事实检查。"""
+                   requirements: HardRequirements | None = None,
+                   evidence_tags: dict[str, str] | None = None,
+                   source_count: int | None = None) -> list[ReviewIssue]:
+    """第一层：不做语义判断，全部是结构事实检查。
+
+    evidence_tags：evidence_id → tag（F/I/U），检查〔事实〕标注与证据强度是否一致；
+    source_count：本次任务的可用来源数，检查报告对输入规模的断言是否与实际不符。
+    """
     issues: list[ReviewIssue] = []
     if base_draft is not None and report.strip() == base_draft.strip():
         issues.append(ReviewIssue(
@@ -193,6 +211,7 @@ def program_checks(report: str, evidence_ids: set[str],
             "改稿结果与原稿完全相同：必须按任务要求产生实质变更"))
     hard_issues, _ = hard_requirement_issues(report, requirements)
     issues.extend(hard_issues)
+    issues.extend(_content_quality_checks(report, evidence_tags, source_count))
     citations = collect_citations(report)
     unknown = sorted({c for c in citations if c not in evidence_ids})
     for token in unknown:
@@ -216,6 +235,46 @@ def program_checks(report: str, evidence_ids: set[str],
                     f"章节「{section.heading}」要求区分事实/推断/未知，但正文没有标注"))
     if not citations:
         issues.append(ReviewIssue("warn", "citation", "正文没有任何引用标记，请确认每处断言都有证据"))
+    return issues
+
+
+def _content_quality_checks(report: str, evidence_tags: dict[str, str] | None,
+                            source_count: int | None) -> list[ReviewIssue]:
+    """Q3-01 第 2 批（O-08）：三项可程序判定的内容质量问题。
+
+    ① 内部标识泄漏：来源/任务 id、素材包字段名等内部产物不得出现在交付正文；
+    ② 〔事实〕标注与证据强度不一致：整句只引用了推断/未知证据却标成〔事实〕；
+    ③ 对输入规模的断言与实际不符：如"只提供 1 份来源/第二份缺失"而实际有多份。
+    均为可复现的实测问题（o03/o08/v01/o07 等），只做字面匹配，不做语义判定。
+    """
+    issues: list[ReviewIssue] = []
+    text = report or ""
+    for pattern, label in _INTERNAL_LEAK_PATTERNS:
+        match = pattern.search(text)
+        if match:
+            issues.append(ReviewIssue(
+                "error", "internal_leak",
+                f"交付正文出现内部标识「{match.group(0)}」（{label}）：必须删除后重写"))
+    if evidence_tags:
+        for sentence in re.split(r"[。；;\n]", text):
+            if "〔事实〕" not in sentence:
+                continue
+            ids = collect_citations(sentence)
+            if not ids:
+                continue
+            tags = [evidence_tags.get(i) for i in ids]
+            if all(t and t != "F" for t in tags):
+                issues.append(ReviewIssue(
+                    "error", "fact_label",
+                    f"整句仅引用推断/未知证据（{','.join(ids)}）却标注为〔事实〕："
+                    "应改为〔推断〕/〔未知〕"))
+    if source_count and source_count >= 2:
+        match = _SOURCE_COUNT_CLAIM.search(text)
+        if match:
+            issues.append(ReviewIssue(
+                "error", "source_count",
+                f"报告称「{match.group(0)}」，但本次实际有 {source_count} 份来源："
+                "与输入不符，必须按实际来源数改写"))
     return issues
 
 

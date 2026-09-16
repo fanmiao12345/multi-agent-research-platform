@@ -515,6 +515,52 @@ def test_pipeline_self_declared_inability_caps_delivery(tmp_path):
     assert any(s["status"] == "self_declared_cap" for s in result.stages)
 
 
+def test_content_quality_checks_internal_leak_labels_and_source_count():
+    """Q3-01 第 2 批（O-08）：内部标识泄漏 / 〔事实〕标注与证据强度不符 / 输入规模断言错误。"""
+    from src.application.pipeline.review import program_checks
+
+    leak = ("# 报告\n\n素材包 duplicates 字段记录：显示项“粘贴文本 2”，"
+            "重复来源为 src_23a33de188【E-001】〔事实〕。\n")
+    codes = {i.code for i in program_checks(leak, {"E-001"}, [],
+                                            evidence_tags={"E-001": "F"}, source_count=2)}
+    assert "internal_leak" in codes
+
+    mislabel = "# 报告\n\n## 结论\n\n该来源未提供方案甲任何信息【E-001】〔事实〕。\n"
+    assert any(i.code == "fact_label" for i in
+               program_checks(mislabel, {"E-001"}, [], evidence_tags={"E-001": "I"}))
+    ok = "# 报告\n\n## 结论\n\n该来源未提供方案甲任何信息【E-001】〔推断〕。\n"
+    assert not any(i.code == "fact_label" for i in
+                   program_checks(ok, {"E-001"}, [], evidence_tags={"E-001": "I"}))
+    # 事实证据标〔事实〕不报
+    fact_ok = "# 报告\n\n## 结论\n\n试点共40人【E-001】〔事实〕。\n"
+    assert not any(i.code == "fact_label" for i in
+                   program_checks(fact_ok, {"E-001"}, [], evidence_tags={"E-001": "F"}))
+
+    claim = "# 报告\n\n任务称有两份材料，但实际只提供1份来源，第二份缺失【E-001】〔事实〕。\n"
+    assert any(i.code == "source_count" for i in
+               program_checks(claim, {"E-001"}, [], evidence_tags={"E-001": "F"},
+                              source_count=2))
+    assert not any(i.code == "source_count" for i in
+                   program_checks(claim, {"E-001"}, [], source_count=1))
+
+
+def test_pipeline_reviewer_unavailable_keeps_draft(tmp_path):
+    """O-13：审校模型两次输出均非 JSON 时，保留草稿而不是整篇丢成 failed。"""
+
+    class BadReviewBrain(PipelineBrain):
+        def _reply(self, purpose, system, user):
+            if purpose == "review":
+                return "这不是JSON"
+            return super()._reply(purpose, system, user)
+
+    result, _, _, _ = _run_pipeline(tmp_path, brain_override=BadReviewBrain())
+    assert result.draft_level == "draft"
+    assert result.termination_reason == "incomplete"
+    assert "审校不可用" in result.message
+    assert result.final_text.startswith("# 桩报告")      # 稿子保留
+    assert any(s["status"] == "reviewer_unavailable" for s in result.stages)
+
+
 def test_pipeline_no_sources_and_no_evidence(tmp_path):
     job_dir = tmp_path / "job"
     empty = SourceStore(job_dir)
