@@ -12,8 +12,11 @@ from src.harness.ingest.search import (
     SearchNotConfigured,
     bing_scrape_search,
     ensure_provider_mode,
+    filter_search_results,
     parse_bing_results,
     plan_queries,
+    query_terms,
+    result_relevance,
     run_search,
 )
 
@@ -112,6 +115,55 @@ def test_plan_queries_bounded_and_fallback():
         "A 行业规模 site:gov.cn after:2025-01-01")
     with pytest.raises(ValueError, match="YYYY-MM-DD"):
         plan_queries("主题", since="2025/01/01")
+
+
+def test_result_relevance_filter_drops_lexicon_and_calendar_pages():
+    """D3-03 相关性过滤：用联网批（Q2-02 真基线）里实测的查询/标题对做回归。
+
+    修复前 12 题里 6 题因这类页面挤满候选而只能 unable。
+    """
+    class _R:
+        def __init__(self, title, snippet=""):
+            self.title = title
+            self.snippet = snippet
+            self.url = "https://example/" + str(abs(hash(title)) % 10_000)
+
+    # 查询关键词：短查询口径；泛词（研究/现状）不进关键词表
+    assert "研究" not in query_terms("远程办公 团队协作 研究")
+    assert "site:gov.cn" not in query_terms("数据出境 合规 site:gov.cn")
+
+    query = "远程办公 团队协作 实证研究"
+    junk = [_R("混合（汉语词语）_百度百科"),
+            _R("混合 | 简体中文-英语翻译——剑桥词典"),
+            _R("ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机"),
+            _R("混合的意思,混合的拼音、近义词、反义词、造句 - 汉语查")]
+    good = _R("混合办公对团队协作影响的实证研究：一项追踪调查",
+              "样本包含 120 个团队，比较远程、混合与现场办公的协作指标。")
+    kept, dropped = filter_search_results(query, junk + [good])
+    assert [r.title for r in kept] == [good.title]
+    assert len(dropped) == 4
+    assert any("词典" in d["reason"] for d in dropped)
+    assert result_relevance(query, good.title, good.snippet) > result_relevance(
+        query, junk[2].title, junk[2].snippet)
+
+    # 日历页：与主题无关时丢弃；查询本身要日历时不再按"日历页"规则丢弃
+    calendar = [_R("2026年日历全年完整图_带农历节假日放假安排"), _R("2026年大事、要事、重要节日一览表")]
+    kept_cal, dropped_cal = filter_search_results("2026 人工智能 监管 争议", calendar)
+    assert kept_cal == [] and len(dropped_cal) == 2
+    kept_want, dropped_want = filter_search_results("2026 年放假安排 日历", calendar)
+    assert calendar[0] in kept_want
+    assert not any("日历/节假日页" in d["reason"] for d in dropped_want)
+
+    # 安全阀：整组都不达标时保留重合度最高的少数条目（只救"重合不足"，不救日历/词典页）
+    fallback_input = [_R("新浪网 404 Not Found"), _R("新片场 - 与百万创作人一起成长")]
+    kept_fb, dropped_fb = filter_search_results("动力电池回收 监管政策", fallback_input,
+                                                fallback_keep=1)
+    assert len(kept_fb) == 1 and any(d.get("fallback") for d in dropped_fb)
+    kept_fb2, _ = filter_search_results("动力电池回收 监管政策", fallback_input)
+    assert len(kept_fb2) == 2                 # 默认安全阀保留 2 条
+    kept_cal_fb, _ = filter_search_results("动力电池回收 监管政策",
+                                           [_R("2026年日历全年完整图_带农历节假日放假安排")])
+    assert kept_cal_fb == []          # 日历页即使一条不剩也不进安全阀
 
 
 def test_ledger_record_search_entry(tmp_path):

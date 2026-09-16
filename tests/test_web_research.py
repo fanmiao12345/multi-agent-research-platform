@@ -43,32 +43,36 @@ def test_auto_search_candidates_keep_metadata_dedupe_and_fail_soft():
         seen_queries.append(query)
         if query.startswith("坏查询"):
             raise RuntimeError("被拦截")
-        if query.startswith("查询1"):
+        if query.startswith("远程办公"):
             return [
-                _R("https://a.example/1#part", title="甲", snippet="摘要甲",
+                _R("https://a.example/1#part", title="远程办公与团队协作：实证研究",
+                   snippet="远程办公对团队协作的影响（摘要）",
                    rank=1, published_date="2026-01-02", date_source="snippet"),
-                _R("https://a.example/2", title="乙", snippet="摘要乙", rank=2),
+                _R("https://a.example/2", title="远程办公团队协作的追踪数据",
+                   snippet="另一条摘要", rank=2),
             ]
         return [
-            _R("https://a.example/2", title="乙重复", snippet="摘要重复", rank=1),
-            _R("https://b.example/3", title="丙", snippet="摘要丙", rank=2),
+            _R("https://a.example/2", title="远程办公团队协作的追踪数据（重复）",
+               snippet="摘要重复", rank=1),
+            _R("https://b.example/3", title="混合办公政策与团队协作",
+               snippet="摘要丙", rank=2),
         ]
 
-    llm = _PlanLLM(["查询1", "坏查询", "查询2"])
+    llm = _PlanLLM(["远程办公 团队协作", "坏查询", "混合办公 政策"])
     calls = []
     candidates, records = auto_search_candidates(
         "主题", provider="bing_scrape", run_mode="real", llm=llm,
         site="gov.cn", since="2025-01-01", search_fn=fake_search,
         on_search=lambda **kw: calls.append(kw))
     assert seen_queries == [
-        "查询1 site:gov.cn after:2025-01-01",
+        "远程办公 团队协作 site:gov.cn after:2025-01-01",
         "坏查询 site:gov.cn after:2025-01-01",
-        "查询2 site:gov.cn after:2025-01-01",
+        "混合办公 政策 site:gov.cn after:2025-01-01",
     ]
     assert [c["url"] for c in candidates] == [
         "https://a.example/1", "https://a.example/2", "https://b.example/3"]
-    assert candidates[0]["rank"] == 1 and candidates[0]["title"] == "甲"
-    assert candidates[0]["snippet"] == "摘要甲"
+    assert candidates[0]["rank"] == 1 and candidates[0]["title"] == "远程办公与团队协作：实证研究"
+    assert candidates[0]["snippet"] == "远程办公对团队协作的影响（摘要）"
     assert candidates[0]["published_date"] == "2026-01-02"
     assert candidates[0]["date_source"] == "snippet"
     assert len(records) == 3 and records[1]["error"] != ""
@@ -79,8 +83,9 @@ def test_auto_search_candidates_keep_metadata_dedupe_and_fail_soft():
         "主题", provider="bing_scrape", run_mode="real", max_candidates=1,
         known_urls={"https://a.example/1"},
         search_fn=lambda p, q, max_results=8: [
-            _R("https://a.example/1#x"), _R("https://x.example/1"),
-            _R("https://x.example/2")])
+            _R("https://a.example/1#x", title="主题相关资料一"),
+            _R("https://x.example/1", title="主题相关资料二"),
+            _R("https://x.example/2", title="主题相关资料三")])
     assert [c["url"] for c in candidates2] == ["https://x.example/1"]
 
 
@@ -97,10 +102,11 @@ def test_candidates_to_sources_keep_snippet_out_of_body_and_dedupe(tmp_path, mon
     from src.harness.ingest.fetcher import FetchResult
 
     search_results = [
-        _R("https://a.example/one", title="甲", snippet="摘要内容不能作为正文",
-           rank=1),
-        _R("https://b.example/two", title="乙", snippet="另一条摘要", rank=2),
-        _R("https://c.example/fail", title="失败", snippet="失败摘要", rank=3),
+        _R("https://a.example/one", title="主题相关资料：正文与摘要",
+           snippet="摘要内容不能作为正文", rank=1),
+        _R("https://b.example/two", title="主题相关资料二", snippet="另一条摘要", rank=2),
+        _R("https://c.example/fail", title="主题相关资料三（抓取失败）",
+           snippet="失败摘要", rank=3),
     ]
     candidates, _ = auto_search_candidates(
         "主题", provider="bing_scrape", run_mode="real",

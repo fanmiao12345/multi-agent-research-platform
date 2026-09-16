@@ -206,12 +206,133 @@ def parse_bing_results(html: str, *, max_results: int = 8) -> list:
     return parser.results[:max(1, min(int(max_results or 8), 10))]
 
 
+# ---- D3-03：检索相关性过滤（Q3-02 联网专项）--------------------------------
+# 实测（eval/reports/q2_web_baseline.json，12 题真基线）：长句查询在 cn.bing.com 上
+# 会"退化匹配"——只命中查询里的某个泛词，返回「混合（汉语词语）_百度百科」
+# 「generate - 搜索 词典」「2026年日历…放假安排」这类页面；12 题里有 6 题因此拿不到
+# 任何相关来源而只能 unable。这里做两件事：查询改成短关键词（见 QUERY_PLANNER_PROMPT），
+# 结果按关键词重合度 + 页面类型过滤，绝不把词典/日历/下载页当研究来源。
+_GENERIC_TERMS = (
+    "研究", "现状", "趋势", "分析", "报告", "影响", "应用", "发展", "情况", "问题",
+    "主要", "相关", "模式", "方案", "对比", "评估", "设计", "系统", "方法", "进展",
+)
+_STOP_CHARS = "的与和及对在为是了把被将以之其这那有并或等把从到"
+_QUERY_FILTER_RE = re.compile(r"^(?:site|after):", re.IGNORECASE)
+_LEXICON_TITLE = re.compile(
+    r"(汉语词语|汉语汉字|汉语文字|汉典|词典|拼音|部首|笔画|笔顺|组词|造句|的意思|是什么意思"
+    r"|_翻译|翻译[—\-]|音标|读音|近义词|反义词|维基词典|在线翻译|百科$|_百度百科)")
+_CALENDAR_TITLE = re.compile(r"(日历|放假|调休|节假日|万年历|节日一览|补班)")
+_LANDING_TITLE = re.compile(r"(官网|下载|免费试用|立即购买|优惠|客服|注册|登录|首页)")
+
+
+def query_terms(query: str) -> list[str]:
+    """查询关键词：ASCII 词（≥2 字符）+ 中文二元组（无分词依赖的近似口径）。
+
+    去掉 site:/after: 过滤条件、含停用字的二元组与「研究/现状」这类泛词，
+    避免泛词把不相干页面算成"相关"。
+    """
+    text = " ".join(part for part in (query or "").split()
+                    if not _QUERY_FILTER_RE.match(part))
+    terms: list[str] = []
+    for token in re.findall(r"[A-Za-z][A-Za-z0-9+#.\-]{1,}", text):
+        terms.append(token.lower())
+    for block in re.findall(r"[\u4e00-\u9fff]+", text):
+        if len(block) == 1:
+            terms.append(block)
+            continue
+        for index in range(len(block) - 1):
+            bigram = block[index:index + 2]
+            if any(ch in _STOP_CHARS for ch in bigram):
+                continue
+            if bigram in _GENERIC_TERMS:
+                continue
+            terms.append(bigram)
+    return list(dict.fromkeys(terms))
+
+
+def result_relevance(query: str, title: str, snippet: str) -> float:
+    """0~1：查询关键词在标题/摘要里的覆盖度（标题命中权重 1.0，仅摘要命中 0.5）。"""
+    terms = query_terms(query)
+    if not terms:
+        return 0.0
+    title_text = (title or "").lower()
+    snippet_text = (snippet or "").lower()
+    score = 0.0
+    for term in terms:
+        if term in title_text:
+            score += 1.0
+        elif term in snippet_text:
+            score += 0.5
+    return min(1.0, score / len(terms))
+
+
+def filter_search_results(query: str, results: list,
+                          min_relevance: float = 0.2,
+                          fallback_keep: int = 2) -> tuple[list, list[dict]]:
+    """按相关性过滤候选；返回 (保留结果, 丢弃说明)。
+
+    保留：关键词重合度达标的条目（以及词典/日历/落地页规则之外的相关条目）。
+    丢弃说明逐条给出理由与重合度，便于人工复核与报告呈现。
+    安全阀：整组都不达标时按重合度保留前 `fallback_keep` 条（并在丢弃说明里标
+    `fallback=True`），避免"一条都不留"让某个查询彻底落空；上层据此如实记录。
+    """
+    scored: list[tuple[float, object, str, bool]] = []
+    query_text = query or ""
+    if not query_terms(query_text):
+        # 查询里没有可用关键词（全是泛词/停用字）：无法判断相关性，不做过滤
+        return list(results or []), []
+    wants_calendar = bool(re.search(r"(日历|放假|调休|节假日|万年历)", query_text))
+    for result in results or []:
+        title = str(getattr(result, "title", "") or "")
+        snippet = str(getattr(result, "snippet", "") or "")
+        relevance = result_relevance(query_text, title, snippet)
+        reason = ""
+        rescuable = False
+        if _LEXICON_TITLE.search(title) and relevance < 0.6:
+            reason = "词典/字词释义页，非研究材料"
+        elif _CALENDAR_TITLE.search(title) and not wants_calendar:
+            reason = "日历/节假日页，与主题无关"
+        elif _LANDING_TITLE.search(title) and relevance < 0.5:
+            reason = "产品官网/下载页，非研究材料"
+        elif relevance < min_relevance:
+            reason = "查询关键词重合不足"
+            rescuable = True            # 只是重合度低：可能是英文/同义页面，允许安全阀保留
+        scored.append((relevance, result, reason, rescuable))
+    kept = [result for relevance, result, reason, _ in scored if not reason]
+    dropped: list[dict] = []
+    if not kept and fallback_keep > 0:
+        # 安全阀：整组都不达标时保留重合度最高的少数条目（只救"重合不足"，
+        # 不救词典/日历/下载页这类明显非研究材料），避免某个查询彻底落空。
+        rescued = sorted((row for row in scored if row[3]),
+                         key=lambda row: row[0], reverse=True)[:fallback_keep]
+        for row in rescued:
+            relevance, result, reason, _ = row
+            kept.append(result)
+            dropped.append({"title": str(getattr(result, "title", "") or "")[:80],
+                            "url": str(getattr(result, "url", "") or ""),
+                            "relevance": round(relevance, 3),
+                            "reason": f"{reason}（按安全阀保留，待人工复核）",
+                            "fallback": True})
+            scored.remove(row)
+    for relevance, result, reason, _ in scored:
+        if not reason:
+            continue
+        dropped.append({"title": str(getattr(result, "title", "") or "")[:80],
+                        "url": str(getattr(result, "url", "") or ""),
+                        "relevance": round(relevance, 3), "reason": reason})
+    return kept, dropped
+
+
 # ---- D3-02：有界查询规划 -----------------------------------------------------
 
 QUERY_PLANNER_PROMPT = (
-    "你是检索规划器。把研究主题拆成 2~4 个互补的搜索查询词（覆盖不同子问题/口径，"
-    "不要同义重复），供搜索引擎使用。只输出 JSON：{\"queries\":[\"查询1\",\"查询2\"]}，"
-    "每个查询≤24个汉字，不要编号与解释。")
+    "你是检索规划器。把研究主题拆成 2~4 个互补的搜索查询词，供搜索引擎使用。"
+    "要求：① 每个查询是 2~4 个关键词、用空格分隔的短查询——像真人在搜索框里输入，"
+    "不要整句、不要标点、不要只用年份或时间；"
+    "② 关键词选主题里最有区分度的专有名词/术语（政策与法规名、机构名、产品名、"
+    "行业术语），不要用「研究/现状/趋势/影响/分析/应用」这类泛词单独成词；"
+    "③ 各查询覆盖不同子问题，不要同义重复。"
+    "只输出 JSON：{\"queries\":[\"关键词 关键词\",\"关键词 关键词\"]}，不要编号与解释。")
 
 
 def _apply_query_filters(query: str, *, site: str = "", since: str = "") -> str:

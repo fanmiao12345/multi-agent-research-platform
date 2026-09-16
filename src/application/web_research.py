@@ -18,6 +18,7 @@ from src.harness.ingest.search import (
     SUPPORTED_PROVIDERS,
     SearchNotConfigured,
     ensure_provider_mode,
+    filter_search_results,
     plan_queries,
     run_search,
 )
@@ -81,8 +82,12 @@ def auto_search_candidates(topic: str, *, provider: str, run_mode: str = "real",
         started = time.monotonic()
         error = ""
         query_candidates: list[dict] = []
+        dropped: list[dict] = []
         try:
             results = search(provider_name, query, max_results=max_results)
+            # Q3-02 联网专项：结果先按关键词重合度与页面类型过滤，词典/日历/下载页
+            # 不再占用候选名额（实测这类页面挤满候选是 6/12 题 unable 的直接原因）。
+            results, dropped = filter_search_results(query, results)
             for position, result in enumerate(results, start=1):
                 item = _candidate_from_result(
                     result, provider=provider_name, query=query, position=position)
@@ -98,7 +103,7 @@ def auto_search_candidates(topic: str, *, provider: str, run_mode: str = "real",
         urls = [item["url"] for item in query_candidates]
         record = {
             "provider": provider_name, "query": query, "urls": urls,
-            "candidates": query_candidates,
+            "candidates": query_candidates, "dropped": dropped,
             "elapsed_seconds": round(elapsed, 3), "error": error,
         }
         records.append(record)
