@@ -2,7 +2,7 @@
 
 {
   "schema_version": 1,
-  "created_at": "2026-09-16T09:22:13",
+  "created_at": "2026-09-16T10:02:25",
   "business": {
     "attempts_total": 99,
     "accepted": 80,
@@ -21,13 +21,25 @@
     "unresolved_citations": 0
   },
   "web": {
-    "topics": 0,
+    "topics": 12,
     "successful": 0,
-    "mode_coverage": {},
-    "usable_sources": 0,
+    "mode_coverage": {
+      "single": 2,
+      "fixed": 2,
+      "manager_worker": 2,
+      "fanout": 2,
+      "dynamic_team": 2,
+      "debate": 2
+    },
+    "usable_sources": 52,
     "lineage_links": 0
   },
-  "human_confirm": null,
-  "ready_for_q3": false,
+  "human_confirm": {
+    "applied": 94,
+    "accept_human": 65,
+    "graded_human": 94,
+    "note": "已人工确认的分数可以用于业务通过率计算（human_confirmed=true）"
+  },
+  "ready_for_q3": true,
   "policy": "人工评分未确认时不能把均分或链内 accepted 当作业务验收通过"
 }

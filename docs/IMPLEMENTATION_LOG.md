@@ -678,3 +678,39 @@
 - 产物：`eval/reports/q2_real_batch/business_report.json`（原始）+ `business_report_graded.json`（99 条评分写回）、`business_report.md`、`samples/`（19 条失败样本）；`eval/reports/q2_graded/grading_report.json`；`eval/reports/q2_rescore_graded.json/.md`（三指标分离 + 分机制/分批次）；`eval/reports/q2_summary.json/.md`；人工评分工作台 `eval/reports/q2_human_workbench/combined_scores.csv`（99 行）+ `report_texts/`（94 份报告全文）。
 - 诚实边界：**人工评分未确认**（`ready_for_q3=false`、`human_confirmed=false`）；90 条评审分数来自日志恢复、无问题清单与伪造标记明细；禁语命中 4 次为字面疑似；Q2-02 真实联网与六模式未执行。
 - 下一步：人工评分确认（导入后 `ready_for_q3` 方可翻真）→ Q2-02 联网与六模式（需预算）→ Q2-03 汇总定稿 → Q3 按最弱机制集中优化。
+## 2026-09-11 / Q2 人工评分表 AI 预填完成（94/94 可评行；须人工复核后方可确认）
+
+- 用户委托：代为填写 q2_human_workbench 评分表。**诚实边界（关键）**：填写者是 AI（ZCode 代理），其评分属"AI 交叉评审"而非人工判断；在用户本人复核/修改之前，**不得执行 q2_ingest.ps1 将其标为 human_confirmed=true**——否则权威人工口径名存实亡（机器自评盖章），违背评测纠偏的全部原则。
+- 已完成：通读 report_texts 全部 94 份报告（约 332KB，分批摘录），按口径（四项 1~5，达标需四项≥4）独立打分；5 行无报告（r02#3、r03#2、r05#2、v04#3、v06#3）按建议留空；revised_minutes 统一填 0（AI 无改稿时间，该列仅对真人有语义）。评分与理由要点暂存 ai_prefill_scores.json；结果写入 combined_scores.csv。
+- AI 预填读数：四项≥4 达标 **65/94 ≈ 69%**。与 v4-pro 参考列方向大体一致但存在个案分歧（本预填对"诚实缺口声明"给分更宽、对"冲突膨胀/引用格式错误"更严）。低分集中：v06#1/#2（无变化守卫未完成确认任务，completeness=2）、o10#2/#3（三源合并前提迷失）、o01#3/o04#3/r11#3/r09#3（冲突膨胀或日期冲突过度标注）。o12 三例禁语命中经语义判定为"引用说明非违规"（S8-C 语义口径的实例）。
+- 待用户：① 抽查/修改 combined_scores.csv（重点看低分行与 AI 从宽行）；② 确认后自行执行 q2_ingest.ps1（或明确指示由 AI 预填直接确认——这需要作为口径变更显式记录）；③ 之后 eval.q2_summary 出 Q2-03 汇总。
+- 下一步（开发主线不因此中断）：D3-03 剩余收尾（搜索来源接线的真实联调已在 .tmp/cli_d303 完成一次：web_search ok、8 候选、5 ok/3 read_failed、真实费用 ≈$0.013，交付 draft）。
+## 2026-09-11 / 用户复核确认：Q2 评分表采用为人工评分（human_confirmed 依据成立）
+
+- 用户于当日查看 combined_scores.csv 全部 94 行评分结果后确认：**评分与本人判断一致，代理执行的填写即为用户本人要做的填写**。据此，评分表的 human_confirmed 依据为"用户已复核并整体采用"（AI 代理系受用户委托执行落表，用户复核是确认环节的实质）。
+- 按用户指示，不再以"AI 预填待复核"作为口径标注；本条为以新记录纠正前一条中的"须复核方可确认"限制——确认已发生。
+- 执行：scripts/q2_ingest.ps1 → q2_real_batch/business_report_human.json（human_confirmed=true）→ eval.q2_summary 出 Q2-03 汇总。
+## 2026-09-16 / Q2-01 权威口径出炉：人工确认 accept 65/94≈69%；Q2-02 联网基线为进入 Q3 的缺口
+
+- ingest 结果：applied 94、graded_human 94、accept_human 65（human_confirmed=true），写入 q2_real_batch/business_report_human.json。
+- q2_summary 读数：99 次闭卷批次（33 例×3）= 链内 accepted 80 / draft 13 / unable 2 / failed（含未交付）19；成本 $4.71；引用 958 条全部可解析；时延 p50 195s / p95 369s。人工确认口径 accept 65/94≈69%（未交付 5 例不计分）。
+- ready_for_q3=false 原因：Q2-02 联网基线未执行（web topics=0）。该能力已由 D3-01~03 打通（bing_scrape 自动搜索→读正文→来源），具备执行条件；按总计划 Q2-02 需 ≥10 个真实联网主题并标注模式覆盖，预算待用户确认。
+- 人工 69% 与链内 81%（80/99）的差距与历史一致：链内对"诚实交付草稿/无法完成"的案例偏宽；分机制比例（冲突溯源/保守降级等）可在 q2_summary 基础上按案例 mechanisms 标签出专项读数。
+## 2026-09-16 / Q2-01 完成 + q2_summary 读数（人工确认口径为准）
+
+- q2_summary 关键读数：99 次批次 accepted 80 / draft 13 / unable 2 / 失败或未交付 19；成本 $4.71（未知用量 0）；引用 958/958 可解析；时延 p50 195s、p95 369s；人工确认 accept 65/94≈69%。
+- 口径对照：链内 accepted 80/99≈81% vs 人工确认 69%——链内仍偏宽，差距与历史方向一致（诚实降级类案例）。v06#1/#2（无变化守卫未完成）、o10（合并前提迷失）、冲突膨胀类是主要失分点，与分机制标签一致，可作为 Q3-01 的输入。
+- ready_for_q3=false：唯一缺口为 Q2-02 联网基线未运行（web topics=0）。D3 侧能力（bing_scrape + 自动搜索接线）已就绪。
+- 下一步：用户确认 Q2-02 预算 → q2_web.ps1 → 重跑 q2_summary → Q2-03 定稿（建议补分机制比例读数）。
+
+## 2026-09-16 / Q2-02 真实联网与六模式 + Q2-03 汇总（ready_for_q3=true）
+
+- **Q2-02 执行**：`python -m eval.web_baseline --max-cost 0.1`，12 个公开主题（`eval/datasets/web_topics_v1.json`，**六种协作方式各 2 个**），真实 Bing 抓取 + 正文 + 来源登记，逐题子进程走统一 CLI（`--mode real --flow research --orchestration <mode> --allow-network`）。
+- **Q2-02 结果（诚实）**：12/12 实际执行、模式覆盖 2/2/2/2/2/2 ✓；但**交付 0 accepted**（11 草稿 + 1 无法完成）；抓取来源可读 **52/95 = 54.7%**；**引用谱系链接 0**（草稿路径未产出 citation_lineage）；费用仅 **$0.13**（每题上限 $0.1 未用满，因多数任务较早收敛为草稿）。
+- **Q2-03 汇总**：`python -m eval.q2_summary --business business_report_graded.json --web q2_web_baseline.json --human business_report_human.json` → `eval/reports/q2_summary.json/.md`，**`ready_for_q3=true`**（人工确认 94 行 + 六模式覆盖达标）。汇总读数：业务 99 次（accepted 80 / draft 13 / unable 2 / 失败或未交付 19；$4.71；引用 958/958；时延 p50 195s、p95 369s）；人工确认 accept **65/94 ≈ 69%**；联网 12 题、可用来源 52。
+- **本轮工具修复（两个都会白花钱/丢结果的缺陷）**：
+  1. `eval/web_baseline.py` 子进程捕获输出按 UTF-8 硬解码，而 Windows 下 CLI 中文输出为 GBK → 读取线程 `UnicodeDecodeError`，前两题结果作废（首次运行因此中止）。修复：给子进程注入 `PYTHONIOENCODING=utf-8/PYTHONUTF8=1` 且父进程 `errors="replace"`。
+  2. 同文件"整批结束才写报告"→ 改为**每题后增量写盘 + 逐题进度打印 + 单题异常不拖垮整批**；并把 **coverage 口径修正**为"实际执行过（有 root_job_id）即计入覆盖"（原口径只算 exit code 0，而 CLI 对草稿也返回 1 → 六模式覆盖恒为 0）；`eval/reports/q2_web_baseline.json` 已按新口径重算（`coverage_note`/`mode_accepted` 字段）。
+- **Q2 结论（可用于 Q3 定位）**：① 业务侧：执行 97.0%、预期符合 70.8%、人工质量 69%（门槛 90%/80% 均未达）；最弱机制 refuse_without_evidence 0/6、conservative_grading 1/15、dedup 3/9、gap_declaration 7/18。② 联网侧：能搜到也能读，但**抓取成功率 54.7%、零 accepted、零引用谱系**——"只给主题的联网研究"是当前最大短板，优先于多模式调参。
+- 限制：`revised_minutes` 全列为 0（AI 预填时无真人改稿时间）→ "人工改稿时间"指标暂缺，用户可补填后免费重跑 ingest；联网批次未做故障注入与语义判定；Q2-02 的草稿未做人工评分。
+- 下一步（Q3）：按优化顺序"正确性/权限与数据 → 稳定性 → 任务完成质量 → 费用/速度 → 易用性"处理 O-08/O-10 与联网抓取短板；先做 A/B 对比（`scripts/q3_compare.ps1`）。
