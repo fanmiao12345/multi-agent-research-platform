@@ -53,6 +53,10 @@ def run(max_cost: float, topic_filter: str | None = None) -> dict:
         command=[sys.executable,"-m","src.interfaces.cli",case["topic"],
                  "--mode","real","--flow","research",
                  "--orchestration",case["mode"],"--allow-network",
+                 # 限额必须与业务批（eval/business_eval.py）一致，否则研究链跑到一半
+                 # 就被 CLI 默认（12 次调用 / 8192 输出 token / 300 秒）掐断，
+                 # 得到的是"没跑完"的假基线（2026-09-16 联网批首次运行即为此故障）。
+                 "--max-calls","60","--max-output-tokens","200000","--max-seconds","1500",
                  "--max-cost",str(max_cost),"--workspace",str(workspace)]
         # 子进程中文输出在 Windows 下可能不是 UTF-8（GBK），必须容错解码，
         # 否则 subprocess 的读取线程会抛 UnicodeDecodeError 并丢掉整个 stdout。

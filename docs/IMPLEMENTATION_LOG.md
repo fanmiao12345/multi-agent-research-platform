@@ -714,3 +714,13 @@
 - **Q2 结论（可用于 Q3 定位）**：① 业务侧：执行 97.0%、预期符合 70.8%、人工质量 69%（门槛 90%/80% 均未达）；最弱机制 refuse_without_evidence 0/6、conservative_grading 1/15、dedup 3/9、gap_declaration 7/18。② 联网侧：能搜到也能读，但**抓取成功率 54.7%、零 accepted、零引用谱系**——"只给主题的联网研究"是当前最大短板，优先于多模式调参。
 - 限制：`revised_minutes` 全列为 0（AI 预填时无真人改稿时间）→ "人工改稿时间"指标暂缺，用户可补填后免费重跑 ingest；联网批次未做故障注入与语义判定；Q2-02 的草稿未做人工评分。
 - 下一步（Q3）：按优化顺序"正确性/权限与数据 → 稳定性 → 任务完成质量 → 费用/速度 → 易用性"处理 O-08/O-10 与联网抓取短板；先做 A/B 对比（`scripts/q3_compare.ps1`）。
+
+## 2026-09-16 / Q2 复核纠错（第 0 步，功能修复）：联网批 11/12 题是被"跑错的上限"掐断
+
+- 复核发现（用户提出，逐题核验成立）：**Q2-02 的"0 accepted / 11 草稿 / 引用谱系 0 / $0.13"不是研究能力读数**——`eval/reports/q2_web_baseline.json` 逐题显示 w02~w12 终止原因均为 `budget_exceeded`、消息为"根任务已停止：output_token_limit"，耗时整齐停在 47–59 秒。根因是**两批评测脚本限额不一致**：`eval/business_eval.py` 传 `max_calls=60 / max_output_tokens=200000 / max_seconds=1500`，而 `eval/web_baseline.py` 走 CLI 子进程时**三个都没传**，用上 CLI 默认值 `12 / 8192 / 300`（CLI 本身已暴露这三个参数，非缺参数）。
+- 唯一真正跑完的 **w01** 终止原因是 `unable`（素材包仅节假日/日历类无关来源，明确列出缺口后诚实拒绝）→ **O-11 的真问题是搜索相关性与正文可读率，而不是"多智能体不给力"**。
+- 修复（功能性，非调优，按主计划属"数据正确性"）：① `eval/web_baseline.py` 传 `--max-calls 60 --max-output-tokens 200000 --max-seconds 1500`，与业务批一致；② `eval/q2_summary.py` 分级口径修正——accepted/draft/unable/failed 改为**互斥**（原 `failed` 实为"非 accepted"，导致 80+13+2+19=114 > 99 的合计错乱），新增 `non_accepted` 参考值与 `level_note`，联网段新增 `level_distribution`/`budget_stopped`/`baseline_valid`/`invalid_reason`/`total_sources`。
+- 标注：旧联网报告归档为 `eval/reports/q2_web_baseline_invalid_8192.json` 并写入 `invalid_baseline=true` + `invalid_reason`；`OPTIMIZATION_BACKLOG` O-11 同步改为"无效基线，待重跑"。
+- 重跑：清空 `q2_web_workspace` 后按新限额重跑 12 题（单题上限 $0.12，预计 ≈$0.6），后台执行中；跑完用 `eval.q2_summary` 重出 Q2-03（web 段将带 `baseline_valid=true`）。
+- 后续（若重跑后草稿路径仍无 `citation_lineage.json`）：按主计划 §9 属 **D7 功能缺口**（引用谱系应覆盖草稿路径），回补修复，不计入优化项。
+- 业务侧 Q3-01 第 1 批（`refuse_without_evidence` 0/6 + `conservative_grading` 1/15，同一根因"证据不足时该拒/该降草稿却交成品"）与本次重跑并行推进。

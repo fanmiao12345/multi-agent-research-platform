@@ -31,11 +31,20 @@ def summarize(business: dict|None, web: dict|None, human: dict|None) -> dict:
       "schema_version":1,"created_at":datetime.now().isoformat(timespec="seconds"),
       "business":{
         "attempts_total":len(records),
+        # 分级口径：accepted 成品 / draft 草稿 / unable 无法完成 / failed 交付失败（阶段错误）
+        # 四者互斥、与 not_executed 合计等于 attempts_total；另有 non_accepted 汇总参考。
         "accepted":sum(1 for r in records if r.get("draft_level")=="accepted"),
         "draft":sum(1 for r in records if r.get("draft_level")=="draft"),
         "unable":sum(1 for r in records if r.get("draft_level")=="unable"),
-        "failed":sum(1 for r in records if r.get("status")=="failed"),
+        "failed":sum(1 for r in records if r.get("draft_level")=="failed"
+                     or (r.get("status")=="failed" and not r.get("draft_level"))),
         "not_executed":sum(1 for r in records if r.get("status")=="not_executed"),
+        "non_accepted":sum(1 for r in records
+                           if r.get("status")!="not_executed"
+                           and r.get("draft_level")!="accepted"),
+        "level_note":"accepted/draft/unable/failed 为互斥分级；non_accepted 为参考汇总，"
+                     "与 accepted 相加等于已执行次数（历史上曾把 failed 记成非 accepted，"
+                     "导致合计超过总数，2026-09-16 修正）",
         "estimated_cost_usd":round(total_cost,6),
         "unknown_usage_calls":unknown,
         "latency_seconds":_num([r.get("elapsed_seconds") for r in records]),
@@ -44,8 +53,15 @@ def summarize(business: dict|None, web: dict|None, human: dict|None) -> dict:
       "web":{
         "topics":len(web_rows),
         "successful":sum(1 for r in web_rows if r.get("returncode")==0),
+        "level_distribution":{lvl:sum(1 for r in web_rows if r.get("draft_level")==lvl)
+                              for lvl in ("accepted","draft","unable","failed")},
+        "budget_stopped":sum(1 for r in web_rows
+                             if r.get("termination_reason")=="budget_exceeded"),
+        "baseline_valid":not (web or {}).get("invalid_baseline", False),
+        "invalid_reason":(web or {}).get("invalid_reason"),
         "mode_coverage":(web or {}).get("mode_coverage",{}),
         "usable_sources":sum(int(r.get("usable_sources") or 0) for r in web_rows),
+        "total_sources":sum(int(r.get("source_count") or 0) for r in web_rows),
         "lineage_links":sum(len(r.get("citation_lineage") or []) for r in web_rows),
       },
       "human_confirm":human_meta,
