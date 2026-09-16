@@ -150,7 +150,44 @@ def format_evidence_block(items: list[dict]) -> str:
 
 
 def format_material_block(pack: dict) -> str:
-    return json.dumps(pack, ensure_ascii=False, indent=1)[:20000]
+    """把素材包渲染成**面向写作的自然语言**（不再直接塞原始 JSON）。
+
+    实测问题（Q3-01 第 2 批）：此前直接给模型原始 JSON，键名（duplicates/evidence_id/
+    points 等）会被写进交付正文，出现"素材包 duplicates 字段记录…"这类内部标识泄漏；
+    这里改为人类可读渲染，内部字段名不出现在提示词里，从源头消除泄漏。
+    仍保留 20000 字符上限。
+    """
+    lines: list[str] = []
+    topics = pack.get("topics") or []
+    if topics:
+        lines.append("## 已核实的证据（按主题组织，方括号内为引用编号）")
+        for topic in topics:
+            lines.append(f"### {topic.get('name') or '（未命名主题）'}")
+            for point in topic.get("points") or []:
+                lines.append(f"- [{point.get('evidence_id')}] {point.get('statement')}")
+        lines.append("")
+    conflicts = pack.get("conflicts") or []
+    if conflicts:
+        lines.append("## 冲突（均为开放状态，未获新证据前不作裁决）")
+        for conflict in conflicts:
+            ids = "、".join(conflict.get("evidence_ids") or [])
+            lines.append(f"- {conflict.get('statement')}（涉及 {ids}）")
+        lines.append("")
+    gaps = pack.get("gaps") or []
+    if gaps:
+        lines.append("## 待补问题（材料缺口）")
+        for gap in gaps:
+            tail = f"——缺少：{gap.get('missing')}" if gap.get("missing") else ""
+            lines.append(f"- {gap.get('question')}{tail}")
+        lines.append("")
+    duplicates = pack.get("duplicates") or []
+    if duplicates:
+        lines.append("## 重复来源（转载按同一份证据处理，不得重复计数）")
+        for dup in duplicates:
+            lines.append(f"- {dup.get('display')} 与 {dup.get('duplicate_of')} 实质相同")
+        lines.append("")
+    text = "\n".join(lines) if lines else "（没有整理出素材，请如实说明材料不足）"
+    return text[:20000]
 
 
 def _field(obj, key: str, default=""):
