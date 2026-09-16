@@ -2,14 +2,16 @@
 
 {
   "schema_version": 1,
-  "created_at": "2026-09-16T10:02:25",
+  "created_at": "2026-09-16T10:54:12",
   "business": {
     "attempts_total": 99,
     "accepted": 80,
     "draft": 13,
     "unable": 2,
-    "failed": 19,
+    "failed": 4,
     "not_executed": 0,
+    "non_accepted": 19,
+    "level_note": "accepted/draft/unable/failed 为互斥分级；non_accepted 为参考汇总，与 accepted 相加等于已执行次数（历史上曾把 failed 记成非 accepted，导致合计超过总数，2026-09-16 修正）",
     "estimated_cost_usd": 4.710098,
     "unknown_usage_calls": 0,
     "latency_seconds": {
@@ -22,7 +24,16 @@
   },
   "web": {
     "topics": 12,
-    "successful": 0,
+    "successful": 3,
+    "level_distribution": {
+      "accepted": 3,
+      "draft": 3,
+      "unable": 6,
+      "failed": 0
+    },
+    "budget_stopped": 0,
+    "baseline_valid": true,
+    "invalid_reason": null,
     "mode_coverage": {
       "single": 2,
       "fixed": 2,
@@ -31,7 +42,8 @@
       "dynamic_team": 2,
       "debate": 2
     },
-    "usable_sources": 52,
+    "usable_sources": 56,
+    "total_sources": 107,
     "lineage_links": 0
   },
   "human_confirm": {

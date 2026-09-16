@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_bcb0d3f67c",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_bcb0d3f67c",
+      "fact": "客服工具行业通常按坐席数分档收费。",
+      "tag": "F",
+      "quote": "客服工具行业通常按坐席数分档收费",
+      "start": 11,
+      "end": 27,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_bcb0d3f67c",
+      "fact": "该行业常见功能包括工单、报表与知识库。",
+      "tag": "F",
+      "quote": "常见功能包括工单、报表与知识库。",
+      "start": 28,
+      "end": 44,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_bcb0d3f67c",
+      "fact": "材料不包含任何具体供应商的报价信息。",
+      "tag": "F",
+      "quote": "本材料不包含任何具体供应商的报价信息。",
+      "start": 44,
+      "end": 63,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_bcb0d3f67c",
+      "fact": "据此无法得出竞品X在2026年的坐席单价。",
+      "tag": "I",
+      "quote": "本材料不包含任何具体供应商的报价信息。",
+      "start": 44,
+      "end": 63,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    }
+  ]
+}

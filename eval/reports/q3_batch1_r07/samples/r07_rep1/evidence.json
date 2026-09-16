@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_3bb03beb57",
+      "fact": "本材料为合成验收数据",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_3bb03beb57",
+      "fact": "观察研究覆盖120人",
+      "tag": "F",
+      "quote": "观察研究覆盖120人",
+      "start": 11,
+      "end": 21,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_3bb03beb57",
+      "fact": "研究为期4周",
+      "tag": "F",
+      "quote": "为期4周",
+      "start": 22,
+      "end": 26,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_3bb03beb57",
+      "fact": "远程办公与自评专注度上升存在相关关系",
+      "tag": "F",
+      "quote": "远程办公与自评专注度上升存在相关关系",
+      "start": 27,
+      "end": 45,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_3bb03beb57",
+      "fact": "样本自愿加入且未随机分组",
+      "tag": "F",
+      "quote": "样本自愿加入，未随机分组。",
+      "start": 46,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_3bb03beb57",
+      "fact": "未报告客观产出指标或长期效果",
+      "tag": "F",
+      "quote": "没有报告客观产出指标或长期效果。",
+      "start": 59,
+      "end": 75,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_3bb03beb57",
+      "fact": "自愿加入且未随机分组使因果结论受限",
+      "tag": "I",
+      "quote": "样本自愿加入，未随机分组。",
+      "start": 46,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_3bb03beb57",
+      "fact": "资料未提供截至2026年9月7日新增独立研究结论",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    }
+  ]
+}

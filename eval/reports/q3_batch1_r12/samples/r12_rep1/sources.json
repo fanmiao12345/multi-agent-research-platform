@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_bcb0d3f67c",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "本材料为合成验收数据。客服工具行业通常按坐席数分档收费，常见功能包括工单、报表与知识库。本材料不包含任何具体供应商的报价信息。",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 189,
+      "content_hash": "9b9067c9d38b3648ae38b1398dde062a29d4de696b21b0008455a3fbeccb071a",
+      "normalized_hash": "9b9067c9d38b3648ae38b1398dde062a29d4de696b21b0008455a3fbeccb071a",
+      "captured_at": "2026-09-16T10:25:05",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_bcb0d3f67c.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-16T10:25:05",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

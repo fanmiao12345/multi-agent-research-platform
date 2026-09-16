@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_7a2c343aeb",
+      "fact": "材料标题标注为合成验收数据",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_7a2c343aeb",
+      "fact": "星桥团队试点共40人",
+      "tag": "F",
+      "quote": "星桥团队试点共40人",
+      "start": 11,
+      "end": 21,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_7a2c343aeb",
+      "fact": "观察期为2026年7月1日至7月31日",
+      "tag": "F",
+      "quote": "观察期为2026年7月1日至7月31日",
+      "start": 22,
+      "end": 41,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_7a2c343aeb",
+      "fact": "所有人每周远程办公2天",
+      "tag": "F",
+      "quote": "所有人每周远程办公2天",
+      "start": 42,
+      "end": 53,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_7a2c343aeb",
+      "fact": "该试点没有设置对照组",
+      "tag": "F",
+      "quote": "没有设置对照组。",
+      "start": 54,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_9a89ece90a",
+      "fact": "资料标题为“本材料为合成验收数据”，未提供日期。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_9a89ece90a",
+      "fact": "资料类型为合成验收数据，主要用途是验收。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_9a89ece90a",
+      "fact": "24名答卷者表示满意。",
+      "tag": "F",
+      "quote": "24名答卷者表示满意。",
+      "start": 26,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_9a89ece90a",
+      "fact": "问卷回收率为80%，答卷者满意率为75%。",
+      "tag": "F",
+      "quote": "问卷回收率为80%，答卷者满意率为75%。",
+      "start": 37,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_9a89ece90a",
+      "fact": "观察期工单平均处理时长从10小时变为8小时。",
+      "tag": "F",
+      "quote": "观察期工单平均处理时长从10小时变为8小时",
+      "start": 58,
+      "end": 79,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_9a89ece90a",
+      "fact": "未控制工单难度变化。",
+      "tag": "F",
+      "quote": "未控制工单难度变化。",
+      "start": 80,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_1e0b5d248e",
+      "fact": "由全文未出现日期字段可知，来源未提供日期。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。方案甲每账号每月20元；可按月支付，最低10个账号。支持Markdown导出。页面未说明数据保存地区和删除周期。",
+      "start": 0,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_1e0b5d248e",
+      "fact": "类型标注为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_1e0b5d248e",
+      "fact": "主要用途可归为合成验收。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_1e0b5d248e",
+      "fact": "方案甲每账号每月20元。",
+      "tag": "F",
+      "quote": "方案甲每账号每月20元",
+      "start": 11,
+      "end": 22,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_1e0b5d248e",
+      "fact": "方案甲可按月支付，最低10个账号。",
+      "tag": "F",
+      "quote": "可按月支付，最低10个账号",
+      "start": 23,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_1e0b5d248e",
+      "fact": "支持Markdown导出。",
+      "tag": "F",
+      "quote": "支持Markdown导出",
+      "start": 37,
+      "end": 49,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_1e0b5d248e",
+      "fact": "页面未说明数据保存地区和删除周期。",
+      "tag": "F",
+      "quote": "页面未说明数据保存地区和删除周期。",
+      "start": 50,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_511d87e5dead4f899f421cc2d9dd2f62",
+  "status": "failed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "failed",
+    "termination_reason": "error",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-16T10:18:32"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，2 个开放冲突，4 个缺口",
+        "finished_at": "2026-09-16T10:18:46"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个章节",
+        "finished_at": "2026-09-16T10:18:57"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1264字）",
+        "finished_at": "2026-09-16T10:19:23"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-16T10:20:36"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-16T10:22:51"
+      },
+      {
+        "stage": "review",
+        "status": "failed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "审校输出不是合法 JSON 对象",
+        "finished_at": "2026-09-16T10:25:02"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 1,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "阶段 review 失败：审校输出不是合法 JSON 对象"
+  }
+}

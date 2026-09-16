@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_6c88708f0c",
+      "fact": "客服团队2026年共有45人。",
+      "tag": "F",
+      "quote": "客服团队2026年共有45人",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_6c88708f0c",
+      "fact": "一线坐席32人，其余为管理与质检岗位。",
+      "tag": "F",
+      "quote": "其中一线坐席32人，其余为管理与质检岗位",
+      "start": 26,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_6c88708f0c",
+      "fact": "工单趋势：资料未说明，无法回答。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_6c88708f0c",
+      "fact": "竞品X定价：资料未说明，无法回答。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_29df6d2bf3",
+      "fact": "2026年上半年月均工单量为1200件",
+      "tag": "F",
+      "quote": "2026年上半年月均工单1200件",
+      "start": 11,
+      "end": 28,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_29df6d2bf3",
+      "fact": "2026年第二季度工单量比第一季度环比下降8%",
+      "tag": "F",
+      "quote": "其中第二季度比第一季度环比下降8%",
+      "start": 29,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_29df6d2bf3",
+      "fact": "工单环比下降主因是新增了自助问答页",
+      "tag": "F",
+      "quote": "主要因新增了自助问答页",
+      "start": 47,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_29df6d2bf3",
+      "fact": "团队规模：资料未提供任何相关数据，无法回答",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_29df6d2bf3",
+      "fact": "竞品X的定价：资料未提及该竞品及任何价格信息，无法回答",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_a2dffee0e5",
+      "fact": "资料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_a2dffee0e5",
+      "fact": "客服工具行业通常按坐席数分档收费。",
+      "tag": "F",
+      "quote": "客服工具行业通常按坐席数分档收费，",
+      "start": 11,
+      "end": 28,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_a2dffee0e5",
+      "fact": "常见功能包括工单、报表与知识库。",
+      "tag": "F",
+      "quote": "常见功能包括工单、报表与知识库。",
+      "start": 28,
+      "end": 44,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_a2dffee0e5",
+      "fact": "资料不包含任何具体供应商的报价信息。",
+      "tag": "F",
+      "quote": "本材料不包含任何具体供应商的报价信息。",
+      "start": 44,
+      "end": 63,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_a2dffee0e5",
+      "fact": "资料未提供团队规模信息，无法回答团队规模。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。客服工具行业通常按坐席数分档收费，常见功能包括工单、报表与知识库。本材料不包含任何具体供应商的报价信息。",
+      "start": 0,
+      "end": 63,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_a2dffee0e5",
+      "fact": "资料未提供工单趋势信息，无法回答工单趋势。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。客服工具行业通常按坐席数分档收费，常见功能包括工单、报表与知识库。本材料不包含任何具体供应商的报价信息。",
+      "start": 0,
+      "end": 63,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_a2dffee0e5",
+      "fact": "资料未提供竞品X定价，无法回答其定价。",
+      "tag": "F",
+      "quote": "本材料不包含任何具体供应商的报价信息。",
+      "start": 44,
+      "end": 63,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 63
+      },
+      "note": ""
+    }
+  ]
+}

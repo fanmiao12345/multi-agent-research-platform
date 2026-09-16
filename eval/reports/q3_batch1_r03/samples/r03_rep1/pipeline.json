@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_e76ced05a027459597848cff0105a46a",
+  "goal": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+  "started_at": "2026-09-16T10:40:36",
+  "hard_requirements": {
+    "required_sections": [
+      "已知承诺",
+      "证据缺口",
+      "批准条件"
+    ],
+    "forbidden_claims": [],
+    "key_facts": []
+  },
+  "result": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-16T10:40:55"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，2 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-16T10:41:03"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "8 个章节",
+        "finished_at": "2026-09-16T10:41:09"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2567字）",
+        "finished_at": "2026-09-16T10:41:52"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-16T10:43:06"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-16T10:44:07"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-16T10:45:05"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 84,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）"
+  }
+}
