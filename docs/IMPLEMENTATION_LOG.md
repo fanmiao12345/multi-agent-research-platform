@@ -747,3 +747,41 @@
 - **前后对比复跑（8 题 ×1，$0.38）**：r03 → `draft`✓（原 成品）、r07 → `unable`✓（原 成品×3）、r12 → `unable`✓（原 成品×3）；**发现并修掉 1 例误伤**：r04（交付物本就是"建议暂不扩大试点"，被"暂不扩大"误触发封顶）→ 收窄口径后复验恢复 `accepted`✓（提交第二个修正）；o13 仍未封顶（预期草稿，报告未自述不足，**剩余缺口**）；r11 本次为阶段错误（审校输出非合法 JSON，`failed`，属稳定性问题）；对照 o01 本次为 `draft`（9 条审校阻塞问题，与 `5eed4ba` 无关的运行波动）、r02 `accepted`✓。
 - 测试：`delivery_cap` 单元 5 组（含 r04 防误伤用例）+ 链内集成 1 项；pipeline/research_flow/ops_s6/resume/followup 50 项通过。
 - 诚实边界：第 1 批属"少交付错误"的修复，**尚未做人工复核**；o13 未修、r11 稳定性问题、o01 波动三项留待第 2/3 批或稳定性专项。
+
+## 2026-09-16 / Q3-01 第 2 批：三项程序检查的实测校准（一次口径纠偏）+ 内部标识泄漏的根因修复
+
+**第 2 批复跑（8 题 ×1，8 题全部跑完，$0.64）**：受影响 5 例 + 对照 3 例，逐例与 **20 例人工确认批次的人工判定**对照（口径见 `eval/reports/gate_real_batch_human_confirmed.json`，不另起口径）：
+
+| 案例 | 第 2 批等级 | 命中（error 级） | 20 例人工判定 | 结论 |
+|---|---|---|---|---|
+| o03 | draft | internal_leak×1 + 模型层 conflict/missing/support | draft | ✓ 一致 |
+| o07 | draft | fact_label×5 + internal_leak + conflict + support | draft | ✓ 一致 |
+| o05 | draft | fact_label×3 + support×6 | draft | ✓ 一致 |
+| r02 | draft | fact_label×15 + support + missing + conflict | draft | ✓ 一致 |
+| o01 | draft | internal_leak + fact_label×6 + section×6 | draft | ✓ 一致 |
+| o08 | **accepted** | 无 | draft | ✗ 漏报 |
+| v01 | draft | internal_leak + missing×2 | **accept** | ✗ 误伤 |
+| r05 | draft | fact_label×10 + internal_leak | **accept** | ✗ 误伤 |
+
+**校准（脚本 `.tmp/q3_check_validation.py`、`.tmp/q3_factlabel_calib.py`，用 20 例人工确认批次的报告原文 + 证据 tag 直接跑生产代码里的检查）**
+
+- `fact_label`（整句只引 I/U 却标〔事实〕）：命中 18/20 报告；人工判 **accept** 的 9 例里 **7 例命中**（r06 21 处、v02 11 处、r08 10 处、o06 7 处…），人工判 draft 的 11 例里 10 例命中 → **没有区分度**，不能用来封顶交付等级。收窄成"只引 U"仍有 3/9 误报（r05/r06/v02），同样不足以封顶。
+- `internal_leak`：20 例中 3 例命中（o03、o08 人工判定均为 draft ✓；v01 人工判定 accept ✗）。
+- `source_count`（输入规模断言）：20 例中命中 1 例（o08，人工判定 draft ✓）。
+
+**根因：内部标识不是写作模型乱写，是我们自己把内部 id 递进了提示词**
+
+1. 证据提取提示词写 `来源：…（id=src_xxxx）`，模型把它抄进 fact → 实测 o07「来源src_01b5f94ffb标注本材料为合成验收数据」，再经素材包流入正文；
+2. `material.fill_duplicates` 的 `duplicate_of` 存内部 source_id → 渲染出「粘贴文本 2 与 src_010915e256 实质相同」（o03 正文原样照抄）；
+3. `prompts.format_evidence_block` 写 `(来源 src_xxxx)` → 提纲器直接拿它当章节标题（o01 提纲「资料一：src_edfac4b498」，第 2 批 o01 的 6 条 `section` 报错即由此连锁）；
+4. 审校证据索引 `（来源 src_xxx）` 同款。
+
+**修复（提交见下）**
+
+- `prompts.format_evidence_block(items, labels=None)`：一律渲染可读来源名（如「粘贴文本 1」），拿不到映射写「该来源」，绝不回退成内部 id；
+- 提取提示词去掉 `id=`，并要求 fact 里用「本资料」指代；新增 `NO_INTERNAL_ID_RULE` 写进**提纲**与**写作**提示词；
+- `material.fill_duplicates` 两侧都换可读名；runner 建 `source_labels` 并接到素材包、审校证据索引；
+- `review._content_quality_checks`：`fact_label` 由 error 降为 **warn**（注释写明校准数据与根因），`internal_leak`/`source_count` 保持 error。
+- 测试：新增 `test_no_internal_source_id_in_model_prompts`、更新 `fill_duplicates` 断言与 `fact_label` 严重级断言；**563 项通过**（`tests/test_drift_eval.py` 属并行工作流的在写文件，与本步无关）。
+
+**诚实边界**：① o08 第 2 批无命中却 accepted（漏报，人工判定 draft）；② v01/r05 的误伤已由根因修复+口径纠偏处理，效果待第 3 批复跑验证；③ o13（预期草稿仍未封顶）未修。**本步只做了必要的最小功能与边界验证，未调参、未跑全量。**

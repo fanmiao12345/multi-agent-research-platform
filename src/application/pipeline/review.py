@@ -242,10 +242,13 @@ def _content_quality_checks(report: str, evidence_tags: dict[str, str] | None,
                             source_count: int | None) -> list[ReviewIssue]:
     """Q3-01 第 2 批（O-08）：三项可程序判定的内容质量问题。
 
-    ① 内部标识泄漏：来源/任务 id、素材包字段名等内部产物不得出现在交付正文；
-    ② 〔事实〕标注与证据强度不一致：整句只引用了推断/未知证据却标成〔事实〕；
-    ③ 对输入规模的断言与实际不符：如"只提供 1 份来源/第二份缺失"而实际有多份。
-    均为可复现的实测问题（o03/o08/v01/o07 等），只做字面匹配，不做语义判定。
+    ① 内部标识泄漏：来源/任务 id、素材包字段名等内部产物不得出现在交付正文
+       （error，封顶交付等级；根因已在提示词侧修掉，见 prompts.NO_INTERNAL_ID_RULE）；
+    ② 〔事实〕标注与证据强度不一致：整句只引用了推断/未知证据却标成〔事实〕
+       （warn，不封顶——20 例人工确认批次校准显示该口径没有区分度，见函数内注释）；
+    ③ 对输入规模的断言与实际不符：如"只提供 1 份来源/第二份缺失"而实际有多份
+       （error，封顶；20 例人工批次里唯一命中的 o08 人工判定就是 draft）。
+    只做字面匹配，不做语义判定。
     """
     issues: list[ReviewIssue] = []
     text = report or ""
@@ -264,10 +267,15 @@ def _content_quality_checks(report: str, evidence_tags: dict[str, str] | None,
                 continue
             tags = [evidence_tags.get(i) for i in ids]
             if all(t and t != "F" for t in tags):
+                # 只报 warn，不封顶交付等级：用 20 例人工确认批次校准的结果是
+                # 该口径没有区分度——人工判 accept 的报告里 7/9 也命中（r06 高达 21 处），
+                # 人工判 draft 的报告里 10/11 命中。根因是 F/I/U 由证据提取器按
+                # 「资料是否直接支持」判定，与正文里「这句话是不是事实」不是同一件事。
+                # 待办见 docs/OPTIMIZATION_BACKLOG.md O-08 ②。
                 issues.append(ReviewIssue(
-                    "error", "fact_label",
+                    "warn", "fact_label",
                     f"整句仅引用推断/未知证据（{','.join(ids)}）却标注为〔事实〕："
-                    "应改为〔推断〕/〔未知〕"))
+                    "建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"))
     if source_count and source_count >= 2:
         match = _SOURCE_COUNT_CLAIM.search(text)
         if match:

@@ -168,6 +168,10 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                          "请显式 resume 或使用新任务目录")
         index = store.summary().get("sources", [])
         usable = [r for r in index if r["status"] in ("ok", "partial") and r.get("file_name")]
+        # Q3-01 第 2 批（O-08 ③）：模型只应看到可读来源名，内部 source_id 不外传。
+        source_labels = {r.get("source_id") or "": (r.get("display") or r.get("file_name")
+                                                   or "该来源")
+                         for r in index}
         if not usable:
             result.draft_level = "draft"
             result.termination_reason = "incomplete"
@@ -234,7 +238,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                          message=f"复用素材包（{len(pack.topics)} 个主题）")
         else:
             progress("material", "正在整理素材包")
-            pack, pack_issues = run_material_stage(llm, goal, evidence_items)
+            pack, pack_issues = run_material_stage(llm, goal, evidence_items,
+                                                   labels=source_labels)
             fill_duplicates(pack, index)
             artifact = artifacts.save("material_pack", render_material(pack),
                                       producer="pipeline-material")
@@ -277,7 +282,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                     evidence_store.save_all(all_items)
                     evidence_items = [item if isinstance(item, dict) else item.as_dict()
                                       for item in all_items]
-                    pack, pack_issues = run_material_stage(llm, goal, evidence_items)
+                    pack, pack_issues = run_material_stage(llm, goal, evidence_items,
+                                                           labels=source_labels)
                     fill_duplicates(pack, store.summary()["sources"])
                     artifact = artifacts.save("material_pack", render_material(pack),
                                               producer="pipeline-repair")
@@ -436,7 +442,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                                      source_count=len(usable))
             evidence_index = "\n".join(
                 f"- {item['evidence_id']} {item['fact']}"
-                f"（来源 {item['source_id']}）" for item in evidence_items)
+                f"（来源 {source_labels.get(item.get('source_id') or '', '该来源')}）"
+                for item in evidence_items)
             try:
                 model_issues, verdict = model_review(llm, goal, report,
                                                      evidence_index, sections,

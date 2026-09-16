@@ -27,7 +27,7 @@ def test_gap_repair_adds_source_once_and_continues(tmp_path, monkeypatch):
 
     calls = {"material": 0, "repair": 0}
 
-    def material(_llm, _goal, _evidence):
+    def material(_llm, _goal, _evidence, labels=None):
         calls["material"] += 1
         if calls["material"] == 1:
             return MaterialPack(topics=[], gaps=[{"question": "还缺什么？", "missing": "关键事实"}]), []

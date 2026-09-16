@@ -92,9 +92,11 @@ def test_material_stage_validates_ids_and_forces_conflict_open():
     assert any("无依据" in issue["message"] for issue in issues)
     assert pack.gaps == [{"question": "缺丙资料", "missing": "来源"}]
     dupes = fill_duplicates(pack, [{"status": "duplicate", "display": "b",
-                                    "duplicate_of": "src_a"},
-                                   {"status": "ok", "display": "c"}])
-    assert dupes == [{"display": "b", "duplicate_of": "src_a"}]
+                                    "source_id": "src_b", "duplicate_of": "src_a"},
+                                   {"status": "ok", "display": "c",
+                                    "source_id": "src_c"}])
+    # Q3-01 第 2 批：重复来源两侧都用可读来源名，不再外泄内部 source_id
+    assert dupes == [{"display": "b", "duplicate_of": "同一来源的另一份材料"}]
 
 
 def test_outline_stage_filters_bad_ids_and_requires_sections():
@@ -526,8 +528,12 @@ def test_content_quality_checks_internal_leak_labels_and_source_count():
     assert "internal_leak" in codes
 
     mislabel = "# 报告\n\n## 结论\n\n该来源未提供方案甲任何信息【E-001】〔事实〕。\n"
-    assert any(i.code == "fact_label" for i in
-               program_checks(mislabel, {"E-001"}, [], evidence_tags={"E-001": "I"}))
+    mislabel_issues = program_checks(mislabel, {"E-001"}, [],
+                                     evidence_tags={"E-001": "I"})
+    assert any(i.code == "fact_label" for i in mislabel_issues)
+    # Q3-01 第 2 批校准：〔事实〕标注口径没有区分度（20 例人工确认批次里人工判 accept
+    # 的报告 7/9 也命中），因此只报 warn，不封顶交付等级。
+    assert all(i.severity == "warn" for i in mislabel_issues if i.code == "fact_label")
     ok = "# 报告\n\n## 结论\n\n该来源未提供方案甲任何信息【E-001】〔推断〕。\n"
     assert not any(i.code == "fact_label" for i in
                    program_checks(ok, {"E-001"}, [], evidence_tags={"E-001": "I"}))
@@ -542,6 +548,32 @@ def test_content_quality_checks_internal_leak_labels_and_source_count():
                               source_count=2))
     assert not any(i.code == "source_count" for i in
                    program_checks(claim, {"E-001"}, [], source_count=1))
+
+
+def test_no_internal_source_id_in_model_prompts():
+    """Q3-01 第 2 批根因：内部 source_id 不得进入任何写作侧提示词。
+
+    实测泄漏链：提取器看到 `id=src_xxxx` → 写进 fact（o07）→ 素材包 → 交付正文；
+    提纲器看到 `来源 src_xxxx` → 直接用它当章节标题（o01「资料一：src_edfac4b498」）。
+    """
+    from src.application.pipeline.prompts import (build_evidence_messages,
+                                                  build_outline_messages,
+                                                  format_evidence_block)
+
+    items = [{"evidence_id": "E-001", "fact": "试点共40人", "tag": "F", "quote": "q",
+              "source_id": "src_edfac4b498"}]
+    labels = {"src_edfac4b498": "粘贴文本 1"}
+    block = format_evidence_block(items, labels)
+    assert "src_edfac4b498" not in block and "粘贴文本 1" in block
+    # 拿不到映射时也不能回退成内部 id
+    assert "src_edfac4b498" not in format_evidence_block(items)
+
+    extract = build_evidence_messages("目标", {"source_id": "src_edfac4b498",
+                                               "display": "粘贴文本 1", "title": "t",
+                                               "text": "试点共40人"})
+    assert all("src_edfac4b498" not in m["content"] for m in extract)
+    outline = build_outline_messages("目标", block)
+    assert "内部 id" in outline[0]["content"]
 
 
 def test_pipeline_reviewer_unavailable_keeps_draft(tmp_path):

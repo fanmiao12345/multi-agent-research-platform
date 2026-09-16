@@ -17,11 +17,16 @@ from src.harness.structured import extract_json
 MAX_ITEMS = 200
 
 
-def run_material_stage(llm, goal: str, evidence_items: list[dict]) -> tuple[MaterialPack, list[dict]]:
-    """返回 (素材包, issues)；模型输出结构非法抛 StageError。"""
+def run_material_stage(llm, goal: str, evidence_items: list[dict],
+                       labels: dict[str, str] | None = None) -> tuple[MaterialPack, list[dict]]:
+    """返回 (素材包, issues)；模型输出结构非法抛 StageError。
+
+    labels：source_id → 可读来源名；用于把证据列表渲染给模型，避免内部 id
+    被抄进素材包 statement（Q3-01 第 2 批根因，见 prompts.format_evidence_block）。
+    """
     from src.application.pipeline.prompts import format_evidence_block
     known = {item["evidence_id"] for item in evidence_items}
-    block = format_evidence_block(evidence_items)
+    block = format_evidence_block(evidence_items, labels)
     data = None
     raw = ""
     for attempt in (1, 2):
@@ -97,12 +102,22 @@ def run_material_stage(llm, goal: str, evidence_items: list[dict]) -> tuple[Mate
 
 
 def fill_duplicates(pack: MaterialPack, sources_index: list[dict]) -> list[dict]:
-    """从来源登记补重复/转载清单（S3-05：程序判定，不消耗模型调用）。"""
+    """从来源登记补重复/转载清单（S3-05：程序判定，不消耗模型调用）。
+
+    Q3-01 第 2 批：duplicate_of 原本是内部 source_id（src_xxxx），渲染进素材包后
+    被写进交付正文（o03「粘贴文本 2 与 src_010915e256 实质相同」）。现在统一换成
+    可读来源名，交给模型的两侧都是人能看懂的名字。
+    """
+    labels = {}
+    for record in sources_index:
+        key = record.get("source_id") or ""
+        labels[key] = record.get("display") or record.get("file_name") or "该来源"
     dupes = []
     for record in sources_index:
         if record.get("status") == "duplicate" and record.get("duplicate_of"):
-            dupes.append({"display": record.get("display"),
-                          "duplicate_of": record.get("duplicate_of")})
+            dupes.append({"display": record.get("display") or "该来源",
+                          "duplicate_of": labels.get(record["duplicate_of"],
+                                                     "同一来源的另一份材料")})
     pack.duplicates = dupes
     return dupes
 

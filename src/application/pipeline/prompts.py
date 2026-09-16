@@ -18,6 +18,13 @@ GOAL_RULES = ("你正在完成一份可核查的资料整理/研究写作任务�
 JSON_RULE = ("只输出一个合法 JSON 对象：紧凑单行（不要格式化缩进、不要空行），"
              "不要 ```json 围栏，不要任何解释。")
 
+# Q3-01 第 2 批（O-08 ③）：交付正文与章节标题里出现内部标识是实测缺陷。
+# 提纲/写作阶段统一红线：只许用可读来源名与 [E-编号]，不许出现内部 id 与字段名。
+NO_INTERNAL_ID_RULE = ("【禁止内部标识】章节标题、purpose 与正文里都不得出现 src_/job_ "
+                       "等内部 id，也不得出现 evidence_id、artifact_id、pipeline.json、"
+                       "duplicates 等内部字段名；指代资料时用给定的来源名称"
+                       "（如「粘贴文本 2」），引用证据只用 [E-编号]。")
+
 
 def _s(content: str) -> dict:
     return {"role": "system", "content": content}
@@ -29,7 +36,12 @@ def _u(content: str) -> dict:
 
 # ---- 证据提取（S3-04） --------------------------------------------------
 def build_evidence_messages(goal: str, source: dict) -> list[dict]:
-    """source: {source_id,title,display,text(预算内),truncated:bool}"""
+    """source: {source_id,title,display,text(预算内),truncated:bool}
+
+    Q3-01 第 2 批根因：这里原本把 `id=src_xxxx` 交给提取器，模型会把内部来源 id
+    抄进 fact 文本（实测 o07「来源src_01b5f94ffb标注本材料为合成验收数据」），
+    再经素材包流入交付正文。现在只给可读来源名，并要求指代资料时用「本资料」。
+    """
     note = ("（注意：该来源过长，只提供了前段文本；不得猜测未提供的后段内容，"
             "如需可如实写入缺口。）" if source.get("truncated") else "")
     schema = ('{"items":[{"fact":"支持的事实/主张，一句话≤60字","tag":"F|I|U",'
@@ -37,9 +49,11 @@ def build_evidence_messages(goal: str, source: dict) -> list[dict]:
     return [
         _s(GOAL_RULES + " 你是证据提取器。给出来源中与本任务相关的事实主张；"
            "tag：F=资料直接支持的事实，I=有依据的推断，U=资料未说明、只是你的猜测（尽量少）。"
+           "【表述】fact 里指代材料时写「本资料」，不得出现 src_、job_ 等内部标识"
+           "或 evidence_id/artifact_id 等字段名。"
            f"【数量与长度】items 最多 8 条；fact 一句话≤60字；quote ≤80字符；"
            f"不要输出示例之外的任何内容。{JSON_RULE} 输出结构：{schema}"),
-        _u(f"任务目标：{goal}\n\n来源：{source['display']}（id={source['source_id']}）"
+        _u(f"任务目标：{goal}\n\n来源名称：{source['display']}"
            f"\n标题：{source.get('title') or '（无标题）'}{note}\n\n"
            f"---- 来源全文开始 ----\n{source['text']}\n---- 来源全文结束 ----"),
     ]
@@ -80,7 +94,7 @@ def build_outline_messages(goal: str, material_block: str,
         _s(GOAL_RULES + " 你是提纲规划器。根据素材包设计固定顺序的报告提纲；"
            "每个章节给出必须覆盖的证据 id 与是否要求正文标注事实/推断/未知。"
            "不得使用素材包证据之外的 id。sections≤12，每节 purpose≤40字。"
-           + hard + refuse + JSON_RULE + f" 输出结构：{schema}"),
+           + NO_INTERNAL_ID_RULE + hard + refuse + JSON_RULE + f" 输出结构：{schema}"),
         _u(_join_blocks(f"任务目标：{goal}", requirements_block,
                         f"素材包：\n{material_block}") + "\n\n请输出提纲 JSON。"),
     ]
@@ -103,7 +117,7 @@ def build_draft_messages(goal: str, outline_block: str, material_block: str,
            "【[E-编号]】（只能使用素材包与提纲中出现的证据）；要求标注事实/推断的章节，"
            "在相应表述后加〔事实〕/〔推断〕/〔未知〕。章节标题必须与提纲一致（逐字使用，"
            "不要自行添加编号前缀或改写），不能缺节。"
-           + hard +
+           + NO_INTERNAL_ID_RULE + hard +
            "【篇幅】只写提纲要求的章节；整份 Markdown 正文尽量控制在 2500 字以内，超长请精简；"
            "引号等特殊字符无需转义（JSON 字符串内直接写中文标点）。"
            + JSON_RULE + f" 输出结构：{schema}"),
@@ -140,10 +154,17 @@ def _join_blocks(*blocks: str) -> str:
     return "\n\n".join(block.strip() for block in blocks if block and block.strip())
 
 
-def format_evidence_block(items: list[dict]) -> str:
+def format_evidence_block(items: list[dict], labels: dict[str, str] | None = None) -> str:
+    """把证据列表渲染成可读文本；labels: source_id → 可读来源名（如「粘贴文本 2」）。
+
+    Q3-01 第 2 批根因：此处原来直接写 source_id（src_xxxx），模型会把它抄进提纲标题、
+    素材包 statement 与交付正文（实测 o01「资料一：src_edfac4b498」、o07 正文同款）。
+    现在优先用可读来源名；拿不到映射时写「该来源」，绝不把内部 id 交给写作/提纲模型。
+    """
     lines = []
+    mapping = labels or {}
     for item in items:
-        source = item.get("source_id", "?")
+        source = mapping.get(item.get("source_id") or "") or "该来源"
         lines.append(f"- {item['evidence_id']} [tag={item['tag']}] {item['fact']} "
                      f"(来源 {source}, 摘录: {item.get('quote', '')[:120]})")
     return "\n".join(lines) if lines else "（没有可用证据）"
