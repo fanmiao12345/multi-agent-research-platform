@@ -485,6 +485,12 @@ def test_delivery_cap_from_report_self_declaration():
     report_ok = "# 报告\n\n## 资料目录\n\n- 标题：试点记录【E-001】〔事实〕\n"
     assert delivery_cap(report_ok, [OutlineSection("资料目录")])[0] == "accepted"
 
+    # ⑤ 建议类交付物不得误伤（真实误伤案例 r04：交付物本身就是"建议暂不扩大试点"）
+    report_advice = ("# 报告\n\n## 建议\n\n现有数据不足以支持扩大试点【E-007】〔事实〕；"
+                     "建议暂不扩大试点【E-016】〔推断〕；分析建议暂不扩大试点〔推断〕。\n"
+                     "## 下一步采集\n\n扩大试点前宜补充基线与对照〔推断〕。\n")
+    assert delivery_cap(report_advice, [OutlineSection("建议")])[0] == "accepted"
+
 
 def test_pipeline_self_declared_inability_caps_delivery(tmp_path):
     """链内集成：写作者自述无法完成 → 交付等级被程序层封顶，不再判 accepted。"""
