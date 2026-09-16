@@ -129,6 +129,56 @@ def hard_requirement_stats(report: str, requirements: HardRequirements | None) -
     return hard_requirement_issues(report, requirements)[1]
 
 
+# ---- 交付等级自述封顶（Q3-01 第 1 批：该拒/该降级却交成品）---------------------
+# 实测（Q2-01 冻结批次）：r07/r12（预期"无法完成"）与 r03/o13/r11（预期"草稿"）都被判成成品，
+# 而报告正文自己就写着"本报告无法给出…""现有资料不足以批准采购…"。程序层不能只看
+# "章节齐、引用可解析"就放行成品——交付等级不得高于报告的自述。
+_INABILITY_HEADING = re.compile(r"无法完成|未能完成|不能完成|无法给出|无法提供|无法回答|无法检索")
+_INABILITY_VERB = re.compile(r"无法|不能|不足以|未能")
+_DELIVERABLE_OBJECT = re.compile(r"给出|提供|完成|得出|确认|回答|检索")
+# 自述"整件事做不了"：仅在明确自我陈述或"目标/任务/核心"语境下触发，避免误伤普通局限说明
+_UNABLE_SELF = re.compile(r"本报告(无法|不能|未能)(给出|提供|完成|得出|确认|回答)")
+_UNABLE_GOAL = re.compile(r"无法(给出|提供|完成|得出|确认)[^。；\n]{0,15}(这一目标|该目标|本任务|核心|该问题)")
+# 自述"证据不足以支撑所请求的决定/结论"→ 只能按草稿交付（决策类用词，避免与普通局限说明混淆）
+_INSUFFICIENT_DECISION = (
+    re.compile(r"不足以(批准|通过|采购|上线|推行|扩大|签署|立项)"),
+    re.compile(r"(资料|材料|证据|信息)[^。；\n]{0,8}不足以[^。；\n]{0,12}"
+               r"(批准|支持该决定|支撑该决定|作出决定|得出结论)"),
+    re.compile(r"(不应|不宜|不建议|暂不)(批准|同意|推行|扩大|采购|上线)"),
+    re.compile(r"(补齐|补充)[^。；\n]{0,20}(前|之前)[^。；\n]{0,10}(不|无法)"),
+)
+
+
+def delivery_cap(report: str, sections: list[OutlineSection] | None = None
+                 ) -> tuple[str, str]:
+    """按报告自述给出交付等级上限（accepted/draft/unable）与理由。
+
+    - 任务要求了"无法完成"类章节，且该章节自述做不了 → unable；
+    - 全文出现"本报告无法给出/完成…"或"无法…（这一目标/本任务/核心）" → unable；
+    - 出现"资料不足以批准/不应批准/补齐前不…"等决策不足表述 → draft；
+    - 其余（普通局限、不能归因、未控制变量等）不封顶，保持 accepted。
+    只做字面自述识别，不做语义判定；命中的原句进理由，便于人工复核。
+    """
+    text = report or ""
+    section_names = [getattr(s, "heading", "") for s in (sections or [])]
+    for name in [n for n in section_names if _INABILITY_HEADING.search(n or "")]:
+        body = _section_body(text, name) or ""
+        if body and _INABILITY_VERB.search(body) and _DELIVERABLE_OBJECT.search(body):
+            return "unable", f"任务要求的「{name}」章节自述无法给出核心交付内容"
+
+    for pattern in (_UNABLE_SELF, _UNABLE_GOAL):
+        match = pattern.search(text)
+        if match:
+            return "unable", f"报告自述无法交付核心内容：「{match.group(0)}」"
+
+    for pattern in _INSUFFICIENT_DECISION:
+        match = pattern.search(text)
+        if match:
+            return "draft", f"报告自述证据不足以支撑所请求的决定：「{match.group(0)}」"
+
+    return "accepted", ""
+
+
 def program_checks(report: str, evidence_ids: set[str],
                    sections: list[OutlineSection],
                    base_draft: str | None = None,

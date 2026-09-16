@@ -451,6 +451,64 @@ def test_section_body_handles_subheadings_and_title_collision():
     assert program_checks(report, {"E-002", "E-005"}, [section]) == []
 
 
+def test_delivery_cap_from_report_self_declaration():
+    """Q3-01 第 1 批：交付等级不得高于报告自述（该拒/该降级却交成品的实测案例）。
+
+    真实样本：r07「无法完成的部分」自述"无法给出…最新结论"却判成品；
+    r12「本报告无法给出竞品X…单价」；r03「现有资料不足以批准采购」。
+    """
+    from src.application.pipeline.review import delivery_cap
+
+    # ① 任务要求的"无法完成"章节自述做不了 → unable
+    inability = OutlineSection("无法完成的部分")
+    report_unable = ("# 报告\n\n## 无法完成的部分\n\n"
+                     "本次核查的检索服务不可用，无法检索新增独立研究【E-001】〔事实〕；"
+                     "因此无法给出最新结论【E-001】〔推断〕。\n\n"
+                     "## 已有证据\n\n旧摘要覆盖120人【E-002】〔事实〕。\n")
+    cap, reason = delivery_cap(report_unable, [inability, OutlineSection("已有证据")])
+    assert cap == "unable" and "无法完成的部分" in reason
+
+    # ② 全文自述"本报告无法给出…" → unable（无该类章节时同样生效）
+    report_self = "# 报告\n\n本报告无法给出竞品X在2026年的坐席单价【E-001】〔事实〕。\n"
+    assert delivery_cap(report_self, [])[0] == "unable"
+
+    # ③ 自述证据不足/不应据此决策 → draft
+    report_gap = ("# 报告\n\n## 结论\n\n现有资料不足以批准采购并处理内部敏感资料"
+                  "【E-005】〔事实〕；补齐并复核前不批准采购〔推断〕。\n")
+    cap, reason = delivery_cap(report_gap, [])
+    assert cap == "draft" and "不足以" in reason
+
+    # ④ 普通局限说明不得误伤（r02 型：相关关系/不能归因）
+    report_normal = ("# 报告\n\n## 结论\n\n材料仅显示相关关系，不能得出远程办公提升效率的"
+                     "因果结论〔推断〕【E-006】；未控制工单难度变化【E-013】〔事实〕。\n")
+    assert delivery_cap(report_normal, [])[0] == "accepted"
+    report_ok = "# 报告\n\n## 资料目录\n\n- 标题：试点记录【E-001】〔事实〕\n"
+    assert delivery_cap(report_ok, [OutlineSection("资料目录")])[0] == "accepted"
+
+
+def test_pipeline_self_declared_inability_caps_delivery(tmp_path):
+    """链内集成：写作者自述无法完成 → 交付等级被程序层封顶，不再判 accepted。"""
+
+    class UnableBrain(PipelineBrain):
+        def _reply(self, purpose, system, user):
+            if purpose == "outline":
+                return json.dumps({"title": "桩报告", "sections": [
+                    {"heading": "无法完成的部分", "required_evidence": []},
+                    {"heading": "已有证据", "required_evidence": []}]}, ensure_ascii=False)
+            return super()._reply(purpose, system, user)
+
+        def _draft(self, user):
+            return ("# 桩报告\n\n## 无法完成的部分\n\n本次检索服务不可用，"
+                    "无法给出该问题的最新结论【E-001】〔推断〕。\n\n"
+                    "## 已有证据\n\n试点共40人【E-002】〔事实〕。\n")
+
+    result, _, _, _ = _run_pipeline(tmp_path, brain_override=UnableBrain())
+    assert result.draft_level == "unable"
+    assert result.termination_reason == "incomplete"
+    assert "自述" in result.message
+    assert any(s["status"] == "self_declared_cap" for s in result.stages)
+
+
 def test_pipeline_no_sources_and_no_evidence(tmp_path):
     job_dir = tmp_path / "job"
     empty = SourceStore(job_dir)

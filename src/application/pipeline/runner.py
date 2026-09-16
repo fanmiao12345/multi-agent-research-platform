@@ -26,8 +26,9 @@ from src.application.pipeline.material import (fill_duplicates, render_material,
 from src.application.pipeline.model import (HardRequirements, OutlineSection,
                                             PipelineResult, StageError)
 from src.application.pipeline.outline import render_outline, run_outline_stage
-from src.application.pipeline.review import (format_issues, hard_requirement_stats,
-                                             model_review, program_checks)
+from src.application.pipeline.review import (delivery_cap, format_issues,
+                                             hard_requirement_stats, model_review,
+                                             program_checks)
 from src.harness.model_gateway import BudgetStop
 from src.harness.run_store import write_json
 from src.harness.storage.artifacts import ArtifactStore
@@ -474,6 +475,18 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
         result.unresolved_citations = len(
             {c for c in citations if c not in evidence_store.ids()})
         if not errors and verdict == "accepted":
+            cap, cap_reason = delivery_cap(report, sections)
+            if cap != "accepted":
+                # Q3-01 第 1 批：交付等级不得高于报告自述（该拒/该降级却交成品的案例）
+                result.draft_level = "unable" if cap == "unable" else "draft"
+                result.termination_reason = "incomplete"
+                result.message = (f"交付等级按报告自述封顶为「{cap}」：{cap_reason}"
+                                  "（程序层自述一致性检查；不视为验收成功）")
+                record_stage("review", "self_declared_cap",
+                             artifact_ids=[result.final_artifact_id or ""],
+                             issues=final_issues, message=result.message)
+                snapshot()
+                return result
             result.draft_level = "accepted"
             result.termination_reason = "success"
             result.message = "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
