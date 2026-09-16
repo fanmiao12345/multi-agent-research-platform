@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_f33dc2c3d8",
+      "fact": "材料自述为合成验收数据",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_f33dc2c3d8",
+      "fact": "星桥团队试点共40人",
+      "tag": "F",
+      "quote": "星桥团队试点共40人",
+      "start": 11,
+      "end": 21,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_f33dc2c3d8",
+      "fact": "观察期为2026年7月1日至7月31日",
+      "tag": "F",
+      "quote": "观察期为2026年7月1日至7月31日",
+      "start": 22,
+      "end": 41,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_f33dc2c3d8",
+      "fact": "所有参与人每周远程办公2天",
+      "tag": "F",
+      "quote": "所有人每周远程办公2天。",
+      "start": 42,
+      "end": 54,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_f33dc2c3d8",
+      "fact": "该试点没有设置对照组",
+      "tag": "F",
+      "quote": "没有设置对照组。",
+      "start": 54,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_f33dc2c3d8",
+      "fact": "来源未提供待检查的原稿文本，无法逐条比对要求",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_f33dc2c3d8",
+      "fact": "来源未列出任何写作要求或验收标准清单",
+      "tag": "I",
+      "quote": "没有设置对照组。",
+      "start": 54,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    }
+  ]
+}

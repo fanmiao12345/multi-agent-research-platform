@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_749de612b6",
+      "fact": "材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_749de612b6",
+      "fact": "采用A方法的团队响应时长较试点前下降15%。",
+      "tag": "F",
+      "quote": "采用A方法的团队响应时长较试点前下降15%。",
+      "start": 11,
+      "end": 33,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_749de612b6",
+      "fact": "该试点有前后对照。",
+      "tag": "F",
+      "quote": "该试点有前后对照，",
+      "start": 33,
+      "end": 42,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_749de612b6",
+      "fact": "该试点没有设置不接受A方法的对照组。",
+      "tag": "F",
+      "quote": "但没有设置不接受A方法的对照组。",
+      "start": 42,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_749de612b6",
+      "fact": "无对照组时，下降可能受当季共同因素等影响，不能完全归因A方法。",
+      "tag": "I",
+      "quote": "但没有设置不接受A方法的对照组。",
+      "start": 42,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_749de612b6",
+      "fact": "在合成数据且无对照组下，结论应限定为相关而非因果。",
+      "tag": "I",
+      "quote": "该试点有前后对照，但没有设置不接受A方法的对照组。",
+      "start": 33,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_4ddd9fce64",
+      "fact": "本材料为合成验收数据，非真实业务记录",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 66
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_4ddd9fce64",
+      "fact": "未采用A方法的B团队同期响应时长自然下降12%",
+      "tag": "F",
+      "quote": "同期未采用A方法的B团队，响应时长自然下降12%",
+      "start": 11,
+      "end": 35,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 66
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_4ddd9fce64",
+      "fact": "该降幅提示当季存在工具升级等共同因素",
+      "tag": "I",
+      "quote": "提示当季存在工具升级等共同因素",
+      "start": 36,
+      "end": 51,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 66
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_4ddd9fce64",
+      "fact": "材料明确不能把响应时长降幅全部归因于A方法",
+      "tag": "F",
+      "quote": "不能把降幅全部归因于A方法",
+      "start": 52,
+      "end": 65,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 66
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_4ddd9fce64",
+      "fact": "材料未给出采用A方法一方的响应时长数据，其效应无法量化",
+      "tag": "U",
+      "quote": "同期未采用A方法的B团队，响应时长自然下降12%",
+      "start": 11,
+      "end": 35,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 66
+      },
+      "note": ""
+    }
+  ]
+}

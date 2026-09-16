@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_7811fa859a",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 38
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_7811fa859a",
+      "fact": "甲工具支持批量导入。",
+      "tag": "F",
+      "quote": "甲工具支持批量导入",
+      "start": 11,
+      "end": 20,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 38
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_7811fa859a",
+      "fact": "甲工具可通过模板文件一次性导入历史记录。",
+      "tag": "F",
+      "quote": "可通过模板文件一次性导入历史记录。",
+      "start": 21,
+      "end": 38,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 38
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_7811fa859a",
+      "fact": "资料仅含一份来源，未提供转载C及三份材料合并信息。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 38
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_29255db27a",
+      "fact": "该材料自称合成验收数据，非真实业务记录",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_29255db27a",
+      "fact": "甲工具支持批量导入，可通过模板文件一次性导入历史记录",
+      "tag": "F",
+      "quote": "甲工具支持批量导入，可通过模板文件一次性导入历史记录。",
+      "start": 11,
+      "end": 38,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_29255db27a",
+      "fact": "编辑注称有用户反馈批量导入上限500行，该说法未获供应商确认",
+      "tag": "F",
+      "quote": "编辑注：另有用户反馈称批量导入上限500行，该说法未获供应商确认。",
+      "start": 38,
+      "end": 71,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_29255db27a",
+      "fact": "500行上限属来源C标注未获确认的增补说法，不能作为已确认事实",
+      "tag": "I",
+      "quote": "该说法未获供应商确认。",
+      "start": 60,
+      "end": 71,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_29255db27a",
+      "fact": "本次仅收到一份来源，无法完成三源合并及相同内容去重",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    }
+  ]
+}

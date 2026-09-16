@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "source_report": "eval\\reports\\q2_real_batch\\business_report.json",
+    "mode": "real",
+    "graded": 3,
+    "accept": 1,
+    "dimension_means": {
+      "correctness": 3.33,
+      "structure": 3.67,
+      "citations": 3.0,
+      "completeness": 3.0
+    },
+    "failures": [],
+    "human_confirmed": false,
+    "note": "自动初步评分；最终业务验收需人工确认或显式策略放行"
+  },
+  "grades": [
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "draft",
+      "computed_verdict": "draft",
+      "dimensions": {
+        "correctness": {
+          "score": 4,
+          "rationale": "核心判断“资料未包含原稿文本，无法确认原稿符合性”与给定来源一致，未发现编造；但将E-006（tag=I，quote仅为本材料为合成验收数据）标为事实并反复支撑推断，存在轻微过度引申。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-006"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "含必需章节“确认说明”，并有核查依据与限制、符合性判定、缺口与后续材料，段落围绕无法核查的限制展开，结构清晰。",
+          "cited_evidence_ids": [
+            "E-006"
+          ]
+        },
+        "citations": {
+          "score": 3,
+          "rationale": "正文引用均可定位，但E-006多次支撑“资料未包含原稿文本”及后续推断，证据本身为推断标签且quote仅为本材料为合成验收数据，引用恰当性不足；关键事实#1未引用E-005。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-005",
+            "E-006"
+          ]
+        },
+        "completeness": {
+          "score": 3,
+          "rationale": "覆盖必需章节和缺口声明，但未提及或核查关键事实#1“没有设置对照组”（E-005）；因原稿缺失，缺口已如实声明但关键事实未覆盖。",
+          "cited_evidence_ids": [
+            "E-005",
+            "E-006"
+          ]
+        }
+      },
+      "issues": [
+        "全篇未提及关键事实#1“没有设置对照组”（E-005），未纳入符合性核查。",
+        "确认说明和后续段落将E-006作为事实引用，但E-006为推断标签，引用恰当性不足。"
+      ],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.01379978,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:25:10",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v06",
+      "attempt": 1
+    },
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "accept",
+      "computed_verdict": "accept",
+      "dimensions": {
+        "correctness": {
+          "score": 5,
+          "rationale": "报告依据E-006说明资料未提供待检查原稿，因此无法执行符合性检查；其关于无法确认无需修改及无效果数据的推断与给定来源一致，未发现编造或过度引申。",
+          "cited_evidence_ids": [
+            "E-006"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "包含必需章节“确认说明”，段落围绕检查条件不足展开，结构清晰。",
+          "cited_evidence_ids": [
+            "E-006"
+          ]
+        },
+        "citations": {
+          "score": 5,
+          "rationale": "正文断言均可定位到E-006，引用真实存在于证据列表且与内容匹配；将推断性表述明确标注为〔推断〕。",
+          "cited_evidence_ids": [
+            "E-006"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "任务要求检查原稿是否符合要求并确认是否无需修改；因资料未提供原稿，报告如实声明检查条件不足和原稿文本缺口，未虚构原稿内容。",
+          "cited_evidence_ids": [
+            "E-006"
+          ]
+        }
+      },
+      "issues": [],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.00316333,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:25:31",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v06",
+      "attempt": 2
+    },
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "fail",
+      "computed_verdict": "draft",
+      "dimensions": {
+        "correctness": {
+          "score": 1,
+          "rationale": "原稿为空，未呈现任何事实，也未包含关键事实#1“没有设置对照组”，因此无法与给定来源一致。",
+          "cited_evidence_ids": [
+            "E-005"
+          ]
+        },
+        "structure": {
+          "score": 1,
+          "rationale": "原稿为空，缺少必需章节“确认说明”，无任何结构。",
+          "cited_evidence_ids": []
+        },
+        "citations": {
+          "score": 1,
+          "rationale": "原稿无正文内容，也无任何引用，无法定位引用。",
+          "cited_evidence_ids": []
+        },
+        "completeness": {
+          "score": 1,
+          "rationale": "原稿未覆盖任务要求和关键事实，缺少必需章节“确认说明”，也未说明缺口。",
+          "cited_evidence_ids": [
+            "E-005"
+          ]
+        }
+      },
+      "issues": [
+        "原稿为空，未包含必需章节“确认说明”。",
+        "原稿为空，未包含关键事实#1：没有设置对照组。"
+      ],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.00189165,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:25:41",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v06",
+      "attempt": 3
+    }
+  ]
+}

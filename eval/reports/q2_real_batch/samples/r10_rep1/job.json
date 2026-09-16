@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_9d789b1ce83d4459a09e14a8d49c45fe",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# A方法对响应时长影响的评估提纲（合成数据、相关非因果）\n## 评估目标与数据性质\n本报告评估A方法对响应时长的影响；材料为合成验收数据【E-001】〔事实〕，且本材料为合成验收数据、非真实业务记录【E-007】〔事实〕。因此报告边界限于该合成验收材料，不对真实业务效果作外推【E-001】【E-007】〔推断〕；真实业务影响未知【E-007】〔未知〕。\n## 支持证据\n采用A方法的团队响应时长较试点前下降15%【E-002】〔事实〕。该试点有前后对照【E-003】〔事实〕。因此可描述试点前后响应时长变化，并以此作为支持A方法的初步证据【E-002】【E-003】〔推断〕。\n## 反方证据\n该试点没有设置不接受A方法的对照组【E-004】〔事实〕。无对照组时，下降可能受当季共同因素等影响，不能完全归因A方法【E-005】〔事实〕。材料明确不能把响应时长降幅全部归因于A方法【E-010】〔事实〕。由此，A方法并非降幅的唯一解释【E-004】【E-005】【E-010】〔推断〕。\n## 当季共同因素\n未采用A方法的B团队同期响应时长自然下降12%【E-008】〔事实〕。该降幅提示当季存在工具升级等共同因素【E-009】〔事实〕。因此A方法试点前后的下降可能部分包含共同因素贡献【E-008】【E-009】〔推断〕；共同因素具体内容与强度材料未给出【E-009】〔未知〕。\n## 证据冲突与量化缺口\n材料给出的可量化结果是采用A方法的团队响应时长较试点前下降15%【E-002】〔事实〕；但材料未给出采用A方法一方的响应时长数据，其效应无法量化【E-011】〔事实〕。二者并非直接相互矛盾，而是量化口径缺口【E-002】【E-011】〔推断〕：降幅百分比已给出，但底层响应时长数据缺失，无法核验或复算该15%【E-002】【E-011】〔推断〕。A方数据是否存在及其口径仍未知【E-011】〔未知〕。\n## 结论限定\n材料明确，在合成数据且无对照组下，结论应限定为相关而非因果【E-006】〔事实〕。该试点没有不接受A方法的对照组【E-004】〔事实〕；无对照组时，下降可能受当季共同因素等影响，不能完全归因A方法【E-005】〔事实〕；且材料明确不能把响应时长降幅全部归因于A方法【E-010】〔事实〕。综合以上，本报告结论限定为：在现有合成验收数据和无对照组条件下，A方法与响应时长下降呈相关，不能判定为因果【E-004】【E-005】【E-006】【E-010】〔推断〕。\n## 待补问题\n- 真实业务运行数据：材料为合成验收数据、非真实业务记录【E-007】〔事实〕；真实业务运行数据缺失，A方法对响应时长的真实影响如何〔未知〕【E-007】。\n- 对照组：该试点没有设置不接受A方法的对照组【E-004】〔事实〕；缺少随机或匹配对照组数据，如何排除当季共同因素〔未知〕【E-004】。\n- 共同因素度量：当季存在工具升级等共同因素【E-009】〔事实〕；其具体内容与强度未给出，缺少共同因素详细记录或度量〔未知〕【E-009】。\n- A方数据口径：材料未给出采用A方法一方的响应时长数据【E-011】〔事实〕；采用A方法团队的完整响应时长数据缺失，其口径未知〔未知〕【E-011】。\n- 推断：上述缺口使A方法效应无法在现有材料内精确量化【E-004】【E-009】【E-011】〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 2,
+    "usable": 2,
+    "statuses": {
+      "ok": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 11 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-14T15:24:05"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，1 个开放冲突，4 个缺口",
+        "finished_at": "2026-09-14T15:24:16"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "7 个章节",
+        "finished_at": "2026-09-14T15:24:20"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1043字）",
+        "finished_at": "2026-09-14T15:24:39"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 18,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-14T15:25:14"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 17,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-14T15:25:54"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-14T15:26:23"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 46,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

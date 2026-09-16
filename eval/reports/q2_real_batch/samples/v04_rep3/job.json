@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_58fca9d30a9647248c2c697473ef11f9",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 8 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-14T14:44:14"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，4 个缺口",
+        "finished_at": "2026-09-14T14:44:24"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包未标明s01与s02来源映射，且无旧稿结论清单与s01全文，无法确定保留哪些结论、删除哪些结论。",
+        "finished_at": "2026-09-14T14:44:27"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包未标明s01与s02来源映射，且无旧稿结论清单与s01全文，无法确定保留哪些结论、删除哪些结论。；缺失信息：s01来源标识及版本记录、s01全文、试点结果数据与指标、s01与s02的来源映射及s02内容清单、旧稿结论清单及其来源标注（可用证据 8 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

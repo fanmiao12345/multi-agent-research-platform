@@ -252,6 +252,7 @@ def main() -> None:
     llm, used_model = build_grader_llm(args.mode, model=args.model)
     print("grader_model", used_model)
     grades = []
+    failures = []
     for record in report.get("records", []):
         if args.task and record["id"] != args.task:
             continue
@@ -279,23 +280,42 @@ def main() -> None:
             grade["attempt"] = record.get("attempt")
             grades.append(grade)
             print(record["id"], grade["computed_verdict"],
-                  {k: grade["dimensions"][k].get("score") for k in DIMENSIONS})
+                  {k: grade["dimensions"][k].get("score") for k in DIMENSIONS},
+                  flush=True)
         except GraderError as e:
-            print(record["id"], "GRADE_FAILED:", str(e)[:160])
+            failures.append({"case_id": record["id"], "attempt": record.get("attempt"),
+                             "error": f"GraderError: {str(e)[:200]}"})
+            print(record["id"], "GRADE_FAILED:", str(e)[:160], flush=True)
+        except Exception as e:  # noqa: BLE001 —— 单条失败（网络/认证/额度）不得丢掉整批已评分结果
+            failures.append({"case_id": record["id"], "attempt": record.get("attempt"),
+                             "error": f"{type(e).__name__}: {str(e)[:200]}"})
+            print(record["id"], "GRADE_FAILED:", f"{type(e).__name__}: {str(e)[:160]}",
+                  flush=True)
+        # 增量写盘：任何后续崩溃都不会丢掉已完成的评分
+        _write_grading(out_dir, report_path, args, grades, failures)
+    payload = _write_grading(out_dir, report_path, args, grades, failures)
+    print(json.dumps({"graded": payload["meta"]["graded"],
+                      "accept": payload["meta"]["accept"],
+                      "failures": len(failures),
+                      "dimension_means": payload["meta"]["dimension_means"]},
+                     ensure_ascii=False))
+
+
+def _write_grading(out_dir: Path, report_path: Path, args, grades: list,
+                   failures: list) -> dict:
+    """写评分报告（每条评分后调用一次，保证崩溃不丢已完成结果）。"""
     payload = {"meta": {"source_report": str(report_path), "mode": args.mode,
                         "graded": len(grades),
                         "accept": sum(1 for g in grades
                                       if g["computed_verdict"] == "accept"),
                         "dimension_means": dimension_means(grades),
+                        "failures": failures,
                         "human_confirmed": False,
                         "note": "自动初步评分；最终业务验收需人工确认或显式策略放行"},
                "grades": grades}
     (out_dir / "grading_report.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({"graded": payload["meta"]["graded"],
-                      "accept": payload["meta"]["accept"],
-                      "dimension_means": payload["meta"]["dimension_means"]},
-                     ensure_ascii=False))
+    return payload
 
 
 if __name__ == "__main__":

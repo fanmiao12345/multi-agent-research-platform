@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_db015101391f4836b91d533f2d7b7ac3",
+  "goal": "合并三份材料：相同内容只计一份来源；单独指出转载C独有的增补信息及其未获确认状态。",
+  "started_at": "2026-09-14T14:49:44",
+  "hard_requirements": {
+    "required_sections": [
+      "去重结果",
+      "独有增补"
+    ],
+    "forbidden_claims": [],
+    "key_facts": []
+  },
+  "result": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "提取 7 条可定位证据，跳过 3 条问题摘录",
+        "finished_at": "2026-09-14T14:50:15"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，3 个缺口",
+        "finished_at": "2026-09-14T14:50:29"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个章节",
+        "finished_at": "2026-09-14T14:50:41"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1158字）",
+        "finished_at": "2026-09-14T14:50:59"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-14T14:52:19"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-14T14:53:14"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-14T14:54:21"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 47,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

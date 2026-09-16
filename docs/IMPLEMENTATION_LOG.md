@@ -665,3 +665,16 @@
 - **闭卷单例冒烟（真实模型，v2 新案例 o09）**：链内 accepted；成本 **$0.0293**、耗时 125s；闭卷确认（`hard.fact_total=0`、`forbidden_total=0`，而必需章节仍 2/2 生效）；整批上限字段生效（batch_max=0.3、spent=0.029、未触发）。据此 Q2-01（33×3=99 次）估算 **≈$3–6、约 3.5–8 小时**。
 - 限制：Q2-01 未启动（等用户确认预算与是否带 `--grade`）；O-09 只补"整批封顶"，未改动单任务上限语义。
 - 下一步：用户确认后启动 Q2-01（99 次，闭卷；建议单任务上限 0.25 + 整批上限约 6）→ 人工评分导入 → Q2-02 联网与六模式 → Q2-03 汇总。
+
+## 2026-09-16 / Q2-01 真实业务基线（99 次，闭卷，v1+v2 全案例）
+
+- 执行：33 案例 × 3 = **99 次**真实运行（v1 冻结 20 例 60 次 + v2 新增 13 例 39 次），**闭卷**；`--max-cost 0.25`（单任务）+ `--batch-max-cost 6`（整批，O-09 新增）；用时 **6.05 小时**、花费 **$4.71**（未触发整批上限）、**0 次未执行、0 次未知用量**；10 类故障 × 2 轮（自动探针 4 条通过，其余 manual）。
+- **机器侧基线**：执行完成率 **96/99 = 97.0%**；预期行为符合率 **68/96 = 70.8%**（partial 单列 0；门槛 90% → **未达标**）；链内 accepted **80/99 = 80.8%**；引用可定位率 **100%**（958 条引用、0 未解析）；端到端时延 均值 **220s** / p50 195s / p95 369s。
+- **独立评测（v4-pro，99/99 打分）**：accept **51/99**；链内 accepted 中 accept **49/80 = 61.3%**（= 成品质量达标率）；链内 accepted 四维均值 **4.15 / 4.80 / 4.24 / 4.45**（全体 3.80 / 4.54 / 3.90 / 4.20）；伪造/无依据标记 1 例 1 条；禁语字面命中 4 次（o12 三例，按 S8-C 属"疑似"，语义判定未做）。
+- **稳定性**：33 例中 3 次交付等级完全一致 **23 例**；不一致 10 例（o03 draft/draft/final、r02 final/unable/未交付、r03 final/未交付/final、r05 final/未交付/final、r08 final/final/draft、r10 draft/final/final、r11 draft/final/final、v03 draft/draft/final、v04 final/final/unable、v06 final/final/unable）；预期符合次数分布 0 次 6 例、1 次 4 例、2 次 5 例、3 次 18 例。
+- **分批次**：v1 执行 57 / 符合 42（73.7%）/ 链内 47 / 质量 61.7%；v2 执行 39 / 符合 26（66.7%）/ 链内 33 / 质量 60.6%。
+- **最弱机制（Q3-01 靶子，尝试级预期符合率）**：refuse_without_evidence **0/6**、conservative_grading **1/15**、dedup **3/9**、gap_declaration **7/18**、subtopic_decomposition 4/6、fact_fidelity 4/6；表现好的机制：evidence_location 21/21、conflict_attribution 9/9、instruction_isolation 6/6、revision_compression/add_perspective/cleanup 各 3/3、timeliness 8/9。
+- **工具修复（本轮）**：① `eval/grader.py`——单条评分遇到模型调用硬失败（认证/网络/额度类）时不再让整批结果丢失：逐条捕获全部异常 + **每条评分后增量写盘**；本次崩溃时已完成的 90 条从运行日志恢复（仅裁决与四维分数，无理由/问题清单明细），v05~v07 共 9 条为修复后补跑，合并脚本注明来源。② `eval/q2_summary.py`——缺 `--human/--web` 时 `Path(None)` 崩溃，改为按缺失处理。
+- 产物：`eval/reports/q2_real_batch/business_report.json`（原始）+ `business_report_graded.json`（99 条评分写回）、`business_report.md`、`samples/`（19 条失败样本）；`eval/reports/q2_graded/grading_report.json`；`eval/reports/q2_rescore_graded.json/.md`（三指标分离 + 分机制/分批次）；`eval/reports/q2_summary.json/.md`；人工评分工作台 `eval/reports/q2_human_workbench/combined_scores.csv`（99 行）+ `report_texts/`（94 份报告全文）。
+- 诚实边界：**人工评分未确认**（`ready_for_q3=false`、`human_confirmed=false`）；90 条评审分数来自日志恢复、无问题清单与伪造标记明细；禁语命中 4 次为字面疑似；Q2-02 真实联网与六模式未执行。
+- 下一步：人工评分确认（导入后 `ready_for_q3` 方可翻真）→ Q2-02 联网与六模式（需预算）→ Q2-03 汇总定稿 → Q3 按最弱机制集中优化。

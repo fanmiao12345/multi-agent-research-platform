@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "source_report": "eval\\reports\\q2_real_batch\\business_report.json",
+    "mode": "real",
+    "graded": 3,
+    "accept": 3,
+    "dimension_means": {
+      "correctness": 4.67,
+      "structure": 5.0,
+      "citations": 4.67,
+      "completeness": 5.0
+    },
+    "failures": [],
+    "human_confirmed": false,
+    "note": "自动初步评分；最终业务验收需人工确认或显式策略放行"
+  },
+  "grades": [
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "accept",
+      "computed_verdict": "accept",
+      "dimensions": {
+        "correctness": {
+          "score": 5,
+          "rationale": "正文关键事实与给定来源一致：4周、120人、自愿未随机、相关关系、无客观长期指标均有E-002/E-003/E-004/E-005支撑；对因果和效益限制的表述与E-006/E-007一致，未出现与证据冲突或扩大化主张；缺口以未知/推断标明。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "包含必需的“修订稿”章节，并设有资料边界、研究设计与样本、主要发现、解释限制、待补缺口等，结构清晰且围绕修订目的。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-004"
+          ]
+        },
+        "citations": {
+          "score": 5,
+          "rationale": "正文引用E-001至E-007均真实存在于证据列表且可定位；未引用已撤回转载摘要s09；各主要事实与限制性判断均有对应引用。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "覆盖了4周关键事实，只使用原始观察摘要并移除对转载摘要引用，未触及禁止项；相关缺口如实声明。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007"
+          ]
+        }
+      },
+      "issues": [
+        "正文将E-006、E-007这两个证据列表中的推断项标注为〔事实〕，建议区分事实与推断标签，但实质内容未超出证据。"
+      ],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.00813658,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:26:37",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v07",
+      "attempt": 1
+    },
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "accept",
+      "computed_verdict": "accept",
+      "dimensions": {
+        "correctness": {
+          "score": 5,
+          "rationale": "事实陈述均可在给定原始观察摘要证据E-001至E-005中定位；关键事实‘为期4周’已准确写入，未发现编造或因果过度引申，推断均明确标注。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "包含必需章节‘修订稿’，并按资料范围、研究设计与样本、主要发现、局限与证据强度、待补缺口组织，逻辑清晰、段落围绕目的。",
+          "cited_evidence_ids": []
+        },
+        "citations": {
+          "score": 5,
+          "rationale": "事实断言均标注【E-001】至【E-005】，引用均可定位于证据列表且内容匹配；推断性内容标注〔推断〕，未引用属可接受，未发现不可定位引用。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "覆盖任务要求：仅依据原始观察摘要、移除撤回来源引用、呈现4周观察周期、120人自愿未随机、相关关系、未报告客观产出或长期效果，并如实声明缺口，未提及禁止项。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005"
+          ]
+        }
+      },
+      "issues": [],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.00563085,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:27:11",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v07",
+      "attempt": 2
+    },
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "accept",
+      "computed_verdict": "accept",
+      "dimensions": {
+        "correctness": {
+          "score": 4,
+          "rationale": "关键事实与E-001至E-005一致：120人、为期4周、自评专注度相关、自愿样本未随机分组、未报告客观产出或长期效果。未发现编造来源或使用撤回来源内容作为依据。轻微问题是把E-006这一推断性因果限制标注为〔事实〕，宜为〔推断〕。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "包含必需章节‘修订稿’，并按来源范围、研究设计、主要发现、因果限制、其他限制、缺口与结论清晰展开，段落围绕目的。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007"
+          ]
+        },
+        "citations": {
+          "score": 4,
+          "rationale": "引用均可定位于所给证据列表，未发现编造引用；但E-007的quote仅为‘本材料为合成验收数据’，正文多处用其支持‘唯一可用来源为s08/撤回s09无原文’，引用与原文的直接对应不够理想。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "覆盖必需章节、关键事实‘为期4周’、移除撤回来源引用，未触发禁止项，并如实声明独立性、代表性、因果性及长期效果等缺口。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007"
+          ]
+        }
+      },
+      "issues": [
+        "解释与因果限制中把E-006的推断性结论标注为〔事实〕，宜标为〔推断〕。",
+        "正文多处用E-007支持s08为唯一可用来源，但该证据的quote仅为‘本材料为合成验收数据’，引用对应不够直接。"
+      ],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.01368819,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:28:42",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v07",
+      "attempt": 3
+    }
+  ]
+}

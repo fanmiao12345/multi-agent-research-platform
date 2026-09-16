@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "source_report": "eval\\reports\\q2_real_batch\\business_report.json",
+    "mode": "real",
+    "graded": 3,
+    "accept": 0,
+    "dimension_means": {
+      "correctness": 3.67,
+      "structure": 5.0,
+      "citations": 3.67,
+      "completeness": 5.0
+    },
+    "failures": [],
+    "human_confirmed": false,
+    "note": "自动初步评分；最终业务验收需人工确认或显式策略放行"
+  },
+  "grades": [
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "draft",
+      "computed_verdict": "fail",
+      "dimensions": {
+        "correctness": {
+          "score": 3,
+          "rationale": "关键事实正确：保留A团队下降15%、无对照组，并补充B团队自然下降12%及工具升级等当季共同因素；结论限定为不能确证因果。但多处将推断项标为事实并称为资料直接要求（如E-005、E-008、E-014），属于过度引申。",
+          "cited_evidence_ids": [
+            "E-002",
+            "E-004",
+            "E-010",
+            "E-012",
+            "E-005",
+            "E-008",
+            "E-014"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "包含必需的“修订稿”章节，且按原稿证据、对照缺失、反方补充、共同因素、缺口、冲突和结论逐步组织，结构清晰。",
+          "cited_evidence_ids": []
+        },
+        "citations": {
+          "score": 3,
+          "rationale": "引用均可对应到证据列表，未发现来源不存在；但E-005/E-008/E-014被标为“事实/资料要求”，其证据原文并不直接支持这些表述，引用不恰当。",
+          "cited_evidence_ids": [
+            "E-005",
+            "E-008",
+            "E-014"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "任务要求覆盖：补充了B团队反方证据、当季工具升级共同因素说明、结论加限定，保留原有引用，并如实声明共同因素量化等缺口。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-009",
+            "E-010",
+            "E-012",
+            "E-013",
+            "E-008",
+            "E-006",
+            "E-007"
+          ]
+        }
+      },
+      "issues": [
+        "多处把推断证据写为“资料直接说明/资料要求”并标注〔事实〕，例如“资料直接说明：缺少对照组，响应时长下降不能仅归因于A方法【E-005】〔事实〕”",
+        "“资料要求结论应限定为：A方法与响应时长下降相关，不能确证因果【E-008】〔事实〕”缺乏原文直接依据，E-008为推断",
+        "“资料要求结论应加入限定，扣除当季共同因素影响【E-014】〔事实〕”中“扣除当季共同因素影响”超出E-014原文的直接含义",
+        "“就原稿资料而言，未提供反方证据，也未说明当季共同因素【E-006】〔事实〕”把缺证推断标为事实"
+      ],
+      "fabrication_flags": [
+        "将推断性证据E-005/E-008/E-014表述为“资料直接说明/资料要求”并标为〔事实〕，来源原文未直接作这些陈述"
+      ],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.01168515,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:19:38",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v05",
+      "attempt": 1
+    },
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "draft",
+      "computed_verdict": "draft",
+      "dimensions": {
+        "correctness": {
+          "score": 4,
+          "rationale": "关键事实均已呈现：B团队自然下降12%、无对照组，且未使用禁止措辞；主要内容与给定来源一致。但E-005在证据列表中为推断(tag=I)，正文却标为〔事实〕，属于轻微过度断言；另有E-012的证据标签与正文标记不一致。",
+          "cited_evidence_ids": [
+            "E-002",
+            "E-004",
+            "E-008",
+            "E-009",
+            "E-010",
+            "E-012"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "包含必需章节“修订稿”，并设有数据性质、正方证据保留、反方证据补充、共同因素、因果限定、冲突与缺口等小节，结构清晰，段落围绕章节目的。",
+          "cited_evidence_ids": [
+            "E-002",
+            "E-008",
+            "E-010"
+          ]
+        },
+        "citations": {
+          "score": 4,
+          "rationale": "多数事实与推断均挂接可定位的E-编号，引用基本恰当；但正文保留的原引用[S:s23]未出现在给定证据列表或来源映射中，无法完全核验定位；若干未知缺口标注为未知，未引用可接受。",
+          "cited_evidence_ids": [
+            "E-002",
+            "E-004",
+            "E-008",
+            "E-009",
+            "E-010",
+            "E-011",
+            "E-012"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "已覆盖任务要求：补充反方证据、说明当季共同因素、结论加限定，并保留原引用；关键事实与禁止项均满足，且对数据、对照、量化等缺口如实声明。",
+          "cited_evidence_ids": [
+            "E-002",
+            "E-004",
+            "E-008",
+            "E-009",
+            "E-010",
+            "E-012"
+          ]
+        }
+      },
+      "issues": [
+        "“缺少对照组，无法排除当季共同因素导致响应时长下降【E-005】”被标注为〔事实〕，但证据列表E-005为推断(tag=I)，应改为〔推断〕。",
+        "正文使用[S:s23]作为原引用，但该引用不在给定证据列表/来源映射中，无法定位核验。",
+        "多处将E-012标注为〔推断〕，但证据列表E-012为事实(tag=F)；标注不一致但不影响结论。",
+        "“修订不新增因果断言”的表述与后文“A方法降幅可能部分来自共同因素”等可能性推断有轻微张力。"
+      ],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.0159577,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:21:23",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v05",
+      "attempt": 2
+    },
+    {
+      "grader": "agent",
+      "human_confirmed": false,
+      "overall_verdict": "draft",
+      "computed_verdict": "draft",
+      "dimensions": {
+        "correctness": {
+          "score": 4,
+          "rationale": "主要关键事实与给定来源一致：A团队下降15%、B团队自然下降12%、无对照组、合成验收数据、共同因素提示等均正确，结论限定为相关观察基本恰当；但E-006被标为事实且其“资料未提供反方证据或当季共同因素说明”与补充来源并存时表述不够精确，首段概括将E-003/E-004/E-006一并标为〔事实〕存在标签不准确。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-008",
+            "E-002",
+            "E-009",
+            "E-010"
+          ]
+        },
+        "structure": {
+          "score": 5,
+          "rationale": "必需章节“修订稿”存在，子节完整覆盖原稿证据保留、反方证据补充、当季共同因素、开放冲突、限定结论、材料限制与后续缺口，段落围绕修订目的，结构清晰。",
+          "cited_evidence_ids": []
+        },
+        "citations": {
+          "score": 4,
+          "rationale": "正文引用E-001至E-012均真实存在于证据列表且多数可定位并支撑对应断言；但正文保留的[S:s23]不在给定证据列表，属于不可定位引用，虽已声明未知，仍应扣分。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-003",
+            "E-004",
+            "E-005",
+            "E-006",
+            "E-007",
+            "E-008",
+            "E-009",
+            "E-010",
+            "E-011",
+            "E-012"
+          ]
+        },
+        "completeness": {
+          "score": 5,
+          "rationale": "已补充反方证据B团队自然下降12%和当季工具升级等共同因素说明，结论加限定为相关观察且未删除原有引用；关键事实#1和#2覆盖，禁止项未出现，对照组、共同因素量化、基线可比、真实运行等缺口已声明。",
+          "cited_evidence_ids": [
+            "E-001",
+            "E-002",
+            "E-008",
+            "E-009",
+            "E-010",
+            "E-012"
+          ]
+        }
+      },
+      "issues": [
+        "正文中[S:s23]引用不在给定证据列表，不可定位（见“原稿证据与引用保留”与“上一稿原有引用”）；报告已声明未知，但citations应扣分。",
+        "E-006被标为事实但其tag为U，且“资料未提供反方证据或当季共同因素说明”与补充反方来源并存，应更明确表述为原稿缺口/冲突状态。",
+        "首段概括将E-003/E-004/E-006一并标为〔事实〕，与正文后续标注推断或缺口不完全一致。",
+        "未发现‘各方一致认为’或‘反方证据不重要’等禁止项。"
+      ],
+      "fabrication_flags": [],
+      "program_problems": [],
+      "meta": {
+        "grader_model": "deepseek-v4-pro",
+        "writer_model": null,
+        "independence": "same_model_as_writer（建议用独立模型复核）",
+        "mode": "real",
+        "model": "deepseek-v4-pro",
+        "call_count": 1,
+        "estimated_cost_usd": 0.01801282,
+        "unknown_usage_calls": 0,
+        "graded_at": "2026-09-15T14:23:25",
+        "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+      },
+      "case_id": "v05",
+      "attempt": 3
+    }
+  ]
+}

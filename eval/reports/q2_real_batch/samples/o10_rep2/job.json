@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_5dee9b7878f84117bddfbb7aea05a256",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 三份材料合并去重与转载C独有增补核查\n## 材料性质\n本材料为合成验收数据〔事实〕【E-001】；该材料自称合成验收数据，非真实业务记录〔事实〕【E-005】。因此，本报告的分析对象是验收用合成数据，而非真实业务记录〔推断〕【E-001】【E-005】。\n## 证据范围与限制\n资料仅含一份来源，未提供转载C及三份材料合并信息〔事实〕【E-004】；本次仅收到一份来源，无法完成三源合并及相同内容去重〔事实〕【E-009】。因此，本次核查无法在三份独立来源之间做交叉比对，也无法完成严格意义上的三源合并去重〔推断〕【E-004】【E-009】；现有材料只能支持对已收到的一份来源内部重复表述做有限归并〔推断〕【E-004】【E-009】。\n## 去重结果\n甲工具支持批量导入〔事实〕【E-002】；甲工具可通过模板文件一次性导入历史记录〔事实〕【E-003】；该来源称甲工具支持批量导入，并可通过模板文件一次性导入历史记录〔事实〕【E-006】。E-002、E-003与E-006所述内容相同〔推断〕【E-002】【E-003】【E-006】；按“相同内容只计一份来源”的整理规则，上述内容只计一份来源〔推断〕【E-002】【E-003】【E-006】。故合并后的单源内部条目为：甲工具支持批量导入，并可通过模板文件一次性导入历史记录〔推断〕【E-002】【E-003】【E-006】。\n## 独有增补\n编辑注称有用户反馈批量导入上限500行，该说法未获供应商确认〔事实〕【E-007】；500行上限属来源C标注未获确认的增补说法，不能作为已确认事实〔事实〕【E-008】。按任务目标将此项列为转载C的500行上限增补，但现有证据只称来源C，未说明来源C即转载C〔未知〕【E-007】【E-008】。故单独列出：转载C（对应关系待确认）500行上限增补，内容为批量导入上限500行，状态为未获供应商确认，不能作为已确认事实〔事实〕【E-007】【E-008】；其是否确为转载C相对其他来源的独有增补，未获确认〔未知〕【E-007】【E-008】。\n## 冲突与未裁决\n500行上限被称来源C增补〔事实〕【E-008】；但E-004称资料仅含一份来源、未提供转载C及三份材料合并信息〔事实〕【E-004】，E-009称本次仅收到一份来源、无法完成三源合并及相同内容去重〔事实〕【E-009】。因此，来源C增补与三源缺失信息之间存在开放冲突：若未提供转载C及三源合并信息，来源C增补如何进入现有材料无法由现有证据解释〔推断〕【E-008】【E-004】【E-009】。素材包去重条目中出现的来源标识/重复条目信息，也与E-004、E-009所称仅一份来源不一致〔推断〕【E-004】【E-009】。该冲突在现有材料中未获裁决，应维持开放状态〔推断〕【E-008】【E-004】【E-009】。\n## 待补缺口\n现有待补缺口如下：转载C原文或完整转载记录缺失，导致转载C独有增补信息原文及范围不明〔未知〕【E-004】【E-007】【E-008】；供应商确认材料缺失，导致500行上限是否获供应商确认不明〔未知〕【E-007】【E-008】；三份材料原文及来源标识缺失，导致三份材料合并与去重的完整来源清单不明〔未知〕【E-004】【E-009】；官方规格或测试记录缺失，导致甲工具批量导入上限真实限制不明〔未知〕【E-007】【E-008】；多来源副本或转载记录缺失，导致是否存在其他来源可验证相同内容不明〔未知〕【E-004】【E-009】。在补齐这些材料之前，本报告的合并去重结果仅适用于已收到的一份来源，转载C独有增补仍只能标注为未获确认〔推断〕【E-004】【E-007】【E-008】【E-009】。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 2,
+    "statuses": {
+      "ok": 2,
+      "duplicate": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 9 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-14T14:54:38"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，1 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-14T14:54:50"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个章节",
+        "finished_at": "2026-09-14T14:55:01"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1439字）",
+        "finished_at": "2026-09-14T14:55:06"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-14T14:56:17"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-14T14:57:31"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-14T14:59:19"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 56,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

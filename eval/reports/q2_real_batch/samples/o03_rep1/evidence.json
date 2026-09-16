@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_5e6d0145df",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据",
+      "start": 0,
+      "end": 10,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_5e6d0145df",
+      "fact": "40名参与者中32人完成问卷。",
+      "tag": "F",
+      "quote": "40名参与者中32人完成问卷",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_5e6d0145df",
+      "fact": "24名答卷者表示满意。",
+      "tag": "F",
+      "quote": "24名答卷者表示满意",
+      "start": 26,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_5e6d0145df",
+      "fact": "问卷回收率为80%。",
+      "tag": "F",
+      "quote": "问卷回收率为80%",
+      "start": 37,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_5e6d0145df",
+      "fact": "答卷者满意率为75%。",
+      "tag": "F",
+      "quote": "答卷者满意率为75%",
+      "start": 47,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_5e6d0145df",
+      "fact": "观察期工单平均处理时长从10小时变为8小时。",
+      "tag": "F",
+      "quote": "观察期工单平均处理时长从10小时变为8小时",
+      "start": 58,
+      "end": 79,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_5e6d0145df",
+      "fact": "未控制工单难度变化。",
+      "tag": "F",
+      "quote": "未控制工单难度变化",
+      "start": 80,
+      "end": 89,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_5e6d0145df",
+      "fact": "32/40=80%与24/32=75%分别对应回收率与满意率，同一统计不应重复计为独立证据。",
+      "tag": "I",
+      "quote": "40名参与者中32人完成问卷，24名答卷者表示满意。问卷回收率为80%，答卷者满意率为75%。",
+      "start": 11,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    }
+  ]
+}

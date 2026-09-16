@@ -1,0 +1,33 @@
+# Q2 完整基线汇总
+
+{
+  "schema_version": 1,
+  "created_at": "2026-09-16T09:22:13",
+  "business": {
+    "attempts_total": 99,
+    "accepted": 80,
+    "draft": 13,
+    "unable": 2,
+    "failed": 19,
+    "not_executed": 0,
+    "estimated_cost_usd": 4.710098,
+    "unknown_usage_calls": 0,
+    "latency_seconds": {
+      "mean": 220.1314,
+      "p50": 195.115,
+      "p95": 369.373
+    },
+    "citations": 958,
+    "unresolved_citations": 0
+  },
+  "web": {
+    "topics": 0,
+    "successful": 0,
+    "mode_coverage": {},
+    "usable_sources": 0,
+    "lineage_links": 0
+  },
+  "human_confirm": null,
+  "ready_for_q3": false,
+  "policy": "人工评分未确认时不能把均分或链内 accepted 当作业务验收通过"
+}

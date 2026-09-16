@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_eef8e97da03b4de6a7f9920551f15ea4",
+  "goal": "回答三个问题：团队规模、工单趋势、竞品X的定价。资料不足以回答的问题单独列出，不得推测。",
+  "started_at": "2026-09-14T15:33:31",
+  "hard_requirements": {
+    "required_sections": [
+      "团队规模",
+      "工单趋势",
+      "未答子题"
+    ],
+    "forbidden_claims": [],
+    "key_facts": []
+  },
+  "result": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-14T15:33:56"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，2 个开放冲突，4 个缺口",
+        "finished_at": "2026-09-14T15:34:15"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个章节",
+        "finished_at": "2026-09-14T15:34:32"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1290字）",
+        "finished_at": "2026-09-14T15:34:55"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-14T15:36:08"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-14T15:37:24"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 5,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 5 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-14T15:37:57"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 47,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 5 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

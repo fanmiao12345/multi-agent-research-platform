@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_7495b7428f254be4960574a55596ac43",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 面向非技术管理者的决策摘要：价格约束与证据缺口\n## 决策摘要\n括号内证据编号用于核查，非技术阅读可先读文字。价格上，方案甲每账号每月20元【E-002】〔事实〕，可按月支付【E-003】〔事实〕，最低采购10个账号【E-004】〔事实〕，据此月最低支出约200元【E-005】〔推断〕；方案乙每账号每月15元【E-010】〔事实〕，最低采购50个账号【E-012】〔事实〕，要求按年预付【E-011】〔事实〕，若仅按最低50账号与15元/月×12个月静态推算，年预付下限约9000元【E-010】【E-011】【E-012】〔推断〕，但完整付款条款缺失，实际总额未知【E-011】【E-012】〔未知〕。功能上，方案甲支持Markdown导出【E-006】〔事实〕，但材料称Markdown导出功能尚未提供【E-014】〔事实〕，两者构成开放冲突【E-006】【E-014】〔推断〕。合规上，页面未说明数据保存地区和删除周期【E-007】〔事实〕，数据合规性无法据此判断【E-008】〔推断〕。决策前需补齐报价、合同、合规与功能缺口。\n## 材料性质与使用限制\n本材料是合成验收数据，不能当作真实供应商报价或合同【E-001】〔事实〕。另一来源也说明材料为合成验收数据，非真实业务数据【E-009】〔事实〕。因此本摘要适合验收或讨论，不宜直接用于签约、预算承诺或对外采购【E-001】【E-009】〔推断〕。\n## 方案甲价格与预算约束\n方案甲每账号每月20元【E-002】〔事实〕。方案甲可按月支付，便于按月控制预算【E-003】〔事实〕。最低采购10个账号【E-004】〔事实〕。按20元和最低10账号推算，方案甲月最低支出约200元【E-005】〔推断〕。\n## 方案乙价格与预算约束\n方案乙每账号每月15元【E-010】〔事实〕。最低采购50个账号【E-012】〔事实〕。方案乙要求按年预付【E-011】〔事实〕，因此需评估年度现金流占用【E-011】〔推断〕。若仅按最低50账号与15元/月×12个月静态推算，年预付下限约9000元【E-010】【E-011】【E-012】〔推断〕；完整付款条款（如年费总额、附加费用、退款或账期）缺失，实际总金额与现金流安排未知【E-011】【E-012】〔未知〕。\n## 导出功能与冲突\n方案甲支持Markdown导出【E-006】〔事实〕。方案乙支持TXT格式导出【E-013】〔事实〕。材料称Markdown导出功能尚未提供【E-014】〔事实〕。方案甲支持Markdown导出与材料称Markdown导出尚未提供相矛盾，该冲突状态为开放【E-006】【E-014】〔推断〕。\n## 数据合规证据\n页面未说明数据保存地区和删除周期【E-007】〔事实〕。缺少保存地区和删除周期，数据合规性无法据此判断【E-008】〔推断〕。供应商称数据存储在本地地区，但仅为供应商说法【E-015】〔事实〕。目前没有独立审计报告佐证数据存储说法【E-016】〔事实〕。因此该合规主张仍需独立审计报告验证【E-015】【E-016】〔推断〕。\n## 待确认事项\n- 报价与合同：本材料是合成验收数据，不能当真实报价或合同【E-001】〔事实〕；另一来源也说明非真实业务数据【E-009】〔事实〕。需补真实供应商报价单、合同或采购条款〔未知〕。\n- 合规条款：保存地区和删除周期未说明【E-007】〔事实〕，合规性无法据此判断【E-008】〔推断〕；供应商本地存储仅为供应商说法【E-015】〔事实〕，无独立审计报告佐证【E-016】〔事实〕。需补独立审计报告、存储地区与删除周期条款〔未知〕。\n- 功能范围：方案甲支持Markdown导出【E-006】〔事实〕，材料称Markdown导出尚未提供【E-014】〔事实〕，冲突未决【E-006】【E-014】〔推断〕。需补功能清单、版本说明或合同功能条款〔未知〕。\n- 方案乙付款：要求按年预付【E-011】〔事实〕，最低采购50个账号【E-012】〔事实〕；完整付款条款缺失，实际总金额与现金流安排未知【E-011】【E-012】〔未知〕。需补年费总额及完整付款条款以评估现金流〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 2,
+    "usable": 2,
+    "statuses": {
+      "ok": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-14T14:23:26"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，1 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-14T14:23:38"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "7 个章节",
+        "finished_at": "2026-09-14T14:23:46"
+      },
+      {
+        "stage": "draft",
+        "status": "completed_revision",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "基于原稿改稿（1604字）",
+        "finished_at": "2026-09-14T14:24:11"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-14T14:26:05"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-14T14:27:20"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-14T14:29:29"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 60,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

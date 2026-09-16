@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_143287ef62",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 38
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_143287ef62",
+      "fact": "甲工具支持批量导入。",
+      "tag": "F",
+      "quote": "甲工具支持批量导入",
+      "start": 11,
+      "end": 20,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 38
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_143287ef62",
+      "fact": "可通过模板文件一次性导入历史记录。",
+      "tag": "F",
+      "quote": "可通过模板文件一次性导入历史记录。",
+      "start": 21,
+      "end": 38,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 38
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_e2dcab0399",
+      "fact": "本材料为合成验收数据",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_e2dcab0399",
+      "fact": "甲工具支持批量导入",
+      "tag": "F",
+      "quote": "甲工具支持批量导入",
+      "start": 11,
+      "end": 20,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_e2dcab0399",
+      "fact": "甲工具可通过模板文件一次性导入历史记录",
+      "tag": "F",
+      "quote": "可通过模板文件一次性导入历史记录",
+      "start": 21,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_e2dcab0399",
+      "fact": "编辑注称有用户反馈批量导入上限500行，该说法未获供应商确认",
+      "tag": "F",
+      "quote": "编辑注：另有用户反馈称批量导入上限500行，该说法未获供应商确认。",
+      "start": 38,
+      "end": 71,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 71
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_8c8eb636db",
+      "fact": "所给资料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_8c8eb636db",
+      "fact": "星桥团队试点共40人。",
+      "tag": "F",
+      "quote": "星桥团队试点共40人",
+      "start": 11,
+      "end": 21,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_8c8eb636db",
+      "fact": "观察期为2026年7月1日至7月31日。",
+      "tag": "F",
+      "quote": "观察期为2026年7月1日至7月31日",
+      "start": 22,
+      "end": 41,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_8c8eb636db",
+      "fact": "所有人每周远程办公2天。",
+      "tag": "F",
+      "quote": "所有人每周远程办公2天",
+      "start": 42,
+      "end": 53,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_8c8eb636db",
+      "fact": "该试点没有设置对照组。",
+      "tag": "F",
+      "quote": "没有设置对照组",
+      "start": 54,
+      "end": 61,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_8c8eb636db",
+      "fact": "因无对照组，本资料不支持远程办公与结果的因果关系。",
+      "tag": "I",
+      "quote": "没有设置对照组",
+      "start": 54,
+      "end": 61,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_8c8eb636db",
+      "fact": "资料未标明s01与s02的对应来源，无法确认应撤回的s02内容。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_8c8eb636db",
+      "fact": "旧稿结论清单未在资料中给出，无法逐条说明被删除的结论。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    }
+  ]
+}

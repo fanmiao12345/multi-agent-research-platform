@@ -66,6 +66,8 @@ def main():
     parser.add_argument("--human",default=None)
     args=parser.parse_args()
     def load(path):
+        if not path:                      # 未提供该路输入（如联网/人工尚未执行）按缺失处理
+            return None
         p=Path(path)
         return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
     result=summarize(load(args.business),load(args.web),load(args.human))

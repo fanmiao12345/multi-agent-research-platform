@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_eef8e97da03b4de6a7f9920551f15ea4",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 客服团队规模、工单趋势与竞品X定价核查提纲\n## 团队规模\n客服团队2026年共有45人【E-001】〔事实〕。其中一线坐席32人，其余为管理与质检岗位【E-002】〔事实〕。管理及质检岗位人数可由45减32推得为13人【E-003】〔推断〕。来源矛盾：冲突条目将E-001、E-002、E-003、E-008、E-014列为“团队规模能否回答存在矛盾”的证据编号，状态为open【E-001】【E-002】【E-003】【E-008】【E-014】〔事实〕；E-014与E-001等并列于该开放冲突中【E-014】【E-001】〔事实〕。口径缺口：素材包缺口项提出“团队规模统计口径和时点是否完整”，并称缺少团队规模定义、统计日期及历史变化数据，但该缺口项未附证据编号，不能归因于E-014或其他单一证据，45人对应口径与时点未知〔未知〕。\n## 工单趋势\n2026年上半年月均工单1200件【E-005】〔事实〕。第二季度比第一季度环比下降8%【E-006】〔事实〕。下降主要因新增了自助问答页【E-007】〔事实〕。来源矛盾：冲突条目将E-005、E-006、E-007、E-015列为“工单趋势能否回答存在矛盾”的证据编号，状态为open【E-005】【E-006】【E-007】【E-015】〔事实〕；E-015称工单趋势无法回答，与E-005、E-006给出的趋势并存【E-015】【E-005】【E-006】〔事实〕。逐月缺口：E-005与E-006仅给月均和季度环比，素材包未给各月工单量或完整时间序列，因此逐月趋势未答〔未知〕。\n## 资料性质与冲突核验\n本材料为合成验收数据【E-004】〔事实〕；该资料为合成验收数据，非真实业务记录【E-010】〔事实〕。团队规模矛盾为开放状态：冲突条目证据编号含E-001、E-002、E-003、E-008、E-014，status为open【E-001】【E-002】【E-003】【E-008】【E-014】〔事实〕。工单趋势矛盾为开放状态：冲突条目证据编号含E-005、E-006、E-007、E-015，status为open【E-005】【E-006】【E-007】【E-015】〔事实〕。来源覆盖范围缺口：素材包列有“E-008/E-014/E-015与E-001/E-005等来源覆盖范围如何”的问题，并称缺少各来源适用范围或文档范围说明，无法判定矛盾成因；该问题未附证据编号，不能单独归因于具体证据〔未知〕。\n## 未答子题\n竞品X定价未答：资料未提及竞品X的定价，无法回答该问题【E-009】〔事实〕；资料明确不含任何具体供应商的报价信息【E-013】〔事实〕；缺口为缺少竞品X的具体报价、定价页或供应商报价材料，资料无具体供应商报价【E-016】〔未知〕。\n工单逐月趋势未答：E-005、E-006给出月均1200件及第二季度比第一季度环比下降8%，但不含逐月序列【E-005】【E-006】〔事实〕；逐月趋势缺少各月工单量或完整时间序列，故未答〔未知〕。E-015称工单趋势无法回答，与E-005、E-006形成开放冲突【E-015】【E-005】【E-006】〔事实〕。\n团队规模口径时点未答：素材包缺口项列出缺少团队规模定义、统计日期及历史变化数据；该缺口无证据编号，不能归因于E-008或E-014的具体陈述〔未知〕。E-008、E-014处于团队规模开放冲突的编号列表，但与E-001等给出的人数的矛盾成因无法判定【E-008】【E-014】【E-001】〔事实〕。\n来源适用范围/文档范围未答：素材包缺口项提出涉及E-008、E-014、E-015与E-001、E-005等来源覆盖范围的问题，并称缺少各来源适用范围或文档范围说明；该缺口无证据编号，无法进一步核验〔未知〕【E-008】【E-014】【E-015】【E-001】【E-005】。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-14T15:33:56"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，2 个开放冲突，4 个缺口",
+        "finished_at": "2026-09-14T15:34:15"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个章节",
+        "finished_at": "2026-09-14T15:34:32"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1290字）",
+        "finished_at": "2026-09-14T15:34:55"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-14T15:36:08"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-14T15:37:24"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 5,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 5 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-14T15:37:57"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 47,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 5 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}
