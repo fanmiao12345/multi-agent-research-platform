@@ -247,6 +247,7 @@ S6 说明与限制见`docs/S6_DELIVERY.md`。
 - `docs/RESEARCH_WRITING_ACCEPTANCE.md`：**业务验收基线**——20个业务案例、10个故障案例、评分和模式边界；业务尚未执行。
 - `DEV_PLAN_LangGraph_Harness_From_Scratch.md`：**原始组件设计与学习记录**——保留 01～130、ADR 和实验背景；旧执行顺序已由新总计划替代。
 - `docs/EXECUTION_STATUS.md`：**执行状态总账**——当前阶段、代码基线与下一步；历史交付和测试证据分区保存。
+- `docs/RESUME_PARITY_PLAN.md`：**简历↔项目对照**——简历技术点逐条映射代码落点、实测读数与诚实边界（含复现命令）。
 - `docs/architecture.md`：分层架构 + 一次运行的数据流 + 设计决策
 - `docs/TECH_REPORT.md`：技术报告（里程碑验收映射 + 质量证据，测试计数每次生成时自动实测刷新）
 - `eval/reports/`：Benchmark 与最终实验报告（json + md）

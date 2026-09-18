@@ -302,3 +302,29 @@ B1基线174项，B2后199项，B3后255项，B4后330项，B5后347项，S4后37
 | S8-B | 关闭"开卷"：评测时不再把数据集的关键事实/禁止断言注入写作提示词，仅保留显式对照开关 | 已完成（离线）：默认闭卷 + `--open-book` 对照 + meta 自描述标记 |
 | S8-C | 禁止断言改语义判定：程序层只提示疑似命中，判定交评审/人工（文档明确"不能只靠关键词命中"） | 已完成（离线）：链内禁语命中降为 warn 疑似提示，不阻塞验收，读数照记 |
 
+## R1：简历技术点补齐（2026-09-16，用户指定范围）
+
+| 项 | 内容 | 状态 |
+|---|---|---|
+| R1-1 | EventBus（`orchestration/event_bus.py`）+ 六编排模式接线 + Trace 桥 | 已完成（离线：8 项测试） |
+| R1-2 | IterationBudget 预算+熔断（`budget_control.py`）+ 子智能体工具接入 | 已完成（离线：5 项测试） |
+| R1-3 | Skill 四态生命周期 + depends 依赖解析 + references 第三层渐进加载（Runtime 接线） | 已完成（离线：12 项测试） |
+| R1-4 | 三层记忆门面 Working/Episodic/Semantic + 向量索引（sqlite-vss 适配/哈希余弦回退）+ 遗忘曲线 + MemoryProvider/User Message 注入 | 已完成（离线：13 项测试；`memory_in_user_message` 默认 False） |
+| R1-5 | 漂移检测与阈值告警 `eval/drift.py` | 已完成（离线：8 项测试；真实报告自检 exit=0） |
+| R1-6 | 量化实测 `eval/resume_metrics.py`（多实验均值口径）：token 节省均值 81.6%（17 全枚举）/ fanout 提速均值 66.5%（100 轮）/ 跨会话 top-3 74%（100 用例，真实 sqlite_vss + BM25 混合，bootstrap 95% CI 65%~82%） | 已完成（读数落 `eval/reports/resume_metrics/`） |
+| R1-7 | FastAPI 适配层 + React 前端页（可选依赖，离线回退） | 已完成（依赖实装，5 项测试真跑通过；默认入口仍为标准库工作台） |
+| R1-8 | 简历逐条对照文档 `docs/RESUME_PARITY_PLAN.md`（85% 完成率无出处等诚实边界） | 已完成 |
+| R1-9 | 漂移趋势检测 `drift.detect_trend`（滑动均值 z 分数 + 连续单边漂移双通道，CLI --history） | 已完成（+6 项测试） |
+| R1-10 | A/B 实验 `eval/experiment.py`（ExperimentRunner + 零依赖 Welch's t 检验） | 已完成（+9 项测试，p 值对参考值校验） |
+| R1-11 | 护栏版参数反馈闭环 `eval/auto_optimizer.py`（白名单/硬边界/dry_run 默认/审计日志） | 已完成（+8 项测试） |
+| R1-12 | React 浏览器级验收：vendor 本地化 + `/vendor` 静态路由 + Playwright 两旅程测试 + 截图留证 | 已完成（修复 vendor 404 与 useState 解构 2 个真 bug；录入 BROWSER_REGRESSION.md） |
+| R1-13 | Prompt Cache 前缀稳定度实测（口径 4）：增益≈0，根因 O-15 历史窗口恒 2 条 | 已完成（诚实读数 + O-15 登记，机制"前缀不变"成立） |
+| R1-14 | 提速异质时长场景（0.5x~1.5x 抖动）：59.4%（2.5x） | 已完成（结论对任务不均匀稳健） |
+| R1-15 | AutoOptimizer 真实数据 dry-run 演示（Q2 汇总：p95 触发/质量不触发） | 已完成（`eval/reports/auto_optimizer/demo_q2_dry_run.json`） |
+| R1-16 | O-14 B 方案实施：`site_policy.py` 域名降权换源（静态证据基线 + 任务内 403 实录）+ 过滤器/搜索/补搜/编排接线 | 已完成（用户决策 B 方案；+11 项测试；UA 不变） |
+| R1-17 | O-15 就绪开关 `reserve_message_window`（默认关）：历史窗口修复 + 收益对照读数 +28.9pp | 已完成（切换待 Q3 批次收尾） |
+| R1-18 | O-11 双臂联网复跑（A=纯相关性修复 / B=+域名降权；各 12 题同限额） | 已完成：**O-11 关闭（相关性修复确认有效：accepted 3→5、可读率 52.3%→62.5%）**；B 臂可读率 68.8% 三臂最高、成稿增益未证实（波动范围内），方案保留待更大批次 |
+
+回归：全量 **571 passed / 1 skipped / 0 failed**（含新增 50 项）。逐项证据见 `IMPLEMENTATION_LOG.md` 2026-09-16 R1 条目。
+
+

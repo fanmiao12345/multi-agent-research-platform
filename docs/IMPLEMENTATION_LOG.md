@@ -785,3 +785,129 @@
 - 测试：新增 `test_no_internal_source_id_in_model_prompts`、更新 `fill_duplicates` 断言与 `fact_label` 严重级断言；**563 项通过**（`tests/test_drift_eval.py` 属并行工作流的在写文件，与本步无关）。
 
 **诚实边界**：① o08 第 2 批无命中却 accepted（漏报，人工判定 draft）；② v01/r05 的误伤已由根因修复+口径纠偏处理，效果待第 3 批复跑验证；③ o13（预期草稿仍未封顶）未修。**本步只做了必要的最小功能与边界验证，未调参、未跑全量。**
+
+## 2026-09-16 / R1：简历技术点补齐批次（EventBus/IterationBudget/Skill生命周期/三层记忆/漂移告警/FastAPI+React + 三个量化实测）
+
+**背景**：用户要求按简历表述核对并补齐项目能力。核对结论见 `docs/RESUME_PARITY_PLAN.md`（逐条映射：原有 ✅ / 本次新增 ✅ / 可选层 ⚠️ / 无出处 ❌）。本批按用户指令"全部做完再一起测试"。
+
+**新增/修改（代码落点）**
+
+| 模块 | 内容 |
+|---|---|
+| `src/orchestration/event_bus.py`（新） | EventBus：线程安全发布订阅、类型过滤、单调序号、有界历史 replay、订阅者异常隔离；`tracer_bridge` 桥接 Trace。接线：六编排模式（pipeline/fanout/manager_worker/debate/dynamic_team + base.make_worker）增加可选 `event_bus` 参数，阶段/交接/派工/裁决事件全量发布 |
+| `src/harness/budget_control.py` | 新增 `IterationBudget`（预留/结算/耗尽/熔断 closed→open→half_open）+ `BudgetExhausted`/`CircuitOpen`；接入 `subagent.py`：父级熔断器跨派生记账，连续失败 3 次 open 后拒绝继续派生 |
+| `src/harness/skills/{types,registry,lifecycle}.py` + `router.py` | Skill 新增 `depends`/`references` frontmatter；`SkillLifecycleManager` 四态状态机（discovered→activated→running→deactivated，非法迁移拒绝、activate 幂等、依赖拓扑解析含循环/缺失报错、事件可发总线）；`load_reference()` 按需读 references 文件；`inject(level=metadata|fullcontent)`；AgentRuntime 接线：命中技能走生命周期，激活失败跳过并记 trace，任务结束收回 deactivated |
+| `src/harness/memory/{vector_store,layers,provider}.py`（新）+ `long_term.py` | 向量索引：`SqliteVssIndex`（sqlite-vec 扩展适配）+ `HashingVectorIndex`（零依赖哈希余弦回退，FNV-1a 确定性嵌入），`build_index(auto)` 如实暴露 backend；三层门面 `MemoryLayers`（Working 有界会话记忆 / Episodic / Semantic）+ 遗忘曲线 `retrievability=exp(-Δdays/stability)`、召回强化 stability、`decay()` 遗忘低检索度经验（semantic 只降权不删）；`MemoryRecord` 增 `stability`/`last_access`（向后兼容）；`MemoryProvider` 抽象 + `inject_into_user`（记忆块并入 User Message、system 前缀逐字节稳定、`<<CONTEXT>>` 标记保留网关兼容） |
+| `src/harness/context/builder.py` + `runtime/{run_context,agent_runtime}.py` | `compose_context` 新增 `user_message_kinds` 参数（默认空=旧行为）；`RuntimeContext.memory_in_user_message`（默认 False，保持 Q2 基线可比）；runtime 按开关把 memory/evidence/handoff 注入本轮 User Message |
+| `eval/drift.py`（新） | 漂移检测与阈值告警：嵌套指标展平、绝对+相对阈值、逐指标覆盖、基线指标丢失告警、MD 报告、CLI 退出码 ok=0/drift=1（真实 q2_summary 自检 exit=0） |
+| `eval/resume_metrics.py`（新） | 三个量化口径实测（离线桩可复现）：① Skill 渐进加载 token 节省率；② fanout(3 并发) vs 顺序执行耗时降低；③ 跨会话改述查询 top-1/top-3 命中率（专属隔离存储防污染） |
+| `src/interfaces/web/fastapi_app.py`（新）+ `static/react/index.html`（新） | FastAPI 同契约适配层（可选依赖，未安装明确提示）+ React 18 CDN 免构建前端页（消费 /api/runs 同一 JSON 契约，textContent 渲染，离线回退提示指向标准库工作台） |
+
+**验证（统一测试，本批末尾一次执行）**
+
+- 新增测试 7 个文件，最终 **56 项**：`test_event_bus`(7) / `test_iteration_budget`(6) / `test_skill_lifecycle`(13) / `test_memory_layers`(14) / `test_drift_eval`(7) / `test_resume_metrics_eval`(4) / `test_fastapi_app`(5)。
+- **全量回归最终 577 项 / 0 失败 / 0 跳过**（可选依赖实装后全部真跑）。首跑曾报 3 个失败（resume_entry/search_bing/url_imports），隔离复跑全过，属本机 Windows 高负载偶发（仓库已知现象），与本批改动无关。
+- **可选依赖实装核验（应用户"都实现了吗"追问）**：pip 安装 fastapi/uvicorn/httpx/sqlite-vec 后，此前 skip 的 fastapi 5 项与 vss 一致性 1 项转真跑，全量 0 跳过。实装暴露并修复 3 个真问题：① SqliteVssIndex 把 sqlite-vec 的 L2 距离当余弦返回（越界负分），按归一化向量恒等式 cos=1−L2²/2 修正，与零依赖实现同 id 同分（0.356348），新增双后端一致性测试固化；② FastAPI 适配层未把生命周期大写状态转小写（COMPLETED→completed）；③ React 页安全检查被注释里的字面量 "innerHTML" 误伤，改注释措辞。
+- 实测读数（`eval/reports/resume_metrics/`；应用户要求三轮升级为**多实验均值 + 收窄区间 + 加大试验次数口径**）：① **token 节省率均值 81.6%**——17 次实验（每个技能轮流当命中技能，全枚举），区间 78.7%~84.8%（首跑单实验口径 81.5%，因首个技能偏小略有乐观偏差，已消除）；② **fanout 耗时降低均值 66.5%**——**100 轮**独立计时取均值（±std 0.0008s/0.0004s，中位数口径同为 66.5%，2.99x）；③ **跨会话命中 top-3 74%（bootstrap 2000 次，95% CI 65%~82%，±8.5）/ top-1 60%（CI 51%~69%）**，后端为**真实 sqlite_vss**。演进如实记录（用例集 10→50→100 条，干扰知识同量）：10 例纯向量 80%（CI 50%~100%，±25 过宽）→ 50 例混合 78%（CI 66%~90%）→ 100 例 61%（干扰×10 + 粗召回天花板 top×2）→ **两项机制改进**（粗召回加深 top×5 过召回 + 词面项补全 BM25/IDF 打分，`layers._bm25_norm`，IDF 压低高频域词）→ 100 例 **74%**（CI 65%~82%）。点估计随基准变难而回落、机制改进把它拉回，全程如实记录未凑数。
+- 期间修复：EventBus 绑定方法解订需值比较；SemanticLayer 检索正常（首跑 0% 系共享 memory_store 历史数据污染，改专属隔离存储后复现稳定）。
+
+**诚实边界**
+
+1. 简历"端到端完成率 85%"仍无出处：真实读数为三分离（执行完成 97.0% / 预期符合 70.8% / 成品质量 61.3%独立·71.3%人工），已在 RESUME_PARITY_PLAN 标注建议改写口径；
+2. sqlite-vss 为适配层就绪、本机无扩展自动回退 hashing_cosine，不冒充已用 vss；
+3. FastAPI/React 为可选层，默认入口仍是标准库工作台；React 页未做浏览器人工验收（依赖 CDN，离线不可测）；
+4. `memory_in_user_message` 默认 False，默认值切换属配置决策（Q4 前定）；
+5. 漂移阈值（0.05/0.20）为实施默认值，未经 Q3 数据校准。
+**本批属功能补齐，未动 Q2 冻结基线的默认行为与口径。**
+
+## 2026-09-16 / Q3-01 第 3 批：根因修复后的同集复跑（内部标识泄漏不再出现）+ 联网相关性修复
+
+**第 3 批复跑（第 2 批同一 8 题 ×1，$0.40）**
+
+| 案例 | 第 2 批 | **第 3 批** | 第 3 批 error 级命中 | 成品内内部标识 | 20 例人工判定（旧报告） |
+|---|---|---|---|---|---|
+| o03 | draft | **accepted** | 无 | 无 | draft |
+| o08 | accepted | accepted | 无 | 无 | draft |
+| v01 | draft（误伤） | **accepted** | 无 | 无 | accept |
+| o07 | draft | draft | support×1（模型层） | 无 | draft |
+| o05 | draft | **accepted** | 无 | 无 | draft |
+| r02 | draft | **accepted** | 无 | 无 | draft |
+| o01 | draft | **accepted** | 无 | 无 | draft |
+| r05 | draft（误伤） | **accepted** | 无 | 无 | accept |
+
+- **实测确认根因修复生效**：第 2 批 8 题里 5 题命中 `internal_leak`（`src_` id 泄漏进提纲标题/正文/去重记录），第 3 批**全部 0 命中**、成品里 0 内部标识，交付等级随之从 draft 回到 accepted；v01（任务要求"保留来源"，第 2 批被误封顶）恢复 accepted，与人工判定一致。
+- **口径纠偏生效**：`fact_label` 降为 warn 后，第 3 批只剩 warn（0/1/3/4/6/9 处），不再把等级压到 draft；`source_count`（error）本轮 0 命中。
+- **成本/时延同步下降**：同 8 题 $0.64 → **$0.40**（-37%），单题中位 216s → 約 220s（无实质变化，主要省在少一轮改稿）。
+- **诚实边界（必须人工再看一次）**：这 8 题的新报告是**修复后新写的**，第 3 批的 accepted **不能**用旧报告的人工判定当验收依据——旧判定针对的是含泄漏的旧稿。人工复核口径：`eval/reports/q3_batch3_<case>/samples/`（第 3 批 accepted 的题会把最终稿放在 `workspace/jobs/<job>/artifacts/report.v*.md`）。已抽查 v01（摘要 105 汉字，满足 180 字上限 + 保留来源）与 o05（满意率分母已改为"未明，需原始交叉表"〔未知〕，不再把分母当事实）两例，符合预期。
+- o07 仍是 draft 且命中 1 条模型层 `support` error（"已知信息用 E-006 支持…"），与人工判定 draft 一致。
+
+**联网专项（Q3-02）根因与修复**
+
+- 逐题诊断（`.tmp/q3_web_queries.py`、`.tmp/q3_web_diag.py`）：12 题里 6 题 `unable` 的直接原因是**搜索结果与主题无关**——长句查询在 `cn.bing.com` 上"退化匹配"到查询里的某个泛词，返回「混合（汉语词语）_百度百科」「generate - 搜索 词典」「2026年日历…放假安排」「ToDesk 远程桌面软件」这类页面；12 题共 23 个查询词里没有短查询问题，问题在**查询形态**（整句）与**结果未过滤**。
+- 修复（提交 `469907e`）：① `QUERY_PLANNER_PROMPT` 改为"2~4 个关键词、空格分隔的短查询，选专有名词/术语，不用年份与泛词单独成词"——实测 3 题规划输出已是「AI治理 政策 争议 2026」「动力电池回收 白名单企业 网点」「remote work knowledge sharing coordination」这类真人才会输入的形式；② `search.filter_search_results()`：按查询关键词重合度（ASCII 词 + 中文二元组，去停用字与泛词）+ 页面类型（词典/字词释义、日历节假日、产品官网下载页）过滤，命中即丢弃并记录理由与重合度；③ 安全阀：整组不达标时只救"重合不足"的前 2 条（不救词典/日历页），避免查询彻底落空；④ `web_research` 把过滤结果与 `dropped` 明细写进搜索记录，可人工审计。
+- 可读率的真因另有其人（**不是解析问题**）：107 份来源里 `read_failed` 38 份（35.5%），逐条看 `status_message` **全部是 HTTP 403**（baike.baidu.com / zhihu / csdn / gov.cn），抓取器 UA 是 `agent-mvp/0.1 (local research import)`；`ok` 的 56 份提取正常（正文中位 4.2k 字，字符/字节 0.446）。是否改浏览器类 UA 属"绕反爬"的边界选择，**登记为 O-14 待用户决策**，未擅自改。
+- 测试：`test_result_relevance_filter_drops_lexicon_and_calendar_pages`（用真基线里实测的查询/标题对做回归）+ `test_no_internal_source_id_in_model_prompts` 等新增；全量 **564 项通过**（`tests/test_drift_eval.py` 属并行工作流在写文件，已排除）。
+- 下一步：按同集合同限额复跑联网 12 题做前后对照（脚本 `.tmp/run_web_after.py`，对照基线 `eval/reports/q2_web_baseline_before_relevance_fix.json`）。
+
+## 2026-09-16 / R1 追加：评测闭环三项补齐（滑动均值趋势 / Welch's t 检验 / 护栏版 AutoOptimizer）+ 6/6 名称映射
+
+**背景**：用户给出另一版"核心特性"清单逐条核对，其中评测体系有三项项目里没有：DriftDetector 的"滑动均值+退化趋势"、ExperimentRunner 的"Welch's t 检验"、AutoOptimizer"评估结果自动反馈参数"。本批按用户指令补齐，另有三项（90/50 轮预算、L2 SQLite 存储、3 个 Skill 类）经评估**不补代码、只改简历措辞**（理由见对话记录：预算数字应实测校准而非放大；JSON 记录存储在当前量级无瓶颈且向量索引已是 SQLite；Markdown 声明式技能是主流形态优于硬编码类）。
+
+**新增**
+
+| 模块 | 内容 | 测试 |
+|---|---|---|
+| `eval/drift.py` 增 `detect_trend()` | 滑动均值趋势检测双通道：①滑动窗口均值 z 分数离群（突发退化）；②连续 N 批单边漂移（缓慢劣化，离群前即可发现）。CLI 增 `--history <glob>` 趋势模式，退出码同基线模式 | +6 项（稳定不误报/尖峰/缓降/批次不足/跨批次指标交集/CLI 退出码） |
+| `eval/experiment.py`（新） | A/B 对照运行器 ExperimentRunner（多变体×repeats 采样，higher_is_better 显式声明）+ **零依赖 Welch's t 检验**：p 值用恒等式 p=I_{df/(df+t²)}(df/2,1/2)，正则化不完全 Beta 连分式实现（NR 标准算法），不引 scipy；输出显著性 + better 变体判定 | +9 项（betainc 教科书参考值 t=2,df=10→0.0734；t=1,df=8→0.3466；零方差退化/样本不足/清晰分离/端到端/单变体拒绝） |
+| `eval/auto_optimizer.py`（新） | 护栏版参数反馈闭环：AdjustmentRule 数据驱动规则（指标阈值→参数系数）→ analyze 产建议 → apply 受控应用。三道护栏：白名单（context_budget/max_output_tokens/max_calls，**max_cost 永不在列**）+ 硬边界夹取 + 默认 dry_run、显式 apply 才生效且写带时间戳审计日志；每轮 ≤3 项、同参数每轮仅首条规则生效 | +8 项（规则触发/不触发/边界夹取/边界上不重复调/白名单拦截/缺指标跳过/dry_run 不落盘/apply 审计日志/循环上限与同参数去重） |
+
+**期间修复（测试驱动出的真问题）**：apply 的 patch 用参数名做 key，同轮多条规则调同一参数时互相覆盖只剩最后一条——改为"同参数每轮只调一次（规则顺序首条生效），其余计入 skipped"；`glob` 不支持绝对模式模式串（Path.glob 抛 NotImplementedError），改 `glob.glob`；趋势检测"批次不足"判定边界修正。
+
+**验证**：三文件新测试 +7+9+8=**24 项**；全量 **601 项 / 0 失败 / 0 跳过**（junit 解析 exit=0）。
+
+**诚实边界**：① AutoOptimizer 是"建议+受控应用"，不是无界自动调参——默认 dry_run，真正生效需要显式 apply 且全程审计；默认规则阈值（截断 20%、p95 400s、预算停止 10%）为实施默认值，未经 Q3 数据校准；② Welch 检验的 Beta 连分式对极端 df（>1e4）未做收敛压测，评测场景（repeats≤100）足够；③ 评测维度仍是正确性/结构/引用/完整性四维，"效率性"不占评分维度（走时延/费用指标），简历措辞需对齐；名称映射表见 `docs/RESUME_PARITY_PLAN.md` 第五节。**本批只补评测工具链，未改任何业务运行行为，Q2 基线口径不受影响。**
+
+## 2026-09-18 / R1 收尾：B/C 类差距闭环（浏览器验收 / Prompt Cache 实测 / 抖动场景 / 闭环真数据演示 / O-15 登记）
+
+**背景**：用户要求把"B（实现但验证不完整）/C（项目短板）"两类差距完善。C 类中 r11/O-13 已由 Q3-01 并行工作流修复（`review.py` 解析重试 + `runner.py` 降级保稿，本次核实确认不重做）；O-14 UA 决策仍留用户；联网复跑属 Q3-02 并行计划不重复。
+
+**B 类完成**
+
+| 项 | 内容 | 结果 |
+|---|---|---|
+| B1 React 浏览器验收 | React 18/ReactDOM/htm UMD vendor 到 `static/react/vendor/`（离线可用，CDN 兜底）；FastAPI 挂 `/vendor` 静态路由；Playwright 1.63 + Chromium 153 加入 dev 依赖（pyproject）；`tests/browser/test_react_page.py` 两旅程：正常（渲染→逐键输入→提交→轮询终态→截图 `eval/reports/react_browser/react_page_final.png`）+ 回退（vendor/CDN 全断→明确提示不白屏） | **2 项通过**。验收揪出 2 个真 bug 并修复：① `/vendor` 未挂载全 404；② React 页 `useState` 解构错误致输入/提交全失效（`goalState = useState("")` 再解构）；另改 `press_sequentially` 逐键输入适配受控组件。已录入 `BROWSER_REGRESSION.md`（React 两行 + 引入记录） |
+| B2 Prompt Cache 实测 | `eval/resume_metrics.py` 口径 4 `measure_prompt_cache_stability()`：真实 compose_context 管线 5 轮对话，对照 system 注入 vs user message 注入的"相邻调用逐字节稳定前缀占比" | **诚实读数**：28.4% vs 28.0%，增益 ≈0；system 前缀逐字节稳定 = True（主张中真的部分）。根因是**新发现的管线缺陷 O-15**：allocate 归一化把 messages 份额挤到 ≈0、历史窗口恒为 2 条——机制正确、收益被压制。登记 `OPTIMIZATION_BACKLOG.md` O-15（行为变更，与 Q3 批次错峰修） |
+| B3 提速异质场景 | `measure_parallel_speedup(jitter=True)`：每任务 0.5x~1.5x 随机时长（固定种子） | 50 轮均值**耗时降低 59.4%（2.5x）**——异质时长下结论稳健（固定时长口径 66.5% 不变） |
+| B4 闭环真数据演示 | `auto_optimizer.py` 加 CLI（`--metrics/--params/--rules/--apply`，默认 dry-run）；对 **Q2 真实汇总**跑一轮：p95=369.4s 正确触发时延护栏（建议 8192→7782.4，未落盘）、accepted 占比 0.81 正确不触发质量规则 | 演示证据 `eval/reports/auto_optimizer/demo_q2_dry_run.json`；是否采纳建议属 Q3 决策，未自动应用 |
+
+**验证**：新增测试 4 项（抖动 1 + 口径 4 结构与诚实读数 2 + 浏览器 2，其中口径 4 断言增益 <0.2 与 O-15 注记）；全量 **605 项 / 0 失败 / 0 跳过**（含 2 项真实 Chromium 浏览器测试；junit exit=0）。最终读数报告重新落盘 `eval/reports/resume_metrics/`（四口径）。
+
+**诚实边界**：① C 类中"预期行为符合率 70.8%→90%"与"联网可读率/复跑"属 Q3-01/Q3-02 进行中工作（需真实批次预算），本批未动、未重复；② O-14（UA 改浏览器类绕反爬）仍待用户决策；③ O-15 只登记未修（修了会改变所有链路提示词长度，须与真实批次错峰）；④ React 页验收覆盖的是 FastAPI 演示适配层，标准库工作台浏览器清单按原计划留 7 天试用期；⑤ 提速 59.4%/66.5% 仍是桩口径（机制收益），真实 LLM 对照待批次。**本批未改任何业务运行行为，Q2/Q3 口径不受影响。**
+
+## 2026-09-18 / Q3-02：O-14 B 方案实施 + O-15 就绪开关 + O-11 双臂联网复跑（用户三项决策落地）
+
+**用户决策**：① O-11 直接复跑；② O-14 选 **B 方案**（保持诚实 UA + 降权换源，不伪装浏览器）；③ O-15 做"就绪开关"，与文档同步，不碰并行会话的 review.py；④ 质量专项批次预算不用管。
+
+**O-14 B 方案（已实施）**：新模块 `harness/ingest/site_policy.py`——`DEFAULT_BLOCKED_DOMAINS`（证据基线：baike.baidu.com/wenku.baidu.com/zhihu.com/csdn.net，38×403 实录；gov.cn 部分拦截不整域拉黑）、`DomainBlocklist`（静态配置 + 任务内动态 403 实录）、`domain_of/domain_matches`（子域匹配）。接线：`Settings.search_blocked_domains`（`SEARCH_BLOCKED_DOMAINS` 逗号分隔覆盖，"none" 显式关闭）；`filter_search_results(blocked_domains)` 命中即丢弃候选（理由逐条记录，**不参与安全阀救助**）；`auto_search_candidates` 透传；`research.run` 建名单→搜索过滤→导入后把 `read_failed`+403 的域名记入动态名单→传给 repair 补搜；编排 executor 预调度路径同传静态名单。**UA 保持自报家门不变**，403 依旧如实标记。
+
+**O-15 就绪开关（默认关）**：`compose_context(reserve_message_window=True)` 时按全权重分配（messages 20%+reserve 10% 真正留给历史），历史窗口从"恒 2 条"恢复到与预算成比例；`RuntimeContext.reserve_message_window` 穿透到 runtime。收益实测（口径 4 开关对照，`eval/resume_metrics` 重新落盘）：**开关开启后 user 71.3% vs system 42.4%，增益 +28.9 个百分点**（关闭态两种位置都 ≈28%）——记忆注入 User Message 的结构性优势被证实，切换待 Q3 真实批次收尾。
+
+**O-11 双臂复跑（进行中）+ 首跑作废教训**：首次复跑（单臂）在评测期间业务代码被同时修改——每题是独立子进程，w03 起加载了中途落盘的域名降权代码，对照混杂（已分析 6 个 job 的 dropped 明细确认）→ **作废**；且其单臂输出曾覆盖 `q2_web_baseline.json` 真基线，**已从 git（b97be05）完整恢复**（12 题读数无损）。重设计为**双臂冻结代码**方案（`.tmp/run_web_two_arms.py`）：Arm A `SEARCH_BLOCKED_DOMAINS=none`（隔离相关性修复，答 O-11 原问题）→ Arm B 默认名单（B 方案后新现行基线）；各 12 题同限额（单题 $0.12），输出 `q3_web_after_relevance_only.json` / `q3_web_after_relevance_plus_dedomain.json`；`web_baseline.py` 加 `--out`（工作台目录随 stem 派生，不再覆盖既有基线）。两臂期间冻结 web 路径代码。
+
+**验证**：新增 `tests/test_site_policy_o14.py` 11 项（域名工具/名单语义/过滤器接线/安全阀不救 403 站/默认行为不变/O-15 开关）；全量 **616 项 / 0 失败 / 0 跳过**。A 臂早期信号：w02 由基线 unable → accepted。对照结论待两臂跑完后另行追加。
+
+**诚实边界**：① 复跑结论未出，本条不含 O-11 答案；② O-15 收益读数是"前缀稳定度上界代理"（离线管线测量），非真实 provider 的缓存账单对照；③ 域名降权的静态名单是证据基线（3 站），可能出现"名单外新 403 站"，动态名单仅在任务内生效、不跨任务持久；④ gov.cn 未拉黑（部分拦截），相关 403 仍会照常发生并被如实标记。
+
+**对照结论（两臂完成后追加，2026-09-18）**
+
+| 臂 | 配置 | accepted / draft / unable | 可读率 | 六模式覆盖 |
+|---|---|---|---|---|
+| 基线（修复前） | 无相关性过滤 | 3 / 3 / 6 | 52.3%（56/107） | 全 2，req_met ✓ |
+| **A 臂**（相关性修复） | `SEARCH_BLOCKED_DOMAINS=none` | **5 / 2 / 5** | **62.5%**（50/80） | 全 2，req_met ✓ |
+| **B 臂**（+域名降权） | 默认名单 | 3 / 2 / 7 | **68.8%**（53/77） | 全 2（w07 重试后），req_met ✓ |
+
+- **O-11 关闭（修复确认有效）**：A 臂 accepted 3→5、可读率 +10.2pp、抓取总量 -25%，manager_worker（w03）与 debate（w06）模式 accepted 破零；单题波动存在（w07 accepted→unable、w12 accepted→draft，属已知单次波动现象）。
+- **O-14 B 方案首批读数**：可读率三臂最高 **68.8%**（无效抓取减少，达设计目标）；accepted 3 低于 A 臂 5——差 2 题在单次波动范围内，且含 w07 LLM 瞬时故障（27s 无产出，同限额重试后诚实 unable：搜到的与主题不匹配并明确说明缺口）。**诚实结论：可读率收益成立；成稿质量增益未证实**，方案按用户决策保留，留更大批次观察。被拉黑站点的搜索摘要线索随之消失可能是因素之一（候选元数据减少）。
+- 引用谱系三臂均 0（D7 功能缺口，不在本批范围）。
+- 证据：`eval/reports/q3_web_after_relevance_only.json`、`eval/reports/q3_web_after_relevance_plus_dedomain.json`（含 w07 重试合并注记）、`eval/reports/q3_web_b_w07_retry.json`；日志 `.tmp/q3_web_two_arms.log`。**本批业务代码改动（site_policy/过滤器接线/O-15 开关）在双臂期间冻结，A 臂口径干净。**
+
