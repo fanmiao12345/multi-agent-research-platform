@@ -1,0 +1,1281 @@
+{
+  "generated_at": "2026-09-18T13:30:39",
+  "mode": "offline_stub（Mock/桩大脑，全离线可复现；多实验均值口径）",
+  "skill_token": {
+    "experiments": 17,
+    "skills_count": 17,
+    "naive_tokens": 5819,
+    "progressive_tokens_mean": 1073,
+    "system_prompt_savings": 0.8157,
+    "system_prompt_savings_min": 0.7871,
+    "system_prompt_savings_max": 0.8481,
+    "routing_stage_savings": 0.8744,
+    "per_skill": [
+      {
+        "name": "change-review",
+        "metadata": 41,
+        "full": 343,
+        "savings_when_hit": 0.8154
+      },
+      {
+        "name": "comparison-matrix",
+        "metadata": 48,
+        "full": 357,
+        "savings_when_hit": 0.813
+      },
+      {
+        "name": "data-check",
+        "metadata": 41,
+        "full": 353,
+        "savings_when_hit": 0.8137
+      },
+      {
+        "name": "decision-brief",
+        "metadata": 40,
+        "full": 377,
+        "savings_when_hit": 0.8096
+      },
+      {
+        "name": "deep-dive",
+        "metadata": 39,
+        "full": 182,
+        "savings_when_hit": 0.8431
+      },
+      {
+        "name": "incident-triage",
+        "metadata": 37,
+        "full": 332,
+        "savings_when_hit": 0.8173
+      },
+      {
+        "name": "literature-review",
+        "metadata": 45,
+        "full": 387,
+        "savings_when_hit": 0.8079
+      },
+      {
+        "name": "meeting-actions",
+        "metadata": 39,
+        "full": 288,
+        "savings_when_hit": 0.8249
+      },
+      {
+        "name": "metric-definition",
+        "metadata": 43,
+        "full": 331,
+        "savings_when_hit": 0.8175
+      },
+      {
+        "name": "project-retrospective",
+        "metadata": 51,
+        "full": 385,
+        "savings_when_hit": 0.8082
+      },
+      {
+        "name": "quick-math",
+        "metadata": 35,
+        "full": 153,
+        "savings_when_hit": 0.8481
+      },
+      {
+        "name": "release-checklist",
+        "metadata": 40,
+        "full": 341,
+        "savings_when_hit": 0.8158
+      },
+      {
+        "name": "research-question",
+        "metadata": 44,
+        "full": 378,
+        "savings_when_hit": 0.8094
+      },
+      {
+        "name": "risk-review",
+        "metadata": 43,
+        "full": 405,
+        "savings_when_hit": 0.8048
+      },
+      {
+        "name": "scenario-planning",
+        "metadata": 43,
+        "full": 345,
+        "savings_when_hit": 0.8151
+      },
+      {
+        "name": "source-audit",
+        "metadata": 50,
+        "full": 508,
+        "savings_when_hit": 0.7871
+      },
+      {
+        "name": "survey-design",
+        "metadata": 42,
+        "full": 344,
+        "savings_when_hit": 0.8153
+      }
+    ]
+  },
+  "parallel_speedup": {
+    "subtasks": 6,
+    "max_parallel": 3,
+    "sleep_per_task_s": 0.15,
+    "repeats": 50,
+    "jitter": false,
+    "sequential_mean_s": 0.902,
+    "fanout_mean_s": 0.302,
+    "sequential_std_s": 0.0006,
+    "fanout_std_s": 0.0004,
+    "sequential_median_s": 0.902,
+    "fanout_median_s": 0.3019,
+    "time_reduction": 0.6652,
+    "time_reduction_median": 0.6653,
+    "speedup_x": 2.99
+  },
+  "jittered_speedup": {
+    "subtasks": 6,
+    "max_parallel": 3,
+    "sleep_per_task_s": 0.15,
+    "repeats": 50,
+    "jitter": true,
+    "sequential_mean_s": 0.8975,
+    "fanout_mean_s": 0.3595,
+    "sequential_std_s": 0.093,
+    "fanout_std_s": 0.0389,
+    "sequential_median_s": 0.8902,
+    "fanout_median_s": 0.3656,
+    "time_reduction": 0.5946,
+    "time_reduction_median": 0.5893,
+    "speedup_x": 2.5
+  },
+  "cross_session_reuse": {
+    "cases": 100,
+    "vector_backend": "sqlite_vss",
+    "top_k": 3,
+    "top1_hit_rate": 0.6,
+    "topk_hit_rate": 0.74,
+    "bootstrap_resamples": 2000,
+    "top1_mean": 0.5999,
+    "top1_ci95": [
+      0.51,
+      0.69
+    ],
+    "top3_mean": 0.7391,
+    "top3_ci95": [
+      0.65,
+      0.82
+    ],
+    "detail": [
+      {
+        "query": "系统最多能同时跑几个子智能体？",
+        "expected": "101d3c75",
+        "returned": [
+          "101d3c75",
+          "03a292d7",
+          "d89172f4"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "报告最多自动改几次稿？",
+        "expected": "ed13510d",
+        "returned": [
+          "23f03edf",
+          "dffd865e",
+          "0bd8fe7b"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "引用怎么回溯到原文？",
+        "expected": "462ee9b5",
+        "returned": [
+          "462ee9b5",
+          "7f621fe4",
+          "a2cf521c"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "一个文件最大能导入多大？",
+        "expected": "56c69576",
+        "returned": [
+          "56c69576",
+          "98d48289",
+          "502c09de"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "子智能体可以嵌套几层？",
+        "expected": "dffd865e",
+        "returned": [
+          "03a292d7",
+          "101d3c75",
+          "d89172f4"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "图片扫描的 PDF 能直接读吗？",
+        "expected": "6e3c8255",
+        "returned": [
+          "6e3c8255",
+          "7e57aae7",
+          "dfd9f5d5"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "跑一批任务怎么控制总花费？",
+        "expected": "acea8908",
+        "returned": [
+          "a5d680c3",
+          "0fb2618d",
+          "ee7f328c"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "猜测的内容在报告里怎么标？",
+        "expected": "bcb64bcd",
+        "returned": [
+          "bcb64bcd",
+          "d0f2e1e1",
+          "23f03edf"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "删掉一个来源后引用会怎样？",
+        "expected": "27bebf7e",
+        "returned": [
+          "27bebf7e",
+          "9fa5b080",
+          "462ee9b5"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "钱花完了还能拿到结果吗？",
+        "expected": "647cc821",
+        "returned": [
+          "69be7524",
+          "721e4ec7",
+          "7e57aae7"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "预算是怎么预留和结算的？",
+        "expected": "3adf857f",
+        "returned": [
+          "3adf857f",
+          "09ace4a2",
+          "8a3ae1a9"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "调用没有返回用量还算免费吗？",
+        "expected": "7a66d723",
+        "returned": [
+          "7a66d723",
+          "b50c81a4",
+          "647cc821"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "交付结果分成哪几个等级？",
+        "expected": "2e53ced3",
+        "returned": [
+          "647cc821",
+          "7cf8e586",
+          "6fb37093"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "预算是零的时候会调模型吗？",
+        "expected": "8a3ae1a9",
+        "returned": [
+          "8a3ae1a9",
+          "fb8d730a",
+          "49e04f32"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "引用标记解析不到证据会怎样？",
+        "expected": "a985e3f5",
+        "returned": [
+          "a985e3f5",
+          "9fa5b080",
+          "7f0b78d0"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "没有依据的冲突能消解掉吗？",
+        "expected": "b50c81a4",
+        "returned": [
+          "b50c81a4",
+          "0d01e8e3",
+          "ee7f328c"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "提纲要覆盖全部必需证据吗？",
+        "expected": "e1080cc8",
+        "returned": [
+          "e1080cc8",
+          "39f875f5",
+          "63c78908"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "修订的时候旧稿会被覆盖吗？",
+        "expected": "89c3bac1",
+        "returned": [
+          "e1080cc8",
+          "0129fbec",
+          "a18e96bc"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "审校有几层分别查什么？",
+        "expected": "69be7524",
+        "returned": [
+          "69be7524",
+          "c045d431",
+          "b33cfb51"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "重新规划后旧计划还能查到吗？",
+        "expected": "aa2de7d9",
+        "returned": [
+          "77cd37ff",
+          "aa2de7d9",
+          "721e4ec7"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "来源撤回后引用会失效吗？",
+        "expected": "9fa5b080",
+        "returned": [
+          "27bebf7e",
+          "9fa5b080",
+          "462ee9b5"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "子任务的开销记在谁的账上？",
+        "expected": "09ace4a2",
+        "returned": [
+          "09ace4a2",
+          "17aad8c1",
+          "a5d680c3"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "中途取消已完成的产物会保留吗？",
+        "expected": "dc952f88",
+        "returned": [
+          "dbefa0a8",
+          "dc952f88",
+          "4335df02"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "程序崩溃后能从断点继续跑吗？",
+        "expected": "9f516753",
+        "returned": [
+          "9f516753",
+          "c312e895",
+          "18e86b9d"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "高风险工具执行前要审批吗？",
+        "expected": "2415de36",
+        "returned": [
+          "2415de36",
+          "7f0b78d0",
+          "a3822de2"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "批准的授权过期还有效吗？",
+        "expected": "a3822de2",
+        "returned": [
+          "d7bb51a5",
+          "eea6ba46",
+          "e1080cc8"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "任务缺少关键条件时怎么处理？",
+        "expected": "0fb2618d",
+        "returned": [
+          "0fb2618d",
+          "0d01e8e3",
+          "3adf857f"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "多个执行者会重复领同一个任务吗？",
+        "expected": "9e3bfcd5",
+        "returned": [
+          "a18e96bc",
+          "9e3bfcd5",
+          "98d48289"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "内网地址的链接可以抓取吗？",
+        "expected": "385bc95a",
+        "returned": [
+          "385bc95a",
+          "c312e895",
+          "7f621fe4"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "重定向之后的链接还做安全检查吗？",
+        "expected": "77cd37ff",
+        "returned": [
+          "77cd37ff",
+          "68b3a5e4",
+          "c91e4947"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "转载的重复文章会存几份？",
+        "expected": "89f223f9",
+        "returned": [
+          "0129fbec",
+          "9e3bfcd5",
+          "094794de"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "搜索结果会记录哪些信息？",
+        "expected": "26cd3e4c",
+        "returned": [
+          "26cd3e4c",
+          "dbefa0a8",
+          "c91e4947"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "网页正文抓取失败还算读过吗？",
+        "expected": "f8efc786",
+        "returned": [
+          "f8efc786",
+          "385bc95a",
+          "d7bb51a5"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "扫描图片版的PDF能识别吗？",
+        "expected": "7e57aae7",
+        "returned": [
+          "7e57aae7",
+          "6e3c8255",
+          "69be7524"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "事实和猜测的内容会混在一起吗？",
+        "expected": "23f03edf",
+        "returned": [
+          "308449c3",
+          "89f223f9",
+          "6fb37093"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "引用定位不到原文能通过验收吗？",
+        "expected": "0f805531",
+        "returned": [
+          "462ee9b5",
+          "0f805531",
+          "e1080cc8"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "预算耗尽时已有草稿会保留吗？",
+        "expected": "7cf8e586",
+        "returned": [
+          "647cc821",
+          "7cf8e586",
+          "dfd9f5d5"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "审校和写作能配不同的模型吗？",
+        "expected": "49e04f32",
+        "returned": [
+          "49e04f32",
+          "69be7524",
+          "d7bb51a5"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "评分要点会提前泄露给写作端吗？",
+        "expected": "1883f2db",
+        "returned": [
+          "f77dc0d5",
+          "aa2de7d9",
+          "7f0b78d0"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "系统会自己替人工打分吗？",
+        "expected": "0bd8fe7b",
+        "returned": [
+          "a2cf521c",
+          "93e1b7ce",
+          "5c7f963c"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "技能可以把没授权的工具打开吗？",
+        "expected": "89696dd6",
+        "returned": [
+          "89696dd6",
+          "7f0b78d0",
+          "b33cfb51"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "上下文的长度是怎么分配的？",
+        "expected": "f4ac8cad",
+        "returned": [
+          "f4ac8cad",
+          "63c78908",
+          "3c78dae8"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "对话历史太长会被直接扔掉吗？",
+        "expected": "721e4ec7",
+        "returned": [
+          "721e4ec7",
+          "0129fbec",
+          "27bebf7e"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "任务里的资料别的会话能看到吗？",
+        "expected": "9f3699dd",
+        "returned": [
+          "9f3699dd",
+          "bcb64bcd",
+          "c312e895"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "工作记忆会不会越积越多？",
+        "expected": "cab4d698",
+        "returned": [
+          "cab4d698",
+          "a18e96bc",
+          "7f621fe4"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "很久没用的经验会被清理吗？",
+        "expected": "c8d6036a",
+        "returned": [
+          "c8d6036a",
+          "a18e96bc",
+          "0129fbec"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "语义记忆会自动删掉吗？",
+        "expected": "5c7f963c",
+        "returned": [
+          "5c7f963c",
+          "c8d6036a",
+          "0bd8fe7b"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "检索排序考虑记忆的新旧吗？",
+        "expected": "6fb37093",
+        "returned": [
+          "6fb37093",
+          "5c7f963c",
+          "cab4d698"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "记忆注入会改动系统提示词吗？",
+        "expected": "75933911",
+        "returned": [
+          "75933911",
+          "088d9d38",
+          "d7bb51a5"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "指标变差时会自动告警吗？",
+        "expected": "654e79b5",
+        "returned": [
+          "654e79b5",
+          "a3822de2",
+          "5c7f963c"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "重新规划会不会作废已经做完的部分？",
+        "expected": "dbefa0a8",
+        "returned": [
+          "dbefa0a8",
+          "77cd37ff",
+          "a18e96bc"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "计划一直原地打转能发现吗？",
+        "expected": "0129fbec",
+        "returned": [
+          "56c69576",
+          "dde9a774",
+          "0bd8fe7b"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "谁来决定用哪种执行方式？",
+        "expected": "d89172f4",
+        "returned": [
+          "d89172f4",
+          "a18e96bc",
+          "5d91717f"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "fanout 是真并行还是假并行？",
+        "expected": "93e1b7ce",
+        "returned": [
+          "93e1b7ce",
+          "23f03edf",
+          "7c09cf49"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "子智能体嵌套有什么限制？",
+        "expected": "03a292d7",
+        "returned": [
+          "03a292d7",
+          "101d3c75",
+          "d89172f4"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "同样的任务会不会重复派工？",
+        "expected": "17aad8c1",
+        "returned": [
+          "8a3ae1a9",
+          "a18e96bc",
+          "0fb2618d"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "不同模式是不是各花各的钱？",
+        "expected": "98d48289",
+        "returned": [
+          "088d9d38",
+          "98d48289",
+          "93e1b7ce"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "整理类的任务也要写长报告吗？",
+        "expected": "a5d680c3",
+        "returned": [
+          "a5d680c3",
+          "0fb2618d",
+          "8a3ae1a9"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "中间产物会被覆盖吗？",
+        "expected": "39f875f5",
+        "returned": [
+          "0d01e8e3",
+          "0129fbec",
+          "a18e96bc"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "少了一个章节还能算合格吗？",
+        "expected": "18e86b9d",
+        "returned": [
+          "98d48289",
+          "18e86b9d",
+          "3adf857f"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "出现禁语会被拦下来吗？",
+        "expected": "ca4add50",
+        "returned": [
+          "308449c3",
+          "0129fbec",
+          "a18e96bc"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "重要数字必须原文出现吗？",
+        "expected": "308449c3",
+        "returned": [
+          "7f621fe4",
+          "308449c3",
+          "a985e3f5"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "审校抽风返回乱码怎么办？",
+        "expected": "d7bb51a5",
+        "returned": [
+          "69be7524",
+          "3adf857f",
+          "17aad8c1"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "能基于上一版原稿继续改稿吗？",
+        "expected": "c312e895",
+        "returned": [
+          "c312e895",
+          "89f223f9",
+          "308449c3"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "新版本会覆盖旧版本吗？",
+        "expected": "4335df02",
+        "returned": [
+          "4335df02",
+          "89c3bac1",
+          "aa2de7d9"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "结果能导出成什么格式？",
+        "expected": "68b3a5e4",
+        "returned": [
+          "68b3a5e4",
+          "dbefa0a8",
+          "654e79b5"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "报告里的出处能点开看原文吗？",
+        "expected": "7f621fe4",
+        "returned": [
+          "bcb64bcd",
+          "23f03edf",
+          "ed13510d"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "重启之后任务还在吗？",
+        "expected": "ee7f328c",
+        "returned": [
+          "ee7f328c",
+          "a18e96bc",
+          "27bebf7e"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "会不会两个人同时干同一件事？",
+        "expected": "a18e96bc",
+        "returned": [
+          "a18e96bc",
+          "7a66d723",
+          "f8efc786"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "外部工具的花费也记账吗？",
+        "expected": "b33cfb51",
+        "returned": [
+          "7f0b78d0",
+          "89696dd6",
+          "2415de36"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "密钥会暴露在页面或快照里吗？",
+        "expected": "166b734a",
+        "returned": [
+          "166b734a",
+          "63c78908",
+          "5c7f963c"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "简单问题会用便宜模型吗？",
+        "expected": "58e18699",
+        "returned": [
+          "49e04f32",
+          "89c3bac1",
+          "d7bb51a5"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "需要工具的任务会分到没工具的档位吗？",
+        "expected": "7f0b78d0",
+        "returned": [
+          "7f0b78d0",
+          "0fb2618d",
+          "89696dd6"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "评测结果能复现吗？",
+        "expected": "dde9a774",
+        "returned": [
+          "dbefa0a8",
+          "0bd8fe7b",
+          "1883f2db"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "失败样本是整目录留着的吗？",
+        "expected": "eea6ba46",
+        "returned": [
+          "eea6ba46",
+          "ae871fac",
+          "d7bb51a5"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "出了故障怎么核实损失？",
+        "expected": "f72cc55c",
+        "returned": [
+          "68b3a5e4",
+          "7a66d723",
+          "3adf857f"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "闭卷评测会把标注泄给写作端吗？",
+        "expected": "f77dc0d5",
+        "returned": [
+          "f77dc0d5",
+          "088d9d38",
+          "1883f2db"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "完成率是怎么算的？",
+        "expected": "5d91717f",
+        "returned": [
+          "8a3ae1a9",
+          "dbefa0a8",
+          "3adf857f"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "引用核对人工还是机器说了算？",
+        "expected": "a2cf521c",
+        "returned": [
+          "a2cf521c",
+          "094794de",
+          "27bebf7e"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "伪造来源的引用能被容忍吗？",
+        "expected": "957ffb0c",
+        "returned": [
+          "957ffb0c",
+          "27bebf7e",
+          "9fa5b080"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "所有技能的说明都会塞进提示词吗？",
+        "expected": "bb8b2e5b",
+        "returned": [
+          "89696dd6",
+          "647cc821",
+          "7cf8e586"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "每次调用用了多少token有记录吗？",
+        "expected": "3c78dae8",
+        "returned": [
+          "3c78dae8",
+          "0bd8fe7b",
+          "dde9a774"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "没命中的资料也会发给模型吗？",
+        "expected": "63c78908",
+        "returned": [
+          "8a3ae1a9",
+          "7a66d723",
+          "49e04f32"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "太长的工具输出会丢信息吗？",
+        "expected": "98bc1e8a",
+        "returned": [
+          "7f0b78d0",
+          "89696dd6",
+          "98bc1e8a"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "预算分配会扣掉在途和预留吗？",
+        "expected": "fb8d730a",
+        "returned": [
+          "fb8d730a",
+          "f4ac8cad",
+          "3adf857f"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "调用出错会自动重试吗？",
+        "expected": "094794de",
+        "returned": [
+          "094794de",
+          "a3822de2",
+          "0bd8fe7b"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "审批通过后还能重放吗？",
+        "expected": "548b5466",
+        "returned": [
+          "548b5466",
+          "4335df02",
+          "cab4d698"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "数据能备份和还原吗？",
+        "expected": "c045d431",
+        "returned": [
+          "c045d431",
+          "bb8b2e5b",
+          "1883f2db"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "安装会动我系统别的目录吗？",
+        "expected": "653b84db",
+        "returned": [
+          "653b84db",
+          "75933911",
+          "0d01e8e3"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "没配搜索会假装搜到吗？",
+        "expected": "c91e4947",
+        "returned": [
+          "26cd3e4c",
+          "c91e4947",
+          "6fb37093"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "搜索词会不会越拆越多？",
+        "expected": "4ccbb7f1",
+        "returned": [
+          "a18e96bc",
+          "6fb37093",
+          "4ccbb7f1"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "没见过的网站能随便抓吗？",
+        "expected": "ae871fac",
+        "returned": [
+          "0129fbec",
+          "98d48289",
+          "93e1b7ce"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "https的证书会校验吗？",
+        "expected": "dfd9f5d5",
+        "returned": [
+          "dfd9f5d5",
+          "7e57aae7",
+          "89696dd6"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "非文本的内容会被拒收吗？",
+        "expected": "d0f2e1e1",
+        "returned": [
+          "d0f2e1e1",
+          "0129fbec",
+          "6fb37093"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "引用能精确到段落位置吗？",
+        "expected": "7c09cf49",
+        "returned": [
+          "a2cf521c",
+          "7c09cf49",
+          "a985e3f5"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "任务文件夹乱了会报错吗？",
+        "expected": "0d01e8e3",
+        "returned": [
+          "0d01e8e3",
+          "8a3ae1a9",
+          "a5d680c3"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "后台卡死的线程能杀掉吗？",
+        "expected": "502c09de",
+        "returned": [
+          "502c09de",
+          "548b5466",
+          "dbefa0a8"
+        ],
+        "top1": true,
+        "top3": true
+      },
+      {
+        "query": "恢复后外部操作会重复执行吗？",
+        "expected": "0477dd64",
+        "returned": [
+          "9e3bfcd5",
+          "0477dd64",
+          "0129fbec"
+        ],
+        "top1": false,
+        "top3": true
+      },
+      {
+        "query": "每个指标能设不同的告警线吗？",
+        "expected": "69f9f78d",
+        "returned": [
+          "93e1b7ce",
+          "89696dd6",
+          "bb8b2e5b"
+        ],
+        "top1": false,
+        "top3": false
+      },
+      {
+        "query": "评测者和写作者是同一个模型吗？",
+        "expected": "088d9d38",
+        "returned": [
+          "088d9d38",
+          "98d48289",
+          "49e04f32"
+        ],
+        "top1": true,
+        "top3": true
+      }
+    ]
+  },
+  "prompt_cache_stability": {
+    "turns": 5,
+    "memory_in_system_prefix_share": 0.284,
+    "memory_in_user_prefix_share": 0.2798,
+    "stable_prefix_gain": -0.0042,
+    "system_prefix_byte_stable": true,
+    "with_o15_fix_user_share": 0.7133,
+    "with_o15_fix_system_share": 0.4242,
+    "with_o15_fix_gain": 0.2891,
+    "note": "前缀占比 = 相邻调用间逐字节相同部分占全部 prompt token 比例（缓存命中上界代理；记忆桩每轮不同，最不利场景）。当前增益≈0 的根因：历史窗口恒为最近 2 条（O-15），'system 前缀逐字节稳定'成立，'缓存收益'要等 O-15 开关启用；with_o15_fix_* 为开关开启后的对照（未默认，待批次间隙切换）"
+  }
+}

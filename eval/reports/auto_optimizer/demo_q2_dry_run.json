@@ -1,0 +1,26 @@
+{
+  "metrics_file": "eval/reports/q2_summary.json",
+  "dry_run": true,
+  "proposals": [
+    {
+      "rule_id": "p95_latency_guard",
+      "metric": "business.latency_seconds.p95",
+      "metric_value": 369.373,
+      "param": "max_output_tokens",
+      "current": 8192.0,
+      "proposed": 7782.4,
+      "reason": "Q2 基线 p95 369s 偏高：压缩输出上限 5% 压尾延迟"
+    }
+  ],
+  "patch": {
+    "max_output_tokens": 7782.4
+  },
+  "new_params": {
+    "context_budget": 6000,
+    "max_output_tokens": 7782.4,
+    "max_calls": 12
+  },
+  "skipped": 0,
+  "log_path": "",
+  "generated_at": "2026-09-18T12:14:18"
+}
