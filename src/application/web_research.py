@@ -63,8 +63,14 @@ def auto_search_candidates(topic: str, *, provider: str, run_mode: str = "real",
                            llm=None, max_queries: int = 4, max_results: int = 8,
                            max_candidates: int = 8, known_urls: set | None = None,
                            site: str = "", since: str = "", search_fn=None,
-                           on_search=None) -> tuple[list[dict], list[dict]]:
-    """返回 (候选元数据列表, 搜索记录列表)；候选列表交给 URL 抓取与根账本。"""
+                           on_search=None,
+                           blocked_domains: frozenset | set | None = None
+                           ) -> tuple[list[dict], list[dict]]:
+    """返回 (候选元数据列表, 搜索记录列表)；候选列表交给 URL 抓取与根账本。
+
+    blocked_domains（O-14 B 方案）：命中域名的候选在过滤阶段即被跳过
+    （理由记入 records[].dropped），不占候选名额、不浪费后续抓取。
+    """
     provider_name = (provider or "").strip().lower()
     if provider_name not in SUPPORTED_PROVIDERS:
         raise SearchNotConfigured(f"搜索服务 {provider or '未配置'} 尚未接入")
@@ -87,7 +93,9 @@ def auto_search_candidates(topic: str, *, provider: str, run_mode: str = "real",
             results = search(provider_name, query, max_results=max_results)
             # Q3-02 联网专项：结果先按关键词重合度与页面类型过滤，词典/日历/下载页
             # 不再占用候选名额（实测这类页面挤满候选是 6/12 题 unable 的直接原因）。
-            results, dropped = filter_search_results(query, results)
+            # O-14 B 方案：已知/近期 403 的站点同样在此跳过（降权换源，不伪装 UA）。
+            results, dropped = filter_search_results(query, results,
+                                                     blocked_domains=blocked_domains)
             for position, result in enumerate(results, start=1):
                 item = _candidate_from_result(
                     result, provider=provider_name, query=query, position=position)

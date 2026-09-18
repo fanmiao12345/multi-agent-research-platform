@@ -268,14 +268,20 @@ def result_relevance(query: str, title: str, snippet: str) -> float:
 
 def filter_search_results(query: str, results: list,
                           min_relevance: float = 0.2,
-                          fallback_keep: int = 2) -> tuple[list, list[dict]]:
+                          fallback_keep: int = 2,
+                          blocked_domains: frozenset | set | None = None
+                          ) -> tuple[list, list[dict]]:
     """按相关性过滤候选；返回 (保留结果, 丢弃说明)。
 
     保留：关键词重合度达标的条目（以及词典/日历/落地页规则之外的相关条目）。
     丢弃说明逐条给出理由与重合度，便于人工复核与报告呈现。
     安全阀：整组都不达标时按重合度保留前 `fallback_keep` 条（并在丢弃说明里标
     `fallback=True`），避免"一条都不留"让某个查询彻底落空；上层据此如实记录。
+    blocked_domains（O-14 B 方案）：命中域名的候选直接丢弃、**不参与安全阀救助**
+    ——这些站点以 403 拒绝抓取，占名额只会浪费抓取预算（逐条记录理由，可审计）。
     """
+    from src.harness.ingest.site_policy import BLOCK_REASON, domain_matches
+
     scored: list[tuple[float, object, str, bool]] = []
     query_text = query or ""
     if not query_terms(query_text):
@@ -285,10 +291,13 @@ def filter_search_results(query: str, results: list,
     for result in results or []:
         title = str(getattr(result, "title", "") or "")
         snippet = str(getattr(result, "snippet", "") or "")
+        url = str(getattr(result, "url", "") or "")
         relevance = result_relevance(query_text, title, snippet)
         reason = ""
         rescuable = False
-        if _LEXICON_TITLE.search(title) and relevance < 0.6:
+        if blocked_domains and any(domain_matches(url, d) for d in blocked_domains):
+            reason = BLOCK_REASON
+        elif _LEXICON_TITLE.search(title) and relevance < 0.6:
             reason = "词典/字词释义页，非研究材料"
         elif _CALENDAR_TITLE.search(title) and not wants_calendar:
             reason = "日历/节假日页，与主题无关"

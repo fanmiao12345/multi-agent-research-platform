@@ -239,6 +239,7 @@ class OrchestrationExecutor:
             if (request.allow_network and self.settings is not None
                     and getattr(self.settings, "search_provider", "")):
                 from src.application.web_research import auto_search_candidates
+                from src.harness.ingest.site_policy import build_domain_blocklist
                 from src.harness.storage.sources import MAX_SOURCES
                 try:
                     remaining = max(0, MAX_SOURCES - len(request.texts)
@@ -249,7 +250,9 @@ class OrchestrationExecutor:
                         max_results=getattr(self.settings, "search_max_results", 8),
                         max_candidates=remaining,
                         known_urls=set(request.urls),
-                        on_search=(root_ledger.record_search if root_ledger else None))
+                        on_search=(root_ledger.record_search if root_ledger else None),
+                        blocked_domains=build_domain_blocklist(
+                            self.settings).domains_for_filter())
                     if found:
                         effective = dataclasses.replace(
                             request, urls=request.urls + tuple(

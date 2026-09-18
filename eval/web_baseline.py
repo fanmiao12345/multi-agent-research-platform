@@ -10,14 +10,16 @@ DATASET=ROOT/"eval"/"datasets"/"web_topics_v1.json"
 OUT=ROOT/"eval"/"reports"/"q2_web_baseline.json"
 
 
-def run(max_cost: float, topic_filter: str | None = None) -> dict:
+def run(max_cost: float, topic_filter: str | None = None,
+        out_path: Path | None = None) -> dict:
     import subprocess, sys
     from config.settings import Settings
     settings=Settings()
     if not settings.search_provider:
         raise ValueError("SEARCH_PROVIDER 未配置，不能执行真实联网基线")
     cases=json.loads(DATASET.read_text(encoding="utf-8"))["cases"]
-    workspace=OUT.parent/"q2_web_workspace"
+    out=out_path or OUT
+    workspace=out.parent/(out.stem+"_workspace")
     rows=[]
     import os as _os
 
@@ -42,8 +44,8 @@ def run(max_cost: float, topic_filter: str | None = None) -> dict:
                                        ("single","fixed","manager_worker","fanout",
                                         "dynamic_team","debate")),
                 "nested_note":"二层嵌套由 D6/Q1 证据覆盖；本联网批次不把模式名称当嵌套成功"}
-        OUT.parent.mkdir(parents=True,exist_ok=True)
-        OUT.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
+        out.parent.mkdir(parents=True,exist_ok=True)
+        out.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
         return report
 
     for case in cases:
@@ -105,9 +107,13 @@ def main():
     parser.add_argument("--max-cost",type=float,required=True,
                         help="每个真实联网任务的费用上限（美元）")
     parser.add_argument("--topic",default=None)
+    parser.add_argument("--out",default=None,
+                        help="报告输出路径（默认 eval/reports/q2_web_baseline.json）；"
+                             "工作台目录随之派生，避免覆盖既有基线")
     args=parser.parse_args()
-    report=run(args.max_cost,args.topic)
-    print(json.dumps({"out":str(OUT),"rows":len(report["rows"]),
+    out_path=Path(args.out) if args.out else None
+    report=run(args.max_cost,args.topic,out_path)
+    print(json.dumps({"out":str(out_path or OUT),"rows":len(report["rows"]),
                       "coverage":report["mode_coverage"],
                       "requirements_met":report["requirements_met"]},
                      ensure_ascii=False,indent=2))

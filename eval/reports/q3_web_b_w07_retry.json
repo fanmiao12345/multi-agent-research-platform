@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-18T15:01:46",
+  "batch_max_cost_per_task": 0.12,
+  "rows": [
+    {
+      "id": "w07",
+      "topic": "开源大模型生态的商业模式",
+      "mode": "fixed",
+      "returncode": 1,
+      "root_job_id": "job_63255cd6b96f434094c29842c0697d4d",
+      "draft_level": "unable",
+      "termination_reason": "unable",
+      "elapsed_seconds": 91.688,
+      "source_count": 7,
+      "usable_sources": 2,
+      "citation_lineage": [],
+      "message": "无法完成：现有证据仅涉汉字字形、国学网站与Gitee平台及AI工具，未提供开源大模型许可证、收入、分成或案例材料。；缺失信息：开源大模型许可证条款、商业化限制与合规案例、开源大模型厂商的收入来源与定价、模型厂商、社区、云厂商、应用开发者的分成合作机制、模力方舟定位、收费模式及与开源大模型的关系、中国典型开源大模型企业的案例、定价或财务数据（可用证据 14 条不足以支撑任务目标，按任务要求不编造内容）"
+    }
+  ],
+  "mode_coverage": {
+    "fixed": 1
+  },
+  "mode_accepted": {},
+  "coverage_note": "coverage=实际执行过（有 root_job_id）的主题数；mode_accepted=其中交付 accepted 的数量；未执行/异常不计入覆盖",
+  "requirements_met": false,
+  "nested_note": "二层嵌套由 D6/Q1 证据覆盖；本联网批次不把模式名称当嵌套成功"
+}

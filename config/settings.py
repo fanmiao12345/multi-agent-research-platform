@@ -46,6 +46,18 @@ def _parse_mcp_servers(raw: str):
     return parse_mcp_servers(raw)
 
 
+def _parse_blocked_domains(raw: str):
+    """SEARCH_BLOCKED_DOMAINS 解析（O-14 B 方案）；延迟导入保持设置层独立。
+
+    空值 = 证据基线默认名单；"none" = 显式关闭；否则逗号分隔域名。
+    """
+    if not raw.strip():
+        from src.harness.ingest.site_policy import DEFAULT_BLOCKED_DOMAINS
+        return DEFAULT_BLOCKED_DOMAINS
+    from src.harness.ingest.site_policy import parse_blocked_domains
+    return parse_blocked_domains(raw)
+
+
 @dataclass(frozen=True)
 class Settings:
     """一次进程的静态配置。Runtime Context 会引用它，但不再重复造轮子。"""
@@ -64,6 +76,11 @@ class Settings:
     search_api_key: str = field(default_factory=lambda: _env("SEARCH_API_KEY", ""), repr=False)
     search_base_url: str = field(default_factory=lambda: _env("SEARCH_BASE_URL", ""), repr=False)
     search_max_results: int = field(default_factory=lambda: _number("SEARCH_MAX_RESULTS", "5", int))
+    # O-14 B 方案（降权换源，不伪装 UA）：已知/近期 403 拒绝抓取的站点不再占用
+    # 搜索候选名额。默认=证据基线（harness/ingest/site_policy.py）；
+    # SEARCH_BLOCKED_DOMAINS 逗号分隔覆盖，"none" 显式关闭。
+    search_blocked_domains: tuple = field(
+        default_factory=lambda: _parse_blocked_domains(_env("SEARCH_BLOCKED_DOMAINS", "")))
     # 专职评测 Agent 的独立模型（S6-05）：留空则与被评任务同模型（会标注局限）
     grader_model_name: str = field(default_factory=lambda: _env("GRADER_MODEL_NAME", ""))
     # D2-04 MCP 配置驱动接入：MCP_SERVERS 为 JSON 数组（name/command/args/allow_tools/

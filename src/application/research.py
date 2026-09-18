@@ -262,8 +262,12 @@ class ResearchApplication:
             self.mcp_sessions = connect_configured_mcp_servers(
                 self.settings, self.executor.registry)
 
-    def _repair_callback(self):
-        """D7-03：允许联网且有搜索配置时，对明确缺口做一次有界补搜。"""
+    def _repair_callback(self, blocklist=None):
+        """D7-03：允许联网且有搜索配置时，对明确缺口做一次有界补搜。
+
+        blocklist（O-14 B 方案）：任务内域名名单——初始导入刚被 403 的站点
+        在补搜候选里跳过（降权换源），不重复撞墙。
+        """
         if not self.request.allow_network or not self.settings.search_provider:
             return None
 
@@ -281,10 +285,16 @@ class ResearchApplication:
                 run_mode=self.request.mode, llm=self.llm,
                 max_results=self.settings.search_max_results,
                 max_candidates=2,
-                on_search=(ledger.record_search if ledger else None))
+                on_search=(ledger.record_search if ledger else None),
+                blocked_domains=(blocklist.domains_for_filter()
+                                 if blocklist is not None else None))
             texts = []
             for item in found[:2]:
+                if blocklist is not None and blocklist.blocks(item["url"]):
+                    continue
                 result = fetch_url(item["url"], self.url_policy)
+                if blocklist is not None:
+                    blocklist.record_rejection(item["url"], result.http_status)
                 if result.status != "ok":
                     continue
                 extracted = extract_document(result.raw or b"",
@@ -320,6 +330,7 @@ class ResearchApplication:
         status = "failed"
         import_summary = None
         web_search_info = None
+        blocklist = None    # O-14 B 方案：任务内域名名单（静态配置+动态 403 实录）
         try:
             with job_scope(ledger):
                 # D3-03 自动联网研究：只给主题且允许联网、且已配置搜索提供方时，
@@ -328,13 +339,16 @@ class ResearchApplication:
                 if (request.flow == "research" and request.allow_network
                         and search_enabled(self.settings.search_provider)):
                     from src.application.web_research import auto_search_candidates
+                    from src.harness.ingest.site_policy import build_domain_blocklist
+                    blocklist = build_domain_blocklist(self.settings)
                     try:
                         found, records = auto_search_candidates(
                             request.task, provider=self.settings.search_provider,
                             run_mode=request.mode, llm=self.llm,
                             max_results=self.settings.search_max_results,
                             known_urls=set(request.urls),
-                            on_search=ledger.record_search)
+                            on_search=ledger.record_search,
+                            blocked_domains=blocklist.domains_for_filter())
                         found_urls = [item["url"] for item in found]
                         if found_urls:
                             request = dataclasses.replace(
@@ -359,6 +373,15 @@ class ResearchApplication:
                     summary = store.summary()
                     import_summary = {"total": summary["total"], "usable": summary["usable"],
                                       "statuses": summary["statuses"]}
+                    # O-14 B 方案：本次导入刚被 403 的域名记入任务内名单，
+                    # 供链中补搜（repair）降权换源，不重复撞墙。
+                    if blocklist is not None:
+                        for src in summary.get("sources", []):
+                            if src.get("status") == "read_failed":
+                                blocklist.record_rejection(
+                                    str(src.get("original_address") or ""),
+                                    src.get("http_status")
+                                    or src.get("status_message") or "403")
                 if request.flow == "research":
                     # B5/S5-04：研究写作链（固定阶段，产物全落 job 目录；预算停止由
                     # runner 收敛为"待完善草稿"语义；base_draft 提供改稿模式）。
@@ -371,7 +394,7 @@ class ResearchApplication:
                         initial_draft=request.base_draft or None,
                         hard_requirements=_hard_requirements(request),
                         delivery_kind=request.delivery_kind,
-                        repair_callback=self._repair_callback())
+                        repair_callback=self._repair_callback(blocklist))
                     outcome = chain_result
                     outcome.root_job_id = ledger.job_id
                     outcome.run_id = None
