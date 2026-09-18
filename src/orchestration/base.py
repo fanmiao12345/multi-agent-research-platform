@@ -18,8 +18,13 @@ from src.harness.model_gateway import role_scope, BudgetStop
 Worker = Callable[[str, str], str]
 
 
-def make_worker(runtime, profiles: dict | None = None) -> Worker:
-    """默认 worker：按 profile 注入人设后跑一次 AgentRuntime。"""
+def make_worker(runtime, profiles: dict | None = None,
+                event_bus=None) -> Worker:
+    """默认 worker：按 profile 注入人设后跑一次 AgentRuntime。
+
+    event_bus：可选 EventBus。worker 只向总线发 worker_start/worker_end，
+    不直接认识 Tracer / UI —— 通信解耦由订阅方（如 tracer_bridge）完成。
+    """
     profiles = profiles or {}
 
     def worker(task_text: str, role: str) -> str:
@@ -27,8 +32,19 @@ def make_worker(runtime, profiles: dict | None = None) -> Worker:
         profile = profiles.get(role)
         if profile is not None:
             extra = profile.prompt
-        with role_scope(role):
-            outcome = runtime.run_task(task_text, system_extra=extra)
+        if event_bus is not None:
+            event_bus.publish("worker_start", source="worker", role=role)
+        try:
+            with role_scope(role):
+                outcome = runtime.run_task(task_text, system_extra=extra)
+        except BudgetStop:
+            if event_bus is not None:
+                event_bus.publish("worker_end", source="worker", role=role, ok=False,
+                                  reason="budget_exceeded")
+            raise
+        if event_bus is not None:
+            event_bus.publish("worker_end", source="worker", role=role, ok=True,
+                              reason=outcome.termination_reason)
         if outcome.termination_reason == "budget_exceeded":
             raise BudgetStop("根任务限制已触发，停止后续阶段")
         return outcome.final_text

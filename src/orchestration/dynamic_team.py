@@ -22,7 +22,8 @@ from src.orchestration.base import StrategyResult, Worker
 
 
 def run_dynamic_team(task: str, worker: Worker, llm,
-                     max_parallel: int = 3, name: str = "dynamic_team") -> StrategyResult:
+                     max_parallel: int = 3, name: str = "dynamic_team",
+                     *, event_bus=None) -> StrategyResult:
     plan = plan_task(llm, task)          # Manager 决定组队（角色从 preferred_agent 来）
     graph = TaskGraph(plan)
     calls = {"n": 0}
@@ -30,6 +31,9 @@ def run_dynamic_team(task: str, worker: Worker, llm,
 
     def execute_one(ptask):
         calls["n"] += 1
+        if event_bus is not None:
+            event_bus.publish("delegate", source=name, role=ptask.preferred_agent,
+                              task_id=ptask.id, description=ptask.description[:80])
         return worker(ptask.description, ptask.preferred_agent)
 
     guard = 0

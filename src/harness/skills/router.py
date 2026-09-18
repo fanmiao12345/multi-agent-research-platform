@@ -71,7 +71,18 @@ def route(registry: SkillRegistry, llm, question: str, top_k: int = 5,
     return {"skill": None, "candidates": cands, "reason": "rerank 判定 NO_SKILL"}
 
 
-def inject(skill) -> str:
-    """把命中的技能正文拼成可注入上下文的 system 片段（Skill Injection）。"""
+def inject(skill, level: str = "fullcontent") -> str:
+    """把命中技能拼成可注入上下文的 system 片段（Skill Injection）。
+
+    三层渐进式加载的前两层：
+    - metadata     —— 只有名字+描述（召回/路由阶段可用，几乎不占 token）
+    - fullcontent  —— 元数据 + 正文指令（命中后才用，默认值，行为同旧版）
+    references 第三层不在这里拼：大块资料按需 registry.load_reference() 读取。
+    """
+    from src.harness.skills.types import LEVEL_FULLCONTENT, LEVEL_METADATA
+    if level == LEVEL_METADATA:
+        return f"\n\n[技能元数据：{skill.name}]（{skill.description}）"
+    if level != LEVEL_FULLCONTENT:
+        raise ValueError(f"未知加载层级 {level}（可用：metadata / fullcontent）")
     return (f"\n\n[已启用技能：{skill.name}]（{skill.description}）\n"
             f"仅在本任务遵循以下说明：\n{skill.instructions}")

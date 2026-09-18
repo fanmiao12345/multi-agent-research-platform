@@ -33,6 +33,8 @@ from src.harness.tools.registry import ToolRegistry
 from src.harness.tracer import EV_RUN_END, EV_RUN_START, Tracer
 from src.harness.usage import UsageTracker
 from src.harness.model_gateway import ACTIVE_JOB, RUN_ID, ROLE, BudgetStop
+from src.harness.skills.lifecycle import (SkillLifecycleError,
+                                          SkillLifecycleManager)
 from src.harness.skills.registry import SkillRegistry
 from src.harness.skills.router import inject, route
 from src.harness.tools.subagent import subagent_permission_scope
@@ -82,6 +84,8 @@ class AgentRuntime:
         self.model_name = getattr(llm, "model_name", "")
         self.tool_executor = tool_executor or ToolExecutor(ToolRegistry.with_builtins())
         self.skill_registry = skill_registry or SkillRegistry()
+        # Skill Harness 生命周期：discovered → activated → running → deactivated
+        self.skill_lifecycle = SkillLifecycleManager(self.skill_registry)
         self.memory_store = memory_store or LongTermStore(
             self.settings.workspace_dir / "memory_store.json")
         self.knowledge_root = knowledge_root or KNOWLEDGE_DIR
@@ -118,6 +122,16 @@ class AgentRuntime:
                     return True, content
         return False, ""
 
+    def _skill_lifecycle_cleanup(self, skill_name: str) -> None:
+        """任务结束后把技能状态收回 deactivated（best-effort，不掩盖业务异常）。"""
+        try:
+            if self.skill_lifecycle.state_of(skill_name) == "running":
+                self.skill_lifecycle.end_run(skill_name)
+            if self.skill_lifecycle.state_of(skill_name) == "activated":
+                self.skill_lifecycle.deactivate(skill_name)
+        except Exception:  # noqa: BLE001
+            pass
+
     # ---- 内部实现 ----
     def _execute(self, task: str, context: RuntimeContext | None,
                  streaming: bool, on_event=None, system_extra: str = "",
@@ -151,11 +165,26 @@ class AgentRuntime:
 
         skill_decision = {"skill": None, "candidates": [], "reason": "技能未启用"}
         selected_skill = None
+        skill_activated = False
         if ctx.skills_enabled:
             skill_decision = route(self.skill_registry, self.llm, task,
                                    top_k=5, allow_llm=False)
             if skill_decision.get("skill"):
-                selected_skill = self.skill_registry.get(skill_decision["skill"])
+                skill_name = skill_decision["skill"]
+                try:
+                    # 生命周期：依赖解析通过才激活；失败则本轮不带技能继续
+                    self.skill_lifecycle.activate(skill_name)
+                    skill_activated = True
+                    selected_skill = self.skill_registry.get(skill_name)
+                except SkillLifecycleError as e:
+                    skill_decision["skill"] = None
+                    skill_decision["reason"] = f"生命周期激活失败：{e}"
+                    tracer.event("skill_lifecycle_error", node="context",
+                                 skill=skill_name, error=str(e))
+            if skill_decision.get("skill"):
+                tracer.event("skill_lifecycle", node="context",
+                             skill=skill_decision["skill"],
+                             from_state="discovered", to_state="activated")
             tracer.event("skill_route", node="context",
                          selected=skill_decision.get("skill"),
                          reason=skill_decision.get("reason", ""),
@@ -206,10 +235,14 @@ class AgentRuntime:
             history = self._history_without_current(
                 state.get("messages", []), state.get("user_task") or task)
             continuing_tool = bool(history and history[-1].get("role") == "tool")
+            user_kinds = (("memory", "evidence", "handoff")
+                          if ctx.memory_in_user_message else ())
             messages, stats = compose_context(
                 state.get("user_task") or task, sources, history=history,
                 total_budget=ctx.context_budget,
-                append_question=not continuing_tool)
+                append_question=not continuing_tool,
+                user_message_kinds=user_kinds,
+                reserve_message_window=ctx.reserve_message_window)
             context_records.append({
                 "round": len(context_records) + 1,
                 "skill": skill_decision.get("skill"),
@@ -239,6 +272,11 @@ class AgentRuntime:
                          model_profile=ctx.model_profile, status="running")
             if on_event:
                 on_event({"type": "run_start", "run_id": run["run_id"]})
+            if skill_activated and skill_decision.get("skill"):
+                self.skill_lifecycle.begin_run(skill_decision["skill"])
+                tracer.event("skill_lifecycle", node="context",
+                             skill=skill_decision["skill"],
+                             from_state="activated", to_state="running")
             app = build_agent_graph(
                 self.llm, max_iterations=ctx.max_iterations, tracer=tracer,
                 run_id=run["run_id"], tool_executor=self.tool_executor,
@@ -304,6 +342,8 @@ class AgentRuntime:
                                  messages=len(result["messages"]))
                 finally:
                     finish_run(run, status.lower())
+                    if skill_activated and skill_decision.get("skill"):
+                        self._skill_lifecycle_cleanup(skill_decision["skill"])
 
         return RunOutcome(
             final_text=final_text, run_id=run["run_id"], thread_id=record.thread_id,

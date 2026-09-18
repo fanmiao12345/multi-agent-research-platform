@@ -38,6 +38,10 @@ class MemoryRecord:
     created_at: str = ""
     updated_at: str = ""
     expires_at: str = ""          # ISO；空 = 永不过期
+    # 遗忘曲线字段（Ebbinghaus 式检索强度模型）：
+    #   retrievability = exp(-间隔天数 / stability)，每次被召回 stability 翻倍（强化）
+    stability: float = 1.0
+    last_access: str = ""         # ISO；空 = 从未召回（用 created_at 兜底）
 
     def is_expired(self, now: str | None = None) -> bool:
         if not self.expires_at:
@@ -47,13 +51,24 @@ class MemoryRecord:
     def to_dict(self) -> dict:
         return {k: getattr(self, k) for k in
                 ("id", "kind", "content", "source", "confidence",
-                 "created_at", "updated_at", "expires_at")}
+                 "created_at", "updated_at", "expires_at",
+                 "stability", "last_access")}
 
     @classmethod
     def from_dict(cls, d: dict) -> "MemoryRecord":
-        return cls(**{k: d.get(k, "") for k in
-                      ("id", "kind", "content", "source", "confidence",
-                       "created_at", "updated_at", "expires_at")})
+        rec = cls(**{k: d.get(k, "") for k in
+                     ("id", "kind", "content", "source", "confidence",
+                      "created_at", "updated_at", "expires_at")})
+        # 旧文件没有这两个字段时安静取默认值（向后兼容）
+        rec.stability = float(d.get("stability", 1.0) or 1.0)
+        rec.last_access = d.get("last_access", "")
+        return rec
+
+    def reinforce(self, factor: float = 2.0, cap: float = 365.0) -> None:
+        """被召回一次：稳定性按因子增强（上限 cap 天），刷新最近访问时间。"""
+        self.stability = min(cap, max(0.1, self.stability) * factor)
+        self.last_access = _now()
+        self.updated_at = self.last_access
 
 
 def _now() -> str:
@@ -124,7 +139,9 @@ class LongTermStore:
         return out
 
     # ---- 简单检索（子串 + kind 过滤；向量版由 knowledge/retrieval 提供）----
-    def search(self, query: str, kind: str | None = None, top_k: int = 5) -> list[MemoryRecord]:
+    def search(self, query: str, kind: str | None = None, top_k: int = 5,
+               *, reinforce: bool = True) -> list[MemoryRecord]:
+        """检索并（默认）强化命中记录的遗忘曲线稳定性。"""
         scored = []
         for rec in self.list(kind=kind):
             score = 0
@@ -137,7 +154,12 @@ class LongTermStore:
             if score:
                 scored.append((score, rec))
         scored.sort(key=lambda x: x[0], reverse=True)
-        return [r for _, r in scored[:top_k]]
+        out = [r for _, r in scored[:top_k]]
+        if reinforce:
+            for rec in out:
+                rec.reinforce()
+            self._flush()
+        return out
 
     def summarize(self, kind: str | None = None) -> str:
         """把某类记忆折叠成一段摘要（episodic 的历史任务回顾用）。"""

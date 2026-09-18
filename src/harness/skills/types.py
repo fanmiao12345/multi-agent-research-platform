@@ -4,7 +4,14 @@ harness/skills —— Skill Registry / Recall / Router（DEV_PLAN D7-D8，步骤
 
 Skill = Markdown + Frontmatter：
     name / description / triggers / allowed_tools / version /（正文即 instructions）
-内容默认放在项目根 skills/*.md（可用环境变量 SKILLS_DIR 覆盖）。
+    depends     可选：依赖的其他技能名（激活前自动解析，缺失/循环显式报错）
+    references  可选：按需加载的参考文件名（三层渐进加载的第三层）
+三层渐进式加载（progressive disclosure）：
+    metadata     —— frontmatter（name/description/triggers），召回与路由只用这层
+    fullcontent  —— 正文 instructions，仅命中的技能才注入上下文
+    references   —— 大块参考资料，运行中确实需要时才 load_reference() 读取
+内容默认放在项目根 skills/*.md（可用环境变量 SKILLS_DIR 覆盖）；
+参考文件放在同名子目录：skills/<技能文件名去.md>/<引用名>.md。
 """
 
 from __future__ import annotations
@@ -19,6 +26,10 @@ SKILLS_DIR = Path(os.environ.get("SKILLS_DIR", PROJECT_ROOT / "skills"))
 
 _KEY = re.compile(r"^([A-Za-z][A-Za-z0-9_-]*):(.*)$")
 
+# 渐进加载层级（收敛命名）
+LEVEL_METADATA = "metadata"        # 只有 frontmatter 元数据
+LEVEL_FULLCONTENT = "fullcontent"  # 元数据 + 正文指令
+
 
 @dataclass
 class Skill:
@@ -27,6 +38,8 @@ class Skill:
     triggers: list[str] = field(default_factory=list)
     allowed_tools: list[str] = field(default_factory=list)
     version: str = ""
+    depends: list[str] = field(default_factory=list)
+    references: list[str] = field(default_factory=list)
     instructions: str = ""
 
 

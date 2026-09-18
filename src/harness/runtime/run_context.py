@@ -35,6 +35,12 @@ class RuntimeContext:
     knowledge_enabled: bool = True
     skills_enabled: bool = True
     handoff_text: str = ""
+    # True = 记忆/证据并入 User Message（system 前缀逐字节稳定，Prompt Cache 友好）
+    # 默认 False 保持 Q2 基线行为可比；对比读数见 eval/reports/resume_metrics/
+    memory_in_user_message: bool = False
+    # O-15 就绪开关：True = messages/reserve 份额真正留给历史窗口（修复"恒 2 条"）
+    # 默认 False 保持现行为；切换须在真实批次间隙（会改变提示词长度）
+    reserve_message_window: bool = False
 
     def __post_init__(self):
         if isinstance(self.max_iterations, bool) or not isinstance(self.max_iterations, int) \
@@ -72,6 +78,8 @@ class RuntimeContext:
             "memory_enabled": self.memory_enabled,
             "knowledge_enabled": self.knowledge_enabled,
             "skills_enabled": self.skills_enabled, "handoff_text": self.handoff_text,
+            "memory_in_user_message": self.memory_in_user_message,
+            "reserve_message_window": self.reserve_message_window,
         }
         base.update(overrides)
         return RuntimeContext(**base)

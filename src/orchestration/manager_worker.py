@@ -14,11 +14,14 @@ from src.orchestration.base import StrategyResult, Worker
 
 
 def run_manager_worker(task: str, worker: Worker, llm,
-                       name: str = "manager_worker") -> StrategyResult:
+                       name: str = "manager_worker", *, event_bus=None) -> StrategyResult:
     calls = {"n": 0}
 
     def runner(ptask):
         calls["n"] += 1
+        if event_bus is not None:
+            event_bus.publish("delegate", source=name, role=ptask.preferred_agent,
+                              task_id=ptask.id, description=ptask.description[:80])
         return worker(ptask.description, ptask.preferred_agent)
 
     result: PlanResult = plan_and_execute(llm, task, runner=runner, max_replans=1)

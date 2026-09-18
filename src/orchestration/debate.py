@@ -21,16 +21,24 @@ from src.orchestration.base import StrategyResult, Worker, pack_card
 
 def run_debate(question: str, worker: Worker, llm,
                pro_side: str = "支持方", con_side: str = "反对方",
-               name: str = "debate") -> StrategyResult:
+               name: str = "debate", *, event_bus=None) -> StrategyResult:
     def argue(side: str, stance: str) -> str:
-        return worker(pack_card(question, f"辩论·{side}", None) +
-                      f"立场：{stance}。请给出有依据的论点与反驳预期。", side)
+        if event_bus is not None:
+            event_bus.publish("stage_start", source=name, role=side, stage=side)
+        out = worker(pack_card(question, f"辩论·{side}", None) +
+                     f"立场：{stance}。请给出有依据的论点与反驳预期。", side)
+        if event_bus is not None:
+            event_bus.publish("stage_end", source=name, role=side, stage=side,
+                              ok=bool(out and out.strip()))
+        return out
 
     with ThreadPoolExecutor(max_workers=2) as pool:
         f_pro = pool.submit(copy_context().run, argue, "pro", pro_side)
         f_con = pool.submit(copy_context().run, argue, "con", con_side)
         pro, con = f_pro.result(), f_con.result()
 
+    if event_bus is not None:
+        event_bus.publish("judge", source=name, role="judge")
     judge = call_model(llm, [{"role": "user",
                        "content": f"你是裁决者。问题：{question}\n\n【支持方】\n{pro}\n\n"
                                   f"【反对方】\n{con}\n\n请裁决并说明理由。"}],

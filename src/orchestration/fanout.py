@@ -16,13 +16,20 @@ from src.orchestration.base import StrategyResult, Worker, pack_card
 
 def run_fanout(task: str, worker: Worker, subtasks: list[str],
                max_parallel: int = 3, role: str = "researcher",
-               name: str = "fanout") -> StrategyResult:
+               name: str = "fanout", *, event_bus=None) -> StrategyResult:
     """subtasks：子任务描述列表（由调用方/Planner 提供）。"""
     if not subtasks:
         subtasks = [task]
 
     def one(sub: str) -> str:
-        return worker(pack_card(task, f"子任务·{role}", None) + sub, role)
+        if event_bus is not None:
+            event_bus.publish("subtask_dispatch", source=name, role=role,
+                              subtask=sub[:80])
+        out = worker(pack_card(task, f"子任务·{role}", None) + sub, role)
+        if event_bus is not None:
+            event_bus.publish("subtask_done", source=name, role=role,
+                              subtask=sub[:80], ok=bool(out and out.strip()))
+        return out
 
     outs: list[str] = [""] * len(subtasks)
     with ThreadPoolExecutor(max_workers=min(max_parallel, len(subtasks))) as pool:
@@ -31,6 +38,9 @@ def run_fanout(task: str, worker: Worker, subtasks: list[str],
             outs[i] = fut.result()
 
     combined = "\n\n".join(f"### 子任务 {i + 1} 产出\n{out}" for i, out in enumerate(outs))
+    if event_bus is not None:
+        event_bus.publish("fanin", source=name, role=role,
+                          merged=len([o for o in outs if o and o.strip()]))
     return StrategyResult(name=name, final=combined, worker_calls=len(subtasks),
                           stages=[{"subtask": s, "ok": bool(o)}
                                   for s, o in zip(subtasks, outs)])

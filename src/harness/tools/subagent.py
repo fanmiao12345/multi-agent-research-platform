@@ -5,6 +5,7 @@ from __future__ import annotations
 import contextvars
 import re
 
+from src.harness.budget_control import IterationBudget
 from src.harness.model_gateway import role_scope, BudgetStop
 from src.harness.tools.registry import RISK_MEDIUM, ToolRegistry, ToolSpec
 
@@ -15,9 +16,12 @@ _PERMISSIONS = contextvars.ContextVar("subagent_permissions", default=None)
 
 
 class _SubagentState:
-    def __init__(self):
+    def __init__(self, max_total: int = 12):
         self.seen: set[str] = set()
         self.count = 0
+        # 父级迭代预算 = 派生总数上限；同时带熔断器（连续失败 3 次即 open）
+        self.budget = IterationBudget(max_iterations=max_total,
+                                      max_consecutive_failures=3)
 
 
 def _normalize_task(task: str) -> str:
@@ -72,6 +76,15 @@ def build_delegate_spec(runtime, allowed_roles: tuple = ALLOWED_ROLES, *,
             state.seen.add(key)
         state.count += 1
 
+        # IterationBudget：父级熔断器。连续失败达到阈值 → open，
+        # 之后所有派生拒绝（防止自激空转烧预算）；换路降级由上层 try_reclose()。
+        parent_budget = state.budget
+        if parent_budget.state == "open" or parent_budget.exhausted:
+            if state_token is not None:
+                _STATE.reset(state_token)
+            return ("[circuit-open] 子智能体派生预算耗尽或连续失败已触发熔断，"
+                    f"本轮拒绝继续派生（累计失败 {parent_budget.total_failures} 次）")
+
         from src.harness.runtime.run_context import RuntimeContext
 
         permissions = _PERMISSIONS.get()
@@ -83,10 +96,21 @@ def build_delegate_spec(runtime, allowed_roles: tuple = ALLOWED_ROLES, *,
         try:
             with role_scope(role):
                 outcome = runtime.run_task(f"[{role} 子任务] {task}", context=ctx)
+            parent_budget.consume(1)
+            if outcome.termination_reason in ("budget_exceeded", "unrecoverable_error",
+                                              "error"):
+                parent_budget.record_failure()
+            else:
+                parent_budget.record_success()
             if outcome.termination_reason == "budget_exceeded":
                 raise BudgetStop("根任务限制已触发")
             return (f"（子智能体 {role} 完成，层级={depth + 1}，状态={outcome.status}，"
                     f"原因={outcome.termination_reason}）\n{outcome.final_text}")
+        except BudgetStop:
+            raise
+        except Exception:  # noqa: BLE001 —— 失败也记账，喂给熔断器
+            parent_budget.record_failure()
+            raise
         finally:
             _DEPTH.reset(depth_token)
             if state_token is not None:
