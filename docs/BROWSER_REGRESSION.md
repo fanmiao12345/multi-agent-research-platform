@@ -4,6 +4,19 @@
 > 引入前核对环境与版本并按官方文档锁定；引入后在 CI/试用期执行本清单。
 > 现阶段（S6 离线批次）由 HTTP 级测试覆盖等价行为，人工浏览器验收在 7 天试用期执行。
 
+## 已引入：Playwright（2026-09-18，React 页先行）
+
+- 版本：playwright 1.63.0 + Chromium 153.0.8010.12（`pip install playwright && python -m playwright install chromium`）；
+  已加入 `pyproject.toml` 的 `dev` 依赖组，不进生产依赖。
+- 测试：`tests/browser/test_react_page.py`（playwright 未装时整文件 skip，不影响离线回归）。
+- 覆盖：React 页正常旅程（渲染→逐键输入→提交→轮询到终态→截图
+  `eval/reports/react_browser/react_page_final.png`）+ 回退旅程（vendor 与 CDN 全部
+  不可达时显示明确回退提示，不白屏）。验收过程中发现并修复两个真实缺陷：
+  ① FastAPI 适配层未挂 `/vendor` 静态路由（本地运行时全 404 回落 CDN）；
+  ② React 页 `useState` 解构错误导致输入/提交完全失效——浏览器级验收的价值实证。
+- 边界：React 页是 FastAPI 适配层的演示前端；标准库工作台的浏览器清单仍按原计划
+  在 7 天试用期人工执行。
+
 ## 覆盖矩阵（正文/引用/审批/取消/改稿/导出）
 
 | 场景 | 页面/入口 | 自动断言要点 | HTTP级覆盖(现有) | 人工/浏览器 |
@@ -16,6 +29,8 @@
 | 改稿 | 单次改稿与追问改稿已接通（CLI --revise-job / Web revise，revises_job 谱系；HTTP 级有等价覆盖） | — | — | 浏览器人工验收随试用补 |
 | 导出 | 下载 Markdown | 附件头；内容仅任务内产物 | test_workbench_s5 | 待执行 |
 | 安全字符串 | 报告/来源渲染 | 文本不当作 HTML 执行 | test_workbench(HTML) | 待执行 |
+| **React 页正常旅程** | FastAPI 适配层 `/`（React 18 vendor 本地） | 渲染/提交/轮询到终态/截图；无控制台错误 | test_fastapi_app | **已执行（2026-09-18，tests/browser/test_react_page.py）** |
+| **React 页回退提示** | 同上（vendor+CDN 全部不可达） | 明确回退文案指向零依赖工作台，不白屏 | — | **已执行（同上）** |
 
 ## 引入步骤（当决定需要时）
 
