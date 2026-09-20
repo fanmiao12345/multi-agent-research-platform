@@ -1,0 +1,262 @@
+{
+  "rows": [
+    {
+      "id": "o01",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "gap_section": true,
+      "unknown_marks": 7,
+      "signals": {},
+      "cost": 0.03525124
+    },
+    {
+      "id": "o02",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 18,
+      "signals": {
+        "unfounded_conflict": 3
+      },
+      "cost": 0.03072462
+    },
+    {
+      "id": "o03",
+      "expected": "accepted",
+      "actual": "draft",
+      "ok": false,
+      "human": "fail",
+      "gap_section": true,
+      "unknown_marks": 4,
+      "signals": {
+        "unfounded_conflict": 4
+      },
+      "cost": 0.055067700000000004
+    },
+    {
+      "id": "o04",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "gap_section": true,
+      "unknown_marks": 16,
+      "signals": {},
+      "cost": 0.06350861000000001
+    },
+    {
+      "id": "o05",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "gap_section": true,
+      "unknown_marks": 15,
+      "signals": {
+        "unfounded_conflict": 3
+      },
+      "cost": 0.10733176000000001
+    },
+    {
+      "id": "o06",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 9,
+      "signals": {},
+      "cost": 0.08073764
+    },
+    {
+      "id": "o07",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "gap_section": false,
+      "unknown_marks": 0,
+      "signals": {
+        "unfounded_conflict": 3
+      },
+      "cost": 0.04346606
+    },
+    {
+      "id": "o08",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "fail",
+      "gap_section": true,
+      "unknown_marks": 7,
+      "signals": {},
+      "cost": 0.03384538
+    },
+    {
+      "id": "r01",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "gap_section": true,
+      "unknown_marks": 20,
+      "signals": {
+        "unfounded_conflict": 5
+      },
+      "cost": 0.0585409
+    },
+    {
+      "id": "r02",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 3,
+      "signals": {},
+      "cost": 0.057511940000000004
+    },
+    {
+      "id": "r03",
+      "expected": "draft",
+      "actual": "draft",
+      "ok": true,
+      "human": "draft",
+      "gap_section": true,
+      "unknown_marks": 6,
+      "signals": {
+        "unfounded_conflict": 1
+      },
+      "cost": 0.036225740000000006
+    },
+    {
+      "id": "r04",
+      "expected": "accepted",
+      "actual": "draft",
+      "ok": false,
+      "human": "draft",
+      "gap_section": false,
+      "unknown_marks": 1,
+      "signals": {
+        "unfounded_conflict": 1
+      },
+      "cost": 0.10742800000000001
+    },
+    {
+      "id": "r05",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 6,
+      "signals": {},
+      "cost": 0.014166060000000001
+    },
+    {
+      "id": "r06",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "gap_section": true,
+      "unknown_marks": 18,
+      "signals": {},
+      "cost": 0.08141348000000001
+    },
+    {
+      "id": "r07",
+      "expected": "unable",
+      "actual": "unable",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 3,
+      "signals": {},
+      "cost": 0.01271977
+    },
+    {
+      "id": "r08",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 10,
+      "signals": {},
+      "cost": 0.07142221
+    },
+    {
+      "id": "v01",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": false,
+      "unknown_marks": 0,
+      "signals": {
+        "revision_change_note": 1
+      },
+      "cost": 0.02220942
+    },
+    {
+      "id": "v02",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 11,
+      "signals": {
+        "unfounded_conflict": 1
+      },
+      "cost": 0.04683607000000001
+    },
+    {
+      "id": "v03",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 5,
+      "signals": {
+        "unfounded_conflict": 4,
+        "revision_change_note": 2
+      },
+      "cost": 0.08481022
+    },
+    {
+      "id": "v04",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "gap_section": true,
+      "unknown_marks": 6,
+      "signals": {
+        "revision_change_note": 2,
+        "unfounded_conflict": 1
+      },
+      "cost": 0.048049510000000004
+    }
+  ],
+  "compliant": 18,
+  "n": 20,
+  "rate": 0.9,
+  "levels": {
+    "accepted": 16,
+    "draft": 3,
+    "unable": 1
+  },
+  "cost_total": 1.09,
+  "gap_section_count": 17,
+  "signal_cases": {
+    "unfounded_conflict": 10,
+    "revision_change_note": 3
+  }
+}
