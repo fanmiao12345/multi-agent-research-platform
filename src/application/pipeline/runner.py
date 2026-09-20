@@ -432,6 +432,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
         final_issues: list = []
         review_unavailable = ""
         evidence_tags = {item["evidence_id"]: item.get("tag", "F") for item in evidence_items}
+        evidence_texts = {item["evidence_id"]: item.get("fact", "")
+                          for item in evidence_items}
         for round_index in range(max_revision_rounds + 1):
             boundary("review")
             progress("review", f"双层审校 第 {round_index + 1} 轮")
@@ -439,7 +441,8 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                                      base_draft=base or None,
                                      requirements=requirements,
                                      evidence_tags=evidence_tags,
-                                     source_count=len(usable))
+                                     source_count=len(usable),
+                                     evidence_texts=evidence_texts)
             evidence_index = "\n".join(
                 f"- {item['evidence_id']} {item['fact']}"
                 f"（来源 {source_labels.get(item.get('source_id') or '', '该来源')}）"
