@@ -75,5 +75,13 @@
   ],
   "conflict_pattern_hits": 6,
   "clean_false_positives": 2,
-  "revision_note_hits": 3
+  "revision_note_hits": 3,
+  "final_ruling": {
+    "ruled_by": "user",
+    "date": "2026-09-20",
+    "r08": "accept（误报，加分项：识别并保留材料真实内在矛盾）",
+    "v02": "draft（信号抓对：缺席型表述不能认定实质冲突）",
+    "v03": "accept（误报：真矛盾，E-013 缺席表述未单独作为冲突依据）",
+    "note": "AI 预判中 v02 被用户推翻（AI 判误报，用户判抓对）；r08/v03 与 AI 预判一致"
+  }
 }
