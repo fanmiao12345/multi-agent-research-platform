@@ -30,7 +30,9 @@ class RuntimeContext:
     trace_level: str = "INFO"
     # D4：短期会话与上下文边界
     thread_id: str = ""
-    context_budget: int = 6000
+    # O-15 配套（2026-09-20）：历史窗口修复后各份额按比例分配，6000 下大素材包
+    # （如改稿原稿全文）被 30% evidence 份额截断（第 5 批 v01 回归实测），上调一倍
+    context_budget: int = 12000
     memory_enabled: bool = True
     knowledge_enabled: bool = True
     skills_enabled: bool = True

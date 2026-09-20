@@ -1,0 +1,142 @@
+{
+  "rows": [
+    {
+      "id": "o01",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "batch3": "accepted",
+      "batch4": "accepted",
+      "cost": 0.03525124,
+      "elapsed": 136.061
+    },
+    {
+      "id": "o02",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "batch3": null,
+      "batch4": "accepted",
+      "cost": 0.03072462,
+      "elapsed": 119.923
+    },
+    {
+      "id": "o08",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "fail",
+      "batch3": "accepted",
+      "batch4": null,
+      "cost": 0.03384538,
+      "elapsed": 129.429
+    },
+    {
+      "id": "o13",
+      "expected": "draft",
+      "actual": "unable",
+      "ok": false,
+      "human": "-",
+      "batch3": null,
+      "batch4": null,
+      "cost": 0.031111430000000002,
+      "elapsed": 119.798
+    },
+    {
+      "id": "r01",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "batch3": null,
+      "batch4": "draft",
+      "cost": 0.0585409,
+      "elapsed": 208.322
+    },
+    {
+      "id": "r03",
+      "expected": "draft",
+      "actual": "draft",
+      "ok": true,
+      "human": "draft",
+      "batch3": null,
+      "batch4": "draft",
+      "cost": 0.036225740000000006,
+      "elapsed": 133.563
+    },
+    {
+      "id": "r05",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "batch3": "accepted",
+      "batch4": "accepted",
+      "cost": 0.014166060000000001,
+      "elapsed": 49.553
+    },
+    {
+      "id": "r06",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "batch3": null,
+      "batch4": "accepted",
+      "cost": 0.08141348000000001,
+      "elapsed": 314.427
+    },
+    {
+      "id": "r07",
+      "expected": "unable",
+      "actual": "unable",
+      "ok": true,
+      "human": "accept",
+      "batch3": null,
+      "batch4": null,
+      "cost": 0.01271977,
+      "elapsed": 56.322
+    },
+    {
+      "id": "r08",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "batch3": null,
+      "batch4": "draft",
+      "cost": 0.07142221,
+      "elapsed": 253.669
+    },
+    {
+      "id": "v01",
+      "expected": "accepted",
+      "actual": "unable",
+      "ok": false,
+      "human": "accept",
+      "batch3": "accepted",
+      "batch4": "accepted",
+      "cost": 0.016842950000000002,
+      "elapsed": 67.436
+    },
+    {
+      "id": "v04",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "batch3": null,
+      "batch4": "accepted",
+      "cost": 0.048049510000000004,
+      "elapsed": 193.892
+    }
+  ],
+  "compliance": "10/12",
+  "levels": {
+    "accepted": 8,
+    "unable": 3,
+    "draft": 1
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "样本数": 20,
+    "均值": 0.0607,
+    "p50": 0.0676,
+    "p90": 0.0957,
+    "p95": 0.1,
+    "max": 0.1,
+    "zero_cost": 0
+  },
+  "by_level": {
+    "accepted": {
+      "n": 16,
+      "mean": 0.0565,
+      "max": 0.0957
+    },
+    "draft": {
+      "n": 4,
+      "mean": 0.0774,
+      "max": 0.1
+    }
+  },
+  "samples": [
+    {
+      "batch": "第4批",
+      "id": "o01",
+      "cost": 0.07011622,
+      "level": "accepted",
+      "elapsed": 248.147
+    },
+    {
+      "batch": "第4批",
+      "id": "o02",
+      "cost": 0.09194736,
+      "level": "accepted",
+      "elapsed": 319.509
+    },
+    {
+      "batch": "第4批",
+      "id": "o04",
+      "cost": 0.07218932,
+      "level": "accepted",
+      "elapsed": 254.812
+    },
+    {
+      "batch": "第4批",
+      "id": "r01",
+      "cost": 0.10000759000000001,
+      "level": "draft",
+      "elapsed": 356.242
+    },
+    {
+      "batch": "第4批",
+      "id": "r03",
+      "cost": 0.06764138,
+      "level": "draft",
+      "elapsed": 244.988
+    },
+    {
+      "batch": "第4批",
+      "id": "r05",
+      "cost": 0.038159990000000005,
+      "level": "accepted",
+      "elapsed": 141.353
+    },
+    {
+      "batch": "第4批",
+      "id": "r06",
+      "cost": 0.09569424000000001,
+      "level": "accepted",
+      "elapsed": 351.779
+    },
+    {
+      "batch": "第4批",
+      "id": "r08",
+      "cost": 0.08703307,
+      "level": "draft",
+      "elapsed": 309.43
+    },
+    {
+      "batch": "第4批",
+      "id": "v01",
+      "cost": 0.03002527,
+      "level": "accepted",
+      "elapsed": 119.044
+    },
+    {
+      "batch": "第4批",
+      "id": "v02",
+      "cost": 0.060155570000000005,
+      "level": "accepted",
+      "elapsed": 225.401
+    },
+    {
+      "batch": "第4批",
+      "id": "v03",
+      "cost": 0.04040001,
+      "level": "accepted",
+      "elapsed": 145.97
+    },
+    {
+      "batch": "第4批",
+      "id": "v04",
+      "cost": 0.06362453,
+      "level": "accepted",
+      "elapsed": 246.381
+    },
+    {
+      "batch": "第3批",
+      "id": "o01",
+      "cost": 0.07197974,
+      "level": "accepted",
+      "elapsed": 277.557
+    },
+    {
+      "batch": "第3批",
+      "id": "o03",
+      "cost": 0.02825989,
+      "level": "accepted",
+      "elapsed": 116.04
+    },
+    {
+      "batch": "第3批",
+      "id": "o05",
+      "cost": 0.04229262,
+      "level": "accepted",
+      "elapsed": 157.821
+    },
+    {
+      "batch": "第3批",
+      "id": "o07",
+      "cost": 0.054949160000000004,
+      "level": "draft",
+      "elapsed": 212.332
+    },
+    {
+      "batch": "第3批",
+      "id": "o08",
+      "cost": 0.015512450000000002,
+      "level": "accepted",
+      "elapsed": 66.815
+    },
+    {
+      "batch": "第3批",
+      "id": "r02",
+      "cost": 0.0746266,
+      "level": "accepted",
+      "elapsed": 281.892
+    },
+    {
+      "batch": "第3批",
+      "id": "r05",
+      "cost": 0.06944443,
+      "level": "accepted",
+      "elapsed": 280.648
+    },
+    {
+      "batch": "第3批",
+      "id": "v01",
+      "cost": 0.04027225,
+      "level": "accepted",
+      "elapsed": 167.253
+    }
+  ]
+}
