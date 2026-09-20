@@ -1,0 +1,41 @@
+{
+  "A（纯相关性修复）": {
+    "n": 36,
+    "accepted": 10,
+    "draft": 7,
+    "unable": 19,
+    "other": 0,
+    "accepted_rate": 0.2778,
+    "usable": 146,
+    "total": 237,
+    "readable_rate": 0.616,
+    "accepted_per_round": [
+      "elevance_only:5/12",
+      "2:3/12",
+      "3:2/12"
+    ]
+  },
+  "B（+域名降权）": {
+    "n": 36,
+    "accepted": 11,
+    "draft": 8,
+    "unable": 17,
+    "other": 0,
+    "accepted_rate": 0.3056,
+    "usable": 153,
+    "total": 242,
+    "readable_rate": 0.6322,
+    "accepted_per_round": [
+      "elevance_plus_dedomain:3/12",
+      "2:5/12",
+      "3:3/12"
+    ]
+  },
+  "comparison": {
+    "accepted_rate_diff": -0.0278,
+    "z": -0.259,
+    "p_value": 0.7954,
+    "significant_at_005": false,
+    "note": "两比例正态近似 z 检验（双侧）；n=36/臂"
+  }
+}

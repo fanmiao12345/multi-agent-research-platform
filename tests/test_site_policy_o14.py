@@ -125,7 +125,8 @@ def test_compose_context_reserve_window_keeps_more_history():
 def test_runtime_context_carries_o15_switch():
     from src.harness.runtime.run_context import RuntimeContext
 
+    # 2026-09-20 已切换为默认 True（Q3 联网批次收尾后启用）；False 为回退口
     base = RuntimeContext.from_settings()
-    assert base.reserve_message_window is False          # 默认关
-    assert base.with_updates(reserve_message_window=True) \
-        .reserve_message_window is True
+    assert base.reserve_message_window is True
+    assert base.with_updates(reserve_message_window=False) \
+        .reserve_message_window is False

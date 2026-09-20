@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-20T12:06:41",
+  "batch_max_cost_per_task": 0.12,
+  "rows": [
+    {
+      "id": "w12",
+      "topic": "个人知识管理系统中的检索与记忆设计",
+      "mode": "single",
+      "returncode": 0,
+      "root_job_id": "job_eebbc3dab77e4bda9e3767215fda6812",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 205.852,
+      "source_count": 8,
+      "usable_sources": 6,
+      "citation_lineage": [],
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+    }
+  ],
+  "mode_coverage": {
+    "single": 1
+  },
+  "mode_accepted": {
+    "single": 1
+  },
+  "coverage_note": "coverage=实际执行过（有 root_job_id）的主题数；mode_accepted=其中交付 accepted 的数量；未执行/异常不计入覆盖",
+  "requirements_met": false,
+  "nested_note": "二层嵌套由 D6/Q1 证据覆盖；本联网批次不把模式名称当嵌套成功"
+}

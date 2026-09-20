@@ -39,8 +39,9 @@ class RuntimeContext:
     # 默认 False 保持 Q2 基线行为可比；对比读数见 eval/reports/resume_metrics/
     memory_in_user_message: bool = False
     # O-15 就绪开关：True = messages/reserve 份额真正留给历史窗口（修复"恒 2 条"）
-    # 默认 False 保持现行为；切换须在真实批次间隙（会改变提示词长度）
-    reserve_message_window: bool = False
+    # 2026-09-20 已切换为默认 True（Q3 联网双臂批次收尾后启用）：
+    # 收益实测 +28.9pp 前缀稳定度（resume_metrics 口径 4）；回退置 False 即恢复旧行为
+    reserve_message_window: bool = True
 
     def __post_init__(self):
         if isinstance(self.max_iterations, bool) or not isinstance(self.max_iterations, int) \
