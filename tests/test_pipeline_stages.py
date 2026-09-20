@@ -550,6 +550,59 @@ def test_content_quality_checks_internal_leak_labels_and_source_count():
                    program_checks(claim, {"E-001"}, [], source_count=1))
 
 
+def test_content_quality_checks_unfounded_conflict_and_revision_note():
+    """Q3-01 第 3 批（O-08 ①⑤）：自造"开放冲突"信号 + 改稿缺修订说明。"""
+    from src.application.pipeline.review import program_checks
+
+    # ① 模式：句称来源间冲突，所引两条证据原文都是"未提供"类缺席表述
+    fabricated = ("# 报告\n\n## 争议\n\n"
+                  "来源一与来源二就方案甲的适用范围存在明显冲突【E-001】【E-002】〔事实〕。\n")
+    texts = {"E-001": "该资料未提供方案甲的适用范围信息",
+             "E-002": "本材料未涉及方案甲相关内容"}
+    issues = program_checks(fabricated, {"E-001", "E-002"}, [],
+                            evidence_texts=texts)
+    conflict = [i for i in issues if i.code == "unfounded_conflict"]
+    assert conflict and conflict[0].severity == "warn"      # warn 不封顶
+    assert "未提供" in conflict[0].message or "缺失" in conflict[0].message
+
+    # 冲突句只引用 1 处证据：即使无原文缺席，也提示"证据不足 2 处"
+    single = "# 报告\n\n两份材料结论相互矛盾【E-001】。\n"
+    issues_single = program_checks(single, {"E-001"}, [],
+                                   evidence_texts={"E-001": "试点共40人"})
+    assert any(i.code == "unfounded_conflict" and "1 处证据" in i.message
+               for i in issues_single)
+
+    # 真实冲突：两条非缺席证据 + 2 处引用 → 不报
+    grounded = "# 报告\n\n来源一称40人【E-001】，与来源二称60人存在冲突【E-002】。\n"
+    texts_ok = {"E-001": "试点规模为40人", "E-002": "试点规模为60人"}
+    assert not any(i.code == "unfounded_conflict" for i in
+                   program_checks(grounded, {"E-001", "E-002"}, [],
+                                  evidence_texts=texts_ok))
+
+    # 否定式表述（"并无矛盾"）不触发
+    negated = "# 报告\n\n两份材料并无矛盾【E-001】【E-002】。\n"
+    assert not any(i.code == "unfounded_conflict" for i in
+                   program_checks(negated, {"E-001", "E-002"}, [],
+                                  evidence_texts=texts_ok))
+
+    # ⑤ 模式：改稿产出不含任何修订/删除说明
+    base = "# 报告\n\n## 结论\n\n方案甲适用。"
+    revised = "# 报告\n\n## 结论\n\n方案乙更适用，删除了原结论。"
+    assert any(i.code == "revision_change_note" for i in
+               program_checks(revised, set(), [], base_draft=base)) is False  # 有"删除了"
+    revised_silent = "# 报告\n\n## 结论\n\n方案乙更适用。"
+    note = [i for i in program_checks(revised_silent, set(), [],
+                                      base_draft=base)
+            if i.code == "revision_change_note"]
+    assert note and note[0].severity == "warn"
+    # 原样交回（no_change error 场景）不叠加本提示
+    assert not any(i.code == "revision_change_note" for i in
+                   program_checks(base, set(), [], base_draft=base))
+    # 非改稿任务不触发
+    assert not any(i.code == "revision_change_note" for i in
+                   program_checks(revised_silent, set(), []))
+
+
 def test_no_internal_source_id_in_model_prompts():
     """Q3-01 第 2 批根因：内部 source_id 不得进入任何写作侧提示词。
 
