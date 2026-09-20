@@ -6,8 +6,8 @@ r01,draft,1,0,draft,,,eval\reports\q3_batch4_r01\workspace\jobs\job_b74811f0437e
 r03,draft,1,0,draft,,,eval\reports\q3_batch4_r03\workspace\jobs\job_5bb4f82cb52c426bbe3d63c0210a534a\artifacts\report.v3.md
 r05,accepted,1,0,accept,,,eval\reports\q3_batch4_r05\workspace\jobs\job_bfc203947fbf4738a8838d37375fcf9b\artifacts\report.v2.md
 r06,accepted,1,0,draft,,,eval\reports\q3_batch4_r06\workspace\jobs\job_45b6f83442dd449a87818ccc6c1ffcc9\artifacts\report.v3.md
-r08,draft,1,0,accept,,,eval\reports\q3_batch4_r08\workspace\jobs\job_3f79bc04f517466bae6d33c897a61fe5\artifacts\report.v3.md
+r08,draft,1,0,accept,accept,触发句2（及重复表述4、6）为真矛盾；其余含缺席/未说明项，信号属误报,eval\reports\q3_batch4_r08\workspace\jobs\job_3f79bc04f517466bae6d33c897a61fe5\artifacts\report.v3.md
 v01,accepted,0,1,accept,,,eval\reports\q3_batch4_v01\workspace\jobs\job_59e6053a4f6e4345ab3ac314b34a7bce\artifacts\report.v1.md
-v02,accepted,1,0,accept,,,eval\reports\q3_batch4_v02\workspace\jobs\job_1940c727d0aa47e7ac0d27b44693116b\artifacts\report.v1.md
-v03,accepted,1,1,accept,,,eval\reports\q3_batch4_v03\workspace\jobs\job_ab56d259bff24b61b7326da124c0b2f3\artifacts\report.v2.md
+v02,accepted,1,0,accept,draft,触发句核心冲突一方为未包含/未提供8月结果，属缺席型表述，信号抓对,eval\reports\q3_batch4_v02\workspace\jobs\job_1940c727d0aa47e7ac0d27b44693116b\artifacts\report.v1.md
+v03,accepted,1,1,accept,accept,触发句1为真矛盾：资料称仅方案甲无其他方案，另有证据描述方案乙，信号误报,eval\reports\q3_batch4_v03\workspace\jobs\job_ab56d259bff24b61b7326da124c0b2f3\artifacts\report.v2.md
 v04,accepted,0,1,accept,,,eval\reports\q3_batch4_v04\workspace\jobs\job_433f6c72c62547ce94a45fddd3bf7714\artifacts\report.v3.md

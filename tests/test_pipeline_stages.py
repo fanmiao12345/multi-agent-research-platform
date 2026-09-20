@@ -551,51 +551,39 @@ def test_content_quality_checks_internal_leak_labels_and_source_count():
 
 
 def test_content_quality_checks_unfounded_conflict_and_revision_note():
-    """Q3-01 第 3 批（O-08 ①⑤）：自造"开放冲突"信号 + 改稿缺修订说明。"""
+    """Q3-01 第 3/4 批（O-08 ①⑤）：冲突声明引用完整性提醒 + 改稿缺修订说明。
+
+    第 4 批校准 + AI 复核（2026-09-20）的结论落进了口径：
+    - 初版"缺席表述充当冲突一方"子条件被证伪（三例剩余命中全部误报：
+      r08 真矛盾+引用不完整 / v02 缺席与实数据并存恰是真矛盾 / v03 元表述噪音），
+      已删除——缺席措辞与实数据并存往往正是真矛盾；
+    - 保留"冲突声明引用 <2 处"作为引用完整性提醒（conflict_under_cited）；
+    - 无引用的冲突陈述句不触发（citation 类检查已覆盖）。
+    """
     from src.application.pipeline.review import program_checks
 
-    # ① 模式：句称来源间冲突，所引两条证据原文都是"未提供"类缺席表述
-    fabricated = ("# 报告\n\n## 争议\n\n"
-                  "来源一与来源二就方案甲的适用范围存在明显冲突【E-001】【E-002】〔事实〕。\n")
-    texts = {"E-001": "该资料未提供方案甲的适用范围信息",
-             "E-002": "本材料未涉及方案甲相关内容"}
-    issues = program_checks(fabricated, {"E-001", "E-002"}, [],
-                            evidence_texts=texts)
-    conflict = [i for i in issues if i.code == "unfounded_conflict"]
-    assert conflict and conflict[0].severity == "warn"      # warn 不封顶
-    assert "未提供" in conflict[0].message or "缺失" in conflict[0].message
-
-    # 冲突句只引用 1 处证据：即使无原文缺席，也提示"证据不足 2 处"
     single = "# 报告\n\n两份材料结论相互矛盾【E-001】。\n"
-    issues_single = program_checks(single, {"E-001"}, [],
-                                   evidence_texts={"E-001": "试点共40人"})
-    assert any(i.code == "unfounded_conflict" and "1 处证据" in i.message
-               for i in issues_single)
+    issues_single = program_checks(single, {"E-001"}, [])
+    under = [i for i in issues_single if i.code == "conflict_under_cited"]
+    assert under and under[0].severity == "warn"
+    assert "补引" in under[0].message
 
-    # 第 4 批校准收窄：无引用的冲突陈述句不触发（噪音源，citation 检查已覆盖）
     nocite = "# 报告\n\n冲突状态：资料在日期口径上存在分歧。\n"
-    assert not any(i.code == "unfounded_conflict" for i in
-                   program_checks(nocite, set(), [],
-                                  evidence_texts={"E-001": "试点共40人"}))
+    assert not any(i.code == "conflict_under_cited" for i in
+                   program_checks(nocite, set(), []))
 
-    # 真实冲突：两条非缺席证据 + 2 处引用 → 不报
+    absence_case = "# 报告\n\n资料是否含8月结果，存在矛盾主张【E-006】【E-016】。\n"
+    assert not any(i.code == "conflict_under_cited" for i in
+                   program_checks(absence_case, {"E-006", "E-016"}, []))
+
     grounded = "# 报告\n\n来源一称40人【E-001】，与来源二称60人存在冲突【E-002】。\n"
-    texts_ok = {"E-001": "试点规模为40人", "E-002": "试点规模为60人"}
-    assert not any(i.code == "unfounded_conflict" for i in
-                   program_checks(grounded, {"E-001", "E-002"}, [],
-                                  evidence_texts=texts_ok))
+    assert not any(i.code == "conflict_under_cited" for i in
+                   program_checks(grounded, {"E-001", "E-002"}, []))
 
-    # 否定式表述（"并无矛盾"）不触发
-    negated = "# 报告\n\n两份材料并无矛盾【E-001】【E-002】。\n"
-    assert not any(i.code == "unfounded_conflict" for i in
-                   program_checks(negated, {"E-001", "E-002"}, [],
-                                  evidence_texts=texts_ok))
-
-    # ⑤ 模式：改稿产出不含任何修订/删除说明
     base = "# 报告\n\n## 结论\n\n方案甲适用。"
     revised = "# 报告\n\n## 结论\n\n方案乙更适用，删除了原结论。"
-    assert any(i.code == "revision_change_note" for i in
-               program_checks(revised, set(), [], base_draft=base)) is False  # 有"删除了"
+    assert not any(i.code == "revision_change_note" for i in
+                   program_checks(revised, set(), [], base_draft=base))  # 有"删除了"
     revised_silent = "# 报告\n\n## 结论\n\n方案乙更适用。"
     note = [i for i in program_checks(revised_silent, set(), [],
                                       base_draft=base)
@@ -607,7 +595,6 @@ def test_content_quality_checks_unfounded_conflict_and_revision_note():
     # 非改稿任务不触发
     assert not any(i.code == "revision_change_note" for i in
                    program_checks(revised_silent, set(), []))
-
 
 def test_no_internal_source_id_in_model_prompts():
     """Q3-01 第 2 批根因：内部 source_id 不得进入任何写作侧提示词。

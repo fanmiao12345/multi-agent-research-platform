@@ -161,10 +161,8 @@ _INTERNAL_LEAK_PATTERNS = (
 _SOURCE_COUNT_CLAIM = re.compile(
     r"(只提供了?\s*1\s*份|仅有?\s*一份|只有一份(来源|材料)|第二份(材料)?(缺失|未提供)"
     r"|实际只提供\s*1\s*份)")
-# O-08 ①：冲突声称与"缺席型"证据的字面模式（程序只提示，不做语义判定）
+# O-08 ①相关：冲突声称的字面模式（第 4 批校准后仅保留"引用完整性"用途）
 _CONFLICT_CLAIM = re.compile(r"(?<![无有不])冲突|(?<![无有不])矛盾|(?<![无有不])分歧")
-_ABSENCE_ENTRY = re.compile(
-    r"未提供|未提及|未涉及|未包含|未见|缺失|没有提供|没有提及|并无")
 # O-08 ⑤：改稿产出的修订说明字面模式
 _REVISION_NOTE = re.compile(
     r"修订说明|变更说明|修改说明|改动说明|删除了|移除了|删去了|已删除|不再包含")
@@ -205,13 +203,11 @@ def program_checks(report: str, evidence_ids: set[str],
                    base_draft: str | None = None,
                    requirements: HardRequirements | None = None,
                    evidence_tags: dict[str, str] | None = None,
-                   source_count: int | None = None,
-                   evidence_texts: dict[str, str] | None = None) -> list[ReviewIssue]:
+                   source_count: int | None = None) -> list[ReviewIssue]:
     """第一层：不做语义判断，全部是结构事实检查。
 
     evidence_tags：evidence_id → tag（F/I/U），检查〔事实〕标注与证据强度是否一致；
-    source_count：本次任务的可用来源数，检查报告对输入规模的断言是否与实际不符；
-    evidence_texts：evidence_id → 证据原文，供"自造冲突"程序信号检查（O-08 ①）。
+    source_count：本次任务的可用来源数，检查报告对输入规模的断言是否与实际不符。
     """
     issues: list[ReviewIssue] = []
     if base_draft is not None and report.strip() == base_draft.strip():
@@ -221,7 +217,6 @@ def program_checks(report: str, evidence_ids: set[str],
     hard_issues, _ = hard_requirement_issues(report, requirements)
     issues.extend(hard_issues)
     issues.extend(_content_quality_checks(report, evidence_tags, source_count,
-                                          evidence_texts=evidence_texts,
                                           base_draft=base_draft))
     citations = collect_citations(report)
     unknown = sorted({c for c in citations if c not in evidence_ids})
@@ -251,7 +246,6 @@ def program_checks(report: str, evidence_ids: set[str],
 
 def _content_quality_checks(report: str, evidence_tags: dict[str, str] | None,
                             source_count: int | None,
-                            evidence_texts: dict[str, str] | None = None,
                             base_draft: str | None = None) -> list[ReviewIssue]:
     """Q3-01 第 2/3 批（O-08）：可程序判定的内容质量信号。
 
@@ -261,10 +255,9 @@ def _content_quality_checks(report: str, evidence_tags: dict[str, str] | None,
        （warn，不封顶——20 例人工确认批次校准显示该口径没有区分度，见函数内注释）；
     ③ 对输入规模的断言与实际不符：如"只提供 1 份来源/第二份缺失"而实际有多份
        （error，封顶；20 例人工批次里唯一命中的 o08 人工判定就是 draft）；
-    ④ 自造"开放冲突"信号（O-08 ①，warn 不封顶）：句内声称来源间冲突/矛盾/分歧，
-       但仅引用不足 2 处证据，或所引证据原文是"未提供/缺失"类否定表述——
-       20 例人工批次里 8 例的自造冲突即此模式（把"某来源未提供 X"当成冲突一方）。
-       判定交人工/评测，程序只提示；
+    ④ 冲突声明引用不完整（conflict_under_cited，warn）：句内声称来源间冲突/矛盾/分歧
+       却仅引用不足 2 处证据——第 4 批校准+AI 复核证伪"缺席表述"子条件后会误导
+       （缺席与实数据并存往往正是真矛盾），故只保留引用完整性提醒；
     ⑤ 改稿缺修订说明（O-08 ⑤，warn）：改稿任务（base_draft 存在）的产出不含任何
        修订/变更/删除说明表述——v04 类问题（任务要求说明删除了哪些结论却未落实）。
     只做字面匹配，不做语义判定。
@@ -302,32 +295,23 @@ def _content_quality_checks(report: str, evidence_tags: dict[str, str] | None,
                 "error", "source_count",
                 f"报告称「{match.group(0)}」，但本次实际有 {source_count} 份来源："
                 "与输入不符，必须按实际来源数改写"))
-    # ④ 自造"开放冲突"信号（O-08 ①）：字面匹配，warn 不封顶，判定交人工/评测
-    # 口径收窄（第 4 批校准，2026-09-20）：首轮口径"0 处引用也报"在 12 例真实批次
-    # 里命中 9/12——几乎全是不含引用的冲突陈述句（"冲突状态"章节套话类），噪音。
-    # 收窄为：冲突句必须至少引用 1 处证据（声称"来源间冲突"至少要指到来源），
-    # 纯无引用的冲突陈述由 citation 类检查覆盖，conflict 信号不再重复报。
+    # ④ 冲突声明引用完整性提醒（O-08 ① 信号的最终形态，2026-09-20 AI 复核后改造）：
+    # 第 4 批校准 + 复核结论——初版"缺席表述充当冲突一方"子条件被证伪：三例收窄后
+    # 剩余命中全部误报（r08 真矛盾+引用不完整 / v02 缺席与实数据并存恰是真矛盾 /
+    # v03 元表述噪音）。缺席措辞与实数据并存往往正是真矛盾，不能当自造冲突判据。
+    # 保留的是其中真正可靠的部分：<2 引用的冲突声明提示补引——定位为引用完整性
+    # 提醒，不再冠以"疑似自造冲突"。warn 不封顶，判定交人工/评测。
     for sentence in re.split(r"[。；;\n]", text):
         if not _CONFLICT_CLAIM.search(sentence):
             continue
         ids = collect_citations(sentence)
         if not ids:
-            continue                      # 收窄：无引用的冲突陈述不进本信号
-        reasons: list[str] = []
+            continue                      # 无引用的冲突陈述由 citation 类检查覆盖
         if len(set(ids)) < 2:
-            reasons.append("冲突声明仅引用 "
-                           f"{len(set(ids))} 处证据（<2）")
-        if evidence_texts:
-            absence = [i for i in set(ids)
-                       if _ABSENCE_ENTRY.search(evidence_texts.get(i, ""))]
-            if absence:
-                reasons.append(
-                    f"所引证据 {','.join(sorted(absence))} 原文属『未提供/缺失』类表述")
-        if reasons:
             issues.append(ReviewIssue(
-                "warn", "unfounded_conflict",
-                f"疑似自造冲突：{('；'.join(reasons))}（O-08 ① 模式，"
-                "请人工核实冲突是否真实存在；不影响交付等级）"))
+                "warn", "conflict_under_cited",
+                f"冲突声明仅引用 {len(set(ids))} 处证据：请补引另一方证据或说明"
+                "仅单方依据的理由（引用完整性提醒，不影响交付等级）"))
     # ⑤ 改稿缺修订说明（O-08 ⑤）
     if base_draft and text.strip() != base_draft.strip() \
             and not _REVISION_NOTE.search(text):
