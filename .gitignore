@@ -42,3 +42,4 @@ legacy/config.ini
 # --- 真实评测运行工作区（报告 json/md 保留，workspace 产物不入库）---
 eval/reports/*/workspace/
 eval/reports/q2_web_workspace/
+eval/reports/resume_metrics/reuse_store.json
