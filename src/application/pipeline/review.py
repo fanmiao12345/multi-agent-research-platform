@@ -303,10 +303,16 @@ def _content_quality_checks(report: str, evidence_tags: dict[str, str] | None,
                 f"报告称「{match.group(0)}」，但本次实际有 {source_count} 份来源："
                 "与输入不符，必须按实际来源数改写"))
     # ④ 自造"开放冲突"信号（O-08 ①）：字面匹配，warn 不封顶，判定交人工/评测
+    # 口径收窄（第 4 批校准，2026-09-20）：首轮口径"0 处引用也报"在 12 例真实批次
+    # 里命中 9/12——几乎全是不含引用的冲突陈述句（"冲突状态"章节套话类），噪音。
+    # 收窄为：冲突句必须至少引用 1 处证据（声称"来源间冲突"至少要指到来源），
+    # 纯无引用的冲突陈述由 citation 类检查覆盖，conflict 信号不再重复报。
     for sentence in re.split(r"[。；;\n]", text):
         if not _CONFLICT_CLAIM.search(sentence):
             continue
         ids = collect_citations(sentence)
+        if not ids:
+            continue                      # 收窄：无引用的冲突陈述不进本信号
         reasons: list[str] = []
         if len(set(ids)) < 2:
             reasons.append("冲突声明仅引用 "

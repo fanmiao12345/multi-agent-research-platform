@@ -572,6 +572,12 @@ def test_content_quality_checks_unfounded_conflict_and_revision_note():
     assert any(i.code == "unfounded_conflict" and "1 处证据" in i.message
                for i in issues_single)
 
+    # 第 4 批校准收窄：无引用的冲突陈述句不触发（噪音源，citation 检查已覆盖）
+    nocite = "# 报告\n\n冲突状态：资料在日期口径上存在分歧。\n"
+    assert not any(i.code == "unfounded_conflict" for i in
+                   program_checks(nocite, set(), [],
+                                  evidence_texts={"E-001": "试点共40人"}))
+
     # 真实冲突：两条非缺席证据 + 2 处引用 → 不报
     grounded = "# 报告\n\n来源一称40人【E-001】，与来源二称60人存在冲突【E-002】。\n"
     texts_ok = {"E-001": "试点规模为40人", "E-002": "试点规模为60人"}
