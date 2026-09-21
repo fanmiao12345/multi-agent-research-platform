@@ -1,0 +1,86 @@
+{
+  "rows": [
+    {
+      "id": "o03",
+      "expected": "accepted",
+      "levels": [
+        "draft",
+        "accepted",
+        "accepted"
+      ],
+      "ok_n": 2,
+      "n": 3,
+      "stable": false,
+      "cost": 0.119
+    },
+    {
+      "id": "r04",
+      "expected": "accepted",
+      "levels": [
+        "accepted",
+        "accepted",
+        "accepted"
+      ],
+      "ok_n": 3,
+      "n": 3,
+      "stable": true,
+      "cost": 0.18
+    },
+    {
+      "id": "r08",
+      "expected": "accepted",
+      "levels": [
+        "accepted",
+        "draft",
+        "accepted"
+      ],
+      "ok_n": 2,
+      "n": 3,
+      "stable": false,
+      "cost": 0.224
+    },
+    {
+      "id": "r07",
+      "expected": "unable",
+      "levels": [
+        "unable",
+        "unable",
+        "unable"
+      ],
+      "ok_n": 3,
+      "n": 3,
+      "stable": true,
+      "cost": 0.109
+    },
+    {
+      "id": "r03",
+      "expected": "draft",
+      "levels": [
+        "draft",
+        "draft",
+        "draft"
+      ],
+      "ok_n": 3,
+      "n": 3,
+      "stable": true,
+      "cost": 0.139
+    },
+    {
+      "id": "o13",
+      "expected": "draft",
+      "levels": [
+        "unable",
+        "accepted",
+        "accepted"
+      ],
+      "ok_n": 0,
+      "n": 3,
+      "stable": false,
+      "cost": 0.056
+    }
+  ],
+  "ok": 13,
+  "runs": 18,
+  "rate": 0.7222,
+  "cost_total": 0.83
+}

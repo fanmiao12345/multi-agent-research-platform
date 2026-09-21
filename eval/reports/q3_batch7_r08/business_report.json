@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 3,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.22376,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "5bf7f205cd9a"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-21T11:46:55",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 3,
+    "passed": 2,
+    "failed": 1,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 782.07,
+  "results": [
+    {
+      "id": "r08",
+      "category": "research",
+      "attempt": 1,
+      "task": "写证据综述，说明独立资料数量与样本范围，避免将转载重复计入样本量。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 355.836,
+      "estimated_cost_usd": 0.10270692000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_6550ad0aef584659895eeb4c8fd4e47d",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 93,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 证据综述：独立资料数量与样本范围\n## 证据分组\n- 资料性质：本资料为合成验收数据，并非真实研究数据 [E-001]〔事实〕；本资料为合成验收数据 [E-009]〔事实〕；本资料自述为合成验收数据 [E-014]〔事实〕。\n- 独立资料与去重：任务仅提供一份资料，独立资料数量为1 [E-007]〔事实〕；缺少其他来源，无法核实是否属转载重复 [E-008]〔事实〕；本资料仅呈现一份文本，未说"
+    },
+    {
+      "id": "r08",
+      "category": "research",
+      "attempt": 2,
+      "task": "写证据综述，说明独立资料数量与样本范围，避免将转载重复计入样本量。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 289.897,
+      "estimated_cost_usd": 0.08430054000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_cdf6627515a44d18affb73ef1e124f88",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 证据综述：独立资料数量与样本范围\n\n## 证据分组\n- 粘贴文本1为合成验收数据【E-001】〔事实〕；粘贴文本2为合成验收数据【E-007】〔事实〕；粘贴文本3为合成验收数据【E-013】〔事实〕。\n- 可核查独立资料数量为1份【E-006】〔事实〕；不含新采集数据的材料不宜计入独立资料数量【E-011】〔推断〕；另有资料仅见一份来源文本，无法据此核定独立资料数量【E-019】〔推断〕。\n-"
+    },
+    {
+      "id": "r08",
+      "category": "research",
+      "attempt": 3,
+      "task": "写证据综述，说明独立资料数量与样本范围，避免将转载重复计入样本量。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 133.345,
+      "estimated_cost_usd": 0.0367526,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_2045a9b4a72b446ab71f0ba5d05380a5",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 88,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 独立资料数量与样本范围证据综述：避免转载重复计入样本量\n\n## 资料性质与来源识别\n本综述依据三份粘贴文本展开识别。粘贴文本1为合成验收数据，属演示性材料 [E-001]〔事实〕。粘贴文本2同样为合成验收数据 [E-009]〔事实〕。粘贴文本3同样为合成验收数据 [E-014]〔事实〕。由此，三份材料均为合成验收数据而非可确证的真实世界独立研究来源，来源名称与编号对应为粘贴文本1、粘贴文本2、"
+    }
+  ],
+  "records": [
+    {
+      "id": "r08",
+      "category": "research",
+      "attempt": 1,
+      "task": "写证据综述，说明独立资料数量与样本范围，避免将转载重复计入样本量。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 355.836,
+      "estimated_cost_usd": 0.10270692000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_6550ad0aef584659895eeb4c8fd4e47d",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 93,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 证据综述：独立资料数量与样本范围\n## 证据分组\n- 资料性质：本资料为合成验收数据，并非真实研究数据 [E-001]〔事实〕；本资料为合成验收数据 [E-009]〔事实〕；本资料自述为合成验收数据 [E-014]〔事实〕。\n- 独立资料与去重：任务仅提供一份资料，独立资料数量为1 [E-007]〔事实〕；缺少其他来源，无法核实是否属转载重复 [E-008]〔事实〕；本资料仅呈现一份文本，未说"
+    },
+    {
+      "id": "r08",
+      "category": "research",
+      "attempt": 2,
+      "task": "写证据综述，说明独立资料数量与样本范围，避免将转载重复计入样本量。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 289.897,
+      "estimated_cost_usd": 0.08430054000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_cdf6627515a44d18affb73ef1e124f88",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 证据综述：独立资料数量与样本范围\n\n## 证据分组\n- 粘贴文本1为合成验收数据【E-001】〔事实〕；粘贴文本2为合成验收数据【E-007】〔事实〕；粘贴文本3为合成验收数据【E-013】〔事实〕。\n- 可核查独立资料数量为1份【E-006】〔事实〕；不含新采集数据的材料不宜计入独立资料数量【E-011】〔推断〕；另有资料仅见一份来源文本，无法据此核定独立资料数量【E-019】〔推断〕。\n-"
+    },
+    {
+      "id": "r08",
+      "category": "research",
+      "attempt": 3,
+      "task": "写证据综述，说明独立资料数量与样本范围，避免将转载重复计入样本量。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 133.345,
+      "estimated_cost_usd": 0.0367526,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_2045a9b4a72b446ab71f0ba5d05380a5",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 88,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 独立资料数量与样本范围证据综述：避免转载重复计入样本量\n\n## 资料性质与来源识别\n本综述依据三份粘贴文本展开识别。粘贴文本1为合成验收数据，属演示性材料 [E-001]〔事实〕。粘贴文本2同样为合成验收数据 [E-009]〔事实〕。粘贴文本3同样为合成验收数据 [E-014]〔事实〕。由此，三份材料均为合成验收数据而非可确证的真实世界独立研究来源，来源名称与编号对应为粘贴文本1、粘贴文本2、"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q3_batch7_r08\\samples",
+  "grader": {}
+}

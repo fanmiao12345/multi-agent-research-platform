@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 3,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.179546,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "5bf7f205cd9a"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-21T11:33:52",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 3,
+    "passed": 3,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 642.29,
+  "results": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 185.472,
+      "estimated_cost_usd": 0.05161612,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_85073a2f37254426bfc7bbed4285ae22",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 56,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 管理层建议：星桥团队远程办公试点是否扩大\n\n## 建议\n四份材料均自述为合成验收数据 [E-001][E-009][E-017][E-025]〔事实〕。本资料不足以直接支持扩大试点的因果结论 [E-016]〔推断〕，仅凭本资料也不足以支持扩大试点 [E-029]〔推断〕。管理层建议先延长试点 [E-021]〔事实〕，且尚未批准全员推行 [E-022]〔事实〕；建议先延长试点，待补齐分母和问卷统"
+    },
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 2,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 200.373,
+      "estimated_cost_usd": 0.05562646,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_e65dd2733282449199bded0e95ca16c3",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 73,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 星桥团队远程办公试点是否扩大的管理层建议\n\n## 建议\n当前证据不支持扩大试点规模；建议先延长试点，等前置条件满足后再评估[E-013][E-014][E-023][E-024]〔推断〕。管理层建议先延长试点[E-021]〔事实〕；管理层尚未批准全员推行[E-022]〔事实〕。前置条件包括：补齐未完成问卷的8人意见[E-015]〔推断〕；核实会议口头报告90%满意率的分母与原始问卷统计[E-0"
+    },
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 3,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 254.562,
+      "estimated_cost_usd": 0.07230338000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_3e51e633047240a7bfe7a0201809ef2c",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 45,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 关于是否扩大远程办公试点的管理层建议\n\n## 结论边界\n本资料为合成验收数据，非真实运营数据【[E-001]】〔事实〕；资料亦标注为合成验收数据【[E-008]】〔事实〕、合成验收数据【[E-016]】〔事实〕及非真实业务数据【[E-024]】〔事实〕。基于现有资料不能可靠判断是否扩大试点【[E-022]】〔推断〕；仅凭本资料无法支持扩大试点的结论【[E-029]】〔推断〕；在现有资料内，真实"
+    }
+  ],
+  "records": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 185.472,
+      "estimated_cost_usd": 0.05161612,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_85073a2f37254426bfc7bbed4285ae22",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 56,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 管理层建议：星桥团队远程办公试点是否扩大\n\n## 建议\n四份材料均自述为合成验收数据 [E-001][E-009][E-017][E-025]〔事实〕。本资料不足以直接支持扩大试点的因果结论 [E-016]〔推断〕，仅凭本资料也不足以支持扩大试点 [E-029]〔推断〕。管理层建议先延长试点 [E-021]〔事实〕，且尚未批准全员推行 [E-022]〔事实〕；建议先延长试点，待补齐分母和问卷统"
+    },
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 2,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 200.373,
+      "estimated_cost_usd": 0.05562646,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_e65dd2733282449199bded0e95ca16c3",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 73,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 星桥团队远程办公试点是否扩大的管理层建议\n\n## 建议\n当前证据不支持扩大试点规模；建议先延长试点，等前置条件满足后再评估[E-013][E-014][E-023][E-024]〔推断〕。管理层建议先延长试点[E-021]〔事实〕；管理层尚未批准全员推行[E-022]〔事实〕。前置条件包括：补齐未完成问卷的8人意见[E-015]〔推断〕；核实会议口头报告90%满意率的分母与原始问卷统计[E-0"
+    },
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 3,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 254.562,
+      "estimated_cost_usd": 0.07230338000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_3e51e633047240a7bfe7a0201809ef2c",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 45,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 关于是否扩大远程办公试点的管理层建议\n\n## 结论边界\n本资料为合成验收数据，非真实运营数据【[E-001]】〔事实〕；资料亦标注为合成验收数据【[E-008]】〔事实〕、合成验收数据【[E-016]】〔事实〕及非真实业务数据【[E-024]】〔事实〕。基于现有资料不能可靠判断是否扩大试点【[E-022]】〔推断〕；仅凭本资料无法支持扩大试点的结论【[E-029]】〔推断〕；在现有资料内，真实"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q3_batch7_r04\\samples",
+  "grader": {}
+}

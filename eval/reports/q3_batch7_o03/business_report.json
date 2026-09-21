@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 3,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.119073,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "5bf7f205cd9a"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-21T11:23:09",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 3,
+    "passed": 2,
+    "failed": 1,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 471.59,
+  "results": [
+    {
+      "id": "o03",
+      "category": "organize",
+      "attempt": 1,
+      "task": "合并重复材料，输出去重记录；同一统计不得计为两份独立证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 198.4,
+      "estimated_cost_usd": 0.05079603,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_f908c806990b4606a94a3eb1ad673371",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 53,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 重复材料合并与去重报告\n\n## 合并结果\n\n合并后保留四项编号证据：[E-001] 合成验收数据、[E-002] 问卷统计、[E-003] 工单处理时长、[E-004] 分析限制〔事实〕[E-001][E-002][E-003][E-004]。其中 [E-002] 所载统计在粘贴文本 2 与粘贴文本 1 之间实质相同，重复来源只保留一份〔推断〕[E-002]。因此，合并后材料数量不因转载或复述"
+    },
+    {
+      "id": "o03",
+      "category": "organize",
+      "attempt": 2,
+      "task": "合并重复材料，输出去重记录；同一统计不得计为两份独立证据。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 81.234,
+      "estimated_cost_usd": 0.01979763,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_11309e54196045218a9ee4f6e98c06dc",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 重复材料合并与去重记录\n\n## 材料范围与性质\n本报告所用材料自述为合成验收数据【E-001】〔事实〕。因此其可用证据边界限于材料内已核实条目，不能据以推断真实人群或真实业务表现〔推断〕。对同一统计只按一份证据处理〔推断〕。\n\n## 合并结果\n合并后，可独立使用的证据为：合成验收数据性质【E-001】；24名答卷者表示满意【E-002】；回收率80%与满意率75%同源、不另计【E-003】；观"
+    },
+    {
+      "id": "o03",
+      "category": "organize",
+      "attempt": 3,
+      "task": "合并重复材料，输出去重记录；同一统计不得计为两份独立证据。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 187.996,
+      "estimated_cost_usd": 0.04847962,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_fc8b3dc867824c01a70af2bb96c24704",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 27,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 材料合并与去重记录\n## 合并结果\n- 合并后唯一材料为：合成验收数据[E-001]〔事实〕；问卷统计（40名参与者中32人完成，回收率80%；24名答卷者满意，满意率75%）[E-002]〔事实〕；观察期工单平均处理时长从10小时变为8小时[E-003]〔事实〕；未控制工单难度变化[E-004]〔事实〕。\n- 同源统计只计一次：回收率80%与满意率75%同源，合并为问卷统计的一项，不拆为两份"
+    }
+  ],
+  "records": [
+    {
+      "id": "o03",
+      "category": "organize",
+      "attempt": 1,
+      "task": "合并重复材料，输出去重记录；同一统计不得计为两份独立证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 198.4,
+      "estimated_cost_usd": 0.05079603,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_f908c806990b4606a94a3eb1ad673371",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 53,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 重复材料合并与去重报告\n\n## 合并结果\n\n合并后保留四项编号证据：[E-001] 合成验收数据、[E-002] 问卷统计、[E-003] 工单处理时长、[E-004] 分析限制〔事实〕[E-001][E-002][E-003][E-004]。其中 [E-002] 所载统计在粘贴文本 2 与粘贴文本 1 之间实质相同，重复来源只保留一份〔推断〕[E-002]。因此，合并后材料数量不因转载或复述"
+    },
+    {
+      "id": "o03",
+      "category": "organize",
+      "attempt": 2,
+      "task": "合并重复材料，输出去重记录；同一统计不得计为两份独立证据。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 81.234,
+      "estimated_cost_usd": 0.01979763,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_11309e54196045218a9ee4f6e98c06dc",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 重复材料合并与去重记录\n\n## 材料范围与性质\n本报告所用材料自述为合成验收数据【E-001】〔事实〕。因此其可用证据边界限于材料内已核实条目，不能据以推断真实人群或真实业务表现〔推断〕。对同一统计只按一份证据处理〔推断〕。\n\n## 合并结果\n合并后，可独立使用的证据为：合成验收数据性质【E-001】；24名答卷者表示满意【E-002】；回收率80%与满意率75%同源、不另计【E-003】；观"
+    },
+    {
+      "id": "o03",
+      "category": "organize",
+      "attempt": 3,
+      "task": "合并重复材料，输出去重记录；同一统计不得计为两份独立证据。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 187.996,
+      "estimated_cost_usd": 0.04847962,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_fc8b3dc867824c01a70af2bb96c24704",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 27,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 0,
+        "fact_total": 1,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 材料合并与去重记录\n## 合并结果\n- 合并后唯一材料为：合成验收数据[E-001]〔事实〕；问卷统计（40名参与者中32人完成，回收率80%；24名答卷者满意，满意率75%）[E-002]〔事实〕；观察期工单平均处理时长从10小时变为8小时[E-003]〔事实〕；未控制工单难度变化[E-004]〔事实〕。\n- 同源统计只计一次：回收率80%与满意率75%同源，合并为问卷统计的一项，不拆为两份"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q3_batch7_o03\\samples",
+  "grader": {}
+}

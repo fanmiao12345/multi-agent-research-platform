@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 3,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.139429,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "5bf7f205cd9a"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-21T12:01:40",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 3,
+    "passed": 0,
+    "failed": 3,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 476.75,
+  "results": [
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 1,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 161.47,
+      "estimated_cost_usd": 0.04679134,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_b30212b8311e43f2b09d44d9a717547f",
+      "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）",
+      "machine_checks": {
+        "citation_tokens": 96,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购与内部敏感资料处理尽职调查报告提纲\n\n## 资料性质与限制\n- 本资料为合成验收数据，非真实采购依据〔事实〕[E-001]。\n- 该资料同样声明为合成验收数据，不是真实采购证据〔事实〕[E-009]。\n- 仅凭本资料不足以批准采购并处理内部敏感资料〔推断〕[E-016]。\n- 因此，本报告只能作为尽调风险识别材料，不能作为真实采购审批或敏感资料处理授权依据〔推断〕[E-001][E-009"
+    },
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 2,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 139.398,
+      "estimated_cost_usd": 0.040857700000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_280dd2ddd6e64f609c8ffc6661b0bf83",
+      "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）",
+      "machine_checks": {
+        "citation_tokens": 72,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购与内部敏感资料处理尽调报告\n## 资料性质与评估范围\n本资料声明其内容为合成验收数据 [E-001]〔事实〕，且本资料为合成验收数据 [E-009]〔事实〕。据此，本次尽调只能在该合成验收数据范围内作资料层面核查，不能替代真实供应商合规证明或生产环境验证 [E-001][E-009]〔推断〕。现有资料缺少存储与删除等合规信息，不足以批准采购并处理内部敏感资料 [E-008]〔推断〕。评估范"
+    },
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 3,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 173.738,
+      "estimated_cost_usd": 0.051779540000000006,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_57b71d5a14024dedbde3e19201f26f10",
+      "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）",
+      "machine_checks": {
+        "citation_tokens": 84,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购尽调报告：能否批准采购与处理内部敏感资料\n## 结论摘要\n现有资料不足以批准采购与处理内部敏感资料 [E-001][E-006][E-009][E-014]〔推断〕。资料为合成验收数据，非真实产品完整信息 [E-001]〔事实〕；不是真实采购尽调材料 [E-009]〔推断〕；未提供安全合规保密条款 [E-006]〔推断〕；仅凭本资料不足以批准采购或处理内部敏感资料 [E-014]〔推断〕。"
+    }
+  ],
+  "records": [
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 1,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 161.47,
+      "estimated_cost_usd": 0.04679134,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_b30212b8311e43f2b09d44d9a717547f",
+      "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）",
+      "machine_checks": {
+        "citation_tokens": 96,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购与内部敏感资料处理尽职调查报告提纲\n\n## 资料性质与限制\n- 本资料为合成验收数据，非真实采购依据〔事实〕[E-001]。\n- 该资料同样声明为合成验收数据，不是真实采购证据〔事实〕[E-009]。\n- 仅凭本资料不足以批准采购并处理内部敏感资料〔推断〕[E-016]。\n- 因此，本报告只能作为尽调风险识别材料，不能作为真实采购审批或敏感资料处理授权依据〔推断〕[E-001][E-009"
+    },
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 2,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 139.398,
+      "estimated_cost_usd": 0.040857700000000004,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_280dd2ddd6e64f609c8ffc6661b0bf83",
+      "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）",
+      "machine_checks": {
+        "citation_tokens": 72,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购与内部敏感资料处理尽调报告\n## 资料性质与评估范围\n本资料声明其内容为合成验收数据 [E-001]〔事实〕，且本资料为合成验收数据 [E-009]〔事实〕。据此，本次尽调只能在该合成验收数据范围内作资料层面核查，不能替代真实供应商合规证明或生产环境验证 [E-001][E-009]〔推断〕。现有资料缺少存储与删除等合规信息，不足以批准采购并处理内部敏感资料 [E-008]〔推断〕。评估范"
+    },
+    {
+      "id": "r03",
+      "category": "research",
+      "attempt": 3,
+      "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 173.738,
+      "estimated_cost_usd": 0.051779540000000006,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_57b71d5a14024dedbde3e19201f26f10",
+      "message": "交付等级按报告自述封顶为「draft」：报告自述证据不足以支撑所请求的决定：「不足以批准」（程序层自述一致性检查；不视为验收成功）",
+      "machine_checks": {
+        "citation_tokens": 84,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 采购尽调报告：能否批准采购与处理内部敏感资料\n## 结论摘要\n现有资料不足以批准采购与处理内部敏感资料 [E-001][E-006][E-009][E-014]〔推断〕。资料为合成验收数据，非真实产品完整信息 [E-001]〔事实〕；不是真实采购尽调材料 [E-009]〔推断〕；未提供安全合规保密条款 [E-006]〔推断〕；仅凭本资料不足以批准采购或处理内部敏感资料 [E-014]〔推断〕。"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q3_batch7_r03\\samples",
+  "grader": {}
+}

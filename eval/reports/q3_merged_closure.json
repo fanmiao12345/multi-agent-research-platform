@@ -1,0 +1,47 @@
+{
+  "total_runs": 35,
+  "total_ok": 31,
+  "merged_rate": 0.8857,
+  "excl_o13": {
+    "runs": 35,
+    "ok": 31,
+    "rate": 0.8857
+  },
+  "per_case_multi": [
+    {
+      "id": "o03",
+      "expected": "accepted",
+      "runs": 4,
+      "ok": 2,
+      "rate": 0.5
+    },
+    {
+      "id": "r03",
+      "expected": "draft",
+      "runs": 4,
+      "ok": 4,
+      "rate": 1.0
+    },
+    {
+      "id": "r04",
+      "expected": "accepted",
+      "runs": 4,
+      "ok": 3,
+      "rate": 0.75
+    },
+    {
+      "id": "r07",
+      "expected": "unable",
+      "runs": 4,
+      "ok": 4,
+      "rate": 1.0
+    },
+    {
+      "id": "r08",
+      "expected": "accepted",
+      "runs": 4,
+      "ok": 3,
+      "rate": 0.75
+    }
+  ]
+}
