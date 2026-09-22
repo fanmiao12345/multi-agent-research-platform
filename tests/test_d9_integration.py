@@ -4,6 +4,7 @@ import http.client
 import json
 import shutil
 import threading
+import time
 import uuid
 from pathlib import Path
 
@@ -116,3 +117,51 @@ def test_web_export_html_and_process_record(client):
     assert status == 200 and "<pre>" in page and "attachment" in headers["Content-Disposition"]
     status, process, _ = _request(conn, "GET", f"/api/jobs/{job_id}/process")
     assert status == 200 and process["status"] == "finished"
+
+
+def _wait_terminal(conn, job_id, timeout=25):
+    """等任务进入终态，返回最后一次读到的队列行。"""
+    deadline = time.monotonic() + timeout
+    row: dict = {}
+    while time.monotonic() < deadline:
+        _, progress, _ = _request(conn, "GET", f"/api/jobs/{job_id}/progress")
+        row = progress.get("job") or {}
+        if row.get("status") in ("completed", "partial", "failed", "cancelled"):
+            return row
+        time.sleep(0.2)
+    return row
+
+
+def test_waiting_input_held_while_worker_alive_then_requeued(client):
+    """D8-04：worker 常驻时，缺关键条件的任务必须挂起等待补充，而不是被抢先执行。"""
+    conn, _, server = client
+    state = server.RequestHandlerClass.state
+    # ① 先跑一个正常任务，让 worker 常驻
+    status, first, _ = _request(conn, "POST", "/api/runs", {
+        "task": "整理材料", "flow": "research", "texts": ["材料一：结论 A。"]})
+    assert status == 200 and first.get("job_id")
+    assert _wait_terminal(conn, first["job_id"])["status"] in ("completed", "partial")
+    assert state._worker_thread is not None and state._worker_thread.is_alive()
+
+    # ② 缺关键条件：停放 waiting_input，且没有产物被写出来
+    status, waiting, _ = _request(conn, "POST", "/api/runs", {
+        "task": "比较不同方案", "flow": "research", "texts": ["材料一：结论 A。"]})
+    assert status == 200 and waiting["status"] == "waiting_input"
+    job_id = waiting["job_id"]
+    time.sleep(1.5)
+    assert state.queue.get(job_id)["status"] == "waiting_input"
+    assert not (Path(state.workspaces) / "jobs" / job_id / "artifacts.json").exists()
+
+    # ③ 补充后回队并真正执行，合并后的目标进入请求快照
+    status, answered, _ = _request(conn, "POST", f"/api/jobs/{job_id}/input",
+                                   {"answer": {"task": "比较方案 A 与方案 B"}})
+    assert status == 200 and answered["status"] == "queued"
+    assert _wait_terminal(conn, job_id)["status"] in ("completed", "partial", "failed")
+    assert json.loads(state.queue.get(job_id)["request_json"])["task"] == "比较方案 A 与方案 B"
+
+    # ④ 任务已结束时再补充：明确拒绝，不静默丢条件
+    state.pending_inputs.create(job_id=job_id, questions=["还有吗"],
+                                target="t", params={}, budget={})
+    status, body, _ = _request(conn, "POST", f"/api/jobs/{job_id}/input",
+                               {"answer": {"task": "再来一次"}})
+    assert status == 409 and "等待补充" in body["error"]

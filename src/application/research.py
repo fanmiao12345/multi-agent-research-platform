@@ -317,8 +317,10 @@ class ResearchApplication:
         if directory.exists():
             # D1-02：允许采用编排器"调度前预留"的根任务目录——调度阶段只写
             # orchestration.json/request.json/ledger.json（D2-01 调度入账）；
+            # D8-04：待输入挂起时入口层写 input_request.json，也是执行前标记；
             # 出现链执行产物（pipeline/sources/artifacts/阶段检查点等）仍拒绝。
-            pre_schedule = {"orchestration.json", "request.json", "ledger.json"}
+            pre_schedule = {"orchestration.json", "request.json", "ledger.json",
+                            "input_request.json"}
             reserved = {p.name for p in directory.iterdir()} - pre_schedule
             if reserved:
                 raise FileExistsError(

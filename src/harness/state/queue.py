@@ -6,6 +6,8 @@ harness/state/queue.py —— 有界任务队列与持久化租约（S4-03/06）
   只有 queued / interrupted，或"租约已过期的 running / waiting_human /
   cancel_requested"能被领取 → 禁止两个执行者同时恢复同一任务（进程内由
   写锁串行，跨进程由 UPDATE 原子性兜底）；
+- D8-04：缺关键条件的任务用 HOLD_FOR_INPUT（waiting_input）挂起——它不是
+  可领取状态，用户补充后 requeue 回 queued 才由 worker 执行；
 - 领取后租约需心跳续期；进程崩溃后租约过期 → startup_scan 标记 interrupted；
 - 取消分两段：queued 直接 cancelled（stopped）；运行中只置 cancel_requested
   （requested），由执行边界检查后收敛为 cancelled/partial（S4-06）。
@@ -21,6 +23,10 @@ from src.harness.state.db import StateDb
 
 _ELIGIBLE = ("status IN (?, ?) OR "
              "(status IN (?, ?, ?) AND lease_expires < ?)")
+
+# D8-04 待输入挂起状态：队列级状态，不进入 states.ALL 状态机；worker 不领取，
+# 用户补充后由 requeue 回到 queued（Web/CLI 都按这个词展示"待补充"）。
+HOLD_FOR_INPUT = "waiting_input"
 
 
 @dataclass
@@ -185,15 +191,38 @@ class JobQueue:
                 "UPDATE jobs SET request_json=?, updated_at=? WHERE job_id=?",
                 (json.dumps(payload, ensure_ascii=False), self.db.now(), job_id))
 
+    # ---- D8-04 待输入挂起 / 补充后回队 -----------------------------------
+    def hold_for_input(self, job_id: str) -> None:
+        """缺关键条件：把刚提交的 queued 任务挂起为 waiting_input，避免 worker 抢先执行。"""
+        with self.db.write_tx() as conn:
+            cursor = conn.execute(
+                "UPDATE jobs SET status=?, updated_at=? WHERE job_id=? AND status=?",
+                (HOLD_FOR_INPUT, self.db.now(), job_id, states.QUEUED))
+            if cursor.rowcount != 1:
+                raise states.StateError(
+                    f"任务 {job_id} 不在 queued，不能挂起为待输入")
+
+    def requeue(self, job_id: str, *, stage: str = "queued", message: str = "") -> None:
+        """补充信息后回到队列：waiting_input/queued → queued，等 worker 领取。"""
+        with self.db.write_tx() as conn:
+            cursor = conn.execute(
+                "UPDATE jobs SET status=?, stage=?, message=?, updated_at=?"
+                " WHERE job_id=? AND status IN (?, ?)",
+                (states.QUEUED, stage, message, self.db.now(), job_id,
+                 HOLD_FOR_INPUT, states.QUEUED))
+            if cursor.rowcount != 1:
+                raise states.StateError(
+                    f"任务 {job_id} 不在等待补充状态，不能重新入队")
+
     # ---- 取消（S4-06 分两段） ---------------------------------------------
     def request_cancel(self, job_id: str) -> dict:
-        """queued → 直接 cancelled（stopped）；运行中 → 只记 cancel_requested。"""
+        """queued/waiting_input → 直接 cancelled（stopped）；运行中 → 只记 cancel_requested。"""
         with self.db.write_tx() as conn:
             row = conn.execute(
                 "SELECT status FROM jobs WHERE job_id=?", (job_id,)).fetchone()
         if row is None:
             raise LookupError(f"任务不存在：{job_id}")
-        if row["status"] == states.QUEUED:
+        if row["status"] in (states.QUEUED, HOLD_FOR_INPUT):
             with self.db.write_tx() as conn:
                 conn.execute(
                     "UPDATE jobs SET status=?, updated_at=? WHERE job_id=?",

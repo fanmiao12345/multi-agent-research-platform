@@ -1116,3 +1116,48 @@ Q3-03 第 1 项：全量离线回归 **617 项 / 0 失败 / 0 跳过**（junit e
 **实现**：① 重写 INDEX_HTML 的 style 块为完整设计系统（CSS 变量/表单/表格/pre/按钮/焦点态/响应式单列/prefers-reduced-motion）；② 卡片包进 <main class="deck"> 双列响应式网格；③ 新增展示级"检定章"脚本——把 accepted/draft/unable 等级词渲染成描边印章样式（1200ms 轮询增强，纯展示不改数据）；④ 表单层修复：label 上置、textarea 全宽、数字框对齐；⑤ HTML 内硬编码的默认值与出厂配置对齐（maxseconds 300→600、maxcost 0.05→0.15）。
 
 **验证**：工作台测试 28 项通过；全量回归 **610 项 / 0 失败 / 0 跳过**（移除演示层后基线）；Playwright 截图两轮自检（表单排版修正前后对照），证据在 `eval/reports/workbench_restyle/`。
+
+## 2026-09-22 / 界面优化（用户视角信息架构）：按开发手册确定"展示什么、点到哪"
+
+用户要求"先参考开发手册与学习文档，确定界面该展示什么、怎么设计、点击跳转到哪里，从用户角度看"。依据
+`PROJECT_MASTER_PLAN.md`（1.3 核心体验"一次输入目标…交付时告知方式、依据、花费和等级"、1.3"过程展示默认收起"、
+3.1 默认流程第 9 步、D9-02/03/04、2.2"界面说明发送哪些内容"）、`Q4_TRIAL_GUIDE.md` 第 1/2 节的每日流程与状态处理表、
+`PRACTICAL_RESEARCH_WRITING_PLAN.md` 第 2 节任务与交付，逐一核对页面。**不改任何执行语义**（选择、预算、证据规则不变）。
+
+**信息架构（侧边栏 = 用户工作流，不是内部面板清单）**
+
+| 视图 | 用户在这里做什么 | 点击跳转 |
+|---|---|---|
+| 01 新建任务 | 写目标和结果要求；按需展开资料/网络/预算/硬约束 | 提交 → 自动切到"任务与成果"并选中新任务 |
+| 02 任务与成果 | 任务列表（目标/状态/阶段/时间）→ 点行看交付与依据 | 点行/查看 → 任务详情；点 [E-xxx] 或证据编号 → 右栏原文与定位 |
+| 03 运行观测 | 通用 Agent 运行、执行轨迹、工具与人工审批 | 点查看 → 该 run 的用量、最终回答与轨迹 |
+| 04 配置与统计 | 配置诊断、使用统计、安全与数据边界、质量评测概览 | 检查配置/刷新统计 → 就地更新 |
+
+**界面补齐的能力（此前 Web 无入口，后端已支持）**
+
+- `allow_network`：只给主题 + 勾选"允许联网研究"即可让系统自行检索（未配置 SEARCH_PROVIDER 时明确说明不会假装搜过）。
+- `plan_only`："先看计划再开始"（总计划 1.3 的既有交互约定，默认关闭）：显示执行方式、一句理由、预计用量、预算与子任务，**不执行、不产生模型费用**。
+- 交付信息按 3.1 第 9 步展示：等级 / 引用与未解析 / 修订轮次 / 产物类型 / 估算花费 / 调用与输出 Token / 用时 / 模型 / 硬约束；**过程阶段改为默认折叠**（仅保留进度条与"n/m 完成"）。
+- 待补充输入可操作化：按待输入问题给出补充框（可勾选"作为补充资料一起提交"），提交即回队列，不用重跑。
+- 使用统计改为按本地任务表实时聚合（原实现从 DOM 表格文本里爬关键词，脆弱且口径写死）。
+
+**修复的用户可见缺陷**
+
+1. **文本类端点被二次 JSON 转义**（本轮最明显的可见修复）：`_send` 只对 `text/html` 走原文返回，其余一律 `json.dumps`，导致 `/api/jobs/<id>/artifacts/<aid>/content`、`/sources/<sid>/text` 把报告返回成**带引号、带 `\n` 字面量**的字符串——报告阅读器实际显示的是转义文本而非排版后的报告。改为 `text/*` 一律按原文返回。
+2. **D8-04 待输入链路实际未接通**（顺带发现，本轮已修）：`start_run` 进入待输入时只把 stage 写成 `waiting_input`，**status 仍是 queued**，因此只要 worker 已常驻（当天有任何任务提交过就常驻），缺关键条件的任务会被立即领取并执行，用户来不及补充；此外 `ResearchApplication.run` 会把入口层写的 `input_request.json` 当作"已含执行产物"而拒绝执行。修法：`JobQueue` 新增 `HOLD_FOR_INPUT`（waiting_input，不可领取）+ `hold_for_input()`/`requeue()`；`request_cancel` 把 waiting_input 按 queued 处理（直接 cancelled）；`/input` 校验必须处于挂起态并 `requeue` 后才 `_ensure_worker()`；`pre_schedule` 白名单加入 `input_request.json`。**注意：D8-04/D9-04 在 TRACKER 里原记为"功能完成（最小验证）"，实际链路此前是断的——记录以本节为准。**
+3. 视图路由默认值：无 hash 首屏 `showView("newResearch")` 与 `VIEW_GROUPS` 键不一致会抛 TypeError（导航高亮与视图切换失效），改为 `newResearch` 显示但键统一为 `newTask` 并给未知 hash 兜底。
+4. `/api/jobs` 列表回填一句话 `task`（只取 task 字段，**不回传粘贴正文**）；`/progress` 增加只读 `ledger`；`/api/config` 增加 `search_provider` 是否配置（只回名称，不回密钥与接口地址）；`/progress` 对"已入队但任务目录尚未创建"的新任务返回 200 + `note`（原实现 404，导致刚提交就报错并刷控制台）——目录不存在且队列无此 id 时仍 404。
+5. 刚提交的任务不再立刻请求来源/产物（目录未就绪时），并在任务日志里显示"任务尚未开始执行（等待执行器创建任务目录）"。
+
+**验证**
+
+- 定向：`tests/test_workbench.py`、`test_workbench_b3.py`、`test_workbench_s5.py`、`test_d9_integration.py` 通过；新增回归 `test_d9_integration.py::test_waiting_input_held_while_worker_alive_then_requeued`（去掉 `hold_for_input` 单跑即失败：`assert 'completed' == 'waiting_input'`，证明该用例确实覆盖此缺陷）。
+- 全量离线回归：**611 项 / 0 失败 / 0 跳过**（`exit=0`）。中途一次全量出现 1 例 `test_workbench_s5::test_write_api_security_guards` 连接错误，隔离复跑 7 项通过——与 O-07 记录的高负载偶发连接错误同型。
+- 浏览器自检：用**合成任务数据**（临时 workspaces，不接触真实任务与真实模型）启动工作台，Playwright 走完整点击路径——切换四个视图、点任务行看交付与依据、勾选"允许联网研究 + 先看计划再开始"生成方案、待补充任务提交补充、**真实提交一次任务并确认自动跳到"任务与成果"且选中新任务**。截图 9 张；`problems` 为空（0 控制台错误、0 个 HTTP ≥400 响应）。证据与可重跑脚本：`eval/reports/workbench_ui_optimize/`（含 `ui_probe.py`、截图、`probe_result.txt`、README 说明）。
+- 待输入链路核查（桩模型，无真实调用）：worker 常驻时提交缺条件任务 → 停在 `waiting_input` 不执行 → 补充后 `queued` → worker 执行到 `completed`，`request_json.task` 已是合并后的目标。
+
+**限制与下一步**
+
+- 均为本地单用户离线自检；真实模型、真实资料的浏览器人工验收按 Q4 试用（用户本人执行）——不能把截图自检写成业务验收通过。
+- 任务列表只显示最近 20 行、统计只覆盖最近 50 条本地记录；"先看计划"用的是启发式方案（`llm=None`），与真实执行时的 LLM 选型可能不同，页面已按"方案"措辞而非"承诺"。
+- 待输入补充只支持"作为补充资料"或"补充到任务描述"，尚不支持按问题逐项结构化回答。

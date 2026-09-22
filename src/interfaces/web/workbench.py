@@ -228,6 +228,8 @@ class WorkbenchState:
                             "max_cost": request.max_cost,
                             "max_seconds": request.max_seconds},
                     plan_version=1)
+                # D8-04：挂起为 waiting_input，否则已在常驻的 worker 会抢先执行缺条件的任务
+                self.queue.hold_for_input(job_id)
                 self.queue.update_progress(job_id, stage="waiting_input",
                                            message="waiting_input")
                 return {"status": "waiting_input", "job_id": job_id,
@@ -329,7 +331,8 @@ class Handler(BaseHTTPRequestHandler):
               extra_headers: dict | None = None):
         if isinstance(payload, bytes):
             body = payload
-        elif content_type.startswith("text/html"):
+        elif content_type.startswith("text/"):
+            # 文本类响应按原文返回（报告/来源全文），不能被 json.dumps 转义成带引号的字面量
             body = payload.encode("utf-8")
         else:
             body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
@@ -364,6 +367,34 @@ class Handler(BaseHTTPRequestHandler):
             return None
         directory = self.state.workspaces / "jobs" / job_id
         return directory if directory.is_dir() else None
+
+    def _job_task(self, job_id: str) -> str:
+        """任务列表用的一句话目标：只读取队列里的 task 字段，不返回粘贴正文或密钥。"""
+        if not _JOB_ID.fullmatch(job_id or ""):
+            return ""
+        row = self.state.queue.get(job_id) or {}
+        try:
+            payload = json.loads(row.get("request_json") or "{}")
+        except Exception:  # noqa: BLE001 —— 快照损坏时列表仍要可用
+            payload = {}
+        task = payload.get("task") if isinstance(payload, dict) else ""
+        return (task or "").strip()[:120]
+
+    def _job_progress(self, job_id: str):
+        """任务进度：队列行 + 任务目录产物。刚入队（目录未建）时也返回 200，页面按“排队中”展示。"""
+        if not _JOB_ID.fullmatch(job_id or ""):
+            return self._send(404, {"error": "job 不存在或 id 格式无效"})
+        row = self.state.queue.get(job_id)
+        directory = self._job_dir(job_id)
+        if row is None and directory is None:
+            return self._send(404, {"error": "job 不存在"})
+        loaded = (lambda name: _load(directory / name)) if directory is not None else (lambda name: None)
+        return self._send(200, {"job": row, "job_file": loaded("job.json"),
+                                "pipeline": loaded("pipeline.json"),
+                                "ledger": loaded("ledger.json"),
+                                "pending_inputs": self.state.pending_inputs.list(job_id),
+                                "note": None if directory is not None
+                                        else "任务尚未开始执行（等待执行器创建任务目录）"})
 
     def _resume_job(self, job_id: str):
         """S5-02 恢复：对存在阶段产物/检查点的研究任务排队式恢复（后台线程）。"""
@@ -419,6 +450,9 @@ class Handler(BaseHTTPRequestHandler):
         sources 列表 / sources/<sid>/text 全文 / artifacts 列表 /
         artifacts/<aid>/content 内容。全文文件路径经 resolve_under 边界校验。
         """
+        # progress 先处理：刚入队的任务还没有目录，但队列行已存在（按"排队中"展示，不报 404）
+        if len(segments) == 2 and segments[1] == "progress":
+            return self._job_progress(segments[0])
         job_dir = self._job_dir(segments[0])
         if job_dir is None:
             return self._send(404, {"error": "job 不存在"})
@@ -459,12 +493,6 @@ class Handler(BaseHTTPRequestHandler):
             index = _load(job_dir / "evidence.json") or {}
             items = index.get("items", []) if isinstance(index, dict) else []
             return self._send(200, {"evidence": items})
-        if len(segments) == 2 and segments[1] == "progress":
-            row = self.state.queue.get(job_dir.name) if _JOB_ID.fullmatch(job_dir.name) else None
-            pending = self.state.pending_inputs.list(job_dir.name)
-            return self._send(200, {"job": row, "job_file": _load(job_dir / "job.json"),
-                                    "pipeline": _load(job_dir / "pipeline.json"),
-                                    "pending_inputs": pending})
         if len(segments) == 2 and segments[1] == "export.html":
             import html
             index = _load(job_dir / "artifacts.json") or {}
@@ -535,9 +563,13 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, {"runs": self.state.list_runs()})
         if url.path == "/api/config":
             query = parse_qs(url.query, keep_blank_values=True)
-            return self._send(200, diagnose_config(
+            info = diagnose_config(
                 self.state.settings, mode=query.get("mode", ["mock"])[0],
-                profile_name=query.get("profile", [None])[0]))
+                profile_name=query.get("profile", [None])[0])
+            # 页面只显示"是否配置了联网搜索"这一事实（不含密钥），供用户判断能否只给主题做研究
+            info["search_provider"] = (
+                getattr(self.state.settings, "search_provider", "") or "").strip()
+            return self._send(200, info)
         if url.path == "/api/eval":
             mode = parse_qs(url.query).get("mode", ["mock"])[0]
             if mode not in ("mock", "real"):
@@ -546,7 +578,10 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, _load(path) or {"mode": mode, "note": "尚无该模式的 benchmark 报告"})
         parts = [p for p in url.path.split("/") if p]
         if parts == ["api", "jobs"]:
-            return self._send(200, {"jobs": self.state.queue.list(limit=50)})
+            jobs = self.state.queue.list(limit=50)
+            for job in jobs:
+                job["task"] = self._job_task(job.get("job_id", ""))
+            return self._send(200, {"jobs": jobs})
         if len(parts) >= 2 and parts[:2] == ["api", "jobs"]:
             return self._job_api(parts[2:])
         if len(parts) >= 4 and parts[:2] == ["api", "runs"]:
@@ -609,6 +644,7 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(400, {"error": f"无法启动任务，请检查输入和配置（{type(e).__name__}）"})
         parts = [p for p in url.path.split("/") if p]
         if len(parts) == 4 and parts[:2] == ["api", "jobs"] and parts[3] == "input":
+            from src.harness.state.queue import HOLD_FOR_INPUT
             body = self._body()
             answer = body.get("answer")
             if not isinstance(answer, dict) or not answer:
@@ -617,10 +653,13 @@ class Handler(BaseHTTPRequestHandler):
             active = next((item for item in pending if item["status"] == "pending"), None)
             if active is None:
                 return self._send(404, {"error": "没有待输入项"})
+            row = self.state.queue.get(parts[2]) or {}
+            if row.get("status") != HOLD_FOR_INPUT:
+                return self._send(409, {"error": "该任务已不在等待补充状态（可能已执行或已结束），"
+                                                 "补充内容未合并；如需新条件请新建任务或追问改稿。"})
             self.state.pending_inputs.answer(active["input_id"], answer)
             self.state.queue.merge_request(parts[2], answer)
-            self.state.queue.update_progress(parts[2], stage="queued",
-                                             message="input answered")
+            self.state.queue.requeue(parts[2], stage="queued", message="input answered")
             self.state._ensure_worker()
             return self._send(200, {"status": "queued", "job_id": parts[2]})
         if len(parts) == 4 and parts[:2] == ["api", "jobs"] and parts[3] == "cancel":
@@ -804,12 +843,16 @@ th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;verti
 th{position:sticky;top:0;background:var(--panel-soft);color:var(--muted);font-size:9px;letter-spacing:.05em;text-transform:uppercase;z-index:1}
 tr:last-child td{border-bottom:0}
 tbody tr:hover td{background:#fbfcfd}
-.cell-main{max-width:270px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cell-main{max-width:205px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .empty{padding:28px 16px;text-align:center;color:var(--muted);font-size:11px}
 .empty b{display:block;color:#475467;margin-bottom:4px}
 
 .stage-rail{display:grid;gap:7px;margin:12px 0}
 .stage{display:grid;grid-template-columns:19px minmax(0,1fr) auto;gap:8px;align-items:start}
+.stagedetails{margin:2px 0 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel-soft)}
+.stagedetails summary{cursor:pointer;padding:9px 11px;font-size:11.5px;font-weight:750;color:#475467;user-select:none}
+.stagedetails[open] summary{border-bottom:1px solid var(--line)}
+.stagedetails .stage-rail{padding:2px 11px 9px}
 .stage-dot{width:18px;height:18px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;font:800 8px var(--mono);color:var(--muted);background:#fff}
 .stage.done .stage-dot{background:var(--success-soft);border-color:#abefc6;color:var(--success)}
 .stage.running .stage-dot{background:var(--accent-soft);border-color:#c7c7ff;color:var(--accent)}
@@ -826,6 +869,7 @@ tbody tr:hover td{background:#fbfcfd}
 .citebtn:hover{background:#dedeff}
 .evidence-list{display:flex;gap:5px;flex-wrap:wrap;max-height:190px;overflow:auto}
 .evidence-list .btn{font-size:9.5px;padding:5px 7px}
+.nowrap{white-space:nowrap}
 .docview{border:1px solid var(--line);border-radius:10px;background:var(--panel-soft);padding:12px;min-height:92px;max-height:330px;overflow:auto;white-space:pre-wrap;font:10.5px/1.65 var(--mono);color:#475467}
 
 .console{background:#101828;color:#d0d5dd;border:1px solid #1d2939;border-radius:10px;padding:11px 12px;white-space:pre-wrap;overflow:auto;font:10px/1.65 var(--mono)}
@@ -840,6 +884,30 @@ tbody tr:hover td{background:#fbfcfd}
 .tool-card strong{font-size:10.5px}.tool-card code{display:block;margin-top:4px;font:9.5px/1.55 var(--mono);color:#475467;white-space:pre-wrap}
 .approval-box{border:1px dashed #d0d5dd;border-radius:10px;padding:11px;background:#fcfcfd}
 .evalbox{display:grid;gap:7px;color:#475467;font-size:10.5px}
+
+/* 用户视角补充：选项条 / 状态横幅 / 交付信息 / 待补充输入 / 配置诊断 */
+.composer-opts{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:12px}
+.opt{display:flex;align-items:center;gap:7px;color:#475467;font-size:11.5px;font-weight:650;cursor:pointer}
+.opt input{width:auto;margin:0;padding:0;accent-color:var(--accent)}
+.banner{margin-top:12px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:9px;background:var(--panel-soft);padding:10px 12px;font-size:11.5px;line-height:1.65;color:#475467;white-space:pre-wrap}
+.banner.ok{border-left-color:#22a06b;background:var(--success-soft);color:var(--success)}
+.banner.warn{border-left-color:#f79009;background:var(--warn-soft);color:var(--warn)}
+.banner.danger{border-left-color:#f04438;background:var(--danger-soft);color:var(--danger)}
+.jobhead{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:2px 0 0}
+.jobgoal{font-size:13px;font-weight:750;color:var(--text);margin:8px 0 0;word-break:break-word}
+.deliver{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:8px;margin:11px 0 4px}
+.kv{border:1px solid var(--line);border-radius:10px;background:var(--panel-soft);padding:9px 10px;min-width:0}
+.kv span{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.kv strong{display:block;margin-top:3px;font-size:13px;word-break:break-word}
+.kv small{display:block;margin-top:2px;color:var(--muted2);font-size:9.5px}
+.asks{margin:12px 0;border:1px dashed #c7c7ff;border-radius:10px;background:#fafaff;padding:12px}
+.asks ul{margin:7px 0 10px;padding-left:18px;color:#475467;font-size:11.5px}
+.asks .inline-actions{margin-top:8px}
+.statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:9px;margin:2px 0 14px}
+.cfg{display:grid;gap:7px;margin-top:9px}
+.cfg .row{display:grid;grid-template-columns:126px minmax(0,1fr);gap:9px;font-size:11.5px;color:#475467;border-bottom:1px dashed var(--line);padding-bottom:7px}
+.cfg .row b{color:var(--text)}
+.cfg .row:last-child{border-bottom:0}
 
 .toast{position:fixed;right:22px;bottom:22px;max-width:360px;padding:10px 12px;border-radius:10px;background:#101828;color:#fff;font-size:11px;box-shadow:var(--shadow-lg);z-index:99;opacity:0;transform:translateY(8px);pointer-events:none;transition:.18s}
 .toast.show{opacity:1;transform:none}
@@ -869,36 +937,40 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 <aside class="sidebar">
   <div class="brand"><div class="brandmark">MA</div><div class="brandcopy"><strong>Research Console</strong><span>Agent Workbench</span></div></div>
   <div class="navgroup">
-    <div class="navlabel">Workspace</div>
-    <a class="navitem" href="#newResearch"><i class="ico">01</i><span>新建研究</span></a>
-    <a class="navitem" href="#jobsSection"><i class="ico">02</i><span>研究任务</span></a>
-    <a class="navitem" href="#sourcesSection"><i class="ico">03</i><span>来源与产物</span></a>
+    <div class="navlabel">工作</div>
+    <a class="navitem" href="#newTask"><i class="ico">01</i><span>新建任务</span></a>
+    <a class="navitem" href="#myJobs"><i class="ico">02</i><span>任务与成果</span></a>
   </div>
   <div class="navgroup">
-    <div class="navlabel">Observe</div>
-    <a class="navitem" href="#runsSection"><i class="ico">04</i><span>运行记录</span></a>
-    <a class="navitem" href="#traceSection"><i class="ico">05</i><span>执行轨迹</span></a>
-    <a class="navitem" href="#evalSection"><i class="ico">06</i><span>评测</span></a>
+    <div class="navlabel">系统</div>
+    <a class="navitem" href="#observe"><i class="ico">03</i><span>运行观测</span></a>
+    <a class="navitem" href="#statsDiag"><i class="ico">04</i><span>配置与统计</span></a>
   </div>
-  <div class="sidebar-foot"><b>Local-first</b><br>证据可回溯 · 运行可观察 · 成本可审计</div>
+  <div class="sidebar-foot"><b>本地优先 · 单用户</b><br>证据可回溯 · 运行可观察 · 成本可审计</div>
 </aside>
 
 <main class="main">
   <header class="topbar">
-    <div class="topbar-title"><h1>多Agent协作智能研究平台</h1><p>任务 → 编排 → 研究 → 证据 → 报告 → 评测</p></div>
-    <div class="topbar-actions"><button class="btn btn-quiet" onclick="loadJobs();loadRuns()">刷新</button><div class="local-pill"><i class="local-dot"></i>Local Workbench</div></div>
+    <div class="topbar-title"><h1>多Agent协作智能研究平台</h1><p>一次输入目标 → 自动选型执行 → 交付方式、依据、花费与等级</p></div>
+    <div class="topbar-actions"><button class="btn btn-quiet" onclick="refreshAll()">刷新</button><div class="local-pill"><i class="local-dot"></i>Local Workbench</div></div>
   </header>
 
   <div class="content">
     <section class="panel composer" id="newResearch">
-      <div class="section-head"><span class="section-num">01</span><div class="section-title"><strong>开始研究</strong><span>先描述结果目标，再按需要补充来源、预算和硬约束。</span></div></div>
+      <div class="section-head"><span class="section-num">01</span><div class="section-title"><strong>新建任务</strong><span>只写清楚要什么结果；资料、联网与预算按需展开，其余由系统按默认值推进。</span></div></div>
       <div class="composer-main">
         <label class="field grow"><span>任务描述</span><input id="task" value="帮我整理资料并生成一份带引用的研究报告" placeholder="例如：研究Agentic RAG在企业知识问答中的应用，并形成带证据的技术报告"></label>
-        <label class="field"><span>模式</span><select id="mode" onchange="loadConfig()"><option value="mock">Mock 离线演示</option><option value="real">真实模型</option></select></label>
+        <label class="field"><span>模式</span><select id="mode" onchange="loadConfig()"><option value="mock">Mock 离线演示</option><option value="real">真实模型（日常使用）</option></select></label>
         <label class="field"><span>流程</span><select id="flow"><option value="research">研究写作链</option><option value="agent">通用 Agent</option></select></label>
         <button class="btn btn-primary" id="start" onclick="startRun()" disabled>开始运行</button>
       </div>
+      <div class="composer-opts">
+        <label class="opt" title="允许系统按需联网搜索并读取正文；未配置搜索服务时不会假装搜过"><input type="checkbox" id="allowNetwork"><span>允许联网研究</span></label>
+        <label class="opt" title="只生成执行方案，不真正运行，也不产生模型费用"><input type="checkbox" id="planOnly"><span>先看计划再开始</span></label>
+        <span class="small" id="composerHint">只有给了主题又没给资料时，才需要勾选“允许联网研究”。</span>
+      </div>
       <div id="config">正在检查配置…</div>
+      <div id="startNote" class="banner hidden"></div>
       <div class="workflow" aria-label="研究流程">
         <span class="step"><b>1</b>理解任务</span><span class="arr">→</span>
         <span class="step"><b>2</b>多Agent执行</span><span class="arr">→</span>
@@ -927,7 +999,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     </section>
 
     <section class="metrics" id="metricsSection" aria-label="工作台概览">
-      <div class="metric"><span>研究任务</span><strong id="metricJobs">0</strong><small id="metricJobsSub">暂无任务</small></div>
+      <div class="metric"><span>任务总数</span><strong id="metricJobs">0</strong><small id="metricJobsSub">暂无任务</small></div>
       <div class="metric"><span>运行记录</span><strong id="metricRuns">0</strong><small id="metricRunsSub">暂无运行</small></div>
       <div class="metric"><span>当前模型</span><strong id="metricModel" style="font-size:13px">—</strong><small id="metricProvider">配置未检查</small></div>
       <div class="metric"><span>当前状态</span><strong id="metricStatus" style="font-size:13px">Idle</strong><small>选择任务后实时更新</small></div>
@@ -935,17 +1007,27 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
     <div class="workspace-grid">
       <section class="panel panel-pad" id="jobsSection">
-        <div class="section-head"><span class="section-num">02</span><div class="section-title"><strong>研究任务</strong><span>队列、阶段进度、停止恢复、改稿与最终交付。</span></div><div class="right"><button class="btn" onclick="loadJobs()">刷新</button></div></div>
-        <div id="jobnote" class="small">提交研究写作链后，这里会显示任务进度。</div>
+        <div class="section-head"><span class="section-num">02</span><div class="section-title"><strong>任务与成果</strong><span>点任务行查看交付等级、报告、依据来源；可停止、恢复、改稿与导出。</span></div><div class="right"><button class="btn" onclick="loadJobs()">刷新</button></div></div>
+        <div id="jobnote" class="small">提交任务后在这里跟踪；默认先看到结果与依据，过程细节在“运行观测”。</div>
         <div id="jobtbl"></div>
         <div class="divider"></div>
+        <div id="jobhint" class="empty"><b>还没有选择任务</b><span>点上面任意一行，查看它的交付等级、报告正文、引用原文与来源。</span></div>
+        <div id="jobdetail" class="hidden">
         <div class="split-head"><div><span class="small">当前任务</span><div id="curjob" class="mono small">—</div></div><div id="jobstate"></div></div>
-        <div id="jobProgress" class="stage-rail"></div>
+        <div id="jobgoal" class="jobgoal"></div>
+        <div id="jobhead" class="jobhead"></div>
+        <div id="jobdeliver" class="deliver"></div>
+        <div id="jobasks" class="asks hidden"></div>
         <div class="progressbar"><span id="jobProgressBar"></span></div>
+        <details class="stagedetails" id="jobstages">
+          <summary id="jobstagesum">过程阶段 · 默认收起，需要时展开</summary>
+          <div id="jobProgress" class="stage-rail"></div>
+        </details>
         <div class="state-line">
           <button class="btn btn-danger" id="btncancel" onclick="cancelJob()" disabled>停止</button>
           <button class="btn" id="btnresume" onclick="resumeJob()" disabled>恢复</button>
-          <button class="btn" id="btnexport" onclick="exportReport()" disabled>导出 Markdown</button>
+          <button class="btn" id="btnexport" onclick="exportReport()" disabled>下载 Markdown</button>
+          <a class="btn hidden" id="btnhtml" href="#" onclick="return exportHtml()">导出 HTML</a>
           <input id="revinstr" style="max-width:260px" placeholder="改稿指令，例如：缩短到150字并保留引用">
           <button class="btn" id="btnrevise" onclick="reviseJob()" disabled>追问改稿</button>
         </div>
@@ -954,11 +1036,12 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
         <div id="reportview" class="report-toolbar"></div>
         <div id="rtok" class="report-reader"><div class="empty"><b>报告阅读区</b>任务完成后会在这里显示最新报告，并保留证据引用交互。</div></div>
         <div id="evidenceview" class="evidence-list"></div>
+        </div>
       </section>
 
       <section class="panel panel-pad" id="sourcesSection">
-        <div class="section-head"><span class="section-num">03</span><div class="section-title"><strong>资料与产物</strong><span>查看来源解析、产物版本和引用证据原文。</span></div></div>
-        <div id="libnote" class="small">选择研究任务后加载来源与产物。</div>
+        <div class="section-head"><span class="section-num">03</span><div class="section-title"><strong>资料与产物</strong><span>交付的依据：点来源、产物或引用编号查看原文与定位。</span></div></div>
+        <div id="libnote" class="small">选择任务后加载来源与产物。</div>
         <div id="srclist"></div>
         <div id="artlist" style="margin-top:10px"></div>
         <div class="divider"></div>
@@ -969,7 +1052,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
     <div class="observability-grid">
       <section class="panel panel-pad" id="runsSection">
-        <div class="section-head"><span class="section-num">04</span><div class="section-title"><strong>运行记录</strong><span>查看通用Agent运行、模型用量和最终回答。</span></div><div class="right"><button class="btn" onclick="loadRuns()">刷新</button></div></div>
+        <div class="section-head"><span class="section-num">04</span><div class="section-title"><strong>通用 Agent 运行</strong><span>不经过研究链的直跑任务：模型用量与最终回答。</span></div><div class="right"><button class="btn" onclick="loadRuns()">刷新</button></div></div>
         <div id="runs"></div>
         <div class="divider"></div>
         <div class="split-head"><div><span class="small">当前 run</span><div id="cur" class="mono small">—</div></div><div id="status"></div></div>
@@ -981,13 +1064,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
       <div class="stack">
         <section class="panel panel-pad" id="traceSection">
-          <div class="section-head"><span class="section-num">05</span><div class="section-title"><strong>执行轨迹</strong><span>LLM、工具、节点和运行事件。</span></div></div>
+          <div class="section-head"><span class="section-num">05</span><div class="section-title"><strong>执行轨迹</strong><span>过程细节默认收起在这里：LLM、工具、节点与运行事件。</span></div></div>
           <div id="plan" class="small"></div>
           <div id="trace" class="trace-list"><div class="empty"><b>暂无轨迹</b>选择一个 run 后加载。</div></div>
         </section>
 
         <section class="panel panel-pad" id="toolsPanel">
-          <div class="section-head"><span class="section-num">06</span><div class="section-title"><strong>工具与人工审批</strong><span>Tool activity / Human in the loop</span></div></div>
+          <div class="section-head"><span class="section-num">06</span><div class="section-title"><strong>工具与人工审批</strong><span>工具调用记录；需要你拍板的高风险调用在这里批准或拒绝。</span></div></div>
           <div id="tools"><div class="empty"><b>暂无工具调用</b></div></div>
           <div class="divider"></div>
           <div class="approval-box">
@@ -1000,12 +1083,30 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
           </div>
         </section>
 
-        <section class="panel panel-pad" id="evalSection">
-          <div class="section-head"><span class="section-num">07</span><div class="section-title"><strong>质量评测</strong><span>当前模式下的 benchmark / evaluation 概览。</span></div></div>
-          <div id="eval" class="evalbox">正在加载评测信息…</div>
-        </section>
       </div>
     </div>
+
+    <section class="panel panel-pad" id="statsSection" style="display:none">
+      <div class="section-head"><span class="section-num">08</span><div class="section-title"><strong>使用统计</strong><span>本地任务记录实时聚合：任务数与交付等级分布。</span></div><div class="right"><button class="btn" onclick="refreshStats()">刷新统计</button></div></div>
+      <div id="statsBody" class="statgrid"></div>
+      <p class="small" id="statsNote">口径：本地任务表 + 各任务交付等级；费用与人工改稿分钟由你在试用日志中记录（scripts/q4_trial.ps1）。</p>
+      <div class="divider"></div>
+      <div class="section-head"><span class="section-num">⚙</span><div class="section-title"><strong>配置诊断</strong><span>仅检查本地配置，不发请求、不展示密钥；修改 .env 后需重启服务。</span></div><div class="right"><button class="btn" onclick="loadConfig()">检查配置</button></div></div>
+      <div id="configDiag" class="cfg"><div class="row"><b>状态</b><span>点击「检查配置」查看结果。</span></div></div>
+      <div class="divider"></div>
+      <div class="section-head"><span class="section-num">🔒</span><div class="section-title"><strong>安全与数据边界</strong><span>说明真实模式下什么内容会离开本机。</span></div></div>
+      <div class="cfg">
+        <div class="row"><b>发送内容</b><span>真实模式下，任务文本、资料全文与工具结果会发送到项目在 .env 中配置的模型服务。</span></div>
+        <div class="row"><b>留在本机</b><span>来源全文、证据、产物、任务账本保存在 workspaces/；密钥不进入页面、日志或产物。</span></div>
+        <div class="row"><b>抓取边界</b><span>网页抓取仅 http(s)，默认拒绝私网 / 回环 / 链路本地地址，重定向逐跳复检。</span></div>
+        <div class="row"><b>费用口径</b><span>费用是本地参考估算，不是账单硬封顶；默认兜底 $0.15/任务、600 秒。</span></div>
+      </div>
+    </section>
+
+    <section class="panel panel-pad" id="evalSection" style="display:none">
+      <div class="section-head"><span class="section-num">07</span><div class="section-title"><strong>质量评测</strong><span>离线 benchmark 报告概览（开发/复验口径，不等于你的真实任务验收）。</span></div><div class="right"><button class="btn" onclick="loadEval()">刷新</button></div></div>
+      <div id="eval" class="evalbox">正在加载评测信息…</div>
+    </section>
   </div>
 </main>
 </div>
@@ -1015,6 +1116,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 const $=id=>document.getElementById(id);
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 let viewVersion=0,configVersion=0,pendingRequest=null,jobShown='',jobVersion=0,jobEvMap={},curJobId='';
+let jobsCache=[],jobRequest=null,pendingAsk=null,jobLibLoaded=false;
 
 function toast(message){
   const el=$('toast'); el.textContent=message; el.classList.add('show');
@@ -1046,7 +1148,24 @@ function badge(value){
   const [label,kind]=statusInfo(value); return node('span',label,'badge '+kind);
 }
 function shortId(v,n=14){v=String(v||'');return v.length>n?v.slice(0,n)+'…':v}
-function fmtTime(v){if(!v)return '—';try{return new Date(v).toLocaleString()}catch{return String(v)}}
+function fmtShort(v){const t=fmtTime(v);return t.length>10?t.slice(5):t}
+function fmtTime(v){
+  if(!v)return '—';
+  let d;try{d=(typeof v==='number')?new Date(v*1000):new Date(v)}catch{return String(v)}
+  if(!d||isNaN(d.getTime()))return String(v);
+  const p=n=>String(n).padStart(2,'0');
+  return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
+}
+function money(v){return (v===null||v===undefined||v==='')?'未知':'$'+Number(v).toFixed(4)}
+function kv(label,value,sub){
+  const box=node('div',null,'kv');box.append(node('span',label),node('strong',value===undefined||value===null||value===''?'—':String(value)));
+  if(sub)box.append(node('small',sub));return box;
+}
+function banner(id,text,kind){
+  const el=$(id);if(!el)return;
+  if(!text){el.className='banner hidden';el.textContent='';return}
+  el.className='banner'+(kind?' '+kind:'');el.textContent=text;
+}
 function setMetric(id,value,subId,sub){
   $(id).textContent=value??'—'; if(subId&&$(subId))$(subId).textContent=sub??'';
 }
@@ -1062,6 +1181,7 @@ function tdText(v,cls){return node('td',v??'',cls)}
 
 async function loadConfig(){
   const version=++configVersion,mode=$('mode').value;$('start').disabled=true;$('config').textContent='正在检查配置…';
+  renderConfigDiag(null);
   loadEval().catch(e=>$('eval').textContent=e.message);
   try{
     const d=await j('/api/config?mode='+encodeURIComponent(mode));if(version!==configVersion)return;
@@ -1072,57 +1192,140 @@ async function loadConfig(){
     }else{
       $('config').textContent=(d.errors||['配置不可用']).join('；');
     }
-  }catch(e){if(version===configVersion)$('config').textContent=e.message}
+    renderConfigDiag(d);
+  }catch(e){if(version===configVersion){$('config').textContent=e.message;renderConfigDiag({ready:false,errors:[e.message],mode})}}
+}
+function renderConfigDiag(d){
+  const host=$('configDiag');if(!host)return;
+  host.replaceChildren();
+  const row=(k,v)=>{const r=node('div',null,'row');r.append(node('b',k),node('span',v??'—'));host.append(r)};
+  if(d===null){row('状态','正在检查配置…');return}
+  row('模式',d.mode||'—');
+  row('模型',d.model||'—');
+  row('供应商',d.provider||'—');
+  row('API Key',d.key_configured===undefined?'未检查'
+      :(d.mode==='mock'?'Mock 模式不需要模型 Key'
+        :(d.key_configured?'已配置（不显示内容）':'未配置（真实模式不可用）')));
+  row('联网搜索',d.search_provider?('已配置：'+d.search_provider):'未配置（SEARCH_PROVIDER 为空，“允许联网研究”不会假装搜过）');
+  row('连接测试','未执行——静态检查不代表网络、认证或模型能力可用');
+  if(d.ready===false)row('错误',(d.errors||['配置不可用']).join('；'));
 }
 async function startRun(){
   const lines=id=>$(id).value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
   const payload={
     task:$('task').value.trim(),mode:$('mode').value,flow:$('flow').value,max_iterations:6,
     texts:$('pastetext').value.trim()?[$('pastetext').value]:[],files:lines('filepaths'),urls:lines('urls'),
+    allow_network:$('allowNetwork').checked,
     required_sections:lines('requireSections'),forbidden_claims:lines('forbidClaims'),key_facts:lines('keyFacts'),
     max_calls:Number($('maxcalls').value),max_output_tokens:Number($('maxtokens').value),
     max_seconds:Number($('maxseconds').value),max_cost:Number($('maxcost').value)
   };
+  const planOnly=$('planOnly').checked;
+  if(planOnly)payload.plan_only=true;
   if(!payload.task){toast('请先填写任务描述');return}
-  $('start').disabled=true; $('metricStatus').textContent='Starting';
+  $('start').disabled=true; $('metricStatus').textContent='Starting'; banner('startNote','正在提交任务…');
   try{
     const r=await j('/api/runs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-    if(r.job_id){toast('研究任务已创建');await loadJobs();showJob(r.job_id)}
-    else if(r.run_id){toast('Agent run 已启动');await loadRuns();showRun(r.run_id)}
-  }catch(e){toast(e.message)}
+    if(r.status==='planned'){renderPlan(r);toast('已生成执行方案（未运行）')}
+    else if(r.status==='waiting_input'){
+      banner('startNote','任务已保存为“待补充”：系统还缺一个无法合理默认的条件。\n'+(r.understanding&&r.understanding.questions||[]).join('\n'),'warn');
+      toast('任务待补充信息');await loadJobs();showJob(r.job_id);showView('myJobs');
+    }
+    else if(r.job_id){banner('startNote','任务已进入队列，可在“任务与成果”查看进度与交付。','ok');toast('任务已创建');await loadJobs();showJob(r.job_id);showView('myJobs')}
+    else if(r.run_id){banner('startNote','Agent 运行已启动，可在“运行观测”查看轨迹与最终回答。','ok');toast('Agent run 已启动');await loadRuns();showView('observe');showRun(r.run_id)}
+    else banner('startNote','提交完成，但没有返回任务 id。','warn');
+  }catch(e){banner('startNote',e.message,'danger');toast(e.message)}
   finally{$('start').disabled=false}
 }
+function renderPlan(r){
+  const plan=r.plan||{},subs=plan.subtasks||[],exp=plan.expected||{},budget=plan.budget||{};
+  const lines=[`执行方式：${plan.mode||'—'}`, `一句理由：${plan.reason||'（方案未附理由）'}`];
+  if(Object.keys(exp).length)lines.push(`预计用量：调用 ${exp.calls??'—'} 次 · 约 ${exp.cost_usd===undefined?'未知':'$'+exp.cost_usd} · ${exp.seconds??'—'} 秒`);
+  if(Object.keys(budget).length)lines.push(`预算上限：${budget.max_calls??'—'} 次 · $${budget.max_cost_usd??'—'} · ${budget.max_seconds??'—'} 秒`);
+  lines.push(`子任务：${subs.length} 个`);
+  subs.slice(0,12).forEach((t,i)=>lines.push(`  ${i+1}. [${t.id||'-'}] ${t.description||''}${t.parallel?'（可并行）':''}`));
+  lines.push('（“先看计划”只生成方案：不执行、不产生模型费用。取消勾选后再点“开始运行”才是真正执行。）');
+  banner('startNote',lines.join('\n'));
+}
+async function refreshAll(){
+  await Promise.all([loadJobs(),loadRuns()]);
+  loadConfig();
+  if(location.hash==='#statsDiag')renderStats();
+}
+async function refreshStats(){await loadJobs();renderStats()}
 
 async function loadJobs(){
   try{
-    const d=await j('/api/jobs'),jobs=d.jobs||[];
+    const d=await j('/api/jobs'),jobs=d.jobs||[];jobsCache=jobs;
     const active=jobs.filter(x=>['queued','running','waiting_input','waiting_human','cancel_requested','interrupted'].includes(x.status)).length;
     setMetric('metricJobs',jobs.length,'metricJobsSub',active?`${active} 个活跃任务`:'暂无活跃任务');
-    if(!jobs.length){$('jobtbl').replaceChildren(empty('暂无研究任务','从上方“开始研究”提交一个研究写作链。'));return}
+    if(!jobs.length){$('jobtbl').replaceChildren(empty('暂无研究任务','到“新建任务”提交一个目标，结果与依据会回到这里。'));return}
     const rows=jobs.slice(0,20).map(r=>{
-      const tr=document.createElement('tr');
-      const id=tdText(shortId(r.job_id,18),'mono');id.title=r.job_id;tr.append(id);
-      const state=document.createElement('td');state.append(badge(r.status));if(r.stage)state.append(node('div',r.stage,'small'));tr.append(state);
-      tr.append(tdText(r.kind||'research'));
+      const tr=document.createElement('tr');tr.style.cursor='pointer';
+      const id=tdText('…'+String(r.job_id||'').slice(-10),'mono nowrap');id.title=r.job_id;tr.append(id);
+      tr.append(tdText(r.task||'（无任务描述）','cell-main'));
+      const state=document.createElement('td');state.append(badge(r.status));
+      if(r.stage&&r.stage!==r.status&&!['finished','queued','waiting_input'].includes(r.stage))
+        state.append(node('div',r.stage,'small'));
+      tr.append(state);
       tr.append(tdText(r.message||r.error||'','cell-main'));
+      tr.append(tdText(fmtShort(r.created_at),'nowrap'));
       const action=document.createElement('td'),b=node('button','查看','btn');b.onclick=()=>showJob(r.job_id);action.append(b);tr.append(action);
+      tr.onclick=ev=>{if(ev.target.tagName!=='BUTTON')showJob(r.job_id)};
       return tr;
     });
-    $('jobtbl').replaceChildren(makeTable(['Job','状态 / 阶段','类型','消息',''],rows));
+    $('jobtbl').replaceChildren(makeTable(['任务 ID','目标','状态 / 阶段','消息 / 阶段说明','创建时间',''],rows));
   }catch(e){$('jobnote').textContent=e.message}
 }
 async function showJob(id){
-  const version=++jobVersion;curJobId=id;jobEvMap={};jobShown=id;
+  const version=++jobVersion;curJobId=id;jobEvMap={};jobShown=id;jobRequest=null;
+  jobLibLoaded=false;
+  $('jobhint').classList.add('hidden');$('jobdetail').classList.remove('hidden');
   $('curjob').textContent=id;$('jobstate').replaceChildren();$('pendingInput').textContent='';
+  $('jobgoal').textContent='';$('jobhead').replaceChildren();$('jobdeliver').replaceChildren();
+  $('jobasks').className='asks hidden';$('jobasks').replaceChildren();pendingAsk=null;
+  $('btnhtml').classList.add('hidden');$('btnexport').disabled=true;
   $('joblog').textContent='正在加载任务…';$('reportview').replaceChildren();$('evidenceview').replaceChildren();
   $('rtok').replaceChildren(empty('报告阅读区','正在等待交付产物。'));
+  $('libnote').textContent='任务就绪后加载来源与产物。';
+  $('srclist').replaceChildren();$('artlist').replaceChildren();
   $('docview').textContent='正在加载来源与产物…';
-  loadLibrary(id).catch(e=>$('libnote').textContent=e.message);
   pollJob(id,version);
+}
+/* 交付信息（总计划 3.1：方式、依据、花费、等级）——只读展示，不改变执行行为 */
+function renderJobHead(row,pl,jf,ledger){
+  const req=(()=>{try{return JSON.parse(row.request_json||'{}')}catch{return {}}})();
+  jobRequest=req;
+  const goal=req.task||(pl&&pl.goal)||'';
+  $('jobgoal').textContent=goal||'（无任务描述）';
+  const head=$('jobhead');head.replaceChildren();
+  if(req.mode)head.append(node('span',req.mode==='real'?'真实模型':'Mock 离线','badge '+(req.mode==='real'?'accent':'')));
+  if(req.flow)head.append(node('span',req.flow==='research'?'研究写作链':'通用 Agent','badge'));
+  if(req.delivery_kind&&req.delivery_kind!=='auto')head.append(node('span','交付：'+req.delivery_kind,'badge'));
+  if(req.allow_network)head.append(node('span','允许联网','badge info'));
+  if(req.orchestration&&req.orchestration!=='auto')head.append(node('span','方式：'+req.orchestration,'badge'));
+  if(req.revises_job)head.append(node('span','改稿自 '+shortId(req.revises_job,10),'badge'));
+  if(req.max_calls!==undefined)head.append(node('span',`上限 ${req.max_calls} 次调用 / $${req.max_cost??'—'} / ${req.max_seconds??'—'}s`,'badge'));
+  const box=$('jobdeliver');box.replaceChildren();
+  const level=pl&&pl.draft_level?pl.draft_level:(jf.status||row.status||'');
+  box.append(kv('交付等级',statusInfo(level)[0],level||''));
+  if(pl){
+    box.append(kv('引用 / 未解析',`${pl.total_citations||0} / ${pl.unresolved_citations||0}`,'引用可点击核对原文'));
+    box.append(kv('修订轮次',pl.revised_rounds||0));
+    if(pl.delivery_kind)box.append(kv('产物类型',pl.delivery_kind));
+  }
+  if(ledger){
+    box.append(kv('估算花费',(ledger.estimated_cost_usd===undefined||ledger.estimated_cost_usd===null)?'未知':money(ledger.estimated_cost_usd),(ledger.unknown_usage_calls?'含 '+ledger.unknown_usage_calls+' 次用量未知调用':'本地估算，非账单')));
+    box.append(kv('模型调用',ledger.call_count===undefined?'—':ledger.call_count,'输出 '+(ledger.output_tokens||0)+' Token'));
+  }
+  if(ledger&&ledger.elapsed_seconds!==undefined)box.append(kv('用时',Number(ledger.elapsed_seconds).toFixed(1)+'s'));
+  if(jf.model)box.append(kv('模型',jf.model));
+  const hc=pl&&pl.hard_checks||{};
+  if(hc.required_sections_total!==undefined)box.append(kv('硬约束',`章节 ${hc.required_section_hits}/${hc.required_sections_total}`,`禁语命中 ${hc.forbidden_hits} · 关键事实 ${hc.fact_hits}/${hc.fact_total}`));
 }
 function renderStages(stages){
   const host=$('jobProgress');host.replaceChildren();
-  if(!stages||!stages.length){host.append(empty('暂无阶段记录'));$('jobProgressBar').style.width='0%';return}
+  if(!stages||!stages.length){host.append(empty('暂无阶段记录'));$('jobProgressBar').style.width='0%';$('jobstagesum').textContent='过程阶段 · 暂无记录';return}
   let done=0;
   stages.forEach((s,i)=>{
     const st=String(s.status||'').toLowerCase(),cls=st.includes('fail')?'fail':(st.includes('run')?'running':(['ok','completed','success','accepted','done'].some(k=>st.includes(k))?'done':''));
@@ -1131,24 +1334,32 @@ function renderStages(stages){
     main.append(node('strong',s.stage||('阶段 '+(i+1))));main.append(node('span',s.message||s.status||''));row.append(dot,main,badge(s.status||''));host.append(row);
   });
   $('jobProgressBar').style.width=Math.round(done/stages.length*100)+'%';
+  $('jobstagesum').textContent=`过程阶段 · ${done}/${stages.length} 完成（默认收起，需要时展开）`;
 }
 async function pollJob(id,version){
   while(version===jobVersion&&id===curJobId){
     try{
       const d=await j('/api/jobs/'+encodeURIComponent(id)+'/progress');if(version!==jobVersion)return;
-      const row=d.job||{},pl=(d.pipeline||{}).result,jf=d.job_file||{},pending=d.pending_inputs||[];
+      const row=d.job||{},pl=(d.pipeline||{}).result,jf=d.job_file||{},pending=d.pending_inputs||[],ledger=d.ledger||null;
+      // 任务目录由执行器创建；目录就绪前不请求来源/产物，避免无意义 404
+      if(!jobLibLoaded&&!d.note){jobLibLoaded=true;loadLibrary(id).catch(e=>$('libnote').textContent=e.message)}
       $('metricStatus').textContent=statusInfo(row.status)[0];
       $('jobstate').replaceChildren(row.status?badge(row.status):node('span','等待状态'));
       renderStages(pl&&pl.stages||[]);
-      $('pendingInput').textContent=pending.some(x=>x.status==='pending')?'该任务需要补充输入，请根据任务提示完善资料后继续。':'';
+      renderJobHead(row,pl,jf,ledger);
+      const active=pending.find(x=>x.status==='pending')||null;
+      $('pendingInput').textContent=active?'该任务需要补充信息才能继续——不必重跑，补充后自动排队。':'';
+      renderAsk(active);
       const hc=pl&&pl.hard_checks||{};
       const lines=[];
       if(pl)lines.push(`分级: ${pl.draft_level||'-'} | 修订: ${pl.revised_rounds||0} | 引用: ${pl.total_citations||0} | 未解析: ${pl.unresolved_citations||0}`);
       if(hc.required_sections_total!==undefined)lines.push(`硬约束: 必需章节 ${hc.required_section_hits}/${hc.required_sections_total} | 禁语命中 ${hc.forbidden_hits} | 关键事实 ${hc.fact_hits}/${hc.fact_total}`);
       if(jf.error)lines.push('错误类型: '+jf.error);if(jf.message)lines.push(jf.message);
+      if(ledger)lines.push(`用量: 调用 ${ledger.call_count??'—'} 次 · 输出 ${ledger.output_tokens??'—'} Token · 估算 ${ledger.estimated_cost_usd===undefined?'未知':money(ledger.estimated_cost_usd)}${ledger.unknown_usage_calls?'（含 '+ledger.unknown_usage_calls+' 次未知用量）':''}`);
+      if(d.note)lines.push(d.note);
       $('joblog').textContent=lines.join('\n')||`状态: ${row.status||'未知'} / 阶段: ${row.stage||'—'}`;
-      const active=['running','queued','waiting_human','waiting_input','cancel_requested','interrupted'].includes(row.status);
-      $('btncancel').disabled=!active;
+      const running=['running','queued','waiting_human','waiting_input','cancel_requested','interrupted'].includes(row.status);
+      $('btncancel').disabled=!running;
       $('btnresume').disabled=!['failed','partial','cancelled','interrupted'].includes(row.status);
       if(pl&&pl.draft_level){
         $('btncancel').disabled=true;$('btnresume').disabled=true;$('btnexport').disabled=false;
@@ -1156,7 +1367,12 @@ async function pollJob(id,version){
       }
       $('btnexport').disabled=true;$('btnrevise').disabled=true;
       await sleep(700);
-    }catch(e){$('jobstate').replaceChildren(badge('error'));$('joblog').textContent=e.message;await sleep(1200)}
+    }catch(e){
+      // 刚提交的任务在 worker 建目录前还没有 job 视图：这不是失败，按"等待就绪"重试
+      $('jobstate').replaceChildren(node('span','等待任务就绪','badge'));
+      $('joblog').textContent='任务刚提交或目录未就绪，正在自动重试…（'+e.message+'）';
+      await sleep(1000);
+    }
   }
 }
 async function renderJobResults(id,pl){
@@ -1168,12 +1384,51 @@ async function renderJobResults(id,pl){
   if(reports.length){
     toolbar.append(node('span','版本','small'));
     reports.forEach(art=>{const b=node('button','v'+(art.version||'?'),'btn');b.title=art.artifact_id;b.onclick=()=>viewArtifact(id,art.artifact_id);toolbar.append(b)});
-    const dl=node('a','下载最新 Markdown','btn');dl.href='/api/jobs/'+encodeURIComponent(id)+'/artifacts/'+encodeURIComponent(reports[reports.length-1].artifact_id)+'/download';toolbar.append(dl);
-    const html=node('a','导出 HTML','btn');html.href='/api/jobs/'+encodeURIComponent(id)+'/export.html';toolbar.append(html);
+    toolbar.append(node('span','· 下载与导出见上方操作行','small'));
+    $('btnhtml').classList.remove('hidden');
     await viewArtifact(id,reports[reports.length-1].artifact_id);
   }
   const host=$('evidenceview');host.replaceChildren();
   ev.slice(0,80).forEach(x=>{const b=node('button',`${x.evidence_id} ${(x.fact||'').slice(0,22)}`,'btn');b.onclick=()=>showEvidence(x);host.append(b)});
+}
+/* 待补充输入（D9-04）：按待输入项显示问题，补充后直接回到队列，不重跑整个任务 */
+function renderAsk(active){
+  const host=$('jobasks');
+  if(!active){host.className='asks hidden';host.replaceChildren();pendingAsk=null;return}
+  if(pendingAsk&&pendingAsk.input_id===active.input_id&&host.childElementCount)return;
+  pendingAsk=active;host.className='asks';host.replaceChildren();
+  host.append(node('strong','需要你补充：'));
+  const ul=document.createElement('ul');
+  (active.questions||[]).forEach(q=>ul.append(node('li',q)));
+  host.append(ul);
+  const ta=document.createElement('textarea');ta.rows=3;ta.id='asktext';ta.placeholder='例如：比较对象是方案 A 与方案 B；或在此粘贴补充资料。';
+  host.append(ta);
+  const row=node('div',null,'inline-actions');
+  const ask=node('label',' ');ask.className='opt';
+  const cb=document.createElement('input');cb.type='checkbox';cb.id='askAppend';
+  ask.append(cb,node('span','把上面内容作为补充资料一起提交'));
+  const btn=node('button','提交补充并继续','btn btn-primary');btn.onclick=()=>submitInput(active.input_id);
+  row.append(btn,ask);host.append(row);
+  host.append(node('p','任务目标与预算保持不变，旧产物保留。',"small"));
+}
+async function submitInput(inputId){
+  const text=($('asktext')&&$('asktext').value||'').trim();
+  if(!text){toast('请先填写补充内容');return}
+  const base=jobRequest||{};
+  const answer=($('askAppend')&&$('askAppend').checked)
+    ?{texts:(Array.isArray(base.texts)?base.texts:[]).concat([text])}
+    :{task:(base.task||$('task').value.trim()||'')+'；补充条件：'+text};
+  try{
+    await j('/api/jobs/'+encodeURIComponent(curJobId)+'/input',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({answer})});
+    toast('补充已提交，任务重新排队');pendingAsk=null;
+    if($('jobasks'))$('jobasks').className='asks hidden';
+    await loadJobs();showJob(curJobId);
+  }catch(e){toast(e.message)}
+}
+function exportHtml(){
+  if(!curJobId)return false;
+  if($('btnhtml').classList.contains('hidden')){toast('当前任务还没有可导出的交付产物');return false}
+  location.href='/api/jobs/'+encodeURIComponent(curJobId)+'/export.html';return false;
 }
 function appendCitations(container,text){
   String(text||'').split(/(\[E-\d{3}\])/g).forEach(part=>{
@@ -1228,6 +1483,8 @@ async function loadLibrary(job){
       tr.style.cursor='pointer';tr.onclick=()=>showDoc('/api/jobs/'+encodeURIComponent(job)+'/artifacts/'+encodeURIComponent(art.artifact_id)+'/content');return tr;
     });$('artlist').replaceChildren(makeTable(['产物','版本','生产者','时间'],rows));
   }
+  if(String($('docview').textContent||'').indexOf('正在加载')===0)
+    $('docview').textContent='点上面的来源、产物，或报告正文里的引用编号，这里显示原文与定位。';
 }
 async function showDoc(url){try{$('docview').textContent=await textFetch(url)}catch(e){$('docview').textContent=e.message}}
 
@@ -1266,7 +1523,7 @@ function renderTrace(events){
 }
 function renderTools(tools){
   const host=$('tools');host.replaceChildren();if(!tools||!tools.length){host.append(empty('暂无工具调用'));return}
-  tools.forEach(x=>{const c=node('div',null,'tool-card');c.append(node('strong',x.name||'tool'));c.append(node('code',(x.result||'').slice(0,500)));if(x.latency!==undefined)c.append(node('span',`latency: ${x.latency}`,'small'));host.append(c)});
+  tools.forEach(x=>{const c=node('div',null,'tool-card');c.append(node('strong',x.name||'tool'));c.append(node('code',(x.result||'').slice(0,500)));if(typeof x.latency==='number')c.append(node('span',`耗时 ${x.latency}s`,'small'));host.append(c)});
 }
 async function poll(id,version){
   let after=0,url=`/api/runs/${encodeURIComponent(id)}`;
@@ -1304,16 +1561,18 @@ async function loadEval(){
 loadJobs();loadRuns();loadConfig();
 
 /* 视图路由：侧边栏每项对应独立功能视图，点谁显示谁 */
+/* 视图 = 用户工作流，不是内部面板清单（依据：总计划核心体验"一次输入目标…交付时告知
+   方式、依据、花费和等级"；过程细节默认收起；来源/产物属于任务详情，不独立成页） */
 const VIEW_GROUPS = {
-  newResearch: ["newResearch","metricsSection"],
-  jobsSection: ["jobsSection"],
-  sourcesSection: ["sourcesSection"],
-  runsSection: ["runsSection"],
-  traceSection: ["traceSection","toolsPanel"],
-  evalSection: ["evalSection"]
+  newTask:  ["newResearch"],                                            // 一次输入目标
+  myJobs:   ["metricsSection","jobsSection","sourcesSection"],          // 进度/等级/结果/引用对照/来源产物
+  observe:  ["runsSection","traceSection","toolsPanel"],                // 过程记录默认收起
+  statsDiag:["statsSection","evalSection"]                              // 配置诊断 / 统计 / 评测概览
 };
+const DEFAULT_VIEW = "newTask";
 function showView(id){
-  const show = VIEW_GROUPS[id] ? VIEW_GROUPS[id] : VIEW_GROUPS.newResearch;
+  if(!VIEW_GROUPS[id]) id = DEFAULT_VIEW;
+  const show = VIEW_GROUPS[id];
   Object.entries(VIEW_GROUPS).forEach(([v, secs])=>{
     secs.forEach(sec=>{
       const el=document.getElementById(sec);
@@ -1323,11 +1582,30 @@ function showView(id){
   document.querySelectorAll(".navitem").forEach(a=>{
     a.classList.toggle("active", a.getAttribute("href")==="#"+id);
   });
+  if (id === "statsDiag") { renderStats(); loadConfig(); }
   if (location.hash !== "#"+id) history.replaceState(null, "", "#"+id);
   window.scrollTo(0, 0);
 }
-window.addEventListener("hashchange", ()=>showView((location.hash||"#newResearch").slice(1)));
-showView((location.hash || "#newResearch").slice(1));
+function renderStats(){
+  const box = document.getElementById("statsBody");
+  if (!box) return;
+  const jobs = jobsCache || [];
+  const active = ["queued","running","waiting_input","waiting_human","cancel_requested","interrupted"];
+  const count = fn => jobs.filter(fn).length;
+  const finished = jobs.filter(j => !active.includes(j.status) && j.status !== "");
+  box.replaceChildren();
+  box.append(kv("任务总数", jobs.length, "本地任务表，最多显示最近 50 条"));
+  box.append(kv("进行中", count(j => active.includes(j.status))));
+  box.append(kv("已停止 / 失败", count(j => ["cancelled","failed"].includes(j.status))));
+  box.append(kv("已交付（有产物）", count(j => ["completed","partial"].includes(j.status)), "等级见各自任务详情"));
+  box.append(kv("最近一次更新", jobs.length ? fmtTime(jobs[0].updated_at || jobs[0].created_at) : "—"));
+  box.append(kv("等待人工", count(j => ["waiting_input","waiting_human"].includes(j.status)), "待补充信息 / 待审批"));
+  const note = document.getElementById("statsNote");
+  if (note) note.textContent = `口径：本地任务表实时聚合（当前 ${jobs.length} 条，其中已结束 ${finished.length} 条）；`
+    + "交付等级、费用与人工改稿分钟按任务详情和试用日志（scripts/q4_trial.ps1）逐条核对——这里不把测试批次算作你的真实使用。";
+}
+window.addEventListener("hashchange", ()=>showView((location.hash||("#"+DEFAULT_VIEW)).slice(1)));
+showView((location.hash || ("#"+DEFAULT_VIEW)).slice(1));
 </script>
 </body>
 </html>"""
