@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "待补数据与结论称‘待补问题指出/所列缺口’，但证据索引无此来源，属未标注来源。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-008、E-017、E-022、E-030、E-033为证据索引中未量化/未涉及的事实陈述，报告多标〔推断〕，标注不准。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-009已是证据事实‘因地制宜分类实施，不宜一刀切’，报告标〔推断〕且结论列待证推断，前后不一。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-027证据仅称仍面临人口车辆增长带来的压力，报告写‘压力也将随之加大’并标〔事实〕，略超证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-032、E-036用‘事实：资料陈述’标注，与全文〔事实〕/〔推断〕格式不统一，建议统一。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "‘政策文件仅倡导绿色低碳出行’与前文列出的综合交通、枢纽、充电桩等要求并列，易生矛盾，应限定为未量化效果。"
+  }
+ ]
+}

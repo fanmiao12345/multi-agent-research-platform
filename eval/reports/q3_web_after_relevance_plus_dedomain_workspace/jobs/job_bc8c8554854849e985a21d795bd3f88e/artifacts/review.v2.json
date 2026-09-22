@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "多处用〔未知〕标注（E-015、E-022及缺口段），未按提纲要求标为〔事实〕或〔推断〕。"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "称“证据未标明各条安全措施产品归属”不实：E-003/E-004属ToDesk，E-012等属向日葵，来源已标明。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-007仅指ToDesk未提远程医疗，报告以“有资料”泛化，未限定来源，可能过度外推。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“医生、患者、监管方”反对观点未见于E-015/E-022，原文仅称未列反对意见/争议，主体属外部推定。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-006为用户支持数3亿+，被归入“连接规模”结论，证据支持力度较弱。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "性能数据E-001/E-005/E-006与E-020来自不同厂商资料，合并称“上述数据”未区分来源，易误读为同一方案。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "医疗保健正面案例均来自厂商/客户案例，报告未提示来源偏向或独立验证缺口。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "成本对比、样本范围、地区数据等缺口断言无直接引文，宜说明系依据资料未覆盖而推定。"
+  }
+ ]
+}

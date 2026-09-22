@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-023）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "术语IPA与开放冲突两处称IPA为人工智能流程自动化，E-004只说融合形成IPA，未展开全称。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "开放冲突称另两份资料称IPA为国际音标，但E-017/E-018同源，不应计为两份，易夸大证据数量。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "待补缺口称缺非厂商来源定义，但证据未标明现有来源为厂商，此缺口判断缺依据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "边界线索称AI认知支持自主决策侧能力并标事实，E-003仅称AI处理不确定性，支持关系是推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "报告范围将E-001/E-002/E-005/E-006综合为聚焦边界问题标事实，证据未直接提边界，宜标推断。"
+  }
+ ]
+}

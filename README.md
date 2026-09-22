@@ -1,4 +1,4 @@
-# agent-mvp —— 个人 AI 智能体系统（Agent Harness）
+# 多 Agent 协作智能研究平台（Multi-Agent Research Platform）
 
 > 完整目标与唯一开发排期见 [开发总计划](docs/PROJECT_MASTER_PLAN.md)，当前逐项状态见 [实施清单](docs/IMPLEMENTATION_TRACKER.md)，代码基线与限制见 [执行状态](docs/EXECUTION_STATUS.md)，可用技能见 [技能目录](docs/SKILL_CATALOG.md)。研究写作是首个完整落地场景；旧版零依赖实现保留在 `legacy/`。
 

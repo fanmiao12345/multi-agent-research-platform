@@ -1,0 +1,126 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "教育场景直接证据缺失",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "Kling AI主页未涉及教育领域内容。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "该资料未提及生成式AI在教育场景的收益或风险。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "GPT Image 2资料全文未出现教育、教学、学生或教师内容。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "UNESCO资料未具体说明教育领域使用生成式AI的收益与风险。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "该资料未说明教育领域使用生成式AI的具体收益与风险。"
+          }
+        ]
+      },
+      {
+        "name": "UNESCO教育、AI治理与公共利益表述",
+        "points": [
+          {
+            "evidence_id": "E-011",
+            "statement": "UNESCO将借助新技术和人工智能学习列为社区影响案例。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "UNESCO称新兴技术应服务于公平、机会与包容。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "UNESCO称AI治理全球对话须反映所有国家而非仅技术先进国家。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "UNESCO与ITU作为联合联合国秘书处协调AI治理全球对话。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "UNESCO称AI、信息诚信、教育是教皇访问讨论的当代挑战。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "UNESCO称第4届AI伦理全球论坛强化全球伦理AI治理合作。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "教育部长呼吁人工智能时代仍须坚持教育作为公共利益。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI创意工具能力与低门槛",
+        "points": [
+          {
+            "evidence_id": "E-004",
+            "statement": "该资料主题为在线AI图像生成与编辑工具，定位创作工作室而非教育产品。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "该资料称没有设计或修图经验者也能用日常语言描述结果使用。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "由此可推断此类工具使用门槛较低，非专业使用者也可能上手。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "该资料强调可更高效制作商品图、营销素材、社交内容与设计提案。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "该资料列出创意圈、资产、Omni、生成、灵动画布等功能。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI输出风险提示",
+        "points": [
+          {
+            "evidence_id": "E-008",
+            "statement": "该资料提示AI结果发布前需完成事实、权利与质量检查。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "由此可推断生成式AI输出存在事实准确性与权利风险，但资料未展开。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "教育领域使用生成式AI有哪些收益？",
+        "missing": "教育场景实证研究或案例材料"
+      },
+      {
+        "question": "教育领域使用生成式AI有哪些风险？",
+        "missing": "教育场景风险分类与实证材料"
+      },
+      {
+        "question": "不同教育角色和阶段受到何种影响？",
+        "missing": "学生、教师、管理者的分角色数据"
+      },
+      {
+        "question": "UNESCO教育AI治理立场如何落到教学实践？",
+        "missing": "UNESCO具体教育AI政策、指南或项目材料"
+      },
+      {
+        "question": "生成式AI事实与权利风险在教育中如何表现？",
+        "missing": "教育场景下事实准确性与权利风险证据"
+      }
+    ],
+    "duplicates": []
+  }
+}

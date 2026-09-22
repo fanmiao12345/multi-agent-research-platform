@@ -1,0 +1,67 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-009）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-009）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001,E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001,E-009）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "给定材料无“待补问题清单”，首句依据表述不实，应改为仅依据证据索引与提纲。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "证据索引已逐条标注来源，“未按来源页面逐条标明”不准确，建议删改。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“核对主题及关键词包括…”无证据支持，属方法描述，建议标注为操作说明或删去。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-001仅证明未提供反对观点，不能支持未见批评报道/相关方材料；该句范围过宽。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论句“主要覆盖设备维护与企业运维场景”仅引E-004，E-004未提企业运维，应补引E-005/E-007或标推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“可补足方向”列举外部材料类型，未由证据支持，建议标明为检索建议而非资料事实。"
+  }
+ ]
+}

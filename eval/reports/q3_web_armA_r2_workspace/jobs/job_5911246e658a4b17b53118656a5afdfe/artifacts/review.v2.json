@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-010/E-012/E-014/E-015等Ollama主张未保留“资料称”限定却标〔事实〕，易误导。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-023原为“资料表明”的直接陈述，报告标〔推断〕，事实/推断标注不当。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-032、E-039是资料缺口事实，却标〔未知〕；建议改为缺口事实并说明。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "称Gitee向企业版/专业版/私有化部署“收费”无直接证据，仅由产品分层推断，应弱化。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "模式比较称社区未见付费收入线索，但E-002低价算力暗示可能付费，应注明未明示。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "提纲要求事实/推断标注，报告多处以〔未知〕替代，格式不统一。"
+  }
+ ]
+}

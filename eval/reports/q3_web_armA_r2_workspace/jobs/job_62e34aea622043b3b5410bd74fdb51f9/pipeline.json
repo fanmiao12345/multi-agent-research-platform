@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_62e34aea622043b3b5410bd74fdb51f9",
+  "goal": "2026年人工智能治理政策的主要争议",
+  "started_at": "2026-09-20T09:07:15",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 43 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T09:08:04"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:08:30"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T09:08:42"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料未提供2026年AI治理政策争议的事实依据，均为无关领域或明确缺口，无法归纳主要争议。",
+        "finished_at": "2026-09-20T09:08:48"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料未提供2026年AI治理政策争议的事实依据，均为无关领域或明确缺口，无法归纳主要争议。；缺失信息：2026年AI治理争议的政策文件、官方声明或权威报道、监管机构、企业、公民社会等争议参与方及各方主张、欧盟AI立法或治理在2026年的进展与分歧、中国、美国等主要司法辖区2026年AI治理争议、智能体、开源模型、AI支付合规争议的具体资料（可用证据 43 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

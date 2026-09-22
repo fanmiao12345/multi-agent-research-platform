@@ -1,0 +1,22 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "范围节称素材提示‘粘贴文本5’与《RPA是什么》实质相同，证据索引无此项，属资料外事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-015为证据直接陈述却标〔推断〕，与自定‘直接陈述标事实’规则不一致。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "边界判断称‘传统自动化（含RPA）’，E-018仅提传统自动化，未明确含RPA，宜标推断。"
+  }
+ ]
+}

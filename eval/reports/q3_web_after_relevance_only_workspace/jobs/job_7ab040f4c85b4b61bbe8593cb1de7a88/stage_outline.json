@@ -1,0 +1,131 @@
+{
+  "title": "机器人流程自动化与智能体的边界：基于给定证据的整理",
+  "sections": [
+    {
+      "heading": "范围与证据说明",
+      "purpose": "界定任务范围、证据来源与事实推断未知标注规则",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-009",
+        "E-011",
+        "E-015",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "RPA的定位与能力边界",
+      "purpose": "说明RPA侧重规则化重复操作及其适用边界",
+      "required_evidence": [
+        "E-001",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "AI认知能力与RPA融合",
+      "purpose": "梳理AI认知能力及RPA与AI融合形成的升级路径",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "智能体的自主决策与任务规划",
+      "purpose": "说明智能体自主决策、任务拆解与规划能力",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-021"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "跨系统操作与工具边界",
+      "purpose": "讨论智能体跨系统操作能力与工具决定的边界",
+      "required_evidence": [
+        "E-008",
+        "E-017",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "边界判断与选型准则",
+      "purpose": "给出在RPA、自动化脚本与智能体之间的选择准则",
+      "required_evidence": [
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-021",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "冲突与未决问题",
+      "purpose": "列出证据间冲突并保持开放不裁决",
+      "required_evidence": [
+        "E-001",
+        "E-003",
+        "E-004",
+        "E-008",
+        "E-017",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "缺口与验证需求",
+      "purpose": "汇总概念、量化、验证与来源元数据缺口",
+      "required_evidence": [
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-017",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "无交集资料处理说明",
+      "purpose": "处理与任务无交集资料并说明其不纳入分析",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-015",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与适用边界",
+      "purpose": "总结边界结论、适用条件与待验证事项",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-004",
+        "E-005",
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-021",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

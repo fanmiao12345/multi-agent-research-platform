@@ -1,0 +1,90 @@
+{
+  "title": "新能源汽车电池回收行业现状与监管：基于现有资料的线索与缺口",
+  "sections": [
+    {
+      "heading": "资料范围与可用性核验",
+      "purpose": "说明各来源是否涉及电池回收主题及其可用边界",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "论坛活动透露的行业动态",
+      "purpose": "整理动力电池回收论坛时间、地点、出席者与议题线索",
+      "required_evidence": [
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "回收项目与数据线索概览",
+      "purpose": "列出锂电池回收项目汇总及沧州项目等可查信息",
+      "required_evidence": [
+        "E-016",
+        "E-017",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "行业现状核心数据缺口",
+      "purpose": "指出现有资料缺少规模、回收量、企业格局等现状数据",
+      "required_evidence": [
+        "E-003",
+        "E-007",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "监管政策与法规缺口",
+      "purpose": "说明缺少工信部等部门正式政策原文与法规条款",
+      "required_evidence": [
+        "E-010",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "论坛信息代表性与待核事项",
+      "purpose": "评估论坛线索能否代表行业全貌及需补充的权威材料",
+      "required_evidence": [
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与后续查证建议",
+      "purpose": "归纳可确认事实、推断边界与需补充的官方信息",
+      "required_evidence": [
+        "E-003",
+        "E-007",
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-016",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

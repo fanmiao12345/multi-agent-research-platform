@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007,E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-002）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-003）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-004）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-005）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007,E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "结论将“快速诊断修复”仅归到[E-001]，但该点来自E-006，引用不支持该断言。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "范围称“缺乏监管材料”，E-014含等保三级安全合规，宜限定为医疗监管以免误导。"
+  }
+ ]
+}

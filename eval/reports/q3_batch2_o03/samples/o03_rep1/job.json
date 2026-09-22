@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_eb23232f81094533a1ea1296a8383ceb",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 去重合并报告：重复材料与统计口径核对\n## 合并结果\n合并重复材料后，保留唯一证据，同一统计只计一次。去重后证据集：E-001：本材料为合成验收数据【E-001】〔事实〕；E-002：40人中32人完成问卷，回收率80%；24名答卷者满意，满意率75%【E-002】〔事实〕；E-003：观察期工单平均处理时长从10小时降至8小时【E-003】〔事实〕；E-004：工单难度未控制【E-004】〔事实〕；E-005：未控制工单难度变化，处理时长变化不能单独归因于干预【E-005】〔推断〕。问卷回收率与满意率同属E-002【E-002】〔事实〕，同一统计只计一次，不拆为两份独立证据〔推断〕。E-004与E-005均指向工单难度未控制，涉及同一混杂点，合并核对后不重复计为两个独立解释单元〔推断〕。\n## 去重记录\n重复来源为粘贴文本2与src_010915e256实质相同，按同一份处理〔事实〕；该去重记录不新增独立E证据，去重后不另列E证据〔推断〕。\n## 统计口径\n问卷回收率80%与满意率75%同属E-002【E-002】〔事实〕；E-002覆盖40人中32人完成问卷、24名答卷者满意【E-002】〔事实〕；统计时作为同一证据单元，不得拆成两份独立证据【E-002】〔推断〕。\n## 事实与推断标注\n事实：本材料为合成验收数据【E-001】〔事实〕；40人中32人完成问卷，回收率80%，24名答卷者满意，满意率75%【E-002】〔事实〕；观察期工单平均处理时长从10小时降至8小时【E-003】〔事实〕；工单难度未控制【E-004】〔事实〕。推断：未控制工单难度变化，处理时长变化不能单独归因于干预【E-005】〔推断〕。未知：合成验收数据能否外推真实场景未知【E-001】〔未知〕；未答复8人的满意度未知【E-002】〔未知〕；工单难度分层、随机分配或相关协变量数据缺失，使效应解释受混杂限制【E-003】【E-004】【E-005】〔未知〕。\n## 缺口清单\n工单难度未控制：工单难度未控制【E-004】〔事实〕；未控制工单难度变化，处理时长变化不能单独归因于干预【E-005】〔推断〕；缺口为工单难度分层、随机分配或相关协变量数据缺失〔未知〕。外推限制：本材料为合成验收数据【E-001】〔事实〕；能否外推到真实场景未知，缺真实运行数据或数据生成与验收方案说明【E-001】〔未知〕。未答复满意度缺失：40人中32人完成问卷，未答复8人的满意度未知【E-002】〔未知〕，缺未答复者满意度数据与缺失原因记录〔未知〕。观察期平均处理时长从10小时降至8小时为统计值【E-003】〔事实〕，其解释受未控制难度限制【E-005】〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 2,
+    "usable": 1,
+    "statuses": {
+      "ok": 1,
+      "duplicate": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 5 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-16T13:13:58"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，3 个缺口",
+        "finished_at": "2026-09-16T13:14:09"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个章节",
+        "finished_at": "2026-09-16T13:14:34"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（886字）",
+        "finished_at": "2026-09-16T13:14:53"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 5,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-16T13:16:08"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-16T13:17:13"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-16T13:17:58"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 26,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

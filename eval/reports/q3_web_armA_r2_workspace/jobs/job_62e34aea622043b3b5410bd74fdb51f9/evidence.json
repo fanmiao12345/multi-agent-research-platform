@@ -1,0 +1,683 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_1e3798afd3",
+      "fact": "本资料为外交部网站欧盟概况页面，最近更新时间为2026年7月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年7月）",
+      "start": 743,
+      "end": 759,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 86,
+        "start": 743,
+        "end": 760
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_1e3798afd3",
+      "fact": "本资料介绍欧盟成员、人口、面积、GDP、主要机构、经济与对外关系等基本情况。",
+      "tag": "F",
+      "quote": "【成 员】27国：奥地利、比利时、保加利亚",
+      "start": 761,
+      "end": 782,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 87,
+        "start": 761,
+        "end": 878
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_1e3798afd3",
+      "fact": "本资料称欧盟以安全、竞争力和绿色发展为三大支柱推进各项政策。",
+      "tag": "F",
+      "quote": "以安全、竞争力和绿色发展为三大支柱不断推进各项政策",
+      "start": 2227,
+      "end": 2252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_1e3798afd3",
+      "fact": "本资料提到欧盟推动绿色和数字双转型，但未涉及人工智能治理政策。",
+      "tag": "F",
+      "quote": "推动绿色和数字双转型",
+      "start": 2175,
+      "end": 2185,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_1e3798afd3",
+      "fact": "本资料列举《外国补贴条例》《反胁迫工具》等经贸政策工具，未提及人工智能立法。",
+      "tag": "F",
+      "quote": "出台《外国补贴条例》、《反胁迫工具》等一系列经贸政策工具箱",
+      "start": 2262,
+      "end": 2291,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_1e3798afd3",
+      "fact": "本资料载明2026年上半年欧盟轮值主席国为塞浦路斯，下半年为爱尔兰。",
+      "tag": "F",
+      "quote": "塞浦路斯（2026年上半年）、爱尔兰（2026年下半年）",
+      "start": 1224,
+      "end": 1252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 100,
+        "start": 1217,
+        "end": 1253
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_1e3798afd3",
+      "fact": "本资料全篇为欧盟基本情况介绍，就2026年人工智能治理政策主要争议未提供任何信息，属资料缺口。",
+      "tag": "F",
+      "quote": "首页 > 国家和组织 > 国际和地区组织 > 欧盟 >欧盟概况",
+      "start": 643,
+      "end": 674,
+      "locator": {
+        "heading": "",
+        "paragraph": 75,
+        "start": 643,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_a48d351dee",
+      "fact": "本资料是欧盟官方门户页面，提供欧盟机构、政策与新闻导航。",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_a48d351dee",
+      "fact": "本资料全文未出现任何关于人工智能治理或AI政策的论述。",
+      "tag": "F",
+      "quote": "EU priorities",
+      "start": 834,
+      "end": 847,
+      "locator": {
+        "heading": "",
+        "paragraph": 60,
+        "start": 834,
+        "end": 848
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_a48d351dee",
+      "fact": "本资料2026年新闻涉及儿童上网、风暴灾后资金和海关改革。",
+      "tag": "F",
+      "quote": "Reform of EU customs code and e-commerce rules gets green light",
+      "start": 2617,
+      "end": 2680,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 110,
+        "start": 2617,
+        "end": 2681
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_a48d351dee",
+      "fact": "本资料称欧盟提出KIDS法案，拟将儿童使用社交媒体年龄延至13岁。",
+      "tag": "F",
+      "quote": "delaying access to social media until the age of 13",
+      "start": 2089,
+      "end": 2140,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_a48d351dee",
+      "fact": "本资料所载新闻日期为2026年9月16日和17日。",
+      "tag": "F",
+      "quote": "17 September 2026",
+      "start": 1783,
+      "end": 1800,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 99,
+        "start": 1783,
+        "end": 1801
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_a48d351dee",
+      "fact": "本资料提供24种欧盟官方语言的新闻机器翻译版本。",
+      "tag": "F",
+      "quote": "available in the 24 EU official languages via machine translation",
+      "start": 1701,
+      "end": 1766,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 97,
+        "start": 1679,
+        "end": 1768
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_a48d351dee",
+      "fact": "据此无法回答2026年人工智能治理政策的主要争议。",
+      "tag": "I",
+      "quote": "European Union priorities 2024-2029",
+      "start": 3325,
+      "end": 3360,
+      "locator": {
+        "heading": "## Learn more",
+        "paragraph": 118,
+        "start": 3325,
+        "end": 3361
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_b9b707f6da",
+      "fact": "本资料为美国国家概况，全文未涉及人工智能治理政策内容",
+      "tag": "F",
+      "quote": "美国国家概况",
+      "start": 742,
+      "end": 748,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_b9b707f6da",
+      "fact": "本资料最近更新时间为2026年6月",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年6月）",
+      "start": 750,
+      "end": 766,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 86,
+        "start": 750,
+        "end": 767
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_af0891ad69",
+      "fact": "本资料为开源中国与Gitee平台介绍页，未涉及人工智能治理政策。",
+      "tag": "F",
+      "quote": "Gitee 为开源中国旗下，国内第一大研发效能平台&全球第二大开源代码托管平台",
+      "start": 128,
+      "end": 167,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_af0891ad69",
+      "fact": "本资料唯一提及2026年处为开源软件应用创新大赛报名通知。",
+      "tag": "F",
+      "quote": "【大赛通知】开源中国「2026上海开源软件应用创新大赛」火热报名中，百万奖池等你的项目",
+      "start": 77,
+      "end": 120,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 77,
+        "end": 121
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_af0891ad69",
+      "fact": "本资料列举了终端AI代码助手、MCP服务器等AI相关开源项目。",
+      "tag": "F",
+      "quote": "默思 MothX (原 VibeCoding) 是一个基于终端的超高 Token 缓存命中率、极致省钱的终端 AI 代码助手",
+      "start": 630,
+      "end": 692,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 40,
+        "start": 630,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_af0891ad69",
+      "fact": "本资料称相关MCP服务器可让AI助手管理仓库、Issue与Pull Request。",
+      "tag": "F",
+      "quote": "允许 AI 助手管理仓库、Issue、Pull Request等。",
+      "start": 903,
+      "end": 936,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 46,
+        "start": 838,
+        "end": 937
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_af0891ad69",
+      "fact": "本资料未出现AI治理政策、监管争议或各国立法的任何内容。",
+      "tag": "F",
+      "quote": "开源 企业版 高校版 私有云 模力方舟 AI 队友",
+      "start": 43,
+      "end": 68,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 43,
+        "end": 69
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_af0891ad69",
+      "fact": "依据本资料无法提取2026年人工智能治理政策主要争议的事实依据。",
+      "tag": "I",
+      "quote": "开源中国",
+      "start": 83,
+      "end": 87,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 77,
+        "end": 121
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_da6a5628ea",
+      "fact": "本资料为开源社在GitHub的组织页面，介绍该社区组织",
+      "tag": "F",
+      "quote": "开源社（KAIYUANSHE®）成立于2014年，是由志愿贡献于开源事业的个人成员",
+      "start": 2035,
+      "end": 2076,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_da6a5628ea",
+      "fact": "开源社成立于2014年，秉持厂商中立、公益、非营利理念",
+      "tag": "F",
+      "quote": "厂商中立、公益、非营利",
+      "start": 2101,
+      "end": 2112,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_da6a5628ea",
+      "fact": "开源社使命含开源治理、国际接轨、社区发展、项目孵化",
+      "tag": "F",
+      "quote": "开源治理、国际接轨、社区发展、项目孵化",
+      "start": 2153,
+      "end": 2172,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_da6a5628ea",
+      "fact": "开源社设有仓库《中国人工智能开源生态蓝皮书2026》",
+      "tag": "F",
+      "quote": "China Artificial Intelligence Open-Source Ecosystem Blue Book 2026",
+      "start": 6366,
+      "end": 6432,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 157,
+        "start": 6366,
+        "end": 6433
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_da6a5628ea",
+      "fact": "开源社设有LocalAIStack仓库，用于构建本地AI工作站",
+      "tag": "F",
+      "quote": "LocalAIStack is an open, modular software stack for building",
+      "start": 7103,
+      "end": 7163,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 172,
+        "start": 7103,
+        "end": 7202
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_da6a5628ea",
+      "fact": "开源社是全球开源许可证认证组织OSI在中国的首个成员",
+      "tag": "F",
+      "quote": "全球开源许可证认证组织 OSI 在中国的首个成员",
+      "start": 5029,
+      "end": 5053,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 121,
+        "start": 4967,
+        "end": 5117
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_da6a5628ea",
+      "fact": "本资料未涉及2026年人工智能治理政策的争议，无法提供相关证据",
+      "tag": "U",
+      "quote": "China Artificial Intelligence Open-Source Ecosystem Blue Book 2026",
+      "start": 6366,
+      "end": 6432,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 157,
+        "start": 6366,
+        "end": 6433
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_c617ec3ea8",
+      "fact": "本资料为阿里千问产品介绍，未涉及2026年AI治理政策争议",
+      "tag": "F",
+      "quote": "阿里千问完成重大战略升级，正式推进Agentic AI（智能体AI）战略",
+      "start": 65,
+      "end": 101,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_c617ec3ea8",
+      "fact": "本资料未出现任何政府、监管机构或政策文件的名称与内容",
+      "tag": "U",
+      "quote": "千问网页版入口",
+      "start": 22,
+      "end": 29,
+      "locator": {
+        "heading": "# 千问",
+        "paragraph": 1,
+        "start": 22,
+        "end": 30
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_c617ec3ea8",
+      "fact": "本资料称千问于2026年6月全面开放第三方Agent与Skill接入",
+      "tag": "F",
+      "quote": "于2026年6月全面开放第三方Agent与Skill接入",
+      "start": 337,
+      "end": 365,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_c617ec3ea8",
+      "fact": "本资料称千问模型家族采用宽松开源协议，完整权重与27B版本将开源",
+      "tag": "F",
+      "quote": "千问模型家族采用宽松开源协议，Qwen3.8完整模型权重及轻量化27B版本即将对外开源",
+      "start": 745,
+      "end": 788,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_c617ec3ea8",
+      "fact": "本资料称以开源开放模式打破海外AI标准垄断，未给出治理规则争议",
+      "tag": "F",
+      "quote": "以开源开放、产业共赢的模式，打破海外AI标准垄断",
+      "start": 1840,
+      "end": 1864,
+      "locator": {
+        "heading": "## 行业意义：重构交互逻辑，引领全球办事AI浪潮",
+        "paragraph": 7,
+        "start": 1581,
+        "end": 1891
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_c617ec3ea8",
+      "fact": "本资料提及千问支持对话内AI支付闭环，未讨论相关合规争议",
+      "tag": "F",
+      "quote": "一句话即可完成餐饮下单、优惠自动核销及对话内AI支付闭环",
+      "start": 930,
+      "end": 958,
+      "locator": {
+        "heading": "## 生态与功能：全场景深度打通，海量功能一键办事",
+        "paragraph": 5,
+        "start": 857,
+        "end": 1218
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_c617ec3ea8",
+      "fact": "本资料提及已发布Qwen-Robot系列具身大模型，未涉及其监管争议",
+      "tag": "F",
+      "quote": "已发布Qwen-Robot系列具身大模型及AI眼镜等落地成果",
+      "start": 2191,
+      "end": 2221,
+      "locator": {
+        "heading": "## 现存挑战与未来展望：深耕场景体验，拓宽智能边界",
+        "paragraph": 8,
+        "start": 1920,
+        "end": 2249
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_c617ec3ea8",
+      "fact": "智能体自主行动与支付闭环或引监管问题，但本资料未提及",
+      "tag": "I",
+      "quote": "让用户从提出需求到完成任务全程无需跳转应用",
+      "start": 279,
+      "end": 300,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_7411980ad8",
+      "fact": "本资料是AIGC工具导航站，按用途分类收录免费AI工具集合。",
+      "tag": "F",
+      "quote": "AIGC 工具导航 汇聚全网最全的 免费AI 工具集合",
+      "start": 1216,
+      "end": 1243,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 147,
+        "start": 1216,
+        "end": 1338
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_7411980ad8",
+      "fact": "本资料分类涵盖AI写作、AI绘画、AI视频、AI办公、AI编程等工具。",
+      "tag": "F",
+      "quote": "分类包括 AI写作 、 AI绘画 、 AI视频 、 AI办公 、 AI数字人",
+      "start": 2628,
+      "end": 2666,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-040",
+      "source_id": "src_7411980ad8",
+      "fact": "本资料页脚列出「算法备案」等少数与AI治理相关的条目。",
+      "tag": "F",
+      "quote": "算法备案",
+      "start": 2835,
+      "end": 2839,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 189,
+        "start": 2835,
+        "end": 2840
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-041",
+      "source_id": "src_7411980ad8",
+      "fact": "本资料主要内容为免费AIGC课程与工具推荐，含GPT进阶、AI绘画等培训。",
+      "tag": "F",
+      "quote": "AIGC教程涵盖了GPT进阶教程、AI绘画教程",
+      "start": 1354,
+      "end": 1377,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 149,
+        "start": 1354,
+        "end": 1425
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-042",
+      "source_id": "src_7411980ad8",
+      "fact": "本资料版权年份标为2023至2026年，正文未讨论2026年AI治理政策争议。",
+      "tag": "I",
+      "quote": "Copyright ©2023-2026 AIGC工具导航",
+      "start": 2920,
+      "end": 2949,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 201,
+        "start": 2920,
+        "end": 3004
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-043",
+      "source_id": "src_7411980ad8",
+      "fact": "本资料未给出任何人工智能治理政策的争议议题、参与方或文件名称。",
+      "tag": "U",
+      "quote": "免责声明",
+      "start": 2883,
+      "end": 2887,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 197,
+        "start": 2883,
+        "end": 2888
+      },
+      "note": ""
+    }
+  ]
+}

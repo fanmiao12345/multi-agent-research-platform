@@ -1,0 +1,986 @@
+{
+  "source_id": "src_fa75c7ca34",
+  "kind": "paste",
+  "display": "粘贴文本 6",
+  "original_address": "paste:6",
+  "title": "IPA Chart",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 3252,
+  "content_hash": "8a1b3908595c5e976415bdf9e21aa9e0ee7ae69026ec120f76dfabbc6c31a940",
+  "normalized_hash": "ce7d97fd76e1015da7569477483557d1d7aa7e3d421600d01d4ec88a26ac8442",
+  "captured_at": "2026-09-20T10:31:19",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_fa75c7ca34.md",
+  "encoding": "utf-8",
+  "segment_count": 136,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 10,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 11,
+      "end": 25,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 26,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 30,
+      "end": 38,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 39,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 46,
+      "end": 76,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 77,
+      "end": 85,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 7,
+      "start": 97,
+      "end": 137,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 8,
+      "start": 138,
+      "end": 145,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 9,
+      "start": 146,
+      "end": 215,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 10,
+      "start": 216,
+      "end": 219,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 11,
+      "start": 220,
+      "end": 225,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 12,
+      "start": 226,
+      "end": 228,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 13,
+      "start": 229,
+      "end": 233,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 14,
+      "start": 234,
+      "end": 237,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 15,
+      "start": 238,
+      "end": 243,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 16,
+      "start": 244,
+      "end": 246,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 17,
+      "start": 247,
+      "end": 253,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 18,
+      "start": 254,
+      "end": 256,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 19,
+      "start": 257,
+      "end": 261,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 20,
+      "start": 262,
+      "end": 265,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 21,
+      "start": 266,
+      "end": 270,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 22,
+      "start": 271,
+      "end": 274,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 23,
+      "start": 275,
+      "end": 281,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 24,
+      "start": 282,
+      "end": 284,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 25,
+      "start": 285,
+      "end": 289,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 26,
+      "start": 290,
+      "end": 293,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 27,
+      "start": 294,
+      "end": 299,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 28,
+      "start": 300,
+      "end": 302,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 29,
+      "start": 303,
+      "end": 307,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 30,
+      "start": 308,
+      "end": 310,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 31,
+      "start": 311,
+      "end": 316,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 32,
+      "start": 317,
+      "end": 319,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 33,
+      "start": 320,
+      "end": 324,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 34,
+      "start": 325,
+      "end": 328,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 35,
+      "start": 329,
+      "end": 334,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 36,
+      "start": 335,
+      "end": 338,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 37,
+      "start": 339,
+      "end": 344,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 38,
+      "start": 345,
+      "end": 348,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 39,
+      "start": 349,
+      "end": 354,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 40,
+      "start": 355,
+      "end": 358,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 41,
+      "start": 359,
+      "end": 364,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 42,
+      "start": 365,
+      "end": 368,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 43,
+      "start": 369,
+      "end": 372,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 44,
+      "start": 373,
+      "end": 376,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 45,
+      "start": 377,
+      "end": 382,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 46,
+      "start": 383,
+      "end": 386,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 47,
+      "start": 387,
+      "end": 395,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 48,
+      "start": 396,
+      "end": 399,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 49,
+      "start": 400,
+      "end": 407,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 50,
+      "start": 408,
+      "end": 410,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 51,
+      "start": 411,
+      "end": 417,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 52,
+      "start": 418,
+      "end": 420,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 53,
+      "start": 421,
+      "end": 425,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 54,
+      "start": 426,
+      "end": 428,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 55,
+      "start": 429,
+      "end": 435,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 56,
+      "start": 436,
+      "end": 438,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 57,
+      "start": 439,
+      "end": 445,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 58,
+      "start": 446,
+      "end": 448,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 59,
+      "start": 449,
+      "end": 453,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 60,
+      "start": 454,
+      "end": 456,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 61,
+      "start": 457,
+      "end": 461,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 62,
+      "start": 462,
+      "end": 464,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 63,
+      "start": 465,
+      "end": 469,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 64,
+      "start": 470,
+      "end": 472,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 65,
+      "start": 473,
+      "end": 480,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 66,
+      "start": 481,
+      "end": 483,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 67,
+      "start": 484,
+      "end": 489,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 68,
+      "start": 490,
+      "end": 492,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 69,
+      "start": 493,
+      "end": 498,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 70,
+      "start": 499,
+      "end": 501,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 71,
+      "start": 502,
+      "end": 506,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 72,
+      "start": 507,
+      "end": 509,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 73,
+      "start": 510,
+      "end": 515,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 74,
+      "start": 516,
+      "end": 518,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 75,
+      "start": 519,
+      "end": 524,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 76,
+      "start": 525,
+      "end": 527,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 77,
+      "start": 528,
+      "end": 533,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 78,
+      "start": 534,
+      "end": 536,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 79,
+      "start": 537,
+      "end": 541,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 80,
+      "start": 542,
+      "end": 544,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 81,
+      "start": 545,
+      "end": 552,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 82,
+      "start": 553,
+      "end": 555,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 83,
+      "start": 556,
+      "end": 560,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 84,
+      "start": 561,
+      "end": 563,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 85,
+      "start": 564,
+      "end": 570,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 86,
+      "start": 571,
+      "end": 573,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 87,
+      "start": 574,
+      "end": 578,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 88,
+      "start": 579,
+      "end": 581,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 89,
+      "start": 582,
+      "end": 586,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 90,
+      "start": 587,
+      "end": 589,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 91,
+      "start": 590,
+      "end": 595,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 92,
+      "start": 596,
+      "end": 598,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 93,
+      "start": 599,
+      "end": 604,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 94,
+      "start": 605,
+      "end": 607,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 95,
+      "start": 608,
+      "end": 613,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 96,
+      "start": 614,
+      "end": 616,
+      "page": null
+    },
+    {
+      "heading": "# 交互式IPA表",
+      "paragraph": 97,
+      "start": 617,
+      "end": 622,
+      "page": null
+    },
+    {
+      "heading": "## 交互式IPA表",
+      "paragraph": 98,
+      "start": 635,
+      "end": 665,
+      "page": null
+    },
+    {
+      "heading": "## 交互式IPA表",
+      "paragraph": 99,
+      "start": 666,
+      "end": 772,
+      "page": null
+    },
+    {
+      "heading": "## 交互式IPA表",
+      "paragraph": 100,
+      "start": 773,
+      "end": 790,
+      "page": null
+    },
+    {
+      "heading": "## 交互式IPA表",
+      "paragraph": 101,
+      "start": 791,
+      "end": 802,
+      "page": null
+    },
+    {
+      "heading": "## 📚 如何使用此IPA表",
+      "paragraph": 102,
+      "start": 819,
+      "end": 826,
+      "page": null
+    },
+    {
+      "heading": "### 点击聆听",
+      "paragraph": 103,
+      "start": 837,
+      "end": 868,
+      "page": null
+    },
+    {
+      "heading": "### 点击聆听",
+      "paragraph": 104,
+      "start": 869,
+      "end": 876,
+      "page": null
+    },
+    {
+      "heading": "### 探索详情",
+      "paragraph": 105,
+      "start": 887,
+      "end": 917,
+      "page": null
+    },
+    {
+      "heading": "### 探索详情",
+      "paragraph": 106,
+      "start": 918,
+      "end": 925,
+      "page": null
+    },
+    {
+      "heading": "### 用示例练习",
+      "paragraph": 107,
+      "start": 937,
+      "end": 971,
+      "page": null
+    },
+    {
+      "heading": "### 用示例练习",
+      "paragraph": 108,
+      "start": 972,
+      "end": 979,
+      "page": null
+    },
+    {
+      "heading": "### 按类别浏览",
+      "paragraph": 109,
+      "start": 991,
+      "end": 1029,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 110,
+      "start": 1041,
+      "end": 1055,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 111,
+      "start": 1056,
+      "end": 1110,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 112,
+      "start": 1111,
+      "end": 1123,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 113,
+      "start": 1124,
+      "end": 1179,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 114,
+      "start": 1180,
+      "end": 1196,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 115,
+      "start": 1197,
+      "end": 1252,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 116,
+      "start": 1253,
+      "end": 1272,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 117,
+      "start": 1273,
+      "end": 1331,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 118,
+      "start": 1332,
+      "end": 1343,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 119,
+      "start": 1344,
+      "end": 1402,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 120,
+      "start": 1403,
+      "end": 1413,
+      "page": null
+    },
+    {
+      "heading": "## ❓ 常见问题",
+      "paragraph": 121,
+      "start": 1414,
+      "end": 1460,
+      "page": null
+    },
+    {
+      "heading": "### 快速链接",
+      "paragraph": 122,
+      "start": 1471,
+      "end": 1474,
+      "page": null
+    },
+    {
+      "heading": "### 快速链接",
+      "paragraph": 123,
+      "start": 1475,
+      "end": 1478,
+      "page": null
+    },
+    {
+      "heading": "### 快速链接",
+      "paragraph": 124,
+      "start": 1479,
+      "end": 1482,
+      "page": null
+    },
+    {
+      "heading": "### 快速链接",
+      "paragraph": 125,
+      "start": 1483,
+      "end": 1486,
+      "page": null
+    },
+    {
+      "heading": "### 声音类别",
+      "paragraph": 126,
+      "start": 1497,
+      "end": 1505,
+      "page": null
+    },
+    {
+      "heading": "### 声音类别",
+      "paragraph": 127,
+      "start": 1506,
+      "end": 1514,
+      "page": null
+    },
+    {
+      "heading": "### 声音类别",
+      "paragraph": 128,
+      "start": 1515,
+      "end": 1523,
+      "page": null
+    },
+    {
+      "heading": "### 声音类别",
+      "paragraph": 129,
+      "start": 1524,
+      "end": 1533,
+      "page": null
+    },
+    {
+      "heading": "### 声音类别",
+      "paragraph": 130,
+      "start": 1534,
+      "end": 1546,
+      "page": null
+    },
+    {
+      "heading": "### 社交媒体",
+      "paragraph": 131,
+      "start": 1557,
+      "end": 1566,
+      "page": null
+    },
+    {
+      "heading": "### 社交媒体",
+      "paragraph": 132,
+      "start": 1567,
+      "end": 1574,
+      "page": null
+    },
+    {
+      "heading": "### 社交媒体",
+      "paragraph": 133,
+      "start": 1575,
+      "end": 1577,
+      "page": null
+    },
+    {
+      "heading": "### 社交媒体",
+      "paragraph": 134,
+      "start": 1578,
+      "end": 1586,
+      "page": null
+    },
+    {
+      "heading": "### 获取应用",
+      "paragraph": 135,
+      "start": 1597,
+      "end": 1617,
+      "page": null
+    }
+  ],
+  "final_url": "",
+  "http_status": null,
+  "content_type": "",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T10:31:19",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

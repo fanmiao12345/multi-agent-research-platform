@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_01b5f94ffb",
+      "fact": "来源标注本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_01b5f94ffb",
+      "fact": "方案甲每账号每月20元。",
+      "tag": "F",
+      "quote": "方案甲每账号每月20元",
+      "start": 11,
+      "end": 22,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_01b5f94ffb",
+      "fact": "方案甲可按月支付，最低10个账号。",
+      "tag": "F",
+      "quote": "可按月支付，最低10个账号。",
+      "start": 23,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_01b5f94ffb",
+      "fact": "方案甲支持Markdown导出。",
+      "tag": "F",
+      "quote": "支持Markdown导出。",
+      "start": 37,
+      "end": 50,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_01b5f94ffb",
+      "fact": "页面未说明数据保存地区和删除周期。",
+      "tag": "F",
+      "quote": "页面未说明数据保存地区和删除周期。",
+      "start": 50,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_01b5f94ffb",
+      "fact": "来源全文仅含方案甲，未提供方案乙信息。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。方案甲每账号每月20元；可按月支付，最低10个账号。支持Markdown导出。页面未说明数据保存地区和删除周期。",
+      "start": 0,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_01b5f94ffb",
+      "fact": "建议补充询问数据保存地区、删除周期和方案乙隐私字段。",
+      "tag": "I",
+      "quote": "页面未说明数据保存地区和删除周期。",
+      "start": 50,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_e8d26e51e7",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_e8d26e51e7",
+      "fact": "方案乙定价为每账号每月15元，按年预付，最低50个账号。",
+      "tag": "F",
+      "quote": "方案乙每账号每月15元，按年预付，最低50个账号。",
+      "start": 11,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_e8d26e51e7",
+      "fact": "方案乙支持TXT导出，Markdown导出尚未提供。",
+      "tag": "F",
+      "quote": "支持TXT导出，Markdown导出尚未提供。",
+      "start": 36,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_e8d26e51e7",
+      "fact": "供应商称数据存储在本地地区。",
+      "tag": "F",
+      "quote": "供应商称数据存储在本地地区",
+      "start": 59,
+      "end": 72,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_e8d26e51e7",
+      "fact": "没有独立审计报告。",
+      "tag": "F",
+      "quote": "没有独立审计报告。",
+      "start": 73,
+      "end": 82,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 82
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,1329 @@
+{
+  "source_id": "src_4b6075e191",
+  "kind": "url",
+  "display": "分布式系统详解：核心概念、架构演进、典型特征与学习路线 | JavaGuide",
+  "original_address": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+  "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线 | JavaGuide",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 22846,
+  "content_hash": "7a341aa8b09a92a99a0d5e2f12555a866b2e0a820fe25fac652d276fe0f303ff",
+  "normalized_hash": "407858970037a9bb28825a4ddbf14a24447985cd5c4d1ab6f2f8ec8cc9528e10",
+  "captured_at": "2026-09-20T11:21:08",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_4b6075e191.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 185,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 8,
+      "end": 18,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 19,
+      "end": 24,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 25,
+      "end": 31,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 32,
+      "end": 39,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 40,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 46,
+      "end": 51,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 52,
+      "end": 57,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 58,
+      "end": 63,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 64,
+      "end": 69,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 70,
+      "end": 75,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 76,
+      "end": 81,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 82,
+      "end": 87,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 88,
+      "end": 94,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 95,
+      "end": 100,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 101,
+      "end": 106,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 107,
+      "end": 119,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 120,
+      "end": 125,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 126,
+      "end": 135,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 136,
+      "end": 141,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 142,
+      "end": 146,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 147,
+      "end": 152,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 153,
+      "end": 158,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 159,
+      "end": 164,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 165,
+      "end": 169,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 170,
+      "end": 180,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 181,
+      "end": 189,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 190,
+      "end": 200,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 201,
+      "end": 211,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 212,
+      "end": 221,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 222,
+      "end": 228,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 229,
+      "end": 241,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 242,
+      "end": 268,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 269,
+      "end": 275,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 276,
+      "end": 288,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 289,
+      "end": 301,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 302,
+      "end": 307,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 308,
+      "end": 317,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 318,
+      "end": 331,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 332,
+      "end": 338,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 339,
+      "end": 351,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 352,
+      "end": 360,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 361,
+      "end": 374,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 375,
+      "end": 379,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 380,
+      "end": 390,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 391,
+      "end": 395,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 396,
+      "end": 400,
+      "page": null
+    },
+    {
+      "heading": "# 分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "paragraph": 47,
+      "start": 432,
+      "end": 469,
+      "page": null
+    },
+    {
+      "heading": "# 分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "paragraph": 48,
+      "start": 470,
+      "end": 525,
+      "page": null
+    },
+    {
+      "heading": "# 分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "paragraph": 49,
+      "start": 526,
+      "end": 663,
+      "page": null
+    },
+    {
+      "heading": "# 分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "paragraph": 50,
+      "start": 664,
+      "end": 732,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 51,
+      "start": 747,
+      "end": 774,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 52,
+      "start": 775,
+      "end": 823,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 53,
+      "start": 824,
+      "end": 882,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 54,
+      "start": 883,
+      "end": 1032,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 55,
+      "start": 1033,
+      "end": 1043,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 56,
+      "start": 1044,
+      "end": 1166,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 57,
+      "start": 1167,
+      "end": 1265,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 58,
+      "start": 1266,
+      "end": 1375,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 59,
+      "start": 1376,
+      "end": 1394,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 60,
+      "start": 1395,
+      "end": 1422,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 61,
+      "start": 1423,
+      "end": 1448,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 62,
+      "start": 1449,
+      "end": 1475,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 63,
+      "start": 1476,
+      "end": 1502,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 64,
+      "start": 1503,
+      "end": 1531,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 65,
+      "start": 1532,
+      "end": 1551,
+      "page": null
+    },
+    {
+      "heading": "## 什么是分布式系统？",
+      "paragraph": 66,
+      "start": 1552,
+      "end": 1584,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 67,
+      "start": 1601,
+      "end": 1703,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 68,
+      "start": 1704,
+      "end": 1726,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 69,
+      "start": 1727,
+      "end": 1821,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 70,
+      "start": 1822,
+      "end": 2010,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 71,
+      "start": 2011,
+      "end": 2122,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 72,
+      "start": 2123,
+      "end": 2141,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 73,
+      "start": 2142,
+      "end": 2173,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 74,
+      "start": 2174,
+      "end": 2208,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 75,
+      "start": 2209,
+      "end": 2239,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 76,
+      "start": 2240,
+      "end": 2352,
+      "page": null
+    },
+    {
+      "heading": "## 为什么需要分布式系统？",
+      "paragraph": 77,
+      "start": 2353,
+      "end": 2419,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 78,
+      "start": 2436,
+      "end": 2503,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 79,
+      "start": 2504,
+      "end": 2605,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 80,
+      "start": 2606,
+      "end": 2700,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 81,
+      "start": 2701,
+      "end": 2775,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 82,
+      "start": 2776,
+      "end": 2790,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 83,
+      "start": 2791,
+      "end": 2808,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 84,
+      "start": 2809,
+      "end": 2828,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 85,
+      "start": 2829,
+      "end": 2851,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 86,
+      "start": 2852,
+      "end": 2869,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 87,
+      "start": 2870,
+      "end": 2901,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 88,
+      "start": 2902,
+      "end": 2987,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 89,
+      "start": 2988,
+      "end": 2997,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 90,
+      "start": 2998,
+      "end": 3105,
+      "page": null
+    },
+    {
+      "heading": "## 从单体电商到分布式电商",
+      "paragraph": 91,
+      "start": 3106,
+      "end": 3184,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统有哪些典型特征？",
+      "paragraph": 92,
+      "start": 3203,
+      "end": 3234,
+      "page": null
+    },
+    {
+      "heading": "### 多节点协作",
+      "paragraph": 93,
+      "start": 3246,
+      "end": 3325,
+      "page": null
+    },
+    {
+      "heading": "### 多节点协作",
+      "paragraph": 94,
+      "start": 3326,
+      "end": 3382,
+      "page": null
+    },
+    {
+      "heading": "### 节点并发执行，没有瞬时全局视图",
+      "paragraph": 95,
+      "start": 3404,
+      "end": 3461,
+      "page": null
+    },
+    {
+      "heading": "### 节点并发执行，没有瞬时全局视图",
+      "paragraph": 96,
+      "start": 3462,
+      "end": 3584,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 97,
+      "start": 3595,
+      "end": 3648,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 98,
+      "start": 3649,
+      "end": 3665,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 99,
+      "start": 3666,
+      "end": 3677,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 100,
+      "start": 3678,
+      "end": 3697,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 101,
+      "start": 3698,
+      "end": 3720,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 102,
+      "start": 3721,
+      "end": 3740,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 103,
+      "start": 3741,
+      "end": 3763,
+      "page": null
+    },
+    {
+      "heading": "### 网络通信",
+      "paragraph": 104,
+      "start": 3764,
+      "end": 3818,
+      "page": null
+    },
+    {
+      "heading": "### 局部故障",
+      "paragraph": 105,
+      "start": 3829,
+      "end": 3929,
+      "page": null
+    },
+    {
+      "heading": "### 局部故障",
+      "paragraph": 106,
+      "start": 3930,
+      "end": 4016,
+      "page": null
+    },
+    {
+      "heading": "### 数据复制和数据分片",
+      "paragraph": 107,
+      "start": 4032,
+      "end": 4058,
+      "page": null
+    },
+    {
+      "heading": "### 数据复制和数据分片",
+      "paragraph": 108,
+      "start": 4059,
+      "end": 4136,
+      "page": null
+    },
+    {
+      "heading": "### 数据复制和数据分片",
+      "paragraph": 109,
+      "start": 4137,
+      "end": 4296,
+      "page": null
+    },
+    {
+      "heading": "### 没有完美同步的全局时钟",
+      "paragraph": 110,
+      "start": 4314,
+      "end": 4388,
+      "page": null
+    },
+    {
+      "heading": "### 没有完美同步的全局时钟",
+      "paragraph": 111,
+      "start": 4389,
+      "end": 4495,
+      "page": null
+    },
+    {
+      "heading": "### 没有完美同步的全局时钟",
+      "paragraph": 112,
+      "start": 4496,
+      "end": 4590,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 113,
+      "start": 4608,
+      "end": 4640,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 114,
+      "start": 4641,
+      "end": 4655,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 115,
+      "start": 4656,
+      "end": 4704,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 116,
+      "start": 4705,
+      "end": 4760,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 117,
+      "start": 4761,
+      "end": 4814,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 118,
+      "start": 4815,
+      "end": 4860,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 119,
+      "start": 4861,
+      "end": 4904,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 120,
+      "start": 4905,
+      "end": 4948,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 121,
+      "start": 4949,
+      "end": 4996,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 122,
+      "start": 4997,
+      "end": 5128,
+      "page": null
+    },
+    {
+      "heading": "## 常见的分布式系统有哪些？",
+      "paragraph": 123,
+      "start": 5129,
+      "end": 5182,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统、集群和微服务有什么区别？",
+      "paragraph": 124,
+      "start": 5206,
+      "end": 5229,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统、集群和微服务有什么区别？",
+      "paragraph": 125,
+      "start": 5230,
+      "end": 5324,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统、集群和微服务有什么区别？",
+      "paragraph": 126,
+      "start": 5325,
+      "end": 5416,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统、集群和微服务有什么区别？",
+      "paragraph": 127,
+      "start": 5417,
+      "end": 5555,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统、集群和微服务有什么区别？",
+      "paragraph": 128,
+      "start": 5556,
+      "end": 5660,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 129,
+      "start": 5676,
+      "end": 5745,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 130,
+      "start": 5746,
+      "end": 5863,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 131,
+      "start": 5864,
+      "end": 5915,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 132,
+      "start": 5916,
+      "end": 5932,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 133,
+      "start": 5933,
+      "end": 5945,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 134,
+      "start": 5946,
+      "end": 5968,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 135,
+      "start": 5969,
+      "end": 5994,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 136,
+      "start": 5995,
+      "end": 6091,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 137,
+      "start": 6092,
+      "end": 6242,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 138,
+      "start": 6243,
+      "end": 6360,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 139,
+      "start": 6361,
+      "end": 6520,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统难在哪里？",
+      "paragraph": 140,
+      "start": 6521,
+      "end": 6616,
+      "page": null
+    },
+    {
+      "heading": "## 业务型分布式系统常见的基础能力",
+      "paragraph": 141,
+      "start": 6637,
+      "end": 6729,
+      "page": null
+    },
+    {
+      "heading": "## 业务型分布式系统常见的基础能力",
+      "paragraph": 142,
+      "start": 6730,
+      "end": 6798,
+      "page": null
+    },
+    {
+      "heading": "## 业务型分布式系统常见的基础能力",
+      "paragraph": 143,
+      "start": 6799,
+      "end": 6873,
+      "page": null
+    },
+    {
+      "heading": "## 业务型分布式系统常见的基础能力",
+      "paragraph": 144,
+      "start": 6874,
+      "end": 6951,
+      "page": null
+    },
+    {
+      "heading": "## 业务型分布式系统常见的基础能力",
+      "paragraph": 145,
+      "start": 6952,
+      "end": 7016,
+      "page": null
+    },
+    {
+      "heading": "## 业务型分布式系统常见的基础能力",
+      "paragraph": 146,
+      "start": 7017,
+      "end": 7096,
+      "page": null
+    },
+    {
+      "heading": "## 业务型分布式系统常见的基础能力",
+      "paragraph": 147,
+      "start": 7097,
+      "end": 7192,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 148,
+      "start": 7207,
+      "end": 7243,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 149,
+      "start": 7244,
+      "end": 7315,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 150,
+      "start": 7316,
+      "end": 7396,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 151,
+      "start": 7397,
+      "end": 7488,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 152,
+      "start": 7489,
+      "end": 7614,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 153,
+      "start": 7615,
+      "end": 7742,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 154,
+      "start": 7743,
+      "end": 7864,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 155,
+      "start": 7865,
+      "end": 7893,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 156,
+      "start": 7894,
+      "end": 7909,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 157,
+      "start": 7910,
+      "end": 7926,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 158,
+      "start": 7927,
+      "end": 7949,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 159,
+      "start": 7950,
+      "end": 7966,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 160,
+      "start": 7967,
+      "end": 7994,
+      "page": null
+    },
+    {
+      "heading": "## 分布式系统怎么学？",
+      "paragraph": 161,
+      "start": 7995,
+      "end": 8034,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 162,
+      "start": 8044,
+      "end": 8063,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 163,
+      "start": 8064,
+      "end": 8083,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 164,
+      "start": 8084,
+      "end": 8100,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 165,
+      "start": 8101,
+      "end": 8145,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 166,
+      "start": 8146,
+      "end": 8176,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 167,
+      "start": 8177,
+      "end": 8242,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 168,
+      "start": 8243,
+      "end": 8285,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 169,
+      "start": 8286,
+      "end": 8320,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 170,
+      "start": 8321,
+      "end": 8346,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 171,
+      "start": 8347,
+      "end": 8387,
+      "page": null
+    },
+    {
+      "heading": "## 参考资料",
+      "paragraph": 172,
+      "start": 8388,
+      "end": 8401,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 173,
+      "start": 8411,
+      "end": 8474,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 174,
+      "start": 8475,
+      "end": 8554,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 175,
+      "start": 8555,
+      "end": 8635,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 176,
+      "start": 8636,
+      "end": 8641,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 177,
+      "start": 8642,
+      "end": 8664,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 178,
+      "start": 8665,
+      "end": 8686,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 179,
+      "start": 8687,
+      "end": 8691,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 180,
+      "start": 8692,
+      "end": 8702,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 181,
+      "start": 8703,
+      "end": 8707,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 182,
+      "start": 8708,
+      "end": 8718,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 183,
+      "start": 8719,
+      "end": 8738,
+      "page": null
+    },
+    {
+      "heading": "## 写在最后",
+      "paragraph": 184,
+      "start": 8739,
+      "end": 8761,
+      "page": null
+    }
+  ],
+  "final_url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:21:08",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

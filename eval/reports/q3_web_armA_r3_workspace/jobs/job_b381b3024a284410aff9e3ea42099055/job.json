@@ -1,0 +1,527 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_b381b3024a284410aff9e3ea42099055",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 7,
+    "usable": 6,
+    "statuses": {
+      "ok": 6,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 27 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-20T10:47:45"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:48:00"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T10:48:09"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料没有任何直接讨论2026年人工智能治理政策争议的内容，仅有欧盟战略、开源社区和无关条目，无法支撑争议梳理。",
+        "finished_at": "2026-09-20T10:48:15"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料没有任何直接讨论2026年人工智能治理政策争议的内容，仅有欧盟战略、开源社区和无关条目，无法支撑争议梳理。；缺失信息：直接讨论2026年AI治理争议的政策文件、报道或研究、2026年各主要国家/地区在AI治理上的立场文件与谈判记录、2026年AI安全、开源、版权、算力等具体议题的案例、立法草案与行业评论、欧盟AI法案实施、修订或相关争议的一手材料、2026中国人工智能开源生态蓝皮书全文、目录或相关解读材料（可用证据 27 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+      "https://european-union.europa.eu/index_en",
+      "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+      "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+      "https://gitee.com/oschina",
+      "https://github.com/kaiyuanshe",
+      "https://zhidao.baidu.com/question/1796020278610567627.html"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟人工智能法案 通用模型 合规争议",
+        "rank": 5,
+        "title": "欧盟概况 - 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+        "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟人工智能法案 通用模型 合规争议",
+        "rank": 2,
+        "title": "Your gateway to the EU, News, Highlights | European Union",
+        "url": "https://european-union.europa.eu/index_en",
+        "snippet": "3 天之前 · Discover how the EU functions, its principles, priorities; find out about its history and member states; learn about its legal …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 人工智能 联邦 州 立法冲突",
+        "rank": 5,
+        "title": "国家概况_中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+        "snippet": "2025年，美国前五大货物贸易伙伴为墨西哥、加拿大、中国、德国、日本。 美国前五大货物和服务出口市场为加拿大、墨西哥、英国 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 人工智能 联邦 州 立法冲突",
+        "rank": 3,
+        "title": "中文 (中国) - United States Department of State",
+        "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+        "snippet": "6 天之前 · An official website of the United States Government Here's how you know",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 安全监管 争议",
+        "rank": 2,
+        "title": "开源中国 - 开源中国 - Gitee",
+        "url": "https://gitee.com/oschina",
+        "snippet": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个，是国内首屈一指的开源软件技术交流平 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 安全监管 争议",
+        "rank": 4,
+        "title": "开源社 · GitHub",
+        "url": "https://github.com/kaiyuanshe",
+        "snippet": "Founded in 2014, KAIYUANSHE® (Open Source Society) is a volunteer-driven organization composed of individuals dedicated to …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "人工智能 训练数据 版权 诉讼",
+        "rank": 5,
+        "title": "“人工”组成一个字怎么读？_百度知道",
+        "url": "https://zhidao.baidu.com/question/1796020278610567627.html",
+        "snippet": "2018年4月17日 · “人工”组成一个字怎么读？ “人在上，工在下”是“仝”读作：tóng仝 tóng ㄊㄨㄥˊ1. 同\"同\"。 2. 姓氏。 举例：1.关仝【 …",
+        "published_date": "2018-04-17",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟人工智能法案 通用模型 合规争议",
+        "urls": [
+          "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+          "https://european-union.europa.eu/index_en"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "欧盟人工智能法案 通用模型 合规争议",
+            "rank": 5,
+            "title": "欧盟概况 - 中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+            "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "欧盟人工智能法案 通用模型 合规争议",
+            "rank": 2,
+            "title": "Your gateway to the EU, News, Highlights | European Union",
+            "url": "https://european-union.europa.eu/index_en",
+            "snippet": "3 天之前 · Discover how the EU functions, its principles, priorities; find out about its history and member states; learn about its legal …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "欧盟概况 - 中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+            "relevance": 0.077,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Your gateway to the EU, News, Highlights | European Union",
+            "url": "https://european-union.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "欧洲联盟（欧洲经济、政治共同体）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%AC%A7%E6%B4%B2%E8%81%94%E7%9B%9F/786749",
+            "relevance": 0.038,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "European Commission, official website - European Commission",
+            "url": "https://commission.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "EU countries - European Union",
+            "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.246,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 人工智能 联邦 州 立法冲突",
+        "urls": [
+          "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+          "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "美国 人工智能 联邦 州 立法冲突",
+            "rank": 5,
+            "title": "国家概况_中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+            "snippet": "2025年，美国前五大货物贸易伙伴为墨西哥、加拿大、中国、德国、日本。 美国前五大货物和服务出口市场为加拿大、墨西哥、英国 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "美国 人工智能 联邦 州 立法冲突",
+            "rank": 3,
+            "title": "中文 (中国) - United States Department of State",
+            "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+            "snippet": "6 天之前 · An official website of the United States Government Here's how you know",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "国家概况_中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+            "relevance": 0.056,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中文 (中国) - United States Department of State",
+            "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "美国（美国）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD/14804533",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "美国历史（美利坚合众国的发展历史）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E5%8E%86%E5%8F%B2/283785",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "美国（美利坚合众国）_百度百科",
+            "url": "https://img.goworkla.cn/college/5c0dd511c6234718d80405ad/files/5c74b7cfc6237e05bc89c209/b6fb024e8623438b95adea0d1d02bd64.htm",
+            "relevance": 0.111,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.272,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 安全监管 争议",
+        "urls": [
+          "https://gitee.com/oschina",
+          "https://github.com/kaiyuanshe"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 安全监管 争议",
+            "rank": 2,
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "snippet": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个，是国内首屈一指的开源软件技术交流平 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 安全监管 争议",
+            "rank": 4,
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "snippet": "Founded in 2014, KAIYUANSHE® (Open Source Society) is a volunteer-driven organization composed of individuals dedicated to …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "GitHub - GitHubDaily/GitHubDaily: 坚持分享 GitHub 上高质量、有 …",
+            "url": "https://github.com/GitHubDaily/GitHubDaily",
+            "relevance": 0.062,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "什么是开源？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/27501070",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "开源系统_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E7%B3%BB%E7%BB%9F/9332396",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.214,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "人工智能 训练数据 版权 诉讼",
+        "urls": [
+          "https://zhidao.baidu.com/question/1796020278610567627.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "人工智能 训练数据 版权 诉讼",
+            "rank": 5,
+            "title": "“人工”组成一个字怎么读？_百度知道",
+            "url": "https://zhidao.baidu.com/question/1796020278610567627.html",
+            "snippet": "2018年4月17日 · “人工”组成一个字怎么读？ “人在上，工在下”是“仝”读作：tóng仝 tóng ㄊㄨㄥˊ1. 同\"同\"。 2. 姓氏。 举例：1.关仝【 …",
+            "published_date": "2018-04-17",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "“人工”组成一个字怎么读？_百度知道",
+            "url": "https://zhidao.baidu.com/question/1796020278610567627.html",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "人工（汉语词汇）_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5/4377695",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "人工：仝，不读gong，跟“全”差一笔，你知道它正确的读音吗？",
+            "url": "https://www.toutiao.com/article/7345448737164083753/",
+            "relevance": 0.125,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "人工的意思_人工的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-c21a24e92",
+            "relevance": 0.125,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "人工（人工）_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5/22840788",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.219,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（2026年人工智能治理政策的主要争议）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 16.093,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

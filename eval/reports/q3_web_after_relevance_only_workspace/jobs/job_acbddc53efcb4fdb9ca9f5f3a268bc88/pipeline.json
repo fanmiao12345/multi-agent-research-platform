@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_acbddc53efcb4fdb9ca9f5f3a268bc88",
+  "goal": "生成式人工智能在软件测试中的应用趋势",
+  "started_at": "2026-09-18T13:39:22",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 14 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:39:44"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:39:51"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T13:39:57"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅涉及AI视频生成工具与AI工具导航分类，均明确未提及软件测试，无法支撑该主题的任何章节。",
+        "finished_at": "2026-09-18T13:39:59"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅涉及AI视频生成工具与AI工具导航分类，均明确未提及软件测试，无法支撑该主题的任何章节。；缺失信息：软件测试相关案例或工具说明、应用趋势数据、行业报告或时间序列、生成式AI测试工具分类与产品清单、对测试效率或质量影响的实验、指标或用户反馈、直接讨论生成式AI与软件测试的资料（可用证据 14 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

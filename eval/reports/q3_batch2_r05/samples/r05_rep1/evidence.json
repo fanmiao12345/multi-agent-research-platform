@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_a215533f7e",
+      "fact": "该材料为合成验收数据",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_a215533f7e",
+      "fact": "规则v1自2026年7月1日起生效",
+      "tag": "F",
+      "quote": "规则v1于2026年7月1日起生效",
+      "start": 11,
+      "end": 28,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_a215533f7e",
+      "fact": "规则v1允许所有试点人员每周远程办公2天",
+      "tag": "F",
+      "quote": "允许所有试点人员每周远程办公2天。",
+      "start": 29,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_a215533f7e",
+      "fact": "资料未载废止信息，规则v1可推断至2026年9月2日仍适用",
+      "tag": "I",
+      "quote": "规则v1于2026年7月1日起生效",
+      "start": 11,
+      "end": 28,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_a215533f7e",
+      "fact": "资料未单独规定客服组的适用规则",
+      "tag": "U",
+      "quote": "允许所有试点人员每周远程办公2天。",
+      "start": 29,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_a215533f7e",
+      "fact": "资料未说明客服组与其他组适用规则有何差异",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_a215533f7e",
+      "fact": "资料未说明旧材料为何仍需保留",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_7402fa77ea",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_7402fa77ea",
+      "fact": "规则v2于2026年9月1日起生效，替代v1。",
+      "tag": "F",
+      "quote": "规则v2于2026年9月1日起生效，替代v1；",
+      "start": 11,
+      "end": 34,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_7402fa77ea",
+      "fact": "规则v2适用客服组，每周远程办公上限1天。",
+      "tag": "F",
+      "quote": "适用客服组，每周远程办公上限1天。",
+      "start": 34,
+      "end": 51,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_7402fa77ea",
+      "fact": "其他组沿用v1。",
+      "tag": "F",
+      "quote": "其他组沿用v1。",
+      "start": 51,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_7402fa77ea",
+      "fact": "截至2026年9月2日，v2已生效并替代v1。",
+      "tag": "I",
+      "quote": "规则v2于2026年9月1日起生效，替代v1；",
+      "start": 11,
+      "end": 34,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_7402fa77ea",
+      "fact": "因其他组仍沿用v1，旧v1材料对非客服组仍适用，故需保留。",
+      "tag": "I",
+      "quote": "其他组沿用v1。",
+      "start": 51,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 59
+      },
+      "note": ""
+    }
+  ]
+}

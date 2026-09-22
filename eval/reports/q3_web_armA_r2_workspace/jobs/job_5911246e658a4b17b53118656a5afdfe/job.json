@@ -1,0 +1,500 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_5911246e658a4b17b53118656a5afdfe",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 开源大模型生态的商业模式：社区、平台与订阅服务\n\n## 范围与问题界定\n本报告仅依据给定资料，界定开源大模型生态中可讨论的商业模式类型。资料中：Atom-7B与Atom-7B-Chat已完全开源并支持商用[E-001]〔事实〕；Ollama相关资料称可用开源模型配合编码代理，花费更少并保持数据私有[E-009]〔事实〕；Gitee为开源中国旗下，是全球第二大开源代码托管平台[E-017]〔事实〕；开源社成立于2014年，由志愿贡献于开源事业的个人成员组成[E-025]〔事实〕；另有一份资料是3D数字资产交易与创作者社区平台，无开源大模型内容[E-033]〔事实〕。本报告标注口径：〔事实〕指资料直接陈述，或资料明确显示的内容范围；〔推断〕指基于资料的分析推断；〔未知〕指资料未提供、有待补充的数据。可讨论的模式类型为：开源与免费服务构建生态、订阅与云用量服务、平台产品分层与企业服务、非营利赞助支持〔推断〕。各类型的定价与收入明细普遍缺失〔未知〕。\n\n## 开源大模型社区的开源与免费服务\nAtom-7B与Atom-7B-Chat已完全开源并支持商用[E-001]〔事实〕。该社区提供低于市场价格的算力资源，用于训练与推理[E-002]〔事实〕；为成员提供专属在线推理服务[E-003]〔事实〕；提供一键在线微调服务[E-004]〔事实〕；开放覆盖多个领域和行业的训练数据资源[E-005]〔事实〕；免费提供应用推广展示位[E-006]〔事实〕；并于2024年3月8日开放免费API，含Atom-1B、7B、13B[E-007]〔事实〕。据此推断，该社区以完全开源、免费API、低价算力与免费推广位组合构建开发者生态〔推断〕；其中低价算力是否实际收费，资料未明示〔未知〕。\n\n## 社区外部支持与成本覆盖缺口\n资料显示，社区感谢原子回声AtomEcho团队提供技术和资源支持[E-008]〔事实〕，说明其运行获得外部技术支持〔推断〕。但免费API、低价算力与免费推广位的成本结构、补贴来源与可持续性数据均未出现〔未知〕。\n\n## Ollama的本地免费模式\n该资料称，可用开源模型配合编码代理，花费更少并保持数据私有[E-009]〔事实〕；称已有超过900万开发者使用[E-010]〔事实〕；宣传最新开源模型性能可对标最好闭源模型且成本远低[E-011]〔事实〕；称本地模型始终免费[E-012]〔事实〕；并称可先免费起步，需要时再升级或增加用量[E-014]〔事实〕。以上均为该资料的表述或宣传口径〔事实〕，不构成独立验证；本地免费模式的成本如何覆盖，资料未提供依据〔未知〕。\n\n## Ollama订阅与云模型服务\n该资料称，Pro订阅为每月20美元，包含60美元用量额度[E-013]〔事实〕；可先免费起步，需要时再升级或增加用量[E-014]〔事实〕；云模型仅托管在美国、欧洲与新加坡，并提示不被追踪或训练[E-015]〔事实〕；强调定价可预测，无隐藏限制或不清晰定价[E-016]〔事实〕。据此推断，其收入线索为以免费本地使用获客、以Pro订阅与云用量变现〔推断〕；超量计费规则与各云模型价格明细未见〔未知〕。\n\n## Gitee平台定位与产品分层\nGitee为开源中国旗下，是全球第二大开源代码托管平台[E-017]〔事实〕。其主要产品为社区版、企业版、专业版、高校版、旗舰版[E-018]〔事实〕。资料表明开源平台设有企业版、专业版及私有化部署服务[E-023]〔事实〕。据此推断，其商业化路径可能由社区版聚集开发者，再面向组织客户提供企业版、专业版与私有化部署服务〔推断〕；但资料并未直接证明上述产品实际收费〔未知〕，不宜据此断言收费安排。\n\n## Gitee企业服务与生态扩展\nGitee企业版和专业版共服务30万家企业[E-021]〔事实〕；服务1200家中大型私有化部署企业[E-022]〔事实〕。另有资料显示MothX支持多种LLM提供商，包括DeepSeek[E-024]〔事实〕；但该资料未说明MothX与Gitee存在关联〔未知〕。据此推断，Gitee在企业服务侧已具备可观客户规模，而生态工具扩展与平台的关联性尚待证实〔推断〕；其企业服务收入与定价未见〔未知〕。\n\n## 开源社的非营利与中立治理\n开源社成立于2014年，由志愿贡献于开源事业的个人成员组成[E-025]〔事实〕；维持厂商中立、公益、非营利的理念[E-026]〔事实〕；是纯社区驱动、中立开放组织，与高校、企业、政府合作[E-027]〔事实〕；是全球开源许可证认证组织OSI在中国的首个成员[E-028]〔事实〕。据此推断，其定位为以非营利与厂商中立为核心的治理型社区组织〔推断〕。资料未说明开源大模型生态商业模式，其重点在治理与孵化[E-032]〔事实〕——这是资料自身的范围特征，而非本报告的数据缺口。\n\n## 开源社活动与外部赞助\n开源社自2016年起连续举办中国开源年会，并发布年度报告[E-029]〔事实〕；合作数百家赞助、媒体与社区伙伴，靠外部赞助支持发展[E-030]〔事实〕；资料所涉平台列出GitHub Sponsors，用于资助开源开发者[E-031]〔事实〕。据此推断，其活动与运营依赖外部赞助与合作伙伴支持〔推断〕；具体赞助金额与资金结构未见〔未知〕。\n\n## 范围外证据与排除说明\n该资料是3D数字资产交易与创作者社区平台，无开源大模型内容[E-033]〔事实〕；平台模型以明码标价交易，页面大量条目标注出售成功及价格[E-034]〔事实〕；精品模型宣称支持商用，购买对应授权可获得许可授权书[E-035]〔事实〕；向创作者宣传高收益、零门槛、版权无忧和优质客户[E-036]〔事实〕；称已有20000+个品牌建立，购买客户涵盖全球500强企业[E-037]〔事实〕；运营方为长沙西吉网络科技有限公司，持有增值电信业务经营许可证[E-038]〔事实〕；该资料未提供任何开源大模型商业模式依据，该主题无法据此回答[E-039]〔事实〕。因此该资料仅作范围排除，不用于开源大模型商业模式的任何结论〔推断〕。\n\n## 模式比较与可持续性证据边界\n从可验证的收入线索比较：社区侧有完全开源[E-001]〔事实〕与免费API[E-007]〔事实〕，其低价算力[E-002]可能含付费成分，但资料未明示是否收费〔未知〕，也未见订阅或付费收入线索〔推断〕；Ollama侧本地模型免费[E-012]〔事实〕与Pro订阅每月20美元含60美元额度[E-013]〔事实〕构成明确订阅收入线索〔推断〕；Gitee侧以社区版、企业版、专业版等分层[E-018]〔事实〕及1200家中大型私有化部署企业[E-022]〔事实〕构成企业服务收入线索〔推断〕；开源社侧以非营利定位[E-026]〔事实〕与数百家赞助伙伴[E-030]〔事实〕构成外部赞助支持线索〔推断〕。各模式的收入规模、付费转化与盈利情况均未提供〔未知〕；受此限制，可持续性只能作有限判断〔推断〕。\n\n## 结论与待补问题\n已确认的模式要素包括：完全开源并支持商用[E-001]〔事实〕、低于市场价格的算力资源[E-002]〔事实〕、免费API[E-007]〔事实〕、Pro订阅每月20美元含60美元额度[E-013]〔事实〕、Gitee社区版与企业版等产品分层[E-018]〔事实〕、1200家中大型私有化部署企业[E-022]〔事实〕，以及开源平台设有企业版、专业版及私有化部署服务[E-023]〔事实〕。待补问题包括：开源模型商用许可的具体条款与限制、各社区与平台的收入规模与盈利情况、免费API与低价算力的成本覆盖与补贴来源、Gitee企业版与专业版及私有化部署的定价规则、Ollama Pro用量额度与云模型价格明细〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 8,
+    "usable": 5,
+    "statuses": {
+      "ok": 5,
+      "read_failed": 2,
+      "empty": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 39 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T09:20:40"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:21:01"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T09:21:34"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "12 个章节",
+        "finished_at": "2026-09-20T09:21:54"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2546字）",
+        "finished_at": "2026-09-20T09:22:14"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T09:22:58"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T09:24:00"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-20T09:25:04"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 59,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://github.com/LlamaChinese/Llama-Chinese",
+      "https://ollama.com/",
+      "https://huggingface.co/",
+      "https://huggingface.co/huggingface",
+      "https://gitee.com/oschina",
+      "https://github.com/kaiyuanshe",
+      "https://www.cgmodel.com/",
+      "http://www.aplaybox.com/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "Llama Mistral 开源 商业模式",
+        "rank": 1,
+        "title": "GitHub - LlamaChinese/Llama-Chinese: Llama中文社区 ...",
+        "url": "https://github.com/LlamaChinese/Llama-Chinese",
+        "snippet": "2025年4月5日 · Meta官方在2023年8月24日发布了Code Llama，基于代码数据对Llama2进行了微调，提供三个不同功能的版本：基 …",
+        "published_date": "2025-04-05",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Llama Mistral 开源 商业模式",
+        "rank": 5,
+        "title": "Ollama",
+        "url": "https://ollama.com/",
+        "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 推理托管 盈利模式",
+        "rank": 1,
+        "title": "Hugging Face – The AI community building the future.",
+        "url": "https://huggingface.co/",
+        "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 推理托管 盈利模式",
+        "rank": 2,
+        "title": "huggingface (Hugging Face)",
+        "url": "https://huggingface.co/huggingface",
+        "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 许可证 商业化限制",
+        "rank": 2,
+        "title": "开源中国 - 开源中国 - Gitee",
+        "url": "https://gitee.com/oschina",
+        "snippet": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个，是国内首屈一指的开源软件技术交流平 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 许可证 商业化限制",
+        "rank": 4,
+        "title": "开源社 · GitHub",
+        "url": "https://github.com/kaiyuanshe",
+        "snippet": "Founded in 2014, KAIYUANSHE® (Open Source Society) is a volunteer-driven organization composed of individuals dedicated to …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "模型即服务 MaaS 开源 变现",
+        "rank": 1,
+        "title": "CG模型网 - 专注3D模型,3dmax模型,maya模型,c4d模型 ...",
+        "url": "https://www.cgmodel.com/",
+        "snippet": "CG模型网 (cgmodel.com)聚集了全球数百万三维艺术设计师,提供优质三维模型素材下载,有3D模型下载,3dmax模型下载,maya模型下 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "模型即服务 MaaS 开源 变现",
+        "rank": 4,
+        "title": "专业模型创作分享社区_模之屋_PlayBox",
+        "url": "http://www.aplaybox.com/",
+        "snippet": "2026年9月4日 · 橘子练习 clily 阿青 曦_YUCK 小巫女 冰菱 【模型配布】桑多涅_翩旋舞步 沐幽和璃泽 [2026-9-4更新]异环-薄荷 泳装 …",
+        "published_date": "2026-09-04",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "Llama Mistral 开源 商业模式",
+        "urls": [
+          "https://github.com/LlamaChinese/Llama-Chinese",
+          "https://ollama.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Llama Mistral 开源 商业模式",
+            "rank": 1,
+            "title": "GitHub - LlamaChinese/Llama-Chinese: Llama中文社区 ...",
+            "url": "https://github.com/LlamaChinese/Llama-Chinese",
+            "snippet": "2025年4月5日 · Meta官方在2023年8月24日发布了Code Llama，基于代码数据对Llama2进行了微调，提供三个不同功能的版本：基 …",
+            "published_date": "2025-04-05",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Llama Mistral 开源 商业模式",
+            "rank": 5,
+            "title": "Ollama",
+            "url": "https://ollama.com/",
+            "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "一文读懂LLaMA - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1930326295067199098",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "LLM 系列超详细解读 (六)：LLaMa：开源高效的大语言模型",
+            "url": "https://zhuanlan.zhihu.com/p/643894722",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "LLaMA（Meta公司的产品）_百度百科",
+            "url": "https://baike.baidu.com/item/LLaMA/62812215",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.256,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 推理托管 盈利模式",
+        "urls": [
+          "https://huggingface.co/",
+          "https://huggingface.co/huggingface"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 推理托管 盈利模式",
+            "rank": 1,
+            "title": "Hugging Face – The AI community building the future.",
+            "url": "https://huggingface.co/",
+            "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 推理托管 盈利模式",
+            "rank": 2,
+            "title": "huggingface (Hugging Face)",
+            "url": "https://huggingface.co/huggingface",
+            "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Huggingface 超详细介绍 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/535100411",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Hugging Face（AI平台）_百度百科",
+            "url": "https://baike.baidu.com/item/Hugging%20Face/65708376",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Hugging Face教程：国内注册&使用指南（超详细） - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1890846454538559620",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.27,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 许可证 商业化限制",
+        "urls": [
+          "https://gitee.com/oschina",
+          "https://github.com/kaiyuanshe"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 许可证 商业化限制",
+            "rank": 2,
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "snippet": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个，是国内首屈一指的开源软件技术交流平 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 许可证 商业化限制",
+            "rank": 4,
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "snippet": "Founded in 2014, KAIYUANSHE® (Open Source Society) is a volunteer-driven organization composed of individuals dedicated to …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "GitHub - GitHubDaily/GitHubDaily: 坚持分享 GitHub 上高质量、有 …",
+            "url": "https://github.com/GitHubDaily/GitHubDaily",
+            "relevance": 0.05,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "什么是开源？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/27501070",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "开源系统_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E7%B3%BB%E7%BB%9F/9332396",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.231,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "模型即服务 MaaS 开源 变现",
+        "urls": [
+          "https://www.cgmodel.com/",
+          "http://www.aplaybox.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "模型即服务 MaaS 开源 变现",
+            "rank": 1,
+            "title": "CG模型网 - 专注3D模型,3dmax模型,maya模型,c4d模型 ...",
+            "url": "https://www.cgmodel.com/",
+            "snippet": "CG模型网 (cgmodel.com)聚集了全球数百万三维艺术设计师,提供优质三维模型素材下载,有3D模型下载,3dmax模型下载,maya模型下 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "模型即服务 MaaS 开源 变现",
+            "rank": 4,
+            "title": "专业模型创作分享社区_模之屋_PlayBox",
+            "url": "http://www.aplaybox.com/",
+            "snippet": "2026年9月4日 · 橘子练习 clily 阿青 曦_YUCK 小巫女 冰菱 【模型配布】桑多涅_翩旋舞步 沐幽和璃泽 [2026-9-4更新]异环-薄荷 泳装 …",
+            "published_date": "2026-09-04",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "CG模型网 - 专注3D模型,3dmax模型,maya模型,c4d模型 ...",
+            "url": "https://www.cgmodel.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "专业模型创作分享社区_模之屋_PlayBox",
+            "url": "http://www.aplaybox.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "迪威模型-海量3D模型下载-3D图纸预览-3D格式转换",
+            "url": "https://www.3dwhere.com/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "3d模型库 免费下载 3dmax模型 - 爱给网",
+            "url": "https://www.aigei.com/3d/model/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "知末 - 室内/建筑/景观设计AI工作台 | 3D模型·SU模型下载·灵感 ...",
+            "url": "https://www.znzmo.com/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      }
+    ]
+  }
+}

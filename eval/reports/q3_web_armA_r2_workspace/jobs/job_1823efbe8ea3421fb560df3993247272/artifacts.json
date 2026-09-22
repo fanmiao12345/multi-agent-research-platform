@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "artifact_id": "material_pack.v1",
+      "kind": "material_pack",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/material_pack.v1.md",
+      "content_hash": "b5fb0881cf9890cacbcbb2edd8a35848d367ca10ebe4c20d37ddfc4da9be911c",
+      "byte_size": 2087,
+      "producer": "pipeline-material",
+      "created_at": "2026-09-20T09:14:57"
+    },
+    {
+      "artifact_id": "outline.v1",
+      "kind": "outline",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/outline.v1.md",
+      "content_hash": "1a850b85e49b1f4663c6c16ce38af61b0e38a6d30a3b0fe020f478f1439bca97",
+      "byte_size": 1885,
+      "producer": "pipeline-outline",
+      "created_at": "2026-09-20T09:15:26"
+    },
+    {
+      "artifact_id": "report.v1",
+      "kind": "report",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/report.v1.md",
+      "content_hash": "91dde036f43f6e4064cf149f1a8bbf89f69eff1df25a1d95ab311943d92d3ff2",
+      "byte_size": 4825,
+      "producer": "pipeline-writer",
+      "created_at": "2026-09-20T09:15:46"
+    },
+    {
+      "artifact_id": "review.v1",
+      "kind": "review",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/review.v1.json",
+      "content_hash": "eb8d7b316f71e07fd8258794eb9d18c8c9ef214ff1109669c3fb9083abdd619c",
+      "byte_size": 3148,
+      "producer": "pipeline-review",
+      "created_at": "2026-09-20T09:16:39"
+    },
+    {
+      "artifact_id": "report.v2",
+      "kind": "report",
+      "version": 2,
+      "parent_version": 1,
+      "file_name": "artifacts/report.v2.md",
+      "content_hash": "fca643ee3852635842abcad75c7fe529da68b4aa5c9ca0e9fd3d0fcc8e16bbed",
+      "byte_size": 4886,
+      "producer": "pipeline-writer",
+      "created_at": "2026-09-20T09:17:06"
+    },
+    {
+      "artifact_id": "review.v2",
+      "kind": "review",
+      "version": 2,
+      "parent_version": null,
+      "file_name": "artifacts/review.v2.json",
+      "content_hash": "5807ed16b3888ccb3653ee29c27f41dcecb8398f9c000e2efb00fbbc767c123f",
+      "byte_size": 824,
+      "producer": "pipeline-review",
+      "created_at": "2026-09-20T09:17:45"
+    },
+    {
+      "artifact_id": "report.v3",
+      "kind": "report",
+      "version": 3,
+      "parent_version": 2,
+      "file_name": "artifacts/report.v3.md",
+      "content_hash": "d3c878b3b75a867baecba2df72598078a5e9851cd21559d3f74fbfd936d4e6e6",
+      "byte_size": 5508,
+      "producer": "pipeline-writer",
+      "created_at": "2026-09-20T09:18:17"
+    },
+    {
+      "artifact_id": "review.v3",
+      "kind": "review",
+      "version": 3,
+      "parent_version": null,
+      "file_name": "artifacts/review.v3.json",
+      "content_hash": "0456541dcb78365b83176de0865b65fc654eca6a16bd677ea0dd0161c988414f",
+      "byte_size": 3672,
+      "producer": "pipeline-review",
+      "created_at": "2026-09-20T09:19:13"
+    }
+  ]
+}

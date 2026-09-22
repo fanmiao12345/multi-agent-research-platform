@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_731ebd2a81",
+      "fact": "本资料为国家统计局网站数据栏目页面，内容为统计数据发布与解读",
+      "tag": "F",
+      "quote": "数据发布",
+      "start": 285,
+      "end": 289,
+      "locator": {
+        "heading": "",
+        "paragraph": 23,
+        "start": 285,
+        "end": 290
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_731ebd2a81",
+      "fact": "本资料所列内容均为国民经济运行、价格、投资、房地产等统计信息",
+      "tag": "F",
+      "quote": "2026年8月份居民消费价格同比上涨0.8%",
+      "start": 568,
+      "end": 590,
+      "locator": {
+        "heading": "",
+        "paragraph": 39,
+        "start": 568,
+        "end": 591
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_731ebd2a81",
+      "fact": "本资料未出现企业数据出境合规、数据跨境流动等任何相关规定或变化",
+      "tag": "F",
+      "quote": "版权所有: 国家统计局 联系我们 服务条款 网站地图",
+      "start": 3873,
+      "end": 3899,
+      "locator": {
+        "heading": "",
+        "paragraph": 346,
+        "start": 3873,
+        "end": 3900
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_731ebd2a81",
+      "fact": "依据本资料无法给出企业数据出境合规主要变化的答案，该内容存在缺口",
+      "tag": "I",
+      "quote": "数据查询",
+      "start": 2625,
+      "end": 2629,
+      "locator": {
+        "heading": "",
+        "paragraph": 149,
+        "start": 2625,
+        "end": 2630
+      },
+      "note": ""
+    }
+  ]
+}

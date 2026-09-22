@@ -1,0 +1,57 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-009）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-009）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-001,E-009）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "资料范围与概念界定未覆盖E-003，未用飞利浦/几内亚远程维护案例界定范围，未满足该节必须覆盖E-003的要求。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-002后“通用能力”为推断，未标注〔推断〕，建议补标以满足事实/推断标注要求。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论称“支持远程医疗推广的证据有限”易读作存在直接支持；现有证据仅涉设备维护/企业运维，建议改为无直接证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“唯一的医疗行业落地实例”非E-003原文，证据未列其他案例，建议明示为给定证据范围内的检索推断。"
+  }
+ ]
+}

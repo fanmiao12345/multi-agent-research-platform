@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_00bbb71ad83d40f9b56a5a5832ac8055",
+  "goal": "机器人流程自动化与智能体的边界",
+  "started_at": "2026-09-20T11:09:29",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 27 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T11:10:18"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:10:32"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:10:43"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料未涉及机器人流程自动化，仅提到智能体作为应用入口或AI生成工具，无法支撑RPA与智能体边界的定义、分工、架构与治理分析。",
+        "finished_at": "2026-09-20T11:10:47"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料未涉及机器人流程自动化，仅提到智能体作为应用入口或AI生成工具，无法支撑RPA与智能体边界的定义、分工、架构与治理分析。；缺失信息：机器人流程自动化与智能体的定义及边界对比材料、二者在流程自动化中的分工与重叠分析材料、二者技术架构、触发与编排机制文档、二者在业务场景中替代或互补的应用案例材料、二者在权限、治理与合规方面的规范材料（可用证据 27 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

@@ -1,0 +1,916 @@
+{
+  "source_id": "src_1a32757a24",
+  "kind": "url",
+  "display": "在线流程图 - AI生成流程图",
+  "original_address": "https://boardmix.cn/flow-chart/",
+  "title": "在线流程图 - AI生成流程图",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 6368,
+  "content_hash": "a7c5ec77870b7ce90db7f6b046fdd017b691e7d9850e8fd7c11724fc94eab22f",
+  "normalized_hash": "448f3999d36b583e4d3ccf2b9f7b01c1f53702a2da4e0469af088f7854b91351",
+  "captured_at": "2026-09-20T11:09:29",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_1a32757a24.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 126,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 6,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 7,
+      "end": 10,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 11,
+      "end": 14,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 15,
+      "end": 20,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 21,
+      "end": 36,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 37,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 46,
+      "end": 59,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 60,
+      "end": 65,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 66,
+      "end": 81,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 82,
+      "end": 90,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 91,
+      "end": 105,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 106,
+      "end": 111,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 112,
+      "end": 122,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 123,
+      "end": 131,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 132,
+      "end": 147,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 148,
+      "end": 154,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 155,
+      "end": 161,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 162,
+      "end": 175,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 176,
+      "end": 179,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 180,
+      "end": 187,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 188,
+      "end": 193,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 194,
+      "end": 237,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 238,
+      "end": 290,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 291,
+      "end": 298,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 299,
+      "end": 304,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 305,
+      "end": 364,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 365,
+      "end": 455,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 456,
+      "end": 561,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 562,
+      "end": 599,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 600,
+      "end": 605,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 606,
+      "end": 611,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 612,
+      "end": 618,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 619,
+      "end": 635,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 636,
+      "end": 641,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 642,
+      "end": 660,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 661,
+      "end": 669,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 670,
+      "end": 685,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 686,
+      "end": 691,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 692,
+      "end": 697,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 698,
+      "end": 712,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 713,
+      "end": 720,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 721,
+      "end": 735,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 736,
+      "end": 739,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 740,
+      "end": 754,
+      "page": null
+    },
+    {
+      "heading": "# 在线流程图",
+      "paragraph": 44,
+      "start": 764,
+      "end": 772,
+      "page": null
+    },
+    {
+      "heading": "# 在线流程图",
+      "paragraph": 45,
+      "start": 773,
+      "end": 784,
+      "page": null
+    },
+    {
+      "heading": "# 在线流程图",
+      "paragraph": 46,
+      "start": 785,
+      "end": 805,
+      "page": null
+    },
+    {
+      "heading": "# 在线流程图",
+      "paragraph": 47,
+      "start": 806,
+      "end": 859,
+      "page": null
+    },
+    {
+      "heading": "# 在线流程图",
+      "paragraph": 48,
+      "start": 860,
+      "end": 882,
+      "page": null
+    },
+    {
+      "heading": "# 在线流程图",
+      "paragraph": 49,
+      "start": 883,
+      "end": 906,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 50,
+      "start": 926,
+      "end": 950,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 51,
+      "start": 951,
+      "end": 955,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 52,
+      "start": 956,
+      "end": 962,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 53,
+      "start": 963,
+      "end": 967,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 54,
+      "start": 968,
+      "end": 972,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 55,
+      "start": 973,
+      "end": 978,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 56,
+      "start": 979,
+      "end": 985,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 57,
+      "start": 986,
+      "end": 992,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 58,
+      "start": 993,
+      "end": 998,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 59,
+      "start": 999,
+      "end": 1004,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 60,
+      "start": 1005,
+      "end": 1010,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 61,
+      "start": 1011,
+      "end": 1016,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 62,
+      "start": 1017,
+      "end": 1022,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 63,
+      "start": 1023,
+      "end": 1028,
+      "page": null
+    },
+    {
+      "heading": "## 专业流程图工具，海量图库资源",
+      "paragraph": 64,
+      "start": 1029,
+      "end": 1034,
+      "page": null
+    },
+    {
+      "heading": "### Visio导入",
+      "paragraph": 65,
+      "start": 1059,
+      "end": 1109,
+      "page": null
+    },
+    {
+      "heading": "### OCR识别",
+      "paragraph": 66,
+      "start": 1121,
+      "end": 1147,
+      "page": null
+    },
+    {
+      "heading": "### 多种导出格式",
+      "paragraph": 67,
+      "start": 1160,
+      "end": 1182,
+      "page": null
+    },
+    {
+      "heading": "### 多种导出格式",
+      "paragraph": 68,
+      "start": 1183,
+      "end": 1197,
+      "page": null
+    },
+    {
+      "heading": "### 提供流程图绘制思路",
+      "paragraph": 69,
+      "start": 1236,
+      "end": 1294,
+      "page": null
+    },
+    {
+      "heading": "### 生成流程图代码",
+      "paragraph": 70,
+      "start": 1308,
+      "end": 1374,
+      "page": null
+    },
+    {
+      "heading": "### 生成流程图代码",
+      "paragraph": 71,
+      "start": 1375,
+      "end": 1389,
+      "page": null
+    },
+    {
+      "heading": "### 一键切换主题色",
+      "paragraph": 72,
+      "start": 1414,
+      "end": 1460,
+      "page": null
+    },
+    {
+      "heading": "### 图元排列及间距调整",
+      "paragraph": 73,
+      "start": 1476,
+      "end": 1519,
+      "page": null
+    },
+    {
+      "heading": "### 图元排列及间距调整",
+      "paragraph": 74,
+      "start": 1520,
+      "end": 1531,
+      "page": null
+    },
+    {
+      "heading": "## 流程图+",
+      "paragraph": 75,
+      "start": 1541,
+      "end": 1546,
+      "page": null
+    },
+    {
+      "heading": "## 流程图+",
+      "paragraph": 76,
+      "start": 1547,
+      "end": 1552,
+      "page": null
+    },
+    {
+      "heading": "## 流程图+",
+      "paragraph": 77,
+      "start": 1553,
+      "end": 1558,
+      "page": null
+    },
+    {
+      "heading": "### 流程图+协同功能， 提升团队作业效率",
+      "paragraph": 78,
+      "start": 1583,
+      "end": 1617,
+      "page": null
+    },
+    {
+      "heading": "### 流程图+协同功能， 提升团队作业效率",
+      "paragraph": 79,
+      "start": 1618,
+      "end": 1623,
+      "page": null
+    },
+    {
+      "heading": "### 流程图+白板创意绘图元素，创作过程严肃活泼",
+      "paragraph": 80,
+      "start": 1651,
+      "end": 1678,
+      "page": null
+    },
+    {
+      "heading": "### 流程图+白板创意绘图元素，创作过程严肃活泼",
+      "paragraph": 81,
+      "start": 1679,
+      "end": 1684,
+      "page": null
+    },
+    {
+      "heading": "### 流程图+项目管理模板， 业务流转每一步都看得见",
+      "paragraph": 82,
+      "start": 1714,
+      "end": 1751,
+      "page": null
+    },
+    {
+      "heading": "### 流程图+项目管理模板， 业务流转每一步都看得见",
+      "paragraph": 83,
+      "start": 1752,
+      "end": 1757,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 84,
+      "start": 1778,
+      "end": 1783,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 85,
+      "start": 1784,
+      "end": 1788,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 86,
+      "start": 1789,
+      "end": 1794,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 87,
+      "start": 1795,
+      "end": 1800,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 88,
+      "start": 1801,
+      "end": 1806,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 89,
+      "start": 1807,
+      "end": 1812,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 90,
+      "start": 1813,
+      "end": 1818,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 91,
+      "start": 1819,
+      "end": 1824,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 92,
+      "start": 1825,
+      "end": 1830,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 93,
+      "start": 1831,
+      "end": 1836,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 94,
+      "start": 1837,
+      "end": 1842,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 95,
+      "start": 1843,
+      "end": 1848,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 96,
+      "start": 1849,
+      "end": 1854,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 97,
+      "start": 1855,
+      "end": 1860,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 98,
+      "start": 1861,
+      "end": 1866,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 99,
+      "start": 1867,
+      "end": 1872,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 100,
+      "start": 1873,
+      "end": 1878,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 101,
+      "start": 1879,
+      "end": 1884,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 102,
+      "start": 1885,
+      "end": 1890,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 103,
+      "start": 1891,
+      "end": 1896,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 104,
+      "start": 1897,
+      "end": 1902,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 105,
+      "start": 1903,
+      "end": 1908,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 106,
+      "start": 1909,
+      "end": 1914,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 107,
+      "start": 1915,
+      "end": 1920,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 108,
+      "start": 1921,
+      "end": 1926,
+      "page": null
+    },
+    {
+      "heading": "## 流程图模板社区，让知识没有边界",
+      "paragraph": 109,
+      "start": 1927,
+      "end": 1932,
+      "page": null
+    },
+    {
+      "heading": "### 课程表怎么做？课程表模板一键下载！",
+      "paragraph": 110,
+      "start": 1970,
+      "end": 1997,
+      "page": null
+    },
+    {
+      "heading": "### 如何通过用例图开展需求分析？",
+      "paragraph": 111,
+      "start": 2018,
+      "end": 2049,
+      "page": null
+    },
+    {
+      "heading": "### 架构图用什么软件制作？这9款建议收藏！",
+      "paragraph": 112,
+      "start": 2075,
+      "end": 2109,
+      "page": null
+    },
+    {
+      "heading": "### 一篇就够！详解技术路线图全攻略！",
+      "paragraph": 113,
+      "start": 2132,
+      "end": 2168,
+      "page": null
+    },
+    {
+      "heading": "## 流程图学习与应用路径",
+      "paragraph": 114,
+      "start": 2184,
+      "end": 2225,
+      "page": null
+    },
+    {
+      "heading": "## 流程图学习与应用路径",
+      "paragraph": 115,
+      "start": 2226,
+      "end": 2356,
+      "page": null
+    },
+    {
+      "heading": "## 流程图学习与应用路径",
+      "paragraph": 116,
+      "start": 2357,
+      "end": 2373,
+      "page": null
+    },
+    {
+      "heading": "## 免费开始画流程图",
+      "paragraph": 117,
+      "start": 2387,
+      "end": 2414,
+      "page": null
+    },
+    {
+      "heading": "## 免费开始画流程图",
+      "paragraph": 118,
+      "start": 2415,
+      "end": 2424,
+      "page": null
+    },
+    {
+      "heading": "#### 解决方案",
+      "paragraph": 119,
+      "start": 2436,
+      "end": 2464,
+      "page": null
+    },
+    {
+      "heading": "#### 入门教程",
+      "paragraph": 120,
+      "start": 2476,
+      "end": 2530,
+      "page": null
+    },
+    {
+      "heading": "#### 探索",
+      "paragraph": 121,
+      "start": 2540,
+      "end": 2555,
+      "page": null
+    },
+    {
+      "heading": "#### 关于",
+      "paragraph": 122,
+      "start": 2565,
+      "end": 2575,
+      "page": null
+    },
+    {
+      "heading": "#### 服务",
+      "paragraph": 123,
+      "start": 2585,
+      "end": 2606,
+      "page": null
+    },
+    {
+      "heading": "#### 社媒",
+      "paragraph": 124,
+      "start": 2616,
+      "end": 2647,
+      "page": null
+    },
+    {
+      "heading": "#### 社媒",
+      "paragraph": 125,
+      "start": 2648,
+      "end": 2688,
+      "page": null
+    }
+  ],
+  "final_url": "https://boardmix.cn/flow-chart/",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:09:29",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

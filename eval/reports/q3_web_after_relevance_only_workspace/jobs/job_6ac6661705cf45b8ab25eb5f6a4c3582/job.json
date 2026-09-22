@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_6ac6661705cf45b8ab25eb5f6a4c3582",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 3,
+    "statuses": {
+      "empty": 3,
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 17 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:31:11"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:31:27"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 2, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T13:31:42"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅提及完善人工智能治理，未提供任何争议事实或立场，无法回答主要争议。",
+        "finished_at": "2026-09-18T13:31:49"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅提及完善人工智能治理，未提供任何争议事实或立场，无法回答主要争议。；缺失信息：2026年人工智能治理政策正文或权威解读、治理政策主要争议及多方立场材料、完善治理与深化拓展“人工智能+”平衡的具体表述、开源社区建设引发治理争议的相关细节、AI促进就业创业与替代效应争议材料、管理办法、标识办法、算法备案等条目对应争议内容（可用证据 19 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.douyin.com/",
+      "https://www.douyin.com/search/%E6%8A%96%E9%9F%B3",
+      "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+      "https://www.oschina.net/",
+      "https://www.aigc.cn/free-ai-tools",
+      "https://jimeng.jianying.com/ai-tool/home"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "2026 欧盟AI法案 监管争议",
+        "rank": 1,
+        "title": "抖音-记录美好生活",
+        "url": "https://www.douyin.com/",
+        "snippet": "抖音让每一个人看见并连接更大的世界，鼓励表达、沟通和记录，激发创造，丰富人们的精神世界，让现实生活更美好。",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "2026 欧盟AI法案 监管争议",
+        "rank": 2,
+        "title": "抖音 - 抖音",
+        "url": "https://www.douyin.com/search/%E6%8A%96%E9%9F%B3",
+        "snippet": "2026年5月13日 · 抖音 抖音大明星 抖音故事 抖音坏水 抖音大规模盗号 抖音下载的安装包在哪里 抖音来客 抖音集团超15亿扶持真人短 …",
+        "published_date": "2026-05-13",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "2026 美国AI行政令 治理分歧",
+        "rank": 4,
+        "title": "2026年政府工作报告解读_中国政府网",
+        "url": "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+        "snippet": "2026年3月5日 · 四、2026年政府工作任务 党中央对今年工作作出了全面部署，我们要深入贯彻落实，扎实做好各项工作。 （一）着 …",
+        "published_date": "2026-03-05",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 国家安全 监管争议",
+        "rank": 4,
+        "title": "OSCHINA - 中文开源技术交流社区",
+        "url": "https://www.oschina.net/",
+        "snippet": "2025年2月2日 · 开源不止代码，2026北京开源创新赛AIGC赛道全民可参与 选手可选福利：模力方舟旗舰模型为开源大赛提供专属折 …",
+        "published_date": "2025-02-02",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI版权 深度伪造 责任归属",
+        "rank": 3,
+        "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+        "url": "https://www.aigc.cn/free-ai-tools",
+        "snippet": "1 天前 · 免费AI工具 AIGC 工具导航汇聚全网最全的 免费AI 工具集合，无论是AI智能助手、 AI写作 工具、 AI绘画 工具、AI PPT制作  …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI版权 深度伪造 责任归属",
+        "rank": 5,
+        "title": "即梦AI - 一站式AI创作平台",
+        "url": "https://jimeng.jianying.com/ai-tool/home",
+        "snippet": "即梦AI是一个AI创作平台，可激发艺术创意、提升绘画和视频创作体验。 您可以利用AI智能，将想象变为现实。 即梦AI支持文字绘图 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "2026 欧盟AI法案 监管争议",
+        "urls": [
+          "https://www.douyin.com/",
+          "https://www.douyin.com/search/%E6%8A%96%E9%9F%B3"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "2026 欧盟AI法案 监管争议",
+            "rank": 1,
+            "title": "抖音-记录美好生活",
+            "url": "https://www.douyin.com/",
+            "snippet": "抖音让每一个人看见并连接更大的世界，鼓励表达、沟通和记录，激发创造，丰富人们的精神世界，让现实生活更美好。",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "2026 欧盟AI法案 监管争议",
+            "rank": 2,
+            "title": "抖音 - 抖音",
+            "url": "https://www.douyin.com/search/%E6%8A%96%E9%9F%B3",
+            "snippet": "2026年5月13日 · 抖音 抖音大明星 抖音故事 抖音坏水 抖音大规模盗号 抖音下载的安装包在哪里 抖音来客 抖音集团超15亿扶持真人短 …",
+            "published_date": "2026-05-13",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "抖音-记录美好生活",
+            "url": "https://www.douyin.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "抖音 - 抖音",
+            "url": "https://www.douyin.com/search/%E6%8A%96%E9%9F%B3",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "抖音来客",
+            "url": "http://life.douyin.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "抖音直播伴侣",
+            "url": "https://streamingtool.douyin.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "DOU+官网",
+            "url": "https://doujia.douyin.com/",
+            "relevance": 0.0,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.216,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "2026 美国AI行政令 治理分歧",
+        "urls": [
+          "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "2026 美国AI行政令 治理分歧",
+            "rank": 4,
+            "title": "2026年政府工作报告解读_中国政府网",
+            "url": "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+            "snippet": "2026年3月5日 · 四、2026年政府工作任务 党中央对今年工作作出了全面部署，我们要深入贯彻落实，扎实做好各项工作。 （一）着 …",
+            "published_date": "2026-03-05",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "2026年政府工作报告解读_中国政府网",
+            "url": "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "2026年大事、要事、重要节日一览表（附放假安排）",
+            "url": "https://news.qq.com/rain/a/20251231A04Z6M00",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "2026年日历全年完整图_带农历节假日放假安排_高清可打印 ...",
+            "url": "https://rili.zzhuangli.com/year/2026",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "国务院办公厅关于2026年部分节假日安排的通知_其他_中国 ...",
+            "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "2026中国节假日安排｜放假、调休、补班日历",
+            "url": "https://chinacalendar.app/zh-cn/2026-china-holidays",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          }
+        ],
+        "elapsed_seconds": 0.189,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 国家安全 监管争议",
+        "urls": [
+          "https://www.oschina.net/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 国家安全 监管争议",
+            "rank": 4,
+            "title": "OSCHINA - 中文开源技术交流社区",
+            "url": "https://www.oschina.net/",
+            "snippet": "2025年2月2日 · 开源不止代码，2026北京开源创新赛AIGC赛道全民可参与 选手可选福利：模力方舟旗舰模型为开源大赛提供专属折 …",
+            "published_date": "2025-02-02",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "什么是开源？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/27501070",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "立创开源广场 - 立创开源硬件平台",
+            "url": "https://oshwhub.com/explore",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.196,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI版权 深度伪造 责任归属",
+        "urls": [
+          "https://www.aigc.cn/free-ai-tools",
+          "https://jimeng.jianying.com/ai-tool/home"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "AI版权 深度伪造 责任归属",
+            "rank": 3,
+            "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+            "url": "https://www.aigc.cn/free-ai-tools",
+            "snippet": "1 天前 · 免费AI工具 AIGC 工具导航汇聚全网最全的 免费AI 工具集合，无论是AI智能助手、 AI写作 工具、 AI绘画 工具、AI PPT制作  …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "AI版权 深度伪造 责任归属",
+            "rank": 5,
+            "title": "即梦AI - 一站式AI创作平台",
+            "url": "https://jimeng.jianying.com/ai-tool/home",
+            "snippet": "即梦AI是一个AI创作平台，可激发艺术创意、提升绘画和视频创作体验。 您可以利用AI智能，将想象变为现实。 即梦AI支持文字绘图 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+            "url": "https://www.aigc.cn/free-ai-tools",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "即梦AI - 一站式AI创作平台",
+            "url": "https://jimeng.jianying.com/ai-tool/home",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "AI工具集官网 | 1000+ AI工具集合，国内外AI工具集导航大全",
+            "url": "https://ai-bot.cn/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "Kimi AI 官网 - K3 上线，专为智能体编程与知识工作打造",
+            "url": "https://www.kimi.com/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "目前有哪些主流的AI？ - 知乎",
+            "url": "https://www.zhihu.com/question/591009674",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.196,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（2026年人工智能治理政策的主要争议）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 11.402,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

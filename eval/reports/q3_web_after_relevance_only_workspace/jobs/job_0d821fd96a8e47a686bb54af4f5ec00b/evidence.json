@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_178828631b",
+      "fact": "本资料是Meta投资者关系网站首页，仅提供导航与栏目入口。",
+      "tag": "F",
+      "quote": "Meta Investor Relations",
+      "start": 22,
+      "end": 45,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 22,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_178828631b",
+      "fact": "本资料列有季度财报入口，当前标注为Q2 2026 Earnings。",
+      "tag": "F",
+      "quote": "Q2 2026 Earnings",
+      "start": 1300,
+      "end": 1316,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_178828631b",
+      "fact": "本资料提供SEC文件与年度报告入口。",
+      "tag": "F",
+      "quote": "Latest SEC Filings",
+      "start": 1341,
+      "end": 1359,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_178828631b",
+      "fact": "本资料设有投资者活动与新闻稿栏目。",
+      "tag": "F",
+      "quote": "Investor Events",
+      "start": 160,
+      "end": 175,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 160,
+        "end": 176
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_178828631b",
+      "fact": "本资料提供邮件提醒订阅，可订阅投资者新闻与SEC文件。",
+      "tag": "F",
+      "quote": "Email Alerts",
+      "start": 1576,
+      "end": 1588,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_178828631b",
+      "fact": "页面底部版权标注为Meta 2025。",
+      "tag": "F",
+      "quote": "© Meta 2025",
+      "start": 2030,
+      "end": 2041,
+      "locator": {
+        "heading": "# Learn More",
+        "paragraph": 103,
+        "start": 2030,
+        "end": 2041
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_178828631b",
+      "fact": "本资料通篇未出现开源大模型、许可或模型商业模式相关内容。",
+      "tag": "F",
+      "quote": "Meta Investor Relations",
+      "start": 22,
+      "end": 45,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 22,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_e19bbafd99",
+      "fact": "本资料为3D模型交易社区，未提供开源大模型生态商业模式的信息。",
+      "tag": "I",
+      "quote": "一站式3D数字资产交易平台与创作者社区",
+      "start": 13494,
+      "end": 13513,
+      "locator": {
+        "heading": "",
+        "paragraph": 853,
+        "start": 13494,
+        "end": 13514
+      },
+      "note": ""
+    }
+  ]
+}

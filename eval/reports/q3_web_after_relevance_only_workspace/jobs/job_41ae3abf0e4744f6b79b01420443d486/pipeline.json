@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_41ae3abf0e4744f6b79b01420443d486",
+  "goal": "城市低碳交通政策的效果与限制",
+  "started_at": "2026-09-18T13:47:57",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 38 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:49:30"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:49:57"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T13:50:01"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "10 个章节",
+        "finished_at": "2026-09-18T13:50:13"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2556字）",
+        "finished_at": "2026-09-18T13:50:42"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 20,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T13:51:51"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-18T13:53:02"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 19,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-18T13:55:06"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 60,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  }
+}

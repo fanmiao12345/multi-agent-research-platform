@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料为产品介绍，未提供远程办公对团队协作影响的近期研究结论。",
+      "tag": "I",
+      "quote": "远程办公",
+      "start": 90,
+      "end": 94,
+      "locator": {
+        "heading": "",
+        "paragraph": 11,
+        "start": 90,
+        "end": 95
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料将远程办公与专业设计列为使用场景。",
+      "tag": "F",
+      "quote": "远程办公与专业设计",
+      "start": 96,
+      "end": 105,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 96,
+        "end": 106
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料将远程协作与演示列为使用场景。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料称企业版支持多人同时控制一台设备并可白板批注。",
+      "tag": "F",
+      "quote": "多人同时控制一台设备并可白板批注",
+      "start": 506,
+      "end": 522,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 506,
+        "end": 523
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料称团队版支持多个账号共享团队权益。",
+      "tag": "F",
+      "quote": "多个账号共享团队权益",
+      "start": 192,
+      "end": 202,
+      "locator": {
+        "heading": "",
+        "paragraph": 23,
+        "start": 192,
+        "end": 203
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料称团队管理可统一管理成员、设备、权益与连接。",
+      "tag": "F",
+      "quote": "成员/设备/权益/连接统统都能管",
+      "start": 623,
+      "end": 639,
+      "locator": {
+        "heading": "",
+        "paragraph": 60,
+        "start": 623,
+        "end": 640
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料中用户称远程协助演示PPT时多指针让双方看到鼠标轨迹。",
+      "tag": "F",
+      "quote": "开启ToDesk的多指针功能，我们俩都能看到对方的鼠标轨迹",
+      "start": 4816,
+      "end": 4845,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_8f3fbf40c2",
+      "fact": "本资料中用户称远控时开启语音通话与同事沟通，音质清晰。",
+      "tag": "F",
+      "quote": "一边帮同事修电脑一边通过ToDesk语音沟通，音质非常清晰",
+      "start": 8289,
+      "end": 8318,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 402,
+        "start": 8260,
+        "end": 8320
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_ab295bb155",
+      "fact": "本资料为网易云音乐单曲页面，主题是歌曲《虚拟》。",
+      "tag": "F",
+      "quote": "歌手： 陈粒",
+      "start": 29,
+      "end": 35,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 29,
+        "end": 36
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_ab295bb155",
+      "fact": "资料显示歌曲《虚拟》所属专辑为《小梦大半》。",
+      "tag": "F",
+      "quote": "所属专辑： 小梦大半",
+      "start": 37,
+      "end": 47,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 37,
+        "end": 48
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_ab295bb155",
+      "fact": "本资料内容为歌曲、歌单、下载、登录与评论等界面。",
+      "tag": "F",
+      "quote": "网易云音乐多端下载",
+      "start": 235,
+      "end": 244,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_ab295bb155",
+      "fact": "本资料前段未出现远程办公或团队协作相关表述。",
+      "tag": "F",
+      "quote": "相似歌曲",
+      "start": 172,
+      "end": 176,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_ab295bb155",
+      "fact": "据此，该来源无法支撑远程办公对团队协作影响的资料整理。",
+      "tag": "I",
+      "quote": "点击打开客户端",
+      "start": 9,
+      "end": 16,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 9,
+        "end": 17
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_e771e91ced",
+      "fact": "本资料为陈粒歌曲《虚拟》的歌词页面，内容为歌词文本。",
+      "tag": "F",
+      "quote": "你是我朝夕相伴触手可及的虚拟",
+      "start": 155,
+      "end": 169,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 11,
+        "start": 155,
+        "end": 170
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_e771e91ced",
+      "fact": "本资料未包含任何关于远程办公或团队协作的研究内容。",
+      "tag": "F",
+      "quote": "歌词网歌词内容来自互联网，如有侵权请联系删除",
+      "start": 467,
+      "end": 489,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 35,
+        "start": 467,
+        "end": 490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_e771e91ced",
+      "fact": "依据本资料无法回答远程办公对团队协作影响的近期研究这一问题。",
+      "tag": "I",
+      "quote": "你是我未曾拥有无法捕捉的亲昵",
+      "start": 109,
+      "end": 123,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 8,
+        "start": 109,
+        "end": 124
+      },
+      "note": ""
+    }
+  ]
+}

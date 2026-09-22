@@ -1,0 +1,126 @@
+{
+  "title": "开源大模型生态的商业模式：现有证据提纲",
+  "sections": [
+    {
+      "heading": "研究范围与证据边界",
+      "purpose": "说明本报告能回答什么、不能回答什么",
+      "required_evidence": [
+        "E-016",
+        "E-001"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Llama模型的授权方式",
+      "purpose": "梳理模型与权重的授权对象和获取路径",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "商业使用与受控分发",
+      "purpose": "识别商用许可、审批与分发限制的证据",
+      "required_evidence": [
+        "E-008",
+        "E-002",
+        "E-003",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "开放还是受控开放的冲突",
+      "purpose": "并列开放授权与审批要求，标注未决冲突",
+      "required_evidence": [
+        "E-001",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "模型社区与仓库信号",
+      "purpose": "呈现发布整合、仓库定位和社区活跃度",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Gitee的商业产品结构",
+      "purpose": "说明代码托管平台的版本分层与企业服务",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Gitee社区活动与AI工具",
+      "purpose": "记录赛事激励及终端AI编码助手配置",
+      "required_evidence": [
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "平台生态与模型商业化的关联",
+      "purpose": "评估现有资料能否连接托管平台与模型生态",
+      "required_evidence": [
+        "E-013",
+        "E-015",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "可识别的商业化要素",
+      "purpose": "从授权、审批、企业服务和生态投入提取线索",
+      "required_evidence": [
+        "E-008",
+        "E-010",
+        "E-013",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "证据缺口与待验证问题",
+      "purpose": "列出盈利、许可条款、审批标准等缺失信息",
+      "required_evidence": [
+        "E-016",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与可信度分级",
+      "purpose": "按事实、推断、未知归纳现有证据强度",
+      "required_evidence": [
+        "E-001",
+        "E-008",
+        "E-013",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "后续取证清单",
+      "purpose": "提出需要补充的许可、营收和案例材料",
+      "required_evidence": [
+        "E-016"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

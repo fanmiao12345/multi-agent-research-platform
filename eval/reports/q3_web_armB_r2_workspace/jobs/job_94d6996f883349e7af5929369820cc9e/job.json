@@ -1,0 +1,529 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_94d6996f883349e7af5929369820cc9e",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 7,
+    "usable": 2,
+    "statuses": {
+      "ok": 2,
+      "read_failed": 5
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 11 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T10:06:11"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:06:20"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 7, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T10:06:46"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包全部证据仅涉及生成式AI创意工具（图像与视频生成及编辑），且明确声明未提及软件测试、测试用例、缺陷检测或测试自动化，完全无法支撑本主题。",
+        "finished_at": "2026-09-20T10:06:50"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包全部证据仅涉及生成式AI创意工具（图像与视频生成及编辑），且明确声明未提及软件测试、测试用例、缺陷检测或测试自动化，完全无法支撑本主题。；缺失信息：生成式AI在软件测试用例生成中的应用趋势：缺少软件测试用例生成相关研究、案例或数据、生成式AI在缺陷检测与缺陷预测中的应用趋势：缺少缺陷检测或缺陷预测相关文献、工具或实验数据、生成式AI在测试自动化脚本生成与维护中的应用趋势：缺少测试自动化脚本生成与维护的材料、生成式AI用于软件测试的效果与风险证据：缺少效果评估、准确率、局限与风险数据、生成式AI在软件测试中的产业采用趋势：缺少行业报告、企业案例或采用率统计（可用证据 18 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://jimeng.jianying.com/",
+      "https://klingai.com/app",
+      "https://github.com/",
+      "https://github.com/login",
+      "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+      "https://www.juraforum.de/lexikon/prozessbetrug",
+      "https://www.juraforum.de/lexikon/zweckverfehlungslehre"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式人工智能 测试用例生成 大语言模型",
+        "rank": 2,
+        "title": "即梦AI - 即刻造梦",
+        "url": "https://jimeng.jianying.com/",
+        "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式人工智能 测试用例生成 大语言模型",
+        "rank": 3,
+        "title": "可灵AI创作台 - AI生成视频与图片",
+        "url": "https://klingai.com/app",
+        "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "GitHub Copilot 单元测试 自动化",
+        "rank": 1,
+        "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+        "url": "https://github.com/",
+        "snippet": "2026年6月26日 · Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join …",
+        "published_date": "2026-06-26",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "GitHub Copilot 单元测试 自动化",
+        "rank": 2,
+        "title": "Sign in to GitHub · GitHub",
+        "url": "https://github.com/login",
+        "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大模型 自动化测试 缺陷检测",
+        "rank": 4,
+        "title": "大 - 維基詞典，自由的多語言詞典",
+        "url": "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+        "snippet": "3 天之前 · 大 （大部 +0畫，共3畫， 倉頡碼：大（K）， 四角號碼： 4003 0 或 4080 0， 部件組合： ⿻ 一 人 或 ⿸ 𠂇 ㇏） 康熙部首  …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI测试工具 软件测试 落地挑战",
+        "rank": 1,
+        "title": "Prozessbetrug ᐅ Strafe, Urteile & Schema - JuraForum.de",
+        "url": "https://www.juraforum.de/lexikon/prozessbetrug",
+        "snippet": "2026年5月29日 · Den Prozessbetrug gibt es als eigenständigen Straftatbestand nicht. Im Ergebnis begeht der Täter damit einen …",
+        "published_date": "2026-05-29",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI测试工具 软件测试 落地挑战",
+        "rank": 2,
+        "title": "Zweckverfehlungslehre - JuraForum.de",
+        "url": "https://www.juraforum.de/lexikon/zweckverfehlungslehre",
+        "snippet": "2025年8月29日 · Zweckverfehlungslehre bezieht sich auf einen Aspekt des Betrugs im deutschen Strafrecht. Sie ist von Bedeutung, …",
+        "published_date": "2025-08-29",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式人工智能 测试用例生成 大语言模型",
+        "urls": [
+          "https://jimeng.jianying.com/",
+          "https://klingai.com/app"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式人工智能 测试用例生成 大语言模型",
+            "rank": 2,
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "生成式人工智能 测试用例生成 大语言模型",
+            "rank": 3,
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.071,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.226,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "GitHub Copilot 单元测试 自动化",
+        "urls": [
+          "https://github.com/",
+          "https://github.com/login"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "GitHub Copilot 单元测试 自动化",
+            "rank": 1,
+            "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+            "url": "https://github.com/",
+            "snippet": "2026年6月26日 · Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join …",
+            "published_date": "2026-06-26",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "GitHub Copilot 单元测试 自动化",
+            "rank": 2,
+            "title": "Sign in to GitHub · GitHub",
+            "url": "https://github.com/login",
+            "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+            "url": "https://github.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Sign in to GitHub · GitHub",
+            "url": "https://github.com/login",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "GitHub中文社区",
+            "url": "https://gitcn.org/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "github打不开的解决方案（超简单）-CSDN博客",
+            "url": "https://blog.csdn.net/weixin_43804496/article/details/131475204/",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "还不会使用 GitHub ？ GitHub 教程来了！万字图文详解",
+            "url": "https://zhuanlan.zhihu.com/p/369486197",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.223,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大模型 自动化测试 缺陷检测",
+        "urls": [
+          "https://zh.wiktionary.org/zh-hant/%E5%A4%A7"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "大模型 自动化测试 缺陷检测",
+            "rank": 4,
+            "title": "大 - 維基詞典，自由的多語言詞典",
+            "url": "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+            "snippet": "3 天之前 · 大 （大部 +0畫，共3畫， 倉頡碼：大（K）， 四角號碼： 4003 0 或 4080 0， 部件組合： ⿻ 一 人 或 ⿸ 𠂇 ㇏） 康熙部首  …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "大 - 維基詞典，自由的多語言詞典",
+            "url": "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "大（汉语文字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%A4%A7/34128",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "大的意思,大的解释,大的拼音,大的部首,大的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-22823",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大字笔画、笔顺、笔划 - 大字怎么写?",
+            "url": "https://www.hanzipi.com/%E5%A4%A7.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大组词_大字组词_大的词语 - 汉语词典",
+            "url": "https://www.chagushici.com/zidian/zuci/%E5%A4%A7",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI测试工具 软件测试 落地挑战",
+        "urls": [
+          "https://www.juraforum.de/lexikon/prozessbetrug",
+          "https://www.juraforum.de/lexikon/zweckverfehlungslehre"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "AI测试工具 软件测试 落地挑战",
+            "rank": 1,
+            "title": "Prozessbetrug ᐅ Strafe, Urteile & Schema - JuraForum.de",
+            "url": "https://www.juraforum.de/lexikon/prozessbetrug",
+            "snippet": "2026年5月29日 · Den Prozessbetrug gibt es als eigenständigen Straftatbestand nicht. Im Ergebnis begeht der Täter damit einen …",
+            "published_date": "2026-05-29",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "AI测试工具 软件测试 落地挑战",
+            "rank": 2,
+            "title": "Zweckverfehlungslehre - JuraForum.de",
+            "url": "https://www.juraforum.de/lexikon/zweckverfehlungslehre",
+            "snippet": "2025年8月29日 · Zweckverfehlungslehre bezieht sich auf einen Aspekt des Betrugs im deutschen Strafrecht. Sie ist von Bedeutung, …",
+            "published_date": "2025-08-29",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Prozessbetrug ᐅ Strafe, Urteile & Schema - JuraForum.de",
+            "url": "https://www.juraforum.de/lexikon/prozessbetrug",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Zweckverfehlungslehre - JuraForum.de",
+            "url": "https://www.juraforum.de/lexikon/zweckverfehlungslehre",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Die Steuertabelle 2002 Steuerrecht - 123recht.de",
+            "url": "https://www.123recht.de/ratgeber/steuerrecht/Die-Steuertabelle-2002-__a2371.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "Rechtswidrigkeit einer baurechtlichen Beseitigungs- und ...",
+            "url": "https://www.123recht.de/ratgeber/verwaltungsrecht/Rechtswidrigkeit-einer-baurechtlichen-Beseitigungs-und-Nutzungsuntersagungsverfuegung-bei-DDR-Schwarzbau-__a16569.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "ᐅ Wahlschuld: Definition, Begriff und Erklärung im JuraForum.de",
+            "url": "https://www.juraforum.de/lexikon/wahlschuld",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.229,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（生成式人工智能在软件测试中的应用趋势）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本；subtasks[6].description 必须为非空文本"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "fanout"
+        ]
+      },
+      "scheduler_elapsed_seconds": 30.102,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

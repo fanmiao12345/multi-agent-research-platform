@@ -1,0 +1,27 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处用『该资料/本资料』指代不同来源，未标明名称，易混淆；建议每处写明来源。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "部分『指定资料未提供…』只列部分证据却称全部指定资料，引用覆盖不足；建议改『部分资料』或补引。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "将来源明示的『未提及』多标为〔推断〕，宜标〔事实〕或注明为来源缺失事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "条件性判断仅列补证需求，未给出若何条件支持/反对强制公开；建议补明确条件句。"
+  }
+ ]
+}

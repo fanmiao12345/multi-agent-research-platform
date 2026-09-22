@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-004未给出IPA全称，“有资料将IPA指为人工智能流程自动化”及“冲突记录”无证据支持。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "待补缺口称“素材待补问题列有非厂商来源界定”，无证据索引支持，属资料外假设。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "报告范围未列具体来源名称，仅以E-ID指代，未满足“说明依据哪些来源”。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "“已核实证据”无依据；“及缺口〔事实〕”把缺口标为事实，标注不当。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-023标为〔推断〕，但该证据系来源结论，标事实或未知更合适。"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_bec946ffb24c4e62b09329ee0c0a138a",
+  "goal": "生成式人工智能在软件测试中的应用趋势",
+  "started_at": "2026-09-20T09:11:49",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 34 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T09:12:18"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:12:32"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T09:12:36"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均未涉及软件测试、测试用例、缺陷检测或测试自动化，无法提供该主题趋势依据。",
+        "finished_at": "2026-09-20T09:12:40"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均未涉及软件测试、测试用例、缺陷检测或测试自动化，无法提供该主题趋势依据。；缺失信息：测试用例生成技术、案例与趋势资料、缺陷检测、缺陷定位或缺陷报告证据、测试自动化、测试脚本生成与执行反馈资料、行业采用率、基准评测或实践案例数据、测试质量、安全、合规与治理材料（可用证据 34 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

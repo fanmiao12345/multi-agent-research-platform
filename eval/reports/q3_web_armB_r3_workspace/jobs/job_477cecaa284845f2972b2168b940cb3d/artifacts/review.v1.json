@@ -1,0 +1,57 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-007只称RPA与AI智能体边界未说明，不是影刀RPA与影刀AI WorkOS；该句错误替换概念。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "冲突二将Agentic AI（E-019/E-020）与AI智能体（E-016/E-017）混为‘智能体’，类别错位。"
+  },
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "E-033/E-038/E-039/E-047是来源明示的无关/分类声明，应标〔事实〕而非〔未知〕。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-047只支持某导航只分类未讨论边界，不支持‘影刀AI WorkOS与RPA协同’缺口。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "缺统一定义框架的断言未由E-033/E-039支持；二者仅证明部分来源无关。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-038仅说明超星无相关表述，不支持‘同任务差异缺对照测试/性能数据’这一全局缺口。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-018为应用场景、E-023为技术差异，二者可并存；列为冲突依据不足。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-022为Agentic AI案例，未直接反驳E-008的RPA规则边界；冲突四定性过强。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "无关来源未标名称（超自然行动组、超星、AIGC导航），仅称‘部分资料’，核查性弱。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "待补问题中若干缺口句未逐条标〔推断〕或〔未知〕，标注一致性不足。"
+  }
+ ]
+}

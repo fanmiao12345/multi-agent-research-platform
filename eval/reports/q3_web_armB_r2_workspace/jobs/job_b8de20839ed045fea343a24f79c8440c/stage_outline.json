@@ -1,0 +1,119 @@
+{
+  "title": "教育领域使用生成式AI的收益与风险：基于给定资料的证据整理提纲",
+  "sections": [
+    {
+      "heading": "资料范围与相关性筛选",
+      "purpose": "标明与主题无关的资料，防止误用为教育AI证据。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-014",
+        "E-015",
+        "E-037",
+        "E-038"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育AI治理的公共利益原则",
+      "purpose": "整理AI治理应服务公平、包容与教育公共利益的资料。",
+      "required_evidence": [
+        "E-016",
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-021",
+        "E-024",
+        "E-028",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "生成式工具制作教学素材的潜力",
+      "purpose": "归纳文生图、视频生成与改造功能对教学素材的启示。",
+      "required_evidence": [
+        "E-030",
+        "E-031",
+        "E-032",
+        "E-033",
+        "E-034",
+        "E-035",
+        "E-036"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "一般AI风险线索及其教育关联",
+      "purpose": "梳理非教育专属风险线索，并标注其教育关联属推断。",
+      "required_evidence": [
+        "E-022",
+        "E-025",
+        "E-026",
+        "E-027"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育生成式AI收益的证据缺口",
+      "purpose": "说明缺少学习效果、教学实验与案例研究等收益证据。",
+      "required_evidence": [
+        "E-010",
+        "E-023",
+        "E-028",
+        "E-029",
+        "E-037"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育生成式AI风险的证据缺口",
+      "purpose": "说明缺少学术诚信、隐私、偏见与过度依赖的实证。",
+      "required_evidence": [
+        "E-008",
+        "E-015",
+        "E-023",
+        "E-029",
+        "E-037",
+        "E-038"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "学校治理与AI素养的证据缺口",
+      "purpose": "说明缺少政策文本、学校规范、培训方案与素养调查。",
+      "required_evidence": [
+        "E-017",
+        "E-018",
+        "E-021",
+        "E-024",
+        "E-027"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论：可回答边界与待补研究",
+      "purpose": "总结有限可证事实、推断与未知，列出后续补证方向。",
+      "required_evidence": [
+        "E-016",
+        "E-020",
+        "E-030",
+        "E-036",
+        "E-022",
+        "E-026",
+        "E-024"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

@@ -1,0 +1,1945 @@
+{
+  "source_id": "src_b197f4193d",
+  "kind": "url",
+  "display": "中国知网",
+  "original_address": "https://cnki.net/index/",
+  "title": "中国知网",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 10556,
+  "content_hash": "8394b73d9760bcd83fd2fb676bf075441f9f19a7a39f27efec6acb21d9195af6",
+  "normalized_hash": "2d3fe4d43fa34190ed810f2af5eab4987df57b589e2a70566213d814709b300a",
+  "captured_at": "2026-09-20T10:48:27",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_b197f4193d.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 273,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 2,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 3,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 8,
+      "end": 24,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 25,
+      "end": 39,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 40,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 46,
+      "end": 48,
+      "page": null
+    },
+    {
+      "heading": "##### 读者服务",
+      "paragraph": 6,
+      "start": 61,
+      "end": 84,
+      "page": null
+    },
+    {
+      "heading": "##### 读者服务",
+      "paragraph": 7,
+      "start": 85,
+      "end": 94,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 8,
+      "start": 108,
+      "end": 116,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 9,
+      "start": 117,
+      "end": 122,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 10,
+      "start": 123,
+      "end": 128,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 11,
+      "start": 129,
+      "end": 136,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 12,
+      "start": 137,
+      "end": 146,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 13,
+      "start": 147,
+      "end": 154,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 14,
+      "start": 155,
+      "end": 164,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 15,
+      "start": 165,
+      "end": 172,
+      "page": null
+    },
+    {
+      "heading": "###### 工具应用",
+      "paragraph": 16,
+      "start": 173,
+      "end": 180,
+      "page": null
+    },
+    {
+      "heading": "###### 服务拓展",
+      "paragraph": 17,
+      "start": 194,
+      "end": 199,
+      "page": null
+    },
+    {
+      "heading": "###### 服务拓展",
+      "paragraph": 18,
+      "start": 200,
+      "end": 205,
+      "page": null
+    },
+    {
+      "heading": "###### 服务拓展",
+      "paragraph": 19,
+      "start": 206,
+      "end": 211,
+      "page": null
+    },
+    {
+      "heading": "###### 服务拓展",
+      "paragraph": 20,
+      "start": 212,
+      "end": 216,
+      "page": null
+    },
+    {
+      "heading": "###### 服务拓展",
+      "paragraph": 21,
+      "start": 217,
+      "end": 223,
+      "page": null
+    },
+    {
+      "heading": "###### 服务拓展",
+      "paragraph": 22,
+      "start": 224,
+      "end": 228,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 23,
+      "start": 242,
+      "end": 247,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 24,
+      "start": 248,
+      "end": 253,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 25,
+      "start": 254,
+      "end": 259,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 26,
+      "start": 260,
+      "end": 265,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 27,
+      "start": 266,
+      "end": 273,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 28,
+      "start": 274,
+      "end": 280,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 29,
+      "start": 281,
+      "end": 286,
+      "page": null
+    },
+    {
+      "heading": "###### 阅读学习",
+      "paragraph": 30,
+      "start": 287,
+      "end": 289,
+      "page": null
+    },
+    {
+      "heading": "##### 作者服务",
+      "paragraph": 31,
+      "start": 302,
+      "end": 327,
+      "page": null
+    },
+    {
+      "heading": "##### 作者服务",
+      "paragraph": 32,
+      "start": 328,
+      "end": 337,
+      "page": null
+    },
+    {
+      "heading": "###### 学术研究",
+      "paragraph": 33,
+      "start": 351,
+      "end": 356,
+      "page": null
+    },
+    {
+      "heading": "###### 学术研究",
+      "paragraph": 34,
+      "start": 357,
+      "end": 362,
+      "page": null
+    },
+    {
+      "heading": "###### 学术研究",
+      "paragraph": 35,
+      "start": 363,
+      "end": 371,
+      "page": null
+    },
+    {
+      "heading": "###### 学术研究",
+      "paragraph": 36,
+      "start": 372,
+      "end": 384,
+      "page": null
+    },
+    {
+      "heading": "###### 文献撰写与发表",
+      "paragraph": 37,
+      "start": 401,
+      "end": 412,
+      "page": null
+    },
+    {
+      "heading": "###### 文献撰写与发表",
+      "paragraph": 38,
+      "start": 413,
+      "end": 420,
+      "page": null
+    },
+    {
+      "heading": "###### 文献撰写与发表",
+      "paragraph": 39,
+      "start": 421,
+      "end": 428,
+      "page": null
+    },
+    {
+      "heading": "###### 文献撰写与发表",
+      "paragraph": 40,
+      "start": 429,
+      "end": 441,
+      "page": null
+    },
+    {
+      "heading": "###### 文献撰写与发表",
+      "paragraph": 41,
+      "start": 442,
+      "end": 451,
+      "page": null
+    },
+    {
+      "heading": "###### 文献撰写与发表",
+      "paragraph": 42,
+      "start": 452,
+      "end": 461,
+      "page": null
+    },
+    {
+      "heading": "###### 文献撰写与发表",
+      "paragraph": 43,
+      "start": 462,
+      "end": 467,
+      "page": null
+    },
+    {
+      "heading": "###### 成果认领与传播",
+      "paragraph": 44,
+      "start": 484,
+      "end": 502,
+      "page": null
+    },
+    {
+      "heading": "###### 成果认领与传播",
+      "paragraph": 45,
+      "start": 503,
+      "end": 518,
+      "page": null
+    },
+    {
+      "heading": "###### 成果认领与传播",
+      "paragraph": 46,
+      "start": 519,
+      "end": 530,
+      "page": null
+    },
+    {
+      "heading": "###### 成果认领与传播",
+      "paragraph": 47,
+      "start": 531,
+      "end": 536,
+      "page": null
+    },
+    {
+      "heading": "###### 成果认领与传播",
+      "paragraph": 48,
+      "start": 537,
+      "end": 539,
+      "page": null
+    },
+    {
+      "heading": "##### 出版服务",
+      "paragraph": 49,
+      "start": 552,
+      "end": 601,
+      "page": null
+    },
+    {
+      "heading": "##### 出版服务",
+      "paragraph": 50,
+      "start": 602,
+      "end": 611,
+      "page": null
+    },
+    {
+      "heading": "###### 期刊社",
+      "paragraph": 51,
+      "start": 624,
+      "end": 633,
+      "page": null
+    },
+    {
+      "heading": "###### 期刊社",
+      "paragraph": 52,
+      "start": 634,
+      "end": 645,
+      "page": null
+    },
+    {
+      "heading": "###### 期刊社",
+      "paragraph": 53,
+      "start": 646,
+      "end": 659,
+      "page": null
+    },
+    {
+      "heading": "###### 期刊社",
+      "paragraph": 54,
+      "start": 660,
+      "end": 666,
+      "page": null
+    },
+    {
+      "heading": "###### 期刊社",
+      "paragraph": 55,
+      "start": 667,
+      "end": 681,
+      "page": null
+    },
+    {
+      "heading": "###### 期刊社",
+      "paragraph": 56,
+      "start": 682,
+      "end": 697,
+      "page": null
+    },
+    {
+      "heading": "###### 期刊社",
+      "paragraph": 57,
+      "start": 698,
+      "end": 711,
+      "page": null
+    },
+    {
+      "heading": "###### 学位论文授予单位",
+      "paragraph": 58,
+      "start": 729,
+      "end": 740,
+      "page": null
+    },
+    {
+      "heading": "###### 学位论文授予单位",
+      "paragraph": 59,
+      "start": 741,
+      "end": 750,
+      "page": null
+    },
+    {
+      "heading": "###### 学位论文授予单位",
+      "paragraph": 60,
+      "start": 751,
+      "end": 762,
+      "page": null
+    },
+    {
+      "heading": "###### 学位论文授予单位",
+      "paragraph": 61,
+      "start": 763,
+      "end": 774,
+      "page": null
+    },
+    {
+      "heading": "###### 学位论文授予单位",
+      "paragraph": 62,
+      "start": 775,
+      "end": 784,
+      "page": null
+    },
+    {
+      "heading": "###### 学协会",
+      "paragraph": 63,
+      "start": 797,
+      "end": 805,
+      "page": null
+    },
+    {
+      "heading": "###### 学协会",
+      "paragraph": 64,
+      "start": 806,
+      "end": 819,
+      "page": null
+    },
+    {
+      "heading": "###### 学协会",
+      "paragraph": 65,
+      "start": 820,
+      "end": 831,
+      "page": null
+    },
+    {
+      "heading": "###### 学协会",
+      "paragraph": 66,
+      "start": 832,
+      "end": 841,
+      "page": null
+    },
+    {
+      "heading": "###### 学协会",
+      "paragraph": 67,
+      "start": 842,
+      "end": 851,
+      "page": null
+    },
+    {
+      "heading": "###### 图书出版社",
+      "paragraph": 68,
+      "start": 866,
+      "end": 879,
+      "page": null
+    },
+    {
+      "heading": "###### 图书出版社",
+      "paragraph": 69,
+      "start": 880,
+      "end": 892,
+      "page": null
+    },
+    {
+      "heading": "###### 图书出版社",
+      "paragraph": 70,
+      "start": 893,
+      "end": 898,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 71,
+      "start": 912,
+      "end": 919,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 72,
+      "start": 920,
+      "end": 925,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 73,
+      "start": 926,
+      "end": 938,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 74,
+      "start": 939,
+      "end": 944,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 75,
+      "start": 945,
+      "end": 955,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 76,
+      "start": 956,
+      "end": 966,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 77,
+      "start": 967,
+      "end": 974,
+      "page": null
+    },
+    {
+      "heading": "###### 知网出版",
+      "paragraph": 78,
+      "start": 975,
+      "end": 977,
+      "page": null
+    },
+    {
+      "heading": "##### 产品解决方案",
+      "paragraph": 79,
+      "start": 992,
+      "end": 1030,
+      "page": null
+    },
+    {
+      "heading": "##### 产品解决方案",
+      "paragraph": 80,
+      "start": 1031,
+      "end": 1042,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 81,
+      "start": 1058,
+      "end": 1063,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 82,
+      "start": 1064,
+      "end": 1075,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 83,
+      "start": 1076,
+      "end": 1081,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 84,
+      "start": 1082,
+      "end": 1087,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 85,
+      "start": 1088,
+      "end": 1093,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 86,
+      "start": 1094,
+      "end": 1105,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 87,
+      "start": 1106,
+      "end": 1115,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 88,
+      "start": 1116,
+      "end": 1123,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 89,
+      "start": 1124,
+      "end": 1131,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 90,
+      "start": 1132,
+      "end": 1145,
+      "page": null
+    },
+    {
+      "heading": "###### 数字出版服务",
+      "paragraph": 91,
+      "start": 1146,
+      "end": 1152,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 92,
+      "start": 1168,
+      "end": 1173,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 93,
+      "start": 1174,
+      "end": 1179,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 94,
+      "start": 1180,
+      "end": 1185,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 95,
+      "start": 1186,
+      "end": 1191,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 96,
+      "start": 1192,
+      "end": 1197,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 97,
+      "start": 1198,
+      "end": 1203,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 98,
+      "start": 1204,
+      "end": 1209,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 99,
+      "start": 1210,
+      "end": 1215,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 100,
+      "start": 1216,
+      "end": 1221,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 101,
+      "start": 1222,
+      "end": 1227,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 102,
+      "start": 1228,
+      "end": 1233,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 103,
+      "start": 1234,
+      "end": 1239,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 104,
+      "start": 1240,
+      "end": 1245,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 105,
+      "start": 1246,
+      "end": 1251,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 106,
+      "start": 1252,
+      "end": 1257,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 107,
+      "start": 1258,
+      "end": 1263,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 108,
+      "start": 1264,
+      "end": 1269,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 109,
+      "start": 1270,
+      "end": 1275,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 110,
+      "start": 1276,
+      "end": 1281,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 111,
+      "start": 1282,
+      "end": 1287,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 112,
+      "start": 1288,
+      "end": 1293,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 113,
+      "start": 1294,
+      "end": 1299,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 114,
+      "start": 1300,
+      "end": 1305,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 115,
+      "start": 1306,
+      "end": 1311,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 116,
+      "start": 1312,
+      "end": 1317,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 117,
+      "start": 1318,
+      "end": 1323,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 118,
+      "start": 1324,
+      "end": 1329,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 119,
+      "start": 1330,
+      "end": 1335,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 120,
+      "start": 1336,
+      "end": 1341,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 121,
+      "start": 1342,
+      "end": 1348,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 122,
+      "start": 1349,
+      "end": 1354,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 123,
+      "start": 1355,
+      "end": 1360,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 124,
+      "start": 1361,
+      "end": 1366,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 125,
+      "start": 1367,
+      "end": 1372,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 126,
+      "start": 1373,
+      "end": 1378,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 127,
+      "start": 1379,
+      "end": 1384,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 128,
+      "start": 1385,
+      "end": 1392,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 129,
+      "start": 1393,
+      "end": 1398,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 130,
+      "start": 1399,
+      "end": 1404,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 131,
+      "start": 1405,
+      "end": 1411,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 132,
+      "start": 1412,
+      "end": 1417,
+      "page": null
+    },
+    {
+      "heading": "###### 行业增值服务",
+      "paragraph": 133,
+      "start": 1418,
+      "end": 1420,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 134,
+      "start": 1433,
+      "end": 1499,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 135,
+      "start": 1500,
+      "end": 1509,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 136,
+      "start": 1510,
+      "end": 1519,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 137,
+      "start": 1520,
+      "end": 1526,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 138,
+      "start": 1527,
+      "end": 1538,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 139,
+      "start": 1539,
+      "end": 1550,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 140,
+      "start": 1551,
+      "end": 1556,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 141,
+      "start": 1557,
+      "end": 1562,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 142,
+      "start": 1563,
+      "end": 1570,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 143,
+      "start": 1571,
+      "end": 1579,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 144,
+      "start": 1580,
+      "end": 1585,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 145,
+      "start": 1586,
+      "end": 1601,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 146,
+      "start": 1602,
+      "end": 1610,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 147,
+      "start": 1611,
+      "end": 1620,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 148,
+      "start": 1621,
+      "end": 1631,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 149,
+      "start": 1632,
+      "end": 1641,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 150,
+      "start": 1642,
+      "end": 1649,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 151,
+      "start": 1650,
+      "end": 1655,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 152,
+      "start": 1656,
+      "end": 1659,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 153,
+      "start": 1660,
+      "end": 1665,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 154,
+      "start": 1666,
+      "end": 1669,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 155,
+      "start": 1670,
+      "end": 1675,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 156,
+      "start": 1676,
+      "end": 1682,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 157,
+      "start": 1683,
+      "end": 1686,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 158,
+      "start": 1687,
+      "end": 1691,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 159,
+      "start": 1692,
+      "end": 1700,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 160,
+      "start": 1701,
+      "end": 1706,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 161,
+      "start": 1707,
+      "end": 1710,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 162,
+      "start": 1711,
+      "end": 1716,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 163,
+      "start": 1717,
+      "end": 1761,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 164,
+      "start": 1762,
+      "end": 1799,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 165,
+      "start": 1800,
+      "end": 1820,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 166,
+      "start": 1821,
+      "end": 1826,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 167,
+      "start": 1827,
+      "end": 1832,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 168,
+      "start": 1833,
+      "end": 1836,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 169,
+      "start": 1837,
+      "end": 1840,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 170,
+      "start": 1841,
+      "end": 1844,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 171,
+      "start": 1845,
+      "end": 1848,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 172,
+      "start": 1849,
+      "end": 1852,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 173,
+      "start": 1853,
+      "end": 1856,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 174,
+      "start": 1857,
+      "end": 1860,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 175,
+      "start": 1861,
+      "end": 1866,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 176,
+      "start": 1867,
+      "end": 1870,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 177,
+      "start": 1871,
+      "end": 1876,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 178,
+      "start": 1877,
+      "end": 1881,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 179,
+      "start": 1882,
+      "end": 1888,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 180,
+      "start": 1889,
+      "end": 1894,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 181,
+      "start": 1895,
+      "end": 1900,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 182,
+      "start": 1901,
+      "end": 1904,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 183,
+      "start": 1905,
+      "end": 1915,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 184,
+      "start": 1916,
+      "end": 1919,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 185,
+      "start": 1920,
+      "end": 1925,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 186,
+      "start": 1926,
+      "end": 1931,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 187,
+      "start": 1932,
+      "end": 1935,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 188,
+      "start": 1936,
+      "end": 1941,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 189,
+      "start": 1942,
+      "end": 1947,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 190,
+      "start": 1948,
+      "end": 1953,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 191,
+      "start": 1954,
+      "end": 1959,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 192,
+      "start": 1960,
+      "end": 1965,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 193,
+      "start": 1966,
+      "end": 1971,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 194,
+      "start": 1972,
+      "end": 1977,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 195,
+      "start": 1978,
+      "end": 1983,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 196,
+      "start": 1984,
+      "end": 2028,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 197,
+      "start": 2029,
+      "end": 2066,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 198,
+      "start": 2067,
+      "end": 2072,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 199,
+      "start": 2073,
+      "end": 2078,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 200,
+      "start": 2079,
+      "end": 2084,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 201,
+      "start": 2085,
+      "end": 2090,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 202,
+      "start": 2091,
+      "end": 2096,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 203,
+      "start": 2097,
+      "end": 2102,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 204,
+      "start": 2103,
+      "end": 2109,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 205,
+      "start": 2110,
+      "end": 2114,
+      "page": null
+    },
+    {
+      "heading": "##### 学术评价",
+      "paragraph": 206,
+      "start": 2115,
+      "end": 2118,
+      "page": null
+    },
+    {
+      "heading": "##### 选择添加",
+      "paragraph": 207,
+      "start": 2131,
+      "end": 2136,
+      "page": null
+    },
+    {
+      "heading": "##### 选择添加",
+      "paragraph": 208,
+      "start": 2137,
+      "end": 2144,
+      "page": null
+    },
+    {
+      "heading": "##### 选择添加",
+      "paragraph": 209,
+      "start": 2145,
+      "end": 2152,
+      "page": null
+    },
+    {
+      "heading": "##### 选择添加",
+      "paragraph": 210,
+      "start": 2153,
+      "end": 2160,
+      "page": null
+    },
+    {
+      "heading": "##### 选择添加",
+      "paragraph": 211,
+      "start": 2161,
+      "end": 2172,
+      "page": null
+    },
+    {
+      "heading": "##### 选择添加",
+      "paragraph": 212,
+      "start": 2173,
+      "end": 2175,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 213,
+      "start": 2187,
+      "end": 2195,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 214,
+      "start": 2196,
+      "end": 2203,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 215,
+      "start": 2204,
+      "end": 2211,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 216,
+      "start": 2212,
+      "end": 2217,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 217,
+      "start": 2218,
+      "end": 2227,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 218,
+      "start": 2228,
+      "end": 2237,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 219,
+      "start": 2238,
+      "end": 2247,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 220,
+      "start": 2248,
+      "end": 2253,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 221,
+      "start": 2254,
+      "end": 2258,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 222,
+      "start": 2259,
+      "end": 2327,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 223,
+      "start": 2328,
+      "end": 2406,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 224,
+      "start": 2407,
+      "end": 2587,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 225,
+      "start": 2588,
+      "end": 2609,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 226,
+      "start": 2610,
+      "end": 2614,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 227,
+      "start": 2615,
+      "end": 2619,
+      "page": null
+    },
+    {
+      "heading": "### “ ”词云",
+      "paragraph": 228,
+      "start": 2620,
+      "end": 2624,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 229,
+      "start": 2649,
+      "end": 2664,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 230,
+      "start": 2665,
+      "end": 2668,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 231,
+      "start": 2669,
+      "end": 2672,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 232,
+      "start": 2673,
+      "end": 2676,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 233,
+      "start": 2677,
+      "end": 2682,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 234,
+      "start": 2683,
+      "end": 2688,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 235,
+      "start": 2689,
+      "end": 2714,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 236,
+      "start": 2715,
+      "end": 2740,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 237,
+      "start": 2741,
+      "end": 2757,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 238,
+      "start": 2758,
+      "end": 2776,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 239,
+      "start": 2777,
+      "end": 2795,
+      "page": null
+    },
+    {
+      "heading": "## Recommendation 知网推荐",
+      "paragraph": 240,
+      "start": 2796,
+      "end": 2812,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 241,
+      "start": 2840,
+      "end": 2851,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 242,
+      "start": 2852,
+      "end": 2871,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 243,
+      "start": 2872,
+      "end": 2985,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 244,
+      "start": 2986,
+      "end": 2997,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 245,
+      "start": 2998,
+      "end": 3012,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 246,
+      "start": 3013,
+      "end": 3119,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 247,
+      "start": 3120,
+      "end": 3131,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 248,
+      "start": 3132,
+      "end": 3142,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 249,
+      "start": 3143,
+      "end": 3183,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 250,
+      "start": 3184,
+      "end": 3195,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 251,
+      "start": 3196,
+      "end": 3218,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 252,
+      "start": 3219,
+      "end": 3297,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 253,
+      "start": 3298,
+      "end": 3309,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 254,
+      "start": 3310,
+      "end": 3350,
+      "page": null
+    },
+    {
+      "heading": "## CNKI Updates 知网动态 了解更多",
+      "paragraph": 255,
+      "start": 3351,
+      "end": 3391,
+      "page": null
+    },
+    {
+      "heading": "###### 知缶平台上线发布",
+      "paragraph": 256,
+      "start": 3697,
+      "end": 3751,
+      "page": null
+    },
+    {
+      "heading": "###### 知缶平台上线发布",
+      "paragraph": 257,
+      "start": 3752,
+      "end": 3763,
+      "page": null
+    },
+    {
+      "heading": "###### CNKI Claw全新上线",
+      "paragraph": 258,
+      "start": 3786,
+      "end": 3836,
+      "page": null
+    },
+    {
+      "heading": "###### CNKI Claw全新上线",
+      "paragraph": 259,
+      "start": 3837,
+      "end": 3848,
+      "page": null
+    },
+    {
+      "heading": "###### 公文大模型（政知通）重磅升级",
+      "paragraph": 260,
+      "start": 3872,
+      "end": 3927,
+      "page": null
+    },
+    {
+      "heading": "###### 公文大模型（政知通）重磅升级",
+      "paragraph": 261,
+      "start": 3928,
+      "end": 3939,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 262,
+      "start": 3964,
+      "end": 4019,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 263,
+      "start": 4020,
+      "end": 4031,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 264,
+      "start": 4032,
+      "end": 4060,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 265,
+      "start": 4061,
+      "end": 4111,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 266,
+      "start": 4112,
+      "end": 4137,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 267,
+      "start": 4138,
+      "end": 4221,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 268,
+      "start": 4222,
+      "end": 4343,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 269,
+      "start": 4344,
+      "end": 4356,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 270,
+      "start": 4357,
+      "end": 4414,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 271,
+      "start": 4415,
+      "end": 4562,
+      "page": null
+    },
+    {
+      "heading": "###### 标准质量评估服务平台重磅发布！",
+      "paragraph": 272,
+      "start": 4563,
+      "end": 4567,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.cnki.net",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T10:48:27",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

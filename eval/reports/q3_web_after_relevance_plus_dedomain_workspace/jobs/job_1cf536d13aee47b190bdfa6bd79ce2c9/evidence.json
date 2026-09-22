@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_65690cd096",
+      "fact": "本资料为国家统计局网站页面，栏目以数据发布、数据解读与统计制度为主。",
+      "tag": "F",
+      "quote": "数据发布",
+      "start": 285,
+      "end": 289,
+      "locator": {
+        "heading": "",
+        "paragraph": 23,
+        "start": 285,
+        "end": 290
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_65690cd096",
+      "fact": "本资料发布的最新宏观经济数据为2026年8月份国民经济运行情况。",
+      "tag": "F",
+      "quote": "8月份国民经济运行平稳、发展向新向优",
+      "start": 291,
+      "end": 309,
+      "locator": {
+        "heading": "",
+        "paragraph": 24,
+        "start": 291,
+        "end": 310
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_65690cd096",
+      "fact": "本资料所列的规模以上工业增加值增速为5.2%。",
+      "tag": "F",
+      "quote": "2026年8月份规模以上工业增加值增长5.2%",
+      "start": 311,
+      "end": 334,
+      "locator": {
+        "heading": "",
+        "paragraph": 25,
+        "start": 311,
+        "end": 335
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_65690cd096",
+      "fact": "本资料列出工业、建筑业、房地产等统计调查制度目录。",
+      "tag": "F",
+      "quote": "工业统计调查制度主要内容（2025年统计年报和2026年定",
+      "start": 1887,
+      "end": 1916,
+      "locator": {
+        "heading": "",
+        "paragraph": 114,
+        "start": 1887,
+        "end": 1920
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_65690cd096",
+      "fact": "本资料含有数字经济统计分类标准，但未涉及数据出境合规。",
+      "tag": "F",
+      "quote": "《数字经济及其核心产业统计分类（2021）》",
+      "start": 2371,
+      "end": 2393,
+      "locator": {
+        "heading": "",
+        "paragraph": 137,
+        "start": 2371,
+        "end": 2402
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_65690cd096",
+      "fact": "本资料页面链接中出现国家网信办，但无数据出境相关内容。",
+      "tag": "F",
+      "quote": "国家网信办",
+      "start": 3174,
+      "end": 3179,
+      "locator": {
+        "heading": "",
+        "paragraph": 225,
+        "start": 3174,
+        "end": 3180
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_65690cd096",
+      "fact": "本资料列出人口普查等普查数据入口，均非合规类文件。",
+      "tag": "F",
+      "quote": "第七次全国人口普查主要数据",
+      "start": 1298,
+      "end": 1311,
+      "locator": {
+        "heading": "",
+        "paragraph": 82,
+        "start": 1298,
+        "end": 1312
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_65690cd096",
+      "fact": "本资料未提及数据出境、跨境传输或合规监管的任何要求，无法回答该任务。",
+      "tag": "F",
+      "quote": "服务条款",
+      "start": 3890,
+      "end": 3894,
+      "locator": {
+        "heading": "",
+        "paragraph": 346,
+        "start": 3873,
+        "end": 3900
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_6e882bf701",
+      "fact": "本资料仅为登录页面，未包含企业数据出境合规的任何信息",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_6e882bf701",
+      "fact": "本资料无法提供企业数据出境合规主要变化的事实依据",
+      "tag": "F",
+      "quote": "立即登录",
+      "start": 24,
+      "end": 28,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 1,
+        "start": 24,
+        "end": 29
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,1238 @@
+{
+  "source_id": "src_c236dc199d",
+  "kind": "url",
+  "display": "百度知道 - 全球领先中文互动问答平台",
+  "original_address": "https://zhidao.baidu.com/",
+  "title": "百度知道 - 全球领先中文互动问答平台",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 4395,
+  "content_hash": "6510192a3e25403a111a23c3c63d6e14c46dd2224e282bc13a02d61e708d00e3",
+  "normalized_hash": "d083935415914e34feb003394c0575451e8d31e1c1829ccd7889fc8c796235a4",
+  "captured_at": "2026-09-20T10:51:37",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_c236dc199d.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 172,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 5,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 6,
+      "end": 9,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 10,
+      "end": 13,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 14,
+      "end": 17,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 18,
+      "end": 21,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 22,
+      "end": 25,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 26,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 30,
+      "end": 33,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 34,
+      "end": 37,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 38,
+      "end": 41,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 42,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 46,
+      "end": 49,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 50,
+      "end": 53,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 54,
+      "end": 57,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 58,
+      "end": 68,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 69,
+      "end": 72,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 73,
+      "end": 76,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 77,
+      "end": 82,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 83,
+      "end": 88,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 89,
+      "end": 93,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 94,
+      "end": 99,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 100,
+      "end": 103,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 104,
+      "end": 107,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 108,
+      "end": 111,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 112,
+      "end": 117,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 118,
+      "end": 121,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 122,
+      "end": 125,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 126,
+      "end": 131,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 132,
+      "end": 135,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 136,
+      "end": 149,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 150,
+      "end": 186,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 187,
+      "end": 205,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 206,
+      "end": 242,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 243,
+      "end": 254,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 255,
+      "end": 291,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 292,
+      "end": 308,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 309,
+      "end": 345,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 346,
+      "end": 360,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 361,
+      "end": 397,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 398,
+      "end": 414,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 415,
+      "end": 451,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 452,
+      "end": 457,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 458,
+      "end": 466,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 467,
+      "end": 474,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 475,
+      "end": 478,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 479,
+      "end": 519,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 520,
+      "end": 560,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 47,
+      "start": 561,
+      "end": 601,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 48,
+      "start": 602,
+      "end": 604,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 49,
+      "start": 605,
+      "end": 645,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 50,
+      "start": 646,
+      "end": 686,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 51,
+      "start": 687,
+      "end": 727,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 52,
+      "start": 728,
+      "end": 730,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 53,
+      "start": 731,
+      "end": 771,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 54,
+      "start": 772,
+      "end": 812,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 55,
+      "start": 813,
+      "end": 853,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 56,
+      "start": 854,
+      "end": 858,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 57,
+      "start": 859,
+      "end": 864,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 58,
+      "start": 865,
+      "end": 870,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 59,
+      "start": 871,
+      "end": 876,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 60,
+      "start": 877,
+      "end": 882,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 61,
+      "start": 883,
+      "end": 904,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 62,
+      "start": 905,
+      "end": 934,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 63,
+      "start": 935,
+      "end": 947,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 64,
+      "start": 948,
+      "end": 956,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 65,
+      "start": 957,
+      "end": 978,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 66,
+      "start": 979,
+      "end": 987,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 67,
+      "start": 988,
+      "end": 1009,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 68,
+      "start": 1010,
+      "end": 1018,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 69,
+      "start": 1019,
+      "end": 1024,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 70,
+      "start": 1025,
+      "end": 1054,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 71,
+      "start": 1055,
+      "end": 1101,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 72,
+      "start": 1102,
+      "end": 1119,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 73,
+      "start": 1120,
+      "end": 1151,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 74,
+      "start": 1152,
+      "end": 1191,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 75,
+      "start": 1192,
+      "end": 1208,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 76,
+      "start": 1209,
+      "end": 1237,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 77,
+      "start": 1238,
+      "end": 1284,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 78,
+      "start": 1285,
+      "end": 1302,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 79,
+      "start": 1303,
+      "end": 1309,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 80,
+      "start": 1310,
+      "end": 1315,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 81,
+      "start": 1316,
+      "end": 1318,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 82,
+      "start": 1319,
+      "end": 1324,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 83,
+      "start": 1325,
+      "end": 1339,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 84,
+      "start": 1340,
+      "end": 1342,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 85,
+      "start": 1343,
+      "end": 1349,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 86,
+      "start": 1350,
+      "end": 1364,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 87,
+      "start": 1365,
+      "end": 1367,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 88,
+      "start": 1368,
+      "end": 1375,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 89,
+      "start": 1376,
+      "end": 1391,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 90,
+      "start": 1392,
+      "end": 1394,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 91,
+      "start": 1395,
+      "end": 1401,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 92,
+      "start": 1402,
+      "end": 1416,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 93,
+      "start": 1417,
+      "end": 1419,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 94,
+      "start": 1420,
+      "end": 1431,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 95,
+      "start": 1432,
+      "end": 1446,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 96,
+      "start": 1447,
+      "end": 1452,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 97,
+      "start": 1453,
+      "end": 1455,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 98,
+      "start": 1456,
+      "end": 1464,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 99,
+      "start": 1465,
+      "end": 1479,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 100,
+      "start": 1480,
+      "end": 1482,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 101,
+      "start": 1483,
+      "end": 1488,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 102,
+      "start": 1489,
+      "end": 1503,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 103,
+      "start": 1504,
+      "end": 1506,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 104,
+      "start": 1507,
+      "end": 1520,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 105,
+      "start": 1521,
+      "end": 1535,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 106,
+      "start": 1536,
+      "end": 1538,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 107,
+      "start": 1539,
+      "end": 1549,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 108,
+      "start": 1550,
+      "end": 1564,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 109,
+      "start": 1565,
+      "end": 1567,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 110,
+      "start": 1568,
+      "end": 1578,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 111,
+      "start": 1579,
+      "end": 1593,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 112,
+      "start": 1594,
+      "end": 1599,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 113,
+      "start": 1600,
+      "end": 1673,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 114,
+      "start": 1674,
+      "end": 1679,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 115,
+      "start": 1680,
+      "end": 1690,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 116,
+      "start": 1691,
+      "end": 1703,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 117,
+      "start": 1704,
+      "end": 1714,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 118,
+      "start": 1715,
+      "end": 1729,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 119,
+      "start": 1730,
+      "end": 1740,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 120,
+      "start": 1741,
+      "end": 1754,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 121,
+      "start": 1755,
+      "end": 1763,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 122,
+      "start": 1764,
+      "end": 1779,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 123,
+      "start": 1780,
+      "end": 1791,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 124,
+      "start": 1792,
+      "end": 1805,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 125,
+      "start": 1806,
+      "end": 1814,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 126,
+      "start": 1815,
+      "end": 1828,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 127,
+      "start": 1829,
+      "end": 1836,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 128,
+      "start": 1837,
+      "end": 1850,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 129,
+      "start": 1851,
+      "end": 1856,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 130,
+      "start": 1857,
+      "end": 1863,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 131,
+      "start": 1864,
+      "end": 1866,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 132,
+      "start": 1867,
+      "end": 1872,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 133,
+      "start": 1873,
+      "end": 1876,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 134,
+      "start": 1877,
+      "end": 1881,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 135,
+      "start": 1882,
+      "end": 1887,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 136,
+      "start": 1888,
+      "end": 1890,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 137,
+      "start": 1891,
+      "end": 1894,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 138,
+      "start": 1895,
+      "end": 1905,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 139,
+      "start": 1906,
+      "end": 1919,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 140,
+      "start": 1920,
+      "end": 1925,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 141,
+      "start": 1926,
+      "end": 1929,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 142,
+      "start": 1930,
+      "end": 1934,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 143,
+      "start": 1935,
+      "end": 1942,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 144,
+      "start": 1943,
+      "end": 1948,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 145,
+      "start": 1949,
+      "end": 1951,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 146,
+      "start": 1952,
+      "end": 1956,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 147,
+      "start": 1957,
+      "end": 1962,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 148,
+      "start": 1963,
+      "end": 1969,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 149,
+      "start": 1970,
+      "end": 1975,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 150,
+      "start": 1976,
+      "end": 1982,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 151,
+      "start": 1983,
+      "end": 1989,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 152,
+      "start": 1990,
+      "end": 1996,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 153,
+      "start": 1997,
+      "end": 2003,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 154,
+      "start": 2004,
+      "end": 2010,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 155,
+      "start": 2011,
+      "end": 2022,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 156,
+      "start": 2023,
+      "end": 2028,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 157,
+      "start": 2029,
+      "end": 2034,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 158,
+      "start": 2035,
+      "end": 2040,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 159,
+      "start": 2041,
+      "end": 2047,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 160,
+      "start": 2048,
+      "end": 2053,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 161,
+      "start": 2054,
+      "end": 2059,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 162,
+      "start": 2060,
+      "end": 2066,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 163,
+      "start": 2067,
+      "end": 2076,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 164,
+      "start": 2077,
+      "end": 2087,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 165,
+      "start": 2088,
+      "end": 2093,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 166,
+      "start": 2094,
+      "end": 2099,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 167,
+      "start": 2100,
+      "end": 2105,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 168,
+      "start": 2106,
+      "end": 2113,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 169,
+      "start": 2114,
+      "end": 2181,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 170,
+      "start": 2182,
+      "end": 2186,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 171,
+      "start": 2187,
+      "end": 2190,
+      "page": null
+    }
+  ],
+  "final_url": "https://zhidao.baidu.com/",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T10:51:37",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

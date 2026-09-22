@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_417df41c82",
+      "fact": "本资料为国家统计局网站首页，内容以统计数据的发布、解读与查询栏目为主。",
+      "tag": "F",
+      "quote": "数据发布",
+      "start": 285,
+      "end": 289,
+      "locator": {
+        "heading": "",
+        "paragraph": 23,
+        "start": 285,
+        "end": 290
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_417df41c82",
+      "fact": "本资料列出的信息为国民经济运行、价格、投资、房地产等统计发布内容。",
+      "tag": "F",
+      "quote": "8月份国民经济运行平稳、发展向新向优",
+      "start": 291,
+      "end": 309,
+      "locator": {
+        "heading": "",
+        "paragraph": 24,
+        "start": 291,
+        "end": 310
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_417df41c82",
+      "fact": "本资料未出现数据出境、数据跨境或合规监管相关内容，无法支持该任务目标。",
+      "tag": "F",
+      "quote": "版权所有: 国家统计局",
+      "start": 3873,
+      "end": 3884,
+      "locator": {
+        "heading": "",
+        "paragraph": 346,
+        "start": 3873,
+        "end": 3900
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_c3092148a4",
+      "fact": "本资料为登录页面，未涉及企业数据出境合规主题",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_c3092148a4",
+      "fact": "本资料未提供企业数据出境合规主要变化的任何信息",
+      "tag": "F",
+      "quote": "就业意愿 （可以在个人中心修改）",
+      "start": 88,
+      "end": 104,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 3,
+        "start": 88,
+        "end": 105
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "source_id": "src_1e9f197e28",
+  "kind": "url",
+  "display": "南京公交查询_南京公交路线_8684公交",
+  "original_address": "https://nanjing.8684.com.cn/",
+  "title": "南京公交查询_南京公交路线_8684公交",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 1636,
+  "content_hash": "980fac924f6b1b2299e31eb222d1a8d59312ec81d881b2158d670821d19a24d4",
+  "normalized_hash": "0e2622b019318c38896c38c81a6a7c809fca0a24dd740e27b3771352c4052ae0",
+  "captured_at": "2026-09-20T11:05:12",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_1e9f197e28.md",
+  "encoding": "UTF-8",
+  "segment_count": 25,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 12,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 13,
+      "end": 28,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 29,
+      "end": 36,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 37,
+      "end": 52,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 53,
+      "end": 59,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 60,
+      "end": 64,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 65,
+      "end": 68,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 69,
+      "end": 74,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 75,
+      "end": 78,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 79,
+      "end": 84,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 85,
+      "end": 88,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 89,
+      "end": 96,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 97,
+      "end": 308,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 309,
+      "end": 316,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 317,
+      "end": 509,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 510,
+      "end": 515,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 516,
+      "end": 521,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 522,
+      "end": 527,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 528,
+      "end": 533,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 534,
+      "end": 539,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 540,
+      "end": 545,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 546,
+      "end": 566,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 567,
+      "end": 823,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 824,
+      "end": 841,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 842,
+      "end": 876,
+      "page": null
+    }
+  ],
+  "final_url": "https://nanjing.8684.com.cn/",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:05:12",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

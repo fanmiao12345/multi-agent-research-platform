@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_6c9f26b3c3",
+      "fact": "本资料列出远程支持场景，称秒级响应、专业高效。",
+      "tag": "F",
+      "quote": "秒级响应, 专业高效",
+      "start": 78,
+      "end": 88,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 78,
+        "end": 89
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_6c9f26b3c3",
+      "fact": "本资料列出远程办公与专业设计场景。",
+      "tag": "F",
+      "quote": "远程办公与专业设计",
+      "start": 96,
+      "end": 105,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 96,
+        "end": 106
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_6c9f26b3c3",
+      "fact": "本资料称隐私保护含隐私屏防窥和远程关闭物理屏。",
+      "tag": "F",
+      "quote": "隐私屏防窥和远程关闭物理屏",
+      "start": 458,
+      "end": 471,
+      "locator": {
+        "heading": "",
+        "paragraph": 46,
+        "start": 458,
+        "end": 472
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_6c9f26b3c3",
+      "fact": "本资料称具有移动端主设备二次验证功能。",
+      "tag": "F",
+      "quote": "移动端主设备二次验证",
+      "start": 557,
+      "end": 567,
+      "locator": {
+        "heading": "",
+        "paragraph": 54,
+        "start": 557,
+        "end": 568
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_6c9f26b3c3",
+      "fact": "本资料称每月安全连接时间达50亿+分钟。",
+      "tag": "F",
+      "quote": "安全连接时间 (min)",
+      "start": 1314,
+      "end": 1326,
+      "locator": {
+        "heading": "",
+        "paragraph": 123,
+        "start": 1314,
+        "end": 1327
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_6c9f26b3c3",
+      "fact": "本资料称用户支持数达3亿+。",
+      "tag": "F",
+      "quote": "3亿+",
+      "start": 1328,
+      "end": 1331,
+      "locator": {
+        "heading": "",
+        "paragraph": 124,
+        "start": 1328,
+        "end": 1332
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_6c9f26b3c3",
+      "fact": "本资料未提远程医疗，不能据此提取远程医疗推广支持或反对观点。",
+      "tag": "I",
+      "quote": "远程支持",
+      "start": 72,
+      "end": 76,
+      "locator": {
+        "heading": "",
+        "paragraph": 9,
+        "start": 72,
+        "end": 77
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料把医疗保健列为向日葵的行业解决方案方向之一。",
+      "tag": "F",
+      "quote": "医疗保健",
+      "start": 692,
+      "end": 696,
+      "locator": {
+        "heading": "",
+        "paragraph": 52,
+        "start": 692,
+        "end": 697
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料称飞利浦与向日葵联合方案可远程维护几内亚当地医院的高端医疗设备。",
+      "tag": "F",
+      "quote": "飞利浦和向日葵联合推出的“飞易联（Phi-Link）”方案，实现了对几内亚当地医院部署的高端医疗设备的远程维护。",
+      "start": 7994,
+      "end": 8050,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 651,
+        "start": 7993,
+        "end": 8052
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料引用用户说法，称远程技术支持能大幅降低派遣维修员上门的成本。",
+      "tag": "F",
+      "quote": "大幅降低派遣维修员上门的成本",
+      "start": 7752,
+      "end": 7766,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 638,
+        "start": 7708,
+        "end": 7768
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料引用用户说法，称员工可在任何时间、任何地点发起远程协助和办公。",
+      "tag": "F",
+      "quote": "我们的员工可以在任何时间、任何地点通过向日葵发起远程协助和办公",
+      "start": 7580,
+      "end": 7611,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 632,
+        "start": 7579,
+        "end": 7626
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料以远控隐私屏作为保护远控隐私信息、避免泄露的措施。",
+      "tag": "F",
+      "quote": "保护远控隐私信息，避免泄露",
+      "start": 4779,
+      "end": 4792,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 334,
+        "start": 4779,
+        "end": 4793
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料称其已通过信息系统安全等级保护三级认证。",
+      "tag": "F",
+      "quote": "信息系统安全等级保护 三级认证",
+      "start": 7238,
+      "end": 7253,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 608,
+        "start": 7238,
+        "end": 7254
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料称其数据传输协议支持国密算法SM2/SM3/SM4。",
+      "tag": "F",
+      "quote": "支持国密算法SM2/SM3/SM4",
+      "start": 7114,
+      "end": 7131,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 599,
+        "start": 7072,
+        "end": 7132
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_c565bc94e2",
+      "fact": "本资料是厂商产品与案例页面，未列出针对远程医疗推广的反对意见或争议。",
+      "tag": "U",
+      "quote": "为你量身制定 企业远控解决方案",
+      "start": 8755,
+      "end": 8770,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 683,
+        "start": 8755,
+        "end": 8771
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_56a71ff6f2",
+      "fact": "本资料在行业解决方案中列出「医疗保健」行业。",
+      "tag": "F",
+      "quote": "医疗保健",
+      "start": 692,
+      "end": 696,
+      "locator": {
+        "heading": "",
+        "paragraph": 52,
+        "start": 692,
+        "end": 697
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_56a71ff6f2",
+      "fact": "客户案例称飞利浦与向日葵联合方案实现几内亚医院高端医疗设备远程维护。",
+      "tag": "F",
+      "quote": "实现了对几内亚当地医院部署的高端医疗设备的远程维护",
+      "start": 8024,
+      "end": 8049,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 651,
+        "start": 7993,
+        "end": 8052
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_56a71ff6f2",
+      "fact": "客户案例称远程技术支持大幅降低派遣维修员上门的成本。",
+      "tag": "F",
+      "quote": "大幅降低派遣维修员上门的成本",
+      "start": 7752,
+      "end": 7766,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 638,
+        "start": 7708,
+        "end": 7768
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_56a71ff6f2",
+      "fact": "客户称引入远程运维方案后IT部门服务员工效率大幅提升。",
+      "tag": "F",
+      "quote": "我们的IT部门人员为公司员工提供服务的效率大幅提升",
+      "start": 7870,
+      "end": 7895,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 645,
+        "start": 7855,
+        "end": 7910
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_56a71ff6f2",
+      "fact": "本资料宣传7ms零感延迟、4K画质等远程操作体验。",
+      "tag": "F",
+      "quote": "7ms零感延迟，超丝滑",
+      "start": 4235,
+      "end": 4246,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 272,
+        "start": 4235,
+        "end": 4247
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_56a71ff6f2",
+      "fact": "本资料列出多重加密、访问黑白名单、远控隐私屏等安全措施。",
+      "tag": "F",
+      "quote": "保护远控隐私信息，避免泄露",
+      "start": 4779,
+      "end": 4792,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 334,
+        "start": 4779,
+        "end": 4793
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_56a71ff6f2",
+      "fact": "本资料仅呈现远程技术在医疗设备维护等场景的正面应用，未涉及反对远程医疗的观点。",
+      "tag": "U",
+      "quote": "智慧医疗",
+      "start": 7981,
+      "end": 7985,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 649,
+        "start": 7981,
+        "end": 7986
+      },
+      "note": ""
+    }
+  ]
+}

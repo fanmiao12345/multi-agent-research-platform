@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料记载2026年6月15日第11届中国动力电池回收利用产业发展论坛在杭州举办。",
+      "tag": "F",
+      "quote": "2026年6月15日，第11届中国动力电池回收利用产业发展论坛在杭州市太虚湖成功举办。",
+      "start": 1791,
+      "end": 1834,
+      "locator": {
+        "heading": "#### 6月15日第11届中国动力电池回收利用产业发展论坛在杭州成功举办",
+        "paragraph": 92,
+        "start": 1791,
+        "end": 1955
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料记载论坛出席者包括工信部节能与资源综合利用司原司长黄利斌。",
+      "tag": "F",
+      "quote": "工业和信息化部节能与资源综合利用司原司长黄利斌",
+      "start": 1834,
+      "end": 1857,
+      "locator": {
+        "heading": "#### 6月15日第11届中国动力电池回收利用产业发展论坛在杭州成功举办",
+        "paragraph": 92,
+        "start": 1791,
+        "end": 1955
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料列有杨林关于动力电池回收产业政策解析、行业合规与发展趋势的演讲。",
+      "tag": "F",
+      "quote": "杨林丨动力电池回收产业政策解析、行业合规与发展趋势",
+      "start": 2322,
+      "end": 2347,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料列有夏怡雯关于用消费者需求激活退役动力电池循环体系的演讲。",
+      "tag": "F",
+      "quote": "用消费者需求激活退役动力电池循环体系",
+      "start": 2242,
+      "end": 2260,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料列有秦英杰关于动力电池回收行业料液或废水氨脱除回收的演讲。",
+      "tag": "F",
+      "quote": "高效节能的气态膜脱氨技术用于动力电池回收行业料液或废水中的氨脱除回收",
+      "start": 2276,
+      "end": 2310,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料数据分析栏目列出5月锂电池回收项目汇总。",
+      "tag": "F",
+      "quote": "5月锂电池回收项目汇总",
+      "start": 2094,
+      "end": 2105,
+      "locator": {
+        "heading": "## 数据分析",
+        "paragraph": 99,
+        "start": 2094,
+        "end": 2106
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料数据分析栏目列出4月锂电池回收项目汇总。",
+      "tag": "F",
+      "quote": "4月锂电池回收项目汇总",
+      "start": 2119,
+      "end": 2130,
+      "locator": {
+        "heading": "## 数据分析",
+        "paragraph": 101,
+        "start": 2119,
+        "end": 2131
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_88afc754fd",
+      "fact": "本资料友情链接包含动力电池回收联盟。",
+      "tag": "F",
+      "quote": "动力电池回收联盟",
+      "start": 2426,
+      "end": 2434,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 113,
+        "start": 2426,
+        "end": 2435
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_131f1d54e5",
+      "fact": "本资料为中华人民共和国退役军人事务部网站页面。",
+      "tag": "F",
+      "quote": "中华人民共和国退役军人事务部",
+      "start": 25,
+      "end": 39,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_131f1d54e5",
+      "fact": "本资料主体内容为退役军人事务相关新闻与政务信息。",
+      "tag": "F",
+      "quote": "国新办举行“新征程上的奋斗者”中外记者见面会",
+      "start": 76,
+      "end": 98,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_131f1d54e5",
+      "fact": "本资料的政策解读栏目所涉文件为打击伪造优待证等违法行为。",
+      "tag": "F",
+      "quote": "《关于依法打击伪造优待证等违法行为的通知》政策解读",
+      "start": 1241,
+      "end": 1266,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 64,
+        "start": 1241,
+        "end": 1267
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_131f1d54e5",
+      "fact": "本资料未提供新能源汽车电池回收行业现状与监管的任何信息。",
+      "tag": "I",
+      "quote": "政策解读",
+      "start": 1229,
+      "end": 1233,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 62,
+        "start": 1229,
+        "end": 1234
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_5ea6d970a6",
+      "fact": "本资料全文只有一句加载提示，没有任何实质性内容。",
+      "tag": "F",
+      "quote": "正在加载，请耐心等待",
+      "start": 0,
+      "end": 10,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 10
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_5ea6d970a6",
+      "fact": "本资料未提及新能源汽车电池回收行业现状、监管制度或相关数据。",
+      "tag": "F",
+      "quote": "正在加载，请耐心等待",
+      "start": 0,
+      "end": 10,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 10
+      },
+      "note": ""
+    }
+  ]
+}

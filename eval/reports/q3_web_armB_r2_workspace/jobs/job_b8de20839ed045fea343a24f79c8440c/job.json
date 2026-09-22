@@ -1,0 +1,587 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_b8de20839ed045fea343a24f79c8440c",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 教育领域使用生成式AI的收益与风险：基于给定资料的证据整理提纲\n## 资料范围与相关性筛选\n- 娱乐人物报道与教育领域无关 [E-001]〔事实〕；但该资料称全文讲述梅艳芳生平 [E-001]〔事实〕，另一则称仅记述其2003年红馆最后演出及身体状况 [E-003]〔事实〕，两者对资料内容范围描述不一致〔事实〕；仅可确认其不属教育生成式AI证据〔推断〕。\n- 未出现生成式AI、教学应用或教育收益与风险内容 [E-002]〔事实〕；属娱乐频道且正文外仅有平台免责声明 [E-004]〔事实〕；导航栏虽列“教育”二字但正文无教育主题内容 [E-005]〔事实〕；无法为教育领域使用生成式AI收益与风险提供证据 [E-006]〔事实〕。\n- 主题为英语be、being、been用法区别，与生成式AI无关 [E-009]〔事实〕；仅辨析human beings与human being用法，与教育生成式AI无关 [E-014]〔事实〕；娱乐报道与教育或生成式AI无关 [E-007]〔事实〕。\n- 未提供分析教育领域生成式AI收益与风险的事实或数据 [E-008]〔事实〕；未提供教育领域使用生成式AI收益信息 [E-010]〔事实〕；未提供生成式AI在教育中的收益或风险信息 [E-015]〔事实〕；未说明教育领域使用生成式AI的收益与风险 [E-037]〔事实〕；Kling AI首页导航未涉及教育领域生成式AI收益与风险 [E-038]〔事实〕。\n- 相关性判断：上述资料不得用作教育领域生成式AI收益与风险的证据〔推断〕。\n## 教育AI治理的公共利益原则\n- UNESCO主张新兴AI技术应服务于公平、机会与包容 [E-016]〔事实〕。UNESCO与ITU共同担任联合国AI治理全球对话联合秘书处 [E-017]〔事实〕；该对话旨在反映所有国家而非仅技术先进国家的优先事项 [E-018]〔事实〕。\n- 教宗访问UNESCO议题涵盖AI时代信息诚信、教育与艺术创作 [E-019]〔事实〕。UNESCO把“用新技术和人工智能学习”列为社区影响案例之一 [E-020]〔事实〕。UNESCO第四次AI伦理全球论坛在沙特举行，强化全球伦理AI治理合作 [E-021]〔事实〕。\n- 教科文组织数字学习周上教育部长呼吁AI时代仍须坚持教育作为公共利益 [E-024]〔事实〕。该资料将AI与教育公共利益相联系，但未展开生成式AI教育应用收益 [E-028]〔事实〕；另一资料仅笼统提及AI与学习，未列举教育中使用生成式AI的具体收益或风险 [E-023]〔事实〕。\n- 具体到生成式AI课堂治理机制、学校执行方案与效果评估，资料未提供〔未知〕。\n## 生成式工具制作教学素材的潜力\n- 即梦AI提供文生图、视频生成与智能画布功能 [E-030]〔事实〕；支持文/图生视频 [E-031]〔事实〕；输入简单文案或图片即可快速生成优质视频片段 [E-032]〔事实〕；支持中文提示词创作，语义理解能力更好 [E-033]〔事实〕；绘画仅需简单提示词即可生成图片 [E-034]〔事实〕；可对图片做背景替换、画风保持、姿势保持等改造 [E-035]〔事实〕。\n- 资料自身推断教育领域或可用此类工具快速生成教学视频素材 [E-036]〔推断〕；本报告未验证其学习效果、分学科适配性、版权与准确性〔未知〕。\n## 一般AI风险线索及其教育关联\n- UNESCO指出数字平台虽扩大信息获取，却可能削弱独立新闻条件 [E-022]〔事实〕。教科文组织调查指出近3/4受访女记者曾面临网络暴力，1/4遭人身或死亡威胁 [E-025]〔事实〕。资料称AI通过深度伪造、人肉搜索、骚扰等加剧对女记者虐待 [E-026]〔事实〕。教科文组织呼吁通过对话、倡导和政策改革打击AI助长的性别暴力 [E-027]〔事实〕。\n- 教育关联：上述非教育专属风险可能迁移到校园网络欺凌、隐私侵害与信息辨别，但资料未直接研究教育场景〔推断〕；教育场景中的发生率与影响〔未知〕。\n## 教育生成式AI收益的证据缺口\n- 该资料未提供教育领域使用生成式AI收益的任何信息 [E-010]〔事实〕；仅笼统提及AI与学习，未列举教育中使用生成式AI的具体收益或风险 [E-023]〔事实〕；将AI与教育公共利益相联系，但未展开生成式AI教育应用收益 [E-028]〔事实〕；未具体说明生成式AI在教育中的收益、风险或治理措施 [E-029]〔事实〕；未说明教育领域使用生成式AI的收益与风险 [E-037]〔事实〕。\n- 因此缺少教学实验、学习效果数据与案例研究；生成式AI能否提升学习成绩、动机或效率〔未知〕。\n## 教育生成式AI风险的证据缺口\n- 该资料未提供分析教育领域生成式AI收益与风险的事实或数据 [E-008]〔事实〕；未提供生成式AI在教育中的任何收益或风险信息 [E-015]〔事实〕；仅笼统提及AI与学习，未列举教育中使用生成式AI的具体收益或风险 [E-023]〔事实〕；未具体说明生成式AI在教育中的收益、风险或治理措施 [E-029]〔事实〕；未说明教育领域使用生成式AI的收益与风险 [E-037]〔事实〕；Kling AI首页导航未涉及教育领域生成式AI收益与风险 [E-038]〔事实〕。\n- 缺少学术诚信、隐私、偏见、过度依赖等实证；相关风险大小与发生条件〔未知〕。\n## 学校治理与AI素养的证据缺口\n- UNESCO与ITU共同担任联合国AI治理全球对话联合秘书处 [E-017]〔事实〕；该对话旨在反映所有国家而非仅技术先进国家的优先事项 [E-018]〔事实〕。UNESCO第四次AI伦理全球论坛在沙特举行，强化全球伦理AI治理合作 [E-021]〔事实〕。教育部长呼吁AI时代坚持教育作为公共利益 [E-024]〔事实〕。教科文组织呼吁通过对话、倡导和政策改革打击AI助长的性别暴力 [E-027]〔事实〕。\n- 学校层面的政策文本、学校规范、培训方案与素养调查数据缺失；治理主体、实施路径与成效评估〔未知〕。\n## 结论：可回答边界与待补研究\n- 可证事实：UNESCO主张AI服务公平、机会与包容 [E-016]〔事实〕；将“用新技术和人工智能学习”列为社区影响案例 [E-020]〔事实〕；即梦AI具备文生图、视频生成等功能 [E-030]〔事实〕；UNESCO提出数字平台可能削弱独立新闻条件的风险线索 [E-022]〔事实〕；资料称AI通过深度伪造、人肉搜索、骚扰等加剧对女记者虐待 [E-026]〔事实〕；教育部长呼吁AI时代坚持教育作为公共利益 [E-024]〔事实〕。\n- 有限推断：资料自身推断教育领域或可用此类工具快速生成教学视频素材 [E-036]〔推断〕；一般AI风险可能迁移到教育，但资料未验证〔推断〕；将工具功能用于教学素材制作属推断〔推断〕。\n- 待补研究：教学实验、学习效果、学术诚信、隐私、偏见、过度依赖、分学段学科差异、学校治理政策、教师培训与学生素养调查〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 7,
+    "usable": 6,
+    "statuses": {
+      "ok": 6,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 29 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T10:23:26"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:23:48"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 9, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T10:24:34"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "8 个章节",
+        "finished_at": "2026-09-20T10:24:53"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2764字）",
+        "finished_at": "2026-09-20T10:25:20"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 21,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T10:26:33"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T10:27:57"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 19,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-20T10:29:39"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 58,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.sohu.com/a/934168552_122444882",
+      "https://www.163.com/dy/article/JLHSTV3K0536HUBM.html",
+      "https://learn.chatgpt.com/docs/app",
+      "https://zhidao.baidu.com/question/304768350.html",
+      "https://zhidao.baidu.com/question/23442749.html",
+      "https://www.unesco.org/en",
+      "https://www.unesco.org/zh"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 个性化学习",
+        "rank": 2,
+        "title": "著名女歌手梅艳芳，弥留之际多次吩咐保镖：我死都不会见 ...",
+        "url": "https://www.sohu.com/a/934168552_122444882",
+        "snippet": "2025年9月12日 · 2000年，唯一给予她温暖的姐姐因病离世，梅艳芳在灵堂外跪了一整夜，内心最柔软的部分也随之崩塌。 感情生活 …",
+        "published_date": "2025-09-12",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 个性化学习",
+        "rank": 4,
+        "title": "2003年梅艳芳去世后，医生：她的病可以治好，但因一事她放弃",
+        "url": "https://www.163.com/dy/article/JLHSTV3K0536HUBM.html",
+        "snippet": "2025年1月10日 · 但这个时候没人能劝说得了梅艳芳，可惜在最后一场演唱会结束没几天，她因癌细胞转移到肺部导致肺衰竭， …",
+        "published_date": "2025-01-10",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "ChatGPT 学术诚信 风险",
+        "rank": 3,
+        "title": "ChatGPT desktop app | ChatGPT Learn",
+        "url": "https://learn.chatgpt.com/docs/app",
+        "snippet": "2 天之前 · Choose ChatGPT or Codex. In ChatGPT, use the toggle above the composer to select Chat or Work. In Codex, start with …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 数据隐私 算法偏见",
+        "rank": 2,
+        "title": "be, being, been 区别 - 百度知道",
+        "url": "https://zhidao.baidu.com/question/304768350.html",
+        "snippet": "2022年12月24日 · be是原形，可以做助动词，后面一般接doing结构，表示现在进行时，或者接done结构，表示被动语态。 如，He is …",
+        "published_date": "2022-12-24",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 数据隐私 算法偏见",
+        "rank": 3,
+        "title": "human beings与human being的区别 - 百度知道",
+        "url": "https://zhidao.baidu.com/question/23442749.html",
+        "snippet": "2023年7月20日 · human being：词性为名词，A human being refers to an individual person. 通过下面的表格我们了解下human …",
+        "published_date": "2023-07-20",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UNESCO 生成式AI 教育指南",
+        "rank": 1,
+        "title": "UNESCO : Building Peace through Education, Science and Culture ...",
+        "url": "https://www.unesco.org/en",
+        "snippet": "1 天前 · Learn more about UNESCO's role, vision and results. UNESCO is the United Nations Educational, Scientific and Cultural …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UNESCO 生成式AI 教育指南",
+        "rank": 2,
+        "title": "联合国教科文组织：通过教育、科学、文化、传播和信息 ...",
+        "url": "https://www.unesco.org/zh",
+        "snippet": "2025年9月25日 · World Heritage Committee Gathers to Protect Humanity's Legacy From 19 to 29 July 2026, the Republic of Korea …",
+        "published_date": "2025-09-25",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 个性化学习",
+        "urls": [
+          "https://www.sohu.com/a/934168552_122444882",
+          "https://www.163.com/dy/article/JLHSTV3K0536HUBM.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 个性化学习",
+            "rank": 2,
+            "title": "著名女歌手梅艳芳，弥留之际多次吩咐保镖：我死都不会见 ...",
+            "url": "https://www.sohu.com/a/934168552_122444882",
+            "snippet": "2025年9月12日 · 2000年，唯一给予她温暖的姐姐因病离世，梅艳芳在灵堂外跪了一整夜，内心最柔软的部分也随之崩塌。 感情生活 …",
+            "published_date": "2025-09-12",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 个性化学习",
+            "rank": 4,
+            "title": "2003年梅艳芳去世后，医生：她的病可以治好，但因一事她放弃",
+            "url": "https://www.163.com/dy/article/JLHSTV3K0536HUBM.html",
+            "snippet": "2025年1月10日 · 但这个时候没人能劝说得了梅艳芳，可惜在最后一场演唱会结束没几天，她因癌细胞转移到肺部导致肺衰竭， …",
+            "published_date": "2025-01-10",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "著名女歌手梅艳芳，弥留之际多次吩咐保镖：我死都不会见 ...",
+            "url": "https://www.sohu.com/a/934168552_122444882",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "2003年梅艳芳去世后，医生：她的病可以治好，但因一事她放弃",
+            "url": "https://www.163.com/dy/article/JLHSTV3K0536HUBM.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "梅艳芳38岁患宫颈癌，抗癌2年后离世，她的2个做法，令人警醒",
+            "url": "https://zhuanlan.zhihu.com/p/435196501",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "梅艳芳（中国香港女歌手、演员、慈善家）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%A2%85%E8%89%B3%E8%8A%B3/230174",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "梅艳芳真正的死因？ - 知乎",
+            "url": "https://www.zhihu.com/question/286075715",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.23,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "ChatGPT 学术诚信 风险",
+        "urls": [
+          "https://learn.chatgpt.com/docs/app"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "ChatGPT 学术诚信 风险",
+            "rank": 3,
+            "title": "ChatGPT desktop app | ChatGPT Learn",
+            "url": "https://learn.chatgpt.com/docs/app",
+            "snippet": "2 天之前 · Choose ChatGPT or Codex. In ChatGPT, use the toggle above the composer to select Chat or Work. In Codex, start with …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "ChatGPT 官网中文版：GPT-5 国内使用完全攻略（支持 GPT ...",
+            "url": "https://www.chatgpt-chinese.com/blog/guides/chatgpt/chatgpt-gpt5-guide.html",
+            "relevance": 0.2,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT官网入口、ChatGPT中文版、GPT-6与网页版国内 ...",
+            "url": "https://chatgpt-guides.com/",
+            "relevance": 0.2,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT 官方下载入口：Windows、Mac、iPhone、Android ...",
+            "url": "https://www.gpt-chinese-guide.com/chatgpt/chatgpt-xiazai-anzhuang-jiaocheng-dianno-shouji-2026",
+            "relevance": 0.2,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT - Windows官方下载 | 微软应用商店 | Microsoft Store",
+            "url": "https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-CN&gl=CN",
+            "relevance": 0.2,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.195,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 数据隐私 算法偏见",
+        "urls": [
+          "https://zhidao.baidu.com/question/304768350.html",
+          "https://zhidao.baidu.com/question/23442749.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 数据隐私 算法偏见",
+            "rank": 2,
+            "title": "be, being, been 区别 - 百度知道",
+            "url": "https://zhidao.baidu.com/question/304768350.html",
+            "snippet": "2022年12月24日 · be是原形，可以做助动词，后面一般接doing结构，表示现在进行时，或者接done结构，表示被动语态。 如，He is …",
+            "published_date": "2022-12-24",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 数据隐私 算法偏见",
+            "rank": 3,
+            "title": "human beings与human being的区别 - 百度知道",
+            "url": "https://zhidao.baidu.com/question/23442749.html",
+            "snippet": "2023年7月20日 · human being：词性为名词，A human being refers to an individual person. 通过下面的表格我们了解下human …",
+            "published_date": "2023-07-20",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "be, being, been 区别 - 百度知道",
+            "url": "https://zhidao.baidu.com/question/304768350.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "human beings与human being的区别 - 百度知道",
+            "url": "https://zhidao.baidu.com/question/23442749.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "怎么看 DeepSeek 8 月17 日涨价后的价格，这个峰谷定价你 ...",
+            "url": "https://www.zhihu.com/question/2071318356477662328",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Being 孙玲 - 知乎",
+            "url": "https://www.zhihu.com/people/sunling22",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "如何解决Discord速率限制“You?are?being?rate?limited”？",
+            "url": "https://zhidao.baidu.com/question/1844925957674382900.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.32,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UNESCO 生成式AI 教育指南",
+        "urls": [
+          "https://www.unesco.org/en",
+          "https://www.unesco.org/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "UNESCO 生成式AI 教育指南",
+            "rank": 1,
+            "title": "UNESCO : Building Peace through Education, Science and Culture ...",
+            "url": "https://www.unesco.org/en",
+            "snippet": "1 天前 · Learn more about UNESCO's role, vision and results. UNESCO is the United Nations Educational, Scientific and Cultural …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "UNESCO 生成式AI 教育指南",
+            "rank": 2,
+            "title": "联合国教科文组织：通过教育、科学、文化、传播和信息 ...",
+            "url": "https://www.unesco.org/zh",
+            "snippet": "2025年9月25日 · World Heritage Committee Gathers to Protect Humanity's Legacy From 19 to 29 July 2026, the Republic of Korea …",
+            "published_date": "2025-09-25",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "UNESCO : Building Peace through Education, Science and Culture ...",
+            "url": "https://www.unesco.org/en",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "联合国教科文组织：通过教育、科学、文化、传播和信息 ...",
+            "url": "https://www.unesco.org/zh",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "联合国教育、科学及文化组织_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%81%94%E5%90%88%E5%9B%BD%E6%95%99%E8%82%B2%E3%80%81%E7%A7%91%E5%AD%A6%E5%8F%8A%E6%96%87%E5%8C%96%E7%BB%84%E7%BB%87/1516977",
+            "relevance": 0.214,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Home | UNESCO",
+            "url": "https://media.unesco.org/zh",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "UNESCO World Heritage Centre - World Heritage List",
+            "url": "https://whc.unesco.org/en/list/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.261,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（教育领域使用生成式AI的收益与风险）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本；subtasks[6].description 必须为非空文本"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "fanout"
+        ]
+      },
+      "scheduler_elapsed_seconds": 25.155,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

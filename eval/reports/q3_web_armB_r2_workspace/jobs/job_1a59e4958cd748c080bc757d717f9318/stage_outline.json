@@ -1,0 +1,128 @@
+{
+  "title": "城市低碳交通政策的效果与限制：证据整理与缺口评估",
+  "sections": [
+    {
+      "heading": "报告范围与证据边界",
+      "purpose": "说明目标、资料来源与可评估边界。",
+      "required_evidence": [
+        "E-006",
+        "E-013",
+        "E-021",
+        "E-022",
+        "E-027",
+        "E-029"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "城市数量与行政区划背景",
+      "purpose": "交代城市规模与区划调整原则。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "城市交通低碳政策方向",
+      "purpose": "梳理公共交通、绿色出行与换乘设施要求。",
+      "required_evidence": [
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-011"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "绿色转型与现代化城市目标",
+      "purpose": "列出2030与2035年相关目标表述。",
+      "required_evidence": [
+        "E-012",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "交通运输部页面可见信息",
+      "purpose": "概括交通数据、政策解读与宣传栏目。",
+      "required_evidence": [
+        "E-028",
+        "E-030",
+        "E-031",
+        "E-032",
+        "E-033",
+        "E-034",
+        "E-035"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "辽宁公交查询资料范围",
+      "purpose": "说明公交线路站点查询资料的覆盖与限制。",
+      "required_evidence": [
+        "E-015",
+        "E-016",
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "朝阳公交查询资料范围",
+      "purpose": "说明线路数量、换乘查询与自动搜索结果性质。",
+      "required_evidence": [
+        "E-023",
+        "E-024",
+        "E-025",
+        "E-026"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "政策效果的可量化证据缺口",
+      "purpose": "指出碳排放、出行结构、减排量等数据缺失。",
+      "required_evidence": [
+        "E-006",
+        "E-013",
+        "E-021",
+        "E-022",
+        "E-027",
+        "E-029"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "实施限制与城市差异证据缺口",
+      "purpose": "说明财政、技术、体制障碍及横向对比缺失。",
+      "required_evidence": [
+        "E-006",
+        "E-013",
+        "E-022",
+        "E-027",
+        "E-029"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与后续核查建议",
+      "purpose": "总结可确认政策方向，列出待补证据需求。",
+      "required_evidence": [
+        "E-006",
+        "E-013",
+        "E-021",
+        "E-022",
+        "E-027",
+        "E-029"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_dfe6847a9f",
+      "fact": "影刀官网把自身产品表述为「影刀 AI WorkOS & RPA」。",
+      "tag": "F",
+      "quote": "影刀 AI WorkOS & RPA",
+      "start": 61,
+      "end": 79,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 61,
+        "end": 80
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_dfe6847a9f",
+      "fact": "本资料称通过AI WorkOS与RPA帮助企业设计、管理、准确执行并进化AI员工。",
+      "tag": "F",
+      "quote": "通过AI WorkOS与RPA，帮助企业设计、管理、",
+      "start": 81,
+      "end": 107,
+      "locator": {
+        "heading": "",
+        "paragraph": 6,
+        "start": 81,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_dfe6847a9f",
+      "fact": "本资料将影刀定位为迈向AI原生组织的AI基础设施。",
+      "tag": "F",
+      "quote": "迈向AI原生组织的AI基础设施",
+      "start": 123,
+      "end": 138,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 123,
+        "end": 139
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_dfe6847a9f",
+      "fact": "本资料产品导航将AI WorkOS、RPA与客户案例、大咖分享等并列。",
+      "tag": "F",
+      "quote": "AI WorkOS New RPA 客户案例 大咖分享 影刀与教育 关于我们",
+      "start": 4,
+      "end": 42,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 4,
+        "end": 43
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_dfe6847a9f",
+      "fact": "本资料披露总部地址为杭州市未来科技城鼎创财富中心B1幢。",
+      "tag": "F",
+      "quote": "地址： 杭州市未来科技城鼎创财富中心B1幢（总部），",
+      "start": 341,
+      "end": 367,
+      "locator": {
+        "heading": "",
+        "paragraph": 43,
+        "start": 341,
+        "end": 403
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_dfe6847a9f",
+      "fact": "本资料未说明RPA与AI Agent（AI员工）之间边界划分的具体标准。",
+      "tag": "U",
+      "quote": "准确执行并进化AI员工，",
+      "start": 109,
+      "end": 121,
+      "locator": {
+        "heading": "",
+        "paragraph": 7,
+        "start": 109,
+        "end": 122
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料称RPA是模拟人类交互、自动执行重复且规则明确流程的软件技术方案。",
+      "tag": "F",
+      "quote": "自动执行重复性、规则明确、标准化的业务流程",
+      "start": 1967,
+      "end": 1988,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 48,
+        "start": 1889,
+        "end": 2103
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料指出RPA不具备自主学习和创新能力，需人类预设操作步骤和规则。",
+      "tag": "F",
+      "quote": "不具备自主学习和创新能力，需要人类预设明确的操作步骤和规则",
+      "start": 2802,
+      "end": 2831,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料称AI核心是认知智能，能模拟人类学习、推理和决策，并处理不确定问题。",
+      "tag": "F",
+      "quote": "AI的核心是“认知智能”，通过算法模拟人类的学习、推理和决策能力，能够处理不确定性问题",
+      "start": 2833,
+      "end": 2876,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料说明RPA与AI融合形成IPA，使RPA从执行工具升级为智能助手。",
+      "tag": "F",
+      "quote": "两者的融合形成了IPA（人工智能流程自动化），让RPA从“执行工具”升级为“智能助手”",
+      "start": 2897,
+      "end": 2940,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料称实在Agent是具备“大脑和手脚”的通用智能体，能自主感知、规划并操作软件。",
+      "tag": "F",
+      "quote": "实在Agent是全球首款具备“大脑和手脚”的通用智能体产品，能够自主感知环境、规划路径、自动操作电脑、手机及车载屏幕上的各类软件和APP",
+      "start": 6494,
+      "end": 6562,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 81,
+        "start": 6429,
+        "end": 6599
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料称与传统RPA相比，实在Agent能自主拆解任务、规划路径，无需预设详细流程。",
+      "tag": "F",
+      "quote": "不仅能执行预设规则的流程，还能根据用户的自然语言描述，自主拆解任务步骤、规划执行路径，无需人类预设详细操作流程",
+      "start": 6667,
+      "end": 6722,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 82,
+        "start": 6600,
+        "end": 6738
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料称实在Agent基于自研TARS大模型，具备趋近人类思维的理解和推理能力。",
+      "tag": "F",
+      "quote": "基于实在智能自研的TARS大模型，具备趋近人类思维的理解和推理能力",
+      "start": 6633,
+      "end": 6666,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 82,
+        "start": 6600,
+        "end": 6738
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_628e8b8ed0",
+      "fact": "本资料引IDC称自然语言生成流程打破传统RPA规则依赖，推动向智能代理服务商转型。",
+      "tag": "F",
+      "quote": "打破了传统RPA对规则依赖的局限",
+      "start": 9187,
+      "end": 9203,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 103,
+        "start": 9144,
+        "end": 9336
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_a502d9ad27",
+      "fact": "本资料标题为《超自然行动组》，是一份游戏官网首页内容。",
+      "tag": "F",
+      "quote": "# 超自然行动组",
+      "start": 0,
+      "end": 8,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_a502d9ad27",
+      "fact": "本资料将自身定位为多人组队欢乐恐怖游戏。",
+      "tag": "F",
+      "quote": "多人组队欢乐恐怖游戏",
+      "start": 10,
+      "end": 20,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 0,
+        "start": 10,
+        "end": 21
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_a502d9ad27",
+      "fact": "本资料包含游戏新闻、公告、活动等运营栏目信息。",
+      "tag": "F",
+      "quote": "《超自然行动组》日活跃用户突破一千万啦！",
+      "start": 71,
+      "end": 91,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 10,
+        "start": 71,
+        "end": 92
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_a502d9ad27",
+      "fact": "本资料载明运营公司为上海巨人网络科技有限公司。",
+      "tag": "F",
+      "quote": "上海巨人网络科技有限公司",
+      "start": 394,
+      "end": 406,
+      "locator": {
+        "heading": "# NaN /0",
+        "paragraph": 37,
+        "start": 394,
+        "end": 436
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_a502d9ad27",
+      "fact": "本资料标注的版本号为1.13.3.001。",
+      "tag": "F",
+      "quote": "版本号：1.13.3.001",
+      "start": 364,
+      "end": 378,
+      "locator": {
+        "heading": "# NaN /0",
+        "paragraph": 36,
+        "start": 353,
+        "end": 393
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_a502d9ad27",
+      "fact": "本资料全文未出现机器人流程自动化、智能体等任何相关技术内容。",
+      "tag": "F",
+      "quote": "史上最欢乐的组队恐怖游戏",
+      "start": 339,
+      "end": 351,
+      "locator": {
+        "heading": "# NaN /0",
+        "paragraph": 35,
+        "start": 339,
+        "end": 352
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_a502d9ad27",
+      "fact": "本资料无法就机器人流程自动化与智能体的边界提供任何依据。",
+      "tag": "U",
+      "quote": "史上最欢乐的组队恐怖游戏",
+      "start": 339,
+      "end": 351,
+      "locator": {
+        "heading": "# NaN /0",
+        "paragraph": 35,
+        "start": 339,
+        "end": 352
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_bd7c077066",
+      "fact": "本资料内容为个人作者授权与签约信息，未涉及任何技术主题。",
+      "tag": "F",
+      "quote": "个人作者授权",
+      "start": 0,
+      "end": 6,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 7
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_bd7c077066",
+      "fact": "本资料全文未出现自动化、智能体、流程等相关表述。",
+      "tag": "F",
+      "quote": "我要签约",
+      "start": 8,
+      "end": 12,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 8,
+        "end": 13
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_bd7c077066",
+      "fact": "仅凭本资料无法整理机器人流程自动化与智能体边界的内容。",
+      "tag": "I",
+      "quote": "个人作者授权",
+      "start": 0,
+      "end": 6,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 7
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称阿里千问推进Agentic AI战略，从被动回应转向主动行动。",
+      "tag": "F",
+      "quote": "正式推进Agentic AI（智能体AI）战略，实现从“被动回应式AI”到“主动行动式AI”的颠覆性转变",
+      "start": 78,
+      "end": 130,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称千问定位为“能说更能干”的全能办事助手，区别于普通聊天式AI。",
+      "tag": "F",
+      "quote": "核心定位是“能说更能干”的全能办事助手。区别于普通聊天式AI",
+      "start": 183,
+      "end": 213,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称千问通过统一AI界面统筹跨平台资源，用户无需跳转应用。",
+      "tag": "F",
+      "quote": "通过统一AI界面智能统筹跨平台资源，搭配支付宝原生AI支付能力，让用户从提出需求到完成任务全程无需跳转应用",
+      "start": 247,
+      "end": 300,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称千问于2026年6月全面开放第三方Agent与Skill接入。",
+      "tag": "F",
+      "quote": "于2026年6月全面开放第三方Agent与Skill接入",
+      "start": 337,
+      "end": 365,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称Qwen3.8-Max能以极少人工介入端到端完成复杂目标。",
+      "tag": "F",
+      "quote": "能够以极少人工介入端到端完成复杂目标",
+      "start": 516,
+      "end": 534,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称Qwen3.8-Max搭载“执行—反馈—迭代”自适应闭环机制。",
+      "tag": "F",
+      "quote": "创新搭载“执行—反馈—迭代”自适应闭环机制",
+      "start": 618,
+      "end": 639,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称企业级Agent“千问办公”支持400多项办公任务。",
+      "tag": "F",
+      "quote": "企业级Agent产品“千问办公”并开启公测，依托Qwen3.8-Max底座，支持400多项办公任务",
+      "start": 1063,
+      "end": 1112,
+      "locator": {
+        "heading": "## 生态与功能：全场景深度打通，海量功能一键办事",
+        "paragraph": 5,
+        "start": 857,
+        "end": 1218
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_001d07b954",
+      "fact": "本资料称阿里推动AI从认知智能向具身智能进阶，发布Qwen-Robot等成果。",
+      "tag": "F",
+      "quote": "推动AI从认知智能向具身智能进阶，已发布Qwen-Robot系列具身大模型及AI眼镜等落地成果",
+      "start": 2174,
+      "end": 2221,
+      "locator": {
+        "heading": "## 现存挑战与未来展望：深耕场景体验，拓宽智能边界",
+        "paragraph": 8,
+        "start": 1920,
+        "end": 2249
+      },
+      "note": ""
+    }
+  ]
+}

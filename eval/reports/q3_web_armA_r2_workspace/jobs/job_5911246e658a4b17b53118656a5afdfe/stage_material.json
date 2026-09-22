@@ -1,0 +1,211 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "开源大模型社区的开源与免费服务",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "Atom-7B与Atom-7B-Chat已完全开源并支持商用。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "社区提供低于市场价格的算力资源，用于训练与推理。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "社区为成员提供专属在线推理服务，便于快速推理。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "社区提供一键在线微调服务，可按任务和数据微调模型。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "社区开放丰富训练数据资源，覆盖多个领域和行业。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "社区免费提供应用推广展示位，帮助应用获得曝光和用户。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "社区于2024年3月8日开放免费API，含Atom-1B、7B、13B。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "社区感谢原子回声AtomEcho团队提供技术和资源支持。"
+          }
+        ]
+      },
+      {
+        "name": "Ollama的免费、订阅与云服务模式",
+        "points": [
+          {
+            "evidence_id": "E-009",
+            "statement": "本资料称可用开源模型配合编码代理，花费更少并保持数据私有。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "本资料称已有超过900万开发者使用。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "本资料宣传最新开源模型性能可对标最好闭源且成本远低。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "本资料称本地模型始终免费。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "Pro订阅为每月20美元，包含60美元用量额度。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "本资料称可先免费起步，需要时再升级或增加用量。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "本资料称云模型仅托管在美国、欧洲与新加坡，提示不被追踪或训练。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "本资料强调定价可预测，无隐藏限制或不清晰定价。"
+          }
+        ]
+      },
+      {
+        "name": "开源中国/Gitee生态的商业化",
+        "points": [
+          {
+            "evidence_id": "E-017",
+            "statement": "Gitee为开源中国旗下，是全球第二大开源代码托管平台。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "Gitee主要产品为社区版、企业版、专业版、高校版、旗舰版。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "Gitee自2013年上线以来共服务1200万开发者用户。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "Gitee累计托管仓库超过2800万个。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "Gitee企业版和专业版共服务30万家企业。"
+          },
+          {
+            "evidence_id": "E-022",
+            "statement": "Gitee服务1200家中大型私有化部署企业。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "本资料表明开源平台设有企业版、专业版及私有化部署服务。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "本资料中MothX支持多种LLM提供商，包括DeepSeek。"
+          }
+        ]
+      },
+      {
+        "name": "开源社的非营利与赞助模式",
+        "points": [
+          {
+            "evidence_id": "E-025",
+            "statement": "开源社成立于2014年，由志愿贡献于开源事业的个人成员组成。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "开源社维持厂商中立、公益、非营利的理念。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "开源社是纯社区驱动、中立开放组织，与高校企业政府合作。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "开源社是全球开源许可证认证组织OSI在中国的首个成员。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "开源社自2016年起连续举办中国开源年会，并发布年度报告。"
+          },
+          {
+            "evidence_id": "E-030",
+            "statement": "开源社合作数百家赞助、媒体与社区伙伴，靠外部赞助支持发展。"
+          },
+          {
+            "evidence_id": "E-031",
+            "statement": "资料所涉平台列出GitHub Sponsors，用于资助开源开发者。"
+          },
+          {
+            "evidence_id": "E-032",
+            "statement": "本资料未说明开源大模型生态商业模式，重点在治理与孵化。"
+          }
+        ]
+      },
+      {
+        "name": "范围外3D资产交易平台证据",
+        "points": [
+          {
+            "evidence_id": "E-033",
+            "statement": "本资料是3D数字资产交易与创作者社区平台，无开源大模型内容。"
+          },
+          {
+            "evidence_id": "E-034",
+            "statement": "平台模型以明码标价交易，页面大量条目标注出售成功及价格。"
+          },
+          {
+            "evidence_id": "E-035",
+            "statement": "平台精品模型宣称支持商用，购买对应授权可获得许可授权书。"
+          },
+          {
+            "evidence_id": "E-036",
+            "statement": "平台向创作者宣传高收益、零门槛、版权无忧和优质客户。"
+          },
+          {
+            "evidence_id": "E-037",
+            "statement": "平台称已有20000+个品牌建立，购买客户涵盖全球500强企业。"
+          },
+          {
+            "evidence_id": "E-038",
+            "statement": "平台运营方为长沙西吉网络科技有限公司，持有增值电信业务经营许可证。"
+          },
+          {
+            "evidence_id": "E-039",
+            "statement": "本资料未提供任何开源大模型商业模式依据，该主题无法据此回答。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "开源模型商用许可的具体条款与限制是什么？",
+        "missing": "许可证文本、授权范围与限制条款"
+      },
+      {
+        "question": "各社区和平台的收入规模与盈利情况如何？",
+        "missing": "财务数据、付费转化与收入构成"
+      },
+      {
+        "question": "免费API、免费算力与订阅之间的成本如何覆盖？",
+        "missing": "成本结构、补贴来源与可持续性数据"
+      },
+      {
+        "question": "Gitee企业版、专业版与私有化部署如何定价？",
+        "missing": "产品价格表、合同与计费规则"
+      },
+      {
+        "question": "Ollama Pro用量额度与云模型具体价格规则？",
+        "missing": "完整定价页、超量计费与模型价格明细"
+      }
+    ],
+    "duplicates": []
+  }
+}

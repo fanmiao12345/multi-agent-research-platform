@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_64cc3eba48",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_64cc3eba48",
+      "fact": "星桥团队试点共40人。",
+      "tag": "F",
+      "quote": "星桥团队试点共40人，",
+      "start": 11,
+      "end": 22,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_64cc3eba48",
+      "fact": "观察期为2026年7月1日至7月31日。",
+      "tag": "F",
+      "quote": "观察期为2026年7月1日至7月31日；",
+      "start": 22,
+      "end": 42,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_64cc3eba48",
+      "fact": "试点期间所有人每周远程办公2天。",
+      "tag": "F",
+      "quote": "所有人每周远程办公2天。",
+      "start": 42,
+      "end": 54,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_64cc3eba48",
+      "fact": "试点没有设置对照组。",
+      "tag": "F",
+      "quote": "没有设置对照组。",
+      "start": 54,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_64cc3eba48",
+      "fact": "来源全文未提供效率指标或远程办公前后变化数据。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。星桥团队试点共40人，观察期为2026年7月1日至7月31日；所有人每周远程办公2天。没有设置对照组。",
+      "start": 0,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_64cc3eba48",
+      "fact": "无对照组，不能据此得出远程办公提升效率的因果结论。",
+      "tag": "I",
+      "quote": "没有设置对照组。",
+      "start": 54,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_64cc3eba48",
+      "fact": "来源未报告相关关系或观察到的效率变化。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。星桥团队试点共40人，观察期为2026年7月1日至7月31日；所有人每周远程办公2天。没有设置对照组。",
+      "start": 0,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_14c3f7005b",
+      "fact": "材料自述为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_14c3f7005b",
+      "fact": "40名参与者中32人完成问卷。",
+      "tag": "F",
+      "quote": "40名参与者中32人完成问卷，",
+      "start": 11,
+      "end": 26,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_14c3f7005b",
+      "fact": "24名答卷者表示满意。",
+      "tag": "F",
+      "quote": "24名答卷者表示满意。",
+      "start": 26,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_14c3f7005b",
+      "fact": "问卷回收率为80%。",
+      "tag": "F",
+      "quote": "问卷回收率为80%，",
+      "start": 37,
+      "end": 47,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_14c3f7005b",
+      "fact": "答卷者满意率为75%。",
+      "tag": "F",
+      "quote": "答卷者满意率为75%。",
+      "start": 47,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_14c3f7005b",
+      "fact": "观察期工单平均处理时长从10小时变为8小时。",
+      "tag": "F",
+      "quote": "观察期工单平均处理时长从10小时变为8小时；",
+      "start": 58,
+      "end": 80,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_14c3f7005b",
+      "fact": "未控制工单难度变化。",
+      "tag": "F",
+      "quote": "未控制工单难度变化。",
+      "start": 80,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_14c3f7005b",
+      "fact": "资料未涉及远程办公，无法判断其是否提升效率。",
+      "tag": "I",
+      "quote": "观察期工单平均处理时长从10小时变为8小时；未控制工单难度变化。",
+      "start": 58,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_e75e488920",
+      "fact": "本材料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_e75e488920",
+      "fact": "观察研究覆盖120人，为期4周。",
+      "tag": "F",
+      "quote": "观察研究覆盖120人，为期4周；",
+      "start": 11,
+      "end": 27,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_e75e488920",
+      "fact": "远程办公与自评专注度上升存在相关关系。",
+      "tag": "F",
+      "quote": "远程办公与自评专注度上升存在相关关系。",
+      "start": 27,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_e75e488920",
+      "fact": "样本自愿加入且未随机分组。",
+      "tag": "F",
+      "quote": "样本自愿加入，未随机分组。",
+      "start": 46,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_e75e488920",
+      "fact": "没有报告客观产出指标或长期效果。",
+      "tag": "F",
+      "quote": "没有报告客观产出指标或长期效果。",
+      "start": 59,
+      "end": 75,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_e75e488920",
+      "fact": "该研究不能据此得出远程办公提升效率的因果结论。",
+      "tag": "I",
+      "quote": "样本自愿加入，未随机分组。",
+      "start": 46,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_e75e488920",
+      "fact": "材料中远程办公与自评专注度上升仅为相关关系。",
+      "tag": "I",
+      "quote": "远程办公与自评专注度上升存在相关关系。",
+      "start": 27,
+      "end": 46,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "note": ""
+    }
+  ]
+}

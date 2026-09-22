@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_ca86bf83e3cd4068a3f35af60c4e6e57",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 4,
+    "usable": 3,
+    "statuses": {
+      "ok": 3,
+      "empty": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 13 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:23:02"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:23:10"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T14:23:22"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均为退役军人事务、影视介绍等无关主题，未涉及新能源汽车电池回收行业现状与监管，无法支撑报告写作。",
+        "finished_at": "2026-09-18T14:23:27"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均为退役军人事务、影视介绍等无关主题，未涉及新能源汽车电池回收行业现状与监管，无法支撑报告写作。；缺失信息：电池回收行业报告、统计数据或企业案例、电池回收监管政策、法规与标准文件、回收体系、回收网点与渠道管理材料、退役电池规模、装机量或电池寿命数据、回收环境与安全影响、技术工艺及事故记录（可用证据 13 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.mva.gov.cn/",
+      "https://www.toutiao.com/article/7533452524527845942/",
+      "https://movie.douban.com/subject/5966523/",
+      "https://www.tvmao.com/drama/YicyHy0="
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "退役动力电池 梯次利用 再生利用",
+        "rank": 1,
+        "title": "中华人民共和国退役军人事务部",
+        "url": "https://www.mva.gov.cn/",
+        "snippet": "2026年8月20日 · 为维护军人军属合法权益，加强退役军人服务保障体系建设，建立健全集中统一、职责清晰的退役军人管理保障体 …",
+        "published_date": "2026-08-20",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "退役动力电池 梯次利用 再生利用",
+        "rank": 3,
+        "title": "一文读懂军人退役、退伍、复员、转业、退休的区别与联系",
+        "url": "https://www.toutiao.com/article/7533452524527845942/",
+        "snippet": "2025年8月1日 · 军人退出现役时，常见的退役、退伍、复员、转业几个概念容易混淆，本文将围绕“适用对象、安置政策和待遇保障”等 …",
+        "published_date": "2025-08-01",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "格林美 邦普 电池回收",
+        "rank": 2,
+        "title": "格林 第一季 (豆瓣)",
+        "url": "https://movie.douban.com/subject/5966523/",
+        "snippet": "2011年10月28日 · 当Nick对家族背景有了更多了解后，越来越意识到自己对“格林”的义务责无旁贷。 格林兄弟是假的，但格林童话是 …",
+        "published_date": "2011-10-28",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "格林美 邦普 电池回收",
+        "rank": 3,
+        "title": "格林第一季剧情介绍（1-22全集）大结局_电视剧_电视猫",
+        "url": "https://www.tvmao.com/drama/YicyHy0=",
+        "snippet": "电视剧格林第一季剧情介绍：《格林》 (Grimm)可以算得上是一部黑暗童话。 剧中的故事和角色大多出自《格林童话》中的角色。 现 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "动力电池回收 管理办法 白名单",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "动力（汉语词汇）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/891484",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力（物理学用语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/24168480",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力的意思|汉典「动力」词语解释",
+            "url": "http://zdic.net/hans/%E5%8A%A8%E5%8A%9B",
+            "relevance": 0.1,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "人的“动力”究竟来自哪里？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/103107258",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力的意思_动力的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bca373c7",
+            "relevance": 0.15,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.263,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "退役动力电池 梯次利用 再生利用",
+        "urls": [
+          "https://www.mva.gov.cn/",
+          "https://www.toutiao.com/article/7533452524527845942/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "退役动力电池 梯次利用 再生利用",
+            "rank": 1,
+            "title": "中华人民共和国退役军人事务部",
+            "url": "https://www.mva.gov.cn/",
+            "snippet": "2026年8月20日 · 为维护军人军属合法权益，加强退役军人服务保障体系建设，建立健全集中统一、职责清晰的退役军人管理保障体 …",
+            "published_date": "2026-08-20",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "退役动力电池 梯次利用 再生利用",
+            "rank": 3,
+            "title": "一文读懂军人退役、退伍、复员、转业、退休的区别与联系",
+            "url": "https://www.toutiao.com/article/7533452524527845942/",
+            "snippet": "2025年8月1日 · 军人退出现役时，常见的退役、退伍、复员、转业几个概念容易混淆，本文将围绕“适用对象、安置政策和待遇保障”等 …",
+            "published_date": "2025-08-01",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中华人民共和国退役军人事务部",
+            "url": "https://www.mva.gov.cn/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "一文读懂军人退役、退伍、复员、转业、退休的区别与联系",
+            "url": "https://www.toutiao.com/article/7533452524527845942/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "退役（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E9%80%80%E5%BD%B9/2332739",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "退伍、转业和退役有什么区别？（附退役士兵安置条例） - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/425563062",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "全国一体化退役军人网上服务平台",
+            "url": "https://wsfw.mva.gov.cn/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.209,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "格林美 邦普 电池回收",
+        "urls": [
+          "https://movie.douban.com/subject/5966523/",
+          "https://www.tvmao.com/drama/YicyHy0="
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "格林美 邦普 电池回收",
+            "rank": 2,
+            "title": "格林 第一季 (豆瓣)",
+            "url": "https://movie.douban.com/subject/5966523/",
+            "snippet": "2011年10月28日 · 当Nick对家族背景有了更多了解后，越来越意识到自己对“格林”的义务责无旁贷。 格林兄弟是假的，但格林童话是 …",
+            "published_date": "2011-10-28",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "格林美 邦普 电池回收",
+            "rank": 3,
+            "title": "格林第一季剧情介绍（1-22全集）大结局_电视剧_电视猫",
+            "url": "https://www.tvmao.com/drama/YicyHy0=",
+            "snippet": "电视剧格林第一季剧情介绍：《格林》 (Grimm)可以算得上是一部黑暗童话。 剧中的故事和角色大多出自《格林童话》中的角色。 现 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "格林 第一季 (豆瓣)",
+            "url": "https://movie.douban.com/subject/5966523/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "格林第一季剧情介绍（1-22全集）大结局_电视剧_电视猫",
+            "url": "https://www.tvmao.com/drama/YicyHy0=",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "格林（美国2011年达内尔·马丁执导魔幻电视剧）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%A0%BC%E6%9E%97/12092573",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "《美剧《格林》第一季》-精彩合集-免费在线观看-爱奇艺",
+            "url": "https://www.iqiyi.com/a_1for8pa1l1l.html",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "格林 第一季-人人视频",
+            "url": "https://mh.yichengwlkj.com/drama/674",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.211,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "动力电池 溯源管理平台 监管",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "动力（汉语词汇）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/891484",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力（物理学用语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/24168480",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力的意思|汉典「动力」词语解释",
+            "url": "http://zdic.net/hans/%E5%8A%A8%E5%8A%9B",
+            "relevance": 0.111,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "人的“动力”究竟来自哪里？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/103107258",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力的意思_动力的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bca373c7",
+            "relevance": 0.167,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.208,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（新能源汽车电池回收行业现状与监管）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "manager_worker"
+        ]
+      },
+      "scheduler_elapsed_seconds": 18.245,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

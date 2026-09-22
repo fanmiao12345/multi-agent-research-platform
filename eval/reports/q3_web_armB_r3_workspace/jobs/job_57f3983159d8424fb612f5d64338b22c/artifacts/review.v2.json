@@ -1,0 +1,12 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "多处将E-001/E-002/E-010/E-017/E-019等资料范围否定事实标为〔推断〕，应标〔事实〕，否则标注要求未满足。"
+  }
+ ]
+}

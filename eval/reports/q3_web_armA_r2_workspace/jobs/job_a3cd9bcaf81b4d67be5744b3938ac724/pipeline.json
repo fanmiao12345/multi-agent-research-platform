@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_a3cd9bcaf81b4d67be5744b3938ac724",
+  "goal": "企业数据出境合规的主要变化",
+  "started_at": "2026-09-20T09:13:23",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 7 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T09:13:28"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，3 个缺口",
+        "finished_at": "2026-09-20T09:13:33"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T09:13:38"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：全部证据仅涉及国家统计局数据栏目与统计制度，明确未出现数据出境或合规相关表述，无法支撑该任务。",
+        "finished_at": "2026-09-20T09:13:40"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：全部证据仅涉及国家统计局数据栏目与统计制度，明确未出现数据出境或合规相关表述，无法支撑该任务。；缺失信息：数据出境相关法律法规与监管政策、合规指南及企业案例材料、法规修订、生效日期与监管口径的时间线、安全评估、标准合同、认证等操作细则与执法案例（可用证据 7 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_6f722480ba",
+      "fact": "RPA侧重流程自动化，核心是执行规则明确的重复性操作，不具备自主学习和创新能力。",
+      "tag": "F",
+      "quote": "RPA侧重于“流程自动化”，核心是执行规则明确的重复性操作，不具备自主学习和创新能力",
+      "start": 2772,
+      "end": 2814,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_6f722480ba",
+      "fact": "AI核心是认知智能，能模拟学习、推理和决策，处理不确定性问题。",
+      "tag": "F",
+      "quote": "而AI的核心是“认知智能”，通过算法模拟人类的学习、推理和决策能力，能够处理不确定性问题",
+      "start": 2832,
+      "end": 2876,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_6f722480ba",
+      "fact": "RPA与AI融合形成IPA，让RPA从执行工具升级为智能助手。",
+      "tag": "F",
+      "quote": "两者的融合形成了IPA（人工智能流程自动化），让RPA从“执行工具”升级为“智能助手”",
+      "start": 2897,
+      "end": 2940,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_6f722480ba",
+      "fact": "实在Agent是RPA的进阶形态，核心突破是自主决策能力。",
+      "tag": "F",
+      "quote": "与传统RPA相比，实在Agent的核心突破在于“自主决策能力”",
+      "start": 6600,
+      "end": 6631,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 82,
+        "start": 6600,
+        "end": 6738
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_6f722480ba",
+      "fact": "实在Agent可据自然语言描述，自主拆解任务步骤、规划执行路径，无需预设详细流程。",
+      "tag": "F",
+      "quote": "还能根据用户的自然语言描述，自主拆解任务步骤、规划执行路径，无需人类预设详细操作流程",
+      "start": 6680,
+      "end": 6722,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 82,
+        "start": 6600,
+        "end": 6738
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_6f722480ba",
+      "fact": "IDC称实在智能以TARS大模型实现自然语言生成流程，打破传统RPA规则依赖。",
+      "tag": "F",
+      "quote": "IDC在报告中特别提及，实在智能基于TARS大模型实现“自然语言生成流程”的技术创新，打破了传统RPA对规则依赖的局限",
+      "start": 9144,
+      "end": 9203,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 103,
+        "start": 9144,
+        "end": 9336
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_6f722480ba",
+      "fact": "未来智能体技术将成为核心支撑，RPA升级为AI驱动的RPA。",
+      "tag": "F",
+      "quote": "未来，RPA与AI的融合将更加深入，从当前的“RPA+AI”模式升级为“AI驱动的RPA”，智能体技术将成为核心支撑",
+      "start": 9383,
+      "end": 9441,
+      "locator": {
+        "heading": "# 五、RPA的发展趋势与未来展望",
+        "paragraph": 105,
+        "start": 9383,
+        "end": 9540
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_6f722480ba",
+      "fact": "实在Agent无需依赖API即可跨系统协作，能操作各类软件和APP。",
+      "tag": "F",
+      "quote": "实在Agent无需依赖API即可实现跨系统、跨设备协作，能够操作一切软件和APP",
+      "start": 6963,
+      "end": 7003,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 85,
+        "start": 6956,
+        "end": 7090
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_2a2d55d5cb",
+      "fact": "本资料标题为《超自然行动组》，自述为多人组队欢乐恐怖游戏。",
+      "tag": "F",
+      "quote": "多人组队欢乐恐怖游戏",
+      "start": 10,
+      "end": 20,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 0,
+        "start": 10,
+        "end": 21
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_2a2d55d5cb",
+      "fact": "本资料为游戏官网首页，仅含新闻、公告、活动与下载入口等内容。",
+      "tag": "F",
+      "quote": "官网首页",
+      "start": 22,
+      "end": 26,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 1,
+        "start": 22,
+        "end": 27
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_2a2d55d5cb",
+      "fact": "本资料全文未出现机器人流程自动化、智能体及其边界相关表述。",
+      "tag": "F",
+      "quote": "关注超自然",
+      "start": 40,
+      "end": 45,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 4,
+        "start": 40,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_2a2d55d5cb",
+      "fact": "本资料最新一条新闻日期为2026-09-17，内容为版本更新速递。",
+      "tag": "F",
+      "quote": "2026-09-17",
+      "start": 131,
+      "end": 141,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 14,
+        "start": 131,
+        "end": 142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_2a2d55d5cb",
+      "fact": "本资料提到该游戏日活跃用户突破一千万。",
+      "tag": "F",
+      "quote": "《超自然行动组》日活跃用户突破一千万啦！",
+      "start": 71,
+      "end": 91,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 10,
+        "start": 71,
+        "end": 92
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_2a2d55d5cb",
+      "fact": "本资料标注运营方为上海巨人网络科技有限公司，版本号1.13.3.001。",
+      "tag": "F",
+      "quote": "上海巨人网络科技有限公司",
+      "start": 401,
+      "end": 413,
+      "locator": {
+        "heading": "# NaN /0",
+        "paragraph": 37,
+        "start": 401,
+        "end": 443
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_2a2d55d5cb",
+      "fact": "本资料与任务目标「机器人流程自动化与智能体的边界」无任何内容交集，无法据此提取相关证据。",
+      "tag": "I",
+      "quote": "资讯速通",
+      "start": 28,
+      "end": 32,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 2,
+        "start": 28,
+        "end": 33
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_91182d24d6",
+      "fact": "本资料主题为“大”字甲骨文金文篆文字形演变，未涉及机器人流程自动化与智能体边界。",
+      "tag": "F",
+      "quote": "# 【大】的甲骨文金文篆文字形演变含义",
+      "start": 518,
+      "end": 537,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_9bb646b492",
+      "fact": "本资料称 Agent 的能力边界由工具决定。",
+      "tag": "F",
+      "quote": "Agent的能力边界由工具决定",
+      "start": 6043,
+      "end": 6058,
+      "locator": {
+        "heading": "### Step 3：定义工具",
+        "paragraph": 156,
+        "start": 6043,
+        "end": 6068
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_9bb646b492",
+      "fact": "本资料认为简单重复任务用传统自动化方案更高效。",
+      "tag": "F",
+      "quote": "简单重复任务用传统自动化方案更高效",
+      "start": 6854,
+      "end": 6871,
+      "locator": {
+        "heading": "### 坑4：过度依赖Agent",
+        "paragraph": 179,
+        "start": 6782,
+        "end": 6873
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_9bb646b492",
+      "fact": "本资料建议能用 API 或脚本时就不用 Agent。",
+      "tag": "F",
+      "quote": "能用API就别用Agent，能用脚本就别用Agent",
+      "start": 6797,
+      "end": 6823,
+      "locator": {
+        "heading": "### 坑4：过度依赖Agent",
+        "paragraph": 179,
+        "start": 6782,
+        "end": 6873
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_9bb646b492",
+      "fact": "本资料建议先找 API，找不到再考虑 Agent。",
+      "tag": "F",
+      "quote": "先找API，找不到再考虑Agent",
+      "start": 6884,
+      "end": 6901,
+      "locator": {
+        "heading": "### 坑4：过度依赖Agent",
+        "paragraph": 180,
+        "start": 6874,
+        "end": 6903
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_9bb646b492",
+      "fact": "本资料称 Agent 适合需要理解、规划、多步执行的复杂任务。",
+      "tag": "F",
+      "quote": "需要\"理解+规划+多步执行\"的复杂任务",
+      "start": 6834,
+      "end": 6853,
+      "locator": {
+        "heading": "### 坑4：过度依赖Agent",
+        "paragraph": 179,
+        "start": 6782,
+        "end": 6873
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_9bb646b492",
+      "fact": "本资料称 Agent 不是万能的。",
+      "tag": "F",
+      "quote": "Agent不是万能的",
+      "start": 6785,
+      "end": 6795,
+      "locator": {
+        "heading": "### 坑4：过度依赖Agent",
+        "paragraph": 179,
+        "start": 6782,
+        "end": 6873
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_9bb646b492",
+      "fact": "本资料称传统客服机器人靠关键词匹配。",
+      "tag": "F",
+      "quote": "传统客服机器人靠关键词匹配",
+      "start": 3947,
+      "end": 3960,
+      "locator": {
+        "heading": "### 场景1：智能客服——从关键词匹配到动态规划",
+        "paragraph": 107,
+        "start": 3947,
+        "end": 3995
+      },
+      "note": ""
+    }
+  ]
+}

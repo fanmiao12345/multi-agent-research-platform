@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_45794d45c9",
+      "fact": "本资料为娱乐人物报道，全文讲述歌手梅艳芳生平，与教育领域无关。",
+      "tag": "F",
+      "quote": "著名女歌手梅艳芳，弥留之际多次吩咐保镖：我死都不会见两个人！",
+      "start": 72,
+      "end": 102,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_45794d45c9",
+      "fact": "本资料未出现生成式AI、教学应用或教育收益与风险的任何内容。",
+      "tag": "F",
+      "quote": "香港的冬季向来温和，但2003年的冬天却格外阴冷刺骨。",
+      "start": 197,
+      "end": 224,
+      "locator": {
+        "heading": "# 原创 著名女歌手梅艳芳，弥留之际多次吩咐保镖：我死都不会见两个人！",
+        "paragraph": 16,
+        "start": 197,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_45794d45c9",
+      "fact": "本资料仅记述梅艳芳2003年红馆最后演出及其身体状况。",
+      "tag": "F",
+      "quote": "2003年11月，梅艳芳身着婚纱登上红馆舞台，完成了人生最后的演出。",
+      "start": 1354,
+      "end": 1388,
+      "locator": {
+        "heading": "# 原创 著名女歌手梅艳芳，弥留之际多次吩咐保镖：我死都不会见两个人！",
+        "paragraph": 22,
+        "start": 1354,
+        "end": 1607
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_45794d45c9",
+      "fact": "本资料页面属娱乐频道，正文外仅有平台免责声明。",
+      "tag": "F",
+      "quote": "娱乐频道最新文章",
+      "start": 51,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 40,
+        "end": 69
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_45794d45c9",
+      "fact": "页面导航栏虽列有「教育」二字，但正文无教育主题内容。",
+      "tag": "I",
+      "quote": "教育",
+      "start": 20,
+      "end": 22,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 20,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_45794d45c9",
+      "fact": "本资料无法为「教育领域使用生成式AI的收益与风险」提供任何证据。",
+      "tag": "I",
+      "quote": "该文观点仅代表作者本人",
+      "start": 1889,
+      "end": 1900,
+      "locator": {
+        "heading": "# 原创 著名女歌手梅艳芳，弥留之际多次吩咐保镖：我死都不会见两个人！",
+        "paragraph": 28,
+        "start": 1889,
+        "end": 1926
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_4e0ebcc053",
+      "fact": "本资料是一篇关于梅艳芳生平的娱乐人物报道，与教育或生成式AI无关",
+      "tag": "F",
+      "quote": "2003年梅艳芳去世后，医生：她的病可以治好，但因一事她放弃",
+      "start": 604,
+      "end": 634,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_4e0ebcc053",
+      "fact": "本资料未提供可用于分析教育领域生成式AI收益与风险的任何事实或数据",
+      "tag": "U",
+      "quote": "特别声明：以上内容(如有图片或视频亦包括在内)为自媒体平台“网易号”用户上传并发布",
+      "start": 2120,
+      "end": 2161,
+      "locator": {
+        "heading": "# ​2003年梅艳芳去世后，医生：她的病可以治好，但因一事她放弃",
+        "paragraph": 122,
+        "start": 2120,
+        "end": 2176
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_819817a66c",
+      "fact": "本资料主题为英语be、being、been的用法区别，与生成式AI无关",
+      "tag": "F",
+      "quote": "be, being, been 区别",
+      "start": 71,
+      "end": 89,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_819817a66c",
+      "fact": "本资料未提供教育领域使用生成式AI收益的任何信息",
+      "tag": "F",
+      "quote": "百度知道 > 无分类",
+      "start": 165,
+      "end": 175,
+      "locator": {
+        "heading": "# be, being, been 区别",
+        "paragraph": 30,
+        "start": 165,
+        "end": 176
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_819817a66c",
+      "fact": "本资料说明being是be动词的ing形式，表达正在进行时",
+      "tag": "F",
+      "quote": "1、being是be动词的ing形式，就像其他动词的ing形式一样，表达的是正在进行时。",
+      "start": 405,
+      "end": 449,
+      "locator": {
+        "heading": "# be, being, been 区别",
+        "paragraph": 41,
+        "start": 405,
+        "end": 450
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_819817a66c",
+      "fact": "本资料说明been用在完成时助动词have/has/had后面",
+      "tag": "F",
+      "quote": "been用在完成时的助动词have/has/had后面",
+      "start": 453,
+      "end": 480,
+      "locator": {
+        "heading": "# be, being, been 区别",
+        "paragraph": 42,
+        "start": 451,
+        "end": 482
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_819817a66c",
+      "fact": "本资料称be是原形，可作助动词，后接doing或done结构",
+      "tag": "F",
+      "quote": "be是原形，可以做助动词",
+      "start": 1020,
+      "end": 1032,
+      "locator": {
+        "heading": "## 扩展资料",
+        "paragraph": 72,
+        "start": 1018,
+        "end": 1076
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_c533b32413",
+      "fact": "本资料仅辨析human beings与human being的用法区别，与教育领域生成式AI无关。",
+      "tag": "F",
+      "quote": "从释义，用法，使用环境，形象和影响范围五个维度分析human beings与human being的区别",
+      "start": 420,
+      "end": 472,
+      "locator": {
+        "heading": "# human beings与human being的区别",
+        "paragraph": 45,
+        "start": 420,
+        "end": 481
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_c533b32413",
+      "fact": "本资料未提供生成式AI在教育中的任何收益或风险信息。",
+      "tag": "I",
+      "quote": "human beings与human being的区别",
+      "start": 71,
+      "end": 98,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_087f84f6b5",
+      "fact": "UNESCO主张新兴AI技术应服务于公平、机会与包容。",
+      "tag": "F",
+      "quote": "developed and deployed in service of equity, opportunity, and inclusivity",
+      "start": 1310,
+      "end": 1383,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 64,
+        "start": 1137,
+        "end": 1401
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_087f84f6b5",
+      "fact": "UNESCO与ITU共同担任联合国AI治理全球对话的联合秘书处。",
+      "tag": "F",
+      "quote": "Coordinated by UNESCO and the ITU as the joint UN Secretariat",
+      "start": 1402,
+      "end": 1463,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 65,
+        "start": 1402,
+        "end": 1668
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_087f84f6b5",
+      "fact": "该AI治理对话旨在让AI治理反映所有国家而非仅技术先进国家的优先事项。",
+      "tag": "F",
+      "quote": "reflects the priorities of all nations, not just the most technologically advanced",
+      "start": 1584,
+      "end": 1666,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 65,
+        "start": 1402,
+        "end": 1668
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_087f84f6b5",
+      "fact": "教宗访问UNESCO的议题涵盖AI时代的信息诚信、教育与艺术创作。",
+      "tag": "F",
+      "quote": "information integrity, education and artistic creation in the age of AI",
+      "start": 2992,
+      "end": 3063,
+      "locator": {
+        "heading": "## Pope Leo XIV at UNESCO",
+        "paragraph": 75,
+        "start": 2737,
+        "end": 3150
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_087f84f6b5",
+      "fact": "UNESCO把「用新技术和人工智能学习」列为社区影响案例之一。",
+      "tag": "F",
+      "quote": "Learning with new technologies and artificial intelligence",
+      "start": 3911,
+      "end": 3969,
+      "locator": {
+        "heading": "## Our impact in communities",
+        "paragraph": 84,
+        "start": 3911,
+        "end": 3970
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_087f84f6b5",
+      "fact": "UNESCO第四次AI伦理全球论坛在沙特举行，强化全球伦理AI治理合作。",
+      "tag": "F",
+      "quote": "4th Global Forum on the Ethics of AI in Saudi Arabia",
+      "start": 6437,
+      "end": 6489,
+      "locator": {
+        "heading": "## Latest news",
+        "paragraph": 125,
+        "start": 6369,
+        "end": 6490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_087f84f6b5",
+      "fact": "UNESCO指出数字平台虽扩大信息获取，却可能削弱独立新闻的条件。",
+      "tag": "F",
+      "quote": "they can also undermine the conditions for independent journalism",
+      "start": 5766,
+      "end": 5831,
+      "locator": {
+        "heading": "## Magazine: The UNESCO Courier",
+        "paragraph": 113,
+        "start": 5679,
+        "end": 5833
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_087f84f6b5",
+      "fact": "本资料仅笼统提及AI与学习，未列举教育中使用生成式AI的具体收益或风险。",
+      "tag": "I",
+      "quote": "Learning with new technologies and artificial intelligence",
+      "start": 3911,
+      "end": 3969,
+      "locator": {
+        "heading": "## Our impact in communities",
+        "paragraph": 84,
+        "start": 3911,
+        "end": 3970
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_84869e2905",
+      "fact": "本资料提到教科文组织数字学习周，教育部长呼吁人工智能时代仍须坚持将教育作为公共利益。",
+      "tag": "F",
+      "quote": "联合国教科文组织数字学习周，教育部长呼吁：人工智能时代仍须坚持将教育作为公共利益",
+      "start": 2605,
+      "end": 2645,
+      "locator": {
+        "heading": "## 新闻",
+        "paragraph": 113,
+        "start": 2605,
+        "end": 2646
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_84869e2905",
+      "fact": "本资料显示教科文组织调查指出近3/4受访女记者曾面临网络暴力，1/4遭受人身或死亡威胁。",
+      "tag": "F",
+      "quote": "近3/4受访女记者曾面临网络暴力，1/4遭受人身或死亡威胁",
+      "start": 1563,
+      "end": 1592,
+      "locator": {
+        "heading": "## CTRL + ALT + 静音：压制一名女记者在网上发声，相当于压制一千名女性的声音",
+        "paragraph": 74,
+        "start": 1550,
+        "end": 1684
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_84869e2905",
+      "fact": "本资料称人工智能通过深度伪造、人肉搜索、骚扰等加剧对女记者的虐待行为。",
+      "tag": "F",
+      "quote": "随着人工智能通过深度伪造、人肉搜索、骚扰等加剧这种虐待行为",
+      "start": 1593,
+      "end": 1622,
+      "locator": {
+        "heading": "## CTRL + ALT + 静音：压制一名女记者在网上发声，相当于压制一千名女性的声音",
+        "paragraph": 74,
+        "start": 1550,
+        "end": 1684
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_84869e2905",
+      "fact": "本资料称教科文组织呼吁通过对话、倡导和政策改革，打击人工智能助长的性别暴力。",
+      "tag": "F",
+      "quote": "采取更有力的行动来打击人工智能助长的性别暴力",
+      "start": 1643,
+      "end": 1665,
+      "locator": {
+        "heading": "## CTRL + ALT + 静音：压制一名女记者在网上发声，相当于压制一千名女性的声音",
+        "paragraph": 74,
+        "start": 1550,
+        "end": 1684
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_84869e2905",
+      "fact": "本资料将人工智能与教育公共利益相联系，但未展开生成式AI的教育应用收益。",
+      "tag": "I",
+      "quote": "人工智能时代仍须坚持将教育作为公共利益",
+      "start": 2626,
+      "end": 2645,
+      "locator": {
+        "heading": "## 新闻",
+        "paragraph": 113,
+        "start": 2605,
+        "end": 2646
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_84869e2905",
+      "fact": "本资料未具体说明生成式AI在教育中的收益、风险或治理措施。",
+      "tag": "U",
+      "quote": "人工智能时代仍须坚持将教育作为公共利益",
+      "start": 2626,
+      "end": 2645,
+      "locator": {
+        "heading": "## 新闻",
+        "paragraph": 113,
+        "start": 2605,
+        "end": 2646
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_4ecd245462",
+      "fact": "本资料介绍即梦AI的文生图、视频生成与智能画布功能。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_4ecd245462",
+      "fact": "本资料称支持文/图生视频。",
+      "tag": "F",
+      "quote": "支持文/图 生视频",
+      "start": 76,
+      "end": 85,
+      "locator": {
+        "heading": "# 即刻造梦",
+        "paragraph": 6,
+        "start": 76,
+        "end": 86
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_4ecd245462",
+      "fact": "本资料称输入简单文案或图片即可快速生成优质视频片段。",
+      "tag": "F",
+      "quote": "AI视频生成，输入简单的文案或图片，即可快速生成优质视频片段",
+      "start": 98,
+      "end": 128,
+      "locator": {
+        "heading": "## 灵感即刻成片",
+        "paragraph": 7,
+        "start": 98,
+        "end": 129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_4ecd245462",
+      "fact": "本资料称支持中文提示词创作，语义理解能力更好。",
+      "tag": "F",
+      "quote": "即梦AI支持根据中文提示词进行创作，拥有更好的语义理解能力",
+      "start": 301,
+      "end": 330,
+      "locator": {
+        "heading": "### 中文创作，得心应手",
+        "paragraph": 15,
+        "start": 301,
+        "end": 354
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_4ecd245462",
+      "fact": "本资料称AI绘画仅需简单提示词即可生成图片。",
+      "tag": "F",
+      "quote": "即梦AI绘画，仅需简单提示词，即可生成精彩的图片。",
+      "start": 389,
+      "end": 414,
+      "locator": {
+        "heading": "## AI绘画 梦境成真",
+        "paragraph": 19,
+        "start": 389,
+        "end": 485
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_4ecd245462",
+      "fact": "本资料称可对图片做背景替换、画风保持、姿势保持等改造。",
+      "tag": "F",
+      "quote": "实现背景替换、风格联想、画风保持、姿势保持等 操作",
+      "start": 447,
+      "end": 472,
+      "locator": {
+        "heading": "## AI绘画 梦境成真",
+        "paragraph": 19,
+        "start": 389,
+        "end": 485
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_4ecd245462",
+      "fact": "教育领域或可用此类工具快速生成教学视频素材。",
+      "tag": "I",
+      "quote": "AI视频生成，输入简单的文案或图片，即可快速生成优质视频片段",
+      "start": 98,
+      "end": 128,
+      "locator": {
+        "heading": "## 灵感即刻成片",
+        "paragraph": 7,
+        "start": 98,
+        "end": 129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_4ecd245462",
+      "fact": "本资料未说明教育领域使用生成式AI的收益与风险。",
+      "tag": "I",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_9a2b7bdf50",
+      "fact": "本资料为Kling AI首页导航，未涉及教育领域生成式AI的收益与风险",
+      "tag": "U",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    }
+  ]
+}

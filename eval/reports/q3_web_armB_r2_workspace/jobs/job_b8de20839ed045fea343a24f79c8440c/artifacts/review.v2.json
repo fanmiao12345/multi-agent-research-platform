@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "多处负向证据（E-002/E-008/E-010等）标〔未知〕，未按事实/推断标注，应标〔事实〕。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-001称全文讲述梅艳芳生平，E-003称仅记述最后演出及身体状况，资料范围矛盾未标注。"
+  }
+ ]
+}

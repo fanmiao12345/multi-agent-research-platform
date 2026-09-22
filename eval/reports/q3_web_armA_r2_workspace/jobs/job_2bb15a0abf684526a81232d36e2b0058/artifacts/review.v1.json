@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "开放冲突段将E-002推断为“RPA可与AI WorkOS融合进化为AI员工”并标事实，证据仅称二者共同用于设计管理执行进化AI员工，支持不足。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "厂商融合定位漏引E-002“准确执行”，应为设计、管理、准确执行并进化。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-028称2026年6月开放，属未来计划，正文标〔事实〕可能误导，建议标“宣称/计划”。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "千问相关E-025至E-032来源仅写“该来源”，无法核查，建议补具体来源。"
+  }
+ ]
+}

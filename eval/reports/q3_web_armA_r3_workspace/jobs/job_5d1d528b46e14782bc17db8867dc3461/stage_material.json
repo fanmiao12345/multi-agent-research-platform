@@ -1,0 +1,200 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "生成式AI在软件测试中的直接信息缺失",
+        "points": [
+          {
+            "evidence_id": "E-005",
+            "statement": "资料未提及生成式人工智能在软件测试中的任何应用或趋势。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "资料未涉及测试用例生成、缺陷检测等软件测试环节内容。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "资料未出现关于生成式人工智能应用于软件测试的任何论述。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "无法依据本资料提取生成式人工智能在软件测试中的应用趋势信息。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "资料未提及生成式人工智能，也未提及软件测试。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "资料未提供生成式人工智能在软件测试中应用趋势的任何内容。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "资料未提及生成式人工智能、软件测试或相关应用趋势。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "资料未提供生成式AI在软件测试中的应用或趋势信息。"
+          }
+        ]
+      },
+      {
+        "name": "LLM排行榜与代码模型间接线索",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "资料是LLM排行榜，比较250多个AI模型的智能、价格、性能与速度。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "资料导航中设有「编程智能体」栏目。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "排行榜收录GPT-5.3 Codex (xhigh)等代码类模型，其智能得分为33。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "资料以Intelligence Index排名，最高得分模型为53分。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "代码类模型与编程智能体栏目可间接反映代码能力，但无测试用途数据。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI视觉创作工具功能",
+        "points": [
+          {
+            "evidence_id": "E-022",
+            "statement": "即梦AI提供文生图、视频生成与智能画布等生成式AI创作功能。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "即梦AI支持输入简单文案或图片快速生成优质视频片段。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "即梦AI支持根据中文提示词创作，并具有更好的语义理解能力。"
+          },
+          {
+            "evidence_id": "E-025",
+            "statement": "即梦AI绘画仅需简单提示词即可生成精彩图片。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "即梦AI智能画布集成AI拼图生成，并提供局部重绘、扩图、消除和抠图操作。"
+          },
+          {
+            "evidence_id": "E-031",
+            "statement": "资料介绍在线AI图像生成与图片编辑工具，主题围绕视觉创作。"
+          },
+          {
+            "evidence_id": "E-032",
+            "statement": "资料所列核心能力包括文字生成图片、自然语言修图与图片生成视频。"
+          },
+          {
+            "evidence_id": "E-033",
+            "statement": "资料博客文章主题为图像模型对比与提示词指南。"
+          }
+        ]
+      },
+      {
+        "name": "其他生成式AI创意平台内容",
+        "points": [
+          {
+            "evidence_id": "E-028",
+            "statement": "资料是Kling AI创意工作室首页，主题为AI创意内容生成。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "页面列出创意圈、资产、Omni、生成、灵动画布、全部工具等入口。"
+          },
+          {
+            "evidence_id": "E-030",
+            "statement": "资料与软件测试主题无交集，构成该任务的内容缺口。"
+          }
+        ]
+      },
+      {
+        "name": "通用问答与知识平台无关内容",
+        "points": [
+          {
+            "evidence_id": "E-008",
+            "statement": "资料为百度知道首页，内容为导航、热门问题与榜单，未涉及软件测试。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "资料罗列的问题均为生活类话题，如旅行、养狗、家常菜等。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "资料仅在一处公告标题中提及人工智能生成内容的治理与倡导。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "资料主题为中国知网能否查询论文被引用次数，与软件测试无关。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "资料称知网可查到论文被引用次数，并给出操作步骤。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "资料建议在知网点击“引文搜索”后输入关键词检索。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "资料介绍知网由清华大学、清华同方发起，始建于1999年6月。"
+          }
+        ]
+      },
+      {
+        "name": "不可用或无关来源内容缺口",
+        "points": [
+          {
+            "evidence_id": "E-019",
+            "statement": "资料正文仅含“QQ音乐”四字，无其他可提取内容。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "资料无法作为该主题的事实依据，相关信息缺口。"
+          },
+          {
+            "evidence_id": "E-034",
+            "statement": "资料全文未出现软件测试、测试用例或缺陷检测相关表述。"
+          },
+          {
+            "evidence_id": "E-035",
+            "statement": "仅凭本资料无法判断生成式人工智能在软件测试中的应用趋势。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "生成式AI在测试用例生成中的具体应用效果如何？",
+        "missing": "相关行业报告、学术论文或企业实践数据"
+      },
+      {
+        "question": "生成式AI在缺陷检测与定位中的落地案例有哪些？",
+        "missing": "测试工具文档、案例研究或实验数据"
+      },
+      {
+        "question": "相关应用近年的发展趋势与采用率如何变化？",
+        "missing": "时间序列统计、市场调研或年度综述"
+      },
+      {
+        "question": "代码类模型能力如何映射到软件测试任务？",
+        "missing": "代码模型在测试任务上的评测数据"
+      },
+      {
+        "question": "有哪些生成式AI测试工具或产品？",
+        "missing": "产品文档、功能说明或基准评测"
+      }
+    ],
+    "duplicates": []
+  }
+}

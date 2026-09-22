@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_c762d0c93b",
+      "fact": "本资料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_c762d0c93b",
+      "fact": "40名参与者中32人完成问卷，24名答卷者表示满意。",
+      "tag": "F",
+      "quote": "40名参与者中32人完成问卷，24名答卷者表示满意。",
+      "start": 11,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_c762d0c93b",
+      "fact": "问卷回收率为80%，答卷者满意率为75%。",
+      "tag": "F",
+      "quote": "问卷回收率为80%，答卷者满意率为75%。",
+      "start": 37,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_c762d0c93b",
+      "fact": "回收率80%与满意率75%由同一批问卷数据计算，不应计为两份独立证据。",
+      "tag": "I",
+      "quote": "40名参与者中32人完成问卷，24名答卷者表示满意。问卷回收率为80%，答卷者满意率为75%。",
+      "start": 11,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_c762d0c93b",
+      "fact": "观察期工单平均处理时长从10小时变为8小时。",
+      "tag": "F",
+      "quote": "观察期工单平均处理时长从10小时变为8小时；未控制工单难度变化。",
+      "start": 58,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_c762d0c93b",
+      "fact": "本资料未控制工单难度变化。",
+      "tag": "F",
+      "quote": "未控制工单难度变化。",
+      "start": 80,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_c762d0c93b",
+      "fact": "本资料仅见一份来源，未见可去重的重复材料。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    }
+  ]
+}

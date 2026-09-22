@@ -1,0 +1,106 @@
+{
+  "title": "教育领域使用生成式AI的收益与风险：基于现有资料的证据提纲",
+  "sections": [
+    {
+      "heading": "资料范围与证据可用性",
+      "purpose": "说明现有资料能否支撑教育领域生成式AI收益与风险的判断。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-010",
+        "E-017",
+        "E-019"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育场景直接证据缺口",
+      "purpose": "列明教育收益、风险与分角色影响等直接证据缺失。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-010",
+        "E-017",
+        "E-019"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "UNESCO的人工智能治理总体立场",
+      "purpose": "梳理公平、包容、全球对话与伦理治理等立场。",
+      "required_evidence": [
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育作为公共利益与AI时代挑战",
+      "purpose": "说明教育在AI治理与当代挑战中的公共利益定位。",
+      "required_evidence": [
+        "E-015",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "生成式AI工具能力与低门槛线索",
+      "purpose": "归纳工具能力、易用性与效率宣称作为潜在收益线索。",
+      "required_evidence": [
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "生成式AI输出的风险提示",
+      "purpose": "归纳事实、权利与质量检查提示及可推断风险。",
+      "required_evidence": [
+        "E-008",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "风险从通用场景迁移到教育的限制",
+      "purpose": "说明通用风险提示不能直接证明教学场景风险。",
+      "required_evidence": [
+        "E-008",
+        "E-009",
+        "E-017",
+        "E-019"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教学实践落地与分角色影响缺口",
+      "purpose": "指出UNESCO立场如何落到教学及学生教师影响尚缺证据。",
+      "required_evidence": [
+        "E-013",
+        "E-017",
+        "E-018",
+        "E-019"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与待补证据清单",
+      "purpose": "总结可确认内容并列出教育收益与风险待补证据。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-010",
+        "E-017",
+        "E-019"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

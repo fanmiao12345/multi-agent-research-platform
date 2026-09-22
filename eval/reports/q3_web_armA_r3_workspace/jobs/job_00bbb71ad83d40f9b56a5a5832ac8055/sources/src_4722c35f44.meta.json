@@ -1,0 +1,685 @@
+{
+  "source_id": "src_4722c35f44",
+  "kind": "url",
+  "display": "豆包如何使用实时翻译-百度经验",
+  "original_address": "https://jingyan.baidu.com/article/5bbb5a1b9c4cf552eba179ce.html",
+  "title": "豆包如何使用实时翻译-百度经验",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 2502,
+  "content_hash": "7a2751243effc4d2b42d297d4c3575a046d0088b25c4e431afc4b5c5f4e518a0",
+  "normalized_hash": "5745f20285f92c44fec91b0247ceb195dda89b328d77ed63eee388e6a720d72b",
+  "captured_at": "2026-09-20T11:09:27",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_4722c35f44.md",
+  "encoding": "utf-8",
+  "segment_count": 93,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 3,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 4,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 8,
+      "end": 11,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 12,
+      "end": 15,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 16,
+      "end": 19,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 20,
+      "end": 23,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 24,
+      "end": 27,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 28,
+      "end": 31,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 32,
+      "end": 35,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 36,
+      "end": 39,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 40,
+      "end": 43,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 44,
+      "end": 49,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 50,
+      "end": 55,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 56,
+      "end": 59,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 60,
+      "end": 68,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 69,
+      "end": 72,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 73,
+      "end": 76,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 77,
+      "end": 83,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 84,
+      "end": 90,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 91,
+      "end": 97,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 98,
+      "end": 104,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 105,
+      "end": 111,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 112,
+      "end": 118,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 119,
+      "end": 125,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 126,
+      "end": 132,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 133,
+      "end": 139,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 140,
+      "end": 146,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 147,
+      "end": 150,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 151,
+      "end": 155,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 156,
+      "end": 159,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 160,
+      "end": 163,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 164,
+      "end": 169,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 170,
+      "end": 173,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 174,
+      "end": 199,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 34,
+      "start": 214,
+      "end": 217,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 35,
+      "start": 218,
+      "end": 220,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 36,
+      "start": 221,
+      "end": 227,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 37,
+      "start": 228,
+      "end": 230,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 38,
+      "start": 231,
+      "end": 252,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 39,
+      "start": 253,
+      "end": 255,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 40,
+      "start": 256,
+      "end": 258,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 41,
+      "start": 259,
+      "end": 261,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 42,
+      "start": 262,
+      "end": 267,
+      "page": null
+    },
+    {
+      "heading": "# 豆包如何使用实时翻译",
+      "paragraph": 43,
+      "start": 268,
+      "end": 292,
+      "page": null
+    },
+    {
+      "heading": "## 工具/原料",
+      "paragraph": 44,
+      "start": 303,
+      "end": 308,
+      "page": null
+    },
+    {
+      "heading": "## 工具/原料",
+      "paragraph": 45,
+      "start": 309,
+      "end": 317,
+      "page": null
+    },
+    {
+      "heading": "## 工具/原料",
+      "paragraph": 46,
+      "start": 318,
+      "end": 326,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 47,
+      "start": 337,
+      "end": 339,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 48,
+      "start": 340,
+      "end": 361,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 49,
+      "start": 362,
+      "end": 364,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 50,
+      "start": 365,
+      "end": 382,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 51,
+      "start": 383,
+      "end": 385,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 52,
+      "start": 386,
+      "end": 404,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 53,
+      "start": 405,
+      "end": 409,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 54,
+      "start": 410,
+      "end": 459,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 55,
+      "start": 460,
+      "end": 493,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 56,
+      "start": 494,
+      "end": 501,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 57,
+      "start": 502,
+      "end": 525,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 58,
+      "start": 526,
+      "end": 592,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 59,
+      "start": 593,
+      "end": 599,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 60,
+      "start": 600,
+      "end": 622,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 61,
+      "start": 623,
+      "end": 650,
+      "page": null
+    },
+    {
+      "heading": "## 方法/步骤",
+      "paragraph": 62,
+      "start": 651,
+      "end": 657,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 63,
+      "start": 672,
+      "end": 694,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 64,
+      "start": 695,
+      "end": 720,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 65,
+      "start": 721,
+      "end": 744,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 66,
+      "start": 745,
+      "end": 768,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 67,
+      "start": 769,
+      "end": 791,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 68,
+      "start": 792,
+      "end": 797,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 69,
+      "start": 798,
+      "end": 800,
+      "page": null
+    },
+    {
+      "heading": "### 换一批 相关经验",
+      "paragraph": 70,
+      "start": 801,
+      "end": 812,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 71,
+      "start": 833,
+      "end": 850,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 72,
+      "start": 851,
+      "end": 862,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 73,
+      "start": 863,
+      "end": 877,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 74,
+      "start": 878,
+      "end": 889,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 75,
+      "start": 890,
+      "end": 903,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 76,
+      "start": 904,
+      "end": 948,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 77,
+      "start": 949,
+      "end": 958,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 78,
+      "start": 959,
+      "end": 961,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 79,
+      "start": 962,
+      "end": 968,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 80,
+      "start": 969,
+      "end": 973,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 81,
+      "start": 974,
+      "end": 979,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 82,
+      "start": 980,
+      "end": 984,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 83,
+      "start": 985,
+      "end": 998,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 84,
+      "start": 999,
+      "end": 1073,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 85,
+      "start": 1074,
+      "end": 1083,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 86,
+      "start": 1084,
+      "end": 1087,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 87,
+      "start": 1088,
+      "end": 1091,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 88,
+      "start": 1092,
+      "end": 1098,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 89,
+      "start": 1099,
+      "end": 1102,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 90,
+      "start": 1103,
+      "end": 1105,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 91,
+      "start": 1106,
+      "end": 1116,
+      "page": null
+    },
+    {
+      "heading": "### 作者的经验",
+      "paragraph": 92,
+      "start": 1117,
+      "end": 1121,
+      "page": null
+    }
+  ],
+  "final_url": "https://jingyan.baidu.com/article/5bbb5a1b9c4cf552eba179ce.html",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:09:27",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

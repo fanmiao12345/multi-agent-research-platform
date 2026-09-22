@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "E-009/E-025/E-026/E-028属资料直接陈述，却标〔推断〕，事实/推断标注错误。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "多处将资料自述直接标〔事实〕，如E-002/E-003/E-017等未写‘资料称’，易被读作独立核实。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "‘开源/开放权重/可商用’只按表述差异推断，未给出定义依据；许可全文缺失虽注明，界定仍不足。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处‘推断：……〔推断〕’重复标注，且E-009等引用重复，可精简。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "‘平台侧靠开发者资助与企业AI功能并行’把存在模式推为依靠，E-026/E-027未支持‘靠’。"
+  }
+ ]
+}

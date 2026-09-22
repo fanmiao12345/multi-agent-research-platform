@@ -1,0 +1,107 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-012,E-013）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-019,E-020）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-025）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-012）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-013）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-019）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-020）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-025）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007,E-012,E-013,E-019,E-020,E-025）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-019,E-025）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "初步结论第1条把“无法判断是否应强制公开”标为〔事实〕，实为基于缺口作出的推断，应改标〔推断〕。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处以〔未知〕标注“未提供/缺失”，不符合事实/推断二分；宜统一为〔事实〕或〔推断〕。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "算法基础概念中“这些概念可为理解规则公开提供基础”未标注事实/推断，也非资料直接表述。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "平台页面中“公众讨论内容未体现强制公开议题”未附证据，且“公众讨论内容”超出E-021/E-024。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "比较法缺口仅引E-012/E-013，却称欧盟、中国、美国比较材料缺失，引用不足以覆盖该断言。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "反对论据称商业秘密、竞争、安全风险证据缺失仅引E-007/E-012，未覆盖其他资料，引用不足。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "议题界定仅列法律、成本、权益、比较法、披露范围五类名称，未给出可操作标准，未充分满足提纲。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处“均缺失”宜改为“指定资料未提供”，避免被读作相关证据在现实中绝对不存在。"
+  }
+ ]
+}

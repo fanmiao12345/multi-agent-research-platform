@@ -1,0 +1,41 @@
+{
+  "source_id": "src_550b5600e0",
+  "kind": "url",
+  "display": "云·星穹铁道",
+  "original_address": "https://sr.mihoyo.com/cloud/",
+  "title": "云·星穹铁道",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 9,
+  "content_hash": "d04fcbda737fc0c6bc17138142b867a878c62b81b903b026a5d7f1664c5fa917",
+  "normalized_hash": "d04fcbda737fc0c6bc17138142b867a878c62b81b903b026a5d7f1664c5fa917",
+  "captured_at": "2026-09-20T10:12:08",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_550b5600e0.md",
+  "encoding": "utf-8",
+  "segment_count": 1,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 3,
+      "page": null
+    }
+  ],
+  "final_url": "https://sr.mihoyo.com/cloud/",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T10:12:08",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

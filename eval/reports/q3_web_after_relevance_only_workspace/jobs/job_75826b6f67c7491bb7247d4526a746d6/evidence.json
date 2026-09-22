@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_42fe44b36f",
+      "fact": "本资料宣传ToDesk远程控制「连接稳定不限速」，属远程接入类产品的性能主张。",
+      "tag": "F",
+      "quote": "连接稳定不限速",
+      "start": 57,
+      "end": 64,
+      "locator": {
+        "heading": "",
+        "paragraph": 7,
+        "start": 57,
+        "end": 65
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_42fe44b36f",
+      "fact": "本资料称其架构可实现毫秒级低延迟，端到端延迟小于3ms。",
+      "tag": "F",
+      "quote": "毫秒级低延迟架构，端到端延迟<3ms",
+      "start": 1548,
+      "end": 1566,
+      "locator": {
+        "heading": "",
+        "paragraph": 144,
+        "start": 1548,
+        "end": 1567
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_42fe44b36f",
+      "fact": "本资料把远程支持描述为秒级响应的使用场景。",
+      "tag": "F",
+      "quote": "秒级响应",
+      "start": 78,
+      "end": 82,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 78,
+        "end": 89
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_42fe44b36f",
+      "fact": "本资料列出远程协作与演示、文件传输、远程手机等跨地点使用场景。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_42fe44b36f",
+      "fact": "本资料以二次验证、隐私屏、审计等措施宣示全方位安全保障。",
+      "tag": "F",
+      "quote": "全方位安全保障",
+      "start": 2260,
+      "end": 2267,
+      "locator": {
+        "heading": "## 安全的企业都选择 ToDesk企业版",
+        "paragraph": 193,
+        "start": 2260,
+        "end": 2268
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_42fe44b36f",
+      "fact": "该资料展示的远程支持「专业高效」特性，或可类推支撑远程医疗中的远程协助应用。",
+      "tag": "I",
+      "quote": "专业高效",
+      "start": 84,
+      "end": 88,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 78,
+        "end": 89
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_42fe44b36f",
+      "fact": "本资料仅称面向各行各业提供解决方案，所列场景为办公、技术支持、IT运维、无人值守，未提及医疗。",
+      "tag": "F",
+      "quote": "深入不同场景，为各行各业提供企业级解决方案",
+      "start": 2376,
+      "end": 2397,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_42fe44b36f",
+      "fact": "本资料通篇为用户好评与产品推介，未给出反对远程控制或反对远程医疗的观点。",
+      "tag": "F",
+      "quote": "用户推荐 非常好用",
+      "start": 3447,
+      "end": 3456,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_8b934be1b3",
+      "fact": "本资料是向日葵远程控制软件的企业方案推广页，主题为远程IT运维与办公。",
+      "tag": "F",
+      "quote": "远程IT运维解决方案",
+      "start": 2708,
+      "end": 2718,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_8b934be1b3",
+      "fact": "本资料行业解决方案列表中包含“医疗保健”类别，但未展开医疗领域具体应用内容。",
+      "tag": "F",
+      "quote": "医疗保健",
+      "start": 692,
+      "end": 696,
+      "locator": {
+        "heading": "",
+        "paragraph": 52,
+        "start": 692,
+        "end": 697
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_8b934be1b3",
+      "fact": "本资料称飞利浦与向日葵的联合方案实现对几内亚当地医院高端医疗设备的远程维护。",
+      "tag": "F",
+      "quote": "实现了对几内亚当地医院部署的高端医疗设备的远程维护。",
+      "start": 8024,
+      "end": 8050,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 651,
+        "start": 7993,
+        "end": 8052
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_8b934be1b3",
+      "fact": "本资料把医疗相关应用归入“智慧医疗”与“远程维护”场景，属设备维护用途。",
+      "tag": "I",
+      "quote": "智慧医疗",
+      "start": 7981,
+      "end": 7985,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 649,
+        "start": 7981,
+        "end": 7986
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_8b934be1b3",
+      "fact": "本资料以等保三级、多重加密、国密算法及多项认证作为安全合规方面的宣传依据。",
+      "tag": "F",
+      "quote": "支持国密算法SM2/SM3/SM4",
+      "start": 7114,
+      "end": 7131,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 599,
+        "start": 7072,
+        "end": 7132
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_8b934be1b3",
+      "fact": "本资料引用客户评价，称远程控制可提升支持效率并降低上门维修成本。",
+      "tag": "F",
+      "quote": "大幅降低派遣维修员上门的成本",
+      "start": 7752,
+      "end": 7766,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 638,
+        "start": 7708,
+        "end": 7768
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_8b934be1b3",
+      "fact": "本资料通篇为产品与服务正面推介，未见反对远程医疗推广的观点或论据。",
+      "tag": "I",
+      "quote": "为你量身制定 企业远控解决方案",
+      "start": 8755,
+      "end": 8770,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 683,
+        "start": 8755,
+        "end": 8771
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_c0c04a49d9",
+      "fact": "本资料为向日葵远程控制产品页面，主题是远程控制而非远程医疗",
+      "tag": "F",
+      "quote": "向日葵远程控制、蒲公英智能组网、花生壳内网穿透",
+      "start": 3907,
+      "end": 3930,
+      "locator": {
+        "heading": "#### 向日葵SDK/API",
+        "paragraph": 235,
+        "start": 3851,
+        "end": 3961
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_c0c04a49d9",
+      "fact": "本资料行业解决方案仅列出医疗保健，未展开远程医疗推广观点",
+      "tag": "F",
+      "quote": "医疗保健",
+      "start": 692,
+      "end": 696,
+      "locator": {
+        "heading": "",
+        "paragraph": 52,
+        "start": 692,
+        "end": 697
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_c0c04a49d9",
+      "fact": "本资料未提供远程医疗推广的支持观点或反对观点",
+      "tag": "F",
+      "quote": "医疗保健",
+      "start": 692,
+      "end": 696,
+      "locator": {
+        "heading": "",
+        "paragraph": 52,
+        "start": 692,
+        "end": 697
+      },
+      "note": ""
+    }
+  ]
+}

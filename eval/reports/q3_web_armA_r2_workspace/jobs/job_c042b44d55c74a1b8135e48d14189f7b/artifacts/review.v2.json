@@ -1,0 +1,22 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "直接证据缺口节未覆盖E-003，未满足该节必须覆盖E-003的要求。"
+  },
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "多处来源自述（E-003/004/006/007/009/017/023/027/029/033/035等）标为推断，应为事实，违反标注要求。"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "待补称缺官方政策解读，但E-026显示门户已列负责人解读条目；应改为缺解读正文或链接。"
+  }
+ ]
+}

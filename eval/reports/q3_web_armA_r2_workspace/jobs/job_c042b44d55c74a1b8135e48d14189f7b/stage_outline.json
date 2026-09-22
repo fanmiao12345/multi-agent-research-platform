@@ -1,0 +1,117 @@
+{
+  "title": "教育领域使用生成式AI的收益与风险：证据核查与提纲",
+  "sections": [
+    {
+      "heading": "核查范围与证据说明",
+      "purpose": "说明可依据的资料范围与证据强度",
+      "required_evidence": [
+        "E-003",
+        "E-005",
+        "E-034"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育领域收益与风险的直接证据缺口",
+      "purpose": "核查现有资料是否提供教育场景直接收益或风险证据",
+      "required_evidence": [
+        "E-003",
+        "E-009",
+        "E-023",
+        "E-027",
+        "E-033",
+        "E-035"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "生成式AI工具能力与教学素材的有限推测",
+      "purpose": "梳理工具功能，并区分事实与教学用途推断",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-004",
+        "E-006",
+        "E-007",
+        "E-036",
+        "E-037",
+        "E-038",
+        "E-039",
+        "E-040",
+        "E-041",
+        "E-042"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "AI与教育公共利益的原则性关联",
+      "purpose": "呈现AI服务教育公平包容的泛原则，但不等于生成式AI证据",
+      "required_evidence": [
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-017",
+        "E-018",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "非教育场景的AI风险与信息诚信参考",
+      "purpose": "列举AI风险外溢证据，说明不能直接推及课堂",
+      "required_evidence": [
+        "E-008",
+        "E-015",
+        "E-016",
+        "E-019",
+        "E-020",
+        "E-021"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育官方门户与考试网站线索",
+      "purpose": "记录官方页面线索，指出未含生成式AI教育收益风险论述",
+      "required_evidence": [
+        "E-024",
+        "E-025",
+        "E-026",
+        "E-028",
+        "E-029",
+        "E-030",
+        "E-031",
+        "E-032"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "待补实证问题与所需资料",
+      "purpose": "列出课堂成效、风险、政策全文等缺口",
+      "required_evidence": [
+        "E-005",
+        "E-009",
+        "E-023",
+        "E-027",
+        "E-033",
+        "E-034",
+        "E-035"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论：可回答与不可回答的边界",
+      "purpose": "总结收益风险证据不足，仅能提出待验证假设",
+      "required_evidence": [
+        "E-003",
+        "E-005",
+        "E-009",
+        "E-023",
+        "E-034"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

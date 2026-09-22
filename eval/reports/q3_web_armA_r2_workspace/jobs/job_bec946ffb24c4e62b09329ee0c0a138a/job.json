@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_bec946ffb24c4e62b09329ee0c0a138a",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 5,
+    "statuses": {
+      "ok": 5,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 34 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T09:12:18"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:12:32"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T09:12:36"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均未涉及软件测试、测试用例、缺陷检测或测试自动化，无法提供该主题趋势依据。",
+        "finished_at": "2026-09-20T09:12:40"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均未涉及软件测试、测试用例、缺陷检测或测试自动化，无法提供该主题趋势依据。；缺失信息：测试用例生成技术、案例与趋势资料、缺陷检测、缺陷定位或缺陷报告证据、测试自动化、测试脚本生成与执行反馈资料、行业采用率、基准评测或实践案例数据、测试质量、安全、合规与治理材料（可用证据 34 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://klingai.com/app",
+      "https://image2.ing/zh",
+      "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+      "https://qianwen.aigc.cn/",
+      "https://www.aigc.cn/free-ai-tools",
+      "https://jimeng.jianying.com/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 测试用例生成 大模型",
+        "rank": 3,
+        "title": "可灵AI创作台 - AI生成视频与图片",
+        "url": "https://klingai.com/app",
+        "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 测试用例生成 大模型",
+        "rank": 5,
+        "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+        "url": "https://image2.ing/zh",
+        "snippet": "2026年9月11日 · 在线使用 GPT Image 2，通过中文提示词或参考图生成图片，支持多种比例和分辨率，无需下载，打开网页即可开 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大语言模型 自动化测试 单元测试",
+        "rank": 4,
+        "title": "大 - 維基詞典，自由的多語言詞典",
+        "url": "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+        "snippet": "3 天之前 · 大 （大部 +0畫，共3畫， 倉頡碼：大（K）， 四角號碼： 4003 0 或 4080 0， 部件組合： ⿻ 一 人 或 ⿸ 𠂇 ㇏） 康熙部首  …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI 缺陷检测 软件测试 智能化",
+        "rank": 1,
+        "title": "千问 - 阿里Qwen大模型打造的AI对话助手",
+        "url": "https://qianwen.aigc.cn/",
+        "snippet": "2026年8月19日 · 核心定位：从回应式AI到行动式办事助手 阿里千问完成重大战略升级，正式推进Agentic AI（智能体AI）战略，实现 …",
+        "published_date": "2026-08-19",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI 缺陷检测 软件测试 智能化",
+        "rank": 3,
+        "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+        "url": "https://www.aigc.cn/free-ai-tools",
+        "snippet": "1 天前 · 免费AI工具 AIGC 工具导航汇聚全网最全的 免费AI 工具集合，无论是AI智能助手、 AI写作 工具、 AI绘画 工具、AI PPT制作  …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式人工智能 测试工具 落地实践",
+        "rank": 2,
+        "title": "即梦AI - 即刻造梦",
+        "url": "https://jimeng.jianying.com/",
+        "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 测试用例生成 大模型",
+        "urls": [
+          "https://klingai.com/app",
+          "https://image2.ing/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 测试用例生成 大模型",
+            "rank": 3,
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 测试用例生成 大模型",
+            "rank": 5,
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "snippet": "2026年9月11日 · 在线使用 GPT Image 2，通过中文提示词或参考图生成图片，支持多种比例和分辨率，无需下载，打开网页即可开 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.213,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大语言模型 自动化测试 单元测试",
+        "urls": [
+          "https://zh.wiktionary.org/zh-hant/%E5%A4%A7"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "大语言模型 自动化测试 单元测试",
+            "rank": 4,
+            "title": "大 - 維基詞典，自由的多語言詞典",
+            "url": "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+            "snippet": "3 天之前 · 大 （大部 +0畫，共3畫， 倉頡碼：大（K）， 四角號碼： 4003 0 或 4080 0， 部件組合： ⿻ 一 人 或 ⿸ 𠂇 ㇏） 康熙部首  …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "大 - 維基詞典，自由的多語言詞典",
+            "url": "https://zh.wiktionary.org/zh-hant/%E5%A4%A7",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "大（汉语文字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%A4%A7/34128",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "大的意思,大的解释,大的拼音,大的部首,大的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-22823",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大字笔画、笔顺、笔划 - 大字怎么写?",
+            "url": "https://www.hanzipi.com/%E5%A4%A7.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大组词_大字组词_大的词语 - 汉语词典",
+            "url": "https://www.chagushici.com/zidian/zuci/%E5%A4%A7",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.203,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI 缺陷检测 软件测试 智能化",
+        "urls": [
+          "https://qianwen.aigc.cn/",
+          "https://www.aigc.cn/free-ai-tools"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "AI 缺陷检测 软件测试 智能化",
+            "rank": 1,
+            "title": "千问 - 阿里Qwen大模型打造的AI对话助手",
+            "url": "https://qianwen.aigc.cn/",
+            "snippet": "2026年8月19日 · 核心定位：从回应式AI到行动式办事助手 阿里千问完成重大战略升级，正式推进Agentic AI（智能体AI）战略，实现 …",
+            "published_date": "2026-08-19",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "AI 缺陷检测 软件测试 智能化",
+            "rank": 3,
+            "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+            "url": "https://www.aigc.cn/free-ai-tools",
+            "snippet": "1 天前 · 免费AI工具 AIGC 工具导航汇聚全网最全的 免费AI 工具集合，无论是AI智能助手、 AI写作 工具、 AI绘画 工具、AI PPT制作  …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "千问 - 阿里Qwen大模型打造的AI对话助手",
+            "url": "https://qianwen.aigc.cn/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+            "url": "https://www.aigc.cn/free-ai-tools",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "AI工具集官网 | 1000+ AI工具集合，国内外AI工具集导航大全",
+            "url": "https://ai-bot.cn/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "即梦AI - 一站式AI创作平台",
+            "url": "https://jimeng.jianying.com/ai-tool/home",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "目前有哪些主流的AI？ - 知乎",
+            "url": "https://www.zhihu.com/question/591009674",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.186,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式人工智能 测试工具 落地实践",
+        "urls": [
+          "https://jimeng.jianying.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式人工智能 测试工具 落地实践",
+            "rank": 2,
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.083,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.083,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "relevance": 0.083,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.329,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（生成式人工智能在软件测试中的应用趋势）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "fanout"
+        ]
+      },
+      "scheduler_elapsed_seconds": 26.299,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

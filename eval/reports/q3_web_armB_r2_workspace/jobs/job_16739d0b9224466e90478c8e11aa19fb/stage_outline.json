@@ -1,0 +1,115 @@
+{
+  "title": "远程医疗推广中的支持与反对观点核查提纲",
+  "sections": [
+    {
+      "heading": "跨平台覆盖与多终端接入",
+      "purpose": "说明现有资料如何支持远程医疗多终端接入。",
+      "required_evidence": [
+        "E-001"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "隐私保护与防窥能力",
+      "purpose": "梳理隐私屏与远程关屏对医疗隐私的支持主张。",
+      "required_evidence": [
+        "E-002"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "安全审计与追溯合规",
+      "purpose": "归纳连接记录、断连、日志录屏与安全认证证据。",
+      "required_evidence": [
+        "E-003",
+        "E-009",
+        "E-010"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "医疗行业方案与合作案例",
+      "purpose": "整理医疗行业方案、联合方案及海外医院落地案例。",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "远程运维与成本优势",
+      "purpose": "说明远程运维、技术支持及降低上门成本的主张。",
+      "required_evidence": [
+        "E-007",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点的综合归纳",
+      "purpose": "汇总支持远程医疗推广的主要论据与适用条件。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "反对观点的证据缺口",
+      "purpose": "核查资料中是否存在反对远程医疗推广的观点。",
+      "required_evidence": [],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "临床效果与患者结局缺口",
+      "purpose": "说明缺少临床试验、结局数据与对照研究。",
+      "required_evidence": [],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "患者与医护接受度缺口",
+      "purpose": "说明缺少调查、访谈与满意度数据。",
+      "required_evidence": [],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "监管与法律责任缺口",
+      "purpose": "说明缺少法规、合规与责任认定材料。",
+      "required_evidence": [],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "成本效益与可持续性缺口",
+      "purpose": "说明缺少成本效益分析与长期运营数据。",
+      "required_evidence": [],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与后续取证建议",
+      "purpose": "区分可支持事实、推断与未知，列后续取证方向。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

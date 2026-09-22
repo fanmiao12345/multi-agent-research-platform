@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_6de2c7890e5646238afd1661dd77aafe",
+  "goal": "教育领域使用生成式AI的收益与风险",
+  "started_at": "2026-09-20T11:08:22",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 13 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:08:38"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:08:46"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:08:48"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均为AI视觉创作产品介绍，明确不含教育场景收益与风险信息，无法支撑该主题结论。",
+        "finished_at": "2026-09-20T11:08:53"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均为AI视觉创作产品介绍，明确不含教育场景收益与风险信息，无法支撑该主题结论。；缺失信息：教育场景实证研究、教学效果数据或案例材料、教育场景风险评估、伦理审查或事故案例材料、分学段、分学科的教育应用证据、师生调研、访谈或实验数据、教育政策文件、行业规范或合规指南（可用证据 13 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015,E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015,E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015,E-022,E-007）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "E-016至E-022来源均为‘该来源’，报告未提示无法溯源，损害可核查性。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "将‘给定资料中没有反对意见/争议记录’标事实，实为基于未列出/未涉及的推断，应改标推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "多处客户/用户声称标〔事实〕，宜标‘资料/客户声称’，避免误读为客观事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "支持四、五引用ToDesk的E-001/E-003/E-004/E-005/E-006，该资料未提远程医疗，需段内再标适用限制。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "E-016与E-008内容重复且E-016来源未明，作为独立支持证据可能夸大证据数量。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论将大量厂商宣传综合标〔事实〕，宜说明非独立验证且证据强度低。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-007‘未提远程医疗’标〔推断〕不当，宜标事实或资料局限。"
+  }
+ ]
+}

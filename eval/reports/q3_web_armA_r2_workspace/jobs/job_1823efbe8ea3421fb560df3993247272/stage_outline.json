@@ -1,0 +1,83 @@
+{
+  "title": "远程医疗推广中的支持与反对观点资料提纲",
+  "sections": [
+    {
+      "heading": "报告范围与证据边界",
+      "purpose": "说明报告目标、资料范围及支持与反对观点的证据分布。",
+      "required_evidence": [
+        "E-001",
+        "E-007",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "推广支持：效率与响应",
+      "purpose": "梳理远程支持秒级响应、专业高效及快速诊断修复等理由。",
+      "required_evidence": [
+        "E-001",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "推广支持：成本与运维效率",
+      "purpose": "归纳降低上门成本、提升服务效率与节省沟通成本等支持点。",
+      "required_evidence": [
+        "E-010",
+        "E-011"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "推广支持：医疗行业应用场景",
+      "purpose": "说明医疗保健列为方案，及医院设备远程维护案例。",
+      "required_evidence": [
+        "E-008",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "推广支持：远程协作与跨终端覆盖",
+      "purpose": "汇总远程协作演示、全平台覆盖和随时随地发起协助。",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-012",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "推广支持：安全与隐私保护",
+      "purpose": "整理隐私屏、端到端加密、等保三级等安全合规支持点。",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "反对与质疑：证据缺口与待补问题",
+      "purpose": "说明资料未提供反对观点，并列出临床、监管、成本、风险等缺口。",
+      "required_evidence": [
+        "E-007",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与证据强度评估",
+      "purpose": "总结支持论据可回答，反对论据缺失，需补充材料。",
+      "required_evidence": [
+        "E-001",
+        "E-007",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

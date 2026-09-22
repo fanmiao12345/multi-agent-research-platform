@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_d9219db907ee489baf8ec2848b97410f",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 开源大模型生态的商业模式：现有证据提纲\n## 研究范围与证据边界\n本报告仅依据给定证据梳理开源大模型生态中可观察的商业化线索：授权对象、获取路径、受控分发、平台产品分层与社区信号。可回答：模型与权重同时授权给研究者和商业实体〔事实〕[E-001]；权重与分词器需经 Meta 网站接受许可、Hugging Face 需承认许可并填写模型卡表单获取〔事实〕[E-002][E-003]；下载链接有时效与数量限制〔事实〕[E-004]。平台侧资料自述其内容仅涉及代码托管平台的商业产品，未提及开源大模型生态及其商业模式，属资料边界陈述〔事实〕[E-016]。不能回答：厂商盈利方式、其他开源大模型的许可与营收、平台与模型之间的可计量转化〔未知〕[E-016]。\n## Llama模型的授权方式\n资料称模型与权重同时授权给研究者和商业实体，秉持开放原则〔事实〕[E-001]。下载模型权重与分词器需访问 Meta 网站并接受其许可〔事实〕[E-002]；Hugging Face 亦提供下载，但需承认许可并填写模型卡表单〔事实〕[E-003]；下载链接在24小时后及一定下载量后失效〔事实〕[E-004]。据此可推断，授权对象覆盖研究与商业实体，但获取路径附带许可接受、平台表单与链接时效控制〔推断〕[E-001][E-002][E-003][E-004]。\n## 商业使用与受控分发\n资料称权重许可允许商业使用但获取需审批，分发属受控开放模式〔事实〕[E-008]。审批环节目前仅见此条来源陈述〔事实〕[E-008]；E-002、E-003、E-004 只证明获取需接受许可、填写表单与链接时效控制，未涉及审批环节〔事实〕[E-002][E-003][E-004]。因此，商用许可存在、审批与受控分发构成限制这一判断，依赖 E-008 的单条陈述〔推断〕[E-008]；审批主体、标准与通过率均无材料〔未知〕[E-008]。\n## 开放还是受控开放的冲突\n资料称模型与权重授权给研究者和商业实体、秉持开放原则〔事实〕[E-001]；另一来源陈述称权重许可允许商业使用但获取需审批、分发属受控开放模式〔事实〕[E-008]。两者并列形成未决冲突：若“开放”指可获取与可使用，则审批与受控分发与之存在张力；若“开放”仅指许可对象范围，则两者可兼容〔推断〕[E-001][E-008]。现有证据不足以裁决该冲突〔未知〕[E-001][E-008]。\n## 模型社区与仓库信号\nLlama 3.1 发布后，资料称已整合 GitHub 仓库并新增若干仓库〔事实〕[E-005]。另一处描述称该仓库定位为加载 Llama 2 模型并运行推理的最小示例〔事实〕[E-006]。资料未说明上述两条所指仓库是否为同一对象及其关系〔未知〕[E-005][E-006]。资料页面显示该仓库有59.6k星标、9.8k分支〔事实〕[E-007]。这些信号说明发布伴随仓库整合与社区关注，但星标与分支不等于收入或商业转化〔推断〕[E-005][E-006][E-007]。\n## Gitee的商业产品结构\n资料称 Gitee 为开源中国旗下，自称国内第一大研发效能平台、全球第二大开源代码托管平台〔事实〕[E-009]。其主要产品分为社区版、企业版、专业版、高校版、旗舰版〔事实〕[E-010]。自2013年上线，累计服务1200万开发者、托管仓库超2800万个〔事实〕[E-011]。企业版与专业版已服务30万家企业，含1200家中大型私有化部署企业〔事实〕[E-012]。平台面向企业提供在线使用与私有部署两种商业服务渠道〔事实〕[E-013]。由此推断，其商业结构以版本分层与部署方式区隔企业客户〔推断〕[E-010][E-013]。\n## Gitee社区活动与AI工具\n开源中国在办2026上海开源软件应用创新大赛，设百万奖池吸引项目〔事实〕[E-014]。其社区仓库中有终端 AI 编码助手，支持多种 LLM 提供商且默认 DeepSeek〔事实〕[E-015]。可推断，赛事激励与 AI 工具属生态投入线索，但资料未显示其直接收费方式〔推断〕[E-014][E-015]。\n## 平台生态与模型商业化的关联\nGitee 面向企业提供在线使用与私有部署两种商业服务渠道〔事实〕[E-013]；其社区仓库有终端 AI 编码助手，支持多种 LLM 提供商、默认 DeepSeek〔事实〕[E-015]。平台侧资料自述其内容仅涉及代码托管平台的商业产品，未提及开源大模型生态及其商业模式，属资料边界陈述〔事实〕[E-016]。因此，现有证据不足以把托管平台与开源大模型商业化直接连接，只能推断存在潜在生态接口，如工具集成与企业服务〔推断〕[E-013][E-015][E-016]。\n## 可识别的商业化要素\n授权与分发方面：权重许可允许商业使用但获取需审批、分发呈受控开放特征〔事实〕[E-008]。平台方面：Gitee 产品分为社区版、企业版、专业版、高校版、旗舰版〔事实〕[E-010]，并面向企业提供在线使用与私有部署〔事实〕[E-013]。生态投入方面：开源中国办赛事并设百万奖池〔事实〕[E-014]；社区仓库提供支持多种 LLM 提供商的终端 AI 编码助手〔事实〕[E-015]。可提取要素包括许可与审批、受控分发、企业版与专业版及私有部署、赛事激励与 AI 工具〔推断〕[E-008][E-010][E-013][E-014][E-015]。上述要素如何转化为收入，现有材料未提供证据〔未知〕。\n## 证据缺口与待验证问题\n平台侧资料自述仅涉及代码托管平台商业产品，未提及开源大模型生态及其商业模式，故平台是否为大模型项目提供托管、分发或商业化服务缺少证据〔未知〕[E-016]。许可方面，资料未给出完整许可证文本、商用限制与分成条款〔未知〕[E-008]；审批流程、通过率与商业用户案例亦无材料〔未知〕[E-008]。收入方面，现有证据未包含厂商收费模式的任何材料〔未知〕[E-016]；许可证费用、云服务、订阅或 API 收费只能作为待验证假设提出〔未知〕[E-016]。其他开源大模型的许可、融资、合作与营收数据同样缺失〔未知〕[E-016]。\n## 结论与可信度分级\n事实级：模型与权重同时授权给研究者和商业实体并秉持开放原则〔事实〕[E-001]；权重许可允许商业使用但获取需审批、分发属受控开放模式〔事实〕[E-008]；Gitee 面向企业提供在线使用与私有部署两种商业服务渠道〔事实〕[E-013]；平台侧资料自述未提及开源大模型生态及其商业模式〔事实〕[E-016]。推断级：授权与审批并存可理解为受控开放〔推断〕[E-001][E-008]；平台企业服务与社区 AI 工具可能构成生态入口〔推断〕[E-013][E-015]。未知级：许可条款与审批标准无细则〔未知〕[E-008]；平台与模型之间的商业转化无法判断〔未知〕[E-016]；厂商盈利模式无材料〔未知〕[E-016]。总体证据强度偏弱、事实分散、关键因果链未闭合〔推断〕[E-001][E-008][E-013][E-016]。\n## 后续取证清单\n需补充平台为大模型项目提供托管、分发或商业化服务的材料，并验证托管平台商业产品与大模型生态之间是否存在可计量关联〔未知〕[E-016]。需补充权重审批流程、通过率与商业用户案例〔未知〕[E-008]。需补充完整许可证文本、商用限制与分成条款〔未知〕[E-008]。需补充厂商营收与收费模式材料（许可证费用、云服务、订阅或 API 收费），以及其他开源大模型的许可、融资、合作与营收数据〔未知〕[E-016]。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 7,
+    "usable": 2,
+    "statuses": {
+      "read_failed": 5,
+      "ok": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:00:56"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，1 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:01:06"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:01:18"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "12 个章节",
+        "finished_at": "2026-09-20T11:01:31"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2926字）",
+        "finished_at": "2026-09-20T11:01:49"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 14,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T11:03:12"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T11:03:59"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 10,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-20T11:04:38"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 87,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://github.com/LlamaChinese/Llama-Chinese",
+      "https://github.com/meta-llama/llama",
+      "https://mistral.ai/",
+      "https://huggingface.co/",
+      "https://huggingface.co/huggingface",
+      "https://gitee.com/oschina",
+      "https://github.com/kaiyuanshe"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "Llama 开源 商业模式",
+        "rank": 1,
+        "title": "GitHub - LlamaChinese/Llama-Chinese: Llama中文社区 ...",
+        "url": "https://github.com/LlamaChinese/Llama-Chinese",
+        "snippet": "2025年4月5日 · Meta官方在2023年8月24日发布了Code Llama，基于代码数据对Llama2进行了微调，提供三个不同功能的版本：基 …",
+        "published_date": "2025-04-05",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Llama 开源 商业模式",
+        "rank": 5,
+        "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+        "url": "https://github.com/meta-llama/llama",
+        "snippet": "Llama 2 is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Mistral AI 融资 开源",
+        "rank": 1,
+        "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+        "url": "https://mistral.ai/",
+        "snippet": "The frontier-grade infrastructure and orchestration platform behind Mistral's own models is now yours to build on.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 商业模式 开源",
+        "rank": 1,
+        "title": "Hugging Face – The AI community building the future.",
+        "url": "https://huggingface.co/",
+        "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 商业模式 开源",
+        "rank": 2,
+        "title": "huggingface (Hugging Face)",
+        "url": "https://huggingface.co/huggingface",
+        "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 许可证 商业化",
+        "rank": 2,
+        "title": "开源中国 - 开源中国 - Gitee",
+        "url": "https://gitee.com/oschina",
+        "snippet": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个，是国内首屈一指的开源软件技术交流平 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 许可证 商业化",
+        "rank": 4,
+        "title": "开源社 · GitHub",
+        "url": "https://github.com/kaiyuanshe",
+        "snippet": "Founded in 2014, KAIYUANSHE® (Open Source Society) is a volunteer-driven organization composed of individuals dedicated to …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "Llama 开源 商业模式",
+        "urls": [
+          "https://github.com/LlamaChinese/Llama-Chinese",
+          "https://github.com/meta-llama/llama"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Llama 开源 商业模式",
+            "rank": 1,
+            "title": "GitHub - LlamaChinese/Llama-Chinese: Llama中文社区 ...",
+            "url": "https://github.com/LlamaChinese/Llama-Chinese",
+            "snippet": "2025年4月5日 · Meta官方在2023年8月24日发布了Code Llama，基于代码数据对Llama2进行了微调，提供三个不同功能的版本：基 …",
+            "published_date": "2025-04-05",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Llama 开源 商业模式",
+            "rank": 5,
+            "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+            "url": "https://github.com/meta-llama/llama",
+            "snippet": "Llama 2 is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "一文读懂LLaMA - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1930326295067199098",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "LLM 系列超详细解读 (六)：LLaMa：开源高效的大语言模型",
+            "url": "https://zhuanlan.zhihu.com/p/643894722",
+            "relevance": 0.5,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "LLaMA（Meta公司的产品）_百度百科",
+            "url": "https://baike.baidu.com/item/LLaMA/62812215",
+            "relevance": 0.5,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.22,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Mistral AI 融资 开源",
+        "urls": [
+          "https://mistral.ai/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Mistral AI 融资 开源",
+            "rank": 1,
+            "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+            "url": "https://mistral.ai/",
+            "snippet": "The frontier-grade infrastructure and orchestration platform behind Mistral's own models is now yours to build on.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "被称为欧洲版DeepSeek的Mistral什么来头？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/2062503158560166015",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Mistral AI团队发布Mistral Small 3，24B参数的“小而强大 ...",
+            "url": "https://zhuanlan.zhihu.com/p/22943966884",
+            "relevance": 0.5,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "米斯特拉尔人工智能_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%B1%B3%E6%96%AF%E7%89%B9%E6%8B%89%E5%B0%94%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/65392990",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Mistral（开源自然语言处理模型）_百度百科",
+            "url": "https://baike.baidu.com/item/Mistral/67304784",
+            "relevance": 0.5,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.213,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 商业模式 开源",
+        "urls": [
+          "https://huggingface.co/",
+          "https://huggingface.co/huggingface"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 商业模式 开源",
+            "rank": 1,
+            "title": "Hugging Face – The AI community building the future.",
+            "url": "https://huggingface.co/",
+            "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 商业模式 开源",
+            "rank": 2,
+            "title": "huggingface (Hugging Face)",
+            "url": "https://huggingface.co/huggingface",
+            "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Huggingface 超详细介绍 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/535100411",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Hugging Face（AI平台）_百度百科",
+            "url": "https://baike.baidu.com/item/Hugging%20Face/65708376",
+            "relevance": 0.5,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Hugging Face教程：国内注册&使用指南（超详细） - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1890846454538559620",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.2,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 许可证 商业化",
+        "urls": [
+          "https://gitee.com/oschina",
+          "https://github.com/kaiyuanshe"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 许可证 商业化",
+            "rank": 2,
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "snippet": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个，是国内首屈一指的开源软件技术交流平 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 许可证 商业化",
+            "rank": 4,
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "snippet": "Founded in 2014, KAIYUANSHE® (Open Source Society) is a volunteer-driven organization composed of individuals dedicated to …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "GitHub - GitHubDaily/GitHubDaily: 坚持分享 GitHub 上高质量、有 …",
+            "url": "https://github.com/GitHubDaily/GitHubDaily",
+            "relevance": 0.062,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "什么是开源？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/27501070",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "开源系统_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E7%B3%BB%E7%BB%9F/9332396",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.193,
+        "error": ""
+      }
+    ]
+  }
+}

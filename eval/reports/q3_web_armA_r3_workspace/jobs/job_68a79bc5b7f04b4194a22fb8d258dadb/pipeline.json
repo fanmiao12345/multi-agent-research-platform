@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_68a79bc5b7f04b4194a22fb8d258dadb",
+  "goal": "远程办公对团队协作影响的近期研究",
+  "started_at": "2026-09-20T10:48:27",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 9 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T10:48:36"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:48:42"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 15, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T10:49:27"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅为知网入口、分布式系统概念、ToDesk与向日葵产品介绍，均明确未包含远程办公对团队协作的研究结论或数据，故无法回答。",
+        "finished_at": "2026-09-20T10:49:35"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅为知网入口、分布式系统概念、ToDesk与向日葵产品介绍，均明确未包含远程办公对团队协作的研究结论或数据，故无法回答。；缺失信息：知网等学术数据库中的近期实证研究、综述或元分析全文、针对团队沟通、信任与绩效的量化或质性研究数据、远程协作工具提升团队协作效率的独立评估、实验或企业案例数据、分行业、分团队规模的远程办公协作比较研究、2023年以来该主题的文献计量、系统综述或趋势报告（可用证据 24 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

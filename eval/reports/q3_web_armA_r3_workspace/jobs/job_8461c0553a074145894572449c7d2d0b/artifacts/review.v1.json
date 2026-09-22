@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-008,E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-008,E-016,E-008,E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "标题与结论称“远程医疗推广”，但证据仅涉远程控制/医疗设备远程维护，未界定等同，易误导。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "范围说明未写出具体来源名称，仅笼统称厂商宣传页面；建议补来源标题与检索范围。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-009/E-010/E-011与E-001/E-002/E-003同源重复，并列引用未说明，易虚增证据数量。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "范围称未覆盖欠发达地区适用性，后文却引几内亚案例并讨论适用性，口径需统一。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "风险缺口称缺少隐私泄露材料，但E-015有隐私防护主张；应区分厂商主张与风险证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "独立验证与临床结局称资料未提供，E-008/E-016仅述宣传立场，未直接证明缺失；宜改为本次索引未见。"
+  }
+ ]
+}

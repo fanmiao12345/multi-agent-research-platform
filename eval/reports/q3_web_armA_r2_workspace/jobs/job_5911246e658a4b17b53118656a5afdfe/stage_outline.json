@@ -1,0 +1,147 @@
+{
+  "title": "开源大模型生态的商业模式：社区、平台与订阅服务",
+  "sections": [
+    {
+      "heading": "范围与问题界定",
+      "purpose": "界定报告范围，列出可依据资料讨论的商业模式类型。",
+      "required_evidence": [
+        "E-001",
+        "E-009",
+        "E-017",
+        "E-025",
+        "E-033"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "开源大模型社区的开源与免费服务",
+      "purpose": "梳理社区以完全开源、免费API、低价算力与推广位构建生态的模式。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "社区外部支持与成本覆盖缺口",
+      "purpose": "说明社区获外部技术支持，并指出成本覆盖数据缺失。",
+      "required_evidence": [
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Ollama的本地免费模式",
+      "purpose": "分析本地模型免费、开发者规模与开源性能成本主张。",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Ollama订阅与云模型服务",
+      "purpose": "展示Pro订阅价格、用量额度、云托管与可预测计费主张。",
+      "required_evidence": [
+        "E-013",
+        "E-014",
+        "E-015",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Gitee平台定位与产品分层",
+      "purpose": "分析Gitee开源托管平台定位、产品分层与商业化路径。",
+      "required_evidence": [
+        "E-017",
+        "E-018",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Gitee企业服务与生态扩展",
+      "purpose": "展示Gitee企业服务规模与生态工具扩展证据。",
+      "required_evidence": [
+        "E-021",
+        "E-022",
+        "E-024"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "开源社的非营利与中立治理",
+      "purpose": "分析开源社的非营利、厂商中立与社区驱动定位。",
+      "required_evidence": [
+        "E-025",
+        "E-026",
+        "E-027",
+        "E-028"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "开源社活动与外部赞助",
+      "purpose": "说明开源社通过年会、报告与赞助伙伴获得支持。",
+      "required_evidence": [
+        "E-029",
+        "E-030",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "范围外证据与排除说明",
+      "purpose": "说明3D资产交易平台证据与开源大模型商业模式无关，仅作范围排除。",
+      "required_evidence": [
+        "E-033",
+        "E-034",
+        "E-035",
+        "E-036",
+        "E-037",
+        "E-038",
+        "E-039"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "模式比较与可持续性证据边界",
+      "purpose": "比较社区免费、订阅、企业版与非营利赞助模式的可验证收入线索。",
+      "required_evidence": [
+        "E-001",
+        "E-007",
+        "E-012",
+        "E-013",
+        "E-018",
+        "E-022",
+        "E-026",
+        "E-030"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与待补问题",
+      "purpose": "总结已确认模式，并列出许可、收入、成本与定价缺口。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-007",
+        "E-013",
+        "E-018",
+        "E-022",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

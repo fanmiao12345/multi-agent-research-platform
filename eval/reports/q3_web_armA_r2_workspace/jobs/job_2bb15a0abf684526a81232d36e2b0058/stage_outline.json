@@ -1,0 +1,124 @@
+{
+  "title": "机器人流程自动化与智能体的边界：证据梳理与缺口清单",
+  "sections": [
+    {
+      "heading": "厂商融合定位：AI WorkOS 与 RPA",
+      "purpose": "梳理影刀如何将RPA与AI工作系统并置融合。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "传统RPA的能力边界",
+      "purpose": "明确传统RPA的规则依赖、预设步骤与能力限制。",
+      "required_evidence": [
+        "E-007",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "AI与IPA推动的边界移动",
+      "purpose": "说明认知智能与IPA如何改变RPA的工具定位。",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "智能体自主性宣称",
+      "purpose": "归纳智能体自主感知、拆解任务与规划路径的主张。",
+      "required_evidence": [
+        "E-011",
+        "E-012",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "千问Agentic AI的主动行动定位",
+      "purpose": "梳理千问从被动回应转向主动办事的能力主张。",
+      "required_evidence": [
+        "E-025",
+        "E-026",
+        "E-027",
+        "E-028",
+        "E-029",
+        "E-030",
+        "E-031",
+        "E-032"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "非相关来源的证据状态",
+      "purpose": "说明游戏与超星资料无法提供边界依据。",
+      "required_evidence": [
+        "E-020",
+        "E-021",
+        "E-023",
+        "E-024"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "融合与规则依赖的开放冲突",
+      "purpose": "列出融合、自动执行与预设规则之间的未裁决冲突。",
+      "required_evidence": [
+        "E-002",
+        "E-008",
+        "E-012",
+        "E-007",
+        "E-014",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "边界划分标准的缺口",
+      "purpose": "指出缺少官方边界定义、能力矩阵与责任划分。",
+      "required_evidence": [
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "任务分派与人机衔接的缺口",
+      "purpose": "指出任务适用对照、决策规则与异常处理说明缺失。",
+      "required_evidence": [
+        "E-008",
+        "E-012"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "产品架构与第三方接入的缺口",
+      "purpose": "指出产品职责分层与2026年Agent接入影响待证。",
+      "required_evidence": [
+        "E-004",
+        "E-028"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论：可界定差异与未知",
+      "purpose": "概括现有证据可界定的差异，并保留不可裁决点。",
+      "required_evidence": [
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-011",
+        "E-012"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

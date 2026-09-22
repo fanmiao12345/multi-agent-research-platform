@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_50a95a816c",
+      "fact": "本资料为中华人民共和国退役军人事务部网站首页内容",
+      "tag": "F",
+      "quote": "中华人民共和国退役军人事务部",
+      "start": 25,
+      "end": 39,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_50a95a816c",
+      "fact": "本资料所列新闻集中于退役军人服务保障、国防军事等主题",
+      "tag": "F",
+      "quote": "退役军人服务保障先进单位及个人表彰大会在京召开",
+      "start": 772,
+      "end": 795,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 46,
+        "start": 772,
+        "end": 811
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_50a95a816c",
+      "fact": "本资料未出现新能源汽车、动力电池或电池回收相关表述",
+      "tag": "F",
+      "quote": "主办单位：中华人民共和国退役军人事务部",
+      "start": 3357,
+      "end": 3376,
+      "locator": {
+        "heading": "## 首页",
+        "paragraph": 278,
+        "start": 3357,
+        "end": 3377
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_50a95a816c",
+      "fact": "本资料虽有先进制造业相关指示报道，但未涉及电池回收",
+      "tag": "I",
+      "quote": "习近平就发展先进制造业作出重要指示",
+      "start": 76,
+      "end": 93,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_50a95a816c",
+      "fact": "关于电池回收行业现状与监管，本资料属信息缺口，无法据此作答",
+      "tag": "F",
+      "quote": "政府信息公开",
+      "start": 1430,
+      "end": 1436,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 71,
+        "start": 1430,
+        "end": 1437
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_5b026091e4",
+      "fact": "本资料正文仅为“豆瓣”站名与“载入中 ...”，无实质内容。",
+      "tag": "F",
+      "quote": "载入中 ...",
+      "start": 16,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 16,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_5b026091e4",
+      "fact": "本资料未提供新能源汽车电池回收行业现状的任何信息。",
+      "tag": "F",
+      "quote": "豆瓣 d o u b a n",
+      "start": 0,
+      "end": 14,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 15
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_5b026091e4",
+      "fact": "本资料未提供电池回收监管政策、法规或标准的内容。",
+      "tag": "F",
+      "quote": "载入中 ...",
+      "start": 16,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 16,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_5b026091e4",
+      "fact": "本资料未给出行业规模、企业、技术路线或数据。",
+      "tag": "F",
+      "quote": "豆瓣 d o u b a n",
+      "start": 0,
+      "end": 14,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 15
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_5b026091e4",
+      "fact": "据本资料无法判断页面是否因加载失败而未显示正文。",
+      "tag": "I",
+      "quote": "载入中 ...",
+      "start": 16,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 16,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_e69499511a",
+      "fact": "本资料为电视剧《格林》第一季的剧情介绍页面，内容属神话魔幻悬疑剧集",
+      "tag": "F",
+      "quote": "《格林》(Grimm)可以算得上是一部黑暗童话。",
+      "start": 277,
+      "end": 301,
+      "locator": {
+        "heading": "# 格林第一季剧情介绍",
+        "paragraph": 13,
+        "start": 277,
+        "end": 434
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_e69499511a",
+      "fact": "本资料讲述警探发现化为人形的超自然生物，并承担「格林」职责保护人类",
+      "tag": "F",
+      "quote": "Nick的姑姑Marie向Nick透露了一个惊天秘密",
+      "start": 624,
+      "end": 650,
+      "locator": {
+        "heading": "# 格林第一季剧情介绍",
+        "paragraph": 14,
+        "start": 435,
+        "end": 756
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_e69499511a",
+      "fact": "本资料主题与新能源汽车电池回收行业现状及监管无关，无法为该写作提供依据",
+      "tag": "I",
+      "quote": "格林第一季剧情介绍",
+      "start": 266,
+      "end": 275,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

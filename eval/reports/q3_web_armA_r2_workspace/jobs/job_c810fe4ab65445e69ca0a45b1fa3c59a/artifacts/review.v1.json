@@ -1,0 +1,27 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "直接政策缺口称“缺少各国或欧盟法律条文/政策文件/官方提案”，E-007/E-008只证明两份资料未涉及，不能推出各国/欧盟没有此类文件；应限定为本批资料未见。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "利弊、范围、风险缺口仅引E-007，其只说明教学资料未涉及，不能单独支持“现有材料整体缺少”；应补E-008/E-010等或限定。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "报告任务与证据边界未列出完整可用证据范围，仅列E-001/E-007/E-008，欧盟门户与新闻等证据未在边界说明。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "全文混用事实/推断/未知标注，任务要求事实/推断标注；未知宜并入推断或明确为证据缺口标注。"
+  }
+ ]
+}

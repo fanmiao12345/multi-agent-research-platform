@@ -1,0 +1,104 @@
+{
+  "source_id": "src_b03bae9b7b",
+  "kind": "url",
+  "display": "千问 - 阿里Qwen大模型打造的AI对话助手",
+  "original_address": "https://qianwen.aigc.cn/",
+  "title": "千问 - 阿里Qwen大模型打造的AI对话助手",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 6293,
+  "content_hash": "474627f3472420b2614a5bf4a384c01342d8e8eaa09b3fb20ad268a90977ba6f",
+  "normalized_hash": "2cd0ee93ccb7c0670464e4e6e738059a0d0209ddf8b2c7d9371233db14872ad5",
+  "captured_at": "2026-09-20T09:11:48",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_b03bae9b7b.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 10,
+  "segments": [
+    {
+      "heading": "# 千问",
+      "paragraph": 0,
+      "start": 6,
+      "end": 21,
+      "page": null
+    },
+    {
+      "heading": "# 千问",
+      "paragraph": 1,
+      "start": 22,
+      "end": 30,
+      "page": null
+    },
+    {
+      "heading": "# 千问",
+      "paragraph": 2,
+      "start": 31,
+      "end": 40,
+      "page": null
+    },
+    {
+      "heading": "## 核心定位：从回应式AI到行动式办事助手",
+      "paragraph": 3,
+      "start": 65,
+      "end": 407,
+      "page": null
+    },
+    {
+      "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+      "paragraph": 4,
+      "start": 440,
+      "end": 829,
+      "page": null
+    },
+    {
+      "heading": "## 生态与功能：全场景深度打通，海量功能一键办事",
+      "paragraph": 5,
+      "start": 857,
+      "end": 1218,
+      "page": null
+    },
+    {
+      "heading": "## 用户福利与市场表现：全民福利普惠，登顶国民级应用",
+      "paragraph": 6,
+      "start": 1248,
+      "end": 1553,
+      "page": null
+    },
+    {
+      "heading": "## 行业意义：重构交互逻辑，引领全球办事AI浪潮",
+      "paragraph": 7,
+      "start": 1581,
+      "end": 1891,
+      "page": null
+    },
+    {
+      "heading": "## 现存挑战与未来展望：深耕场景体验，拓宽智能边界",
+      "paragraph": 8,
+      "start": 1920,
+      "end": 2249,
+      "page": null
+    },
+    {
+      "heading": "## 现存挑战与未来展望：深耕场景体验，拓宽智能边界",
+      "paragraph": 9,
+      "start": 2250,
+      "end": 2296,
+      "page": null
+    }
+  ],
+  "final_url": "https://qianwen.aigc.cn/",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T09:11:48",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

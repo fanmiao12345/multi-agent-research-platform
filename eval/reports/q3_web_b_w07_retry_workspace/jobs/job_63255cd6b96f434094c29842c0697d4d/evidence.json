@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_4166f60253",
+      "fact": "本资料主题为汉字「大」的甲骨文、金文、篆文字形演变与含义，与开源大模型无关。",
+      "tag": "F",
+      "quote": "# 【大】的甲骨文金文篆文字形演变含义",
+      "start": 518,
+      "end": 537,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_4166f60253",
+      "fact": "本资料全文只解释汉字「大」的造字本义，即张开双臂双腿的成年人。",
+      "tag": "F",
+      "quote": "大，甲骨文、 像张开双臂双腿、顶天立地的成年人。",
+      "start": 728,
+      "end": 752,
+      "locator": {
+        "heading": "## 甲骨文密码",
+        "paragraph": 35,
+        "start": 728,
+        "end": 819
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_4166f60253",
+      "fact": "本资料未出现开源、大模型、许可证、商业模式等任何相关表述。",
+      "tag": "F",
+      "quote": "大：大人。成年人。",
+      "start": 623,
+      "end": 632,
+      "locator": {
+        "heading": "## 摘要",
+        "paragraph": 28,
+        "start": 582,
+        "end": 650
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_4166f60253",
+      "fact": "本资料所属网站以售卖六本甲骨文与国学类内部著作为主要经营内容。",
+      "tag": "F",
+      "quote": "本网破译的所有甲骨文象形本义全部收录在 《多功能汉字甲骨文破译字典》 一书中",
+      "start": 3497,
+      "end": 3535,
+      "locator": {
+        "heading": "##### 评论排行",
+        "paragraph": 106,
+        "start": 3497,
+        "end": 3572
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_4166f60253",
+      "fact": "该网站声明文章商业转载需获授权，但此为其自身版权规则，非大模型商业议题。",
+      "tag": "F",
+      "quote": "商业转载请联系作者获得授权，非商业转载请注明出处。",
+      "start": 4456,
+      "end": 4481,
+      "locator": {
+        "heading": "##### 频道本月排行",
+        "paragraph": 133,
+        "start": 4442,
+        "end": 4482
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_4166f60253",
+      "fact": "依据本资料内容，无法提取任何关于开源大模型生态商业模式的事实主张。",
+      "tag": "I",
+      "quote": "汉字的来历和演变",
+      "start": 582,
+      "end": 590,
+      "locator": {
+        "heading": "## 摘要",
+        "paragraph": 28,
+        "start": 582,
+        "end": 650
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_5a00f13f2a",
+      "fact": "Gitee 为开源中国旗下研发效能平台，主要产品含社区版、企业版、专业版、高校版、旗舰版。",
+      "tag": "F",
+      "quote": "主要产品为社区版、企业版、专业版、高校版、旗舰版。",
+      "start": 168,
+      "end": 193,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_5a00f13f2a",
+      "fact": "Gitee 企业版与专业版共服务 30 万家企业，其中含 1200 家中大型私有化部署企业。",
+      "tag": "F",
+      "quote": "Gitee 企业版 & 专业版共服务了 30 万家企业，包括了 1200 家中大型私有化部署企业。",
+      "start": 267,
+      "end": 316,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_5a00f13f2a",
+      "fact": "页面列出企业版在线使用的联系电话 400-606-0201。",
+      "tag": "F",
+      "quote": "企业版在线使用：400-606-0201",
+      "start": 2074,
+      "end": 2094,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 102,
+        "start": 2074,
+        "end": 2095
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_5a00f13f2a",
+      "fact": "页面导航包含开源、企业版、高校版、私有云、模力方舟、AI 队友等入口。",
+      "tag": "F",
+      "quote": "开源 企业版 高校版 私有云 模力方舟 AI 队友",
+      "start": 43,
+      "end": 68,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 43,
+        "end": 69
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_5a00f13f2a",
+      "fact": "MothX 是终端 AI 代码助手，支持多种 LLM 提供商，默认使用 DeepSeek。",
+      "tag": "F",
+      "quote": "它支持多种 LLM 提供商，包括 DeepSeek（默认）、OpenAI...",
+      "start": 718,
+      "end": 757,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 40,
+        "start": 630,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_5a00f13f2a",
+      "fact": "mcp-gitee 提供与 Gitee API 交互的工具，允许 AI 助手管理仓库、Issue、Pull Request等。",
+      "tag": "F",
+      "quote": "它提供了一组与 Gitee 的 API 交互的工具，允许 AI 助手管理仓库、Issue、Pull Request等。",
+      "start": 877,
+      "end": 936,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 46,
+        "start": 838,
+        "end": 937
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_5a00f13f2a",
+      "fact": "mcp-gitee-ent 是 Gitee Enterprise 的 MCP 服务器实现，面向企业 API 交互。",
+      "tag": "F",
+      "quote": "mcp-gitee-ent 是 Gitee Enterprise 的模型上下文协议 (MCP) 服务器实现。",
+      "start": 1131,
+      "end": 1185,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 55,
+        "start": 1131,
+        "end": 1254
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_5a00f13f2a",
+      "fact": "本资料显示 Gitee 有社区版与企业版、私有化部署，可推断开源平台以社区版获客、企业版收费。",
+      "tag": "I",
+      "quote": "主要产品为社区版、企业版、专业版、高校版、旗舰版。",
+      "start": 168,
+      "end": 193,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    }
+  ]
+}

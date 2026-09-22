@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_0beaf84f04",
+      "fact": "本资料为国家统计局网站「数据」栏目页面，发布统计数据与统计制度等信息。",
+      "tag": "F",
+      "quote": "版权所有: 国家统计局 联系我们 服务条款 网站地图",
+      "start": 3873,
+      "end": 3899,
+      "locator": {
+        "heading": "",
+        "paragraph": 346,
+        "start": 3873,
+        "end": 3900
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_0beaf84f04",
+      "fact": "本资料主要内容为国民经济运行数据的发布与解读。",
+      "tag": "F",
+      "quote": "8月份国民经济运行平稳、发展向新向优",
+      "start": 291,
+      "end": 309,
+      "locator": {
+        "heading": "",
+        "paragraph": 24,
+        "start": 291,
+        "end": 310
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_0beaf84f04",
+      "fact": "本资料设有数据发布、数据解读、新闻发布会、普查数据等栏目。",
+      "tag": "F",
+      "quote": "数据解读",
+      "start": 604,
+      "end": 608,
+      "locator": {
+        "heading": "",
+        "paragraph": 41,
+        "start": 604,
+        "end": 609
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_0beaf84f04",
+      "fact": "本资料包含统计制度和统计标准类目录条目。",
+      "tag": "F",
+      "quote": "统计制度",
+      "start": 1747,
+      "end": 1751,
+      "locator": {
+        "heading": "",
+        "paragraph": 107,
+        "start": 1747,
+        "end": 1752
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_0beaf84f04",
+      "fact": "本资料提供指标解释、数据查询等辅助服务入口。",
+      "tag": "F",
+      "quote": "指标解释",
+      "start": 1601,
+      "end": 1605,
+      "locator": {
+        "heading": "",
+        "paragraph": 98,
+        "start": 1601,
+        "end": 1606
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_0beaf84f04",
+      "fact": "本资料未出现「数据出境」或「合规」相关表述，未涉及企业数据出境议题。",
+      "tag": "F",
+      "quote": "月度数据",
+      "start": 2631,
+      "end": 2635,
+      "locator": {
+        "heading": "",
+        "paragraph": 150,
+        "start": 2631,
+        "end": 2636
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_0beaf84f04",
+      "fact": "依据本资料无法说明企业数据出境合规的主要变化。",
+      "tag": "I",
+      "quote": "数据查询",
+      "start": 2625,
+      "end": 2629,
+      "locator": {
+        "heading": "",
+        "paragraph": 149,
+        "start": 2625,
+        "end": 2630
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "影刀资料中的并列与边界缺口",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "影刀资料将影刀AI WorkOS与RPA并列表述为两项产品。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "影刀称通过AI WorkOS与RPA帮助企业设计、管理。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "影刀称AI WorkOS与RPA用于准确执行并进化AI员工。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "影刀将自身定位为迈向AI原生组织的AI基础设施。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "影刀快捷入口把影刀RPA与影刀AI WorkOS列为并列产品。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "影刀称产品覆盖客户案例中电商、金融、物流、医疗等行业。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "影刀资料未说明RPA与AI智能体各自功能边界与分工。"
+          }
+        ]
+      },
+      {
+        "name": "RPA定义与能力边界",
+        "points": [
+          {
+            "evidence_id": "E-008",
+            "statement": "RPA侧重流程自动化，执行规则明确重复操作，不具备自主学习与创新能力。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "AI核心为认知智能，可模拟学习推理决策并处理不确定性问题。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "RPA与AI融合形成IPA，使RPA从执行工具升级为智能助手。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "工业机器人解放体力劳动，RPA解放脑力重复劳动。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "实在Agent是RPA向智能自动化升级的进阶形态与典型代表。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "与传统RPA相比，实在Agent核心突破是自主决策能力。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "实在Agent可按自然语言自主拆解任务并规划路径，无需预设详细流程。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "IDC称自然语言生成流程打破传统RPA规则依赖，推动其向智能代理服务商转型。"
+          }
+        ]
+      },
+      {
+        "name": "AI智能体定义与特征",
+        "points": [
+          {
+            "evidence_id": "E-016",
+            "statement": "AI智能体是执行预定任务的智能系统，依据设定规则和目标完成任务。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "AI智能体核心特点是任务导向，专注具体单一任务，按设定规则反应。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "AI Agent不同于遵循确定性工作流程的传统自动化脚本。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "AI Agent具备响应式智能和有限适应性，能解读动态输入并调整输出。"
+          },
+          {
+            "evidence_id": "E-025",
+            "statement": "AI Agent三大基础特征是自主性、任务专一性以及反应性与适应性。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "任务专一性使AI Agent在特定功能领域实现高性能优化。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "AI Agent在自动化任务中高效、可解释、高精度运行，通用推理不必要场景尤甚。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "智能恒温器作为AI Agent仅在孤立状态运行，执行单一明确任务。"
+          }
+        ]
+      },
+      {
+        "name": "Agentic AI与多智能体协作",
+        "points": [
+          {
+            "evidence_id": "E-019",
+            "statement": "Agentic AI更高层次，不仅执行任务，还能主动设定目标，根据复杂环境和需求决策。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "Agentic AI具备自主性，能在无明确指令下凭借判断调整行为。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "案例显示Agentic AI以多个智能体协同完成数据提取、校验、审批到录入全流程。"
+          },
+          {
+            "evidence_id": "E-022",
+            "statement": "该案例实现业务流程端到端自动化，减少人工操作错误，提高效率与合规性。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "Agentic AI用多个专业化Agent协作实现复杂且高层次目标。"
+          },
+          {
+            "evidence_id": "E-030",
+            "statement": "智能家居中Agentic AI由多专业化Agent协同管理天气、日程、能源、安全等。"
+          }
+        ]
+      },
+      {
+        "name": "流程自动化与智能体交叉",
+        "points": [
+          {
+            "evidence_id": "E-018",
+            "statement": "本资料将流程自动化列为AI智能体典型应用场景，如自动化报表生成和数据处理。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "多智能体协同可覆盖数据提取、校验、审批判断到系统录入全流程。"
+          },
+          {
+            "evidence_id": "E-022",
+            "statement": "该协同案例实现端到端自动化，减少人工操作错误，提高效率与合规性。"
+          }
+        ]
+      },
+      {
+        "name": "无关资料排除",
+        "points": [
+          {
+            "evidence_id": "E-031",
+            "statement": "本资料标题为《超自然行动组》，主题是多人组队欢乐恐怖游戏。"
+          },
+          {
+            "evidence_id": "E-032",
+            "statement": "本资料标明为游戏官网首页，含新闻、公告、活动等栏目。"
+          },
+          {
+            "evidence_id": "E-033",
+            "statement": "本资料未涉及机器人流程自动化与智能体边界，无法支持该任务。"
+          },
+          {
+            "evidence_id": "E-034",
+            "statement": "本资料正文仅包含个人作者授权与签约相关内容。"
+          },
+          {
+            "evidence_id": "E-035",
+            "statement": "本资料出现「我要签约」字样，属授权签约提示。"
+          },
+          {
+            "evidence_id": "E-038",
+            "statement": "本资料全文未出现机器人流程自动化或智能体相关表述。"
+          },
+          {
+            "evidence_id": "E-039",
+            "statement": "本资料无法提供机器人与智能体边界任务的任何事实依据。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "statement": "RPA是否仅能执行规则明确重复操作，还是可通过与AI融合升级为智能助手与智能自动化。",
+        "evidence_ids": [
+          "E-008",
+          "E-010",
+          "E-012"
+        ],
+        "status": "open"
+      },
+      {
+        "statement": "AI智能体是仅按预设规则执行单一任务，还是能解读动态输入并自主调整行为。",
+        "evidence_ids": [
+          "E-016",
+          "E-017",
+          "E-024"
+        ],
+        "status": "open"
+      },
+      {
+        "statement": "AI智能体与流程自动化应是本质不同，还是流程自动化可作为AI智能体典型应用。",
+        "evidence_ids": [
+          "E-018",
+          "E-023"
+        ],
+        "status": "open"
+      },
+      {
+        "statement": "任务导向智能体与Agentic AI的主动设定目标、无指令自主调整之间边界不清。",
+        "evidence_ids": [
+          "E-017",
+          "E-019",
+          "E-020"
+        ],
+        "status": "open"
+      }
+    ],
+    "gaps": [
+      {
+        "question": "RPA与AI智能体各自功能边界与分工是什么？",
+        "missing": "厂商文档中功能边界、分工与协同说明"
+      },
+      {
+        "question": "AI WorkOS与RPA在同一平台如何区分与协同？",
+        "missing": "产品架构、接口、流程编排等技术资料"
+      },
+      {
+        "question": "传统RPA、IPA、AI Agent、Agentic AI之间有无统一分类标准？",
+        "missing": "权威术语标准或对比框架"
+      },
+      {
+        "question": "RPA的不学习创新能力与AI融合后的升级如何界定？",
+        "missing": "能力测试、版本对比或实证研究"
+      },
+      {
+        "question": "第三方如何评价RPA与智能体边界？",
+        "missing": "独立评测、案例对照或学术综述"
+      }
+    ],
+    "duplicates": []
+  }
+}

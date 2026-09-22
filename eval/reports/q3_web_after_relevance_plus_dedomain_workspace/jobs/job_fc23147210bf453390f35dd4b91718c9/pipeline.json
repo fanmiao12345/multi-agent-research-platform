@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_fc23147210bf453390f35dd4b91718c9",
+  "goal": "是否应强制公开算法推荐规则",
+  "started_at": "2026-09-18T14:49:07",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 24 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:49:41"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:49:54"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T14:49:56"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均未涉及算法推荐规则公开的政策争点，无法形成可核查论证。",
+        "finished_at": "2026-09-18T14:50:01"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均未涉及算法推荐规则公开的政策争点，无法形成可核查论证。；缺失信息：直接讨论该政策争点的监管文件、立法草案或官方论证、强制公开的适用范围与例外条款文本、平台推荐机制对用户影响的实证研究、各方立场、成本收益评估与行业反馈材料、可核查的现行法律条文或监管指引（可用证据 24 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

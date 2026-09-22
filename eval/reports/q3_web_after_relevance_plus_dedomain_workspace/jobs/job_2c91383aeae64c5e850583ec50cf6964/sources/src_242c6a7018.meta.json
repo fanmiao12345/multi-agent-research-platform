@@ -1,0 +1,1882 @@
+{
+  "source_id": "src_242c6a7018",
+  "kind": "url",
+  "display": "Obsidian - Sharpen your thinking",
+  "original_address": "https://obsidian.md/",
+  "title": "Obsidian - Sharpen your thinking",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 7491,
+  "content_hash": "f0870a32173d86015ba2f6c1adcdde391d9c0d8aadcccf6dfda28d48a72dbc70",
+  "normalized_hash": "21eb96f243d975b8e443ad76156b0e34f44abe20a92bc1221272381fed5a7309",
+  "captured_at": "2026-09-18T14:50:44",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_242c6a7018.md",
+  "encoding": "utf-8",
+  "segment_count": 264,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 9,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 10,
+      "end": 18,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 19,
+      "end": 24,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 25,
+      "end": 33,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 34,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 46,
+      "end": 54,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 55,
+      "end": 63,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 64,
+      "end": 70,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 71,
+      "end": 79,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 80,
+      "end": 88,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 89,
+      "end": 98,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 99,
+      "end": 108,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 109,
+      "end": 113,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 114,
+      "end": 118,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 119,
+      "end": 126,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 127,
+      "end": 146,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 147,
+      "end": 154,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 155,
+      "end": 163,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 164,
+      "end": 172,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 173,
+      "end": 178,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 179,
+      "end": 189,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 190,
+      "end": 198,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 199,
+      "end": 207,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 208,
+      "end": 216,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 217,
+      "end": 223,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 224,
+      "end": 232,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 233,
+      "end": 241,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 242,
+      "end": 251,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 252,
+      "end": 261,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 262,
+      "end": 266,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 267,
+      "end": 271,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 272,
+      "end": 279,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 280,
+      "end": 299,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 300,
+      "end": 307,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 308,
+      "end": 316,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 317,
+      "end": 325,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 326,
+      "end": 331,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 332,
+      "end": 341,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 342,
+      "end": 350,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 351,
+      "end": 356,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 357,
+      "end": 365,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 366,
+      "end": 374,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 375,
+      "end": 383,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 384,
+      "end": 395,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 396,
+      "end": 408,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 409,
+      "end": 420,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 421,
+      "end": 426,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 47,
+      "start": 427,
+      "end": 433,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 48,
+      "start": 434,
+      "end": 439,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 49,
+      "start": 440,
+      "end": 448,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 50,
+      "start": 449,
+      "end": 459,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 51,
+      "start": 460,
+      "end": 470,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 52,
+      "start": 471,
+      "end": 479,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 53,
+      "start": 480,
+      "end": 489,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 54,
+      "start": 490,
+      "end": 502,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 55,
+      "start": 503,
+      "end": 511,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 56,
+      "start": 538,
+      "end": 591,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 57,
+      "start": 592,
+      "end": 632,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 58,
+      "start": 633,
+      "end": 654,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 59,
+      "start": 655,
+      "end": 671,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 60,
+      "start": 672,
+      "end": 697,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 61,
+      "start": 698,
+      "end": 708,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 62,
+      "start": 709,
+      "end": 715,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 63,
+      "start": 716,
+      "end": 722,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 64,
+      "start": 723,
+      "end": 744,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 65,
+      "start": 745,
+      "end": 750,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 66,
+      "start": 751,
+      "end": 760,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 67,
+      "start": 761,
+      "end": 772,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 68,
+      "start": 773,
+      "end": 789,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 69,
+      "start": 790,
+      "end": 815,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 70,
+      "start": 816,
+      "end": 823,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 71,
+      "start": 824,
+      "end": 855,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 72,
+      "start": 856,
+      "end": 866,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 73,
+      "start": 867,
+      "end": 875,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 74,
+      "start": 876,
+      "end": 882,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 75,
+      "start": 883,
+      "end": 890,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 76,
+      "start": 891,
+      "end": 912,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 77,
+      "start": 913,
+      "end": 919,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 78,
+      "start": 920,
+      "end": 950,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 79,
+      "start": 951,
+      "end": 968,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 80,
+      "start": 969,
+      "end": 980,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 81,
+      "start": 981,
+      "end": 1004,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 82,
+      "start": 1005,
+      "end": 1021,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 83,
+      "start": 1022,
+      "end": 1028,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 84,
+      "start": 1029,
+      "end": 1050,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 85,
+      "start": 1051,
+      "end": 1062,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 86,
+      "start": 1063,
+      "end": 1079,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 87,
+      "start": 1080,
+      "end": 1120,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 88,
+      "start": 1121,
+      "end": 1239,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 89,
+      "start": 1240,
+      "end": 1326,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 90,
+      "start": 1327,
+      "end": 1436,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 91,
+      "start": 1437,
+      "end": 1443,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 92,
+      "start": 1444,
+      "end": 2013,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 93,
+      "start": 2014,
+      "end": 2045,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 94,
+      "start": 2046,
+      "end": 2052,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 95,
+      "start": 2053,
+      "end": 2073,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 96,
+      "start": 2074,
+      "end": 2092,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 97,
+      "start": 2093,
+      "end": 2099,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 98,
+      "start": 2100,
+      "end": 2117,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 99,
+      "start": 2118,
+      "end": 2142,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 100,
+      "start": 2143,
+      "end": 2151,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 101,
+      "start": 2152,
+      "end": 2161,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 102,
+      "start": 2162,
+      "end": 2170,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 103,
+      "start": 2171,
+      "end": 2197,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 104,
+      "start": 2198,
+      "end": 2208,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 105,
+      "start": 2209,
+      "end": 2211,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 106,
+      "start": 2212,
+      "end": 2237,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 107,
+      "start": 2238,
+      "end": 2372,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 108,
+      "start": 2373,
+      "end": 2394,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 109,
+      "start": 2395,
+      "end": 2485,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 110,
+      "start": 2486,
+      "end": 2514,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 111,
+      "start": 2515,
+      "end": 2612,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 112,
+      "start": 2613,
+      "end": 2634,
+      "page": null
+    },
+    {
+      "heading": "# Sharpen your thinking.",
+      "paragraph": 113,
+      "start": 2635,
+      "end": 2648,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 114,
+      "start": 2666,
+      "end": 2812,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 115,
+      "start": 2813,
+      "end": 2819,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 116,
+      "start": 2820,
+      "end": 2968,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 117,
+      "start": 2969,
+      "end": 3124,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 118,
+      "start": 3125,
+      "end": 3138,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 119,
+      "start": 3139,
+      "end": 3163,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 120,
+      "start": 3164,
+      "end": 3185,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 121,
+      "start": 3186,
+      "end": 3211,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 122,
+      "start": 3212,
+      "end": 3219,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 123,
+      "start": 3220,
+      "end": 3231,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 124,
+      "start": 3232,
+      "end": 3240,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 125,
+      "start": 3241,
+      "end": 3343,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 126,
+      "start": 3344,
+      "end": 3350,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 127,
+      "start": 3351,
+      "end": 3488,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 128,
+      "start": 3489,
+      "end": 3496,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 129,
+      "start": 3497,
+      "end": 3633,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 130,
+      "start": 3634,
+      "end": 3644,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 131,
+      "start": 3645,
+      "end": 3658,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 132,
+      "start": 3659,
+      "end": 3707,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 133,
+      "start": 3708,
+      "end": 3781,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 134,
+      "start": 3782,
+      "end": 3801,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 135,
+      "start": 3802,
+      "end": 3823,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 136,
+      "start": 3824,
+      "end": 3836,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 137,
+      "start": 3837,
+      "end": 3891,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 138,
+      "start": 3892,
+      "end": 3971,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 139,
+      "start": 3972,
+      "end": 3995,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 140,
+      "start": 3996,
+      "end": 4013,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 141,
+      "start": 4014,
+      "end": 4169,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 142,
+      "start": 4170,
+      "end": 4193,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 143,
+      "start": 4194,
+      "end": 4296,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 144,
+      "start": 4297,
+      "end": 4310,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 145,
+      "start": 4311,
+      "end": 4319,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 146,
+      "start": 4320,
+      "end": 4469,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 147,
+      "start": 4470,
+      "end": 4488,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 148,
+      "start": 4489,
+      "end": 4511,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 149,
+      "start": 4512,
+      "end": 4547,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 150,
+      "start": 4548,
+      "end": 4573,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 151,
+      "start": 4574,
+      "end": 4605,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 152,
+      "start": 4606,
+      "end": 4633,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 153,
+      "start": 4634,
+      "end": 4674,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 154,
+      "start": 4675,
+      "end": 4705,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 155,
+      "start": 4706,
+      "end": 4728,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 156,
+      "start": 4729,
+      "end": 4770,
+      "page": null
+    },
+    {
+      "heading": "## Spark ideas.",
+      "paragraph": 157,
+      "start": 4771,
+      "end": 4809,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 158,
+      "start": 4829,
+      "end": 4910,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 159,
+      "start": 4911,
+      "end": 5017,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 160,
+      "start": 5018,
+      "end": 5109,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 161,
+      "start": 5110,
+      "end": 5202,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 162,
+      "start": 5203,
+      "end": 5218,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 163,
+      "start": 5219,
+      "end": 5226,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 164,
+      "start": 5227,
+      "end": 5259,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 165,
+      "start": 5260,
+      "end": 5266,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 166,
+      "start": 5267,
+      "end": 5299,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 167,
+      "start": 5300,
+      "end": 5306,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 168,
+      "start": 5307,
+      "end": 5339,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 169,
+      "start": 5340,
+      "end": 5345,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 170,
+      "start": 5346,
+      "end": 5376,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 171,
+      "start": 5377,
+      "end": 5393,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 172,
+      "start": 5394,
+      "end": 5397,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 173,
+      "start": 5398,
+      "end": 5401,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 174,
+      "start": 5402,
+      "end": 5405,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 175,
+      "start": 5406,
+      "end": 5409,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 176,
+      "start": 5410,
+      "end": 5413,
+      "page": null
+    },
+    {
+      "heading": "## Sync securely.",
+      "paragraph": 177,
+      "start": 5414,
+      "end": 5417,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 178,
+      "start": 5442,
+      "end": 5480,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 179,
+      "start": 5481,
+      "end": 5548,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 180,
+      "start": 5549,
+      "end": 5583,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 181,
+      "start": 5584,
+      "end": 5618,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 182,
+      "start": 5619,
+      "end": 5652,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 183,
+      "start": 5653,
+      "end": 5667,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 184,
+      "start": 5668,
+      "end": 5687,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 185,
+      "start": 5688,
+      "end": 5691,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 186,
+      "start": 5692,
+      "end": 5701,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 187,
+      "start": 5702,
+      "end": 5708,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 188,
+      "start": 5709,
+      "end": 5712,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 189,
+      "start": 5713,
+      "end": 5724,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 190,
+      "start": 5725,
+      "end": 5734,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 191,
+      "start": 5735,
+      "end": 5738,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 192,
+      "start": 5739,
+      "end": 5749,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 193,
+      "start": 5750,
+      "end": 5759,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 194,
+      "start": 5760,
+      "end": 5763,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 195,
+      "start": 5764,
+      "end": 5779,
+      "page": null
+    },
+    {
+      "heading": "# Writing is telepathy",
+      "paragraph": 196,
+      "start": 5780,
+      "end": 5789,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 197,
+      "start": 5813,
+      "end": 5912,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 198,
+      "start": 5913,
+      "end": 5932,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 199,
+      "start": 5933,
+      "end": 6044,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 200,
+      "start": 6045,
+      "end": 6061,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 201,
+      "start": 6062,
+      "end": 6161,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 202,
+      "start": 6162,
+      "end": 6190,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 203,
+      "start": 6191,
+      "end": 6291,
+      "page": null
+    },
+    {
+      "heading": "## Publish instantly.",
+      "paragraph": 204,
+      "start": 6292,
+      "end": 6354,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 205,
+      "start": 6384,
+      "end": 6397,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 206,
+      "start": 6398,
+      "end": 6417,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 207,
+      "start": 6418,
+      "end": 6499,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 208,
+      "start": 6500,
+      "end": 6517,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 209,
+      "start": 6518,
+      "end": 6615,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 210,
+      "start": 6616,
+      "end": 6631,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 211,
+      "start": 6632,
+      "end": 6727,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 212,
+      "start": 6728,
+      "end": 6740,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 213,
+      "start": 6741,
+      "end": 6750,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 214,
+      "start": 6751,
+      "end": 6759,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 215,
+      "start": 6760,
+      "end": 6771,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 216,
+      "start": 6772,
+      "end": 6780,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 217,
+      "start": 6781,
+      "end": 6790,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 218,
+      "start": 6791,
+      "end": 6800,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 219,
+      "start": 6801,
+      "end": 6806,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 220,
+      "start": 6807,
+      "end": 6815,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 221,
+      "start": 6816,
+      "end": 6823,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 222,
+      "start": 6824,
+      "end": 6831,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 223,
+      "start": 6832,
+      "end": 6844,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 224,
+      "start": 6845,
+      "end": 6849,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 225,
+      "start": 6850,
+      "end": 6856,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 226,
+      "start": 6857,
+      "end": 6862,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 227,
+      "start": 6863,
+      "end": 6874,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 228,
+      "start": 6875,
+      "end": 6885,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 229,
+      "start": 6886,
+      "end": 6892,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 230,
+      "start": 6893,
+      "end": 6901,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 231,
+      "start": 6902,
+      "end": 6907,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 232,
+      "start": 6908,
+      "end": 6918,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 233,
+      "start": 6919,
+      "end": 6933,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 234,
+      "start": 6934,
+      "end": 6951,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 235,
+      "start": 6952,
+      "end": 6969,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 236,
+      "start": 6970,
+      "end": 6985,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 237,
+      "start": 6986,
+      "end": 6995,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 238,
+      "start": 6996,
+      "end": 7006,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 239,
+      "start": 7007,
+      "end": 7015,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 240,
+      "start": 7016,
+      "end": 7023,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 241,
+      "start": 7024,
+      "end": 7032,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 242,
+      "start": 7033,
+      "end": 7046,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 243,
+      "start": 7047,
+      "end": 7059,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 244,
+      "start": 7060,
+      "end": 7077,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 245,
+      "start": 7078,
+      "end": 7088,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 246,
+      "start": 7089,
+      "end": 7145,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 247,
+      "start": 7146,
+      "end": 7154,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 248,
+      "start": 7155,
+      "end": 7163,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 249,
+      "start": 7164,
+      "end": 7172,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 250,
+      "start": 7173,
+      "end": 7179,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 251,
+      "start": 7180,
+      "end": 7188,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 252,
+      "start": 7189,
+      "end": 7197,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 253,
+      "start": 7198,
+      "end": 7207,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 254,
+      "start": 7208,
+      "end": 7217,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 255,
+      "start": 7218,
+      "end": 7222,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 256,
+      "start": 7223,
+      "end": 7227,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 257,
+      "start": 7228,
+      "end": 7235,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 258,
+      "start": 7236,
+      "end": 7255,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 259,
+      "start": 7256,
+      "end": 7263,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 260,
+      "start": 7264,
+      "end": 7272,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 261,
+      "start": 7273,
+      "end": 7281,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 262,
+      "start": 7282,
+      "end": 7287,
+      "page": null
+    },
+    {
+      "heading": "## It’s your time to shine.",
+      "paragraph": 263,
+      "start": 7288,
+      "end": 7303,
+      "page": null
+    }
+  ],
+  "final_url": "https://obsidian.md/",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:50:44",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

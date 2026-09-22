@@ -1,0 +1,2442 @@
+{
+  "source_id": "src_6f4ecff835",
+  "kind": "url",
+  "display": "算法基础与分析方法 | 菜鸟教程",
+  "original_address": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+  "title": "算法基础与分析方法 | 菜鸟教程",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 12991,
+  "content_hash": "fe6ac41db00384e87acfe80cb079b18eaabf450fbbe845853c58eb51e12642ac",
+  "normalized_hash": "fe9730de21faa627fec769f5fe148e2c9d455398903b59a9a0b00c22283352b2",
+  "captured_at": "2026-09-20T11:11:17",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_6f4ecff835.md",
+  "encoding": "UTF-8",
+  "segment_count": 344,
+  "segments": [
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 0,
+      "start": 25,
+      "end": 28,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 1,
+      "start": 29,
+      "end": 34,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 2,
+      "start": 35,
+      "end": 46,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 3,
+      "start": 47,
+      "end": 51,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 4,
+      "start": 52,
+      "end": 56,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 5,
+      "start": 57,
+      "end": 63,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 6,
+      "start": 64,
+      "end": 72,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 7,
+      "start": 73,
+      "end": 78,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 8,
+      "start": 79,
+      "end": 81,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 9,
+      "start": 82,
+      "end": 86,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 10,
+      "start": 87,
+      "end": 90,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 11,
+      "start": 91,
+      "end": 94,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 12,
+      "start": 95,
+      "end": 98,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 13,
+      "start": 99,
+      "end": 103,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 14,
+      "start": 104,
+      "end": 110,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 15,
+      "start": 111,
+      "end": 119,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 16,
+      "start": 120,
+      "end": 130,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 17,
+      "start": 131,
+      "end": 135,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 18,
+      "start": 136,
+      "end": 141,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 19,
+      "start": 142,
+      "end": 145,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 20,
+      "start": 146,
+      "end": 151,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 21,
+      "start": 152,
+      "end": 156,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 22,
+      "start": 157,
+      "end": 160,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 23,
+      "start": 161,
+      "end": 166,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 24,
+      "start": 167,
+      "end": 170,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 25,
+      "start": 171,
+      "end": 179,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 26,
+      "start": 180,
+      "end": 188,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 27,
+      "start": 189,
+      "end": 200,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 28,
+      "start": 201,
+      "end": 212,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 29,
+      "start": 213,
+      "end": 224,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 30,
+      "start": 225,
+      "end": 230,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 31,
+      "start": 231,
+      "end": 239,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 32,
+      "start": 240,
+      "end": 251,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 33,
+      "start": 252,
+      "end": 260,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 34,
+      "start": 261,
+      "end": 265,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 35,
+      "start": 266,
+      "end": 275,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 36,
+      "start": 276,
+      "end": 283,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 37,
+      "start": 284,
+      "end": 296,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 38,
+      "start": 297,
+      "end": 302,
+      "page": null
+    },
+    {
+      "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+      "paragraph": 39,
+      "start": 303,
+      "end": 379,
+      "page": null
+    },
+    {
+      "heading": "## 排序算法",
+      "paragraph": 40,
+      "start": 389,
+      "end": 440,
+      "page": null
+    },
+    {
+      "heading": "## 堆",
+      "paragraph": 41,
+      "start": 447,
+      "end": 500,
+      "page": null
+    },
+    {
+      "heading": "## 二分搜索树",
+      "paragraph": 42,
+      "start": 511,
+      "end": 580,
+      "page": null
+    },
+    {
+      "heading": "## 并查集",
+      "paragraph": 43,
+      "start": 589,
+      "end": 645,
+      "page": null
+    },
+    {
+      "heading": "## 图论",
+      "paragraph": 44,
+      "start": 653,
+      "end": 698,
+      "page": null
+    },
+    {
+      "heading": "## 图论",
+      "paragraph": 45,
+      "start": 699,
+      "end": 709,
+      "page": null
+    },
+    {
+      "heading": "## 图论",
+      "paragraph": 46,
+      "start": 710,
+      "end": 717,
+      "page": null
+    },
+    {
+      "heading": "# 算法基础与分析方法",
+      "paragraph": 47,
+      "start": 731,
+      "end": 860,
+      "page": null
+    },
+    {
+      "heading": "# 算法基础与分析方法",
+      "paragraph": 48,
+      "start": 861,
+      "end": 901,
+      "page": null
+    },
+    {
+      "heading": "# 算法基础与分析方法",
+      "paragraph": 49,
+      "start": 902,
+      "end": 939,
+      "page": null
+    },
+    {
+      "heading": "## 算法的核心特征",
+      "paragraph": 50,
+      "start": 952,
+      "end": 989,
+      "page": null
+    },
+    {
+      "heading": "## 算法的核心特征",
+      "paragraph": 51,
+      "start": 990,
+      "end": 1044,
+      "page": null
+    },
+    {
+      "heading": "## 算法的核心特征",
+      "paragraph": 52,
+      "start": 1045,
+      "end": 1097,
+      "page": null
+    },
+    {
+      "heading": "## 算法的核心特征",
+      "paragraph": 53,
+      "start": 1098,
+      "end": 1144,
+      "page": null
+    },
+    {
+      "heading": "## 算法的核心特征",
+      "paragraph": 54,
+      "start": 1145,
+      "end": 1186,
+      "page": null
+    },
+    {
+      "heading": "## 算法的核心特征",
+      "paragraph": 55,
+      "start": 1187,
+      "end": 1238,
+      "page": null
+    },
+    {
+      "heading": "## 如何描述算法？",
+      "paragraph": 56,
+      "start": 1251,
+      "end": 1277,
+      "page": null
+    },
+    {
+      "heading": "### 1. 自然语言描述",
+      "paragraph": 57,
+      "start": 1293,
+      "end": 1339,
+      "page": null
+    },
+    {
+      "heading": "### 1. 自然语言描述",
+      "paragraph": 58,
+      "start": 1340,
+      "end": 1356,
+      "page": null
+    },
+    {
+      "heading": "### 1. 自然语言描述",
+      "paragraph": 59,
+      "start": 1357,
+      "end": 1378,
+      "page": null
+    },
+    {
+      "heading": "### 1. 自然语言描述",
+      "paragraph": 60,
+      "start": 1379,
+      "end": 1396,
+      "page": null
+    },
+    {
+      "heading": "### 1. 自然语言描述",
+      "paragraph": 61,
+      "start": 1397,
+      "end": 1410,
+      "page": null
+    },
+    {
+      "heading": "### 2. 流程图",
+      "paragraph": 62,
+      "start": 1423,
+      "end": 1459,
+      "page": null
+    },
+    {
+      "heading": "### 2. 流程图",
+      "paragraph": 63,
+      "start": 1460,
+      "end": 1520,
+      "page": null
+    },
+    {
+      "heading": "### 3. 伪代码",
+      "paragraph": 64,
+      "start": 1533,
+      "end": 1608,
+      "page": null
+    },
+    {
+      "heading": "### 3. 伪代码",
+      "paragraph": 65,
+      "start": 1609,
+      "end": 1650,
+      "page": null
+    },
+    {
+      "heading": "### 3. 伪代码",
+      "paragraph": 66,
+      "start": 1652,
+      "end": 1788,
+      "page": null
+    },
+    {
+      "heading": "### 4. 编程语言实现",
+      "paragraph": 67,
+      "start": 1804,
+      "end": 1857,
+      "page": null
+    },
+    {
+      "heading": "# Python 实现：找出三个数中的最大值",
+      "paragraph": 68,
+      "start": 1889,
+      "end": 1918,
+      "page": null
+    },
+    {
+      "heading": "# 先比较 a 和 b，将较大值赋给 max_value",
+      "paragraph": 69,
+      "start": 1949,
+      "end": 1959,
+      "page": null
+    },
+    {
+      "heading": "# 先比较 a 和 b，将较大值赋给 max_value",
+      "paragraph": 70,
+      "start": 1960,
+      "end": 1974,
+      "page": null
+    },
+    {
+      "heading": "# 先比较 a 和 b，将较大值赋给 max_value",
+      "paragraph": 71,
+      "start": 1975,
+      "end": 1982,
+      "page": null
+    },
+    {
+      "heading": "# 先比较 a 和 b，将较大值赋给 max_value",
+      "paragraph": 72,
+      "start": 1983,
+      "end": 1997,
+      "page": null
+    },
+    {
+      "heading": "# 再将 max_value 与 c 比较",
+      "paragraph": 73,
+      "start": 2021,
+      "end": 2039,
+      "page": null
+    },
+    {
+      "heading": "# 再将 max_value 与 c 比较",
+      "paragraph": 74,
+      "start": 2040,
+      "end": 2054,
+      "page": null
+    },
+    {
+      "heading": "# 再将 max_value 与 c 比较",
+      "paragraph": 75,
+      "start": 2055,
+      "end": 2072,
+      "page": null
+    },
+    {
+      "heading": "# 测试代码",
+      "paragraph": 76,
+      "start": 2081,
+      "end": 2121,
+      "page": null
+    },
+    {
+      "heading": "# 测试代码",
+      "paragraph": 77,
+      "start": 2122,
+      "end": 2164,
+      "page": null
+    },
+    {
+      "heading": "# 测试代码",
+      "paragraph": 78,
+      "start": 2165,
+      "end": 2171,
+      "page": null
+    },
+    {
+      "heading": "# 测试代码",
+      "paragraph": 79,
+      "start": 2172,
+      "end": 2177,
+      "page": null
+    },
+    {
+      "heading": "## 算法分析：如何评价算法的好坏？",
+      "paragraph": 80,
+      "start": 2198,
+      "end": 2243,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 81,
+      "start": 2258,
+      "end": 2331,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 82,
+      "start": 2332,
+      "end": 2343,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 83,
+      "start": 2344,
+      "end": 2366,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 84,
+      "start": 2367,
+      "end": 2408,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 85,
+      "start": 2409,
+      "end": 2449,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 86,
+      "start": 2450,
+      "end": 2491,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 87,
+      "start": 2492,
+      "end": 2543,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 88,
+      "start": 2544,
+      "end": 2591,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 89,
+      "start": 2592,
+      "end": 2641,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 90,
+      "start": 2642,
+      "end": 2657,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 91,
+      "start": 2658,
+      "end": 2673,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 92,
+      "start": 2674,
+      "end": 2703,
+      "page": null
+    },
+    {
+      "heading": "### 1. 时间复杂度",
+      "paragraph": 93,
+      "start": 2704,
+      "end": 2723,
+      "page": null
+    },
+    {
+      "heading": "### 2. 空间复杂度",
+      "paragraph": 94,
+      "start": 2738,
+      "end": 2813,
+      "page": null
+    },
+    {
+      "heading": "### 2. 空间复杂度",
+      "paragraph": 95,
+      "start": 2814,
+      "end": 2820,
+      "page": null
+    },
+    {
+      "heading": "# 示例1：空间复杂度 O(1)",
+      "paragraph": 96,
+      "start": 2846,
+      "end": 2877,
+      "page": null
+    },
+    {
+      "heading": "# 示例1：空间复杂度 O(1)",
+      "paragraph": 97,
+      "start": 2878,
+      "end": 2911,
+      "page": null
+    },
+    {
+      "heading": "# 示例1：空间复杂度 O(1)",
+      "paragraph": 98,
+      "start": 2912,
+      "end": 2928,
+      "page": null
+    },
+    {
+      "heading": "# 示例1：空间复杂度 O(1)",
+      "paragraph": 99,
+      "start": 2929,
+      "end": 2947,
+      "page": null
+    },
+    {
+      "heading": "# 示例1：空间复杂度 O(1)",
+      "paragraph": 100,
+      "start": 2948,
+      "end": 2962,
+      "page": null
+    },
+    {
+      "heading": "# 示例1：空间复杂度 O(1)",
+      "paragraph": 101,
+      "start": 2963,
+      "end": 2978,
+      "page": null
+    },
+    {
+      "heading": "# 示例2：空间复杂度 O(n)",
+      "paragraph": 102,
+      "start": 2997,
+      "end": 3032,
+      "page": null
+    },
+    {
+      "heading": "# 示例2：空间复杂度 O(n)",
+      "paragraph": 103,
+      "start": 3033,
+      "end": 3067,
+      "page": null
+    },
+    {
+      "heading": "# 示例2：空间复杂度 O(n)",
+      "paragraph": 104,
+      "start": 3068,
+      "end": 3084,
+      "page": null
+    },
+    {
+      "heading": "# 示例2：空间复杂度 O(n)",
+      "paragraph": 105,
+      "start": 3085,
+      "end": 3114,
+      "page": null
+    },
+    {
+      "heading": "# 示例2：空间复杂度 O(n)",
+      "paragraph": 106,
+      "start": 3115,
+      "end": 3131,
+      "page": null
+    },
+    {
+      "heading": "## 实践练习：从排序算法看分析与应用",
+      "paragraph": 107,
+      "start": 3153,
+      "end": 3179,
+      "page": null
+    },
+    {
+      "heading": "### 算法思想",
+      "paragraph": 108,
+      "start": 3190,
+      "end": 3232,
+      "page": null
+    },
+    {
+      "heading": "### 算法思想",
+      "paragraph": 109,
+      "start": 3233,
+      "end": 3293,
+      "page": null
+    },
+    {
+      "heading": "## 实例",
+      "paragraph": 110,
+      "start": 3321,
+      "end": 3347,
+      "page": null
+    },
+    {
+      "heading": "## 实例",
+      "paragraph": 111,
+      "start": 3348,
+      "end": 3352,
+      "page": null
+    },
+    {
+      "heading": "## 实例",
+      "paragraph": 112,
+      "start": 3353,
+      "end": 3360,
+      "page": null
+    },
+    {
+      "heading": "## 实例",
+      "paragraph": 113,
+      "start": 3361,
+      "end": 3376,
+      "page": null
+    },
+    {
+      "heading": "## 实例",
+      "paragraph": 114,
+      "start": 3377,
+      "end": 3401,
+      "page": null
+    },
+    {
+      "heading": "## 实例",
+      "paragraph": 115,
+      "start": 3402,
+      "end": 3406,
+      "page": null
+    },
+    {
+      "heading": "## 实例",
+      "paragraph": 116,
+      "start": 3407,
+      "end": 3423,
+      "page": null
+    },
+    {
+      "heading": "# 外层循环：控制总共需要几轮\"冒泡\"",
+      "paragraph": 117,
+      "start": 3445,
+      "end": 3472,
+      "page": null
+    },
+    {
+      "heading": "# 假设本轮已经有序，用于优化",
+      "paragraph": 118,
+      "start": 3490,
+      "end": 3506,
+      "page": null
+    },
+    {
+      "heading": "# 每一轮后，最后 i+1 个元素是已排好的，所以范围是 n-1-i",
+      "paragraph": 119,
+      "start": 3571,
+      "end": 3606,
+      "page": null
+    },
+    {
+      "heading": "# 如果前面的元素比后面的大，则交换",
+      "paragraph": 120,
+      "start": 3627,
+      "end": 3658,
+      "page": null
+    },
+    {
+      "heading": "# 如果前面的元素比后面的大，则交换",
+      "paragraph": 121,
+      "start": 3659,
+      "end": 3730,
+      "page": null
+    },
+    {
+      "heading": "# 如果前面的元素比后面的大，则交换",
+      "paragraph": 122,
+      "start": 3731,
+      "end": 3754,
+      "page": null
+    },
+    {
+      "heading": "# 如果本轮一次交换都没发生，说明列表已完全有序，提前结束",
+      "paragraph": 123,
+      "start": 3786,
+      "end": 3802,
+      "page": null
+    },
+    {
+      "heading": "# 如果本轮一次交换都没发生，说明列表已完全有序，提前结束",
+      "paragraph": 124,
+      "start": 3803,
+      "end": 3809,
+      "page": null
+    },
+    {
+      "heading": "# 如果本轮一次交换都没发生，说明列表已完全有序，提前结束",
+      "paragraph": 125,
+      "start": 3810,
+      "end": 3821,
+      "page": null
+    },
+    {
+      "heading": "# 测试数据与验证",
+      "paragraph": 126,
+      "start": 3833,
+      "end": 3882,
+      "page": null
+    },
+    {
+      "heading": "# 测试数据与验证",
+      "paragraph": 127,
+      "start": 3883,
+      "end": 3912,
+      "page": null
+    },
+    {
+      "heading": "# 测试数据与验证",
+      "paragraph": 128,
+      "start": 3913,
+      "end": 3980,
+      "page": null
+    },
+    {
+      "heading": "# 测试数据与验证",
+      "paragraph": 129,
+      "start": 3981,
+      "end": 4012,
+      "page": null
+    },
+    {
+      "heading": "# 验证结果是否正确",
+      "paragraph": 130,
+      "start": 4025,
+      "end": 4112,
+      "page": null
+    },
+    {
+      "heading": "# 验证结果是否正确",
+      "paragraph": 131,
+      "start": 4113,
+      "end": 4119,
+      "page": null
+    },
+    {
+      "heading": "# 验证结果是否正确",
+      "paragraph": 132,
+      "start": 4120,
+      "end": 4203,
+      "page": null
+    },
+    {
+      "heading": "### 算法分析",
+      "paragraph": 133,
+      "start": 4214,
+      "end": 4222,
+      "page": null
+    },
+    {
+      "heading": "### 算法分析",
+      "paragraph": 134,
+      "start": 4223,
+      "end": 4295,
+      "page": null
+    },
+    {
+      "heading": "### 算法分析",
+      "paragraph": 135,
+      "start": 4296,
+      "end": 4353,
+      "page": null
+    },
+    {
+      "heading": "### 算法分析",
+      "paragraph": 136,
+      "start": 4354,
+      "end": 4411,
+      "page": null
+    },
+    {
+      "heading": "### 练习任务",
+      "paragraph": 137,
+      "start": 4422,
+      "end": 4473,
+      "page": null
+    },
+    {
+      "heading": "### 练习任务",
+      "paragraph": 138,
+      "start": 4474,
+      "end": 4561,
+      "page": null
+    },
+    {
+      "heading": "### 练习任务",
+      "paragraph": 139,
+      "start": 4562,
+      "end": 4626,
+      "page": null
+    },
+    {
+      "heading": "### 练习任务",
+      "paragraph": 140,
+      "start": 4627,
+      "end": 4637,
+      "page": null
+    },
+    {
+      "heading": "### 练习任务",
+      "paragraph": 141,
+      "start": 4638,
+      "end": 4648,
+      "page": null
+    },
+    {
+      "heading": "### 练习任务",
+      "paragraph": 142,
+      "start": 4649,
+      "end": 4656,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 143,
+      "start": 4669,
+      "end": 4672,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 144,
+      "start": 4673,
+      "end": 4678,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 145,
+      "start": 4679,
+      "end": 4690,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 146,
+      "start": 4691,
+      "end": 4702,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 147,
+      "start": 4703,
+      "end": 4713,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 148,
+      "start": 4714,
+      "end": 4719,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 149,
+      "start": 4720,
+      "end": 4734,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 150,
+      "start": 4735,
+      "end": 4745,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 151,
+      "start": 4746,
+      "end": 4759,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 152,
+      "start": 4760,
+      "end": 4771,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 153,
+      "start": 4772,
+      "end": 4781,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 154,
+      "start": 4782,
+      "end": 4792,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 155,
+      "start": 4793,
+      "end": 4802,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 156,
+      "start": 4803,
+      "end": 4813,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 157,
+      "start": 4814,
+      "end": 4823,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 158,
+      "start": 4824,
+      "end": 4838,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 159,
+      "start": 4839,
+      "end": 4847,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 160,
+      "start": 4848,
+      "end": 4868,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 161,
+      "start": 4869,
+      "end": 4879,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 162,
+      "start": 4880,
+      "end": 4885,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 163,
+      "start": 4886,
+      "end": 4891,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 164,
+      "start": 4892,
+      "end": 4901,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 165,
+      "start": 4902,
+      "end": 4912,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 166,
+      "start": 4913,
+      "end": 4927,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 167,
+      "start": 4928,
+      "end": 4937,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 168,
+      "start": 4938,
+      "end": 4947,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 169,
+      "start": 4948,
+      "end": 4963,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 170,
+      "start": 4964,
+      "end": 4976,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 171,
+      "start": 4977,
+      "end": 4986,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 172,
+      "start": 4987,
+      "end": 4998,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 173,
+      "start": 4999,
+      "end": 5009,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 174,
+      "start": 5010,
+      "end": 5023,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 175,
+      "start": 5024,
+      "end": 5041,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 176,
+      "start": 5042,
+      "end": 5051,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 177,
+      "start": 5052,
+      "end": 5060,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 178,
+      "start": 5061,
+      "end": 5075,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 179,
+      "start": 5076,
+      "end": 5087,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 180,
+      "start": 5088,
+      "end": 5104,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 181,
+      "start": 5105,
+      "end": 5111,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 182,
+      "start": 5112,
+      "end": 5122,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 183,
+      "start": 5123,
+      "end": 5134,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 184,
+      "start": 5135,
+      "end": 5145,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 185,
+      "start": 5146,
+      "end": 5158,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 186,
+      "start": 5159,
+      "end": 5173,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 187,
+      "start": 5174,
+      "end": 5179,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 188,
+      "start": 5180,
+      "end": 5188,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 189,
+      "start": 5189,
+      "end": 5198,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 190,
+      "start": 5199,
+      "end": 5206,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 191,
+      "start": 5207,
+      "end": 5215,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 192,
+      "start": 5216,
+      "end": 5230,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 193,
+      "start": 5231,
+      "end": 5243,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 194,
+      "start": 5244,
+      "end": 5258,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 195,
+      "start": 5259,
+      "end": 5267,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 196,
+      "start": 5268,
+      "end": 5276,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 197,
+      "start": 5277,
+      "end": 5293,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 198,
+      "start": 5294,
+      "end": 5308,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 199,
+      "start": 5309,
+      "end": 5323,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 200,
+      "start": 5324,
+      "end": 5338,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 201,
+      "start": 5339,
+      "end": 5349,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 202,
+      "start": 5350,
+      "end": 5358,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 203,
+      "start": 5359,
+      "end": 5368,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 204,
+      "start": 5369,
+      "end": 5380,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 205,
+      "start": 5381,
+      "end": 5394,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 206,
+      "start": 5395,
+      "end": 5406,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 207,
+      "start": 5407,
+      "end": 5417,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 208,
+      "start": 5418,
+      "end": 5431,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 209,
+      "start": 5432,
+      "end": 5449,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 210,
+      "start": 5450,
+      "end": 5461,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 211,
+      "start": 5462,
+      "end": 5474,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 212,
+      "start": 5475,
+      "end": 5489,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 213,
+      "start": 5490,
+      "end": 5503,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 214,
+      "start": 5504,
+      "end": 5511,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 215,
+      "start": 5512,
+      "end": 5528,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 216,
+      "start": 5529,
+      "end": 5534,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 217,
+      "start": 5535,
+      "end": 5546,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 218,
+      "start": 5547,
+      "end": 5559,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 219,
+      "start": 5560,
+      "end": 5567,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 220,
+      "start": 5568,
+      "end": 5576,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 221,
+      "start": 5577,
+      "end": 5583,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 222,
+      "start": 5584,
+      "end": 5592,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 223,
+      "start": 5593,
+      "end": 5599,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 224,
+      "start": 5600,
+      "end": 5611,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 225,
+      "start": 5612,
+      "end": 5619,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 226,
+      "start": 5620,
+      "end": 5627,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 227,
+      "start": 5628,
+      "end": 5637,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 228,
+      "start": 5638,
+      "end": 5650,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 229,
+      "start": 5651,
+      "end": 5662,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 230,
+      "start": 5663,
+      "end": 5678,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 231,
+      "start": 5679,
+      "end": 5689,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 232,
+      "start": 5690,
+      "end": 5699,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 233,
+      "start": 5700,
+      "end": 5713,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 234,
+      "start": 5714,
+      "end": 5718,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 235,
+      "start": 5719,
+      "end": 5726,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 236,
+      "start": 5727,
+      "end": 5736,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 237,
+      "start": 5737,
+      "end": 5751,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 238,
+      "start": 5752,
+      "end": 5762,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 239,
+      "start": 5763,
+      "end": 5774,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 240,
+      "start": 5775,
+      "end": 5784,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 241,
+      "start": 5785,
+      "end": 5798,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 242,
+      "start": 5799,
+      "end": 5804,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 243,
+      "start": 5805,
+      "end": 5816,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 244,
+      "start": 5817,
+      "end": 5828,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 245,
+      "start": 5829,
+      "end": 5838,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 246,
+      "start": 5839,
+      "end": 5856,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 247,
+      "start": 5857,
+      "end": 5866,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 248,
+      "start": 5867,
+      "end": 5877,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 249,
+      "start": 5878,
+      "end": 5891,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 250,
+      "start": 5892,
+      "end": 5899,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 251,
+      "start": 5900,
+      "end": 5907,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 252,
+      "start": 5908,
+      "end": 5917,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 253,
+      "start": 5918,
+      "end": 5927,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 254,
+      "start": 5928,
+      "end": 5939,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 255,
+      "start": 5940,
+      "end": 5952,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 256,
+      "start": 5953,
+      "end": 5964,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 257,
+      "start": 5965,
+      "end": 5976,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 258,
+      "start": 5977,
+      "end": 5989,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 259,
+      "start": 5990,
+      "end": 5999,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 260,
+      "start": 6000,
+      "end": 6005,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 261,
+      "start": 6006,
+      "end": 6011,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 262,
+      "start": 6012,
+      "end": 6019,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 263,
+      "start": 6020,
+      "end": 6027,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 264,
+      "start": 6028,
+      "end": 6037,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 265,
+      "start": 6038,
+      "end": 6046,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 266,
+      "start": 6047,
+      "end": 6055,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 267,
+      "start": 6056,
+      "end": 6063,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 268,
+      "start": 6064,
+      "end": 6072,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 269,
+      "start": 6073,
+      "end": 6081,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 270,
+      "start": 6082,
+      "end": 6093,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 271,
+      "start": 6094,
+      "end": 6100,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 272,
+      "start": 6101,
+      "end": 6109,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 273,
+      "start": 6110,
+      "end": 6118,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 274,
+      "start": 6119,
+      "end": 6131,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 275,
+      "start": 6132,
+      "end": 6137,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 276,
+      "start": 6138,
+      "end": 6150,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 277,
+      "start": 6151,
+      "end": 6157,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 278,
+      "start": 6158,
+      "end": 6166,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 279,
+      "start": 6167,
+      "end": 6177,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 280,
+      "start": 6178,
+      "end": 6183,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 281,
+      "start": 6184,
+      "end": 6191,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 282,
+      "start": 6192,
+      "end": 6210,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 283,
+      "start": 6211,
+      "end": 6218,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 284,
+      "start": 6219,
+      "end": 6226,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 285,
+      "start": 6227,
+      "end": 6238,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 286,
+      "start": 6239,
+      "end": 6247,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 287,
+      "start": 6248,
+      "end": 6257,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 288,
+      "start": 6258,
+      "end": 6268,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 289,
+      "start": 6269,
+      "end": 6278,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 290,
+      "start": 6279,
+      "end": 6291,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 291,
+      "start": 6292,
+      "end": 6306,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 292,
+      "start": 6307,
+      "end": 6317,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 293,
+      "start": 6318,
+      "end": 6333,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 294,
+      "start": 6334,
+      "end": 6342,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 295,
+      "start": 6343,
+      "end": 6351,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 296,
+      "start": 6352,
+      "end": 6359,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 297,
+      "start": 6360,
+      "end": 6367,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 298,
+      "start": 6368,
+      "end": 6373,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 299,
+      "start": 6374,
+      "end": 6385,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 300,
+      "start": 6386,
+      "end": 6393,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 301,
+      "start": 6394,
+      "end": 6403,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 302,
+      "start": 6404,
+      "end": 6417,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 303,
+      "start": 6418,
+      "end": 6431,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 304,
+      "start": 6432,
+      "end": 6446,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 305,
+      "start": 6447,
+      "end": 6452,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 306,
+      "start": 6453,
+      "end": 6460,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 307,
+      "start": 6461,
+      "end": 6467,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 308,
+      "start": 6468,
+      "end": 6475,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 309,
+      "start": 6476,
+      "end": 6481,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 310,
+      "start": 6482,
+      "end": 6496,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 311,
+      "start": 6497,
+      "end": 6555,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 312,
+      "start": 6556,
+      "end": 6561,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 313,
+      "start": 6562,
+      "end": 6572,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 314,
+      "start": 6573,
+      "end": 6582,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 315,
+      "start": 6583,
+      "end": 6599,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 316,
+      "start": 6600,
+      "end": 6610,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 317,
+      "start": 6611,
+      "end": 6623,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 318,
+      "start": 6624,
+      "end": 6633,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 319,
+      "start": 6634,
+      "end": 6644,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 320,
+      "start": 6645,
+      "end": 6652,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 321,
+      "start": 6653,
+      "end": 6666,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 322,
+      "start": 6667,
+      "end": 6684,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 323,
+      "start": 6685,
+      "end": 6696,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 324,
+      "start": 6697,
+      "end": 6713,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 325,
+      "start": 6714,
+      "end": 6725,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 326,
+      "start": 6726,
+      "end": 6739,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 327,
+      "start": 6740,
+      "end": 6749,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 328,
+      "start": 6750,
+      "end": 6755,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 329,
+      "start": 6756,
+      "end": 6774,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 330,
+      "start": 6775,
+      "end": 6789,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 331,
+      "start": 6790,
+      "end": 6803,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 332,
+      "start": 6804,
+      "end": 6824,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 333,
+      "start": 6825,
+      "end": 6846,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 334,
+      "start": 6847,
+      "end": 6868,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 335,
+      "start": 6869,
+      "end": 6888,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 336,
+      "start": 6889,
+      "end": 6894,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 337,
+      "start": 6895,
+      "end": 6902,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 338,
+      "start": 6903,
+      "end": 6910,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 339,
+      "start": 6911,
+      "end": 6918,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 340,
+      "start": 6919,
+      "end": 6927,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 341,
+      "start": 6928,
+      "end": 6935,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 342,
+      "start": 6936,
+      "end": 6941,
+      "page": null
+    },
+    {
+      "heading": "### 点我分享笔记",
+      "paragraph": 343,
+      "start": 6942,
+      "end": 7022,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:11:17",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

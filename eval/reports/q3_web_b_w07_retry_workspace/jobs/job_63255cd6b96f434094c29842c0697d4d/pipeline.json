@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_63255cd6b96f434094c29842c0697d4d",
+  "goal": "开源大模型生态的商业模式",
+  "started_at": "2026-09-18T15:00:42",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 6 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T15:00:48"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "1 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T15:00:54"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 1, 'added_evidence': 8, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T15:01:35"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有证据仅涉汉字字形、国学网站与Gitee平台及AI工具，未提供开源大模型许可证、收入、分成或案例材料。",
+        "finished_at": "2026-09-18T15:01:46"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有证据仅涉汉字字形、国学网站与Gitee平台及AI工具，未提供开源大模型许可证、收入、分成或案例材料。；缺失信息：开源大模型许可证条款、商业化限制与合规案例、开源大模型厂商的收入来源与定价、模型厂商、社区、云厂商、应用开发者的分成合作机制、模力方舟定位、收费模式及与开源大模型的关系、中国典型开源大模型企业的案例、定价或财务数据（可用证据 14 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

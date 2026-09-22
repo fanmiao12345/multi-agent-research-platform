@@ -1,0 +1,106 @@
+{
+  "title": "远程医疗推广中的支持与反对观点：基于现有素材的可核查提纲",
+  "sections": [
+    {
+      "heading": "证据范围与判断口径",
+      "purpose": "说明素材来源、可回答边界与事实/推断/未知标记规则",
+      "required_evidence": [
+        "E-008",
+        "E-015",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点一：远程连接性能与响应",
+      "purpose": "梳理ToDesk关于连接稳定、低延迟、秒级响应的支持主张",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点二：跨地点协作与远程协助场景",
+      "purpose": "归纳远程协作、文件传输、手机接入等场景对医疗协助的类推支持",
+      "required_evidence": [
+        "E-004",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点三：安全合规与认证宣传",
+      "purpose": "呈现ToDesk与向日葵在验证、加密、审计、等保认证方面的安全主张",
+      "required_evidence": [
+        "E-005",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点四：效率提升与成本降低",
+      "purpose": "说明客户评价中提升支持效率、降低上门维修成本的支持论据",
+      "required_evidence": [
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "医疗相关证据：设备维护而非临床推广",
+      "purpose": "区分医疗设备远程维护与远程医疗临床推广，说明现有材料的有限支持",
+      "required_evidence": [
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-016",
+        "E-017"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "场景缺口：产品定位未提医疗",
+      "purpose": "指出ToDesk与向日葵企业方案主要面向办公与IT运维，未展开医疗应用",
+      "required_evidence": [
+        "E-007",
+        "E-009",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "反对观点：直接证据缺失",
+      "purpose": "说明现有页面均无反对远程医疗推广的观点或论据",
+      "required_evidence": [
+        "E-008",
+        "E-015",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "冲突与开放判断",
+      "purpose": "列出效率类推与场景未提医疗、设备维护与远程控制主题之间的未决冲突",
+      "required_evidence": [
+        "E-006",
+        "E-007",
+        "E-011",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "待补证据与后续核验",
+      "purpose": "汇总临床、患者、医生、监管、责任、公平性等缺口，避免越界结论",
+      "required_evidence": [
+        "E-008",
+        "E-015",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

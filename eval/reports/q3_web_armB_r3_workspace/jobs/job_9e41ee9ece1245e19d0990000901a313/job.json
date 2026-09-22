@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_9e41ee9ece1245e19d0990000901a313",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 4,
+    "usable": 4,
+    "statuses": {
+      "ok": 4
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 23 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-20T11:21:52"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:22:03"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:22:06"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅含远程协作工具功能宣称与用户评价，其余为音乐、歌词及分布式系统页面，未提供任何近期研究、实证数据或结论。",
+        "finished_at": "2026-09-20T11:22:11"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅含远程协作工具功能宣称与用户评价，其余为音乐、歌词及分布式系统页面，未提供任何近期研究、实证数据或结论。；缺失信息：近期同行评议论文、研究综述与实证数据、远程办公对沟通效率、信任与知识共享影响的分维度实证研究与对照数据、协作工具使用与团队协作绩效关系的对照研究、不同行业与团队规模下的分层样本或元分析、学术数据库检索记录与文献列表（可用证据 23 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.todesk.com/",
+      "https://music.163.com/song?id=421423808",
+      "https://lyrics.net.cn/lyrics/36778",
+      "https://javaguide.cn/distributed-system/distributed-system-intro.html"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 知识共享",
+        "rank": 1,
+        "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+        "url": "https://www.todesk.com/",
+        "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "虚拟团队 沟通效率 协作工具",
+        "rank": 2,
+        "title": "虚拟 - 陈粒 - 单曲 - 网易云音乐",
+        "url": "https://music.163.com/song?id=421423808",
+        "snippet": "包含这首歌的歌单 2026火遍全网的歌曲精选 by 世界是自由诗 全网超好听热播歌曲300首 by 微雨染尘埃 2026年度全网神曲精选100% …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "虚拟团队 沟通效率 协作工具",
+        "rank": 3,
+        "title": "虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+        "url": "https://lyrics.net.cn/lyrics/36778",
+        "snippet": "来自歌手陈粒的 虚拟 歌词详情:固执押韵的排比.固执幼稚的押韵.零零散散凑齐了阵营.固执美丽的意义.固执空洞的美丽.飘飘然然空中 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式团队 社会临场感 媒介丰富度",
+        "rank": 4,
+        "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+        "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+        "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+        "published_date": "2026-06-25",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 知识共享",
+        "urls": [
+          "https://www.todesk.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "远程办公 团队协作 知识共享",
+            "rank": 1,
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "ToDesk官网-远程桌面软件 | ToDesk电脑版免费下载",
+            "url": "https://todesk.cn.com/",
+            "relevance": 0.167,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "https://uuyc.163.com/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.244,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "虚拟团队 沟通效率 协作工具",
+        "urls": [
+          "https://music.163.com/song?id=421423808",
+          "https://lyrics.net.cn/lyrics/36778"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "虚拟团队 沟通效率 协作工具",
+            "rank": 2,
+            "title": "虚拟 - 陈粒 - 单曲 - 网易云音乐",
+            "url": "https://music.163.com/song?id=421423808",
+            "snippet": "包含这首歌的歌单 2026火遍全网的歌曲精选 by 世界是自由诗 全网超好听热播歌曲300首 by 微雨染尘埃 2026年度全网神曲精选100% …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "虚拟团队 沟通效率 协作工具",
+            "rank": 3,
+            "title": "虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+            "url": "https://lyrics.net.cn/lyrics/36778",
+            "snippet": "来自歌手陈粒的 虚拟 歌词详情:固执押韵的排比.固执幼稚的押韵.零零散散凑齐了阵营.固执美丽的意义.固执空洞的美丽.飘飘然然空中 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "虚拟 - 陈粒 - 单曲 - 网易云音乐",
+            "url": "https://music.163.com/song?id=421423808",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+            "url": "https://lyrics.net.cn/lyrics/36778",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "虚拟（2016年陈粒演唱的流行歌曲）_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F/19856233",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "虚拟（汉语词汇）_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F/10866735",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "#陈粒 #虚拟 #原版高清mv - 抖音",
+            "url": "https://www.douyin.com/video/7174794906978848057",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.412,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "混合办公 心理安全感 团队绩效",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "混合（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%B7%B7%E5%90%88/10963222",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "混合学习中心 | 登录",
+            "url": "https://il.xdf.cn/plus/",
+            "relevance": 0.1,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "混合 | 简体中文-英语翻译——剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93-%E8%8B%B1%E8%AF%AD/%E6%B7%B7%E5%90%88",
+            "relevance": 0.1,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "混合的意思,混合的拼音、近义词、反义词、造句 - 汉语查",
+            "url": "https://www.hgcha.com/cidian/7055eba2.html",
+            "relevance": 0.1,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "混合的意思_混合的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-1d00319d46",
+            "relevance": 0.1,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.224,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式团队 社会临场感 媒介丰富度",
+        "urls": [
+          "https://javaguide.cn/distributed-system/distributed-system-intro.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "分布式团队 社会临场感 媒介丰富度",
+            "rank": 4,
+            "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+            "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+            "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+            "published_date": "2026-06-25",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+            "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "大白话告你什么是分布式，史上最全详解！ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/382966178",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是分布式，分布式和集群的区别又是什么？这一篇让你 ...",
+            "url": "https://blog.csdn.net/weixin_42046751/article/details/109510811",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式系统（建立在网络之上的软件系统）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/4905336",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式（计算机的一种算法）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F/19276232",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.221,
+        "error": ""
+      }
+    ]
+  }
+}

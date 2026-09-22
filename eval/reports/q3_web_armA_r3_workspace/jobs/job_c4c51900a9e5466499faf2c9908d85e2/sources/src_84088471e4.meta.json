@@ -1,0 +1,419 @@
+{
+  "source_id": "src_84088471e4",
+  "kind": "paste",
+  "display": "粘贴文本 7",
+  "original_address": "paste:7",
+  "title": "登录 注册",
+  "content_format": "txt",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 6054,
+  "content_hash": "d60417d1799d902af59602a0d450b323c48b413fbb979701be939dfbce40dc39",
+  "normalized_hash": "21fbfa9cad8496622df2e79476b7588c0c933877da768e3a05600cd2344a13dd",
+  "captured_at": "2026-09-20T11:06:42",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_84088471e4.txt",
+  "encoding": "utf-8",
+  "segment_count": 55,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 6,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 7,
+      "end": 16,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 17,
+      "end": 51,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 52,
+      "end": 55,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 56,
+      "end": 61,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 62,
+      "end": 105,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 106,
+      "end": 111,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 112,
+      "end": 144,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 145,
+      "end": 150,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 151,
+      "end": 190,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 191,
+      "end": 196,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 197,
+      "end": 227,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 228,
+      "end": 251,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 252,
+      "end": 255,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 256,
+      "end": 259,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 260,
+      "end": 265,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 266,
+      "end": 269,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 270,
+      "end": 275,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 276,
+      "end": 281,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 282,
+      "end": 287,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 288,
+      "end": 293,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 294,
+      "end": 319,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 320,
+      "end": 567,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 568,
+      "end": 574,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 575,
+      "end": 581,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 582,
+      "end": 590,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 591,
+      "end": 914,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 915,
+      "end": 922,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 923,
+      "end": 1036,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 1037,
+      "end": 1045,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 1046,
+      "end": 1323,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 1324,
+      "end": 1331,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 1332,
+      "end": 1483,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 1484,
+      "end": 1489,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 1490,
+      "end": 1809,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 1810,
+      "end": 1819,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 1820,
+      "end": 1914,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 1915,
+      "end": 1922,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 1923,
+      "end": 1973,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 1974,
+      "end": 1989,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 1990,
+      "end": 1997,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 1998,
+      "end": 2004,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 2005,
+      "end": 2012,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 2013,
+      "end": 2018,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 2019,
+      "end": 2025,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 2026,
+      "end": 2032,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 2033,
+      "end": 2130,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 47,
+      "start": 2131,
+      "end": 2200,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 48,
+      "start": 2201,
+      "end": 2203,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 49,
+      "start": 2204,
+      "end": 2221,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 50,
+      "start": 2222,
+      "end": 2263,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 51,
+      "start": 2264,
+      "end": 2290,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 52,
+      "start": 2291,
+      "end": 2332,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 53,
+      "start": 2333,
+      "end": 2350,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 54,
+      "start": 2351,
+      "end": 2354,
+      "page": null
+    }
+  ],
+  "final_url": "",
+  "http_status": null,
+  "content_type": "",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:06:42",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

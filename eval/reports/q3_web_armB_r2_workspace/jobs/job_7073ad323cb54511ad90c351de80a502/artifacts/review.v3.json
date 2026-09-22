@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-023）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "范围段称RPA/AI/智能体证据未给出可辨识来源，但E-001至E-008均标有同一来源，断言不实"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "术语IPA段称E-017称IPA表与RPA智能体边界无关；E-017仅称属语音学，无关判断来自E-022/E-023"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "开放冲突段称素材包冲突记录将IPA指代不同列为开放冲突；证据索引无此记录，属未支持添加"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "缺口段称现有证据未标明来源属性；E-002/E-006来源已标为阿里云开发者社区，表述与证据不符"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "术语IPA段未写出提纲中的“人工智能流程自动化”名称，仅称融合语境IPA；应说明该称法来自提纲而非E-004"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "范围段把E-017/E-022/E-023的来源描述为“IPA表资料/IPA资料”，但来源字段为“该来源”，名称表述不精确"
+  }
+ ]
+}

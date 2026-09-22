@@ -1,0 +1,101 @@
+{
+  "title": "新能源汽车电池回收行业现状与监管报告提纲",
+  "sections": [
+    {
+      "heading": "行业论坛与参与方概览",
+      "purpose": "梳理论坛时间地点、出席方与关联组织。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "政策合规与趋势议题",
+      "purpose": "说明论坛涉及的政策解析、合规与趋势议题。",
+      "required_evidence": [
+        "E-003"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "技术与循环体系议题",
+      "purpose": "归纳退役电池循环体系与回收氨技术议题。",
+      "required_evidence": [
+        "E-004",
+        "E-005"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "回收项目数据动态栏目",
+      "purpose": "指出数据分析栏目已列出4月和5月项目汇总。",
+      "required_evidence": [
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "无关资料识别与排除",
+      "purpose": "识别与电池回收主题无关或仅有加载提示的资料。",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "行业现状关键数据缺口",
+      "purpose": "列明行业现状关键统计数据在素材中的缺口。",
+      "required_evidence": [
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "监管制度与政策内容缺口",
+      "purpose": "列明现行监管制度与论坛政策内容在素材中的缺口。",
+      "required_evidence": [
+        "E-003"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "回收项目明细缺口",
+      "purpose": "指出项目汇总企业、产能与投资额明细缺口。",
+      "required_evidence": [
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "回收联盟作用资料缺口",
+      "purpose": "指出动力电池回收联盟作用相关文件缺口。",
+      "required_evidence": [
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "证据边界与结论",
+      "purpose": "总结可核实信息与无法完成部分，形成边界结论。",
+      "required_evidence": [
+        "E-001",
+        "E-003",
+        "E-006",
+        "E-008",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

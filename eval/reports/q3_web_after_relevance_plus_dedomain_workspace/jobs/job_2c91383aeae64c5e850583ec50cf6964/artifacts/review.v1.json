@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-061）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-067）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-061,E-067）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "第10节用〔未知〕标注开放冲突与缺口，未按要求使用事实/推断标注，建议统一标注。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第8节“插件、社区、剪藏与中文界面提供扩展线索”引用E-054/E-055/E-057/E-060，部分条目不直接支持该并列项。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "第1节相关性判定只列无关资料，未明示卡片盒、PKMer、Obsidian等为相关证据组，建议补充。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "第10节将“中文多义词如何上下文消歧”列为缺口，但前文已据E-013推断需消歧，宜说明缺的是实现方法。"
+  }
+ ]
+}

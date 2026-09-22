@@ -1,0 +1,128 @@
+{
+  "title": "个人知识管理系统中的检索与记忆设计：基于现有资料的证据梳理与缺口清单",
+  "sections": [
+    {
+      "heading": "报告范围与证据边界",
+      "purpose": "明确报告范围与不可回答的边界。",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-013",
+        "E-029",
+        "E-039"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "「个人」的指代辨析与系统命名前提",
+      "purpose": "界定「个人」指说话者还是泛指个体。",
+      "required_evidence": [
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "本地知识网络作为检索与记忆的底座",
+      "purpose": "说明本地存储与知识网络如何构成底座。",
+      "required_evidence": [
+        "E-030",
+        "E-031",
+        "E-032",
+        "E-034",
+        "E-035",
+        "E-014",
+        "E-015",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "双向链接与笔记间关联",
+      "purpose": "解释双向链接如何建立笔记间关系。",
+      "required_evidence": [
+        "E-017",
+        "E-036",
+        "E-020"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "图谱可视化与关系发现",
+      "purpose": "说明图谱如何可视化知识关系。",
+      "required_evidence": [
+        "E-018",
+        "E-037"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "查询插件与数据化检索的可能性",
+      "purpose": "评估查询插件对检索设计的支撑与不足。",
+      "required_evidence": [
+        "E-019"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "版本历史与修订追踪对记忆的间接支持",
+      "purpose": "分析版本历史对记忆支持的间接作用。",
+      "required_evidence": [
+        "E-021",
+        "E-033"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "客户端、插件与采集入口的支撑条件",
+      "purpose": "梳理多端与采集能力对检索记忆的条件。",
+      "required_evidence": [
+        "E-022",
+        "E-023",
+        "E-024",
+        "E-025",
+        "E-026",
+        "E-027",
+        "E-028"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "检索设计的直接证据缺口",
+      "purpose": "列出检索设计缺失的直接证据与问题。",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-029"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "记忆设计的直接证据缺口",
+      "purpose": "列出记忆设计缺失的直接证据与问题。",
+      "required_evidence": [
+        "E-005",
+        "E-013",
+        "E-029"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "证据边界内的综合回答与验证方向",
+      "purpose": "在证据边界内给出综合回答与验证方向。",
+      "required_evidence": [
+        "E-032",
+        "E-036",
+        "E-019",
+        "E-021"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

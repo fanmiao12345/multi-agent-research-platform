@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_a4d60f1982",
+      "fact": "本资料是新浪网的404错误页面，没有可用的新闻正文内容。",
+      "tag": "F",
+      "quote": "The requested URL was not found on the server.",
+      "start": 14212,
+      "end": 14258,
+      "locator": {
+        "heading": "# Not Found",
+        "paragraph": 500,
+        "start": 14212,
+        "end": 14333
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_a4d60f1982",
+      "fact": "本资料页面顶部为新浪网栏目导航与菜单，未见任何报道正文。",
+      "tag": "F",
+      "quote": "设为首页",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 5
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_a4d60f1982",
+      "fact": "本资料未提供新能源汽车电池回收行业现状的任何事实。",
+      "tag": "F",
+      "quote": "# Not Found",
+      "start": 14199,
+      "end": 14210,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_a4d60f1982",
+      "fact": "本资料未提及电池回收相关监管政策、法规或主管部门。",
+      "tag": "F",
+      "quote": "# Not Found",
+      "start": 14199,
+      "end": 14210,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_a4d60f1982",
+      "fact": "本资料未给出电池回收企业、市场规模或回收率等数据。",
+      "tag": "F",
+      "quote": "# Not Found",
+      "start": 14199,
+      "end": 14210,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

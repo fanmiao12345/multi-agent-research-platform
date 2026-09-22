@@ -1,0 +1,171 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "资料与教育生成式AI无关的娱乐报道证据",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "该资料为梅艳芳娱乐报道，与教育领域无关。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "该资料未出现生成式AI、教学应用或教育收益风险内容。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "该资料仅记述梅艳芳2003年红馆最后演出及身体状况。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "该资料属娱乐频道，正文外仅有平台免责声明。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "页面导航虽含「教育」二字，但正文无教育主题内容。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "该资料无法为教育领域使用生成式AI的收益与风险提供证据。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "该资料为梅艳芳生平娱乐报道，与教育或生成式AI无关。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "该资料未提供可用于分析教育领域生成式AI收益与风险的事实或数据。"
+          }
+        ]
+      },
+      {
+        "name": "英语语法资料与主题无关",
+        "points": [
+          {
+            "evidence_id": "E-009",
+            "statement": "该资料主题为英语be、being、been用法区别，与生成式AI无关。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "该资料未提供教育领域使用生成式AI收益的任何信息。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "该资料说明being是be动词的ing形式，表达正在进行时。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "该资料说明been用在完成时助动词have/has/had后面。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "该资料称be是原形，可作助动词，后接doing或done结构。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "该资料仅辨析human beings与human being用法，与教育生成式AI无关。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "该资料未提供生成式AI在教育中的任何收益或风险信息。"
+          }
+        ]
+      },
+      {
+        "name": "UNESCO的AI治理背景",
+        "points": [
+          {
+            "evidence_id": "E-016",
+            "statement": "UNESCO主张新兴AI技术应服务于公平、机会与包容。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "UNESCO与ITU共同担任联合国AI治理全球对话的联合秘书处。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "该AI治理对话旨在让AI治理反映所有国家而非仅技术先进国家的优先事项。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "教宗访问UNESCO的议题涵盖AI时代的信息诚信、教育与艺术创作。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "UNESCO第四次AI伦理全球论坛在沙特举行，强化全球伦理AI治理合作。"
+          }
+        ]
+      },
+      {
+        "name": "UNESCO的AI与教育相关但无具体生成式AI收益风险",
+        "points": [
+          {
+            "evidence_id": "E-020",
+            "statement": "UNESCO把「用新技术和人工智能学习」列为社区影响案例之一。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "本资料仅笼统提及AI与学习，未列举教育中使用生成式AI的具体收益或风险。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "本资料提到教科文组织数字学习周，教育部长呼吁人工智能时代仍须坚持将教育作为公共利益。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "本资料将人工智能与教育公共利益相联系，但未展开生成式AI的教育应用收益。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "本资料未具体说明生成式AI在教育中的收益、风险或治理措施。"
+          }
+        ]
+      },
+      {
+        "name": "AI相关风险的非教育证据",
+        "points": [
+          {
+            "evidence_id": "E-022",
+            "statement": "UNESCO指出数字平台虽扩大信息获取，却可能削弱独立新闻的条件。"
+          },
+          {
+            "evidence_id": "E-025",
+            "statement": "本资料显示教科文组织调查指出近3/4受访女记者曾面临网络暴力，1/4遭受人身或死亡威胁。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "本资料称人工智能通过深度伪造、人肉搜索、骚扰等加剧对女记者的虐待行为。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "本资料称教科文组织呼吁通过对话、倡导和政策改革，打击人工智能助长的性别暴力。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "教育领域使用生成式AI的具体收益有哪些？",
+        "missing": "教育场景的实证研究、课堂案例与效果数据。"
+      },
+      {
+        "question": "教育领域使用生成式AI的具体风险有哪些？",
+        "missing": "学术诚信、隐私、偏见与依赖等风险评估材料。"
+      },
+      {
+        "question": "不同学段与学科的生成式AI应用效果和风险差异如何？",
+        "missing": "分学段、分学科的对比研究与数据。"
+      },
+      {
+        "question": "教育中使用生成式AI的治理与政策要求是什么？",
+        "missing": "政策文本、指南、伦理规范与评估框架。"
+      },
+      {
+        "question": "现有UNESCO资料是否提供生成式AI教育应用的直接证据？",
+        "missing": "UNESCO关于生成式AI教育的专题报告或具体条目。"
+      }
+    ],
+    "duplicates": []
+  }
+}

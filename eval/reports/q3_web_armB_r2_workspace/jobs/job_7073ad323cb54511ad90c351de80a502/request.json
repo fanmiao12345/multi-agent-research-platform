@@ -1,0 +1,23 @@
+{
+  "task": "机器人流程自动化与智能体的边界",
+  "mode": "real",
+  "profile": null,
+  "max_iterations": 8,
+  "max_calls": 60,
+  "max_output_tokens": 200000,
+  "max_seconds": 1500.0,
+  "max_cost": 0.12,
+  "system_extra": "",
+  "files": [],
+  "urls": [],
+  "allow_network": true,
+  "flow": "research",
+  "delivery_kind": "auto",
+  "orchestration": "dynamic_team",
+  "revises_job": "",
+  "required_sections": [],
+  "forbidden_claims": [],
+  "key_facts": [],
+  "allowed_tools": null,
+  "effective_max_cost": 0.12
+}

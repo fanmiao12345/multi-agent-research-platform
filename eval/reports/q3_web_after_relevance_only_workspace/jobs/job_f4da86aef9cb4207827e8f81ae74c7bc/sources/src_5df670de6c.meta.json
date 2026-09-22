@@ -1,0 +1,1721 @@
+{
+  "source_id": "src_5df670de6c",
+  "kind": "url",
+  "display": "互联二维码生成器",
+  "original_address": "https://www.hlcode.cn/",
+  "title": "互联二维码生成器",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 11218,
+  "content_hash": "d6df7863e5242cb33ab2738e5fd4d008a346919aa6c669acb4d6b07346c49406",
+  "normalized_hash": "51aeb7a8655f69877c29d13c7a5de712a04feed8233369f0ddbfe2f6df2388bb",
+  "captured_at": "2026-09-18T14:09:38",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_5df670de6c.md",
+  "encoding": "utf-8",
+  "segment_count": 241,
+  "segments": [
+    {
+      "heading": "# 互联二维码生成器",
+      "paragraph": 0,
+      "start": 12,
+      "end": 20,
+      "page": null
+    },
+    {
+      "heading": "# 互联二维码生成器",
+      "paragraph": 1,
+      "start": 21,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 2,
+      "start": 117,
+      "end": 123,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 3,
+      "start": 124,
+      "end": 147,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 4,
+      "start": 148,
+      "end": 153,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 5,
+      "start": 154,
+      "end": 160,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 6,
+      "start": 161,
+      "end": 167,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 7,
+      "start": 168,
+      "end": 173,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 8,
+      "start": 174,
+      "end": 180,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 9,
+      "start": 181,
+      "end": 189,
+      "page": null
+    },
+    {
+      "heading": "## 二维码解码",
+      "paragraph": 10,
+      "start": 190,
+      "end": 196,
+      "page": null
+    },
+    {
+      "heading": "### 产品介绍",
+      "paragraph": 11,
+      "start": 218,
+      "end": 229,
+      "page": null
+    },
+    {
+      "heading": "### 信息展示",
+      "paragraph": 12,
+      "start": 240,
+      "end": 251,
+      "page": null
+    },
+    {
+      "heading": "### 文化旅游",
+      "paragraph": 13,
+      "start": 262,
+      "end": 274,
+      "page": null
+    },
+    {
+      "heading": "### 教育培训",
+      "paragraph": 14,
+      "start": 285,
+      "end": 296,
+      "page": null
+    },
+    {
+      "heading": "### 医疗卫生",
+      "paragraph": 15,
+      "start": 307,
+      "end": 317,
+      "page": null
+    },
+    {
+      "heading": "### 设备巡检",
+      "paragraph": 16,
+      "start": 328,
+      "end": 338,
+      "page": null
+    },
+    {
+      "heading": "### 数据收集",
+      "paragraph": 17,
+      "start": 349,
+      "end": 360,
+      "page": null
+    },
+    {
+      "heading": "### 物业后勤",
+      "paragraph": 18,
+      "start": 371,
+      "end": 383,
+      "page": null
+    },
+    {
+      "heading": "### 建筑施工",
+      "paragraph": 19,
+      "start": 405,
+      "end": 417,
+      "page": null
+    },
+    {
+      "heading": "### 生产制造",
+      "paragraph": 20,
+      "start": 428,
+      "end": 441,
+      "page": null
+    },
+    {
+      "heading": "### 行政机构",
+      "paragraph": 21,
+      "start": 452,
+      "end": 465,
+      "page": null
+    },
+    {
+      "heading": "### 能源电力",
+      "paragraph": 22,
+      "start": 476,
+      "end": 488,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 23,
+      "start": 511,
+      "end": 547,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 24,
+      "start": 548,
+      "end": 553,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 25,
+      "start": 554,
+      "end": 559,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 26,
+      "start": 560,
+      "end": 565,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 27,
+      "start": 566,
+      "end": 571,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 28,
+      "start": 572,
+      "end": 577,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 29,
+      "start": 578,
+      "end": 583,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 30,
+      "start": 584,
+      "end": 589,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 31,
+      "start": 590,
+      "end": 594,
+      "page": null
+    },
+    {
+      "heading": "## 多行业案例模板，一键快速生成二维码",
+      "paragraph": 32,
+      "start": 595,
+      "end": 598,
+      "page": null
+    },
+    {
+      "heading": "### 产品案例合集",
+      "paragraph": 33,
+      "start": 611,
+      "end": 614,
+      "page": null
+    },
+    {
+      "heading": "### 产品检测报告",
+      "paragraph": 34,
+      "start": 627,
+      "end": 630,
+      "page": null
+    },
+    {
+      "heading": "### 手表饰品产品介绍",
+      "paragraph": 35,
+      "start": 645,
+      "end": 648,
+      "page": null
+    },
+    {
+      "heading": "### 产品介绍详情",
+      "paragraph": 36,
+      "start": 661,
+      "end": 664,
+      "page": null
+    },
+    {
+      "heading": "### 产品汇总目录",
+      "paragraph": 37,
+      "start": 677,
+      "end": 680,
+      "page": null
+    },
+    {
+      "heading": "### 产品说明书",
+      "paragraph": 38,
+      "start": 692,
+      "end": 695,
+      "page": null
+    },
+    {
+      "heading": "### 产品介绍",
+      "paragraph": 39,
+      "start": 706,
+      "end": 709,
+      "page": null
+    },
+    {
+      "heading": "### 产品目录",
+      "paragraph": 40,
+      "start": 720,
+      "end": 723,
+      "page": null
+    },
+    {
+      "heading": "### 产品详情介绍",
+      "paragraph": 41,
+      "start": 736,
+      "end": 739,
+      "page": null
+    },
+    {
+      "heading": "### 产品及功能介绍",
+      "paragraph": 42,
+      "start": 753,
+      "end": 756,
+      "page": null
+    },
+    {
+      "heading": "### 商品标签",
+      "paragraph": 43,
+      "start": 767,
+      "end": 770,
+      "page": null
+    },
+    {
+      "heading": "### 样品款式介绍",
+      "paragraph": 44,
+      "start": 783,
+      "end": 786,
+      "page": null
+    },
+    {
+      "heading": "### 产品保修卡",
+      "paragraph": 45,
+      "start": 798,
+      "end": 801,
+      "page": null
+    },
+    {
+      "heading": "### 产品维保记录",
+      "paragraph": 46,
+      "start": 814,
+      "end": 817,
+      "page": null
+    },
+    {
+      "heading": "### 茶叶饮品标签",
+      "paragraph": 47,
+      "start": 830,
+      "end": 833,
+      "page": null
+    },
+    {
+      "heading": "### 产品宣传介绍",
+      "paragraph": 48,
+      "start": 846,
+      "end": 849,
+      "page": null
+    },
+    {
+      "heading": "### 产品宣传介绍",
+      "paragraph": 49,
+      "start": 862,
+      "end": 865,
+      "page": null
+    },
+    {
+      "heading": "### 无线洗地机介绍",
+      "paragraph": 50,
+      "start": 879,
+      "end": 882,
+      "page": null
+    },
+    {
+      "heading": "### 服装标牌",
+      "paragraph": 51,
+      "start": 893,
+      "end": 896,
+      "page": null
+    },
+    {
+      "heading": "### 产品使用说明书",
+      "paragraph": 52,
+      "start": 910,
+      "end": 913,
+      "page": null
+    },
+    {
+      "heading": "### 烟花产品介绍",
+      "paragraph": 53,
+      "start": 926,
+      "end": 929,
+      "page": null
+    },
+    {
+      "heading": "### 产品溯源",
+      "paragraph": 54,
+      "start": 940,
+      "end": 943,
+      "page": null
+    },
+    {
+      "heading": "### 菜单展示",
+      "paragraph": 55,
+      "start": 954,
+      "end": 957,
+      "page": null
+    },
+    {
+      "heading": "### 电气设备标识",
+      "paragraph": 56,
+      "start": 970,
+      "end": 973,
+      "page": null
+    },
+    {
+      "heading": "### 农产品生产者承诺达标合格证",
+      "paragraph": 57,
+      "start": 993,
+      "end": 996,
+      "page": null
+    },
+    {
+      "heading": "### 农产品生产者承诺达标合格证",
+      "paragraph": 58,
+      "start": 1016,
+      "end": 1019,
+      "page": null
+    },
+    {
+      "heading": "### 预包装食品数字标签",
+      "paragraph": 59,
+      "start": 1035,
+      "end": 1038,
+      "page": null
+    },
+    {
+      "heading": "### 宠物饲料标签",
+      "paragraph": 60,
+      "start": 1051,
+      "end": 1054,
+      "page": null
+    },
+    {
+      "heading": "### 农药标签",
+      "paragraph": 61,
+      "start": 1065,
+      "end": 1068,
+      "page": null
+    },
+    {
+      "heading": "### 饲料标签",
+      "paragraph": 62,
+      "start": 1079,
+      "end": 1082,
+      "page": null
+    },
+    {
+      "heading": "### 农作物种子标签",
+      "paragraph": 63,
+      "start": 1096,
+      "end": 1099,
+      "page": null
+    },
+    {
+      "heading": "## 支持图片、文件、音视频、表单等二维码的生成",
+      "paragraph": 64,
+      "start": 1142,
+      "end": 1167,
+      "page": null
+    },
+    {
+      "heading": "## 支持图片、文件、音视频、表单等二维码的生成",
+      "paragraph": 65,
+      "start": 1168,
+      "end": 1171,
+      "page": null
+    },
+    {
+      "heading": "## 支持图片、文件、音视频、表单等二维码的生成",
+      "paragraph": 66,
+      "start": 1172,
+      "end": 1175,
+      "page": null
+    },
+    {
+      "heading": "## 支持图片、文件、音视频、表单等二维码的生成",
+      "paragraph": 67,
+      "start": 1176,
+      "end": 1180,
+      "page": null
+    },
+    {
+      "heading": "## 支持图片、文件、音视频、表单等二维码的生成",
+      "paragraph": 68,
+      "start": 1181,
+      "end": 1186,
+      "page": null
+    },
+    {
+      "heading": "## 支持图片、文件、音视频、表单等二维码的生成",
+      "paragraph": 69,
+      "start": 1187,
+      "end": 1190,
+      "page": null
+    },
+    {
+      "heading": "### 图片上传生成二维码扫码查看",
+      "paragraph": 70,
+      "start": 1210,
+      "end": 1228,
+      "page": null
+    },
+    {
+      "heading": "### 图片上传生成二维码扫码查看",
+      "paragraph": 71,
+      "start": 1229,
+      "end": 1258,
+      "page": null
+    },
+    {
+      "heading": "### 图片展示样式多样",
+      "paragraph": 72,
+      "start": 1273,
+      "end": 1287,
+      "page": null
+    },
+    {
+      "heading": "### 图片展示样式多样",
+      "paragraph": 73,
+      "start": 1288,
+      "end": 1306,
+      "page": null
+    },
+    {
+      "heading": "### 图片展示样式多样",
+      "paragraph": 74,
+      "start": 1307,
+      "end": 1312,
+      "page": null
+    },
+    {
+      "heading": "### Word、pdf、WPS文档生成二维码",
+      "paragraph": 75,
+      "start": 1338,
+      "end": 1350,
+      "page": null
+    },
+    {
+      "heading": "### Word、pdf、WPS文档生成二维码",
+      "paragraph": 76,
+      "start": 1351,
+      "end": 1372,
+      "page": null
+    },
+    {
+      "heading": "### 随时随地，扫码查看文件",
+      "paragraph": 77,
+      "start": 1390,
+      "end": 1408,
+      "page": null
+    },
+    {
+      "heading": "### 随时随地，扫码查看文件",
+      "paragraph": 78,
+      "start": 1409,
+      "end": 1434,
+      "page": null
+    },
+    {
+      "heading": "### 随时随地，扫码查看文件",
+      "paragraph": 79,
+      "start": 1435,
+      "end": 1440,
+      "page": null
+    },
+    {
+      "heading": "### 音频、视频上传生成二维码",
+      "paragraph": 80,
+      "start": 1459,
+      "end": 1479,
+      "page": null
+    },
+    {
+      "heading": "### 音频、视频上传生成二维码",
+      "paragraph": 81,
+      "start": 1480,
+      "end": 1501,
+      "page": null
+    },
+    {
+      "heading": "### 扫一扫在线播放，可添加多个音视频",
+      "paragraph": 82,
+      "start": 1524,
+      "end": 1543,
+      "page": null
+    },
+    {
+      "heading": "### 扫一扫在线播放，可添加多个音视频",
+      "paragraph": 83,
+      "start": 1544,
+      "end": 1566,
+      "page": null
+    },
+    {
+      "heading": "### 扫一扫在线播放，可添加多个音视频",
+      "paragraph": 84,
+      "start": 1567,
+      "end": 1572,
+      "page": null
+    },
+    {
+      "heading": "### 上传图片、PDF文档制作电子画册",
+      "paragraph": 85,
+      "start": 1595,
+      "end": 1615,
+      "page": null
+    },
+    {
+      "heading": "### 上传图片、PDF文档制作电子画册",
+      "paragraph": 86,
+      "start": 1616,
+      "end": 1639,
+      "page": null
+    },
+    {
+      "heading": "### 3D拟真翻页动效，逼真的阅读体验",
+      "paragraph": 87,
+      "start": 1662,
+      "end": 1677,
+      "page": null
+    },
+    {
+      "heading": "### 3D拟真翻页动效，逼真的阅读体验",
+      "paragraph": 88,
+      "start": 1678,
+      "end": 1698,
+      "page": null
+    },
+    {
+      "heading": "### 3D拟真翻页动效，逼真的阅读体验",
+      "paragraph": 89,
+      "start": 1699,
+      "end": 1704,
+      "page": null
+    },
+    {
+      "heading": "### 表单内容自定义，快速收集数据",
+      "paragraph": 90,
+      "start": 1725,
+      "end": 1744,
+      "page": null
+    },
+    {
+      "heading": "### 表单内容自定义，快速收集数据",
+      "paragraph": 91,
+      "start": 1745,
+      "end": 1766,
+      "page": null
+    },
+    {
+      "heading": "### 表单数据实时查看，数据一键导出",
+      "paragraph": 92,
+      "start": 1788,
+      "end": 1802,
+      "page": null
+    },
+    {
+      "heading": "### 表单数据实时查看，数据一键导出",
+      "paragraph": 93,
+      "start": 1803,
+      "end": 1827,
+      "page": null
+    },
+    {
+      "heading": "### 表单数据实时查看，数据一键导出",
+      "paragraph": 94,
+      "start": 1828,
+      "end": 1833,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 95,
+      "start": 1860,
+      "end": 1889,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 96,
+      "start": 1890,
+      "end": 1895,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 97,
+      "start": 1896,
+      "end": 1901,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 98,
+      "start": 1902,
+      "end": 1907,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 99,
+      "start": 1908,
+      "end": 1913,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 100,
+      "start": 1914,
+      "end": 1919,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 101,
+      "start": 1920,
+      "end": 1925,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 102,
+      "start": 1926,
+      "end": 1931,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 103,
+      "start": 1932,
+      "end": 1936,
+      "page": null
+    },
+    {
+      "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+      "paragraph": 104,
+      "start": 1937,
+      "end": 1942,
+      "page": null
+    },
+    {
+      "heading": "### 表单内容自主设计，扫码即可填写",
+      "paragraph": 105,
+      "start": 1964,
+      "end": 1993,
+      "page": null
+    },
+    {
+      "heading": "### 表单内容自主设计，扫码即可填写",
+      "paragraph": 106,
+      "start": 1994,
+      "end": 2025,
+      "page": null
+    },
+    {
+      "heading": "### 表单内容自主设计，扫码即可填写",
+      "paragraph": 107,
+      "start": 2026,
+      "end": 2031,
+      "page": null
+    },
+    {
+      "heading": "### 表单内容自主设计，扫码即可填写",
+      "paragraph": 108,
+      "start": 2032,
+      "end": 2037,
+      "page": null
+    },
+    {
+      "heading": "### 创建考卷，用户填写自动计算分数",
+      "paragraph": 109,
+      "start": 2059,
+      "end": 2087,
+      "page": null
+    },
+    {
+      "heading": "### 创建考卷，用户填写自动计算分数",
+      "paragraph": 110,
+      "start": 2088,
+      "end": 2120,
+      "page": null
+    },
+    {
+      "heading": "### 创建考卷，用户填写自动计算分数",
+      "paragraph": 111,
+      "start": 2121,
+      "end": 2126,
+      "page": null
+    },
+    {
+      "heading": "### 创建考卷，用户填写自动计算分数",
+      "paragraph": 112,
+      "start": 2127,
+      "end": 2132,
+      "page": null
+    },
+    {
+      "heading": "### 报名项目灵活设置，让报名更轻松",
+      "paragraph": 113,
+      "start": 2154,
+      "end": 2193,
+      "page": null
+    },
+    {
+      "heading": "### 报名项目灵活设置，让报名更轻松",
+      "paragraph": 114,
+      "start": 2194,
+      "end": 2221,
+      "page": null
+    },
+    {
+      "heading": "### 报名项目灵活设置，让报名更轻松",
+      "paragraph": 115,
+      "start": 2222,
+      "end": 2227,
+      "page": null
+    },
+    {
+      "heading": "### 报名项目灵活设置，让报名更轻松",
+      "paragraph": 116,
+      "start": 2228,
+      "end": 2233,
+      "page": null
+    },
+    {
+      "heading": "### 客户预约轻松，业务管理简单",
+      "paragraph": 117,
+      "start": 2253,
+      "end": 2292,
+      "page": null
+    },
+    {
+      "heading": "### 客户预约轻松，业务管理简单",
+      "paragraph": 118,
+      "start": 2293,
+      "end": 2315,
+      "page": null
+    },
+    {
+      "heading": "### 客户预约轻松，业务管理简单",
+      "paragraph": 119,
+      "start": 2316,
+      "end": 2321,
+      "page": null
+    },
+    {
+      "heading": "### 客户预约轻松，业务管理简单",
+      "paragraph": 120,
+      "start": 2322,
+      "end": 2329,
+      "page": null
+    },
+    {
+      "heading": "### 数据开放共享，让查询更轻松安全",
+      "paragraph": 121,
+      "start": 2351,
+      "end": 2397,
+      "page": null
+    },
+    {
+      "heading": "### 数据开放共享，让查询更轻松安全",
+      "paragraph": 122,
+      "start": 2398,
+      "end": 2438,
+      "page": null
+    },
+    {
+      "heading": "### 数据开放共享，让查询更轻松安全",
+      "paragraph": 123,
+      "start": 2439,
+      "end": 2444,
+      "page": null
+    },
+    {
+      "heading": "### 数据开放共享，让查询更轻松安全",
+      "paragraph": 124,
+      "start": 2445,
+      "end": 2452,
+      "page": null
+    },
+    {
+      "heading": "### 自由设计测评题目，专业又有趣",
+      "paragraph": 125,
+      "start": 2473,
+      "end": 2513,
+      "page": null
+    },
+    {
+      "heading": "### 自由设计测评题目，专业又有趣",
+      "paragraph": 126,
+      "start": 2514,
+      "end": 2546,
+      "page": null
+    },
+    {
+      "heading": "### 自由设计测评题目，专业又有趣",
+      "paragraph": 127,
+      "start": 2547,
+      "end": 2552,
+      "page": null
+    },
+    {
+      "heading": "### 自由设计测评题目，专业又有趣",
+      "paragraph": 128,
+      "start": 2553,
+      "end": 2558,
+      "page": null
+    },
+    {
+      "heading": "### 扫码填写出入库，库存自动更新",
+      "paragraph": 129,
+      "start": 2579,
+      "end": 2613,
+      "page": null
+    },
+    {
+      "heading": "### 扫码填写出入库，库存自动更新",
+      "paragraph": 130,
+      "start": 2614,
+      "end": 2645,
+      "page": null
+    },
+    {
+      "heading": "### 扫码填写出入库，库存自动更新",
+      "paragraph": 131,
+      "start": 2646,
+      "end": 2651,
+      "page": null
+    },
+    {
+      "heading": "### 扫码填写出入库，库存自动更新",
+      "paragraph": 132,
+      "start": 2652,
+      "end": 2656,
+      "page": null
+    },
+    {
+      "heading": "### 填写表单获取，商家扫码核销",
+      "paragraph": 133,
+      "start": 2676,
+      "end": 2718,
+      "page": null
+    },
+    {
+      "heading": "### 填写表单获取，商家扫码核销",
+      "paragraph": 134,
+      "start": 2719,
+      "end": 2749,
+      "page": null
+    },
+    {
+      "heading": "### 填写表单获取，商家扫码核销",
+      "paragraph": 135,
+      "start": 2750,
+      "end": 2755,
+      "page": null
+    },
+    {
+      "heading": "### 设备巡检和维保",
+      "paragraph": 136,
+      "start": 2783,
+      "end": 2790,
+      "page": null
+    },
+    {
+      "heading": "### 设备巡检和维保",
+      "paragraph": 137,
+      "start": 2791,
+      "end": 2798,
+      "page": null
+    },
+    {
+      "heading": "### 设备巡检和维保",
+      "paragraph": 138,
+      "start": 2799,
+      "end": 2806,
+      "page": null
+    },
+    {
+      "heading": "### 设备巡检和维保",
+      "paragraph": 139,
+      "start": 2807,
+      "end": 2816,
+      "page": null
+    },
+    {
+      "heading": "### 设备巡检和维保",
+      "paragraph": 140,
+      "start": 2817,
+      "end": 2824,
+      "page": null
+    },
+    {
+      "heading": "### 设备巡检和维保",
+      "paragraph": 141,
+      "start": 2825,
+      "end": 2832,
+      "page": null
+    },
+    {
+      "heading": "### 区域巡查",
+      "paragraph": 142,
+      "start": 2843,
+      "end": 2850,
+      "page": null
+    },
+    {
+      "heading": "### 区域巡查",
+      "paragraph": 143,
+      "start": 2851,
+      "end": 2856,
+      "page": null
+    },
+    {
+      "heading": "### 区域巡查",
+      "paragraph": 144,
+      "start": 2857,
+      "end": 2864,
+      "page": null
+    },
+    {
+      "heading": "### 区域巡查",
+      "paragraph": 145,
+      "start": 2865,
+      "end": 2870,
+      "page": null
+    },
+    {
+      "heading": "### 物品资产标签",
+      "paragraph": 146,
+      "start": 2883,
+      "end": 2890,
+      "page": null
+    },
+    {
+      "heading": "### 物品资产标签",
+      "paragraph": 147,
+      "start": 2891,
+      "end": 2896,
+      "page": null
+    },
+    {
+      "heading": "### 物品资产标签",
+      "paragraph": 148,
+      "start": 2897,
+      "end": 2904,
+      "page": null
+    },
+    {
+      "heading": "### 物品资产标签",
+      "paragraph": 149,
+      "start": 2905,
+      "end": 2910,
+      "page": null
+    },
+    {
+      "heading": "### 产品标签",
+      "paragraph": 150,
+      "start": 2921,
+      "end": 2928,
+      "page": null
+    },
+    {
+      "heading": "### 产品标签",
+      "paragraph": 151,
+      "start": 2929,
+      "end": 2936,
+      "page": null
+    },
+    {
+      "heading": "### 产品标签",
+      "paragraph": 152,
+      "start": 2937,
+      "end": 2942,
+      "page": null
+    },
+    {
+      "heading": "### 产品标签",
+      "paragraph": 153,
+      "start": 2943,
+      "end": 2949,
+      "page": null
+    },
+    {
+      "heading": "### 产品标签",
+      "paragraph": 154,
+      "start": 2950,
+      "end": 2957,
+      "page": null
+    },
+    {
+      "heading": "### 产品标签",
+      "paragraph": 155,
+      "start": 2958,
+      "end": 2966,
+      "page": null
+    },
+    {
+      "heading": "### 无纸化登记",
+      "paragraph": 156,
+      "start": 2978,
+      "end": 2983,
+      "page": null
+    },
+    {
+      "heading": "### 无纸化登记",
+      "paragraph": 157,
+      "start": 2984,
+      "end": 2989,
+      "page": null
+    },
+    {
+      "heading": "### 无纸化登记",
+      "paragraph": 158,
+      "start": 2990,
+      "end": 2995,
+      "page": null
+    },
+    {
+      "heading": "### 无纸化登记",
+      "paragraph": 159,
+      "start": 2996,
+      "end": 3001,
+      "page": null
+    },
+    {
+      "heading": "### 无纸化登记",
+      "paragraph": 160,
+      "start": 3002,
+      "end": 3009,
+      "page": null
+    },
+    {
+      "heading": "### 无纸化登记",
+      "paragraph": 161,
+      "start": 3010,
+      "end": 3016,
+      "page": null
+    },
+    {
+      "heading": "### 人员信息卡",
+      "paragraph": 162,
+      "start": 3028,
+      "end": 3036,
+      "page": null
+    },
+    {
+      "heading": "### 人员信息卡",
+      "paragraph": 163,
+      "start": 3037,
+      "end": 3043,
+      "page": null
+    },
+    {
+      "heading": "### 人员信息卡",
+      "paragraph": 164,
+      "start": 3044,
+      "end": 3051,
+      "page": null
+    },
+    {
+      "heading": "### 人员信息卡",
+      "paragraph": 165,
+      "start": 3052,
+      "end": 3058,
+      "page": null
+    },
+    {
+      "heading": "### 人员信息卡",
+      "paragraph": 166,
+      "start": 3059,
+      "end": 3067,
+      "page": null
+    },
+    {
+      "heading": "### 教学培训",
+      "paragraph": 167,
+      "start": 3078,
+      "end": 3083,
+      "page": null
+    },
+    {
+      "heading": "### 教学培训",
+      "paragraph": 168,
+      "start": 3084,
+      "end": 3091,
+      "page": null
+    },
+    {
+      "heading": "### 教学培训",
+      "paragraph": 169,
+      "start": 3092,
+      "end": 3097,
+      "page": null
+    },
+    {
+      "heading": "### 教学培训",
+      "paragraph": 170,
+      "start": 3098,
+      "end": 3105,
+      "page": null
+    },
+    {
+      "heading": "### 教学培训",
+      "paragraph": 171,
+      "start": 3106,
+      "end": 3113,
+      "page": null
+    },
+    {
+      "heading": "### 更多",
+      "paragraph": 172,
+      "start": 3122,
+      "end": 3127,
+      "page": null
+    },
+    {
+      "heading": "### 更多",
+      "paragraph": 173,
+      "start": 3128,
+      "end": 3133,
+      "page": null
+    },
+    {
+      "heading": "### 更多",
+      "paragraph": 174,
+      "start": 3134,
+      "end": 3141,
+      "page": null
+    },
+    {
+      "heading": "### 更多",
+      "paragraph": 175,
+      "start": 3142,
+      "end": 3148,
+      "page": null
+    },
+    {
+      "heading": "#### 500万 注册用户",
+      "paragraph": 176,
+      "start": 3180,
+      "end": 3192,
+      "page": null
+    },
+    {
+      "heading": "#### 2亿 累计生码",
+      "paragraph": 177,
+      "start": 3207,
+      "end": 3219,
+      "page": null
+    },
+    {
+      "heading": "#### 6年 稳定运营",
+      "paragraph": 178,
+      "start": 3234,
+      "end": 3246,
+      "page": null
+    },
+    {
+      "heading": "### 为什么建议你用互联二维码制作电子画册？",
+      "paragraph": 179,
+      "start": 3285,
+      "end": 3425,
+      "page": null
+    },
+    {
+      "heading": "### 为什么建议你用互联二维码制作电子画册？",
+      "paragraph": 180,
+      "start": 3426,
+      "end": 3437,
+      "page": null
+    },
+    {
+      "heading": "### 互联二维码激活码功能：为你的数字内容加一把“安全锁”",
+      "paragraph": 181,
+      "start": 3470,
+      "end": 3623,
+      "page": null
+    },
+    {
+      "heading": "### 互联二维码激活码功能：为你的数字内容加一把“安全锁”",
+      "paragraph": 182,
+      "start": 3624,
+      "end": 3635,
+      "page": null
+    },
+    {
+      "heading": "### 企业智能画册的进阶之路：二维码赋能内容传播新生态",
+      "paragraph": 183,
+      "start": 3666,
+      "end": 3832,
+      "page": null
+    },
+    {
+      "heading": "### 企业智能画册的进阶之路：二维码赋能内容传播新生态",
+      "paragraph": 184,
+      "start": 3833,
+      "end": 3844,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 185,
+      "start": 3878,
+      "end": 4075,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 186,
+      "start": 4076,
+      "end": 4087,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 187,
+      "start": 4088,
+      "end": 4093,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 188,
+      "start": 4094,
+      "end": 4101,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 189,
+      "start": 4102,
+      "end": 4112,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 190,
+      "start": 4113,
+      "end": 4124,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 191,
+      "start": 4125,
+      "end": 4128,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 192,
+      "start": 4129,
+      "end": 4133,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 193,
+      "start": 4134,
+      "end": 4140,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 194,
+      "start": 4141,
+      "end": 4148,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 195,
+      "start": 4149,
+      "end": 4157,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 196,
+      "start": 4158,
+      "end": 4162,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 197,
+      "start": 4163,
+      "end": 4171,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 198,
+      "start": 4172,
+      "end": 4185,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 199,
+      "start": 4186,
+      "end": 4194,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 200,
+      "start": 4195,
+      "end": 4204,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 201,
+      "start": 4205,
+      "end": 4210,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 202,
+      "start": 4211,
+      "end": 4236,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 203,
+      "start": 4237,
+      "end": 4242,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 204,
+      "start": 4243,
+      "end": 4253,
+      "page": null
+    },
+    {
+      "heading": "### 从静态到活码：二维码的升级如何重塑企业与用户的连接方式",
+      "paragraph": 205,
+      "start": 4254,
+      "end": 4261,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 206,
+      "start": 4270,
+      "end": 4273,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 207,
+      "start": 4274,
+      "end": 4279,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 208,
+      "start": 4280,
+      "end": 4283,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 209,
+      "start": 4284,
+      "end": 4287,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 210,
+      "start": 4288,
+      "end": 4299,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 211,
+      "start": 4300,
+      "end": 4303,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 212,
+      "start": 4304,
+      "end": 4308,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 213,
+      "start": 4309,
+      "end": 4315,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 214,
+      "start": 4316,
+      "end": 4323,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 215,
+      "start": 4324,
+      "end": 4332,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 216,
+      "start": 4333,
+      "end": 4337,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 217,
+      "start": 4338,
+      "end": 4346,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 218,
+      "start": 4347,
+      "end": 4360,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 219,
+      "start": 4361,
+      "end": 4369,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 220,
+      "start": 4370,
+      "end": 4377,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 221,
+      "start": 4378,
+      "end": 4384,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 222,
+      "start": 4385,
+      "end": 4391,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 223,
+      "start": 4392,
+      "end": 4398,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 224,
+      "start": 4399,
+      "end": 4405,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 225,
+      "start": 4406,
+      "end": 4412,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 226,
+      "start": 4413,
+      "end": 4418,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 227,
+      "start": 4419,
+      "end": 4427,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 228,
+      "start": 4428,
+      "end": 4431,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 229,
+      "start": 4432,
+      "end": 4438,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 230,
+      "start": 4439,
+      "end": 4443,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 231,
+      "start": 4444,
+      "end": 4452,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 232,
+      "start": 4453,
+      "end": 4456,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 233,
+      "start": 4457,
+      "end": 4466,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 234,
+      "start": 4467,
+      "end": 4477,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 235,
+      "start": 4478,
+      "end": 4490,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 236,
+      "start": 4491,
+      "end": 4593,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 237,
+      "start": 4594,
+      "end": 4599,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 238,
+      "start": 4600,
+      "end": 4605,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 239,
+      "start": 4606,
+      "end": 4611,
+      "page": null
+    },
+    {
+      "heading": "### 添加",
+      "paragraph": 240,
+      "start": 4612,
+      "end": 4615,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.hlcode.cn/",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:09:38",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

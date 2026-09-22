@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015,E-022,E-007）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "待补缺口汇总的隐私合规缺口引E-015/E-022，二者只涉反对意见缺失/正面应用，不支持缺少医疗数据合规与隐私影响评估材料。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "成本缺口引E-015/E-022，所引证据不支持缺少成本对比、样本与地区数据；相关正面陈述应引E-010/E-018。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "临床效果缺口仅引E-022，E-022只说明未涉及反对远程医疗观点，不能支持缺少临床研究、安全性评估或监管结论。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论首句‘支持侧证据在资料中较丰富’是评价性推断，却标〔事实〕，应改〔推断〕或拆分标注。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "待补缺口汇总多处仅标〔未知〕，未按提纲要求给出〔事实〕或〔推断〕标注，建议区分资料缺失事实与推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "支持观点二/四/五中‘资料未给出/未提供’等缺失断言所引证据为正面陈述，不能证明缺失；应改引范围说明或标注为总体缺口。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "支持观点五合并ToDesk与向日葵的安全措施并称‘产品具备’，易让读者误以为是同一产品；应标明来源产品。"
+  }
+ ]
+}

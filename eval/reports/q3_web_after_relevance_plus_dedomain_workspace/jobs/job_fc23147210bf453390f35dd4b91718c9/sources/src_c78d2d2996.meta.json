@@ -1,0 +1,1098 @@
+{
+  "source_id": "src_c78d2d2996",
+  "kind": "url",
+  "display": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+  "original_address": "https://leetcode.cn/",
+  "title": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 10737,
+  "content_hash": "b22f25ba2fec46ca816e455f20b11bdbba43eef4e99f786b2a6687dc417dc51b",
+  "normalized_hash": "e74e66a34dee95957f3c246f0ff54c4530b85bd52322827472023b258de9d37a",
+  "captured_at": "2026-09-18T14:49:07",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_c78d2d2996.md",
+  "encoding": "utf-8",
+  "segment_count": 152,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 3,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 4,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 8,
+      "end": 11,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 12,
+      "end": 15,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 16,
+      "end": 19,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 20,
+      "end": 28,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 29,
+      "end": 37,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 38,
+      "end": 43,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 44,
+      "end": 60,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 61,
+      "end": 81,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 82,
+      "end": 93,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 94,
+      "end": 114,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 115,
+      "end": 125,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 126,
+      "end": 142,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 143,
+      "end": 146,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 147,
+      "end": 150,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 151,
+      "end": 156,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 157,
+      "end": 162,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 163,
+      "end": 168,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 169,
+      "end": 172,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 173,
+      "end": 176,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 177,
+      "end": 180,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 181,
+      "end": 191,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 192,
+      "end": 247,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 248,
+      "end": 276,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 277,
+      "end": 282,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 283,
+      "end": 285,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 286,
+      "end": 288,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 289,
+      "end": 298,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 299,
+      "end": 352,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 353,
+      "end": 381,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 382,
+      "end": 553,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 554,
+      "end": 556,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 557,
+      "end": 559,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 560,
+      "end": 589,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 590,
+      "end": 751,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 752,
+      "end": 755,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 756,
+      "end": 758,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 759,
+      "end": 789,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 790,
+      "end": 919,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 920,
+      "end": 923,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 924,
+      "end": 926,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 927,
+      "end": 945,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 946,
+      "end": 961,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 44,
+      "start": 972,
+      "end": 977,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 45,
+      "start": 978,
+      "end": 981,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 46,
+      "start": 982,
+      "end": 1033,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 47,
+      "start": 1034,
+      "end": 1194,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 48,
+      "start": 1195,
+      "end": 1200,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 49,
+      "start": 1201,
+      "end": 1359,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 50,
+      "start": 1360,
+      "end": 1373,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 51,
+      "start": 1374,
+      "end": 1534,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 52,
+      "start": 1535,
+      "end": 1570,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 53,
+      "start": 1571,
+      "end": 1658,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 54,
+      "start": 1659,
+      "end": 1661,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 55,
+      "start": 1662,
+      "end": 1664,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 56,
+      "start": 1665,
+      "end": 1698,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 57,
+      "start": 1699,
+      "end": 1865,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 58,
+      "start": 1866,
+      "end": 1868,
+      "page": null
+    },
+    {
+      "heading": "### 猜你喜欢",
+      "paragraph": 59,
+      "start": 1869,
+      "end": 1871,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 60,
+      "start": 1883,
+      "end": 1886,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 61,
+      "start": 1887,
+      "end": 1890,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 62,
+      "start": 1891,
+      "end": 1902,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 63,
+      "start": 1903,
+      "end": 1913,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 64,
+      "start": 1914,
+      "end": 1925,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 65,
+      "start": 1926,
+      "end": 1939,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 66,
+      "start": 1940,
+      "end": 1951,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 67,
+      "start": 1952,
+      "end": 1957,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 68,
+      "start": 1958,
+      "end": 1969,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 69,
+      "start": 1970,
+      "end": 1973,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 70,
+      "start": 1974,
+      "end": 1985,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 71,
+      "start": 1986,
+      "end": 1990,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 72,
+      "start": 1991,
+      "end": 2002,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 73,
+      "start": 2003,
+      "end": 2027,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 74,
+      "start": 2028,
+      "end": 2145,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 75,
+      "start": 2146,
+      "end": 2149,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 76,
+      "start": 2150,
+      "end": 2152,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 77,
+      "start": 2153,
+      "end": 2189,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 78,
+      "start": 2190,
+      "end": 2260,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 79,
+      "start": 2261,
+      "end": 2263,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 80,
+      "start": 2264,
+      "end": 2266,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 81,
+      "start": 2267,
+      "end": 2290,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 82,
+      "start": 2291,
+      "end": 2539,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 83,
+      "start": 2540,
+      "end": 2542,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 84,
+      "start": 2543,
+      "end": 2545,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 85,
+      "start": 2546,
+      "end": 2593,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 86,
+      "start": 2594,
+      "end": 2845,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 87,
+      "start": 2846,
+      "end": 2849,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 88,
+      "start": 2850,
+      "end": 2852,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 89,
+      "start": 2853,
+      "end": 2876,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 90,
+      "start": 2877,
+      "end": 2890,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 91,
+      "start": 2891,
+      "end": 2894,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 92,
+      "start": 2895,
+      "end": 2897,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 93,
+      "start": 2898,
+      "end": 2946,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 94,
+      "start": 2947,
+      "end": 3198,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 95,
+      "start": 3199,
+      "end": 3201,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 96,
+      "start": 3202,
+      "end": 3204,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 97,
+      "start": 3205,
+      "end": 3262,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 98,
+      "start": 3263,
+      "end": 3397,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 99,
+      "start": 3398,
+      "end": 3400,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 100,
+      "start": 3401,
+      "end": 3404,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 101,
+      "start": 3405,
+      "end": 3448,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 102,
+      "start": 3449,
+      "end": 3506,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 103,
+      "start": 3507,
+      "end": 3509,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 104,
+      "start": 3510,
+      "end": 3512,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 105,
+      "start": 3513,
+      "end": 3544,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 106,
+      "start": 3545,
+      "end": 3618,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 107,
+      "start": 3619,
+      "end": 3621,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 108,
+      "start": 3622,
+      "end": 3624,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 109,
+      "start": 3625,
+      "end": 3653,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 110,
+      "start": 3654,
+      "end": 3673,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 111,
+      "start": 3674,
+      "end": 3676,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 112,
+      "start": 3677,
+      "end": 3679,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 113,
+      "start": 3680,
+      "end": 3713,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 114,
+      "start": 3714,
+      "end": 3855,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 115,
+      "start": 3856,
+      "end": 3858,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 116,
+      "start": 3859,
+      "end": 3861,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 117,
+      "start": 3862,
+      "end": 3898,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 118,
+      "start": 3899,
+      "end": 4051,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 119,
+      "start": 4052,
+      "end": 4054,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 120,
+      "start": 4055,
+      "end": 4057,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 121,
+      "start": 4058,
+      "end": 4088,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 122,
+      "start": 4089,
+      "end": 4187,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 123,
+      "start": 4188,
+      "end": 4191,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 124,
+      "start": 4192,
+      "end": 4194,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 125,
+      "start": 4195,
+      "end": 4228,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 126,
+      "start": 4229,
+      "end": 4308,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 127,
+      "start": 4309,
+      "end": 4311,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 128,
+      "start": 4312,
+      "end": 4314,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 129,
+      "start": 4315,
+      "end": 4319,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 130,
+      "start": 4320,
+      "end": 4322,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 131,
+      "start": 4323,
+      "end": 4327,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 132,
+      "start": 4328,
+      "end": 4331,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 133,
+      "start": 4332,
+      "end": 4336,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 134,
+      "start": 4337,
+      "end": 4340,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 135,
+      "start": 4341,
+      "end": 4345,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 136,
+      "start": 4346,
+      "end": 4349,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 137,
+      "start": 4350,
+      "end": 4354,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 138,
+      "start": 4355,
+      "end": 4358,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 139,
+      "start": 4359,
+      "end": 4363,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 140,
+      "start": 4364,
+      "end": 4367,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 141,
+      "start": 4368,
+      "end": 4372,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 142,
+      "start": 4373,
+      "end": 4376,
+      "page": null
+    },
+    {
+      "heading": "### 名企面试题",
+      "paragraph": 143,
+      "start": 4377,
+      "end": 4384,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 144,
+      "start": 4408,
+      "end": 4415,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 145,
+      "start": 4416,
+      "end": 4424,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 146,
+      "start": 4425,
+      "end": 4458,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 147,
+      "start": 4459,
+      "end": 4478,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 148,
+      "start": 4479,
+      "end": 4516,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 149,
+      "start": 4517,
+      "end": 4538,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 150,
+      "start": 4539,
+      "end": 4546,
+      "page": null
+    },
+    {
+      "heading": "### 1520 . 最多的不重叠子字符串",
+      "paragraph": 151,
+      "start": 4547,
+      "end": 4566,
+      "page": null
+    }
+  ],
+  "final_url": "https://leetcode.cn/",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:49:07",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

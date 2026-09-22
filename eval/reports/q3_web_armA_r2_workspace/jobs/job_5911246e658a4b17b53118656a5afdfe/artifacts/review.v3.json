@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-023）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-032）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-039）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "E-002称低于市场价格，已含定价/付费线索；文中称未明示是否收费、未见付费收入线索，与证据冲突"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-024与Gitee证据同源开源中国，称“另有资料”不准确"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-013已给出Pro订阅价格，范围段称各类型定价普遍缺失，表述过宽"
+  }
+ ]
+}

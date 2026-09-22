@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_20088e76f4",
+      "fact": "本资料未提供生成式人工智能在软件测试中应用趋势的信息。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_c7e974ff90",
+      "fact": "本资料正文为 Kling AI 首页，含「创意圈」「资产」等栏目。",
+      "tag": "F",
+      "quote": "创意圈",
+      "start": 17,
+      "end": 20,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 0,
+        "start": 17,
+        "end": 21
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_c7e974ff90",
+      "fact": "本资料首页含 Omni、生成、灵动画布、全部工具等入口。",
+      "tag": "F",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_c7e974ff90",
+      "fact": "本资料是创意工具产品页面，未涉及软件测试议题。",
+      "tag": "I",
+      "quote": "# Kling AI Home",
+      "start": 0,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_c7e974ff90",
+      "fact": "仅凭本资料无法得出生成式AI在软件测试中的应用趋势。",
+      "tag": "I",
+      "quote": "Kling AI Home",
+      "start": 2,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_af4c1393db",
+      "fact": "本资料比较250多个AI模型在智能、价格、性能、速度、延迟、上下文窗口等指标上的表现。",
+      "tag": "F",
+      "quote": "比较并排名 250 多个 AI 模型（LLM）在智能、价格、性能与速度",
+      "start": 153,
+      "end": 188,
+      "locator": {
+        "heading": "# LLM 排行榜——比较 OpenAI、Anthropic、Google、SpaceXAI 等公司的 AI 模型",
+        "paragraph": 12,
+        "start": 153,
+        "end": 232
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_af4c1393db",
+      "fact": "智能得分最高的是 Claude Fable 5.1 与 GPT-6 Astra 系列。",
+      "tag": "F",
+      "quote": "是智能得分最高的模型，之后是 GPT-6 Astra (max) 和 GPT-6 Astra (xhigh)。",
+      "start": 392,
+      "end": 447,
+      "locator": {
+        "heading": "#### 智能",
+        "paragraph": 16,
+        "start": 314,
+        "end": 448
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_af4c1393db",
+      "fact": "输出速度最快的是 Celeris-1 和 Mercury 2。",
+      "tag": "F",
+      "quote": "Celeris-1 和 Mercury 2 是速度最快的模型",
+      "start": 460,
+      "end": 490,
+      "locator": {
+        "heading": "#### 输出速度",
+        "paragraph": 17,
+        "start": 460,
+        "end": 542
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_af4c1393db",
+      "fact": "延迟最低的是 Gemini 2.5 Flash-Lite（非推理）和 North Mini Code。",
+      "tag": "F",
+      "quote": "Gemini 2.5 Flash-Lite (Non-reasoning) 和 North Mini Code 是延迟最低的模型",
+      "start": 552,
+      "end": 616,
+      "locator": {
+        "heading": "#### 延迟",
+        "paragraph": 18,
+        "start": 552,
+        "end": 650
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_af4c1393db",
+      "fact": "每任务成本最低的是 Granite 4.2 3B 与 GPT-5.6 Luna (low)。",
+      "tag": "F",
+      "quote": "Granite 4.2 3B 和 GPT-5.6 Luna (low) 的每任务成本最低",
+      "start": 663,
+      "end": 707,
+      "locator": {
+        "heading": "#### 每任务成本",
+        "paragraph": 19,
+        "start": 663,
+        "end": 763
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_af4c1393db",
+      "fact": "上下文窗口最大的是 Llama 4 Scout 与 Grok 4.20 0309。",
+      "tag": "F",
+      "quote": "Llama 4 Scout 和 Grok 4.20 0309 支持最大的上下文窗口",
+      "start": 776,
+      "end": 817,
+      "locator": {
+        "heading": "#### 上下文窗口",
+        "paragraph": 20,
+        "start": 776,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_af4c1393db",
+      "fact": "本资料可按推理与非推理、开放权重与专有等条件筛选模型。",
+      "tag": "F",
+      "quote": "排行榜提供筛选条件，可按模型类型（推理与非推理）、开放性（开放权重与专有）及其他标准缩小结果范围。",
+      "start": 24186,
+      "end": 24235,
+      "locator": {
+        "heading": "### 如何筛选排行榜中的模型？",
+        "paragraph": 2755,
+        "start": 24186,
+        "end": 24263
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_af4c1393db",
+      "fact": "本资料设有编程智能体栏目，但未提供软件测试应用或趋势的内容。",
+      "tag": "I",
+      "quote": "编程智能体",
+      "start": 49,
+      "end": 54,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 49,
+        "end": 55
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_1b603de585",
+      "fact": "本资料是AIGC工具导航站，按用途分类收录生成式AI工具。",
+      "tag": "F",
+      "quote": "一个分类最全、收录最全的生成式AI工具导航",
+      "start": 2605,
+      "end": 2626,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_1b603de585",
+      "fact": "导航汇聚全网免费AI工具，覆盖写作、图像、视频、办公等类别。",
+      "tag": "F",
+      "quote": "汇聚全网最全的 免费AI 工具集合",
+      "start": 1226,
+      "end": 1243,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 147,
+        "start": 1216,
+        "end": 1338
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_1b603de585",
+      "fact": "导航设有AI编程工具、AIGC开发平台、AI大语言模型等开发类目。",
+      "tag": "F",
+      "quote": "AI编程工具",
+      "start": 828,
+      "end": 834,
+      "locator": {
+        "heading": "",
+        "paragraph": 101,
+        "start": 828,
+        "end": 835
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_1b603de585",
+      "fact": "本资料全篇未提及软件测试，也无测试用例或自动化测试类目。",
+      "tag": "F",
+      "quote": "AI写作 、 AI绘画 、 AI视频 、 AI办公 、 AI数字人 、 AI设计 、 AI语音",
+      "start": 2633,
+      "end": 2680,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_1b603de585",
+      "fact": "平台提供免费AIGC视频课，含GPT进阶与AI绘画教程。",
+      "tag": "F",
+      "quote": "AIGC教程涵盖了GPT进阶教程、AI绘画教程(例如Midjourney、Stable Diffusion)",
+      "start": 1354,
+      "end": 1408,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 149,
+        "start": 1354,
+        "end": 1425
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_1b603de585",
+      "fact": "站内列举豆包、千问、即梦、DeepSeek、Kimi等AI工具。",
+      "tag": "F",
+      "quote": "豆包 、 千问 、 即梦 、 DeepSeek 、 Kimi",
+      "start": 2757,
+      "end": 2787,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_1b603de585",
+      "fact": "本资料的类目设置显示生成式AI工具主要面向内容生产与智慧办公场景。",
+      "tag": "I",
+      "quote": "AIGC智慧办公",
+      "start": 274,
+      "end": 282,
+      "locator": {
+        "heading": "",
+        "paragraph": 35,
+        "start": 274,
+        "end": 283
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_2776f4bcc1",
+      "fact": "本资料是AI图像与视频在线创作工作室首页，主题为生图、修图与视频创作。",
+      "tag": "F",
+      "quote": "为每个人打造的 AI 创作工作室",
+      "start": 511,
+      "end": 527,
+      "locator": {
+        "heading": "",
+        "paragraph": 15,
+        "start": 511,
+        "end": 528
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_2776f4bcc1",
+      "fact": "本资料未出现软件测试、测试用例、自动化测试或缺陷管理等表述。",
+      "tag": "F",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_2776f4bcc1",
+      "fact": "资料中与质量最接近的表述是发布前需完成事实、权利与质量检查。",
+      "tag": "F",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_2776f4bcc1",
+      "fact": "资料列举的是GPT Image 2.5、Nano Banana、Seedance等图像视频模型。",
+      "tag": "F",
+      "quote": "GPT Image 2.5 GPT Image 2 MJ Midjourney",
+      "start": 37,
+      "end": 76,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 37,
+        "end": 130
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_2776f4bcc1",
+      "fact": "资料主张从一句话开始生成作品，属视觉创作流程而非测试流程。",
+      "tag": "F",
+      "quote": "下一张作品，从一句话开始。",
+      "start": 3658,
+      "end": 3671,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_2776f4bcc1",
+      "fact": "资料称可用日常语言描述需求并据生成效果反复调整描述。",
+      "tag": "I",
+      "quote": "直接用日常语言描述想要的结果，选择模型和尺寸，再根据生成效果继续调整描述即可。",
+      "start": 3499,
+      "end": 3538,
+      "locator": {
+        "heading": "## 开始创作前，你可能想了解这些",
+        "paragraph": 165,
+        "start": 3496,
+        "end": 3539
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_2776f4bcc1",
+      "fact": "据此无法说明生成式AI在软件测试中的应用趋势，该项内容在本资料中完全缺失。",
+      "tag": "I",
+      "quote": "集 AI 图像生成、图片编辑与视频创作于一体的在线工作室。",
+      "start": 3959,
+      "end": 3988,
+      "locator": {
+        "heading": "## AI视频",
+        "paragraph": 189,
+        "start": 3959,
+        "end": 3989
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_2776f4bcc1",
+      "fact": "若需该主题结论，应另找软件测试相关来源，本资料不能作为依据。",
+      "tag": "U",
+      "quote": "由 Image2.ing 创作",
+      "start": 1293,
+      "end": 1308,
+      "locator": {
+        "heading": "## GPT Image 2.5 创作与使用指南",
+        "paragraph": 58,
+        "start": 1293,
+        "end": 1309
+      },
+      "note": ""
+    }
+  ]
+}

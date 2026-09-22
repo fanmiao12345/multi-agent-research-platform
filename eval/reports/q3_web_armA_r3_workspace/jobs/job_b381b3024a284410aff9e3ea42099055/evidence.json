@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_ecd000ae70",
+      "fact": "欧盟推进绿色和数字双转型，并加强安全防务等领域合作",
+      "tag": "F",
+      "quote": "推动绿色和数字双转型，加强安全防务等领域合作",
+      "start": 2175,
+      "end": 2197,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_ecd000ae70",
+      "fact": "2020年以来欧盟以安全、竞争力和绿色发展为三大支柱推进各项政策",
+      "tag": "F",
+      "quote": "以安全、竞争力和绿色发展为三大支柱不断推进各项政策",
+      "start": 2227,
+      "end": 2252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_ecd000ae70",
+      "fact": "欧盟更加重视经济安全，出台《外国补贴条例》《反胁迫工具》等经贸政策工具箱",
+      "tag": "F",
+      "quote": "出台《外国补贴条例》、《反胁迫工具》等一系列经贸政策工具箱",
+      "start": 2262,
+      "end": 2291,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_ecd000ae70",
+      "fact": "欧盟致力于加强战略自主",
+      "tag": "F",
+      "quote": "致力于加强战略自主",
+      "start": 2292,
+      "end": 2301,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_ecd000ae70",
+      "fact": "2022年3月欧盟批准“战略指南针”行动计划，规划未来10年安全和防务政策",
+      "tag": "F",
+      "quote": "批准“战略指南针”行动计划，规划欧盟未来10年安全和防务政策",
+      "start": 3760,
+      "end": 3790,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 114,
+        "start": 3326,
+        "end": 3867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_ecd000ae70",
+      "fact": "2024年以来欧盟通过多份防务文件，意图以防务建设加强战略自主、提升竞争力",
+      "tag": "F",
+      "quote": "意图以防务建设加强战略自主、提升竞争力",
+      "start": 3846,
+      "end": 3865,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 114,
+        "start": 3326,
+        "end": 3867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_ecd000ae70",
+      "fact": "2026年上半年欧盟轮值主席国为塞浦路斯，下半年为爱尔兰",
+      "tag": "F",
+      "quote": "塞浦路斯（2026年上半年）、爱尔兰（2026年下半年）",
+      "start": 1224,
+      "end": 1252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 100,
+        "start": 1217,
+        "end": 1253
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_ecd000ae70",
+      "fact": "本资料未涉及人工智能治理政策，也未提及2026年相关争议",
+      "tag": "F",
+      "quote": "欧洲一体化建设半个多世纪以来在曲折中不断取得积极进展",
+      "start": 1794,
+      "end": 1820,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_8182ccfb7e",
+      "fact": "本资料未提供2026年人工智能治理政策主要争议的信息。",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_7c1ffdb534",
+      "fact": "本资料为美国国家概况，更新于2026年6月，未涉及人工智能治理政策争议。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年6月）",
+      "start": 750,
+      "end": 766,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 86,
+        "start": 750,
+        "end": 767
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_b82467c3f9",
+      "fact": "本资料是开源中国/Gitee社区页面，通篇未讨论人工智能治理政策议题。",
+      "tag": "F",
+      "quote": "Gitee 为开源中国旗下，国内第一大研发效能平台&全球第二大开源代码托管平台",
+      "start": 128,
+      "end": 167,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_b82467c3f9",
+      "fact": "资料中唯一含2026年的内容是开源软件应用创新大赛通知，与AI治理争议无关。",
+      "tag": "F",
+      "quote": "【大赛通知】开源中国「2026上海开源软件应用创新大赛」火热报名中，百万奖池等你的项目",
+      "start": 77,
+      "end": 120,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 77,
+        "end": 121
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_3914b9d768",
+      "fact": "本资料为开源社在GitHub上的组织主页，介绍其理念、使命与项目列表。",
+      "tag": "F",
+      "quote": "开源社（KAIYUANSHE®）成立于2014年",
+      "start": 2035,
+      "end": 2059,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_3914b9d768",
+      "fact": "开源社以贡献、共识、共治为原则，保持厂商中立、公益、非营利理念。",
+      "tag": "F",
+      "quote": "依 \"贡献、共识、共治\" 原则所组成",
+      "start": 4843,
+      "end": 4861,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 120,
+        "start": 4797,
+        "end": 4966
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_3914b9d768",
+      "fact": "开源社使命包含开源治理、国际接轨、社区发展、项目孵化四项。",
+      "tag": "F",
+      "quote": "开源治理、国际接轨、社区发展、项目孵化",
+      "start": 2153,
+      "end": 2172,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_3914b9d768",
+      "fact": "开源社是全球开源许可证认证组织OSI在中国的首个成员。",
+      "tag": "F",
+      "quote": "同时也是全球开源许可证认证组织 OSI 在中国的首个成员",
+      "start": 5025,
+      "end": 5053,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 121,
+        "start": 4967,
+        "end": 5117
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_3914b9d768",
+      "fact": "本资料列有“2026中国人工智能开源生态蓝皮书”仓库。",
+      "tag": "F",
+      "quote": "China Artificial Intelligence Open-Source Ecosystem Blue Book 2026",
+      "start": 6366,
+      "end": 6432,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 157,
+        "start": 6366,
+        "end": 6433
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_3914b9d768",
+      "fact": "该人工智能开源生态蓝皮书仓库的更新日期为2026年9月12日。",
+      "tag": "F",
+      "quote": "Updated Sep 12, 2026",
+      "start": 6552,
+      "end": 6572,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 159,
+        "start": 6544,
+        "end": 6573
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_3914b9d768",
+      "fact": "本资料是社区组织主页，主要介绍成员、项目与仓库，未讨论AI治理政策争议。",
+      "tag": "U",
+      "quote": "开源社是中国领先的，纯社区驱动，中立开放的组织",
+      "start": 4967,
+      "end": 4990,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 121,
+        "start": 4967,
+        "end": 5117
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_3914b9d768",
+      "fact": "本资料未提供2026年人工智能治理政策主要争议的任何具体内容。",
+      "tag": "U",
+      "quote": "立足中国、贡献全球，推动开源成为新时代的生活方式",
+      "start": 2121,
+      "end": 2145,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_ea0fe27b2b",
+      "fact": "本资料整篇为百度知道关于“人工”上下组合成何字的问答。",
+      "tag": "F",
+      "quote": "“人工”组成一个字怎么读？",
+      "start": 71,
+      "end": 84,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_ea0fe27b2b",
+      "fact": "本资料称“人在上，工在下”组成的字是“仝”，读作tóng。",
+      "tag": "F",
+      "quote": "“人在上，工在下”是“仝”读作：tóng",
+      "start": 435,
+      "end": 455,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 48,
+        "start": 435,
+        "end": 456
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_ea0fe27b2b",
+      "fact": "本资料称“仝”是“同”的古字，表示相同、一样。",
+      "tag": "F",
+      "quote": "“同”的古字。是相同、一样的意思。",
+      "start": 877,
+      "end": 894,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 68,
+        "start": 864,
+        "end": 895
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_ea0fe27b2b",
+      "fact": "本资料称“仝”的本义为工友，引申为同事、同仁、相同。",
+      "tag": "F",
+      "quote": "本义：工友。",
+      "start": 994,
+      "end": 1000,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 70,
+        "start": 994,
+        "end": 1001
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_ea0fe27b2b",
+      "fact": "本资料称“仝”可用作姓氏，并举关仝、卢仝为例。",
+      "tag": "F",
+      "quote": "还可用作姓氏。",
+      "start": 1955,
+      "end": 1962,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 126,
+        "start": 1955,
+        "end": 1980
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_ea0fe27b2b",
+      "fact": "本资料称“仝”在工程施工中是“不含钢筋的混凝土”的简称。",
+      "tag": "F",
+      "quote": "“不含钢筋的混凝土”的简称",
+      "start": 978,
+      "end": 991,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 69,
+        "start": 896,
+        "end": 993
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_ea0fe27b2b",
+      "fact": "本资料未涉及人工智能治理或2026年政策议题，无相关内容。",
+      "tag": "F",
+      "quote": "百度知道 > 无分类",
+      "start": 160,
+      "end": 170,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 30,
+        "start": 160,
+        "end": 171
+      },
+      "note": ""
+    }
+  ]
+}

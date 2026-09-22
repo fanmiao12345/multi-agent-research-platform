@@ -1,0 +1,48 @@
+{
+  "source_id": "src_5b026091e4",
+  "kind": "url",
+  "display": "豆瓣",
+  "original_address": "https://movie.douban.com/subject/5966523/",
+  "title": "豆瓣",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 33,
+  "content_hash": "5476c8be623d662b812fee08dd50b9c2955c1571a6e1d5402b15cc87c3731536",
+  "normalized_hash": "09a24424bb8b8e8e3d662ade2d2837cca3466c3a7171c1447cbf3a80fb9abecf",
+  "captured_at": "2026-09-18T14:22:49",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_5b026091e4.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 2,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 15,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 16,
+      "end": 23,
+      "page": null
+    }
+  ],
+  "final_url": "https://sec.douban.com/c?r=https%3A%2F%2Fmovie.douban.com%2Fsubject%2F5966523%2F&_s=a21a22a65cb984bb5725232957d87e685c46dc4634be31d11e545bc67f3f6934&a=1",
+  "http_status": 200,
+  "content_type": "",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:22:49",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

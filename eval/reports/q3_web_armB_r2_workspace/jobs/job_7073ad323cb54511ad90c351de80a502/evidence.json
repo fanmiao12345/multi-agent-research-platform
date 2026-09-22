@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料定义RPA为机器人流程自动化，基于软件模拟人类与计算机系统交互。",
+      "tag": "F",
+      "quote": "RPA的英文全称为RoboticProcessAutomation，中文译为机器人流程自动化，是一种基于软件的技术方案，通过模拟人类与计算机系统的交互行为",
+      "start": 1889,
+      "end": 1966,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 48,
+        "start": 1889,
+        "end": 2103
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料称RPA侧重流程自动化，不具备自主学习和创新能力，需人类预设步骤和规则。",
+      "tag": "F",
+      "quote": "RPA侧重于“流程自动化”，核心是执行规则明确的重复性操作，不具备自主学习和创新能力，需要人类预设明确的操作步骤和规则",
+      "start": 2772,
+      "end": 2831,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料称AI核心是认知智能，模拟人类学习、推理和决策，处理不确定性问题。",
+      "tag": "F",
+      "quote": "AI的核心是“认知智能”，通过算法模拟人类的学习、推理和决策能力，能够处理不确定性问题",
+      "start": 2833,
+      "end": 2876,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料称RPA与AI融合形成IPA，让RPA从执行工具升级为智能助手。",
+      "tag": "F",
+      "quote": "两者的融合形成了IPA（人工智能流程自动化），让RPA从“执行工具”升级为“智能助手”",
+      "start": 2897,
+      "end": 2940,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料称实在Agent是通用智能体，能自主感知环境、规划路径并自动操作软件。",
+      "tag": "F",
+      "quote": "实在Agent是全球首款具备“大脑和手脚”的通用智能体产品，能够自主感知环境、规划路径、自动操作电脑、手机及车载屏幕上的各类软件和APP",
+      "start": 6494,
+      "end": 6562,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 81,
+        "start": 6429,
+        "end": 6599
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料称与传统RPA相比，实在Agent核心突破是自主决策能力。",
+      "tag": "F",
+      "quote": "与传统RPA相比，实在Agent的核心突破在于“自主决策能力”",
+      "start": 6600,
+      "end": 6631,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 82,
+        "start": 6600,
+        "end": 6738
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料称实在Agent基于自研TARS大模型，具备趋近人类思维的理解和推理能力。",
+      "tag": "F",
+      "quote": "它基于实在智能自研的TARS大模型，具备趋近人类思维的理解和推理能力",
+      "start": 6632,
+      "end": 6666,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 82,
+        "start": 6600,
+        "end": 6738
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_2f09cef416",
+      "fact": "本资料称实在智能基于TARS大模型实现自然语言生成流程，打破传统RPA规则依赖。",
+      "tag": "F",
+      "quote": "实在智能基于TARS大模型实现“自然语言生成流程”的技术创新，打破了传统RPA对规则依赖的局限",
+      "start": 9156,
+      "end": 9203,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 103,
+        "start": 9144,
+        "end": 9336
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_613a2f08d8",
+      "fact": "本资料介绍的对象是名为《超自然行动组》的多人组队欢乐恐怖游戏",
+      "tag": "F",
+      "quote": "多人组队欢乐恐怖游戏",
+      "start": 10,
+      "end": 20,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 0,
+        "start": 10,
+        "end": 21
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_613a2f08d8",
+      "fact": "本资料页面内容为游戏官网的新闻与公告列表",
+      "tag": "F",
+      "quote": "员工白夜策划设计思路展示",
+      "start": 109,
+      "end": 121,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 13,
+        "start": 109,
+        "end": 122
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_613a2f08d8",
+      "fact": "本资料记载该游戏日活跃用户突破一千万",
+      "tag": "F",
+      "quote": "《超自然行动组》日活跃用户突破一千万啦！",
+      "start": 71,
+      "end": 91,
+      "locator": {
+        "heading": "# 超自然行动组",
+        "paragraph": 10,
+        "start": 71,
+        "end": 92
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_613a2f08d8",
+      "fact": "本资料显示游戏当前版本号为1.13.3.001",
+      "tag": "F",
+      "quote": "版本号：1.13.3.001",
+      "start": 364,
+      "end": 378,
+      "locator": {
+        "heading": "# NaN /0",
+        "paragraph": 36,
+        "start": 353,
+        "end": 393
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_613a2f08d8",
+      "fact": "本资料标注运营主体为上海巨人网络科技有限公司",
+      "tag": "F",
+      "quote": "上海巨人网络科技有限公司",
+      "start": 394,
+      "end": 406,
+      "locator": {
+        "heading": "# NaN /0",
+        "paragraph": 37,
+        "start": 394,
+        "end": 436
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_613a2f08d8",
+      "fact": "本资料全文未出现机器人流程自动化、智能体或两者边界的任何表述",
+      "tag": "F",
+      "quote": "超自然行动组",
+      "start": 2,
+      "end": 8,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_fa92b7bdc7",
+      "fact": "本资料为个人作者授权与签约信息，仅列出多位作者姓名。",
+      "tag": "F",
+      "quote": "个人作者授权",
+      "start": 0,
+      "end": 6,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 7
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_fa92b7bdc7",
+      "fact": "本资料全文未出现机器人流程自动化或智能体相关表述，无法据此界定二者边界。",
+      "tag": "F",
+      "quote": "我要签约",
+      "start": 8,
+      "end": 12,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 8,
+        "end": 13
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_fa75c7ca34",
+      "fact": "本资料主题为交互式国际音标（IPA）表，内容属语音学范畴。",
+      "tag": "F",
+      "quote": "交互式IPA表",
+      "start": 88,
+      "end": 95,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_fa75c7ca34",
+      "fact": "本资料把IPA定义为语言学家用来描述口语声音的符号系统。",
+      "tag": "F",
+      "quote": "国际音标 （IPA）是语言学家用来描述口语声音的一套符号。",
+      "start": 635,
+      "end": 664,
+      "locator": {
+        "heading": "## 交互式IPA表",
+        "paragraph": 98,
+        "start": 635,
+        "end": 665
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_fa75c7ca34",
+      "fact": "本资料的用途是帮用户聆听声音、练习英语发音。",
+      "tag": "F",
+      "quote": "聆听声音，练习发音，提高您的英语口语技能。",
+      "start": 115,
+      "end": 136,
+      "locator": {
+        "heading": "# 交互式IPA表",
+        "paragraph": 7,
+        "start": 97,
+        "end": 137
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_fa75c7ca34",
+      "fact": "本资料列出44个音，分元音12、双元音8、辅音24。",
+      "tag": "F",
+      "quote": "All ( 44 ) Vowels ( 12 ) Diphthongs ( 8 ) Consonants ( 24 )",
+      "start": 146,
+      "end": 205,
+      "locator": {
+        "heading": "# 交互式IPA表",
+        "paragraph": 9,
+        "start": 146,
+        "end": 215
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_fa75c7ca34",
+      "fact": "本资料称IPA符号通用，但该表只专注英语声音。",
+      "tag": "F",
+      "quote": "虽然此表专注于英语声音，但IPA符号是通用的。",
+      "start": 1197,
+      "end": 1220,
+      "locator": {
+        "heading": "## ❓ 常见问题",
+        "paragraph": 115,
+        "start": 1197,
+        "end": 1252
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_fa75c7ca34",
+      "fact": "本资料全文未提及机器人流程自动化（RPA）与智能体。",
+      "tag": "F",
+      "quote": "IPA是语言学家用来表示口语声音的标准化语音符号系统。",
+      "start": 1056,
+      "end": 1083,
+      "locator": {
+        "heading": "## ❓ 常见问题",
+        "paragraph": 111,
+        "start": 1056,
+        "end": 1110
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_fa75c7ca34",
+      "fact": "据本资料无法就RPA与智能体的边界得出任何结论。",
+      "tag": "I",
+      "quote": "通过我们的交互式 ipachart.app 掌握英语发音。非常适合学生、教师和语言爱好者。",
+      "start": 1414,
+      "end": 1459,
+      "locator": {
+        "heading": "## ❓ 常见问题",
+        "paragraph": 121,
+        "start": 1414,
+        "end": 1460
+      },
+      "note": ""
+    }
+  ]
+}

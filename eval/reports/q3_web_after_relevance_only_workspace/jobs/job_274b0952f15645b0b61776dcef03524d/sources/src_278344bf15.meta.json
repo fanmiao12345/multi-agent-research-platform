@@ -1,0 +1,993 @@
+{
+  "source_id": "src_278344bf15",
+  "kind": "url",
+  "display": "电池工业网",
+  "original_address": "https://www.chbin.com.cn/index.html",
+  "title": "电池工业网",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 6240,
+  "content_hash": "a3a2340e31ab4114d787de1f883a6e2f25e6e1e4b1b33dd0f735c621184d4d38",
+  "normalized_hash": "dc4bf7bb0a27af27f77774b0e3fe4fe17a8714e34188d0e7a072fe309f95c39f",
+  "captured_at": "2026-09-18T13:34:31",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_278344bf15.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 137,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 5,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 6,
+      "end": 11,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 12,
+      "end": 15,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 16,
+      "end": 19,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 20,
+      "end": 23,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 24,
+      "end": 27,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 28,
+      "end": 31,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 32,
+      "end": 35,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 36,
+      "end": 39,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 40,
+      "end": 43,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 44,
+      "end": 47,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 48,
+      "end": 53,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 54,
+      "end": 59,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 60,
+      "end": 64,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 65,
+      "end": 70,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 71,
+      "end": 76,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 77,
+      "end": 82,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 83,
+      "end": 87,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 88,
+      "end": 93,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 94,
+      "end": 97,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 98,
+      "end": 103,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 104,
+      "end": 109,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 110,
+      "end": 115,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 116,
+      "end": 121,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 122,
+      "end": 127,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 128,
+      "end": 133,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 134,
+      "end": 139,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 140,
+      "end": 143,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 144,
+      "end": 147,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 148,
+      "end": 153,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 154,
+      "end": 157,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 158,
+      "end": 175,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 176,
+      "end": 179,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 180,
+      "end": 183,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 184,
+      "end": 187,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 188,
+      "end": 191,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 192,
+      "end": 197,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 198,
+      "end": 217,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 218,
+      "end": 222,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 223,
+      "end": 228,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 229,
+      "end": 234,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 235,
+      "end": 240,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 241,
+      "end": 259,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 260,
+      "end": 265,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 266,
+      "end": 269,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 270,
+      "end": 275,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 276,
+      "end": 295,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 47,
+      "start": 296,
+      "end": 301,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 48,
+      "start": 302,
+      "end": 307,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 49,
+      "start": 308,
+      "end": 313,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 50,
+      "start": 314,
+      "end": 319,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 51,
+      "start": 320,
+      "end": 325,
+      "page": null
+    },
+    {
+      "heading": "## 中国电子材料行业协会电池材料分会成立大会12日在广州召开",
+      "paragraph": 52,
+      "start": 385,
+      "end": 390,
+      "page": null
+    },
+    {
+      "heading": "## 企业动态",
+      "paragraph": 53,
+      "start": 498,
+      "end": 503,
+      "page": null
+    },
+    {
+      "heading": "## 资讯",
+      "paragraph": 54,
+      "start": 601,
+      "end": 604,
+      "page": null
+    },
+    {
+      "heading": "## 资讯",
+      "paragraph": 55,
+      "start": 605,
+      "end": 608,
+      "page": null
+    },
+    {
+      "heading": "## 资讯",
+      "paragraph": 56,
+      "start": 609,
+      "end": 612,
+      "page": null
+    },
+    {
+      "heading": "## 资讯",
+      "paragraph": 57,
+      "start": 613,
+      "end": 616,
+      "page": null
+    },
+    {
+      "heading": "## 资讯",
+      "paragraph": 58,
+      "start": 617,
+      "end": 620,
+      "page": null
+    },
+    {
+      "heading": "## 沧州新建年处理6万吨磷酸铁黑粉项目",
+      "paragraph": 59,
+      "start": 643,
+      "end": 661,
+      "page": null
+    },
+    {
+      "heading": "## 沧州新建年处理6万吨磷酸铁黑粉项目",
+      "paragraph": 60,
+      "start": 662,
+      "end": 729,
+      "page": null
+    },
+    {
+      "heading": "## 沧州新建年处理6万吨磷酸铁黑粉项目",
+      "paragraph": 61,
+      "start": 730,
+      "end": 733,
+      "page": null
+    },
+    {
+      "heading": "## 四川巴中1.5GWh钠电池项目投产",
+      "paragraph": 62,
+      "start": 756,
+      "end": 774,
+      "page": null
+    },
+    {
+      "heading": "## 四川巴中1.5GWh钠电池项目投产",
+      "paragraph": 63,
+      "start": 775,
+      "end": 842,
+      "page": null
+    },
+    {
+      "heading": "## 四川巴中1.5GWh钠电池项目投产",
+      "paragraph": 64,
+      "start": 843,
+      "end": 846,
+      "page": null
+    },
+    {
+      "heading": "## 15万吨磷酸铁锂前驱体项目落地贵州",
+      "paragraph": 65,
+      "start": 869,
+      "end": 887,
+      "page": null
+    },
+    {
+      "heading": "## 15万吨磷酸铁锂前驱体项目落地贵州",
+      "paragraph": 66,
+      "start": 888,
+      "end": 955,
+      "page": null
+    },
+    {
+      "heading": "## 电池制造",
+      "paragraph": 67,
+      "start": 965,
+      "end": 969,
+      "page": null
+    },
+    {
+      "heading": "## 电池制造",
+      "paragraph": 68,
+      "start": 970,
+      "end": 975,
+      "page": null
+    },
+    {
+      "heading": "## 电池制造",
+      "paragraph": 69,
+      "start": 976,
+      "end": 981,
+      "page": null
+    },
+    {
+      "heading": "## 电池制造",
+      "paragraph": 70,
+      "start": 982,
+      "end": 987,
+      "page": null
+    },
+    {
+      "heading": "## 电池制造",
+      "paragraph": 71,
+      "start": 988,
+      "end": 993,
+      "page": null
+    },
+    {
+      "heading": "## 黑龙江省鸡西市30万吨绿氢醇航油化工联产项目签约",
+      "paragraph": 72,
+      "start": 1023,
+      "end": 1041,
+      "page": null
+    },
+    {
+      "heading": "## 黑龙江省鸡西市30万吨绿氢醇航油化工联产项目签约",
+      "paragraph": 73,
+      "start": 1042,
+      "end": 1109,
+      "page": null
+    },
+    {
+      "heading": "## 黑龙江省鸡西市30万吨绿氢醇航油化工联产项目签约",
+      "paragraph": 74,
+      "start": 1110,
+      "end": 1115,
+      "page": null
+    },
+    {
+      "heading": "## 浙江新建1亿元锂电材料项目",
+      "paragraph": 75,
+      "start": 1134,
+      "end": 1152,
+      "page": null
+    },
+    {
+      "heading": "## 浙江新建1亿元锂电材料项目",
+      "paragraph": 76,
+      "start": 1153,
+      "end": 1220,
+      "page": null
+    },
+    {
+      "heading": "## 浙江新建1亿元锂电材料项目",
+      "paragraph": 77,
+      "start": 1221,
+      "end": 1226,
+      "page": null
+    },
+    {
+      "heading": "## 鄂尔多斯万吨级光伏制氢项目完成氢气充装",
+      "paragraph": 78,
+      "start": 1251,
+      "end": 1269,
+      "page": null
+    },
+    {
+      "heading": "## 鄂尔多斯万吨级光伏制氢项目完成氢气充装",
+      "paragraph": 79,
+      "start": 1270,
+      "end": 1337,
+      "page": null
+    },
+    {
+      "heading": "## 产业链",
+      "paragraph": 80,
+      "start": 1346,
+      "end": 1351,
+      "page": null
+    },
+    {
+      "heading": "## 产业链",
+      "paragraph": 81,
+      "start": 1352,
+      "end": 1355,
+      "page": null
+    },
+    {
+      "heading": "## 产业链",
+      "paragraph": 82,
+      "start": 1356,
+      "end": 1361,
+      "page": null
+    },
+    {
+      "heading": "## 产业链",
+      "paragraph": 83,
+      "start": 1362,
+      "end": 1366,
+      "page": null
+    },
+    {
+      "heading": "## 中核新源100万千瓦风电源网荷储一体化项目全容量并网",
+      "paragraph": 84,
+      "start": 1398,
+      "end": 1416,
+      "page": null
+    },
+    {
+      "heading": "## 中核新源100万千瓦风电源网荷储一体化项目全容量并网",
+      "paragraph": 85,
+      "start": 1417,
+      "end": 1484,
+      "page": null
+    },
+    {
+      "heading": "## 中核新源100万千瓦风电源网荷储一体化项目全容量并网",
+      "paragraph": 86,
+      "start": 1485,
+      "end": 1489,
+      "page": null
+    },
+    {
+      "heading": "## 晶科科技宁夏石嘴山200MW/800MWh独立储能项目顺利并网",
+      "paragraph": 87,
+      "start": 1526,
+      "end": 1544,
+      "page": null
+    },
+    {
+      "heading": "## 晶科科技宁夏石嘴山200MW/800MWh独立储能项目顺利并网",
+      "paragraph": 88,
+      "start": 1545,
+      "end": 1612,
+      "page": null
+    },
+    {
+      "heading": "## 晶科科技宁夏石嘴山200MW/800MWh独立储能项目顺利并网",
+      "paragraph": 89,
+      "start": 1613,
+      "end": 1617,
+      "page": null
+    },
+    {
+      "heading": "## 两部门：提高关键核心器件与部件供给能力，提升储能系统高效集成和精准调控水平",
+      "paragraph": 90,
+      "start": 1660,
+      "end": 1678,
+      "page": null
+    },
+    {
+      "heading": "## 两部门：提高关键核心器件与部件供给能力，提升储能系统高效集成和精准调控水平",
+      "paragraph": 91,
+      "start": 1679,
+      "end": 1746,
+      "page": null
+    },
+    {
+      "heading": "#### 6月15日第11届中国动力电池回收利用产业发展论坛在杭州成功举办",
+      "paragraph": 92,
+      "start": 1795,
+      "end": 1959,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 93,
+      "start": 1969,
+      "end": 1997,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 94,
+      "start": 1998,
+      "end": 2009,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 95,
+      "start": 2010,
+      "end": 2032,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 96,
+      "start": 2033,
+      "end": 2044,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 97,
+      "start": 2045,
+      "end": 2085,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 98,
+      "start": 2086,
+      "end": 2097,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 99,
+      "start": 2098,
+      "end": 2110,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 100,
+      "start": 2111,
+      "end": 2122,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 101,
+      "start": 2123,
+      "end": 2135,
+      "page": null
+    },
+    {
+      "heading": "## 数据分析",
+      "paragraph": 102,
+      "start": 2136,
+      "end": 2147,
+      "page": null
+    },
+    {
+      "heading": "## 论坛活动",
+      "paragraph": 103,
+      "start": 2175,
+      "end": 2180,
+      "page": null
+    },
+    {
+      "heading": "### 【演讲嘉宾】杨林丨动力电池回收产业政策解析、行业合规与发展趋势",
+      "paragraph": 104,
+      "start": 2353,
+      "end": 2363,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 105,
+      "start": 2374,
+      "end": 2379,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 106,
+      "start": 2380,
+      "end": 2385,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 107,
+      "start": 2386,
+      "end": 2392,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 108,
+      "start": 2393,
+      "end": 2400,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 109,
+      "start": 2401,
+      "end": 2405,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 110,
+      "start": 2406,
+      "end": 2415,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 111,
+      "start": 2416,
+      "end": 2422,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 112,
+      "start": 2423,
+      "end": 2429,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 113,
+      "start": 2430,
+      "end": 2439,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 114,
+      "start": 2440,
+      "end": 2454,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 115,
+      "start": 2455,
+      "end": 2465,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 116,
+      "start": 2466,
+      "end": 2476,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 117,
+      "start": 2477,
+      "end": 2482,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 118,
+      "start": 2483,
+      "end": 2501,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 119,
+      "start": 2502,
+      "end": 2524,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 120,
+      "start": 2525,
+      "end": 2538,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 121,
+      "start": 2539,
+      "end": 2554,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 122,
+      "start": 2555,
+      "end": 2584,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 123,
+      "start": 2585,
+      "end": 2590,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 124,
+      "start": 2591,
+      "end": 2598,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 125,
+      "start": 2599,
+      "end": 2606,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 126,
+      "start": 2607,
+      "end": 2641,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 127,
+      "start": 2642,
+      "end": 2652,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 128,
+      "start": 2653,
+      "end": 2704,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 129,
+      "start": 2705,
+      "end": 2710,
+      "page": null
+    },
+    {
+      "heading": "### 联系我们",
+      "paragraph": 130,
+      "start": 2721,
+      "end": 2734,
+      "page": null
+    },
+    {
+      "heading": "### 联系我们",
+      "paragraph": 131,
+      "start": 2735,
+      "end": 2741,
+      "page": null
+    },
+    {
+      "heading": "### 联系我们",
+      "paragraph": 132,
+      "start": 2742,
+      "end": 2763,
+      "page": null
+    },
+    {
+      "heading": "### 联系我们",
+      "paragraph": 133,
+      "start": 2764,
+      "end": 2792,
+      "page": null
+    },
+    {
+      "heading": "### 联系我们",
+      "paragraph": 134,
+      "start": 2793,
+      "end": 2798,
+      "page": null
+    },
+    {
+      "heading": "### 微信扫一扫关注我们",
+      "paragraph": 135,
+      "start": 2814,
+      "end": 2819,
+      "page": null
+    },
+    {
+      "heading": "### 微信扫一扫关注我们",
+      "paragraph": 136,
+      "start": 2820,
+      "end": 2824,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.chbin.com.cn/index.html",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T13:34:31",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_d27f2449ad4a4d8687e253ae56cc1f88",
+  "goal": "新能源汽车电池回收行业现状与监管",
+  "started_at": "2026-09-20T10:50:19",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 9 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T10:50:31"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:50:38"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T10:50:46"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均为无关页面或加载提示，未含新能源汽车电池回收行业现状与监管内容，无法形成报告。",
+        "finished_at": "2026-09-20T10:50:50"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均为无关页面或加载提示，未含新能源汽车电池回收行业现状与监管内容，无法形成报告。；缺失信息：行业规模与企业格局统计、现行监管制度与责任主体法规政策、动力电池退役量与回收渠道数据、合规问题与处罚案例、技术路线与资源化利用资料（可用证据 9 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

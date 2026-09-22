@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称用户可快速访问笔记，即使离线。",
+      "tag": "F",
+      "quote": "you can access them quickly, even offline.",
+      "start": 2289,
+      "end": 2331,
+      "locator": {
+        "heading": "# Sharpen your thinking.",
+        "paragraph": 107,
+        "start": 2238,
+        "end": 2372
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称 Obsidian 将笔记本地保存为纯文本 Markdown 文件。",
+      "tag": "F",
+      "quote": "Obsidian stores your notes locally as plain text Markdown files.",
+      "start": 5483,
+      "end": 5547,
+      "locator": {
+        "heading": "# Writing is telepathy",
+        "paragraph": 179,
+        "start": 5481,
+        "end": 5548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称 Obsidian 使用开放文件格式，避免用户被锁定。",
+      "tag": "F",
+      "quote": "Obsidian uses open file formats, so you’re never locked in.",
+      "start": 2515,
+      "end": 2574,
+      "locator": {
+        "heading": "# Sharpen your thinking.",
+        "paragraph": 111,
+        "start": 2515,
+        "end": 2612
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称可链接想法、人物、地点、书籍等，构建个人 Wikipedia。",
+      "tag": "F",
+      "quote": "Link anything and everything — ideas, people, places, books, and beyond.",
+      "start": 2859,
+      "end": 2931,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 116,
+        "start": 2820,
+        "end": 2968
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称可用标签组织想法。",
+      "tag": "F",
+      "quote": "Use tags to organize your ideas",
+      "start": 5586,
+      "end": 5617,
+      "locator": {
+        "heading": "# Writing is telepathy",
+        "paragraph": 181,
+        "start": 5584,
+        "end": 5618
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称图谱可发现思维中的隐藏模式。",
+      "tag": "F",
+      "quote": "Find hidden patterns in your thinking",
+      "start": 3399,
+      "end": 3436,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 127,
+        "start": 3351,
+        "end": 3488
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称 Dataview 插件提供高级查询。",
+      "tag": "F",
+      "quote": "Advanced queries for the data-obsessed.",
+      "start": 4634,
+      "end": 4673,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 153,
+        "start": 4634,
+        "end": 4674
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_a2ebcd11da",
+      "fact": "本资料称每条笔记有一年版本历史，可跟踪修订变化。",
+      "tag": "F",
+      "quote": "with one year of version history for every note.",
+      "start": 4968,
+      "end": 5016,
+      "locator": {
+        "heading": "## Sync securely.",
+        "paragraph": 159,
+        "start": 4911,
+        "end": 5017
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料为 Obsidian 的下载页面，列出各平台下载入口。",
+      "tag": "F",
+      "quote": "Download for Windows",
+      "start": 512,
+      "end": 532,
+      "locator": {
+        "heading": "",
+        "paragraph": 56,
+        "start": 512,
+        "end": 533
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料列出 Windows 与 Mac 的 Universal 下载入口。",
+      "tag": "F",
+      "quote": "Universal",
+      "start": 607,
+      "end": 616,
+      "locator": {
+        "heading": "## App",
+        "paragraph": 63,
+        "start": 607,
+        "end": 617
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料列出 iOS 的 App Store 与 Android 的 Google Play APK 下载渠道。",
+      "tag": "F",
+      "quote": "Google Play APK",
+      "start": 581,
+      "end": 596,
+      "locator": {
+        "heading": "## App",
+        "paragraph": 61,
+        "start": 581,
+        "end": 597
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料列出 Linux 端 AppImage、Snap、Deb、Flatpak 等格式，并注明部分由社区维护。",
+      "tag": "F",
+      "quote": "AppImage Snap Deb AppImage (AArch64, ARM64) Flatpak Community maintained",
+      "start": 641,
+      "end": 713,
+      "locator": {
+        "heading": "## App",
+        "paragraph": 67,
+        "start": 641,
+        "end": 714
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料列出 Web Clipper 支持 Chrome、Safari、Firefox、Edge 等浏览器。",
+      "tag": "F",
+      "quote": "Chrome Safari Firefox Edge",
+      "start": 731,
+      "end": 757,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 68,
+        "start": 731,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料将 Sync、Publish、Canvas、Mobile、Web Clipper、CLI 列为产品能力。",
+      "tag": "F",
+      "quote": "Sync\n\nPublish\n\nCanvas\n\nMobile\n\nWeb Clipper\n\nCLI",
+      "start": 857,
+      "end": 904,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 77,
+        "start": 857,
+        "end": 862
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料提到社区提供插件与主题等扩展资源。",
+      "tag": "F",
+      "quote": "Plugins\n\nThemes",
+      "start": 1063,
+      "end": 1078,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 97,
+        "start": 1063,
+        "end": 1071
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_f04e61446e",
+      "fact": "本资料未说明检索、记忆或知识组织的具体设计机制。",
+      "tag": "I",
+      "quote": "Download",
+      "start": 0,
+      "end": 8,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 9
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称知识星球将内容创作、沉淀管理与社群运营一站完成。",
+      "tag": "F",
+      "quote": "内容创作、沉淀管理、社群运营，一站完成。",
+      "start": 97,
+      "end": 117,
+      "locator": {
+        "heading": "# 连接一千位 铁杆粉丝",
+        "paragraph": 3,
+        "start": 97,
+        "end": 118
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称星球支持发表主题，随时捕捉记录身边灵感。",
+      "tag": "F",
+      "quote": "发表主题，随时捕捉记录身边灵感",
+      "start": 195,
+      "end": 210,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称星球内可输出碎片化内容并与粉丝分享交流。",
+      "tag": "F",
+      "quote": "星球内可输出碎片化内容，与粉丝分享交流。",
+      "start": 225,
+      "end": 245,
+      "locator": {
+        "heading": "### 发表主题，随时捕捉记录身边灵感",
+        "paragraph": 7,
+        "start": 212,
+        "end": 246
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称支持文字、图片、文件、音频，可加标签、设置精华、布置作业并长期保存。",
+      "tag": "F",
+      "quote": "支持文字、图片、文件、音频，可加标签、设置精华、布置作业，内容长期保存。",
+      "start": 335,
+      "end": 371,
+      "locator": {
+        "heading": "### 多种内容组织形式",
+        "paragraph": 10,
+        "start": 335,
+        "end": 372
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称可按关键字搜索星球内容，并提供多种筛选主题条件。",
+      "tag": "F",
+      "quote": "随时按关键字搜索星球内容，提供多种筛选主题条件，查找你想要的内容。",
+      "start": 387,
+      "end": 420,
+      "locator": {
+        "heading": "### 搜索筛选快速查找",
+        "paragraph": 11,
+        "start": 387,
+        "end": 421
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称提供多种内容组织形式。",
+      "tag": "F",
+      "quote": "多种内容组织形式",
+      "start": 325,
+      "end": 333,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称搜索筛选可快速查找。",
+      "tag": "F",
+      "quote": "搜索筛选快速查找",
+      "start": 377,
+      "end": 385,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_4428ce5780",
+      "fact": "本资料称内容沉淀、信息管理更高效。",
+      "tag": "F",
+      "quote": "内容沉淀、信息管理更高效",
+      "start": 307,
+      "end": 319,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

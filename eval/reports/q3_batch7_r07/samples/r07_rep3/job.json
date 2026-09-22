@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_6800b98bef354130995e91fc2d51b281",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 截至2026年9月7日新增独立研究查询提纲\n## 已有证据\n本资料为观察研究，覆盖120人、为期4周【E-002】〔事实〕；样本自愿加入，未随机分组【E-004】〔事实〕。因此，该材料属于非随机观察设计，组间差异可能受自选择等因素影响【E-004】〔推断〕。主要发现方面，本资料称远程办公与自评专注度上升存在相关关系【E-003】〔事实〕。但该发现基于自评专注度，本资料没有报告客观产出指标或长期效果【E-005】〔事实〕；本资料仅显示相关关系，不能据此确定因果关系【E-006】〔推断〕。因此，对该相关关系宜视为待检验信号，不能推出因果结论〔推断〕。\n## 无法完成的部分\n本材料为合成验收数据【E-001】〔事实〕，据此不能视为新增独立研究〔推断〕。本资料不足以回答截至2026年9月7日新增独立研究及其最新结论【E-007】〔推断〕。按任务说明，本例搜索服务不可用，只提供一份旧摘要，因此无法检索新增研究清单或最新结论〔事实〕。即使聚焦远程办公主题，本资料没有报告客观产出指标或长期效果【E-005】〔事实〕；样本未随机分组【E-004】〔事实〕，缺少随机分组或因果识别设计以支持因果推断〔推断〕；本资料仅显示相关关系，不能据此确定因果关系【E-006】〔推断〕。所以，无法回答远程办公对客观产出的影响、长期效果以及因果关系问题〔推断〕。\n## 后续所需\n需要补充可用的搜索服务、检索范围与检索记录、来源清单、纳入排除标准，以及截至2026年9月7日新增独立研究清单〔推断〕。需要截至2026年9月7日的独立研究证据，尤其随机分组或因果识别设计，以检验远程办公与专注度是否存在因果关系；本资料仅显示相关关系，不能据此确定因果关系【E-006】〔推断〕。需要客观产出指标数据，因为本资料没有报告客观产出指标或长期效果【E-005】〔事实〕。需要长期随访数据，以评估长期效果；本资料没有报告长期效果【E-005】〔事实〕。还需要能回答截至2026年9月7日最新结论的独立研究证据；本资料不足以回答该问题【E-007】〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v2",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 7 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-21T11:51:53"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-21T11:51:59"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个章节",
+        "finished_at": "2026-09-21T11:52:04"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（851字）",
+        "finished_at": "2026-09-21T11:52:19"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 8,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-21T11:53:15"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-21T11:53:42"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 1,
+    "total_citations": 15,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

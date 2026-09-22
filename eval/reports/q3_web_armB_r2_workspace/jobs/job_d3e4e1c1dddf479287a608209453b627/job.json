@@ -1,0 +1,560 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_d3e4e1c1dddf479287a608209453b627",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 2026年人工智能治理政策主要争议的可核查提纲\n## 资料范围与证据边界\n现有资料不足以系统回答2026年AI治理政策主要争议〔推断〕。欧盟概况仅提绿色和数字双转型，未涉及AI治理争议 [E-005]〔事实〕。相关欧盟资料无AI内容，无法说明2026年AI治理争议 [E-006]〔事实〕。欧盟官方门户资料未提供2026年AI治理争议信息 [E-034]〔事实〕。美国国家概况资料无法为2026年AI治理争议提供事实依据 [E-012]〔事实〕。中国政府网资料无2026年AI治理政策争议的可提取证据 [E-017]〔事实〕。每日AI资讯聚合未系统梳理AI治理政策主要争议 [E-022]〔事实〕。因此，现有材料缺少系统性的官方政策文件、多方立场与争议记录，不能形成完整争议图谱〔推断〕[E-005][E-006][E-012][E-017][E-022][E-034]。\n## 欧盟数字与平台政策中的AI相邻争议\n欧盟概况（外交部）资料显示，更新时间标注为2026年7月 [E-001]〔事实〕。2026年上半年欧盟轮值主席国为塞浦路斯，下半年为爱尔兰 [E-002]〔事实〕。欧盟以安全、竞争力和绿色发展为三大支柱推进政策 [E-003]〔事实〕。欧盟出台《外国补贴条例》《反胁迫工具》等经贸政策工具箱 [E-004]〔事实〕。欧盟官方门户页面资料显示，欧盟提出KIDS Act，拟延迟儿童使用社交媒体至13岁 [E-030][E-031]〔事实〕；欧盟关注儿童和青少年使用在线平台的风险 [E-030][E-032]〔事实〕；欧洲议会批准欧盟海关法典改革，对电商实施更严格规则 [E-030][E-033]〔事实〕。上述内容属于数字与平台治理、儿童保护与电商规则，所引资料未显示其与2026年AI治理争议的直接政策关联〔推断〕[E-001][E-002][E-003][E-004][E-030][E-031][E-032][E-033]。\n## 美国资料中的AI治理信息缺位\n美国国家概况通篇未涉及人工智能治理政策 [E-007]〔事实〕。该美国国家概况最近更新时间为2026年6月 [E-008]〔事实〕。该资料涵盖美国国名、面积、人口、宗教、首都等基本国情 [E-009]〔事实〕。该资料还介绍美国政府、国会、司法、政党、经济、军事等内容 [E-010]〔事实〕。该资料述及国会构成，但未提及AI监管机构或法案 [E-011]〔事实〕。因此，这份美国国家概况不能用于归纳美国2026年AI治理争议 [E-012]〔事实〕；美国官方AI战略与监管文本是否缺失，仅凭该资料无法核实〔未知〕[E-007][E-008][E-009][E-010][E-011][E-012]。\n## 中国官方资料中的AI治理信息缺位\n中国政府网门户首页内容为要闻、最新政策与政务导航 [E-013]〔事实〕。该网站提到《电子信息制造业发展“十五五”规划》印发 [E-014]〔事实〕。该网站提到商务部解读促进智能家居消费行动方案 [E-015]〔事实〕。该网站通篇未出现人工智能治理及2026年AI政策争议内容 [E-016]〔事实〕。该网站未列出人工智能、算法、数据治理相关文件或解读 [E-018]〔事实〕。因此，中国政府网资料无2026年AI治理政策争议的可提取证据 [E-017]〔事实〕，不能说明中国官方2026年AI治理争议立场〔未知〕[E-013][E-014][E-015][E-016][E-017][E-018]。\n## 中国网中的AI版权与治理场景线索\n中国网资料唯一涉及AI的标题是AI训练与版权保护问题 [E-019]〔事实〕。中国网资料提及重庆计划打造150个“人工智能+”综合治理场景 [E-020]〔事实〕。中国网资料为门户首页栏目导航与标题汇编，未提供AI治理争议内容 [E-021]〔事实〕。每日AI资讯聚合未系统梳理AI治理政策主要争议 [E-022]〔事实〕。据此只能识别AI训练版权和治理场景两条有限线索，尚不能判断2026年争议全貌〔推断〕[E-019][E-020][E-021][E-022]。\n## 前沿模型安全分发与访问限制争议\nOpenAI以合规担忧终止Cursor模型直接访问，并称Astra需严控分发 [E-023]〔事实〕。GPT-6 Astra达到关键网络安全能力门槛，但可监控性下降 [E-024]〔事实〕。谷歌网络安全专用模型仅通过认证计划向安全人员开放 [E-025]〔事实〕。OpenAI网络安全模型GPT-5.6-Cyber仅向可信合作伙伴开放 [E-026]〔事实〕。资料显示若干限制访问安排，但不能据此确认已形成从开放访问转向严控分发的普遍趋势〔推断〕[E-023][E-024][E-025][E-026]。资料未给出监管规则制定方的规则文本，难以确认相关争议的制度化程度〔未知〕[E-023][E-024][E-025][E-026]。\n## 网络安全能力门槛与可监控性监管争议\nGPT-6 Astra达到关键网络安全能力门槛，但可监控性下降 [E-024]〔事实〕。OpenAI以合规担忧终止Cursor模型直接访问，并称Astra需严控分发 [E-023]〔事实〕。谷歌网络安全专用模型仅通过认证计划向安全人员开放 [E-025]〔事实〕。OpenAI网络安全模型GPT-5.6-Cyber仅向可信合作伙伴开放 [E-026]〔事实〕。上述能力门槛、可监控性下降与定向开放出现在企业实践描述中；资料尚无监管标准、评估机制或安全分发规则证据〔未知〕[E-023][E-024][E-025][E-026]。资料仅示企业限制访问与监管标准缺位，不能证明“能否形成统一监管门槛”已成为有证据支撑的争议〔推断〕[E-023][E-024][E-025][E-026]。\n## 跨境监管审查与企业架构调整争议\nManus因跨境监管审查调整架构，恢复独立运营 [E-027]〔事实〕。企业级AI助手强调数据本地驻留、隐私隔离与多项合规审计 [E-028]〔事实〕。GUI智能体具严格安全边界，敏感操作前主动确认用户 [E-029]〔事实〕。据此可观察跨境审查、数据本地驻留、隐私隔离与安全边界等线索〔推断〕[E-027][E-028][E-029]；但 [E-028][E-029] 未证明这些是监管要求，具体监管决定、企业声明与合规要求仍缺少〔未知〕[E-027][E-028][E-029]。\n## 主要经济体AI治理分歧比较缺口\n欧盟相关资料无AI内容，无法说明2026年AI治理争议 [E-006]〔事实〕。美国国家概况资料无法为2026年AI治理争议提供事实依据 [E-012]〔事实〕。中国政府网资料无2026年AI治理政策争议的可提取证据 [E-017]〔事实〕。欧盟官方门户资料未提供2026年AI治理争议信息 [E-034]〔事实〕。因此，在现有资料范围内，无法比较欧盟、美国、中国等主要经济体的2026年AI治理分歧〔未知〕；这不等于相应官方AI战略与监管文本实际缺失〔推断〕[E-006][E-012][E-017][E-034]。\n## 结论与待补证据清单\n可确认的缺口性观察是：欧盟概况未涉AI治理争议 [E-005]〔事实〕；相关欧盟资料无AI内容 [E-006]〔事实〕；美国国家概况无法提供AI治理争议事实依据 [E-012]〔事实〕；中国政府网无可提取AI治理争议证据 [E-017]〔事实〕；每日AI资讯聚合未系统梳理争议 [E-022]〔事实〕；欧盟官方门户未提供2026年AI治理争议信息 [E-034]〔事实〕。此外，AI训练版权线索见 [E-019]〔事实〕；治理场景线索见 [E-020]〔事实〕；前沿模型安全分发、能力门槛与可监控性、跨境监管与企业架构调整等零散线索分别见 [E-023][E-024][E-025][E-026][E-027][E-028][E-029]〔事实〕。由此，2026年AI治理政策主要争议在现有资料中未获系统回答〔未知〕，仅见上述零散线索〔推断〕[E-019][E-020][E-023][E-024][E-025][E-026][E-027][E-028][E-029]。待补问题指向补充：系统性的官方政策文件、多方立场与争议记录；AI训练版权的立法、判例、行业与权利人主张；AI网络安全能力门槛与可监控性下降的监管标准、评估机制与安全分发规则；跨境AI监管审查的具体监管决定、企业声明与合规要求；欧盟、美国、中国等官方AI战略与监管文本〔未知〕[E-005][E-006][E-012][E-017][E-022][E-034]。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 5,
+    "statuses": {
+      "ok": 5,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 29 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T09:53:47"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，1 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:54:05"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 5, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T09:55:02"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "10 个章节",
+        "finished_at": "2026-09-20T09:55:15"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（3231字）",
+        "finished_at": "2026-09-20T09:55:52"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 19,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T09:56:52"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T09:58:26"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 22,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-20T09:59:06"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 135,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+      "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+      "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+      "https://www.gov.cn/index.htm?isappinstalled=0",
+      "https://www.china.com.cn/",
+      "https://ai-bot.cn/daily-ai-news/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 AI法案 2026 争议",
+        "rank": 5,
+        "title": "欧盟概况 - 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+        "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 AI 州法 冲突",
+        "rank": 5,
+        "title": "国家概况_中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+        "snippet": "2025年，美国前五大货物贸易伙伴为墨西哥、加拿大、中国、德国、日本。 美国前五大货物和服务出口市场为加拿大、墨西哥、英国 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 AI 州法 冲突",
+        "rank": 3,
+        "title": "中文 (中国) - United States Department of State",
+        "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+        "snippet": "6 天之前 · An official website of the United States Government Here's how you know",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "中国 人工智能法 草案 争议",
+        "rank": 3,
+        "title": "中国政府网_中央人民政府门户网站",
+        "url": "https://www.gov.cn/index.htm?isappinstalled=0",
+        "snippet": "讲话全文 高度评价江泽民同志为党和人民建立的不朽功勋，号召深入学习江泽民同志的崇高风范，把中国特色社会主义事业不断推向 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "中国 人工智能法 草案 争议",
+        "rank": 5,
+        "title": "中国网--网上中国",
+        "url": "https://www.china.com.cn/",
+        "snippet": "国家重点新闻网站，拥有十个语种独立新闻采编、报道和发布权；第一时间报道国家重大新闻事件；国情信息库服务全球读者了解中 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI 训练数据 版权 诉讼",
+        "rank": 2,
+        "title": "每日AI资讯、热点、动态、融资、产品发布 | AI工具集",
+        "url": "https://ai-bot.cn/daily-ai-news/",
+        "snippet": "1 天前 · 上海AI实验室开源国产科研智能体工作台InternAgentS，面向AI for Science领域提供可本地部署、多模型适配的科研协作平台 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 AI法案 2026 争议",
+        "urls": [
+          "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "欧盟 AI法案 2026 争议",
+            "rank": 5,
+            "title": "欧盟概况 - 中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+            "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "欧洲联盟（欧洲经济、政治共同体）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%AC%A7%E6%B4%B2%E8%81%94%E7%9B%9F/786749",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Your gateway to the EU, News, Highlights | European Union",
+            "url": "https://european-union.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "European Commission, official website - European Commission",
+            "url": "https://commission.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "EU countries - European Union",
+            "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.318,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 AI 州法 冲突",
+        "urls": [
+          "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+          "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "美国 AI 州法 冲突",
+            "rank": 5,
+            "title": "国家概况_中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+            "snippet": "2025年，美国前五大货物贸易伙伴为墨西哥、加拿大、中国、德国、日本。 美国前五大货物和服务出口市场为加拿大、墨西哥、英国 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "美国 AI 州法 冲突",
+            "rank": 3,
+            "title": "中文 (中国) - United States Department of State",
+            "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+            "snippet": "6 天之前 · An official website of the United States Government Here's how you know",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "国家概况_中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中文 (中国) - United States Department of State",
+            "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "美国（美国）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD/14804533",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "美国历史（美利坚合众国的发展历史）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E5%8E%86%E5%8F%B2/283785",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "美国（美利坚合众国）_百度百科",
+            "url": "https://img.goworkla.cn/college/5c0dd511c6234718d80405ad/files/5c74b7cfc6237e05bc89c209/b6fb024e8623438b95adea0d1d02bd64.htm",
+            "relevance": 0.25,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.214,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "中国 人工智能法 草案 争议",
+        "urls": [
+          "https://www.gov.cn/index.htm?isappinstalled=0",
+          "https://www.china.com.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "中国 人工智能法 草案 争议",
+            "rank": 3,
+            "title": "中国政府网_中央人民政府门户网站",
+            "url": "https://www.gov.cn/index.htm?isappinstalled=0",
+            "snippet": "讲话全文 高度评价江泽民同志为党和人民建立的不朽功勋，号召深入学习江泽民同志的崇高风范，把中国特色社会主义事业不断推向 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "中国 人工智能法 草案 争议",
+            "rank": 5,
+            "title": "中国网--网上中国",
+            "url": "https://www.china.com.cn/",
+            "snippet": "国家重点新闻网站，拥有十个语种独立新闻采编、报道和发布权；第一时间报道国家重大新闻事件；国情信息库服务全球读者了解中 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中国政府网_中央人民政府门户网站",
+            "url": "https://www.gov.cn/index.htm?isappinstalled=0",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中国网--网上中国",
+            "url": "https://www.china.com.cn/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中华人民共和国_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD/106554",
+            "relevance": 0.071,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "中国（世界四大文明古国之一）_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD/1122445",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "中國政府網_中央人民政府門戶網站",
+            "url": "http://big5.www.gov.cn/gate/big5/www.gov.cn/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.433,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI 训练数据 版权 诉讼",
+        "urls": [
+          "https://ai-bot.cn/daily-ai-news/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "AI 训练数据 版权 诉讼",
+            "rank": 2,
+            "title": "每日AI资讯、热点、动态、融资、产品发布 | AI工具集",
+            "url": "https://ai-bot.cn/daily-ai-news/",
+            "snippet": "1 天前 · 上海AI实验室开源国产科研智能体工作台InternAgentS，面向AI for Science领域提供可本地部署、多模型适配的科研协作平台 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "每日AI资讯、热点、动态、融资、产品发布 | AI工具集",
+            "url": "https://ai-bot.cn/daily-ai-news/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "AI工具集官网 | 1000+ AI工具集合，国内外AI工具集导航大全",
+            "url": "https://ai-bot.cn/",
+            "relevance": 0.167,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "目前有哪些主流的AI？ - 知乎",
+            "url": "https://www.zhihu.com/question/591009674",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "AI工具集官网 | 5000+ AI工具集合，国内外AI工具集导航大全 ...",
+            "url": "https://cloudsai.cn/",
+            "relevance": 0.167,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "2026最全AI入门指南！100个核心概念一文搞懂，存下来慢慢学",
+            "url": "https://zhuanlan.zhihu.com/p/2012857457697899076",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.217,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（2026年人工智能治理政策的主要争议）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 14.709,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

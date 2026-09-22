@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "离线导出段将E-016用作导出格式与API文档缺失证据；E-016仅下载页检索/记忆/组织缺口，不支持该断言。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "记忆缺口段称给定证据未见间隔重复等却引E-016；E-016仅下载页缺口，不能证明全局无相关材料。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "检索架构段用E-016确认索引/排序/增量/跨端同步缺失；E-016仅笼统未说明检索设计，范围过宽。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论称索引/排序/更新/离线导出/协同验证均缺证据仅引E-016；多项超出下载页范围，应分别标全局证据缺口。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "图谱协同段称缺实证研究与评估指标却引E-004/E-005/E-006；这些功能描述不能支持缺失实证。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处用〔未知〕[E-016]表示全局资料缺失，但未每次重申E-016仅限下载页，易让读者误读范围。"
+  }
+ ]
+}

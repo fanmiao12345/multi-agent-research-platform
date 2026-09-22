@@ -1,0 +1,82 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-005）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-012仅提氨脱除回收，未提“气态膜技术”；报告据此作事实表述并列未知项，属超证据。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "报告称“与材料中列明的待补问题一致”，但证据无待补问题清单，属未支持断言。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-006仅泛称其他主管部门，未提生态环境部或“两部门职责分工”，后续方向具体化缺依据。"
+  },
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "后续核查方向未提出官方统计来源，仅提工信部、生态环境部和联盟，未满足提纲要求。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-014仅示友情链接，未证明动力电池回收联盟发布行业数据或属行业协会。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "缺口所列“白名单”未见于任一证据，属外部监管概念，宜删除或标注需另行查证。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-001仅称退役军人事务部官网首页内容，未明示“主办单位”，该表述略超证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-009、E-010仅列出出席与议题，推断“规格偏向政策解读”缺少证据。"
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "资料与目标主题的相关性",
+        "points": [
+          {
+            "evidence_id": "E-005",
+            "statement": "本资料全篇围绕AI视频生成器及其常见问题，未涉及软件测试。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "无法依据本资料判断生成式AI在软件测试中的应用趋势。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "本资料通篇为模型排名与指标数据，未提及生成式AI在软件测试中的应用或趋势。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "本资料未出现生成式人工智能或软件测试的相关内容，无法据此支撑该主题写作。"
+          },
+          {
+            "evidence_id": "E-025",
+            "statement": "本资料的分类清单中没有软件测试或测试自动化类目。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI视频工具资料",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "本资料为一款免费AI视频生成器的产品介绍页面。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "本资料称该工具支持文字转视频与图片转视频两种创作方式。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "本资料称MiniMax H3可同步生成画面运动、对白、音效与环境音。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "本资料列出的典型用例为营销人员、内容创作者与教育工作者。"
+          }
+        ]
+      },
+      {
+        "name": "LLM排行榜与模型能力信息",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "本资料比较并排名250多个LLM在智能、价格、速度、上下文窗口等指标上的表现。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "本资料称Claude Fable 5.1是智能得分最高的模型，其后为GPT-6 Astra。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "本资料排行榜可按模型类型、开放性等条件筛选。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "点击模型名称可查看智能、价格、速度、延迟等详细图表与API服务商比较。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "本资料设有「编程智能体」栏目，但正文未展开其具体内容。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "本资料提到推理模型先扩展思考再作答，未涉及软件测试。"
+          }
+        ]
+      },
+      {
+        "name": "AI工具导航分类信息",
+        "points": [
+          {
+            "evidence_id": "E-022",
+            "statement": "本资料是一个生成式AI工具导航站，按类别收录各类AIGC工具。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "本资料列出的工具分类包括AI写作、AI绘画、AI视频、AI办公等。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "本资料的分类中设有「AI编程工具」一项。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "本资料称注册即可享受免费体验、免费tokens与积分赠送。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "本资料提供AIGC视频课，涵盖GPT进阶、AI绘画等教程。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "软件测试工具或可归入本资料的AI编程工具类目，但资料未作说明。"
+          }
+        ]
+      },
+      {
+        "name": "甲骨文「大」资料",
+        "points": [
+          {
+            "evidence_id": "E-014",
+            "statement": "本资料标题为【大】的甲骨文金文篆文字形演变含义。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "本资料发布日期为2023年3月19日，来源标注为甲骨文研究网。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "本资料内容为汉字「大」的甲骨文、金文、篆文字形与含义释义。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "本资料将「大」解释为大人、成年人。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "本资料认为「大」的甲骨文像张开双臂双腿、顶天立地的成年人。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "本资料引《说文解字》称天大、地大、人亦大，故「大」象人形。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "本资料的主题词均为「大」的字形、说文解字与词组解释。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "生成式AI在软件测试中的应用趋势是什么？",
+        "missing": "软件测试领域的行业报告、研究论文或趋势统计"
+      },
+      {
+        "question": "生成式AI在测试用例生成、缺陷检测等环节有哪些应用证据？",
+        "missing": "具体应用案例、实验数据或工具说明"
+      },
+      {
+        "question": "LLM在软件测试任务中的能力表现如何？",
+        "missing": "面向测试任务的模型评测或基准数据"
+      },
+      {
+        "question": "软件测试工具是否已被AI工具导航收录？",
+        "missing": "AI工具导航中的测试类目或归类说明"
+      },
+      {
+        "question": "生成式AI在软件测试中的采用率与时间变化如何？",
+        "missing": "调查统计、时间序列或市场数据"
+      }
+    ],
+    "duplicates": []
+  }
+}

@@ -1,0 +1,603 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_856385244a",
+      "fact": "本资料仅介绍我国694个城市的行政区划名单，未涉及城市低碳交通政策。",
+      "tag": "F",
+      "quote": "我国现有694个城市，具体包括4个直辖市、293个地级市、397个县级市。",
+      "start": 209,
+      "end": 246,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 16,
+        "start": 177,
+        "end": 247
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_b62428fae0",
+      "fact": "本意见提出优先发展城市公共交通，倡导绿色低碳出行。",
+      "tag": "F",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行",
+      "start": 3430,
+      "end": 3449,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_b62428fae0",
+      "fact": "本意见提出健全现代化综合交通运输体系，提升城际、城内通勤效率。",
+      "tag": "F",
+      "quote": "健全现代化综合交通运输体系，提升城际、城内通勤效率",
+      "start": 2808,
+      "end": 2833,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_b62428fae0",
+      "fact": "本意见提出完善交通枢纽换乘换装设施布局，加强停车位、充电桩建设。",
+      "tag": "F",
+      "quote": "完善交通枢纽换乘换装设施布局，加强停车位、充电桩等便民设施建设",
+      "start": 2834,
+      "end": 2865,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_b62428fae0",
+      "fact": "本意见提出到2030年绿色转型深入推进。",
+      "tag": "F",
+      "quote": "绿色转型深入推进",
+      "start": 773,
+      "end": 781,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 29,
+        "start": 707,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_b62428fae0",
+      "fact": "本意见提出推动重点城市及周边区域大气污染物协同减排，持续改善空气质量。",
+      "tag": "F",
+      "quote": "推动重点城市及周边区域大气污染物协同减排，持续改善空气质量",
+      "start": 3523,
+      "end": 3552,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 46,
+        "start": 3452,
+        "end": 3641
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_b62428fae0",
+      "fact": "本意见要求城市工作坚持因地制宜、分类指导。",
+      "tag": "F",
+      "quote": "坚持因地制宜、分类指导",
+      "start": 457,
+      "end": 468,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 27,
+        "start": 339,
+        "end": 607
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_b62428fae0",
+      "fact": "本资料仅提出倡导绿色低碳出行，未量化低碳交通政策效果。",
+      "tag": "I",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行",
+      "start": 3430,
+      "end": 3449,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_b62428fae0",
+      "fact": "低碳交通政策需因地制宜分类实施，不宜一刀切。",
+      "tag": "I",
+      "quote": "坚持因地制宜、分类指导",
+      "start": 457,
+      "end": 468,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 27,
+        "start": 339,
+        "end": 607
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料列有“福建高速公路服务区装上‘能源大脑’”标题，未给出成效数据",
+      "tag": "F",
+      "quote": "福建高速公路服务区装上“能源大脑”",
+      "start": 91,
+      "end": 108,
+      "locator": {
+        "heading": "# 习近平就发展先进制造业作出重要指示",
+        "paragraph": 2,
+        "start": 91,
+        "end": 109
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料列有全球可持续交通高峰论坛（2026）将在北京举办的标题",
+      "tag": "F",
+      "quote": "全球可持续交通高峰论坛（2026）即将在京举办",
+      "start": 2129,
+      "end": 2152,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料政策解读栏目提供《“人工智能+交通运输”应用安全指引》图解",
+      "tag": "F",
+      "quote": "【图解】《“人工智能+交通运输”应用安全指引》",
+      "start": 795,
+      "end": 818,
+      "locator": {
+        "heading": "### 政策解读",
+        "paragraph": 25,
+        "start": 795,
+        "end": 830
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料发布2026年8月城市轨道交通运营数据速报，未列碳排放指标",
+      "tag": "F",
+      "quote": "2026年8月城市轨道交通运营数据速报",
+      "start": 1569,
+      "end": 1588,
+      "locator": {
+        "heading": "### 交通智数",
+        "paragraph": 57,
+        "start": 1569,
+        "end": 1600
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料设有《综合交通运输标准化发展“十五五”规划》政策解读内容",
+      "tag": "F",
+      "quote": "《综合交通运输标准化发展“十五五”规划》政策解读",
+      "start": 926,
+      "end": 950,
+      "locator": {
+        "heading": "### 政策解读",
+        "paragraph": 29,
+        "start": 926,
+        "end": 962
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料列有网约车监管信息交互系统发布的2026年8月行业运行情况",
+      "tag": "F",
+      "quote": "网约车监管信息交互系统发布2026年8月份网约车行业运行基本情况",
+      "start": 1524,
+      "end": 1556,
+      "locator": {
+        "heading": "### 交通智数",
+        "paragraph": 56,
+        "start": 1524,
+        "end": 1568
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料设有中国国际可持续交通创新和知识中心等部属机构入口",
+      "tag": "F",
+      "quote": "中国国际可持续交通创新和知识中心",
+      "start": 2610,
+      "end": 2626,
+      "locator": {
+        "heading": "#### 全球可持续交通高峰论坛（2026）即将在京举办",
+        "paragraph": 111,
+        "start": 2610,
+        "end": 2627
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_51c29c17f5",
+      "fact": "本资料为要闻列表页，未见城市低碳交通政策效果与限制的评估内容",
+      "tag": "I",
+      "quote": "时政要闻 交通要闻",
+      "start": 120,
+      "end": 129,
+      "locator": {
+        "heading": "# 习近平就发展先进制造业作出重要指示",
+        "paragraph": 4,
+        "start": 120,
+        "end": 130
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_11dda66c06",
+      "fact": "本资料为新浪网标题所示404错误页面，正文未提供任何关于城市低碳交通政策的内容。",
+      "tag": "F",
+      "quote": "The requested URL was not found on the server.",
+      "start": 14066,
+      "end": 14112,
+      "locator": {
+        "heading": "# Not Found",
+        "paragraph": 496,
+        "start": 14066,
+        "end": 14187
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_11dda66c06",
+      "fact": "本资料所列内容为新浪网各频道导航、新闻标题与商业信息，无交通政策相关论述。",
+      "tag": "F",
+      "quote": "新闻 微博 图片 视频",
+      "start": 108,
+      "end": 119,
+      "locator": {
+        "heading": "",
+        "paragraph": 18,
+        "start": 108,
+        "end": 120
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_116796ee51",
+      "fact": "本资料是影视创作与素材交易平台页面，主题与城市低碳交通政策无关。",
+      "tag": "F",
+      "quote": "新片场汇聚全球原创优质视频及创作人，提供4K、无广告、无水印视频观看",
+      "start": 4164,
+      "end": 4198,
+      "locator": {
+        "heading": "## 「别被强迫性疑虑困住」创作心路干货",
+        "paragraph": 314,
+        "start": 4164,
+        "end": 4240
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_116796ee51",
+      "fact": "本资料页面内容为作品推荐、素材分类、会员权益与网站导航等。",
+      "tag": "F",
+      "quote": "编辑精选 全球精选 广告片 宣传片 竖屏广告 AIGC AI画布 摄影 剪辑二创",
+      "start": 1781,
+      "end": 1821,
+      "locator": {
+        "heading": "# 新片场 - 与百万创作人一起成长，用作品打动世界",
+        "paragraph": 154,
+        "start": 1781,
+        "end": 1869
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_116796ee51",
+      "fact": "本资料未提供城市低碳交通政策效果与限制的任何事实主张，该主题存在证据缺口。",
+      "tag": "I",
+      "quote": "新片场社区 新片场素材 新片场影业 新片场短视频 新片场营销",
+      "start": 4363,
+      "end": 4393,
+      "locator": {
+        "heading": "## 「别被强迫性疑虑困住」创作心路干货",
+        "paragraph": 327,
+        "start": 4363,
+        "end": 4394
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_b156ea9733",
+      "fact": "西安2024年工作日高峰速度19.4km/h，较2023年18.2km/h，速度变化达1.2。",
+      "tag": "F",
+      "quote": "2024年西安工作日高峰运行速度为19.4km/h，相较于2023年的18.2km/h，速度变化达到1.2",
+      "start": 1839,
+      "end": 1892,
+      "locator": {
+        "heading": "# 2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "paragraph": 41,
+        "start": 1839,
+        "end": 1927
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_b156ea9733",
+      "fact": "西安对主干道拓宽改造、增加车道，使交通流运转更顺畅。",
+      "tag": "F",
+      "quote": "对城市主干道进行拓宽改造，增加车道数量让交通流运转更顺畅。",
+      "start": 2075,
+      "end": 2104,
+      "locator": {
+        "heading": "# 2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "paragraph": 45,
+        "start": 2072,
+        "end": 2105
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_b156ea9733",
+      "fact": "西安地铁线路持续延伸并扩大覆盖，吸引市民选择地铁出行。",
+      "tag": "F",
+      "quote": "地铁线路持续延伸，覆盖范围不断扩大，从而吸引大家选择地铁出行",
+      "start": 2109,
+      "end": 2139,
+      "locator": {
+        "heading": "# 2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "paragraph": 46,
+        "start": 2106,
+        "end": 2140
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_b156ea9733",
+      "fact": "西安推出公交专用道等措施，提高公交出行效率。",
+      "tag": "F",
+      "quote": "推出公交专用道等措施，提高公交的出行效率。",
+      "start": 2157,
+      "end": 2178,
+      "locator": {
+        "heading": "# 2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "paragraph": 47,
+        "start": 2141,
+        "end": 2179
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_b156ea9733",
+      "fact": "西安仍面临人口与车辆持续增长带来的交通压力。",
+      "tag": "F",
+      "quote": "人口与车辆数量还将持续增长，交通压力也将随之加大",
+      "start": 2237,
+      "end": 2261,
+      "locator": {
+        "heading": "# 2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "paragraph": 49,
+        "start": 2208,
+        "end": 2291
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_b156ea9733",
+      "fact": "西安老城区交通未来仍将面临不小挑战。",
+      "tag": "F",
+      "quote": "西安尤其是老城区的交通接下来仍然将会面临不小的挑战。",
+      "start": 2265,
+      "end": 2291,
+      "locator": {
+        "heading": "# 2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "paragraph": 49,
+        "start": 2208,
+        "end": 2291
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_b156ea9733",
+      "fact": "西安总路网密度6.4，在36城中排名第19。",
+      "tag": "F",
+      "quote": "西安总密度为6.4，在36城中处于第19位",
+      "start": 1438,
+      "end": 1459,
+      "locator": {
+        "heading": "# 2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "paragraph": 34,
+        "start": 1419,
+        "end": 1469
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_b156ea9733",
+      "fact": "本资料只讨论路网密度与交通拥堵，未涉及低碳交通政策。",
+      "tag": "I",
+      "quote": "2025全国路网密度与拥堵报告出炉，西安排名19位！",
+      "start": 2,
+      "end": 28,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_e49803b16f",
+      "fact": "拥堵指数为实际行程时间与畅通行程时间的比值，越大代表拥堵程度越高。",
+      "tag": "F",
+      "quote": "拥堵指数为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。",
+      "start": 1296,
+      "end": 1333,
+      "locator": {
+        "heading": "#### 全国城市拥堵情况查询说明",
+        "paragraph": 32,
+        "start": 1296,
+        "end": 1334
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_e49803b16f",
+      "fact": "资料称北上广深四大超一线城市通勤时耗排名靠前，但同比、环比均下降。",
+      "tag": "F",
+      "quote": "北上广深四大超一线城市的通勤时耗虽然排名整体靠前，但通勤时耗同比、环比均有所下降。",
+      "start": 1962,
+      "end": 2003,
+      "locator": {
+        "heading": "#### 全国城市拥堵指数排行榜",
+        "paragraph": 44,
+        "start": 1955,
+        "end": 2004
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_e49803b16f",
+      "fact": "资料显示智能交通缓堵效果显著，但未将其归因于低碳交通政策。",
+      "tag": "I",
+      "quote": "城市智能交通缓堵效果显著。",
+      "start": 2170,
+      "end": 2183,
+      "locator": {
+        "heading": "#### 全国城市拥堵指数排行榜",
+        "paragraph": 45,
+        "start": 2005,
+        "end": 2184
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_e49803b16f",
+      "fact": "重庆通勤高峰拥堵指数环比降7.12%，通勤耗时同比降7.46%。",
+      "tag": "F",
+      "quote": "重庆通勤高峰拥堵指数环比降7.12%，通勤耗时同比降7.46%",
+      "start": 2045,
+      "end": 2076,
+      "locator": {
+        "heading": "#### 全国城市拥堵指数排行榜",
+        "paragraph": 45,
+        "start": 2005,
+        "end": 2184
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_e49803b16f",
+      "fact": "北京通勤高峰拥堵指数环比降幅达14.4%，通勤耗时环比降3.62%。",
+      "tag": "F",
+      "quote": "北京通勤高峰拥堵指数环比降幅达14.4%，通勤耗时环比降3.62%",
+      "start": 2077,
+      "end": 2110,
+      "locator": {
+        "heading": "#### 全国城市拥堵指数排行榜",
+        "paragraph": 45,
+        "start": 2005,
+        "end": 2184
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_e49803b16f",
+      "fact": "广州、重庆、保定拥堵指数持续下降，城市智能交通缓堵效果显著。",
+      "tag": "F",
+      "quote": "广州、重庆、保定拥堵指数持续下降，城市智能交通缓堵效果显著。",
+      "start": 2153,
+      "end": 2183,
+      "locator": {
+        "heading": "#### 全国城市拥堵指数排行榜",
+        "paragraph": 45,
+        "start": 2005,
+        "end": 2184
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_e49803b16f",
+      "fact": "本资料当日武汉拥堵指数1.904，属拥堵，平均速度22.893km/h，拥堵里程27.76km。",
+      "tag": "F",
+      "quote": "武汉 1.904 (拥堵 ) 22.893km/h 27.76km",
+      "start": 742,
+      "end": 775,
+      "locator": {
+        "heading": "# 全国TOP100城市拥堵情况查询-拥堵指数排行",
+        "paragraph": 19,
+        "start": 735,
+        "end": 776
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_e49803b16f",
+      "fact": "本资料查询数据仅供参考，具体以官方数据为准。",
+      "tag": "F",
+      "quote": "本网站查询数据仅供用户参考，具体请以官方数据为准",
+      "start": 2365,
+      "end": 2389,
+      "locator": {
+        "heading": "#### 全国城市今日限行",
+        "paragraph": 69,
+        "start": 2360,
+        "end": 2442
+      },
+      "note": ""
+    }
+  ]
+}

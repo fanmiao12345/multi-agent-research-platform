@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_170dd1cec8f9474eabf47d358523e021",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 本次试点成本收益评估提纲（基于现有资料）\n\n## 已知信息\n\n该资料自述为合成验收数据【E-001】〔事实〕。人员规模方面：客服团队2026年共有45人【E-002】〔事实〕；其中一线坐席为32人【E-003】〔事实〕；团队其余人员为管理与质检岗位【E-004】〔事实〕。据此按人数相减可推得，管理与质检岗位共13人【E-005】〔推断〕。\n\n资料仅提供上述人员规模，未说明45人及32人坐席是否为本次试点的直接投入人员，也未提供其与试点的职责关联材料【E-006】〔推断〕。\n\n## 成本收益缺口\n\n本资料仅有人员规模，无任何成本或收益数据【E-006】〔事实〕。缺少成本收益数据，无法评估本次试点的成本收益【E-007】〔事实〕。由此，本报告无法给出试点成本投入、收益产出、投入产出比或效率提升等量化结论〔推断〕。\n\n## 待补信息清单\n\n- 成本：试点投入的成本项目、金额或资源数量，即缺少试点成本明细或财务数据【E-006】【E-007】〔事实〕；补齐后方可核算投入规模〔推断〕。\n- 收益：试点产生的收益、金额或效率提升，即缺少试点收益指标或产出数据【E-006】【E-007】〔事实〕；补齐后方可与投入对照〔推断〕。\n- 周期：试点的起止时间与覆盖范围，即缺少试点周期、范围和口径说明【E-006】【E-007】〔事实〕。\n- 口径：试点的统计口径说明，即缺少口径界定材料【E-006】【E-007】〔事实〕。\n- 基线：评估所需对照的基线或历史数据，即缺少试点前基线或对照组数据【E-006】【E-007】〔事实〕。\n- 人员关联：现有45人及32人坐席是否与本次试点直接相关，即缺少试点人员投入与职责关联材料【E-006】【E-007】〔推断〕。\n\n在上述信息补齐之前，本次试点的成本收益评估只能停留在缺口说明层面【E-007】〔事实〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 7 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T15:40:30"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T15:40:34"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个章节",
+        "finished_at": "2026-09-20T15:40:45"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（747字）",
+        "finished_at": "2026-09-20T15:40:47"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 9,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T15:41:13"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T15:41:55"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 11,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：报告自述无法交付核心内容：「本报告无法给出」（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-20T15:42:25"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 21,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：报告自述无法交付核心内容：「本报告无法给出」（程序层自述一致性检查；不视为验收成功）"
+  }
+}

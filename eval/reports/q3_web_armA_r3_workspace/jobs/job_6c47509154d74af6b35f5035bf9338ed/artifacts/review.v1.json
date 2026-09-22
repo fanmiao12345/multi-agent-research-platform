@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-030）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-014）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-030）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-030）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-014）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-014）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "结论称‘现有资料未直接覆盖’仅凭E-007/E-030，泛化到全部资料，且与E-016等卡片盒线索相矛盾"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "将E-025与E-014称为‘开放冲突’证据不足；二者可同时成立，宜表述为表面张力"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "问答来源可信属性未用E-024说明其为百度知道问答页面，属性不完整"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "部分总起句如‘需区分…’‘二者形成…’未标注事实或推断，不符合标注要求"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "‘查询交互’列为完全缺失，与E-017‘向它提问’的检索交互线索有张力，宜限定为具体机制缺失"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "‘这些不是已验证结论〔事实〕’标为事实不当，属元陈述，宜改为说明性标注"
+  }
+ ]
+}

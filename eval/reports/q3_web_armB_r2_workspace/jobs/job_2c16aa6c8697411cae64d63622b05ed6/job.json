@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_2c16aa6c8697411cae64d63622b05ed6",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 4,
+    "usable": 1,
+    "statuses": {
+      "ok": 1,
+      "empty": 1,
+      "read_failed": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 4 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T10:07:52"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "1 个主题，0 个开放冲突，3 个缺口",
+        "finished_at": "2026-09-20T10:07:55"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T10:07:59"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料为统计数据页面，未涉及企业数据出境合规或跨境流动制度，无法回答主要变化。",
+        "finished_at": "2026-09-20T10:08:03"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料为统计数据页面，未涉及企业数据出境合规或跨境流动制度，无法回答主要变化。；缺失信息：网信等部门数据出境安全评估、标准合同、认证等制度文件及修订文本、相关法规生效时间、适用范围及官方解读、监管问答、合规指引与企业案例材料（可用证据 4 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.stats.gov.cn/sj/",
+      "https://data.stats.gov.cn/",
+      "https://www.chsi.com.cn/",
+      "https://www.chsi.com.cn/;_"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "数据出境安全评估办法 修订",
+        "rank": 2,
+        "title": "数据 - 国家统计局",
+        "url": "https://www.stats.gov.cn/sj/",
+        "snippet": "2026年9月9日 · 数据发布 8月份国民经济运行平稳、发展向新向优 2026年8月份规模以上工业增加值增长5.2% 2026-09-15 2026 …",
+        "published_date": "2026-09-09",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "数据出境安全评估办法 修订",
+        "rank": 3,
+        "title": "国家数据",
+        "url": "https://data.stats.gov.cn/",
+        "snippet": "5 天之前 · 2026-09-15 国家统计局投资司张刚解读2026年1—8月份投资数据 2026-09-15 国家统计局贸经司首席统计师袁彦解读1—8 …",
+        "published_date": "2026-09-15",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人信息出境标准合同 备案 新规",
+        "rank": 1,
+        "title": "中国高等教育学生信息网（学信网）",
+        "url": "https://www.chsi.com.cn/",
+        "snippet": "当公共管理遇上人工智能 27个新专业，“长”在产业最需要的地方 立足本土、凝聚智慧，一本本教材这样诞生 跨越山海，他们走进大学 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人信息出境标准合同 备案 新规",
+        "rank": 2,
+        "title": "中国高等教育学生信息网（学信网）",
+        "url": "https://www.chsi.com.cn/;_",
+        "snippet": "教育部学历查询网站、教育部高校招生阳光工程指定网站、全国硕士研究生招生报名和调剂指定网站。 关于遴选2026年全国大学生“勤 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "数据出境安全评估办法 修订",
+        "urls": [
+          "https://www.stats.gov.cn/sj/",
+          "https://data.stats.gov.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "数据出境安全评估办法 修订",
+            "rank": 2,
+            "title": "数据 - 国家统计局",
+            "url": "https://www.stats.gov.cn/sj/",
+            "snippet": "2026年9月9日 · 数据发布 8月份国民经济运行平稳、发展向新向优 2026年8月份规模以上工业增加值增长5.2% 2026-09-15 2026 …",
+            "published_date": "2026-09-09",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "数据出境安全评估办法 修订",
+            "rank": 3,
+            "title": "国家数据",
+            "url": "https://data.stats.gov.cn/",
+            "snippet": "5 天之前 · 2026-09-15 国家统计局投资司张刚解读2026年1—8月份投资数据 2026-09-15 国家统计局贸经司首席统计师袁彦解读1—8 …",
+            "published_date": "2026-09-15",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "数据 - 国家统计局",
+            "url": "https://www.stats.gov.cn/sj/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "国家数据",
+            "url": "https://data.stats.gov.cn/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "数据（计算机术语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE/5947370",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "数据（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE/33305",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "84个常用的数据源网站分享！（保持更新，建议收藏）",
+            "url": "https://blog.csdn.net/BAZHUAYUdata/article/details/100779439",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.223,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "促进和规范数据跨境流动规定 豁免",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "促进_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BF%83%E8%BF%9B/2273364",
+            "relevance": 0.091,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "促进是什么意思_促进的翻译_音标_读音_用法_例句_爱词霸 ...",
+            "url": "https://www.iciba.com/word?w=%E4%BF%83%E8%BF%9B",
+            "relevance": 0.091,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "促进 | 简体中文-英语翻译——剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93-%E8%8B%B1%E8%AF%AD/%E4%BF%83%E8%BF%9B",
+            "relevance": 0.091,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "促进_促进的读音_促进的意思 - 汉语词典",
+            "url": "https://www.chagushici.com/zidian/%E4%BF%83%E8%BF%9B",
+            "relevance": 0.091,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "促进的意思,促进的拼音、近义词、反义词、造句 - 汉语查",
+            "url": "https://www.hgcha.com/cidian/a143621d.html",
+            "relevance": 0.091,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.19,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人信息出境标准合同 备案 新规",
+        "urls": [
+          "https://www.chsi.com.cn/",
+          "https://www.chsi.com.cn/;_"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人信息出境标准合同 备案 新规",
+            "rank": 1,
+            "title": "中国高等教育学生信息网（学信网）",
+            "url": "https://www.chsi.com.cn/",
+            "snippet": "当公共管理遇上人工智能 27个新专业，“长”在产业最需要的地方 立足本土、凝聚智慧，一本本教材这样诞生 跨越山海，他们走进大学 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "个人信息出境标准合同 备案 新规",
+            "rank": 2,
+            "title": "中国高等教育学生信息网（学信网）",
+            "url": "https://www.chsi.com.cn/;_",
+            "snippet": "教育部学历查询网站、教育部高校招生阳光工程指定网站、全国硕士研究生招生报名和调剂指定网站。 关于遴选2026年全国大学生“勤 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中国高等教育学生信息网（学信网）",
+            "url": "https://www.chsi.com.cn/",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中国高等教育学生信息网（学信网）",
+            "url": "https://www.chsi.com.cn/;_",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中国高等教育学生信息网（学信网）",
+            "url": "https://www.chsi.com.cn/?_=_",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "中国高等教育学生信息网（学信网）",
+            "url": "https://www.chsi.com.cn/wap/index.jsp",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "中国高等教育学生信息网（学信网）",
+            "url": "https://www.chsi.com.cn/?id=1",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.269,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "自贸试验区 数据出境 负面清单",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "自_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%87%AA/5167299",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "自的意思,自的解释,自的拼音,自的部首,自的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-33258",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "什么是‘自’？汉字‘自’的字源、含义与用法全解析_百度文库",
+            "url": "https://wenku.baidu.com/view/bbb46b7cf84ffe4733687e21af45b307e971f912.html",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "自怎么读_自的拼音 - 新华字典",
+            "url": "https://zidian.gushici.net/6/81ea.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "自组词_自字组词_自组词大全-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zuci/zi-33258",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.204,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（企业数据出境合规的主要变化）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: mode 必须取已开放模式 ['dynamic_team']（收到 'fanout'）；fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "dynamic_team"
+        ]
+      },
+      "scheduler_elapsed_seconds": 50.112,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "资料对软件测试议题的覆盖情况",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "该资料明确未提供生成式AI在软件测试中应用趋势的信息。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "该资料是创意工具产品页面，未涉及软件测试议题。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "仅凭该资料无法得出生成式AI在软件测试中的应用趋势。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "该资料设有编程智能体栏目，但未提供软件测试应用或趋势内容。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "该资料全篇未提及软件测试，也无测试用例或自动化测试类目。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI创意工具产品页面特征",
+        "points": [
+          {
+            "evidence_id": "E-002",
+            "statement": "该资料正文为Kling AI首页，含创意圈、资产等栏目。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "该资料首页含Omni、生成、灵动画布、全部工具等入口。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "该资料被判定为创意工具产品页面，未涉及软件测试议题。"
+          }
+        ]
+      },
+      {
+        "name": "LLM排行榜的能力与成本指标",
+        "points": [
+          {
+            "evidence_id": "E-006",
+            "statement": "该资料比较250多个AI模型在智能、价格、性能、速度、延迟、上下文窗口等指标上的表现。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "该资料显示智能得分最高的是Claude Fable 5.1与GPT-6 Astra系列。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "该资料显示输出速度最快的是Celeris-1和Mercury 2。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "该资料显示延迟最低的是Gemini 2.5 Flash-Lite（非推理）和North Mini Code。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "该资料显示每任务成本最低的是Granite 4.2 3B与GPT-5.6 Luna (low)。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "该资料显示上下文窗口最大的是Llama 4 Scout与Grok 4.20 0309。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "该资料可按推理与非推理、开放权重与专有等条件筛选模型。"
+          }
+        ]
+      },
+      {
+        "name": "编程智能体栏目与测试应用的关联",
+        "points": [
+          {
+            "evidence_id": "E-013",
+            "statement": "该资料的编程智能体栏目未提供软件测试应用或趋势的内容。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "该导航设有AI编程工具、AIGC开发平台、AI大语言模型等开发类目。"
+          }
+        ]
+      },
+      {
+        "name": "AIGC工具导航的类目与场景",
+        "points": [
+          {
+            "evidence_id": "E-014",
+            "statement": "该资料是AIGC工具导航站，按用途分类收录生成式AI工具。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "该导航汇聚全网免费AI工具，覆盖写作、图像、视频、办公等类别。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "该导航设有AI编程工具、AIGC开发平台、AI大语言模型等开发类目。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "该平台提供免费AIGC视频课，含GPT进阶与AI绘画教程。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "该站内列举豆包、千问、即梦、DeepSeek、Kimi等AI工具。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "该资料的类目设置显示生成式AI工具主要面向内容生产与智慧办公场景。"
+          }
+        ]
+      },
+      {
+        "name": "整体证据缺口指向",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "该资料未提供生成式AI在软件测试中应用趋势的信息。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "仅凭该资料无法得出生成式AI在软件测试中的应用趋势。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "该资料设有编程智能体栏目，但未提供软件测试应用或趋势的内容。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "该资料全篇未提及软件测试，也无测试用例或自动化测试类目。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "生成式AI在软件测试中的应用趋势是什么？",
+        "missing": "软件测试领域的应用案例、调研报告或行业趋势分析"
+      },
+      {
+        "question": "生成式AI如何用于测试用例生成与自动化测试？",
+        "missing": "测试工具文档、产品功能说明或实验数据"
+      },
+      {
+        "question": "生成式AI在缺陷检测与预测中的效果如何？",
+        "missing": "缺陷数据集、评测指标或对比实验结果"
+      },
+      {
+        "question": "现有LLM排行榜的编程能力是否覆盖软件测试任务？",
+        "missing": "面向测试任务的基准评测或榜单"
+      },
+      {
+        "question": "AIGC工具导航中是否有软件测试类AI工具？",
+        "missing": "测试类AI工具的分类、收录与说明"
+      }
+    ],
+    "duplicates": []
+  }
+}

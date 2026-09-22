@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_6f4ecff835",
+      "fact": "本资料把算法定义为明确的、有限的、可执行的指令序列，用于解决特定问题",
+      "tag": "F",
+      "quote": "算法 就是计算机的菜谱，它是一个明确的、有限的、可执行的指令序列",
+      "start": 743,
+      "end": 775,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_6f4ecff835",
+      "fact": "本资料称搜索引擎毫秒间找出最相关网页，背后依赖精心设计的算法",
+      "tag": "F",
+      "quote": "搜索引擎在毫秒间从海量数据中找出最相关的网页，背后都依赖于精心设计的算法",
+      "start": 822,
+      "end": 858,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_6f4ecff835",
+      "fact": "本资料提出合格算法须具备有穷性、确定性、可行性、输入、输出五个特征",
+      "tag": "F",
+      "quote": "一个合格的算法必须具备以下五个基本特征",
+      "start": 952,
+      "end": 971,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 50,
+        "start": 952,
+        "end": 989
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_6f4ecff835",
+      "fact": "本资料指出算法必须在有限步后结束，即具有有穷性",
+      "tag": "F",
+      "quote": "算法必须在执行有限步之后结束",
+      "start": 995,
+      "end": 1009,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 51,
+        "start": 990,
+        "end": 1044
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_6f4ecff835",
+      "fact": "本资料认为用自然语言描述算法易于理解，但不够精确、容易产生歧义",
+      "tag": "F",
+      "quote": "优点是易于理解，但缺点是不够精确，容易产生歧义",
+      "start": 1314,
+      "end": 1337,
+      "locator": {
+        "heading": "### 1. 自然语言描述",
+        "paragraph": 57,
+        "start": 1293,
+        "end": 1339
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_6f4ecff835",
+      "fact": "本资料仅介绍算法基础与分析，未讨论推荐算法或规则公开议题",
+      "tag": "U",
+      "quote": "理解算法的基础和分析方法，是每一位程序员从代码实现者迈向问题解决者的关键一步。",
+      "start": 861,
+      "end": 900,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 48,
+        "start": 861,
+        "end": 901
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_6f4ecff835",
+      "fact": "本资料未提供算法披露、监管或法律义务方面的任何依据",
+      "tag": "U",
+      "quote": "本文将带你系统地认识算法的核心概念，并学习如何科学地评价一个算法的优劣。",
+      "start": 902,
+      "end": 938,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 49,
+        "start": 902,
+        "end": 939
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_2d7beb2f18",
+      "fact": "本资料为外交部网站欧盟概况，未涉及算法推荐规则是否强制公开的问题",
+      "tag": "I",
+      "quote": "欧盟概况",
+      "start": 670,
+      "end": 674,
+      "locator": {
+        "heading": "",
+        "paragraph": 75,
+        "start": 643,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_2d7beb2f18",
+      "fact": "欧盟一体化建设推动绿色和数字双转型",
+      "tag": "F",
+      "quote": "推动绿色和数字双转型",
+      "start": 2175,
+      "end": 2185,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_2d7beb2f18",
+      "fact": "欧盟出台《外国补贴条例》《反胁迫工具》等经贸政策工具箱",
+      "tag": "F",
+      "quote": "出台《外国补贴条例》、《反胁迫工具》等一系列经贸政策工具箱",
+      "start": 2262,
+      "end": 2291,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_2d7beb2f18",
+      "fact": "欧盟理事会是欧盟立法与政策制定、协调机构",
+      "tag": "F",
+      "quote": "欧盟理事会（Council of the European Union），又称部长理事会，欧盟立法与政策制定、协调机构",
+      "start": 2473,
+      "end": 2532,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 108,
+        "start": 2470,
+        "end": 2612
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_2d7beb2f18",
+      "fact": "欧洲议会是欧盟监督、咨询和立法机构，议员由成员国直接选举产生",
+      "tag": "F",
+      "quote": "欧盟监督、咨询和立法机构",
+      "start": 2794,
+      "end": 2806,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 110,
+        "start": 2765,
+        "end": 2920
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_2d7beb2f18",
+      "fact": "欧盟委员会是欧盟立法建议与执行机构",
+      "tag": "F",
+      "quote": "欧盟立法建议与执行机构",
+      "start": 2649,
+      "end": 2660,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 109,
+        "start": 2613,
+        "end": 2764
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_2d7beb2f18",
+      "fact": "欧盟奉行有效多边主义，倡导自由贸易",
+      "tag": "F",
+      "quote": "欧盟奉行有效多边主义，倡导自由贸易",
+      "start": 3438,
+      "end": 3455,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 114,
+        "start": 3326,
+        "end": 3867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_e177a2bcd2",
+      "fact": "本资料是欧盟官方门户页面，提供欧盟机构、政策与新闻的导航信息",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_e177a2bcd2",
+      "fact": "本资料提到欧盟提出KIDS法案，回应儿童和青少年使用在线平台的风险",
+      "tag": "F",
+      "quote": "the EU has proposed a new KIDS Act",
+      "start": 1968,
+      "end": 2002,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_e177a2bcd2",
+      "fact": "该法案拟让儿童逐步使用社交媒体，将访问年龄推迟至13岁",
+      "tag": "F",
+      "quote": "delaying access to social media until the age of 13",
+      "start": 2089,
+      "end": 2140,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_e177a2bcd2",
+      "fact": "本资料精选新闻可通过机器翻译提供24种欧盟官方语言版本",
+      "tag": "F",
+      "quote": "available in the 24 EU official languages via machine translation",
+      "start": 1701,
+      "end": 1766,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 97,
+        "start": 1679,
+        "end": 1768
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_e177a2bcd2",
+      "fact": "本资料报道欧洲议会批准欧盟海关法典改革，对电商制定更严规则",
+      "tag": "F",
+      "quote": "Reform of EU customs code and e-commerce rules gets green light",
+      "start": 2617,
+      "end": 2680,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 110,
+        "start": 2617,
+        "end": 2681
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_e177a2bcd2",
+      "fact": "本资料报道欧盟委员会提议拨款4.89亿欧元援助四国风暴灾后恢复",
+      "tag": "F",
+      "quote": "€489 million proposed to help Portugal, Spain, Italy and Malta",
+      "start": 2189,
+      "end": 2251,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 105,
+        "start": 2189,
+        "end": 2279
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_e177a2bcd2",
+      "fact": "本资料全文未涉及算法推荐规则是否应强制公开的任何主张",
+      "tag": "I",
+      "quote": "Latest news from EU institutions and bodies",
+      "start": 1237,
+      "end": 1280,
+      "locator": {
+        "heading": "",
+        "paragraph": 79,
+        "start": 1237,
+        "end": 1281
+      },
+      "note": ""
+    }
+  ]
+}

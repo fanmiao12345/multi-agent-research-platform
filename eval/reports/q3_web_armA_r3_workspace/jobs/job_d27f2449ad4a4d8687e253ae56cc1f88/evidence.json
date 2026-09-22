@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_9d0b4d1d92",
+      "fact": "本资料为新浪网404错误页面，未提供任何文章正文内容。",
+      "tag": "F",
+      "quote": "# Not Found",
+      "start": 14198,
+      "end": 14209,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_9d0b4d1d92",
+      "fact": "本资料页面提示所请求的网址在服务器上未找到。",
+      "tag": "F",
+      "quote": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "start": 14211,
+      "end": 14331,
+      "locator": {
+        "heading": "# Not Found",
+        "paragraph": 500,
+        "start": 14211,
+        "end": 14332
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_9d0b4d1d92",
+      "fact": "本资料全文未出现新能源汽车电池回收或相关监管的任何表述。",
+      "tag": "F",
+      "quote": "设为首页",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 5
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_c7dd127805",
+      "fact": "本资料为中华人民共和国退役军人事务部官方网站首页内容。",
+      "tag": "F",
+      "quote": "主办单位：中华人民共和国退役军人事务部",
+      "start": 3344,
+      "end": 3363,
+      "locator": {
+        "heading": "## 首页",
+        "paragraph": 278,
+        "start": 3344,
+        "end": 3364
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_c7dd127805",
+      "fact": "本资料呈现机构、新闻、公开、服务、解读、互动、风采等栏目。",
+      "tag": "F",
+      "quote": "政府信息公开指南",
+      "start": 1432,
+      "end": 1440,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 72,
+        "start": 1432,
+        "end": 1441
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_c7dd127805",
+      "fact": "本资料全篇围绕退役军人事务，未出现新能源汽车、电池回收或行业监管字样。",
+      "tag": "F",
+      "quote": "退役军人新闻宣传工作能力提升专题培训班在湖南长沙举办",
+      "start": 172,
+      "end": 198,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 20,
+        "start": 172,
+        "end": 199
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_c7dd127805",
+      "fact": "本资料仅含退役军人事务部及国务院部门等友情链接，无电池回收相关来源。",
+      "tag": "F",
+      "quote": "国家药品监督管理局",
+      "start": 2727,
+      "end": 2736,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 201,
+        "start": 2727,
+        "end": 2737
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_c7dd127805",
+      "fact": "据本资料无法就新能源汽车电池回收行业现状与监管提取任何事实依据。",
+      "tag": "I",
+      "quote": "政策解读",
+      "start": 1229,
+      "end": 1233,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 62,
+        "start": 1229,
+        "end": 1234
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_a38dd71707",
+      "fact": "本资料全文仅有一句加载提示，未包含新能源汽车电池回收行业现状与监管的任何信息",
+      "tag": "F",
+      "quote": "正在加载，请耐心等待",
+      "start": 0,
+      "end": 10,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 10
+      },
+      "note": ""
+    }
+  ]
+}

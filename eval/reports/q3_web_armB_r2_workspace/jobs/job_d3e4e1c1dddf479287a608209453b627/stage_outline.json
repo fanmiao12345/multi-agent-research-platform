@@ -1,0 +1,127 @@
+{
+  "title": "2026年人工智能治理政策主要争议的可核查提纲",
+  "sections": [
+    {
+      "heading": "资料范围与证据边界",
+      "purpose": "说明哪些资料缺失，无法系统回答2026年争议",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-012",
+        "E-017",
+        "E-022",
+        "E-034"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "欧盟数字与平台政策中的AI相邻争议",
+      "purpose": "梳理欧盟可查的儿童保护与电商规则，标注非AI治理争议",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-030",
+        "E-031",
+        "E-032",
+        "E-033"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "美国资料中的AI治理信息缺位",
+      "purpose": "确认美国国家概况未提AI治理，无法据此归纳争议",
+      "required_evidence": [
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "中国官方资料中的AI治理信息缺位",
+      "purpose": "确认中国政府网未列AI治理文件，无法说明官方争议",
+      "required_evidence": [
+        "E-013",
+        "E-014",
+        "E-015",
+        "E-016",
+        "E-017",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "中国网中的AI版权与治理场景线索",
+      "purpose": "整理AI训练版权标题与重庆治理场景，判断争议线索有限",
+      "required_evidence": [
+        "E-019",
+        "E-020",
+        "E-021",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "前沿模型安全分发与访问限制争议",
+      "purpose": "归纳合规终止访问、严控分发与网络安全模型定向开放",
+      "required_evidence": [
+        "E-023",
+        "E-024",
+        "E-025",
+        "E-026"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "网络安全能力门槛与可监控性监管争议",
+      "purpose": "指出能力门槛与可监控性下降尚无监管标准证据",
+      "required_evidence": [
+        "E-023",
+        "E-024",
+        "E-025",
+        "E-026"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "跨境监管审查与企业架构调整争议",
+      "purpose": "归纳跨境审查、本地驻留、隐私隔离与安全边界要求",
+      "required_evidence": [
+        "E-027",
+        "E-028",
+        "E-029"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "主要经济体AI治理分歧比较缺口",
+      "purpose": "指出欧盟美国中国官方AI战略与监管文本缺失",
+      "required_evidence": [
+        "E-006",
+        "E-012",
+        "E-017",
+        "E-034"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与待补证据清单",
+      "purpose": "总结可确认线索与未决争议，列出需补充资料类型",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-012",
+        "E-017",
+        "E-022",
+        "E-034"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

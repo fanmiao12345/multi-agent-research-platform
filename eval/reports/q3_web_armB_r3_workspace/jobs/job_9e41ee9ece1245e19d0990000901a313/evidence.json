@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_d8199a8c5e",
+      "fact": "本资料将“远程办公”列为 ToDesk 的使用场景。",
+      "tag": "F",
+      "quote": "远程办公",
+      "start": 90,
+      "end": 94,
+      "locator": {
+        "heading": "",
+        "paragraph": 11,
+        "start": 90,
+        "end": 95
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_d8199a8c5e",
+      "fact": "本资料将“远程协作与演示”列为 ToDesk 的使用场景。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_d8199a8c5e",
+      "fact": "本资料称多人协作支持多人同时控制一台设备并可白板批注。",
+      "tag": "F",
+      "quote": "多人同时控制一台设备并可白板批注",
+      "start": 506,
+      "end": 522,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 506,
+        "end": 523
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_d8199a8c5e",
+      "fact": "本资料称团队管理可统一管理成员、设备、权益和连接。",
+      "tag": "F",
+      "quote": "成员/设备/权益/连接统统都能管",
+      "start": 623,
+      "end": 639,
+      "locator": {
+        "heading": "",
+        "paragraph": 60,
+        "start": 623,
+        "end": 640
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_d8199a8c5e",
+      "fact": "本资料称员工下载主控端并登录即可无缝切换远程办公。",
+      "tag": "F",
+      "quote": "员工只需下载主控端并登录，即可无缝切换远程办公",
+      "start": 2222,
+      "end": 2245,
+      "locator": {
+        "heading": "## 安全的企业都选择 ToDesk企业版",
+        "paragraph": 190,
+        "start": 2222,
+        "end": 2246
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_d8199a8c5e",
+      "fact": "本资料一条用户评价称多指针让双方可见鼠标轨迹。",
+      "tag": "F",
+      "quote": "开启ToDesk的多指针功能，我们俩都能看到对方的鼠标轨迹",
+      "start": 4816,
+      "end": 4845,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_d8199a8c5e",
+      "fact": "本资料一条用户评价称用 ToDesk 沟通效率直线上升。",
+      "tag": "F",
+      "quote": "用ToDesk沟通效率直线上升！",
+      "start": 4846,
+      "end": 4862,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_c3b08f41ed",
+      "fact": "本资料为网易云音乐的单曲页面，歌曲名「虚拟」，歌手为陈粒。",
+      "tag": "F",
+      "quote": "歌手： 陈粒",
+      "start": 29,
+      "end": 35,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 29,
+        "end": 36
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_c3b08f41ed",
+      "fact": "该歌曲所属专辑为「小梦大半」。",
+      "tag": "F",
+      "quote": "所属专辑： 小梦大半",
+      "start": 37,
+      "end": 47,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 37,
+        "end": 48
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_c3b08f41ed",
+      "fact": "页面列出包含该歌曲的歌单，如「2026火遍全网的歌曲精选」。",
+      "tag": "F",
+      "quote": "2026火遍全网的歌曲精选",
+      "start": 84,
+      "end": 97,
+      "locator": {
+        "heading": "### 包含这首歌的歌单",
+        "paragraph": 7,
+        "start": 84,
+        "end": 98
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_c3b08f41ed",
+      "fact": "页面列出相似歌曲一栏，含「于是」「如果呢」等曲目。",
+      "tag": "F",
+      "quote": "### 相似歌曲",
+      "start": 168,
+      "end": 176,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_c3b08f41ed",
+      "fact": "页面上有登录、注册、扫码登录等客户端与账号功能界面内容。",
+      "tag": "F",
+      "quote": "扫码登录",
+      "start": 4330,
+      "end": 4334,
+      "locator": {
+        "heading": "### 用户wiki",
+        "paragraph": 39,
+        "start": 659,
+        "end": 15430
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_c3b08f41ed",
+      "fact": "页面底部为网易公司版权、备案与举报等运营信息。",
+      "tag": "F",
+      "quote": "网易公司版权所有©1997-2026",
+      "start": 568,
+      "end": 586,
+      "locator": {
+        "heading": "### 用户wiki",
+        "paragraph": 37,
+        "start": 568,
+        "end": 652
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_c3b08f41ed",
+      "fact": "本资料未出现任何关于远程办公或团队协作的内容与数据。",
+      "tag": "I",
+      "quote": "VIP单曲",
+      "start": 18,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 2,
+        "start": 18,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_e4ed63a1d6",
+      "fact": "本资料是歌词网站页面，标题为“虚拟歌词-陈粒 | 歌词网_全网歌词大全”。",
+      "tag": "F",
+      "quote": "虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+      "start": 18,
+      "end": 38,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_e4ed63a1d6",
+      "fact": "本资料所载作品为陈粒演唱的歌曲《虚拟》，正文即歌词文本。",
+      "tag": "F",
+      "quote": "固执押韵的排比",
+      "start": 51,
+      "end": 58,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 2,
+        "start": 51,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_e4ed63a1d6",
+      "fact": "本资料正文全部为歌词句子，不含研究论文、调查数据或论述段落。",
+      "tag": "F",
+      "quote": "你是我未曾拥有无法捕捉的亲昵",
+      "start": 109,
+      "end": 123,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 8,
+        "start": 109,
+        "end": 124
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_e4ed63a1d6",
+      "fact": "本资料页脚声明歌词内容来自互联网，属歌词聚合类网页。",
+      "tag": "F",
+      "quote": "歌词网歌词内容来自互联网，如有侵权请联系删除",
+      "start": 467,
+      "end": 489,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 35,
+        "start": 467,
+        "end": 490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_e4ed63a1d6",
+      "fact": "本资料通篇未出现“远程办公”“团队协作”等字样或相关议题。",
+      "tag": "F",
+      "quote": "固执空洞的美丽",
+      "start": 89,
+      "end": 96,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 6,
+        "start": 89,
+        "end": 97
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_e4ed63a1d6",
+      "fact": "本资料无法提供任何关于远程办公、团队协作的研究证据或结论。",
+      "tag": "I",
+      "quote": "载着我飞呀飞呀飞 越过了意义",
+      "start": 139,
+      "end": 153,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 10,
+        "start": 139,
+        "end": 154
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_4b6075e191",
+      "fact": "本资料主题为分布式系统，未涉及远程办公。",
+      "tag": "F",
+      "quote": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "start": 403,
+      "end": 430,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_4b6075e191",
+      "fact": "本资料中的协作指多节点协作，不是人类团队协作。",
+      "tag": "F",
+      "quote": "多节点协作",
+      "start": 3239,
+      "end": 3244,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_4b6075e191",
+      "fact": "本资料未说明该任务所需研究，留下资料缺口。",
+      "tag": "I",
+      "quote": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "start": 403,
+      "end": 430,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

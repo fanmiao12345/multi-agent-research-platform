@@ -1,0 +1,370 @@
+{
+  "source_id": "src_c1a1c6a863",
+  "kind": "url",
+  "display": "卡片盒笔记法（Zettelkasten）完整指南（2026） | Flexnote",
+  "original_address": "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+  "title": "卡片盒笔记法（Zettelkasten）完整指南（2026） | Flexnote",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 5228,
+  "content_hash": "a2c4c97967fc814fa1013fdd9938e2f50daf96b77bdea530c0b6e45a2559d6f7",
+  "normalized_hash": "d7ed208192ba81337d60a15752d87a61690076577450d718e822b51675a29985",
+  "captured_at": "2026-09-20T11:12:39",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_c1a1c6a863.md",
+  "encoding": "utf-8",
+  "segment_count": 48,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 9,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 10,
+      "end": 36,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 37,
+      "end": 40,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 41,
+      "end": 49,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 50,
+      "end": 56,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 57,
+      "end": 62,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 63,
+      "end": 77,
+      "page": null
+    },
+    {
+      "heading": "# 卡片盒笔记法（Zettelkasten）完整指南（2026）",
+      "paragraph": 7,
+      "start": 112,
+      "end": 187,
+      "page": null
+    },
+    {
+      "heading": "# 卡片盒笔记法（Zettelkasten）完整指南（2026）",
+      "paragraph": 8,
+      "start": 188,
+      "end": 230,
+      "page": null
+    },
+    {
+      "heading": "# 卡片盒笔记法（Zettelkasten）完整指南（2026）",
+      "paragraph": 9,
+      "start": 231,
+      "end": 359,
+      "page": null
+    },
+    {
+      "heading": "# 卡片盒笔记法（Zettelkasten）完整指南（2026）",
+      "paragraph": 10,
+      "start": 360,
+      "end": 386,
+      "page": null
+    },
+    {
+      "heading": "## 什么是卡片盒笔记法？",
+      "paragraph": 11,
+      "start": 402,
+      "end": 537,
+      "page": null
+    },
+    {
+      "heading": "## 三类笔记",
+      "paragraph": 12,
+      "start": 547,
+      "end": 664,
+      "page": null
+    },
+    {
+      "heading": "## 三类笔记",
+      "paragraph": 13,
+      "start": 665,
+      "end": 676,
+      "page": null
+    },
+    {
+      "heading": "## 三类笔记",
+      "paragraph": 14,
+      "start": 677,
+      "end": 734,
+      "page": null
+    },
+    {
+      "heading": "## 如何开始卡片盒",
+      "paragraph": 15,
+      "start": 747,
+      "end": 876,
+      "page": null
+    },
+    {
+      "heading": "## 2026 年最好的卡片盒工具",
+      "paragraph": 16,
+      "start": 896,
+      "end": 1109,
+      "page": null
+    },
+    {
+      "heading": "## 常见误区",
+      "paragraph": 17,
+      "start": 1119,
+      "end": 1212,
+      "page": null
+    },
+    {
+      "heading": "### 卡片盒适合新手吗？",
+      "paragraph": 18,
+      "start": 1237,
+      "end": 1280,
+      "page": null
+    },
+    {
+      "heading": "### 卡片盒用哪款 App 最好？",
+      "paragraph": 19,
+      "start": 1301,
+      "end": 1352,
+      "page": null
+    },
+    {
+      "heading": "### 卡片盒和第二大脑有何不同？",
+      "paragraph": 20,
+      "start": 1372,
+      "end": 1414,
+      "page": null
+    },
+    {
+      "heading": "## 用 Flexnote 把这些方法真正用起来",
+      "paragraph": 21,
+      "start": 1441,
+      "end": 1517,
+      "page": null
+    },
+    {
+      "heading": "## 用 Flexnote 把这些方法真正用起来",
+      "paragraph": 22,
+      "start": 1518,
+      "end": 1534,
+      "page": null
+    },
+    {
+      "heading": "## 用 Flexnote 把这些方法真正用起来",
+      "paragraph": 23,
+      "start": 1535,
+      "end": 1547,
+      "page": null
+    },
+    {
+      "heading": "## 相关文章",
+      "paragraph": 24,
+      "start": 1557,
+      "end": 1560,
+      "page": null
+    },
+    {
+      "heading": "### 什么是第二大脑？完整指南（2026）",
+      "paragraph": 25,
+      "start": 1585,
+      "end": 1664,
+      "page": null
+    },
+    {
+      "heading": "### 什么是第二大脑？完整指南（2026）",
+      "paragraph": 26,
+      "start": 1665,
+      "end": 1668,
+      "page": null
+    },
+    {
+      "heading": "### 如何给播客做笔记：记住观点，而不是抄完节目",
+      "paragraph": 27,
+      "start": 1696,
+      "end": 1761,
+      "page": null
+    },
+    {
+      "heading": "### 如何给播客做笔记：记住观点，而不是抄完节目",
+      "paragraph": 28,
+      "start": 1762,
+      "end": 1765,
+      "page": null
+    },
+    {
+      "heading": "### 2026 年十大「第二大脑」App（实测排名）",
+      "paragraph": 29,
+      "start": 1795,
+      "end": 1912,
+      "page": null
+    },
+    {
+      "heading": "### 2026 年十大「第二大脑」App（实测排名）",
+      "paragraph": 30,
+      "start": 1913,
+      "end": 1922,
+      "page": null
+    },
+    {
+      "heading": "### 2026 年十大「第二大脑」App（实测排名）",
+      "paragraph": 31,
+      "start": 1923,
+      "end": 1972,
+      "page": null
+    },
+    {
+      "heading": "### 2026 年十大「第二大脑」App（实测排名）",
+      "paragraph": 32,
+      "start": 1973,
+      "end": 1977,
+      "page": null
+    },
+    {
+      "heading": "### 2026 年十大「第二大脑」App（实测排名）",
+      "paragraph": 33,
+      "start": 1978,
+      "end": 1984,
+      "page": null
+    },
+    {
+      "heading": "### 产品",
+      "paragraph": 34,
+      "start": 1993,
+      "end": 1998,
+      "page": null
+    },
+    {
+      "heading": "### 产品",
+      "paragraph": 35,
+      "start": 1999,
+      "end": 2004,
+      "page": null
+    },
+    {
+      "heading": "### 产品",
+      "paragraph": 36,
+      "start": 2005,
+      "end": 2008,
+      "page": null
+    },
+    {
+      "heading": "### 资源",
+      "paragraph": 37,
+      "start": 2017,
+      "end": 2020,
+      "page": null
+    },
+    {
+      "heading": "### 资源",
+      "paragraph": 38,
+      "start": 2021,
+      "end": 2024,
+      "page": null
+    },
+    {
+      "heading": "### 公司",
+      "paragraph": 39,
+      "start": 2033,
+      "end": 2038,
+      "page": null
+    },
+    {
+      "heading": "### 公司",
+      "paragraph": 40,
+      "start": 2039,
+      "end": 2044,
+      "page": null
+    },
+    {
+      "heading": "### 公司",
+      "paragraph": 41,
+      "start": 2045,
+      "end": 2050,
+      "page": null
+    },
+    {
+      "heading": "### 热门文章",
+      "paragraph": 42,
+      "start": 2061,
+      "end": 2071,
+      "page": null
+    },
+    {
+      "heading": "### 热门文章",
+      "paragraph": 43,
+      "start": 2072,
+      "end": 2081,
+      "page": null
+    },
+    {
+      "heading": "### 热门文章",
+      "paragraph": 44,
+      "start": 2082,
+      "end": 2096,
+      "page": null
+    },
+    {
+      "heading": "### 热门文章",
+      "paragraph": 45,
+      "start": 2097,
+      "end": 2106,
+      "page": null
+    },
+    {
+      "heading": "### 热门文章",
+      "paragraph": 46,
+      "start": 2107,
+      "end": 2114,
+      "page": null
+    },
+    {
+      "heading": "### 热门文章",
+      "paragraph": 47,
+      "start": 2115,
+      "end": 2139,
+      "page": null
+    }
+  ],
+  "final_url": "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:12:39",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

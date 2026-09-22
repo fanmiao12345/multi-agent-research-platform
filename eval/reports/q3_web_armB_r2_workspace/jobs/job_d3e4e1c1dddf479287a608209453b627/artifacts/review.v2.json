@@ -1,0 +1,27 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "“能否形成统一监管门槛仍是未决争议”无证据支持；资料仅示企业限制访问与监管标准缺位。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "美国节与比较缺口节将资料无AI内容推为“官方AI战略与监管文本缺失”，易误导；证据仅支持所引资料未含AI。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处将E-005、E-006、E-017、E-021、E-022、E-034等直接证据陈述标为推断，且混用〔未知〕，不符事实/推断标注要求。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“可归纳出……要求”偏强；E-028/E-029仅见企业强调或产品安全边界，未证为监管要求。"
+  }
+ ]
+}

@@ -1,0 +1,619 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_54ad103c93",
+      "fact": "本资料提示登录以获取个性化推荐职位。",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_54ad103c93",
+      "fact": "本资料页面导航项包含职位、招聘会与个性化推荐。",
+      "tag": "F",
+      "quote": "职位 招聘会 个性化推荐",
+      "start": 52,
+      "end": 64,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 2,
+        "start": 30,
+        "end": 87
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_54ad103c93",
+      "fact": "本资料提示就业意愿可在个人中心修改。",
+      "tag": "F",
+      "quote": "就业意愿 （可以在个人中心修改）",
+      "start": 88,
+      "end": 104,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 3,
+        "start": 88,
+        "end": 105
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_54ad103c93",
+      "fact": "本资料全文未涉及个人知识管理系统的检索设计。",
+      "tag": "F",
+      "quote": "提交",
+      "start": 106,
+      "end": 108,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 4,
+        "start": 106,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_54ad103c93",
+      "fact": "本资料全文未涉及个人知识管理系统的记忆设计。",
+      "tag": "F",
+      "quote": "提交",
+      "start": 106,
+      "end": 108,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 4,
+        "start": 106,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_e603cd0dcf",
+      "fact": "本资料认为「个人」一词的含义取决于具体语境。",
+      "tag": "F",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 306,
+      "end": 325,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 306,
+        "end": 328
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_e603cd0dcf",
+      "fact": "本资料举例说明，在「我个人认为」这类表述中「个人」明确指说话者自己。",
+      "tag": "F",
+      "quote": "如“我个人认为”或“我有个人的想法”，这里的“个人”明确指的是说话者自己。",
+      "start": 346,
+      "end": 383,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 339,
+        "end": 384
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_e603cd0dcf",
+      "fact": "本资料指出在「个人有个人的看法」中，「个人」指许多人中的每一个，不含说话者自己。",
+      "tag": "F",
+      "quote": "这里的“个人”则是指代许多人中的每一个，即不包括说话者自己在内的其他人。",
+      "start": 427,
+      "end": 463,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 395,
+        "end": 482
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_e603cd0dcf",
+      "fact": "本资料称这种用法强调的是个体之间的差异性和独立性。",
+      "tag": "F",
+      "quote": "它强调的是个体之间的差异性和独立性。",
+      "start": 463,
+      "end": 481,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 395,
+        "end": 482
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_e603cd0dcf",
+      "fact": "本资料总结「个人」既可指自己，也可指不包括自己在内的其他人。",
+      "tag": "F",
+      "quote": "“个人”既可以指代自己，也可以指代不包括自己在内的其他人",
+      "start": 486,
+      "end": 514,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 483,
+        "end": 551
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_e603cd0dcf",
+      "fact": "本资料认为「个人」的具体含义需要根据上下文来判断。",
+      "tag": "F",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 515,
+      "end": 529,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 483,
+        "end": 551
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_e603cd0dcf",
+      "fact": "由此推断，以「个人」命名的系统需先界定其指代是自己还是泛指个体。",
+      "tag": "I",
+      "quote": "“个人”既可以指代自己，也可以指代不包括自己在内的其他人",
+      "start": 486,
+      "end": 514,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 483,
+        "end": 551
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_e603cd0dcf",
+      "fact": "本资料主题是词义辨析，未涉及知识管理系统中的检索与记忆设计。",
+      "tag": "U",
+      "quote": "\"个人\"是指自己,还是一个人（不包括自己）",
+      "start": 71,
+      "end": 92,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料称 Obsidian 将笔记私密存储在用户设备上，可离线快速访问。",
+      "tag": "F",
+      "quote": "Obsidian stores notes privately on your device, so you can access them quickly",
+      "start": 2238,
+      "end": 2316,
+      "locator": {
+        "heading": "# Sharpen your thinking.",
+        "paragraph": 107,
+        "start": 2238,
+        "end": 2372
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料称 Obsidian 使用开放文件格式，用户不会被锁定，可长期拥有数据。",
+      "tag": "F",
+      "quote": "Obsidian uses open file formats, so you’re never locked in.",
+      "start": 2515,
+      "end": 2574,
+      "locator": {
+        "heading": "# Sharpen your thinking.",
+        "paragraph": 111,
+        "start": 2515,
+        "end": 2612
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料称 Obsidian 将笔记以纯文本 Markdown 文件形式本地存储。",
+      "tag": "F",
+      "quote": "Obsidian stores your notes locally as plain text Markdown files.",
+      "start": 5483,
+      "end": 5547,
+      "locator": {
+        "heading": "# Writing is telepathy",
+        "paragraph": 179,
+        "start": 5481,
+        "end": 5548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料称可在笔记间建立链接，链接想法、人物、地点、书籍等，构建个人维基。",
+      "tag": "F",
+      "quote": "Create connections between your notes. Link anything and everything",
+      "start": 2820,
+      "end": 2887,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 116,
+        "start": 2820,
+        "end": 2968
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料称 Graph 可可视化笔记之间的关系，发现思维中的隐藏模式。",
+      "tag": "F",
+      "quote": "Visualize the relationships between your notes.",
+      "start": 3351,
+      "end": 3398,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 127,
+        "start": 3351,
+        "end": 3488
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料列出 Dataview 插件，称其为面向数据爱好者的高级查询。",
+      "tag": "F",
+      "quote": "Advanced queries for the data-obsessed.",
+      "start": 4634,
+      "end": 4673,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 153,
+        "start": 4634,
+        "end": 4674
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料示例笔记界面显示「1 backlink」，表明笔记间可互相关联。",
+      "tag": "I",
+      "quote": "1 backlink 206 words 1139 char",
+      "start": 2014,
+      "end": 2044,
+      "locator": {
+        "heading": "# Sharpen your thinking.",
+        "paragraph": 93,
+        "start": 2014,
+        "end": 2045
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_d155af18dc",
+      "fact": "本资料称每篇笔记保留一年版本历史，便于追踪修订。",
+      "tag": "F",
+      "quote": "one year of version history for every note",
+      "start": 4973,
+      "end": 5015,
+      "locator": {
+        "heading": "## Sync securely.",
+        "paragraph": 159,
+        "start": 4911,
+        "end": 5017
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料是 Obsidian 的下载页面，提供各平台客户端获取入口",
+      "tag": "F",
+      "quote": "Download for Windows",
+      "start": 512,
+      "end": 532,
+      "locator": {
+        "heading": "",
+        "paragraph": 56,
+        "start": 512,
+        "end": 533
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料列出 Windows、Mac、Linux 桌面端下载",
+      "tag": "F",
+      "quote": "Windows\n\nUniversal\n\nMac\n\nUniversal\n\nLinux",
+      "start": 598,
+      "end": 639,
+      "locator": {
+        "heading": "## App",
+        "paragraph": 62,
+        "start": 598,
+        "end": 606
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料列出 iOS 与 Android 移动端的下载渠道",
+      "tag": "F",
+      "quote": "iOS\n\nApp Store\n\nAndroid\n\nGoogle Play APK",
+      "start": 556,
+      "end": 596,
+      "locator": {
+        "heading": "## App",
+        "paragraph": 58,
+        "start": 556,
+        "end": 560
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料提供 Web Clipper，支持 Chrome、Safari、Firefox、Edge 等浏览器",
+      "tag": "F",
+      "quote": "Chrome Safari Firefox Edge",
+      "start": 731,
+      "end": 757,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 68,
+        "start": 731,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料列出 Sync、Publish、Canvas、Mobile、Web Clipper、CLI 等能力",
+      "tag": "F",
+      "quote": "Sync\n\nPublish\n\nCanvas\n\nMobile\n\nWeb Clipper\n\nCLI",
+      "start": 857,
+      "end": 904,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 77,
+        "start": 857,
+        "end": 862
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料页脚列出 Plugins 插件与 Themes 主题的社区入口",
+      "tag": "F",
+      "quote": "Plugins\n\nThemes",
+      "start": 1063,
+      "end": 1078,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 97,
+        "start": 1063,
+        "end": 1071
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料提供 Linux 多种安装包格式，含 AppImage、Snap、Deb、Flatpak",
+      "tag": "F",
+      "quote": "AppImage Snap Deb AppImage (AArch64, ARM64) Flatpak",
+      "start": 641,
+      "end": 692,
+      "locator": {
+        "heading": "## App",
+        "paragraph": 67,
+        "start": 641,
+        "end": 714
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_d62e9055c1",
+      "fact": "本资料未涉及检索、索引或记忆机制的设计说明",
+      "tag": "I",
+      "quote": "Get started",
+      "start": 784,
+      "end": 795,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 70,
+        "start": 784,
+        "end": 796
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_352267c0d1",
+      "fact": "Obsidian 是基于 Markdown 的个人知识库与笔记管理工具。",
+      "tag": "F",
+      "quote": "Obsidian 是一款基于 Markdown 文件的个人知识库与笔记管理工具",
+      "start": 551,
+      "end": 590,
+      "locator": {
+        "heading": "# Obsidian 教程",
+        "paragraph": 42,
+        "start": 551,
+        "end": 615
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_352267c0d1",
+      "fact": "Obsidian 采用本地文件存储，笔记以普通 Markdown 文档保存。",
+      "tag": "F",
+      "quote": "Obsidian 采用本地文件存储方式，所有笔记都以普通 Markdown 文档形式保存",
+      "start": 616,
+      "end": 660,
+      "locator": {
+        "heading": "# Obsidian 教程",
+        "paragraph": 43,
+        "start": 616,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_352267c0d1",
+      "fact": "资料称 Obsidian 把笔记变成可连接、可扩展、可计算的知识网络。",
+      "tag": "F",
+      "quote": "它把笔记变成一个可连接、可扩展、可计算的知识网络",
+      "start": 706,
+      "end": 730,
+      "locator": {
+        "heading": "# Obsidian 教程",
+        "paragraph": 44,
+        "start": 676,
+        "end": 732
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_352267c0d1",
+      "fact": "资料指出学习常见问题：学过会忘，或知道记过却找不到。",
+      "tag": "F",
+      "quote": "学过很多东西，但过段时间就忘了，或者知道记过，却找不到",
+      "start": 771,
+      "end": 798,
+      "locator": {
+        "heading": "## 为什么使用 Obsidian",
+        "paragraph": 45,
+        "start": 752,
+        "end": 800
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_352267c0d1",
+      "fact": "资料认为普通笔记软件只是信息仓库，Obsidian 更像知识中枢。",
+      "tag": "F",
+      "quote": "普通笔记软件通常只是信息仓库，而 Obsidian 更像知识中枢",
+      "start": 801,
+      "end": 833,
+      "locator": {
+        "heading": "## 为什么使用 Obsidian",
+        "paragraph": 46,
+        "start": 801,
+        "end": 835
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_352267c0d1",
+      "fact": "Obsidian 核心思想是连接零散笔记，让知识自己长出来。",
+      "tag": "F",
+      "quote": "把零散的笔记连接起来，让知识自己长出来",
+      "start": 853,
+      "end": 872,
+      "locator": {
+        "heading": "## 为什么使用 Obsidian",
+        "paragraph": 47,
+        "start": 836,
+        "end": 874
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_352267c0d1",
+      "fact": "资料称双向链接可自动建立知识之间的关系。",
+      "tag": "F",
+      "quote": "通过双向链接自动建立知识之间的关系",
+      "start": 907,
+      "end": 924,
+      "locator": {
+        "heading": "### Obsidian 能带来什么",
+        "paragraph": 49,
+        "start": 902,
+        "end": 925
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_352267c0d1",
+      "fact": "资料称知识图谱自动生成知识关系网络图。",
+      "tag": "F",
+      "quote": "自动生成知识关系网络图",
+      "start": 966,
+      "end": 977,
+      "locator": {
+        "heading": "### Obsidian 能带来什么",
+        "paragraph": 51,
+        "start": 961,
+        "end": 978
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_9d19d14b13",
+      "fact": "本资料主题为分布式系统，讲解核心概念、架构演进、典型特征与学习路线。",
+      "tag": "F",
+      "quote": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "start": 403,
+      "end": 430,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_9d19d14b13",
+      "fact": "本资料未涉及个人知识管理系统的检索与记忆设计，无法据此提取相关内容。",
+      "tag": "I",
+      "quote": "这篇文章先把“分布式系统是什么”讲清楚。",
+      "start": 664,
+      "end": 684,
+      "locator": {
+        "heading": "# 分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+        "paragraph": 50,
+        "start": 664,
+        "end": 732
+      },
+      "note": ""
+    }
+  ]
+}

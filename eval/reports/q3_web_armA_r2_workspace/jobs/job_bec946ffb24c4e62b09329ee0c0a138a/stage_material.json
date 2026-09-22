@@ -1,0 +1,191 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "资料主题相关性",
+        "points": [
+          {
+            "evidence_id": "E-003",
+            "statement": "Kling AI资料全文未出现软件测试、测试用例或测试自动化内容。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "该资料无法为生成式AI在软件测试中的应用趋势提供直接证据。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "GPT Image 2资料介绍图像视频创作，全文未涉及软件测试。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "该资料聚焦视觉创意与商业设计工作流，与软件测试无交集。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "千问资料未提软件测试，所列场景不含测试用例生成或缺陷检测。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "免费AI工具导航未出现软件测试相关分类、工具或应用场景。"
+          },
+          {
+            "evidence_id": "E-033",
+            "statement": "即梦AI资料全文未出现软件测试、测试用例或质量保障表述。"
+          },
+          {
+            "evidence_id": "E-034",
+            "statement": "即梦AI资料未提供生成式AI在软件测试中应用趋势的任何依据。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI视觉创作能力",
+        "points": [
+          {
+            "evidence_id": "E-006",
+            "statement": "GPT Image 2称可用中文提示词或参考图在线生成图片。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "GPT Image 2称可用一句话完成修图、换装、换背景等操作。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "GPT Image 2提供图片生成视频，为静态画面加入动作与镜头感。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "GPT Image 2称兼容模型最高支持4K高分辨率输出。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "即梦AI称输入简单文案或图片即可快速生成优质视频片段。"
+          },
+          {
+            "evidence_id": "E-030",
+            "statement": "即梦AI称支持按中文提示词创作，语义理解能力更好。"
+          },
+          {
+            "evidence_id": "E-031",
+            "statement": "即梦AI智能画布集成局部重绘、一键扩图、图像消除与抠图。"
+          },
+          {
+            "evidence_id": "E-032",
+            "statement": "即梦AI提供首帧与尾帧图片输入，增强视频生成可控性。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI智能体与开发能力",
+        "points": [
+          {
+            "evidence_id": "E-013",
+            "statement": "千问资料称其推进智能体AI战略，由被动回应转向主动行动。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "千问资料称仅凭文字指令可在空白工程完成约16天工程量开发。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "千问资料称模型具备长程任务处理与自主迭代闭环能力。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "千问资料称模型原生支持128K上下文并无损扩展至100万Token。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "千问资料称模型搭载“执行—反馈—迭代”自适应闭环机制。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "千问资料称企业级Agent支持400多项办公任务并压缩文件审阅时间。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "千问资料称旗舰模型参数规模突破2.4万亿级。"
+          }
+        ]
+      },
+      {
+        "name": "AI工具导航与开发生态",
+        "points": [
+          {
+            "evidence_id": "E-021",
+            "statement": "免费AI工具导航站按用途分类收录全网免费AI工具。"
+          },
+          {
+            "evidence_id": "E-022",
+            "statement": "该导航分类覆盖AI写作、AI绘画、AI视频、AI办公等方向。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "该导航设有AI编程工具这一开发类目。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "该导航设有大语言模型、开发框架、开放平台等类目。"
+          },
+          {
+            "evidence_id": "E-025",
+            "statement": "该导航列举豆包、千问、即梦、DeepSeek、Kimi等工具。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "该站提供免费AIGC视频课，含GPT进阶、AI绘画等教程。"
+          }
+        ]
+      },
+      {
+        "name": "生成式AI产品页面与内容形态",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "Kling AI首页定位为AI创意工作室类产品页面。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "Kling AI页面列出创意圈、资产、Omni、生成、灵动画布、全部工具等入口。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "GPT Image 2博客比较GPT Image 2与2.5是否值得切换工作流。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "GPT Image 2博客含实测透明背景功能文章。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "即梦AI产品介绍页主题为图像与视频生成，未涉及软件测试。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "生成式AI在测试用例生成中的应用趋势如何？",
+        "missing": "测试用例生成相关的技术、案例或趋势资料"
+      },
+      {
+        "question": "生成式AI在缺陷检测与缺陷报告中的应用趋势如何？",
+        "missing": "缺陷检测、缺陷定位或缺陷报告相关证据"
+      },
+      {
+        "question": "生成式AI在测试自动化与脚本生成中的应用趋势如何？",
+        "missing": "测试自动化、测试脚本生成或执行反馈资料"
+      },
+      {
+        "question": "行业对生成式AI测试工具采用率与效果如何？",
+        "missing": "行业调查、采用率、基准评测或案例数据"
+      },
+      {
+        "question": "生成式AI在软件测试中的风险与治理进展如何？",
+        "missing": "测试质量、安全、合规与治理相关材料"
+      }
+    ],
+    "duplicates": []
+  }
+}

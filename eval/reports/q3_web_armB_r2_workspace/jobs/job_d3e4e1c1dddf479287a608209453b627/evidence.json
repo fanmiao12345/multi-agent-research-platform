@@ -1,0 +1,524 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_ba5cf15409",
+      "fact": "本资料为外交部网站欧盟概况，更新标注为2026年7月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年7月）",
+      "start": 743,
+      "end": 759,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 86,
+        "start": 743,
+        "end": 760
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_ba5cf15409",
+      "fact": "本资料载明2026年上半年欧盟轮值主席国为塞浦路斯，下半年为爱尔兰。",
+      "tag": "F",
+      "quote": "塞浦路斯（2026年上半年）、爱尔兰（2026年下半年）",
+      "start": 1224,
+      "end": 1252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 100,
+        "start": 1217,
+        "end": 1253
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_ba5cf15409",
+      "fact": "本资料称欧盟以安全、竞争力和绿色发展为三大支柱推进各项政策。",
+      "tag": "F",
+      "quote": "以安全、竞争力和绿色发展为三大支柱不断推进各项政策",
+      "start": 2227,
+      "end": 2252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_ba5cf15409",
+      "fact": "本资料提到欧盟出台《外国补贴条例》《反胁迫工具》等经贸政策工具箱。",
+      "tag": "F",
+      "quote": "出台《外国补贴条例》、《反胁迫工具》等一系列经贸政策工具箱",
+      "start": 2262,
+      "end": 2291,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_ba5cf15409",
+      "fact": "本资料仅提及绿色和数字双转型，未涉及人工智能治理政策及其争议。",
+      "tag": "I",
+      "quote": "推动绿色和数字双转型",
+      "start": 2175,
+      "end": 2185,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_ba5cf15409",
+      "fact": "本资料无人工智能相关内容，无法据此说明2026年AI治理政策主要争议。",
+      "tag": "I",
+      "quote": "推动绿色和数字双转型",
+      "start": 2175,
+      "end": 2185,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_a07671f251",
+      "fact": "本资料为美国国家概况，通篇未涉及人工智能治理政策。",
+      "tag": "F",
+      "quote": "美国国家概况",
+      "start": 742,
+      "end": 748,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_a07671f251",
+      "fact": "本资料的最近更新时间为2026年6月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年6月）",
+      "start": 750,
+      "end": 766,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 86,
+        "start": 750,
+        "end": 767
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_a07671f251",
+      "fact": "本资料涵盖美国国名、面积、人口、宗教、首都等基本国情。",
+      "tag": "F",
+      "quote": "【国 名】美利坚合众国（The United States of America）",
+      "start": 768,
+      "end": 809,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 87,
+        "start": 768,
+        "end": 810
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_a07671f251",
+      "fact": "本资料还介绍美国政府、国会、司法、政党、经济、军事等内容。",
+      "tag": "F",
+      "quote": "【政 府】实行总统制。总统是国家元首、政府首脑兼武装部队总司令。",
+      "start": 1890,
+      "end": 1922,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 96,
+        "start": 1890,
+        "end": 1993
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_a07671f251",
+      "fact": "本资料述及美国立法机构构成，但未提及任何人工智能监管机构或法案。",
+      "tag": "F",
+      "quote": "【国 会】国会是最高立法机构，由参、众两院组成。",
+      "start": 3168,
+      "end": 3192,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 99,
+        "start": 3168,
+        "end": 3404
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_a07671f251",
+      "fact": "据此推断，本资料无法就2026年人工智能治理政策争议提供任何事实依据。",
+      "tag": "I",
+      "quote": "美国国家概况",
+      "start": 742,
+      "end": 748,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_45875848dd",
+      "fact": "本资料为中国政府网门户首页，内容为要闻、最新政策与政务导航",
+      "tag": "F",
+      "quote": "国务院政策文件库",
+      "start": 654,
+      "end": 662,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_45875848dd",
+      "fact": "本资料提到《电子信息制造业发展“十五五”规划》印发",
+      "tag": "F",
+      "quote": "《电子信息制造业发展“十五五”规划》印发",
+      "start": 859,
+      "end": 879,
+      "locator": {
+        "heading": "## 政策解读",
+        "paragraph": 40,
+        "start": 859,
+        "end": 880
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_45875848dd",
+      "fact": "本资料提到商务部解读促进智能家居消费的行动方案",
+      "tag": "F",
+      "quote": "商务部有关负责人解读《促进智能家居消费行动方案》",
+      "start": 751,
+      "end": 775,
+      "locator": {
+        "heading": "## 政策解读",
+        "paragraph": 35,
+        "start": 751,
+        "end": 776
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_45875848dd",
+      "fact": "本资料通篇未出现人工智能治理及2026年AI政策争议的内容",
+      "tag": "F",
+      "quote": "国务院办公厅关于加强中小企业回款难问题治理有关工作的通知",
+      "start": 601,
+      "end": 629,
+      "locator": {
+        "heading": "## 最新政策",
+        "paragraph": 30,
+        "start": 601,
+        "end": 630
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_45875848dd",
+      "fact": "关于2026年人工智能治理政策主要争议，本资料无任何可提取证据",
+      "tag": "U",
+      "quote": "更多 >>",
+      "start": 230,
+      "end": 235,
+      "locator": {
+        "heading": "## 习近平就发展先进制造业作出重要指示",
+        "paragraph": 19,
+        "start": 230,
+        "end": 236
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_45875848dd",
+      "fact": "本资料未列出人工智能、算法、数据治理相关文件或解读条目",
+      "tag": "I",
+      "quote": "最新政策",
+      "start": 485,
+      "end": 489,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_daf213d5e3",
+      "fact": "本资料唯一涉及人工智能的标题是AI训练与版权保护问题。",
+      "tag": "F",
+      "quote": "向“拿来主义”说不！AI训练碰上版权保护，怎么办？",
+      "start": 4066,
+      "end": 4091,
+      "locator": {
+        "heading": "## 中国式现代化之路",
+        "paragraph": 165,
+        "start": 4066,
+        "end": 4092
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_daf213d5e3",
+      "fact": "本资料提及重庆计划打造150个“人工智能+”综合治理场景，未说明其中争议。",
+      "tag": "F",
+      "quote": "重庆计划打造150个“人工智能+”综合治理场景",
+      "start": 4093,
+      "end": 4116,
+      "locator": {
+        "heading": "## 中国式现代化之路",
+        "paragraph": 166,
+        "start": 4093,
+        "end": 4117
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_daf213d5e3",
+      "fact": "本资料为门户首页栏目导航与标题汇编，未提供2026年人工智能治理政策主要争议的内容。",
+      "tag": "I",
+      "quote": "新闻 直播 要闻 国际 军事 政协 政务 图片 视频",
+      "start": 333,
+      "end": 359,
+      "locator": {
+        "heading": "",
+        "paragraph": 34,
+        "start": 333,
+        "end": 360
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_819a94a9e0",
+      "fact": "本资料为每日AI资讯聚合，未系统梳理AI治理政策主要争议。",
+      "tag": "I",
+      "quote": "每日AI快讯热闻",
+      "start": 547,
+      "end": 555,
+      "locator": {
+        "heading": "",
+        "paragraph": 66,
+        "start": 535,
+        "end": 556
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_819a94a9e0",
+      "fact": "OpenAI以合规担忧终止Cursor模型直接访问，并称Astra需严控分发。",
+      "tag": "F",
+      "quote": "无法确信其合规使用技术",
+      "start": 13369,
+      "end": 13380,
+      "locator": {
+        "heading": "## OpenAI 宣布终止与 Cursor 的合作关系",
+        "paragraph": 149,
+        "start": 13257,
+        "end": 13436
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_819a94a9e0",
+      "fact": "GPT-6 Astra达到关键级网络安全能力门槛，但可监控性下降。",
+      "tag": "F",
+      "quote": "可监控性有所下降",
+      "start": 9246,
+      "end": 9254,
+      "locator": {
+        "heading": "## OpenAI 推出最新旗舰大模型 GPT-6 Astra",
+        "paragraph": 126,
+        "start": 9100,
+        "end": 9264
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_819a94a9e0",
+      "fact": "谷歌网络安全专用模型仅通过认证计划向安全人员开放。",
+      "tag": "F",
+      "quote": "通过 Fairwind Program 向认证安全人员开放",
+      "start": 9891,
+      "end": 9920,
+      "locator": {
+        "heading": "## 谷歌推出推理与编码模型 Gemini 3.8",
+        "paragraph": 130,
+        "start": 9738,
+        "end": 9930
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_819a94a9e0",
+      "fact": "OpenAI网络安全模型GPT-5.6-Cyber仅向可信合作伙伴开放。",
+      "tag": "F",
+      "quote": "仅向埃森哲、IBM、CrowdStrike等可信合作伙伴开放",
+      "start": 24290,
+      "end": 24320,
+      "locator": {
+        "heading": "## OpenAI 推出 AI 网络安全模型 GPT-5.6-Cyber",
+        "paragraph": 217,
+        "start": 24171,
+        "end": 24330
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_819a94a9e0",
+      "fact": "Manus因跨境监管审查调整架构，恢复独立运营。",
+      "tag": "F",
+      "quote": "因跨境监管审查，双方重新调整架构",
+      "start": 23463,
+      "end": 23479,
+      "locator": {
+        "heading": "## Manus 恢复独立公司运营",
+        "paragraph": 212,
+        "start": 23413,
+        "end": 23549
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_819a94a9e0",
+      "fact": "企业级AI助手强调数据本地驻留、隐私隔离与多项合规审计。",
+      "tag": "F",
+      "quote": "数据驻留企业本地、对话隐私隔离",
+      "start": 4723,
+      "end": 4738,
+      "locator": {
+        "heading": "## 亚马逊云科技推出企业级 AI 工作助手 Amazon Quick",
+        "paragraph": 96,
+        "start": 4614,
+        "end": 4792
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_819a94a9e0",
+      "fact": "GUI智能体具备严格安全边界，敏感操作前主动确认用户。",
+      "tag": "F",
+      "quote": "可拒绝违法请求并在支付、删除等敏感操作前主动确认用户",
+      "start": 17295,
+      "end": 17321,
+      "locator": {
+        "heading": "## 阿里通义推出 GUI 智能体基座模型 Qwen-UI-Agent",
+        "paragraph": 174,
+        "start": 17153,
+        "end": 17332
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_cdaa1cdb88",
+      "fact": "本资料是欧盟官方门户页面。",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_cdaa1cdb88",
+      "fact": "本资料提及欧盟提出KIDS Act，延迟儿童使用社交媒体至13岁。",
+      "tag": "F",
+      "quote": "notably delaying access to social media until the age of 13.",
+      "start": 2081,
+      "end": 2141,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_cdaa1cdb88",
+      "fact": "本资料关注儿童和青少年使用在线平台的风险。",
+      "tag": "F",
+      "quote": "growing concerns about the risks children and teenagers",
+      "start": 1878,
+      "end": 1933,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_cdaa1cdb88",
+      "fact": "本资料提到欧洲议会批准欧盟海关法典改革，对电商实施更严格规则。",
+      "tag": "F",
+      "quote": "Reform of EU customs code and e-commerce rules gets green light",
+      "start": 2617,
+      "end": 2680,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 110,
+        "start": 2617,
+        "end": 2681
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_cdaa1cdb88",
+      "fact": "本资料未提供2026年人工智能治理政策主要争议的信息。",
+      "tag": "I",
+      "quote": "EU KIDS Act: helping children navigate a safer online world",
+      "start": 1802,
+      "end": 1861,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 100,
+        "start": 1802,
+        "end": 1862
+      },
+      "note": ""
+    }
+  ]
+}

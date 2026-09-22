@@ -1,0 +1,524 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_2ff29da119bf4b1796fdacb680ebd23e",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 教育领域使用生成式AI的收益与风险：基于现有资料的核查提纲\n## 报告范围与资料来源边界\n本报告只依据素材包中的已核实证据与未知/推断清单写作，不引入外部事实或研究。〔推断〕可依据的来源类型包括：生成式AI视频工具用例，其中教育工作者被列为典型用例【E-001】〔事实〕；教育部政府门户网站首页【E-009】〔事实〕；中国教育考试网首页【E-016】〔事实〕；即梦AI产品介绍【E-023】〔事实〕；汉字“仝”问答页【E-024】〔事实〕；未出现生成式AI、教育相关内容的资料【E-025】〔事实〕。不覆盖范围包括：教育领域生成式AI的实证效果、风险案例、政策全文与考试机构AI治理文件。〔未知〕政策资料仅见标题未展开【E-015】〔事实〕，考试机构门户页未涉及生成式AI收益或风险【E-022】〔事实〕。同一来源的转载按一份证据处理、不重复计数。〔推断〕\n## 教育场景中的直接收益线索\n工具典型用例列出教育工作者，用于快速解说视频和视觉辅助工具。【E-001】〔事实〕平台支持文生视频与图生视频，同步生成画面运动、对白、音效和环境音。【E-002】〔事实〕免费计划提供480p画质、无限量使用与MP4导出，可用于快速测试和短视频制作。【E-003】〔事实〕据此可推断，教育工作者可低成本制作解说短视频或视觉辅助草稿；这只说明工具功能线索，不等于已证实的学习效果或教学效率提升。〔推断〕\n## 免费方案的功能限制\n免费计划提供480p画质、无限量使用与MP4导出，可用于快速测试和短视频制作。【E-003】〔事实〕平均每个片段生成约需200秒；720p高清与更多并发任务需升级付费计划。【E-008】〔事实〕因此，免费方案的限制可确认在画质与并发维度：720p高清和更多并发任务需付费；E-003所称无限量使用指使用量，不宜理解为画质、并发无限制。〔推断〕E-008的200秒是生成耗时，不是成片时长限制；免费方案成片时长限制在现有资料中未说明。〔推断/未知〕\n## 使用权限、版权与水印约束\n免费计划视频仅供个人使用，商业使用权需付费计划。【E-004】〔事实〕免费计划生成的视频带有水印，需订阅高级版或专业版去除。【E-005】〔事实〕据此可推断，超出个人使用而涉及商业授权时需付费；素材未说明教育机构、课堂使用是否属于个人使用例外，也未提供版权归属细节。〔推断/未知〕\n## 数据保留与内容审核风险\n生成内容默认私有，标准视频保留24小时，付费用户部分视频永久保存。【E-006】〔事实〕平台审核所有生成内容，禁止裸露、色情或成人内容，多次违规可能永久封禁。【E-007】〔事实〕据此可推断，教育用户需关注生成内容的留存期限、审核合规与封禁风险；素材未说明未成年人隐私、学校数据合规或申诉机制。〔推断/未知〕\n## 教育政策与治理线索\n资料为教育部政府门户网站首页内容。【E-009】〔事实〕资料列出4月10日新闻发布会，主题为介绍《“人工智能+教育”行动计划》。【E-010】〔事实〕教育部科学技术与信息化司负责人曾就人工智能+教育行动计划答问。【E-011】〔事实〕资料列出介绍2026世界数字教育大会有关情况的新闻发布会。【E-012】〔事实〕资料中出现国家智慧教育公共服务平台。【E-013】〔事实〕资料提及中共中央、国务院印发《教育强国建设规划纲要（2024—2035年）》。【E-014】〔事实〕以上仅证明政策条目或平台名称存在，不能据此说明生成式AI的具体治理要求。〔推断〕\n## 政策内容缺失与不可回答项\n就现有资料看，政策条目仅列相关标题，未展开教育领域生成式AI收益与风险的内容。【E-015】〔事实〕因此，《“人工智能+教育”行动计划》对生成式AI的具体部署、风险规制或收益目标，现有资料无法回答。〔未知〕相关官方全文或解读属缺失信息。〔未知〕\n## 考试机构资料的相关性判定\n资料是中国教育考试网首页，主办单位为教育部教育考试院。【E-016】〔事实〕资料栏目含考试资讯、公示公告、考试项目、报名、成绩与证书查询及考试研究。【E-017】〔事实〕资料列出的国家教育考试项目包括普通高考、成人高考、研究生考试、自学考试等。【E-018】〔事实〕资料公示2026年度国家教育考试科研规划课题立项名单，日期为2026-09-04。【E-019】〔事实〕资料显示2026年高考开考前，教育部部长怀进鹏视频调度全国高考组织工作。【E-020】〔事实〕资料提供托福、雅思、德福、日本语能力测试等海外考试信息。【E-021】〔事实〕资料为考试机构门户页，未涉及生成式AI在教育领域的收益或风险。【E-022】〔事实〕据此可推断，该门户页与AI治理或收益风险无直接相关性，不能用作政策内容依据。〔推断〕\n## 无关产品与字词资料的排除\n资料为即梦AI产品介绍，未涉及教育领域使用生成式AI的收益与风险。【E-023】〔事实〕资料全部内容围绕汉字“仝”的读音与释义展开，属问答页面。【E-024】〔事实〕资料未出现生成式AI、教育等与任务目标相关的内容。【E-025】〔事实〕因此，这两类资料不纳入收益与风险分析；即梦AI产品介绍只能说明产品介绍本身，不能作为教育收益或风险证据，字词问答与任务目标无关。【E-023】【E-025】〔推断〕\n## 结论与待补实证清单\n可确认：至少一款生成式AI视频工具将教育工作者列为用例，用于快速解说视频和视觉辅助工具。【E-001】〔事实〕免费计划视频仅供个人使用，商业授权需付费计划。【E-004】〔事实〕平台审核所有生成内容，禁止裸露、色情或成人内容，多次违规可能永久封禁。【E-007】〔事实〕政策资料仅列标题，未展开生成式AI收益与风险内容。【E-015】〔事实〕考试机构门户页未涉及生成式AI在教育领域的收益或风险。【E-022】〔事实〕字词类资料未出现生成式AI、教育等相关内容。【E-025】〔事实〕推断界限：上述只能支持工具功能、使用约束与资料覆盖情况，不能证明教学效果、教育公平或风险发生率。〔推断〕待补实证包括：学习效果与教学效率研究、学术诚信与隐私风险案例、偏见歧视风险、免费与付费限制对教育机构采用的影响、行动计划全文或官方解读、考试机构AI治理文件；其中后两项分别对应政策未展开与考试门户未涉及，其余缺口在现有证据中无对应编号，均标为未知。【E-015】【E-022】〔未知〕",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 5,
+    "usable": 4,
+    "statuses": {
+      "ok": 4,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 23 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:56:20"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:56:32"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 2, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T13:56:52"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "10 个章节",
+        "finished_at": "2026-09-18T13:57:07"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2621字）",
+        "finished_at": "2026-09-18T13:57:29"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 7,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T13:59:02"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-18T14:01:00"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-18T14:02:58"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 44,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://aivideomaker.ai/zh",
+      "https://learn.chatgpt.com/docs/app",
+      "https://www.moe.gov.cn/index.html",
+      "https://www.neea.edu.cn/",
+      "https://jimeng.jianying.com/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 个性化学习 教学效果",
+        "rank": 5,
+        "title": "免费AI视频生成器：文字、图片生成有声视频",
+        "url": "https://aivideomaker.ai/zh",
+        "snippet": "MiniMax H3是AI Video Maker提供的AI视频生成模型，支持文生视频和图生视频。 它可同步生成画面运动、对白、音效和环境音，让 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "ChatGPT 学术诚信 认知依赖",
+        "rank": 5,
+        "title": "ChatGPT desktop app | ChatGPT Learn",
+        "url": "https://learn.chatgpt.com/docs/app",
+        "snippet": "2 天之前 · Choose ChatGPT or Codex. In ChatGPT, use the toggle above the composer to select Chat or Work. In Codex, start with …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "教育 生成式AI 隐私 偏见",
+        "rank": 2,
+        "title": "中华人民共和国教育部政府门户网站",
+        "url": "https://www.moe.gov.cn/index.html",
+        "snippet": "深入学习贯彻习近平总书记在全国教育大会上的重要讲话精神 深入学习贯彻习近平总书记关于教育的重要论述 教育强国建设规划纲 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "教育 生成式AI 隐私 偏见",
+        "rank": 3,
+        "title": "中国教育考试网",
+        "url": "https://www.neea.edu.cn/",
+        "snippet": "2026年9月4日 · 教育部部署2026年全国成人高校招生工作 教育部办公厅关于做好2026年全国成人高校招生工作的通知 教育部会同有 …",
+        "published_date": "2026-09-04",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育政策 监管",
+        "rank": 4,
+        "title": "即梦AI - 即刻造梦",
+        "url": "https://jimeng.jianying.com/",
+        "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 个性化学习 教学效果",
+        "urls": [
+          "https://aivideomaker.ai/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 个性化学习 教学效果",
+            "rank": 5,
+            "title": "免费AI视频生成器：文字、图片生成有声视频",
+            "url": "https://aivideomaker.ai/zh",
+            "snippet": "MiniMax H3是AI Video Maker提供的AI视频生成模型，支持文生视频和图生视频。 它可同步生成画面运动、对白、音效和环境音，让 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Dream AI - 免费AI图片生成器 | 无水印，无需登录",
+            "url": "https://www.dreamai.art/zh-CN",
+            "relevance": 0.2,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.15,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.247,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "ChatGPT 学术诚信 认知依赖",
+        "urls": [
+          "https://learn.chatgpt.com/docs/app"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "ChatGPT 学术诚信 认知依赖",
+            "rank": 5,
+            "title": "ChatGPT desktop app | ChatGPT Learn",
+            "url": "https://learn.chatgpt.com/docs/app",
+            "snippet": "2 天之前 · Choose ChatGPT or Codex. In ChatGPT, use the toggle above the composer to select Chat or Work. In Codex, start with …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "ChatGPT desktop app | ChatGPT Learn",
+            "url": "https://learn.chatgpt.com/docs/app",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "ChatGPT 官网最新地址：chatgpt 国内访问与中文版使用指南 ...",
+            "url": "https://www.gemini-cnblog.com/chatgpt/guides/chatgpt-china-official-2026.html",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT 官网中文版：GPT-5 国内使用完全攻略（支持 GPT ...",
+            "url": "https://www.chatgpt-chinese.com/blog/guides/chatgpt/chatgpt-gpt5-guide.html",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT官网入口、ChatGPT中文版、GPT-6与网页版国内 ...",
+            "url": "https://chatgpt-guides.com/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT 官方下载入口：Windows、Mac、iPhone、Android ...",
+            "url": "https://www.gpt-chinese-guide.com/chatgpt/chatgpt-xiazai-anzhuang-jiaocheng-dianno-shouji-2026",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.215,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "教育 生成式AI 隐私 偏见",
+        "urls": [
+          "https://www.moe.gov.cn/index.html",
+          "https://www.neea.edu.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "教育 生成式AI 隐私 偏见",
+            "rank": 2,
+            "title": "中华人民共和国教育部政府门户网站",
+            "url": "https://www.moe.gov.cn/index.html",
+            "snippet": "深入学习贯彻习近平总书记在全国教育大会上的重要讲话精神 深入学习贯彻习近平总书记关于教育的重要论述 教育强国建设规划纲 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "教育 生成式AI 隐私 偏见",
+            "rank": 3,
+            "title": "中国教育考试网",
+            "url": "https://www.neea.edu.cn/",
+            "snippet": "2026年9月4日 · 教育部部署2026年全国成人高校招生工作 教育部办公厅关于做好2026年全国成人高校招生工作的通知 教育部会同有 …",
+            "published_date": "2026-09-04",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中华人民共和国教育部政府门户网站",
+            "url": "https://www.moe.gov.cn/index.html",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中国教育考试网",
+            "url": "https://www.neea.edu.cn/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "教育（培养人的社会活动）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%95%99%E8%82%B2/143397",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "国家中小学智慧教育平台",
+            "url": "https://basic.smartedu.cn/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "国务院关于印发《教育发展“十五五”规划》的通知_教育_中国 ...",
+            "url": "https://www.gov.cn/zhengce/content/202606/content_7073640.htm",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.203,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育政策 监管",
+        "urls": [
+          "https://jimeng.jianying.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育政策 监管",
+            "rank": 4,
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Dream AI - 免费AI图片生成器 | 无水印，无需登录",
+            "url": "https://www.dreamai.art/zh-CN",
+            "relevance": 0.286,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.208,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（教育领域使用生成式AI的收益与风险）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本；subtasks[6].description 必须为非空文本；subtasks[7].description 必须为非空文本",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本；subtasks[6].description 必须为非空文本"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "fanout"
+        ]
+      },
+      "scheduler_elapsed_seconds": 19.087,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "RPA的定位与能力边界",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "RPA侧重流程自动化，执行规则明确的重复性操作，不具备自主学习和创新能力。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "AI核心是认知智能，模拟学习、推理和决策，可处理不确定性问题。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "RPA与AI融合形成IPA，使RPA从执行工具升级为智能助手。"
+          }
+        ]
+      },
+      {
+        "name": "AI与RPA的融合演进",
+        "points": [
+          {
+            "evidence_id": "E-006",
+            "statement": "IDC称实在智能以TARS大模型实现自然语言生成流程，打破传统RPA规则依赖。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "未来智能体技术将成为核心支撑，RPA升级为AI驱动的RPA。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "RPA与AI融合形成IPA，使RPA从执行工具升级为智能助手。"
+          }
+        ]
+      },
+      {
+        "name": "智能体/Agent的边界突破",
+        "points": [
+          {
+            "evidence_id": "E-004",
+            "statement": "实在Agent是RPA的进阶形态，核心突破是自主决策能力。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "实在Agent可据自然语言描述，自主拆解任务步骤、规划执行路径，无需预设详细流程。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "实在Agent无需依赖API即可跨系统协作，能操作各类软件和APP。"
+          }
+        ]
+      },
+      {
+        "name": "资料相关性与覆盖",
+        "points": [
+          {
+            "evidence_id": "E-015",
+            "statement": "游戏资料与任务目标无内容交集，无法据此提取相关证据。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "甲骨文资料未涉及机器人流程自动化与智能体边界。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "statement": "传统RPA仅执行明确规则且无自主学习能力，与实在Agent作为RPA进阶形态具备自主决策能力存在张力。",
+        "evidence_ids": [
+          "E-001",
+          "E-004"
+        ],
+        "status": "open"
+      },
+      {
+        "statement": "传统RPA依赖规则执行，与TARS大模型自然语言生成流程打破传统RPA规则依赖存在张力。",
+        "evidence_ids": [
+          "E-001",
+          "E-006"
+        ],
+        "status": "open"
+      }
+    ],
+    "gaps": [
+      {
+        "question": "RPA与智能体的边界判定标准是什么？",
+        "missing": "权威定义或行业标准材料"
+      },
+      {
+        "question": "智能体是否仍属于RPA范畴？",
+        "missing": "对传统RPA、RPA进阶形态分类边界的明确材料"
+      },
+      {
+        "question": "IPA、AI驱动RPA与Agent之间的概念关系是什么？",
+        "missing": "统一术语框架或对比材料"
+      },
+      {
+        "question": "自主决策与规则执行的划分依据是什么？",
+        "missing": "技术机制与能力边界的细节材料"
+      },
+      {
+        "question": "跨系统操作能力是否构成智能体与RPA的核心边界？",
+        "missing": "对二者跨系统能力的系统性对比材料"
+      }
+    ],
+    "duplicates": []
+  }
+}

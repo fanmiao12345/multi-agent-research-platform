@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_f4da86aef9cb4207827e8f81ae74c7bc",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 5,
+    "statuses": {
+      "ok": 5,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 33 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:10:31"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:10:44"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T14:10:47"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：全部证据涉及二维码、跨端互联、算法基础与欧盟概况，均未讨论算法推荐规则公开议题，无法支撑任何判断。",
+        "finished_at": "2026-09-18T14:10:50"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：全部证据涉及二维码、跨端互联、算法基础与欧盟概况，均未讨论算法推荐规则公开议题，无法支撑任何判断。；缺失信息：直接讨论该议题的法律、政策或学术材料、强制公开的法律依据与适用范围（法规、监管指引或立法草案）、强制公开利弊与影响的实证研究或案例报告、平台、用户与监管方的立场材料、欧盟、中国等主要法域的相关立法动态（可用证据 33 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.hlcode.cn/",
+      "https://hyperos.mi.com/continuity/abilities/ab0019",
+      "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+      "https://www.hello-algo.com/",
+      "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+      "https://european-union.europa.eu/index_en"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "互联网信息服务算法推荐管理规定 算法公开 透明度",
+        "rank": 4,
+        "title": "互联二维码生成器",
+        "url": "https://www.hlcode.cn/",
+        "snippet": "2026年9月11日 · 互联二维码生成器提供免费在线二维码制作服务，支持视频、音频、图片、文件、名片、表单等多种类型。 扫码即 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "互联网信息服务算法推荐管理规定 算法公开 透明度",
+        "rank": 2,
+        "title": "Xiaomi HyperConnect 跨端智联",
+        "url": "https://hyperos.mi.com/continuity/abilities/ab0019",
+        "snippet": "2026年9月11日 · 确认小米手机“设置-设备互联-妙享桌面”开关已开启。 在小米互联服务应用内，点击开启妙享桌面，拉起手机窗口， …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法推荐 强制披露 商业秘密 平衡",
+        "rank": 2,
+        "title": "算法基础与分析方法 - 菜鸟教程",
+        "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+        "snippet": "无论是手机上的导航软件为你规划最短路径，还是搜索引擎在毫秒间从海量数据中找出最相关的网页，背后都依赖于精心设计的算法 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法推荐 强制披露 商业秘密 平衡",
+        "rank": 3,
+        "title": "Hello 算法",
+        "url": "https://www.hello-algo.com/",
+        "snippet": "2026年9月10日 · “如果我当年学数据结构与算法的时候有《Hello 算法》，学起来应该会简单 10 倍！” —— 李沐，亚马逊资深首席科 …",
+        "published_date": "2026-09-10",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 数字服务法 推荐系统 透明度",
+        "rank": 5,
+        "title": "欧盟概况 - 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+        "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 数字服务法 推荐系统 透明度",
+        "rank": 2,
+        "title": "Your gateway to the EU, News, Highlights | European Union",
+        "url": "https://european-union.europa.eu/index_en",
+        "snippet": "1 天前 · Discover how the EU functions, its principles, priorities; find out about its history and member states; learn about its legal …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "互联网信息服务算法推荐管理规定 算法公开 透明度",
+        "urls": [
+          "https://www.hlcode.cn/",
+          "https://hyperos.mi.com/continuity/abilities/ab0019"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "互联网信息服务算法推荐管理规定 算法公开 透明度",
+            "rank": 4,
+            "title": "互联二维码生成器",
+            "url": "https://www.hlcode.cn/",
+            "snippet": "2026年9月11日 · 互联二维码生成器提供免费在线二维码制作服务，支持视频、音频、图片、文件、名片、表单等多种类型。 扫码即 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "互联网信息服务算法推荐管理规定 算法公开 透明度",
+            "rank": 2,
+            "title": "Xiaomi HyperConnect 跨端智联",
+            "url": "https://hyperos.mi.com/continuity/abilities/ab0019",
+            "snippet": "2026年9月11日 · 确认小米手机“设置-设备互联-妙享桌面”开关已开启。 在小米互联服务应用内，点击开启妙享桌面，拉起手机窗口， …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "互联二维码生成器",
+            "url": "https://www.hlcode.cn/",
+            "relevance": 0.083,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Xiaomi HyperConnect 跨端智联",
+            "url": "https://hyperos.mi.com/continuity/abilities/ab0019",
+            "relevance": 0.056,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "O+ Connect",
+            "url": "https://connect.oppo.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "互联_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BA%92%E8%81%94/3827205",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "使用OPPO互联/O+互联实现电脑跨屏互联",
+            "url": "https://support.oppo.com/cn/answer/?aid=2045666",
+            "relevance": 0.056,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.26,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法推荐 强制披露 商业秘密 平衡",
+        "urls": [
+          "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+          "https://www.hello-algo.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "算法推荐 强制披露 商业秘密 平衡",
+            "rank": 2,
+            "title": "算法基础与分析方法 - 菜鸟教程",
+            "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+            "snippet": "无论是手机上的导航软件为你规划最短路径，还是搜索引擎在毫秒间从海量数据中找出最相关的网页，背后都依赖于精心设计的算法 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "算法推荐 强制披露 商业秘密 平衡",
+            "rank": 3,
+            "title": "Hello 算法",
+            "url": "https://www.hello-algo.com/",
+            "snippet": "2026年9月10日 · “如果我当年学数据结构与算法的时候有《Hello 算法》，学起来应该会简单 10 倍！” —— 李沐，亚马逊资深首席科 …",
+            "published_date": "2026-09-10",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "算法基础与分析方法 - 菜鸟教程",
+            "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Hello 算法",
+            "url": "https://www.hello-algo.com/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "算法（解题方案的准确而完整的描述）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%AE%97%E6%B3%95/209025",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+            "url": "https://leetcode.cn/",
+            "relevance": 0.05,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "算法基础简介 - OI Wiki",
+            "url": "https://oi-wiki.org/basic/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.206,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 数字服务法 推荐系统 透明度",
+        "urls": [
+          "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+          "https://european-union.europa.eu/index_en"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "欧盟 数字服务法 推荐系统 透明度",
+            "rank": 5,
+            "title": "欧盟概况 - 中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+            "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "欧盟 数字服务法 推荐系统 透明度",
+            "rank": 2,
+            "title": "Your gateway to the EU, News, Highlights | European Union",
+            "url": "https://european-union.europa.eu/index_en",
+            "snippet": "1 天前 · Discover how the EU functions, its principles, priorities; find out about its history and member states; learn about its legal …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "欧盟概况 - 中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Your gateway to the EU, News, Highlights | European Union",
+            "url": "https://european-union.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "欧洲联盟（欧洲经济、政治共同体）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%AC%A7%E6%B4%B2%E8%81%94%E7%9B%9F/786749",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "European Commission, official website - European Commission",
+            "url": "https://commission.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "EU countries - European Union",
+            "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.464,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法审计 算法影响评估 推荐系统 监管",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "算法基础与分析方法 - 菜鸟教程",
+            "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Hello 算法",
+            "url": "https://www.hello-algo.com/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "算法（解题方案的准确而完整的描述）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%AE%97%E6%B3%95/209025",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+            "url": "https://leetcode.cn/",
+            "relevance": 0.062,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "算法基础简介 - OI Wiki",
+            "url": "https://oi-wiki.org/basic/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.205,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（是否应强制公开算法推荐规则）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['debate']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['debate']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "debate"
+        ]
+      },
+      "scheduler_elapsed_seconds": 27.412,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

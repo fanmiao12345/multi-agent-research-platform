@@ -1,0 +1,208 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "目标争议的证据缺口",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "外交部欧盟概况全篇未提供2026年AI治理政策争议信息。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "欧盟门户资料无法回答2026年AI治理政策主要争议。"
+          },
+          {
+            "evidence_id": "E-022",
+            "statement": "开源中国资料无法提取2026年AI治理争议事实依据。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "开源社资料未涉及2026年AI治理政策争议，无法提供证据。"
+          },
+          {
+            "evidence_id": "E-043",
+            "statement": "AIGC导航未给出AI治理争议议题、参与方或文件名称。"
+          }
+        ]
+      },
+      {
+        "name": "欧盟政策与新闻未覆盖AI治理",
+        "points": [
+          {
+            "evidence_id": "E-003",
+            "statement": "资料称欧盟以安全、竞争力和绿色发展为三大支柱推进政策。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "资料提到欧盟推动绿色和数字双转型，但未涉及AI治理政策。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "资料列举《外国补贴条例》《反胁迫工具》等经贸工具，未提AI立法。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "欧盟官方门户全文未出现人工智能治理或AI政策论述。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "欧盟2026年新闻涉及儿童上网、灾后资金和海关改革。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "欧盟提出KIDS法案，拟将儿童使用社交媒体年龄延至13岁。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "欧盟门户所载新闻日期为2026年9月16日和17日。"
+          }
+        ]
+      },
+      {
+        "name": "AI产业动态未涉治理争议",
+        "points": [
+          {
+            "evidence_id": "E-019",
+            "statement": "开源中国资料列举终端AI代码助手、MCP服务器等AI项目。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "开源中国资料称MCP服务器可让AI助手管理仓库、Issue与Pull Request。"
+          },
+          {
+            "evidence_id": "E-032",
+            "statement": "千问称2026年6月全面开放第三方Agent与Skill接入。"
+          },
+          {
+            "evidence_id": "E-033",
+            "statement": "千问称模型家族采用宽松开源协议，完整权重与27B版本将开源。"
+          },
+          {
+            "evidence_id": "E-034",
+            "statement": "千问称以开源开放模式打破海外AI标准垄断，未给出治理争议。"
+          },
+          {
+            "evidence_id": "E-035",
+            "statement": "千问提及对话内AI支付闭环，未讨论相关合规争议。"
+          },
+          {
+            "evidence_id": "E-036",
+            "statement": "千问提及Qwen-Robot系列具身大模型，未涉及其监管争议。"
+          },
+          {
+            "evidence_id": "E-037",
+            "statement": "有资料提示智能体自主行动与支付闭环或引监管问题，但未提及。"
+          }
+        ]
+      },
+      {
+        "name": "开源社区治理与蓝皮书",
+        "points": [
+          {
+            "evidence_id": "E-025",
+            "statement": "开源社使命含开源治理、国际接轨、社区发展、项目孵化。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "开源社设有仓库《中国人工智能开源生态蓝皮书2026》。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "开源社设有LocalAIStack仓库，用于构建本地AI工作站。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "开源社是全球开源许可证认证组织OSI在中国的首个成员。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "开源社资料未涉及2026年AI治理政策争议，无法提供证据。"
+          }
+        ]
+      },
+      {
+        "name": "算法备案等治理相关条目",
+        "points": [
+          {
+            "evidence_id": "E-040",
+            "statement": "免费AI工具导航页脚列出「算法备案」等AI治理相关条目。"
+          },
+          {
+            "evidence_id": "E-039",
+            "statement": "该导航分类涵盖AI写作、绘画、视频、办公、编程等工具。"
+          },
+          {
+            "evidence_id": "E-041",
+            "statement": "该导航主要内容为免费AIGC课程与工具推荐。"
+          },
+          {
+            "evidence_id": "E-042",
+            "statement": "该导航版权年份至2026，正文未讨论2026年AI治理政策争议。"
+          }
+        ]
+      },
+      {
+        "name": "时效与来源范围限制",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "外交部欧盟概况最近更新时间为2026年7月。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "该资料介绍欧盟成员、人口、面积、GDP、机构与对外关系。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "美国国家概况最近更新时间为2026年6月。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "开源中国唯一提及2026年处为开源软件应用创新大赛报名通知。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "美国国家概况全文未涉及人工智能治理政策内容。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "开源中国与Gitee介绍页未涉及人工智能治理政策。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "开源中国资料未出现AI治理政策、监管争议或立法内容。"
+          },
+          {
+            "evidence_id": "E-030",
+            "statement": "阿里千问产品介绍未涉及2026年AI治理政策争议。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "2026年人工智能治理政策的主要争议有哪些？",
+        "missing": "直接述及2026年AI治理争议的政策文件、官方声明或权威报道"
+      },
+      {
+        "question": "争议参与方及各方主张分别是什么？",
+        "missing": "监管机构、企业、公民社会等各方立场材料"
+      },
+      {
+        "question": "欧盟AI立法或治理在2026年的进展与分歧如何？",
+        "missing": "欧盟AI法案、AI治理相关立法或政策文件"
+      },
+      {
+        "question": "中国、美国等主要司法辖区的2026年AI治理争议是什么？",
+        "missing": "中国、美国等官方AI治理政策原文或分析"
+      },
+      {
+        "question": "智能体、开源模型、AI支付是否引发监管争议？",
+        "missing": "针对智能体、开源模型、AI支付合规争议的具体资料"
+      }
+    ],
+    "duplicates": []
+  }
+}

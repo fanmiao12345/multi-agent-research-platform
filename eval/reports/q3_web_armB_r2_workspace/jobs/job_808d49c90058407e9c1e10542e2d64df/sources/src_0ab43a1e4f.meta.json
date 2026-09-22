@@ -1,0 +1,1497 @@
+{
+  "source_id": "src_0ab43a1e4f",
+  "kind": "url",
+  "display": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材 - JZTHEME",
+  "original_address": "https://www.jztheme.com/card",
+  "title": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材 - JZTHEME",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 5496,
+  "content_hash": "bd93cfe8264d4588202980151dbaea894b3ec1e03ed9b2495e8b7b1c761b6fe0",
+  "normalized_hash": "5637c7324d8ba8ca9a2256389aede6d361259f34199a8b79f65cd157581715c8",
+  "captured_at": "2026-09-20T10:40:21",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_0ab43a1e4f.md",
+  "encoding": "UTF-8",
+  "segment_count": 209,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 3,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 4,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 8,
+      "end": 15,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 16,
+      "end": 49,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 50,
+      "end": 53,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 54,
+      "end": 57,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 58,
+      "end": 61,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 62,
+      "end": 65,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 66,
+      "end": 69,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 70,
+      "end": 73,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 74,
+      "end": 77,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 78,
+      "end": 81,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 82,
+      "end": 85,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 86,
+      "end": 89,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 90,
+      "end": 97,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 98,
+      "end": 101,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 102,
+      "end": 105,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 106,
+      "end": 109,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 110,
+      "end": 113,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 114,
+      "end": 117,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 118,
+      "end": 121,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 122,
+      "end": 125,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 126,
+      "end": 129,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 130,
+      "end": 133,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 134,
+      "end": 140,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 141,
+      "end": 144,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 145,
+      "end": 155,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 156,
+      "end": 165,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 166,
+      "end": 178,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 179,
+      "end": 189,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 190,
+      "end": 198,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 199,
+      "end": 209,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 210,
+      "end": 219,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 220,
+      "end": 228,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 229,
+      "end": 240,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 241,
+      "end": 252,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 253,
+      "end": 267,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 268,
+      "end": 273,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 274,
+      "end": 279,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 39,
+      "start": 286,
+      "end": 325,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 40,
+      "start": 326,
+      "end": 329,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 41,
+      "start": 330,
+      "end": 333,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 42,
+      "start": 334,
+      "end": 337,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 43,
+      "start": 338,
+      "end": 343,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 44,
+      "start": 344,
+      "end": 348,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 45,
+      "start": 349,
+      "end": 358,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 46,
+      "start": 359,
+      "end": 364,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 47,
+      "start": 365,
+      "end": 368,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 48,
+      "start": 369,
+      "end": 372,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 49,
+      "start": 373,
+      "end": 376,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 50,
+      "start": 377,
+      "end": 413,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 51,
+      "start": 414,
+      "end": 417,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 52,
+      "start": 418,
+      "end": 422,
+      "page": null
+    },
+    {
+      "heading": "# 卡片",
+      "paragraph": 53,
+      "start": 423,
+      "end": 428,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6469] | 响应式颜色调色板组件支持悬停动画",
+      "paragraph": 54,
+      "start": 469,
+      "end": 475,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6469] | 响应式颜色调色板组件支持悬停动画",
+      "paragraph": 55,
+      "start": 476,
+      "end": 480,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6469] | 响应式颜色调色板组件支持悬停动画",
+      "paragraph": 56,
+      "start": 481,
+      "end": 486,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6468] | 带有促销标签的响应式商品卡片组件",
+      "paragraph": 57,
+      "start": 527,
+      "end": 533,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6468] | 带有促销标签的响应式商品卡片组件",
+      "paragraph": 58,
+      "start": 534,
+      "end": 538,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6468] | 带有促销标签的响应式商品卡片组件",
+      "paragraph": 59,
+      "start": 539,
+      "end": 544,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6467] | 响应式服务条款模态对话框组件",
+      "paragraph": 60,
+      "start": 583,
+      "end": 589,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6467] | 响应式服务条款模态对话框组件",
+      "paragraph": 61,
+      "start": 590,
+      "end": 594,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6467] | 响应式服务条款模态对话框组件",
+      "paragraph": 62,
+      "start": 595,
+      "end": 600,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6466] | 无需JavaScript的CSS弹窗实现方法",
+      "paragraph": 63,
+      "start": 647,
+      "end": 653,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6466] | 无需JavaScript的CSS弹窗实现方法",
+      "paragraph": 64,
+      "start": 654,
+      "end": 658,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6466] | 无需JavaScript的CSS弹窗实现方法",
+      "paragraph": 65,
+      "start": 659,
+      "end": 664,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6465] | 响应式定价卡片组件带交互详情展开",
+      "paragraph": 66,
+      "start": 705,
+      "end": 711,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6465] | 响应式定价卡片组件带交互详情展开",
+      "paragraph": 67,
+      "start": 712,
+      "end": 716,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6465] | 响应式定价卡片组件带交互详情展开",
+      "paragraph": 68,
+      "start": 717,
+      "end": 722,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6464] | 动态响应式卡片组件含悬停动画与渐变背景",
+      "paragraph": 69,
+      "start": 766,
+      "end": 772,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6464] | 动态响应式卡片组件含悬停动画与渐变背景",
+      "paragraph": 70,
+      "start": 773,
+      "end": 777,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6464] | 动态响应式卡片组件含悬停动画与渐变背景",
+      "paragraph": 71,
+      "start": 778,
+      "end": 783,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6463] | 带保存和查看更多功能的响应式新闻卡片组件",
+      "paragraph": 72,
+      "start": 828,
+      "end": 834,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6463] | 带保存和查看更多功能的响应式新闻卡片组件",
+      "paragraph": 73,
+      "start": 835,
+      "end": 839,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6463] | 带保存和查看更多功能的响应式新闻卡片组件",
+      "paragraph": 74,
+      "start": 840,
+      "end": 845,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6462] | 基于HTML和CSS3的交互式卡片组件支持动态光点动画和毛玻璃效果",
+      "paragraph": 75,
+      "start": 903,
+      "end": 909,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6462] | 基于HTML和CSS3的交互式卡片组件支持动态光点动画和毛玻璃效果",
+      "paragraph": 76,
+      "start": 910,
+      "end": 914,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6462] | 基于HTML和CSS3的交互式卡片组件支持动态光点动画和毛玻璃效果",
+      "paragraph": 77,
+      "start": 915,
+      "end": 920,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6461] | 响应式Cookie提示卡片组件实现隐私政策展示与用户同意收集",
+      "paragraph": 78,
+      "start": 975,
+      "end": 979,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6461] | 响应式Cookie提示卡片组件实现隐私政策展示与用户同意收集",
+      "paragraph": 79,
+      "start": 980,
+      "end": 984,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6461] | 响应式Cookie提示卡片组件实现隐私政策展示与用户同意收集",
+      "paragraph": 80,
+      "start": 985,
+      "end": 990,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6460] | CSS实现的科幻主题互动卡片组件",
+      "paragraph": 81,
+      "start": 1031,
+      "end": 1037,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6460] | CSS实现的科幻主题互动卡片组件",
+      "paragraph": 82,
+      "start": 1038,
+      "end": 1042,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6460] | CSS实现的科幻主题互动卡片组件",
+      "paragraph": 83,
+      "start": 1043,
+      "end": 1048,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6459] | HTML5+CSS3实现的响应式网页计算器组件",
+      "paragraph": 84,
+      "start": 1096,
+      "end": 1102,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6459] | HTML5+CSS3实现的响应式网页计算器组件",
+      "paragraph": 85,
+      "start": 1103,
+      "end": 1107,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6459] | HTML5+CSS3实现的响应式网页计算器组件",
+      "paragraph": 86,
+      "start": 1108,
+      "end": 1113,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6458] | 响应式视频卡片组件支持悬停动画与SVG图标交互",
+      "paragraph": 87,
+      "start": 1161,
+      "end": 1167,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6458] | 响应式视频卡片组件支持悬停动画与SVG图标交互",
+      "paragraph": 88,
+      "start": 1168,
+      "end": 1172,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6458] | 响应式视频卡片组件支持悬停动画与SVG图标交互",
+      "paragraph": 89,
+      "start": 1173,
+      "end": 1178,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6457] | 基于SVG的交互式卡片悬停动画组件",
+      "paragraph": 90,
+      "start": 1220,
+      "end": 1226,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6457] | 基于SVG的交互式卡片悬停动画组件",
+      "paragraph": 91,
+      "start": 1227,
+      "end": 1231,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6457] | 基于SVG的交互式卡片悬停动画组件",
+      "paragraph": 92,
+      "start": 1232,
+      "end": 1237,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6456] | HTML5 CSS3实现的3D翻转卡片组件",
+      "paragraph": 93,
+      "start": 1283,
+      "end": 1289,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6456] | HTML5 CSS3实现的3D翻转卡片组件",
+      "paragraph": 94,
+      "start": 1290,
+      "end": 1294,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6456] | HTML5 CSS3实现的3D翻转卡片组件",
+      "paragraph": 95,
+      "start": 1295,
+      "end": 1300,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6455] | 基于HTML/CSS的交互式色彩调色板组件",
+      "paragraph": 96,
+      "start": 1346,
+      "end": 1352,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6455] | 基于HTML/CSS的交互式色彩调色板组件",
+      "paragraph": 97,
+      "start": 1353,
+      "end": 1357,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6455] | 基于HTML/CSS的交互式色彩调色板组件",
+      "paragraph": 98,
+      "start": 1358,
+      "end": 1363,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6454] | macOS风格的卡片式UI组件",
+      "paragraph": 99,
+      "start": 1403,
+      "end": 1409,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6454] | macOS风格的卡片式UI组件",
+      "paragraph": 100,
+      "start": 1410,
+      "end": 1414,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6454] | macOS风格的卡片式UI组件",
+      "paragraph": 101,
+      "start": 1415,
+      "end": 1420,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6453] | 纯CSS实现的3D翻转银行卡组件",
+      "paragraph": 102,
+      "start": 1461,
+      "end": 1467,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6453] | 纯CSS实现的3D翻转银行卡组件",
+      "paragraph": 103,
+      "start": 1468,
+      "end": 1472,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6453] | 纯CSS实现的3D翻转银行卡组件",
+      "paragraph": 104,
+      "start": 1473,
+      "end": 1478,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6452] | 简洁销售额统计卡片，HTML与CSS构建，现代UI风格",
+      "paragraph": 105,
+      "start": 1530,
+      "end": 1536,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6452] | 简洁销售额统计卡片，HTML与CSS构建，现代UI风格",
+      "paragraph": 106,
+      "start": 1537,
+      "end": 1541,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6452] | 简洁销售额统计卡片，HTML与CSS构建，现代UI风格",
+      "paragraph": 107,
+      "start": 1542,
+      "end": 1547,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6451] | 简洁颜色调色板组件，Flex布局与过渡动画",
+      "paragraph": 108,
+      "start": 1593,
+      "end": 1599,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6451] | 简洁颜色调色板组件，Flex布局与过渡动画",
+      "paragraph": 109,
+      "start": 1600,
+      "end": 1604,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6451] | 简洁颜色调色板组件，Flex布局与过渡动画",
+      "paragraph": 110,
+      "start": 1605,
+      "end": 1610,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6449] | 设计精美的卡片组件，支持渐变背景和悬停动画",
+      "paragraph": 111,
+      "start": 1656,
+      "end": 1662,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6449] | 设计精美的卡片组件，支持渐变背景和悬停动画",
+      "paragraph": 112,
+      "start": 1663,
+      "end": 1667,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6449] | 设计精美的卡片组件，支持渐变背景和悬停动画",
+      "paragraph": 113,
+      "start": 1668,
+      "end": 1673,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6448] | HTML技能展示卡片响应式设计",
+      "paragraph": 114,
+      "start": 1713,
+      "end": 1719,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6448] | HTML技能展示卡片响应式设计",
+      "paragraph": 115,
+      "start": 1720,
+      "end": 1724,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6448] | HTML技能展示卡片响应式设计",
+      "paragraph": 116,
+      "start": 1725,
+      "end": 1730,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6447] | 响应式四宫格卡片数据展示组件",
+      "paragraph": 117,
+      "start": 1769,
+      "end": 1775,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6447] | 响应式四宫格卡片数据展示组件",
+      "paragraph": 118,
+      "start": 1776,
+      "end": 1780,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6447] | 响应式四宫格卡片数据展示组件",
+      "paragraph": 119,
+      "start": 1781,
+      "end": 1786,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6446] | 纯CSS驱动的交互式卡片动画组件",
+      "paragraph": 120,
+      "start": 1827,
+      "end": 1833,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6446] | 纯CSS驱动的交互式卡片动画组件",
+      "paragraph": 121,
+      "start": 1834,
+      "end": 1838,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6446] | 纯CSS驱动的交互式卡片动画组件",
+      "paragraph": 122,
+      "start": 1839,
+      "end": 1844,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6445] | 现代卡片式UI组件支持毛玻璃特效",
+      "paragraph": 123,
+      "start": 1885,
+      "end": 1891,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6445] | 现代卡片式UI组件支持毛玻璃特效",
+      "paragraph": 124,
+      "start": 1892,
+      "end": 1896,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6445] | 现代卡片式UI组件支持毛玻璃特效",
+      "paragraph": 125,
+      "start": 1897,
+      "end": 1902,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6444] | 现代CSS卡片特效组件实现",
+      "paragraph": 126,
+      "start": 1940,
+      "end": 1946,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6444] | 现代CSS卡片特效组件实现",
+      "paragraph": 127,
+      "start": 1947,
+      "end": 1951,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6444] | 现代CSS卡片特效组件实现",
+      "paragraph": 128,
+      "start": 1952,
+      "end": 1957,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6443] | 动态交互式卡片组件实现渐变聚焦效果",
+      "paragraph": 129,
+      "start": 1999,
+      "end": 2005,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6443] | 动态交互式卡片组件实现渐变聚焦效果",
+      "paragraph": 130,
+      "start": 2006,
+      "end": 2010,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6443] | 动态交互式卡片组件实现渐变聚焦效果",
+      "paragraph": 131,
+      "start": 2011,
+      "end": 2016,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6442] | 纯CSS实现的机械风格动画时钟",
+      "paragraph": 132,
+      "start": 2056,
+      "end": 2062,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6442] | 纯CSS实现的机械风格动画时钟",
+      "paragraph": 133,
+      "start": 2063,
+      "end": 2067,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6442] | 纯CSS实现的机械风格动画时钟",
+      "paragraph": 134,
+      "start": 2068,
+      "end": 2073,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6441] | 基于SVG与CSS的天气卡片UI组件",
+      "paragraph": 135,
+      "start": 2116,
+      "end": 2122,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6441] | 基于SVG与CSS的天气卡片UI组件",
+      "paragraph": 136,
+      "start": 2123,
+      "end": 2127,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6441] | 基于SVG与CSS的天气卡片UI组件",
+      "paragraph": 137,
+      "start": 2128,
+      "end": 2133,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6440] | 动态交互式CSS卡片组件",
+      "paragraph": 138,
+      "start": 2170,
+      "end": 2176,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6440] | 动态交互式CSS卡片组件",
+      "paragraph": 139,
+      "start": 2177,
+      "end": 2181,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6440] | 动态交互式CSS卡片组件",
+      "paragraph": 140,
+      "start": 2182,
+      "end": 2187,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6439] | CSS3横向滚动卡片容器组件",
+      "paragraph": 141,
+      "start": 2226,
+      "end": 2232,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6439] | CSS3横向滚动卡片容器组件",
+      "paragraph": 142,
+      "start": 2233,
+      "end": 2237,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6439] | CSS3横向滚动卡片容器组件",
+      "paragraph": 143,
+      "start": 2238,
+      "end": 2243,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6438] | 纯CSS实现3D悬停交互卡片组件",
+      "paragraph": 144,
+      "start": 2284,
+      "end": 2290,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6438] | 纯CSS实现3D悬停交互卡片组件",
+      "paragraph": 145,
+      "start": 2291,
+      "end": 2295,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6438] | 纯CSS实现3D悬停交互卡片组件",
+      "paragraph": 146,
+      "start": 2296,
+      "end": 2301,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6437] | 动态模糊悬浮卡片UI组件",
+      "paragraph": 147,
+      "start": 2338,
+      "end": 2344,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6437] | 动态模糊悬浮卡片UI组件",
+      "paragraph": 148,
+      "start": 2345,
+      "end": 2349,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6437] | 动态模糊悬浮卡片UI组件",
+      "paragraph": 149,
+      "start": 2350,
+      "end": 2355,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6436] | 响应式GPU产品卡片，动态交互与视觉效果",
+      "paragraph": 150,
+      "start": 2400,
+      "end": 2406,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6436] | 响应式GPU产品卡片，动态交互与视觉效果",
+      "paragraph": 151,
+      "start": 2407,
+      "end": 2411,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6436] | 响应式GPU产品卡片，动态交互与视觉效果",
+      "paragraph": 152,
+      "start": 2412,
+      "end": 2417,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6435] | D立体翻转卡片组件实现方案",
+      "paragraph": 153,
+      "start": 2455,
+      "end": 2461,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6435] | D立体翻转卡片组件实现方案",
+      "paragraph": 154,
+      "start": 2462,
+      "end": 2466,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6435] | D立体翻转卡片组件实现方案",
+      "paragraph": 155,
+      "start": 2467,
+      "end": 2472,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6434] | 纯CSS实现的现代化Toast提示组件",
+      "paragraph": 156,
+      "start": 2516,
+      "end": 2522,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6434] | 纯CSS实现的现代化Toast提示组件",
+      "paragraph": 157,
+      "start": 2523,
+      "end": 2527,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6434] | 纯CSS实现的现代化Toast提示组件",
+      "paragraph": 158,
+      "start": 2528,
+      "end": 2533,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6433] | 纯CSS实现的渐变圆角阴影卡片样式",
+      "paragraph": 159,
+      "start": 2575,
+      "end": 2581,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6433] | 纯CSS实现的渐变圆角阴影卡片样式",
+      "paragraph": 160,
+      "start": 2582,
+      "end": 2586,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6433] | 纯CSS实现的渐变圆角阴影卡片样式",
+      "paragraph": 161,
+      "start": 2587,
+      "end": 2592,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6432] | 简洁音乐播放器组件，支持HTML与CSS动画效果",
+      "paragraph": 162,
+      "start": 2641,
+      "end": 2647,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6432] | 简洁音乐播放器组件，支持HTML与CSS动画效果",
+      "paragraph": 163,
+      "start": 2648,
+      "end": 2652,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6432] | 简洁音乐播放器组件，支持HTML与CSS动画效果",
+      "paragraph": 164,
+      "start": 2653,
+      "end": 2658,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6431] | 响应式交易卡片UI组件",
+      "paragraph": 165,
+      "start": 2694,
+      "end": 2700,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6431] | 响应式交易卡片UI组件",
+      "paragraph": 166,
+      "start": 2701,
+      "end": 2705,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6431] | 响应式交易卡片UI组件",
+      "paragraph": 167,
+      "start": 2706,
+      "end": 2711,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6430] | 纯CSS实现的响应式卡片悬停动效",
+      "paragraph": 168,
+      "start": 2752,
+      "end": 2758,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6430] | 纯CSS实现的响应式卡片悬停动效",
+      "paragraph": 169,
+      "start": 2759,
+      "end": 2763,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6430] | 纯CSS实现的响应式卡片悬停动效",
+      "paragraph": 170,
+      "start": 2764,
+      "end": 2769,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 171,
+      "start": 2806,
+      "end": 2812,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 172,
+      "start": 2813,
+      "end": 2832,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 173,
+      "start": 2833,
+      "end": 2842,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 174,
+      "start": 2843,
+      "end": 2912,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 175,
+      "start": 2913,
+      "end": 2916,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 176,
+      "start": 2917,
+      "end": 2920,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 177,
+      "start": 2921,
+      "end": 2926,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 178,
+      "start": 2927,
+      "end": 2930,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 179,
+      "start": 2931,
+      "end": 2934,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 180,
+      "start": 2935,
+      "end": 2938,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 181,
+      "start": 2939,
+      "end": 2942,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 182,
+      "start": 2943,
+      "end": 2946,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 183,
+      "start": 2947,
+      "end": 2950,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 184,
+      "start": 2951,
+      "end": 2954,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 185,
+      "start": 2955,
+      "end": 2958,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 186,
+      "start": 2959,
+      "end": 2962,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 187,
+      "start": 2963,
+      "end": 2966,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 188,
+      "start": 2967,
+      "end": 2970,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 189,
+      "start": 2971,
+      "end": 2974,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 190,
+      "start": 2975,
+      "end": 3002,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 191,
+      "start": 3003,
+      "end": 3009,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 192,
+      "start": 3010,
+      "end": 3015,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 193,
+      "start": 3016,
+      "end": 3023,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 194,
+      "start": 3024,
+      "end": 3034,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 195,
+      "start": 3035,
+      "end": 3065,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 196,
+      "start": 3066,
+      "end": 3069,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 197,
+      "start": 3070,
+      "end": 3073,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 198,
+      "start": 3074,
+      "end": 3077,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 199,
+      "start": 3078,
+      "end": 3081,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 200,
+      "start": 3082,
+      "end": 3085,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 201,
+      "start": 3086,
+      "end": 3089,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 202,
+      "start": 3090,
+      "end": 3093,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 203,
+      "start": 3094,
+      "end": 3101,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 204,
+      "start": 3102,
+      "end": 3105,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 205,
+      "start": 3106,
+      "end": 3109,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 206,
+      "start": 3110,
+      "end": 3113,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 207,
+      "start": 3114,
+      "end": 3117,
+      "page": null
+    },
+    {
+      "heading": "### Card卡片元素 [6428] | 带动画效果的钱包卡片组件",
+      "paragraph": 208,
+      "start": 3118,
+      "end": 3123,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.jztheme.com/card",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T10:40:21",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

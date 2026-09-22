@@ -1,0 +1,140 @@
+{
+  "title": "城市低碳交通政策的效果与限制评估提纲",
+  "sections": [
+    {
+      "heading": "评估范围与证据基础",
+      "purpose": "明确可用资料范围、评估对象与证据边界",
+      "required_evidence": [
+        "E-001",
+        "E-014",
+        "E-022",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "绿色低碳交通政策目标",
+      "purpose": "梳理政策提出的绿色转型方向与主要目标",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-008",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "交通体系与设施部署要求",
+      "purpose": "归纳综合交通、换乘设施与便民设施部署要求",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "浙江公交查询资料的内容与边界",
+      "purpose": "说明浙江公交查询可提供的数据及其免责声明",
+      "required_evidence": [
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "宁波公交查询资料的内容与边界",
+      "purpose": "说明宁波公交查询可提供的数据及其免责声明",
+      "required_evidence": [
+        "E-015",
+        "E-016",
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-021"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "新能源汽车与充电设施动态",
+      "purpose": "汇总新能源汽车销量、充电设施与企业动态资料",
+      "required_evidence": [
+        "E-024",
+        "E-025",
+        "E-026",
+        "E-027",
+        "E-028",
+        "E-029",
+        "E-030"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "政策效果评估的证据可行性",
+      "purpose": "判断现有资料能否支持减排与出行改善评估",
+      "required_evidence": [
+        "E-014",
+        "E-022",
+        "E-023",
+        "E-001"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "政策落地限制与实施障碍",
+      "purpose": "识别现有资料中关于限制与障碍的证据缺口",
+      "required_evidence": [
+        "E-014",
+        "E-022",
+        "E-023",
+        "E-001"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "公交查询数据与政策评估的适用边界",
+      "purpose": "说明公交查询数据为何不能直接评估政策效果",
+      "required_evidence": [
+        "E-010",
+        "E-013",
+        "E-015",
+        "E-016",
+        "E-020",
+        "E-021",
+        "E-014",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "新能源汽车动态与政策归因边界",
+      "purpose": "讨论新能源车与充电设施动态能否归因于城市政策",
+      "required_evidence": [
+        "E-024",
+        "E-025",
+        "E-026",
+        "E-027",
+        "E-028",
+        "E-029",
+        "E-030"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与待补证据清单",
+      "purpose": "总结已知事实、推断边界与需补充的评估数据",
+      "required_evidence": [
+        "E-014",
+        "E-022",
+        "E-023",
+        "E-001"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

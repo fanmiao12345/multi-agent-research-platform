@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_981f3103460441d5b7631c391917c385",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 城市低碳交通政策的效果与限制：证据梳理与缺口报告\n## 资料范围与证据边界\n现有资料能确认部分政策方向，不能确认效果与限制【[E-014]】【[E-006]】【[E-018]】【[E-024]】【[E-035]】〔推断〕。该资料对城市低碳交通仅有方向性表述，未说明效果与限制【[E-014]】〔事实〕；城市名单资料未涉及低碳交通政策效果与限制【[E-006]】〔事实〕；404资料无法提取相关证据【[E-018]】〔事实〕；门户资料无城市低碳交通政策效果或限制论述【[E-024]】〔事实〕；南京公交查询资料未说明效果与限制【[E-035]】〔事实〕。另有商业品牌页面含品牌购物信息【[E-019]】【[E-020]】〔事实〕，有可持续发展栏目标题但无相关正文【[E-021]】〔事实〕，含订阅与个人信息跨境告知【[E-022]】〔事实〕；这些内容不构成政策评估【[E-019]】【[E-020]】【[E-021]】【[E-022]】〔推断〕。故对减排、能耗、拥堵、公平等问题的回答能力有限【[E-014]】【[E-006]】【[E-018]】【[E-024]】【[E-035]】〔推断〕。\n## 城市体系与政策实施背景\n我国现有694个城市，含4个直辖市、293个地级市、397个县级市【[E-001]】〔事实〕。县级市多数由地级市代管，部分属省或自治区直辖【[E-002]】〔事实〕。广东地级市最多，有21个【[E-003]】〔事实〕。新疆县级市最多29个，山东、湖北各26个【[E-004]】〔事实〕。民政部表示行政区划应总体稳定，变更须逐级上报审批【[E-005]】〔事实〕。上述层级与区划安排构成政策实施背景【[E-001]】【[E-002]】【[E-005]】〔推断〕；市县交通治理权限、财政与考核机制信息缺失，其影响尚不能判断〔未知；依据现有资料整体〕。\n## 优先公共交通与绿色出行方向\n文件提出优先发展城市公共交通，倡导绿色低碳出行【[E-007]】〔事实〕。该资料仅有方向性表述，未说明效果与限制【[E-014]】〔事实〕；因此该方向的实施力度、出行分担与减排成效无法核验【[E-014]】〔未知〕。\n## 综合交通与通勤效率方向\n文件提出健全现代化综合交通运输体系，提升城际、城内通勤效率【[E-008]】〔事实〕；提出促进通勤便捷高效【[E-012]】〔事实〕。该资料未说明相关效果与限制【[E-014]】〔事实〕；通勤时间、方式分担与减排成效缺少数据【[E-014]】〔未知〕。\n## 停车充电等便民设施方向\n文件提出加强停车位、充电桩等便民设施建设【[E-009]】〔事实〕。该资料未说明相关效果与限制【[E-014]】〔事实〕；设施使用率、替代效应与对低碳出行的贡献缺少评估数据【[E-014]】〔未知〕。\n## 一体规划与职住平衡方向\n文件提出坚持人口、产业、城镇、交通一体规划【[E-010]】〔事实〕；提出促进产城融合、职住平衡【[E-011]】〔事实〕。该资料未说明相关效果与限制【[E-014]】〔事实〕；职住比改善、通勤距离变化等效果缺少证据【[E-014]】〔未知〕。\n## 超大城市规模与功能疏解方向\n文件提出控制超大城市规模，合理有序疏解非核心功能【[E-013]】〔事实〕。该资料未说明相关效果与限制【[E-014]】〔事实〕；疏解对交通需求、碳排放与公平性的影响缺少证据【[E-014]】〔未知〕。\n## 减排与出行结构效果缺口\n现有资料缺少碳排放、出行结构与能耗量化效果。该资料仅有方向性表述，未说明效果与限制【[E-014]】〔事实〕；城市名单资料未涉及低碳交通政策效果与限制【[E-006]】〔事实〕；404资料无法提取城市低碳交通政策效果与限制证据【[E-018]】〔事实〕；门户资料无城市低碳交通政策效果或限制论述【[E-024]】〔事实〕；南京公交查询资料未说明低碳交通政策效果与限制【[E-035]】〔事实〕。因此，减排量、出行分担率与能耗变化均无数据支撑【[E-006]】【[E-018]】【[E-024]】【[E-035]】〔未知〕。\n## 限制与副作用证据缺口\n资料缺少拥堵、公平、财政与技术约束证据。仅有方向性表述，未说明效果与限制【[E-014]】〔事实〕；门户资料无政策效果或限制论述【[E-024]】〔事实〕；门户交通内容多为企业与产品动态，而非政策效果评估【[E-025]】〔事实〕。因此，拥堵、公平性、财政负担与技术约束均缺少直接研究材料【[E-014]】【[E-024]】【[E-025]】〔未知〕。\n## 设施贡献与城市差异缺口\n该来源为南京公交查询网页，标题为“8684公交 南京公交”【[E-029]】〔事实〕；提供公交、地铁、生活、火车、天气等栏目入口【[E-030]】〔事实〕；提供换乘查询、线路查询和站点查询功能【[E-031]】〔事实〕；列出南京轨道交通14条、轮渡线路3条【[E-032]】〔事实〕；列出夜间线路35条、大站快线23条等公交分类【[E-033]】〔事实〕；生活信息栏显示公交5319条、地铁55条【[E-034]】〔事实〕；该资料未说明低碳交通政策效果与限制【[E-035]】〔事实〕。这些数据只能描述查询工具收录的线路信息，不足以评估设施使用率、替代效应、碳减排贡献或城市间差异【[E-035]】〔推断〕。\n## 无关来源与失效来源排除\n新浪网404错误页不含城市低碳交通政策信息【[E-015]】〔事实〕，页面提示请求网址在服务器上未找到【[E-016]】〔事实〕，内容为网站导航、新闻标题与广告链接【[E-017]】〔事实〕。Tod's官网为品牌与商品购物信息【[E-019]】〔事实〕，主要涉及手袋、鞋履、成衣等时尚商品分类与选购【[E-020]】〔事实〕，有可持续发展栏目标题但无相关正文【[E-021]】〔事实〕，含新闻通讯订阅与个人信息跨境传输告知【[E-022]】〔事实〕。门户首页导航与资讯聚合未涉及城市低碳交通政策【[E-023]】〔事实〕；门户交通内容多为企业与产品动态，而非政策效果评估【[E-025]】〔事实〕。另有内河航运低碳转型超充方案落地黄石仙岛湖【[E-026]】〔事实〕、燃油价格创新高后美国车主对电动汽车兴趣大增【[E-027]】〔事实〕、蔚来建成9388座充换电站并累计超1.2亿次换电【[E-028]】〔事实〕。上述来源不能提供城市低碳交通政策效果评估【[E-025]】〔推断〕。\n## 可核验结论与待补问题\n可核验结论是：现有资料只能确认城市低碳交通政策方向，包括公交优先、绿色低碳出行、综合交通、通勤效率、停车充电、一体规划、职住平衡和超大城市功能疏解等【[E-007]】【[E-008]】【[E-009]】【[E-010]】【[E-011]】【[E-012]】【[E-013]】〔事实〕。效果与限制缺少可核验材料：仅有方向性表述，未说明效果与限制【[E-014]】〔事实〕；城市名单资料未涉及效果与限制【[E-006]】〔事实〕；404资料无法提取效果与限制证据【[E-018]】〔事实〕；门户资料无效果或限制论述【[E-024]】〔事实〕；南京公交查询资料未说明效果与限制【[E-035]】〔事实〕。待补问题包括实际减排效果、限制与副作用、不同城市执行差异、设施对低碳出行的贡献【[E-006]】【[E-018]】【[E-024]】【[E-035]】〔未知〕；不同行政层级城市交通治理权限如何影响政策效果，依据现有资料仍无材料〔未知；依据全量资料〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 4,
+    "statuses": {
+      "ok": 4,
+      "empty": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 22 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T11:36:15"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:36:30"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 13, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T11:37:11"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "12 个章节",
+        "finished_at": "2026-09-20T11:37:28"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2844字）",
+        "finished_at": "2026-09-20T11:37:51"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 25,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T11:38:42"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T11:40:12"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 30,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-20T11:40:58"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 100,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.sohu.com/a/923495885_100199096",
+      "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+      "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+      "https://jiaotong.baidu.com/congestion/city/urban",
+      "https://www.sina.com.cn/",
+      "https://www.tods.cn/cn-zh/home/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 碳减排 政策评估",
+        "rank": 2,
+        "title": "全国694个城市名单来了，快来看看有无你家乡",
+        "url": "https://www.sohu.com/a/923495885_100199096",
+        "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+        "published_date": "2025-08-13",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 碳减排 政策评估",
+        "rank": 4,
+        "title": "中共中央 国务院关于推动城市高质量发展的意见",
+        "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+        "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+        "published_date": "2025-08-28",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 出行行为",
+        "rank": 2,
+        "title": "百度地图交通出行大数据平台 - Baidu",
+        "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+        "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 出行行为",
+        "rank": 5,
+        "title": "百度地图交通出行大数据平台 - Baidu",
+        "url": "https://jiaotong.baidu.com/congestion/city/urban",
+        "snippet": "2 天之前 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的评价范围 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 补贴退坡 财政约束",
+        "rank": 3,
+        "title": "新浪网",
+        "url": "https://www.sina.com.cn/",
+        "snippet": "蔚来李斌：到2030年，新车销量里90%是新能源，新能源里90%是纯电 上海贸促：关于北京车展和上海车展有关安排 布局未来技术赛 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "TOD 公交优先 反弹效应",
+        "rank": 5,
+        "title": "Tod's官方网站：意大利奢华手工制作手袋和鞋履",
+        "url": "https://www.tods.cn/cn-zh/home/",
+        "snippet": "走进Tod's，感受意大利制造的品质：风格独特的男士、女士和儿童手袋、莫卡辛鞋、运动鞋、乐福鞋、太阳镜和配饰。 国际 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 碳减排 政策评估",
+        "urls": [
+          "https://www.sohu.com/a/923495885_100199096",
+          "https://www.gov.cn/zhengce/202508/content_7038144.htm"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "城市低碳交通 碳减排 政策评估",
+            "rank": 2,
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+            "published_date": "2025-08-13",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "城市低碳交通 碳减排 政策评估",
+            "rank": 4,
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+            "published_date": "2025-08-28",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "城市（地理学名词）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%B8%82/33549",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "市（中华人民共和国行政区划）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%B8%82/7149823",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "揭榜！最新全国100强城市排行_腾讯新闻",
+            "url": "https://news.qq.com/rain/a/20260617A04CHO00",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.238,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 出行行为",
+        "urls": [
+          "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+          "https://jiaotong.baidu.com/congestion/city/urban"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 低排放区 出行行为",
+            "rank": 2,
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 低排放区 出行行为",
+            "rank": 5,
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urban",
+            "snippet": "2 天之前 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的评价范围 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "relevance": 0.188,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urban",
+            "relevance": 0.188,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%8B%A5%E5%A0%B5/9435866",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+            "url": "https://www.chazhengbao.com/yongdu/chongqing/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "城市交通拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%B8%82%E4%BA%A4%E9%80%9A%E6%8B%A5%E5%A0%B5/12582908",
+            "relevance": 0.188,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.2,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 补贴退坡 财政约束",
+        "urls": [
+          "https://www.sina.com.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "新能源汽车 补贴退坡 财政约束",
+            "rank": 3,
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "snippet": "蔚来李斌：到2030年，新车销量里90%是新能源，新能源里90%是纯电 上海贸促：关于北京车展和上海车展有关安排 布局未来技术赛 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "新（汉语汉字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%96%B0/34058",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "新的意思,新的解释,新的拼音,新的部首,新的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-26032",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《新》的拼音,新字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/72f014d8.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "新_新怎么读_新的意思 - 汉语字典",
+            "url": "https://www.chagushici.com/zidian/%E6%96%B0",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.215,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "TOD 公交优先 反弹效应",
+        "urls": [
+          "https://www.tods.cn/cn-zh/home/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "TOD 公交优先 反弹效应",
+            "rank": 5,
+            "title": "Tod's官方网站：意大利奢华手工制作手袋和鞋履",
+            "url": "https://www.tods.cn/cn-zh/home/",
+            "snippet": "走进Tod's，感受意大利制造的品质：风格独特的男士、女士和儿童手袋、莫卡辛鞋、运动鞋、乐福鞋、太阳镜和配饰。 国际 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Tod's官方网站：意大利奢华手工制作手袋和鞋履",
+            "url": "https://www.tods.cn/cn-zh/home/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "公共交通导向型发展_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E5%AF%BC%E5%90%91%E5%9E%8B%E5%8F%91%E5%B1%95/53305633",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是TOD项目?什么级别的城市才能开发建设大型TOD项目?",
+            "url": "https://zhuanlan.zhihu.com/p/448631295",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "TOD≠地铁上盖！TOD模式开发分析及案例分享 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/654167915",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "深铁TOD模式_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%B7%B1%E9%93%81TOD%E6%A8%A1%E5%BC%8F/67366081",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.294,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（城市低碳交通政策的效果与限制）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "manager_worker"
+        ]
+      },
+      "scheduler_elapsed_seconds": 25.846,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

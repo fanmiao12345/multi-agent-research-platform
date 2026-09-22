@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_762c32fc5a2646cc81e8896b28210f64",
+  "goal": "2026年人工智能治理政策的主要争议",
+  "started_at": "2026-09-18T14:18:12",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 22 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-18T14:19:13"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:19:23"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 4, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:19:49"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅见‘完善人工智能治理’等一般政策表述，未记载2026年AI治理政策的主要争议，无法提炼争议内容。",
+        "finished_at": "2026-09-18T14:20:15"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅见‘完善人工智能治理’等一般政策表述，未记载2026年AI治理政策的主要争议，无法提炼争议内容。；缺失信息：2026年AI治理争议的明确政策文件或权威分析、政府工作报告解读的后段全文、美国AI治理政策相关资料、联合国关于2026年AI治理争议的系统文件、中国AI治理争议的多方观点与政策辩论记录（可用证据 26 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

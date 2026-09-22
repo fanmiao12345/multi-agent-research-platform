@@ -1,0 +1,1700 @@
+{
+  "source_id": "src_4295056b84",
+  "kind": "url",
+  "display": "GitHub - meta-llama/llama: Inference code for Llama models · GitHub",
+  "original_address": "https://github.com/meta-llama/llama",
+  "title": "GitHub - meta-llama/llama: Inference code for Llama models · GitHub",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 10806,
+  "content_hash": "84dc5afbf4078b87c7e5178049d4a3754ed4d7122f0e56bb7b965c69931a7203",
+  "normalized_hash": "385ac8674fbc7641d0e5517378bad2df80f3915a344a1d07e171211e81b18758",
+  "captured_at": "2026-09-20T11:00:16",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_4295056b84.md",
+  "encoding": "utf-8",
+  "segment_count": 238,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 16,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 1,
+      "start": 37,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 2,
+      "start": 46,
+      "end": 66,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 3,
+      "start": 67,
+      "end": 76,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 4,
+      "start": 77,
+      "end": 94,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 5,
+      "start": 95,
+      "end": 136,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 6,
+      "start": 137,
+      "end": 190,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 7,
+      "start": 191,
+      "end": 229,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 8,
+      "start": 230,
+      "end": 250,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 9,
+      "start": 251,
+      "end": 281,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 10,
+      "start": 282,
+      "end": 318,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 11,
+      "start": 319,
+      "end": 346,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 12,
+      "start": 347,
+      "end": 379,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 13,
+      "start": 380,
+      "end": 418,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 14,
+      "start": 419,
+      "end": 440,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 15,
+      "start": 441,
+      "end": 495,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 16,
+      "start": 496,
+      "end": 540,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 17,
+      "start": 541,
+      "end": 588,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 18,
+      "start": 589,
+      "end": 597,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 19,
+      "start": 598,
+      "end": 609,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 20,
+      "start": 610,
+      "end": 624,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 21,
+      "start": 625,
+      "end": 630,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 22,
+      "start": 631,
+      "end": 641,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 23,
+      "start": 642,
+      "end": 654,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 24,
+      "start": 655,
+      "end": 673,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 25,
+      "start": 674,
+      "end": 684,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 26,
+      "start": 685,
+      "end": 701,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 27,
+      "start": 702,
+      "end": 714,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 28,
+      "start": 715,
+      "end": 738,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 29,
+      "start": 739,
+      "end": 748,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 30,
+      "start": 749,
+      "end": 760,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 31,
+      "start": 761,
+      "end": 773,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 32,
+      "start": 774,
+      "end": 792,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 33,
+      "start": 793,
+      "end": 803,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 34,
+      "start": 804,
+      "end": 811,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 35,
+      "start": 812,
+      "end": 818,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 36,
+      "start": 819,
+      "end": 838,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 37,
+      "start": 839,
+      "end": 851,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 38,
+      "start": 852,
+      "end": 863,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 39,
+      "start": 864,
+      "end": 883,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 40,
+      "start": 884,
+      "end": 898,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 41,
+      "start": 899,
+      "end": 910,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 42,
+      "start": 911,
+      "end": 931,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 43,
+      "start": 932,
+      "end": 951,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 44,
+      "start": 952,
+      "end": 962,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 45,
+      "start": 963,
+      "end": 980,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 46,
+      "start": 981,
+      "end": 984,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 47,
+      "start": 985,
+      "end": 1006,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 48,
+      "start": 1007,
+      "end": 1014,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 49,
+      "start": 1015,
+      "end": 1024,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 50,
+      "start": 1025,
+      "end": 1041,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 51,
+      "start": 1042,
+      "end": 1058,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 52,
+      "start": 1059,
+      "end": 1076,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 53,
+      "start": 1077,
+      "end": 1095,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 54,
+      "start": 1096,
+      "end": 1113,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 55,
+      "start": 1114,
+      "end": 1132,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 56,
+      "start": 1133,
+      "end": 1147,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 57,
+      "start": 1148,
+      "end": 1167,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 58,
+      "start": 1168,
+      "end": 1182,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 59,
+      "start": 1183,
+      "end": 1200,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 60,
+      "start": 1201,
+      "end": 1217,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 61,
+      "start": 1218,
+      "end": 1231,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 62,
+      "start": 1232,
+      "end": 1241,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 63,
+      "start": 1242,
+      "end": 1261,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 64,
+      "start": 1262,
+      "end": 1274,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 65,
+      "start": 1275,
+      "end": 1285,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 66,
+      "start": 1286,
+      "end": 1330,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 67,
+      "start": 1331,
+      "end": 1340,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 68,
+      "start": 1341,
+      "end": 1354,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 69,
+      "start": 1355,
+      "end": 1376,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 70,
+      "start": 1377,
+      "end": 1390,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 71,
+      "start": 1391,
+      "end": 1407,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 72,
+      "start": 1408,
+      "end": 1421,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 73,
+      "start": 1422,
+      "end": 1429,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 74,
+      "start": 1430,
+      "end": 1439,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 75,
+      "start": 1440,
+      "end": 1452,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 76,
+      "start": 1453,
+      "end": 1464,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 77,
+      "start": 1465,
+      "end": 1486,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 78,
+      "start": 1487,
+      "end": 1537,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 79,
+      "start": 1538,
+      "end": 1556,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 80,
+      "start": 1557,
+      "end": 1617,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 81,
+      "start": 1618,
+      "end": 1668,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 82,
+      "start": 1669,
+      "end": 1715,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 83,
+      "start": 1716,
+      "end": 1724,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 84,
+      "start": 1725,
+      "end": 1734,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 85,
+      "start": 1735,
+      "end": 1743,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 86,
+      "start": 1744,
+      "end": 1752,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 87,
+      "start": 1753,
+      "end": 1773,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 88,
+      "start": 1774,
+      "end": 2015,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 89,
+      "start": 2016,
+      "end": 2042,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 90,
+      "start": 2043,
+      "end": 2111,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 91,
+      "start": 2112,
+      "end": 2122,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 92,
+      "start": 2123,
+      "end": 2134,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 93,
+      "start": 2135,
+      "end": 2140,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 94,
+      "start": 2141,
+      "end": 2152,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 95,
+      "start": 2153,
+      "end": 2170,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 96,
+      "start": 2171,
+      "end": 2179,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 97,
+      "start": 2180,
+      "end": 2189,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 98,
+      "start": 2190,
+      "end": 2213,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 99,
+      "start": 2214,
+      "end": 2223,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 100,
+      "start": 2224,
+      "end": 2254,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 101,
+      "start": 2255,
+      "end": 2260,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 102,
+      "start": 2261,
+      "end": 2268,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 103,
+      "start": 2269,
+      "end": 2283,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 104,
+      "start": 2284,
+      "end": 2292,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 105,
+      "start": 2293,
+      "end": 2302,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 106,
+      "start": 2303,
+      "end": 2324,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 107,
+      "start": 2325,
+      "end": 2334,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 108,
+      "start": 2335,
+      "end": 2340,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 109,
+      "start": 2341,
+      "end": 2355,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 110,
+      "start": 2356,
+      "end": 2367,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 111,
+      "start": 2368,
+      "end": 2373,
+      "page": null
+    },
+    {
+      "heading": "## Navigation Menu",
+      "paragraph": 112,
+      "start": 2374,
+      "end": 2397,
+      "page": null
+    },
+    {
+      "heading": "## History",
+      "paragraph": 113,
+      "start": 2428,
+      "end": 2440,
+      "page": null
+    },
+    {
+      "heading": "## History",
+      "paragraph": 114,
+      "start": 2441,
+      "end": 2453,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 115,
+      "start": 2476,
+      "end": 2486,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 116,
+      "start": 2487,
+      "end": 2507,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 117,
+      "start": 2508,
+      "end": 2525,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 118,
+      "start": 2526,
+      "end": 2550,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 119,
+      "start": 2551,
+      "end": 2575,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 120,
+      "start": 2576,
+      "end": 2582,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 121,
+      "start": 2583,
+      "end": 2589,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 122,
+      "start": 2590,
+      "end": 2601,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 123,
+      "start": 2602,
+      "end": 2613,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 124,
+      "start": 2614,
+      "end": 2633,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 125,
+      "start": 2634,
+      "end": 2653,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 126,
+      "start": 2654,
+      "end": 2670,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 127,
+      "start": 2671,
+      "end": 2687,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 128,
+      "start": 2688,
+      "end": 2696,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 129,
+      "start": 2697,
+      "end": 2705,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 130,
+      "start": 2706,
+      "end": 2720,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 131,
+      "start": 2721,
+      "end": 2735,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 132,
+      "start": 2736,
+      "end": 2746,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 133,
+      "start": 2747,
+      "end": 2757,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 134,
+      "start": 2758,
+      "end": 2784,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 135,
+      "start": 2785,
+      "end": 2811,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 136,
+      "start": 2812,
+      "end": 2823,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 137,
+      "start": 2824,
+      "end": 2835,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 138,
+      "start": 2836,
+      "end": 2850,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 139,
+      "start": 2851,
+      "end": 2865,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 140,
+      "start": 2866,
+      "end": 2878,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 141,
+      "start": 2879,
+      "end": 2891,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 142,
+      "start": 2892,
+      "end": 2919,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 143,
+      "start": 2920,
+      "end": 2947,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 144,
+      "start": 2948,
+      "end": 2975,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 145,
+      "start": 2976,
+      "end": 3003,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 146,
+      "start": 3004,
+      "end": 3021,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 147,
+      "start": 3022,
+      "end": 3039,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 148,
+      "start": 3040,
+      "end": 3049,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 149,
+      "start": 3050,
+      "end": 3059,
+      "page": null
+    },
+    {
+      "heading": "## Folders and files",
+      "paragraph": 150,
+      "start": 3060,
+      "end": 3075,
+      "page": null
+    },
+    {
+      "heading": "## Repository files navigation",
+      "paragraph": 151,
+      "start": 3108,
+      "end": 3115,
+      "page": null
+    },
+    {
+      "heading": "## Repository files navigation",
+      "paragraph": 152,
+      "start": 3116,
+      "end": 3132,
+      "page": null
+    },
+    {
+      "heading": "## Repository files navigation",
+      "paragraph": 153,
+      "start": 3133,
+      "end": 3146,
+      "page": null
+    },
+    {
+      "heading": "## Repository files navigation",
+      "paragraph": 154,
+      "start": 3147,
+      "end": 3155,
+      "page": null
+    },
+    {
+      "heading": "## Repository files navigation",
+      "paragraph": 155,
+      "start": 3156,
+      "end": 3167,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 156,
+      "start": 3192,
+      "end": 3451,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 157,
+      "start": 3452,
+      "end": 3571,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 158,
+      "start": 3572,
+      "end": 3671,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 159,
+      "start": 3672,
+      "end": 3814,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 160,
+      "start": 3815,
+      "end": 3964,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 161,
+      "start": 3965,
+      "end": 4024,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 162,
+      "start": 4025,
+      "end": 4167,
+      "page": null
+    },
+    {
+      "heading": "## Note of deprecation",
+      "paragraph": 163,
+      "start": 4168,
+      "end": 4179,
+      "page": null
+    },
+    {
+      "heading": "# (Deprecated) Llama 2",
+      "paragraph": 164,
+      "start": 4204,
+      "end": 4424,
+      "page": null
+    },
+    {
+      "heading": "# (Deprecated) Llama 2",
+      "paragraph": 165,
+      "start": 4425,
+      "end": 4569,
+      "page": null
+    },
+    {
+      "heading": "# (Deprecated) Llama 2",
+      "paragraph": 166,
+      "start": 4570,
+      "end": 4734,
+      "page": null
+    },
+    {
+      "heading": "## Updates post-launch",
+      "paragraph": 167,
+      "start": 4759,
+      "end": 4842,
+      "page": null
+    },
+    {
+      "heading": "## Download",
+      "paragraph": 168,
+      "start": 4856,
+      "end": 4964,
+      "page": null
+    },
+    {
+      "heading": "## Download",
+      "paragraph": 169,
+      "start": 4965,
+      "end": 5133,
+      "page": null
+    },
+    {
+      "heading": "## Download",
+      "paragraph": 170,
+      "start": 5134,
+      "end": 5233,
+      "page": null
+    },
+    {
+      "heading": "## Download",
+      "paragraph": 171,
+      "start": 5234,
+      "end": 5405,
+      "page": null
+    },
+    {
+      "heading": "### Access to Hugging Face",
+      "paragraph": 172,
+      "start": 5434,
+      "end": 5728,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 173,
+      "start": 5745,
+      "end": 5938,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 174,
+      "start": 5939,
+      "end": 6020,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 175,
+      "start": 6021,
+      "end": 6053,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 176,
+      "start": 6054,
+      "end": 6071,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 177,
+      "start": 6072,
+      "end": 6133,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 178,
+      "start": 6134,
+      "end": 6268,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 179,
+      "start": 6269,
+      "end": 6370,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 180,
+      "start": 6371,
+      "end": 6438,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 181,
+      "start": 6439,
+      "end": 6514,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 182,
+      "start": 6515,
+      "end": 6612,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 183,
+      "start": 6613,
+      "end": 6716,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 184,
+      "start": 6717,
+      "end": 6888,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 185,
+      "start": 6889,
+      "end": 6894,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 186,
+      "start": 6895,
+      "end": 7022,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 187,
+      "start": 7023,
+      "end": 7102,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 188,
+      "start": 7103,
+      "end": 7167,
+      "page": null
+    },
+    {
+      "heading": "## Quick Start",
+      "paragraph": 189,
+      "start": 7168,
+      "end": 7291,
+      "page": null
+    },
+    {
+      "heading": "## Inference",
+      "paragraph": 190,
+      "start": 7306,
+      "end": 7369,
+      "page": null
+    },
+    {
+      "heading": "## Inference",
+      "paragraph": 191,
+      "start": 7370,
+      "end": 7379,
+      "page": null
+    },
+    {
+      "heading": "## Inference",
+      "paragraph": 192,
+      "start": 7380,
+      "end": 7385,
+      "page": null
+    },
+    {
+      "heading": "## Inference",
+      "paragraph": 193,
+      "start": 7386,
+      "end": 7392,
+      "page": null
+    },
+    {
+      "heading": "## Inference",
+      "paragraph": 194,
+      "start": 7393,
+      "end": 7399,
+      "page": null
+    },
+    {
+      "heading": "## Inference",
+      "paragraph": 195,
+      "start": 7400,
+      "end": 7577,
+      "page": null
+    },
+    {
+      "heading": "### Pretrained Models",
+      "paragraph": 196,
+      "start": 7601,
+      "end": 7744,
+      "page": null
+    },
+    {
+      "heading": "### Pretrained Models",
+      "paragraph": 197,
+      "start": 7745,
+      "end": 7919,
+      "page": null
+    },
+    {
+      "heading": "### Pretrained Models",
+      "paragraph": 198,
+      "start": 7920,
+      "end": 8086,
+      "page": null
+    },
+    {
+      "heading": "### Fine-tuned Chat Models",
+      "paragraph": 199,
+      "start": 8115,
+      "end": 8471,
+      "page": null
+    },
+    {
+      "heading": "### Fine-tuned Chat Models",
+      "paragraph": 200,
+      "start": 8472,
+      "end": 8700,
+      "page": null
+    },
+    {
+      "heading": "### Fine-tuned Chat Models",
+      "paragraph": 201,
+      "start": 8701,
+      "end": 8733,
+      "page": null
+    },
+    {
+      "heading": "### Fine-tuned Chat Models",
+      "paragraph": 202,
+      "start": 8734,
+      "end": 8905,
+      "page": null
+    },
+    {
+      "heading": "### Fine-tuned Chat Models",
+      "paragraph": 203,
+      "start": 8906,
+      "end": 9196,
+      "page": null
+    },
+    {
+      "heading": "## Issues",
+      "paragraph": 204,
+      "start": 9208,
+      "end": 9312,
+      "page": null
+    },
+    {
+      "heading": "## Issues",
+      "paragraph": 205,
+      "start": 9313,
+      "end": 9380,
+      "page": null
+    },
+    {
+      "heading": "## Issues",
+      "paragraph": 206,
+      "start": 9381,
+      "end": 9475,
+      "page": null
+    },
+    {
+      "heading": "## Issues",
+      "paragraph": 207,
+      "start": 9476,
+      "end": 9541,
+      "page": null
+    },
+    {
+      "heading": "## Model Card",
+      "paragraph": 208,
+      "start": 9557,
+      "end": 9577,
+      "page": null
+    },
+    {
+      "heading": "## License",
+      "paragraph": 209,
+      "start": 9590,
+      "end": 9860,
+      "page": null
+    },
+    {
+      "heading": "## License",
+      "paragraph": 210,
+      "start": 9861,
+      "end": 9933,
+      "page": null
+    },
+    {
+      "heading": "## References",
+      "paragraph": 211,
+      "start": 9949,
+      "end": 9964,
+      "page": null
+    },
+    {
+      "heading": "## References",
+      "paragraph": 212,
+      "start": 9965,
+      "end": 9992,
+      "page": null
+    },
+    {
+      "heading": "## References",
+      "paragraph": 213,
+      "start": 9993,
+      "end": 10031,
+      "page": null
+    },
+    {
+      "heading": "## References",
+      "paragraph": 214,
+      "start": 10032,
+      "end": 10144,
+      "page": null
+    },
+    {
+      "heading": "## Original Llama",
+      "paragraph": 215,
+      "start": 10164,
+      "end": 10231,
+      "page": null
+    },
+    {
+      "heading": "## About",
+      "paragraph": 216,
+      "start": 10242,
+      "end": 10274,
+      "page": null
+    },
+    {
+      "heading": "### Resources",
+      "paragraph": 217,
+      "start": 10290,
+      "end": 10297,
+      "page": null
+    },
+    {
+      "heading": "### Resources",
+      "paragraph": 218,
+      "start": 10298,
+      "end": 10306,
+      "page": null
+    },
+    {
+      "heading": "### Code of conduct",
+      "paragraph": 219,
+      "start": 10328,
+      "end": 10344,
+      "page": null
+    },
+    {
+      "heading": "### Contributing",
+      "paragraph": 220,
+      "start": 10363,
+      "end": 10376,
+      "page": null
+    },
+    {
+      "heading": "### Contributing",
+      "paragraph": 221,
+      "start": 10377,
+      "end": 10386,
+      "page": null
+    },
+    {
+      "heading": "### Contributing",
+      "paragraph": 222,
+      "start": 10387,
+      "end": 10405,
+      "page": null
+    },
+    {
+      "heading": "### Stars",
+      "paragraph": 223,
+      "start": 10417,
+      "end": 10429,
+      "page": null
+    },
+    {
+      "heading": "### Watchers",
+      "paragraph": 224,
+      "start": 10444,
+      "end": 10457,
+      "page": null
+    },
+    {
+      "heading": "### Forks",
+      "paragraph": 225,
+      "start": 10469,
+      "end": 10480,
+      "page": null
+    },
+    {
+      "heading": "### Forks",
+      "paragraph": 226,
+      "start": 10481,
+      "end": 10499,
+      "page": null
+    },
+    {
+      "heading": "## Footer",
+      "paragraph": 227,
+      "start": 10580,
+      "end": 10600,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 228,
+      "start": 10624,
+      "end": 10630,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 229,
+      "start": 10631,
+      "end": 10639,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 230,
+      "start": 10640,
+      "end": 10649,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 231,
+      "start": 10650,
+      "end": 10657,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 232,
+      "start": 10658,
+      "end": 10668,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 233,
+      "start": 10669,
+      "end": 10674,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 234,
+      "start": 10675,
+      "end": 10683,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 235,
+      "start": 10684,
+      "end": 10699,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 236,
+      "start": 10700,
+      "end": 10737,
+      "page": null
+    },
+    {
+      "heading": "### Footer navigation",
+      "paragraph": 237,
+      "start": 10738,
+      "end": 10781,
+      "page": null
+    }
+  ],
+  "final_url": "https://github.com/meta-llama/llama",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:00:16",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

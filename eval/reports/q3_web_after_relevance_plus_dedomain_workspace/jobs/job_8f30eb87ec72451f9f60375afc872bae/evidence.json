@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料将教育工作者列为典型用例，用于快速解说视频和视觉辅助工具。",
+      "tag": "F",
+      "quote": "• 教育工作者：快速解说视频和视觉辅助工具。",
+      "start": 2132,
+      "end": 2154,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 66,
+        "start": 2132,
+        "end": 2155
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料称可免费将文字或图片生成带动态画面、对白和声音的AI视频。",
+      "tag": "F",
+      "quote": "免费将文字或图片生成带有动态画面、对白和声音的AI视频。",
+      "start": 55,
+      "end": 83,
+      "locator": {
+        "heading": "# 文字、图片、声音一体的AI视频生成器",
+        "paragraph": 5,
+        "start": 55,
+        "end": 84
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料称免费计划视频仅5秒、480p。",
+      "tag": "F",
+      "quote": "• 免费计划：5秒，480p视频。",
+      "start": 1017,
+      "end": 1034,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 39,
+        "start": 1017,
+        "end": 1035
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料称商业使用权仅在付费计划，免费计划视频仅供个人使用。",
+      "tag": "F",
+      "quote": "商业使用权包含在付费计划中。免费计划视频仅供个人使用。",
+      "start": 1091,
+      "end": 1118,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 42,
+        "start": 1091,
+        "end": 1119
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料称免费计划生成的视频带水印，付费订阅可去水印。",
+      "tag": "F",
+      "quote": "如果您使用的是免费计划，您生成的视频上将带有水印。订阅我们的高级版或专业版计划，即可获得创建无水印视频的能力。",
+      "start": 1994,
+      "end": 2049,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 62,
+        "start": 1994,
+        "end": 2050
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料称生成内容默认私有，标准视频保留24小时。",
+      "tag": "F",
+      "quote": "所有生成内容默认均为**私有**。出于隐私和安全考虑，标准视频保留 24 小时。",
+      "start": 1227,
+      "end": 1267,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 46,
+        "start": 1227,
+        "end": 1293
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料禁止生成裸露、色情或成人内容，违规账户可能被永久封禁。",
+      "tag": "F",
+      "quote": "均不允许生成裸露、色情或成人内容。多次尝试生成违规内容的账户可能会被永久封禁。",
+      "start": 1513,
+      "end": 1552,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 50,
+        "start": 1460,
+        "end": 1553
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_f5af2add22",
+      "fact": "本资料未说明教育场景的学生数据保护、未成年人保护或学术诚信要求。",
+      "tag": "U",
+      "quote": "• 教育工作者：快速解说视频和视觉辅助工具。",
+      "start": 2132,
+      "end": 2154,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 66,
+        "start": 2132,
+        "end": 2155
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_be0f90cd53",
+      "fact": "本资料首页列有一场介绍《“人工智能+教育”行动计划》的新闻发布会条目",
+      "tag": "F",
+      "quote": "04-10 新闻发布会：介绍《“人工智能+教育”行动计划",
+      "start": 2157,
+      "end": 2185,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 150,
+        "start": 2157,
+        "end": 2189
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_be0f90cd53",
+      "fact": "本资料列有教育部科学技术与信息化司负责人就人工智能相关文件答问的条目",
+      "tag": "F",
+      "quote": "教育部科学技术与信息化司负责人就《“人工智",
+      "start": 2367,
+      "end": 2388,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 157,
+        "start": 2361,
+        "end": 2392
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_be0f90cd53",
+      "fact": "本资料首页设有“国家智慧教育公共服务平台”的栏目入口",
+      "tag": "F",
+      "quote": "国家智慧教育公共服务平台",
+      "start": 640,
+      "end": 652,
+      "locator": {
+        "heading": "",
+        "paragraph": 79,
+        "start": 640,
+        "end": 653
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_be0f90cd53",
+      "fact": "本资料列有一场介绍2026世界数字教育大会有关情况的新闻发布会",
+      "tag": "F",
+      "quote": "05-07 新闻发布会：介绍2026世界数字教育大会有关情况",
+      "start": 2125,
+      "end": 2155,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 149,
+        "start": 2125,
+        "end": 2156
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_be0f90cd53",
+      "fact": "本资料仅有“人工智能+教育”相关条目标题，未提供教育领域收益与风险内容",
+      "tag": "F",
+      "quote": "04-10 教育部科学技术与信息化司负责人就《“人工智",
+      "start": 2361,
+      "end": 2388,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 157,
+        "start": 2361,
+        "end": 2392
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_be0f90cd53",
+      "fact": "本资料未说明生成式AI在教学中提升效率或个性化学习等具体收益",
+      "tag": "U",
+      "quote": "查看更多>>",
+      "start": 1279,
+      "end": 1285,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 106,
+        "start": 1279,
+        "end": 1286
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_d59434587c",
+      "fact": "本资料介绍的产品为即梦AI，具备文生图、视频生成、智能画布等功能。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_d59434587c",
+      "fact": "本资料称输入简单文案或图片即可快速生成优质AI视频片段。",
+      "tag": "F",
+      "quote": "AI视频生成，输入简单的文案或图片，即可快速生成优质视频片段",
+      "start": 98,
+      "end": 128,
+      "locator": {
+        "heading": "## 灵感即刻成片",
+        "paragraph": 7,
+        "start": 98,
+        "end": 129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_d59434587c",
+      "fact": "本资料称即梦AI支持按中文提示词创作，语义理解能力更好。",
+      "tag": "F",
+      "quote": "即梦AI支持根据中文提示词进行创作，拥有更好的语义理解能力",
+      "start": 301,
+      "end": 330,
+      "locator": {
+        "heading": "### 中文创作，得心应手",
+        "paragraph": 15,
+        "start": 301,
+        "end": 354
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_d59434587c",
+      "fact": "本资料称首帧图片与尾帧图片输入方式可增强视频生成的可控性。",
+      "tag": "F",
+      "quote": "创新的首帧图片和尾帧图片输入方式，增强视频生成的可控性",
+      "start": 224,
+      "end": 251,
+      "locator": {
+        "heading": "### 从首帧到尾帧，",
+        "paragraph": 12,
+        "start": 224,
+        "end": 275
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_d59434587c",
+      "fact": "本资料称可对现有图片创意改造，实现背景替换、风格与姿势保持等操作。",
+      "tag": "F",
+      "quote": "实现背景替换、风格联想、画风保持、姿势保持等",
+      "start": 447,
+      "end": 469,
+      "locator": {
+        "heading": "## AI绘画 梦境成真",
+        "paragraph": 19,
+        "start": 389,
+        "end": 485
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_d59434587c",
+      "fact": "本资料称智能画布集成局部重绘、一键扩图、图像消除和抠图等功能。",
+      "tag": "F",
+      "quote": "并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作",
+      "start": 678,
+      "end": 706,
+      "locator": {
+        "heading": "## 智能画布 多图AI融合",
+        "paragraph": 33,
+        "start": 655,
+        "end": 744
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_d59434587c",
+      "fact": "本资料设有创意社区，用户可共同探索影像灵感并创作同款。",
+      "tag": "F",
+      "quote": "在即梦AI的创意社区，与其他用户共同探索无限的影像灵感",
+      "start": 779,
+      "end": 806,
+      "locator": {
+        "heading": "## 创意涌动 灵感绽放",
+        "paragraph": 37,
+        "start": 779,
+        "end": 826
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_d59434587c",
+      "fact": "或可推测该工具能用于教学素材制作，但本资料未涉及教育场景及其收益风险。",
+      "tag": "U",
+      "quote": "开启智能创作",
+      "start": 1014,
+      "end": 1020,
+      "locator": {
+        "heading": "## 创意涌动 灵感绽放",
+        "paragraph": 72,
+        "start": 1014,
+        "end": 1021
+      },
+      "note": ""
+    }
+  ]
+}

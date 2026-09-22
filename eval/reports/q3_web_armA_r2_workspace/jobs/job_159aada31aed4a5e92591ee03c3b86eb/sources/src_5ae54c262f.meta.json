@@ -1,0 +1,622 @@
+{
+  "source_id": "src_5ae54c262f",
+  "kind": "url",
+  "display": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+  "original_address": "https://www.chazhengbao.com/yongdu/chongqing/",
+  "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 3616,
+  "content_hash": "52924350a247eee1e4444ef20225bd9048cd6c4e363257de4c9b7d063355dc27",
+  "normalized_hash": "ea581ee2d42ed453c9e7c90ca245c599701d2154b7568009e0baa23e8da9739d",
+  "captured_at": "2026-09-20T09:25:45",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_5ae54c262f.md",
+  "encoding": "utf-8",
+  "segment_count": 84,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 8,
+      "end": 13,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 14,
+      "end": 20,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 21,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 30,
+      "end": 35,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 36,
+      "end": 41,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 42,
+      "end": 55,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 56,
+      "end": 59,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 60,
+      "end": 63,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 64,
+      "end": 71,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 72,
+      "end": 79,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 80,
+      "end": 87,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 88,
+      "end": 93,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 94,
+      "end": 100,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 101,
+      "end": 108,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 109,
+      "end": 116,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 117,
+      "end": 123,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 124,
+      "end": 131,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 132,
+      "end": 137,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 138,
+      "end": 144,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 145,
+      "end": 150,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 151,
+      "end": 154,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 155,
+      "end": 158,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 159,
+      "end": 162,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 163,
+      "end": 168,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 169,
+      "end": 172,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 173,
+      "end": 178,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 179,
+      "end": 209,
+      "page": null
+    },
+    {
+      "heading": "# 重庆今日拥堵情况",
+      "paragraph": 28,
+      "start": 222,
+      "end": 262,
+      "page": null
+    },
+    {
+      "heading": "# 重庆今日拥堵情况",
+      "paragraph": 29,
+      "start": 263,
+      "end": 293,
+      "page": null
+    },
+    {
+      "heading": "# 重庆今日拥堵情况",
+      "paragraph": 30,
+      "start": 294,
+      "end": 324,
+      "page": null
+    },
+    {
+      "heading": "# 重庆今日拥堵情况",
+      "paragraph": 31,
+      "start": 325,
+      "end": 360,
+      "page": null
+    },
+    {
+      "heading": "### 重庆早晚高峰时间段拥堵指数",
+      "paragraph": 32,
+      "start": 380,
+      "end": 453,
+      "page": null
+    },
+    {
+      "heading": "### 重庆早晚高峰时间段拥堵指数",
+      "paragraph": 33,
+      "start": 454,
+      "end": 567,
+      "page": null
+    },
+    {
+      "heading": "### 重庆早晚高峰时间段拥堵指数",
+      "paragraph": 34,
+      "start": 568,
+      "end": 681,
+      "page": null
+    },
+    {
+      "heading": "### 重庆早晚高峰时间段拥堵指数",
+      "paragraph": 35,
+      "start": 682,
+      "end": 800,
+      "page": null
+    },
+    {
+      "heading": "### 重庆早晚高峰时间段拥堵指数",
+      "paragraph": 36,
+      "start": 801,
+      "end": 825,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 37,
+      "start": 847,
+      "end": 883,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 38,
+      "start": 884,
+      "end": 910,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 39,
+      "start": 911,
+      "end": 938,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 40,
+      "start": 939,
+      "end": 966,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 41,
+      "start": 967,
+      "end": 993,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 42,
+      "start": 994,
+      "end": 1021,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 43,
+      "start": 1022,
+      "end": 1048,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 44,
+      "start": 1049,
+      "end": 1075,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 45,
+      "start": 1076,
+      "end": 1102,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 46,
+      "start": 1103,
+      "end": 1129,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 47,
+      "start": 1130,
+      "end": 1157,
+      "page": null
+    },
+    {
+      "heading": "### 重庆行政区域拥堵情况Top10",
+      "paragraph": 48,
+      "start": 1158,
+      "end": 1182,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 49,
+      "start": 1199,
+      "end": 1245,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 50,
+      "start": 1246,
+      "end": 1301,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 51,
+      "start": 1302,
+      "end": 1357,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 52,
+      "start": 1358,
+      "end": 1413,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 53,
+      "start": 1414,
+      "end": 1470,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 54,
+      "start": 1471,
+      "end": 1525,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 55,
+      "start": 1526,
+      "end": 1577,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 56,
+      "start": 1578,
+      "end": 1633,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 57,
+      "start": 1634,
+      "end": 1691,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 58,
+      "start": 1692,
+      "end": 1747,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 59,
+      "start": 1748,
+      "end": 1801,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 60,
+      "start": 1802,
+      "end": 1807,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 61,
+      "start": 1808,
+      "end": 1815,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 62,
+      "start": 1816,
+      "end": 1823,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 63,
+      "start": 1824,
+      "end": 1831,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 64,
+      "start": 1832,
+      "end": 1839,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 65,
+      "start": 1840,
+      "end": 1847,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 66,
+      "start": 1848,
+      "end": 1853,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 67,
+      "start": 1854,
+      "end": 1860,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 68,
+      "start": 1861,
+      "end": 1868,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 69,
+      "start": 1869,
+      "end": 1876,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 70,
+      "start": 1877,
+      "end": 1883,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 71,
+      "start": 1884,
+      "end": 1889,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 72,
+      "start": 1890,
+      "end": 1896,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 73,
+      "start": 1897,
+      "end": 1902,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 74,
+      "start": 1903,
+      "end": 1911,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 75,
+      "start": 1912,
+      "end": 1917,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 76,
+      "start": 1918,
+      "end": 1923,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 77,
+      "start": 1924,
+      "end": 1929,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 78,
+      "start": 1930,
+      "end": 1935,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 79,
+      "start": 1936,
+      "end": 1941,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 80,
+      "start": 1942,
+      "end": 1947,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 81,
+      "start": 1948,
+      "end": 1953,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 82,
+      "start": 1954,
+      "end": 2040,
+      "page": null
+    },
+    {
+      "heading": "### 重庆重点区域拥堵情况",
+      "paragraph": 83,
+      "start": 2041,
+      "end": 2119,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.chazhengbao.com/yongdu/chongqing/",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T09:25:45",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

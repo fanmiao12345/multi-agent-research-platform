@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-023）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-032）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-039）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "范围段称Ollama资料涉及本地免费与订阅云服务[E-009]，但E-009仅支持少花费/数据私有，不支持该断言"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "Gitee企业服务段将MothX置于Gitee生态扩展，E-024只称MothX支持多LLM，未证实与Gitee关联"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "模式比较段分析句未逐条标注事实/推断，未完全满足提纲的标注要求"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论段已确认模式汇总句未标注事实/推断，建议补充标注"
+  }
+ ]
+}

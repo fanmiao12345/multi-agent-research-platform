@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-021）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-024）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "智能体章节称E-011—E-013为“厂商自主性主张”，证据未标明厂商，应改为“资料中的宣称”。"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "开放冲突其四把E-004并列与E-002功能描述当作冲突，二者不构成张力，需改写或删除。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "开放冲突其二将实在Agent（E-012）与传统RPA（E-008）的对象差异列为冲突，宜标为对比。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "边界缺口处使用“〔推断/未知〕”混合标注，不符合事实/推断二分，建议拆分。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "千问组来源仅标“该来源”，虽章节说明未知，建议每条注明来源不可核验。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "E-006只称未说明边界标准，报告扩至能力矩阵与责任划分，宜标为待补缺口而非既证缺失。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "非相关来源结论“二者不构成边界判断依据”已由E-021/E-024直接支持，标为推断不准确。"
+  }
+ ]
+}

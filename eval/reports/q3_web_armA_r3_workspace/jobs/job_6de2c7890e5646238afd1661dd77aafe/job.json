@@ -1,0 +1,418 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_6de2c7890e5646238afd1661dd77aafe",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 4,
+    "usable": 3,
+    "statuses": {
+      "ok": 3,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 13 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:08:38"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:08:46"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:08:48"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均为AI视觉创作产品介绍，明确不含教育场景收益与风险信息，无法支撑该主题结论。",
+        "finished_at": "2026-09-20T11:08:53"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均为AI视觉创作产品介绍，明确不含教育场景收益与风险信息，无法支撑该主题结论。；缺失信息：教育场景实证研究、教学效果数据或案例材料、教育场景风险评估、伦理审查或事故案例材料、分学段、分学科的教育应用证据、师生调研、访谈或实验数据、教育政策文件、行业规范或合规指南（可用证据 13 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://klingai.com/app",
+      "https://image2.ing/zh",
+      "https://jimeng.jianying.com/",
+      "https://www.merriam-webster.com/dictionary/generative"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 学习效果 收益",
+        "rank": 3,
+        "title": "可灵AI创作台 - AI生成视频与图片",
+        "url": "https://klingai.com/app",
+        "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 学习效果 收益",
+        "rank": 5,
+        "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+        "url": "https://image2.ing/zh",
+        "snippet": "2026年9月11日 · 在线使用 GPT Image 2，通过中文提示词或参考图生成图片，支持多种比例和分辨率，无需下载，打开网页即可开 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式人工智能 教学 教师 应用 挑战",
+        "rank": 2,
+        "title": "即梦AI - 即刻造梦",
+        "url": "https://jimeng.jianying.com/",
+        "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "generative AI education benefits risks",
+        "rank": 5,
+        "title": "GENERATIVE Definition & Meaning - Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/generative",
+        "snippet": "5 天之前 · The meaning of GENERATIVE is having the power or function of generating, originating, producing, or reproducing. How …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 学习效果 收益",
+        "urls": [
+          "https://klingai.com/app",
+          "https://image2.ing/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 学习效果 收益",
+            "rank": 3,
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 学习效果 收益",
+            "rank": 5,
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "snippet": "2026年9月11日 · 在线使用 GPT Image 2，通过中文提示词或参考图生成图片，支持多种比例和分辨率，无需下载，打开网页即可开 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.188,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.232,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 学生 学术诚信 风险",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.188,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.214,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式人工智能 教学 教师 应用 挑战",
+        "urls": [
+          "https://jimeng.jianying.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式人工智能 教学 教师 应用 挑战",
+            "rank": 2,
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "snippet": "智能画布 多图AI融合 即梦AI一站式智能画布，集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.193,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "generative AI education benefits risks",
+        "urls": [
+          "https://www.merriam-webster.com/dictionary/generative"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "generative AI education benefits risks",
+            "rank": 5,
+            "title": "GENERATIVE Definition & Meaning - Merriam-Webster",
+            "url": "https://www.merriam-webster.com/dictionary/generative",
+            "snippet": "5 天之前 · The meaning of GENERATIVE is having the power or function of generating, originating, producing, or reproducing. How …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "GENERATIVE中文 (简体)翻译：剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/generative",
+            "relevance": 0.2,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "generative_百度百科",
+            "url": "https://baike.baidu.com/item/generative/23151697",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是生成式AI（Generative AI）? - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/651662320",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "generative是什么意思_generative的翻译_音标_读音_用法 ...",
+            "url": "https://www.iciba.com/word?w=generative",
+            "relevance": 0.2,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（教育领域使用生成式AI的收益与风险）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "fanout"
+        ]
+      },
+      "scheduler_elapsed_seconds": 45.164,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

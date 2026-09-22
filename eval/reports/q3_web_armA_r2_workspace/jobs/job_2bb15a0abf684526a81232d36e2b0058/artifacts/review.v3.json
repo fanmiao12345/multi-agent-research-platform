@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-021,E-024）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "非相关来源段E-021/E-024先标〔推断〕，末句又标〔事实〕，与证据索引事实定位矛盾，易误导证据状态。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "智能体段称“未标明厂商来源”证据未载且未标推断，可能误导来源权威性判断。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "冲突段称“均为开放未裁决”，却裁定其二“不宜视为冲突”、其四“并非冲突”，前后矛盾。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "产品架构段将E-028表述为“属计划宣称”，证据未如此定性，且未标推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "厂商融合段引E-002漏“准确执行”的“准确”，事实转述不完整。"
+  }
+ ]
+}

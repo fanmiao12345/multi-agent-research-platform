@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-005称“氨脱除回收”，报告简作“废水氨”，漏“脱除”，技术表述不精确。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-003/E-004/E-005均称“本资料列有”演讲，报告作“论坛列有”，宜标推断或说明依据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-011仅称“打击伪造优待证”，报告加“依法”，略超证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-008/E-012本可直接支撑事实，却标〔推断〕，事实/推断标注不一致。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "缺口句标〔未知〕，非提纲要求的事实/推断标注，建议统一或说明。"
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+  "source_id": "src_6c02802470",
+  "kind": "url",
+  "display": "Xiaomi HyperConnect 跨端智联",
+  "original_address": "https://hyperos.mi.com/continuity/abilities/ab0019",
+  "title": "Xiaomi HyperConnect 跨端智联",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 2274,
+  "content_hash": "a4d20ef764ba458a7c3ded614df28cf6fb902fe9b56972cc12fad11abde4a1a6",
+  "normalized_hash": "c147ca74c78b687c3c88441665dc193f8473d2f4ca8c3e43546b27710c3bcb18",
+  "captured_at": "2026-09-18T14:09:38",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_6c02802470.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 28,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 8,
+      "end": 20,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 21,
+      "end": 63,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 64,
+      "end": 79,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 80,
+      "end": 93,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 94,
+      "end": 179,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 180,
+      "end": 185,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 186,
+      "end": 214,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 215,
+      "end": 355,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 356,
+      "end": 374,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 375,
+      "end": 397,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 398,
+      "end": 419,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 420,
+      "end": 430,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 431,
+      "end": 475,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 476,
+      "end": 522,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 523,
+      "end": 532,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 533,
+      "end": 560,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 561,
+      "end": 603,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 604,
+      "end": 652,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 653,
+      "end": 658,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 659,
+      "end": 664,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 665,
+      "end": 718,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 719,
+      "end": 786,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 787,
+      "end": 790,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 791,
+      "end": 824,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 825,
+      "end": 936,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 937,
+      "end": 940,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 941,
+      "end": 972,
+      "page": null
+    }
+  ],
+  "final_url": "https://hyperos.mi.com/continuity/abilities/ab0019",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:09:38",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

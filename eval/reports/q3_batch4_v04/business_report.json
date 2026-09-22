@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.063625,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "ca02a2c4f336"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-20T13:41:08",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 248.41,
+  "results": [
+    {
+      "id": "v04",
+      "category": "revision",
+      "attempt": 1,
+      "task": "撤回旧稿使用的s02来源，只使用仍有效的s01重写，并说明删除了哪些无法再支持的结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 246.381,
+      "estimated_cost_usd": 0.06362453,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_433f6c72c62547ce94a45fddd3bf7714",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 24,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 撤回旧稿s02来源并以s01重写的核查提纲\n## 来源处置与重写边界\n按任务要求，撤回旧稿使用的 s02 来源，仅使用仍有效的 s01 重写〔任务要求〕；按任务不再采用 s02，而不是核验其具体内容〔任务要求〕。资料未提供 s02 内容，也未说明旧稿删除哪些结论[E-007]〔事实〕；因此 s02 的原内容、原数字与原结论均标为未知[E-007]〔未知〕。本稿修订/变更说明：撤回 s02 来源"
+    }
+  ],
+  "records": [
+    {
+      "id": "v04",
+      "category": "revision",
+      "attempt": 1,
+      "task": "撤回旧稿使用的s02来源，只使用仍有效的s01重写，并说明删除了哪些无法再支持的结论。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 246.381,
+      "estimated_cost_usd": 0.06362453,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_433f6c72c62547ce94a45fddd3bf7714",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 2/2、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 24,
+        "unresolved_citations": 0,
+        "required_sections": 2,
+        "section_hits": 2,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 2,
+        "required_section_hits": 2,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": "fixture-draft-v1",
+      "changed": true,
+      "final_text_head": "# 撤回旧稿s02来源并以s01重写的核查提纲\n## 来源处置与重写边界\n按任务要求，撤回旧稿使用的 s02 来源，仅使用仍有效的 s01 重写〔任务要求〕；按任务不再采用 s02，而不是核验其具体内容〔任务要求〕。资料未提供 s02 内容，也未说明旧稿删除哪些结论[E-007]〔事实〕；因此 s02 的原内容、原数字与原结论均标为未知[E-007]〔未知〕。本稿修订/变更说明：撤回 s02 来源"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q3_batch4_v04\\samples",
+  "grader": {}
+}

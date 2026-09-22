@@ -1,0 +1,209 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "核心定位与本地知识网络",
+        "points": [
+          {
+            "evidence_id": "E-030",
+            "statement": "资料称 Obsidian 是基于 Markdown 的个人知识库与笔记管理工具。"
+          },
+          {
+            "evidence_id": "E-031",
+            "statement": "资料称 Obsidian 采用本地文件存储，笔记以普通 Markdown 文档保存。"
+          },
+          {
+            "evidence_id": "E-032",
+            "statement": "资料称 Obsidian 把笔记变成可连接、可扩展、可计算的知识网络。"
+          },
+          {
+            "evidence_id": "E-034",
+            "statement": "资料认为普通笔记软件只是信息仓库，Obsidian 更像知识中枢。"
+          },
+          {
+            "evidence_id": "E-035",
+            "statement": "资料称 Obsidian 的核心思想是连接零散笔记，让知识自己长出来。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "资料称 Obsidian 将笔记私密存储在用户设备上，可离线快速访问。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "资料称 Obsidian 使用开放文件格式，用户不会被锁定，可长期拥有数据。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "资料称 Obsidian 将笔记以纯文本 Markdown 文件形式本地存储。"
+          }
+        ]
+      },
+      {
+        "name": "关联、图谱与查询",
+        "points": [
+          {
+            "evidence_id": "E-017",
+            "statement": "资料称可在笔记间建立链接，链接想法、人物、地点、书籍等，构建个人维基。"
+          },
+          {
+            "evidence_id": "E-036",
+            "statement": "资料称双向链接可自动建立知识之间的关系。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "资料示例笔记界面显示「1 backlink」，表明笔记间可互相关联。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "资料称 Graph 可可视化笔记之间的关系，发现思维中的隐藏模式。"
+          },
+          {
+            "evidence_id": "E-037",
+            "statement": "资料称知识图谱自动生成知识关系网络图。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "资料列出 Dataview 插件，称其为面向数据爱好者的高级查询。"
+          }
+        ]
+      },
+      {
+        "name": "记忆支持与修订",
+        "points": [
+          {
+            "evidence_id": "E-021",
+            "statement": "资料称每篇笔记保留一年版本历史，便于追踪修订。"
+          },
+          {
+            "evidence_id": "E-033",
+            "statement": "资料指出学习常见问题：学过会忘，或知道记过却找不到。"
+          }
+        ]
+      },
+      {
+        "name": "客户端、插件与采集",
+        "points": [
+          {
+            "evidence_id": "E-022",
+            "statement": "资料是 Obsidian 的下载页面，提供各平台客户端获取入口。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "资料列出 Windows、Mac、Linux 桌面端下载。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "资料列出 iOS 与 Android 移动端的下载渠道。"
+          },
+          {
+            "evidence_id": "E-025",
+            "statement": "资料提供 Web Clipper，支持 Chrome、Safari、Firefox、Edge 等浏览器。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "资料列出 Sync、Publish、Canvas、Mobile、Web Clipper、CLI 等能力。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "资料页脚列出 Plugins 插件与 Themes 主题的社区入口。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "资料提供 Linux 多种安装包格式，含 AppImage、Snap、Deb、Flatpak。"
+          }
+        ]
+      },
+      {
+        "name": "「个人」的指代辨析",
+        "points": [
+          {
+            "evidence_id": "E-006",
+            "statement": "资料认为「个人」一词的含义取决于具体语境。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "资料举例说明，在「我个人认为」这类表述中「个人」明确指说话者自己。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "资料指出在「个人有个人的看法」中，「个人」指许多人中的每一个，不含说话者自己。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "资料称这种用法强调的是个体之间的差异性和独立性。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "资料总结「个人」既可指自己，也可指不包括自己在内的其他人。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "资料认为「个人」的具体含义需要根据上下文来判断。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "由此推断，以「个人」命名的系统需先界定其指代是自己还是泛指个体。"
+          }
+        ]
+      },
+      {
+        "name": "证据边界与无关资料",
+        "points": [
+          {
+            "evidence_id": "E-004",
+            "statement": "资料全文未涉及个人知识管理系统的检索设计。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "资料全文未涉及个人知识管理系统的记忆设计。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "资料主题是词义辨析，未涉及知识管理系统中的检索与记忆设计。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "资料未涉及检索、索引或记忆机制的设计说明。"
+          },
+          {
+            "evidence_id": "E-039",
+            "statement": "资料主题为分布式系统，未涉及个人知识管理系统的检索与记忆设计。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "statement": "「个人」既可明确指说话者自己，也可指不包括说话者自己，适用范围是否互斥未定。",
+        "evidence_ids": [
+          "E-007",
+          "E-008"
+        ],
+        "status": "open"
+      }
+    ],
+    "gaps": [
+      {
+        "question": "个人知识管理系统如何实现检索？",
+        "missing": "索引结构、查询语言、全文搜索、排序与过滤等直接材料"
+      },
+      {
+        "question": "个人知识管理系统如何支持记忆？",
+        "missing": "间隔重复、复习计划、记忆曲线或回顾工作流的设计材料"
+      },
+      {
+        "question": "Obsidian 的搜索与索引机制是什么？",
+        "missing": "官方搜索、索引实现、性能与限制的技术文档"
+      },
+      {
+        "question": "「个人」的指代如何影响系统设计？",
+        "missing": "从词义辨析到个人知识管理命名与用户范围设计的直接证据"
+      },
+      {
+        "question": "检索与记忆设计的用户效果如何？",
+        "missing": "用户实证、实验数据或使用反馈"
+      }
+    ],
+    "duplicates": []
+  }
+}

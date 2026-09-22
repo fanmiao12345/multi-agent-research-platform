@@ -1,0 +1,271 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "链接驱动的检索设计",
+        "points": [
+          {
+            "evidence_id": "E-030",
+            "statement": "卡片盒让结构从连接中浮现，而非预设层级。"
+          },
+          {
+            "evidence_id": "E-031",
+            "statement": "向盒子提问可顺着链接找回早已忘记的想法。"
+          },
+          {
+            "evidence_id": "E-034",
+            "statement": "为每张新笔记至少链一张旧笔记并写关系说明。"
+          },
+          {
+            "evidence_id": "E-035",
+            "statement": "写作时顺着链接走，让盒子替你浮现论证。"
+          },
+          {
+            "evidence_id": "E-041",
+            "statement": "仅靠搜索不够，关键词只是间接的链接。"
+          },
+          {
+            "evidence_id": "E-042",
+            "statement": "资料库越大，链接就越重要。"
+          },
+          {
+            "evidence_id": "E-043",
+            "statement": "带链接的笔记网络比固定分层系统更有用。"
+          },
+          {
+            "evidence_id": "E-044",
+            "statement": "记忆体储存知识并把相关主题放在线索中，便于检索。"
+          }
+        ]
+      },
+      {
+        "name": "记忆与思考支持",
+        "points": [
+          {
+            "evidence_id": "E-032",
+            "statement": "永久笔记每张一个成形想法，写给未来的你并链入网络。"
+          },
+          {
+            "evidence_id": "E-033",
+            "statement": "两条规则：每张笔记只装一个想法，且永远用自己的话写。"
+          },
+          {
+            "evidence_id": "E-037",
+            "statement": "第二大脑是采集、组织、检索的更广系统，可用到卡片盒。"
+          },
+          {
+            "evidence_id": "E-038",
+            "statement": "记笔记目的不只是捕捉信息或提高记忆，而是为了更好地思考。"
+          },
+          {
+            "evidence_id": "E-045",
+            "statement": "链接是思考过程检查点，让工作专注发展而非记忆思维轨迹。"
+          }
+        ]
+      },
+      {
+        "name": "笔记组织与反模式",
+        "points": [
+          {
+            "evidence_id": "E-036",
+            "statement": "只收集不连接是常见误区，没链接的笔记只是一堆。"
+          },
+          {
+            "evidence_id": "E-039",
+            "statement": "传统笔记用预设类别，代价是分类间见解，笔记越多越难用。"
+          },
+          {
+            "evidence_id": "E-040",
+            "statement": "标签检索需记住所有标签，集合越大越糟。"
+          },
+          {
+            "evidence_id": "E-047",
+            "statement": "可用标签组织想法。"
+          }
+        ]
+      },
+      {
+        "name": "Obsidian 的检索与组织功能",
+        "points": [
+          {
+            "evidence_id": "E-046",
+            "statement": "Obsidian 把笔记本地保存为纯文本 Markdown 文件。"
+          },
+          {
+            "evidence_id": "E-048",
+            "statement": "可在笔记之间创建连接。"
+          },
+          {
+            "evidence_id": "E-049",
+            "statement": "图形可可视化笔记间关系。"
+          },
+          {
+            "evidence_id": "E-050",
+            "statement": "笔记页面显示反向链接数量。"
+          },
+          {
+            "evidence_id": "E-051",
+            "statement": "Dataview 插件提供高级查询。"
+          },
+          {
+            "evidence_id": "E-052",
+            "statement": "Calendar 插件提供每日笔记的日历视图。"
+          },
+          {
+            "evidence_id": "E-053",
+            "statement": "Canvas 是研究、头脑风暴、图示和铺陈想法的无限空间。"
+          }
+        ]
+      },
+      {
+        "name": "工具生态与跨设备线索",
+        "points": [
+          {
+            "evidence_id": "E-054",
+            "statement": "Obsidian 提供 Windows 下载入口。"
+          },
+          {
+            "evidence_id": "E-055",
+            "statement": "列出 Linux 版 AppImage、Snap、Deb、Flatpak 等安装包。"
+          },
+          {
+            "evidence_id": "E-056",
+            "statement": "Web Clipper 组件支持 Chrome、Safari、Firefox、Edge 等浏览器。"
+          },
+          {
+            "evidence_id": "E-057",
+            "statement": "导航中出现 Sync 与 Publish 两项服务名称。"
+          },
+          {
+            "evidence_id": "E-058",
+            "statement": "设有 Plugins 板块，并另有 Community 入口。"
+          },
+          {
+            "evidence_id": "E-059",
+            "statement": "提供多语言界面选项，其中包含简体中文。"
+          },
+          {
+            "evidence_id": "E-060",
+            "statement": "从多端下载与 Sync 服务并存可推断其定位跨设备使用。"
+          }
+        ]
+      },
+      {
+        "name": "个人术语与上下文消歧",
+        "points": [
+          {
+            "evidence_id": "E-008",
+            "statement": "“个人”一词的含义取决于具体语境。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "在“我个人认为”这类表述中，“个人”明确指说话者自己。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "在“个人有个人的看法”中，“个人”指许多人中的每一个，不含说话者。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "“个人”既可指代自己，也可指代不包括自己在内的其他人。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "“个人”的具体含义需根据上下文判断。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "同一词形在不同语境指向不同主体，检索与记录时需依赖上下文消歧。"
+          }
+        ]
+      },
+      {
+        "name": "页面级检索线索",
+        "points": [
+          {
+            "evidence_id": "E-028",
+            "statement": "页面提供关键词勾选入口，可选中一个或多个关键词搜索相关资料。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "页面底部列有其他类似问题链接，可视为相关内容的检索线索。"
+          }
+        ]
+      },
+      {
+        "name": "资料适用性边界",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "登录提示页未涉及个人知识管理系统的检索或记忆设计。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "该资料未说明任何检索方式、记忆机制或知识组织方法。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "无法依据该资料得出该任务的检索与记忆设计结论。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "日语第二人称称呼资料与个人知识管理无关。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "该资料未出现检索、记忆、知识管理等术语或相关设计内容。"
+          },
+          {
+            "evidence_id": "E-022",
+            "statement": "日语第二人称词区别的提问未涉及个人知识管理系统设计。"
+          },
+          {
+            "evidence_id": "E-061",
+            "statement": "该下载页面未涉及检索与记忆设计机制。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "statement": "标签在检索中的作用存在冲突：一说需记住所有标签且越大越糟，一说可用标签组织想法。",
+        "evidence_ids": [
+          "E-040",
+          "E-047"
+        ],
+        "status": "open"
+      },
+      {
+        "statement": "对きみ的定位存在冲突：一说用于地位低于自己者，一说列为敬称。",
+        "evidence_ids": [
+          "E-018",
+          "E-019"
+        ],
+        "status": "open"
+      }
+    ],
+    "gaps": [
+      {
+        "question": "个人知识管理系统中记忆机制如何设计？",
+        "missing": "间隔重复、记忆辅助或遗忘曲线相关材料"
+      },
+      {
+        "question": "检索方式如何评测与选择？",
+        "missing": "全文搜索、标签、反链、查询的实际效果对比材料"
+      },
+      {
+        "question": "卡片盒与 Obsidian 之外还有哪些 PKM 设计？",
+        "missing": "其他工具或方法的设计文档"
+      },
+      {
+        "question": "上下文消歧在检索中如何实现？",
+        "missing": "词义消歧、同形词处理的系统设计材料"
+      },
+      {
+        "question": "检索与记忆设计服务哪些用户场景？",
+        "missing": "用户研究、需求分析或使用案例材料"
+      }
+    ],
+    "duplicates": []
+  }
+}

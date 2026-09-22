@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+  "status": "failed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": "RuntimeError",
+  "stop_reason": "call_failed_usage_unknown",
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 2,
+    "statuses": {
+      "empty": 1,
+      "read_failed": 3,
+      "ok": 2
+    }
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.oschina.net/",
+      "https://github.com/LlamaChinese/Llama-Chinese",
+      "https://ollama.com/",
+      "https://huggingface.co/",
+      "https://huggingface.co/huggingface",
+      "https://www.huaweicloud.com/product/modelarts/studio.html"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 商业模式 盈利",
+        "rank": 4,
+        "title": "OSCHINA - 中文开源技术交流社区",
+        "url": "https://www.oschina.net/",
+        "snippet": "2025年2月2日 · 开源不止代码，2026北京开源创新赛AIGC赛道全民可参与 选手可选福利：模力方舟旗舰模型为开源大赛提供专属折 …",
+        "published_date": "2025-02-02",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Llama Mistral 开源许可证 商业化",
+        "rank": 1,
+        "title": "GitHub - LlamaChinese/Llama-Chinese: Llama中文社区 ...",
+        "url": "https://github.com/LlamaChinese/Llama-Chinese",
+        "snippet": "2025年4月5日 · Meta官方在2023年8月24日发布了Code Llama，基于代码数据对Llama2进行了微调，提供三个不同功能的版本：基 …",
+        "published_date": "2025-04-05",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Llama Mistral 开源许可证 商业化",
+        "rank": 4,
+        "title": "Ollama",
+        "url": "https://ollama.com/",
+        "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 推理 API 收费",
+        "rank": 1,
+        "title": "Hugging Face – The AI community building the future.",
+        "url": "https://huggingface.co/",
+        "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 推理 API 收费",
+        "rank": 2,
+        "title": "huggingface (Hugging Face)",
+        "url": "https://huggingface.co/huggingface",
+        "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "MaaS 微调 开源大模型 营收",
+        "rank": 2,
+        "title": "MaaS_模型即服务_华为云",
+        "url": "https://www.huaweicloud.com/product/modelarts/studio.html",
+        "snippet": "maas,model as a service,模型服务,模型即服务,模型即服务平台 PixVerse V6 视频模型，专为电影级视觉而生—以真实的画面、精准 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 商业模式 盈利",
+        "urls": [
+          "https://www.oschina.net/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 商业模式 盈利",
+            "rank": 4,
+            "title": "OSCHINA - 中文开源技术交流社区",
+            "url": "https://www.oschina.net/",
+            "snippet": "2025年2月2日 · 开源不止代码，2026北京开源创新赛AIGC赛道全民可参与 选手可选福利：模力方舟旗舰模型为开源大赛提供专属折 …",
+            "published_date": "2025-02-02",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "什么是开源？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/27501070",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "立创开源广场 - 立创开源硬件平台",
+            "url": "https://oshwhub.com/explore",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.268,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Llama Mistral 开源许可证 商业化",
+        "urls": [
+          "https://github.com/LlamaChinese/Llama-Chinese",
+          "https://ollama.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Llama Mistral 开源许可证 商业化",
+            "rank": 1,
+            "title": "GitHub - LlamaChinese/Llama-Chinese: Llama中文社区 ...",
+            "url": "https://github.com/LlamaChinese/Llama-Chinese",
+            "snippet": "2025年4月5日 · Meta官方在2023年8月24日发布了Code Llama，基于代码数据对Llama2进行了微调，提供三个不同功能的版本：基 …",
+            "published_date": "2025-04-05",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Llama Mistral 开源许可证 商业化",
+            "rank": 4,
+            "title": "Ollama",
+            "url": "https://ollama.com/",
+            "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "GitHub - LlamaChinese/Llama-Chinese: Llama中文社区 ...",
+            "url": "https://github.com/LlamaChinese/Llama-Chinese",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Ollama",
+            "url": "https://ollama.com/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "LLM 系列超详细解读 (六)：LLaMa：开源高效的大语言模型",
+            "url": "https://zhuanlan.zhihu.com/p/643894722",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "一文读懂LLaMA - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1930326295067199098",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "万字长文带你梳理Llama开源家族：从Llama-1到Llama-3，看 ...",
+            "url": "https://blog.csdn.net/m0_48891301/article/details/149169017",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.234,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 推理 API 收费",
+        "urls": [
+          "https://huggingface.co/",
+          "https://huggingface.co/huggingface"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 推理 API 收费",
+            "rank": 1,
+            "title": "Hugging Face – The AI community building the future.",
+            "url": "https://huggingface.co/",
+            "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 推理 API 收费",
+            "rank": 2,
+            "title": "huggingface (Hugging Face)",
+            "url": "https://huggingface.co/huggingface",
+            "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Hugging Face（AI平台）_百度百科",
+            "url": "https://baike.baidu.com/item/Hugging%20Face/65708376",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Huggingface 超详细介绍 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/535100411",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Hugging Face教程：国内注册&使用指南（超详细） - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1890846454538559620",
+            "relevance": 0.4,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "MaaS 微调 开源大模型 营收",
+        "urls": [
+          "https://www.huaweicloud.com/product/modelarts/studio.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "MaaS 微调 开源大模型 营收",
+            "rank": 2,
+            "title": "MaaS_模型即服务_华为云",
+            "url": "https://www.huaweicloud.com/product/modelarts/studio.html",
+            "snippet": "maas,model as a service,模型服务,模型即服务,模型即服务平台 PixVerse V6 视频模型，专为电影级视觉而生—以真实的画面、精准 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "MaaS（模型即服务）_百度百科",
+            "url": "https://baike.baidu.com/item/MaaS/62781245",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "全网最全 MaaS 平台盘点：10 大主流模型即服务平台怎么选 ...",
+            "url": "https://blog.csdn.net/vibecoding77/article/details/162579167",
+            "relevance": 0.357,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "MaaS (模型即服务)是什么？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1911476020659336199",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "讯飞星辰MaaS平台-官网",
+            "url": "https://maas.xfyun.cn/",
+            "relevance": 0.214,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.21,
+        "error": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第5节称E-005与E-006存在版本口径不一致，但两条分别指Llama 3.1仓库整合与该仓库Llama 2最小示例，无证据支持矛盾定性"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-008系资料陈述却标〔推断〕，与同为来源陈述的E-001标〔事实〕不一致，削弱第4节开放与受控的并列基础"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第3节把E-002/E-003/E-004列为“审批”依据，三者只证明需接受许可与链接失效，未涉及审批环节"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第9节末句以E-008/E-010/E-013支撑“无收入材料”的缺失断言，证据标签与该否定性断言不匹配"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "第10、12节多处〔未知〕句未附证据标签，如其他开源大模型融资、合作与营收缺失，与全文标注规范不一致"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "第1、8节把E-016“未提及”标为〔推断〕，该条实为对资料范围的直接陈述，宜标事实并注明属资料边界"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "结论节“总体证据强度偏弱”等总结性判断缺证据标签，建议补引E-001/E-008/E-013/E-016"
+  }
+ ]
+}

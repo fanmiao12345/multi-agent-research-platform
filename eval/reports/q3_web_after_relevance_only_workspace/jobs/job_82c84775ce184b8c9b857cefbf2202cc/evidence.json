@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_42e6714155",
+      "fact": "本资料是国家统计局网站栏目页，设有「数据发布」栏目，列出月度统计数据及发布时间。",
+      "tag": "F",
+      "quote": "数据发布",
+      "start": 285,
+      "end": 289,
+      "locator": {
+        "heading": "",
+        "paragraph": 23,
+        "start": 285,
+        "end": 290
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_42e6714155",
+      "fact": "本资料设有「数据解读」栏目，收录统计机构人员对经济数据的解读文章。",
+      "tag": "F",
+      "quote": "国家统计局工业司首席统计师孙晓解读2026年8月份工业生",
+      "start": 655,
+      "end": 683,
+      "locator": {
+        "heading": "",
+        "paragraph": 44,
+        "start": 655,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_42e6714155",
+      "fact": "本资料设有「指标解释」栏目，按综合、人口、国民经济核算等分类。",
+      "tag": "F",
+      "quote": "综合 人口 国民经济核算",
+      "start": 1607,
+      "end": 1619,
+      "locator": {
+        "heading": "",
+        "paragraph": 99,
+        "start": 1607,
+        "end": 1620
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_42e6714155",
+      "fact": "本资料在指标解释下设有「对外经济贸易」分类，属统计指标口径分类。",
+      "tag": "F",
+      "quote": "对外经济贸易",
+      "start": 1656,
+      "end": 1662,
+      "locator": {
+        "heading": "",
+        "paragraph": 102,
+        "start": 1649,
+        "end": 1666
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_42e6714155",
+      "fact": "本资料设有「统计标准」栏目，收录数字经济等产业统计分类文件。",
+      "tag": "F",
+      "quote": "《数字经济及其核心产业统计分类（2021）》（国家统计",
+      "start": 2371,
+      "end": 2398,
+      "locator": {
+        "heading": "",
+        "paragraph": 137,
+        "start": 2371,
+        "end": 2402
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_42e6714155",
+      "fact": "本资料内容集中于统计数据发布、解读、查询与统计制度标准，无出境合规条目。",
+      "tag": "I",
+      "quote": "服务条款 网站地图",
+      "start": 3890,
+      "end": 3899,
+      "locator": {
+        "heading": "",
+        "paragraph": 346,
+        "start": 3873,
+        "end": 3900
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_42e6714155",
+      "fact": "本资料未出现「数据出境」「出境合规」等字样，无法支撑企业数据出境合规变化的梳理。",
+      "tag": "I",
+      "quote": "数据查询",
+      "start": 2625,
+      "end": 2629,
+      "locator": {
+        "heading": "",
+        "paragraph": 149,
+        "start": 2625,
+        "end": 2630
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_ef7f39970b",
+      "fact": "本资料为就业服务平台登录页面，未包含企业数据出境合规相关内容。",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_effe9ce34f2e45a8af2770ad0d1a4e57",
+  "goal": "远程办公对团队协作影响的近期研究",
+  "started_at": "2026-09-18T14:20:32",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 26 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-18T14:21:15"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:21:30"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 16, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:22:22"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包全部内容为产品宣传、用户评价及无关页面，并多处明确声明未提供任何远程办公对团队协作影响的近期研究数据或结论。",
+        "finished_at": "2026-09-18T14:22:24"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包全部内容为产品宣传、用户评价及无关页面，并多处明确声明未提供任何远程办公对团队协作影响的近期研究数据或结论。；缺失信息：同行评审研究论文或权威研究报告、沟通效率、信任、协调成本等团队协作指标的量化数据、不同远程办公工具对团队协作影响的对照研究或系统综述、近期研究的时间范围、样本量、调查方法等元数据、团队绩效与沟通成本的可核查前后对比数据（可用证据 42 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

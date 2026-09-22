@@ -1,0 +1,57 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-024）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "结论与边界争议将E-014/E-015的‘实在Agent’泛化为‘智能体’，超出证据范围。"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "E-010指传统RPA本身，E-012/E-044指融合增强后，条件不同，标为冲突会误导。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-025/E-029未支持‘智能体与RPA并列的执行主体’；E-029列机器人/API/智能体。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-002原文为‘准确执行’，正文漏‘准确’，建议补全以贴合证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "‘人类角色表述存在冲突〔推断〕’应标〔冲突〕，与冲突标注体例不一致。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "资料范围含影刀、UiPath、实在智能与IDC未逐项标注E编号，可核验性不足。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "部分事实句未加〔事实〕标注，如资料范围首句；建议统一标注。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "人类领导/引导/介入判断可并存于不同层级，标为冲突需说明不可兼容点。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论混用‘可确定’与来源称述，末句同时标〔未知〕〔推断〕，层级不清。"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "范围段引E-001支撑“仅依据已核实证据”不成立，方法声明标〔事实〕不当；且“粘贴文本6”未见于证据索引。"
+  },
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "未交代免费方案成片时长限制；E-003/E-008的200秒是生成耗时，不能替代视频时长，应标未知。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-003称免费计划无限量使用，报告“免费方案并非无限制”未限定画质/并发维度，易生矛盾。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "使用权限段将“公开课程”与商业授权并列；E-004仅规定免费视频个人使用与商业授权，未明示教育例外。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "待补清单中“学习效果”“免费/付费影响”未给相应缺口证据，E-015/E-022只支持政策与考试资料缺口。"
+  }
+ ]
+}

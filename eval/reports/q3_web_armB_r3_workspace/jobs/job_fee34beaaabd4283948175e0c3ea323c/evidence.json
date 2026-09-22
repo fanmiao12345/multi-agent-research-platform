@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_52fd8432eb",
+      "fact": "本资料为《算法基础与分析方法》教程，讲解算法入门知识。",
+      "tag": "F",
+      "quote": "算法基础与分析方法",
+      "start": 321,
+      "end": 330,
+      "locator": {
+        "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+        "paragraph": 39,
+        "start": 303,
+        "end": 379
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_52fd8432eb",
+      "fact": "本资料将算法定义为明确的、有限的、可执行的指令序列。",
+      "tag": "F",
+      "quote": "算法 就是计算机的菜谱",
+      "start": 743,
+      "end": 754,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_52fd8432eb",
+      "fact": "本资料提出算法须具备有穷性、确定性、可行性、输入、输出五特征。",
+      "tag": "F",
+      "quote": "有穷性 ：算法必须在执行有限步之后结束",
+      "start": 990,
+      "end": 1009,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 51,
+        "start": 990,
+        "end": 1044
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_52fd8432eb",
+      "fact": "本资料用时间复杂度和空间复杂度两个维度评价算法优劣。",
+      "tag": "F",
+      "quote": "算法分析：如何评价算法的好坏？",
+      "start": 2168,
+      "end": 2183,
+      "locator": {
+        "heading": "# 测试代码",
+        "paragraph": 78,
+        "start": 2165,
+        "end": 2171
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_52fd8432eb",
+      "fact": "本资料以冒泡排序为例讲解算法实现与复杂度分析。",
+      "tag": "F",
+      "quote": "让我们以经典的 冒泡排序 为例",
+      "start": 3140,
+      "end": 3155,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_52fd8432eb",
+      "fact": "本资料未出现“算法推荐规则”或“强制公开”相关表述。",
+      "tag": "I",
+      "quote": "本文将带你系统地认识算法的核心概念，并学习如何科学地评价一个算法的优劣。",
+      "start": 902,
+      "end": 938,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 49,
+        "start": 902,
+        "end": 939
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_52fd8432eb",
+      "fact": "本资料未讨论是否应强制公开算法推荐规则这一问题。",
+      "tag": "I",
+      "quote": "算法基础与分析方法",
+      "start": 321,
+      "end": 330,
+      "locator": {
+        "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+        "paragraph": 39,
+        "start": 303,
+        "end": 379
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_9146518509",
+      "fact": "本资料主题是英文单词administrator的读音与释义，与算法推荐规则无关。",
+      "tag": "F",
+      "quote": "用户英文administrator的读音是/ədˈmɪnɪstreɪtə(r)/。",
+      "start": 349,
+      "end": 390,
+      "locator": {
+        "heading": "# 用户英文administrator怎么读",
+        "paragraph": 43,
+        "start": 349,
+        "end": 391
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_9146518509",
+      "fact": "本资料标题即为用户英文administrator怎么读，未涉及任何算法治理议题。",
+      "tag": "F",
+      "quote": "用户英文administrator怎么读",
+      "start": 71,
+      "end": 91,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_9146518509",
+      "fact": "本资料对“用户”的解释限于使用电脑或网络服务的人，未涉及推荐算法。",
+      "tag": "F",
+      "quote": "是指使用电脑或网络服务的人，通常拥有一个用户账号，并以用户名识别。",
+      "start": 810,
+      "end": 843,
+      "locator": {
+        "heading": "# 用户英文administrator怎么读",
+        "paragraph": 52,
+        "start": 799,
+        "end": 901
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_9146518509",
+      "fact": "本资料未提及算法推荐规则，也未讨论其是否应强制公开。",
+      "tag": "F",
+      "quote": "百度知道 > 无分类",
+      "start": 167,
+      "end": 177,
+      "locator": {
+        "heading": "# 用户英文administrator怎么读",
+        "paragraph": 30,
+        "start": 167,
+        "end": 178
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_9146518509",
+      "fact": "就“是否应强制公开算法推荐规则”这一目标，本资料未提供任何可用论据。",
+      "tag": "I",
+      "quote": "#热议# 网上掀起『练心眼子』风潮，真的能提高情商吗？",
+      "start": 216,
+      "end": 243,
+      "locator": {
+        "heading": "# 用户英文administrator怎么读",
+        "paragraph": 33,
+        "start": 216,
+        "end": 244
+      },
+      "note": ""
+    }
+  ]
+}

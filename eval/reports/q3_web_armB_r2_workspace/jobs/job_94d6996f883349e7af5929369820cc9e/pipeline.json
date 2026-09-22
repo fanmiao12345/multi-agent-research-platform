@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_94d6996f883349e7af5929369820cc9e",
+  "goal": "生成式人工智能在软件测试中的应用趋势",
+  "started_at": "2026-09-20T10:05:55",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 11 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T10:06:11"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:06:20"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 7, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T10:06:46"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包全部证据仅涉及生成式AI创意工具（图像与视频生成及编辑），且明确声明未提及软件测试、测试用例、缺陷检测或测试自动化，完全无法支撑本主题。",
+        "finished_at": "2026-09-20T10:06:50"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包全部证据仅涉及生成式AI创意工具（图像与视频生成及编辑），且明确声明未提及软件测试、测试用例、缺陷检测或测试自动化，完全无法支撑本主题。；缺失信息：生成式AI在软件测试用例生成中的应用趋势：缺少软件测试用例生成相关研究、案例或数据、生成式AI在缺陷检测与缺陷预测中的应用趋势：缺少缺陷检测或缺陷预测相关文献、工具或实验数据、生成式AI在测试自动化脚本生成与维护中的应用趋势：缺少测试自动化脚本生成与维护的材料、生成式AI用于软件测试的效果与风险证据：缺少效果评估、准确率、局限与风险数据、生成式AI在软件测试中的产业采用趋势：缺少行业报告、企业案例或采用率统计（可用证据 18 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

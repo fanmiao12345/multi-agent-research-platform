@@ -1,0 +1,1119 @@
+{
+  "source_id": "src_748b975962",
+  "kind": "paste",
+  "display": "粘贴文本 7",
+  "original_address": "paste:7",
+  "title": "首页",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 6379,
+  "content_hash": "85bebf1800da4e105d350fd1516b316c2f1281afaca7cebab762c6dbf4e97ed3",
+  "normalized_hash": "6314778adb15fb60f7a14cb99a367fab58c8dc1f50524cd36bb78ea0db3e7722",
+  "captured_at": "2026-09-18T14:19:31",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_748b975962.md",
+  "encoding": "utf-8",
+  "segment_count": 155,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 3,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 4,
+      "end": 6,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 7,
+      "end": 9,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 10,
+      "end": 12,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 13,
+      "end": 15,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 16,
+      "end": 18,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 19,
+      "end": 22,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 23,
+      "end": 25,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 26,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 30,
+      "end": 35,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 36,
+      "end": 39,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 40,
+      "end": 42,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 43,
+      "end": 46,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 47,
+      "end": 49,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 50,
+      "end": 54,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 55,
+      "end": 58,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 59,
+      "end": 79,
+      "page": null
+    },
+    {
+      "heading": "## 习近平就发展先进制造业作出重要指示",
+      "paragraph": 17,
+      "start": 102,
+      "end": 154,
+      "page": null
+    },
+    {
+      "heading": "## 习近平就发展先进制造业作出重要指示",
+      "paragraph": 18,
+      "start": 177,
+      "end": 229,
+      "page": null
+    },
+    {
+      "heading": "## 习近平就发展先进制造业作出重要指示",
+      "paragraph": 19,
+      "start": 230,
+      "end": 236,
+      "page": null
+    },
+    {
+      "heading": "## 习近平就发展先进制造业作出重要指示",
+      "paragraph": 20,
+      "start": 237,
+      "end": 242,
+      "page": null
+    },
+    {
+      "heading": "## 要闻",
+      "paragraph": 21,
+      "start": 342,
+      "end": 362,
+      "page": null
+    },
+    {
+      "heading": "## 要闻",
+      "paragraph": 22,
+      "start": 363,
+      "end": 394,
+      "page": null
+    },
+    {
+      "heading": "## 要闻",
+      "paragraph": 23,
+      "start": 395,
+      "end": 430,
+      "page": null
+    },
+    {
+      "heading": "## 要闻",
+      "paragraph": 24,
+      "start": 431,
+      "end": 456,
+      "page": null
+    },
+    {
+      "heading": "## 要闻",
+      "paragraph": 25,
+      "start": 457,
+      "end": 472,
+      "page": null
+    },
+    {
+      "heading": "## 要闻",
+      "paragraph": 26,
+      "start": 473,
+      "end": 495,
+      "page": null
+    },
+    {
+      "heading": "## 最新政策",
+      "paragraph": 27,
+      "start": 505,
+      "end": 533,
+      "page": null
+    },
+    {
+      "heading": "## 最新政策",
+      "paragraph": 28,
+      "start": 534,
+      "end": 577,
+      "page": null
+    },
+    {
+      "heading": "## 最新政策",
+      "paragraph": 29,
+      "start": 578,
+      "end": 588,
+      "page": null
+    },
+    {
+      "heading": "## 最新政策",
+      "paragraph": 30,
+      "start": 589,
+      "end": 618,
+      "page": null
+    },
+    {
+      "heading": "## 最新政策",
+      "paragraph": 31,
+      "start": 619,
+      "end": 637,
+      "page": null
+    },
+    {
+      "heading": "### 国务院政策文件库",
+      "paragraph": 32,
+      "start": 652,
+      "end": 672,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 33,
+      "start": 682,
+      "end": 708,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 34,
+      "start": 709,
+      "end": 734,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 35,
+      "start": 735,
+      "end": 756,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 36,
+      "start": 757,
+      "end": 765,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 37,
+      "start": 766,
+      "end": 780,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 38,
+      "start": 781,
+      "end": 805,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 39,
+      "start": 806,
+      "end": 838,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 40,
+      "start": 839,
+      "end": 860,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 41,
+      "start": 861,
+      "end": 876,
+      "page": null
+    },
+    {
+      "heading": "## 政务联播",
+      "paragraph": 42,
+      "start": 886,
+      "end": 916,
+      "page": null
+    },
+    {
+      "heading": "## 政务联播",
+      "paragraph": 43,
+      "start": 917,
+      "end": 950,
+      "page": null
+    },
+    {
+      "heading": "## 政务联播",
+      "paragraph": 44,
+      "start": 951,
+      "end": 964,
+      "page": null
+    },
+    {
+      "heading": "### 建言征集 | 回应关切",
+      "paragraph": 45,
+      "start": 982,
+      "end": 1004,
+      "page": null
+    },
+    {
+      "heading": "### 建言征集 | 回应关切",
+      "paragraph": 46,
+      "start": 1005,
+      "end": 1028,
+      "page": null
+    },
+    {
+      "heading": "### 建言征集 | 回应关切",
+      "paragraph": 47,
+      "start": 1029,
+      "end": 1034,
+      "page": null
+    },
+    {
+      "heading": "### 以人民为中心",
+      "paragraph": 48,
+      "start": 1066,
+      "end": 1130,
+      "page": null
+    },
+    {
+      "heading": "### 以人民为中心",
+      "paragraph": 49,
+      "start": 1131,
+      "end": 1140,
+      "page": null
+    },
+    {
+      "heading": "## 为民服务 更多 >>",
+      "paragraph": 50,
+      "start": 1156,
+      "end": 1159,
+      "page": null
+    },
+    {
+      "heading": "## 为民服务 更多 >>",
+      "paragraph": 51,
+      "start": 1160,
+      "end": 1163,
+      "page": null
+    },
+    {
+      "heading": "## 为民服务 更多 >>",
+      "paragraph": 52,
+      "start": 1164,
+      "end": 1167,
+      "page": null
+    },
+    {
+      "heading": "## 为民服务 更多 >>",
+      "paragraph": 53,
+      "start": 1168,
+      "end": 1171,
+      "page": null
+    },
+    {
+      "heading": "## 为民服务 更多 >>",
+      "paragraph": 54,
+      "start": 1172,
+      "end": 1175,
+      "page": null
+    },
+    {
+      "heading": "### 激发经营主体活力",
+      "paragraph": 55,
+      "start": 1190,
+      "end": 1231,
+      "page": null
+    },
+    {
+      "heading": "### 激发经营主体活力",
+      "paragraph": 56,
+      "start": 1232,
+      "end": 1245,
+      "page": null
+    },
+    {
+      "heading": "## 为企服务 更多 >>",
+      "paragraph": 57,
+      "start": 1261,
+      "end": 1266,
+      "page": null
+    },
+    {
+      "heading": "## 为企服务 更多 >>",
+      "paragraph": 58,
+      "start": 1267,
+      "end": 1272,
+      "page": null
+    },
+    {
+      "heading": "## 为企服务 更多 >>",
+      "paragraph": 59,
+      "start": 1273,
+      "end": 1278,
+      "page": null
+    },
+    {
+      "heading": "## 为企服务 更多 >>",
+      "paragraph": 60,
+      "start": 1279,
+      "end": 1284,
+      "page": null
+    },
+    {
+      "heading": "## 为企服务 更多 >>",
+      "paragraph": 61,
+      "start": 1285,
+      "end": 1290,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 62,
+      "start": 1303,
+      "end": 1359,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 63,
+      "start": 1360,
+      "end": 1369,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 64,
+      "start": 1370,
+      "end": 1379,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 65,
+      "start": 1380,
+      "end": 1385,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 66,
+      "start": 1386,
+      "end": 1391,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 67,
+      "start": 1392,
+      "end": 1400,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 68,
+      "start": 1401,
+      "end": 1421,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 69,
+      "start": 1422,
+      "end": 1453,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 70,
+      "start": 1454,
+      "end": 1489,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 71,
+      "start": 1490,
+      "end": 1515,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 72,
+      "start": 1516,
+      "end": 1531,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 73,
+      "start": 1532,
+      "end": 1554,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 74,
+      "start": 1555,
+      "end": 1558,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 75,
+      "start": 1559,
+      "end": 1587,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 76,
+      "start": 1588,
+      "end": 1631,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 77,
+      "start": 1632,
+      "end": 1642,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 78,
+      "start": 1643,
+      "end": 1672,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 79,
+      "start": 1673,
+      "end": 1691,
+      "page": null
+    },
+    {
+      "heading": "### 加强政府建设",
+      "paragraph": 80,
+      "start": 1692,
+      "end": 1695,
+      "page": null
+    },
+    {
+      "heading": "## 政务联播",
+      "paragraph": 81,
+      "start": 1705,
+      "end": 1735,
+      "page": null
+    },
+    {
+      "heading": "## 政务联播",
+      "paragraph": 82,
+      "start": 1736,
+      "end": 1769,
+      "page": null
+    },
+    {
+      "heading": "## 政务联播",
+      "paragraph": 83,
+      "start": 1770,
+      "end": 1783,
+      "page": null
+    },
+    {
+      "heading": "## 政务联播",
+      "paragraph": 84,
+      "start": 1784,
+      "end": 1787,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 85,
+      "start": 1797,
+      "end": 1823,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 86,
+      "start": 1824,
+      "end": 1849,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 87,
+      "start": 1850,
+      "end": 1871,
+      "page": null
+    },
+    {
+      "heading": "## 政策解读",
+      "paragraph": 88,
+      "start": 1872,
+      "end": 1875,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 89,
+      "start": 1889,
+      "end": 1900,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 90,
+      "start": 1901,
+      "end": 1908,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 91,
+      "start": 1909,
+      "end": 1917,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 92,
+      "start": 1918,
+      "end": 1924,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 93,
+      "start": 1925,
+      "end": 1935,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 94,
+      "start": 1936,
+      "end": 1939,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 95,
+      "start": 1940,
+      "end": 1943,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 96,
+      "start": 1944,
+      "end": 1947,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 97,
+      "start": 1948,
+      "end": 1951,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 98,
+      "start": 1952,
+      "end": 1955,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 99,
+      "start": 1956,
+      "end": 1959,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 100,
+      "start": 1960,
+      "end": 1963,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 101,
+      "start": 1964,
+      "end": 1967,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 102,
+      "start": 1968,
+      "end": 1971,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 103,
+      "start": 1972,
+      "end": 1977,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 104,
+      "start": 1978,
+      "end": 1983,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 105,
+      "start": 1984,
+      "end": 1989,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 106,
+      "start": 1990,
+      "end": 1995,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 107,
+      "start": 1996,
+      "end": 2001,
+      "page": null
+    },
+    {
+      "heading": "## 国务院政策文件库",
+      "paragraph": 108,
+      "start": 2002,
+      "end": 2005,
+      "page": null
+    },
+    {
+      "heading": "## 施政为民",
+      "paragraph": 109,
+      "start": 2015,
+      "end": 2020,
+      "page": null
+    },
+    {
+      "heading": "## 激发活力",
+      "paragraph": 110,
+      "start": 2030,
+      "end": 2035,
+      "page": null
+    },
+    {
+      "heading": "## 政府建设",
+      "paragraph": 111,
+      "start": 2045,
+      "end": 2053,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 112,
+      "start": 2072,
+      "end": 2094,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 113,
+      "start": 2095,
+      "end": 2118,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 114,
+      "start": 2119,
+      "end": 2122,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 115,
+      "start": 2123,
+      "end": 2127,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 116,
+      "start": 2128,
+      "end": 2133,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 117,
+      "start": 2134,
+      "end": 2136,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 118,
+      "start": 2137,
+      "end": 2142,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 119,
+      "start": 2143,
+      "end": 2145,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 120,
+      "start": 2146,
+      "end": 2154,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 121,
+      "start": 2155,
+      "end": 2157,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 122,
+      "start": 2158,
+      "end": 2165,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 123,
+      "start": 2166,
+      "end": 2168,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 124,
+      "start": 2169,
+      "end": 2177,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 125,
+      "start": 2178,
+      "end": 2186,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 126,
+      "start": 2187,
+      "end": 2189,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 127,
+      "start": 2190,
+      "end": 2197,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 128,
+      "start": 2198,
+      "end": 2200,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 129,
+      "start": 2201,
+      "end": 2209,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 130,
+      "start": 2210,
+      "end": 2212,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 131,
+      "start": 2213,
+      "end": 2218,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 132,
+      "start": 2219,
+      "end": 2253,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 133,
+      "start": 2254,
+      "end": 2283,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 134,
+      "start": 2284,
+      "end": 2310,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 135,
+      "start": 2311,
+      "end": 2363,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 136,
+      "start": 2364,
+      "end": 2371,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 137,
+      "start": 2372,
+      "end": 2382,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 138,
+      "start": 2383,
+      "end": 2394,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 139,
+      "start": 2395,
+      "end": 2399,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 140,
+      "start": 2400,
+      "end": 2404,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 141,
+      "start": 2405,
+      "end": 2409,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 142,
+      "start": 2410,
+      "end": 2413,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 143,
+      "start": 2414,
+      "end": 2417,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 144,
+      "start": 2418,
+      "end": 2421,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 145,
+      "start": 2422,
+      "end": 2425,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 146,
+      "start": 2426,
+      "end": 2429,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 147,
+      "start": 2430,
+      "end": 2433,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 148,
+      "start": 2434,
+      "end": 2439,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 149,
+      "start": 2440,
+      "end": 2469,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 150,
+      "start": 2470,
+      "end": 2496,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 151,
+      "start": 2497,
+      "end": 2513,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 152,
+      "start": 2514,
+      "end": 2550,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 153,
+      "start": 2551,
+      "end": 2558,
+      "page": null
+    },
+    {
+      "heading": "## 回应关切",
+      "paragraph": 154,
+      "start": 2559,
+      "end": 2577,
+      "page": null
+    }
+  ],
+  "final_url": "",
+  "http_status": null,
+  "content_type": "",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:19:31",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

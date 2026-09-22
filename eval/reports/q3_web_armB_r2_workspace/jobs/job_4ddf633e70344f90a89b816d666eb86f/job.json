@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_4ddf633e70344f90a89b816d666eb86f",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 2,
+    "usable": 2,
+    "statuses": {
+      "ok": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 13 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T09:59:32"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:59:40"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 11, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T10:00:21"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有素材仅有产品场景宣称、无关的分布式系统与招聘资料，缺少任何近期实证研究，无法回答远程办公对团队协作影响。",
+        "finished_at": "2026-09-20T10:00:27"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有素材仅有产品场景宣称、无关的分布式系统与招聘资料，缺少任何近期实证研究，无法回答远程办公对团队协作影响。；缺失信息：近期同行评议论文、研究报告或系统综述、团队沟通、信任与绩效等协作结果指标、样本、方法与对照比较证据、产品使用与协作产出的因果数据、长期追踪或时间序列数据（可用证据 24 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.todesk.com/",
+      "https://javaguide.cn/distributed-system/distributed-system-intro.html"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 沟通",
+        "rank": 1,
+        "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+        "url": "https://www.todesk.com/",
+        "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式团队 知识共享 绩效",
+        "rank": 4,
+        "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+        "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+        "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+        "published_date": "2026-06-25",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 沟通",
+        "urls": [
+          "https://www.todesk.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "远程办公 团队协作 沟通",
+            "rank": 1,
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "ToDesk官网-远程桌面软件 | ToDesk电脑版免费下载",
+            "url": "https://todesk.cn.com/",
+            "relevance": 0.214,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "https://uuyc.163.com/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.243,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "混合办公 虚拟团队 信任",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "混合（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%B7%B7%E5%90%88/10963222",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "混合学习中心 | 登录",
+            "url": "https://il.xdf.cn/plus/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "混合 | 简体中文-英语翻译——剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93-%E8%8B%B1%E8%AF%AD/%E6%B7%B7%E5%90%88",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "混合的意思,混合的拼音、近义词、反义词、造句 - 汉语查",
+            "url": "https://www.hgcha.com/cidian/7055eba2.html",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "混合的意思_混合的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-1d00319d46",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.24,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式团队 知识共享 绩效",
+        "urls": [
+          "https://javaguide.cn/distributed-system/distributed-system-intro.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "分布式团队 知识共享 绩效",
+            "rank": 4,
+            "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+            "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+            "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+            "published_date": "2026-06-25",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "大白话告你什么是分布式，史上最全详解！ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/382966178",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是分布式，分布式和集群的区别又是什么？这一篇让你 ...",
+            "url": "https://blog.csdn.net/weixin_42046751/article/details/109510811",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式系统（建立在网络之上的软件系统）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/4905336",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式（计算机的一种算法）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F/19276232",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.216,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队凝聚力 心理安全感",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "ToDesk官网-远程桌面软件 | ToDesk电脑版免费下载",
+            "url": "https://todesk.cn.com/",
+            "relevance": 0.136,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "https://uuyc.163.com/",
+            "relevance": 0.091,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.091,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.212,
+        "error": ""
+      }
+    ]
+  }
+}

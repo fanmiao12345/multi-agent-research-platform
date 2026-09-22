@@ -1,0 +1,223 @@
+{
+  "source_id": "src_0ca705dde2",
+  "kind": "url",
+  "display": "超星",
+  "original_address": "https://www.chaoxing.com/",
+  "title": "超星",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 289,
+  "content_hash": "6bf722e79a73a47f1211fbaf613cd064f17b8260f9a4bca7c95ddfe9f5d7cf85",
+  "normalized_hash": "6bf365168b93ba2184f40a1669b5447d1b4150fcf8c3de306a43275bddc0d188",
+  "captured_at": "2026-09-20T11:47:34",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_0ca705dde2.md",
+  "encoding": "utf-8",
+  "segment_count": 27,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 8,
+      "end": 13,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 14,
+      "end": 17,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 18,
+      "end": 21,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 22,
+      "end": 26,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 27,
+      "end": 31,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 32,
+      "end": 36,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 37,
+      "end": 40,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 41,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 46,
+      "end": 50,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 51,
+      "end": 55,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 56,
+      "end": 60,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 61,
+      "end": 65,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 66,
+      "end": 70,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 71,
+      "end": 75,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 76,
+      "end": 80,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 81,
+      "end": 85,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 86,
+      "end": 90,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 91,
+      "end": 95,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 96,
+      "end": 100,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 101,
+      "end": 105,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 106,
+      "end": 110,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 111,
+      "end": 114,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 115,
+      "end": 119,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 120,
+      "end": 124,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 125,
+      "end": 128,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 129,
+      "end": 131,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.chaoxing.com/",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:47:34",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

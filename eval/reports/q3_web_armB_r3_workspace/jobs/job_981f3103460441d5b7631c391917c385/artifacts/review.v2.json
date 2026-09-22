@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「减排与出行结构效果缺口」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "多节缺口句以E-007、E-008、E-009、E-010、E-011、E-013等支持“资料未显示”判断，引用不直接支持缺口。"
+  },
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "提纲要求事实/推断标注，但各节缺口句仅标〔缺口〕，未标事实或推断，要求未满足。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "资料范围称证据边界含无关商业内容，但引用未列E-019至E-022，支持不足。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "可核验结论将E-007至E-013的政策方向事实标为〔推断〕，标注不当。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "无关来源排除中E-025是证据陈述事实，却标〔推断〕，应改为事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "城市背景节“资料未提供治理权限、财政与考核信息”引E-001/E-002/E-005，引用不支持缺失判断。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "限制缺口“拥堵、公平、财政、技术均无材料”仅引E-014/E-024，未引E-025或全量依据，支撑不足。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "可核验结论第二段“不同行政层级治理权限”无引用，作为待补缺口宜注明依据全量资料。"
+  }
+ ]
+}

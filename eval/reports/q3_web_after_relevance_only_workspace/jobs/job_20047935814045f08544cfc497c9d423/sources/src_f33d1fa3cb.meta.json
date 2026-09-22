@@ -1,0 +1,937 @@
+{
+  "source_id": "src_f33d1fa3cb",
+  "kind": "url",
+  "display": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+  "original_address": "https://zhidao.baidu.com/question/2002226940225630987.html",
+  "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 3626,
+  "content_hash": "acca4309176b8649f9d08373402d452b8b206e604b2250767c085527f2734576",
+  "normalized_hash": "7abc363b669802a58534d911e893eda87babf4ea6fcfaa1dad530191ea80b507",
+  "captured_at": "2026-09-18T14:11:13",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_f33d1fa3cb.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 129,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 5,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 6,
+      "end": 9,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 10,
+      "end": 13,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 14,
+      "end": 17,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 18,
+      "end": 21,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 22,
+      "end": 25,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 26,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 30,
+      "end": 33,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 34,
+      "end": 37,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 38,
+      "end": 41,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 42,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 46,
+      "end": 49,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 50,
+      "end": 53,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 54,
+      "end": 57,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 58,
+      "end": 68,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 15,
+      "start": 94,
+      "end": 100,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 16,
+      "start": 101,
+      "end": 104,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 17,
+      "start": 105,
+      "end": 108,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 18,
+      "start": 109,
+      "end": 114,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 19,
+      "start": 115,
+      "end": 120,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 20,
+      "start": 121,
+      "end": 125,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 21,
+      "start": 126,
+      "end": 131,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 22,
+      "start": 132,
+      "end": 135,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 23,
+      "start": 136,
+      "end": 139,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 24,
+      "start": 140,
+      "end": 143,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 25,
+      "start": 144,
+      "end": 149,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 26,
+      "start": 150,
+      "end": 153,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 27,
+      "start": 154,
+      "end": 157,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 28,
+      "start": 158,
+      "end": 163,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 29,
+      "start": 164,
+      "end": 167,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 30,
+      "start": 168,
+      "end": 179,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 31,
+      "start": 205,
+      "end": 211,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 32,
+      "start": 212,
+      "end": 217,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 33,
+      "start": 218,
+      "end": 239,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 34,
+      "start": 240,
+      "end": 247,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 35,
+      "start": 248,
+      "end": 281,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 36,
+      "start": 282,
+      "end": 289,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 37,
+      "start": 290,
+      "end": 296,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 38,
+      "start": 297,
+      "end": 300,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 39,
+      "start": 301,
+      "end": 306,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 40,
+      "start": 307,
+      "end": 329,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 41,
+      "start": 330,
+      "end": 339,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 42,
+      "start": 340,
+      "end": 385,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 43,
+      "start": 386,
+      "end": 395,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 44,
+      "start": 396,
+      "end": 483,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 45,
+      "start": 484,
+      "end": 552,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 46,
+      "start": 553,
+      "end": 556,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 47,
+      "start": 557,
+      "end": 567,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 48,
+      "start": 568,
+      "end": 580,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 49,
+      "start": 581,
+      "end": 587,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 50,
+      "start": 588,
+      "end": 593,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 51,
+      "start": 594,
+      "end": 608,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 52,
+      "start": 609,
+      "end": 741,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 53,
+      "start": 742,
+      "end": 755,
+      "page": null
+    },
+    {
+      "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+      "paragraph": 54,
+      "start": 756,
+      "end": 799,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 55,
+      "start": 819,
+      "end": 831,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 56,
+      "start": 832,
+      "end": 847,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 57,
+      "start": 848,
+      "end": 862,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 58,
+      "start": 863,
+      "end": 878,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 59,
+      "start": 879,
+      "end": 893,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 60,
+      "start": 894,
+      "end": 918,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 61,
+      "start": 919,
+      "end": 924,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 62,
+      "start": 925,
+      "end": 930,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 63,
+      "start": 931,
+      "end": 936,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 64,
+      "start": 937,
+      "end": 942,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 65,
+      "start": 943,
+      "end": 949,
+      "page": null
+    },
+    {
+      "heading": "## 特别推荐",
+      "paragraph": 66,
+      "start": 950,
+      "end": 955,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 67,
+      "start": 965,
+      "end": 971,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 68,
+      "start": 972,
+      "end": 980,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 69,
+      "start": 981,
+      "end": 996,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 70,
+      "start": 997,
+      "end": 1034,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 71,
+      "start": 1035,
+      "end": 1043,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 72,
+      "start": 1044,
+      "end": 1046,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 73,
+      "start": 1047,
+      "end": 1059,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 74,
+      "start": 1060,
+      "end": 1077,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 75,
+      "start": 1078,
+      "end": 1081,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 76,
+      "start": 1082,
+      "end": 1087,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 77,
+      "start": 1088,
+      "end": 1095,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 78,
+      "start": 1096,
+      "end": 1103,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 79,
+      "start": 1104,
+      "end": 1109,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 80,
+      "start": 1110,
+      "end": 1115,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 81,
+      "start": 1116,
+      "end": 1141,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 82,
+      "start": 1142,
+      "end": 1145,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 83,
+      "start": 1146,
+      "end": 1153,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 84,
+      "start": 1154,
+      "end": 1157,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 85,
+      "start": 1158,
+      "end": 1161,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 86,
+      "start": 1162,
+      "end": 1167,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 87,
+      "start": 1168,
+      "end": 1174,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 88,
+      "start": 1175,
+      "end": 1177,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 89,
+      "start": 1178,
+      "end": 1183,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 90,
+      "start": 1184,
+      "end": 1187,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 91,
+      "start": 1188,
+      "end": 1192,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 92,
+      "start": 1193,
+      "end": 1198,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 93,
+      "start": 1199,
+      "end": 1201,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 94,
+      "start": 1202,
+      "end": 1205,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 95,
+      "start": 1206,
+      "end": 1216,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 96,
+      "start": 1217,
+      "end": 1230,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 97,
+      "start": 1231,
+      "end": 1236,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 98,
+      "start": 1237,
+      "end": 1240,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 99,
+      "start": 1241,
+      "end": 1245,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 100,
+      "start": 1246,
+      "end": 1253,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 101,
+      "start": 1254,
+      "end": 1259,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 102,
+      "start": 1260,
+      "end": 1262,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 103,
+      "start": 1263,
+      "end": 1267,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 104,
+      "start": 1268,
+      "end": 1273,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 105,
+      "start": 1274,
+      "end": 1280,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 106,
+      "start": 1281,
+      "end": 1286,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 107,
+      "start": 1287,
+      "end": 1293,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 108,
+      "start": 1294,
+      "end": 1300,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 109,
+      "start": 1301,
+      "end": 1307,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 110,
+      "start": 1308,
+      "end": 1314,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 111,
+      "start": 1315,
+      "end": 1321,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 112,
+      "start": 1322,
+      "end": 1333,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 113,
+      "start": 1334,
+      "end": 1339,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 114,
+      "start": 1340,
+      "end": 1345,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 115,
+      "start": 1346,
+      "end": 1351,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 116,
+      "start": 1352,
+      "end": 1358,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 117,
+      "start": 1359,
+      "end": 1364,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 118,
+      "start": 1365,
+      "end": 1370,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 119,
+      "start": 1371,
+      "end": 1377,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 120,
+      "start": 1378,
+      "end": 1387,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 121,
+      "start": 1388,
+      "end": 1398,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 122,
+      "start": 1399,
+      "end": 1404,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 123,
+      "start": 1405,
+      "end": 1410,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 124,
+      "start": 1411,
+      "end": 1416,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 125,
+      "start": 1417,
+      "end": 1424,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 126,
+      "start": 1425,
+      "end": 1492,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 127,
+      "start": 1493,
+      "end": 1497,
+      "page": null
+    },
+    {
+      "heading": "## 等你来答",
+      "paragraph": 128,
+      "start": 1498,
+      "end": 1501,
+      "page": null
+    }
+  ],
+  "final_url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:11:13",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

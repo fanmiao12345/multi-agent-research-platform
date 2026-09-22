@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_043da3d936",
+      "fact": "本资料将远程办公列为使用场景，描述为远程办公与专业设计。",
+      "tag": "F",
+      "quote": "远程办公与专业设计",
+      "start": 95,
+      "end": 104,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 95,
+        "end": 105
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_043da3d936",
+      "fact": "本资料将远程协作列为使用场景，描述为远程协作与演示。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 129,
+      "end": 136,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 129,
+        "end": 137
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_043da3d936",
+      "fact": "团队版宣称多个账号可共享团队权益。",
+      "tag": "F",
+      "quote": "多个账号共享团队权益",
+      "start": 191,
+      "end": 201,
+      "locator": {
+        "heading": "",
+        "paragraph": 23,
+        "start": 191,
+        "end": 202
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_043da3d936",
+      "fact": "团队管理功能包括成员管理、团队扩容和席位回收。",
+      "tag": "F",
+      "quote": "成员管理/团队扩容/席位回收",
+      "start": 215,
+      "end": 229,
+      "locator": {
+        "heading": "",
+        "paragraph": 26,
+        "start": 215,
+        "end": 230
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_043da3d936",
+      "fact": "多人协作功能支持多人同时控制一台设备并可白板批注。",
+      "tag": "F",
+      "quote": "多人同时控制一台设备并可白板批注",
+      "start": 505,
+      "end": 521,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 505,
+        "end": 522
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_043da3d936",
+      "fact": "产品可对接公司AD域、飞书、企微账号并批量导入用户信息。",
+      "tag": "F",
+      "quote": "可对接公司AD域、飞书、企微账号，批量导入用户信息",
+      "start": 2184,
+      "end": 2209,
+      "locator": {
+        "heading": "## 安全的企业都选择 ToDesk企业版",
+        "paragraph": 188,
+        "start": 2184,
+        "end": 2210
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_043da3d936",
+      "fact": "用户评价称开启多指针功能后沟通效率直线上升。",
+      "tag": "F",
+      "quote": "用ToDesk沟通效率直线上升！",
+      "start": 4845,
+      "end": 4861,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4802,
+        "end": 4862
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_043da3d936",
+      "fact": "本资料未提供远程办公对团队协作影响的近期研究结论。",
+      "tag": "U",
+      "quote": "远程协作与演示",
+      "start": 129,
+      "end": 136,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 129,
+        "end": 137
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_3b5ec19108",
+      "fact": "本资料为网易云音乐网页，指向陈粒单曲《虚拟》，与远程办公主题无关。",
+      "tag": "F",
+      "quote": "歌手： 陈粒",
+      "start": 29,
+      "end": 35,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 29,
+        "end": 36
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_3b5ec19108",
+      "fact": "本资料将该曲标注为VIP单曲，所属专辑为《小梦大半》。",
+      "tag": "F",
+      "quote": "所属专辑： 小梦大半",
+      "start": 37,
+      "end": 47,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 37,
+        "end": 48
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_3b5ec19108",
+      "fact": "本资料前段未见任何关于远程办公或团队协作的研究论述。",
+      "tag": "F",
+      "quote": "包含这首歌的歌单",
+      "start": 74,
+      "end": 82,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_3b5ec19108",
+      "fact": "依据本资料无法回答远程办公对团队协作影响这一任务目标。",
+      "tag": "I",
+      "quote": "点击打开客户端",
+      "start": 9,
+      "end": 16,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 9,
+        "end": 17
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_ea37e2e444",
+      "fact": "本资料是陈粒歌曲《虚拟》的歌词页面，正文为歌词文本。",
+      "tag": "F",
+      "quote": "# 虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+      "start": 16,
+      "end": 38,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_ea37e2e444",
+      "fact": "本资料内容为歌词，如反复出现的副歌句。",
+      "tag": "F",
+      "quote": "你是我未曾拥有无法捕捉的亲昵",
+      "start": 109,
+      "end": 123,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 8,
+        "start": 109,
+        "end": 124
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_ea37e2e444",
+      "fact": "本资料未出现任何关于远程办公或团队协作的内容。",
+      "tag": "F",
+      "quote": "歌词网歌词内容来自互联网，如有侵权请联系删除",
+      "start": 467,
+      "end": 489,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 35,
+        "start": 467,
+        "end": 490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_ea37e2e444",
+      "fact": "本资料无法提供远程办公对团队协作影响的任何研究证据。",
+      "tag": "I",
+      "quote": "查看歌词解读",
+      "start": 437,
+      "end": 443,
+      "locator": {
+        "heading": "## 虚拟",
+        "paragraph": 32,
+        "start": 437,
+        "end": 444
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_d4a3bb120b",
+      "fact": "本资料是远程职位平台页面，未涉及远程办公对团队协作影响的研究。",
+      "tag": "F",
+      "quote": "Your dream job is already looking for you",
+      "start": 19,
+      "end": 60,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_d4a3bb120b",
+      "fact": "本资料内容集中于职位搜索、个人资料与AI面试，而非团队协作研究。",
+      "tag": "F",
+      "quote": "AI interviews to boost your profile",
+      "start": 2629,
+      "end": 2664,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_3f83e33fab",
+      "fact": "本资料是 Remote 的全球化雇佣服务介绍页，主题为全球招聘与薪资合规。",
+      "tag": "F",
+      "quote": "全球用工管理，Remote 保驾护航",
+      "start": 339,
+      "end": 357,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_3f83e33fab",
+      "fact": "本资料介绍第三方雇佣托管服务（EOR），称可数小时完成员工入职。",
+      "tag": "F",
+      "quote": "数小时即可完成员工入职手续，勿需耗费数月时间",
+      "start": 543,
+      "end": 565,
+      "locator": {
+        "heading": "### 第三方雇佣托管服务 (EOR)",
+        "paragraph": 30,
+        "start": 498,
+        "end": 567
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_3f83e33fab",
+      "fact": "本资料称其在所有业务覆盖地区配备自有法务、薪资与合规团队。",
+      "tag": "F",
+      "quote": "我们在所有业务覆盖地区均配备自有法务专家、薪资专员与合规专职团队",
+      "start": 852,
+      "end": 884,
+      "locator": {
+        "heading": "## 全链路自研基础设施，全程自主运营。",
+        "paragraph": 36,
+        "start": 852,
+        "end": 993
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_3f83e33fab",
+      "fact": "本资料称其已通过 SOC 2 Type II 与 ISO 27001 认证。",
+      "tag": "F",
+      "quote": "通过 SOC 2 Type II 合规认证与 ISO 27001 信息安全认证",
+      "start": 951,
+      "end": 990,
+      "locator": {
+        "heading": "## 全链路自研基础设施，全程自主运营。",
+        "paragraph": 36,
+        "start": 852,
+        "end": 993
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_3f83e33fab",
+      "fact": "有客户评价称，若企业自行统筹每年将额外增加超 50 万美元成本。",
+      "tag": "F",
+      "quote": "每年将额外增加超 50 万美元运营成本",
+      "start": 1792,
+      "end": 1811,
+      "locator": {
+        "heading": "## 客户评价",
+        "paragraph": 54,
+        "start": 1772,
+        "end": 1873
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_3f83e33fab",
+      "fact": "有客户称其在全球有 460 余名合同工。",
+      "tag": "F",
+      "quote": "我们在全球有 460 余名合同工",
+      "start": 1996,
+      "end": 2012,
+      "locator": {
+        "heading": "## 客户评价",
+        "paragraph": 59,
+        "start": 1995,
+        "end": 2079
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_3f83e33fab",
+      "fact": "本资料称 MCP 可让 AI 智能体直连实时薪资与合规数据。",
+      "tag": "F",
+      "quote": "让各类 AI 智能体安全直连实时薪资数据、合同文件、合规资料及组织架构信息",
+      "start": 1179,
+      "end": 1216,
+      "locator": {
+        "heading": "### 直接依托真实雇佣数据，部署 AI 智能体",
+        "paragraph": 40,
+        "start": 1136,
+        "end": 1218
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_3f83e33fab",
+      "fact": "本资料全文未提供远程办公对团队协作影响的近期研究，属内容缺口。",
+      "tag": "I",
+      "quote": "本页数据基于现有客户群的内部数据统计得出",
+      "start": 3816,
+      "end": 3836,
+      "locator": {
+        "heading": "## 全球雇佣的复杂度极高：我们自建专属基础设施，确保万无一失。",
+        "paragraph": 151,
+        "start": 3816,
+        "end": 3890
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料将远程办公与专业设计列为使用场景。",
+      "tag": "F",
+      "quote": "远程办公与专业设计",
+      "start": 96,
+      "end": 105,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 96,
+        "end": 106
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料将远程协作与演示列为使用场景。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料称ToDesk支持多人同时控制一台设备并可白板批注。",
+      "tag": "F",
+      "quote": "多人同时控制一台设备并可白板批注",
+      "start": 506,
+      "end": 522,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 506,
+        "end": 523
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料称团队版可统一管理席位、设备、连接与权益。",
+      "tag": "F",
+      "quote": "席位、设备、连接、权益统一管",
+      "start": 1114,
+      "end": 1128,
+      "locator": {
+        "heading": "",
+        "paragraph": 103,
+        "start": 1114,
+        "end": 1129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料提到可对接公司AD域、飞书、企微账号并批量导入用户信息。",
+      "tag": "F",
+      "quote": "可对接公司AD域、飞书、企微账号，批量导入用户信息",
+      "start": 2185,
+      "end": 2210,
+      "locator": {
+        "heading": "## 安全的企业都选择 ToDesk企业版",
+        "paragraph": 188,
+        "start": 2185,
+        "end": 2211
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料称员工只需下载主控端并登录即可无缝切换远程办公。",
+      "tag": "F",
+      "quote": "员工只需下载主控端并登录，即可无缝切换远程办公",
+      "start": 2222,
+      "end": 2245,
+      "locator": {
+        "heading": "## 安全的企业都选择 ToDesk企业版",
+        "paragraph": 190,
+        "start": 2222,
+        "end": 2246
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料的用户评价称多指针功能让远程协助演示PPT的双方看到对方鼠标轨迹。",
+      "tag": "F",
+      "quote": "我们俩都能看到对方的鼠标轨迹",
+      "start": 4831,
+      "end": 4845,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_e67e7aa67c",
+      "fact": "本资料未提供远程办公对团队协作影响的近期研究；内容以产品宣传与用户评价为主。",
+      "tag": "I",
+      "quote": "了解最新远控信息",
+      "start": 806,
+      "end": 814,
+      "locator": {
+        "heading": "",
+        "paragraph": 79,
+        "start": 806,
+        "end": 815
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_7b52c997eb",
+      "fact": "本资料为向日葵远程控制产品的官网首页，属商业产品页而非研究文献。",
+      "tag": "F",
+      "quote": "向日葵远程控制",
+      "start": 2684,
+      "end": 2691,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_7b52c997eb",
+      "fact": "资料把远程办公列为企业产品功能之一，标注员工管理与部署快。",
+      "tag": "F",
+      "quote": "员工管理 · 部署快",
+      "start": 132,
+      "end": 142,
+      "locator": {
+        "heading": "",
+        "paragraph": 13,
+        "start": 127,
+        "end": 147
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_7b52c997eb",
+      "fact": "资料称其提供IT运维、技术支持、远程办公一体的企业远控方案。",
+      "tag": "F",
+      "quote": "IT运维、技术支持、远程办公于一体的企业远程控制解决方案",
+      "start": 2811,
+      "end": 2839,
+      "locator": {
+        "heading": "### 远程IT运维解决方案",
+        "paragraph": 179,
+        "start": 2811,
+        "end": 2840
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_7b52c997eb",
+      "fact": "资料称其远程控制跨平台支持Windows、macOS、Linux、Android、iOS。",
+      "tag": "F",
+      "quote": "支持Windows、macOS、Linux、Android、iOS等系统",
+      "start": 4050,
+      "end": 4086,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 260,
+        "start": 4046,
+        "end": 4087
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_7b52c997eb",
+      "fact": "有客户评价称员工可在任何时间、任何地点发起远程协助和办公。",
+      "tag": "F",
+      "quote": "我们的员工可以在任何时间、任何地点通过向日葵发起远程协助和办公",
+      "start": 7580,
+      "end": 7611,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 632,
+        "start": 7579,
+        "end": 7626
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-040",
+      "source_id": "src_7b52c997eb",
+      "fact": "有客户评价称引入远程运维方案后IT部门服务效率大幅提升、省去沟通成本。",
+      "tag": "F",
+      "quote": "我们的IT部门人员为公司员工提供服务的效率大幅提升，让我们省去很多沟通的成本",
+      "start": 7870,
+      "end": 7908,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 645,
+        "start": 7855,
+        "end": 7910
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-041",
+      "source_id": "src_7b52c997eb",
+      "fact": "本资料未提供远程办公对团队协作影响的近期研究数据或结论。",
+      "tag": "I",
+      "quote": "企业异地远程办公",
+      "start": 3804,
+      "end": 3812,
+      "locator": {
+        "heading": "### 远程办公",
+        "paragraph": 247,
+        "start": 3804,
+        "end": 3813
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-042",
+      "source_id": "src_7b52c997eb",
+      "fact": "资料称其专业远程控制每月稳定连接超150亿分钟。",
+      "tag": "F",
+      "quote": "每月稳定连接超150亿分钟",
+      "start": 3644,
+      "end": 3657,
+      "locator": {
+        "heading": "# 大大小小的连锁企业",
+        "paragraph": 233,
+        "start": 3637,
+        "end": 3658
+      },
+      "note": ""
+    }
+  ]
+}

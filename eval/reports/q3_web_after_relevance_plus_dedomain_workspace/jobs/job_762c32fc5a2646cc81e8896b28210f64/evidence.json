@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_1c162130b9",
+      "fact": "本资料提出完善人工智能治理。",
+      "tag": "F",
+      "quote": "完善人工智能治理。",
+      "start": 10932,
+      "end": 10941,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_1c162130b9",
+      "fact": "本资料提供的前段仅见“完善人工智能治理”一句涉及人工智能治理。",
+      "tag": "I",
+      "quote": "完善人工智能治理。",
+      "start": 10932,
+      "end": 10941,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_1c162130b9",
+      "fact": "本资料未说明2026年人工智能治理政策的主要争议。",
+      "tag": "I",
+      "quote": "完善人工智能治理。",
+      "start": 10932,
+      "end": 10941,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_1c162130b9",
+      "fact": "本资料仅含前段，未提供的后段是否涉及人工智能治理争议无法判断。",
+      "tag": "I",
+      "quote": "完善人工智能治理。",
+      "start": 10932,
+      "end": 10941,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_1c162130b9",
+      "fact": "本资料提出深化拓展“人工智能+”，推动重点行业领域人工智能商业化规模化应用。",
+      "tag": "F",
+      "quote": "深化拓展“人工智能+”，促进新一代智能终端和智能体加快推广，推动重点行业领域人工智能商业化规模化应用",
+      "start": 10745,
+      "end": 10795,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_1c162130b9",
+      "fact": "本资料提出支持人工智能开源社区建设，促进开源生态繁荣。",
+      "tag": "F",
+      "quote": "支持人工智能开源社区建设，促进开源生态繁荣。",
+      "start": 10809,
+      "end": 10831,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_1c162130b9",
+      "fact": "本资料提出完善适应人工智能技术发展促进就业创业的措施。",
+      "tag": "F",
+      "quote": "完善适应人工智能技术发展促进就业创业的措施。",
+      "start": 15191,
+      "end": 15213,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 74,
+        "start": 14949,
+        "end": 15287
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_8070d72ed5",
+      "fact": "本资料为美国国家概况，最近更新时间为2026年6月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年6月）",
+      "start": 750,
+      "end": 766,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 86,
+        "start": 750,
+        "end": 767
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_8070d72ed5",
+      "fact": "本资料介绍美国国名、面积、人口、政府、经济、军事、教育等基本情况。",
+      "tag": "F",
+      "quote": "【国 名】美利坚合众国（The United States of America）",
+      "start": 768,
+      "end": 809,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 87,
+        "start": 768,
+        "end": 810
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_8070d72ed5",
+      "fact": "本资料涉及2025年1月20日特朗普就任总统后的内阁人事安排。",
+      "tag": "F",
+      "quote": "2025年1月20日，特朗普宣誓就任总统",
+      "start": 1994,
+      "end": 2014,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 97,
+        "start": 1994,
+        "end": 2843
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_8070d72ed5",
+      "fact": "本资料提及多项2026年事项，包括美联储利率决策与内阁人事变动。",
+      "tag": "F",
+      "quote": "2026年以来，美联储已连续4次宣布维持利率不变。",
+      "start": 5103,
+      "end": 5128,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 112,
+        "start": 4723,
+        "end": 5129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_8070d72ed5",
+      "fact": "本资料未提及人工智能治理政策或相关争议。",
+      "tag": "F",
+      "quote": "美国国家概况",
+      "start": 742,
+      "end": 748,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_121abbb38c",
+      "fact": "本资料称人工智能助力联合国应对全球危机、气候变化引发的流离失所，拯救生命。",
+      "tag": "F",
+      "quote": "人工智能助力联合国应对全球危机、气候变化引发的流离失所，拯救生命。",
+      "start": 5056,
+      "end": 5089,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_121abbb38c",
+      "fact": "本资料称手机、电脑、新能源车及日益强大的人工智能都离不开关键矿物。",
+      "tag": "F",
+      "quote": "日益强大的人工智能，都离不开一种重要资源——关键矿物",
+      "start": 5459,
+      "end": 5485,
+      "locator": {
+        "heading": "#### 关键矿物争夺战",
+        "paragraph": 105,
+        "start": 5439,
+        "end": 5588
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_121abbb38c",
+      "fact": "本资料称关键矿物供应链一旦中断，可能冲击经济和安全。",
+      "tag": "F",
+      "quote": "供应链一旦中断，可能冲击经济和安全",
+      "start": 5517,
+      "end": 5534,
+      "locator": {
+        "heading": "#### 关键矿物争夺战",
+        "paragraph": 105,
+        "start": 5439,
+        "end": 5588
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_121abbb38c",
+      "fact": "本资料称关键矿物从开采到电子废弃物处置，收益与成本未必公平分配。",
+      "tag": "F",
+      "quote": "收益与成本却未必公平分配",
+      "start": 5550,
+      "end": 5562,
+      "locator": {
+        "heading": "#### 关键矿物争夺战",
+        "paragraph": 105,
+        "start": 5439,
+        "end": 5588
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_121abbb38c",
+      "fact": "本资料称数字鸿沟限制发展中国家参与竞争和创新，难以从数字市场获益。",
+      "tag": "F",
+      "quote": "数字鸿沟持续扩大，限制发展中国家参与竞争、开展创新",
+      "start": 2480,
+      "end": 2505,
+      "locator": {
+        "heading": "#### 服务行业驱动贸易",
+        "paragraph": 65,
+        "start": 2461,
+        "end": 2525
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_121abbb38c",
+      "fact": "本资料称数字化平台让有害信息传播更快更广，仇恨言论加剧分裂。",
+      "tag": "F",
+      "quote": "数字化平台则让有害信息传播得更快、更广",
+      "start": 483,
+      "end": 502,
+      "locator": {
+        "heading": "## 对话凝聚团结，共同抵制仇恨",
+        "paragraph": 45,
+        "start": 467,
+        "end": 657
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_121abbb38c",
+      "fact": "本资料未系统说明2026年人工智能治理政策的主要争议。",
+      "tag": "I",
+      "quote": "人工智能",
+      "start": 5056,
+      "end": 5060,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_00ad0e663f",
+      "fact": "本资料是联合国中文首页，未出现人工智能治理或2026年AI政策争议内容。",
+      "tag": "F",
+      "quote": "健康地球上的和平、尊严与平等",
+      "start": 113,
+      "end": 127,
+      "locator": {
+        "heading": "",
+        "paragraph": 9,
+        "start": 113,
+        "end": 128
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_00ad0e663f",
+      "fact": "本资料所述全球合作愿景见于“我们的共同议程”，但未提及AI治理。",
+      "tag": "F",
+      "quote": "“我们的共同议程” 报告展望了未来25年",
+      "start": 4486,
+      "end": 4506,
+      "locator": {
+        "heading": "#### 我们的共同议程",
+        "paragraph": 92,
+        "start": 4455,
+        "end": 4568
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_00ad0e663f",
+      "fact": "因此，依据本资料无法提炼2026年人工智能治理政策的主要争议。",
+      "tag": "I",
+      "quote": "“我们的共同议程” 报告展望了未来25年",
+      "start": 4486,
+      "end": 4506,
+      "locator": {
+        "heading": "#### 我们的共同议程",
+        "paragraph": 92,
+        "start": 4455,
+        "end": 4568
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_748b975962",
+      "fact": "本资料为中国政府网首页，设要闻、最新政策、政策解读等栏目。",
+      "tag": "F",
+      "quote": "要闻 最新政策",
+      "start": 1392,
+      "end": 1399,
+      "locator": {
+        "heading": "### 加强政府建设",
+        "paragraph": 67,
+        "start": 1392,
+        "end": 1400
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_748b975962",
+      "fact": "本资料内容围绕先进制造业、经济数据、安全生产等议题展开。",
+      "tag": "F",
+      "quote": "总书记为持续做大做强先进制造业指明方向",
+      "start": 342,
+      "end": 361,
+      "locator": {
+        "heading": "## 要闻",
+        "paragraph": 21,
+        "start": 342,
+        "end": 362
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_748b975962",
+      "fact": "本资料全篇未出现“人工智能”“治理政策”等表述。",
+      "tag": "U",
+      "quote": "首页",
+      "start": 0,
+      "end": 2,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 3
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_748b975962",
+      "fact": "本资料未记载2026年人工智能治理政策的任何争议内容。",
+      "tag": "U",
+      "quote": "首页",
+      "start": 0,
+      "end": 2,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 3
+      },
+      "note": ""
+    }
+  ]
+}

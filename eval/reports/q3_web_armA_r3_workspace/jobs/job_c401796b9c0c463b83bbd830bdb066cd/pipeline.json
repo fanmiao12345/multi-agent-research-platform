@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_c401796b9c0c463b83bbd830bdb066cd",
+  "goal": "企业数据出境合规的主要变化",
+  "started_at": "2026-09-20T10:53:46",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 6 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T10:53:56"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:54:04"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T10:54:06"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包证据仅涉及国家统计局统计发布与统计业务栏目，并明确说明无数据出境、跨境传输或合规监管内容，完全无法支撑该任务。",
+        "finished_at": "2026-09-20T10:54:08"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包证据仅涉及国家统计局统计发布与统计业务栏目，并明确说明无数据出境、跨境传输或合规监管内容，完全无法支撑该任务。；缺失信息：数据出境相关法律法规、规范性文件或官方监管指引、按时间序列整理的规则文本或修订对照、监管问答、申报指南或合规操作指引、行政处罚决定、执法案例或监管通报、行业监管文件、地方性规定或标准合同/评估材料（可用证据 6 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

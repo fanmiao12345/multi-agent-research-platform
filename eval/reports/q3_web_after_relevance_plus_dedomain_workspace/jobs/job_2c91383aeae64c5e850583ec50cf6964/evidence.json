@@ -1,0 +1,1057 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_ab4230d35e",
+      "fact": "本资料为登录提示页，未涉及个人知识管理系统的检索或记忆设计。",
+      "tag": "F",
+      "quote": "点击登录",
+      "start": 4,
+      "end": 8,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_ab4230d35e",
+      "fact": "本资料称登录后可获取个性化推荐职位。",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_ab4230d35e",
+      "fact": "本资料列出职位、招聘会、个性化推荐等导航项。",
+      "tag": "F",
+      "quote": "职位 招聘会 个性化推荐",
+      "start": 52,
+      "end": 64,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 2,
+        "start": 30,
+        "end": 87
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_ab4230d35e",
+      "fact": "本资料显示就业意愿可在个人中心修改。",
+      "tag": "F",
+      "quote": "就业意愿 （可以在个人中心修改）",
+      "start": 88,
+      "end": 104,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 3,
+        "start": 88,
+        "end": 105
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_ab4230d35e",
+      "fact": "本资料含提交按钮，但未说明其处理逻辑。",
+      "tag": "F",
+      "quote": "提交",
+      "start": 106,
+      "end": 108,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 4,
+        "start": 106,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_ab4230d35e",
+      "fact": "本资料未说明任何检索方式、记忆机制或知识组织方法。",
+      "tag": "F",
+      "quote": "{{navsList[0].title}}",
+      "start": 30,
+      "end": 51,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 2,
+        "start": 30,
+        "end": 87
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_ab4230d35e",
+      "fact": "无法依据本资料得出该任务的检索与记忆设计结论。",
+      "tag": "I",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_8bd2f0df63",
+      "fact": "本资料指出“个人”一词的含义取决于具体语境。",
+      "tag": "F",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 303,
+      "end": 322,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 303,
+        "end": 325
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_8bd2f0df63",
+      "fact": "在“我个人认为”这类表述中，“个人”明确指说话者自己。",
+      "tag": "F",
+      "quote": "这里的“个人”明确指的是说话者自己",
+      "start": 362,
+      "end": 379,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 336,
+        "end": 381
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_8bd2f0df63",
+      "fact": "在“个人有个人的看法”这类表述中，“个人”指许多人中的每一个，不含说话者本人。",
+      "tag": "F",
+      "quote": "即不包括说话者自己在内的其他人",
+      "start": 444,
+      "end": 459,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 392,
+        "end": 479
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_8bd2f0df63",
+      "fact": "本资料总结“个人”既可指代自己，也可指代不包括自己在内的其他人。",
+      "tag": "F",
+      "quote": "“个人”既可以指代自己，也可以指代不包括自己在内的其他人",
+      "start": 483,
+      "end": 511,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 480,
+        "end": 548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_8bd2f0df63",
+      "fact": "本资料认为“个人”的具体含义需根据上下文判断。",
+      "tag": "F",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 512,
+      "end": 526,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 480,
+        "end": 548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_8bd2f0df63",
+      "fact": "据此可推断，同一词形在不同语境指向不同主体，检索与记录时需依赖上下文消歧。",
+      "tag": "I",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 512,
+      "end": 526,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 480,
+        "end": 548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_0b82685048",
+      "fact": "本资料主题为日语第二人称称呼的用法区别，与个人知识管理无关。",
+      "tag": "F",
+      "quote": "日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+      "start": 71,
+      "end": 113,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_0b82685048",
+      "fact": "本资料未出现检索、记忆、知识管理等术语或相关设计内容。",
+      "tag": "I",
+      "quote": "多数都是尊敬、郑重程度上的差异",
+      "start": 478,
+      "end": 493,
+      "locator": {
+        "heading": "# 日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+        "paragraph": 50,
+        "start": 478,
+        "end": 494
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_0b82685048",
+      "fact": "回答者称这些称呼多数是尊敬、郑重程度上的差异。",
+      "tag": "F",
+      "quote": "多数都是尊敬、郑重程度上的差异",
+      "start": 478,
+      "end": 493,
+      "locator": {
+        "heading": "# 日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+        "paragraph": 50,
+        "start": 478,
+        "end": 494
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_0b82685048",
+      "fact": "资料称あなた为最通用的称呼，あんた为其口语化且缺乏敬意。",
+      "tag": "F",
+      "quote": "あなた：最通用的称呼你",
+      "start": 495,
+      "end": 506,
+      "locator": {
+        "heading": "# 日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+        "paragraph": 51,
+        "start": 495,
+        "end": 507
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_0b82685048",
+      "fact": "资料称きみ用于地位在自己之下的人，如老师对学生。",
+      "tag": "F",
+      "quote": "きみ：对地位在自己之下的人的称呼，如老师对学生",
+      "start": 541,
+      "end": 564,
+      "locator": {
+        "heading": "# 日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+        "paragraph": 53,
+        "start": 541,
+        "end": 565
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_0b82685048",
+      "fact": "另一回答则把きみ列为敬称，与前一说法的定位不同。",
+      "tag": "F",
+      "quote": "kimi和xx桑这种都是敬称",
+      "start": 842,
+      "end": 856,
+      "locator": {
+        "heading": "# 日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+        "paragraph": 71,
+        "start": 842,
+        "end": 891
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_0b82685048",
+      "fact": "资料还列出きさま、てまえ、なんじ、おたく等其他说法。",
+      "tag": "F",
+      "quote": "其他和中文一样还有诸如きさま てまえ なんじ おたく等各式各样的叫法。",
+      "start": 592,
+      "end": 627,
+      "locator": {
+        "heading": "# 日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+        "paragraph": 55,
+        "start": 592,
+        "end": 628
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_0b82685048",
+      "fact": "本资料是百度知道问答页面，属问答社区的零散回答。",
+      "tag": "F",
+      "quote": "百度知道 > 无分类",
+      "start": 189,
+      "end": 199,
+      "locator": {
+        "heading": "# 日语中，你anda，annada，kimi，omayi有什么区别？还有哪些你的叫法？",
+        "paragraph": 30,
+        "start": 189,
+        "end": 200
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_4d6a133c4d",
+      "fact": "本资料标题为日语三个第二人称词区别的提问，未涉及个人知识管理系统设计",
+      "tag": "F",
+      "quote": "日语中的anata，kimi，omae这三个代表你的词有什么区别？",
+      "start": 71,
+      "end": 104,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_4d6a133c4d",
+      "fact": "有回答称anata用于夫妻或关系亲密者之间，属女性化用语",
+      "tag": "F",
+      "quote": "anata一般在夫妻或者关系很亲密的人之间使用。女性化用语。",
+      "start": 456,
+      "end": 486,
+      "locator": {
+        "heading": "# 日语中的anata，kimi，omae这三个代表你的词有什么区别？",
+        "paragraph": 50,
+        "start": 456,
+        "end": 517
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_4d6a133c4d",
+      "fact": "同一回答称kimi比较正式，omae较粗鲁，大意是小子、喂",
+      "tag": "F",
+      "quote": "kimi比较正式。omae比较粗鲁，大意是“小子”，“喂”。",
+      "start": 486,
+      "end": 516,
+      "locator": {
+        "heading": "# 日语中的anata，kimi，omae这三个代表你的词有什么区别？",
+        "paragraph": 50,
+        "start": 456,
+        "end": 517
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_4d6a133c4d",
+      "fact": "另一回答称日本人极少当面用anata，多称对方为XXsan",
+      "tag": "F",
+      "quote": "很少有人称呼人的时候用anata一半都是XXsan（XX先生小姐）这么称呼对方。",
+      "start": 1230,
+      "end": 1270,
+      "locator": {
+        "heading": "# 日语中的anata，kimi，omae这三个代表你的词有什么区别？",
+        "paragraph": 73,
+        "start": 1216,
+        "end": 1291
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_4d6a133c4d",
+      "fact": "有回答称kimi一般用于老师对学生、上司对下属、长辈对晚辈",
+      "tag": "F",
+      "quote": "一班是老师对学生，或者上司对下属，长辈对小辈用的",
+      "start": 1313,
+      "end": 1337,
+      "locator": {
+        "heading": "# 日语中的anata，kimi，omae这三个代表你的词有什么区别？",
+        "paragraph": 74,
+        "start": 1292,
+        "end": 1356
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_4d6a133c4d",
+      "fact": "有回答称omae用于好友之间，也可作非善意说法",
+      "tag": "F",
+      "quote": "omae是 很好的朋友之间，或者是不是很善意的说法…",
+      "start": 1357,
+      "end": 1383,
+      "locator": {
+        "heading": "# 日语中的anata，kimi，omae这三个代表你的词有什么区别？",
+        "paragraph": 75,
+        "start": 1357,
+        "end": 1384
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_4d6a133c4d",
+      "fact": "页面提供关键词勾选入口，可选中一个或多个关键词搜索相关资料",
+      "tag": "F",
+      "quote": "可选中1个或多个下面的关键词，搜索相关资料。",
+      "start": 236,
+      "end": 258,
+      "locator": {
+        "heading": "# 日语中的anata，kimi，omae这三个代表你的词有什么区别？",
+        "paragraph": 32,
+        "start": 236,
+        "end": 277
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_4d6a133c4d",
+      "fact": "页面底部列有其他类似问题链接，可视为相关内容的检索线索",
+      "tag": "I",
+      "quote": "更多类似问题 >",
+      "start": 2125,
+      "end": 2133,
+      "locator": {
+        "heading": "## 其他类似问题",
+        "paragraph": 120,
+        "start": 2125,
+        "end": 2134
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_456e67d799",
+      "fact": "卡片盒把笔记链接到相关笔记，结构从连接中浮现，而非预设层级。",
+      "tag": "F",
+      "quote": "让结构从连接中浮现，而非预设层级",
+      "start": 479,
+      "end": 495,
+      "locator": {
+        "heading": "## 什么是卡片盒笔记法？",
+        "paragraph": 11,
+        "start": 402,
+        "end": 537
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_456e67d799",
+      "fact": "盒子成为思考伙伴，向它提问可顺着链接找回早已忘记的想法。",
+      "tag": "F",
+      "quote": "顺着链接找到你早已忘记自己有过的想法",
+      "start": 517,
+      "end": 535,
+      "locator": {
+        "heading": "## 什么是卡片盒笔记法？",
+        "paragraph": 11,
+        "start": 402,
+        "end": 537
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_456e67d799",
+      "fact": "永久笔记是系统核心，每张一个成形想法，写给未来的你并链入网络。",
+      "tag": "F",
+      "quote": "每张一个成形的想法，写给未来的你， 并链入已有的网络",
+      "start": 613,
+      "end": 639,
+      "locator": {
+        "heading": "## 三类笔记",
+        "paragraph": 12,
+        "start": 547,
+        "end": 664
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_456e67d799",
+      "fact": "两条规则：每张笔记只装一个想法，且永远用自己的话写。",
+      "tag": "F",
+      "quote": "每张笔记只装一个想法（才能链入多种语境）， 永远用自己的话写",
+      "start": 689,
+      "end": 719,
+      "locator": {
+        "heading": "## 三类笔记",
+        "paragraph": 14,
+        "start": 677,
+        "end": 734
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_456e67d799",
+      "fact": "为每张新笔记至少链一张旧笔记，并写一句说明二者关系。",
+      "tag": "F",
+      "quote": "为每张新笔记至少链一张旧笔记 ，并写一句说明二者关系",
+      "start": 811,
+      "end": 837,
+      "locator": {
+        "heading": "## 如何开始卡片盒",
+        "paragraph": 15,
+        "start": 747,
+        "end": 876
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_456e67d799",
+      "fact": "写作时顺着链接走，让盒子替你浮现论证。",
+      "tag": "F",
+      "quote": "写作时顺着链接走 ，让盒子替你浮现论证",
+      "start": 842,
+      "end": 861,
+      "locator": {
+        "heading": "## 如何开始卡片盒",
+        "paragraph": 15,
+        "start": 747,
+        "end": 876
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_456e67d799",
+      "fact": "只收集不连接是常见误区，没链接的笔记只是一堆。",
+      "tag": "F",
+      "quote": "只收集不连接 （没链接的笔记只是一堆）",
+      "start": 1119,
+      "end": 1138,
+      "locator": {
+        "heading": "## 常见误区",
+        "paragraph": 17,
+        "start": 1119,
+        "end": 1212
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_456e67d799",
+      "fact": "第二大脑是采集、组织、检索的更广系统，可用到卡片盒。",
+      "tag": "F",
+      "quote": "第二大脑 是采集、组织、检索的更广系统",
+      "start": 1387,
+      "end": 1406,
+      "locator": {
+        "heading": "### 卡片盒和第二大脑有何不同？",
+        "paragraph": 20,
+        "start": 1372,
+        "end": 1414
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料称记笔记目的不只是捕捉信息或提高记忆，而是为了更好地思考。",
+      "tag": "F",
+      "quote": "记笔记的目的是为了更好地思考 。",
+      "start": 3754,
+      "end": 3770,
+      "locator": {
+        "heading": "# Zettelkasten 方法： 如何为知识管理做最有效的笔记",
+        "paragraph": 165,
+        "start": 3754,
+        "end": 3792
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料指出传统笔记用预设类别，代价是分类间见解，笔记越多越难用。",
+      "tag": "F",
+      "quote": "我们添加的笔记越多，使用我们的笔记就越困难。",
+      "start": 4018,
+      "end": 4040,
+      "locator": {
+        "heading": "# Zettelkasten 方法： 如何为知识管理做最有效的笔记",
+        "paragraph": 168,
+        "start": 3958,
+        "end": 4064
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-040",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料认为标签检索需记住所有标签，集合越大越糟。",
+      "tag": "F",
+      "quote": "有效 使用标签需要记住所有的标签 。",
+      "start": 8615,
+      "end": 8633,
+      "locator": {
+        "heading": "#### 为什么单独使用标签是不切实际的",
+        "paragraph": 231,
+        "start": 8597,
+        "end": 8685
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-041",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料认为仅靠搜索不够，关键词只是间接的链接。",
+      "tag": "F",
+      "quote": "在最好的情况下，关键词只是间接的链接 。",
+      "start": 9162,
+      "end": 9182,
+      "locator": {
+        "heading": "#### 为什么仅仅使用搜索是不切实际的",
+        "paragraph": 237,
+        "start": 9085,
+        "end": 9199
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-042",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料称资料库越大，链接就越重要。",
+      "tag": "F",
+      "quote": "你的资料库越大，链接就越重要 。",
+      "start": 8874,
+      "end": 8890,
+      "locator": {
+        "heading": "#### 为什么单独使用标签是不切实际的",
+        "paragraph": 233,
+        "start": 8794,
+        "end": 8891
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-043",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料引 Berners-Lee 称带链接的笔记网络比固定分层系统更有用。",
+      "tag": "F",
+      "quote": "一个带有链接（如参考文献）的笔记“网络”比一个固定的分层系统更有用。",
+      "start": 5890,
+      "end": 5924,
+      "locator": {
+        "heading": "## 跟上信息过载的步伐",
+        "paragraph": 195,
+        "start": 5802,
+        "end": 5925
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-044",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料引 Bush 的记忆体，储存所有知识并把相关主题放在线索中，需要时方便检索。",
+      "tag": "F",
+      "quote": "记忆体将储存你所有的知识，并将相关的主题放在一个线索中。",
+      "start": 5992,
+      "end": 6020,
+      "locator": {
+        "heading": "## 跟上信息过载的步伐",
+        "paragraph": 196,
+        "start": 5926,
+        "end": 6058
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-045",
+      "source_id": "src_a250bcc835",
+      "fact": "本资料称链接是思考过程检查点，让工作专注发展而非记忆思维轨迹。",
+      "tag": "F",
+      "quote": "你的工作可以自由地专注于 发展 ——而不是 记忆 ——你的思维轨迹。",
+      "start": 9785,
+      "end": 9819,
+      "locator": {
+        "heading": "### 链接",
+        "paragraph": 247,
+        "start": 9771,
+        "end": 9820
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-046",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料称 Obsidian 把笔记本地保存为纯文本 Markdown 文件。",
+      "tag": "F",
+      "quote": "Obsidian stores your notes locally as plain text Markdown files.",
+      "start": 5483,
+      "end": 5547,
+      "locator": {
+        "heading": "# Writing is telepathy",
+        "paragraph": 179,
+        "start": 5481,
+        "end": 5548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-047",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料称可用标签组织想法。",
+      "tag": "F",
+      "quote": "Use tags to organize your ideas",
+      "start": 5586,
+      "end": 5617,
+      "locator": {
+        "heading": "# Writing is telepathy",
+        "paragraph": 181,
+        "start": 5584,
+        "end": 5618
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-048",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料称可在笔记之间创建连接。",
+      "tag": "F",
+      "quote": "Create connections between your notes.",
+      "start": 2820,
+      "end": 2858,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 116,
+        "start": 2820,
+        "end": 2968
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-049",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料称图形可可视化笔记间关系。",
+      "tag": "F",
+      "quote": "Visualize the relationships between your notes.",
+      "start": 3351,
+      "end": 3398,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 127,
+        "start": 3351,
+        "end": 3488
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-050",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料展示笔记页面显示反向链接数量。",
+      "tag": "F",
+      "quote": "1 backlink 206 words",
+      "start": 2014,
+      "end": 2034,
+      "locator": {
+        "heading": "# Sharpen your thinking.",
+        "paragraph": 93,
+        "start": 2014,
+        "end": 2045
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-051",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料称 Dataview 插件提供高级查询。",
+      "tag": "F",
+      "quote": "Advanced queries for the data-obsessed.",
+      "start": 4634,
+      "end": 4673,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 153,
+        "start": 4634,
+        "end": 4674
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-052",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料称 Calendar 插件提供每日笔记的日历视图。",
+      "tag": "F",
+      "quote": "Calendar view of your daily notes.",
+      "start": 4512,
+      "end": 4546,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 149,
+        "start": 4512,
+        "end": 4547
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-053",
+      "source_id": "src_242c6a7018",
+      "fact": "本资料称 Canvas 是研究、头脑风暴、图示和铺陈想法的无限空间。",
+      "tag": "F",
+      "quote": "An infinite space to research, brainstorm, diagram, and lay out your ideas.",
+      "start": 3497,
+      "end": 3572,
+      "locator": {
+        "heading": "## Spark ideas.",
+        "paragraph": 129,
+        "start": 3497,
+        "end": 3633
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-054",
+      "source_id": "src_2d417988db",
+      "fact": "本资料提供 Obsidian 的 Windows 下载入口。",
+      "tag": "F",
+      "quote": "Download for Windows",
+      "start": 512,
+      "end": 532,
+      "locator": {
+        "heading": "",
+        "paragraph": 56,
+        "start": 512,
+        "end": 533
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-055",
+      "source_id": "src_2d417988db",
+      "fact": "本资料列出 Linux 版 AppImage、Snap、Deb、Flatpak 等安装包。",
+      "tag": "F",
+      "quote": "AppImage Snap Deb AppImage (AArch64, ARM64) Flatpak",
+      "start": 641,
+      "end": 692,
+      "locator": {
+        "heading": "## App",
+        "paragraph": 67,
+        "start": 641,
+        "end": 714
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-056",
+      "source_id": "src_2d417988db",
+      "fact": "Web Clipper 组件支持 Chrome、Safari、Firefox、Edge 等浏览器。",
+      "tag": "F",
+      "quote": "Chrome Safari Firefox Edge",
+      "start": 731,
+      "end": 757,
+      "locator": {
+        "heading": "## Web Clipper",
+        "paragraph": 68,
+        "start": 731,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-057",
+      "source_id": "src_2d417988db",
+      "fact": "本资料导航中出现 Sync 与 Publish 两项服务名称。",
+      "tag": "F",
+      "quote": "Sync",
+      "start": 19,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 2,
+        "start": 19,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-058",
+      "source_id": "src_2d417988db",
+      "fact": "本资料设有 Plugins 板块，并另有 Community 入口。",
+      "tag": "F",
+      "quote": "Plugins",
+      "start": 375,
+      "end": 382,
+      "locator": {
+        "heading": "",
+        "paragraph": 42,
+        "start": 375,
+        "end": 383
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-059",
+      "source_id": "src_2d417988db",
+      "fact": "本资料提供多语言界面选项，其中包含简体中文。",
+      "tag": "F",
+      "quote": "简体中文",
+      "start": 173,
+      "end": 177,
+      "locator": {
+        "heading": "",
+        "paragraph": 19,
+        "start": 173,
+        "end": 178
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-060",
+      "source_id": "src_2d417988db",
+      "fact": "从多端下载与 Sync 服务并存可推断其定位跨设备使用。",
+      "tag": "I",
+      "quote": "Sync",
+      "start": 19,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 2,
+        "start": 19,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-061",
+      "source_id": "src_2d417988db",
+      "fact": "本资料为下载页面，未涉及检索与记忆设计机制。",
+      "tag": "I",
+      "quote": "Download",
+      "start": 0,
+      "end": 8,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 9
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-062",
+      "source_id": "src_e0728b8b11",
+      "fact": "本资料是百度知道页面，讨论「个人」一词指自己还是指他人。",
+      "tag": "F",
+      "quote": "\"个人\"是指自己,还是一个人（不包括自己）",
+      "start": 71,
+      "end": 92,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-063",
+      "source_id": "src_e0728b8b11",
+      "fact": "本资料显示该问题有1个回答。",
+      "tag": "F",
+      "quote": "1个回答",
+      "start": 212,
+      "end": 216,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 32,
+        "start": 212,
+        "end": 217
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-064",
+      "source_id": "src_e0728b8b11",
+      "fact": "回答者认为「个人」的含义取决于具体语境。",
+      "tag": "F",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 312,
+      "end": 331,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 312,
+        "end": 334
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-065",
+      "source_id": "src_e0728b8b11",
+      "fact": "回答者称「我个人认为」中的「个人」明确指说话者自己。",
+      "tag": "F",
+      "quote": "这里的“个人”明确指的是说话者自己",
+      "start": 371,
+      "end": 388,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 345,
+        "end": 390
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-066",
+      "source_id": "src_e0728b8b11",
+      "fact": "回答者称「个人有个人的看法」中的「个人」指不包括说话者在内的他人。",
+      "tag": "F",
+      "quote": "即不包括说话者自己在内的其他人",
+      "start": 453,
+      "end": 468,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 401,
+        "end": 488
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-067",
+      "source_id": "src_e0728b8b11",
+      "fact": "本资料全文围绕「个人」一词的语义，未涉及知识管理检索与记忆设计。",
+      "tag": "I",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 312,
+      "end": 331,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 312,
+        "end": 334
+      },
+      "note": ""
+    }
+  ]
+}

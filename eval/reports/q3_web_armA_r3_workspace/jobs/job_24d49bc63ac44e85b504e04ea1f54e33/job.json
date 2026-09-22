@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_24d49bc63ac44e85b504e04ea1f54e33",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 3,
+    "statuses": {
+      "read_failed": 2,
+      "empty": 1,
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 21 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:11:43"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:11:55"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:11:58"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅涉及算法基础与欧盟一般政策，未提供支持或反对强制公开算法推荐规则的直接证据或法律依据，无法形成结论。",
+        "finished_at": "2026-09-20T11:12:14"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅涉及算法基础与欧盟一般政策，未提供支持或反对强制公开算法推荐规则的直接证据或法律依据，无法形成结论。；缺失信息：是否应强制公开算法推荐规则的直接主张或分析材料、强制公开的适用范围与例外的法律条文或政策文本、公开推荐规则对用户、平台与竞争影响的实证评估或案例数据、平台、监管机构与公民社会等利益相关方的立场材料、公开算法推荐规则的技术方案与安全评估材料（可用证据 21 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.honor.com/cn/tech/connect/",
+      "https://connect.oppo.com/",
+      "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+      "https://www.hello-algo.com/",
+      "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+      "https://european-union.europa.eu/index_en"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "互联网信息服务算法推荐管理规定 算法公开",
+        "rank": 5,
+        "title": "荣耀互联-荣耀超级工作台-荣耀信任环 | 荣耀官方网站 - HONOR",
+        "url": "https://www.honor.com/cn/tech/connect/",
+        "snippet": "Mac 上跨设备文件管理 Mac 与荣耀手机或平板连接同一 WLAN、登录同一荣耀账号后，Mac 在荣耀互联界面中可查看、下载和管理 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "互联网信息服务算法推荐管理规定 算法公开",
+        "rank": 1,
+        "title": "O+ Connect",
+        "url": "https://connect.oppo.com/",
+        "snippet": "2026年8月14日 · O+ Connect is an official app designed for cross-device collaboration between OPPO/OnePlus/realme phone or …",
+        "published_date": "2026-08-14",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法备案 算法透明度 监管",
+        "rank": 2,
+        "title": "算法基础与分析方法 - 菜鸟教程",
+        "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+        "snippet": "无论是手机上的导航软件为你规划最短路径，还是搜索引擎在毫秒间从海量数据中找出最相关的网页，背后都依赖于精心设计的算法 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法备案 算法透明度 监管",
+        "rank": 3,
+        "title": "Hello 算法",
+        "url": "https://www.hello-algo.com/",
+        "snippet": "2026年9月10日 · “如果我当年学数据结构与算法的时候有《Hello 算法》，学起来应该会简单 10 倍！” —— 李沐，亚马逊资深首席科 …",
+        "published_date": "2026-09-10",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 DSA 推荐系统 透明度",
+        "rank": 5,
+        "title": "欧盟概况 - 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+        "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 DSA 推荐系统 透明度",
+        "rank": 2,
+        "title": "Your gateway to the EU, News, Highlights | European Union",
+        "url": "https://european-union.europa.eu/index_en",
+        "snippet": "3 天之前 · Discover how the EU functions, its principles, priorities; find out about its history and member states; learn about its legal …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "互联网信息服务算法推荐管理规定 算法公开",
+        "urls": [
+          "https://www.honor.com/cn/tech/connect/",
+          "https://connect.oppo.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "互联网信息服务算法推荐管理规定 算法公开",
+            "rank": 5,
+            "title": "荣耀互联-荣耀超级工作台-荣耀信任环 | 荣耀官方网站 - HONOR",
+            "url": "https://www.honor.com/cn/tech/connect/",
+            "snippet": "Mac 上跨设备文件管理 Mac 与荣耀手机或平板连接同一 WLAN、登录同一荣耀账号后，Mac 在荣耀互联界面中可查看、下载和管理 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "互联网信息服务算法推荐管理规定 算法公开",
+            "rank": 1,
+            "title": "O+ Connect",
+            "url": "https://connect.oppo.com/",
+            "snippet": "2026年8月14日 · O+ Connect is an official app designed for cross-device collaboration between OPPO/OnePlus/realme phone or …",
+            "published_date": "2026-08-14",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "荣耀互联-荣耀超级工作台-荣耀信任环 | 荣耀官方网站 - HONOR",
+            "url": "https://www.honor.com/cn/tech/connect/",
+            "relevance": 0.094,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "O+ Connect",
+            "url": "https://connect.oppo.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "互联_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BA%92%E8%81%94/3827205",
+            "relevance": 0.062,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "互联网（国际网络）_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BA%92%E8%81%94%E7%BD%91/199186",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "OPPO互联官网电脑端下载，OPPO互联（O+互联）电脑版下载",
+            "url": "https://soft.china.com/soft/1619786.html",
+            "relevance": 0.062,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.24,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法备案 算法透明度 监管",
+        "urls": [
+          "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+          "https://www.hello-algo.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "算法备案 算法透明度 监管",
+            "rank": 2,
+            "title": "算法基础与分析方法 - 菜鸟教程",
+            "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+            "snippet": "无论是手机上的导航软件为你规划最短路径，还是搜索引擎在毫秒间从海量数据中找出最相关的网页，背后都依赖于精心设计的算法 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "算法备案 算法透明度 监管",
+            "rank": 3,
+            "title": "Hello 算法",
+            "url": "https://www.hello-algo.com/",
+            "snippet": "2026年9月10日 · “如果我当年学数据结构与算法的时候有《Hello 算法》，学起来应该会简单 10 倍！” —— 李沐，亚马逊资深首席科 …",
+            "published_date": "2026-09-10",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "算法基础与分析方法 - 菜鸟教程",
+            "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Hello 算法",
+            "url": "https://www.hello-algo.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "算法（解题方案的准确而完整的描述）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%AE%97%E6%B3%95/209025",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+            "url": "https://leetcode.cn/",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "算法基础简介 - OI Wiki",
+            "url": "https://oi-wiki.org/basic/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.211,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "欧盟 DSA 推荐系统 透明度",
+        "urls": [
+          "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+          "https://european-union.europa.eu/index_en"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "欧盟 DSA 推荐系统 透明度",
+            "rank": 5,
+            "title": "欧盟概况 - 中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+            "snippet": "欧盟重视欧美关系，双方在政治和安全上互为盟友，经济上互为最主要的贸易和投资伙伴，但在自由贸易、军费分担、气候变化、伊 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "欧盟 DSA 推荐系统 透明度",
+            "rank": 2,
+            "title": "Your gateway to the EU, News, Highlights | European Union",
+            "url": "https://european-union.europa.eu/index_en",
+            "snippet": "3 天之前 · Discover how the EU functions, its principles, priorities; find out about its history and member states; learn about its legal …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "欧盟概况 - 中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/1206_679930/1206x0_679932/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Your gateway to the EU, News, Highlights | European Union",
+            "url": "https://european-union.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "欧洲联盟（欧洲经济、政治共同体）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%AC%A7%E6%B4%B2%E8%81%94%E7%9B%9F/786749",
+            "relevance": 0.083,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "European Commission, official website - European Commission",
+            "url": "https://commission.europa.eu/index_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "EU countries - European Union",
+            "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.21,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "算法推荐规则 商业秘密 用户知情权",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "算法基础与分析方法 - 菜鸟教程",
+            "url": "https://www.runoob.com/data-structures/dsa-basic-algorithm.html",
+            "relevance": 0.083,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Hello 算法",
+            "url": "https://www.hello-algo.com/",
+            "relevance": 0.083,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "算法（解题方案的准确而完整的描述）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%AE%97%E6%B3%95/209025",
+            "relevance": 0.083,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+            "url": "https://leetcode.cn/",
+            "relevance": 0.042,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "算法基础简介 - OI Wiki",
+            "url": "https://oi-wiki.org/basic/",
+            "relevance": 0.083,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.199,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（是否应强制公开算法推荐规则）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['debate']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['debate']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "debate"
+        ]
+      },
+      "scheduler_elapsed_seconds": 22.896,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

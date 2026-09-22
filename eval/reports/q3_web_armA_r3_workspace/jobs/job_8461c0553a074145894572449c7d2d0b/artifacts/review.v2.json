@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "来源名称与索引不符：索引为贝锐向日葵/该来源，报告却称粘贴文本3与ToDesk，且称二者相同。"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "E-003明确为飞利浦与向日葵案例，报告将该来源归为ToDesk，品牌指向冲突且未标注。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-003指名向日葵，E-011仅称“该品牌”，报告未核对品牌是否一致即按同一主张重复计。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-008/E-016本身为直接证据陈述，报告多处在句末标〔推断〕，事实/推断标注失当。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "独立验证与临床结局缺口仅引E-008/E-016；二者只说明宣传立场与无反对观点，不能直接证明无临床研究。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "欠发达地区适用性将几内亚案例关联欠发达/资源有限地区，但E-003/E-011未如此描述，应标推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "实施风险缺口列出隐私泄露、责任划分、法规限制、网络依赖，均非索引证据内容，应标为报告外推断。"
+  }
+ ]
+}

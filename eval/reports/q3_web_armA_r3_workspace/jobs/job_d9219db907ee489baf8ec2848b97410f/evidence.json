@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_4295056b84",
+      "fact": "本资料称其模型与权重同时授权给研究者和商业实体，秉持开放原则。",
+      "tag": "F",
+      "quote": "Our model and weights are licensed for both researchers and commercial entities",
+      "start": 9590,
+      "end": 9669,
+      "locator": {
+        "heading": "## License",
+        "paragraph": 209,
+        "start": 9590,
+        "end": 9860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_4295056b84",
+      "fact": "下载模型权重与分词器需访问Meta网站并接受其许可。",
+      "tag": "F",
+      "quote": "please visit the Meta website and accept our License",
+      "start": 4910,
+      "end": 4962,
+      "locator": {
+        "heading": "## Download",
+        "paragraph": 168,
+        "start": 4856,
+        "end": 4964
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_4295056b84",
+      "fact": "Hugging Face也提供下载，需承认许可并填写模型卡中的表单。",
+      "tag": "F",
+      "quote": "by acknowledging the license and filling the form",
+      "start": 5521,
+      "end": 5570,
+      "locator": {
+        "heading": "### Access to Hugging Face",
+        "paragraph": 172,
+        "start": 5434,
+        "end": 5728
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_4295056b84",
+      "fact": "本资料提示下载链接在24小时后及一定下载量后失效。",
+      "tag": "F",
+      "quote": "the links expire after 24 hours and a certain amount of downloads",
+      "start": 5252,
+      "end": 5317,
+      "locator": {
+        "heading": "## Download",
+        "paragraph": 171,
+        "start": 5234,
+        "end": 5405
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_4295056b84",
+      "fact": "Llama 3.1发布后，本资料称已整合GitHub仓库并新增若干仓库。",
+      "tag": "F",
+      "quote": "we’ve consolidated GitHub repos",
+      "start": 3270,
+      "end": 3301,
+      "locator": {
+        "heading": "## Note of deprecation",
+        "paragraph": 156,
+        "start": 3192,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_4295056b84",
+      "fact": "该仓库定位为加载Llama 2模型并运行推理的最小示例。",
+      "tag": "F",
+      "quote": "a minimal example to load Llama 2 models and run inference",
+      "start": 4601,
+      "end": 4659,
+      "locator": {
+        "heading": "# (Deprecated) Llama 2",
+        "paragraph": 166,
+        "start": 4570,
+        "end": 4734
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_4295056b84",
+      "fact": "本资料页面显示该仓库有59.6k星标、9.8k分支。",
+      "tag": "F",
+      "quote": "Star 59.6k",
+      "start": 2123,
+      "end": 2133,
+      "locator": {
+        "heading": "## Navigation Menu",
+        "paragraph": 92,
+        "start": 2123,
+        "end": 2134
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_4295056b84",
+      "fact": "权重许可允许商业使用但获取需审批，分发属受控开放模式。",
+      "tag": "I",
+      "quote": "Once your request is approved, you will receive a signed URL over email.",
+      "start": 4965,
+      "end": 5037,
+      "locator": {
+        "heading": "## Download",
+        "paragraph": 169,
+        "start": 4965,
+        "end": 5133
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_9567207391",
+      "fact": "Gitee为开源中国旗下，自称国内第一大研发效能平台、全球第二大开源代码托管平台",
+      "tag": "F",
+      "quote": "Gitee 为开源中国旗下，国内第一大研发效能平台&全球第二大开源代码托管平台",
+      "start": 128,
+      "end": 167,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_9567207391",
+      "fact": "Gitee主要产品分为社区版、企业版、专业版、高校版、旗舰版",
+      "tag": "F",
+      "quote": "主要产品为社区版、企业版、专业版、高校版、旗舰版。",
+      "start": 168,
+      "end": 193,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_9567207391",
+      "fact": "自2013年上线，Gitee共服务1200万开发者，累计托管仓库超2800万个",
+      "tag": "F",
+      "quote": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个",
+      "start": 194,
+      "end": 246,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_9567207391",
+      "fact": "Gitee企业版与专业版已服务30万家企业，含1200家中大型私有化部署企业",
+      "tag": "F",
+      "quote": "Gitee 企业版 & 专业版共服务了 30 万家企业，包括了 1200 家中大型私有化部署企业。",
+      "start": 267,
+      "end": 316,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_9567207391",
+      "fact": "该平台面向企业提供在线使用与私有部署两种商业服务渠道",
+      "tag": "F",
+      "quote": "企业版在线使用：400-606-0201",
+      "start": 2074,
+      "end": 2094,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 102,
+        "start": 2074,
+        "end": 2095
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_9567207391",
+      "fact": "开源中国在办2026上海开源软件应用创新大赛，设百万奖池吸引项目",
+      "tag": "F",
+      "quote": "【大赛通知】开源中国「2026上海开源软件应用创新大赛」火热报名中，百万奖池等你的项目",
+      "start": 77,
+      "end": 120,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 77,
+        "end": 121
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_9567207391",
+      "fact": "其社区仓库中有终端AI编码助手，支持多种LLM提供商且默认DeepSeek",
+      "tag": "F",
+      "quote": "它支持多种 LLM 提供商，包括 DeepSeek（默认）、OpenAI...",
+      "start": 718,
+      "end": 757,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 40,
+        "start": 630,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_9567207391",
+      "fact": "本资料内容仅涉及代码托管平台的商业产品，未提及开源大模型生态及其商业模式",
+      "tag": "I",
+      "quote": "主要产品为社区版、企业版、专业版、高校版、旗舰版。",
+      "start": 168,
+      "end": 193,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    }
+  ]
+}

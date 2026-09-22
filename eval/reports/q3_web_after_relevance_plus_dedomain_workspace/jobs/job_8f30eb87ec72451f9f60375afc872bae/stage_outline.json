@@ -1,0 +1,113 @@
+{
+  "title": "教育领域使用生成式AI的收益与风险：资料核查提纲",
+  "sections": [
+    {
+      "heading": "资料范围与缺口总览",
+      "purpose": "概括可用资料及其对教育收益风险的覆盖缺口",
+      "required_evidence": [
+        "E-008",
+        "E-013",
+        "E-014",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育工作者视频生成用例",
+      "purpose": "说明资料列出的教育工作者视频生成用途",
+      "required_evidence": [
+        "E-001",
+        "E-002"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "免费计划与商业使用限制",
+      "purpose": "说明免费计划时长、画质、水印与商业使用限制",
+      "required_evidence": [
+        "E-003",
+        "E-004",
+        "E-005"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "内容隐私与安全规则",
+      "purpose": "说明生成内容私有性、保留期限与禁止内容规则",
+      "required_evidence": [
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育场景合规信息缺口",
+      "purpose": "指出学生数据、未成年人保护与学术诚信信息缺失",
+      "required_evidence": [
+        "E-008",
+        "E-013",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教育部平台相关条目",
+      "purpose": "列出教育部资料可见条目及其未涉及内容",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "即梦AI生成能力",
+      "purpose": "说明即梦AI文生图、视频生成与画布等功能",
+      "required_evidence": [
+        "E-015",
+        "E-016",
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-021"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "即梦AI教育场景未覆盖",
+      "purpose": "指出即梦AI资料未涉及教育场景及教学收益风险",
+      "required_evidence": [
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "适用冲突识别",
+      "purpose": "呈现教育工作者教学用途与免费计划个人使用限制的冲突",
+      "required_evidence": [
+        "E-001",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "待补问题与结论边界",
+      "purpose": "汇总尚缺的合规、收益、版权与产品评估信息",
+      "required_evidence": [
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-008",
+        "E-013",
+        "E-014",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

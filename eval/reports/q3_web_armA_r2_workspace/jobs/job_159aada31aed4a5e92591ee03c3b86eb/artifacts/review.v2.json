@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "限制因素段“待补问题还表明…”指向资料中不存在的“待补问题”，无证据支撑，应删或改为本报告自述"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-002“较上周同期下降0.8%”与E-003“下方百分数为较上年同期变化”关系未说明，读者易混同比与环比"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-008、E-024、E-016、E-030、E-031、E-032、E-039均为来源原文直述，标〔推断〕不当，宜标〔事实〕"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "〔未知〕标记全文未加定义，提纲仅要求事实/推断标注，建议统一或说明含义"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "未说明各资料发布或数据日期，重庆“实时”拥堵指数与朝阳2026版资料的时效性无法判断"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“可推断严重拥堵呈局部点位特征”仅凭E-005、E-006两点位，宜弱化为个案而非特征"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-008、E-024、E-031、E-032在范围、缺失、结论三处重复引用，建议合并以精简"
+  }
+ ]
+}

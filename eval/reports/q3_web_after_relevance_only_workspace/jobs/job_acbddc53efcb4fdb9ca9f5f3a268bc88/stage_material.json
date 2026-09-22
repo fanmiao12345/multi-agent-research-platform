@@ -1,0 +1,116 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "AI视频生成工具功能",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "资料介绍可将文字或图片生成带动态画面、对白和声音的AI视频工具。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "MiniMax H3支持文生视频、图生视频并同步生成对白、音效与环境音。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "生成器可选模型包括AI Video Maker V3、Wan 2.7与Seedance 2.0。"
+          }
+        ]
+      },
+      {
+        "name": "视频生成性能与输出规格",
+        "points": [
+          {
+            "evidence_id": "E-004",
+            "statement": "资料称每个视频片段平均约200秒生成完成。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "免费计划为5秒480p，付费计划提供720p高清视频。"
+          }
+        ]
+      },
+      {
+        "name": "隐私与内容保留",
+        "points": [
+          {
+            "evidence_id": "E-006",
+            "statement": "资料称生成内容默认私有，标准视频保留24小时。"
+          }
+        ]
+      },
+      {
+        "name": "目标用户与用例",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "典型用例面向营销人员、内容创作者和教育工作者。"
+          }
+        ]
+      },
+      {
+        "name": "AI工具导航分类",
+        "points": [
+          {
+            "evidence_id": "E-010",
+            "statement": "该导航站按用途分类收录免费AI工具。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "其分类含AI写作、AI视频、AI办公等，不含软件测试。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "该导航自称收录最全并列出AI编程等分类。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "其提供免费AIGC视频课与教程，含GPT进阶、AI绘画等。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "资料未提及软件测试，也无相关工具类别。"
+          }
+        ]
+      },
+      {
+        "name": "主题相关性判定",
+        "points": [
+          {
+            "evidence_id": "E-008",
+            "statement": "AI视频生成资料全文未提及软件测试，无法据此得出该趋势。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "甲骨文字形考释资料未提及生成式AI或软件测试。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "生成式AI在软件测试中的具体应用场景有哪些？",
+        "missing": "软件测试相关案例或工具说明"
+      },
+      {
+        "question": "生成式AI在软件测试中的应用趋势如何？",
+        "missing": "趋势数据、行业报告或时间序列"
+      },
+      {
+        "question": "有哪些生成式AI测试工具或平台？",
+        "missing": "测试工具分类与产品清单"
+      },
+      {
+        "question": "生成式AI对测试效率或质量的影响证据？",
+        "missing": "实验、指标或用户反馈"
+      },
+      {
+        "question": "为何现有资料未覆盖该主题？",
+        "missing": "直接讨论生成式AI与软件测试的资料"
+      }
+    ],
+    "duplicates": []
+  }
+}

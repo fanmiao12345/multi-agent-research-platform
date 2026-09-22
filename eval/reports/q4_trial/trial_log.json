@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "trial_70825563",
+      "date": "2026-09-22",
+      "task": "T02 单点问答:token 单价换算为每百万 token 成本",
+      "result": "accepted",
+      "status": "completed",
+      "intervention_minutes": 0.0,
+      "revision_minutes": 0.0,
+      "notes": "real 模式端到端冒烟通过;结果正确(0.5 美元/百万,1 亿 token=50 美元);轻微多余:自行追加了人民币换算,未在指令内;job_id=job_1ad533776f7448a3ba2be19beaf7c09e",
+      "recorded_at": "2026-09-22T11:42:28"
+    }
+  ]
+}

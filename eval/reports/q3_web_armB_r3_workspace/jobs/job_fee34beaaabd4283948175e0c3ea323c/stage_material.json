@@ -1,0 +1,98 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "算法基础教程内容",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "该资料是算法入门教程，讲解算法基础知识。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "该资料将算法定义为明确的、有限的、可执行的指令序列。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "该资料提出算法须具备有穷性、确定性、可行性、输入、输出五特征。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "该资料用时间复杂度和空间复杂度评价算法优劣。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "该资料以冒泡排序为例讲解实现与复杂度分析。"
+          }
+        ]
+      },
+      {
+        "name": "算法教程未覆盖目标问题",
+        "points": [
+          {
+            "evidence_id": "E-006",
+            "statement": "该资料未出现“算法推荐规则”或“强制公开”相关表述。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "该资料未讨论是否应强制公开算法推荐规则。"
+          }
+        ]
+      },
+      {
+        "name": "administrator资料与目标无关",
+        "points": [
+          {
+            "evidence_id": "E-008",
+            "statement": "该资料主题是administrator读音与释义，与算法推荐规则无关。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "该资料未涉及任何算法治理议题。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "该资料对“用户”的解释未涉及推荐算法。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "该资料未提及算法推荐规则及强制公开。"
+          }
+        ]
+      },
+      {
+        "name": "目标问题缺乏可用论据",
+        "points": [
+          {
+            "evidence_id": "E-012",
+            "statement": "就目标问题，该资料未提供任何可用论据。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "是否存在支持强制公开算法推荐规则的法律或伦理依据？",
+        "missing": "相关法规、政策文本或伦理研究"
+      },
+      {
+        "question": "是否存在反对强制公开算法推荐规则的理由？",
+        "missing": "商业秘密、安全风险、可操作性等材料"
+      },
+      {
+        "question": "算法推荐规则应公开哪些内容与程度？",
+        "missing": "规则范围、技术标准、披露粒度材料"
+      },
+      {
+        "question": "强制公开可能带来哪些实际影响？",
+        "missing": "实证评估、案例或行业数据"
+      },
+      {
+        "question": "不同主体对强制公开持何立场？",
+        "missing": "平台、监管者、用户、专家意见"
+      }
+    ],
+    "duplicates": []
+  }
+}

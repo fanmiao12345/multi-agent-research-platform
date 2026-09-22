@@ -1,0 +1,164 @@
+{
+  "title": "机器人流程自动化与智能体的边界：基于现有资料的证据梳理",
+  "sections": [
+    {
+      "heading": "报告目标与资料范围",
+      "purpose": "说明本报告要回答的边界问题，并交代资料范围与无关来源的排除。",
+      "required_evidence": [
+        "E-049",
+        "E-050",
+        "E-051"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "RPA 的定义与能力边界",
+      "purpose": "归纳现有资料对 RPA 规则性、重复性、无自主学习能力的界定，并指出定义缺口。",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-013",
+        "E-024"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "AI 认知能力与智能体特征",
+      "purpose": "梳理智能体的认知、推理、自主决策与护栏特征，及其在平台中的构建入口。",
+      "required_evidence": [
+        "E-011",
+        "E-014",
+        "E-015",
+        "E-016",
+        "E-019",
+        "E-034",
+        "E-037",
+        "E-043"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "RPA 与 AI 融合的形态与进阶表述",
+      "purpose": "对照 IPA、Agent 进阶形态与 RPA 增强的表述，呈现融合对原有边界的影响。",
+      "required_evidence": [
+        "E-012",
+        "E-014",
+        "E-015",
+        "E-016",
+        "E-044"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "智能体自动化中的角色分工与控制",
+      "purpose": "梳理智能体思考、机器人执行、人类领导或引导的不同表述，以及控制与治理安排。",
+      "required_evidence": [
+        "E-017",
+        "E-018",
+        "E-026",
+        "E-027",
+        "E-028",
+        "E-029",
+        "E-030",
+        "E-031",
+        "E-032",
+        "E-033",
+        "E-042"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "影刀产品体系中的并列与定位",
+      "purpose": "呈现影刀资料将 RPA 与 AI WorkOS 并列，且未展开能力边界的情况。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "UiPath 平台中的 RPA、智能体与编排",
+      "purpose": "归纳平台将 RPA、智能体 AI、API 并列为能力，以及智能体型编排与治理的表述。",
+      "required_evidence": [
+        "E-019",
+        "E-020",
+        "E-021",
+        "E-022",
+        "E-023",
+        "E-025",
+        "E-035",
+        "E-036",
+        "E-038",
+        "E-039",
+        "E-040"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Studio 中的工具分工与人机协作",
+      "purpose": "说明 Studio 中 AI 智能体、RPA 工作流、API 集成与人的协作方式及工具差异。",
+      "required_evidence": [
+        "E-041",
+        "E-042",
+        "E-043",
+        "E-044",
+        "E-045",
+        "E-046",
+        "E-047",
+        "E-048"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "边界争议与开放冲突",
+      "purpose": "列出人类角色、执行主体划分、智能体与 RPA 关系的冲突，不进行裁决。",
+      "required_evidence": [
+        "E-017",
+        "E-018",
+        "E-026",
+        "E-031",
+        "E-025",
+        "E-029",
+        "E-014",
+        "E-015",
+        "E-010",
+        "E-012",
+        "E-044"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "研究缺口与待补材料",
+      "purpose": "列出官方边界定义、场景对照、案例拆解、控制边界说明等缺失信息。",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-024",
+        "E-051"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论：现有证据支持的边界判断",
+      "purpose": "总结可确定的 RPA 与智能体边界，以及因冲突和缺口仍需标注未知的部分。",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-014",
+        "E-015",
+        "E-025",
+        "E-029",
+        "E-030",
+        "E-031",
+        "E-043"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

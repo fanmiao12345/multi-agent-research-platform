@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_c91bcce58425434e866f31c6c000bd21",
+  "goal": "机器人流程自动化与智能体的边界",
+  "started_at": "2026-09-18T14:41:40",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "draft",
+    "termination_reason": "budget_exceeded",
+    "final_artifact_id": "report.v2",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 48 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:43:41"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "8 个主题，4 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:44:03"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 3, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:44:53"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "11 个章节",
+        "finished_at": "2026-09-18T14:45:26"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（3205字）",
+        "finished_at": "2026-09-18T14:45:52"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 7,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T14:47:11"
+      },
+      {
+        "stage": "current",
+        "status": "budget_stopped",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "根任务已停止：cost_limit",
+        "finished_at": "2026-09-18T14:48:21"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "根预算已停止（根任务已停止：cost_limit）：保留已保存的阶段产物，不视为验收成功"
+  }
+}

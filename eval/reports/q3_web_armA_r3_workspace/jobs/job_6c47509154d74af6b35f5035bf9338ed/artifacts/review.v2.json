@@ -1,0 +1,12 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-030在报告目标、问答来源、缺口、结论均标为〔推断〕，但证据索引为来源事实，标注错误。"
+  }
+ ]
+}

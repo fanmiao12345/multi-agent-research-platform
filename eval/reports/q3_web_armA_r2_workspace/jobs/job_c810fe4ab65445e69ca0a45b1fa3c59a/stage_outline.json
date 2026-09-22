@@ -1,0 +1,115 @@
+{
+  "title": "是否应强制公开算法推荐规则：基于现有证据的资料整理提纲",
+  "sections": [
+    {
+      "heading": "报告任务与证据边界",
+      "purpose": "说明本报告要回答的问题及可用证据范围",
+      "required_evidence": [
+        "E-001",
+        "E-007",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "算法与推荐规则的概念基础",
+      "purpose": "界定算法定义与合格算法的基本特征",
+      "required_evidence": [
+        "E-002",
+        "E-003"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "算法评价维度",
+      "purpose": "呈现评价算法优劣的时间与空间复杂度标准",
+      "required_evidence": [
+        "E-005",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "推荐系统应用的间接线索",
+      "purpose": "考察搜索引擎示例对推荐场景的参考意义",
+      "required_evidence": [
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "教学资料对公开问题的覆盖",
+      "purpose": "确认算法教学资料是否讨论强制公开",
+      "required_evidence": [
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "欧盟资料的政策相关性",
+      "purpose": "核查欧盟概况资料是否涉及算法公开",
+      "required_evidence": [
+        "E-008",
+        "E-009",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "欧盟新闻议题的邻近线索",
+      "purpose": "梳理欧盟近期议题与平台治理的关联",
+      "required_evidence": [
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "直接政策证据的缺口",
+      "purpose": "指出缺少法律条文与官方提案的直接证据",
+      "required_evidence": [
+        "E-007",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "利弊论证证据的缺口",
+      "purpose": "说明缺少支持与反对强制公开的论证材料",
+      "required_evidence": [
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "公开范围与执行机制的缺口",
+      "purpose": "指出缺少公开对象、范围、方式与例外材料",
+      "required_evidence": [
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "风险与执法实证的缺口",
+      "purpose": "说明缺少不公开风险与平台合规案例证据",
+      "required_evidence": [
+        "E-007",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与待补事项",
+      "purpose": "在证据不足下给出有限结论与补充清单",
+      "required_evidence": [
+        "E-007",
+        "E-008",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

@@ -1,0 +1,520 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_20047935814045f08544cfc497c9d423",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 个人知识管理系统中的检索与记忆设计提纲\n## 工具定位与知识网络基础\nObsidian是基于Markdown的个人知识库与笔记管理工具【E-015】〔事实〕。笔记以普通Markdown文档保存，便于迁移、备份和长期管理【E-016】〔事实〕。Obsidian把笔记变成可连接、可扩展、可计算的知识网络【E-017】〔事实〕。普通笔记软件是信息仓库，Obsidian更像知识中枢【E-018】〔事实〕。其核心思想是连接零散笔记，让知识自己长出来【E-019】〔事实〕。它通过双向链接自动建立知识之间的关系【E-020】〔事实〕，并以知识图谱自动生成知识关系网络图【E-021】〔事实〕。据此，工具定位偏向网络化知识组织，而非单纯存储〔推断〕。\n## 连接式笔记的组织原则\n卡片盒不按主题放入文件夹，而把笔记链接到相关笔记【E-022】〔事实〕。永久笔记是系统核心，每张一个成形想法并链入已有网络【E-024】〔事实〕。每张新笔记至少链接一张旧笔记，并写一句说明二者关系【E-025】〔事实〕。每张笔记只装一个想法才能链入多种语境，且永远用自己的话写【E-027】〔事实〕。没链接的笔记只是一堆，只收集不连接是常见误区【E-029】〔事实〕。链接是思考过程的检查点，可存储并继续思维轨迹【E-032】〔事实〕。链接本身不具意义，需说明笔记为何或如何相关【E-033】〔事实〕。建议在标题中总结内容，使未来链接更容易【E-037】〔事实〕。这些原则要求链接、关系说明与单想法笔记配合，才可能形成可延续的组织〔推断〕。\n## 检索与回忆的现存痛点\n常见学习问题是学过会忘，或知道记过却找不到【E-014】〔事实〕。仅靠标签组织笔记不现实，因有效使用标签需记住所有标签【E-034】〔事实〕。搜索不可靠，因知识发展会用不同术语描述同一事物【E-035】〔事实〕。结构笔记会冻结思维轨迹的意义，同时允许其无限发展【E-036】〔事实〕。因此，标签与搜索在长期知识发展中存在记忆负担和术语漂移风险〔推断〕；E-036未直接说明结构笔记是否造成检索困难，其检索影响待补〔缺口〕。\n## 链接在回忆与思考中的作用\n盒子可被提问，顺着链接找到自己早已忘记的想法【E-023】〔事实〕。写作时顺着链接走，让盒子替自己浮现论证【E-026】〔事实〕。Zettelkasten接近第二个大脑，能拥有思维轨迹并产生想法【E-031】〔事实〕。链接是思考过程的检查点，可存储并继续思维轨迹【E-032】〔事实〕。链接本身不具意义，需说明笔记为何或如何相关【E-033】〔事实〕。可见，链接作用不止定位，也可能把旧想法重新带入当前思考〔推断〕，但其效果依赖关系说明【E-033】〔推断〕。\n## 记忆与思考的目标张力\n常见学习问题是学过会忘，或知道记过却找不到【E-014】〔事实〕。记笔记目的是更好思考，捕获是手段，保持记忆只是副作用【E-030】〔事实〕。Zettelkasten接近第二个大脑，能拥有思维轨迹并产生想法【E-031】〔事实〕。于是出现目标张力：E-030把思考置于优先，记忆为副作用；E-014指出会忘与找不到的问题，但未主张检索优先〔事实〕。两者优先性未由现有证据裁决〔开放冲突〕。\n## 第二大脑与卡片盒的层级关系\n卡片盒是具体链接方法；第二大脑是采集、组织、检索的更广系统【E-028】〔事实〕。Zettelkasten接近第二个大脑，能拥有思维轨迹并产生想法【E-031】〔事实〕。据此，E-028已把卡片盒与第二大脑分层，E-031仅称Zettelkasten接近第二大脑，未称等同〔事实〕。因此，可把卡片盒/Zettelkasten视为更广第二大脑系统下的具体方法或接近形态〔推断〕；二者是否等同并非E-028支持的冲突，待明确的是层级称谓〔开放冲突〕。\n## 语义消歧对检索标注的启示\n“个人”一词的含义取决于具体语境【E-007】〔事实〕。在“我个人认为”中，“个人”明确指说话者自己【E-008】〔事实〕。在“个人有个人的看法”中，“个人”指不包括说话者在内的其他人【E-009】〔事实〕。后一种用法强调个体之间的差异性和独立性【E-010】〔事实〕。结论为“个人”既可指自己，也可指不包括自己在内的其他人【E-011】〔事实〕。该词具体含义需要根据上下文来判断【E-012】〔事实〕。同一词在不同语境下指代不同，检索或标注时需借上下文消歧【E-013】〔事实〕。因此，检索标注不能只依赖词形，还要记录语境线索〔推断〕。\n## 非目标平台的检索功能参照\n非目标平台资料显示，该平台支持首页推荐、分类筛选、关键词搜索与个性化智能推荐【E-046】〔事实〕。该平台智能推荐基于深度学习与用户画像匹配内容偏好【E-048】〔事实〕。该平台提供影单收藏与评分参考功能【E-047】〔事实〕。该平台支持电脑、平板、手机全端适配，体验流畅一致【E-049】〔事实〕。这些功能可作为检索、分类、推荐与多端适配的参照〔推断〕，但属于非目标平台信息，不能直接视为个人知识管理设计依据〔推断〕。\n## 资料边界与迁移限制\n该资料与个人知识管理系统的检索与记忆设计无直接对应内容【E-006】〔事实〕。因此，不能把该资料直接迁移为本题的检索与记忆设计结论〔推断〕。非目标平台的推荐、分类、搜索与多端适配只能作为外部参照，需与目标系统证据分开〔推断〕。\n## 开放冲突与未裁决问题\n第一，双向链接能否自动建立有意义的知识关系：一方面双向链接自动建立知识之间的关系【E-020】〔事实〕，另一方面链接本身不具意义，需说明笔记为何或如何相关【E-033】〔事实〕。该冲突未裁决〔开放冲突〕。第二，Zettelkasten与第二大脑的层级关系：卡片盒是具体链接方法，第二大脑是更广系统【E-028】〔事实〕，而Zettelkasten接近第二个大脑【E-031】〔事实〕；E-028已区分二者，故不能称其等同冲突，待明确的是称谓与层级关系〔开放冲突〕。第三，笔记应优先促进思考，还是优先解决记忆与查找：常见问题是会忘或找不到【E-014】〔事实〕，而记笔记目的是更好思考，保持记忆只是副作用【E-030】〔事实〕；E-014未主张检索优先，优先性未裁决〔开放冲突〕。以上三组均保持开放，不预作裁决〔开放冲突〕。\n## 设计缺口与待补证据\n现有证据显示会忘与找不到是问题【E-014】〔事实〕，顺链接可找回旧想法【E-023】〔事实〕，写作时可顺链接浮现论证【E-026】〔事实〕，且Zettelkasten接近第二大脑【E-031】〔事实〕。但个人知识管理系统应采用何种检索机制仍缺全文搜索、查询语法、索引与排序等设计材料〔缺口〕。如何支持记忆巩固也缺间隔重复、复习队列、遗忘曲线等机制材料〔缺口〕。标签局限在于需记住所有标签【E-034】〔事实〕，搜索局限在于术语变化【E-035】〔事实〕，结构笔记会冻结思维轨迹意义并允许无限发展【E-036】〔事实〕；但标签和搜索局限有无替代方案，缺对照实验或替代检索方案材料〔缺口〕。双向链接与知识图谱如何提升可检索性，缺链接检索、图谱查询与性能评测材料〔缺口〕。卡片盒与第二大脑如何落地为软件功能，缺具体软件功能文档、操作流程与用户数据〔缺口〕。记笔记目的指向更好思考【E-030】〔事实〕，但检索机制与记忆巩固仍是待补重点〔缺口〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 5,
+    "usable": 5,
+    "statuses": {
+      "ok": 5
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 37 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:12:36"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "7 个主题，2 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:13:04"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 16, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:14:33"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "11 个章节",
+        "finished_at": "2026-09-18T14:14:47"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2889字）",
+        "finished_at": "2026-09-18T14:15:16"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T14:16:16"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-18T14:17:08"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 10,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-18T14:17:24"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 56,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.ncss.cn/student/m/resume/personcenter.html",
+      "https://zhidao.baidu.com/question/2002226940225630987.html",
+      "https://www.runoob.com/obsidian/obsidian-tutorial.html",
+      "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+      "https://pkmer.cn/Pkmer-Docs/02-%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/zettelkasten/zettelkasten-%E6%96%B9%E6%B3%95-%E5%A6%82%E4%BD%95%E4%B8%BA%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%81%9A%E6%9C%80%E6%9C%89%E6%95%88%E7%9A%84%E7%AC%94%E8%AE%B0/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 机制",
+        "rank": 3,
+        "title": "个人中心-国家大学生就业服务平台",
+        "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+        "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 机制",
+        "rank": 5,
+        "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+        "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+        "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+        "published_date": "2025-05-24",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Obsidian 双链笔记 语义搜索",
+        "rank": 5,
+        "title": "Obsidian 教程 | 菜鸟教程",
+        "url": "https://www.runoob.com/obsidian/obsidian-tutorial.html",
+        "snippet": "Obsidian 教程 Obsidian 是一款基于 Markdown 文件的个人知识库与笔记管理工具，主要用于知识整理、笔记记录和构建个人知识体系 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Zettelkasten 知识图谱 记忆",
+        "rank": 2,
+        "title": "卡片盒笔记法（Zettelkasten）完整指南（2026） | Flexnote",
+        "url": "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+        "snippet": "2026年6月14日 · 卡片盒笔记法（Zettelkasten，\"卡片盒\"） 是一套把零散阅读 转化为原创想法的笔记方法。 社会学家卢曼用它出版了 …",
+        "published_date": "2026-06-14",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Zettelkasten 知识图谱 记忆",
+        "rank": 5,
+        "title": "Zettelkasten 方法： 如何为知识管理做最有效的笔记",
+        "url": "https://pkmer.cn/Pkmer-Docs/02-%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/zettelkasten/zettelkasten-%E6%96%B9%E6%B3%95-%E5%A6%82%E4%BD%95%E4%B8%BA%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%81%9A%E6%9C%80%E6%9C%89%E6%95%88%E7%9A%84%E7%AC%94%E8%AE%B0/",
+        "snippet": "2023年8月28日 · 既然我们谈论的是 Zettelkasten 方法，我就和你分享一些我所遵循的原则，以便顺利地使用它。 Zettelkasten 方法的 …",
+        "published_date": "2023-08-28",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 机制",
+        "urls": [
+          "https://www.ncss.cn/student/m/resume/personcenter.html",
+          "https://zhidao.baidu.com/question/2002226940225630987.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 检索 机制",
+            "rank": 3,
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 检索 机制",
+            "rank": 5,
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+            "published_date": "2025-05-24",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "个人的意思_个人的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bd2f7f480",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "个体 - 百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AA%E4%BD%93/2667121",
+            "relevance": 0.071,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.22,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 记忆 间隔重复",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "个人的意思_个人的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bd2f7f480",
+            "relevance": 0.111,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "个体 - 百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AA%E4%BD%93/2667121",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.197,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Obsidian 双链笔记 语义搜索",
+        "urls": [
+          "https://www.runoob.com/obsidian/obsidian-tutorial.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Obsidian 双链笔记 语义搜索",
+            "rank": 5,
+            "title": "Obsidian 教程 | 菜鸟教程",
+            "url": "https://www.runoob.com/obsidian/obsidian-tutorial.html",
+            "snippet": "Obsidian 教程 Obsidian 是一款基于 Markdown 文件的个人知识库与笔记管理工具，主要用于知识整理、笔记记录和构建个人知识体系 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Obsidian - Sharpen your thinking",
+            "url": "https://obsidian.md/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "Download - Obsidian",
+            "url": "https://obsidian.md/download",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "AI时代，你需要熟悉的核心软件是Obsidian，Obsidian使用 ...",
+            "url": "https://zhuanlan.zhihu.com/p/2026071811813643264",
+            "relevance": 0.214,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "【2026最新】Obsidian下载、安装、插件配置全流程教程 ...",
+            "url": "https://zhuanlan.zhihu.com/p/2066270964661346445",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.204,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Zettelkasten 知识图谱 记忆",
+        "urls": [
+          "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+          "https://pkmer.cn/Pkmer-Docs/02-%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/zettelkasten/zettelkasten-%E6%96%B9%E6%B3%95-%E5%A6%82%E4%BD%95%E4%B8%BA%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%81%9A%E6%9C%80%E6%9C%89%E6%95%88%E7%9A%84%E7%AC%94%E8%AE%B0/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Zettelkasten 知识图谱 记忆",
+            "rank": 2,
+            "title": "卡片盒笔记法（Zettelkasten）完整指南（2026） | Flexnote",
+            "url": "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+            "snippet": "2026年6月14日 · 卡片盒笔记法（Zettelkasten，\"卡片盒\"） 是一套把零散阅读 转化为原创想法的笔记方法。 社会学家卢曼用它出版了 …",
+            "published_date": "2026-06-14",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Zettelkasten 知识图谱 记忆",
+            "rank": 5,
+            "title": "Zettelkasten 方法： 如何为知识管理做最有效的笔记",
+            "url": "https://pkmer.cn/Pkmer-Docs/02-%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/zettelkasten/zettelkasten-%E6%96%B9%E6%B3%95-%E5%A6%82%E4%BD%95%E4%B8%BA%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86%E5%81%9A%E6%9C%80%E6%9C%89%E6%95%88%E7%9A%84%E7%AC%94%E8%AE%B0/",
+            "snippet": "2023年8月28日 · 既然我们谈论的是 Zettelkasten 方法，我就和你分享一些我所遵循的原则，以便顺利地使用它。 Zettelkasten 方法的 …",
+            "published_date": "2023-08-28",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Zettelkasten方法简介 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/299377905",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "用 Obsidian 践行 Zettelkasten -- 打造你的第二大脑 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/2010790891590288674",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是 Zettelkasten 卡片盒笔记法？ - 知乎",
+            "url": "https://www.zhihu.com/question/384309878",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.234,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（个人知识管理系统中的检索与记忆设计）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 13.71,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

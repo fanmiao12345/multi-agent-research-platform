@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-030）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-030）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-030）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-030）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "报告边界句“不把就业界面材料当作目标主题证据”标〔推断〕不当，宜作方法说明。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论段“卡片盒材料提供顺链找回与链接旧笔记的线索”标〔事实〕，但“提供线索”属评估判断，宜标推断。"
+  }
+ ]
+}

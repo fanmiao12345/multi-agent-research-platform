@@ -1,0 +1,848 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_69739289cb",
+      "fact": "本资料为国家大学生就业服务平台个人中心页面，首先要求用户登录。",
+      "tag": "F",
+      "quote": "点击登录",
+      "start": 4,
+      "end": 8,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_69739289cb",
+      "fact": "本资料说明登录的目的是获取个性化推荐职位。",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_69739289cb",
+      "fact": "本资料页面导航涉及职位、招聘会与个性化推荐三类条目。",
+      "tag": "F",
+      "quote": "职位 招聘会 个性化推荐",
+      "start": 52,
+      "end": 64,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 2,
+        "start": 30,
+        "end": 87
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_69739289cb",
+      "fact": "本资料提供就业意愿填写，并提示可在个人中心修改。",
+      "tag": "F",
+      "quote": "就业意愿 （可以在个人中心修改）",
+      "start": 88,
+      "end": 104,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 3,
+        "start": 88,
+        "end": 105
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_69739289cb",
+      "fact": "本资料页面含一个提交操作入口。",
+      "tag": "F",
+      "quote": "提交",
+      "start": 106,
+      "end": 108,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 4,
+        "start": 106,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_69739289cb",
+      "fact": "本资料与个人知识管理系统的检索与记忆设计无直接对应内容。",
+      "tag": "I",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_f33d1fa3cb",
+      "fact": "本资料指出“个人”一词的含义取决于具体语境。",
+      "tag": "F",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 307,
+      "end": 326,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 307,
+        "end": 329
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_f33d1fa3cb",
+      "fact": "在“我个人认为”一类说法中，“个人”明确指说话者自己。",
+      "tag": "F",
+      "quote": "如“我个人认为”或“我有个人的想法”，这里的“个人”明确指的是说话者自己",
+      "start": 347,
+      "end": 383,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 340,
+        "end": 385
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_f33d1fa3cb",
+      "fact": "在“个人有个人的看法”一类说法中，“个人”指不包括说话者在内的其他人。",
+      "tag": "F",
+      "quote": "这里的“个人”则是指代许多人中的每一个，即不包括说话者自己在内的其他人",
+      "start": 428,
+      "end": 463,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 396,
+        "end": 483
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_f33d1fa3cb",
+      "fact": "本资料称后一种用法强调个体之间的差异性和独立性。",
+      "tag": "F",
+      "quote": "它强调的是个体之间的差异性和独立性",
+      "start": 464,
+      "end": 481,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 396,
+        "end": 483
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_f33d1fa3cb",
+      "fact": "本资料结论为“个人”既可指自己，也可指不包括自己在内的其他人。",
+      "tag": "F",
+      "quote": "“个人”既可以指代自己，也可以指代不包括自己在内的其他人",
+      "start": 487,
+      "end": 515,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_f33d1fa3cb",
+      "fact": "本资料认为该词的具体含义需依据上下文判断。",
+      "tag": "F",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 516,
+      "end": 530,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_f33d1fa3cb",
+      "fact": "同一词在不同语境下指代不同，检索或标注时需借上下文消歧。",
+      "tag": "I",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 516,
+      "end": 530,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」指出常见学习问题是学过会忘，或知道记过却找不到。",
+      "tag": "F",
+      "quote": "学过很多东西，但过段时间就忘了，或者知道记过，却找不到",
+      "start": 771,
+      "end": 798,
+      "locator": {
+        "heading": "## 为什么使用 Obsidian",
+        "paragraph": 45,
+        "start": 752,
+        "end": 800
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」称 Obsidian 是基于 Markdown 的个人知识库与笔记管理工具。",
+      "tag": "F",
+      "quote": "Obsidian 是一款基于 Markdown 文件的个人知识库与笔记管理工具",
+      "start": 551,
+      "end": 590,
+      "locator": {
+        "heading": "# Obsidian 教程",
+        "paragraph": 42,
+        "start": 551,
+        "end": 615
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」称 Obsidian 笔记以普通 Markdown 文档保存，便于长期管理。",
+      "tag": "F",
+      "quote": "所有笔记都以普通 Markdown 文档形式保存，便于迁移、备份和长期管理",
+      "start": 636,
+      "end": 673,
+      "locator": {
+        "heading": "# Obsidian 教程",
+        "paragraph": 43,
+        "start": 616,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」称 Obsidian 把笔记变成可连接、可扩展、可计算的知识网络。",
+      "tag": "F",
+      "quote": "它把笔记变成一个可连接、可扩展、可计算的知识网络",
+      "start": 706,
+      "end": 730,
+      "locator": {
+        "heading": "# Obsidian 教程",
+        "paragraph": 44,
+        "start": 676,
+        "end": 732
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」称普通笔记软件是信息仓库，Obsidian 更像知识中枢。",
+      "tag": "F",
+      "quote": "普通笔记软件通常只是信息仓库，而 Obsidian 更像知识中枢",
+      "start": 801,
+      "end": 833,
+      "locator": {
+        "heading": "## 为什么使用 Obsidian",
+        "paragraph": 46,
+        "start": 801,
+        "end": 835
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」称 Obsidian 核心思想是连接零散笔记，让知识自己长出来。",
+      "tag": "F",
+      "quote": "把零散的笔记连接起来，让知识自己长出来",
+      "start": 853,
+      "end": 872,
+      "locator": {
+        "heading": "## 为什么使用 Obsidian",
+        "paragraph": 47,
+        "start": 836,
+        "end": 874
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」称 Obsidian 通过双向链接自动建立知识之间的关系。",
+      "tag": "F",
+      "quote": "通过双向链接自动建立知识之间的关系",
+      "start": 907,
+      "end": 924,
+      "locator": {
+        "heading": "### Obsidian 能带来什么",
+        "paragraph": 49,
+        "start": 902,
+        "end": 925
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_207a01e298",
+      "fact": "「本资料」称 Obsidian 知识图谱自动生成知识关系网络图。",
+      "tag": "F",
+      "quote": "自动生成知识关系网络图",
+      "start": 966,
+      "end": 977,
+      "locator": {
+        "heading": "### Obsidian 能带来什么",
+        "paragraph": 51,
+        "start": 961,
+        "end": 978
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_7de7100627",
+      "fact": "卡片盒笔记不按主题放入文件夹，而是把笔记链接到相关笔记，让结构从连接中浮现。",
+      "tag": "F",
+      "quote": "让结构从连接中浮现，而非预设层级",
+      "start": 479,
+      "end": 495,
+      "locator": {
+        "heading": "## 什么是卡片盒笔记法？",
+        "paragraph": 11,
+        "start": 402,
+        "end": 537
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_7de7100627",
+      "fact": "盒子可被提问，顺着链接找到自己早已忘记的想法。",
+      "tag": "F",
+      "quote": "顺着链接找到你早已忘记自己有过的想法",
+      "start": 517,
+      "end": 535,
+      "locator": {
+        "heading": "## 什么是卡片盒笔记法？",
+        "paragraph": 11,
+        "start": 402,
+        "end": 537
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_7de7100627",
+      "fact": "永久笔记是系统核心，每张一个成形的想法，写给未来的你并链入已有网络。",
+      "tag": "F",
+      "quote": "每张一个成形的想法，写给未来的你",
+      "start": 613,
+      "end": 629,
+      "locator": {
+        "heading": "## 三类笔记",
+        "paragraph": 12,
+        "start": 547,
+        "end": 664
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_7de7100627",
+      "fact": "为每张新笔记至少链接一张旧笔记，并写一句说明二者关系。",
+      "tag": "F",
+      "quote": "为每张新笔记至少链一张旧笔记",
+      "start": 811,
+      "end": 825,
+      "locator": {
+        "heading": "## 如何开始卡片盒",
+        "paragraph": 15,
+        "start": 747,
+        "end": 876
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_7de7100627",
+      "fact": "写作时顺着链接走，让盒子替自己浮现论证。",
+      "tag": "F",
+      "quote": "写作时顺着链接走",
+      "start": 842,
+      "end": 850,
+      "locator": {
+        "heading": "## 如何开始卡片盒",
+        "paragraph": 15,
+        "start": 747,
+        "end": 876
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_7de7100627",
+      "fact": "每张笔记只装一个想法才能链入多种语境，且永远用自己的话写。",
+      "tag": "F",
+      "quote": "每张笔记只装一个想法（才能链入多种语境）",
+      "start": 689,
+      "end": 709,
+      "locator": {
+        "heading": "## 三类笔记",
+        "paragraph": 14,
+        "start": 677,
+        "end": 734
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_7de7100627",
+      "fact": "卡片盒是具体的链接方法；第二大脑是采集、组织、检索的更广系统。",
+      "tag": "F",
+      "quote": "是采集、组织、检索的更广系统",
+      "start": 1392,
+      "end": 1406,
+      "locator": {
+        "heading": "### 卡片盒和第二大脑有何不同？",
+        "paragraph": 20,
+        "start": 1372,
+        "end": 1414
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_7de7100627",
+      "fact": "没链接的笔记只是一堆，只收集不连接是常见误区。",
+      "tag": "F",
+      "quote": "没链接的笔记只是一堆",
+      "start": 1127,
+      "end": 1137,
+      "locator": {
+        "heading": "## 常见误区",
+        "paragraph": 17,
+        "start": 1119,
+        "end": 1212
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_55914825b6",
+      "fact": "本资料称记笔记目的是更好思考，捕获是手段，保持记忆只是副作用。",
+      "tag": "F",
+      "quote": "记笔记的目的是为了更好地思考 。捕获是一种手段；保持记忆也只是一种副作用。",
+      "start": 3754,
+      "end": 3791,
+      "locator": {
+        "heading": "# Zettelkasten 方法： 如何为知识管理做最有效的笔记",
+        "paragraph": 165,
+        "start": 3754,
+        "end": 3792
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_55914825b6",
+      "fact": "本资料称 Zettelkasten 接近第二个大脑，能拥有思维轨迹并产生想法。",
+      "tag": "F",
+      "quote": "Zettelkasten 也许是有史以来最接近于第二个大脑的东西。 它不仅拥有思维的轨迹，还能为你产生想法 。",
+      "start": 8351,
+      "end": 8406,
+      "locator": {
+        "heading": "### 为什么要用 Zettelkasten 方法",
+        "paragraph": 225,
+        "start": 8351,
+        "end": 8407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_55914825b6",
+      "fact": "本资料称链接是思考过程的检查点，可存储并继续思维轨迹。",
+      "tag": "F",
+      "quote": "链接是你思考过程中的“检查点”。",
+      "start": 9685,
+      "end": 9701,
+      "locator": {
+        "heading": "### 链接",
+        "paragraph": 244,
+        "start": 9685,
+        "end": 9702
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_55914825b6",
+      "fact": "本资料认为链接本身不具意义，需说明笔记为何或如何相关。",
+      "tag": "F",
+      "quote": "它本身并不说明一篇笔记 为什么 或 如何 与其他笔记相关",
+      "start": 10053,
+      "end": 10081,
+      "locator": {
+        "heading": "### 链接",
+        "paragraph": 251,
+        "start": 10017,
+        "end": 10083
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_55914825b6",
+      "fact": "本资料认为仅靠标签组织笔记不现实，因有效使用标签需记住所有标签。",
+      "tag": "F",
+      "quote": "有效 使用标签需要记住所有的标签",
+      "start": 8615,
+      "end": 8631,
+      "locator": {
+        "heading": "#### 为什么单独使用标签是不切实际的",
+        "paragraph": 231,
+        "start": 8597,
+        "end": 8685
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_55914825b6",
+      "fact": "本资料指出搜索不可靠，因知识发展会用不同术语描述同一事物。",
+      "tag": "F",
+      "quote": "随着你的知识的发展，你会用不同的术语来描述同一事物",
+      "start": 9325,
+      "end": 9350,
+      "locator": {
+        "heading": "#### 为什么仅仅使用搜索是不切实际的",
+        "paragraph": 239,
+        "start": 9291,
+        "end": 9366
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_55914825b6",
+      "fact": "本资料称结构笔记冻结思维轨迹意义，允许无限发展。",
+      "tag": "F",
+      "quote": "结构笔记在时间上冻结了你的思维轨迹的 意义",
+      "start": 17181,
+      "end": 17202,
+      "locator": {
+        "heading": "#### 在你的 Zettelkasten 中创建结构",
+        "paragraph": 356,
+        "start": 17174,
+        "end": 17284
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_55914825b6",
+      "fact": "本资料建议在标题中总结内容，使未来链接更容易。",
+      "tag": "F",
+      "quote": "在标题中总结内容，使未来的链接变得容易",
+      "start": 15260,
+      "end": 15279,
+      "locator": {
+        "heading": "#### 归纳出 Zettel 标题中的内容",
+        "paragraph": 323,
+        "start": 15260,
+        "end": 15361
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_4615bb4378",
+      "fact": "本资料称香蕉文化专注于影视、动漫、小说三大文化领域。",
+      "tag": "F",
+      "quote": "香蕉文化专注于影视、动漫、小说三大文化领域",
+      "start": 1656,
+      "end": 1677,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 82,
+        "start": 1656,
+        "end": 1723
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_4615bb4378",
+      "fact": "该平台提供作品深度解析、幕后解读、社区互动与精品推荐服务。",
+      "tag": "F",
+      "quote": "提供作品深度解析、幕后解读、社区互动与精品推荐服务",
+      "start": 1678,
+      "end": 1703,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 82,
+        "start": 1656,
+        "end": 1723
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-040",
+      "source_id": "src_4615bb4378",
+      "fact": "平台每周至少更新3-5篇原创深度内容。",
+      "tag": "F",
+      "quote": "平台每周至少更新3-5篇原创深度内容",
+      "start": 1835,
+      "end": 1853,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 86,
+        "start": 1835,
+        "end": 1912
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-041",
+      "source_id": "src_4615bb4378",
+      "fact": "精选视频模块每周新增2-3部优质解读视频。",
+      "tag": "F",
+      "quote": "精选视频模块每周新增2-3部优质解读视频",
+      "start": 1878,
+      "end": 1898,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 86,
+        "start": 1835,
+        "end": 1912
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-042",
+      "source_id": "src_4615bb4378",
+      "fact": "平台采用响应式设计，适配电脑、平板与手机终端。",
+      "tag": "F",
+      "quote": "响应式设计完美适配电脑、平板与手机终端",
+      "start": 1939,
+      "end": 1958,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 88,
+        "start": 1932,
+        "end": 2006
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-043",
+      "source_id": "src_4615bb4378",
+      "fact": "用户可注册为会员，在评论区、主题讨论板块及社区活动专区参与互动。",
+      "tag": "F",
+      "quote": "用户可以通过注册成为香蕉文化会员，在作品评论区、主题讨论板块以及社区活动专区发表观点、参与互动",
+      "start": 1740,
+      "end": 1787,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 84,
+        "start": 1740,
+        "end": 1818
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-044",
+      "source_id": "src_4615bb4378",
+      "fact": "创作者可通过「投稿入口」提交原创文章、视频或作品推荐。",
+      "tag": "F",
+      "quote": "可通过平台「投稿入口」提交原创文章、视频或作品推荐",
+      "start": 2039,
+      "end": 2064,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 90,
+        "start": 2024,
+        "end": 2098
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-045",
+      "source_id": "src_4615bb4378",
+      "fact": "所有原创内容由专业编辑团队与资深文化领域作者共同打磨。",
+      "tag": "F",
+      "quote": "所有原创内容均由专业编辑团队与资深文化领域作者共同打磨",
+      "start": 2132,
+      "end": 2159,
+      "locator": {
+        "heading": "## 常见 问题",
+        "paragraph": 92,
+        "start": 2117,
+        "end": 2205
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-046",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台支持首页推荐、分类筛选、关键词搜索与个性化智能推荐。",
+      "tag": "F",
+      "quote": "您可以通过首页推荐、分类筛选、关键词搜索以及个性化智能推荐等多种方式",
+      "start": 1970,
+      "end": 2004,
+      "locator": {
+        "heading": "## 常见问题",
+        "paragraph": 69,
+        "start": 1970,
+        "end": 2048
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-047",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台提供影单收藏与评分参考功能。",
+      "tag": "F",
+      "quote": "平台还提供影单收藏与评分参考功能",
+      "start": 2030,
+      "end": 2046,
+      "locator": {
+        "heading": "## 常见问题",
+        "paragraph": 69,
+        "start": 1970,
+        "end": 2048
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-048",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台智能推荐基于深度学习与用户画像匹配内容偏好。",
+      "tag": "F",
+      "quote": "基于深度学习与用户画像，精准匹配内容偏好",
+      "start": 570,
+      "end": 590,
+      "locator": {
+        "heading": "### 智能推荐系统",
+        "paragraph": 16,
+        "start": 570,
+        "end": 591
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-049",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台支持电脑、平板、手机全端适配，体验流畅一致。",
+      "tag": "F",
+      "quote": "电脑、平板、手机全端适配，观影体验流畅一致",
+      "start": 607,
+      "end": 628,
+      "locator": {
+        "heading": "### 多端无缝同步",
+        "paragraph": 18,
+        "start": 607,
+        "end": 629
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-050",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台每日更新内容，重点频道周更3-5次，专题定期发布。",
+      "tag": "F",
+      "quote": "每日更新优质影视内容与文化资讯，重点频道保持周更3-5次，专题策划与深度内容定期发布",
+      "start": 1881,
+      "end": 1923,
+      "locator": {
+        "heading": "## 常见问题",
+        "paragraph": 67,
+        "start": 1877,
+        "end": 1947
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-051",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台构建了「创作-传播-互动」的完整闭环。",
+      "tag": "F",
+      "quote": "构建了「创作-传播-互动」的完整闭环",
+      "start": 319,
+      "end": 337,
+      "locator": {
+        "heading": "## 关于香蕉文化",
+        "paragraph": 11,
+        "start": 306,
+        "end": 490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-052",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台覆盖电影、剧集、综艺、纪录片、动画等全品类。",
+      "tag": "F",
+      "quote": "平台目前覆盖电影、剧集、综艺、纪录片、动画等全品类",
+      "start": 399,
+      "end": 424,
+      "locator": {
+        "heading": "## 关于香蕉文化",
+        "paragraph": 11,
+        "start": 306,
+        "end": 490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-053",
+      "source_id": "src_b46320f2d3",
+      "fact": "本资料显示，平台依托智能推荐与社区互动帮助用户找到文化共鸣。",
+      "tag": "F",
+      "quote": "并依托智能推荐与社区互动，让每一位用户都能在这里找到属于自己的文化共鸣",
+      "start": 425,
+      "end": 460,
+      "locator": {
+        "heading": "## 关于香蕉文化",
+        "paragraph": 11,
+        "start": 306,
+        "end": 490
+      },
+      "note": ""
+    }
+  ]
+}

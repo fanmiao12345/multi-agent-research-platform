@@ -1,0 +1,114 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "开源代码托管平台商业化线索",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "Gitee为开源中国旗下，国内第一大研发效能平台和全球第二大代码托管平台。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "Gitee主要产品包括社区版、企业版、专业版、高校版和旗舰版。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "Gitee自2013年上线，服务1200万开发者，累计托管仓库超2800万个。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "Gitee企业版与专业版共服务30万家企业，含1200家中大型私有化部署企业。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "资料列出Gitee企业版在线使用电话400-606-0201。"
+          }
+        ]
+      },
+      {
+        "name": "AI开发工具与平台接口",
+        "points": [
+          {
+            "evidence_id": "E-005",
+            "statement": "默思MothX是终端AI代码助手，支持DeepSeek、OpenAI等多种LLM提供商。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "mcp-gitee是Gitee的MCP服务器实现，提供与Gitee API交互工具。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "LocalAIStack是构建和运行本地AI工作站的开放模块化软件栈。"
+          }
+        ]
+      },
+      {
+        "name": "开源社区治理与生态活动",
+        "points": [
+          {
+            "evidence_id": "E-009",
+            "statement": "开源社成立于2014年，由志愿贡献于开源事业的个人成员组成。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "开源社坚持厂商中立、公益、非营利的理念。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "开源社是全球开源许可证认证组织OSI在中国的首个成员。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "开源社自2016年起连续举办中国开源年会COSCon。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "开源社合作了数百家赞助、媒体、社区伙伴。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "其仓库列表中包含2026年中国人工智能开源生态蓝皮书。"
+          }
+        ]
+      },
+      {
+        "name": "商业模式证据覆盖情况",
+        "points": [
+          {
+            "evidence_id": "E-008",
+            "statement": "本资料仅出现私有云、模力方舟等入口，未说明开源大模型生态商业模式。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "本资料未提供开源大模型生态商业模式的任何信息，无法支持该任务。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "开源大模型厂商如何盈利？",
+        "missing": "厂商收入模式、定价与客户案例材料。"
+      },
+      {
+        "question": "开源模型如何通过云服务或API收费？",
+        "missing": "MaaS、API计费、托管与推理服务证据。"
+      },
+      {
+        "question": "企业私有化部署如何定价？",
+        "missing": "私有化部署报价、合同与支持服务材料。"
+      },
+      {
+        "question": "开源许可证与商业闭源策略如何互动？",
+        "missing": "许可证条款、双重许可与开放核心案例。"
+      },
+      {
+        "question": "社区或基金会如何获得资金并保持中立？",
+        "missing": "资助结构、赞助与治理财务材料。"
+      }
+    ],
+    "duplicates": []
+  }
+}

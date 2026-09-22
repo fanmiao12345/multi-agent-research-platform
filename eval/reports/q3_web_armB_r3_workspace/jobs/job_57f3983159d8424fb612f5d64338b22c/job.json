@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_57f3983159d8424fb612f5d64338b22c",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 报告标题：教育领域使用生成式AI的收益与风险：基于现有资料的证据提纲\n\n## 资料范围与证据可用性\n- Kling AI主页未涉及教育领域内容 [E-001]〔事实〕；该资料未提及生成式AI在教育场景的收益或风险 [E-002]〔事实〕。\n- GPT Image 2资料全文未出现教育、教学、学生或教师内容 [E-010]〔事实〕。\n- UNESCO资料未具体说明教育领域使用生成式AI的收益与风险 [E-017]〔事实〕；该资料未说明教育领域使用生成式AI的具体收益与风险 [E-019]〔事实〕。\n- 因此，现有资料不足以直接支撑教育领域生成式AI收益与风险的判断 [E-001][E-002][E-010][E-017][E-019]〔推断〕；可确认的主要是资料范围与缺口。\n\n## 教育场景直接证据缺口\n- 教育收益、教育风险、学生与教师等分角色影响均缺少直接证据 [E-001][E-002][E-010][E-017][E-019]〔推断〕；管理者等其他角色亦未获得可见证据 [E-001][E-010][E-017][E-019]〔推断〕。\n- Kling AI主页未涉及教育领域内容 [E-001]〔事实〕，且该资料未提及生成式AI在教育场景的收益或风险 [E-002]〔事实〕。\n- GPT Image 2资料未出现教育、教学、学生或教师内容 [E-010]〔事实〕。\n- UNESCO资料未具体说明教育领域使用生成式AI的收益与风险 [E-017]〔事实〕；该资料也未说明具体收益与风险 [E-019]〔事实〕。\n- 因此，无法从现有资料列出教育收益、风险分类或分角色影响 [E-001][E-002][E-010][E-017][E-019]〔推断〕。\n\n## UNESCO的人工智能治理总体立场\n- UNESCO将借助新技术和人工智能学习列为社区影响案例 [E-011]〔事实〕。\n- UNESCO称新兴技术应服务于公平、机会与包容 [E-012]〔事实〕。\n- UNESCO称AI治理全球对话须反映所有国家而非仅技术先进国家 [E-013]〔事实〕。\n- UNESCO与ITU作为联合联合国秘书处协调AI治理全球对话 [E-014]〔事实〕。\n- UNESCO称第4届AI伦理全球论坛强化全球伦理AI治理合作 [E-016]〔事实〕。\n- 综合看，其立场强调公平、包容、全球对话与伦理治理 [E-011][E-012][E-013][E-014][E-016]〔推断〕。\n\n## 教育作为公共利益与AI时代挑战\n- UNESCO称AI、信息诚信、教育是教皇访问讨论的当代挑战 [E-015]〔事实〕。\n- 教育部长呼吁人工智能时代仍须坚持教育作为公共利益 [E-018]〔事实〕。\n- 据此可推断，教育被置于AI治理与公共利益议题中，但资料未展开具体机制 [E-015][E-018]〔推断〕。\n\n## 生成式AI工具能力与低门槛线索\n- Kling AI主页列出创意圈、资产、Omni、生成、灵动画布等功能 [E-003]〔事实〕。\n- GPT Image 2资料主题为在线AI图像生成与编辑工具，定位创作工作室而非教育产品 [E-004]〔事实〕。\n- 该资料称没有设计或修图经验者也能用日常语言描述结果使用 [E-005]〔事实〕。\n- 由此可推断此类工具使用门槛较低，非专业使用者也可能上手 [E-006]〔推断〕。\n- 该资料强调可更高效制作商品图、营销素材、社交内容与设计提案 [E-007]〔事实〕。\n- 这些可视为工具能力、易用性与效率的潜在收益线索，但不能证明教育收益 [E-003][E-004][E-005][E-006][E-007]〔推断〕。\n\n## 生成式AI输出的风险提示\n- 该资料提示AI结果发布前需完成事实、权利与质量检查 [E-008]〔事实〕。\n- 由此可推断生成式AI输出存在事实准确性、权利与质量风险，但资料未展开 [E-008][E-009]〔推断〕。\n- 另一处资料可推断事实准确性与权利风险，但未展开 [E-009]〔推断〕。\n- 质量风险的具体表现未展开，属资料缺口 [E-008]〔事实〕。\n\n## 风险从通用场景迁移到教育的限制\n- 通用风险提示要求对AI结果做事前事实、权利与质量检查 [E-008]〔事实〕，并可推断存在事实准确性、权利与质量风险 [E-008][E-009]〔推断〕。\n- UNESCO资料未具体说明教育领域使用生成式AI的收益与风险 [E-017]〔事实〕；该资料也未说明具体收益与风险 [E-019]〔事实〕。\n- 因此，通用风险提示不能直接证明教学场景风险；迁移到教育只能作为待验证推断 [E-008][E-009][E-017][E-019]〔推断〕；教学场景具体风险属资料缺口，无法确认 [E-017][E-019]〔推断〕。\n\n## 教学实践落地与分角色影响缺口\n- UNESCO称AI治理全球对话须反映所有国家而非仅技术先进国家 [E-013]〔事实〕，教育部长呼吁AI时代仍须坚持教育作为公共利益 [E-018]〔事实〕。\n- 但UNESCO资料未具体说明教育领域使用生成式AI的收益与风险 [E-017]〔事实〕；该资料也未说明具体收益与风险 [E-019]〔事实〕。\n- 因此，UNESCO立场如何落到教学实践，以及学生、教师和管理者的分角色影响，现有资料均未提供 [E-013][E-017][E-018][E-019]〔推断〕。\n\n## 结论与待补证据清单\n- 可确认的是：Kling AI主页未涉及教育 [E-001]〔事实〕；该主页资料未提及教育场景收益或风险 [E-002]〔事实〕；GPT Image 2资料未出现教育、教学、学生或教师内容 [E-010]〔事实〕；UNESCO资料未具体说明教育领域使用生成式AI收益与风险 [E-017]〔事实〕；该资料也未说明具体收益与风险 [E-019]〔事实〕。\n- 由此，现有资料不足以回答教育领域生成式AI的收益与风险 [E-001][E-002][E-010][E-017][E-019]〔推断〕。\n- 待补证据包括：教育场景实证研究或案例；教育风险分类与实证材料；学生、教师及管理者等分角色数据；UNESCO具体教育AI政策、指南或项目材料；教育场景下事实准确性与权利风险证据 [E-001][E-002][E-010][E-017][E-019]〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 4,
+    "statuses": {
+      "ok": 4,
+      "read_failed": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 19 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:42:33"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:42:43"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:42:59"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "9 个章节",
+        "finished_at": "2026-09-20T11:43:14"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2552字）",
+        "finished_at": "2026-09-20T11:43:36"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 21,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T11:44:51"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T11:45:43"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 23,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-20T11:46:45"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 92,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://klingai.com/app",
+      "https://image2.ing/zh",
+      "https://www.unesco.org/en",
+      "https://www.unesco.org/zh",
+      "https://learn.chatgpt.com/docs/app",
+      "https://learn.chatgpt.com/docs/web"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 个性化学习 教学效率",
+        "rank": 3,
+        "title": "可灵AI创作台 - AI生成视频与图片",
+        "url": "https://klingai.com/app",
+        "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 个性化学习 教学效率",
+        "rank": 5,
+        "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+        "url": "https://image2.ing/zh",
+        "snippet": "2026年9月11日 · 在线使用 GPT Image 2，通过中文提示词或参考图生成图片，支持多种比例和分辨率，无需下载，打开网页即可开 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UNESCO 生成式AI 教育 指南",
+        "rank": 1,
+        "title": "UNESCO : Building Peace through Education, Science and Culture ...",
+        "url": "https://www.unesco.org/en",
+        "snippet": "1 天前 · Learn more about UNESCO's role, vision and results. UNESCO is the United Nations Educational, Scientific and Cultural …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UNESCO 生成式AI 教育 指南",
+        "rank": 2,
+        "title": "联合国教科文组织：通过教育、科学、文化、传播和信息 ...",
+        "url": "https://www.unesco.org/zh",
+        "snippet": "2025年9月25日 · World Heritage Committee Gathers to Protect Humanity's Legacy From 19 to 29 July 2026, the Republic of Korea …",
+        "published_date": "2025-09-25",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "ChatGPT 学生 批判性思维 过度依赖",
+        "rank": 1,
+        "title": "ChatGPT desktop app | ChatGPT Learn",
+        "url": "https://learn.chatgpt.com/docs/app",
+        "snippet": "2 天之前 · Choose ChatGPT or Codex. In ChatGPT, use the toggle above the composer to select Chat or Work. In Codex, start with …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "ChatGPT 学生 批判性思维 过度依赖",
+        "rank": 4,
+        "title": "ChatGPT on the web | ChatGPT Learn",
+        "url": "https://learn.chatgpt.com/docs/web",
+        "snippet": "1 天前 · Use ChatGPT Work to create a document, presentation, spreadsheet, or PDF from your source material. Review the result …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 教育 个性化学习 教学效率",
+        "urls": [
+          "https://klingai.com/app",
+          "https://image2.ing/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 个性化学习 教学效率",
+            "rank": 3,
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "snippet": "可灵AI创作台提供AI视频生成、图片生成、音频、数字人与创意特效工具，支持文本、图片和参考素材输入，一站式完成内容 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 教育 个性化学习 教学效率",
+            "rank": 5,
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "snippet": "2026年9月11日 · 在线使用 GPT Image 2，通过中文提示词或参考图生成图片，支持多种比例和分辨率，无需下载，打开网页即可开 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "relevance": 0.182,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "relevance": 0.182,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.091,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.136,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.226,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 学术诚信 数据隐私 伦理风险",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "可灵AI创作台 - AI生成视频与图片",
+            "url": "https://klingai.com/app",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "GPT Image 2 在线生图｜中文 AI 图片生成器 - Image2.ing",
+            "url": "https://image2.ing/zh",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.083,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.25,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UNESCO 生成式AI 教育 指南",
+        "urls": [
+          "https://www.unesco.org/en",
+          "https://www.unesco.org/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "UNESCO 生成式AI 教育 指南",
+            "rank": 1,
+            "title": "UNESCO : Building Peace through Education, Science and Culture ...",
+            "url": "https://www.unesco.org/en",
+            "snippet": "1 天前 · Learn more about UNESCO's role, vision and results. UNESCO is the United Nations Educational, Scientific and Cultural …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "UNESCO 生成式AI 教育 指南",
+            "rank": 2,
+            "title": "联合国教科文组织：通过教育、科学、文化、传播和信息 ...",
+            "url": "https://www.unesco.org/zh",
+            "snippet": "2025年9月25日 · World Heritage Committee Gathers to Protect Humanity's Legacy From 19 to 29 July 2026, the Republic of Korea …",
+            "published_date": "2025-09-25",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "UNESCO : Building Peace through Education, Science and Culture ...",
+            "url": "https://www.unesco.org/en",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "联合国教科文组织：通过教育、科学、文化、传播和信息 ...",
+            "url": "https://www.unesco.org/zh",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "联合国教育、科学及文化组织_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%81%94%E5%90%88%E5%9B%BD%E6%95%99%E8%82%B2%E3%80%81%E7%A7%91%E5%AD%A6%E5%8F%8A%E6%96%87%E5%8C%96%E7%BB%84%E7%BB%87/1516977",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Home | UNESCO",
+            "url": "https://media.unesco.org/zh",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "UNESCO World Heritage Centre - World Heritage List",
+            "url": "https://whc.unesco.org/en/list/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.193,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "ChatGPT 学生 批判性思维 过度依赖",
+        "urls": [
+          "https://learn.chatgpt.com/docs/app",
+          "https://learn.chatgpt.com/docs/web"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "ChatGPT 学生 批判性思维 过度依赖",
+            "rank": 1,
+            "title": "ChatGPT desktop app | ChatGPT Learn",
+            "url": "https://learn.chatgpt.com/docs/app",
+            "snippet": "2 天之前 · Choose ChatGPT or Codex. In ChatGPT, use the toggle above the composer to select Chat or Work. In Codex, start with …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "ChatGPT 学生 批判性思维 过度依赖",
+            "rank": 4,
+            "title": "ChatGPT on the web | ChatGPT Learn",
+            "url": "https://learn.chatgpt.com/docs/web",
+            "snippet": "1 天前 · Use ChatGPT Work to create a document, presentation, spreadsheet, or PDF from your source material. Review the result …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "ChatGPT desktop app | ChatGPT Learn",
+            "url": "https://learn.chatgpt.com/docs/app",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "ChatGPT on the web | ChatGPT Learn",
+            "url": "https://learn.chatgpt.com/docs/web",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "ChatGPT官网入口、ChatGPT中文版、GPT-6与网页版国内 ...",
+            "url": "https://chatgpt-guides.com/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT - Windows官方下载 | 微软应用商店 | Microsoft Store",
+            "url": "https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-CN&gl=CN",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "ChatGPT 官网入口、ChatGPT 网页版、ChatGPT 国内访问 ...",
+            "url": "https://www.codex-china.com/articles/chatgpt-official-entry-domestic-guide-2026",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.198,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（教育领域使用生成式AI的收益与风险）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "fanout"
+        ]
+      },
+      "scheduler_elapsed_seconds": 24.454,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

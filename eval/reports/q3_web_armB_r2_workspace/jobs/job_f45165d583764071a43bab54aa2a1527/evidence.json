@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_38d50685d9",
+      "fact": "本资料为外交部网站发布的欧盟概况，最近更新时间为2026年7月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年7月）",
+      "start": 743,
+      "end": 759,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 86,
+        "start": 743,
+        "end": 760
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_38d50685d9",
+      "fact": "本资料称欧盟推动绿色和数字双转型。",
+      "tag": "F",
+      "quote": "推动绿色和数字双转型",
+      "start": 2175,
+      "end": 2185,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_38d50685d9",
+      "fact": "本资料称欧盟以安全、竞争力和绿色发展为三大支柱推进各项政策。",
+      "tag": "F",
+      "quote": "以安全、竞争力和绿色发展为三大支柱不断推进各项政策",
+      "start": 2227,
+      "end": 2252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_38d50685d9",
+      "fact": "本资料提到欧盟出台《外国补贴条例》《反胁迫工具》等经贸政策工具箱。",
+      "tag": "F",
+      "quote": "出台《外国补贴条例》、《反胁迫工具》等一系列经贸政策工具箱",
+      "start": 2262,
+      "end": 2291,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_38d50685d9",
+      "fact": "本资料称欧盟是目前世界上地区一体化程度最高的国家集团。",
+      "tag": "F",
+      "quote": "欧盟是目前世界上地区一体化程度最高的国家集团。",
+      "start": 1821,
+      "end": 1844,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_38d50685d9",
+      "fact": "本资料介绍欧洲议会为欧盟监督、咨询和立法机构，议员由成员国直接选举产生。",
+      "tag": "F",
+      "quote": "欧盟监督、咨询和立法机构。议员由成员国直接选举产生，任期5年。",
+      "start": 2794,
+      "end": 2825,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 110,
+        "start": 2765,
+        "end": 2920
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_38d50685d9",
+      "fact": "本资料通篇未提及算法推荐规则，也未讨论其是否应强制公开。",
+      "tag": "I",
+      "quote": "欧盟概况",
+      "start": 670,
+      "end": 674,
+      "locator": {
+        "heading": "",
+        "paragraph": 75,
+        "start": 643,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_a13de3928f",
+      "fact": "本资料是欧盟官方网站门户页，汇集欧盟概况、机构、新闻与联系信息。",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_a13de3928f",
+      "fact": "本资料提到欧盟提出KIDS法案，拟将儿童使用社交媒体的年龄延后至13岁。",
+      "tag": "F",
+      "quote": "the EU has proposed a new KIDS Act",
+      "start": 1968,
+      "end": 2002,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_a13de3928f",
+      "fact": "本资料提到欧洲议会通过欧盟海关法典改革，对电商制定更严格规则。",
+      "tag": "F",
+      "quote": "The European Parliament has approved a major reform of the EU Customs Code",
+      "start": 2682,
+      "end": 2756,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 111,
+        "start": 2682,
+        "end": 2961
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_a13de3928f",
+      "fact": "本资料提到欧盟委员会拟动用4.89亿欧元帮助四国灾后恢复。",
+      "tag": "F",
+      "quote": "€489 million to help Portugal, Spain, Italy and Malta recover from severe storms",
+      "start": 2329,
+      "end": 2409,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 106,
+        "start": 2280,
+        "end": 2570
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_a13de3928f",
+      "fact": "本资料未提及算法推荐规则，也未讨论是否应强制公开此类规则。",
+      "tag": "U",
+      "quote": "Featured news",
+      "start": 1222,
+      "end": 1235,
+      "locator": {
+        "heading": "",
+        "paragraph": 78,
+        "start": 1222,
+        "end": 1236
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_a13de3928f",
+      "fact": "本资料未提供任何关于算法透明度义务、平台披露责任或相关立法的内容。",
+      "tag": "U",
+      "quote": "Legal",
+      "start": 4267,
+      "end": 4272,
+      "locator": {
+        "heading": "## Learn more",
+        "paragraph": 135,
+        "start": 4267,
+        "end": 4273
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_57243b0397",
+      "fact": "本资料把算法定义为明确的、有限的、可执行的指令序列。",
+      "tag": "F",
+      "quote": "它是一个明确的、有限的、可执行的指令序列",
+      "start": 755,
+      "end": 775,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_57243b0397",
+      "fact": "本资料指出算法必须具备有穷性、确定性、可行性、输入、输出五个特征。",
+      "tag": "F",
+      "quote": "算法必须在执行有限步之后结束",
+      "start": 995,
+      "end": 1009,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 51,
+        "start": 990,
+        "end": 1044
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_57243b0397",
+      "fact": "本资料要求算法每一步都有确切定义、没有歧义。",
+      "tag": "F",
+      "quote": "算法的每一步都必须有确切的定义，没有歧义",
+      "start": 1050,
+      "end": 1070,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 52,
+        "start": 1045,
+        "end": 1097
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_57243b0397",
+      "fact": "本资料从时间复杂度与空间复杂度两个维度评价算法优劣。",
+      "tag": "F",
+      "quote": "通常我们从两个维度来评估",
+      "start": 2216,
+      "end": 2228,
+      "locator": {
+        "heading": "## 算法分析：如何评价算法的好坏？",
+        "paragraph": 80,
+        "start": 2198,
+        "end": 2243
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_57243b0397",
+      "fact": "本资料称时间复杂度衡量的是算法运行所需时间随输入规模增长的趋势。",
+      "tag": "F",
+      "quote": "算法运行所需的时间",
+      "start": 2251,
+      "end": 2260,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_57243b0397",
+      "fact": "本资料全篇为算法与数据结构教学，未讨论推荐算法或规则公开。",
+      "tag": "I",
+      "quote": "算法基础与分析方法",
+      "start": 321,
+      "end": 330,
+      "locator": {
+        "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+        "paragraph": 39,
+        "start": 303,
+        "end": 379
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_57243b0397",
+      "fact": "是否应强制公开算法推荐规则，本资料未提供任何依据。",
+      "tag": "U",
+      "quote": "算法基础与分析方法",
+      "start": 321,
+      "end": 330,
+      "locator": {
+        "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+        "paragraph": 39,
+        "start": 303,
+        "end": 379
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_5d15ed2a08",
+      "fact": "本资料是豆瓣网站首页，汇集读书、电影、音乐、小组、同城等栏目入口。",
+      "tag": "F",
+      "quote": "豆瓣读书",
+      "start": 6,
+      "end": 10,
+      "locator": {
+        "heading": "# 豆瓣",
+        "paragraph": 0,
+        "start": 6,
+        "end": 11
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_5d15ed2a08",
+      "fact": "本资料中「算法」一词仅出现在科技类图书标签列表内。",
+      "tag": "F",
+      "quote": "算法",
+      "start": 1919,
+      "end": 1921,
+      "locator": {
+        "heading": "## 热门标签 · · · · · · ( 更多 )",
+        "paragraph": 166,
+        "start": 1919,
+        "end": 1922
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_5d15ed2a08",
+      "fact": "本资料页脚列有法律声明、帮助中心、违法和不良信息投诉等常规链接。",
+      "tag": "F",
+      "quote": "关于豆瓣 · 在豆瓣工作 · 联系我们 · 法律声明 · 帮助中心 · 移动应用",
+      "start": 4013,
+      "end": 4053,
+      "locator": {
+        "heading": "## 热门专栏 · · · · · · ( 更多 )",
+        "paragraph": 332,
+        "start": 3974,
+        "end": 4053
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_5d15ed2a08",
+      "fact": "本资料主体为话题、小组、榜单、商品与同城活动等聚合推荐内容。",
+      "tag": "F",
+      "quote": "热门话题",
+      "start": 108,
+      "end": 112,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_5d15ed2a08",
+      "fact": "本资料未就算法推荐规则是否应强制公开提供任何论述或依据。",
+      "tag": "I",
+      "quote": "算法",
+      "start": 1919,
+      "end": 1921,
+      "locator": {
+        "heading": "## 热门标签 · · · · · · ( 更多 )",
+        "paragraph": 166,
+        "start": 1919,
+        "end": 1922
+      },
+      "note": ""
+    }
+  ]
+}

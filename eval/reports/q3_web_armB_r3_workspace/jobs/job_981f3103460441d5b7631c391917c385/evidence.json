@@ -1,0 +1,545 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_153ced4f58",
+      "fact": "我国现有694个城市，包括4个直辖市、293个地级市、397个县级市",
+      "tag": "F",
+      "quote": "我国现有694个城市，具体包括4个直辖市、293个地级市、397个县级市。",
+      "start": 209,
+      "end": 246,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 16,
+        "start": 177,
+        "end": 247
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_153ced4f58",
+      "fact": "县级市中多数由地级市代管，部分属省（自治区）直辖县级市",
+      "tag": "F",
+      "quote": "在397个县级市中，多数由地级市代管，但部分县级市属于省（自治区）直辖县级市",
+      "start": 793,
+      "end": 831,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 24,
+        "start": 793,
+        "end": 857
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_153ced4f58",
+      "fact": "全国地级市最多的省级行政单位是广东省，有地级市21个",
+      "tag": "F",
+      "quote": "全国地级市最多的省级行政单位是广东省，有地级市21个",
+      "start": 500,
+      "end": 526,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 20,
+        "start": 500,
+        "end": 602
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_153ced4f58",
+      "fact": "新疆县级市最多有29个，山东、湖北县级市数量都是26个",
+      "tag": "F",
+      "quote": "新疆维吾尔自治区县级市最多，有29个，山东省、湖北省县级市数量都是26个。",
+      "start": 527,
+      "end": 564,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 20,
+        "start": 500,
+        "end": 602
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_153ced4f58",
+      "fact": "民政部表示行政区划应保持总体稳定，变更须逐级上报审批",
+      "tag": "F",
+      "quote": "民政部表示，行政区划应当保持总体稳定，必须变更时，应当本着有利于社会主义现代化建设等原则",
+      "start": 858,
+      "end": 902,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 25,
+        "start": 858,
+        "end": 976
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_153ced4f58",
+      "fact": "本资料仅介绍城市名单与行政区划，未涉及低碳交通政策效果与限制",
+      "tag": "U",
+      "quote": "全国694个城市名单来了，快来看看有无你家乡",
+      "start": 72,
+      "end": 94,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料提出优先发展城市公共交通，倡导绿色低碳出行。",
+      "tag": "F",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行。",
+      "start": 3430,
+      "end": 3450,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料提出健全现代化综合交通运输体系，提升城际、城内通勤效率。",
+      "tag": "F",
+      "quote": "健全现代化综合交通运输体系，提升城际、城内通勤效率",
+      "start": 2808,
+      "end": 2833,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料提出加强停车位、充电桩等便民设施建设。",
+      "tag": "F",
+      "quote": "加强停车位、充电桩等便民设施建设。",
+      "start": 2849,
+      "end": 2866,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料提出坚持人口、产业、城镇、交通一体规划。",
+      "tag": "F",
+      "quote": "坚持人口、产业、城镇、交通一体规划",
+      "start": 2527,
+      "end": 2544,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 40,
+        "start": 2373,
+        "end": 2657
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料提出促进产城融合、职住平衡。",
+      "tag": "F",
+      "quote": "促进产城融合、职住平衡。",
+      "start": 2644,
+      "end": 2656,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 40,
+        "start": 2373,
+        "end": 2657
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料提出促进通勤便捷高效。",
+      "tag": "F",
+      "quote": "促进通勤便捷高效、产业梯次配套、公共服务便利共享。",
+      "start": 1104,
+      "end": 1129,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 31,
+        "start": 843,
+        "end": 1130
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料提出控制超大城市规模，合理有序疏解非核心功能。",
+      "tag": "F",
+      "quote": "控制超大城市规模，合理有序疏解非核心功能",
+      "start": 1178,
+      "end": 1198,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 32,
+        "start": 1131,
+        "end": 1312
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_36f68061dd",
+      "fact": "本资料对城市低碳交通仅有方向性表述，未说明效果与限制。",
+      "tag": "I",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行。",
+      "start": 3430,
+      "end": 3450,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_07830735ac",
+      "fact": "本资料为新浪网404错误页，不含城市低碳交通政策信息。",
+      "tag": "F",
+      "quote": "# Not Found",
+      "start": 14216,
+      "end": 14227,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_07830735ac",
+      "fact": "页面提示所请求的网址在服务器上未找到。",
+      "tag": "F",
+      "quote": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+      "start": 14229,
+      "end": 14349,
+      "locator": {
+        "heading": "# Not Found",
+        "paragraph": 500,
+        "start": 14229,
+        "end": 14350
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_07830735ac",
+      "fact": "本资料全部内容为网站导航、新闻标题与广告链接。",
+      "tag": "F",
+      "quote": "设为首页",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 5
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_07830735ac",
+      "fact": "依据本资料无法提取低碳交通政策效果与限制的任何证据。",
+      "tag": "I",
+      "quote": "# Not Found",
+      "start": 14216,
+      "end": 14227,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_ea82a79d8f",
+      "fact": "本资料是Tod's官方网站页面，内容为品牌与商品购物信息。",
+      "tag": "F",
+      "quote": "欢迎来到托德的世界",
+      "start": 24,
+      "end": 33,
+      "locator": {
+        "heading": "## 订阅Tod's新闻通讯",
+        "paragraph": 2,
+        "start": 24,
+        "end": 34
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_ea82a79d8f",
+      "fact": "本资料主要涉及手袋、鞋履、成衣等时尚商品的分类与选购。",
+      "tag": "F",
+      "quote": "Gommino® 乐福鞋 ＆ City Gommino® 豆豆鞋",
+      "start": 353,
+      "end": 385,
+      "locator": {
+        "heading": "## 鞋履",
+        "paragraph": 32,
+        "start": 353,
+        "end": 386
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_ea82a79d8f",
+      "fact": "本资料设有“可持续发展”栏目，但仅列出标题，无相关正文。",
+      "tag": "F",
+      "quote": "可持续发展",
+      "start": 2903,
+      "end": 2908,
+      "locator": {
+        "heading": "## 特别企划",
+        "paragraph": 241,
+        "start": 2903,
+        "end": 2909
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_ea82a79d8f",
+      "fact": "本资料含新闻通讯订阅与个人信息跨境传输至意大利公司的告知。",
+      "tag": "F",
+      "quote": "订阅Tod's新闻通讯",
+      "start": 11,
+      "end": 22,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_832fcb217a",
+      "fact": "本资料为门户网站首页导航与资讯聚合内容，未涉及城市低碳交通政策议题。",
+      "tag": "F",
+      "quote": "新闻 微博 图片 视频",
+      "start": 108,
+      "end": 119,
+      "locator": {
+        "heading": "",
+        "paragraph": 18,
+        "start": 108,
+        "end": 120
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_832fcb217a",
+      "fact": "本资料无城市低碳交通政策效果或限制的任何论述，无法支撑该主题。",
+      "tag": "I",
+      "quote": "设为首页",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 5
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_832fcb217a",
+      "fact": "本资料中交通相关内容多为企业与产品动态，而非政策效果评估。",
+      "tag": "I",
+      "quote": "从卖车到输出技术：小鹏寻求更多海外合作伙伴",
+      "start": 16297,
+      "end": 16318,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 605,
+        "start": 16297,
+        "end": 16319
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_832fcb217a",
+      "fact": "本资料提到一项助力内河航运低碳转型的超充解决方案落地黄石仙岛湖。",
+      "tag": "F",
+      "quote": "助力内河航运低碳转型，深圳科华超充解决方案落地黄石仙岛湖",
+      "start": 16494,
+      "end": 16522,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 613,
+        "start": 16494,
+        "end": 16523
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_832fcb217a",
+      "fact": "本资料称燃油价格创历史新高后，美国车主对电动汽车兴趣大增。",
+      "tag": "F",
+      "quote": "燃油价格创历史新高后，美国车主对电动汽车兴趣大增",
+      "start": 16446,
+      "end": 16470,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 611,
+        "start": 16446,
+        "end": 16471
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_832fcb217a",
+      "fact": "本资料提到蔚来已建成9388座充换电站，累计提供超1.2亿次换电。",
+      "tag": "F",
+      "quote": "蔚来：全国建成9388座充换电站，累计提供超1.2亿次换电",
+      "start": 16320,
+      "end": 16349,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 606,
+        "start": 16320,
+        "end": 16350
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_c68b684157",
+      "fact": "本资料为南京公交查询网页，标题为“8684公交 南京公交”。",
+      "tag": "F",
+      "quote": "8684公交 南京公交",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 12
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_c68b684157",
+      "fact": "本资料提供公交、地铁、生活、火车、天气等栏目入口。",
+      "tag": "F",
+      "quote": "公交 地铁 生活 火车 天气",
+      "start": 13,
+      "end": 27,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 13,
+        "end": 28
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_c68b684157",
+      "fact": "本资料提供换乘查询、线路查询和站点查询功能。",
+      "tag": "F",
+      "quote": "换乘查询 线路查询 站点查询",
+      "start": 37,
+      "end": 51,
+      "locator": {
+        "heading": "",
+        "paragraph": 3,
+        "start": 37,
+        "end": 52
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_c68b684157",
+      "fact": "本资料列出南京公交中轨道交通14条、轮渡线路3条。",
+      "tag": "F",
+      "quote": "轨道交通 14条 轮渡线路 3条",
+      "start": 273,
+      "end": 289,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_c68b684157",
+      "fact": "本资料列出夜间线路(Y)35条、大站快线(D)23条等公交分类。",
+      "tag": "F",
+      "quote": "夜间线路(Y) 35条 大站快线(D) 23条",
+      "start": 124,
+      "end": 147,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_c68b684157",
+      "fact": "本资料生活信息栏目显示公交5319条、地铁55条。",
+      "tag": "F",
+      "quote": "🚌 公交 5319 🚇 地铁 55",
+      "start": 588,
+      "end": 605,
+      "locator": {
+        "heading": "",
+        "paragraph": 22,
+        "start": 567,
+        "end": 823
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_c68b684157",
+      "fact": "本资料未说明城市低碳交通政策的效果与限制，无法据此评估。",
+      "tag": "U",
+      "quote": "南京公交查询",
+      "start": 29,
+      "end": 35,
+      "locator": {
+        "heading": "",
+        "paragraph": 2,
+        "start": 29,
+        "end": 36
+      },
+      "note": ""
+    }
+  ]
+}

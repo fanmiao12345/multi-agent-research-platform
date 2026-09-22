@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_4722c35f44",
+      "fact": "本资料标题为豆包如何使用实时翻译，属于操作教程。",
+      "tag": "F",
+      "quote": "豆包如何使用实时翻译",
+      "start": 202,
+      "end": 212,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_4722c35f44",
+      "fact": "本资料说明启动豆包APP后点击「智能体」图标。",
+      "tag": "F",
+      "quote": "启动豆包APP，我们点击\"智能体\"图标。",
+      "start": 340,
+      "end": 360,
+      "locator": {
+        "heading": "## 方法/步骤",
+        "paragraph": 48,
+        "start": 340,
+        "end": 361
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_4722c35f44",
+      "fact": "本资料说明随后点击「实时翻译」图标即可完成操作。",
+      "tag": "F",
+      "quote": "接着，我们点击\"实时翻译\"图标。",
+      "start": 365,
+      "end": 381,
+      "locator": {
+        "heading": "## 方法/步骤",
+        "paragraph": 50,
+        "start": 365,
+        "end": 382
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_4722c35f44",
+      "fact": "本资料将「智能体」呈现为豆包APP内的功能入口，未涉及RPA边界。",
+      "tag": "I",
+      "quote": "启动豆包APP，我们点击\"智能体\"图标。",
+      "start": 340,
+      "end": 360,
+      "locator": {
+        "heading": "## 方法/步骤",
+        "paragraph": 48,
+        "start": 340,
+        "end": 361
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_4722c35f44",
+      "fact": "本资料主题为豆包实时翻译，未讨论机器人流程自动化与智能体边界。",
+      "tag": "I",
+      "quote": "豆包如何使用实时翻译",
+      "start": 202,
+      "end": 212,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_a405db65c9",
+      "fact": "本资料通篇未出现机器人流程自动化、智能体或RPA相关表述。",
+      "tag": "F",
+      "quote": "历史人物网 > 汉朝人物 >",
+      "start": 120,
+      "end": 134,
+      "locator": {
+        "heading": "",
+        "paragraph": 20,
+        "start": 120,
+        "end": 135
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_a405db65c9",
+      "fact": "本资料未能为机器人流程自动化与智能体的边界提供任何证据。",
+      "tag": "F",
+      "quote": "汉朝人物时代背景资料",
+      "start": 3156,
+      "end": 3166,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_a405db65c9",
+      "fact": "本资料记载汉朝起于公元前202年，西汉、东汉合计至公元220年。",
+      "tag": "F",
+      "quote": "汉朝 （公元前202年~公元8年，公元25~220年）是继 秦朝 之后的大一统王朝",
+      "start": 3168,
+      "end": 3209,
+      "locator": {
+        "heading": "### 汉朝人物时代背景资料",
+        "paragraph": 267,
+        "start": 3168,
+        "end": 3240
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_a405db65c9",
+      "fact": "本资料提到汉代科技成就，如蔡伦改进造纸术、张衡发明地动仪。",
+      "tag": "F",
+      "quote": "如蔡伦改进了造纸术，成为中国四大发明之一",
+      "start": 3701,
+      "end": 3721,
+      "locator": {
+        "heading": "### 汉朝人物时代背景资料",
+        "paragraph": 271,
+        "start": 3671,
+        "end": 3737
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_a405db65c9",
+      "fact": "本资料声明部分内容来源自网络，仅供网友阅读学习。",
+      "tag": "F",
+      "quote": "本站部份内容来源自网络，仅供网友阅读学习。",
+      "start": 5964,
+      "end": 5985,
+      "locator": {
+        "heading": "### 热搜历史人物标签",
+        "paragraph": 322,
+        "start": 5946,
+        "end": 6008
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_ee5e712490",
+      "fact": "本资料主题为汉朝时期十大历史事件，未涉及机器人流程自动化或智能体",
+      "tag": "F",
+      "quote": "汉朝时期十大事件 汉代重大历史事件盘点 汉朝有哪些著名历史事件",
+      "start": 55,
+      "end": 86,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_ee5e712490",
+      "fact": "本资料所列事件均为汉代史事，如楚汉之争、诸吕之乱、七国之乱、文景之治等",
+      "tag": "F",
+      "quote": "楚汉之争是西楚霸王项羽、汉王刘邦两大集团为争夺政权而进行的一场大规模战争",
+      "start": 1064,
+      "end": 1100,
+      "locator": {
+        "heading": "# 汉朝时期十大事件 汉代重大历史事件盘点 汉朝有哪些著名历史事件",
+        "paragraph": 126,
+        "start": 1064,
+        "end": 1262
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_ee5e712490",
+      "fact": "本资料无法提供机器人流程自动化与智能体边界的任何事实依据",
+      "tag": "F",
+      "quote": "本榜单主要依据各汉朝历史事件对历史进程影响",
+      "start": 968,
+      "end": 989,
+      "locator": {
+        "heading": "# 汉朝时期十大事件 汉代重大历史事件盘点 汉朝有哪些著名历史事件",
+        "paragraph": 123,
+        "start": 953,
+        "end": 1047
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_b6dcbe695d",
+      "fact": "本资料是ProcessOn在线流程图与思维导图工具的官网介绍页面。",
+      "tag": "F",
+      "quote": "免费在线 流程图思维导图",
+      "start": 369,
+      "end": 381,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_b6dcbe695d",
+      "fact": "该工具宣称支持多人实时在线协作，可绘制甘特图、ER图、UML等多种图形。",
+      "tag": "F",
+      "quote": "专业强大的作图工具，支持多人实时在线协作",
+      "start": 383,
+      "end": 403,
+      "locator": {
+        "heading": "# 免费在线 流程图思维导图",
+        "paragraph": 51,
+        "start": 383,
+        "end": 442
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_b6dcbe695d",
+      "fact": "本资料提供了AI快速生成功能，可选择标准思维导图、会议提纲等待办类型。",
+      "tag": "F",
+      "quote": "AI快速生成",
+      "start": 443,
+      "end": 449,
+      "locator": {
+        "heading": "# 免费在线 流程图思维导图",
+        "paragraph": 52,
+        "start": 443,
+        "end": 450
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_b6dcbe695d",
+      "fact": "该工具支持AI生成SWOT分析、优缺点列表等结构化内容。",
+      "tag": "F",
+      "quote": "新能源车发展SWOT分析",
+      "start": 537,
+      "end": 549,
+      "locator": {
+        "heading": "# 免费在线 流程图思维导图",
+        "paragraph": 63,
+        "start": 537,
+        "end": 550
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_b6dcbe695d",
+      "fact": "本资料提供团队组件库与云端存储，称可保障数据与文档安全。",
+      "tag": "F",
+      "quote": "多人绘制，多端同步，实时存储，历史版本可回溯",
+      "start": 843,
+      "end": 865,
+      "locator": {
+        "heading": "## 图形库",
+        "paragraph": 80,
+        "start": 843,
+        "end": 875
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_b6dcbe695d",
+      "fact": "本资料全文未出现机器人流程自动化、RPA或智能体等概念。",
+      "tag": "I",
+      "quote": "AI助力，释放无限想象力",
+      "start": 353,
+      "end": 365,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 353,
+        "end": 366
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_b6dcbe695d",
+      "fact": "本资料无法提供RPA与智能体边界的定义或对比依据。",
+      "tag": "I",
+      "quote": "AI快速生成",
+      "start": 443,
+      "end": 449,
+      "locator": {
+        "heading": "# 免费在线 流程图思维导图",
+        "paragraph": 52,
+        "start": 443,
+        "end": 450
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_1a32757a24",
+      "fact": "本资料称博思AI为一键生成的Al超级智能体。",
+      "tag": "F",
+      "quote": "一键生成，您的Al超级智能体",
+      "start": 66,
+      "end": 80,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 66,
+        "end": 81
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_1a32757a24",
+      "fact": "本资料称使用AI辅助可一键生成流程图或流程图代码。",
+      "tag": "F",
+      "quote": "使用AI辅助，一键生成流程图 or 流程图代码",
+      "start": 806,
+      "end": 829,
+      "locator": {
+        "heading": "# 在线流程图",
+        "paragraph": 47,
+        "start": 806,
+        "end": 859
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_1a32757a24",
+      "fact": "本资料称AI asistant可梳理角色及流转流程并推荐图表类型。",
+      "tag": "F",
+      "quote": "AI asistant帮助您梳理所有角色及流转流程，并推荐合适的图表类型。",
+      "start": 1256,
+      "end": 1293,
+      "locator": {
+        "heading": "### 提供流程图绘制思路",
+        "paragraph": 69,
+        "start": 1236,
+        "end": 1294
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_1a32757a24",
+      "fact": "本资料称AI asistant支持输入prompts快速生成Mermaid、PlantUML等语法代码。",
+      "tag": "F",
+      "quote": "仅需输入prompts，几秒内帮您快速生成Mermaid、PlantUM L等语法代码",
+      "start": 1329,
+      "end": 1372,
+      "locator": {
+        "heading": "### 生成流程图代码",
+        "paragraph": 70,
+        "start": 1308,
+        "end": 1374
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_1a32757a24",
+      "fact": "本资料将流程图自动生成描述为改变工作方式。",
+      "tag": "F",
+      "quote": "流程图 自动生成, 改变你的工作方式",
+      "start": 1201,
+      "end": 1219,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_1a32757a24",
+      "fact": "本资料学习路径称AI生成流程图可从文字描述生成可编辑流程图。",
+      "tag": "F",
+      "quote": "AI生成流程图 从文字描述生成可编辑流程图",
+      "start": 2268,
+      "end": 2289,
+      "locator": {
+        "heading": "## 流程图学习与应用路径",
+        "paragraph": 115,
+        "start": 2226,
+        "end": 2356
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_1a32757a24",
+      "fact": "本资料围绕在线流程图与AI生成流程图，未涉及机器人流程自动化与智能体边界。",
+      "tag": "I",
+      "quote": "在线流程图",
+      "start": 757,
+      "end": 762,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

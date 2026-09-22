@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_acbddc53efcb4fdb9ca9f5f3a268bc88",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 14 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:39:44"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:39:51"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T13:39:57"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅涉及AI视频生成工具与AI工具导航分类，均明确未提及软件测试，无法支撑该主题的任何章节。",
+        "finished_at": "2026-09-18T13:39:59"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅涉及AI视频生成工具与AI工具导航分类，均明确未提及软件测试，无法支撑该主题的任何章节。；缺失信息：软件测试相关案例或工具说明、应用趋势数据、行业报告或时间序列、生成式AI测试工具分类与产品清单、对测试效率或质量影响的实验、指标或用户反馈、直接讨论生成式AI与软件测试的资料（可用证据 14 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://aivideomaker.ai/zh",
+      "http://www.renlu.net/html/jiaguwenzidian_486.html",
+      "https://www.aigc.cn/free-ai-tools"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 软件测试 测试用例生成",
+        "rank": 5,
+        "title": "免费AI视频生成器：文字、图片生成有声视频",
+        "url": "https://aivideomaker.ai/zh",
+        "snippet": "MiniMax H3是AI Video Maker提供的AI视频生成模型，支持文生视频和图生视频。 它可同步生成画面运动、对白、音效和环境音，让 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大语言模型 单元测试 代码生成",
+        "rank": 5,
+        "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+        "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+        "snippet": "2023年3月19日 · 大快人心 大失所望 大同小异 大相径庭 大愚若智 大智若愚 大智大勇 居简而行简，无乃大简乎？ ------《论语 . 雍也》 …",
+        "published_date": "2023-03-19",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI测试工具 Copilot Testim 自动化",
+        "rank": 3,
+        "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+        "url": "https://www.aigc.cn/free-ai-tools",
+        "snippet": "1 天前 · 免费AI工具 AIGC 工具导航汇聚全网最全的 免费AI 工具集合，无论是AI智能助手、 AI写作 工具、 AI绘画 工具、AI PPT制作  …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "生成式AI 软件测试 测试用例生成",
+        "urls": [
+          "https://aivideomaker.ai/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "生成式AI 软件测试 测试用例生成",
+            "rank": 5,
+            "title": "免费AI视频生成器：文字、图片生成有声视频",
+            "url": "https://aivideomaker.ai/zh",
+            "snippet": "MiniMax H3是AI Video Maker提供的AI视频生成模型，支持文生视频和图生视频。 它可同步生成画面运动、对白、音效和环境音，让 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "生成（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%94%9F%E6%88%90/5180142",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Dream AI - 免费AI图片生成器 | 无水印，无需登录",
+            "url": "https://www.dreamai.art/zh-CN",
+            "relevance": 0.222,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "generate - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=generate&FORM=BDVSP6&cc=cn",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "即梦AI - 即刻造梦",
+            "url": "https://jimeng.jianying.com/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.209,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大语言模型 单元测试 代码生成",
+        "urls": [
+          "http://www.renlu.net/html/jiaguwenzidian_486.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "大语言模型 单元测试 代码生成",
+            "rank": 5,
+            "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+            "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+            "snippet": "2023年3月19日 · 大快人心 大失所望 大同小异 大相径庭 大愚若智 大智若愚 大智大勇 居简而行简，无乃大简乎？ ------《论语 . 雍也》 …",
+            "published_date": "2023-03-19",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+            "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "大（汉语文字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%A4%A7/34128",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "大的意思,大的解释,大的拼音,大的部首,大的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-22823",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大字笔画、笔顺、笔划 - 大字怎么写?",
+            "url": "https://www.hanzipi.com/%E5%A4%A7.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大 - 维基词典，自由的多语言词典",
+            "url": "https://zh.wiktionary.org/wiki/%E5%A4%A7",
+            "relevance": 0.1,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.19,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "AI测试工具 Copilot Testim 自动化",
+        "urls": [
+          "https://www.aigc.cn/free-ai-tools"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "AI测试工具 Copilot Testim 自动化",
+            "rank": 3,
+            "title": "免费AI工具 - 在线使用免费AI工具大全 | AIGC工具导航",
+            "url": "https://www.aigc.cn/free-ai-tools",
+            "snippet": "1 天前 · 免费AI工具 AIGC 工具导航汇聚全网最全的 免费AI 工具集合，无论是AI智能助手、 AI写作 工具、 AI绘画 工具、AI PPT制作  …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "AI工具集官网 | 1000+ AI工具集合，国内外AI工具集导航大全",
+            "url": "https://ai-bot.cn/",
+            "relevance": 0.25,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "Kimi AI 官网 - K3 上线，专为智能体编程与知识工作打造",
+            "url": "https://www.kimi.com/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "目前有哪些主流的AI？ - 知乎",
+            "url": "https://www.zhihu.com/question/591009674",
+            "relevance": 0.188,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "即梦AI - 一站式AI创作平台",
+            "url": "https://jimeng.jianying.com/ai-tool/home",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.194,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大模型 缺陷检测 测试脚本 自愈",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+            "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "大（汉语文字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%A4%A7/34128",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "大的意思,大的解释,大的拼音,大的部首,大的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-22823",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大字笔画、笔顺、笔划 - 大字怎么写?",
+            "url": "https://www.hanzipi.com/%E5%A4%A7.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大 - 维基词典，自由的多语言词典",
+            "url": "https://zh.wiktionary.org/wiki/%E5%A4%A7",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.199,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（生成式人工智能在软件测试中的应用趋势）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "fanout"
+        ]
+      },
+      "scheduler_elapsed_seconds": 34.443,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "source_id": "src_61d83d43ee",
+  "kind": "url",
+  "display": "https://y.qq.com/n/ryqq/mv/012QmALy20HCFi",
+  "original_address": "https://y.qq.com/n/ryqq/mv/012QmALy20HCFi",
+  "title": "",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 8,
+  "content_hash": "3ef42060a2e523ab25facb1adc9d470d29b6fc6fff3ff4d318388f4a03b7dc01",
+  "normalized_hash": "3ef42060a2e523ab25facb1adc9d470d29b6fc6fff3ff4d318388f4a03b7dc01",
+  "captured_at": "2026-09-20T10:51:38",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_61d83d43ee.md",
+  "encoding": "UTF-8",
+  "segment_count": 1,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 4,
+      "page": null
+    }
+  ],
+  "final_url": "https://y.qq.com/n/ryqq/mv/012QmALy20HCFi",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T10:51:38",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

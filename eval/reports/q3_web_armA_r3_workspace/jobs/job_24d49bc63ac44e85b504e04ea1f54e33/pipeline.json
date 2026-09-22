@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_24d49bc63ac44e85b504e04ea1f54e33",
+  "goal": "是否应强制公开算法推荐规则",
+  "started_at": "2026-09-20T11:11:20",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 21 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:11:43"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:11:55"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:11:58"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅涉及算法基础与欧盟一般政策，未提供支持或反对强制公开算法推荐规则的直接证据或法律依据，无法形成结论。",
+        "finished_at": "2026-09-20T11:12:14"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅涉及算法基础与欧盟一般政策，未提供支持或反对强制公开算法推荐规则的直接证据或法律依据，无法形成结论。；缺失信息：是否应强制公开算法推荐规则的直接主张或分析材料、强制公开的适用范围与例外的法律条文或政策文本、公开推荐规则对用户、平台与竞争影响的实证评估或案例数据、平台、监管机构与公民社会等利益相关方的立场材料、公开算法推荐规则的技术方案与安全评估材料（可用证据 21 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

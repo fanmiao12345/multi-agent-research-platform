@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_b37fa6e6d6",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "本材料为合成验收数据。客服团队2026年共有45人，其中一线坐席32人，其余为管理与质检岗位。",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 125,
+      "content_hash": "4b2d349cd06f28843d055859919d30b91a8597e2e91dc4091ef6b6d21779a5e1",
+      "normalized_hash": "4b2d349cd06f28843d055859919d30b91a8597e2e91dc4091ef6b6d21779a5e1",
+      "captured_at": "2026-09-20T15:40:25",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_b37fa6e6d6.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-20T15:40:25",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

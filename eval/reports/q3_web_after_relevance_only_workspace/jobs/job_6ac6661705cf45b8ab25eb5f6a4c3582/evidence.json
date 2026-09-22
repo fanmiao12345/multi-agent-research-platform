@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_fbf8d0ec12",
+      "fact": "本资料在2026年政府工作任务中提出完善人工智能治理。",
+      "tag": "F",
+      "quote": "完善人工智能治理。",
+      "start": 10932,
+      "end": 10941,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_fbf8d0ec12",
+      "fact": "本资料提出深化拓展“人工智能+”，促进新一代智能终端和智能体加快推广。",
+      "tag": "F",
+      "quote": "深化拓展“人工智能+”，促进新一代智能终端和智能体加快推广",
+      "start": 10745,
+      "end": 10774,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_fbf8d0ec12",
+      "fact": "本资料提出推动重点行业领域人工智能商业化规模化应用，培育智能原生新业态新模式。",
+      "tag": "F",
+      "quote": "推动重点行业领域人工智能商业化规模化应用，培育智能原生新业态新模式",
+      "start": 10775,
+      "end": 10808,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_fbf8d0ec12",
+      "fact": "本资料提出支持人工智能开源社区建设，促进开源生态繁荣。",
+      "tag": "F",
+      "quote": "支持人工智能开源社区建设，促进开源生态繁荣",
+      "start": 10809,
+      "end": 10830,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_fbf8d0ec12",
+      "fact": "本资料提出完善适应人工智能技术发展促进就业创业的措施。",
+      "tag": "F",
+      "quote": "完善适应人工智能技术发展促进就业创业的措施",
+      "start": 15191,
+      "end": 15212,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 74,
+        "start": 14949,
+        "end": 15287
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_fbf8d0ec12",
+      "fact": "在已提供文本中，本资料仅提出完善人工智能治理，未说明相关主要争议。",
+      "tag": "I",
+      "quote": "完善人工智能治理。",
+      "start": 10932,
+      "end": 10941,
+      "locator": {
+        "heading": "##### 政府工作报告",
+        "paragraph": 52,
+        "start": 10735,
+        "end": 10942
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_adb6db7934",
+      "fact": "本资料是一个AIGC工具导航站首页，主体为分类罗列的免费AI工具。",
+      "tag": "F",
+      "quote": "AIGC工具推荐",
+      "start": 0,
+      "end": 8,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 9
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_adb6db7934",
+      "fact": "本资料页面设有「管理办法」「标识办法」「算法备案」等条目入口，但未展开任何内容。",
+      "tag": "F",
+      "quote": "管理办法",
+      "start": 2823,
+      "end": 2827,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 187,
+        "start": 2823,
+        "end": 2828
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_adb6db7934",
+      "fact": "本资料把「网络安全和信息化」「中国电子学会」列为认证相关分类条目。",
+      "tag": "F",
+      "quote": "网络安全和信息化",
+      "start": 682,
+      "end": 690,
+      "locator": {
+        "heading": "",
+        "paragraph": 85,
+        "start": 682,
+        "end": 691
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_adb6db7934",
+      "fact": "本资料在工具分类中列出「AI安全技术」一项，仅有名称无说明。",
+      "tag": "F",
+      "quote": "AI安全技术",
+      "start": 1051,
+      "end": 1057,
+      "locator": {
+        "heading": "",
+        "paragraph": 128,
+        "start": 1051,
+        "end": 1058
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_adb6db7934",
+      "fact": "本资料设有「AIGC检测」「降AIGC率」等与生成内容识别相关的工具分类。",
+      "tag": "F",
+      "quote": "降AIGC率",
+      "start": 44,
+      "end": 50,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 44,
+        "end": 51
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_adb6db7934",
+      "fact": "本资料的正文、快讯与栏目均未讨论人工智能治理政策及其争议。",
+      "tag": "I",
+      "quote": "AIGC工具提交",
+      "start": 1117,
+      "end": 1125,
+      "locator": {
+        "heading": "",
+        "paragraph": 136,
+        "start": 1117,
+        "end": 1126
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_adb6db7934",
+      "fact": "2026年人工智能治理政策的主要争议具体为何，本资料完全未涉及，无法据此作答。",
+      "tag": "U",
+      "quote": "免责声明",
+      "start": 2883,
+      "end": 2887,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 197,
+        "start": 2883,
+        "end": 2888
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_c2cc2e98bc",
+      "fact": "本资料为AI创作平台的界面文本，未涉及2026年人工智能治理政策。",
+      "tag": "F",
+      "quote": "即刻造梦！",
+      "start": 28,
+      "end": 33,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 28,
+        "end": 34
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_c2cc2e98bc",
+      "fact": "本资料内容仅含灵感、生成、资产、技能、短片、活动等界面栏目。",
+      "tag": "F",
+      "quote": "灵感",
+      "start": 0,
+      "end": 2,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 3
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_c2cc2e98bc",
+      "fact": "本资料未提供任何关于人工智能治理政策争议的事实或证据。",
+      "tag": "F",
+      "quote": "发现",
+      "start": 53,
+      "end": 55,
+      "locator": {
+        "heading": "",
+        "paragraph": 7,
+        "start": 53,
+        "end": 56
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_c2cc2e98bc",
+      "fact": "本资料出现“Agent 模式”相关界面入口描述。",
+      "tag": "F",
+      "quote": "Agent 模式 自动 使用技能",
+      "start": 35,
+      "end": 51,
+      "locator": {
+        "heading": "",
+        "paragraph": 6,
+        "start": 35,
+        "end": 52
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_679bd0a7e1",
+      "fact": "本资料内容为解释汉字“仝”的读音与字义，与人工智能治理政策无关",
+      "tag": "F",
+      "quote": "“人工”组成一个字怎么读？",
+      "start": 71,
+      "end": 84,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_679bd0a7e1",
+      "fact": "本资料未提及2026年或任何人工智能治理政策的争议",
+      "tag": "F",
+      "quote": "“人在上，工在下”是“仝”读作：tóng",
+      "start": 436,
+      "end": 456,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 48,
+        "start": 436,
+        "end": 457
+      },
+      "note": ""
+    }
+  ]
+}

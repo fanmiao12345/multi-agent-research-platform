@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_6ac6661705cf45b8ab25eb5f6a4c3582",
+  "goal": "2026年人工智能治理政策的主要争议",
+  "started_at": "2026-09-18T13:30:47",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 17 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:31:11"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:31:27"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 2, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T13:31:42"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅提及完善人工智能治理，未提供任何争议事实或立场，无法回答主要争议。",
+        "finished_at": "2026-09-18T13:31:49"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅提及完善人工智能治理，未提供任何争议事实或立场，无法回答主要争议。；缺失信息：2026年人工智能治理政策正文或权威解读、治理政策主要争议及多方立场材料、完善治理与深化拓展“人工智能+”平衡的具体表述、开源社区建设引发治理争议的相关细节、AI促进就业创业与替代效应争议材料、管理办法、标识办法、算法备案等条目对应争议内容（可用证据 19 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

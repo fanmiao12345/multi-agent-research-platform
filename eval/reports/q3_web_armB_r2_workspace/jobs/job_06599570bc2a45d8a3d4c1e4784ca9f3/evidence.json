@@ -1,0 +1,533 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料称其构建的中文Llama大模型开源生态完全开源可商用。",
+      "tag": "F",
+      "quote": "构建最好的中文Llama大模型开源生态，完全开源可商用",
+      "start": 23902,
+      "end": 23929,
+      "locator": {
+        "heading": "## About",
+        "paragraph": 474,
+        "start": 23876,
+        "end": 23930
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料称Atom-7B和Atom-7B-Chat已完全开源并支持商用。",
+      "tag": "F",
+      "quote": "Atom-7B和Atom-7B-Chat目前已完全开源，支持商用",
+      "start": 8023,
+      "end": 8055,
+      "locator": {
+        "heading": "#### 中文预训练模型Atom",
+        "paragraph": 282,
+        "start": 7968,
+        "end": 8113
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料显示社区提供低于市场价格的算力资源用于训练和推理。",
+      "tag": "F",
+      "quote": "提供低于市场价格的算力资源，可用于各类计算任务",
+      "start": 4925,
+      "end": 4948,
+      "locator": {
+        "heading": "#### 💻 算力",
+        "paragraph": 223,
+        "start": 4925,
+        "end": 4965
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料显示社区为成员提供专属在线推理服务。",
+      "tag": "F",
+      "quote": "为社区成员提供专属的在线推理服务",
+      "start": 4966,
+      "end": 4982,
+      "locator": {
+        "heading": "#### 💻 算力",
+        "paragraph": 224,
+        "start": 4966,
+        "end": 5004
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料显示社区提供一键在线微调服务。",
+      "tag": "F",
+      "quote": "提供一键在线微调服务",
+      "start": 5005,
+      "end": 5015,
+      "locator": {
+        "heading": "#### 💻 算力",
+        "paragraph": 225,
+        "start": 5005,
+        "end": 5045
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料显示社区开放免费API，含Atom-1B、7B、13B三种中文大模型。",
+      "tag": "F",
+      "quote": "开放了免费API供大家使用，包含（Atom-1B,7B,13B 3种中文大模型）",
+      "start": 6163,
+      "end": 6203,
+      "locator": {
+        "heading": "### 📢 最新动态",
+        "paragraph": 245,
+        "start": 6147,
+        "end": 6212
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料显示社区免费提供应用推广展示位。",
+      "tag": "F",
+      "quote": "免费提供应用推广展示位",
+      "start": 5271,
+      "end": 5282,
+      "locator": {
+        "heading": "#### 📱 应用",
+        "paragraph": 231,
+        "start": 5271,
+        "end": 5306
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_9a50c3ea04",
+      "fact": "本资料显示社区提供技术咨询服务。",
+      "tag": "F",
+      "quote": "我们提供技术咨询服务",
+      "start": 4453,
+      "end": 4463,
+      "locator": {
+        "heading": "#### 社区活动",
+        "paragraph": 217,
+        "start": 4445,
+        "end": 4497
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "本资料称，使用开源模型可减少支出并保持数据私密。",
+      "tag": "F",
+      "quote": "so you can spend less while keeping your data private.",
+      "start": 170,
+      "end": 224,
+      "locator": {
+        "heading": "# Run open models.",
+        "paragraph": 4,
+        "start": 114,
+        "end": 225
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "Pro订阅每月20美元，包含60美元用量。",
+      "tag": "F",
+      "quote": "Pro $20 /mo\n\nIncludes $60 of usage",
+      "start": 1846,
+      "end": 1880,
+      "locator": {
+        "heading": "## Predictable pricing",
+        "paragraph": 53,
+        "start": 1846,
+        "end": 1858
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "用量包含额度为Pro 60美元、Max 300美元。",
+      "tag": "F",
+      "quote": "Usage included Pro — $60 Max — $300",
+      "start": 1933,
+      "end": 1968,
+      "locator": {
+        "heading": "## Predictable pricing",
+        "paragraph": 56,
+        "start": 1933,
+        "end": 1969
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "用户可添加用量额度，按需增加使用量。",
+      "tag": "F",
+      "quote": "Add usage credits",
+      "start": 1914,
+      "end": 1931,
+      "locator": {
+        "heading": "## Predictable pricing",
+        "paragraph": 55,
+        "start": 1882,
+        "end": 1932
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "本地模型始终免费。",
+      "tag": "F",
+      "quote": "Local models are always free.",
+      "start": 1815,
+      "end": 1844,
+      "locator": {
+        "heading": "## Predictable pricing",
+        "paragraph": 52,
+        "start": 1715,
+        "end": 1845
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "本资料称定价没有隐藏限制或复杂定价。",
+      "tag": "F",
+      "quote": "No hidden limits or confusing pricing.",
+      "start": 1715,
+      "end": 1753,
+      "locator": {
+        "heading": "## Predictable pricing",
+        "paragraph": 52,
+        "start": 1715,
+        "end": 1845
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "本资料称任何提供商都不会用用户数据训练。",
+      "tag": "F",
+      "quote": "Your data is never trained on by any provider.",
+      "start": 1287,
+      "end": 1333,
+      "locator": {
+        "heading": "## Your data stays yours",
+        "paragraph": 42,
+        "start": 1287,
+        "end": 1451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_0f84a5fd7e",
+      "fact": "本资料称其开放权重且开源。",
+      "tag": "F",
+      "quote": "Open weights and open source",
+      "start": 1637,
+      "end": 1665,
+      "locator": {
+        "heading": "## Your data stays yours",
+        "paragraph": 50,
+        "start": 1637,
+        "end": 1668
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料称 Gitee 主要产品包括社区版、企业版、专业版、高校版、旗舰版。",
+      "tag": "F",
+      "quote": "主要产品为社区版、企业版、专业版、高校版、旗舰版",
+      "start": 168,
+      "end": 192,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料称 Gitee 企业版与专业版服务 30 万家企业，含 1200 家私有化部署企业。",
+      "tag": "F",
+      "quote": "Gitee 企业版 & 专业版共服务了 30 万家企业，包括了 1200 家中大型私有化部署企业。",
+      "start": 267,
+      "end": 316,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料称 Gitee 自 2013 年上线以来服务 1200 万开发者，托管仓库超 2800 万个。",
+      "tag": "F",
+      "quote": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个",
+      "start": 194,
+      "end": 246,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料提供企业版在线使用电话 400-606-0201。",
+      "tag": "F",
+      "quote": "企业版在线使用：400-606-0201",
+      "start": 2074,
+      "end": 2094,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 102,
+        "start": 2074,
+        "end": 2095
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料列出专业版私有部署联系电话 13058176526。",
+      "tag": "F",
+      "quote": "赖经理 13058176526",
+      "start": 2106,
+      "end": 2121,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 104,
+        "start": 2106,
+        "end": 2122
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料称 MothX 支持多种 LLM 提供商，包括 DeepSeek（默认）、OpenAI...",
+      "tag": "F",
+      "quote": "它支持多种 LLM 提供商，包括 DeepSeek（默认）、OpenAI...",
+      "start": 718,
+      "end": 757,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 40,
+        "start": 630,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料称 mcp-gitee 是 Gitee 的模型上下文协议服务器实现。",
+      "tag": "F",
+      "quote": "mcp-gitee 是 Gitee 的模型上下文协议 (MCP) 服务器实现。",
+      "start": 838,
+      "end": 877,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 46,
+        "start": 838,
+        "end": 937
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_2e96accb21",
+      "fact": "本资料称 mcp-gitee-ent 是 Gitee Enterprise 的 MCP 服务器实现。",
+      "tag": "F",
+      "quote": "mcp-gitee-ent 是 Gitee Enterprise 的模型上下文协议 (MCP) 服务器实现。",
+      "start": 1131,
+      "end": 1185,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 55,
+        "start": 1131,
+        "end": 1254
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "开源社以非营利、厂商中立理念运营，未显示大模型商业变现。",
+      "tag": "I",
+      "quote": "vendor-neutral, public-spirited, and non-profit.",
+      "start": 2965,
+      "end": 3013,
+      "locator": {
+        "heading": "## KAIYUANSHE®: China's Leading Open Source Community Organization",
+        "paragraph": 117,
+        "start": 2685,
+        "end": 3338
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "GitHub Sponsors 资助开源开发者，体现开源资助模式。",
+      "tag": "I",
+      "quote": "GitHub Sponsors Fund open source developers",
+      "start": 1298,
+      "end": 1341,
+      "locator": {
+        "heading": "## Navigation Menu",
+        "paragraph": 67,
+        "start": 1298,
+        "end": 1342
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "GitHub 提供 Copilot for Business 企业级 AI 功能。",
+      "tag": "F",
+      "quote": "Copilot for Business Enterprise-grade AI features",
+      "start": 1630,
+      "end": 1679,
+      "locator": {
+        "heading": "## Navigation Menu",
+        "paragraph": 82,
+        "start": 1630,
+        "end": 1680
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "开源社合作数百家赞助、媒体、社区伙伴，体现赞助合作模式。",
+      "tag": "I",
+      "quote": "合作了数百家赞助、媒体、社区伙伴",
+      "start": 5245,
+      "end": 5261,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 122,
+        "start": 5118,
+        "end": 5276
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "LocalAIStack 是构建和运营本地 AI 工作站的开源模块化软件栈。",
+      "tag": "F",
+      "quote": "open, modular software stack for building and operating a local AI workstation",
+      "start": 7122,
+      "end": 7200,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 172,
+        "start": 7103,
+        "end": 7202
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "开源社仓库包含中国人工智能开源生态蓝皮书2026。",
+      "tag": "F",
+      "quote": "China Artificial Intelligence Open-Source Ecosystem Blue Book 2026",
+      "start": 6366,
+      "end": 6432,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 157,
+        "start": 6366,
+        "end": 6433
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "开源社自2016年起连续举办中国开源年会并发布中国开源年度报告。",
+      "tag": "F",
+      "quote": "自2016年起连续举办中国开源年会（COSCon），持续发布 《中国开源年度报告》",
+      "start": 5121,
+      "end": 5162,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 122,
+        "start": 5118,
+        "end": 5276
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_cff0ff5aa9",
+      "fact": "开源社是中国领先的纯社区驱动、中立开放组织。",
+      "tag": "F",
+      "quote": "China's leading purely community-driven, neutral, and open organization",
+      "start": 3342,
+      "end": 3413,
+      "locator": {
+        "heading": "## KAIYUANSHE®: China's Leading Open Source Community Organization",
+        "paragraph": 118,
+        "start": 3339,
+        "end": 4085
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_550b5600e0",
+      "fact": "本资料全文仅为「加载中」，未提供任何可核查的实质内容。",
+      "tag": "F",
+      "quote": "加载中",
+      "start": 0,
+      "end": 3,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 3
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-012）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-005未提“气态膜脱氨技术”，报告在技术议题中将其写成事实，属无依据添加，应删除或标注为缺口。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "证据边界结论仅引E-009推断退役军人事务部页面与电池回收无关，E-009不支持该推断，应补引E-010/E-012/E-014。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处使用〔未知〕标注，未满足提纲“需事实/推断标注”要求，建议改为〔事实〕、〔推断〕或明确缺口说明。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-008仅证明本资料友情链接含动力电池回收联盟，不能确定属于论坛页面；推断应限定为本资料来源页。"
+  }
+ ]
+}

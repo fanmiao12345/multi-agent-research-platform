@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_1ae4c5b3ec",
+      "fact": "本资料声明自身为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_1ae4c5b3ec",
+      "fact": "客服团队2026年人员总数为45人。",
+      "tag": "F",
+      "quote": "客服团队2026年共有45人",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_1ae4c5b3ec",
+      "fact": "团队中一线坐席为32人，其余为管理与质检岗位。",
+      "tag": "F",
+      "quote": "其中一线坐席32人，其余为管理与质检岗位。",
+      "start": 26,
+      "end": 47,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_1ae4c5b3ec",
+      "fact": "按人数相减，非一线岗位为13人，但资料未明确其具体构成。",
+      "tag": "I",
+      "quote": "其余为管理与质检岗位。",
+      "start": 36,
+      "end": 47,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_1ae4c5b3ec",
+      "fact": "本资料未提供任何成本数据，故无法核算试点投入。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_1ae4c5b3ec",
+      "fact": "本资料未提供任何收益数据，故无法核算试点产出或回报。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_1ae4c5b3ec",
+      "fact": "仅凭人员规模无法完成成本收益评估，属资料缺口。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 47
+      },
+      "note": ""
+    }
+  ]
+}

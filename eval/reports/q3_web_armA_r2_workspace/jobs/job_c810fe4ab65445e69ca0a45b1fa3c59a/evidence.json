@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_37fd1804e3",
+      "fact": "本资料为菜鸟教程的「算法基础与分析方法」页面，主题是算法教学。",
+      "tag": "F",
+      "quote": "算法基础与分析方法",
+      "start": 321,
+      "end": 330,
+      "locator": {
+        "heading": "# 菜鸟教程 -- 学的不仅是技术，更是梦想！",
+        "paragraph": 39,
+        "start": 303,
+        "end": 379
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_37fd1804e3",
+      "fact": "本资料将算法定义为明确的、有限的、可执行的指令序列。",
+      "tag": "F",
+      "quote": "它是一个明确的、有限的、可执行的指令序列",
+      "start": 755,
+      "end": 775,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_37fd1804e3",
+      "fact": "本资料称合格算法须具备有穷性、确定性、可行性、输入、输出五个特征。",
+      "tag": "F",
+      "quote": "一个合格的算法必须具备以下五个基本特征",
+      "start": 952,
+      "end": 971,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 50,
+        "start": 952,
+        "end": 989
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_37fd1804e3",
+      "fact": "本资料举例提到搜索引擎在毫秒间从海量数据中找出最相关的网页。",
+      "tag": "F",
+      "quote": "搜索引擎在毫秒间从海量数据中找出最相关的网页",
+      "start": 822,
+      "end": 844,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_37fd1804e3",
+      "fact": "本资料说明其范围是认识算法核心概念并科学评价算法优劣。",
+      "tag": "I",
+      "quote": "本文将带你系统地认识算法的核心概念，并学习如何科学地评价一个算法的优劣。",
+      "start": 902,
+      "end": 938,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 49,
+        "start": 902,
+        "end": 939
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_37fd1804e3",
+      "fact": "本资料从时间复杂度和空间复杂度两个维度评价算法。",
+      "tag": "F",
+      "quote": "算法分析：如何评价算法的好坏？",
+      "start": 2168,
+      "end": 2183,
+      "locator": {
+        "heading": "# 测试代码",
+        "paragraph": 78,
+        "start": 2165,
+        "end": 2171
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_37fd1804e3",
+      "fact": "本资料未涉及是否应强制公开算法推荐规则的问题。",
+      "tag": "U",
+      "quote": "本文将带你系统地认识算法的核心概念",
+      "start": 902,
+      "end": 919,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 49,
+        "start": 902,
+        "end": 939
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_acbfe90b88",
+      "fact": "本资料为欧盟概况介绍，未提及算法推荐规则是否应公开",
+      "tag": "F",
+      "quote": "欧盟概况",
+      "start": 670,
+      "end": 674,
+      "locator": {
+        "heading": "",
+        "paragraph": 75,
+        "start": 643,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_124b3a6fff",
+      "fact": "本资料为欧盟官方门户页面，主要提供导航与栏目入口。",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_124b3a6fff",
+      "fact": "本资料列出的头条新闻均不涉及算法推荐规则公开。",
+      "tag": "F",
+      "quote": "Featured news",
+      "start": 1222,
+      "end": 1235,
+      "locator": {
+        "heading": "",
+        "paragraph": 78,
+        "start": 1222,
+        "end": 1236
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_124b3a6fff",
+      "fact": "本资料提到欧盟提出一项KIDS法案，关注儿童上网安全。",
+      "tag": "F",
+      "quote": "the EU has proposed a new KIDS Act",
+      "start": 1968,
+      "end": 2002,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_124b3a6fff",
+      "fact": "该法案拟逐步放开儿童使用社交媒体，推迟至13岁。",
+      "tag": "F",
+      "quote": "delaying access to social media until the age of 13.",
+      "start": 2089,
+      "end": 2141,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 101,
+        "start": 1863,
+        "end": 2142
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_124b3a6fff",
+      "fact": "本资料另一头条为欧盟海关法典与电商规则改革获批。",
+      "tag": "F",
+      "quote": "Reform of EU customs code and e-commerce rules gets green light",
+      "start": 2617,
+      "end": 2680,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 110,
+        "start": 2617,
+        "end": 2681
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_124b3a6fff",
+      "fact": "本资料提及欧盟2024-2029年优先事项，但未展开内容。",
+      "tag": "F",
+      "quote": "European Union priorities 2024-2029",
+      "start": 3325,
+      "end": 3360,
+      "locator": {
+        "heading": "## Learn more",
+        "paragraph": 118,
+        "start": 3325,
+        "end": 3361
+      },
+      "note": ""
+    }
+  ]
+}

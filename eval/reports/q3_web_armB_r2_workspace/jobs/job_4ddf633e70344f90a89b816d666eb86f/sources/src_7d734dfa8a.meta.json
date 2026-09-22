@@ -1,0 +1,986 @@
+{
+  "source_id": "src_7d734dfa8a",
+  "kind": "paste",
+  "display": "粘贴文本 3",
+  "original_address": "paste:3",
+  "title": "Sign up",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 3559,
+  "content_hash": "abfff05c0d3f08cca1beb8bae26467d2333cebb6a5b3fdba42c404172ac35995",
+  "normalized_hash": "6ea4a9714c45e9bade3635a59e3aa77864846d6afc9c83ce313910c580872a7a",
+  "captured_at": "2026-09-20T09:59:46",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_7d734dfa8a.md",
+  "encoding": "utf-8",
+  "segment_count": 136,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 8,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 9,
+      "end": 16,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 2,
+      "start": 62,
+      "end": 198,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 3,
+      "start": 199,
+      "end": 214,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 4,
+      "start": 215,
+      "end": 227,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 5,
+      "start": 228,
+      "end": 241,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 6,
+      "start": 242,
+      "end": 269,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 7,
+      "start": 270,
+      "end": 328,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 8,
+      "start": 329,
+      "end": 350,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 9,
+      "start": 351,
+      "end": 363,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 10,
+      "start": 364,
+      "end": 371,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 11,
+      "start": 372,
+      "end": 390,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 12,
+      "start": 391,
+      "end": 401,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 13,
+      "start": 402,
+      "end": 429,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 14,
+      "start": 430,
+      "end": 469,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 15,
+      "start": 470,
+      "end": 491,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 16,
+      "start": 492,
+      "end": 504,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 17,
+      "start": 505,
+      "end": 512,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 18,
+      "start": 513,
+      "end": 531,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 19,
+      "start": 532,
+      "end": 542,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 20,
+      "start": 543,
+      "end": 570,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 21,
+      "start": 571,
+      "end": 604,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 22,
+      "start": 605,
+      "end": 626,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 23,
+      "start": 627,
+      "end": 639,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 24,
+      "start": 640,
+      "end": 647,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 25,
+      "start": 648,
+      "end": 666,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 26,
+      "start": 667,
+      "end": 677,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 27,
+      "start": 678,
+      "end": 699,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 28,
+      "start": 700,
+      "end": 718,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 29,
+      "start": 719,
+      "end": 740,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 30,
+      "start": 741,
+      "end": 779,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 31,
+      "start": 780,
+      "end": 801,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 32,
+      "start": 802,
+      "end": 809,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 33,
+      "start": 810,
+      "end": 822,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 34,
+      "start": 823,
+      "end": 833,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 35,
+      "start": 834,
+      "end": 847,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 36,
+      "start": 848,
+      "end": 866,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 37,
+      "start": 867,
+      "end": 911,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 38,
+      "start": 912,
+      "end": 933,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 39,
+      "start": 934,
+      "end": 946,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 40,
+      "start": 947,
+      "end": 954,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 41,
+      "start": 955,
+      "end": 964,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 42,
+      "start": 965,
+      "end": 975,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 43,
+      "start": 976,
+      "end": 989,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 44,
+      "start": 990,
+      "end": 1039,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 45,
+      "start": 1040,
+      "end": 1060,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 46,
+      "start": 1061,
+      "end": 1068,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 47,
+      "start": 1069,
+      "end": 1078,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 48,
+      "start": 1079,
+      "end": 1088,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 49,
+      "start": 1089,
+      "end": 1105,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 50,
+      "start": 1106,
+      "end": 1119,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 51,
+      "start": 1120,
+      "end": 1160,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 52,
+      "start": 1161,
+      "end": 1173,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 53,
+      "start": 1174,
+      "end": 1181,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 54,
+      "start": 1182,
+      "end": 1191,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 55,
+      "start": 1192,
+      "end": 1202,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 56,
+      "start": 1203,
+      "end": 1235,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 57,
+      "start": 1236,
+      "end": 1274,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 58,
+      "start": 1275,
+      "end": 1298,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 59,
+      "start": 1299,
+      "end": 1306,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 60,
+      "start": 1307,
+      "end": 1330,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 61,
+      "start": 1331,
+      "end": 1341,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 62,
+      "start": 1342,
+      "end": 1387,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 63,
+      "start": 1388,
+      "end": 1421,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 64,
+      "start": 1422,
+      "end": 1445,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 65,
+      "start": 1446,
+      "end": 1453,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 66,
+      "start": 1454,
+      "end": 1490,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 67,
+      "start": 1491,
+      "end": 1501,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 68,
+      "start": 1502,
+      "end": 1517,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 69,
+      "start": 1518,
+      "end": 1534,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 70,
+      "start": 1535,
+      "end": 1556,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 71,
+      "start": 1557,
+      "end": 1597,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 72,
+      "start": 1598,
+      "end": 1610,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 73,
+      "start": 1611,
+      "end": 1618,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 74,
+      "start": 1619,
+      "end": 1631,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 75,
+      "start": 1632,
+      "end": 1642,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 76,
+      "start": 1643,
+      "end": 1659,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 77,
+      "start": 1660,
+      "end": 1681,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 78,
+      "start": 1682,
+      "end": 1712,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 79,
+      "start": 1713,
+      "end": 1720,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 80,
+      "start": 1721,
+      "end": 1733,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 81,
+      "start": 1734,
+      "end": 1744,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 82,
+      "start": 1745,
+      "end": 1761,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 83,
+      "start": 1762,
+      "end": 1788,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 84,
+      "start": 1789,
+      "end": 1830,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 85,
+      "start": 1831,
+      "end": 1838,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 86,
+      "start": 1839,
+      "end": 1856,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 87,
+      "start": 1857,
+      "end": 1867,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 88,
+      "start": 1868,
+      "end": 1894,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 89,
+      "start": 1895,
+      "end": 1923,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 90,
+      "start": 1924,
+      "end": 1963,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 91,
+      "start": 1964,
+      "end": 1987,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 92,
+      "start": 1988,
+      "end": 1995,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 93,
+      "start": 1996,
+      "end": 2015,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 94,
+      "start": 2016,
+      "end": 2026,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 95,
+      "start": 2027,
+      "end": 2048,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 96,
+      "start": 2049,
+      "end": 2093,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 97,
+      "start": 2094,
+      "end": 2101,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 98,
+      "start": 2102,
+      "end": 2114,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 99,
+      "start": 2115,
+      "end": 2125,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 100,
+      "start": 2126,
+      "end": 2154,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 101,
+      "start": 2155,
+      "end": 2216,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 102,
+      "start": 2217,
+      "end": 2224,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 103,
+      "start": 2225,
+      "end": 2244,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 104,
+      "start": 2245,
+      "end": 2255,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 105,
+      "start": 2256,
+      "end": 2273,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 106,
+      "start": 2274,
+      "end": 2276,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 107,
+      "start": 2277,
+      "end": 2370,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 108,
+      "start": 2371,
+      "end": 2373,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 109,
+      "start": 2374,
+      "end": 2518,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 110,
+      "start": 2519,
+      "end": 2521,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 111,
+      "start": 2522,
+      "end": 2604,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 112,
+      "start": 2605,
+      "end": 2661,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 113,
+      "start": 2662,
+      "end": 2677,
+      "page": null
+    },
+    {
+      "heading": "# Your dream job is already looking for you",
+      "paragraph": 114,
+      "start": 2678,
+      "end": 2689,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 115,
+      "start": 2730,
+      "end": 2882,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 116,
+      "start": 2883,
+      "end": 2948,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 117,
+      "start": 2949,
+      "end": 3065,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 118,
+      "start": 3066,
+      "end": 3135,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 119,
+      "start": 3136,
+      "end": 3216,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 120,
+      "start": 3217,
+      "end": 3244,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 121,
+      "start": 3245,
+      "end": 3294,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 122,
+      "start": 3295,
+      "end": 3303,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 123,
+      "start": 3304,
+      "end": 3317,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 124,
+      "start": 3318,
+      "end": 3326,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 125,
+      "start": 3327,
+      "end": 3335,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 126,
+      "start": 3336,
+      "end": 3347,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 127,
+      "start": 3348,
+      "end": 3364,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 128,
+      "start": 3365,
+      "end": 3390,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 129,
+      "start": 3391,
+      "end": 3410,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 130,
+      "start": 3411,
+      "end": 3423,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 131,
+      "start": 3424,
+      "end": 3448,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 132,
+      "start": 3449,
+      "end": 3512,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 133,
+      "start": 3513,
+      "end": 3528,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 134,
+      "start": 3529,
+      "end": 3543,
+      "page": null
+    },
+    {
+      "heading": "## AI interviews to boost your profile",
+      "paragraph": 135,
+      "start": 3544,
+      "end": 3556,
+      "page": null
+    }
+  ],
+  "final_url": "",
+  "http_status": null,
+  "content_type": "",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T09:59:46",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

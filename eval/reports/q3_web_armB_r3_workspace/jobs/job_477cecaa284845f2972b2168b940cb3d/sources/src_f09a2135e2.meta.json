@@ -1,0 +1,706 @@
+{
+  "source_id": "src_f09a2135e2",
+  "kind": "url",
+  "display": "AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异-阿里云开发者社区",
+  "original_address": "https://developer.aliyun.com/article/1714284",
+  "title": "AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异-阿里云开发者社区",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 8916,
+  "content_hash": "7fa32dda17f91b981ca6e7b6f74b301c4fc028bfa1aa07f9d007aec2612bb4c1",
+  "normalized_hash": "06f15d2ef092f0dfc4705d2b715c6da7a827cade7e3bf84a1e949c3e90b5e2eb",
+  "captured_at": "2026-09-20T11:47:33",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_f09a2135e2.md",
+  "encoding": "UTF-8",
+  "segment_count": 96,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 34,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 35,
+      "end": 48,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 49,
+      "end": 55,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 56,
+      "end": 66,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 67,
+      "end": 73,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 74,
+      "end": 77,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 78,
+      "end": 83,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 84,
+      "end": 90,
+      "page": null
+    },
+    {
+      "heading": "#### 热门",
+      "paragraph": 8,
+      "start": 111,
+      "end": 167,
+      "page": null
+    },
+    {
+      "heading": "#### 云计算",
+      "paragraph": 9,
+      "start": 178,
+      "end": 195,
+      "page": null
+    },
+    {
+      "heading": "#### 大数据",
+      "paragraph": 10,
+      "start": 206,
+      "end": 299,
+      "page": null
+    },
+    {
+      "heading": "#### 云原生",
+      "paragraph": 11,
+      "start": 310,
+      "end": 341,
+      "page": null
+    },
+    {
+      "heading": "#### 人工智能",
+      "paragraph": 12,
+      "start": 353,
+      "end": 407,
+      "page": null
+    },
+    {
+      "heading": "#### 数据库",
+      "paragraph": 13,
+      "start": 418,
+      "end": 462,
+      "page": null
+    },
+    {
+      "heading": "#### 开发与运维",
+      "paragraph": 14,
+      "start": 475,
+      "end": 493,
+      "page": null
+    },
+    {
+      "heading": "#### 开发与运维",
+      "paragraph": 15,
+      "start": 494,
+      "end": 498,
+      "page": null
+    },
+    {
+      "heading": "#### 开发与运维",
+      "paragraph": 16,
+      "start": 499,
+      "end": 504,
+      "page": null
+    },
+    {
+      "heading": "#### 开发与运维",
+      "paragraph": 17,
+      "start": 505,
+      "end": 510,
+      "page": null
+    },
+    {
+      "heading": "#### 开发与运维",
+      "paragraph": 18,
+      "start": 511,
+      "end": 515,
+      "page": null
+    },
+    {
+      "heading": "#### 开发与运维",
+      "paragraph": 19,
+      "start": 516,
+      "end": 526,
+      "page": null
+    },
+    {
+      "heading": "#### 开发与运维",
+      "paragraph": 20,
+      "start": 527,
+      "end": 532,
+      "page": null
+    },
+    {
+      "heading": "### 活动广场",
+      "paragraph": 21,
+      "start": 543,
+      "end": 562,
+      "page": null
+    },
+    {
+      "heading": "#### 任务中心",
+      "paragraph": 22,
+      "start": 574,
+      "end": 587,
+      "page": null
+    },
+    {
+      "heading": "#### 训练营",
+      "paragraph": 23,
+      "start": 598,
+      "end": 610,
+      "page": null
+    },
+    {
+      "heading": "#### 直播",
+      "paragraph": 24,
+      "start": 620,
+      "end": 630,
+      "page": null
+    },
+    {
+      "heading": "#### 乘风者计划",
+      "paragraph": 25,
+      "start": 643,
+      "end": 651,
+      "page": null
+    },
+    {
+      "heading": "#### 乘风者计划",
+      "paragraph": 26,
+      "start": 652,
+      "end": 655,
+      "page": null
+    },
+    {
+      "heading": "### 下载",
+      "paragraph": 27,
+      "start": 664,
+      "end": 682,
+      "page": null
+    },
+    {
+      "heading": "#### 镜像站",
+      "paragraph": 28,
+      "start": 693,
+      "end": 710,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 29,
+      "start": 722,
+      "end": 740,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 30,
+      "start": 741,
+      "end": 747,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 31,
+      "start": 748,
+      "end": 751,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 32,
+      "start": 752,
+      "end": 808,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 33,
+      "start": 809,
+      "end": 830,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 34,
+      "start": 831,
+      "end": 866,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 35,
+      "start": 867,
+      "end": 915,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 36,
+      "start": 916,
+      "end": 1013,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 37,
+      "start": 1014,
+      "end": 1073,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 38,
+      "start": 1074,
+      "end": 1098,
+      "page": null
+    },
+    {
+      "heading": "#### 技术资料",
+      "paragraph": 39,
+      "start": 1099,
+      "end": 1116,
+      "page": null
+    },
+    {
+      "heading": "# AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异",
+      "paragraph": 40,
+      "start": 1166,
+      "end": 1182,
+      "page": null
+    },
+    {
+      "heading": "# AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异",
+      "paragraph": 41,
+      "start": 1183,
+      "end": 1186,
+      "page": null
+    },
+    {
+      "heading": "# AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异",
+      "paragraph": 42,
+      "start": 1187,
+      "end": 1193,
+      "page": null
+    },
+    {
+      "heading": "# AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异",
+      "paragraph": 43,
+      "start": 1194,
+      "end": 1351,
+      "page": null
+    },
+    {
+      "heading": "# AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异",
+      "paragraph": 44,
+      "start": 1352,
+      "end": 1494,
+      "page": null
+    },
+    {
+      "heading": "# AI Agent 与 Agentic AI 有什么区别？一文讲清智能体与智能代理的核心差异",
+      "paragraph": 45,
+      "start": 1495,
+      "end": 1610,
+      "page": null
+    },
+    {
+      "heading": "#### AI Agent：任务驱动型的人工智能",
+      "paragraph": 46,
+      "start": 1637,
+      "end": 1790,
+      "page": null
+    },
+    {
+      "heading": "#### AI Agent：任务驱动型的人工智能",
+      "paragraph": 47,
+      "start": 1791,
+      "end": 1884,
+      "page": null
+    },
+    {
+      "heading": "#### AI Agent：任务驱动型的人工智能",
+      "paragraph": 48,
+      "start": 1885,
+      "end": 1893,
+      "page": null
+    },
+    {
+      "heading": "#### AI Agent：任务驱动型的人工智能",
+      "paragraph": 49,
+      "start": 1894,
+      "end": 1915,
+      "page": null
+    },
+    {
+      "heading": "#### AI Agent：任务驱动型的人工智能",
+      "paragraph": 50,
+      "start": 1916,
+      "end": 1938,
+      "page": null
+    },
+    {
+      "heading": "#### AI Agent：任务驱动型的人工智能",
+      "paragraph": 51,
+      "start": 1939,
+      "end": 1961,
+      "page": null
+    },
+    {
+      "heading": "#### Agentic AI：具备自主性与决策能力的智能代理",
+      "paragraph": 52,
+      "start": 1995,
+      "end": 2127,
+      "page": null
+    },
+    {
+      "heading": "#### Agentic AI：具备自主性与决策能力的智能代理",
+      "paragraph": 53,
+      "start": 2128,
+      "end": 2224,
+      "page": null
+    },
+    {
+      "heading": "#### Agentic AI：具备自主性与决策能力的智能代理",
+      "paragraph": 54,
+      "start": 2225,
+      "end": 2233,
+      "page": null
+    },
+    {
+      "heading": "#### Agentic AI：具备自主性与决策能力的智能代理",
+      "paragraph": 55,
+      "start": 2234,
+      "end": 2259,
+      "page": null
+    },
+    {
+      "heading": "#### Agentic AI：具备自主性与决策能力的智能代理",
+      "paragraph": 56,
+      "start": 2260,
+      "end": 2287,
+      "page": null
+    },
+    {
+      "heading": "#### Agentic AI：具备自主性与决策能力的智能代理",
+      "paragraph": 57,
+      "start": 2288,
+      "end": 2318,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 58,
+      "start": 2350,
+      "end": 2353,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 59,
+      "start": 2354,
+      "end": 2363,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 60,
+      "start": 2364,
+      "end": 2375,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 61,
+      "start": 2376,
+      "end": 2384,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 62,
+      "start": 2385,
+      "end": 2402,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 63,
+      "start": 2403,
+      "end": 2427,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 64,
+      "start": 2428,
+      "end": 2434,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 65,
+      "start": 2435,
+      "end": 2456,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 66,
+      "start": 2457,
+      "end": 2477,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 67,
+      "start": 2478,
+      "end": 2484,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 68,
+      "start": 2485,
+      "end": 2497,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 69,
+      "start": 2498,
+      "end": 2518,
+      "page": null
+    },
+    {
+      "heading": "#### AI 智能体与 Agentic AI 的主要区别",
+      "paragraph": 70,
+      "start": 2519,
+      "end": 2557,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 71,
+      "start": 2573,
+      "end": 2605,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 72,
+      "start": 2606,
+      "end": 2637,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 73,
+      "start": 2638,
+      "end": 2679,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 74,
+      "start": 2680,
+      "end": 2756,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 75,
+      "start": 2757,
+      "end": 2789,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 76,
+      "start": 2790,
+      "end": 2828,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 77,
+      "start": 2829,
+      "end": 2892,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 78,
+      "start": 2893,
+      "end": 3015,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 79,
+      "start": 3016,
+      "end": 3178,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 80,
+      "start": 3179,
+      "end": 3195,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 81,
+      "start": 3196,
+      "end": 3199,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 82,
+      "start": 3200,
+      "end": 3205,
+      "page": null
+    },
+    {
+      "heading": "#### 企业应用案例分析",
+      "paragraph": 83,
+      "start": 3206,
+      "end": 3211,
+      "page": null
+    },
+    {
+      "heading": "### 为什么选择阿里云",
+      "paragraph": 84,
+      "start": 3226,
+      "end": 3261,
+      "page": null
+    },
+    {
+      "heading": "### 大模型",
+      "paragraph": 85,
+      "start": 3271,
+      "end": 3290,
+      "page": null
+    },
+    {
+      "heading": "### 产品和定价",
+      "paragraph": 86,
+      "start": 3302,
+      "end": 3335,
+      "page": null
+    },
+    {
+      "heading": "### 技术内容",
+      "paragraph": 87,
+      "start": 3346,
+      "end": 3375,
+      "page": null
+    },
+    {
+      "heading": "### 权益",
+      "paragraph": 88,
+      "start": 3384,
+      "end": 3410,
+      "page": null
+    },
+    {
+      "heading": "### 服务",
+      "paragraph": 89,
+      "start": 3419,
+      "end": 3451,
+      "page": null
+    },
+    {
+      "heading": "### 关注阿里云",
+      "paragraph": 90,
+      "start": 3463,
+      "end": 3499,
+      "page": null
+    },
+    {
+      "heading": "### 关注阿里云",
+      "paragraph": 91,
+      "start": 3500,
+      "end": 3516,
+      "page": null
+    },
+    {
+      "heading": "### 关注阿里云",
+      "paragraph": 92,
+      "start": 3517,
+      "end": 3552,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 93,
+      "start": 3563,
+      "end": 3666,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 94,
+      "start": 3667,
+      "end": 3744,
+      "page": null
+    },
+    {
+      "heading": "### 友情链接",
+      "paragraph": 95,
+      "start": 3745,
+      "end": 3781,
+      "page": null
+    }
+  ],
+  "final_url": "https://developer.aliyun.com/article/1714284",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:47:33",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

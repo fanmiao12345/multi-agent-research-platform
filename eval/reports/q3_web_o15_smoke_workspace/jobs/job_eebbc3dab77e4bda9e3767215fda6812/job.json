@@ -1,0 +1,508 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_eebbc3dab77e4bda9e3767215fda6812",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 个人知识管理系统中的检索与记忆设计：基于现有资料的证据梳理与缺口清单\n\n## 报告范围与证据边界\n本报告仅依据给定资料，梳理个人知识管理系统中与检索、记忆相关的事实与可推断线索，不补写资料外事实〔事实〕。资料全文未涉及个人知识管理系统的检索设计【[E-004]】〔事实〕；未涉及个人知识管理系统的记忆设计【[E-005]】〔事实〕；词义辨析资料未涉及知识管理系统中的检索与记忆设计【[E-013]】〔事实〕；资料未涉及检索、索引或记忆机制的设计说明【[E-029]】〔事实〕；分布式系统资料未涉及个人知识管理系统的检索与记忆设计【[E-039]】〔事实〕。因此，索引结构、查询语言、全文搜索、排序过滤、记忆算法与用户效果等不能回答〔推断〕；若资料未提供，则列为缺口〔未知〕。\n\n## 「个人」的指代辨析与系统命名前提\n资料认为「个人」一词的含义取决于具体语境【[E-006]】〔事实〕。在「我个人认为」这类表述中，「个人」明确指说话者自己【[E-007]】〔事实〕；在「个人有个人的看法」中，它指许多人中的每一个，不含说话者自己【[E-008]】〔事实〕，并强调个体之间的差异性和独立性【[E-009]】〔事实〕。资料总结「个人」既可指自己，也可指不包括自己在内的其他人【[E-010]】〔事实〕，具体含义需根据上下文判断【[E-011]】〔事实〕。由此推断，以「个人」命名的系统需先界定其指代是自己还是泛指个体【[E-012]】〔推断〕。两种用法适用范围是否互斥未定【[E-007]】【[E-008]】〔未知〕；从词义辨析到个人知识管理命名与用户范围设计，资料缺少直接证据〔未知〕。\n\n## 本地知识网络作为检索与记忆的底座\n资料称 Obsidian 是基于 Markdown 的个人知识库与笔记管理工具【[E-030]】〔事实〕，采用本地文件存储，笔记以普通 Markdown 文档保存【[E-031]】〔事实〕，并以纯文本 Markdown 文件形式本地存储【[E-016]】〔事实〕。笔记私密存储在用户设备上，可离线快速访问【[E-014]】〔事实〕；使用开放文件格式，用户不会被锁定，可长期拥有数据【[E-015]】〔事实〕。资料又称 Obsidian 把笔记变成可连接、可扩展、可计算的知识网络【[E-032]】〔事实〕，其核心思想是连接零散笔记，让知识自己长出来【[E-035]】〔事实〕；普通笔记软件只是信息仓库，Obsidian 更像知识中枢【[E-034]】〔事实〕。据此推断，本地存储、开放格式与知识网络共同构成检索与记忆的可能底座〔推断〕，但资料未说明索引、全文搜索、记忆算法如何在此底座上实现【[E-004]】【[E-005]】【[E-029]】〔未知〕。\n\n## 双向链接与笔记间关联\n资料称可在笔记间建立链接，链接想法、人物、地点、书籍等，构建个人维基【[E-017]】〔事实〕；双向链接可自动建立知识之间的关系【[E-036]】〔事实〕；示例笔记界面显示「1 backlink」，表明笔记间可互相关联【[E-020]】〔事实〕。推断：这些关联为检索提供入口与上下文，但资料未说明检索如何利用反向链接进行排序、过滤或跳转【[E-004]】【[E-029]】〔推断/未知〕。\n\n## 图谱可视化与关系发现\n资料称 Graph 可可视化笔记之间的关系，发现思维中的隐藏模式【[E-018]】〔事实〕；知识图谱自动生成知识关系网络图【[E-037]】〔事实〕。推断：图谱有助于关系发现和知识浏览，但资料未说明图谱如何支持关键字检索或记忆复习【[E-005]】【[E-029]】〔推断/未知〕。\n\n## 查询插件与数据化检索的可能性\n资料列出 Dataview 插件，称其为面向数据爱好者的高级查询【[E-019]】〔事实〕。推断：这说明系统可通过插件扩展查询能力，可能成为数据化检索入口〔推断〕；但资料未给出查询语言、索引结构、排序与过滤等细节【[E-019]】【[E-004]】【[E-029]】〔未知〕。\n\n## 版本历史与修订追踪对记忆的间接支持\n资料称每篇笔记保留一年版本历史，便于追踪修订【[E-021]】〔事实〕；并指出学习常见问题：学过会忘，或知道记过却找不到【[E-033]】〔事实〕。推断：版本历史可帮助回顾修订，对记忆形成间接支持〔推断〕；但它不等同于间隔重复、复习计划或记忆曲线，资料未说明其与记忆机制的关系【[E-005]】【[E-029]】〔未知〕。\n\n## 客户端、插件与采集入口的支撑条件\n资料是 Obsidian 的下载页面，提供各平台客户端获取入口【[E-022]】〔事实〕，列出 Windows、Mac、Linux 桌面端下载【[E-023]】〔事实〕，列明 iOS 与 Android 移动端下载渠道【[E-024]】〔事实〕，提供支持 Chrome、Safari、Firefox、Edge 等浏览器的 Web Clipper【[E-025]】〔事实〕，并列出 Sync、Publish、Canvas、Mobile、Web Clipper、CLI 等能力【[E-026]】〔事实〕。页脚列出 Plugins 插件与 Themes 主题的社区入口【[E-027]】〔事实〕；Linux 提供 AppImage、Snap、Deb、Flatpak 等多种安装包格式【[E-028]】〔事实〕。推断：多端、插件和采集入口为检索与记忆提供使用条件与输入来源〔推断〕，但资料未说明跨端搜索一致性、插件检索能力或采集后索引方式【[E-004]】【[E-029]】〔未知〕。\n\n## 检索设计的直接证据缺口\n资料全文未涉及个人知识管理系统的检索设计【[E-004]】〔事实〕；未涉及记忆设计【[E-005]】〔事实〕；未涉及检索、索引或记忆机制的设计说明【[E-029]】〔事实〕。因此，索引结构、查询语言、全文搜索、排序与过滤、Obsidian 搜索与索引机制、性能与限制等均缺少直接材料〔未知〕。现有 Dataview 高级查询【[E-019]】、双向链接【[E-036]】、Graph【[E-018]】仅是间接线索，不足以说明完整检索设计〔推断〕。\n\n## 记忆设计的直接证据缺口\n资料全文未涉及个人知识管理系统的记忆设计【[E-005]】〔事实〕；词义辨析资料未涉及知识管理系统中的检索与记忆设计【[E-013]】〔事实〕；资料未涉及检索、索引或记忆机制的设计说明【[E-029]】〔事实〕。因此，间隔重复、复习计划、记忆曲线、回顾工作流等缺少直接材料〔未知〕。版本历史【[E-021]】与「学过会忘/找不到」【[E-033]】只提示问题与间接支持，不构成记忆机制设计证据〔推断〕。\n\n## 证据边界内的综合回答与验证方向\n在证据边界内，可确认 Obsidian 把笔记变成可连接、可扩展、可计算的知识网络【[E-032]】〔事实〕；双向链接可自动建立知识之间的关系【[E-036]】〔事实〕；Dataview 是面向数据爱好者的高级查询插件【[E-019]】〔事实〕；每篇笔记保留一年版本历史，便于追踪修订【[E-021]】〔事实〕。据此推断，检索设计可能依赖链接、图谱与查询插件，记忆支持可能依赖版本历史与回顾场景，但这些只是间接线索，并非完整机制〔推断〕。后续验证方向应补齐：索引结构、查询语言、全文搜索、排序过滤、搜索索引实现、间隔重复/复习计划/记忆曲线/回顾工作流，以及用户实证与实验数据；这些内容在当前资料中未获说明【[E-004]】【[E-005]】【[E-029]】〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 6,
+    "statuses": {
+      "ok": 6
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 39 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T12:04:33"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，1 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T12:04:53"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T12:04:58"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "11 个章节",
+        "finished_at": "2026-09-20T12:05:09"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（3126字）",
+        "finished_at": "2026-09-20T12:05:36"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 12,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-20T12:06:41"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 69,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.ncss.cn/student/m/resume/personcenter.html",
+      "https://zhidao.baidu.com/question/2002226940225630987.html",
+      "https://obsidian.md/",
+      "https://obsidian.md/download",
+      "https://www.runoob.com/obsidian/obsidian-tutorial.html",
+      "https://javaguide.cn/distributed-system/distributed-system-intro.html"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 交互设计",
+        "rank": 2,
+        "title": "个人中心-国家大学生就业服务平台",
+        "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+        "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 交互设计",
+        "rank": 5,
+        "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+        "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+        "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+        "published_date": "2025-05-24",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Obsidian 语义搜索 插件",
+        "rank": 1,
+        "title": "Obsidian - Sharpen your thinking",
+        "url": "https://obsidian.md/",
+        "snippet": "5 天之前 · No one else can read them, not even us. Your mind is unique. With thousands of plugins and themes, you can shape …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Obsidian 语义搜索 插件",
+        "rank": 2,
+        "title": "Download - Obsidian",
+        "url": "https://obsidian.md/download",
+        "snippet": "2026年8月12日 · Obsidian is available on all major platforms. Download Obsidian for iOS, Android, macOS, Windows and Linux.",
+        "published_date": "2026-08-12",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Obsidian 语义搜索 插件",
+        "rank": 4,
+        "title": "Obsidian 教程 | 菜鸟教程",
+        "url": "https://www.runoob.com/obsidian/obsidian-tutorial.html",
+        "snippet": "Obsidian 教程 Obsidian 是一款基于 Markdown 文件的个人知识库与笔记管理工具，主要用于知识整理、笔记记录和构建个人知识体系 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式认知 外部记忆 笔记",
+        "rank": 4,
+        "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+        "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+        "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+        "published_date": "2026-06-25",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 交互设计",
+        "urls": [
+          "https://www.ncss.cn/student/m/resume/personcenter.html",
+          "https://zhidao.baidu.com/question/2002226940225630987.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 检索 交互设计",
+            "rank": 2,
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 检索 交互设计",
+            "rank": 5,
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+            "published_date": "2025-05-24",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "个人的意思_个人的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bd2f7f480",
+            "relevance": 0.125,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "个体 - 百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AA%E4%BD%93/2667121",
+            "relevance": 0.062,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.244,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 记忆 间隔重复",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "个人的意思_个人的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bd2f7f480",
+            "relevance": 0.111,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "个体 - 百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AA%E4%BD%93/2667121",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.215,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Obsidian 语义搜索 插件",
+        "urls": [
+          "https://obsidian.md/",
+          "https://obsidian.md/download",
+          "https://www.runoob.com/obsidian/obsidian-tutorial.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Obsidian 语义搜索 插件",
+            "rank": 1,
+            "title": "Obsidian - Sharpen your thinking",
+            "url": "https://obsidian.md/",
+            "snippet": "5 天之前 · No one else can read them, not even us. Your mind is unique. With thousands of plugins and themes, you can shape …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Obsidian 语义搜索 插件",
+            "rank": 2,
+            "title": "Download - Obsidian",
+            "url": "https://obsidian.md/download",
+            "snippet": "2026年8月12日 · Obsidian is available on all major platforms. Download Obsidian for iOS, Android, macOS, Windows and Linux.",
+            "published_date": "2026-08-12",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Obsidian 语义搜索 插件",
+            "rank": 4,
+            "title": "Obsidian 教程 | 菜鸟教程",
+            "url": "https://www.runoob.com/obsidian/obsidian-tutorial.html",
+            "snippet": "Obsidian 教程 Obsidian 是一款基于 Markdown 文件的个人知识库与笔记管理工具，主要用于知识整理、笔记记录和构建个人知识体系 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "AI时代，你需要熟悉的核心软件是Obsidian，Obsidian使用 ...",
+            "url": "https://zhuanlan.zhihu.com/p/2026071811813643264",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Obsidian - Windows官方下载 | 微软应用商店 | Microsoft Store",
+            "url": "https://apps.microsoft.com/detail/xp8k51fr765rld?hl=zh-CN&gl=CN",
+            "relevance": 0.3,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.206,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式认知 外部记忆 笔记",
+        "urls": [
+          "https://javaguide.cn/distributed-system/distributed-system-intro.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "分布式认知 外部记忆 笔记",
+            "rank": 4,
+            "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+            "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+            "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+            "published_date": "2026-06-25",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "大白话告你什么是分布式，史上最全详解！ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/382966178",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是分布式，分布式和集群的区别又是什么？这一篇让你 ...",
+            "url": "https://blog.csdn.net/weixin_42046751/article/details/109510811",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式系统（建立在网络之上的软件系统）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/4905336",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式（计算机的一种算法）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F/19276232",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.224,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（个人知识管理系统中的检索与记忆设计）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 10.343,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_fee34beaaabd4283948175e0c3ea323c",
+  "goal": "是否应强制公开算法推荐规则",
+  "started_at": "2026-09-20T11:53:57",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 12 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:54:13"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:54:20"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:54:23"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材仅含算法基础教程与无关词条，未涉及算法推荐规则或强制公开，无法形成任何论据。",
+        "finished_at": "2026-09-20T11:54:27"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材仅含算法基础教程与无关词条，未涉及算法推荐规则或强制公开，无法形成任何论据。；缺失信息：支持强制公开的法律、政策或伦理依据、反对强制公开的商业秘密、安全风险、可操作性等理由、算法推荐规则应公开的范围、技术标准与披露粒度、强制公开的实际影响评估、案例或行业数据、平台、监管者、用户、专家等不同主体的立场（可用证据 12 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

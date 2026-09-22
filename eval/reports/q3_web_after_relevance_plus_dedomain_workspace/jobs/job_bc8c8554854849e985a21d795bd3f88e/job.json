@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_bc8c8554854849e985a21d795bd3f88e",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 远程医疗推广中的支持和反对观点：可核查证据整理\n## 资料范围与主题适用边界\n资料将医疗保健列为行业解决方案方向之一【E-008】〔事实〕，并在行业解决方案中列出医疗保健行业【E-016】〔事实〕；还包含飞利浦与向日葵联合方案远程维护几内亚医院高端医疗设备、客户案例称实现该远程维护【E-009】【E-017】〔事实〕。适用边界：ToDesk 相关资料未提远程医疗，不能据此提取远程医疗推广观点【E-007】〔推断〕；厂商页面未列出针对远程医疗推广的反对意见或争议【E-015】〔事实〕；资料仅呈现远程技术在医疗设备维护等场景的正面应用【E-022】〔事实〕。因此现有材料支持侧主要指向远程控制、远程运维与设备维护，不能直接等同远程诊疗推广证据【E-007】【E-022】〔推断〕。\n## 支持观点一：医疗保健场景的正面应用\n资料将医疗保健列为向日葵行业解决方案方向之一【E-008】〔事实〕，并在行业解决方案中列出医疗保健行业【E-016】〔事实〕。飞利浦与向日葵联合方案远程维护几内亚医院高端医疗设备【E-009】〔事实〕，客户案例称该联合方案实现上述远程维护【E-017】〔事实〕。这些可支持远程技术在医疗设备维护场景存在正面应用案例【E-009】【E-017】〔推断〕；但均来自厂商或客户案例，缺少独立验证【E-009】【E-017】〔推断〕，且描述设备维护而非远程诊疗服务本身【E-009】【E-017】〔推断〕。\n## 支持观点二：远程运维降低成本\n用户称远程技术支持大幅降低派遣维修员上门成本【E-010】〔事实〕。客户案例也称远程技术支持大幅降低派遣维修员上门成本【E-018】〔事实〕。据此可推断远程运维在降低上门派遣成本方面有正面陈述【E-010】【E-018】〔推断〕。成本对比、样本范围与地区数据未见于所给资料，系依据资料未覆盖而推定为缺口【E-010】【E-018】〔推断〕。\n## 支持观点三：效率提升与随时协助\n客户称引入远程运维后IT部门服务员工效率大幅提升【E-019】〔事实〕。用户称员工可在任何时间任何地点发起远程协助和办公【E-011】〔事实〕。这些陈述支持效率提升与随时发起协助的正面观点【E-019】【E-011】〔推断〕；其对象为IT部门服务员工与一般办公协助，未直接涉及医生或患者的远程诊疗效率【E-019】【E-011】〔推断〕。\n## 支持观点四：性能与规模表现\n资料称远程支持场景秒级响应、专业高效【E-001】〔事实〕，每月安全连接时间达50亿+分钟【E-005】〔事实〕，用户支持数达3亿+【E-006】〔事实〕。另有资料宣传7ms零感延迟、4K画质等远程操作体验【E-020】〔事实〕。这些条目可支持响应速度、连接规模或用户规模与操作体验的正面宣传陈述【E-001】【E-005】【E-006】【E-020】〔推断〕；但分属不同来源，不能合并为同一方案的整体表现【E-001】【E-005】【E-006】【E-020】〔推断〕，其中E-006更接近用户支持规模而非连接规模，支持力度较弱【E-006】〔推断〕。独立验证与医疗场景专用性能指标未见于所给资料，系依据资料未覆盖而推定为缺口【E-001】【E-005】【E-006】【E-020】〔推断〕。\n## 支持观点五：安全与隐私保护措施\n资料称隐私保护含隐私屏防窥和远程关闭物理屏【E-003】〔事实〕，具有移动端主设备二次验证功能【E-004】〔事实〕；以远控隐私屏作为保护远控隐私信息、避免泄露的措施【E-012】〔事实〕；已通过信息系统安全等级保护三级认证【E-013】〔事实〕；数据传输协议支持国密算法SM2/SM3/SM4【E-014】〔事实〕；列出多重加密、访问黑白名单、远控隐私屏等安全措施【E-021】〔事实〕。这些支持资料中存在安全与隐私保护措施陈述【E-003】【E-004】【E-012】【E-013】【E-014】【E-021】〔推断〕。但相关条目分属不同来源，不能合并称同一产品具备全部措施；医疗数据合规、隐私影响评估或监管结论未见于所给资料，属缺口【E-003】【E-004】【E-012】【E-013】【E-014】【E-021】〔推断〕。\n## 反对观点：资料中的缺失状态\n厂商页面未列出针对远程医疗推广的反对意见或争议【E-015】〔事实〕。资料仅呈现远程技术在医疗设备维护等场景的正面应用【E-022】〔事实〕。因此，给定资料中没有针对远程医疗推广的反对意见或争议记录【E-015】【E-022】〔事实〕；但不能据此推断现实中不存在反对意见，也不能据此列举医生、患者、监管方等具体反对主体【E-015】【E-022】〔推断〕。\n## 场景区分：设备维护与远程诊疗\n飞利浦与向日葵联合方案远程维护几内亚医院高端医疗设备【E-009】〔事实〕，客户案例称联合方案实现上述远程维护【E-017】〔事实〕。资料仅呈现远程技术在医疗设备维护等场景的正面应用【E-022】〔事实〕。可见现有材料明确落在医疗设备远程维护一侧【E-009】【E-017】【E-022】〔推断〕；远程诊疗与远程设备维护的区分材料缺失，不能把设备维护案例直接视为远程诊疗推广证据【E-009】【E-017】【E-022】〔推断〕。\n## 待补缺口汇总\n反对观点缺口：厂商页面未列出针对远程医疗推广的反对意见或争议，给定资料也没有相关争议记录【E-015】【E-022】〔事实〕。临床效果缺口：缺少临床研究、安全性评估或监管结论；现有医疗相关证据为设备远程维护【E-009】【E-017】〔事实〕，且资料仅呈现设备维护等正面应用【E-022】〔事实〕，不能据此得出临床效果结论【E-009】【E-017】【E-022】〔推断〕。隐私合规缺口：现有安全证据为通用措施陈述【E-013】【E-021】〔事实〕；医疗数据合规、隐私影响评估材料未见于所给资料【E-013】【E-021】〔推断〕，且 ToDesk 相关资料未提远程医疗，不能据此提取远程医疗推广观点【E-007】〔推断〕。成本缺口：有降低派遣上门成本的陈述【E-010】【E-018】〔事实〕；成本对比、样本范围与地区数据未见于所给资料，系依据资料未覆盖而推定为缺口【E-010】【E-018】〔推断〕。主题适用性缺口：ToDesk 相关资料未提远程医疗，不能据此提取远程医疗推广观点【E-007】〔推断〕。场景区分缺口：缺少远程诊疗与远程设备维护的区分材料，资料仅呈现设备维护等正面应用【E-022】〔事实〕。\n## 结论：两侧证据可得性对比\n支持侧证据在给定资料中数量较多，涉及医疗保健行业方案、几内亚医院设备远程维护、降低派遣上门成本、效率提升与随时协助、性能规模宣传及安全隐私措施【E-008】【E-016】【E-009】【E-017】【E-010】【E-018】【E-019】【E-011】【E-001】【E-005】【E-006】【E-020】【E-003】【E-004】【E-012】【E-013】【E-014】【E-021】〔事实〕。反对侧证据缺失：厂商页面未列出针对远程医疗推广的反对意见或争议【E-015】〔事实〕，资料仅呈现设备维护等正面应用【E-022】〔事实〕，且 ToDesk 相关资料未提远程医疗，不能据此提取远程医疗推广观点【E-007】〔推断〕。对比后可见，支持侧可得性高但多指向远程运维和设备维护，反对侧在现有资料中几无记录【E-015】【E-022】【E-007】〔推断〕；因此无法形成支持与反对平衡的远程医疗推广评估【E-015】【E-022】【E-007】〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 2,
+    "usable": 2,
+    "statuses": {
+      "ok": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 15 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-18T14:28:19"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:28:29"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 7, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:28:50"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "10 个章节",
+        "finished_at": "2026-09-18T14:28:57"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2999字）",
+        "finished_at": "2026-09-18T14:29:29"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 11,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T14:30:56"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-18T14:32:03"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 14,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-18T14:32:41"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 127,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.todesk.com/",
+      "https://sunlogin.oray.com/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程医疗 分级诊疗 医疗可及性",
+        "rank": 1,
+        "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+        "url": "https://www.todesk.com/",
+        "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "远程医疗 分级诊疗 医疗可及性",
+        "rank": 2,
+        "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+        "url": "https://sunlogin.oray.com/",
+        "snippet": "贝锐向日葵远程控制软件，支持免费远程桌面连接、远程控制电脑、手机远程控制电脑、远控工控设备等多场景需求，兼具远程协助 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程医疗 分级诊疗 医疗可及性",
+        "urls": [
+          "https://www.todesk.com/",
+          "https://sunlogin.oray.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "远程医疗 分级诊疗 医疗可及性",
+            "rank": 1,
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "远程医疗 分级诊疗 医疗可及性",
+            "rank": 2,
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "snippet": "贝锐向日葵远程控制软件，支持免费远程桌面连接、远程控制电脑、手机远程控制电脑、远控工控设备等多场景需求，兼具远程协助 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "http://uuyc.163.com/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "向日葵远程控制电脑_远程桌面管理工具_远程控制电脑手机-贝 ...",
+            "url": "https://sunlogin.oray.com/product/feat",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.492,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "远程医疗 误诊 数据隐私 责任",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "http://uuyc.163.com/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "向日葵远程控制电脑_远程桌面管理工具_远程控制电脑手机-贝 ...",
+            "url": "https://sunlogin.oray.com/product/feat",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "远程医疗 医保支付 执业许可 监管",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "http://uuyc.163.com/",
+            "relevance": 0.1,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "向日葵远程控制电脑_远程桌面管理工具_远程控制电脑手机-贝 ...",
+            "url": "https://sunlogin.oray.com/product/feat",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.1,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.219,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "远程医疗 医患关系 满意度 成本",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "http://uuyc.163.com/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "向日葵远程控制电脑_远程桌面管理工具_远程控制电脑手机-贝 ...",
+            "url": "https://sunlogin.oray.com/product/feat",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.228,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（远程医疗推广中的支持和反对观点）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['debate']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['debate']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "debate"
+        ]
+      },
+      "scheduler_elapsed_seconds": 25.043,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

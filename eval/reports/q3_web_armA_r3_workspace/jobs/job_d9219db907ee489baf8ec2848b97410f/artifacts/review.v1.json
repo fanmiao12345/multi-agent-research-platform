@@ -1,0 +1,82 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-008）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-008）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-008,E-016,E-008）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-008）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "研究范围、证据缺口、后续取证多处用E-016支撑Llama盈利/许可/审批等未知；E-016仅说明Gitee资料未涉大模型，不能支持这些缺口。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "可识别的商业化要素称“AI工具投入”，却只引E-014；AI工具事实来自E-015，应补引。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论称“AI工具可能构成生态入口”却引E-016；E-016未支持且说明该资料未涉大模型，应改引E-015。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-005称Llama 3.1发布后整合仓库，E-006称该仓库为Llama 2最小示例；报告并列未标注版本/时间差异。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论把E-001“本资料称”直接写成Llama授权事实，未保留资料自述限定，易读作客观事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "证据缺口列举“云服务、订阅或API收费”等收费模式，证据未提示，宜标为待验证假设。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-009等平台自述数据标为事实，虽含“自称”，仍建议统一标为“资料声称”。"
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+  "title": "远程医疗推广中的支持与反对观点核查提纲",
+  "sections": [
+    {
+      "heading": "报告范围与资料来源说明",
+      "purpose": "说明资料来源、厂商立场与证据覆盖范围。",
+      "required_evidence": [
+        "E-008",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点一：医疗被列为远程方案适用行业",
+      "purpose": "回答资料是否支持远程方案用于医疗场景。",
+      "required_evidence": [
+        "E-001",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点二：智慧医疗远程维护案例分类",
+      "purpose": "回答是否有智慧医疗远程维护案例分类支撑。",
+      "required_evidence": [
+        "E-002",
+        "E-010"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点三：联合远程维护落地案例",
+      "purpose": "回答联合远程维护案例如何支持推广主张。",
+      "required_evidence": [
+        "E-003",
+        "E-011"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点四：降本增效主张",
+      "purpose": "回答降本增效主张由哪些资料支撑。",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-012"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点五：安全追溯与身份认证",
+      "purpose": "回答安全追溯与身份认证如何支撑推广。",
+      "required_evidence": [
+        "E-006",
+        "E-007",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点六：隐私保护与跨平台能力",
+      "purpose": "回答隐私保护与跨平台能力如何支撑推广。",
+      "required_evidence": [
+        "E-015",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "反对观点：资料中未见反对论据",
+      "purpose": "回答资料中是否存在反对远程医疗推广的论据。",
+      "required_evidence": [
+        "E-008",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "实施风险与障碍：证据缺口",
+      "purpose": "回答实施风险与障碍方面缺失哪些信息。",
+      "required_evidence": [
+        "E-008",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "独立验证与临床结局：证据缺口",
+      "purpose": "回答独立验证与临床结局方面缺失哪些信息。",
+      "required_evidence": [
+        "E-008",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "欠发达地区适用性：证据缺口",
+      "purpose": "回答欠发达地区适用性方面缺失哪些信息。",
+      "required_evidence": [
+        "E-008",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论：支持有据与反对缺证",
+      "purpose": "总结支持观点的依据强度与反对观点的缺证状态。",
+      "required_evidence": [
+        "E-003",
+        "E-004",
+        "E-008",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

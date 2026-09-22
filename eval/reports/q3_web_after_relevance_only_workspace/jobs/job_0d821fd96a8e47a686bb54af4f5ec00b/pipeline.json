@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_0d821fd96a8e47a686bb54af4f5ec00b",
+  "goal": "开源大模型生态的商业模式",
+  "started_at": "2026-09-18T13:46:49",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 7 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:46:54"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:47:00"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 1, 'added_evidence': 1, 'remaining_gaps': 3}",
+        "finished_at": "2026-09-18T13:47:21"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅为Meta投资者关系首页导航与一个3D模型交易社区说明，两者均明确不含开源大模型许可、定价、收入来源等内容，无法支撑主题。",
+        "finished_at": "2026-09-18T13:47:24"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅为Meta投资者关系首页导航与一个3D模型交易社区说明，两者均明确不含开源大模型许可、定价、收入来源等内容，无法支撑主题。；缺失信息：开源大模型的许可条款与开放程度、开源大模型的定价与收费方式、模型提供方的收入来源与变现路径、生态合作、上下游分成与商业化案例、Meta财报或官方材料中与开源模型业务相关的收入披露、3D模型交易社区与开源大模型生态关系的说明（可用证据 8 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

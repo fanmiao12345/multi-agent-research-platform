@@ -1,0 +1,91 @@
+{
+  "title": "新能源汽车电池回收行业现状与监管报告提纲",
+  "sections": [
+    {
+      "heading": "资料范围与主题相关性",
+      "purpose": "说明现有资料对电池回收主题的覆盖与无关内容",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "行业会议基本情况",
+      "purpose": "梳理论坛届次、时间、地点等可核实事实",
+      "required_evidence": [
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "参会主体与政策合规议题",
+      "purpose": "归纳出席人员及政策解析、合规趋势议题",
+      "required_evidence": [
+        "E-009",
+        "E-010"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "退役电池循环体系议题",
+      "purpose": "呈现以消费者需求激活退役电池循环的议题",
+      "required_evidence": [
+        "E-011"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "回收技术与环保工艺议题",
+      "purpose": "呈现氨脱除回收气态膜技术的论坛议题",
+      "required_evidence": [
+        "E-012"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "行业数据与产业生态线索",
+      "purpose": "说明项目汇总、联盟链接等有限线索",
+      "required_evidence": [
+        "E-013",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "监管信息覆盖程度",
+      "purpose": "指出资料仅有政策解析合规议题，无具体法规条文",
+      "required_evidence": [
+        "E-010",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "现状与监管关键缺口",
+      "purpose": "列出法规、数据、资质、技术等未覆盖信息",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "后续核查方向",
+      "purpose": "依据现有线索提出需查找的主管部门与官方统计来源",
+      "required_evidence": [
+        "E-006",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

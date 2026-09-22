@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-021已说明可按关键字搜索；'能否搜索未说明'表述不准确，若指离线搜索应限定。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-016仅指Obsidian下载页，E-021属知识星球；称二者'来源间张力'易被误读为矛盾。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-007仅称Dataview提供高级查询，'偏向结构化条件组合'无直接证据支持。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-004/E-005未直接说明链接标签形成可检索网络，'可检索'为额外推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "'缺技术文档与实证材料'未附证据编号，应限定为基于给定证据索引的缺口。"
+  }
+ ]
+}

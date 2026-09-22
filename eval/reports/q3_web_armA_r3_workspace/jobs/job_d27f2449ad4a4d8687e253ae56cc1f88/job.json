@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_d27f2449ad4a4d8687e253ae56cc1f88",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 9 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T10:50:31"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:50:38"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T10:50:46"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料均为无关页面或加载提示，未含新能源汽车电池回收行业现状与监管内容，无法形成报告。",
+        "finished_at": "2026-09-20T10:50:50"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料均为无关页面或加载提示，未含新能源汽车电池回收行业现状与监管内容，无法形成报告。；缺失信息：行业规模与企业格局统计、现行监管制度与责任主体法规政策、动力电池退役量与回收渠道数据、合规问题与处罚案例、技术路线与资源化利用资料（可用证据 9 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.sina.com.cn/",
+      "https://www.mva.gov.cn/",
+      "https://wsfw.mva.gov.cn/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 动力电池 管理办法",
+        "rank": 3,
+        "title": "新浪网",
+        "url": "https://www.sina.com.cn/",
+        "snippet": "蔚来李斌：到2030年，新车销量里90%是新能源，新能源里90%是纯电 上海贸促：关于北京车展和上海车展有关安排 布局未来技术赛 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "退役电池 梯次利用 再生利用",
+        "rank": 1,
+        "title": "中华人民共和国退役军人事务部",
+        "url": "https://www.mva.gov.cn/",
+        "snippet": "2026年8月20日 · 为维护军人军属合法权益，加强退役军人服务保障体系建设，建立健全集中统一、职责清晰的退役军人管理保障体 …",
+        "published_date": "2026-08-20",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "退役电池 梯次利用 再生利用",
+        "rank": 3,
+        "title": "全国一体化退役军人网上服务平台",
+        "url": "https://wsfw.mva.gov.cn/",
+        "snippet": "2026年9月1日 · 全国一体化退役军人网上服务平台为退役军人提供全面服务，包括政策解读、职业技能认定和法律支持等。",
+        "published_date": "2026-09-01",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "动力电池回收 白名单 企业",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "动力（汉语词汇）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/891484",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力（物理学用语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/24168480",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "人的“动力”究竟来自哪里？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/103107258",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力的意思|汉典「动力」词语解释",
+            "url": "http://zdic.net/hans/%E5%8A%A8%E5%8A%9B",
+            "relevance": 0.125,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "CFMOTO春风动力中文官网",
+            "url": "https://cn.cfmoto.com/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.23,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 动力电池 管理办法",
+        "urls": [
+          "https://www.sina.com.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "新能源汽车 动力电池 管理办法",
+            "rank": 3,
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "snippet": "蔚来李斌：到2030年，新车销量里90%是新能源，新能源里90%是纯电 上海贸促：关于北京车展和上海车展有关安排 布局未来技术赛 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "新（汉语汉字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%96%B0/34058",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "新的意思,新的解释,新的拼音,新的部首,新的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-26032",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《新》的拼音,新字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/72f014d8.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "新_新怎么读_新的意思 - 汉语字典",
+            "url": "https://www.chagushici.com/zidian/%E6%96%B0",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.216,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "退役电池 梯次利用 再生利用",
+        "urls": [
+          "https://www.mva.gov.cn/",
+          "https://wsfw.mva.gov.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "退役电池 梯次利用 再生利用",
+            "rank": 1,
+            "title": "中华人民共和国退役军人事务部",
+            "url": "https://www.mva.gov.cn/",
+            "snippet": "2026年8月20日 · 为维护军人军属合法权益，加强退役军人服务保障体系建设，建立健全集中统一、职责清晰的退役军人管理保障体 …",
+            "published_date": "2026-08-20",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "退役电池 梯次利用 再生利用",
+            "rank": 3,
+            "title": "全国一体化退役军人网上服务平台",
+            "url": "https://wsfw.mva.gov.cn/",
+            "snippet": "2026年9月1日 · 全国一体化退役军人网上服务平台为退役军人提供全面服务，包括政策解读、职业技能认定和法律支持等。",
+            "published_date": "2026-09-01",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中华人民共和国退役军人事务部",
+            "url": "https://www.mva.gov.cn/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "全国一体化退役军人网上服务平台",
+            "url": "https://wsfw.mva.gov.cn/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "退役（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E9%80%80%E5%BD%B9/2332739",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "一文读懂军人退役、退伍、复员、转业、退休的区别与联系",
+            "url": "https://www.toutiao.com/article/7533452524527845942/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "退伍、转业和退役有什么区别？（附退役士兵安置条例） - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/425563062",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.21,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "动力电池 回收 黑作坊 监管",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "动力（汉语词汇）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/891484",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力（物理学用语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8A%A8%E5%8A%9B/24168480",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "人的“动力”究竟来自哪里？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/103107258",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "动力的意思|汉典「动力」词语解释",
+            "url": "http://zdic.net/hans/%E5%8A%A8%E5%8A%9B",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "CFMOTO春风动力中文官网",
+            "url": "https://cn.cfmoto.com/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.211,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（新能源汽车电池回收行业现状与监管）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "manager_worker"
+        ]
+      },
+      "scheduler_elapsed_seconds": 37.355,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "资料范围段称缺口含离线导出、协同验证、版本管理细节，E-016仅指下载页未说明检索/记忆/知识组织机制"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "离线导出段用E-016支持'知识星球内容能否离线访问、搜索、长期导出'，E-016为Obsidian下载页，不支持该主体"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "记忆缺口段'资料未提供记忆算法、实验或用户研究材料〔事实〕[E-016]'，E-016未涉及实验与用户研究"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "内容捕获段称'沉淀内容能否被检索未说明'，与E-021可关键字搜索星球内容构成未标注矛盾"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "检索架构缺口段以E-016泛称'缺少检索架构与技术设计文档'，E-016仅限下载页面，范围被放大"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-016称未说明检索机制，与E-007高级查询、E-021关键词搜索并存，报告未标注来源间张力"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "资料范围段声称覆盖'跨平台与扩展'主题，却未给E-009至E-015任何引用"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "边界段未列明可用来源清单（Obsidian介绍页、下载页、知识星球页）及其证据强度"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "图谱段'检索用于定位已知项'无对应证据，虽标推断仍超出E-006所述范围"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "离线导出段'缺少导出格式或API文档'挂[E-016]，但E-016未涉及导出与API"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "版本历史段'支持追溯与记忆修订'表述含糊，'记忆修订'易与记忆机制混淆，建议改为修订追溯"
+  }
+ ]
+}

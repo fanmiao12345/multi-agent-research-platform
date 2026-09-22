@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第3节称素材未给出项目清单/投资额/处理能力，E-016/E-017仅说列出汇总，未证明无细节。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第5节称论坛未提供政策原文或条款，E-013仅列演讲主题，不能证明未提供。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第6节称缺少完整议程、演讲全文或主办方发布，证据未说明缺这些，宜改为现有证据未含。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论将论坛举办与黄利斌出席同引[E-011]，后者应引[E-012]。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处用“事实/未知”“未知”标签，未按事实/推断二分标注，建议统一或拆分。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论称退役军人事务部资料无回收监管内容仅引[E-010]，需并引[E-009]。"
+  }
+ ]
+}

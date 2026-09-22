@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_b55d7dcc2c",
+      "fact": "本資料是國務院辦公廳關於2026年部分節假日安排的通知",
+      "tag": "F",
+      "quote": "國務院辦公廳關於2026年部分節假日安排的通知",
+      "start": 231,
+      "end": 254,
+      "locator": {
+        "heading": "",
+        "paragraph": 24,
+        "start": 226,
+        "end": 255
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_b55d7dcc2c",
+      "fact": "本資料只規定放假調休日期，未提及人工智能治理政策或相關爭議",
+      "tag": "F",
+      "quote": "經國務院批准，現將2026年元旦、春節、清明節、勞動節、端午節、中秋節和國慶節放假調休日期的具體安排通知如下。",
+      "start": 542,
+      "end": 597,
+      "locator": {
+        "heading": "## 發佈日期：",
+        "paragraph": 37,
+        "start": 542,
+        "end": 598
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料为外交部网站欧盟概况页面，标注最近更新时间为2026年7月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年7月）",
+      "start": 743,
+      "end": 759,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 86,
+        "start": 743,
+        "end": 760
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料载明2026年上半年欧盟轮值主席国为塞浦路斯，下半年为爱尔兰。",
+      "tag": "F",
+      "quote": "【轮值主席国】塞浦路斯（2026年上半年）、爱尔兰（2026年下半年）",
+      "start": 1217,
+      "end": 1252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 100,
+        "start": 1217,
+        "end": 1253
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料称欧委会预测2026年欧盟和欧元区经济增长率分别为1.4％和1.2％。",
+      "tag": "F",
+      "quote": "欧委会预测2026年欧盟和欧元区经济增长率分别为1.4％和1.2％",
+      "start": 3097,
+      "end": 3130,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 112,
+        "start": 3063,
+        "end": 3132
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料称欧盟推动绿色和数字双转型，并加强安全防务等领域合作。",
+      "tag": "F",
+      "quote": "推动绿色和数字双转型，加强安全防务等领域合作",
+      "start": 2175,
+      "end": 2197,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料称欧盟以安全、竞争力和绿色发展为三大支柱推进各项政策。",
+      "tag": "F",
+      "quote": "以安全、竞争力和绿色发展为三大支柱不断推进各项政策",
+      "start": 2227,
+      "end": 2252,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料称欧盟更加重视经济安全，出台《外国补贴条例》《反胁迫工具》等政策工具箱。",
+      "tag": "F",
+      "quote": "更加重视经济安全，出台《外国补贴条例》、《反胁迫工具》等一系列经贸政策工具箱",
+      "start": 2253,
+      "end": 2291,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料称欧盟致力于加强战略自主。",
+      "tag": "F",
+      "quote": "致力于加强战略自主",
+      "start": 2292,
+      "end": 2301,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_586e532fc8",
+      "fact": "本资料未提及人工智能治理政策，也未涉及其主要争议。",
+      "tag": "I",
+      "quote": "首页 > 国家和组织 > 国际和地区组织 > 欧盟 >欧盟概况",
+      "start": 643,
+      "end": 674,
+      "locator": {
+        "heading": "",
+        "paragraph": 75,
+        "start": 643,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_9c893a9196",
+      "fact": "本资料未提及2026年人工智能治理政策或其主要争议。",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_47d4bbbf1f",
+      "fact": "本资料为中国外交部网站发布的美国国家概况，最近更新时间为2026年6月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年6月）",
+      "start": 750,
+      "end": 766,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 86,
+        "start": 750,
+        "end": 767
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_47d4bbbf1f",
+      "fact": "本资料内容涵盖美国的国名、面积、人口、政府、经济、军事、教育等基本情况。",
+      "tag": "F",
+      "quote": "【国 名】美利坚合众国（The United States of America）",
+      "start": 768,
+      "end": 809,
+      "locator": {
+        "heading": "# 美国国家概况",
+        "paragraph": 87,
+        "start": 768,
+        "end": 810
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_47d4bbbf1f",
+      "fact": "本资料全文未出现“人工智能”，未涉及2026年人工智能治理政策及其争议。",
+      "tag": "F",
+      "quote": "首页 > 国家和组织 > 国家（地区） > 北美洲 > 美国 >国家概况",
+      "start": 643,
+      "end": 679,
+      "locator": {
+        "heading": "",
+        "paragraph": 75,
+        "start": 643,
+        "end": 680
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_993a124fe5",
+      "fact": "本资料为开源中国/Gitee页面，无法支持归纳2026年人工智能治理政策主要争议。",
+      "tag": "I",
+      "quote": "Gitee 为开源中国旗下，国内第一大研发效能平台&全球第二大开源代码托管平台",
+      "start": 128,
+      "end": 167,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_993a124fe5",
+      "fact": "本资料中2026年仅关联开源软件应用创新大赛。",
+      "tag": "F",
+      "quote": "【大赛通知】开源中国「2026上海开源软件应用创新大赛」火热报名中，百万奖池等你的项目",
+      "start": 77,
+      "end": 120,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 77,
+        "end": 121
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_9cef72a9be",
+      "fact": "本资料是欧盟官网介绍欧盟成员国的页面，与人工智能治理无关。",
+      "tag": "F",
+      "quote": "Find out when they joined the EU, Schengen or the euro",
+      "start": 1697,
+      "end": 1751,
+      "locator": {
+        "heading": "# EU countries",
+        "paragraph": 97,
+        "start": 1614,
+        "end": 1809
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_9cef72a9be",
+      "fact": "页面内容为各成员国加入欧盟、欧元区、申根区的时间信息。",
+      "tag": "F",
+      "quote": "EU Member State since 1995, Euro area member since 1999",
+      "start": 2069,
+      "end": 2124,
+      "locator": {
+        "heading": "## Pages (27)",
+        "paragraph": 110,
+        "start": 2069,
+        "end": 2208
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_9cef72a9be",
+      "fact": "资料提供按加入年份筛选的选项，年份含1958至2013。",
+      "tag": "F",
+      "quote": "1958 1973 1981 1986 1995 2004 2007 2013",
+      "start": 1859,
+      "end": 1898,
+      "locator": {
+        "heading": "# EU countries",
+        "paragraph": 101,
+        "start": 1859,
+        "end": 1899
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_9cef72a9be",
+      "fact": "资料共列出27个成员国条目，均为国家参与情况介绍。",
+      "tag": "F",
+      "quote": "Showing results 1 to 20",
+      "start": 2035,
+      "end": 2058,
+      "locator": {
+        "heading": "## Pages (27)",
+        "paragraph": 108,
+        "start": 2035,
+        "end": 2059
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_9cef72a9be",
+      "fact": "页面筛选维度仅涉及欧元区与申根区，未涉及技术政策。",
+      "tag": "F",
+      "quote": "Countries using the euro Schengen countries",
+      "start": 1931,
+      "end": 1974,
+      "locator": {
+        "heading": "# EU countries",
+        "paragraph": 104,
+        "start": 1931,
+        "end": 1975
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_9cef72a9be",
+      "fact": "本资料未提供2026年人工智能治理政策争议的任何事实依据。",
+      "tag": "I",
+      "quote": "Search all EU institutions and bodies",
+      "start": 5278,
+      "end": 5315,
+      "locator": {
+        "heading": "## Pages (27)",
+        "paragraph": 168,
+        "start": 5278,
+        "end": 5315
+      },
+      "note": ""
+    }
+  ]
+}

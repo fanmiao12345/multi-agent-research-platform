@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-012）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "E-006含‘或可类推’，被标为〔事实〕；应标〔推断〕并拆分事实与推断。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "待补段称现有页面未提供支持或反对观点却引E-008/E-015；其仅证无反对，未证无支持。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "标记规则仅定义事实/推断/未知，冲突段却用〔开放〕，口径不一致。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "支持观点三称安全主张回应远程医疗推广的安全合规关切，但素材未提该关切，宜标未知。"
+  }
+ ]
+}

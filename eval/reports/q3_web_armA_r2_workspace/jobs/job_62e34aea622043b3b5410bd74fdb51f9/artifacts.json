@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "artifact_id": "material_pack.v1",
+      "kind": "material_pack",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/material_pack.v1.md",
+      "content_hash": "bcd07158c90b10a6c8b1051247522d7f415262b4e82ae0b541d7ad686d60cb87",
+      "byte_size": 4049,
+      "producer": "pipeline-material",
+      "created_at": "2026-09-20T09:08:30"
+    },
+    {
+      "artifact_id": "outline.v1",
+      "kind": "outline",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/outline.v1.md",
+      "content_hash": "34465419ddbbdea0bb5775c17d09cc1d0133d0ca7c53fd60ec085023e0263fa0",
+      "byte_size": 46,
+      "producer": "pipeline-outline",
+      "created_at": "2026-09-20T09:08:48"
+    }
+  ]
+}

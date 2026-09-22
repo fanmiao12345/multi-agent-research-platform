@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_63255cd6b96f434094c29842c0697d4d",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 1,
+    "statuses": {
+      "empty": 1,
+      "read_failed": 4,
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 6 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T15:00:48"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "1 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T15:00:54"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 1, 'added_evidence': 8, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T15:01:35"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有证据仅涉汉字字形、国学网站与Gitee平台及AI工具，未提供开源大模型许可证、收入、分成或案例材料。",
+        "finished_at": "2026-09-18T15:01:46"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有证据仅涉汉字字形、国学网站与Gitee平台及AI工具，未提供开源大模型许可证、收入、分成或案例材料。；缺失信息：开源大模型许可证条款、商业化限制与合规案例、开源大模型厂商的收入来源与定价、模型厂商、社区、云厂商、应用开发者的分成合作机制、模力方舟定位、收费模式及与开源大模型的关系、中国典型开源大模型企业的案例、定价或财务数据（可用证据 14 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.oschina.net/",
+      "https://mistral.ai/",
+      "https://mistral.ai/products/vibe/",
+      "https://huggingface.co/",
+      "https://huggingface.co/huggingface",
+      "http://www.renlu.net/html/jiaguwenzidian_486.html"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 商业模式 Llama",
+        "rank": 4,
+        "title": "OSCHINA - 中文开源技术交流社区",
+        "url": "https://www.oschina.net/",
+        "snippet": "2025年2月2日 · 开源不止代码，2026北京开源创新赛AIGC赛道全民可参与 选手可选福利：模力方舟旗舰模型为开源大赛提供专属折 …",
+        "published_date": "2025-02-02",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Mistral 开源许可证 商业化",
+        "rank": 1,
+        "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+        "url": "https://mistral.ai/",
+        "snippet": "The frontier-grade infrastructure and orchestration platform behind Mistral's own models is now yours to build on.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Mistral 开源许可证 商业化",
+        "rank": 4,
+        "title": "Mistral Vibe (formerly Le Chat) - AI chat and coding agent",
+        "url": "https://mistral.ai/products/vibe/",
+        "snippet": "Vibe (formerly Le Chat) is Mistral's AI chat and agent for work and code. Chat, think, search, write, code, and automate your most …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 盈利模式 模型托管",
+        "rank": 1,
+        "title": "Hugging Face – The AI community building the future.",
+        "url": "https://huggingface.co/",
+        "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 盈利模式 模型托管",
+        "rank": 2,
+        "title": "huggingface (Hugging Face)",
+        "url": "https://huggingface.co/huggingface",
+        "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大模型 API 计费 企业订阅",
+        "rank": 5,
+        "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+        "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+        "snippet": "2023年3月19日 · 大快人心 大失所望 大同小异 大相径庭 大愚若智 大智若愚 大智大勇 居简而行简，无乃大简乎？ ------《论语 . 雍也》 …",
+        "published_date": "2023-03-19",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "开源大模型 商业模式 Llama",
+        "urls": [
+          "https://www.oschina.net/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "开源大模型 商业模式 Llama",
+            "rank": 4,
+            "title": "OSCHINA - 中文开源技术交流社区",
+            "url": "https://www.oschina.net/",
+            "snippet": "2025年2月2日 · 开源不止代码，2026北京开源创新赛AIGC赛道全民可参与 选手可选福利：模力方舟旗舰模型为开源大赛提供专属折 …",
+            "published_date": "2025-02-02",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "开源中国 - 开源中国 - Gitee",
+            "url": "https://gitee.com/oschina",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "开源社 · GitHub",
+            "url": "https://github.com/kaiyuanshe",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "什么是开源？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/27501070",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "立创开源广场 - 立创开源硬件平台",
+            "url": "https://oshwhub.com/explore",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.246,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Mistral 开源许可证 商业化",
+        "urls": [
+          "https://mistral.ai/",
+          "https://mistral.ai/products/vibe/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Mistral 开源许可证 商业化",
+            "rank": 1,
+            "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+            "url": "https://mistral.ai/",
+            "snippet": "The frontier-grade infrastructure and orchestration platform behind Mistral's own models is now yours to build on.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Mistral 开源许可证 商业化",
+            "rank": 4,
+            "title": "Mistral Vibe (formerly Le Chat) - AI chat and coding agent",
+            "url": "https://mistral.ai/products/vibe/",
+            "snippet": "Vibe (formerly Le Chat) is Mistral's AI chat and agent for work and code. Chat, think, search, write, code, and automate your most …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+            "url": "https://mistral.ai/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "Mistral Vibe (formerly Le Chat) - AI chat and coding agent",
+            "url": "https://mistral.ai/products/vibe/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "被称为欧洲版DeepSeek的Mistral什么来头？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/2062503158560166015",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Mistral：目前最强模型之一 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/676477249",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Mistral（开源自然语言处理模型）_百度百科",
+            "url": "https://baike.baidu.com/item/Mistral/67304784",
+            "relevance": 0.429,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Hugging Face 盈利模式 模型托管",
+        "urls": [
+          "https://huggingface.co/",
+          "https://huggingface.co/huggingface"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 盈利模式 模型托管",
+            "rank": 1,
+            "title": "Hugging Face – The AI community building the future.",
+            "url": "https://huggingface.co/",
+            "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "Hugging Face 盈利模式 模型托管",
+            "rank": 2,
+            "title": "huggingface (Hugging Face)",
+            "url": "https://huggingface.co/huggingface",
+            "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Hugging Face（AI平台）_百度百科",
+            "url": "https://baike.baidu.com/item/Hugging%20Face/65708376",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Huggingface 超详细介绍 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/535100411",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "Hugging Face教程：国内注册&使用指南（超详细） - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1890846454538559620",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.228,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大模型 API 计费 企业订阅",
+        "urls": [
+          "http://www.renlu.net/html/jiaguwenzidian_486.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "大模型 API 计费 企业订阅",
+            "rank": 5,
+            "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+            "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+            "snippet": "2023年3月19日 · 大快人心 大失所望 大同小异 大相径庭 大愚若智 大智若愚 大智大勇 居简而行简，无乃大简乎？ ------《论语 . 雍也》 …",
+            "published_date": "2023-03-19",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+            "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "大（汉语文字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%A4%A7/34128",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "大的意思,大的解释,大的拼音,大的部首,大的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-22823",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大字笔画、笔顺、笔划 - 大字怎么写?",
+            "url": "https://www.hanzipi.com/%E5%A4%A7.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大 - 维基词典，自由的多语言词典",
+            "url": "https://zh.wiktionary.org/wiki/%E5%A4%A7",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.205,
+        "error": ""
+      }
+    ]
+  }
+}

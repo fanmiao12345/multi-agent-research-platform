@@ -1,0 +1,107 @@
+{
+  "title": "机器人流程自动化与智能体的边界：基于现有证据的界定与缺口",
+  "sections": [
+    {
+      "heading": "报告范围与证据基础",
+      "purpose": "说明报告依据哪些来源、覆盖哪些边界问题。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-005",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "RPA的定位与核心特征",
+      "purpose": "概括RPA定义、规则依赖与非自主学习特征。",
+      "required_evidence": [
+        "E-001",
+        "E-002"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "AI认知与智能体能力",
+      "purpose": "梳理AI认知智能及智能体的感知、规划与操作能力。",
+      "required_evidence": [
+        "E-003",
+        "E-005",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "智能体的自主决策突破",
+      "purpose": "说明智能体相对传统RPA的核心差异与模型基础。",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "RPA与AI融合：IPA",
+      "purpose": "解释融合后IPA如何使RPA升级为智能助手。",
+      "required_evidence": [
+        "E-004",
+        "E-002",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "边界线索：预设规则对自主决策",
+      "purpose": "对比两侧特征，提炼边界的暂时判断线索。",
+      "required_evidence": [
+        "E-002",
+        "E-006",
+        "E-003"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "术语IPA的歧义处理",
+      "purpose": "区分人工智能流程自动化与语音学IPA，避免误用。",
+      "required_evidence": [
+        "E-004",
+        "E-017",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "无关资料的排除",
+      "purpose": "说明未含RPA或智能体表述的资料不纳入边界推断。",
+      "required_evidence": [
+        "E-014",
+        "E-016",
+        "E-022",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "开放冲突与待裁事项",
+      "purpose": "记录IPA缩写指代冲突及其开放状态。",
+      "required_evidence": [
+        "E-004",
+        "E-017",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "待补缺口与结论边界",
+      "purpose": "列出直接边界定义、融合分类等缺失，限定结论强度。",
+      "required_evidence": [
+        "E-002",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

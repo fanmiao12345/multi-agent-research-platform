@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_edfac4b498",
+      "fact": "标题为“本材料为合成验收数据”。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_edfac4b498",
+      "fact": "类型为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_edfac4b498",
+      "fact": "观察期为2026年7月1日至7月31日。",
+      "tag": "F",
+      "quote": "观察期为2026年7月1日至7月31日",
+      "start": 22,
+      "end": 41,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_edfac4b498",
+      "fact": "试点团队为星桥团队，共40人。",
+      "tag": "F",
+      "quote": "星桥团队试点共40人",
+      "start": 11,
+      "end": 21,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_edfac4b498",
+      "fact": "所有人每周远程办公2天。",
+      "tag": "F",
+      "quote": "所有人每周远程办公2天",
+      "start": 42,
+      "end": 53,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_edfac4b498",
+      "fact": "没有设置对照组。",
+      "tag": "F",
+      "quote": "没有设置对照组",
+      "start": 54,
+      "end": 61,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_edfac4b498",
+      "fact": "主要用途为验收数据。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "资料标题为“本材料为合成验收数据”。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "资料类型为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "资料未说明日期。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "资料用途可能为验收。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "40名参与者中32人完成问卷。",
+      "tag": "F",
+      "quote": "40名参与者中32人完成问卷",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "24名答卷者表示满意。",
+      "tag": "F",
+      "quote": "24名答卷者表示满意",
+      "start": 26,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "问卷回收率为80%，答卷者满意率为75%。",
+      "tag": "F",
+      "quote": "问卷回收率为80%，答卷者满意率为75%",
+      "start": 37,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_3c19cb9cb8",
+      "fact": "观察期工单平均处理时长从10小时变为8小时，且未控制工单难度变化。",
+      "tag": "F",
+      "quote": "观察期工单平均处理时长从10小时变为8小时；未控制工单难度变化",
+      "start": 58,
+      "end": 89,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_4f9637f2c7",
+      "fact": "标题为整段合成验收数据说明。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。方案甲每账号每月20元；可按月支付，最低10个账号。支持Markdown导出。页面未说明数据保存地区和删除周期。",
+      "start": 0,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_4f9637f2c7",
+      "fact": "原文未提供日期信息，日期无法列入目录。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。方案甲每账号每月20元；可按月支付，最低10个账号。支持Markdown导出。页面未说明数据保存地区和删除周期。",
+      "start": 0,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_4f9637f2c7",
+      "fact": "类型为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_4f9637f2c7",
+      "fact": "主要用途未明确说明，可推断用于验收。",
+      "tag": "I",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_4f9637f2c7",
+      "fact": "方案甲价格为每账号每月20元。",
+      "tag": "F",
+      "quote": "方案甲每账号每月20元；",
+      "start": 11,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_4f9637f2c7",
+      "fact": "方案甲可按月支付，最低10个账号。",
+      "tag": "F",
+      "quote": "可按月支付，最低10个账号。",
+      "start": 23,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_4f9637f2c7",
+      "fact": "支持Markdown导出。",
+      "tag": "F",
+      "quote": "支持Markdown导出。",
+      "start": 37,
+      "end": 50,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_4f9637f2c7",
+      "fact": "页面未说明数据保存地区和删除周期。",
+      "tag": "F",
+      "quote": "页面未说明数据保存地区和删除周期。",
+      "start": 50,
+      "end": 67,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 67
+      },
+      "note": ""
+    }
+  ]
+}

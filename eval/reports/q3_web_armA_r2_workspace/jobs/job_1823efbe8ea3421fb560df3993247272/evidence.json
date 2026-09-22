@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_e8dfef4a90",
+      "fact": "本资料称远程支持秒级响应、专业高效，可作远程医疗推广支持点。",
+      "tag": "I",
+      "quote": "秒级响应, 专业高效",
+      "start": 78,
+      "end": 88,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 78,
+        "end": 89
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_e8dfef4a90",
+      "fact": "本资料列远程协作与演示，可作远程医疗协作推广支持点。",
+      "tag": "I",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_e8dfef4a90",
+      "fact": "本资料称全平台覆盖Win/Mac/Linux/Android/iOS/鸿蒙，可作跨终端推广支持点。",
+      "tag": "I",
+      "quote": "Win/Mac/Linux/Android/iOS/鸿蒙",
+      "start": 398,
+      "end": 426,
+      "locator": {
+        "heading": "",
+        "paragraph": 42,
+        "start": 398,
+        "end": 427
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_e8dfef4a90",
+      "fact": "本资料称隐私屏防窥和远程关闭物理屏，可作隐私保护支持点。",
+      "tag": "I",
+      "quote": "隐私屏防窥和远程关闭物理屏",
+      "start": 458,
+      "end": 471,
+      "locator": {
+        "heading": "",
+        "paragraph": 46,
+        "start": 458,
+        "end": 472
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_e8dfef4a90",
+      "fact": "本资料称连接采用高强度端到端加密，可作安全支持点。",
+      "tag": "I",
+      "quote": "高强度的端到端加密",
+      "start": 7200,
+      "end": 7209,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 372,
+        "start": 7177,
+        "end": 7239
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_e8dfef4a90",
+      "fact": "本资料称可迅速高效协助问题诊断、故障修复，可作远程支持点。",
+      "tag": "I",
+      "quote": "迅速且高效地协助客户进行问题诊断、故障修复",
+      "start": 2589,
+      "end": 2610,
+      "locator": {
+        "heading": "## 深入不同场景，为各行各业提供企业级解决方案",
+        "paragraph": 210,
+        "start": 2589,
+        "end": 2623
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_e8dfef4a90",
+      "fact": "本资料未提供反对远程医疗推广的观点，是信息缺口。",
+      "tag": "I",
+      "quote": "远程支持",
+      "start": 72,
+      "end": 76,
+      "locator": {
+        "heading": "",
+        "paragraph": 9,
+        "start": 72,
+        "end": 77
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_b11e399a42",
+      "fact": "本资料将医疗保健列为行业解决方案之一。",
+      "tag": "F",
+      "quote": "医疗保健",
+      "start": 692,
+      "end": 696,
+      "locator": {
+        "heading": "",
+        "paragraph": 52,
+        "start": 692,
+        "end": 697
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_b11e399a42",
+      "fact": "飞利浦与向日葵联合推出“飞易联”方案，用于远程维护几内亚当地医院的高端医疗设备。",
+      "tag": "F",
+      "quote": "飞利浦和向日葵联合推出的“飞易联（Phi-Link）”方案，实现了对几内亚当地医院部署的高端医疗设备的远程维护。",
+      "start": 7897,
+      "end": 7953,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 647,
+        "start": 7896,
+        "end": 7955
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_b11e399a42",
+      "fact": "本资料称远程控制方案可降低派遣维修员上门的成本。",
+      "tag": "F",
+      "quote": "大幅降低派遣维修员上门的成本",
+      "start": 7655,
+      "end": 7669,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 634,
+        "start": 7611,
+        "end": 7671
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_b11e399a42",
+      "fact": "本资料称引入远程运维方案后IT部门服务效率大幅提升并省去沟通成本。",
+      "tag": "F",
+      "quote": "我们的IT部门人员为公司员工提供服务的效率大幅提升",
+      "start": 7773,
+      "end": 7798,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 641,
+        "start": 7758,
+        "end": 7813
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_b11e399a42",
+      "fact": "本资料称员工可在任何时间、任何地点发起远程协助和办公。",
+      "tag": "F",
+      "quote": "我们的员工可以在任何时间、任何地点通过向日葵发起远程协助和办公",
+      "start": 7483,
+      "end": 7514,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 628,
+        "start": 7482,
+        "end": 7529
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_b11e399a42",
+      "fact": "本资料称远程控制支持在不同系统不同设备进行远控。",
+      "tag": "F",
+      "quote": "支持在不同系统不同设备进行远控",
+      "start": 7557,
+      "end": 7572,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 631,
+        "start": 7542,
+        "end": 7598
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_b11e399a42",
+      "fact": "本资料称远控具备等保三级与多重加密等安全合规能力。",
+      "tag": "F",
+      "quote": "依据信息系统等级保护2.0管理办法进行数据处理及信息存储，严守安全合规标准",
+      "start": 6895,
+      "end": 6932,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 591,
+        "start": 6895,
+        "end": 6933
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_b11e399a42",
+      "fact": "本资料仅呈现远程控制正面价值与安全能力，未提供反对远程医疗推广的观点。",
+      "tag": "I",
+      "quote": "专业远程控制，每月稳定连接超150亿分钟",
+      "start": 3540,
+      "end": 3560,
+      "locator": {
+        "heading": "## 向日葵IT精英版",
+        "paragraph": 229,
+        "start": 3540,
+        "end": 3561
+      },
+      "note": ""
+    }
+  ]
+}

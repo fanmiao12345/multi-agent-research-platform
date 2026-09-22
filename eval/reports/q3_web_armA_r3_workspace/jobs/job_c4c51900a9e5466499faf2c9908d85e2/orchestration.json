@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "root_job_id": "job_c4c51900a9e5466499faf2c9908d85e2",
+  "topic": "城市低碳交通政策的效果与限制",
+  "mode_requested": "fixed",
+  "orchestration": "manager_worker",
+  "status": "finished",
+  "plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "选型失败，降级固定流程（已知最稳）",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "unspecified",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "writer",
+        "description": "按给定资料完成整理与成稿（城市低碳交通政策的效果与限制）",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 60,
+      "max_cost_usd": 0.12,
+      "max_seconds": 1500.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.06,
+      "seconds": 750
+    }
+  },
+  "plan_meta": {
+    "scheduler": "fallback",
+    "failures": [
+      "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表",
+      "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表"
+    ],
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "manager_worker"
+      ]
+    },
+    "scheduler_elapsed_seconds": 25.213,
+    "scheduler_calls": 2
+  },
+  "subtasks": [],
+  "draft_level": "unable",
+  "degraded": false,
+  "failures": [],
+  "execution_note": "受根账本锁限制，本轮子任务按序执行（并行开放见 D2-02）",
+  "termination_reason": "unable",
+  "message": "无法完成：现有资料仅涉及重庆拥堵、南京公交与政务区划等，且多处明确未涉及低碳交通政策，无法评估其效果与限制。；缺失信息：低碳交通政策文件与措施清单、政策实施前后碳排放与出行分担率数据、财政、技术、执法、公众接受度等限制评估、官方拥堵数据与政策效果关联分析、政府公报、统计年鉴或同行评议研究（可用证据 35 条不足以支撑任务目标，按任务要求不编造内容）",
+  "unified": {
+    "schema_version": 2,
+    "root_job_id": "job_c4c51900a9e5466499faf2c9908d85e2",
+    "draft_level": "unable",
+    "delivery_label": "无法完成",
+    "termination_reason": "unable",
+    "status": "partial",
+    "message": "无法完成：现有资料仅涉及重庆拥堵、南京公交与政务区划等，且多处明确未涉及低碳交通政策，无法评估其效果与限制。；缺失信息：低碳交通政策文件与措施清单、政策实施前后碳排放与出行分担率数据、财政、技术、执法、公众接受度等限制评估、官方拥堵数据与政策效果关联分析、政府公报、统计年鉴或同行评议研究（可用证据 35 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

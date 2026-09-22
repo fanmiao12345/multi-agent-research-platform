@@ -1,0 +1,111 @@
+{
+  "source_id": "src_c2cc2e98bc",
+  "kind": "url",
+  "display": "即梦AI - 一站式AI创作平台",
+  "original_address": "https://jimeng.jianying.com/ai-tool/home",
+  "title": "即梦AI - 一站式AI创作平台",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 141,
+  "content_hash": "64715096dfc71b2facd602a49014e3818148c27433a3e945f7e6438d8117fbca",
+  "normalized_hash": "e1921e61fdc1b852b47895e762fd0cc5589790d36736d413b346e4064d766ed2",
+  "captured_at": "2026-09-18T13:30:47",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_c2cc2e98bc.md",
+  "encoding": "UTF-8",
+  "segment_count": 11,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 3,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 4,
+      "end": 7,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 8,
+      "end": 11,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 12,
+      "end": 17,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 18,
+      "end": 27,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 28,
+      "end": 34,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 35,
+      "end": 52,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 53,
+      "end": 56,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 57,
+      "end": 63,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 64,
+      "end": 67,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 68,
+      "end": 70,
+      "page": null
+    }
+  ],
+  "final_url": "https://jimeng.jianying.com/ai-tool/home",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T13:30:47",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

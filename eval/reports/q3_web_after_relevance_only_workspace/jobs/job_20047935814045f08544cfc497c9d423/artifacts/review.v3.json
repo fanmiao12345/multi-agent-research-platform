@@ -1,0 +1,62 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-013）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "工具定位段：E-016仅称便于长期管理，“迁移、备份”属新增内容却标〔事实〕，缺依据"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处把推断标为〔事实〕，如“E-028已把卡片盒与第二大脑分层”“E-014未主张检索优先”"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "E-036“冻结思维轨迹意义，允许无限发展”本身矛盾，检索痛点段照录未标注"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "资料边界段：E-006指就业服务平台资料，却用来界定非目标平台边界，指向不一致"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "非目标平台四条引用来源均标注为“该来源”，出处不可核验，宜明示"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "开放冲突段第二组既标〔开放冲突〕又断言“不能称其等同冲突”，实为预作裁决"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "检索痛点段将E-036列为痛点，证据本身未述检索困难，建议直接标明仅为待补项"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "未说明E-038至E-045、E-050至E-053等非目标平台资料的取舍理由"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "开放冲突段同一句连续叠加〔事实〕与〔开放冲突〕标注，可精简以免歧义"
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+  "title": "远程医疗推广中的支持和反对观点：可核查证据整理",
+  "sections": [
+    {
+      "heading": "资料范围与主题适用边界",
+      "purpose": "界定资料适用范围与远程医疗推广主题的对应关系",
+      "required_evidence": [
+        "E-007",
+        "E-015",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点一：医疗保健场景的正面应用",
+      "purpose": "汇总资料中医疗保健场景的正面应用描述",
+      "required_evidence": [
+        "E-008",
+        "E-016",
+        "E-009",
+        "E-017"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点二：远程运维降低成本",
+      "purpose": "汇总远程运维降低派遣上门成本的正面陈述",
+      "required_evidence": [
+        "E-010",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点三：效率提升与随时协助",
+      "purpose": "汇总效率提升与随时随地发起协助的正面陈述",
+      "required_evidence": [
+        "E-019",
+        "E-011"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点四：性能与规模表现",
+      "purpose": "汇总响应速度、连接规模与操作体验的相关数据",
+      "required_evidence": [
+        "E-001",
+        "E-005",
+        "E-006",
+        "E-020"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点五：安全与隐私保护措施",
+      "purpose": "汇总隐私屏、二次验证、加密与合规认证措施",
+      "required_evidence": [
+        "E-003",
+        "E-004",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-021"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "反对观点：资料中的缺失状态",
+      "purpose": "说明资料中缺少反对意见与争议记录",
+      "required_evidence": [
+        "E-015",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "场景区分：设备维护与远程诊疗",
+      "purpose": "区分医疗设备远程维护与远程诊疗两类场景",
+      "required_evidence": [
+        "E-009",
+        "E-017",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "待补缺口汇总",
+      "purpose": "列出反对观点、临床效果、合规与成本等缺口",
+      "required_evidence": [
+        "E-007",
+        "E-015",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论：两侧证据可得性对比",
+      "purpose": "对比支持与反对两侧证据的可得性与强度",
+      "required_evidence": [
+        "E-015",
+        "E-022",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

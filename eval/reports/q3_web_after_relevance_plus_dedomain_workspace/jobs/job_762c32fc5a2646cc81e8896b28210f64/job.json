@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_762c32fc5a2646cc81e8896b28210f64",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 4,
+    "statuses": {
+      "ok": 4,
+      "read_failed": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 22 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-18T14:19:13"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:19:23"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 4, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:19:49"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅见‘完善人工智能治理’等一般政策表述，未记载2026年AI治理政策的主要争议，无法提炼争议内容。",
+        "finished_at": "2026-09-18T14:20:15"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅见‘完善人工智能治理’等一般政策表述，未记载2026年AI治理政策的主要争议，无法提炼争议内容。；缺失信息：2026年AI治理争议的明确政策文件或权威分析、政府工作报告解读的后段全文、美国AI治理政策相关资料、联合国关于2026年AI治理争议的系统文件、中国AI治理争议的多方观点与政策辩论记录（可用证据 26 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+      "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+      "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+      "https://www.un.org/zh/",
+      "https://www.unonline.org/zh.html",
+      "https://china.un.org/zh"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "2026 欧盟人工智能法案 通用人工智能 争议",
+        "rank": 4,
+        "title": "2026年政府工作报告解读_中国政府网",
+        "url": "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+        "snippet": "2026年3月5日 · 四、2026年政府工作任务 党中央对今年工作作出了全面部署，我们要深入贯彻落实，扎实做好各项工作。 （一）着 …",
+        "published_date": "2026-03-05",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 人工智能 州法 优先",
+        "rank": 5,
+        "title": "国家概况_中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+        "snippet": "2025年，美国前五大货物贸易伙伴为墨西哥、加拿大、中国、德国、日本。 美国前五大货物和服务出口市场为加拿大、墨西哥、英国 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 人工智能 州法 优先",
+        "rank": 3,
+        "title": "中文 (中国) - United States Department of State",
+        "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+        "snippet": "6 天之前 · 2026年9月16日 中文翻译 多边制裁监测组关于朝鲜海外劳工项目的报告的联合声明",
+        "published_date": "2026-09-16",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "联合国 人工智能 治理 分歧",
+        "rank": 1,
+        "title": "联合国 | 健康地球上的和平、尊严与平等",
+        "url": "https://www.un.org/zh/",
+        "snippet": "3 天之前 · 自1945年起，联合国的主要优先事项之一是“促成国际合作，以解决国际间属于经济、社会、文化及人类福利性质之国际问 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "联合国 人工智能 治理 分歧",
+        "rank": 4,
+        "title": "联合国 | 健康地球上的和平、尊严与平等",
+        "url": "https://www.unonline.org/zh.html",
+        "snippet": "2024年12月31日 · 维护国际和平与安全 第二次世界大战结束后的1945年，联合国宣布成立，并将 维护国际和平与安全 确立为主要目 …",
+        "published_date": "2024-12-31",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "联合国 人工智能 治理 分歧",
+        "rank": 5,
+        "title": "联合国在中国",
+        "url": "https://china.un.org/zh",
+        "snippet": "2026年8月21日 · 联合国与中国启动《联合国对华可持续发展合作框架（2026–2030 年）》 蒋成华指出，过去五年，中方与联合国各 …",
+        "published_date": "2026-08-21",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "2026 欧盟人工智能法案 通用人工智能 争议",
+        "urls": [
+          "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "2026 欧盟人工智能法案 通用人工智能 争议",
+            "rank": 4,
+            "title": "2026年政府工作报告解读_中国政府网",
+            "url": "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+            "snippet": "2026年3月5日 · 四、2026年政府工作任务 党中央对今年工作作出了全面部署，我们要深入贯彻落实，扎实做好各项工作。 （一）着 …",
+            "published_date": "2026-03-05",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "2026年政府工作报告解读_中国政府网",
+            "url": "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "2026年大事、要事、重要节日一览表（附放假安排）",
+            "url": "https://news.qq.com/rain/a/20251231A04Z6M00",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "2026年日历全年完整图_带农历节假日放假安排_高清可打印 ...",
+            "url": "https://rili.zzhuangli.com/year/2026",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "国务院办公厅关于2026年部分节假日安排的通知_其他_中国 ...",
+            "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "2026中国节假日安排｜放假、调休、补班日历",
+            "url": "https://chinacalendar.app/zh-cn/2026-china-holidays",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          }
+        ],
+        "elapsed_seconds": 1.209,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "美国 人工智能 州法 优先",
+        "urls": [
+          "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+          "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "美国 人工智能 州法 优先",
+            "rank": 5,
+            "title": "国家概况_中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+            "snippet": "2025年，美国前五大货物贸易伙伴为墨西哥、加拿大、中国、德国、日本。 美国前五大货物和服务出口市场为加拿大、墨西哥、英国 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "美国 人工智能 州法 优先",
+            "rank": 3,
+            "title": "中文 (中国) - United States Department of State",
+            "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+            "snippet": "6 天之前 · 2026年9月16日 中文翻译 多边制裁监测组关于朝鲜海外劳工项目的报告的联合声明",
+            "published_date": "2026-09-16",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "国家概况_中华人民共和国外交部",
+            "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/bmz_679954/1206_680528/1206x0_680530/",
+            "relevance": 0.083,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中文 (中国) - United States Department of State",
+            "url": "https://www.state.gov/%E4%B8%AD%E6%96%87-%E4%B8%AD%E5%9B%BD/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "美国（美国）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD/14804533",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "美国历史（美利坚合众国的发展历史）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E5%8E%86%E5%8F%B2/283785",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "美国（美利坚合众国）_百度百科",
+            "url": "https://img.goworkla.cn/college/5c0dd511c6234718d80405ad/files/5c74b7cfc6237e05bc89c209/b6fb024e8623438b95adea0d1d02bd64.htm",
+            "relevance": 0.167,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 1.338,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "联合国 人工智能 治理 分歧",
+        "urls": [
+          "https://www.un.org/zh/",
+          "https://www.unonline.org/zh.html",
+          "https://china.un.org/zh"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "联合国 人工智能 治理 分歧",
+            "rank": 1,
+            "title": "联合国 | 健康地球上的和平、尊严与平等",
+            "url": "https://www.un.org/zh/",
+            "snippet": "3 天之前 · 自1945年起，联合国的主要优先事项之一是“促成国际合作，以解决国际间属于经济、社会、文化及人类福利性质之国际问 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "联合国 人工智能 治理 分歧",
+            "rank": 4,
+            "title": "联合国 | 健康地球上的和平、尊严与平等",
+            "url": "https://www.unonline.org/zh.html",
+            "snippet": "2024年12月31日 · 维护国际和平与安全 第二次世界大战结束后的1945年，联合国宣布成立，并将 维护国际和平与安全 确立为主要目 …",
+            "published_date": "2024-12-31",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "联合国 人工智能 治理 分歧",
+            "rank": 5,
+            "title": "联合国在中国",
+            "url": "https://china.un.org/zh",
+            "snippet": "2026年8月21日 · 联合国与中国启动《联合国对华可持续发展合作框架（2026–2030 年）》 蒋成华指出，过去五年，中方与联合国各 …",
+            "published_date": "2026-08-21",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "联合国（政府间国际组织）_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%81%94%E5%90%88%E5%9B%BD/135426",
+            "relevance": 0.286,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "中文首页 - Front page ZH | 联合国 - الأمم المتحدة",
+            "url": "https://www.un.org/zh/content/front-page",
+            "relevance": 0.286,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.187,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "2026 生成式人工智能 版权 训练数据",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "2026年政府工作报告解读_中国政府网",
+            "url": "https://www.gov.cn/zhuanti/2026qglh/2026zfgzbgjd/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "2026年大事、要事、重要节日一览表（附放假安排）",
+            "url": "https://news.qq.com/rain/a/20251231A04Z6M00",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "2026年日历全年完整图_带农历节假日放假安排_高清可打印 ...",
+            "url": "https://rili.zzhuangli.com/year/2026",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "国务院办公厅关于2026年部分节假日安排的通知_其他_中国 ...",
+            "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          },
+          {
+            "title": "2026中国节假日安排｜放假、调休、补班日历",
+            "url": "https://chinacalendar.app/zh-cn/2026-china-holidays",
+            "relevance": 0.0,
+            "reason": "日历/节假日页，与主题无关"
+          }
+        ],
+        "elapsed_seconds": 0.189,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（2026年人工智能治理政策的主要争议）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 17.487,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

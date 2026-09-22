@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_11fdf7b00b",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "本材料为合成验收数据。观察研究覆盖120人，为期4周；远程办公与自评专注度上升存在相关关系。样本自愿加入，未随机分组。没有报告客观产出指标或长期效果。",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 217,
+      "content_hash": "01f9160ef7deebdc05701216013a9d90ddfeebcd6d849f4f53dc0d321fb2d231",
+      "normalized_hash": "01f9160ef7deebdc05701216013a9d90ddfeebcd6d849f4f53dc0d321fb2d231",
+      "captured_at": "2026-09-21T11:50:16",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_11fdf7b00b.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-21T11:50:16",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

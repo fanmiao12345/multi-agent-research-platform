@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "root_job_id": "job_6ac6661705cf45b8ab25eb5f6a4c3582",
+  "topic": "2026年人工智能治理政策的主要争议",
+  "mode_requested": "fixed",
+  "orchestration": "single",
+  "status": "finished",
+  "plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "选型失败，降级固定流程（已知最稳）",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "unspecified",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "writer",
+        "description": "按给定资料完成整理与成稿（2026年人工智能治理政策的主要争议）",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 60,
+      "max_cost_usd": 0.12,
+      "max_seconds": 1500.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.06,
+      "seconds": 750
+    }
+  },
+  "plan_meta": {
+    "scheduler": "fallback",
+    "failures": [
+      "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+      "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+    ],
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "single"
+      ]
+    },
+    "scheduler_elapsed_seconds": 11.402,
+    "scheduler_calls": 2
+  },
+  "subtasks": [],
+  "draft_level": "unable",
+  "degraded": false,
+  "failures": [],
+  "execution_note": "受根账本锁限制，本轮子任务按序执行（并行开放见 D2-02）",
+  "termination_reason": "unable",
+  "message": "无法完成：现有资料仅提及完善人工智能治理，未提供任何争议事实或立场，无法回答主要争议。；缺失信息：2026年人工智能治理政策正文或权威解读、治理政策主要争议及多方立场材料、完善治理与深化拓展“人工智能+”平衡的具体表述、开源社区建设引发治理争议的相关细节、AI促进就业创业与替代效应争议材料、管理办法、标识办法、算法备案等条目对应争议内容（可用证据 19 条不足以支撑任务目标，按任务要求不编造内容）",
+  "unified": {
+    "schema_version": 2,
+    "root_job_id": "job_6ac6661705cf45b8ab25eb5f6a4c3582",
+    "draft_level": "unable",
+    "delivery_label": "无法完成",
+    "termination_reason": "unable",
+    "status": "partial",
+    "message": "无法完成：现有资料仅提及完善人工智能治理，未提供任何争议事实或立场，无法回答主要争议。；缺失信息：2026年人工智能治理政策正文或权威解读、治理政策主要争议及多方立场材料、完善治理与深化拓展“人工智能+”平衡的具体表述、开源社区建设引发治理争议的相关细节、AI促进就业创业与替代效应争议材料、管理办法、标识办法、算法备案等条目对应争议内容（可用证据 19 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

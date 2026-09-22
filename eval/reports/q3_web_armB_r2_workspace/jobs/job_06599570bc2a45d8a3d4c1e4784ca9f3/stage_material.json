@@ -1,0 +1,217 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "开源与开放权重",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "中文Llama社区称其构建的中文Llama大模型开源生态完全开源可商用。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "Atom-7B与Atom-7B-Chat已完全开源并支持商用。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "Ollama称其模型开放权重且开源。"
+          }
+        ]
+      },
+      {
+        "name": "社区算力与模型服务",
+        "points": [
+          {
+            "evidence_id": "E-003",
+            "statement": "社区提供低于市场价格的算力资源用于训练和推理。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "社区为成员提供专属在线推理服务。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "社区提供一键在线微调服务。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "社区开放免费API，含Atom-1B、7B、13B三种中文大模型。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "社区提供技术咨询服务。"
+          }
+        ]
+      },
+      {
+        "name": "免费推广与本地AI栈",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "社区免费提供应用推广展示位。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "LocalAIStack是构建和运营本地AI工作站的开源模块化软件栈。"
+          }
+        ]
+      },
+      {
+        "name": "云端订阅与用量付费",
+        "points": [
+          {
+            "evidence_id": "E-010",
+            "statement": "Ollama Pro订阅每月20美元，包含60美元用量。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "用量包含额度为Pro 60美元、Max 300美元。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "用户可添加用量额度，按需增加使用量。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "本地模型始终免费。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "Ollama称定价没有隐藏限制或复杂定价。"
+          }
+        ]
+      },
+      {
+        "name": "成本与数据隐私价值主张",
+        "points": [
+          {
+            "evidence_id": "E-009",
+            "statement": "使用开源模型可减少支出并保持数据私密。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "Ollama称任何提供商都不会用用户数据训练。"
+          }
+        ]
+      },
+      {
+        "name": "企业级与私有化产品",
+        "points": [
+          {
+            "evidence_id": "E-017",
+            "statement": "Gitee主要产品包括社区版、企业版、专业版、高校版、旗舰版。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "Gitee企业版与专业版服务30万家企业，含1200家私有化部署企业。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "Gitee自2013年上线以来服务1200万开发者，托管仓库超2800万个。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "Gitee提供企业版在线使用电话400-606-0201。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "Gitee列出专业版私有部署联系电话13058176526。"
+          }
+        ]
+      },
+      {
+        "name": "开发者工具与模型集成",
+        "points": [
+          {
+            "evidence_id": "E-022",
+            "statement": "MothX支持多种LLM提供商，包括DeepSeek（默认）、OpenAI等。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "mcp-gitee是Gitee的模型上下文协议服务器实现。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "mcp-gitee-ent是Gitee Enterprise的MCP服务器实现。"
+          }
+        ]
+      },
+      {
+        "name": "非营利与赞助资助",
+        "points": [
+          {
+            "evidence_id": "E-025",
+            "statement": "开源社以非营利、厂商中立理念运营，未显示大模型商业变现。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "GitHub Sponsors资助开源开发者，体现开源资助模式。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "GitHub提供Copilot for Business企业级AI功能。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "开源社合作数百家赞助、媒体、社区伙伴，体现赞助合作模式。"
+          },
+          {
+            "evidence_id": "E-032",
+            "statement": "开源社是中国领先的纯社区驱动、中立开放组织。"
+          }
+        ]
+      },
+      {
+        "name": "生态研究输出",
+        "points": [
+          {
+            "evidence_id": "E-030",
+            "statement": "开源社仓库包含中国人工智能开源生态蓝皮书2026。"
+          },
+          {
+            "evidence_id": "E-031",
+            "statement": "开源社自2016年起连续举办中国开源年会并发布中国开源年度报告。"
+          }
+        ]
+      },
+      {
+        "name": "资料可核查性",
+        "points": [
+          {
+            "evidence_id": "E-033",
+            "statement": "云·星穹铁道资料全文仅为「加载中」，未提供可核查实质内容。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "开源大模型社区如何将免费API、开源模型转化为收入？",
+        "missing": "收入结构、付费转化率与财务数据"
+      },
+      {
+        "question": "中文Llama社区与Atom模型的商用许可具体条款和限制是什么？",
+        "missing": "许可证全文、商用条件与合规说明"
+      },
+      {
+        "question": "Ollama Pro/Max订阅与用量额度的定价依据和盈利模式是什么？",
+        "missing": "定价策略、成本结构与订阅运营数据"
+      },
+      {
+        "question": "Gitee企业版、专业版及私有化部署的收费与合同模式是什么？",
+        "missing": "价目表、合同条款与客户案例"
+      },
+      {
+        "question": "云·星穹铁道资料是否包含开源大模型商业模式信息？",
+        "missing": "可核查的页面正文或产品商业模式说明"
+      }
+    ],
+    "duplicates": [
+      {
+        "display": "云·原神",
+        "duplicate_of": "云·星穹铁道"
+      }
+    ]
+  }
+}

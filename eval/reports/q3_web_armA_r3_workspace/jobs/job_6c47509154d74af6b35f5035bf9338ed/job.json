@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_6c47509154d74af6b35f5035bf9338ed",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 个人知识管理系统中的检索与记忆设计：现有证据提纲\n## 报告目标与证据边界\n本报告讨论个人知识管理系统中的检索与记忆设计，但直接覆盖目标主题的材料有限。[E-007] 明确本资料未提供知识管理系统检索与记忆设计的任何内容〔事实〕；[E-030] 显示该问答页面被归入“无分类”，未涉及检索与记忆设计〔事实〕。因此，目标主题的核心机制不能由现有材料直接证实，只能借助卡片盒笔记法、词义指代等周边线索形成待验证推断〔推断〕。报告不把就业界面材料当作目标主题证据〔推断〕。\n## 资料构成与来源盘点\n以下材料可用于本报告〔推断〕：就业平台界面文案，如登录入口与就业意愿界面，[E-001]〔事实〕；卡片盒笔记法材料，称卡片盒由原子化笔记组成并以链接相连，[E-016]〔事实〕；汉语词“个人”指代材料，称其含义取决于具体语境，[E-008]〔事实〕；问答来源重复陈述，称“个人”含义取决于具体语境，[E-026]〔事实〕；来源属性为百度认证账号“文暄生活科普”、日期2025-05-24，[E-031]〔事实〕。可能贡献是：卡片盒材料提示链接式记忆与检索假设〔推断〕；词义材料提示检索中的指代歧义问题〔推断〕；就业平台界面对目标主题贡献有限〔推断〕。\n## 就业平台界面资料的相关性\n[E-001] 资料全文仅为登录入口与就业意愿相关界面文案〔事实〕；[E-002] 提示登录后可获取个性化推荐职位〔事实〕；[E-003] 包含“立即登录”入口文字〔事实〕；[E-004] 列出职位、招聘会、个性化推荐等栏目〔事实〕；[E-005] 说明就业意愿可在个人中心修改〔事实〕；[E-006] 含一个“提交”按钮文字〔事实〕。上述内容涉及就业服务界面，不涉及知识管理中的检索机制、记忆机制、链接索引或指代消解〔推断〕；因此，这些材料不支持检索与记忆设计，结论为无直接关联〔推断〕。\n## 卡片盒笔记法的记忆设计线索\n[E-016] 称卡片盒由原子化笔记组成，以链接相连，结构从连接中浮现而非预设层级〔事实〕；[E-018] 称永久笔记每张一个成形想法，写给未来的你并链入已有网络〔事实〕；[E-019] 称每张笔记只装一个想法才能链入多种语境，并永远用自己的话写〔事实〕；[E-020] 建议为每张新笔记至少链接一张旧笔记，并写一句说明二者关系〔事实〕；[E-022] 警告只收集不连接会让笔记只是一堆〔事实〕。这些材料可转写为记忆设计假设：以原子化笔记为记忆单元，用自有语言固化想法，并让新笔记接入旧网络以维持语境〔推断，待验证〕。材料未给出间隔重复、回顾提示或记忆巩固机制〔未知〕。\n## 卡片盒笔记法的检索设计线索\n[E-017] 称卡片盒可作思考伙伴，向它提问并顺着链接找回早已忘记的想法〔事实〕；[E-021] 建议写作时顺着链接走，让盒子替你浮现论证〔事实〕；[E-023] 称 Flexnote 把原子笔记做成可在无限画布上摆放、连接的卡片〔事实〕。可推断检索线索包括顺链找回、论证浮现与画布连接〔推断〕；但材料未给出反向链接、图查询、链接索引或排序算法等具体检索机制〔未知〕。因此这些线索只能作为设计方向，不能视为已验证实现〔推断〕。\n## “个人”词义与指代上下文\n[E-008] 称“个人”一词的含义取决于具体语境〔事实〕；[E-009] 称“我个人认为”中的“个人”明确指说话者自己〔事实〕；[E-010] 称“个人有个人的看法”中的“个人”指许多人中的每一个，不含说话者〔事实〕；[E-011] 称“个人”既可指自己，也可指不包括自己在内的其他人〔事实〕；[E-012] 称其具体含义需根据上下文判断〔事实〕；[E-013] 称这种多义体现汉语表达的丰富性和灵活性〔事实〕；[E-025] 称该资料讨论汉语词“个人”的指代含义，与知识管理无关〔事实〕。故该材料只支持词义与语境观察，不直接支持知识管理设计〔推断〕。\n## 检索中指代歧义的推断\n[E-014] 提出检索含“个人”的内容时，仅看该词本身难以判断指自己还是他人〔推断〕；[E-015] 提出为“个人”相关笔记补充上下文，可帮助还原其指代对象〔推断〕。据此可谨慎推断：若个人知识管理系统检索含“个人”的笔记，查询词本身可能不足，应结合上下文或补充语境提示来辅助判断指代〔推断〕。但材料未提供指代消解、上下文建模或用户意图识别方案〔未知〕。\n## 问答来源的重复陈述与属性\n该问答来源与词义材料同旨〔推断〕：[E-026] 称“个人”的含义取决于具体语境〔事实〕；[E-027] 称“我个人认为”中“个人”指说话者自己〔事实〕；[E-028] 称“个人有个人的看法”中“个人”指不包括说话者的他人〔事实〕；[E-029] 称结论为“个人”既可指自己也可指他人，需依上下文判断〔事实〕。该页面同时被归入“无分类”，未涉及检索与记忆设计，[E-030]〔事实〕；其来源属性为百度认证账号“文暄生活科普”、日期2025-05-24，[E-031]〔事实〕；[E-024] 说明该资料标题为“百度首页”，正文是百度知道问答页面〔事实〕。是否权威仍未知〔未知〕；重复陈述不宜按多条独立证据夸大权重〔推断〕。\n## 目标主题的直接证据缺口\n[E-007] 明确本资料未提供知识管理系统检索与记忆设计的任何内容〔事实〕；[E-030] 显示该问答页面被归入“无分类”，未涉及检索与记忆设计〔事实〕。可识别出以下直接证据缺口〔推断〕：检索算法、索引结构、具体查询交互机制〔未知〕；间隔重复、回顾提示、记忆巩固机制〔未知〕；反向链接、图查询、链接索引〔未知〕；指代消解、上下文建模、用户意图识别〔未知〕；就业平台资料纳入本主题的筛选标准或关联说明〔未知〕。其中“向它提问”仅是 [E-017] 的线索，不能替代具体查询交互机制〔推断〕。\n## 开放冲突与暂不裁决事项\n[E-025] 称该资料讨论汉语词“个人”的指代含义，与知识管理无关〔事实〕；[E-014] 提出检索含“个人”的内容时，仅看该词本身难以判断指自己还是他人〔推断〕。二者可同时成立：一份来源主题与知识管理无直接关系，但其词义材料可被推断用于检索指代判断，因此宜表述为表面张力而非逻辑冲突〔推断〕。现有证据不足以裁决该张力〔未知〕，应暂不裁决〔推断〕。\n## 可谨慎提出的设计原则\n以下仅为待验证设计假设〔推断〕：其一，以原子化、可链接笔记作为记忆单元，结构从连接中浮现，[E-016]〔推断，待验证〕；其二，每张新笔记至少链接一张旧笔记并写关系说明，[E-020]〔推断，待验证〕；其三，检索可尝试顺链找回与向盒子提问，[E-017]〔推断，待验证〕；其四，写作与检索可顺着链接走，让论证浮现，[E-021]〔推断，待验证〕；其五，避免只收集不连接，否则笔记只是一堆，[E-022]〔推断，待验证〕。以上均为待验证假设，不是已验证结论〔推断〕。\n## 结论与后续验证清单\n可支持下述有限结论〔推断〕：[E-007] 称本资料未提供知识管理系统检索与记忆设计的任何内容〔事实〕；[E-030] 显示该问答页面被归入“无分类”，未涉及检索与记忆设计〔事实〕。卡片盒材料提供顺链找回与链接旧笔记的线索，[E-017][E-020]〔事实〕；“个人”一词的检索存在指代歧义，[E-014]〔推断〕。进一步结论应限定为：目标主题的核心机制缺乏直接证据，但周边线索可形成待验证假设〔推断〕。后续需补证：检索算法与索引结构、具体查询交互、记忆巩固机制、反向链接与图查询、链接索引、指代消解与上下文建模、用户意图识别、就业平台资料纳入标准；以上均需新证据验证〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 23 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:13:15"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，1 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:13:32"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 8, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T11:14:05"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "12 个章节",
+        "finished_at": "2026-09-20T11:14:20"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2795字）",
+        "finished_at": "2026-09-20T11:14:51"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 2,
+          "warn": 11,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T11:16:26"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T11:17:56"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-20T11:18:53"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 52,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.ncss.cn/student/m/resume/personcenter.html",
+      "https://zhidao.baidu.com/question/2002226940225630987.html",
+      "https://myflexnote.com/zh/blog/zettelkasten-method-guide"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 双链笔记 检索",
+        "rank": 2,
+        "title": "个人中心-国家大学生就业服务平台",
+        "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+        "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 双链笔记 检索",
+        "rank": 5,
+        "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+        "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+        "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+        "published_date": "2025-05-24",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Zettelkasten 记忆线索 认知",
+        "rank": 2,
+        "title": "卡片盒笔记法（Zettelkasten）完整指南（2026） | Flexnote",
+        "url": "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+        "snippet": "2026年6月14日 · 卡片盒笔记法（Zettelkasten，\"卡片盒\"） 是一套把零散阅读 转化为原创想法的笔记方法。 社会学家卢曼用它出版了 …",
+        "published_date": "2026-06-14",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 双链笔记 检索",
+        "urls": [
+          "https://www.ncss.cn/student/m/resume/personcenter.html",
+          "https://zhidao.baidu.com/question/2002226940225630987.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 双链笔记 检索",
+            "rank": 2,
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 双链笔记 检索",
+            "rank": 5,
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+            "published_date": "2025-05-24",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "个人的意思_个人的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bd2f7f480",
+            "relevance": 0.111,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "个体 - 百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AA%E4%BD%93/2667121",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.225,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "间隔重复 Anki 记忆",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "间隔（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E9%97%B4%E9%9A%94/1023495",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "间隔的意思_间隔的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-8d82f0a64",
+            "relevance": 0.2,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "间隔是什么意思_间隔的翻译_音标_读音_用法_例句_爱词霸 ...",
+            "url": "https://www.iciba.com/word?w=%E9%97%B4%E9%9A%94",
+            "relevance": 0.2,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "间隔 | 简体中文-英语翻译——剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93-%E8%8B%B1%E8%AF%AD/%E9%97%B4%E9%9A%94",
+            "relevance": 0.2,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "间距（词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E9%97%B4%E8%B7%9D/1023422",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.226,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "Zettelkasten 记忆线索 认知",
+        "urls": [
+          "https://myflexnote.com/zh/blog/zettelkasten-method-guide"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "Zettelkasten 记忆线索 认知",
+            "rank": 2,
+            "title": "卡片盒笔记法（Zettelkasten）完整指南（2026） | Flexnote",
+            "url": "https://myflexnote.com/zh/blog/zettelkasten-method-guide",
+            "snippet": "2026年6月14日 · 卡片盒笔记法（Zettelkasten，\"卡片盒\"） 是一套把零散阅读 转化为原创想法的笔记方法。 社会学家卢曼用它出版了 …",
+            "published_date": "2026-06-14",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Zettelkasten方法简介 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/299377905",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "用 Obsidian 践行 Zettelkasten -- 打造你的第二大脑 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/2010790891590288674",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "卡片盒笔记法：一个改变我思维方式的笔记系统 - 少数派",
+            "url": "https://sspai.com/post/95590",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "什么是 Zettelkasten 卡片盒笔记法？ - 知乎",
+            "url": "https://www.zhihu.com/question/384309878",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.282,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "语义搜索 向量检索 第二大脑",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "语义（语言学术语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%AF%AD%E4%B9%89/65241012",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是语义，语义的定义是什么？ - 知乎",
+            "url": "https://www.zhihu.com/question/27542067",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "语义学_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%AF%AD%E4%B9%89%E5%AD%A6/2865620",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是“语义学”（semantics）？ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/1935332095246438407",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "语义学是一个怎样的学科？ - 知乎",
+            "url": "https://www.zhihu.com/question/650312472",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.235,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（个人知识管理系统中的检索与记忆设计）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 12.075,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

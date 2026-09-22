@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_8b7083b7ca",
+      "fact": "Gitee为开源中国旗下，国内第一大研发效能平台和全球第二大开源代码托管平台。",
+      "tag": "F",
+      "quote": "Gitee 为开源中国旗下，国内第一大研发效能平台&全球第二大开源代码托管平台",
+      "start": 128,
+      "end": 167,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_8b7083b7ca",
+      "fact": "Gitee主要产品为社区版、企业版、专业版、高校版、旗舰版。",
+      "tag": "F",
+      "quote": "主要产品为社区版、企业版、专业版、高校版、旗舰版",
+      "start": 168,
+      "end": 192,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_8b7083b7ca",
+      "fact": "Gitee自2013年上线，服务1200万开发者，累计托管仓库超2800万个。",
+      "tag": "F",
+      "quote": "自 2013 年上线以来，Gitee 共服务了 1200 万开发者用户，累计托管仓库超过 2800 万个",
+      "start": 194,
+      "end": 246,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_8b7083b7ca",
+      "fact": "Gitee企业版与专业版共服务30万家企业，含1200家中大型私有化部署企业。",
+      "tag": "F",
+      "quote": "Gitee 企业版 & 专业版共服务了 30 万家企业，包括了 1200 家中大型私有化部署企业",
+      "start": 267,
+      "end": 315,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 128,
+        "end": 317
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_8b7083b7ca",
+      "fact": "默思MothX是终端AI代码助手，支持DeepSeek、OpenAI等多种LLM提供商。",
+      "tag": "F",
+      "quote": "它支持多种 LLM 提供商，包括 DeepSeek（默认）、OpenAI...",
+      "start": 718,
+      "end": 757,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 40,
+        "start": 630,
+        "end": 758
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_8b7083b7ca",
+      "fact": "mcp-gitee是Gitee的MCP服务器实现，提供与Gitee API交互工具。",
+      "tag": "F",
+      "quote": "mcp-gitee 是 Gitee 的模型上下文协议 (MCP) 服务器实现",
+      "start": 838,
+      "end": 876,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 46,
+        "start": 838,
+        "end": 937
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_8b7083b7ca",
+      "fact": "本资料列出Gitee企业版在线使用电话400-606-0201。",
+      "tag": "F",
+      "quote": "企业版在线使用：400-606-0201",
+      "start": 2074,
+      "end": 2094,
+      "locator": {
+        "heading": "### 仓库 (3313)",
+        "paragraph": 102,
+        "start": 2074,
+        "end": 2095
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_8b7083b7ca",
+      "fact": "本资料仅出现私有云、模力方舟等入口，未说明开源大模型生态商业模式。",
+      "tag": "I",
+      "quote": "开源 企业版 高校版 私有云 模力方舟 AI 队友",
+      "start": 43,
+      "end": 68,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 43,
+        "end": 69
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_ff21800d42",
+      "fact": "开源社成立于2014年，由志愿贡献于开源事业的个人成员组成。",
+      "tag": "F",
+      "quote": "由志愿贡献于开源事业的个人成员",
+      "start": 2061,
+      "end": 2076,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_ff21800d42",
+      "fact": "开源社坚持厂商中立、公益、非营利的理念。",
+      "tag": "F",
+      "quote": "厂商中立、公益、非营利",
+      "start": 2101,
+      "end": 2112,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_ff21800d42",
+      "fact": "开源社是全球开源许可证认证组织OSI在中国的首个成员。",
+      "tag": "F",
+      "quote": "OSI 在中国的首个成员",
+      "start": 5041,
+      "end": 5053,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 121,
+        "start": 4967,
+        "end": 5117
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_ff21800d42",
+      "fact": "开源社自2016年起连续举办中国开源年会COSCon。",
+      "tag": "F",
+      "quote": "开源社自2016年起连续举办中国开源年会（COSCon）",
+      "start": 5118,
+      "end": 5146,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 122,
+        "start": 5118,
+        "end": 5276
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_ff21800d42",
+      "fact": "开源社合作了数百家赞助、媒体、社区伙伴。",
+      "tag": "F",
+      "quote": "合作了数百家赞助、媒体、社区伙伴",
+      "start": 5245,
+      "end": 5261,
+      "locator": {
+        "heading": "## 欢迎来到开源社",
+        "paragraph": 122,
+        "start": 5118,
+        "end": 5276
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_ff21800d42",
+      "fact": "其仓库列表中包含2026年中国人工智能开源生态蓝皮书。",
+      "tag": "F",
+      "quote": "China Artificial Intelligence Open-Source Ecosystem Blue Book 2026",
+      "start": 6366,
+      "end": 6432,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 157,
+        "start": 6366,
+        "end": 6433
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_ff21800d42",
+      "fact": "LocalAIStack是构建和运行本地AI工作站的开放模块化软件栈。",
+      "tag": "F",
+      "quote": "LocalAIStack is an open, modular software stack",
+      "start": 7103,
+      "end": 7150,
+      "locator": {
+        "heading": "### Repositories",
+        "paragraph": 172,
+        "start": 7103,
+        "end": 7202
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_ff21800d42",
+      "fact": "本资料未提供开源大模型生态商业模式的任何信息，无法支持该任务。",
+      "tag": "I",
+      "quote": "开源治理、国际接轨、社区发展、项目孵化",
+      "start": 2153,
+      "end": 2172,
+      "locator": {
+        "heading": "# 开源社",
+        "paragraph": 90,
+        "start": 2035,
+        "end": 2196
+      },
+      "note": ""
+    }
+  ]
+}

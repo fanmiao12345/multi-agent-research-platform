@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_ed4610b7f30148998571509ed40074fa",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 3,
+    "usable": 3,
+    "statuses": {
+      "ok": 3
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 18 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-20T09:09:27"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:09:42"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 8, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T09:10:18"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包仅有产品介绍、功能宣传与客户评价，并明确缺少同行评审研究、实证数据和系统综述，无法回答该主题。",
+        "finished_at": "2026-09-20T09:10:25"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包仅有产品介绍、功能宣传与客户评价，并明确缺少同行评审研究、实证数据和系统综述，无法回答该主题。；缺失信息：同行评审研究结论、实证数据或系统综述、样本、方法与对照设计、发表时间、行业与地域范围、独立第三方或负面结果研究、厂商客户评价的利益披露与代表性说明（可用证据 26 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.todesk.com/",
+      "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+      "https://sunlogin.oray.com/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 虚拟团队",
+        "rank": 1,
+        "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+        "url": "https://www.todesk.com/",
+        "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式团队 知识共享 信任",
+        "rank": 4,
+        "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+        "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+        "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+        "published_date": "2026-06-25",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "远程协作 技术工具 团队创新",
+        "rank": 2,
+        "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+        "url": "https://sunlogin.oray.com/",
+        "snippet": "贝锐向日葵远程控制软件，支持免费远程桌面连接、远程控制电脑、手机远程控制电脑、远控工控设备等多场景需求，兼具远程协助 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 虚拟团队",
+        "urls": [
+          "https://www.todesk.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "远程办公 团队协作 虚拟团队",
+            "rank": 1,
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "ToDesk官网-远程桌面软件 | ToDesk电脑版免费下载",
+            "url": "https://todesk.cn.com/",
+            "relevance": 0.188,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "https://uuyc.163.com/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.235,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "混合办公 团队沟通 绩效",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "混合（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%B7%B7%E5%90%88/10963222",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "混合学习中心 | 登录",
+            "url": "https://il.xdf.cn/plus/",
+            "relevance": 0.143,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "混合 | 简体中文-英语翻译——剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93-%E8%8B%B1%E8%AF%AD/%E6%B7%B7%E5%90%88",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "混合的意思,混合的拼音、近义词、反义词、造句 - 汉语查",
+            "url": "https://www.hgcha.com/cidian/7055eba2.html",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "混合的意思_混合的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-1d00319d46",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.205,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "分布式团队 知识共享 信任",
+        "urls": [
+          "https://javaguide.cn/distributed-system/distributed-system-intro.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "分布式团队 知识共享 信任",
+            "rank": 4,
+            "title": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+            "url": "https://javaguide.cn/distributed-system/distributed-system-intro.html",
+            "snippet": "2026年6月25日 · 分布式系统入门详解，讲解什么是分布式系统、为什么需要分布式系统、单体到分布式架构的演进、典型特征、常见 …",
+            "published_date": "2026-06-25",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "大白话告你什么是分布式，史上最全详解！ - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/382966178",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "什么是分布式，分布式和集群的区别又是什么？这一篇让你 ...",
+            "url": "https://blog.csdn.net/weixin_42046751/article/details/109510811",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式系统（建立在网络之上的软件系统）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/4905336",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "分布式（计算机的一种算法）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F/19276232",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.199,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "远程协作 技术工具 团队创新",
+        "urls": [
+          "https://sunlogin.oray.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "远程协作 技术工具 团队创新",
+            "rank": 2,
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "snippet": "贝锐向日葵远程控制软件，支持免费远程桌面连接、远程控制电脑、手机远程控制电脑、远控工控设备等多场景需求，兼具远程协助 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "ToDesk官网-远程桌面软件 | ToDesk电脑版免费下载",
+            "url": "https://todesk.cn.com/",
+            "relevance": 0.167,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "https://uuyc.163.com/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.201,
+        "error": ""
+      }
+    ]
+  }
+}

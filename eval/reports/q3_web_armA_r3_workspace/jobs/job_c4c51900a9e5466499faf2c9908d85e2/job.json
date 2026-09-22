@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_c4c51900a9e5466499faf2c9908d85e2",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 5,
+    "usable": 4,
+    "statuses": {
+      "ok": 4,
+      "empty": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 26 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T11:06:08"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:06:22"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 9, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T11:07:13"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅涉及重庆拥堵、南京公交与政务区划等，且多处明确未涉及低碳交通政策，无法评估其效果与限制。",
+        "finished_at": "2026-09-20T11:07:28"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅涉及重庆拥堵、南京公交与政务区划等，且多处明确未涉及低碳交通政策，无法评估其效果与限制。；缺失信息：低碳交通政策文件与措施清单、政策实施前后碳排放与出行分担率数据、财政、技术、执法、公众接受度等限制评估、官方拥堵数据与政策效果关联分析、政府公报、统计年鉴或同行评议研究（可用证据 35 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.chazhengbao.com/yongdu/chongqing/",
+      "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+      "https://www.sina.com.cn/",
+      "https://nanjing.8684.com.cn/",
+      "https://www.8684.com.cn/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 效果",
+        "rank": 3,
+        "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+        "url": "https://www.chazhengbao.com/yongdu/chongqing/",
+        "snippet": "3 小时之前 · 查证宝提供今日重庆拥堵情况，重庆拥堵指数查询，全天24小时实时查询重庆重点区域拥堵情况，重庆早晚高峰时间段拥 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 效果",
+        "rank": 2,
+        "title": "百度地图交通出行大数据平台 - Baidu",
+        "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+        "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 补贴退坡 制约",
+        "rank": 3,
+        "title": "新浪网",
+        "url": "https://www.sina.com.cn/",
+        "snippet": "蔚来李斌：到2030年，新车销量里90%是新能源，新能源里90%是纯电 上海贸促：关于北京车展和上海车展有关安排 布局未来技术赛 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交都市 慢行交通 低碳",
+        "rank": 2,
+        "title": "南京公交查询_南京公交路线_8684公交",
+        "url": "https://nanjing.8684.com.cn/",
+        "snippet": "8684公交查询，提供全国公交线路查询、站点查询、换乘查询服务 📌 其他 23217 🏨 酒店 5633 🚌 公交 5319 🚇 地铁 55 🍽️ 美食 39058 🎬 电影 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交都市 慢行交通 低碳",
+        "rank": 3,
+        "title": "8684公交查询_公交路线_公交站点_公交换乘",
+        "url": "https://www.8684.com.cn/",
+        "snippet": "8684公交查询，提供全国公交线路查询、站点查询、换乘查询服务",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "低碳城市试点 交通 碳减排",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "低_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BD%8E/4417971",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "低的意思,低的解释,低的拼音,低的部首,低的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-20302",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "【低】的笔顺（笔画顺序） - 一笔一画动态演示与详细图解 ...",
+            "url": "https://www.strokeorder.cc/hanzi/%E4%BD%8E",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《低》的拼音,低字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/12faead3.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "低山臭水遇知音_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BD%8E%E5%B1%B1%E8%87%AD%E6%B0%B4%E9%81%87%E7%9F%A5%E9%9F%B3/67992498",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.242,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 效果",
+        "urls": [
+          "https://www.chazhengbao.com/yongdu/chongqing/",
+          "https://jiaotong.baidu.com/congestion/city/urbanrealtime/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 低排放区 效果",
+            "rank": 3,
+            "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+            "url": "https://www.chazhengbao.com/yongdu/chongqing/",
+            "snippet": "3 小时之前 · 查证宝提供今日重庆拥堵情况，重庆拥堵指数查询，全天24小时实时查询重庆重点区域拥堵情况，重庆早晚高峰时间段拥 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 低排放区 效果",
+            "rank": 2,
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+            "url": "https://www.chazhengbao.com/yongdu/chongqing/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%8B%A5%E5%A0%B5/9435866",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "城市交通拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%B8%82%E4%BA%A4%E9%80%9A%E6%8B%A5%E5%A0%B5/12582908",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urban",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.219,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 补贴退坡 制约",
+        "urls": [
+          "https://www.sina.com.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "新能源汽车 补贴退坡 制约",
+            "rank": 3,
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "snippet": "蔚来李斌：到2030年，新车销量里90%是新能源，新能源里90%是纯电 上海贸促：关于北京车展和上海车展有关安排 布局未来技术赛 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "新（汉语汉字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%96%B0/34058",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "新的意思,新的解释,新的拼音,新的部首,新的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-26032",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《新》的拼音,新字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/72f014d8.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "新_新怎么读_新的意思 - 汉语字典",
+            "url": "https://www.chagushici.com/zidian/%E6%96%B0",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.239,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交都市 慢行交通 低碳",
+        "urls": [
+          "https://nanjing.8684.com.cn/",
+          "https://www.8684.com.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "公交都市 慢行交通 低碳",
+            "rank": 2,
+            "title": "南京公交查询_南京公交路线_8684公交",
+            "url": "https://nanjing.8684.com.cn/",
+            "snippet": "8684公交查询，提供全国公交线路查询、站点查询、换乘查询服务 📌 其他 23217 🏨 酒店 5633 🚌 公交 5319 🚇 地铁 55 🍽️ 美食 39058 🎬 电影 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "公交都市 慢行交通 低碳",
+            "rank": 3,
+            "title": "8684公交查询_公交路线_公交站点_公交换乘",
+            "url": "https://www.8684.com.cn/",
+            "snippet": "8684公交查询，提供全国公交线路查询、站点查询、换乘查询服务",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "南京公交查询_南京公交路线_8684公交",
+            "url": "https://nanjing.8684.com.cn/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "8684公交查询_公交路线_公交站点_公交换乘",
+            "url": "https://www.8684.com.cn/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "高德地图",
+            "url": "https://gaode.com/",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "m公交查询_m公交路线_8684公交",
+            "url": "https://m.8684.com.cn/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "掌上公交",
+            "url": "http://zbbus.com:8083/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.212,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（城市低碳交通政策的效果与限制）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "manager_worker"
+        ]
+      },
+      "scheduler_elapsed_seconds": 25.213,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

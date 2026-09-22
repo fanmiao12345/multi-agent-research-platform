@@ -1,0 +1,188 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "欧盟概况未覆盖AI治理争议",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "外交部欧盟概况更新标注为2026年7月。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "资料载明2026年欧盟上下半年轮值主席国安排。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "资料称欧盟以安全、竞争力和绿色发展为三大支柱。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "资料提到外国补贴条例、反胁迫工具等经贸工具箱。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "该资料仅提绿色和数字双转型，未涉及AI治理争议。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "该资料无AI内容，无法说明2026年AI治理主要争议。"
+          }
+        ]
+      },
+      {
+        "name": "美国概况无AI治理内容",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "美国国家概况通篇未涉及人工智能治理政策。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "该资料最近更新时间为2026年6月。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "资料涵盖美国国名、面积、人口、宗教、首都等基本国情。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "资料还介绍美国政府、国会、司法、政党、经济、军事等内容。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "资料述及国会构成，但未提及AI监管机构或法案。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "据此推断，该资料无法提供2026年AI治理争议事实依据。"
+          }
+        ]
+      },
+      {
+        "name": "中国政府网资料缺口",
+        "points": [
+          {
+            "evidence_id": "E-013",
+            "statement": "中国政府网首页内容为要闻、最新政策与政务导航。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "资料提到电子信息制造业发展十五五规划印发。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "资料提到商务部解读促进智能家居消费行动方案。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "该资料通篇未出现AI治理及2026年AI政策争议内容。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "该资料无2026年AI治理政策主要争议的可提取证据。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "该资料未列出AI、算法、数据治理相关文件或解读。"
+          }
+        ]
+      },
+      {
+        "name": "中国网AI相关线索",
+        "points": [
+          {
+            "evidence_id": "E-019",
+            "statement": "唯一涉及AI的标题是AI训练与版权保护问题。"
+          },
+          {
+            "evidence_id": "E-020",
+            "statement": "资料提及重庆计划打造150个AI+综合治理场景。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "该门户首页未提供2026年AI治理政策主要争议内容。"
+          }
+        ]
+      },
+      {
+        "name": "AI资讯中的安全与合规线索",
+        "points": [
+          {
+            "evidence_id": "E-022",
+            "statement": "该资料为每日AI资讯聚合，未系统梳理治理争议。"
+          },
+          {
+            "evidence_id": "E-023",
+            "statement": "OpenAI以合规担忧终止Cursor模型直接访问。"
+          },
+          {
+            "evidence_id": "E-024",
+            "statement": "GPT-6 Astra达到关键网络安全能力门槛，可监控性下降。"
+          },
+          {
+            "evidence_id": "E-025",
+            "statement": "谷歌网络安全专用模型仅通过认证计划向安全人员开放。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "OpenAI网络安全模型GPT-5.6-Cyber仅向可信合作伙伴开放。"
+          }
+        ]
+      },
+      {
+        "name": "跨境监管与企业合规线索",
+        "points": [
+          {
+            "evidence_id": "E-027",
+            "statement": "Manus因跨境监管审查调整架构并恢复独立运营。"
+          },
+          {
+            "evidence_id": "E-028",
+            "statement": "企业级AI助手强调数据本地驻留、隐私隔离与合规审计。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "GUI智能体设安全边界，敏感操作前主动确认用户。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "statement": "现有资料对2026年AI治理争议可提取性判断不一致：无内容与零散线索并存。",
+        "evidence_ids": [
+          "E-006",
+          "E-017",
+          "E-022",
+          "E-023",
+          "E-024"
+        ],
+        "status": "open"
+      }
+    ],
+    "gaps": [
+      {
+        "question": "2026年各国AI治理政策的核心争议点是什么？",
+        "missing": "2026年AI专门立法、监管机构与政策争论的一手材料"
+      },
+      {
+        "question": "AI训练版权争议的治理规则如何演进？",
+        "missing": "AI训练版权立法、判例或政策文件"
+      },
+      {
+        "question": "AI安全能力门槛与开放限制是否构成全球治理争议？",
+        "missing": "多国AI安全监管框架、国际协调文件"
+      },
+      {
+        "question": "跨境AI监管审查有哪些具体政策冲突？",
+        "missing": "跨境监管审查决定、企业架构调整合规文件"
+      },
+      {
+        "question": "企业AI合规要求是否形成统一标准？",
+        "missing": "数据驻留、隐私隔离、审计标准的政策文本"
+      }
+    ],
+    "duplicates": []
+  }
+}

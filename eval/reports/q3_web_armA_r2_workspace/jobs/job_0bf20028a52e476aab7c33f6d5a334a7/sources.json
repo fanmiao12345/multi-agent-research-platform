@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_a4d60f1982",
+      "kind": "url",
+      "display": "新浪网 404 Not Found",
+      "original_address": "https://sina.com.cn/",
+      "title": "新浪网 404 Not Found",
+      "content_format": "md",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 36114,
+      "content_hash": "87e02e62eff4fe5c68313514531bf6a6b07473788e712b576698463cbfebd899",
+      "normalized_hash": "c4e5d0d0cd9b543578398060bac067acac8c5aadf51d53f911a5f08392a4fece",
+      "captured_at": "2026-09-20T09:10:49",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_a4d60f1982.md",
+      "encoding": "utf-8/replace",
+      "segment_count": 640,
+      "final_url": "https://www.sina.com.cn/",
+      "http_status": 200,
+      "content_type": "text/html",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-20T09:10:49",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_c66a6ef612",
+      "fact": "本资料为Kling AI创意工具主页，未涉及教育领域内容",
+      "tag": "I",
+      "quote": "Kling AI Home",
+      "start": 2,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_c66a6ef612",
+      "fact": "本资料未提及生成式AI在教育场景的收益或风险",
+      "tag": "I",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_c66a6ef612",
+      "fact": "本资料列出的功能为创意圈、资产、Omni、生成、灵动画布等",
+      "tag": "F",
+      "quote": "创意圈",
+      "start": 17,
+      "end": 20,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 0,
+        "start": 17,
+        "end": 21
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_9ec9d27cc0",
+      "fact": "本资料主题是在线AI图像生成与编辑工具，定位为创作工作室而非教育产品。",
+      "tag": "F",
+      "quote": "集 AI 图像生成、图片编辑与视频创作于一体的在线工作室。",
+      "start": 3959,
+      "end": 3988,
+      "locator": {
+        "heading": "## AI视频",
+        "paragraph": 189,
+        "start": 3959,
+        "end": 3989
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_9ec9d27cc0",
+      "fact": "本资料称没有设计或修图经验的人也能使用，用日常语言描述结果即可。",
+      "tag": "F",
+      "quote": "可以。直接用日常语言描述想要的结果，选择模型和尺寸，再根据生成效果继续调整描述即可。",
+      "start": 3496,
+      "end": 3538,
+      "locator": {
+        "heading": "## 开始创作前，你可能想了解这些",
+        "paragraph": 165,
+        "start": 3496,
+        "end": 3539
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_9ec9d27cc0",
+      "fact": "由该问答可推断此类工具使用门槛较低，非专业使用者也可能上手。",
+      "tag": "I",
+      "quote": "没有设计或修图经验也能使用吗？",
+      "start": 3477,
+      "end": 3492,
+      "locator": {
+        "heading": "## 开始创作前，你可能想了解这些",
+        "paragraph": 164,
+        "start": 3477,
+        "end": 3495
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_9ec9d27cc0",
+      "fact": "本资料强调可更高效制作商品图、营销素材、社交内容与设计提案。",
+      "tag": "F",
+      "quote": "更高效地制作商品图、营销素材、社交内容、品牌概念与设计提案。",
+      "start": 1848,
+      "end": 1878,
+      "locator": {
+        "heading": "### 商业内容工作流",
+        "paragraph": 90,
+        "start": 1848,
+        "end": 1879
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_9ec9d27cc0",
+      "fact": "本资料提示AI生成结果在发布前需完成事实、权利与质量检查。",
+      "tag": "F",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_9ec9d27cc0",
+      "fact": "由该提示可推断生成式AI输出存在事实准确性与权利方面的风险，但资料未展开。",
+      "tag": "I",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_9ec9d27cc0",
+      "fact": "本资料全文未出现教育、教学、学生或教师内容，无法提供教育领域收益与风险的证据。",
+      "tag": "I",
+      "quote": "为每个人打造的 AI 创作工作室",
+      "start": 511,
+      "end": 527,
+      "locator": {
+        "heading": "",
+        "paragraph": 15,
+        "start": 511,
+        "end": 528
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_e996116d7c",
+      "fact": "本资料将“借助新技术和人工智能学习”列为UNESCO社区影响案例。",
+      "tag": "F",
+      "quote": "Learning with new technologies and artificial intelligence",
+      "start": 3911,
+      "end": 3969,
+      "locator": {
+        "heading": "## Our impact in communities",
+        "paragraph": 84,
+        "start": 3911,
+        "end": 3970
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_e996116d7c",
+      "fact": "本资料称UNESCO致力于让新兴技术服务于公平、机会与包容。",
+      "tag": "F",
+      "quote": "deployed in service of equity, opportunity, and inclusivity",
+      "start": 1324,
+      "end": 1383,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 64,
+        "start": 1137,
+        "end": 1401
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_e996116d7c",
+      "fact": "本资料称AI治理全球对话要确保治理反映所有国家而非仅技术先进国家。",
+      "tag": "F",
+      "quote": "AI governance reflects the priorities of all nations",
+      "start": 1570,
+      "end": 1622,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 65,
+        "start": 1402,
+        "end": 1668
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_e996116d7c",
+      "fact": "本资料称UNESCO与ITU作为联合联合国秘书处协调AI治理全球对话。",
+      "tag": "F",
+      "quote": "Coordinated by UNESCO and the ITU as the joint UN Secretariat",
+      "start": 1402,
+      "end": 1463,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 65,
+        "start": 1402,
+        "end": 1668
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_e996116d7c",
+      "fact": "本资料提到AI、信息诚信、教育是教皇访问UNESCO讨论的当代挑战。",
+      "tag": "F",
+      "quote": "artificial intelligence, information integrity, education",
+      "start": 2967,
+      "end": 3024,
+      "locator": {
+        "heading": "## Pope Leo XIV at UNESCO",
+        "paragraph": 75,
+        "start": 2737,
+        "end": 3150
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_e996116d7c",
+      "fact": "本资料提到第4届AI伦理全球论坛强化全球伦理AI治理合作。",
+      "tag": "F",
+      "quote": "Global cooperation for ethical AI governance reinforced",
+      "start": 6369,
+      "end": 6424,
+      "locator": {
+        "heading": "## Latest news",
+        "paragraph": 125,
+        "start": 6369,
+        "end": 6490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_e996116d7c",
+      "fact": "本资料未具体说明教育领域使用生成式AI的收益与风险。",
+      "tag": "U",
+      "quote": "Learning with new technologies and artificial intelligence",
+      "start": 3911,
+      "end": 3969,
+      "locator": {
+        "heading": "## Our impact in communities",
+        "paragraph": 84,
+        "start": 3911,
+        "end": 3970
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_69c770bdf1",
+      "fact": "本资料提及教育部长呼吁人工智能时代仍须坚持将教育作为公共利益。",
+      "tag": "F",
+      "quote": "联合国教科文组织数字学习周，教育部长呼吁：人工智能时代仍须坚持将教育作为公共利益",
+      "start": 2605,
+      "end": 2645,
+      "locator": {
+        "heading": "## 新闻",
+        "paragraph": 113,
+        "start": 2605,
+        "end": 2646
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_69c770bdf1",
+      "fact": "本资料未说明教育领域使用生成式AI的具体收益与风险。",
+      "tag": "I",
+      "quote": "人工智能时代仍须坚持将教育作为公共利益",
+      "start": 2626,
+      "end": 2645,
+      "locator": {
+        "heading": "## 新闻",
+        "paragraph": 113,
+        "start": 2605,
+        "end": 2646
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,2337 @@
+{
+  "source_id": "src_044ffb3418",
+  "kind": "url",
+  "display": "The UiPath Platform™ for Business Orchestration and Automation | UiPath",
+  "original_address": "https://www.uipath.com/",
+  "title": "The UiPath Platform™ for Business Orchestration and Automation | UiPath",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 10116,
+  "content_hash": "4f0f838391bd68a4d2bf3357a5e048e2046b0570616dd429e9644ba7c94117af",
+  "normalized_hash": "d811eeb146bac0c7560b22386556f57250a21fa36658894115bd749a54ef376c",
+  "captured_at": "2026-09-18T14:41:36",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_044ffb3418.md",
+  "encoding": "utf-8",
+  "segment_count": 329,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 18,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 19,
+      "end": 56,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 57,
+      "end": 70,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 3,
+      "start": 105,
+      "end": 126,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 4,
+      "start": 127,
+      "end": 135,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 5,
+      "start": 136,
+      "end": 144,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 6,
+      "start": 145,
+      "end": 159,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 7,
+      "start": 160,
+      "end": 183,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 8,
+      "start": 184,
+      "end": 205,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 9,
+      "start": 206,
+      "end": 219,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 10,
+      "start": 220,
+      "end": 230,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 11,
+      "start": 231,
+      "end": 242,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 12,
+      "start": 243,
+      "end": 247,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 13,
+      "start": 248,
+      "end": 252,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 14,
+      "start": 253,
+      "end": 285,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 15,
+      "start": 286,
+      "end": 297,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 16,
+      "start": 298,
+      "end": 320,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 17,
+      "start": 321,
+      "end": 333,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 18,
+      "start": 334,
+      "end": 343,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 19,
+      "start": 344,
+      "end": 355,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 20,
+      "start": 356,
+      "end": 365,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 21,
+      "start": 366,
+      "end": 370,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 22,
+      "start": 371,
+      "end": 379,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 23,
+      "start": 380,
+      "end": 393,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 24,
+      "start": 394,
+      "end": 407,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 25,
+      "start": 408,
+      "end": 419,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 26,
+      "start": 420,
+      "end": 427,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 27,
+      "start": 428,
+      "end": 453,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 28,
+      "start": 454,
+      "end": 472,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 29,
+      "start": 509,
+      "end": 520,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 30,
+      "start": 521,
+      "end": 550,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 31,
+      "start": 551,
+      "end": 578,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 32,
+      "start": 579,
+      "end": 598,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 33,
+      "start": 599,
+      "end": 610,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 34,
+      "start": 611,
+      "end": 631,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 35,
+      "start": 632,
+      "end": 669,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 36,
+      "start": 670,
+      "end": 677,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 37,
+      "start": 678,
+      "end": 692,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 38,
+      "start": 693,
+      "end": 707,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 39,
+      "start": 708,
+      "end": 727,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 40,
+      "start": 728,
+      "end": 749,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 41,
+      "start": 750,
+      "end": 774,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 42,
+      "start": 775,
+      "end": 797,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 43,
+      "start": 798,
+      "end": 810,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 44,
+      "start": 811,
+      "end": 832,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 45,
+      "start": 833,
+      "end": 848,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 46,
+      "start": 849,
+      "end": 863,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 47,
+      "start": 864,
+      "end": 883,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 48,
+      "start": 884,
+      "end": 937,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 49,
+      "start": 938,
+      "end": 961,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 50,
+      "start": 998,
+      "end": 1010,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 51,
+      "start": 1011,
+      "end": 1024,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 52,
+      "start": 1025,
+      "end": 1039,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 53,
+      "start": 1040,
+      "end": 1057,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 54,
+      "start": 1058,
+      "end": 1069,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 55,
+      "start": 1070,
+      "end": 1080,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 56,
+      "start": 1081,
+      "end": 1093,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 57,
+      "start": 1094,
+      "end": 1112,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 58,
+      "start": 1113,
+      "end": 1128,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 59,
+      "start": 1129,
+      "end": 1142,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 60,
+      "start": 1143,
+      "end": 1159,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 61,
+      "start": 1160,
+      "end": 1177,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 62,
+      "start": 1178,
+      "end": 1183,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 63,
+      "start": 1184,
+      "end": 1189,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 64,
+      "start": 1190,
+      "end": 1199,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 65,
+      "start": 1200,
+      "end": 1219,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 66,
+      "start": 1220,
+      "end": 1229,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 67,
+      "start": 1230,
+      "end": 1245,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 68,
+      "start": 1246,
+      "end": 1254,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 69,
+      "start": 1255,
+      "end": 1275,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 70,
+      "start": 1276,
+      "end": 1290,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 71,
+      "start": 1291,
+      "end": 1299,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 72,
+      "start": 1300,
+      "end": 1316,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 73,
+      "start": 1317,
+      "end": 1334,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 74,
+      "start": 1335,
+      "end": 1345,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 75,
+      "start": 1346,
+      "end": 1368,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 76,
+      "start": 1369,
+      "end": 1378,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 77,
+      "start": 1379,
+      "end": 1402,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 78,
+      "start": 1403,
+      "end": 1418,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 79,
+      "start": 1419,
+      "end": 1436,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 80,
+      "start": 1437,
+      "end": 1461,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 81,
+      "start": 1462,
+      "end": 1488,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 82,
+      "start": 1527,
+      "end": 1536,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 83,
+      "start": 1537,
+      "end": 1559,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 84,
+      "start": 1560,
+      "end": 1574,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 85,
+      "start": 1575,
+      "end": 1589,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 86,
+      "start": 1590,
+      "end": 1606,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 87,
+      "start": 1607,
+      "end": 1613,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 88,
+      "start": 1614,
+      "end": 1622,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 89,
+      "start": 1623,
+      "end": 1638,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 90,
+      "start": 1639,
+      "end": 1649,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 91,
+      "start": 1650,
+      "end": 1655,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 92,
+      "start": 1656,
+      "end": 1664,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 93,
+      "start": 1665,
+      "end": 1675,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 94,
+      "start": 1676,
+      "end": 1683,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 95,
+      "start": 1684,
+      "end": 1695,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 96,
+      "start": 1696,
+      "end": 1702,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 97,
+      "start": 1703,
+      "end": 1715,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 98,
+      "start": 1716,
+      "end": 1724,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 99,
+      "start": 1775,
+      "end": 1783,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 100,
+      "start": 1784,
+      "end": 1800,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 101,
+      "start": 1801,
+      "end": 1825,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 102,
+      "start": 1826,
+      "end": 1839,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 103,
+      "start": 1840,
+      "end": 1860,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 104,
+      "start": 1861,
+      "end": 1873,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 105,
+      "start": 1874,
+      "end": 1890,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 106,
+      "start": 1891,
+      "end": 1899,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 107,
+      "start": 1900,
+      "end": 1911,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 108,
+      "start": 1912,
+      "end": 1919,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 109,
+      "start": 1920,
+      "end": 1924,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 110,
+      "start": 1925,
+      "end": 1936,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 111,
+      "start": 1937,
+      "end": 1943,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 112,
+      "start": 1944,
+      "end": 1949,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 113,
+      "start": 1950,
+      "end": 1956,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 114,
+      "start": 1957,
+      "end": 1968,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 115,
+      "start": 1969,
+      "end": 1977,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 116,
+      "start": 1978,
+      "end": 1994,
+      "page": null
+    },
+    {
+      "heading": "# Your clear path to AI results",
+      "paragraph": 117,
+      "start": 2028,
+      "end": 2223,
+      "page": null
+    },
+    {
+      "heading": "# Your clear path to AI results",
+      "paragraph": 118,
+      "start": 2224,
+      "end": 2253,
+      "page": null
+    },
+    {
+      "heading": "## See the path in action",
+      "paragraph": 119,
+      "start": 2281,
+      "end": 2378,
+      "page": null
+    },
+    {
+      "heading": "### From intake to outcome",
+      "paragraph": 120,
+      "start": 2407,
+      "end": 2440,
+      "page": null
+    },
+    {
+      "heading": "### From intake to outcome",
+      "paragraph": 121,
+      "start": 2441,
+      "end": 2484,
+      "page": null
+    },
+    {
+      "heading": "### From intake to outcome",
+      "paragraph": 122,
+      "start": 2485,
+      "end": 2567,
+      "page": null
+    },
+    {
+      "heading": "### From intake to outcome",
+      "paragraph": 123,
+      "start": 2568,
+      "end": 2649,
+      "page": null
+    },
+    {
+      "heading": "### From intake to outcome",
+      "paragraph": 124,
+      "start": 2650,
+      "end": 2710,
+      "page": null
+    },
+    {
+      "heading": "### From intake to outcome",
+      "paragraph": 125,
+      "start": 2711,
+      "end": 2748,
+      "page": null
+    },
+    {
+      "heading": "## One platform. Three layers. Every outcome traceable.",
+      "paragraph": 126,
+      "start": 2806,
+      "end": 2981,
+      "page": null
+    },
+    {
+      "heading": "## One platform. Three layers. Every outcome traceable.",
+      "paragraph": 127,
+      "start": 2982,
+      "end": 2985,
+      "page": null
+    },
+    {
+      "heading": "## One platform. Three layers. Every outcome traceable.",
+      "paragraph": 128,
+      "start": 2986,
+      "end": 3000,
+      "page": null
+    },
+    {
+      "heading": "### Where work gets coordinated",
+      "paragraph": 129,
+      "start": 3034,
+      "end": 3153,
+      "page": null
+    },
+    {
+      "heading": "### Where work gets coordinated",
+      "paragraph": 130,
+      "start": 3154,
+      "end": 3185,
+      "page": null
+    },
+    {
+      "heading": "### Where work gets coordinated",
+      "paragraph": 131,
+      "start": 3186,
+      "end": 3200,
+      "page": null
+    },
+    {
+      "heading": "#### One process, end to end",
+      "paragraph": 132,
+      "start": 3231,
+      "end": 3324,
+      "page": null
+    },
+    {
+      "heading": "#### Durable by design",
+      "paragraph": 133,
+      "start": 3349,
+      "end": 3450,
+      "page": null
+    },
+    {
+      "heading": "#### Exceptions, handled",
+      "paragraph": 134,
+      "start": 3477,
+      "end": 3561,
+      "page": null
+    },
+    {
+      "heading": "#### Outcomes you can measure",
+      "paragraph": 135,
+      "start": 3593,
+      "end": 3663,
+      "page": null
+    },
+    {
+      "heading": "#### Outcomes you can measure",
+      "paragraph": 136,
+      "start": 3664,
+      "end": 3667,
+      "page": null
+    },
+    {
+      "heading": "#### Outcomes you can measure",
+      "paragraph": 137,
+      "start": 3668,
+      "end": 3678,
+      "page": null
+    },
+    {
+      "heading": "### Where the work gets done",
+      "paragraph": 138,
+      "start": 3709,
+      "end": 3835,
+      "page": null
+    },
+    {
+      "heading": "### Where the work gets done",
+      "paragraph": 139,
+      "start": 3836,
+      "end": 3855,
+      "page": null
+    },
+    {
+      "heading": "### Where the work gets done",
+      "paragraph": 140,
+      "start": 3856,
+      "end": 3866,
+      "page": null
+    },
+    {
+      "heading": "#### Agents reason",
+      "paragraph": 141,
+      "start": 3887,
+      "end": 4002,
+      "page": null
+    },
+    {
+      "heading": "#### Documents, understood",
+      "paragraph": 142,
+      "start": 4031,
+      "end": 4136,
+      "page": null
+    },
+    {
+      "heading": "#### Robots, APIs, and agents act",
+      "paragraph": 143,
+      "start": 4172,
+      "end": 4267,
+      "page": null
+    },
+    {
+      "heading": "#### People decide",
+      "paragraph": 144,
+      "start": 4288,
+      "end": 4378,
+      "page": null
+    },
+    {
+      "heading": "#### People decide",
+      "paragraph": 145,
+      "start": 4379,
+      "end": 4382,
+      "page": null
+    },
+    {
+      "heading": "#### People decide",
+      "paragraph": 146,
+      "start": 4383,
+      "end": 4394,
+      "page": null
+    },
+    {
+      "heading": "### Where trust gets enforced",
+      "paragraph": 147,
+      "start": 4426,
+      "end": 4552,
+      "page": null
+    },
+    {
+      "heading": "### Where trust gets enforced",
+      "paragraph": 148,
+      "start": 4553,
+      "end": 4572,
+      "page": null
+    },
+    {
+      "heading": "### Where trust gets enforced",
+      "paragraph": 149,
+      "start": 4573,
+      "end": 4584,
+      "page": null
+    },
+    {
+      "heading": "#### Data, protected",
+      "paragraph": 150,
+      "start": 4607,
+      "end": 4689,
+      "page": null
+    },
+    {
+      "heading": "#### Models, governed",
+      "paragraph": 151,
+      "start": 4713,
+      "end": 4773,
+      "page": null
+    },
+    {
+      "heading": "#### Agency, controlled",
+      "paragraph": 152,
+      "start": 4799,
+      "end": 4908,
+      "page": null
+    },
+    {
+      "heading": "#### Proof, on record",
+      "paragraph": 153,
+      "start": 4932,
+      "end": 5004,
+      "page": null
+    },
+    {
+      "heading": "## UiPath Solutions for industries and departments",
+      "paragraph": 154,
+      "start": 5057,
+      "end": 5252,
+      "page": null
+    },
+    {
+      "heading": "## UiPath Solutions for industries and departments",
+      "paragraph": 155,
+      "start": 5253,
+      "end": 5269,
+      "page": null
+    },
+    {
+      "heading": "### Banking & financial services",
+      "paragraph": 156,
+      "start": 5304,
+      "end": 5490,
+      "page": null
+    },
+    {
+      "heading": "### Banking & financial services",
+      "paragraph": 157,
+      "start": 5491,
+      "end": 5518,
+      "page": null
+    },
+    {
+      "heading": "### Banking & financial services",
+      "paragraph": 158,
+      "start": 5519,
+      "end": 5538,
+      "page": null
+    },
+    {
+      "heading": "### Banking & financial services",
+      "paragraph": 159,
+      "start": 5539,
+      "end": 5555,
+      "page": null
+    },
+    {
+      "heading": "### Banking & financial services",
+      "paragraph": 160,
+      "start": 5556,
+      "end": 5572,
+      "page": null
+    },
+    {
+      "heading": "### Healthcare",
+      "paragraph": 161,
+      "start": 5589,
+      "end": 5782,
+      "page": null
+    },
+    {
+      "heading": "### Healthcare",
+      "paragraph": 162,
+      "start": 5783,
+      "end": 5812,
+      "page": null
+    },
+    {
+      "heading": "### Healthcare",
+      "paragraph": 163,
+      "start": 5813,
+      "end": 5833,
+      "page": null
+    },
+    {
+      "heading": "### Healthcare",
+      "paragraph": 164,
+      "start": 5834,
+      "end": 5871,
+      "page": null
+    },
+    {
+      "heading": "### Healthcare",
+      "paragraph": 165,
+      "start": 5872,
+      "end": 5891,
+      "page": null
+    },
+    {
+      "heading": "### Healthcare",
+      "paragraph": 166,
+      "start": 5892,
+      "end": 5908,
+      "page": null
+    },
+    {
+      "heading": "### Finance & accounting",
+      "paragraph": 167,
+      "start": 5935,
+      "end": 6145,
+      "page": null
+    },
+    {
+      "heading": "### Finance & accounting",
+      "paragraph": 168,
+      "start": 6146,
+      "end": 6161,
+      "page": null
+    },
+    {
+      "heading": "### Finance & accounting",
+      "paragraph": 169,
+      "start": 6162,
+      "end": 6181,
+      "page": null
+    },
+    {
+      "heading": "### Finance & accounting",
+      "paragraph": 170,
+      "start": 6182,
+      "end": 6196,
+      "page": null
+    },
+    {
+      "heading": "### Finance & accounting",
+      "paragraph": 171,
+      "start": 6197,
+      "end": 6226,
+      "page": null
+    },
+    {
+      "heading": "### Finance & accounting",
+      "paragraph": 172,
+      "start": 6227,
+      "end": 6243,
+      "page": null
+    },
+    {
+      "heading": "### Manufacturing",
+      "paragraph": 173,
+      "start": 6263,
+      "end": 6363,
+      "page": null
+    },
+    {
+      "heading": "### Manufacturing",
+      "paragraph": 174,
+      "start": 6364,
+      "end": 6383,
+      "page": null
+    },
+    {
+      "heading": "### Manufacturing",
+      "paragraph": 175,
+      "start": 6384,
+      "end": 6405,
+      "page": null
+    },
+    {
+      "heading": "### Manufacturing",
+      "paragraph": 176,
+      "start": 6406,
+      "end": 6428,
+      "page": null
+    },
+    {
+      "heading": "### Manufacturing",
+      "paragraph": 177,
+      "start": 6429,
+      "end": 6445,
+      "page": null
+    },
+    {
+      "heading": "### Retail",
+      "paragraph": 178,
+      "start": 6458,
+      "end": 6559,
+      "page": null
+    },
+    {
+      "heading": "### Retail",
+      "paragraph": 179,
+      "start": 6560,
+      "end": 6574,
+      "page": null
+    },
+    {
+      "heading": "### Retail",
+      "paragraph": 180,
+      "start": 6575,
+      "end": 6590,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 181,
+      "start": 6633,
+      "end": 6703,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 182,
+      "start": 6704,
+      "end": 6730,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 183,
+      "start": 6731,
+      "end": 6739,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 184,
+      "start": 6740,
+      "end": 6777,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 185,
+      "start": 6778,
+      "end": 6786,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 186,
+      "start": 6787,
+      "end": 6818,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 187,
+      "start": 6819,
+      "end": 6829,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 188,
+      "start": 6830,
+      "end": 6851,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 189,
+      "start": 6852,
+      "end": 6856,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 190,
+      "start": 6857,
+      "end": 6887,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 191,
+      "start": 6888,
+      "end": 6894,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 192,
+      "start": 6895,
+      "end": 6927,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 193,
+      "start": 6928,
+      "end": 6933,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 194,
+      "start": 6934,
+      "end": 6970,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 195,
+      "start": 6971,
+      "end": 6975,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 196,
+      "start": 6976,
+      "end": 7017,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 197,
+      "start": 7018,
+      "end": 7023,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 198,
+      "start": 7024,
+      "end": 7065,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 199,
+      "start": 7066,
+      "end": 7072,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 200,
+      "start": 7073,
+      "end": 7102,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 201,
+      "start": 7103,
+      "end": 7108,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 202,
+      "start": 7109,
+      "end": 7150,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 203,
+      "start": 7151,
+      "end": 7155,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 204,
+      "start": 7156,
+      "end": 7192,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 205,
+      "start": 7193,
+      "end": 7200,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 206,
+      "start": 7201,
+      "end": 7236,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 207,
+      "start": 7237,
+      "end": 7241,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 208,
+      "start": 7242,
+      "end": 7285,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 209,
+      "start": 7286,
+      "end": 7290,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 210,
+      "start": 7291,
+      "end": 7326,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 211,
+      "start": 7327,
+      "end": 7333,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 212,
+      "start": 7334,
+      "end": 7371,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 213,
+      "start": 7372,
+      "end": 7377,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 214,
+      "start": 7378,
+      "end": 7418,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 215,
+      "start": 7419,
+      "end": 7424,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 216,
+      "start": 7425,
+      "end": 7451,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 217,
+      "start": 7452,
+      "end": 7457,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 218,
+      "start": 7458,
+      "end": 7499,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 219,
+      "start": 7500,
+      "end": 7505,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 220,
+      "start": 7506,
+      "end": 7540,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 221,
+      "start": 7541,
+      "end": 7548,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 222,
+      "start": 7549,
+      "end": 7589,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 223,
+      "start": 7590,
+      "end": 7595,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 224,
+      "start": 7596,
+      "end": 7634,
+      "page": null
+    },
+    {
+      "heading": "## Proven outcomes across every industry",
+      "paragraph": 225,
+      "start": 7635,
+      "end": 7641,
+      "page": null
+    },
+    {
+      "heading": "## Build with what you know",
+      "paragraph": 226,
+      "start": 7671,
+      "end": 7849,
+      "page": null
+    },
+    {
+      "heading": "## Build with what you know",
+      "paragraph": 227,
+      "start": 7850,
+      "end": 7865,
+      "page": null
+    },
+    {
+      "heading": "## Build with what you know",
+      "paragraph": 228,
+      "start": 7866,
+      "end": 7894,
+      "page": null
+    },
+    {
+      "heading": "## Testing that runs itself",
+      "paragraph": 229,
+      "start": 7924,
+      "end": 8162,
+      "page": null
+    },
+    {
+      "heading": "## Testing that runs itself",
+      "paragraph": 230,
+      "start": 8163,
+      "end": 8196,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 231,
+      "start": 8217,
+      "end": 8267,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 232,
+      "start": 8268,
+      "end": 8297,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 233,
+      "start": 8298,
+      "end": 8309,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 234,
+      "start": 8310,
+      "end": 8318,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 235,
+      "start": 8319,
+      "end": 8327,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 236,
+      "start": 8328,
+      "end": 8336,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 237,
+      "start": 8337,
+      "end": 8345,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 238,
+      "start": 8346,
+      "end": 8355,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 239,
+      "start": 8356,
+      "end": 8366,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 240,
+      "start": 8367,
+      "end": 8375,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 241,
+      "start": 8376,
+      "end": 8381,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 242,
+      "start": 8382,
+      "end": 8386,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 243,
+      "start": 8387,
+      "end": 8392,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 244,
+      "start": 8393,
+      "end": 8398,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 245,
+      "start": 8399,
+      "end": 8408,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 246,
+      "start": 8409,
+      "end": 8437,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 247,
+      "start": 8438,
+      "end": 8456,
+      "page": null
+    },
+    {
+      "heading": "## Ready to start?",
+      "paragraph": 248,
+      "start": 8457,
+      "end": 8465,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 249,
+      "start": 8487,
+      "end": 8510,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 250,
+      "start": 8511,
+      "end": 8532,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 251,
+      "start": 8533,
+      "end": 8546,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 252,
+      "start": 8547,
+      "end": 8558,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 253,
+      "start": 8559,
+      "end": 8563,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 254,
+      "start": 8564,
+      "end": 8568,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 255,
+      "start": 8569,
+      "end": 8601,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 256,
+      "start": 8602,
+      "end": 8624,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 257,
+      "start": 8625,
+      "end": 8637,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 258,
+      "start": 8638,
+      "end": 8647,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 259,
+      "start": 8648,
+      "end": 8659,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 260,
+      "start": 8660,
+      "end": 8669,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 261,
+      "start": 8670,
+      "end": 8675,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 262,
+      "start": 8676,
+      "end": 8686,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 263,
+      "start": 8687,
+      "end": 8707,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 264,
+      "start": 8708,
+      "end": 8712,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 265,
+      "start": 8713,
+      "end": 8721,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 266,
+      "start": 8722,
+      "end": 8735,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 267,
+      "start": 8736,
+      "end": 8749,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 268,
+      "start": 8750,
+      "end": 8763,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 269,
+      "start": 8764,
+      "end": 8777,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 270,
+      "start": 8778,
+      "end": 8789,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 271,
+      "start": 8790,
+      "end": 8797,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 272,
+      "start": 8798,
+      "end": 8809,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 273,
+      "start": 8810,
+      "end": 8835,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 274,
+      "start": 8836,
+      "end": 8858,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 275,
+      "start": 8877,
+      "end": 8889,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 276,
+      "start": 8890,
+      "end": 8904,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 277,
+      "start": 8905,
+      "end": 8921,
+      "page": null
+    },
+    {
+      "heading": "###### Learning",
+      "paragraph": 278,
+      "start": 8939,
+      "end": 8947,
+      "page": null
+    },
+    {
+      "heading": "###### Learning",
+      "paragraph": 279,
+      "start": 8948,
+      "end": 8963,
+      "page": null
+    },
+    {
+      "heading": "###### Learning",
+      "paragraph": 280,
+      "start": 8964,
+      "end": 8984,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 281,
+      "start": 9013,
+      "end": 9030,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 282,
+      "start": 9031,
+      "end": 9047,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 283,
+      "start": 9048,
+      "end": 9062,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 284,
+      "start": 9063,
+      "end": 9069,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 285,
+      "start": 9070,
+      "end": 9085,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 286,
+      "start": 9086,
+      "end": 9103,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 287,
+      "start": 9104,
+      "end": 9119,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 288,
+      "start": 9120,
+      "end": 9132,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 289,
+      "start": 9157,
+      "end": 9162,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 290,
+      "start": 9163,
+      "end": 9179,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 291,
+      "start": 9180,
+      "end": 9193,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 292,
+      "start": 9194,
+      "end": 9207,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 293,
+      "start": 9208,
+      "end": 9217,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 294,
+      "start": 9218,
+      "end": 9228,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 295,
+      "start": 9229,
+      "end": 9246,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 296,
+      "start": 9262,
+      "end": 9276,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 297,
+      "start": 9277,
+      "end": 9304,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 298,
+      "start": 9305,
+      "end": 9319,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 299,
+      "start": 9320,
+      "end": 9335,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 300,
+      "start": 9336,
+      "end": 9345,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 301,
+      "start": 9346,
+      "end": 9369,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 302,
+      "start": 9370,
+      "end": 9385,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 303,
+      "start": 9386,
+      "end": 9403,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 304,
+      "start": 9404,
+      "end": 9422,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 305,
+      "start": 9423,
+      "end": 9447,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 306,
+      "start": 9448,
+      "end": 9474,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 307,
+      "start": 9475,
+      "end": 9483,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 308,
+      "start": 9484,
+      "end": 9493,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 309,
+      "start": 9494,
+      "end": 9502,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 310,
+      "start": 9503,
+      "end": 9516,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 311,
+      "start": 9517,
+      "end": 9526,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 312,
+      "start": 9527,
+      "end": 9546,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 313,
+      "start": 9547,
+      "end": 9564,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 314,
+      "start": 9565,
+      "end": 9585,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 315,
+      "start": 9586,
+      "end": 9603,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 316,
+      "start": 9604,
+      "end": 9622,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 317,
+      "start": 9623,
+      "end": 9639,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 318,
+      "start": 9640,
+      "end": 9664,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 319,
+      "start": 9665,
+      "end": 9682,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 320,
+      "start": 9683,
+      "end": 9697,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 321,
+      "start": 9698,
+      "end": 9715,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 322,
+      "start": 9716,
+      "end": 9729,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 323,
+      "start": 9730,
+      "end": 9745,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 324,
+      "start": 9746,
+      "end": 9761,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 325,
+      "start": 9762,
+      "end": 9783,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 326,
+      "start": 9784,
+      "end": 10001,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 327,
+      "start": 10002,
+      "end": 10043,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 328,
+      "start": 10044,
+      "end": 10069,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.uipath.com/",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:41:36",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

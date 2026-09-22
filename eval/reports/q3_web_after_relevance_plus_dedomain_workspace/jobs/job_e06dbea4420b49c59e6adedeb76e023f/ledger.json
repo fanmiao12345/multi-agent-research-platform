@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+  "status": "failed",
+  "stop_reason": "call_failed_usage_unknown",
+  "mode": "real",
+  "run_ids": [],
+  "call_count": 2,
+  "prompt_tokens": 205,
+  "output_tokens": 1058,
+  "known_estimated_cost_usd": 0.00121915,
+  "reserved_usd": 0,
+  "reservations": [],
+  "estimated_cost_usd": null,
+  "unknown_usage_calls": 1,
+  "price_version": "legacy-estimates-b2-v1-unverified",
+  "elapsed_seconds": 24.7419,
+  "limits": {
+    "max_calls": 60,
+    "max_output_tokens": 200000,
+    "max_seconds": 1500.0,
+    "max_cost": 0.12
+  },
+  "calls": [
+    {
+      "call_id": "ec6937e5175c49ce9cf08717a62df003",
+      "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+      "run_id": null,
+      "role": "planner",
+      "purpose": "search_planning",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "mode": "real",
+      "status": "completed",
+      "usage_complete": true,
+      "estimated_cost_usd": 0.00121915,
+      "prompt_tokens": 205,
+      "completion_tokens": 1058,
+      "elapsed_seconds": 6.207
+    },
+    {
+      "call_id": "dc6eb127db84404c840ccb536777117b",
+      "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+      "kind": "search",
+      "purpose": "search",
+      "provider": "bing_scrape",
+      "query": "开源大模型 商业模式 盈利",
+      "urls": [
+        "https://www.oschina.net/"
+      ],
+      "error": "",
+      "elapsed_seconds": 0.268,
+      "estimated_cost_usd": null,
+      "status": "completed",
+      "usage_complete": true,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "call_id": "2ab806227428427b9509297ef77af1f3",
+      "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+      "kind": "search",
+      "purpose": "search",
+      "provider": "bing_scrape",
+      "query": "Llama Mistral 开源许可证 商业化",
+      "urls": [
+        "https://github.com/LlamaChinese/Llama-Chinese",
+        "https://ollama.com/"
+      ],
+      "error": "",
+      "elapsed_seconds": 0.234,
+      "estimated_cost_usd": null,
+      "status": "completed",
+      "usage_complete": true,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "call_id": "4aef36a502d64d69bef3e3e25717635b",
+      "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+      "kind": "search",
+      "purpose": "search",
+      "provider": "bing_scrape",
+      "query": "Hugging Face 推理 API 收费",
+      "urls": [
+        "https://huggingface.co/",
+        "https://huggingface.co/huggingface"
+      ],
+      "error": "",
+      "elapsed_seconds": 0.207,
+      "estimated_cost_usd": null,
+      "status": "completed",
+      "usage_complete": true,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "call_id": "0eb6ef9034484655be63ada17c99c352",
+      "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+      "kind": "search",
+      "purpose": "search",
+      "provider": "bing_scrape",
+      "query": "MaaS 微调 开源大模型 营收",
+      "urls": [
+        "https://www.huaweicloud.com/product/modelarts/studio.html"
+      ],
+      "error": "",
+      "elapsed_seconds": 0.21,
+      "estimated_cost_usd": null,
+      "status": "completed",
+      "usage_complete": true,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "call_id": "1d9a314fe3af4bfda0f2362f14a220fb",
+      "root_job_id": "job_e06dbea4420b49c59e6adedeb76e023f",
+      "run_id": null,
+      "role": "evidence",
+      "purpose": "evidence_extract",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "mode": "real",
+      "status": "failed",
+      "usage_complete": false,
+      "estimated_cost_usd": null,
+      "error_type": "RuntimeError",
+      "elapsed_seconds": 0.3753
+    }
+  ]
+}

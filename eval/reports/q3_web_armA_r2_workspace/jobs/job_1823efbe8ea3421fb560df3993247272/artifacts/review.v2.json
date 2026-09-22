@@ -1,0 +1,27 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "E-001/E-002/E-007/E-015等直接证据被标〔推断〕，事实/推断标注错误，可能误判证据强度"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处用〔未知〕标注缺口，任务要求事实/推断标注；建议改为“资料未提供/缺口”并保留事实/推断标签"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论将成本与场景证据归纳标为〔事实〕，但这是归纳判断，应为〔推断〕"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "未说明资料范围仅来自ToDesk与向日葵产品资料，证据边界不清，易高估医疗推广适用性"
+  }
+ ]
+}

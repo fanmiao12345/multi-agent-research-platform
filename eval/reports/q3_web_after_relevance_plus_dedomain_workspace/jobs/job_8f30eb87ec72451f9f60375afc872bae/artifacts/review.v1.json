@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-016/E-017等为资料宣称，未标“资料称”，〔事实〕或误导为已验证。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "由E-004“个人使用”推断正式教学不合规，证据未界定教学是否属商业使用，建议弱化。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "待补清单将“商业使用”列为缺失，但前文已引E-004明确其限制，需限定为教育场景版权/所有权。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "缺失信息用〔未知〕，与“事实/推断标注”要求不完全一致，建议标〔事实〕或〔缺口〕。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "待补清单含“教育采购规范”，证据未提示该维度，建议改为“产品评估/采购相关信息”。"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+  "source_id": "src_8be89300ca",
+  "kind": "url",
+  "display": "全国一体化退役军人网上服务平台",
+  "original_address": "https://wsfw.mva.gov.cn/",
+  "title": "全国一体化退役军人网上服务平台",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 30,
+  "content_hash": "9986c8a8a69fff0d89e1bf4742dcfe2d3557fd30a00f070f34d7fd6fcf9621c6",
+  "normalized_hash": "9986c8a8a69fff0d89e1bf4742dcfe2d3557fd30a00f070f34d7fd6fcf9621c6",
+  "captured_at": "2026-09-20T10:01:04",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_8be89300ca.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 1,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 10,
+      "page": null
+    }
+  ],
+  "final_url": "https://wsfw.mva.gov.cn/",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T10:01:04",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

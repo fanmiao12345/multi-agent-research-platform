@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_5df670de6c",
+      "fact": "本资料是互联二维码生成器页面，主题为二维码生成与应用。",
+      "tag": "F",
+      "quote": "互联二维码生成器",
+      "start": 2,
+      "end": 10,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_5df670de6c",
+      "fact": "本资料列出文本、网址、文件、图片、音视频等二维码内容类型。",
+      "tag": "F",
+      "quote": "支持图文、音视频、文件、表单等内容的灵活组合",
+      "start": 124,
+      "end": 146,
+      "locator": {
+        "heading": "## 二维码解码",
+        "paragraph": 3,
+        "start": 124,
+        "end": 147
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_5df670de6c",
+      "fact": "本资料包含表单、在线考试、活动报名、在线预约、库存管理等功能。",
+      "tag": "F",
+      "quote": "在线考试",
+      "start": 1896,
+      "end": 1900,
+      "locator": {
+        "heading": "## 表单系统，40+表单组件，满足多种业务场景",
+        "paragraph": 97,
+        "start": 1896,
+        "end": 1901
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_5df670de6c",
+      "fact": "本资料提供产品介绍、设备巡检、无纸化登记等场景应用方案。",
+      "tag": "F",
+      "quote": "扫码查看产品详细介绍",
+      "start": 218,
+      "end": 228,
+      "locator": {
+        "heading": "### 产品介绍",
+        "paragraph": 11,
+        "start": 218,
+        "end": 229
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_5df670de6c",
+      "fact": "本资料未涉及算法推荐规则，也未讨论是否应强制公开。",
+      "tag": "I",
+      "quote": "互联二维码生成器",
+      "start": 2,
+      "end": 10,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_5df670de6c",
+      "fact": "依据本资料无法回答是否应强制公开算法推荐规则。",
+      "tag": "I",
+      "quote": "互联二维码生成器",
+      "start": 2,
+      "end": 10,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_6c02802470",
+      "fact": "本资料介绍小米手机与Windows电脑互联，可互传文件并在电脑操作手机。",
+      "tag": "F",
+      "quote": "小米手机与Windows系统电脑互联，实现文件传输、同时电脑上可直接操作小米手机。",
+      "start": 21,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 2,
+        "start": 21,
+        "end": 63
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_6c02802470",
+      "fact": "本资料内容为互联功能的使用条件、操作步骤与支持设备版本。",
+      "tag": "F",
+      "quote": "使用互联功能时，电脑需安装并打开“小米互联服务”应用。",
+      "start": 186,
+      "end": 213,
+      "locator": {
+        "heading": "",
+        "paragraph": 7,
+        "start": 186,
+        "end": 214
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_6c02802470",
+      "fact": "本资料说明部分功能需手机HyperOS版本与Windows版本同时满足要求。",
+      "tag": "F",
+      "quote": "需将手机/平板升级至Xiaomi HyperOS 4 及以上",
+      "start": 250,
+      "end": 280,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 215,
+        "end": 355
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_6c02802470",
+      "fact": "本资料声明部分内容和功能仅支持部分机型。",
+      "tag": "F",
+      "quote": "本页面所展示的部分内容和功能仅支持部分机型，请以实际体验为准。",
+      "start": 941,
+      "end": 972,
+      "locator": {
+        "heading": "",
+        "paragraph": 27,
+        "start": 941,
+        "end": 972
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_6c02802470",
+      "fact": "本资料通篇未出现算法推荐规则、强制公开等与议题相关表述。",
+      "tag": "F",
+      "quote": "了解更多功能",
+      "start": 0,
+      "end": 6,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 7
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_6c02802470",
+      "fact": "依据本资料无法就应否强制公开算法推荐规则给出任何判断。",
+      "tag": "U",
+      "quote": "了解更多功能",
+      "start": 0,
+      "end": 6,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 7
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料把算法定义为明确的、有限的、可执行的指令序列。",
+      "tag": "F",
+      "quote": "它是一个明确的、有限的、可执行的指令序列",
+      "start": 755,
+      "end": 775,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料提及搜索引擎依靠算法从海量数据中找出最相关网页。",
+      "tag": "F",
+      "quote": "搜索引擎在毫秒间从海量数据中找出最相关的网页",
+      "start": 822,
+      "end": 844,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料指出算法必须在执行有限步之后结束。",
+      "tag": "F",
+      "quote": "算法必须在执行有限步之后结束",
+      "start": 995,
+      "end": 1009,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 51,
+        "start": 990,
+        "end": 1044
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料要求算法每一步都有确切定义且没有歧义。",
+      "tag": "F",
+      "quote": "算法的每一步都必须有确切的定义，没有歧义",
+      "start": 1050,
+      "end": 1070,
+      "locator": {
+        "heading": "## 算法的核心特征",
+        "paragraph": 52,
+        "start": 1045,
+        "end": 1097
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料所述算法泛指解题步骤，未特指推荐算法。",
+      "tag": "I",
+      "quote": "用于解决一个特定的问题或完成一项具体的计算任务",
+      "start": 776,
+      "end": 799,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 47,
+        "start": 731,
+        "end": 860
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料从时间复杂度与空间复杂度两个维度评价算法优劣。",
+      "tag": "F",
+      "quote": "通常我们从两个维度来评估",
+      "start": 2216,
+      "end": 2228,
+      "locator": {
+        "heading": "## 算法分析：如何评价算法的好坏？",
+        "paragraph": 80,
+        "start": 2198,
+        "end": 2243
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料以冒泡排序为例演示算法分析与复杂度计算。",
+      "tag": "F",
+      "quote": "一次比较两个相邻元素，如果它们的顺序错误就把它们交换过来",
+      "start": 3189,
+      "end": 3217,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_0ba122f746",
+      "fact": "本资料未涉及算法推荐规则是否应强制公开的讨论。",
+      "tag": "F",
+      "quote": "理解算法的基础和分析方法",
+      "start": 861,
+      "end": 873,
+      "locator": {
+        "heading": "# 算法基础与分析方法",
+        "paragraph": 48,
+        "start": 861,
+        "end": 901
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_61ccba6c20",
+      "fact": "本资料为中国外交部网站欧盟概况页面，最近更新时间为2026年7月。",
+      "tag": "F",
+      "quote": "（最近更新时间：2026年7月）",
+      "start": 743,
+      "end": 759,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 86,
+        "start": 743,
+        "end": 760
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_61ccba6c20",
+      "fact": "本资料称欧洲理事会是欧盟最高决策机构。",
+      "tag": "F",
+      "quote": "又称欧盟峰会。欧盟最高决策机构",
+      "start": 2339,
+      "end": 2354,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 107,
+        "start": 2312,
+        "end": 2469
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_61ccba6c20",
+      "fact": "本资料称欧盟理事会是欧盟立法与政策制定、协调机构。",
+      "tag": "F",
+      "quote": "又称部长理事会，欧盟立法与政策制定、协调机构",
+      "start": 2510,
+      "end": 2532,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 108,
+        "start": 2470,
+        "end": 2612
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_61ccba6c20",
+      "fact": "本资料称欧盟出台《外国补贴条例》《反胁迫工具》等经贸政策工具箱，致力于加强战略自主。",
+      "tag": "F",
+      "quote": "出台《外国补贴条例》、《反胁迫工具》等一系列经贸政策工具箱",
+      "start": 2262,
+      "end": 2291,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_61ccba6c20",
+      "fact": "本资料提到欧盟推动绿色和数字双转型。",
+      "tag": "F",
+      "quote": "推动绿色和数字双转型",
+      "start": 2175,
+      "end": 2185,
+      "locator": {
+        "heading": "# 欧盟概况",
+        "paragraph": 105,
+        "start": 1788,
+        "end": 2303
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_61ccba6c20",
+      "fact": "本资料全文未见算法推荐规则或要求其强制公开的任何内容，关于该问题存在资料缺口。",
+      "tag": "F",
+      "quote": "欧盟概况",
+      "start": 670,
+      "end": 674,
+      "locator": {
+        "heading": "",
+        "paragraph": 75,
+        "start": 643,
+        "end": 675
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_5c4c4b1da9",
+      "fact": "本资料是欧盟官方门户网站首页，内容为欧盟概况与新闻导航。",
+      "tag": "F",
+      "quote": "Your gateway to the European Union",
+      "start": 1548,
+      "end": 1582,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_5c4c4b1da9",
+      "fact": "该网站由欧盟委员会传播总司负责管理。",
+      "tag": "F",
+      "quote": "Directorate-General for Communication",
+      "start": 4053,
+      "end": 4090,
+      "locator": {
+        "heading": "## Learn more",
+        "paragraph": 127,
+        "start": 4053,
+        "end": 4091
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_5c4c4b1da9",
+      "fact": "资料中与网络平台监管相关的新闻是欧盟提出《KIDS法案》。",
+      "tag": "F",
+      "quote": "the EU has proposed a new KIDS Act",
+      "start": 2396,
+      "end": 2430,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 106,
+        "start": 2291,
+        "end": 2570
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_5c4c4b1da9",
+      "fact": "该法案拟将儿童使用社交媒体的准入年龄推迟至13岁。",
+      "tag": "F",
+      "quote": "notably delaying access to social media until the age of 13",
+      "start": 2509,
+      "end": 2568,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 106,
+        "start": 2291,
+        "end": 2570
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_5c4c4b1da9",
+      "fact": "本资料未提供算法推荐规则是否应强制公开的任何事实或立场。",
+      "tag": "F",
+      "quote": "European Union priorities 2024-2029",
+      "start": 3344,
+      "end": 3379,
+      "locator": {
+        "heading": "## Learn more",
+        "paragraph": 118,
+        "start": 3344,
+        "end": 3380
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_5c4c4b1da9",
+      "fact": "专题新闻可通过机器翻译提供24种欧盟官方语言版本。",
+      "tag": "F",
+      "quote": "available in the 24 EU official languages via machine translation",
+      "start": 1701,
+      "end": 1766,
+      "locator": {
+        "heading": "## Featured news",
+        "paragraph": 97,
+        "start": 1679,
+        "end": 1768
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_5c4c4b1da9",
+      "fact": "仅凭本资料无法评估强制公开算法推荐规则的利弊。",
+      "tag": "I",
+      "quote": "Explore the EU",
+      "start": 1587,
+      "end": 1601,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

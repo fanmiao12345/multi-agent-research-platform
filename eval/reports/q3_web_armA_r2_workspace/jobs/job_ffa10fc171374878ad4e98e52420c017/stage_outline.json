@@ -1,0 +1,128 @@
+{
+  "title": "个人知识管理系统中的检索与记忆设计：基于现有资料的可核查提纲",
+  "sections": [
+    {
+      "heading": "资料范围与报告边界",
+      "purpose": "说明可用来源、证据边界与主要缺口。",
+      "required_evidence": [
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "本地存储与开放格式基础",
+      "purpose": "考察本地纯文本与开放格式对检索记忆的支撑。",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-001"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "链接与标签的组织作用",
+      "purpose": "梳理链接与标签如何形成可检索的个人知识网络。",
+      "required_evidence": [
+        "E-004",
+        "E-005"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "图谱与检索的协同可能",
+      "purpose": "分析图谱发现模式与检索协同的已有说法与缺口。",
+      "required_evidence": [
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "高级查询与关键词筛选",
+      "purpose": "对比高级查询与关键词筛选两种检索路径。",
+      "required_evidence": [
+        "E-007",
+        "E-021",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "版本历史与修订追踪",
+      "purpose": "说明一年版本历史对记忆与追溯的支持。",
+      "required_evidence": [
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "内容捕获与沉淀管理",
+      "purpose": "梳理创作、沉淀、标签、精华与长期保存能力。",
+      "required_evidence": [
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-022",
+        "E-024"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "跨平台访问与剪藏扩展",
+      "purpose": "说明客户端、下载渠道、剪藏与扩展生态。",
+      "required_evidence": [
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "检索架构与更新机制缺口",
+      "purpose": "指出索引、排序、更新机制的资料缺失。",
+      "required_evidence": [
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "记忆支持与回顾机制缺口",
+      "purpose": "指出间隔重复、回顾实验与用户研究的缺失。",
+      "required_evidence": [
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "离线导出与验证缺口",
+      "purpose": "指出离线访问、长期导出及协同效果验证缺失。",
+      "required_evidence": [
+        "E-001",
+        "E-008",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与可验证设计启示",
+      "purpose": "总结可确认要点与需补充证据的设计问题。",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-021",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

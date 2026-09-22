@@ -1,0 +1,22 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "E-015与E-022为来源直接陈述，却在范围、政策缺失、考试相关性与结论段标〔推断〕，应标〔事实〕。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "全文引用格式【[E-XXX]】多一层方括号，建议统一为【E-XXX】。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "开头称依据“待补问题说明”，证据索引未列该材料，宜改称未知/推断清单。"
+  }
+ ]
+}

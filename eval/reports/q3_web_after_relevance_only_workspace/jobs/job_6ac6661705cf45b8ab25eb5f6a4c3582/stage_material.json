@@ -1,0 +1,122 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "2026年人工智能治理政策要点",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "2026年政府工作任务提出完善人工智能治理。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "政策提出深化拓展“人工智能+”，推广智能终端和智能体。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "政策推动重点行业人工智能商业化规模化应用。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "政策支持人工智能开源社区建设与开源生态繁荣。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "政策要求完善适应人工智能发展的就业创业措施。"
+          }
+        ]
+      },
+      {
+        "name": "已给资料对治理争议的覆盖情况",
+        "points": [
+          {
+            "evidence_id": "E-006",
+            "statement": "政府工作报告解读仅提出完善治理，未说明主要争议。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "工具导航站完全未涉及2026年AI治理政策主要争议。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "工具导航站正文、快讯与栏目均未讨论AI治理政策及争议。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "AI创作平台未提供AI治理政策争议的事实或证据。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "AI创作平台界面文本未涉及2026年AI治理政策。"
+          }
+        ]
+      },
+      {
+        "name": "工具导航站中的治理相关线索",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "该工具导航站首页为分类罗列的免费AI工具。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "页面设有管理办法、标识办法、算法备案等条目入口但未展开。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "网站把网络安全和信息化、中国电子学会列为认证分类条目。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "工具分类列出AI安全技术，仅有名称无说明。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "网站设有AIGC检测、降AIGC率等生成内容识别分类。"
+          }
+        ]
+      },
+      {
+        "name": "AI创作平台界面信息",
+        "points": [
+          {
+            "evidence_id": "E-014",
+            "statement": "AI创作平台界面文本未涉及2026年AI治理政策。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "内容仅含灵感、生成、资产、技能、短片、活动等界面栏目。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "平台出现“Agent 模式”相关界面入口描述。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "2026年人工智能治理政策的主要争议有哪些？",
+        "missing": "争议清单、各方主张与政策分歧材料"
+      },
+      {
+        "question": "治理争议涉及哪些具体制度工具？",
+        "missing": "管理办法、标识办法、算法备案等具体内容与争议点"
+      },
+      {
+        "question": "监管与创新平衡方面有何争论？",
+        "missing": "监管强度、产业影响与政策解读材料"
+      },
+      {
+        "question": "人工智能就业影响存在哪些政策争议？",
+        "missing": "就业替代或创造数据与利益相关方立场材料"
+      },
+      {
+        "question": "治理主体与机制存在哪些分歧？",
+        "missing": "立法、标准、执法权责与协同机制材料"
+      }
+    ],
+    "duplicates": []
+  }
+}

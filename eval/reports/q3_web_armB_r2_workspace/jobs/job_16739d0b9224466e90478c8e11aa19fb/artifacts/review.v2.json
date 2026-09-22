@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "隐私保护节将E-002外推至“远程会诊、患者数据展示”医疗场景，资料仅述产品功能，已标推断但仍宜说明无医疗场景依据"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "成本节推断“提升医疗设备维护响应效率”，E-008仅提降低成本，效率主张超出证据"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-003/E-008等厂商自述能力标为〔事实〕，建议改为“资料主张”或“来源称”，避免读者当作已验证事实"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-010全称为“信息系统安全等级保护三级认证”，首次出现宜用全称再简称“等保三级”"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "反对观点节断言“现有资料没有反对观点”却标注〔未知〕，表述与标注不一致"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "安全审计节将等保三级纳入“可追溯安全管控链条”属推断，资料未说明认证主体与覆盖范围"
+  }
+ ]
+}

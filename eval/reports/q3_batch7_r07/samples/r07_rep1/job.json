@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_4bad4bd77fca4ceeb398bd505b9589f3",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 截至2026年9月7日新增独立研究查询：证据现状与缺口报告\n## 已有证据\n- 本资料为合成验收数据 [E-001]〔事实〕。\n- 观察研究覆盖120人、为期4周 [E-002]〔事实〕；样本自愿加入且未随机分组 [E-004]〔事实〕。\n- 资料报告远程办公与自评专注度上升存在相关关系 [E-003]〔事实〕。\n- 证据 E-006 指出：相关关系因样本自愿加入且未随机分组，不能证明因果 [E-006]〔事实〕；据此，现有资料不能支持因果效应结论 [E-006]〔推断〕。\n- 资料没有报告客观产出指标或长期效果 [E-005]〔事实〕。\n- 综上，现有证据能支持相关性描述与设计限制说明，不能支持因果效应、客观产出改善或长期效果结论 [E-003][E-005][E-006]〔推断〕。\n## 无法完成的部分\n- 任务要求查询截至2026年9月7日新增独立研究并给出最新结论；本例搜索服务不可用〔事实〕。\n- 本资料为合成验收数据 [E-001]〔事实〕；本资料未提供截至2026年9月7日新增独立研究或最新结论 [E-007]〔事实〕。\n- 因而，在现有资料范围内，无法提供新增独立研究清单、检索结果、最新结论及其可核验证据链 [E-001][E-007]〔推断〕。\n- 现有旧摘要不能替代新增独立研究，也不能把其相关性升级为最新因果结论 [E-001][E-006][E-007]〔推断〕。\n## 后续所需\n- 需检索材料：截至2026年9月7日新增独立研究的检索结果；检索项至少包括学术数据库、关键词（远程办公、专注度、产出、因果效应等）和时间范围（截至2026年9月7日新增）；当前资料未提供 [E-007]〔推断〕。\n- 需设计：随机分组或准实验设计，以检验远程办公对专注度或产出的因果效应；这是补证建议 [E-006]〔推断〕。当前因样本自愿加入且未随机分组，不能证明因果 [E-006]〔事实〕。\n- 需数据：客观产出指标与长期随访数据；这是补证建议 [E-005]〔推断〕。当前资料没有报告客观产出指标或长期效果 [E-005]〔事实〕。\n- 需代表性信息：随机抽样与样本代表性资料，以评估能否推广到更大人群〔推断〕。\n- 在检索材料、设计与数据齐备后，方可评估是否形成截至2026年9月7日的新增独立研究与最新结论 [E-005][E-006][E-007]〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 7 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-21T11:47:13"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，4 个缺口",
+        "finished_at": "2026-09-21T11:47:18"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个章节",
+        "finished_at": "2026-09-21T11:47:23"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（894字）",
+        "finished_at": "2026-09-21T11:47:47"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 8,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-21T11:48:36"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-21T11:49:23"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-21T11:50:16"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 25,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 3,
+      "required_section_hits": 3,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

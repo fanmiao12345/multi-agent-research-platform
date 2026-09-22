@@ -1,0 +1,846 @@
+{
+  "source_id": "src_ab947d5dd3",
+  "kind": "url",
+  "display": "首页 - 中国教育考试网",
+  "original_address": "https://www.neea.edu.cn/",
+  "title": "首页 - 中国教育考试网",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 4915,
+  "content_hash": "044548b30f1a8a4b1415cb64ead82bd8033c8781a0c1326b8c3c33dbe5cda3dc",
+  "normalized_hash": "4e2a63cea67ea913e52a9ccfbfdf5914d1c4b4c2e15c003e05cc1bd905e6e7a3",
+  "captured_at": "2026-09-18T13:55:39",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_ab947d5dd3.md",
+  "encoding": "utf-8/replace",
+  "segment_count": 116,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 15,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 16,
+      "end": 21,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 22,
+      "end": 27,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 28,
+      "end": 33,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 34,
+      "end": 39,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 40,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 46,
+      "end": 51,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 52,
+      "end": 57,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 58,
+      "end": 70,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 71,
+      "end": 76,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 77,
+      "end": 174,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 175,
+      "end": 180,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 181,
+      "end": 186,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 187,
+      "end": 192,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 193,
+      "end": 198,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 199,
+      "end": 235,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 236,
+      "end": 276,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 277,
+      "end": 322,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 323,
+      "end": 358,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 359,
+      "end": 395,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 396,
+      "end": 436,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 437,
+      "end": 482,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 483,
+      "end": 488,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 489,
+      "end": 494,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 495,
+      "end": 502,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 503,
+      "end": 557,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 558,
+      "end": 565,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 566,
+      "end": 621,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 622,
+      "end": 668,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 669,
+      "end": 689,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 690,
+      "end": 695,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 696,
+      "end": 756,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 757,
+      "end": 809,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 810,
+      "end": 862,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 863,
+      "end": 917,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 918,
+      "end": 921,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 922,
+      "end": 933,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 934,
+      "end": 937,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 938,
+      "end": 941,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 942,
+      "end": 945,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 946,
+      "end": 955,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 956,
+      "end": 967,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 968,
+      "end": 976,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 977,
+      "end": 985,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 986,
+      "end": 996,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 997,
+      "end": 1010,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 1011,
+      "end": 1027,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 47,
+      "start": 1028,
+      "end": 1035,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 48,
+      "start": 1036,
+      "end": 1046,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 49,
+      "start": 1047,
+      "end": 1056,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 50,
+      "start": 1057,
+      "end": 1066,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 51,
+      "start": 1067,
+      "end": 1081,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 52,
+      "start": 1082,
+      "end": 1093,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 53,
+      "start": 1102,
+      "end": 1107,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 54,
+      "start": 1108,
+      "end": 1113,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 55,
+      "start": 1114,
+      "end": 1152,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 56,
+      "start": 1153,
+      "end": 1188,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 57,
+      "start": 1189,
+      "end": 1236,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 58,
+      "start": 1237,
+      "end": 1242,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 59,
+      "start": 1243,
+      "end": 1276,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 60,
+      "start": 1277,
+      "end": 1315,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 61,
+      "start": 1316,
+      "end": 1355,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 62,
+      "start": 1356,
+      "end": 1361,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 63,
+      "start": 1362,
+      "end": 1400,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 64,
+      "start": 1401,
+      "end": 1438,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 65,
+      "start": 1439,
+      "end": 1478,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 66,
+      "start": 1479,
+      "end": 1489,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 67,
+      "start": 1490,
+      "end": 1526,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 68,
+      "start": 1527,
+      "end": 1570,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 69,
+      "start": 1571,
+      "end": 1579,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 70,
+      "start": 1580,
+      "end": 1621,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 71,
+      "start": 1622,
+      "end": 1629,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 72,
+      "start": 1630,
+      "end": 1664,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 73,
+      "start": 1665,
+      "end": 1670,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 74,
+      "start": 1671,
+      "end": 1686,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 75,
+      "start": 1687,
+      "end": 1705,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 76,
+      "start": 1706,
+      "end": 1732,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 77,
+      "start": 1733,
+      "end": 1742,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 78,
+      "start": 1743,
+      "end": 1754,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 79,
+      "start": 1755,
+      "end": 1762,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 80,
+      "start": 1763,
+      "end": 1777,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 81,
+      "start": 1778,
+      "end": 1855,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 82,
+      "start": 1856,
+      "end": 1862,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 83,
+      "start": 1863,
+      "end": 1874,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 84,
+      "start": 1875,
+      "end": 1884,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 85,
+      "start": 1885,
+      "end": 1893,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 86,
+      "start": 1894,
+      "end": 1905,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 87,
+      "start": 1906,
+      "end": 1915,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 88,
+      "start": 1916,
+      "end": 1928,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 89,
+      "start": 1929,
+      "end": 1944,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 90,
+      "start": 1945,
+      "end": 1964,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 91,
+      "start": 1965,
+      "end": 1974,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 92,
+      "start": 1975,
+      "end": 1985,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 93,
+      "start": 1986,
+      "end": 1995,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 94,
+      "start": 1996,
+      "end": 2005,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 95,
+      "start": 2006,
+      "end": 2015,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 96,
+      "start": 2016,
+      "end": 2027,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 97,
+      "start": 2028,
+      "end": 2037,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 98,
+      "start": 2038,
+      "end": 2047,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 99,
+      "start": 2048,
+      "end": 2059,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 100,
+      "start": 2060,
+      "end": 2069,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 101,
+      "start": 2070,
+      "end": 2079,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 102,
+      "start": 2080,
+      "end": 2089,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 103,
+      "start": 2090,
+      "end": 2099,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 104,
+      "start": 2100,
+      "end": 2108,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 105,
+      "start": 2109,
+      "end": 2116,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 106,
+      "start": 2117,
+      "end": 2126,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 107,
+      "start": 2127,
+      "end": 2136,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 108,
+      "start": 2137,
+      "end": 2146,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 109,
+      "start": 2147,
+      "end": 2156,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 110,
+      "start": 2157,
+      "end": 2168,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 111,
+      "start": 2169,
+      "end": 2178,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 112,
+      "start": 2179,
+      "end": 2188,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 113,
+      "start": 2189,
+      "end": 2200,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 114,
+      "start": 2201,
+      "end": 2209,
+      "page": null
+    },
+    {
+      "heading": "# 考试服务",
+      "paragraph": 115,
+      "start": 2210,
+      "end": 2223,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.neea.edu.cn/",
+  "http_status": 200,
+  "content_type": "text/html",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T13:55:39",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "“两者是否等同仍存开放冲突”不准确：E-028已明确区分卡片盒与第二大脑，E-031仅称接近。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-013在证据索引中为事实，正文标〔推断〕，标注不一致。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-006为资料说明/事实，正文标〔推断〕，建议改为来源陈述或事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "多处用〔未知〕，不符合事实/推断标注要求；开放冲突或缺口需另设标识。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“结构笔记冻结意义也可能带来检索困难”为推断，E-036未直接支持检索困难。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“若优先解决会忘与找不到则检索目标突出”是推断，E-014仅指出问题，未定优先级。"
+  }
+ ]
+}

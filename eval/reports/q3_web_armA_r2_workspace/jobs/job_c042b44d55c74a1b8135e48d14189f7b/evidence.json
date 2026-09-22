@@ -1,0 +1,672 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_c75d1d6cce",
+      "fact": "本资料为Kling AI产品首页，标题自称下一代AI创意工作室。",
+      "tag": "F",
+      "quote": "Kling AI Home",
+      "start": 2,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_c75d1d6cce",
+      "fact": "本资料页面仅呈现创意圈、资产、Omni、生成、灵动画布、全部工具等栏目。",
+      "tag": "F",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_c75d1d6cce",
+      "fact": "本资料未提供教育领域使用生成式AI的收益或风险信息。",
+      "tag": "I",
+      "quote": "资产",
+      "start": 22,
+      "end": 24,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 1,
+        "start": 22,
+        "end": 25
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_c75d1d6cce",
+      "fact": "本资料未出现学校、教师、学生或课程等教育相关词语。",
+      "tag": "I",
+      "quote": "Omni",
+      "start": 26,
+      "end": 30,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 2,
+        "start": 26,
+        "end": 31
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_c75d1d6cce",
+      "fact": "仅凭本资料无法回答教育场景的收益与风险，需补充其他来源。",
+      "tag": "I",
+      "quote": "灵动画布",
+      "start": 36,
+      "end": 40,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 4,
+        "start": 36,
+        "end": 41
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_d99f1337b9",
+      "fact": "本资料介绍的是AI图像生成与图片编辑在线工具，未涉及教育领域应用。",
+      "tag": "F",
+      "quote": "集 AI 图像生成、图片编辑与视频创作于一体的在线工作室。",
+      "start": 3959,
+      "end": 3988,
+      "locator": {
+        "heading": "## AI视频",
+        "paragraph": 189,
+        "start": 3959,
+        "end": 3989
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_d99f1337b9",
+      "fact": "本资料所列创作用途为个人或商业内容，未提及教学、学习场景。",
+      "tag": "F",
+      "quote": "你可以文字生图、编辑上传图片、融合多张参考图，也可以完成图生视频等个人或商业创作任务。",
+      "start": 3432,
+      "end": 3475,
+      "locator": {
+        "heading": "## 开始创作前，你可能想了解这些",
+        "paragraph": 163,
+        "start": 3432,
+        "end": 3476
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_d99f1337b9",
+      "fact": "本资料提示AI生成结果发布前须完成事实、权利与质量检查。",
+      "tag": "F",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_d99f1337b9",
+      "fact": "本资料未提供教育领域使用生成式AI的收益或风险相关信息。",
+      "tag": "U",
+      "quote": "© 2026 Image2.ing 版权所有。",
+      "start": 4076,
+      "end": 4099,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 193,
+        "start": 4076,
+        "end": 4100
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_9381657c5f",
+      "fact": "UNESCO称AI等新兴技术应服务公平、机会与包容。",
+      "tag": "F",
+      "quote": "in service of equity, opportunity, and inclusivity",
+      "start": 1333,
+      "end": 1383,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 64,
+        "start": 1137,
+        "end": 1401
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_9381657c5f",
+      "fact": "本资料称AI治理应反映所有国家优先事项。",
+      "tag": "F",
+      "quote": "AI governance reflects the priorities of all nations",
+      "start": 1570,
+      "end": 1622,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 65,
+        "start": 1402,
+        "end": 1668
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_9381657c5f",
+      "fact": "本资料称AI时代教育、信息诚信等构成当代挑战。",
+      "tag": "F",
+      "quote": "contemporary challenges related to artificial intelligence, information integrity, education",
+      "start": 2932,
+      "end": 3024,
+      "locator": {
+        "heading": "## Pope Leo XIV at UNESCO",
+        "paragraph": 75,
+        "start": 2737,
+        "end": 3150
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_9381657c5f",
+      "fact": "本资料以“用新技术和AI学习”为社区影响事例。",
+      "tag": "F",
+      "quote": "Learning with new technologies and artificial intelligence",
+      "start": 3911,
+      "end": 3969,
+      "locator": {
+        "heading": "## Our impact in communities",
+        "paragraph": 84,
+        "start": 3911,
+        "end": 3970
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_9381657c5f",
+      "fact": "本资料称UNESCO第4届AI伦理全球论坛强化全球合作。",
+      "tag": "F",
+      "quote": "Global cooperation for ethical AI governance reinforced",
+      "start": 6369,
+      "end": 6424,
+      "locator": {
+        "heading": "## Latest news",
+        "paragraph": 125,
+        "start": 6369,
+        "end": 6490
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_9381657c5f",
+      "fact": "本资料指出信息丰富不保证质量或准确性。",
+      "tag": "F",
+      "quote": "an abundance of information guarantees neither its quality nor its accuracy",
+      "start": 5601,
+      "end": 5676,
+      "locator": {
+        "heading": "## Magazine: The UNESCO Courier",
+        "paragraph": 112,
+        "start": 5548,
+        "end": 5678
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_9381657c5f",
+      "fact": "本资料称数字平台可能削弱独立新闻的条件。",
+      "tag": "F",
+      "quote": "they can also undermine the conditions for independent journalism",
+      "start": 5766,
+      "end": 5831,
+      "locator": {
+        "heading": "## Magazine: The UNESCO Courier",
+        "paragraph": 113,
+        "start": 5679,
+        "end": 5833
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_9381657c5f",
+      "fact": "本资料仅泛称AI，未出现生成式AI一词。",
+      "tag": "U",
+      "quote": "Artificial Intelligence (AI) and related breakthrough innovations",
+      "start": 1164,
+      "end": 1229,
+      "locator": {
+        "heading": "## Prepare the world for AI,",
+        "paragraph": 64,
+        "start": 1137,
+        "end": 1401
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_7a66cc61eb",
+      "fact": "教科文组织数字学习周上，教育部长呼吁人工智能时代仍须坚持教育作为公共利益",
+      "tag": "F",
+      "quote": "联合国教科文组织数字学习周，教育部长呼吁：人工智能时代仍须坚持将教育作为公共利益",
+      "start": 2605,
+      "end": 2645,
+      "locator": {
+        "heading": "## 新闻",
+        "paragraph": 113,
+        "start": 2605,
+        "end": 2646
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_7a66cc61eb",
+      "fact": "本资料称人工智能通过深度伪造、人肉搜索、骚扰等加剧针对女记者的虐待行为",
+      "tag": "F",
+      "quote": "随着人工智能通过深度伪造、人肉搜索、骚扰等加剧这种虐待行为",
+      "start": 1593,
+      "end": 1622,
+      "locator": {
+        "heading": "## CTRL + ALT + 静音：压制一名女记者在网上发声，相当于压制一千名女性的声音",
+        "paragraph": 74,
+        "start": 1550,
+        "end": 1684
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_7a66cc61eb",
+      "fact": "教科文组织呼吁通过对话、倡导和政策改革，打击人工智能助长的性别暴力",
+      "tag": "F",
+      "quote": "教科文组织呼吁通过对话、倡导和政策改革，采取更有力的行动来打击人工智能助长的性别暴力",
+      "start": 1623,
+      "end": 1665,
+      "locator": {
+        "heading": "## CTRL + ALT + 静音：压制一名女记者在网上发声，相当于压制一千名女性的声音",
+        "paragraph": 74,
+        "start": 1550,
+        "end": 1684
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_7a66cc61eb",
+      "fact": "教科文组织调查显示，近3/4受访女记者曾面临网络暴力，1/4遭受人身或死亡威胁",
+      "tag": "F",
+      "quote": "近3/4受访女记者曾面临网络暴力，1/4遭受人身或死亡威胁",
+      "start": 1563,
+      "end": 1592,
+      "locator": {
+        "heading": "## CTRL + ALT + 静音：压制一名女记者在网上发声，相当于压制一千名女性的声音",
+        "paragraph": 74,
+        "start": 1550,
+        "end": 1684
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_7a66cc61eb",
+      "fact": "教科文组织是联合国专门机构，旨在通过教育、科学、文化和传播促进全球和平",
+      "tag": "F",
+      "quote": "联合国教科文组织是联合国的一个专门机构，旨在通过教育、科学、文化和传播促进全球和平",
+      "start": 1825,
+      "end": 1866,
+      "locator": {
+        "heading": "## 教科文组织简介",
+        "paragraph": 82,
+        "start": 1825,
+        "end": 1868
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_7a66cc61eb",
+      "fact": "本资料未提供生成式AI用于教育领域的收益与风险的具体论述",
+      "tag": "U",
+      "quote": "人工智能时代仍须坚持将教育作为公共利益",
+      "start": 2626,
+      "end": 2645,
+      "locator": {
+        "heading": "## 新闻",
+        "paragraph": 113,
+        "start": 2605,
+        "end": 2646
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_926e3f413a",
+      "fact": "本资料为中华人民共和国教育部政府门户网站，页面版权归教育部所有。",
+      "tag": "F",
+      "quote": "版权所有：中华人民共和国教育部 中文域名：教育部.政务",
+      "start": 5272,
+      "end": 5299,
+      "locator": {
+        "heading": "### 微言教育 微博 微信",
+        "paragraph": 371,
+        "start": 5272,
+        "end": 5300
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_926e3f413a",
+      "fact": "本资料列有介绍《“人工智能+教育”行动计划的新闻发布会条目。",
+      "tag": "F",
+      "quote": "介绍《“人工智能+教育”行动计划",
+      "start": 2169,
+      "end": 2185,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 150,
+        "start": 2157,
+        "end": 2189
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_926e3f413a",
+      "fact": "本资料设有政策解读栏目，并列出教育部科学技术与信息化司负责人的解读条目。",
+      "tag": "F",
+      "quote": "教育部科学技术与信息化司负责人就《“人工智",
+      "start": 2367,
+      "end": 2388,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 157,
+        "start": 2361,
+        "end": 2392
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_926e3f413a",
+      "fact": "本资料仅为门户首页的栏目与链接索引，未给出生成式AI在教育中收益与风险的具体论述。",
+      "tag": "I",
+      "quote": "查看更多>>",
+      "start": 1279,
+      "end": 1285,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 106,
+        "start": 1279,
+        "end": 1286
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_69ed484fd0",
+      "fact": "本资料为中国教育考试网首页，内容为考试资讯、考试项目与考试服务。",
+      "tag": "F",
+      "quote": "考试资讯",
+      "start": 16,
+      "end": 20,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 16,
+        "end": 21
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_69ed484fd0",
+      "fact": "本资料未出现生成式AI或人工智能相关表述。",
+      "tag": "F",
+      "quote": "考试研究 科研创新服务管理平台入口",
+      "start": 1687,
+      "end": 1704,
+      "locator": {
+        "heading": "# 考试服务",
+        "paragraph": 75,
+        "start": 1687,
+        "end": 1705
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_69ed484fd0",
+      "fact": "本资料列举国家教育考试项目，如普通高考、成人高考、研究生考试等。",
+      "tag": "F",
+      "quote": "普通高考 | 成人高考 | 研究生考试 | 自学考试",
+      "start": 503,
+      "end": 529,
+      "locator": {
+        "heading": "",
+        "paragraph": 25,
+        "start": 503,
+        "end": 557
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_69ed484fd0",
+      "fact": "本资料公布2026年度国家教育考试科研规划课题立项名单。",
+      "tag": "F",
+      "quote": "2026年度国家教育考试科研规划课题立项名单公布",
+      "start": 199,
+      "end": 223,
+      "locator": {
+        "heading": "",
+        "paragraph": 15,
+        "start": 199,
+        "end": 235
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_69ed484fd0",
+      "fact": "本资料记载教育部部长怀进鹏视频调度全国高考组织工作。",
+      "tag": "F",
+      "quote": "教育部党组书记、部长怀进鹏在教育部教育考试院通过国家教育考试指挥平台视频调度全国高考组织工作",
+      "start": 107,
+      "end": 153,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 77,
+        "end": 174
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_69ed484fd0",
+      "fact": "本资料不含生成式AI在教育领域收益或风险的任何证据。",
+      "tag": "F",
+      "quote": "主办单位：教育部教育考试院",
+      "start": 1763,
+      "end": 1776,
+      "locator": {
+        "heading": "# 考试服务",
+        "paragraph": 80,
+        "start": 1763,
+        "end": 1777
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_69ed484fd0",
+      "fact": "要完成该任务，需另找涉及生成式AI教育应用的资料。",
+      "tag": "I",
+      "quote": "考试研究",
+      "start": 52,
+      "end": 56,
+      "locator": {
+        "heading": "",
+        "paragraph": 7,
+        "start": 52,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "本资料仅介绍影像创作工具，未提供教育领域使用生成式AI的收益与风险证据。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "即梦AI支持文/图生视频，输入简单文案或图片可快速生成视频片段。",
+      "tag": "F",
+      "quote": "AI视频生成，输入简单的文案或图片，即可快速生成优质视频片段",
+      "start": 98,
+      "end": 128,
+      "locator": {
+        "heading": "## 灵感即刻成片",
+        "paragraph": 7,
+        "start": 98,
+        "end": 129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "即梦AI视频生成可操控运镜、调节速度，动效连贯流畅自然。",
+      "tag": "F",
+      "quote": "视频动效效果连贯性强、流畅自然，可轻松操控运镜，调节速度变化",
+      "start": 145,
+      "end": 175,
+      "locator": {
+        "heading": "### 流畅运镜，生动自然",
+        "paragraph": 8,
+        "start": 145,
+        "end": 194
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "即梦AI支持首帧和尾帧图片输入，增强视频生成可控性。",
+      "tag": "F",
+      "quote": "创新的首帧图片和尾帧图片输入方式，增强视频生成的可控性",
+      "start": 224,
+      "end": 251,
+      "locator": {
+        "heading": "### 从首帧到尾帧，",
+        "paragraph": 12,
+        "start": 224,
+        "end": 275
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "即梦AI支持中文提示词创作，语义理解能力更好。",
+      "tag": "F",
+      "quote": "即梦AI支持根据中文提示词进行创作，拥有更好的语义理解能力",
+      "start": 301,
+      "end": 330,
+      "locator": {
+        "heading": "### 中文创作，得心应手",
+        "paragraph": 15,
+        "start": 301,
+        "end": 354
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-040",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "即梦AI绘画可用简单提示词生成图片，并可进行创意改造。",
+      "tag": "F",
+      "quote": "即梦AI绘画，仅需简单提示词，即可生成精彩的图片",
+      "start": 389,
+      "end": 413,
+      "locator": {
+        "heading": "## AI绘画 梦境成真",
+        "paragraph": 19,
+        "start": 389,
+        "end": 485
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-041",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "即梦AI智能画布集成拼图、局部重绘、一键扩图、图像消除和抠图等功能。",
+      "tag": "F",
+      "quote": "集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作",
+      "start": 667,
+      "end": 706,
+      "locator": {
+        "heading": "## 智能画布 多图AI融合",
+        "paragraph": 33,
+        "start": 655,
+        "end": 744
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-042",
+      "source_id": "src_b0d1d7c7b7",
+      "fact": "若用于教育，快速生成视频或图片可能辅助制作教学素材。",
+      "tag": "I",
+      "quote": "AI视频生成，输入简单的文案或图片，即可快速生成优质视频片段",
+      "start": 98,
+      "end": 128,
+      "locator": {
+        "heading": "## 灵感即刻成片",
+        "paragraph": 7,
+        "start": 98,
+        "end": 129
+      },
+      "note": ""
+    }
+  ]
+}

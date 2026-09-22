@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_6fd68005f1",
+      "fact": "该工具的典型用例中列有教育工作者，用于快速解说视频和视觉辅助工具。",
+      "tag": "F",
+      "quote": "教育工作者：快速解说视频和视觉辅助工具。",
+      "start": 2134,
+      "end": 2154,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 66,
+        "start": 2132,
+        "end": 2155
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_6fd68005f1",
+      "fact": "平台支持文生视频与图生视频，并可同步生成画面运动、对白、音效和环境音。",
+      "tag": "F",
+      "quote": "它可同步生成画面运动、对白、音效和环境音",
+      "start": 740,
+      "end": 760,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 31,
+        "start": 691,
+        "end": 774
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_6fd68005f1",
+      "fact": "免费计划提供480p画质、无限量使用与MP4导出，可用于快速测试和短视频制作。",
+      "tag": "F",
+      "quote": "本站提供 480p 的无限量使用与 MP4 导出。",
+      "start": 926,
+      "end": 951,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 35,
+        "start": 913,
+        "end": 971
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_6fd68005f1",
+      "fact": "免费计划视频仅供个人使用，商业使用权需包含在付费计划中。",
+      "tag": "F",
+      "quote": "商业使用权包含在付费计划中。免费计划视频仅供个人使用。",
+      "start": 1091,
+      "end": 1118,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 42,
+        "start": 1091,
+        "end": 1119
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_6fd68005f1",
+      "fact": "免费计划生成的视频带有水印，需订阅高级版或专业版才能去除。",
+      "tag": "F",
+      "quote": "如果您使用的是免费计划，您生成的视频上将带有水印。",
+      "start": 1994,
+      "end": 2019,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 62,
+        "start": 1994,
+        "end": 2050
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_6fd68005f1",
+      "fact": "生成内容默认私有，标准视频保留24小时，付费用户的AI UGC与数字人视频永久保存。",
+      "tag": "F",
+      "quote": "所有生成内容默认均为**私有**。出于隐私和安全考虑，标准视频保留 24 小时。",
+      "start": 1227,
+      "end": 1267,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 46,
+        "start": 1227,
+        "end": 1293
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_6fd68005f1",
+      "fact": "平台对所有生成内容进行审核，不允许裸露、色情或成人内容，多次违规可能被永久封禁。",
+      "tag": "F",
+      "quote": "多次尝试生成违规内容的账户可能会被永久封禁。",
+      "start": 1530,
+      "end": 1552,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 50,
+        "start": 1460,
+        "end": 1553
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_6fd68005f1",
+      "fact": "平均每个片段生成约需200秒；720p高清与更多并发任务需升级付费计划。",
+      "tag": "F",
+      "quote": "平均每个片段约200秒。",
+      "start": 989,
+      "end": 1001,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 37,
+        "start": 989,
+        "end": 1002
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_ed5804c694",
+      "fact": "本资料为中华人民共和国教育部政府门户网站首页内容",
+      "tag": "F",
+      "quote": "教育部政府门户网站",
+      "start": 2931,
+      "end": 2940,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 184,
+        "start": 2925,
+        "end": 2955
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_ed5804c694",
+      "fact": "资料列出4月10日新闻发布会，主题为介绍《“人工智能+教育”行动计划》",
+      "tag": "F",
+      "quote": "新闻发布会：介绍《“人工智能+教育”行动计划",
+      "start": 2163,
+      "end": 2185,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 150,
+        "start": 2157,
+        "end": 2189
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_ed5804c694",
+      "fact": "教育部科学技术与信息化司负责人曾就人工智能+教育行动计划答问",
+      "tag": "F",
+      "quote": "教育部科学技术与信息化司负责人",
+      "start": 2367,
+      "end": 2382,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 157,
+        "start": 2361,
+        "end": 2392
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_ed5804c694",
+      "fact": "资料列出介绍2026世界数字教育大会有关情况的新闻发布会",
+      "tag": "F",
+      "quote": "新闻发布会：介绍2026世界数字教育大会有关情况",
+      "start": 2131,
+      "end": 2155,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 149,
+        "start": 2125,
+        "end": 2156
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_ed5804c694",
+      "fact": "资料中出现国家智慧教育公共服务平台",
+      "tag": "F",
+      "quote": "国家智慧教育公共服务平台",
+      "start": 640,
+      "end": 652,
+      "locator": {
+        "heading": "",
+        "paragraph": 79,
+        "start": 640,
+        "end": 653
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_ed5804c694",
+      "fact": "资料提及中共中央、国务院印发《教育强国建设规划纲要（2024—2035年）》",
+      "tag": "F",
+      "quote": "中共中央 国务院印发《教育强国建设规划纲要（2024—2035年）》",
+      "start": 1295,
+      "end": 1329,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 108,
+        "start": 1295,
+        "end": 1351
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_ed5804c694",
+      "fact": "本资料仅列相关条目标题，未展开教育领域生成式AI收益与风险的内容",
+      "tag": "I",
+      "quote": "介绍《“人工智能+教育”行动计划",
+      "start": 2169,
+      "end": 2185,
+      "locator": {
+        "heading": "### 习近平致信祝贺吉林大学建校80周年",
+        "paragraph": 150,
+        "start": 2157,
+        "end": 2189
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_ab947d5dd3",
+      "fact": "本资料是中国教育考试网首页，主办单位为教育部教育考试院。",
+      "tag": "F",
+      "quote": "主办单位：教育部教育考试院",
+      "start": 1763,
+      "end": 1776,
+      "locator": {
+        "heading": "# 考试服务",
+        "paragraph": 80,
+        "start": 1763,
+        "end": 1777
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_ab947d5dd3",
+      "fact": "本资料栏目含考试资讯、公示公告、考试项目、报名、成绩与证书查询及考试研究。",
+      "tag": "F",
+      "quote": "公示公告 | 考试资讯",
+      "start": 58,
+      "end": 69,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 58,
+        "end": 70
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_ab947d5dd3",
+      "fact": "本资料列出的国家教育考试项目包括普通高考、成人高考、研究生考试、自学考试等。",
+      "tag": "F",
+      "quote": "普通高考 | 成人高考 | 研究生考试 | 自学考试 | 中小学教师资格考试 | 同等学力申请硕士学位考试",
+      "start": 503,
+      "end": 556,
+      "locator": {
+        "heading": "",
+        "paragraph": 25,
+        "start": 503,
+        "end": 557
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_ab947d5dd3",
+      "fact": "本资料公示2026年度国家教育考试科研规划课题立项名单，日期为2026-09-04。",
+      "tag": "F",
+      "quote": "2026年度国家教育考试科研规划课题立项名单公布 2026-09-04",
+      "start": 199,
+      "end": 234,
+      "locator": {
+        "heading": "",
+        "paragraph": 15,
+        "start": 199,
+        "end": 235
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_ab947d5dd3",
+      "fact": "本资料显示2026年高考开考前，教育部部长怀进鹏视频调度全国高考组织工作。",
+      "tag": "F",
+      "quote": "6月7日上午，2026年普通高等学校招生全国统一考试开考前",
+      "start": 77,
+      "end": 106,
+      "locator": {
+        "heading": "",
+        "paragraph": 10,
+        "start": 77,
+        "end": 174
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_ab947d5dd3",
+      "fact": "本资料提供托福、雅思、德福、日本语能力测试等海外考试信息。",
+      "tag": "F",
+      "quote": "托福网考®(TOEFL iBT®) | 雅思(IELTS) | 德福(TestDaF) | 日本语能力测试(JLPT)",
+      "start": 696,
+      "end": 755,
+      "locator": {
+        "heading": "",
+        "paragraph": 31,
+        "start": 696,
+        "end": 756
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_ab947d5dd3",
+      "fact": "本资料为考试机构门户页，未涉及生成式AI在教育领域的收益或风险。",
+      "tag": "I",
+      "quote": "考试研究 科研创新服务管理平台入口",
+      "start": 1687,
+      "end": 1704,
+      "locator": {
+        "heading": "# 考试服务",
+        "paragraph": 75,
+        "start": 1687,
+        "end": 1705
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_9eaf4ae524",
+      "fact": "本资料为即梦AI产品介绍，未涉及教育领域使用生成式AI的收益与风险。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_24a37fe513",
+      "fact": "本资料全部内容围绕汉字“仝”的读音与释义展开，属问答页面",
+      "tag": "F",
+      "quote": "“人工”组成一个字怎么读？",
+      "start": 71,
+      "end": 84,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_24a37fe513",
+      "fact": "本资料未出现生成式AI、教育等与任务目标相关的内容",
+      "tag": "F",
+      "quote": "百度知道 > 无分类",
+      "start": 160,
+      "end": 170,
+      "locator": {
+        "heading": "# “人工”组成一个字怎么读？",
+        "paragraph": 30,
+        "start": 160,
+        "end": 171
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-013）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第1节E-016处称Markdown便于迁移、备份，但证据仅提长期管理，属添加事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第5节将E-030的‘保持记忆是副作用’扩展为‘记忆与查找均是副作用’，查找部分缺证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "第9节E-006仅称‘该资料’，未标明国家大学生就业服务平台，易与其他非目标平台混淆。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "第8节‘该平台’未具名，建议依据E-038等标明平台名称或说明来源，避免指代不明。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "第3节E-036‘结构笔记冻结思维轨迹意义’表述不清，建议按原意解释并标注。"
+  }
+ ]
+}

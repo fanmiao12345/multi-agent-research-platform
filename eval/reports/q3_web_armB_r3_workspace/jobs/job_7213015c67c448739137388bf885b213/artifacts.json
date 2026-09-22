@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "artifact_id": "material_pack.v1",
+      "kind": "material_pack",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/material_pack.v1.md",
+      "content_hash": "7b63d1148a73d4d21e32c6097bef39e2090d17750822452ffe41e7f077d066f1",
+      "byte_size": 2206,
+      "producer": "pipeline-material",
+      "created_at": "2026-09-20T11:20:33"
+    },
+    {
+      "artifact_id": "material_pack.v2",
+      "kind": "material_pack",
+      "version": 2,
+      "parent_version": null,
+      "file_name": "artifacts/material_pack.v2.md",
+      "content_hash": "60383d545b69c0c09d9f066618ca5ddabcbd9692ded4c41727dbd9af0715197b",
+      "byte_size": 2960,
+      "producer": "pipeline-repair",
+      "created_at": "2026-09-20T11:20:56"
+    },
+    {
+      "artifact_id": "outline.v1",
+      "kind": "outline",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/outline.v1.md",
+      "content_hash": "f8bc34169599e2401ecf084bd97b39a8fc637144d7df8f13b4902509598bff2e",
+      "byte_size": 49,
+      "producer": "pipeline-outline",
+      "created_at": "2026-09-20T11:21:00"
+    }
+  ]
+}

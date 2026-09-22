@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_effe9ce34f2e45a8af2770ad0d1a4e57",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 5,
+    "statuses": {
+      "ok": 5,
+      "empty": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 26 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-18T14:21:15"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:21:30"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 16, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:22:22"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包全部内容为产品宣传、用户评价及无关页面，并多处明确声明未提供任何远程办公对团队协作影响的近期研究数据或结论。",
+        "finished_at": "2026-09-18T14:22:24"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包全部内容为产品宣传、用户评价及无关页面，并多处明确声明未提供任何远程办公对团队协作影响的近期研究数据或结论。；缺失信息：同行评审研究论文或权威研究报告、沟通效率、信任、协调成本等团队协作指标的量化数据、不同远程办公工具对团队协作影响的对照研究或系统综述、近期研究的时间范围、样本量、调查方法等元数据、团队绩效与沟通成本的可核查前后对比数据（可用证据 42 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.todesk.com/",
+      "https://music.163.com/song?id=421423808",
+      "https://lyrics.net.cn/lyrics/36778",
+      "https://remote.com/jobs",
+      "https://remote.com/zh-cn",
+      "https://www.toutiao.com/article/7645608328395063849/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 混合办公",
+        "rank": 1,
+        "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+        "url": "https://www.todesk.com/",
+        "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "虚拟团队 知识共享 沟通效率",
+        "rank": 2,
+        "title": "虚拟 - 陈粒 - 单曲 - 网易云音乐",
+        "url": "https://music.163.com/song?id=421423808",
+        "snippet": "包含这首歌的歌单 2026火遍全网的歌曲精选 by 世界是自由诗 全网超好听热播歌曲300首 by 微雨染尘埃 2026年度全网神曲精选100% …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "虚拟团队 知识共享 沟通效率",
+        "rank": 3,
+        "title": "虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+        "url": "https://lyrics.net.cn/lyrics/36778",
+        "snippet": "来自歌手陈粒的 虚拟 歌词详情:固执押韵的排比.固执幼稚的押韵.零零散散凑齐了阵营.固执美丽的意义.固执空洞的美丽.飘飘然然空中 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "remote work team performance 2024",
+        "rank": 2,
+        "title": "Find remote jobs | Remote",
+        "url": "https://remote.com/jobs",
+        "snippet": "Customer Success Coordinator Jobgether 700 - 850 USD/month Remote Brazil only Full-time 2 hours ago remote - North America …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "remote work team performance 2024",
+        "rank": 3,
+        "title": "Remote — 全球化雇佣服务基础设施 | 覆盖全球的 EOR ...",
+        "url": "https://remote.com/zh-cn",
+        "snippet": "1 天前 · 全球雇佣的复杂度极高：我们自建专属基础设施，确保万无一失。 各国法律条文、税务法规、薪资制度、合规要求均各不相 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "hybrid work collaboration meta-analysis",
+        "rank": 3,
+        "title": "车尾的\"HYBRID\"到底是什么？我终于明白为什么丰田能称霸 ...",
+        "url": "https://www.toutiao.com/article/7645608328395063849/",
+        "snippet": "2026年5月30日 · 一、HYBRID不是新能源，但它比新能源更\"狡猾\" 很多人把混动车和新能源车混为一谈，这其实是个天大的误会。 车 …",
+        "published_date": "2026-05-30",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "远程办公 团队协作 混合办公",
+        "urls": [
+          "https://www.todesk.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "远程办公 团队协作 混合办公",
+            "rank": 1,
+            "title": "ToDesk远程桌面软件-免费安全流畅的远程连接电脑手机",
+            "url": "https://www.todesk.com/",
+            "snippet": "可对接公司AD域、飞书、企微账号，批量导入用户信息 员工只需下载主控端并登录，即可无缝切换远程办公 5大安全核心远控要素全 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "贝锐向日葵远程控制软件-远程桌面连接控制-远程协助/远程 ...",
+            "url": "https://sunlogin.oray.com/",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "网易UU远程官网 - 免费远程控制软件 - 真4K、真免费、真好用",
+            "url": "http://uuyc.163.com/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "向日葵远程控制电脑_远程桌面管理工具_远程控制电脑手机-贝 ...",
+            "url": "https://sunlogin.oray.com/product/feat",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "网易UU远程下载 - Windows、macOS、iOS、Android 最新版",
+            "url": "https://uuyc.163.com/download/",
+            "relevance": 0.125,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.222,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "虚拟团队 知识共享 沟通效率",
+        "urls": [
+          "https://music.163.com/song?id=421423808",
+          "https://lyrics.net.cn/lyrics/36778"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "虚拟团队 知识共享 沟通效率",
+            "rank": 2,
+            "title": "虚拟 - 陈粒 - 单曲 - 网易云音乐",
+            "url": "https://music.163.com/song?id=421423808",
+            "snippet": "包含这首歌的歌单 2026火遍全网的歌曲精选 by 世界是自由诗 全网超好听热播歌曲300首 by 微雨染尘埃 2026年度全网神曲精选100% …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "虚拟团队 知识共享 沟通效率",
+            "rank": 3,
+            "title": "虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+            "url": "https://lyrics.net.cn/lyrics/36778",
+            "snippet": "来自歌手陈粒的 虚拟 歌词详情:固执押韵的排比.固执幼稚的押韵.零零散散凑齐了阵营.固执美丽的意义.固执空洞的美丽.飘飘然然空中 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "虚拟 - 陈粒 - 单曲 - 网易云音乐",
+            "url": "https://music.163.com/song?id=421423808",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "虚拟歌词-陈粒 | 歌词网_全网歌词大全",
+            "url": "https://lyrics.net.cn/lyrics/36778",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "虚拟（2016年陈粒演唱的流行歌曲）_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F/19856233",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "虚拟（汉语词汇）_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F/10866735",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "‎虚拟 - 陈粒演唱（含有歌词） - Apple Music",
+            "url": "https://music.apple.com/cn/song/%E8%99%9A%E6%8B%9F/1421693767",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.204,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "remote work team performance 2024",
+        "urls": [
+          "https://remote.com/jobs",
+          "https://remote.com/zh-cn"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "remote work team performance 2024",
+            "rank": 2,
+            "title": "Find remote jobs | Remote",
+            "url": "https://remote.com/jobs",
+            "snippet": "Customer Success Coordinator Jobgether 700 - 850 USD/month Remote Brazil only Full-time 2 hours ago remote - North America …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "remote work team performance 2024",
+            "rank": 3,
+            "title": "Remote — 全球化雇佣服务基础设施 | 覆盖全球的 EOR ...",
+            "url": "https://remote.com/zh-cn",
+            "snippet": "1 天前 · 全球雇佣的复杂度极高：我们自建专属基础设施，确保万无一失。 各国法律条文、税务法规、薪资制度、合规要求均各不相 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "remote是什么意思_remote的翻译_音标_读音_用法_例句_爱 ...",
+            "url": "https://www.iciba.com/word?w=remote",
+            "relevance": 0.25,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "Remote（英文单词）_百度百科",
+            "url": "https://baike.baidu.com/item/Remote/19658464",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "远程工作者 | 面向中国人的远程工作机会分享平台，涵盖IT ...",
+            "url": "https://remote-china.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.204,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "hybrid work collaboration meta-analysis",
+        "urls": [
+          "https://www.toutiao.com/article/7645608328395063849/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "hybrid work collaboration meta-analysis",
+            "rank": 3,
+            "title": "车尾的\"HYBRID\"到底是什么？我终于明白为什么丰田能称霸 ...",
+            "url": "https://www.toutiao.com/article/7645608328395063849/",
+            "snippet": "2026年5月30日 · 一、HYBRID不是新能源，但它比新能源更\"狡猾\" 很多人把混动车和新能源车混为一谈，这其实是个天大的误会。 车 …",
+            "published_date": "2026-05-30",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "Hybrid（英语单词）_百度百科",
+            "url": "https://baike.baidu.com/item/Hybrid/55854441",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "hybrid 是什么意思_ hybrid 的翻译_音标_读音_用法_例句_爱 ...",
+            "url": "https://www.iciba.com/word?w=+hybrid+",
+            "relevance": 0.25,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "HYBRID中文(简体)翻译：剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/hybrid",
+            "relevance": 0.25,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "车尾的“HYBRID”是什么意思？车主：看完终于明白了！-有驾",
+            "url": "https://www.yoojia.com/article/10061442446998358476.html",
+            "relevance": 0.25,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.279,
+        "error": ""
+      }
+    ]
+  }
+}

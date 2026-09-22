@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "选型节未给出RPA、自动化脚本与Agent三者间的选择准则；只说E-018不明确是否含RPA，关键要求缺失。"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "RPA节以E-018推断RPA适用区间，结论又称E-018不明确是否含RPA、不作RPA依据，前后不一致。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "无交集节称两份资料均无法提取证据并引E-015，但E-015仅指《超自然行动组》；甲骨文资料应引E-016或标推断。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-017至E-022多为来源观点/建议，报告多写成客观事实，未保留‘本资料称/建议’的归属。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "范围节未界定各证据来源及来源差异，仅称素材包已核实证据，未满足证据来源说明要求。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "选型准则称评估‘工具条件’，该点应来自E-017，但该句仅引E-021/E-022，引用不完整。"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "artifact_id": "material_pack.v1",
+      "kind": "material_pack",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/material_pack.v1.md",
+      "content_hash": "7a30da8bb75ebdc12c5ddc31141fcfd83e669d592bc63e9d89a2e2e497514745",
+      "byte_size": 4387,
+      "producer": "pipeline-material",
+      "created_at": "2026-09-18T14:44:03"
+    },
+    {
+      "artifact_id": "material_pack.v2",
+      "kind": "material_pack",
+      "version": 2,
+      "parent_version": null,
+      "file_name": "artifacts/material_pack.v2.md",
+      "content_hash": "26eaf58e5fa776cefa620b1a79753bd19e004aa63c6275f21eedf940c65364ad",
+      "byte_size": 5960,
+      "producer": "pipeline-repair",
+      "created_at": "2026-09-18T14:44:53"
+    },
+    {
+      "artifact_id": "outline.v1",
+      "kind": "outline",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/outline.v1.md",
+      "content_hash": "7a9b13c8902fe82a173054b057eef428077a103e2a0f373fc62c7088d174424f",
+      "byte_size": 3203,
+      "producer": "pipeline-outline",
+      "created_at": "2026-09-18T14:45:26"
+    },
+    {
+      "artifact_id": "report.v1",
+      "kind": "report",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/report.v1.md",
+      "content_hash": "c52bf9bc4985718784cd249bb40f801fdbf3c2c75b39be1e70e0e4f91d526abc",
+      "byte_size": 7559,
+      "producer": "pipeline-writer",
+      "created_at": "2026-09-18T14:45:52"
+    },
+    {
+      "artifact_id": "review.v1",
+      "kind": "review",
+      "version": 1,
+      "parent_version": null,
+      "file_name": "artifacts/review.v1.json",
+      "content_hash": "f67d23ee60ba53f3ab2635eb5341e8670c9083421414aa39e3dac68481def741",
+      "byte_size": 1818,
+      "producer": "pipeline-review",
+      "created_at": "2026-09-18T14:46:37"
+    },
+    {
+      "artifact_id": "report.v2",
+      "kind": "report",
+      "version": 2,
+      "parent_version": 1,
+      "file_name": "artifacts/report.v2.md",
+      "content_hash": "77487798bc3f67a44392094da36627ad3ef26c8c4d55f9d8ad426b9f6598e688",
+      "byte_size": 9780,
+      "producer": "pipeline-writer",
+      "created_at": "2026-09-18T14:47:11"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "title": "城市低碳交通政策的效果与限制：现有资料的证据梳理与缺口说明",
+  "sections": [
+    {
+      "heading": "报告范围与资料来源",
+      "purpose": "说明本报告依据的资料范围与可回答边界",
+      "required_evidence": [
+        "E-007",
+        "E-008",
+        "E-024"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "城市绿色低碳交通政策方向",
+      "purpose": "归纳资料列出的政策方向与具体要求",
+      "required_evidence": [
+        "E-017",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-021",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "政策目标与时间设定",
+      "purpose": "梳理资料设定的绿色转型目标与时点",
+      "required_evidence": [
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "可观测交通运行指标：重庆拥堵指数",
+      "purpose": "呈现重庆实时拥堵指数及其同比环比变化",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "拥堵异常点位观察",
+      "purpose": "列出资料中处于严重拥堵的具体点位",
+      "required_evidence": [
+        "E-005",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "政策效果证据的缺失",
+      "purpose": "说明资料未提供政策实施效果数据",
+      "required_evidence": [
+        "E-008",
+        "E-024",
+        "E-030",
+        "E-031",
+        "E-032"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "限制因素与评估材料缺口",
+      "purpose": "说明缺少政策评估报告与案例材料",
+      "required_evidence": [
+        "E-016",
+        "E-039",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "公共交通供给信息：辽宁与朝阳",
+      "purpose": "汇总公交查询资料可提供的信息范围",
+      "required_evidence": [
+        "E-025",
+        "E-026",
+        "E-027",
+        "E-028",
+        "E-033",
+        "E-034",
+        "E-035",
+        "E-036",
+        "E-037",
+        "E-038"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "数据可靠性与免责说明",
+      "purpose": "说明查询数据的参考性与免责声明",
+      "required_evidence": [
+        "E-007",
+        "E-029",
+        "E-040"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "行政区划背景信息",
+      "purpose": "提供城市数量与区划管理背景",
+      "required_evidence": [
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与待补证据清单",
+      "purpose": "给出可否判断效果与限制的结论及缺口",
+      "required_evidence": [
+        "E-008",
+        "E-016",
+        "E-031",
+        "E-032",
+        "E-039"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

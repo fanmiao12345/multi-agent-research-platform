@@ -1,0 +1,140 @@
+{
+  "title": "个人知识管理系统中的检索与记忆设计：现有证据提纲",
+  "sections": [
+    {
+      "heading": "报告目标与证据边界",
+      "purpose": "界定主题并说明直接相关证据的覆盖范围",
+      "required_evidence": [
+        "E-007",
+        "E-030"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "资料构成与来源盘点",
+      "purpose": "列出可用资料类型及其对主题的可能贡献",
+      "required_evidence": [
+        "E-001",
+        "E-016",
+        "E-008",
+        "E-026",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "就业平台界面资料的相关性",
+      "purpose": "核验其是否支持检索与记忆设计，结论为无直接关联",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "卡片盒笔记法的记忆设计线索",
+      "purpose": "提取原子笔记、永久笔记与链接记忆的建议",
+      "required_evidence": [
+        "E-016",
+        "E-018",
+        "E-019",
+        "E-020",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "卡片盒笔记法的检索设计线索",
+      "purpose": "梳理顺链找回、论证浮现与画布连接线索",
+      "required_evidence": [
+        "E-017",
+        "E-021",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "“个人”词义与指代上下文",
+      "purpose": "说明该词依赖语境，可指自己或他人",
+      "required_evidence": [
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "检索中指代歧义的推断",
+      "purpose": "基于词义材料推断检索需补充上下文",
+      "required_evidence": [
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "问答来源的重复陈述与属性",
+      "purpose": "核对重复内容并标注来源可信属性",
+      "required_evidence": [
+        "E-026",
+        "E-027",
+        "E-028",
+        "E-029",
+        "E-030",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "目标主题的直接证据缺口",
+      "purpose": "列出检索、记忆与链接索引机制的材料缺失",
+      "required_evidence": [
+        "E-007",
+        "E-030"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "开放冲突与暂不裁决事项",
+      "purpose": "呈现问答无关性与指代推断之间的冲突",
+      "required_evidence": [
+        "E-025",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "可谨慎提出的设计原则",
+      "purpose": "仅把卡片盒线索转写为待验证设计假设",
+      "required_evidence": [
+        "E-016",
+        "E-017",
+        "E-020",
+        "E-021",
+        "E-022"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与后续验证清单",
+      "purpose": "总结可支持结论并列出需补证的问题",
+      "required_evidence": [
+        "E-007",
+        "E-014",
+        "E-017",
+        "E-020",
+        "E-030"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

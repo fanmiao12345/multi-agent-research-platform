@@ -1,0 +1,129 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "Llama 模型与权重授权",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "本资料称模型与权重同时授权给研究者和商业实体，秉持开放原则。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "下载模型权重与分词器需访问Meta网站并接受其许可。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "Hugging Face也提供下载，但需承认许可并填写模型卡表单。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "本资料提示下载链接在24小时后及一定下载量后失效。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "权重许可允许商业使用但获取需审批，分发属受控开放模式。"
+          }
+        ]
+      },
+      {
+        "name": "Llama 仓库与社区信号",
+        "points": [
+          {
+            "evidence_id": "E-005",
+            "statement": "Llama 3.1发布后，本资料称已整合GitHub仓库并新增若干仓库。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "该仓库定位为加载Llama 2模型并运行推理的最小示例。"
+          },
+          {
+            "evidence_id": "E-007",
+            "statement": "本资料页面显示该仓库有59.6k星标、9.8k分支。"
+          }
+        ]
+      },
+      {
+        "name": "Gitee 商业产品与规模",
+        "points": [
+          {
+            "evidence_id": "E-009",
+            "statement": "Gitee为开源中国旗下，自称国内第一大研发效能平台、全球第二大开源代码托管平台。"
+          },
+          {
+            "evidence_id": "E-010",
+            "statement": "Gitee主要产品分为社区版、企业版、专业版、高校版、旗舰版。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "自2013年上线，Gitee共服务1200万开发者，累计托管仓库超2800万个。"
+          },
+          {
+            "evidence_id": "E-012",
+            "statement": "Gitee企业版与专业版已服务30万家企业，含1200家中大型私有化部署企业。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "该平台面向企业提供在线使用与私有部署两种商业服务渠道。"
+          }
+        ]
+      },
+      {
+        "name": "Gitee 社区活动与AI工具",
+        "points": [
+          {
+            "evidence_id": "E-014",
+            "statement": "开源中国在办2026上海开源软件应用创新大赛，设百万奖池吸引项目。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "其社区仓库中有终端AI编码助手，支持多种LLM提供商且默认DeepSeek。"
+          }
+        ]
+      },
+      {
+        "name": "资料相关性边界",
+        "points": [
+          {
+            "evidence_id": "E-016",
+            "statement": "本资料内容仅涉及代码托管平台的商业产品，未提及开源大模型生态及其商业模式。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "statement": "Llama权重既称开放授权又称获取需审批，属开放还是受控开放存在矛盾",
+        "evidence_ids": [
+          "E-001",
+          "E-002",
+          "E-008"
+        ],
+        "status": "open"
+      }
+    ],
+    "gaps": [
+      {
+        "question": "开源大模型厂商如何盈利？",
+        "missing": "许可证费用、云服务、订阅或API收费等收入模式材料"
+      },
+      {
+        "question": "各许可证的具体商用限制与分成条款是什么？",
+        "missing": "完整许可证文本与条款比较"
+      },
+      {
+        "question": "权重受控分发的审批标准与商业影响如何？",
+        "missing": "审批流程、通过率、商业用户案例"
+      },
+      {
+        "question": "Gitee等代码托管平台的商业模式与开源大模型生态有何关联？",
+        "missing": "平台为LLM项目提供托管、分发或商业化服务的证据"
+      },
+      {
+        "question": "除Meta Llama外还有哪些开源大模型的商业模式？",
+        "missing": "其他模型许可、融资、合作与营收数据"
+      }
+    ],
+    "duplicates": []
+  }
+}

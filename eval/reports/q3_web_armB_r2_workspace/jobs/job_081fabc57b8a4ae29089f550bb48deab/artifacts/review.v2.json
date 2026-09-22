@@ -1,0 +1,27 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "范围段称资料未出现电池回收信息或属范围外，未限定为退役军人资料，与E-008至E-015冲突"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-005/E-006/E-015为证据明示结论，却标〔未知〕，事实/推断标注不准确"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "监管缺口称主管部门职责划分空白，E-015仅证明未列具体法规条文，属过度推断"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "回收技术段省略E-012“动力电池回收行业”限定，宜补全以免泛化为一般废水处理"
+  }
+ ]
+}

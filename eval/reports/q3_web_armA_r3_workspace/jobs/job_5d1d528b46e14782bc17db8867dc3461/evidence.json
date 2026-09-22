@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_b8be8e2ed5",
+      "fact": "本资料是 LLM 排行榜，比较 250 多个 AI 模型在智能、价格、性能与速度等指标上的表现。",
+      "tag": "F",
+      "quote": "比较并排名 250 多个 AI 模型（LLM）在智能、价格、性能与速度",
+      "start": 153,
+      "end": 188,
+      "locator": {
+        "heading": "# LLM 排行榜——比较 OpenAI、Anthropic、Google、SpaceXAI 等公司的 AI 模型",
+        "paragraph": 12,
+        "start": 153,
+        "end": 232
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_b8be8e2ed5",
+      "fact": "本资料导航中设有「编程智能体」栏目。",
+      "tag": "F",
+      "quote": "编程智能体",
+      "start": 49,
+      "end": 54,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 49,
+        "end": 55
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_b8be8e2ed5",
+      "fact": "排行榜收录 GPT-5.3 Codex (xhigh) 等代码类模型，其智能得分为 33。",
+      "tag": "F",
+      "quote": "GPT-5.3 Codex (xhigh)",
+      "start": 5237,
+      "end": 5258,
+      "locator": {
+        "heading": "#### 上下文窗口",
+        "paragraph": 536,
+        "start": 5237,
+        "end": 5259
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_b8be8e2ed5",
+      "fact": "本资料以 Intelligence Index 排名，最高得分模型为 53 分。",
+      "tag": "F",
+      "quote": "目前以 53 的 Intelligence Index 得分位居",
+      "start": 23099,
+      "end": 23131,
+      "locator": {
+        "heading": "### 哪个 AI 模型在 LLM 排行榜上排名第一？",
+        "paragraph": 2748,
+        "start": 23015,
+        "end": 23163
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_b8be8e2ed5",
+      "fact": "本资料未提及生成式人工智能在软件测试中的任何应用或趋势。",
+      "tag": "U",
+      "quote": "排行榜提供筛选条件，可按模型类型（推理与非推理）",
+      "start": 24186,
+      "end": 24210,
+      "locator": {
+        "heading": "### 如何筛选排行榜中的模型？",
+        "paragraph": 2755,
+        "start": 24186,
+        "end": 24263
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_b8be8e2ed5",
+      "fact": "本资料未涉及测试用例生成、缺陷检测等软件测试环节的内容。",
+      "tag": "U",
+      "quote": "点击排行榜中的任意模型名称，即可访问其专属比较页面",
+      "start": 24286,
+      "end": 24311,
+      "locator": {
+        "heading": "### 在哪里可以查看模型的更详细指标？",
+        "paragraph": 2756,
+        "start": 24286,
+        "end": 24359
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_b8be8e2ed5",
+      "fact": "本资料含代码类模型与编程智能体栏目，可间接反映代码相关模型能力，但无测试用途数据。",
+      "tag": "I",
+      "quote": "Kimi K2.7 Code",
+      "start": 7028,
+      "end": 7042,
+      "locator": {
+        "heading": "#### 上下文窗口",
+        "paragraph": 756,
+        "start": 7028,
+        "end": 7043
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_c236dc199d",
+      "fact": "本资料为百度知道首页，内容为导航、热门问题与榜单，未涉及软件测试主题。",
+      "tag": "F",
+      "quote": "百度首页",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 5
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_c236dc199d",
+      "fact": "本资料罗列的问题均为生活类话题，如旅行、养狗、家常菜等。",
+      "tag": "F",
+      "quote": "新手养狗有什么需要特别注意的？",
+      "start": 292,
+      "end": 307,
+      "locator": {
+        "heading": "",
+        "paragraph": 35,
+        "start": 292,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_c236dc199d",
+      "fact": "本资料仅在一处公告标题中提及人工智能生成内容的治理与倡导。",
+      "tag": "F",
+      "quote": "关于人工智能生成内容的治理及倡导",
+      "start": 1656,
+      "end": 1672,
+      "locator": {
+        "heading": "",
+        "paragraph": 113,
+        "start": 1600,
+        "end": 1673
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_c236dc199d",
+      "fact": "本资料未出现关于生成式人工智能应用于软件测试的任何论述。",
+      "tag": "F",
+      "quote": "总有一个人知道",
+      "start": 458,
+      "end": 465,
+      "locator": {
+        "heading": "",
+        "paragraph": 42,
+        "start": 458,
+        "end": 466
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_c236dc199d",
+      "fact": "无法依据本资料提取生成式人工智能在软件测试中的应用趋势信息。",
+      "tag": "F",
+      "quote": "你问题的答案",
+      "start": 467,
+      "end": 473,
+      "locator": {
+        "heading": "",
+        "paragraph": 43,
+        "start": 467,
+        "end": 474
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_ba61d8da63",
+      "fact": "本资料主题为中国知网能否查询论文被引用次数，与软件测试无关",
+      "tag": "I",
+      "quote": "中国知网能查到论文的被引用次数吗",
+      "start": 71,
+      "end": 87,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_ba61d8da63",
+      "fact": "本资料称知网可查到论文被引用次数，并给出操作步骤",
+      "tag": "F",
+      "quote": "中国知网可以查到论文的被引用次数。",
+      "start": 950,
+      "end": 967,
+      "locator": {
+        "heading": "# 中国知网能查到论文的被引用次数吗",
+        "paragraph": 72,
+        "start": 950,
+        "end": 968
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_ba61d8da63",
+      "fact": "本资料建议在知网点击“引文搜索”后输入关键词检索",
+      "tag": "F",
+      "quote": "点击“引文搜索”",
+      "start": 581,
+      "end": 589,
+      "locator": {
+        "heading": "# 中国知网能查到论文的被引用次数吗",
+        "paragraph": 52,
+        "start": 576,
+        "end": 597
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_ba61d8da63",
+      "fact": "本资料介绍知网由清华大学、清华同方发起，始建于1999年6月",
+      "tag": "F",
+      "quote": "由清华大学、清华同方发起，始建于1999年6月",
+      "start": 1152,
+      "end": 1175,
+      "locator": {
+        "heading": "# 中国知网能查到论文的被引用次数吗",
+        "paragraph": 80,
+        "start": 1114,
+        "end": 1177
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_ba61d8da63",
+      "fact": "本资料未提及生成式人工智能，也未提及软件测试",
+      "tag": "U",
+      "quote": "中国知网能查到论文的被引用次数吗",
+      "start": 71,
+      "end": 87,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_ba61d8da63",
+      "fact": "本资料未提供关于生成式人工智能在软件测试中应用趋势的任何内容",
+      "tag": "U",
+      "quote": "中国知网能查到论文的被引用次数吗",
+      "start": 71,
+      "end": 87,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_61d83d43ee",
+      "fact": "本资料正文仅含“QQ音乐”四字，无其他可提取内容。",
+      "tag": "F",
+      "quote": "QQ音乐",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 4
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_61d83d43ee",
+      "fact": "本资料未提及生成式人工智能、软件测试或相关应用趋势。",
+      "tag": "F",
+      "quote": "QQ音乐",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 4
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_61d83d43ee",
+      "fact": "本资料无法作为该主题的事实依据，相关信息缺口。",
+      "tag": "I",
+      "quote": "QQ音乐",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 4
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_32b2e24647",
+      "fact": "本资料介绍即梦AI，提供文生图、视频生成与智能画布等生成式AI创作功能。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_32b2e24647",
+      "fact": "即梦AI支持输入简单文案或图片，快速生成优质视频片段。",
+      "tag": "F",
+      "quote": "AI视频生成，输入简单的文案或图片，即可快速生成优质视频片段",
+      "start": 98,
+      "end": 128,
+      "locator": {
+        "heading": "## 灵感即刻成片",
+        "paragraph": 7,
+        "start": 98,
+        "end": 129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_32b2e24647",
+      "fact": "即梦AI支持根据中文提示词创作，并具有更好的语义理解能力。",
+      "tag": "F",
+      "quote": "即梦AI支持根据中文提示词进行创作，拥有更好的语义理解能力",
+      "start": 301,
+      "end": 330,
+      "locator": {
+        "heading": "### 中文创作，得心应手",
+        "paragraph": 15,
+        "start": 301,
+        "end": 354
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_32b2e24647",
+      "fact": "即梦AI绘画仅需简单提示词，即可生成精彩图片。",
+      "tag": "F",
+      "quote": "即梦AI绘画，仅需简单提示词，即可生成精彩的图片。",
+      "start": 389,
+      "end": 414,
+      "locator": {
+        "heading": "## AI绘画 梦境成真",
+        "paragraph": 19,
+        "start": 389,
+        "end": 485
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_32b2e24647",
+      "fact": "即梦AI智能画布集成AI拼图生成，并提供局部重绘、扩图、消除和抠图操作。",
+      "tag": "F",
+      "quote": "集成AI拼图生成能力，并提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作",
+      "start": 667,
+      "end": 706,
+      "locator": {
+        "heading": "## 智能画布 多图AI融合",
+        "paragraph": 33,
+        "start": 655,
+        "end": 744
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_32b2e24647",
+      "fact": "本资料未提供生成式AI在软件测试中的应用或趋势信息。",
+      "tag": "I",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_6ed3f39a38",
+      "fact": "本资料是Kling AI创意工作室首页，主题为AI创意内容生成。",
+      "tag": "F",
+      "quote": "Kling AI Home",
+      "start": 2,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_6ed3f39a38",
+      "fact": "本资料页面列出创意圈、资产、Omni、生成、灵动画布、全部工具等入口。",
+      "tag": "F",
+      "quote": "灵动画布",
+      "start": 36,
+      "end": 40,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 4,
+        "start": 36,
+        "end": 41
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_6ed3f39a38",
+      "fact": "本资料与软件测试主题无交集，构成该任务的内容缺口。",
+      "tag": "I",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_cce8de80bc",
+      "fact": "本资料介绍的是在线AI图像生成与图片编辑工具，主题围绕视觉创作",
+      "tag": "F",
+      "quote": "为每个人打造的 AI 创作工作室",
+      "start": 511,
+      "end": 527,
+      "locator": {
+        "heading": "",
+        "paragraph": 15,
+        "start": 511,
+        "end": 528
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_cce8de80bc",
+      "fact": "本资料所列核心能力包括文字生成图片、自然语言修图与图片生成视频",
+      "tag": "F",
+      "quote": "用一句话完成精修、换装、换背景、扩图、风格转换和局部调整。",
+      "start": 1760,
+      "end": 1789,
+      "locator": {
+        "heading": "### 自然语言修图",
+        "paragraph": 88,
+        "start": 1760,
+        "end": 1790
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_cce8de80bc",
+      "fact": "本资料的博客文章主题为图像模型对比与提示词指南",
+      "tag": "F",
+      "quote": "GPT Image 2 与 2.5 对比：是否值得切换工作流",
+      "start": 2660,
+      "end": 2690,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_cce8de80bc",
+      "fact": "本资料全文未出现软件测试、测试用例或缺陷检测相关表述",
+      "tag": "I",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_cce8de80bc",
+      "fact": "仅凭本资料无法判断生成式人工智能在软件测试中的应用趋势",
+      "tag": "U",
+      "quote": "从文字或参考图出发，把灵感快速转化为更完整、更精致的视觉作品。",
+      "start": 1331,
+      "end": 1362,
+      "locator": {
+        "heading": "## 用 Image2，你可以做什么？",
+        "paragraph": 59,
+        "start": 1331,
+        "end": 1363
+      },
+      "note": ""
+    }
+  ]
+}

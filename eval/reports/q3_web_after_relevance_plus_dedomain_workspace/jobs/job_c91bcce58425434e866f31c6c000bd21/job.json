@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_c91bcce58425434e866f31c6c000bd21",
+  "status": "cancelled",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": "cost_limit",
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 7,
+    "usable": 6,
+    "statuses": {
+      "ok": 6,
+      "empty": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "budget_exceeded",
+    "final_artifact_id": "report.v2",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 48 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:43:41"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "8 个主题，4 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:44:03"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 3, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:44:53"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "11 个章节",
+        "finished_at": "2026-09-18T14:45:26"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（3205字）",
+        "finished_at": "2026-09-18T14:45:52"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 3,
+          "warn": 7,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T14:47:11"
+      },
+      {
+        "stage": "current",
+        "status": "budget_stopped",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "根任务已停止：cost_limit",
+        "finished_at": "2026-09-18T14:48:21"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "根预算已停止（根任务已停止：cost_limit）：保留已保存的阶段产物，不视为验收成功"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.yingdao.com/",
+      "https://developer.aliyun.com/article/1687894",
+      "https://www.uipath.com.cn/",
+      "https://www.uipath.com/",
+      "https://www.uipath.com.cn/product",
+      "https://cloud.uipath.com/uipathtp/portal_/home",
+      "https://www.uipath.com/product/studio"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "RPA AI Agent 边界",
+        "rank": 3,
+        "title": "影刀官网｜企业 AI Agent、组织 AI 与 RPA 自动化平台",
+        "url": "https://www.yingdao.com/",
+        "snippet": "影刀面向企业提供 AI Agent 与 RPA 自动化平台，帮助企业设计、管理和持续进化 AI 员工。 融合 AI Agent、RPA、Workflow、Skill、 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "RPA AI Agent 边界",
+        "rank": 5,
+        "title": "RPA是什么？它能解决什么问题？一文读懂RPA的核心价值 ...",
+        "url": "https://developer.aliyun.com/article/1687894",
+        "snippet": "2025年11月7日 · 随着技术的不断创新和市场的持续成熟，RPA将成为企业数字化转型的基础设施，推动工作方式的根本性变革。 对 …",
+        "published_date": "2025-11-07",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UiPath Agentic Automation",
+        "rank": 1,
+        "title": "业务编排与自动化平台 | UiPath",
+        "url": "https://www.uipath.com.cn/",
+        "snippet": "2 天之前 · 探索 UiPath 平台并开始构建 探索平台 开始构建 客户成就展 Omega Healthcare 源源不断的索赔，让 Omega Healthcare  …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UiPath Agentic Automation",
+        "rank": 2,
+        "title": "The UiPath Platform™ for Business Orchestration and Automation | UiPath",
+        "url": "https://www.uipath.com/",
+        "snippet": "UiPath brings together AI agents, automation, people, and systems on a single platform, so work moves faster, stays governed, and …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UiPath Agentic Automation",
+        "rank": 3,
+        "title": "UiPath 平台 – 自动化软件 – 机器人流程自动化 | UiPath",
+        "url": "https://www.uipath.com.cn/product",
+        "snippet": "2026年9月11日 · 支持与服务 UiPath 合作伙伴网络 寻找合作伙伴 成为合作伙伴 合作伙伴成长 业务合作伙伴门户 技术合作伙伴门户  …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UiPath Agentic Automation",
+        "rank": 4,
+        "title": "UiPath",
+        "url": "https://cloud.uipath.com/uipathtp/portal_/home",
+        "snippet": "UiPath ... UiPath",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UiPath Agentic Automation",
+        "rank": 5,
+        "title": "UiPath Studio | Design, Build, and Scale Automations",
+        "url": "https://www.uipath.com/product/studio",
+        "snippet": "Download UiPath Studio to design and build AI agents, RPA workflows, API workflows, and apps. Low-code, code-first, or AI …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "RPA AI Agent 边界",
+        "urls": [
+          "https://www.yingdao.com/",
+          "https://developer.aliyun.com/article/1687894"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "RPA AI Agent 边界",
+            "rank": 3,
+            "title": "影刀官网｜企业 AI Agent、组织 AI 与 RPA 自动化平台",
+            "url": "https://www.yingdao.com/",
+            "snippet": "影刀面向企业提供 AI Agent 与 RPA 自动化平台，帮助企业设计、管理和持续进化 AI 员工。 融合 AI Agent、RPA、Workflow、Skill、 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "RPA AI Agent 边界",
+            "rank": 5,
+            "title": "RPA是什么？它能解决什么问题？一文读懂RPA的核心价值 ...",
+            "url": "https://developer.aliyun.com/article/1687894",
+            "snippet": "2025年11月7日 · 随着技术的不断创新和市场的持续成熟，RPA将成为企业数字化转型的基础设施，推动工作方式的根本性变革。 对 …",
+            "published_date": "2025-11-07",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "RPA 是什么？一文看懂机器人流程自动化（2026 最新实战 ...",
+            "url": "https://blog.csdn.net/Maydaycxc/article/details/161041706",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "RPA机器人流程自动化：一篇文章讲清楚（优缺点/怎么用 ...",
+            "url": "https://zhuanlan.zhihu.com/p/1931307956315624801",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "9个最佳开源免费的 RPA工具 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/681951594",
+            "relevance": 0.375,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.226,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "机器人流程自动化 大语言模型 智能体",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "机器（由各种金属和非金属部件组装成的装置）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8/2275865",
+            "relevance": 0.077,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "machine - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=machine&FORM=BDVSP6&cc=cn",
+            "relevance": 0.038,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "机器（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8/65322532",
+            "relevance": 0.077,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "机器的意思_机器的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-6f28e722b",
+            "relevance": 0.077,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "machine是什么意思_machine的翻译_音标_读音_用法_例句 ...",
+            "url": "https://www.iciba.com/word?w=machine",
+            "relevance": 0.038,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.214,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "UiPath Agentic Automation",
+        "urls": [
+          "https://www.uipath.com.cn/",
+          "https://www.uipath.com/",
+          "https://www.uipath.com.cn/product",
+          "https://cloud.uipath.com/uipathtp/portal_/home",
+          "https://www.uipath.com/product/studio"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "UiPath Agentic Automation",
+            "rank": 1,
+            "title": "业务编排与自动化平台 | UiPath",
+            "url": "https://www.uipath.com.cn/",
+            "snippet": "2 天之前 · 探索 UiPath 平台并开始构建 探索平台 开始构建 客户成就展 Omega Healthcare 源源不断的索赔，让 Omega Healthcare  …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "UiPath Agentic Automation",
+            "rank": 2,
+            "title": "The UiPath Platform™ for Business Orchestration and Automation | UiPath",
+            "url": "https://www.uipath.com/",
+            "snippet": "UiPath brings together AI agents, automation, people, and systems on a single platform, so work moves faster, stays governed, and …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "UiPath Agentic Automation",
+            "rank": 3,
+            "title": "UiPath 平台 – 自动化软件 – 机器人流程自动化 | UiPath",
+            "url": "https://www.uipath.com.cn/product",
+            "snippet": "2026年9月11日 · 支持与服务 UiPath 合作伙伴网络 寻找合作伙伴 成为合作伙伴 合作伙伴成长 业务合作伙伴门户 技术合作伙伴门户  …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "UiPath Agentic Automation",
+            "rank": 4,
+            "title": "UiPath",
+            "url": "https://cloud.uipath.com/uipathtp/portal_/home",
+            "snippet": "UiPath ... UiPath",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "UiPath Agentic Automation",
+            "rank": 5,
+            "title": "UiPath Studio | Design, Build, and Scale Automations",
+            "url": "https://www.uipath.com/product/studio",
+            "snippet": "Download UiPath Studio to design and build AI agents, RPA workflows, API workflows, and apps. Low-code, code-first, or AI …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [],
+        "elapsed_seconds": 0.231,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "RPA 自主决策 工作流",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "RPA 是什么？一文看懂机器人流程自动化（2026 最新实战 ...",
+            "url": "https://blog.csdn.net/Maydaycxc/article/details/161041706",
+            "relevance": 0.25,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "RPA机器人流程自动化：一篇文章讲清楚（优缺点/怎么用 ...",
+            "url": "https://zhuanlan.zhihu.com/p/1931307956315624801",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "影刀官网｜企业 AI Agent、组织 AI 与 RPA 自动化平台",
+            "url": "https://www.yingdao.com/",
+            "relevance": 0.167,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "9个最佳开源免费的 RPA工具 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/681951594",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.213,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（机器人流程自动化与智能体的边界）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "dynamic_team"
+        ]
+      },
+      "scheduler_elapsed_seconds": 41.602,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

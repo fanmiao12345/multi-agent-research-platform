@@ -1,0 +1,125 @@
+{
+  "title": "个人知识管理系统的检索与记忆设计：基于卡片盒、链接网络与 Obsidian 的资料整理",
+  "sections": [
+    {
+      "heading": "资料范围与相关性判定",
+      "purpose": "说明哪些资料涉及主题、哪些无关，避免越界推断",
+      "required_evidence": [
+        "E-001",
+        "E-006",
+        "E-007",
+        "E-014",
+        "E-015",
+        "E-022",
+        "E-061",
+        "E-067"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "从层级分类到链接浮现",
+      "purpose": "说明结构由连接产生而非预设层级，以及大库中链接更重要",
+      "required_evidence": [
+        "E-030",
+        "E-039",
+        "E-042",
+        "E-043"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "永久笔记与原子化写作规则",
+      "purpose": "说明每张一个想法、用自己的话写是记忆单元基础",
+      "required_evidence": [
+        "E-032",
+        "E-033"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "链接机制：新笔记入网与关系说明",
+      "purpose": "说明每张新笔记至少链旧笔记并写关系，避免只收集",
+      "required_evidence": [
+        "E-034",
+        "E-035",
+        "E-036"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "检索即回忆与思考伙伴",
+      "purpose": "说明顺链接找回遗忘想法，笔记目的在更好思考",
+      "required_evidence": [
+        "E-031",
+        "E-037",
+        "E-038"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "传统检索的局限与线索式记忆体",
+      "purpose": "说明预设类别、标签和仅搜索的不足，以及线索式记忆体",
+      "required_evidence": [
+        "E-040",
+        "E-041",
+        "E-044",
+        "E-045"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "Obsidian 的检索与组织功能",
+      "purpose": "列举标签、链接、图谱、反向链接、查询、每日笔记、画布",
+      "required_evidence": [
+        "E-046",
+        "E-047",
+        "E-048",
+        "E-049",
+        "E-050",
+        "E-051",
+        "E-052",
+        "E-053"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "跨设备、剪藏与扩展生态",
+      "purpose": "说明多端下载、同步发布、插件与中文界面提供扩展线索",
+      "required_evidence": [
+        "E-054",
+        "E-055",
+        "E-056",
+        "E-057",
+        "E-058",
+        "E-059",
+        "E-060"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "语境消歧对检索设计的提示",
+      "purpose": "说明同一词形在不同语境指向不同主体，检索需上下文消歧",
+      "required_evidence": [
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "未决冲突与缺失证据",
+      "purpose": "列出资料中的开放冲突与无法回答的设计问题，不作裁决",
+      "required_evidence": [
+        "E-018",
+        "E-019",
+        "E-061",
+        "E-067"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

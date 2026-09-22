@@ -1,0 +1,617 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_41ae3abf0e4744f6b79b01420443d486",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 城市低碳交通政策的效果与限制\n## 国家低碳交通政策导向\n- 政策优先发展城市公共交通，倡导绿色低碳出行【[E-002]】〔事实〕。\n- 要求健全综合交通运输体系，提升城际、城内通勤效率【[E-003]】〔事实〕。\n- 要求完善交通枢纽换乘换装设施，加强停车位、充电桩建设【[E-004]】〔事实〕。\n- 提出到2030年绿色转型深入推进【[E-005]】〔事实〕。\n- 推动重点城市及周边区域大气污染物协同减排，持续改善空气质量【[E-006]】〔事实〕。\n- 城市工作坚持因地制宜、分类指导【[E-007]】〔事实〕；低碳交通政策需因地制宜分类实施、不宜一刀切【[E-009]】〔事实〕。据此，统一模板评估可能不适配〔推断〕。\n## 政策效果的量化证据缺口\n- 就效果量化看，政策文件未量化低碳交通政策效果【[E-008]】〔事实〕；缺可核对数值〔推断〕。\n- 轨道交通运营数据速报未列碳排放指标【[E-013]】〔事实〕；运营碳评估入口不足〔推断〕。\n- 交通部要闻列表未见城市低碳交通政策效果与限制评估【[E-017]】〔事实〕。\n- 影视平台未提供城市低碳交通政策效果与限制的事实主张【[E-022]】〔事实〕，不能作效果证据〔推断〕。\n- 路网密度与拥堵报告只讨论拥堵，未涉及低碳交通政策【[E-030]】〔事实〕。\n- 资料称智能交通缓堵效果显著，但未归因于低碳交通政策【[E-033]】〔事实〕；不能替代低碳政策效果〔推断〕。\n## 西安交通改善实践\n- 西安2024年工作日高峰速度19.4km/h，较2023年18.2km/h提高1.2【[E-023]】〔事实〕。\n- 拓宽主干道并增加车道，使交通流更顺畅【[E-024]】〔事实〕；属道路工程改善〔推断〕。\n- 地铁线路持续延伸扩大覆盖，吸引市民选择地铁【[E-025]】〔事实〕。\n- 公交专用道等措施提高公交效率【[E-026]】〔事实〕。\n- 西安总路网密度6.4，36城中第19【[E-029]】〔事实〕。\n- 这些改善是否由低碳交通政策导致，缺归因证据〔未知〕。\n## 西安交通压力与限制\n- 西安人口与车辆持续增长【[E-027]】〔事实〕；老城区交通未来仍面临不小挑战【[E-028]】〔事实〕。\n- 相关路网密度与拥堵资料只讨论拥堵，未涉及低碳交通政策【[E-030]】〔事实〕；难据此归因政策〔推断〕。\n## 其他城市拥堵与智能交通表现\n- 拥堵指数为实际行程时间与畅通行程时间比值，越大越拥堵【[E-031]】〔事实〕。\n- 资料称北上广深通勤时耗排名靠前，但同比、环比均下降【[E-032]】〔事实〕。\n- 重庆通勤高峰拥堵指数环比降7.12%，通勤耗时同比降7.46%【[E-034]】〔事实〕。\n- 北京通勤高峰拥堵指数环比降14.4%，通勤耗时环比降3.62%【[E-035]】〔事实〕。\n- 资料称广州、重庆、保定拥堵指数持续下降，智能交通缓堵效果显著【[E-036]】〔事实〕。\n- 武汉当日拥堵指数1.904，平均速度22.893km/h，拥堵里程27.76km【[E-037]】〔事实〕；这些为拥堵指标表现，非低碳政策效果〔推断〕。\n## 智能交通与低碳政策的归因边界\n- 拥堵指数定义见【[E-031]】〔事实〕。\n- 智能交通缓堵效果显著，但资料未归因于低碳交通政策【[E-033]】〔事实〕；两者因果不能直接等同〔推断〕。\n- 广州、重庆、保定拥堵指数下降且资料归因智能交通【[E-036]】〔事实〕；未见低碳政策归因证据〔推断〕。\n- 拥堵查询数据仅供参考，具体以官方数据为准【[E-038]】〔事实〕；数据局限限制因果判断〔推断〕。\n## 行业动态与间接材料\n- 福建高速服务区“能源大脑”标题，未给成效数据【[E-010]】〔事实〕；仅属间接信号〔推断〕。\n- 全球可持续交通高峰论坛（2026）将在北京举办标题【[E-011]】〔事实〕。\n- “人工智能+交通运输”应用安全指引图解【[E-012]】〔事实〕。\n- 《综合交通运输标准化发展“十五五”规划》政策解读【[E-014]】〔事实〕。\n- 2026年8月网约车行业运行基本情况【[E-015]】〔事实〕。\n- 中国国际可持续交通创新和知识中心等部属机构入口【[E-016]】〔事实〕。\n- 这些材料未给出低碳交通政策效果数据〔推断〕。\n## 无关或低价值来源说明\n- 资料仅介绍我国694个城市行政区划名单，未涉及低碳交通政策【[E-001]】〔事实〕；不可作政策证据〔推断〕。\n- 新浪404页面正文未提供任何城市低碳交通政策内容【[E-018]】〔事实〕。\n- 新浪页面为导航、新闻标题与商业信息，无交通政策论述【[E-019]】〔事实〕。\n- 新片场为影视创作与素材交易平台，主题与城市低碳交通政策无关【[E-020]】〔事实〕。\n- 影视平台未提供城市低碳交通政策效果与限制事实主张【[E-022]】〔事实〕；属低价值来源〔推断〕。\n## 待补数据与实施限制\n- 碳减排量、出行分担率等评估数据未见；政策文件未量化效果【[E-008]】〔事实〕，缺量化指标〔未知〕。\n- 轨道交通运营速报未列碳排放指标【[E-013]】〔事实〕，运营碳统计缺〔未知〕。\n- 交通部要闻列表未见效果与限制评估【[E-017]】〔事实〕，实施评估材料缺〔未知〕。\n- 路网密度与拥堵资料未涉及低碳政策【[E-030]】〔事实〕，地方细则与归因材料缺〔未知〕。\n- 智能交通缓堵未归因低碳政策【[E-033]】〔事实〕，因果推断或对照研究缺〔未知〕；财政、技术、执行难度亦无材料〔未知〕。\n## 结论：效果与限制\n- 可证事实：政策优先公共交通、倡导绿色低碳出行【[E-002]】〔事实〕；文件未量化低碳交通政策效果【[E-008]】〔事实〕；低碳交通政策需因地制宜分类实施、不宜一刀切【[E-009]】〔事实〕；西安高峰速度2024年19.4km/h，较2023年18.2km/h提高1.2【[E-023]】〔事实〕；资料称广州、重庆、保定拥堵指数持续下降且智能交通缓堵效果显著【[E-036]】〔事实〕；拥堵查询数据仅供参考【[E-038]】〔事实〕。\n- 待证推断：西安提速与其他城市缓堵可能受道路、地铁、公交、智能交通影响，但是否由低碳交通政策导致，证据不足【[E-023]】【[E-036]】〔推断〕。\n- 未知边界：碳减排量、出行分担率、全国统一监测与统计材料、地方政策细则、财政技术与执行限制仍缺【[E-008]】【[E-013]】【[E-017]】【[E-030]】【[E-033]】〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 8,
+    "usable": 7,
+    "statuses": {
+      "ok": 7,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 38 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:49:30"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:49:57"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T13:50:01"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "10 个章节",
+        "finished_at": "2026-09-18T13:50:13"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2556字）",
+        "finished_at": "2026-09-18T13:50:42"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 20,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T13:51:51"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-18T13:53:02"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 19,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-18T13:55:06"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 60,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.sohu.com/a/923495885_100199096",
+      "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+      "https://www.mot.gov.cn/",
+      "https://www.bankcomm.com/BankCommSite/default.shtml",
+      "https://www.sina.com.cn/",
+      "https://www.xinpianchang.com/",
+      "https://news.qq.com/rain/a/20251016A01PID00",
+      "https://www.showche.com/yongdu/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 政策 减排效果",
+        "rank": 2,
+        "title": "全国694个城市名单来了，快来看看有无你家乡",
+        "url": "https://www.sohu.com/a/923495885_100199096",
+        "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+        "published_date": "2025-08-13",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 政策 减排效果",
+        "rank": 4,
+        "title": "中共中央 国务院关于推动城市高质量发展的意见",
+        "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+        "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+        "published_date": "2025-08-28",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "交通碳达峰 政策 障碍 限制",
+        "rank": 2,
+        "title": "中华人民共和国交通运输部",
+        "url": "https://www.mot.gov.cn/",
+        "snippet": "2 天之前 · 中华人民共和国交通运输部（简称：交通运输部，Ministry of Transport of the People's Republic of China），是国务院重要 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "交通碳达峰 政策 障碍 限制",
+        "rank": 3,
+        "title": "交通银行 - 交银金融网",
+        "url": "https://www.bankcomm.com/BankCommSite/default.shtml",
+        "snippet": "2025年4月29日 · 交通银行台北分行主要为两岸公司客户提供各类存款、贷款、国际结算、贸易融资、外汇兑换、跨境人民币等银行服 …",
+        "published_date": "2025-04-29",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 补贴 政策评估",
+        "rank": 2,
+        "title": "新浪网",
+        "url": "https://www.sina.com.cn/",
+        "snippet": "5 小时之前 · 原油 美元 公募机构缘何扎堆申报智能驾驶主题ETF 次新基金快速建仓 机构密集调研寻找机会 产品端稳步创新 年内新发 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 补贴 政策评估",
+        "rank": 4,
+        "title": "新片场 - 与百万创作人一起成长，用作品打动世界",
+        "url": "https://www.xinpianchang.com/",
+        "snippet": "新片场汇聚全球原创优质视频及创作人，提供4K、无广告、无水印视频观看，专业的视频艺术学习教程，正版视觉素材交易等 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 公交优先 减排",
+        "rank": 3,
+        "title": "2025全国路网密度与拥堵报告出炉，西安排名19位！",
+        "url": "https://news.qq.com/rain/a/20251016A01PID00",
+        "snippet": "2025年10月16日 · 城市化进程加速，让交通拥堵问题也成为了现代城市发展中普遍面临的“大城市病”。因此，城市间的较量已经不局 …",
+        "published_date": "2025-10-16",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 公交优先 减排",
+        "rank": 4,
+        "title": "全国城市拥堵情况查询-今日拥堵指数排行 - 秀车网",
+        "url": "https://www.showche.com/yongdu/",
+        "snippet": "2 天之前 · 全国TOP100城市拥堵情况查询-拥堵指数排行 今天是2026年09月16日，全国TOP100城市拥堵情况查询，拥堵指数排行榜 …",
+        "published_date": "2026-09-16",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 政策 减排效果",
+        "urls": [
+          "https://www.sohu.com/a/923495885_100199096",
+          "https://www.gov.cn/zhengce/202508/content_7038144.htm"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "城市低碳交通 政策 减排效果",
+            "rank": 2,
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+            "published_date": "2025-08-13",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "城市低碳交通 政策 减排效果",
+            "rank": 4,
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+            "published_date": "2025-08-28",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "城市（地理学名词）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%B8%82/33549",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "市（中华人民共和国行政区划）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%B8%82/7149823",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "“城市不仅要有高度，更要有温度”——习近平总书记人民城市 ...",
+            "url": "https://www.gov.cn/yaowen/liebiao/202507/content_7031982.htm",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.205,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "交通碳达峰 政策 障碍 限制",
+        "urls": [
+          "https://www.mot.gov.cn/",
+          "https://www.bankcomm.com/BankCommSite/default.shtml"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "交通碳达峰 政策 障碍 限制",
+            "rank": 2,
+            "title": "中华人民共和国交通运输部",
+            "url": "https://www.mot.gov.cn/",
+            "snippet": "2 天之前 · 中华人民共和国交通运输部（简称：交通运输部，Ministry of Transport of the People's Republic of China），是国务院重要 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "交通碳达峰 政策 障碍 限制",
+            "rank": 3,
+            "title": "交通银行 - 交银金融网",
+            "url": "https://www.bankcomm.com/BankCommSite/default.shtml",
+            "snippet": "2025年4月29日 · 交通银行台北分行主要为两岸公司客户提供各类存款、贷款、国际结算、贸易融资、外汇兑换、跨境人民币等银行服 …",
+            "published_date": "2025-04-29",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中华人民共和国交通运输部",
+            "url": "https://www.mot.gov.cn/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "交通银行 - 交银金融网",
+            "url": "https://www.bankcomm.com/BankCommSite/default.shtml",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "交通（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BA%A4%E9%80%9A/30183",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "高德地图",
+            "url": "https://www.amap.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "百度地图 - Baidu",
+            "url": "https://j.map.baidu.com/YTR6F",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.33,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 补贴 政策评估",
+        "urls": [
+          "https://www.sina.com.cn/",
+          "https://www.xinpianchang.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "新能源汽车 补贴 政策评估",
+            "rank": 2,
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "snippet": "5 小时之前 · 原油 美元 公募机构缘何扎堆申报智能驾驶主题ETF 次新基金快速建仓 机构密集调研寻找机会 产品端稳步创新 年内新发 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "新能源汽车 补贴 政策评估",
+            "rank": 4,
+            "title": "新片场 - 与百万创作人一起成长，用作品打动世界",
+            "url": "https://www.xinpianchang.com/",
+            "snippet": "新片场汇聚全球原创优质视频及创作人，提供4K、无广告、无水印视频观看，专业的视频艺术学习教程，正版视觉素材交易等 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "新片场 - 与百万创作人一起成长，用作品打动世界",
+            "url": "https://www.xinpianchang.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "新（汉语汉字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%96%B0/34058",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "新的意思,新的解释,新的拼音,新的部首,新的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-26032",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "新榜 - 新媒体数据分析平台 - 新榜网页版入口",
+            "url": "https://newrank.aiproducthub.cn/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.193,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 公交优先 减排",
+        "urls": [
+          "https://news.qq.com/rain/a/20251016A01PID00",
+          "https://www.showche.com/yongdu/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 公交优先 减排",
+            "rank": 3,
+            "title": "2025全国路网密度与拥堵报告出炉，西安排名19位！",
+            "url": "https://news.qq.com/rain/a/20251016A01PID00",
+            "snippet": "2025年10月16日 · 城市化进程加速，让交通拥堵问题也成为了现代城市发展中普遍面临的“大城市病”。因此，城市间的较量已经不局 …",
+            "published_date": "2025-10-16",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 公交优先 减排",
+            "rank": 4,
+            "title": "全国城市拥堵情况查询-今日拥堵指数排行 - 秀车网",
+            "url": "https://www.showche.com/yongdu/",
+            "snippet": "2 天之前 · 全国TOP100城市拥堵情况查询-拥堵指数排行 今天是2026年09月16日，全国TOP100城市拥堵情况查询，拥堵指数排行榜 …",
+            "published_date": "2026-09-16",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "2025全国路网密度与拥堵报告出炉，西安排名19位！",
+            "url": "https://news.qq.com/rain/a/20251016A01PID00",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "全国城市拥堵情况查询-今日拥堵指数排行 - 秀车网",
+            "url": "https://www.showche.com/yongdu/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%8B%A5%E5%A0%B5/9435866",
+            "relevance": 0.143,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "今日西安拥堵情况-西安拥堵指数查询 - 查证宝",
+            "url": "https://www.chazhengbao.com/yongdu/xian/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.225,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（城市低碳交通政策的效果与限制）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "manager_worker"
+        ]
+      },
+      "scheduler_elapsed_seconds": 24.283,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

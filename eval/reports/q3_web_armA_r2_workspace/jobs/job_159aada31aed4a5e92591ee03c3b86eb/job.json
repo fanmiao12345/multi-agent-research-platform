@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_159aada31aed4a5e92591ee03c3b86eb",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 城市低碳交通政策的效果与限制：现有资料的证据梳理与缺口说明\n本报告以〔事实〕标注资料直接陈述，以〔推断〕标注基于资料的分析。\n## 报告范围与资料来源\n本报告依据资料包括拥堵查询数据、城市绿色低碳政策意见、辽宁与朝阳公交查询资料及全国行政区划名单。查询数据声明仅供用户参考，具体以官方数据为准【E-007】〔事实〕。拥堵查询资料仅含拥堵查询数据，未涉及低碳交通政策效果与限制【E-008】〔事实〕。政策意见资料未说明城市低碳交通政策的效果与限制【E-024】〔事实〕。因此，本报告只能梳理政策方向、观测指标与缺口，不能判断政策因果效果〔推断〕。\n## 城市绿色低碳交通政策方向\n资料将推动城市发展绿色低碳转型列为专门章节【E-017】〔事实〕；提出优先发展城市公共交通并倡导绿色低碳出行【E-018】〔事实〕；要求健全现代化综合交通运输体系并提升城际、城内通勤效率【E-019】〔事实〕；要求完善交通枢纽换乘换装设施布局【E-020】〔事实〕；要求加强停车位、充电桩等便民设施建设【E-021】〔事实〕；提出践行绿色低碳生活方式【E-023】〔事实〕。可归纳，政策方向侧重公共交通优先、综合交通效率、换乘与便民设施、绿色生活方式〔推断〕。上述证据未显示各项要求的量化指标或考核方式〔推断〕。\n## 政策目标与时间设定\n资料设定到2030年绿色转型深入推进的目标【E-022】〔事实〕。上述证据未显示交通领域分年度量化目标或交通碳排放减排数值〔推断〕。该目标可视为绿色转型总体时点，但无法据此判断交通政策效果〔推断〕。\n## 可观测交通运行指标：重庆拥堵指数\n资料显示重庆实时拥堵指数1.261，状态畅通，排行46/100【E-001】〔事实〕；较上周同期下降0.8%【E-002】〔事实〕。资料说明拥堵指数下方百分数为较上年同期指数变化【E-003】〔事实〕。E-002的0.8%为较上周同期，E-003所述百分数口径为较上年同期，二者口径不同，不能混同；上述证据未显示重庆较上年同期的具体数值〔推断〕。渝中区在行政区域拥堵Top10中指数最高，为1.281且畅通【E-004】〔事实〕。可推断该时点重庆整体未处于拥堵状态，渝中区相对最高但仍畅通；资料称“实时”但未给出查询日期，时效性无法判断〔推断〕。\n## 拥堵异常点位观察\n资料显示长寿湖风景区拥堵指数6.637，严重拥堵，较平日上升476.1%【E-005】〔事实〕；陈家坪公交枢纽站严重拥堵，指数5.627，平均速度8.28km/h【E-006】〔事实〕。可推断这是两个严重拥堵个案，资料未说明其成因，不宜据此概括为整体特征或归因于具体政策〔推断〕。\n## 政策效果证据的缺失\n拥堵查询资料仅含拥堵查询数据，未涉及低碳交通政策效果与限制【E-008】〔事实〕；政策意见资料未说明城市低碳交通政策的效果与限制【E-024】〔事实〕；公交查询资料仅提供公交查询数据，不包含政策分析内容【E-030】〔事实〕，不能用于评估城市低碳交通政策的效果与限制【E-031】〔事实〕，且未提供公交出行碳排放影响或低碳政策评估数据【E-032】〔事实〕。因此，现有资料缺少政策效果评估数据，无法判断政策实施后拥堵是否下降或减排效果如何〔推断〕。\n## 限制因素与评估材料缺口\n行政区划资料未提供任何交通政策实施效果或减排数据的证据【E-016】〔事实〕；朝阳公交查询资料未提供城市低碳交通政策效果与限制的信息【E-039】〔事实〕；行政区划资料全文为全国城市行政区划名单，未涉及城市低碳交通政策的效果与限制【E-009】〔事实〕。就本报告所依据资料看，缺少政策评估报告、案例研究或官方总结，也缺少政策实施前后同口径数据、碳排放量化数据、政策执行与效果评估材料及多城市统一指标；这些属本报告归纳的评估材料缺口〔推断〕。\n## 公共交通供给信息：辽宁与朝阳\n辽宁公交查询页面提供公交线路与站点查询【E-025】〔事实〕；列出辽宁主要城市地区，覆盖多个城市与地区【E-026】〔事实〕；按城市展示热门公交线路与公交站信息【E-027】〔事实〕；包含沈抚城际巴士1号线（雷锋号）等公交线路信息【E-028】〔事实〕。朝阳资料标题为朝阳公交线路大全2026年版【E-033】〔事实〕；已收录68条朝阳公交线路【E-034】〔事实〕；提供换乘查询、站点查询和线路查询功能【E-035】〔事实〕；列出中心医院、龙山街等热门公交站点【E-036】〔事实〕；含公交小百科，解释调度空驶时间的含义【E-037】〔事实〕；自述为查找公交、地铁及换乘信息的网站【E-038】〔事实〕。可推断这些资料能说明公交供给查询范围，但不能说明低碳政策效果〔推断〕。除朝阳资料标题含2026年版外，上述证据未给出来源发布或数据日期，时效性无法判断〔推断〕。\n## 数据可靠性与免责说明\n资料声明查询数据仅供用户参考，具体以官方数据为准【E-007】〔事实〕；所提供数据仅供参考，使用数据造成损害不承担责任【E-029】〔事实〕；免责声明称内容系自动搜索结果，不代表网站立场【E-040】〔事实〕。因此，引用这些数据需谨慎，不能作为政策效果因果证据〔推断〕。\n## 行政区划背景信息\n资料介绍我国现有694个城市，含4个直辖市、293个地级市、397个县级市【E-010】〔事实〕；行政区划应保持总体稳定，变更须逐级上报审批【E-011】〔事实〕；变更方针包含推进城乡发展一体化、促进人与自然和谐发展【E-012】〔事实〕；全国地级市最多的省级行政单位是广东省，有21个地级市【E-013】〔事实〕；新疆维吾尔自治区县级市最多，有29个县级市【E-014】〔事实〕；部分县级市属省或自治区直辖，如济源市、仙桃市等【E-015】〔事实〕。可推断这些是城市治理背景信息，不构成交通政策效果证据〔推断〕。\n## 结论与待补证据清单\n综合上述，拥堵查询资料未涉及低碳交通政策效果与限制【E-008】〔事实〕；行政区划资料未提供交通政策实施效果或减排数据的证据【E-016】〔事实〕；公交查询资料不能用于评估城市低碳交通政策的效果与限制【E-031】〔事实〕，未提供公交出行碳排放影响或低碳政策评估数据【E-032】〔事实〕；朝阳公交查询资料未提供城市低碳交通政策效果与限制的信息【E-039】〔事实〕。因此，就现有资料无法判断政策实施后拥堵是否下降、减排效果如何、公交优先落实效果、限制因素及多城市比较〔推断〕。本报告归纳的待补证据包括：政策实施前后同口径交通拥堵数据、交通碳排放与减排量化数据、政策执行与效果评估材料、政策评估报告或案例研究或官方总结、多城市统一指标与可比数据〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 5,
+    "statuses": {
+      "ok": 5,
+      "empty": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 40 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T09:27:01"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "7 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T09:27:27"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T09:27:30"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "11 个章节",
+        "finished_at": "2026-09-20T09:27:37"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2596字）",
+        "finished_at": "2026-09-20T09:28:12"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 19,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T09:29:24"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T09:30:17"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 11,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-20T09:31:14"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 48,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.chazhengbao.com/yongdu/chongqing/",
+      "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+      "https://www.sohu.com/a/923495885_100199096",
+      "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+      "https://www.bashi.cn/liaoning/",
+      "https://jiaxiao.miaoso.com/bus/chaoyang/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 政策效果",
+        "rank": 3,
+        "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+        "url": "https://www.chazhengbao.com/yongdu/chongqing/",
+        "snippet": "1 小时前 · 查证宝提供今日重庆拥堵情况，重庆拥堵指数查询，全天24小时实时查询重庆重点区域拥堵情况，重庆早晚高峰时间段拥堵 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 政策效果",
+        "rank": 2,
+        "title": "百度地图交通出行大数据平台 - Baidu",
+        "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+        "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "城市交通 碳减排 政策限制",
+        "rank": 2,
+        "title": "全国694个城市名单来了，快来看看有无你家乡",
+        "url": "https://www.sohu.com/a/923495885_100199096",
+        "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+        "published_date": "2025-08-13",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "城市交通 碳减排 政策限制",
+        "rank": 4,
+        "title": "中共中央 国务院关于推动城市高质量发展的意见",
+        "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+        "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+        "published_date": "2025-08-28",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交优先 慢行交通 低碳出行",
+        "rank": 1,
+        "title": "辽宁公交查询_辽宁城市地区公交线路查询 - 辽宁巴士网",
+        "url": "https://www.bashi.cn/liaoning/",
+        "snippet": "辽宁巴士网提供辽宁省城市地区公交车线路查询，包括辽宁最近热搜线路、热搜公交站等信息。",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交优先 慢行交通 低碳出行",
+        "rank": 4,
+        "title": "朝阳公交2026版 (68条线路)-朝阳公交查询-朝阳公交线路查询 ...",
+        "url": "https://jiaxiao.miaoso.com/bus/chaoyang/",
+        "snippet": "1 天前 · 妙搜朝阳公交线路大全2026年版提供68条公交线路（含地铁）朝阳公交线路、朝阳公交运营时刻表、朝阳公交站点、朝阳换 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "低碳交通政策 减排效果 量化评估",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "低_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BD%8E/4417971",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "低的意思,低的解释,低的拼音,低的部首,低的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-20302",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "【低】的笔顺（笔画顺序） - 一笔一画动态演示与详细图解 ...",
+            "url": "https://www.strokeorder.cc/hanzi/%E4%BD%8E",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《低》的拼音,低字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/12faead3.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "低怎么读_低的拼音 - 新华字典",
+            "url": "https://zidian.gushici.net/7/4f4e.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.238,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 低排放区 政策效果",
+        "urls": [
+          "https://www.chazhengbao.com/yongdu/chongqing/",
+          "https://jiaotong.baidu.com/congestion/city/urbanrealtime/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 低排放区 政策效果",
+            "rank": 3,
+            "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+            "url": "https://www.chazhengbao.com/yongdu/chongqing/",
+            "snippet": "1 小时前 · 查证宝提供今日重庆拥堵情况，重庆拥堵指数查询，全天24小时实时查询重庆重点区域拥堵情况，重庆早晚高峰时间段拥堵 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 低排放区 政策效果",
+            "rank": 2,
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "今日重庆拥堵情况-重庆拥堵指数查询 - 查证宝",
+            "url": "https://www.chazhengbao.com/yongdu/chongqing/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "relevance": 0.056,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%8B%A5%E5%A0%B5/9435866",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "城市交通拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%B8%82%E4%BA%A4%E9%80%9A%E6%8B%A5%E5%A0%B5/12582908",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urban",
+            "relevance": 0.056,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.21,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "城市交通 碳减排 政策限制",
+        "urls": [
+          "https://www.sohu.com/a/923495885_100199096",
+          "https://www.gov.cn/zhengce/202508/content_7038144.htm"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "城市交通 碳减排 政策限制",
+            "rank": 2,
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+            "published_date": "2025-08-13",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "城市交通 碳减排 政策限制",
+            "rank": 4,
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+            "published_date": "2025-08-28",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "城市（地理学名词）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%B8%82/33549",
+            "relevance": 0.125,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "市（中华人民共和国行政区划）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%B8%82/7149823",
+            "relevance": 0.062,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "揭榜！最新全国100强城市排行_腾讯新闻",
+            "url": "https://news.qq.com/rain/a/20260617A04CHO00",
+            "relevance": 0.125,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.226,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交优先 慢行交通 低碳出行",
+        "urls": [
+          "https://www.bashi.cn/liaoning/",
+          "https://jiaxiao.miaoso.com/bus/chaoyang/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "公交优先 慢行交通 低碳出行",
+            "rank": 1,
+            "title": "辽宁公交查询_辽宁城市地区公交线路查询 - 辽宁巴士网",
+            "url": "https://www.bashi.cn/liaoning/",
+            "snippet": "辽宁巴士网提供辽宁省城市地区公交车线路查询，包括辽宁最近热搜线路、热搜公交站等信息。",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "公交优先 慢行交通 低碳出行",
+            "rank": 4,
+            "title": "朝阳公交2026版 (68条线路)-朝阳公交查询-朝阳公交线路查询 ...",
+            "url": "https://jiaxiao.miaoso.com/bus/chaoyang/",
+            "snippet": "1 天前 · 妙搜朝阳公交线路大全2026年版提供68条公交线路（含地铁）朝阳公交线路、朝阳公交运营时刻表、朝阳公交站点、朝阳换 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "辽宁公交查询_辽宁城市地区公交线路查询 - 辽宁巴士网",
+            "url": "https://www.bashi.cn/liaoning/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "朝阳公交2026版 (68条线路)-朝阳公交查询-朝阳公交线路查询 ...",
+            "url": "https://jiaxiao.miaoso.com/bus/chaoyang/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "朝阳公交_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%85%AC%E4%BA%A4/53166418",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "高德地图",
+            "url": "https://gaode.com/",
+            "relevance": 0.056,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "朝阳公交查询_朝阳公交路线_8684公交",
+            "url": "https://chaoyang.8684.com.cn/",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.211,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（城市低碳交通政策的效果与限制）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "manager_worker"
+        ]
+      },
+      "scheduler_elapsed_seconds": 34.676,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

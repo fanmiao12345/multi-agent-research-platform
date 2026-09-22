@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-025）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-026）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-028）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "missing",
+   "message": "第1节未界定开源、开放权重与可商用声明的区别，仅罗列主张，未满足提纲界定要求。"
+  },
+  {
+   "severity": "error",
+   "code": "conflict",
+   "message": "E-033已称全文仅「加载中」无可核查内容，末句又称是否含商业模式信息未知，前后矛盾。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-009仅称使用开源模型可减少支出并保持私密，报告去来源标为事实，易被读成已证实。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-016仅称「其开放权重且开源」，报告写「Ollama称其模型」，添加「模型」且归属不够明确。"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "第5节对支出与隐私仅复述主张，未分析成本机制、隐私边界或数据训练承诺约束。"
+  }
+ ]
+}

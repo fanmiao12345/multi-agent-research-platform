@@ -1,0 +1,2834 @@
+{
+  "source_id": "src_c0c04a49d9",
+  "kind": "url",
+  "display": "向日葵远程控制电脑_远程桌面管理工具_远程控制电脑手机-贝锐向日葵",
+  "original_address": "https://sunlogin.oray.com/product/feat",
+  "title": "向日葵远程控制电脑_远程桌面管理工具_远程控制电脑手机-贝锐向日葵",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 14449,
+  "content_hash": "33774093fa04cde42550f68a6a6ed029a16fdca752c23e541a15939b13b62caf",
+  "normalized_hash": "e7337a217bb13f3729d87ecae7f3d5fe15588b184620f4825586cae45a425415",
+  "captured_at": "2026-09-18T13:41:32",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_c0c04a49d9.md",
+  "encoding": "utf-8",
+  "segment_count": 400,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 3,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 4,
+      "end": 11,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 12,
+      "end": 17,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 18,
+      "end": 23,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 24,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 30,
+      "end": 42,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 43,
+      "end": 48,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 49,
+      "end": 54,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 55,
+      "end": 65,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 66,
+      "end": 73,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 74,
+      "end": 83,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 84,
+      "end": 105,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 106,
+      "end": 126,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 127,
+      "end": 147,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 148,
+      "end": 165,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 166,
+      "end": 180,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 181,
+      "end": 202,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 203,
+      "end": 220,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 221,
+      "end": 237,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 238,
+      "end": 256,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 257,
+      "end": 271,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 272,
+      "end": 289,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 290,
+      "end": 307,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 308,
+      "end": 323,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 324,
+      "end": 329,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 330,
+      "end": 335,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 336,
+      "end": 343,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 344,
+      "end": 351,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 352,
+      "end": 366,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 367,
+      "end": 377,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 378,
+      "end": 392,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 393,
+      "end": 412,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 413,
+      "end": 432,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 433,
+      "end": 451,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 452,
+      "end": 465,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 466,
+      "end": 479,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 480,
+      "end": 492,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 493,
+      "end": 515,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 516,
+      "end": 533,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 534,
+      "end": 555,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 556,
+      "end": 572,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 573,
+      "end": 592,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 593,
+      "end": 601,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 602,
+      "end": 618,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 619,
+      "end": 637,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 638,
+      "end": 647,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 648,
+      "end": 653,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 47,
+      "start": 654,
+      "end": 663,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 48,
+      "start": 664,
+      "end": 669,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 49,
+      "start": 670,
+      "end": 679,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 50,
+      "start": 680,
+      "end": 684,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 51,
+      "start": 685,
+      "end": 691,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 52,
+      "start": 692,
+      "end": 697,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 53,
+      "start": 698,
+      "end": 701,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 54,
+      "start": 702,
+      "end": 707,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 55,
+      "start": 708,
+      "end": 713,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 56,
+      "start": 714,
+      "end": 719,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 57,
+      "start": 720,
+      "end": 725,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 58,
+      "start": 726,
+      "end": 736,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 59,
+      "start": 737,
+      "end": 743,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 60,
+      "start": 744,
+      "end": 751,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 61,
+      "start": 752,
+      "end": 757,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 62,
+      "start": 758,
+      "end": 761,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 63,
+      "start": 762,
+      "end": 765,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 64,
+      "start": 766,
+      "end": 771,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 65,
+      "start": 772,
+      "end": 775,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 66,
+      "start": 776,
+      "end": 780,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 67,
+      "start": 781,
+      "end": 785,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 68,
+      "start": 786,
+      "end": 790,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 69,
+      "start": 791,
+      "end": 795,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 70,
+      "start": 796,
+      "end": 802,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 71,
+      "start": 803,
+      "end": 806,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 72,
+      "start": 807,
+      "end": 812,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 73,
+      "start": 813,
+      "end": 818,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 74,
+      "start": 819,
+      "end": 824,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 75,
+      "start": 825,
+      "end": 830,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 76,
+      "start": 831,
+      "end": 833,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 77,
+      "start": 834,
+      "end": 837,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 78,
+      "start": 838,
+      "end": 840,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 79,
+      "start": 841,
+      "end": 846,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 80,
+      "start": 847,
+      "end": 849,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 81,
+      "start": 850,
+      "end": 855,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 82,
+      "start": 856,
+      "end": 858,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 83,
+      "start": 859,
+      "end": 861,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 84,
+      "start": 862,
+      "end": 867,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 85,
+      "start": 868,
+      "end": 871,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 86,
+      "start": 872,
+      "end": 875,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 87,
+      "start": 876,
+      "end": 878,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 88,
+      "start": 879,
+      "end": 882,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 89,
+      "start": 883,
+      "end": 894,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 90,
+      "start": 895,
+      "end": 906,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 91,
+      "start": 907,
+      "end": 918,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 92,
+      "start": 919,
+      "end": 930,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 93,
+      "start": 931,
+      "end": 941,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 94,
+      "start": 942,
+      "end": 952,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 95,
+      "start": 953,
+      "end": 958,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 96,
+      "start": 959,
+      "end": 964,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 97,
+      "start": 965,
+      "end": 970,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 98,
+      "start": 971,
+      "end": 976,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 99,
+      "start": 977,
+      "end": 982,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 100,
+      "start": 983,
+      "end": 986,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 101,
+      "start": 987,
+      "end": 990,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 102,
+      "start": 991,
+      "end": 994,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 103,
+      "start": 995,
+      "end": 998,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 104,
+      "start": 999,
+      "end": 1004,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 105,
+      "start": 1005,
+      "end": 1017,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 106,
+      "start": 1018,
+      "end": 1023,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 107,
+      "start": 1024,
+      "end": 1027,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 108,
+      "start": 1028,
+      "end": 1031,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 109,
+      "start": 1032,
+      "end": 1037,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 110,
+      "start": 1038,
+      "end": 1041,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 111,
+      "start": 1042,
+      "end": 1045,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 112,
+      "start": 1046,
+      "end": 1051,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 113,
+      "start": 1052,
+      "end": 1058,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 114,
+      "start": 1059,
+      "end": 1064,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 115,
+      "start": 1065,
+      "end": 1070,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 116,
+      "start": 1071,
+      "end": 1074,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 117,
+      "start": 1075,
+      "end": 1078,
+      "page": null
+    },
+    {
+      "heading": "#### 控制电脑",
+      "paragraph": 118,
+      "start": 1118,
+      "end": 1130,
+      "page": null
+    },
+    {
+      "heading": "#### 控制手机",
+      "paragraph": 119,
+      "start": 1142,
+      "end": 1151,
+      "page": null
+    },
+    {
+      "heading": "#### 远程游戏",
+      "paragraph": 120,
+      "start": 1163,
+      "end": 1174,
+      "page": null
+    },
+    {
+      "heading": "#### 安全守护",
+      "paragraph": 121,
+      "start": 1186,
+      "end": 1200,
+      "page": null
+    },
+    {
+      "heading": "#### 校园VIP",
+      "paragraph": 122,
+      "start": 1213,
+      "end": 1230,
+      "page": null
+    },
+    {
+      "heading": "#### P1Pro 蓝牙绑定 4孔独立分控",
+      "paragraph": 123,
+      "start": 1267,
+      "end": 1284,
+      "page": null
+    },
+    {
+      "heading": "#### P4 3孔独立分控 4G版",
+      "paragraph": 124,
+      "start": 1305,
+      "end": 1318,
+      "page": null
+    },
+    {
+      "heading": "#### C4 4G网络 电量统计",
+      "paragraph": 125,
+      "start": 1379,
+      "end": 1393,
+      "page": null
+    },
+    {
+      "heading": "#### MM110 蓝牙",
+      "paragraph": 126,
+      "start": 1409,
+      "end": 1427,
+      "page": null
+    },
+    {
+      "heading": "#### Q1 消费级 小巧便携",
+      "paragraph": 127,
+      "start": 1446,
+      "end": 1454,
+      "page": null
+    },
+    {
+      "heading": "#### IT运维",
+      "paragraph": 128,
+      "start": 1491,
+      "end": 1503,
+      "page": null
+    },
+    {
+      "heading": "#### 技术支持",
+      "paragraph": 129,
+      "start": 1515,
+      "end": 1526,
+      "page": null
+    },
+    {
+      "heading": "#### 远程办公",
+      "paragraph": 130,
+      "start": 1538,
+      "end": 1549,
+      "page": null
+    },
+    {
+      "heading": "#### 全球跨境远控",
+      "paragraph": 131,
+      "start": 1573,
+      "end": 1583,
+      "page": null
+    },
+    {
+      "heading": "#### 屏幕墙",
+      "paragraph": 132,
+      "start": 1594,
+      "end": 1604,
+      "page": null
+    },
+    {
+      "heading": "#### 移动设备远控",
+      "paragraph": 133,
+      "start": 1618,
+      "end": 1632,
+      "page": null
+    },
+    {
+      "heading": "#### 海量设备运维",
+      "paragraph": 134,
+      "start": 1646,
+      "end": 1656,
+      "page": null
+    },
+    {
+      "heading": "#### 无网远控",
+      "paragraph": 135,
+      "start": 1668,
+      "end": 1679,
+      "page": null
+    },
+    {
+      "heading": "#### 文件/脚本分发",
+      "paragraph": 136,
+      "start": 1694,
+      "end": 1704,
+      "page": null
+    },
+    {
+      "heading": "#### 云录像",
+      "paragraph": 137,
+      "start": 1715,
+      "end": 1725,
+      "page": null
+    },
+    {
+      "heading": "#### IT资产管理",
+      "paragraph": 138,
+      "start": 1739,
+      "end": 1749,
+      "page": null
+    },
+    {
+      "heading": "#### AI审计报告",
+      "paragraph": 139,
+      "start": 1763,
+      "end": 1773,
+      "page": null
+    },
+    {
+      "heading": "#### 无感守护",
+      "paragraph": 140,
+      "start": 1785,
+      "end": 1795,
+      "page": null
+    },
+    {
+      "heading": "#### Q2Pro 工业级 4G版",
+      "paragraph": 141,
+      "start": 1828,
+      "end": 1836,
+      "page": null
+    },
+    {
+      "heading": "#### 控控A2 企业级",
+      "paragraph": 142,
+      "start": 1852,
+      "end": 1860,
+      "page": null
+    },
+    {
+      "heading": "#### Q1 消费级 小巧便携",
+      "paragraph": 143,
+      "start": 1879,
+      "end": 1887,
+      "page": null
+    },
+    {
+      "heading": "#### Q0.5 企业级 即插即用",
+      "paragraph": 144,
+      "start": 1908,
+      "end": 1917,
+      "page": null
+    },
+    {
+      "heading": "#### 智能PDU P8 企业级",
+      "paragraph": 145,
+      "start": 1937,
+      "end": 1946,
+      "page": null
+    },
+    {
+      "heading": "#### P4 3孔独立分控 4G版",
+      "paragraph": 146,
+      "start": 1967,
+      "end": 1980,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 147,
+      "start": 1995,
+      "end": 2000,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 148,
+      "start": 2001,
+      "end": 2006,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 149,
+      "start": 2007,
+      "end": 2011,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 150,
+      "start": 2012,
+      "end": 2018,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 151,
+      "start": 2019,
+      "end": 2024,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 152,
+      "start": 2025,
+      "end": 2028,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 153,
+      "start": 2029,
+      "end": 2034,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 154,
+      "start": 2035,
+      "end": 2040,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 155,
+      "start": 2041,
+      "end": 2046,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 156,
+      "start": 2047,
+      "end": 2052,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 157,
+      "start": 2053,
+      "end": 2062,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 158,
+      "start": 2063,
+      "end": 2090,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 159,
+      "start": 2091,
+      "end": 2096,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 160,
+      "start": 2097,
+      "end": 2124,
+      "page": null
+    },
+    {
+      "heading": "##### 行业解决方案",
+      "paragraph": 161,
+      "start": 2125,
+      "end": 2139,
+      "page": null
+    },
+    {
+      "heading": "#### 无网远控",
+      "paragraph": 162,
+      "start": 2352,
+      "end": 2396,
+      "page": null
+    },
+    {
+      "heading": "#### 智能PDU · 远程监测机柜设备",
+      "paragraph": 163,
+      "start": 2420,
+      "end": 2435,
+      "page": null
+    },
+    {
+      "heading": "#### 开机盒子 · WOL",
+      "paragraph": 164,
+      "start": 2453,
+      "end": 2478,
+      "page": null
+    },
+    {
+      "heading": "#### 开机插线板 · AC Recovery",
+      "paragraph": 165,
+      "start": 2505,
+      "end": 2536,
+      "page": null
+    },
+    {
+      "heading": "#### 开机插座 · 先关机再断电",
+      "paragraph": 166,
+      "start": 2557,
+      "end": 2599,
+      "page": null
+    },
+    {
+      "heading": "#### 蓝牙鼠标 · 协助移动设备远控",
+      "paragraph": 167,
+      "start": 2622,
+      "end": 2631,
+      "page": null
+    },
+    {
+      "heading": "#### 私有化部署",
+      "paragraph": 168,
+      "start": 2644,
+      "end": 2654,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 169,
+      "start": 2672,
+      "end": 2681,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 170,
+      "start": 2682,
+      "end": 2699,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 171,
+      "start": 2700,
+      "end": 2712,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 172,
+      "start": 2713,
+      "end": 2720,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 173,
+      "start": 2721,
+      "end": 2731,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 174,
+      "start": 2732,
+      "end": 2756,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 175,
+      "start": 2757,
+      "end": 2766,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 176,
+      "start": 2767,
+      "end": 2770,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 177,
+      "start": 2771,
+      "end": 2784,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 178,
+      "start": 2785,
+      "end": 2804,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 179,
+      "start": 2805,
+      "end": 2811,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 180,
+      "start": 2812,
+      "end": 2821,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 181,
+      "start": 2822,
+      "end": 2840,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 182,
+      "start": 2841,
+      "end": 2851,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 183,
+      "start": 2852,
+      "end": 2864,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 184,
+      "start": 2865,
+      "end": 2867,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 185,
+      "start": 2868,
+      "end": 2874,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 186,
+      "start": 2875,
+      "end": 2885,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 187,
+      "start": 2886,
+      "end": 2899,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 188,
+      "start": 2900,
+      "end": 2915,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 189,
+      "start": 2916,
+      "end": 2923,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 190,
+      "start": 2924,
+      "end": 2933,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 191,
+      "start": 2934,
+      "end": 2955,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 192,
+      "start": 2956,
+      "end": 2971,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 193,
+      "start": 2972,
+      "end": 2985,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 194,
+      "start": 2986,
+      "end": 2993,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 195,
+      "start": 2994,
+      "end": 2999,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 196,
+      "start": 3000,
+      "end": 3039,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 197,
+      "start": 3040,
+      "end": 3059,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 198,
+      "start": 3060,
+      "end": 3065,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 199,
+      "start": 3066,
+      "end": 3088,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 200,
+      "start": 3089,
+      "end": 3096,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 201,
+      "start": 3097,
+      "end": 3125,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 202,
+      "start": 3126,
+      "end": 3134,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 203,
+      "start": 3135,
+      "end": 3184,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 204,
+      "start": 3185,
+      "end": 3194,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 205,
+      "start": 3195,
+      "end": 3203,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 206,
+      "start": 3204,
+      "end": 3213,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 207,
+      "start": 3214,
+      "end": 3222,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 208,
+      "start": 3223,
+      "end": 3228,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 209,
+      "start": 3229,
+      "end": 3246,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 210,
+      "start": 3247,
+      "end": 3291,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 211,
+      "start": 3292,
+      "end": 3299,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 212,
+      "start": 3300,
+      "end": 3302,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 213,
+      "start": 3303,
+      "end": 3347,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 214,
+      "start": 3348,
+      "end": 3359,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 215,
+      "start": 3360,
+      "end": 3413,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 216,
+      "start": 3414,
+      "end": 3431,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 217,
+      "start": 3432,
+      "end": 3496,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 218,
+      "start": 3497,
+      "end": 3517,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 219,
+      "start": 3518,
+      "end": 3534,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 220,
+      "start": 3535,
+      "end": 3554,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 221,
+      "start": 3555,
+      "end": 3581,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 222,
+      "start": 3582,
+      "end": 3594,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 223,
+      "start": 3595,
+      "end": 3629,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 224,
+      "start": 3630,
+      "end": 3665,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 225,
+      "start": 3666,
+      "end": 3679,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 226,
+      "start": 3680,
+      "end": 3700,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 227,
+      "start": 3701,
+      "end": 3728,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 228,
+      "start": 3729,
+      "end": 3738,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 229,
+      "start": 3739,
+      "end": 3748,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 230,
+      "start": 3749,
+      "end": 3779,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 231,
+      "start": 3780,
+      "end": 3799,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 232,
+      "start": 3800,
+      "end": 3805,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 233,
+      "start": 3806,
+      "end": 3811,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 234,
+      "start": 3812,
+      "end": 3850,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 235,
+      "start": 3851,
+      "end": 3961,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 236,
+      "start": 3962,
+      "end": 3968,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 237,
+      "start": 3969,
+      "end": 3996,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 238,
+      "start": 3997,
+      "end": 4002,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 239,
+      "start": 4003,
+      "end": 4024,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 240,
+      "start": 4025,
+      "end": 4031,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 241,
+      "start": 4032,
+      "end": 4054,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 242,
+      "start": 4055,
+      "end": 4062,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 243,
+      "start": 4063,
+      "end": 4078,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 244,
+      "start": 4079,
+      "end": 4107,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 245,
+      "start": 4108,
+      "end": 4116,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 246,
+      "start": 4117,
+      "end": 4146,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 247,
+      "start": 4147,
+      "end": 4152,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 248,
+      "start": 4153,
+      "end": 4161,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 249,
+      "start": 4162,
+      "end": 4189,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 250,
+      "start": 4190,
+      "end": 4198,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 251,
+      "start": 4199,
+      "end": 4221,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 252,
+      "start": 4222,
+      "end": 4231,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 253,
+      "start": 4232,
+      "end": 4257,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 254,
+      "start": 4258,
+      "end": 4264,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 255,
+      "start": 4265,
+      "end": 4285,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 256,
+      "start": 4286,
+      "end": 4291,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 257,
+      "start": 4292,
+      "end": 4300,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 258,
+      "start": 4301,
+      "end": 4343,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 259,
+      "start": 4344,
+      "end": 4349,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 260,
+      "start": 4350,
+      "end": 4369,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 261,
+      "start": 4370,
+      "end": 4375,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 262,
+      "start": 4376,
+      "end": 4392,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 263,
+      "start": 4393,
+      "end": 4401,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 264,
+      "start": 4402,
+      "end": 4420,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 265,
+      "start": 4421,
+      "end": 4428,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 266,
+      "start": 4429,
+      "end": 4434,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 267,
+      "start": 4435,
+      "end": 4453,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 268,
+      "start": 4454,
+      "end": 4460,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 269,
+      "start": 4461,
+      "end": 4480,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 270,
+      "start": 4481,
+      "end": 4500,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 271,
+      "start": 4501,
+      "end": 4508,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 272,
+      "start": 4509,
+      "end": 4521,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 273,
+      "start": 4522,
+      "end": 4527,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 274,
+      "start": 4528,
+      "end": 4540,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 275,
+      "start": 4541,
+      "end": 4549,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 276,
+      "start": 4550,
+      "end": 4572,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 277,
+      "start": 4573,
+      "end": 4580,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 278,
+      "start": 4581,
+      "end": 4618,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 279,
+      "start": 4619,
+      "end": 4638,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 280,
+      "start": 4639,
+      "end": 4650,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 281,
+      "start": 4651,
+      "end": 4663,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 282,
+      "start": 4664,
+      "end": 4667,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 283,
+      "start": 4668,
+      "end": 4673,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 284,
+      "start": 4674,
+      "end": 4681,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 285,
+      "start": 4682,
+      "end": 4685,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 286,
+      "start": 4686,
+      "end": 4691,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 287,
+      "start": 4692,
+      "end": 4699,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 288,
+      "start": 4700,
+      "end": 4703,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 289,
+      "start": 4704,
+      "end": 4709,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 290,
+      "start": 4710,
+      "end": 4717,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 291,
+      "start": 4718,
+      "end": 4725,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 292,
+      "start": 4726,
+      "end": 4742,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 293,
+      "start": 4743,
+      "end": 4760,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 294,
+      "start": 4761,
+      "end": 4767,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 295,
+      "start": 4768,
+      "end": 4785,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 296,
+      "start": 4786,
+      "end": 4800,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 297,
+      "start": 4801,
+      "end": 4808,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 298,
+      "start": 4809,
+      "end": 4838,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 299,
+      "start": 4839,
+      "end": 4846,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 300,
+      "start": 4847,
+      "end": 4893,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 301,
+      "start": 4894,
+      "end": 4901,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 302,
+      "start": 4902,
+      "end": 4944,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 303,
+      "start": 4945,
+      "end": 4956,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 304,
+      "start": 4957,
+      "end": 4998,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 305,
+      "start": 4999,
+      "end": 5009,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 306,
+      "start": 5010,
+      "end": 5052,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 307,
+      "start": 5053,
+      "end": 5060,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 308,
+      "start": 5061,
+      "end": 5099,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 309,
+      "start": 5100,
+      "end": 5117,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 310,
+      "start": 5118,
+      "end": 5125,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 311,
+      "start": 5126,
+      "end": 5158,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 312,
+      "start": 5159,
+      "end": 5165,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 313,
+      "start": 5166,
+      "end": 5196,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 314,
+      "start": 5197,
+      "end": 5204,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 315,
+      "start": 5205,
+      "end": 5234,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 316,
+      "start": 5235,
+      "end": 5252,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 317,
+      "start": 5253,
+      "end": 5260,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 318,
+      "start": 5261,
+      "end": 5307,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 319,
+      "start": 5308,
+      "end": 5315,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 320,
+      "start": 5316,
+      "end": 5358,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 321,
+      "start": 5359,
+      "end": 5370,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 322,
+      "start": 5371,
+      "end": 5412,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 323,
+      "start": 5413,
+      "end": 5430,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 324,
+      "start": 5431,
+      "end": 5441,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 325,
+      "start": 5442,
+      "end": 5484,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 326,
+      "start": 5485,
+      "end": 5492,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 327,
+      "start": 5493,
+      "end": 5531,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 328,
+      "start": 5532,
+      "end": 5546,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 329,
+      "start": 5547,
+      "end": 5557,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 330,
+      "start": 5558,
+      "end": 5565,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 331,
+      "start": 5566,
+      "end": 5572,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 332,
+      "start": 5573,
+      "end": 5581,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 333,
+      "start": 5582,
+      "end": 5590,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 334,
+      "start": 5591,
+      "end": 5600,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 335,
+      "start": 5601,
+      "end": 5607,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 336,
+      "start": 5608,
+      "end": 5618,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 337,
+      "start": 5619,
+      "end": 5627,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 338,
+      "start": 5628,
+      "end": 5638,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 339,
+      "start": 5639,
+      "end": 5644,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 340,
+      "start": 5645,
+      "end": 5650,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 341,
+      "start": 5651,
+      "end": 5656,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 342,
+      "start": 5657,
+      "end": 5704,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 343,
+      "start": 5705,
+      "end": 5721,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 344,
+      "start": 5722,
+      "end": 5727,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 345,
+      "start": 5728,
+      "end": 5737,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 346,
+      "start": 5738,
+      "end": 5743,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 347,
+      "start": 5744,
+      "end": 5759,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 348,
+      "start": 5760,
+      "end": 5766,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 349,
+      "start": 5767,
+      "end": 5772,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 350,
+      "start": 5773,
+      "end": 5778,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 351,
+      "start": 5779,
+      "end": 5784,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 352,
+      "start": 5785,
+      "end": 5791,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 353,
+      "start": 5792,
+      "end": 5801,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 354,
+      "start": 5802,
+      "end": 5817,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 355,
+      "start": 5818,
+      "end": 5837,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 356,
+      "start": 5838,
+      "end": 5847,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 357,
+      "start": 5848,
+      "end": 5863,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 358,
+      "start": 5864,
+      "end": 5883,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 359,
+      "start": 5884,
+      "end": 5889,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 360,
+      "start": 5890,
+      "end": 5895,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 361,
+      "start": 5896,
+      "end": 5901,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 362,
+      "start": 5902,
+      "end": 5907,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 363,
+      "start": 5908,
+      "end": 5913,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 364,
+      "start": 5914,
+      "end": 5919,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 365,
+      "start": 5920,
+      "end": 5937,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 366,
+      "start": 5938,
+      "end": 5953,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 367,
+      "start": 5954,
+      "end": 5973,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 368,
+      "start": 5974,
+      "end": 5979,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 369,
+      "start": 5980,
+      "end": 5985,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 370,
+      "start": 5986,
+      "end": 5991,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 371,
+      "start": 5992,
+      "end": 5997,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 372,
+      "start": 5998,
+      "end": 6001,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 373,
+      "start": 6002,
+      "end": 6009,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 374,
+      "start": 6010,
+      "end": 6017,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 375,
+      "start": 6018,
+      "end": 6024,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 376,
+      "start": 6025,
+      "end": 6030,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 377,
+      "start": 6031,
+      "end": 6037,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 378,
+      "start": 6038,
+      "end": 6043,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 379,
+      "start": 6044,
+      "end": 6049,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 380,
+      "start": 6050,
+      "end": 6053,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 381,
+      "start": 6054,
+      "end": 6060,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 382,
+      "start": 6061,
+      "end": 6066,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 383,
+      "start": 6067,
+      "end": 6082,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 384,
+      "start": 6083,
+      "end": 6102,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 385,
+      "start": 6103,
+      "end": 6118,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 386,
+      "start": 6119,
+      "end": 6132,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 387,
+      "start": 6133,
+      "end": 6138,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 388,
+      "start": 6139,
+      "end": 6144,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 389,
+      "start": 6145,
+      "end": 6150,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 390,
+      "start": 6151,
+      "end": 6156,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 391,
+      "start": 6157,
+      "end": 6177,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 392,
+      "start": 6178,
+      "end": 6186,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 393,
+      "start": 6187,
+      "end": 6221,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 394,
+      "start": 6222,
+      "end": 6230,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 395,
+      "start": 6231,
+      "end": 6265,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 396,
+      "start": 6266,
+      "end": 6282,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 397,
+      "start": 6283,
+      "end": 6317,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 398,
+      "start": 6318,
+      "end": 6323,
+      "page": null
+    },
+    {
+      "heading": "#### 向日葵SDK/API",
+      "paragraph": 399,
+      "start": 6324,
+      "end": 6343,
+      "page": null
+    }
+  ],
+  "final_url": "https://sunlogin.oray.com/product/feat",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T13:41:32",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

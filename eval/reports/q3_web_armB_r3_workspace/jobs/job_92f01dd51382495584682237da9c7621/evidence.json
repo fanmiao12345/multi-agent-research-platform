@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_3e66e71add",
+      "fact": "本资料未涉及个人知识管理系统的检索与记忆设计。",
+      "tag": "I",
+      "quote": "“你的组织使用了 Windows defender 应用程序控制来阻止此应用”弹窗解决方案",
+      "start": 329,
+      "end": 374,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_90faaaf55a",
+      "fact": "本资料讨论金山毒霸与360安全卫士内核驱动高危漏洞。",
+      "tag": "F",
+      "quote": "金山毒霸、360 安全卫士被曝存在内核驱动高危漏洞",
+      "start": 329,
+      "end": 354,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_90faaaf55a",
+      "fact": "本资料未提供个人知识管理系统的检索与记忆设计相关内容。",
+      "tag": "I",
+      "quote": "金山毒霸、360 安全卫士被曝存在内核驱动高危漏洞",
+      "start": 329,
+      "end": 354,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料页面提供搜索入口。",
+      "tag": "F",
+      "quote": "搜索",
+      "start": 414,
+      "end": 416,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 51,
+        "start": 414,
+        "end": 417
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料页面列有最新、热门、随机排序选项。",
+      "tag": "F",
+      "quote": "最新\n\n热门\n\n随机",
+      "start": 326,
+      "end": 336,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 40,
+        "start": 326,
+        "end": 329
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料页面有全部类型、CSS、Tailwind类型筛选。",
+      "tag": "F",
+      "quote": "全部类型\n\nCSS\n\nTailwind",
+      "start": 338,
+      "end": 357,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 43,
+        "start": 338,
+        "end": 343
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料页面有全部主题、黑色、白色主题筛选。",
+      "tag": "F",
+      "quote": "全部主题\n\n黑色\n\n白色",
+      "start": 359,
+      "end": 371,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 46,
+        "start": 359,
+        "end": 364
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料页面展示卡片分类包括卡片、按钮、输入、表单、提示等。",
+      "tag": "F",
+      "quote": "卡片 全部 其他 切换 加载 单选 图案 复选 按钮 提示 表单 输入",
+      "start": 377,
+      "end": 412,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 50,
+        "start": 377,
+        "end": 413
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料页面提供分页导航，显示页码和下一页。",
+      "tag": "F",
+      "quote": "1 2 3 4 5 … 12 下一页",
+      "start": 2816,
+      "end": 2834,
+      "locator": {
+        "heading": "### Card卡片元素 [6429] | 带有动态效果的证书授予卡片组件",
+        "paragraph": 172,
+        "start": 2816,
+        "end": 2835
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料页面提供跳转到指定页并确定的功能。",
+      "tag": "F",
+      "quote": "跳转到 页 确定",
+      "start": 2836,
+      "end": 2844,
+      "locator": {
+        "heading": "### Card卡片元素 [6429] | 带有动态效果的证书授予卡片组件",
+        "paragraph": 173,
+        "start": 2836,
+        "end": 2845
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_2374da76d9",
+      "fact": "本资料导航中包含笔记项。",
+      "tag": "F",
+      "quote": "笔记",
+      "start": 110,
+      "end": 112,
+      "locator": {
+        "heading": "",
+        "paragraph": 18,
+        "start": 110,
+        "end": 113
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料围绕在线卡片制作，未涉及个人知识管理系统的检索或记忆设计。",
+      "tag": "I",
+      "quote": "在线卡片制作工具， 3倍更快 地创建任何卡片",
+      "start": 3584,
+      "end": 3606,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料提供超过5,000种可编辑卡片模板供浏览选择。",
+      "tag": "F",
+      "quote": "从超过5,000种可编辑的卡片设计模板中进行选择",
+      "start": 4081,
+      "end": 4105,
+      "locator": {
+        "heading": "### 即用模板",
+        "paragraph": 206,
+        "start": 4081,
+        "end": 4166
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料称可一次性设置品牌颜色和字体，新卡片自动匹配风格。",
+      "tag": "F",
+      "quote": "一次性设置您的品牌颜色和字体。每张您设计的新卡片都会自动匹配您的风格",
+      "start": 4017,
+      "end": 4051,
+      "locator": {
+        "heading": "### 快速个性化",
+        "paragraph": 205,
+        "start": 4004,
+        "end": 4070
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料提供智能布局建议，选择用途后给出布局、颜色和字体搭配。",
+      "tag": "F",
+      "quote": "选择您的用途，例如婚礼邀请函、感谢信或节日问候，并立即访问布局创意、颜色选项和字体搭配",
+      "start": 5973,
+      "end": 6016,
+      "locator": {
+        "heading": "### 智能布局建议",
+        "paragraph": 237,
+        "start": 5964,
+        "end": 6030
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料称AI生成的即时卡片创意可帮助不确定如何开始时启动设计。",
+      "tag": "F",
+      "quote": "获取由AI生成的即时卡片创意",
+      "start": 5007,
+      "end": 5021,
+      "locator": {
+        "heading": "### 在几秒钟内获取 卡片 点子",
+        "paragraph": 221,
+        "start": 4999,
+        "end": 5054
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料支持导出高分辨率PDF用于印刷，或JPG/PNG用于数字分享。",
+      "tag": "F",
+      "quote": "下载为高分辨率的PDF用于打印或JPG/PNG文件用于快速数字分享",
+      "start": 4850,
+      "end": 4883,
+      "locator": {
+        "heading": "### 随时随地打印和分享",
+        "paragraph": 219,
+        "start": 4850,
+        "end": 4909
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料称卡片创建器可在桌面、平板和手机上使用。",
+      "tag": "F",
+      "quote": "Zoviz的在线卡片创建器可以在桌面、平板电脑和手机上使用",
+      "start": 7355,
+      "end": 7384,
+      "locator": {
+        "heading": "#### 我可以在手机上创建卡片吗？",
+        "paragraph": 277,
+        "start": 7352,
+        "end": 7403
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_dec0da9b36",
+      "fact": "本资料称数字名片可将联系方式分享到他人可保存的卡片中。",
+      "tag": "F",
+      "quote": "将您的联系方式分享到一张他人可以保存的卡片中",
+      "start": 943,
+      "end": 965,
+      "locator": {
+        "heading": "## 您将要创建什么？",
+        "paragraph": 65,
+        "start": 943,
+        "end": 967
+      },
+      "note": ""
+    }
+  ]
+}

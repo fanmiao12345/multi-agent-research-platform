@@ -1,0 +1,465 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_73069a6e08",
+      "fact": "本资料为一款免费AI视频生成器的产品介绍页面。",
+      "tag": "F",
+      "quote": "文字、图片、声音一体的AI视频生成器",
+      "start": 35,
+      "end": 53,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_73069a6e08",
+      "fact": "本资料称该工具支持文字转视频与图片转视频两种创作方式。",
+      "tag": "F",
+      "quote": "免费将文字或图片生成带有动态画面、对白和声音的AI视频。",
+      "start": 55,
+      "end": 83,
+      "locator": {
+        "heading": "# 文字、图片、声音一体的AI视频生成器",
+        "paragraph": 5,
+        "start": 55,
+        "end": 84
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_73069a6e08",
+      "fact": "本资料称MiniMax H3可同步生成画面运动、对白、音效与环境音。",
+      "tag": "F",
+      "quote": "它可同步生成画面运动、对白、音效和环境音，让整个场景更加协调自然。",
+      "start": 740,
+      "end": 773,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 31,
+        "start": 691,
+        "end": 774
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_73069a6e08",
+      "fact": "本资料列出的典型用例为营销人员、内容创作者与教育工作者。",
+      "tag": "F",
+      "quote": "内容创作者：用于TikTok、YouTube Shorts、Reels等社交媒体的短视频。",
+      "start": 2085,
+      "end": 2130,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 65,
+        "start": 2083,
+        "end": 2131
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_73069a6e08",
+      "fact": "本资料全篇围绕AI视频生成器及其常见问题，未涉及软件测试。",
+      "tag": "U",
+      "quote": "关于 AI 视频生成器的常见问题",
+      "start": 657,
+      "end": 673,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_73069a6e08",
+      "fact": "无法依据本资料判断生成式AI在软件测试中的应用趋势。",
+      "tag": "U",
+      "quote": "典型用例有哪些？",
+      "start": 2051,
+      "end": 2059,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 63,
+        "start": 2051,
+        "end": 2060
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_0c9e407298",
+      "fact": "本资料比较并排名250多个LLM在智能、价格、速度、上下文窗口等指标上的表现",
+      "tag": "F",
+      "quote": "比较并排名 250 多个 AI 模型（LLM）在智能、价格、性能与速度",
+      "start": 153,
+      "end": 188,
+      "locator": {
+        "heading": "# LLM 排行榜——比较 OpenAI、Anthropic、Google、SpaceXAI 等公司的 AI 模型",
+        "paragraph": 12,
+        "start": 153,
+        "end": 232
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_0c9e407298",
+      "fact": "本资料称Claude Fable 5.1是智能得分最高的模型，其后为GPT-6 Astra",
+      "tag": "F",
+      "quote": "是智能得分最高的模型，之后是 GPT-6 Astra (max)",
+      "start": 392,
+      "end": 424,
+      "locator": {
+        "heading": "#### 智能",
+        "paragraph": 16,
+        "start": 314,
+        "end": 448
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_0c9e407298",
+      "fact": "本资料排行榜可按模型类型（推理与非推理）、开放性（开放权重与专有）等条件筛选",
+      "tag": "F",
+      "quote": "排行榜提供筛选条件，可按模型类型（推理与非推理）、开放性（开放权重与专有）及其他标准缩小结果范围",
+      "start": 24108,
+      "end": 24156,
+      "locator": {
+        "heading": "### 如何筛选排行榜中的模型？",
+        "paragraph": 2745,
+        "start": 24108,
+        "end": 24185
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_0c9e407298",
+      "fact": "点击模型名称可查看智能、价格、速度、延迟等详细图表与API服务商比较",
+      "tag": "F",
+      "quote": "查看智能、价格、速度、延迟等详细图表",
+      "start": 24234,
+      "end": 24252,
+      "locator": {
+        "heading": "### 在哪里可以查看模型的更详细指标？",
+        "paragraph": 2746,
+        "start": 24208,
+        "end": 24281
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_0c9e407298",
+      "fact": "本资料设有「编程智能体」栏目，但正文未展开其具体内容",
+      "tag": "F",
+      "quote": "编程智能体",
+      "start": 49,
+      "end": 54,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 49,
+        "end": 55
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_0c9e407298",
+      "fact": "本资料提到推理模型会先扩展思考再作答，或可用于复杂测试设计，但资料未涉及测试",
+      "tag": "I",
+      "quote": "推理模型会先通过扩展思考来解决复杂问题，再给出回答",
+      "start": 24062,
+      "end": 24087,
+      "locator": {
+        "heading": "### 排行榜上最好的推理模型是哪个？",
+        "paragraph": 2744,
+        "start": 23950,
+        "end": 24089
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_0c9e407298",
+      "fact": "本资料通篇为模型排名与指标数据，未提及生成式AI在软件测试中的应用或趋势",
+      "tag": "I",
+      "quote": "LLM 排行榜——比较 OpenAI、Anthropic、Google、SpaceXAI 等公司的 AI 模型",
+      "start": 96,
+      "end": 151,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料标题为【大】的甲骨文金文篆文字形演变含义。",
+      "tag": "F",
+      "quote": "【大】的甲骨文金文篆文字形演变含义",
+      "start": 520,
+      "end": 537,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料发布日期为2023年3月19日，来源标注为甲骨文研究网。",
+      "tag": "F",
+      "quote": "日期：2023-03-19 来源： 甲骨文研究网",
+      "start": 539,
+      "end": 563,
+      "locator": {
+        "heading": "# 【大】的甲骨文金文篆文字形演变含义",
+        "paragraph": 27,
+        "start": 539,
+        "end": 574
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料内容为汉字「大」的甲骨文、金文、篆文字形与含义释义。",
+      "tag": "F",
+      "quote": "汉字的来历和演变",
+      "start": 582,
+      "end": 590,
+      "locator": {
+        "heading": "## 摘要",
+        "paragraph": 28,
+        "start": 582,
+        "end": 650
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料将「大」解释为大人、成年人。",
+      "tag": "F",
+      "quote": "大：大人。成年人。",
+      "start": 623,
+      "end": 632,
+      "locator": {
+        "heading": "## 摘要",
+        "paragraph": 28,
+        "start": 582,
+        "end": 650
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料认为「大」的甲骨文像张开双臂双腿、顶天立地的成年人。",
+      "tag": "F",
+      "quote": "像张开双臂双腿、顶天立地的成年人",
+      "start": 735,
+      "end": 751,
+      "locator": {
+        "heading": "## 甲骨文密码",
+        "paragraph": 35,
+        "start": 728,
+        "end": 819
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料引《说文解字》称天大、地大、人亦大，故「大」象人形。",
+      "tag": "F",
+      "quote": "大，天大，地大，人亦大。",
+      "start": 877,
+      "end": 889,
+      "locator": {
+        "heading": "## 甲骨文密码",
+        "paragraph": 37,
+        "start": 865,
+        "end": 904
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料的主题词均为「大」的字形、说文解字与词组解释。",
+      "tag": "F",
+      "quote": "相关热词搜索： 大的象形字 大的甲骨文 大的字形演变",
+      "start": 2918,
+      "end": 2944,
+      "locator": {
+        "heading": "## 文言文名句摘抄",
+        "paragraph": 81,
+        "start": 2918,
+        "end": 2973
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_92e1929e32",
+      "fact": "本资料未出现生成式人工智能或软件测试的相关内容，无法据此支撑该主题写作。",
+      "tag": "I",
+      "quote": "【甲骨密码】为本网观点，【其他解读】为摘录的别家观点",
+      "start": 2778,
+      "end": 2804,
+      "locator": {
+        "heading": "## 文言文名句摘抄",
+        "paragraph": 80,
+        "start": 2776,
+        "end": 2917
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_0ba86507d7",
+      "fact": "本资料是一个生成式AI工具导航站，按类别收录各类AIGC工具。",
+      "tag": "F",
+      "quote": "一个分类最全、收录最全的生成式AI工具导航",
+      "start": 2605,
+      "end": 2626,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_0ba86507d7",
+      "fact": "本资料列出的工具分类包括AI写作、AI绘画、AI视频、AI办公等。",
+      "tag": "F",
+      "quote": "分类包括 AI写作 、 AI绘画 、 AI视频 、 AI办公",
+      "start": 2628,
+      "end": 2658,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_0ba86507d7",
+      "fact": "本资料的分类中设有「AI编程工具」一项。",
+      "tag": "F",
+      "quote": "AI小说 、 AI编程 、 文本转语音 等 AI导航",
+      "start": 2728,
+      "end": 2754,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_0ba86507d7",
+      "fact": "本资料的分类清单中没有软件测试或测试自动化类目。",
+      "tag": "F",
+      "quote": "AI论文 、 AI简历 、 AI漫剧 、 AIGC检测 、 AI提示词",
+      "start": 2690,
+      "end": 2725,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_0ba86507d7",
+      "fact": "本资料称注册即可享受免费体验、免费tokens与积分赠送。",
+      "tag": "F",
+      "quote": "注册 即可享受免费体验、免费tokens、积分赠送！",
+      "start": 1311,
+      "end": 1337,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 147,
+        "start": 1216,
+        "end": 1338
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_0ba86507d7",
+      "fact": "本资料提供AIGC视频课，涵盖GPT进阶、AI绘画等教程。",
+      "tag": "F",
+      "quote": "AIGC教程涵盖了GPT进阶教程、AI绘画教程",
+      "start": 1354,
+      "end": 1377,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 149,
+        "start": 1354,
+        "end": 1425
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_0ba86507d7",
+      "fact": "软件测试工具或可归入本资料的AI编程工具类目，但资料未作说明。",
+      "tag": "I",
+      "quote": "AI编程工具",
+      "start": 828,
+      "end": 834,
+      "locator": {
+        "heading": "",
+        "paragraph": 101,
+        "start": 828,
+        "end": 835
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_3a45f80736",
+      "fact": "本资料主题为文生图、视频生成与智能画布，未涉及软件测试。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_3a45f80736",
+      "fact": "本资料未提供生成式AI在软件测试中应用趋势的信息。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    }
+  ]
+}

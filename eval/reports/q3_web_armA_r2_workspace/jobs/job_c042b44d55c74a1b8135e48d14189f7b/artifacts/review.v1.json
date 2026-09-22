@@ -1,0 +1,167 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-003）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-003,E-005）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-034）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-009,E-023）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-027）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-003）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-004）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-017）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-027）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-003,E-005,E-009,E-023,E-034）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「核查范围与证据说明」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「核查范围与证据说明」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「教育领域收益与风险的直接证据缺口」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「教育领域收益与风险的直接证据缺口」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「生成式AI工具能力与教学素材的有限推测」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「生成式AI工具能力与教学素材的有限推测」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「AI与教育公共利益的原则性关联」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「AI与教育公共利益的原则性关联」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「非教育场景的AI风险与信息诚信参考」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「非教育场景的AI风险与信息诚信参考」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「教育官方门户与考试网站线索」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「教育官方门户与考试网站线索」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「待补实证问题与所需资料」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「待补实证问题与所需资料」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "正文缺少提纲章节「结论：可回答与不可回答的边界」"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「结论：可回答与不可回答的边界」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第1节“仅依据素材包、不引用外部事实”挂E-003；E-003是Kling无教育信息，不能支持该断言。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第1、8节把E-003单源“本资料未提供”扩为“现有资料明确未提供”，全称过度。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第2、7、8节以E-009/E-023单源“本资料未提供”扩为“现有资料未提供”，支持不足。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第7节多项“缺少课堂实验/UNESCO指南/政策全文”未限定本素材，超出证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "第6节E-025书名号未闭合：“《‘人工智能+教育’行动计划”缺少右书名号。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "全文用〔未知〕标注缺口，提纲要求事实/推断标注；建议统一为“本素材未提供”并标推断。"
+  }
+ ]
+}

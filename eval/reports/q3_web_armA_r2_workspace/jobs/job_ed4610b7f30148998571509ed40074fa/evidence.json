@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_9135f52800",
+      "fact": "本资料列出“远程办公与专业设计”作为使用场景。",
+      "tag": "F",
+      "quote": "远程办公与专业设计",
+      "start": 96,
+      "end": 105,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 96,
+        "end": 106
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_9135f52800",
+      "fact": "本资料列出“远程协作与演示”作为使用场景。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_9135f52800",
+      "fact": "本资料称多人协作可多人同时控制一台设备并可白板批注。",
+      "tag": "F",
+      "quote": "多人同时控制一台设备并可白板批注",
+      "start": 506,
+      "end": 522,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 506,
+        "end": 523
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_9135f52800",
+      "fact": "本资料引用项目经理称，远程协助演示PPT时多指针功能让双方看到鼠标轨迹。",
+      "tag": "F",
+      "quote": "远程协助同事演示PPT时，开启ToDesk的多指针功能，我们俩都能看到对方的鼠标轨迹。",
+      "start": 4803,
+      "end": 4846,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_9135f52800",
+      "fact": "本资料引用用户评价称用ToDesk沟通效率直线上升。",
+      "tag": "F",
+      "quote": "用ToDesk沟通效率直线上升！",
+      "start": 4846,
+      "end": 4862,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_9135f52800",
+      "fact": "本资料引用王老师称远程上课时用画笔功能做批注，演示功能比专业会议软件好用。",
+      "tag": "F",
+      "quote": "给学生远程上课时，我直接用ToDesk的画笔功能在屏幕上圈圈画画做批注。ToDesk的这个演示功能比很多专业会议软件都好用。",
+      "start": 4869,
+      "end": 4931,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 308,
+        "start": 4869,
+        "end": 4932
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_535336db62",
+      "fact": "本资料标题与主题为分布式系统，介绍其核心概念、架构演进与典型特征。",
+      "tag": "F",
+      "quote": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "start": 403,
+      "end": 430,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_535336db62",
+      "fact": "本资料是后端技术教程，讨论节点、网络通信、数据一致性等技术问题。",
+      "tag": "F",
+      "quote": "节点之间要靠网络交换数据。",
+      "start": 3595,
+      "end": 3608,
+      "locator": {
+        "heading": "### 网络通信",
+        "paragraph": 97,
+        "start": 3595,
+        "end": 3648
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_535336db62",
+      "fact": "本资料全文未出现远程办公、团队协作或相关社会研究的内容。",
+      "tag": "I",
+      "quote": "学分布式系统时，不要只盯着某个中间件背参数。",
+      "start": 5129,
+      "end": 5151,
+      "locator": {
+        "heading": "## 常见的分布式系统有哪些？",
+        "paragraph": 123,
+        "start": 5129,
+        "end": 5182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_535336db62",
+      "fact": "依据本资料无法回答远程办公对团队协作的影响，需另找来源。",
+      "tag": "I",
+      "quote": "分布式系统不是某一种中间件，而是一类系统形态。",
+      "start": 4608,
+      "end": 4631,
+      "locator": {
+        "heading": "## 常见的分布式系统有哪些？",
+        "paragraph": 113,
+        "start": 4608,
+        "end": 4640
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_b80d3953b2",
+      "fact": "本资料在“企业远控场景全覆盖”中把远程办公表述为企业异地远程办公",
+      "tag": "F",
+      "quote": "企业异地远程办公",
+      "start": 3707,
+      "end": 3715,
+      "locator": {
+        "heading": "### 远程办公",
+        "paragraph": 243,
+        "start": 3707,
+        "end": 3716
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_b80d3953b2",
+      "fact": "某互联网游戏客户称员工可在任何时间任何地点发起远程协助和办公",
+      "tag": "F",
+      "quote": "我们的员工可以在任何时间、任何地点通过向日葵发起远程协助和办公，整体操作很友好，推荐使用",
+      "start": 7483,
+      "end": 7527,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 628,
+        "start": 7482,
+        "end": 7529
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_b80d3953b2",
+      "fact": "客户称引入远程运维方案后IT部门服务效率大幅提升，省去很多沟通成本",
+      "tag": "F",
+      "quote": "我们的IT部门人员为公司员工提供服务的效率大幅提升，让我们省去很多沟通的成本",
+      "start": 7773,
+      "end": 7811,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 641,
+        "start": 7758,
+        "end": 7813
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_b80d3953b2",
+      "fact": "本资料提供成员与授权管理功能，支持多层级组织架构管理",
+      "tag": "F",
+      "quote": "支持多层级组织架构管理",
+      "start": 4731,
+      "end": 4742,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 336,
+        "start": 4731,
+        "end": 4743
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_b80d3953b2",
+      "fact": "本资料称可接入飞书、企微、钉钉等第三方协作工具",
+      "tag": "F",
+      "quote": "轻松接入飞书、企微、钉钉",
+      "start": 4753,
+      "end": 4765,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 339,
+        "start": 4753,
+        "end": 4766
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_b80d3953b2",
+      "fact": "本资料称其方案跨平台，支持Windows、macOS、Linux、Android、iOS等系统",
+      "tag": "F",
+      "quote": "支持Windows、macOS、Linux、Android、iOS等系统",
+      "start": 3953,
+      "end": 3989,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 256,
+        "start": 3949,
+        "end": 3990
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_b80d3953b2",
+      "fact": "本资料称平台每月稳定连接超150亿分钟",
+      "tag": "F",
+      "quote": "每月稳定连接超150亿分钟",
+      "start": 3547,
+      "end": 3560,
+      "locator": {
+        "heading": "## 向日葵IT精英版",
+        "paragraph": 229,
+        "start": 3540,
+        "end": 3561
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_b80d3953b2",
+      "fact": "本资料为产品介绍页，自述为企业远程控制解决方案，未提供远程办公对团队协作影响的近期研究",
+      "tag": "I",
+      "quote": "IT运维、技术支持、远程办公于一体的企业远程控制解决方案",
+      "start": 2811,
+      "end": 2839,
+      "locator": {
+        "heading": "### 远程IT运维解决方案",
+        "paragraph": 179,
+        "start": 2811,
+        "end": 2840
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料标题为「首页」，是贝锐向日葵远程控制产品与方案的介绍页。",
+      "tag": "F",
+      "quote": "版权所有 © 2026 贝锐",
+      "start": 9106,
+      "end": 9120,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 723,
+        "start": 9106,
+        "end": 9121
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料将「远程办公」列为面向企业的核心场景之一。",
+      "tag": "F",
+      "quote": "IT运维、技术支持、远程办公于一体的企业远程控制解决方案",
+      "start": 2811,
+      "end": 2839,
+      "locator": {
+        "heading": "### 远程IT运维解决方案",
+        "paragraph": 179,
+        "start": 2811,
+        "end": 2840
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料称其远程办公场景强调员工管理与快速部署。",
+      "tag": "F",
+      "quote": "员工管理 · 部署快",
+      "start": 132,
+      "end": 142,
+      "locator": {
+        "heading": "",
+        "paragraph": 13,
+        "start": 127,
+        "end": 147
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料称支持多层级组织架构管理，便于成员管理。",
+      "tag": "F",
+      "quote": "支持多层级组织架构管理",
+      "start": 4731,
+      "end": 4742,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 336,
+        "start": 4731,
+        "end": 4743
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料称可接入飞书、企微、钉钉等第三方协作工具。",
+      "tag": "F",
+      "quote": "轻松接入飞书、企微、钉钉",
+      "start": 4753,
+      "end": 4765,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 339,
+        "start": 4753,
+        "end": 4766
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料引客户评价称员工可在任何时间、任何地点发起远程协助和办公。",
+      "tag": "F",
+      "quote": "我们的员工可以在任何时间、任何地点通过向日葵发起远程协助和办公",
+      "start": 7483,
+      "end": 7514,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 628,
+        "start": 7482,
+        "end": 7529
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料称每月稳定连接超150亿分钟，企业客户150万+。",
+      "tag": "F",
+      "quote": "每月稳定连接超150亿分钟",
+      "start": 3547,
+      "end": 3560,
+      "locator": {
+        "heading": "## 向日葵IT精英版",
+        "paragraph": 229,
+        "start": 3540,
+        "end": 3561
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_c40d60086c",
+      "fact": "本资料未提供任何关于远程办公对团队协作影响的近期研究结论或数据。",
+      "tag": "I",
+      "quote": "远程办公",
+      "start": 127,
+      "end": 131,
+      "locator": {
+        "heading": "",
+        "paragraph": 13,
+        "start": 127,
+        "end": 147
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_82c84775ce184b8c9b857cefbf2202cc",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 5,
+    "usable": 2,
+    "statuses": {
+      "ok": 2,
+      "empty": 1,
+      "read_failed": 2
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 8 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T13:40:47"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T13:40:51"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T13:40:59"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包全部资料为统计业务与就业服务平台内容，未涉及数据出境合规，无法支撑变化梳理。",
+        "finished_at": "2026-09-18T13:41:01"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包全部资料为统计业务与就业服务平台内容，未涉及数据出境合规，无法支撑变化梳理。；缺失信息：数据出境相关法律法规及修订前后对照材料、变化时间节点与生效安排、安全评估、标准合同、认证等机制文本、适用范围与数据分类分级说明、主管部门合规指引或执法案例（可用证据 8 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.stats.gov.cn/sj/",
+      "https://data.stats.gov.cn/",
+      "https://etax.chinatax.gov.cn/webstatic/login",
+      "https://www.ncss.cn/student/m/resume/personcenter.html",
+      "http://zms.customs.gov.cn/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "数据出境安全评估办法 修订 要点",
+        "rank": 2,
+        "title": "数据 - 国家统计局",
+        "url": "https://www.stats.gov.cn/sj/",
+        "snippet": "2026-08-27 2026年1—7月份全国规模以上工业企业利润增长17.6% 2026-08-27 2026年8月中旬流通领域重要生产资料市场价格变动 …",
+        "published_date": "2026-08-27",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "数据出境安全评估办法 修订 要点",
+        "rank": 3,
+        "title": "国家数据",
+        "url": "https://data.stats.gov.cn/",
+        "snippet": "3 天之前 · 数据解读 国家统计局城市司首席统计师董莉娟解读2026年8月份CPI和PPI数据 2026-09-09 国家统计局服务业调查中心首席 …",
+        "published_date": "2026-09-09",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人信息出境标准合同 备案 实务",
+        "rank": 1,
+        "title": "自然人电子税务局",
+        "url": "https://etax.chinatax.gov.cn/webstatic/login",
+        "snippet": "2026年8月26日 · 我要查询 申报信息查询 备案信息查询 其他查询 公众服务 票证查验 帮助中心 特色应用 国家税务总局主办 版权所 …",
+        "published_date": "2026-08-26",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人信息出境标准合同 备案 实务",
+        "rank": 3,
+        "title": "个人中心-国家大学生就业服务平台",
+        "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+        "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "自贸区 数据跨境 负面清单",
+        "rank": 4,
+        "title": "Customs - 自贸区和特殊区域发展司",
+        "url": "http://zms.customs.gov.cn/",
+        "snippet": "2026年9月9日 · 牵头拟订自由贸易区等海关特殊监管区域发展规划、监管制度，承担自由贸易区等海关特殊监管区域的设立和事中事 …",
+        "published_date": "2026-09-09",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "数据出境安全评估办法 修订 要点",
+        "urls": [
+          "https://www.stats.gov.cn/sj/",
+          "https://data.stats.gov.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "数据出境安全评估办法 修订 要点",
+            "rank": 2,
+            "title": "数据 - 国家统计局",
+            "url": "https://www.stats.gov.cn/sj/",
+            "snippet": "2026-08-27 2026年1—7月份全国规模以上工业企业利润增长17.6% 2026-08-27 2026年8月中旬流通领域重要生产资料市场价格变动 …",
+            "published_date": "2026-08-27",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "数据出境安全评估办法 修订 要点",
+            "rank": 3,
+            "title": "国家数据",
+            "url": "https://data.stats.gov.cn/",
+            "snippet": "3 天之前 · 数据解读 国家统计局城市司首席统计师董莉娟解读2026年8月份CPI和PPI数据 2026-09-09 国家统计局服务业调查中心首席 …",
+            "published_date": "2026-09-09",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "数据 - 国家统计局",
+            "url": "https://www.stats.gov.cn/sj/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "国家数据",
+            "url": "https://data.stats.gov.cn/",
+            "relevance": 0.1,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "数据（计算机术语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE/5947370",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "数据（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE/33305",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "84个常用的数据源网站分享！（保持更新，建议收藏）",
+            "url": "https://blog.csdn.net/BAZHUAYUdata/article/details/100779439",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.313,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "促进和规范数据跨境流动规定 网信办",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "促进_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%BF%83%E8%BF%9B/2273364",
+            "relevance": 0.083,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "促进 | 简体中文-英语翻译——剑桥词典",
+            "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93-%E8%8B%B1%E8%AF%AD/%E4%BF%83%E8%BF%9B",
+            "relevance": 0.083,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "促进是什么意思_促进的翻译_音标_读音_用法_例句_爱词霸 ...",
+            "url": "https://www.iciba.com/word?w=%E4%BF%83%E8%BF%9B",
+            "relevance": 0.083,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "促进_促进的读音_促进的意思 - 汉语词典",
+            "url": "https://www.chagushici.com/zidian/%E4%BF%83%E8%BF%9B",
+            "relevance": 0.083,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "促进的意思,促进的拼音、近义词、反义词、造句 - 汉语查",
+            "url": "https://www.hgcha.com/cidian/a143621d.html",
+            "relevance": 0.083,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.196,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人信息出境标准合同 备案 实务",
+        "urls": [
+          "https://etax.chinatax.gov.cn/webstatic/login",
+          "https://www.ncss.cn/student/m/resume/personcenter.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人信息出境标准合同 备案 实务",
+            "rank": 1,
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "snippet": "2026年8月26日 · 我要查询 申报信息查询 备案信息查询 其他查询 公众服务 票证查验 帮助中心 特色应用 国家税务总局主办 版权所 …",
+            "published_date": "2026-08-26",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "个人信息出境标准合同 备案 实务",
+            "rank": 3,
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "个人的意思_个人的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bd2f7f480",
+            "relevance": 0.091,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "个体 - 百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AA%E4%BD%93/2667121",
+            "relevance": 0.045,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.213,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "自贸区 数据跨境 负面清单",
+        "urls": [
+          "http://zms.customs.gov.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "自贸区 数据跨境 负面清单",
+            "rank": 4,
+            "title": "Customs - 自贸区和特殊区域发展司",
+            "url": "http://zms.customs.gov.cn/",
+            "snippet": "2026年9月9日 · 牵头拟订自由贸易区等海关特殊监管区域发展规划、监管制度，承担自由贸易区等海关特殊监管区域的设立和事中事 …",
+            "published_date": "2026-09-09",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中国自由贸易区_百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E8%87%AA%E7%94%B1%E8%B4%B8%E6%98%93%E5%8C%BA/1289330",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "中国（山东）自由贸易试验区 - Shandong",
+            "url": "http://commerce.shandong.gov.cn/ftz/",
+            "relevance": 0.062,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "山东省人民政府 中国（山东）自由贸易试验区",
+            "url": "http://www.shandong.gov.cn/col/col97340/index.html?ddtab=true",
+            "relevance": 0.062,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "自由贸易区_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%87%AA%E7%94%B1%E8%B4%B8%E6%98%93%E5%8C%BA/248475",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.222,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（企业数据出境合规的主要变化）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: mode 必须取已开放模式 ['dynamic_team']（收到 'manager_worker'）；fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本；subtasks[6].description 必须为非空文本；subtasks[7].description 必须为非空文本；subtasks[8].description 必须为非空文本；subtasks[9].description 必须为非空文本"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "dynamic_team"
+        ]
+      },
+      "scheduler_elapsed_seconds": 29.861,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

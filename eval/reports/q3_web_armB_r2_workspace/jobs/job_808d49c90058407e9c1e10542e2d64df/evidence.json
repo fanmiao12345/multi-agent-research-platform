@@ -1,0 +1,486 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_8c313426c7",
+      "fact": "本资料为需登录页面，提示登录以获取个性化推荐职位。",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_8c313426c7",
+      "fact": "本资料页面设有「立即登录」入口。",
+      "tag": "F",
+      "quote": "立即登录",
+      "start": 24,
+      "end": 28,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 1,
+        "start": 24,
+        "end": 29
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_8c313426c7",
+      "fact": "本资料页面列出职位、招聘会、个性化推荐等栏目。",
+      "tag": "F",
+      "quote": "职位 招聘会 个性化推荐",
+      "start": 52,
+      "end": 64,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 2,
+        "start": 30,
+        "end": 87
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_8c313426c7",
+      "fact": "本资料提示就业意愿可在个人中心修改。",
+      "tag": "F",
+      "quote": "就业意愿 （可以在个人中心修改）",
+      "start": 88,
+      "end": 104,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 3,
+        "start": 88,
+        "end": 105
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_8c313426c7",
+      "fact": "本资料页面含一个「提交」操作。",
+      "tag": "F",
+      "quote": "提交",
+      "start": 106,
+      "end": 108,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 4,
+        "start": 106,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_8c313426c7",
+      "fact": "本资料内容与个人知识管理系统的检索与记忆设计无直接关联。",
+      "tag": "I",
+      "quote": "点击登录",
+      "start": 4,
+      "end": 8,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_2f5c979351",
+      "fact": "本资料讨论汉语词汇「个人」在不同语境下的指代含义。",
+      "tag": "F",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 307,
+      "end": 326,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 307,
+        "end": 329
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_2f5c979351",
+      "fact": "本资料认为在「我个人认为」一类语境中，「个人」明确指说话者自己。",
+      "tag": "F",
+      "quote": "这里的“个人”明确指的是说话者自己",
+      "start": 366,
+      "end": 383,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 340,
+        "end": 385
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_2f5c979351",
+      "fact": "本资料认为在「个人有个人的看法」一类语境中，「个人」指不包括说话者在内的其他人。",
+      "tag": "F",
+      "quote": "即不包括说话者自己在内的其他人",
+      "start": 448,
+      "end": 463,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 396,
+        "end": 483
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_2f5c979351",
+      "fact": "本资料强调「个人」的具体所指需依据上下文判断，体现汉语的灵活。",
+      "tag": "F",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 516,
+      "end": 530,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_3849ff7ee0",
+      "fact": "本资料是中国福利彩票发行管理中心官方网站页面。",
+      "tag": "F",
+      "quote": "中国福利彩票发行管理中心官方网站",
+      "start": 13,
+      "end": 29,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 13,
+        "end": 30
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_3849ff7ee0",
+      "fact": "本资料页面位于阳光开奖栏目下的开奖公告。",
+      "tag": "F",
+      "quote": "首页 > 阳光开奖 > 开奖公告",
+      "start": 441,
+      "end": 457,
+      "locator": {
+        "heading": "",
+        "paragraph": 66,
+        "start": 441,
+        "end": 458
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_3849ff7ee0",
+      "fact": "本资料含双色球一等奖中奖明细表，列出期数、开奖日期等字段。",
+      "tag": "F",
+      "quote": "双色球一等奖中奖明细表",
+      "start": 462,
+      "end": 473,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_3849ff7ee0",
+      "fact": "本资料定义票面中奖金额为该张中奖票全部投注号码中得奖金总额。",
+      "tag": "F",
+      "quote": "票面中奖金额：是指该张中奖票包含的全部投注号码中得的奖金总额",
+      "start": 526,
+      "end": 556,
+      "locator": {
+        "heading": "## 双色球一等奖中奖明细表",
+        "paragraph": 70,
+        "start": 526,
+        "end": 577
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_3849ff7ee0",
+      "fact": "本资料底部提示理性购彩、量力而行，禁止未成年人购彩兑奖。",
+      "tag": "F",
+      "quote": "温馨提示：理性购彩 量力而行 禁止未成年人购买彩票和兑奖",
+      "start": 673,
+      "end": 701,
+      "locator": {
+        "heading": "## 双色球一等奖中奖明细表",
+        "paragraph": 74,
+        "start": 673,
+        "end": 701
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_3849ff7ee0",
+      "fact": "本资料仅有「搜索」导航入口，未描述任何检索机制或记忆设计。",
+      "tag": "I",
+      "quote": "搜索",
+      "start": 31,
+      "end": 33,
+      "locator": {
+        "heading": "",
+        "paragraph": 2,
+        "start": 31,
+        "end": 34
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_3849ff7ee0",
+      "fact": "本资料内容与个人知识管理系统的检索与记忆设计无关，无法提供相关证据。",
+      "tag": "I",
+      "quote": "资料库",
+      "start": 436,
+      "end": 439,
+      "locator": {
+        "heading": "",
+        "paragraph": 65,
+        "start": 436,
+        "end": 440
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_0ab43a1e4f",
+      "fact": "本资料标题为开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材。",
+      "tag": "F",
+      "quote": "开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材",
+      "start": 286,
+      "end": 324,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 39,
+        "start": 286,
+        "end": 325
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_0ab43a1e4f",
+      "fact": "页面提供“搜索”功能入口。",
+      "tag": "F",
+      "quote": "搜索",
+      "start": 414,
+      "end": 416,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 51,
+        "start": 414,
+        "end": 417
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_0ab43a1e4f",
+      "fact": "页面导航包含“笔记”入口。",
+      "tag": "F",
+      "quote": "笔记",
+      "start": 110,
+      "end": 112,
+      "locator": {
+        "heading": "",
+        "paragraph": 18,
+        "start": 110,
+        "end": 113
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_0ab43a1e4f",
+      "fact": "页面导航包含“问答”入口。",
+      "tag": "F",
+      "quote": "问答",
+      "start": 106,
+      "end": 108,
+      "locator": {
+        "heading": "",
+        "paragraph": 17,
+        "start": 106,
+        "end": 109
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_0ab43a1e4f",
+      "fact": "页面将“卡片”作为一类UI元素并标注Card。",
+      "tag": "F",
+      "quote": "卡片 Card",
+      "start": 190,
+      "end": 197,
+      "locator": {
+        "heading": "",
+        "paragraph": 30,
+        "start": 190,
+        "end": 198
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_0ab43a1e4f",
+      "fact": "卡片列表项提供“获取代码”入口。",
+      "tag": "F",
+      "quote": "获取代码",
+      "start": 423,
+      "end": 427,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 53,
+        "start": 423,
+        "end": 428
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_0ab43a1e4f",
+      "fact": "本资料未涉及个人知识管理系统的检索与记忆设计方法。",
+      "tag": "I",
+      "quote": "开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材",
+      "start": 286,
+      "end": 324,
+      "locator": {
+        "heading": "# 卡片",
+        "paragraph": 39,
+        "start": 286,
+        "end": 325
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_b77f0ae50f",
+      "fact": "本资料内容围绕卡片模板、编辑、下载与分享，未涉及个人知识管理系统的检索与记忆设计。",
+      "tag": "I",
+      "quote": "在线设计任何你需要的卡片，包括邀请函、贺卡、生日卡、婚礼卡等。",
+      "start": 3608,
+      "end": 3639,
+      "locator": {
+        "heading": "# 在线卡片制作工具， 3倍更快 地创建任何卡片",
+        "paragraph": 197,
+        "start": 3608,
+        "end": 3671
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_b152176cc7",
+      "fact": "本资料为百度知道页面，主题是解释“个人”一词的含义。",
+      "tag": "F",
+      "quote": "\"个人\"是指自己,还是一个人（不包括自己）",
+      "start": 71,
+      "end": 92,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_b152176cc7",
+      "fact": "本资料认为“个人”在不同语境下既可指自己，也可指不包括自己在内的他人。",
+      "tag": "F",
+      "quote": "“个人”既可以指代自己，也可以指代不包括自己在内的其他人",
+      "start": 483,
+      "end": 511,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 480,
+        "end": 548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_b152176cc7",
+      "fact": "本资料举例“我个人认为”，称其中“个人”明确指说话者自己。",
+      "tag": "F",
+      "quote": "如“我个人认为”或“我有个人的想法”，这里的“个人”明确指的是说话者自己",
+      "start": 343,
+      "end": 379,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 336,
+        "end": 381
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_b152176cc7",
+      "fact": "本资料举例“每个人都有自己的选择”，称其中“个人”指许多人中的每一个。",
+      "tag": "F",
+      "quote": "“每个人都有自己的选择”，这里的“个人”则是指代许多人中的每一个",
+      "start": 411,
+      "end": 443,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 392,
+        "end": 479
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_b152176cc7",
+      "fact": "本资料指出“个人”的具体含义需根据上下文判断。",
+      "tag": "F",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 512,
+      "end": 526,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 480,
+        "end": 548
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_b152176cc7",
+      "fact": "本资料未涉及个人知识管理系统中的检索与记忆设计。",
+      "tag": "F",
+      "quote": "百度知道 > 无分类",
+      "start": 168,
+      "end": 178,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 30,
+        "start": 168,
+        "end": 179
+      },
+      "note": ""
+    }
+  ]
+}

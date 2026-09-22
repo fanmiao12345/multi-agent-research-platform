@@ -1,0 +1,22 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "行业现状与监管缺口处将“资料缺少”判断标为〔事实〕，建议改标〔推断〕"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "资料范围核验未单列电池工业网来源及可用边界，建议补明其仅提供论坛与项目线索"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论建议中4月项目缺E-017、政策原文缺E-013，建议补引对应证据"
+  }
+ ]
+}

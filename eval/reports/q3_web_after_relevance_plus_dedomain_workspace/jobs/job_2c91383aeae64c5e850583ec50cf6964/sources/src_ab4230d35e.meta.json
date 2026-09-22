@@ -1,0 +1,69 @@
+{
+  "source_id": "src_ab4230d35e",
+  "kind": "url",
+  "display": "个人中心-国家大学生就业服务平台",
+  "original_address": "https://www.ncss.cn/student/m/resume/personcenter.html",
+  "title": "个人中心-国家大学生就业服务平台",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 202,
+  "content_hash": "33349023c7f88d52991d18e9bc523ea280583d40eb6d739380dcd64f3846ec9f",
+  "normalized_hash": "78ee90a206818f20db2f231546eaeb81a3faaec23495cf273161bce6162949fa",
+  "captured_at": "2026-09-18T14:50:21",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_ab4230d35e.md",
+  "encoding": "UTF-8",
+  "segment_count": 5,
+  "segments": [
+    {
+      "heading": "### 点击登录",
+      "paragraph": 0,
+      "start": 10,
+      "end": 23,
+      "page": null
+    },
+    {
+      "heading": "### 点击登录",
+      "paragraph": 1,
+      "start": 24,
+      "end": 29,
+      "page": null
+    },
+    {
+      "heading": "### 点击登录",
+      "paragraph": 2,
+      "start": 30,
+      "end": 87,
+      "page": null
+    },
+    {
+      "heading": "### 点击登录",
+      "paragraph": 3,
+      "start": 88,
+      "end": 105,
+      "page": null
+    },
+    {
+      "heading": "### 点击登录",
+      "paragraph": 4,
+      "start": 106,
+      "end": 108,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:50:21",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

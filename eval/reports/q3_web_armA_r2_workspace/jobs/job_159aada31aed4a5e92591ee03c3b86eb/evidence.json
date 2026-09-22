@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料显示重庆实时拥堵指数1.261，状态为畅通，实时拥堵排行46/100。",
+      "tag": "F",
+      "quote": "1.261 (畅通) 46/100 38.868 0.81",
+      "start": 294,
+      "end": 323,
+      "locator": {
+        "heading": "# 重庆今日拥堵情况",
+        "paragraph": 30,
+        "start": 294,
+        "end": 324
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料显示重庆实时拥堵指数较上周同期下降0.8%。",
+      "tag": "F",
+      "quote": "较上周同期0.8%下降",
+      "start": 325,
+      "end": 336,
+      "locator": {
+        "heading": "# 重庆今日拥堵情况",
+        "paragraph": 31,
+        "start": 325,
+        "end": 360
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料说明拥堵指数下方百分数为较上年同期指数变化。",
+      "tag": "F",
+      "quote": "拥堵指数下面的百分数为较上年同期指数变化",
+      "start": 804,
+      "end": 824,
+      "locator": {
+        "heading": "### 重庆早晚高峰时间段拥堵指数",
+        "paragraph": 36,
+        "start": 801,
+        "end": 825
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料显示重庆行政区域拥堵Top10中渝中区拥堵指数最高，为1.281，状态畅通。",
+      "tag": "F",
+      "quote": "1 渝中区 1.281 畅通 35.54 0.22",
+      "start": 884,
+      "end": 909,
+      "locator": {
+        "heading": "### 重庆行政区域拥堵情况Top10",
+        "paragraph": 38,
+        "start": 884,
+        "end": 910
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料显示重庆重点区域中长寿湖风景区拥堵指数6.637，严重拥堵，较平日上升476.1%。",
+      "tag": "F",
+      "quote": "长寿湖风景区 6.637 (严重拥堵) 476.1% ↑",
+      "start": 1248,
+      "end": 1276,
+      "locator": {
+        "heading": "### 重庆重点区域拥堵情况",
+        "paragraph": 50,
+        "start": 1246,
+        "end": 1301
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料显示陈家坪公交枢纽站严重拥堵，拥堵指数5.627，平均速度8.28 km/h。",
+      "tag": "F",
+      "quote": "陈家坪公交枢纽站 5.627 (严重拥堵) 226% ↑ 8.28 15.88 1.52 -4.9% ↓",
+      "start": 1304,
+      "end": 1356,
+      "locator": {
+        "heading": "### 重庆重点区域拥堵情况",
+        "paragraph": 51,
+        "start": 1302,
+        "end": 1357
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料声明查询数据仅供用户参考，具体请以官方数据为准。",
+      "tag": "F",
+      "quote": "本网站查询数据仅供用户参考，具体请以官方数据为准",
+      "start": 1959,
+      "end": 1983,
+      "locator": {
+        "heading": "### 重庆重点区域拥堵情况",
+        "paragraph": 82,
+        "start": 1954,
+        "end": 2040
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_5ae54c262f",
+      "fact": "本资料仅含拥堵查询数据，未涉及低碳交通政策效果与限制。",
+      "tag": "I",
+      "quote": "重庆今日拥堵情况",
+      "start": 212,
+      "end": 220,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_103fcceede",
+      "fact": "本资料全文为全国城市行政区划名单，未涉及城市低碳交通政策的效果与限制",
+      "tag": "F",
+      "quote": "全国694个城市，快来看看有无你家乡。",
+      "start": 977,
+      "end": 996,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 26,
+        "start": 977,
+        "end": 1032
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_103fcceede",
+      "fact": "民政部介绍我国现有694个城市，含4个直辖市、293个地级市、397个县级市",
+      "tag": "F",
+      "quote": "我国现有694个城市，具体包括4个直辖市、293个地级市、397个县级市。",
+      "start": 209,
+      "end": 246,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 16,
+        "start": 177,
+        "end": 247
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_103fcceede",
+      "fact": "民政部表示行政区划应当保持总体稳定，变更须逐级上报审批",
+      "tag": "F",
+      "quote": "民政部表示，行政区划应当保持总体稳定，必须变更时，应当本着有利于社会主义现代化建设等原则",
+      "start": 858,
+      "end": 902,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 25,
+        "start": 858,
+        "end": 976
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_103fcceede",
+      "fact": "行政区划变更方针包含推进城乡发展一体化、促进人与自然和谐发展",
+      "tag": "F",
+      "quote": "推进城乡发展一体化，促进人与自然和谐发展的方针，制订变更方案，逐级上报审批。",
+      "start": 937,
+      "end": 975,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 25,
+        "start": 858,
+        "end": 976
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_103fcceede",
+      "fact": "全国地级市最多的省级行政单位是广东省，有21个地级市",
+      "tag": "F",
+      "quote": "全国地级市最多的省级行政单位是广东省，有地级市21个",
+      "start": 500,
+      "end": 526,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 20,
+        "start": 500,
+        "end": 602
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_103fcceede",
+      "fact": "新疆维吾尔自治区县级市最多，有29个县级市",
+      "tag": "F",
+      "quote": "新疆维吾尔自治区县级市最多，有29个",
+      "start": 527,
+      "end": 545,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 20,
+        "start": 500,
+        "end": 602
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_103fcceede",
+      "fact": "部分县级市属省或自治区直辖，如济源市、仙桃市、潜江市、天门市",
+      "tag": "F",
+      "quote": "如河南省济源市，湖北省仙桃市、潜江市、天门市等",
+      "start": 832,
+      "end": 855,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 24,
+        "start": 793,
+        "end": 857
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_103fcceede",
+      "fact": "本资料未提供任何交通政策实施效果或减排数据的证据",
+      "tag": "U",
+      "quote": "该文观点仅代表作者本人，搜狐号系信息发布平台",
+      "start": 4831,
+      "end": 4853,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 115,
+        "start": 4831,
+        "end": 4868
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_813c027148",
+      "fact": "本资料将推动城市发展绿色低碳转型列为专门章节。",
+      "tag": "F",
+      "quote": "五、推动城市发展绿色低碳转型",
+      "start": 3123,
+      "end": 3137,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 43,
+        "start": 3123,
+        "end": 3138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_813c027148",
+      "fact": "本资料提出优先发展城市公共交通，倡导绿色低碳出行。",
+      "tag": "F",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行",
+      "start": 3430,
+      "end": 3449,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_813c027148",
+      "fact": "本资料要求健全现代化综合交通运输体系，提升城际、城内通勤效率。",
+      "tag": "F",
+      "quote": "健全现代化综合交通运输体系，提升城际、城内通勤效率",
+      "start": 2808,
+      "end": 2833,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_813c027148",
+      "fact": "本资料要求完善交通枢纽换乘换装设施布局。",
+      "tag": "F",
+      "quote": "完善交通枢纽换乘换装设施布局",
+      "start": 2834,
+      "end": 2848,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_813c027148",
+      "fact": "本资料要求加强停车位、充电桩等便民设施建设。",
+      "tag": "F",
+      "quote": "加强停车位、充电桩等便民设施建设",
+      "start": 2849,
+      "end": 2865,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_813c027148",
+      "fact": "本资料设定到2030年绿色转型深入推进的目标。",
+      "tag": "F",
+      "quote": "绿色转型深入推进",
+      "start": 773,
+      "end": 781,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 29,
+        "start": 707,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_813c027148",
+      "fact": "本资料提出践行绿色低碳生活方式。",
+      "tag": "F",
+      "quote": "践行绿色低碳生活方式",
+      "start": 3312,
+      "end": 3322,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_813c027148",
+      "fact": "本资料属于政策意见，未说明城市低碳交通政策的效果与限制。",
+      "tag": "I",
+      "quote": "现提出如下意见",
+      "start": 321,
+      "end": 328,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 25,
+        "start": 224,
+        "end": 330
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料为辽宁公交查询页面，提供公交线路与站点查询。",
+      "tag": "F",
+      "quote": "当前位置： 巴士网 > 辽宁公交巴士查询",
+      "start": 59,
+      "end": 79,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 59,
+        "end": 80
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料列出辽宁主要城市地区，覆盖多个城市与地区。",
+      "tag": "F",
+      "quote": "辽宁主要城市地区",
+      "start": 85,
+      "end": 93,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料按城市展示热门公交线路与公交站信息。",
+      "tag": "F",
+      "quote": "辽宁主要城市热搜查询",
+      "start": 187,
+      "end": 197,
+      "locator": {
+        "heading": "### 辽宁主要城市地区",
+        "paragraph": 27,
+        "start": 187,
+        "end": 198
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料包含沈抚城际巴士1号线(雷锋号)等公交线路信息。",
+      "tag": "F",
+      "quote": "沈抚城际巴士1号线(雷锋号)",
+      "start": 1387,
+      "end": 1401,
+      "locator": {
+        "heading": "### 辽宁主要城市地区",
+        "paragraph": 146,
+        "start": 1387,
+        "end": 1402
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料声明所提供数据仅供参考，使用数据造成损害不承担责任。",
+      "tag": "F",
+      "quote": "巴士网所提供的的数据，仅供参考之用",
+      "start": 3961,
+      "end": 3978,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 415,
+        "start": 3961,
+        "end": 4048
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料仅提供公交查询数据，不包含政策分析内容。",
+      "tag": "I",
+      "quote": "本站均不承担任何责任",
+      "start": 4008,
+      "end": 4018,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 415,
+        "start": 3961,
+        "end": 4048
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料不能用于评估城市低碳交通政策的效果与限制。",
+      "tag": "I",
+      "quote": "若不同意这些条款，请不要使用本网站及本网站任何数据资料",
+      "start": 4019,
+      "end": 4046,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 415,
+        "start": 3961,
+        "end": 4048
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_b9186fe4d6",
+      "fact": "本资料未提供公交出行碳排放影响或低碳政策评估数据。",
+      "tag": "I",
+      "quote": "巴士网所提供的的数据，仅供参考之用",
+      "start": 3961,
+      "end": 3978,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 415,
+        "start": 3961,
+        "end": 4048
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_9d53f41963",
+      "fact": "本资料标题为朝阳公交线路大全2026年版。",
+      "tag": "F",
+      "quote": "朝阳公交线路大全2026年版",
+      "start": 2,
+      "end": 16,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_9d53f41963",
+      "fact": "本资料已收录68条朝阳公交线路。",
+      "tag": "F",
+      "quote": "已收录 68 条线路",
+      "start": 304,
+      "end": 314,
+      "locator": {
+        "heading": "# 朝阳公交线路大全2026年版",
+        "paragraph": 11,
+        "start": 278,
+        "end": 320
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_9d53f41963",
+      "fact": "本资料提供换乘查询、站点查询和线路查询功能。",
+      "tag": "F",
+      "quote": "换乘查询",
+      "start": 34,
+      "end": 38,
+      "locator": {
+        "heading": "# 朝阳公交线路大全2026年版",
+        "paragraph": 2,
+        "start": 34,
+        "end": 39
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_9d53f41963",
+      "fact": "本资料列出热门公交站点，如中心医院、龙山街等。",
+      "tag": "F",
+      "quote": "热门站点： 中心医院 | 龙山街",
+      "start": 207,
+      "end": 223,
+      "locator": {
+        "heading": "# 朝阳公交线路大全2026年版",
+        "paragraph": 9,
+        "start": 207,
+        "end": 271
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_9d53f41963",
+      "fact": "本资料含公交小百科，解释调度空驶时间的含义。",
+      "tag": "F",
+      "quote": "什么是调度空驶时间？",
+      "start": 1082,
+      "end": 1092,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_9d53f41963",
+      "fact": "本资料自述为查找公交、地铁及换乘信息的网站。",
+      "tag": "F",
+      "quote": "在网上查找公交线路、地铁线路及公交换乘信息——妙搜公交线路查询网",
+      "start": 1553,
+      "end": 1585,
+      "locator": {
+        "heading": "#### ◎公交小百科：什么是调度空驶时间？ 『再来一个』",
+        "paragraph": 80,
+        "start": 1553,
+        "end": 1586
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_9d53f41963",
+      "fact": "本资料未提供城市低碳交通政策效果与限制的信息。",
+      "tag": "I",
+      "quote": "妙搜-公交线路查询",
+      "start": 1484,
+      "end": 1493,
+      "locator": {
+        "heading": "#### ◎公交小百科：什么是调度空驶时间？ 『再来一个』",
+        "paragraph": 78,
+        "start": 1484,
+        "end": 1514
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-040",
+      "source_id": "src_9d53f41963",
+      "fact": "免责声明称内容系自动搜索结果，不代表网站立场。",
+      "tag": "F",
+      "quote": "此内容系 妙搜＠MiaoSo根据您的指令自动搜索的结果",
+      "start": 1592,
+      "end": 1619,
+      "locator": {
+        "heading": "#### ◎公交小百科：什么是调度空驶时间？ 『再来一个』",
+        "paragraph": 81,
+        "start": 1587,
+        "end": 1645
+      },
+      "note": ""
+    }
+  ]
+}

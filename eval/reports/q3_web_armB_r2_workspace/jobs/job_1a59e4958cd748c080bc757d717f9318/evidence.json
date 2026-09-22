@@ -1,0 +1,545 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_5b30c73d9e",
+      "fact": "民政部介绍我国现有694个城市，含4个直辖市、293个地级市、397个县级市。",
+      "tag": "F",
+      "quote": "我国现有694个城市，具体包括4个直辖市、293个地级市、397个县级市。",
+      "start": 209,
+      "end": 246,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 16,
+        "start": 177,
+        "end": 247
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_5b30c73d9e",
+      "fact": "民政部表示行政区划应当保持总体稳定。",
+      "tag": "F",
+      "quote": "民政部表示，行政区划应当保持总体稳定",
+      "start": 858,
+      "end": 876,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 25,
+        "start": 858,
+        "end": 976
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_5b30c73d9e",
+      "fact": "行政区划变更须坚持与国家发展战略和经济社会发展水平相适应。",
+      "tag": "F",
+      "quote": "坚持与国家发展战略和经济社会发展水平相适应",
+      "start": 903,
+      "end": 924,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 25,
+        "start": 858,
+        "end": 976
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_5b30c73d9e",
+      "fact": "行政区划变更方针包含推进城乡发展一体化、促进人与自然和谐发展。",
+      "tag": "F",
+      "quote": "推进城乡发展一体化，促进人与自然和谐发展",
+      "start": 937,
+      "end": 957,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 25,
+        "start": 858,
+        "end": 976
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_5b30c73d9e",
+      "fact": "全国地级市最多的省级行政单位是广东省，有21个地级市。",
+      "tag": "F",
+      "quote": "全国地级市最多的省级行政单位是广东省，有地级市21个",
+      "start": 500,
+      "end": 526,
+      "locator": {
+        "heading": "# 全国694个城市名单来了，快来看看有无你家乡",
+        "paragraph": 20,
+        "start": 500,
+        "end": 602
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_5b30c73d9e",
+      "fact": "本资料未涉及城市低碳交通政策的效果与限制，此为本资料的内容缺口。",
+      "tag": "U",
+      "quote": "全国694个城市名单来了，快来看看有无你家乡",
+      "start": 72,
+      "end": 94,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料提出优先发展城市公共交通，倡导绿色低碳出行。",
+      "tag": "F",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行。",
+      "start": 3430,
+      "end": 3450,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料提出健全现代化综合交通运输体系。",
+      "tag": "F",
+      "quote": "健全现代化综合交通运输体系",
+      "start": 2808,
+      "end": 2821,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料要求提升城际、城内通勤效率。",
+      "tag": "F",
+      "quote": "提升城际、城内通勤效率",
+      "start": 2822,
+      "end": 2833,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料要求完善交通枢纽换乘换装设施布局。",
+      "tag": "F",
+      "quote": "完善交通枢纽换乘换装设施布局",
+      "start": 2834,
+      "end": 2848,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料提出加强停车位、充电桩等便民设施建设。",
+      "tag": "F",
+      "quote": "加强停车位、充电桩等便民设施建设。",
+      "start": 2849,
+      "end": 2866,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料将绿色转型深入推进列为2030年目标之一。",
+      "tag": "F",
+      "quote": "绿色转型深入推进",
+      "start": 773,
+      "end": 781,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 29,
+        "start": 707,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料未评估城市低碳交通政策效果，也未说明其实施限制。",
+      "tag": "I",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行。",
+      "start": 3430,
+      "end": 3450,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_3b2d2e311a",
+      "fact": "本资料提出到2035年现代化人民城市基本建成。",
+      "tag": "F",
+      "quote": "到2035年，现代化人民城市基本建成。",
+      "start": 809,
+      "end": 828,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 29,
+        "start": 707,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料是巴士网的辽宁公交查询页，仅提供公交线路与站点查询。",
+      "tag": "F",
+      "quote": "城市查询 车站查询 线路查询 换乘查询",
+      "start": 38,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 3,
+        "start": 38,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料列出辽宁主要城市地区，含沈阳、大连、鞍山、抚顺等。",
+      "tag": "F",
+      "quote": "辽宁主要城市地区",
+      "start": 85,
+      "end": 93,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料按城市列出热门公交线路，如沈阳沈抚城际巴士1号线。",
+      "tag": "F",
+      "quote": "沈抚城际巴士1号线(雷锋号)",
+      "start": 1394,
+      "end": 1408,
+      "locator": {
+        "heading": "### 辽宁主要城市地区",
+        "paragraph": 146,
+        "start": 1394,
+        "end": 1409
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料线路信息含起终点，如鞍山9路太子河路至虹桥北。",
+      "tag": "F",
+      "quote": "9路(太子河路-虹桥北)",
+      "start": 208,
+      "end": 220,
+      "locator": {
+        "heading": "### 辽宁主要城市地区",
+        "paragraph": 29,
+        "start": 208,
+        "end": 221
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料声明所提供数据仅供参考，使用导致损害不担责。",
+      "tag": "F",
+      "quote": "巴士网所提供的的数据，仅供参考之用",
+      "start": 3968,
+      "end": 3985,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 415,
+        "start": 3968,
+        "end": 4055
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料版权标注为2024年巴士网（bashi.cn）。",
+      "tag": "F",
+      "quote": "Copyright © 2024 www.bashi.cn All Rights Reserved.",
+      "start": 4056,
+      "end": 4106,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 416,
+        "start": 4056,
+        "end": 4156
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料未见低碳交通政策、碳排放或减排效果的任何内容。",
+      "tag": "I",
+      "quote": "城市查询 车站查询 线路查询 换乘查询",
+      "start": 38,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 3,
+        "start": 38,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_ee858c83bf",
+      "fact": "本资料无法支持对城市低碳交通政策效果与限制的评估。",
+      "tag": "U",
+      "quote": "辽宁主要城市热搜查询",
+      "start": 187,
+      "end": 197,
+      "locator": {
+        "heading": "### 辽宁主要城市地区",
+        "paragraph": 27,
+        "start": 187,
+        "end": 198
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_82cfc70601",
+      "fact": "本资料收录朝阳68条公交线路。",
+      "tag": "F",
+      "quote": "《妙搜朝阳公交线路大全2026年版》 （已收录 68 条线路）",
+      "start": 287,
+      "end": 318,
+      "locator": {
+        "heading": "# 朝阳公交线路大全2026年版",
+        "paragraph": 11,
+        "start": 281,
+        "end": 323
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_82cfc70601",
+      "fact": "本资料提供点击公交站名查看附近公交站及地铁站的换乘信息。",
+      "tag": "F",
+      "quote": "点击公交站名，可以查看附近公交站及地铁站，以方便就近换乘。",
+      "start": 64,
+      "end": 93,
+      "locator": {
+        "heading": "# 朝阳公交线路大全2026年版",
+        "paragraph": 6,
+        "start": 58,
+        "end": 94
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_82cfc70601",
+      "fact": "本资料定位为公交、地铁线路及换乘信息查询。",
+      "tag": "F",
+      "quote": "在网上查找公交线路、地铁线路及公交换乘信息——妙搜公交线路查询网",
+      "start": 1572,
+      "end": 1604,
+      "locator": {
+        "heading": "#### ◎公交小百科：什么是路单？ 『再来一个』",
+        "paragraph": 83,
+        "start": 1572,
+        "end": 1605
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_82cfc70601",
+      "fact": "本资料为自动搜索结果，不代表网站赞成被搜索内容或立场。",
+      "tag": "F",
+      "quote": "不代表妙搜＠MiaoSo赞成被搜索的内容或立场",
+      "start": 1639,
+      "end": 1662,
+      "locator": {
+        "heading": "#### ◎公交小百科：什么是路单？ 『再来一个』",
+        "paragraph": 84,
+        "start": 1606,
+        "end": 1664
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_82cfc70601",
+      "fact": "依据本资料无法评估低碳交通政策的效果或限制。",
+      "tag": "I",
+      "quote": "在网上查找公交线路、地铁线路及公交换乘信息——妙搜公交线路查询网",
+      "start": 1572,
+      "end": 1604,
+      "locator": {
+        "heading": "#### ◎公交小百科：什么是路单？ 『再来一个』",
+        "paragraph": 83,
+        "start": 1572,
+        "end": 1605
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料为交通运输部网站页面，由部政策研究室主办、科学研究院开发。",
+      "tag": "F",
+      "quote": "主办单位:交通运输部政策研究室 开发单位:交通运输部科学研究院",
+      "start": 2935,
+      "end": 2966,
+      "locator": {
+        "heading": "#### 与世界相交 与时代相通丨内蒙古口岸智联拓宽开放之路",
+        "paragraph": 129,
+        "start": 2935,
+        "end": 2967
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料仅有栏目与标题列表，未展开城市低碳交通政策的效果与限制论述。",
+      "tag": "I",
+      "quote": "交通智数",
+      "start": 1548,
+      "end": 1552,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料提到的交通数据栏目发布城市轨道交通运营数据速报。",
+      "tag": "F",
+      "quote": "2026年8月城市轨道交通运营数据速报",
+      "start": 1599,
+      "end": 1618,
+      "locator": {
+        "heading": "### 交通智数",
+        "paragraph": 57,
+        "start": 1599,
+        "end": 1630
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料收录一条宣传文案，称中国交通正从智慧交通走向绿色出行。",
+      "tag": "F",
+      "quote": "从自动化港口、智慧交通，到绿色出行，中国交通正在不断突破边界",
+      "start": 1947,
+      "end": 1977,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料标题列表含高速公路服务区安装“能源大脑”一条。",
+      "tag": "F",
+      "quote": "福建高速公路服务区装上“能源大脑”",
+      "start": 91,
+      "end": 108,
+      "locator": {
+        "heading": "# 习近平就发展先进制造业作出重要指示",
+        "paragraph": 2,
+        "start": 91,
+        "end": 109
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料政策解读栏目含《智慧港口数智化技术指南（第一版）》解读。",
+      "tag": "F",
+      "quote": "《智慧港口数智化技术指南（第一版）》解读",
+      "start": 831,
+      "end": 851,
+      "locator": {
+        "heading": "### 政策解读",
+        "paragraph": 26,
+        "start": 831,
+        "end": 863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料政策解读栏目含综合交通运输标准化“十五五”规划解读。",
+      "tag": "F",
+      "quote": "《综合交通运输标准化发展“十五五”规划》政策解读",
+      "start": 926,
+      "end": 950,
+      "locator": {
+        "heading": "### 政策解读",
+        "paragraph": 29,
+        "start": 926,
+        "end": 962
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_a79ea9c487",
+      "fact": "本资料设有网约车行业运行情况月度数据发布一条。",
+      "tag": "F",
+      "quote": "网约车监管信息交互系统发布2026年8月份网约车行业运行基本情况",
+      "start": 1554,
+      "end": 1586,
+      "locator": {
+        "heading": "### 交通智数",
+        "paragraph": 56,
+        "start": 1554,
+        "end": 1598
+      },
+      "note": ""
+    }
+  ]
+}

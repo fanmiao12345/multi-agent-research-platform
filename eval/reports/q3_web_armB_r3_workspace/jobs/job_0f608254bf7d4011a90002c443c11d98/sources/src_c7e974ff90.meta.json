@@ -1,0 +1,76 @@
+{
+  "source_id": "src_c7e974ff90",
+  "kind": "url",
+  "display": "Kling AI: Next-Generation AI Creative Studio",
+  "original_address": "https://klingai.com/app",
+  "title": "Kling AI: Next-Generation AI Creative Studio",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 76,
+  "content_hash": "8cb3e358f47f265905b2c9a97520bf3f83c82632eab76cb5b2699889fff40124",
+  "normalized_hash": "f79ce495dc0a3a5b03d7d8b5b8d4329b90ec29bfb9a3d2a71b403ebfa326bf6a",
+  "captured_at": "2026-09-20T11:26:42",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_c7e974ff90.md",
+  "encoding": "UTF-8",
+  "segment_count": 6,
+  "segments": [
+    {
+      "heading": "# Kling AI Home",
+      "paragraph": 0,
+      "start": 17,
+      "end": 21,
+      "page": null
+    },
+    {
+      "heading": "# Kling AI Home",
+      "paragraph": 1,
+      "start": 22,
+      "end": 25,
+      "page": null
+    },
+    {
+      "heading": "# Kling AI Home",
+      "paragraph": 2,
+      "start": 26,
+      "end": 31,
+      "page": null
+    },
+    {
+      "heading": "# Kling AI Home",
+      "paragraph": 3,
+      "start": 32,
+      "end": 35,
+      "page": null
+    },
+    {
+      "heading": "# Kling AI Home",
+      "paragraph": 4,
+      "start": 36,
+      "end": 41,
+      "page": null
+    },
+    {
+      "heading": "# Kling AI Home",
+      "paragraph": 5,
+      "start": 42,
+      "end": 46,
+      "page": null
+    }
+  ],
+  "final_url": "https://klingai.com/app",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:26:42",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

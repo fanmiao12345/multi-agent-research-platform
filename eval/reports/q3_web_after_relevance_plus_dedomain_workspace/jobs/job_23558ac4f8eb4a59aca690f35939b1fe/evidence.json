@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_fc8004dbab",
+      "fact": "本资料主题为全国城市名单，未涉及城市低碳交通政策效果与限制。",
+      "tag": "U",
+      "quote": "全国694个城市名单来了，快来看看有无你家乡",
+      "start": 72,
+      "end": 94,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料提出推动城市发展绿色低碳转型。",
+      "tag": "F",
+      "quote": "五、推动城市发展绿色低碳转型",
+      "start": 3123,
+      "end": 3137,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 43,
+        "start": 3123,
+        "end": 3138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料要求优先发展城市公共交通，倡导绿色低碳出行。",
+      "tag": "F",
+      "quote": "优先发展城市公共交通，倡导绿色低碳出行。",
+      "start": 3430,
+      "end": 3450,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 45,
+        "start": 3308,
+        "end": 3451
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料提出健全现代化综合交通运输体系，提升城际、城内通勤效率。",
+      "tag": "F",
+      "quote": "健全现代化综合交通运输体系，提升城际、城内通勤效率",
+      "start": 2808,
+      "end": 2833,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料要求完善交通枢纽换乘换装设施布局。",
+      "tag": "F",
+      "quote": "完善交通枢纽换乘换装设施布局",
+      "start": 2834,
+      "end": 2848,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料要求加强停车位、充电桩等便民设施建设。",
+      "tag": "F",
+      "quote": "加强停车位、充电桩等便民设施建设。",
+      "start": 2849,
+      "end": 2866,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 41,
+        "start": 2658,
+        "end": 2867
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料要求坚持人口、产业、城镇、交通一体规划。",
+      "tag": "F",
+      "quote": "坚持人口、产业、城镇、交通一体规划",
+      "start": 2527,
+      "end": 2544,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 40,
+        "start": 2373,
+        "end": 2657
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料主要目标提出绿色转型深入推进。",
+      "tag": "F",
+      "quote": "绿色转型深入推进",
+      "start": 773,
+      "end": 781,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 29,
+        "start": 707,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_fdabfb0457",
+      "fact": "本资料目标包括到2035年现代化人民城市基本建成。",
+      "tag": "F",
+      "quote": "到2035年，现代化人民城市基本建成。",
+      "start": 809,
+      "end": 828,
+      "locator": {
+        "heading": "# 中共中央 国务院关于推动城市高质量发展的意见",
+        "paragraph": 29,
+        "start": 707,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_c4b0fe1abd",
+      "fact": "本资料提供城市、车站、线路、换乘四类查询入口。",
+      "tag": "F",
+      "quote": "城市查询 车站查询 线路查询 换乘查询",
+      "start": 38,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 3,
+        "start": 38,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_c4b0fe1abd",
+      "fact": "本资料按浙江城市列出热门公交线路和公交站。",
+      "tag": "F",
+      "quote": "浙江主要城市热搜查询",
+      "start": 263,
+      "end": 273,
+      "locator": {
+        "heading": "### 浙江主要城市地区",
+        "paragraph": 47,
+        "start": 263,
+        "end": 274
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_c4b0fe1abd",
+      "fact": "本资料列出杭州、宁波、温州等浙江城市及具体公交线路。",
+      "tag": "F",
+      "quote": "杭州 热门线路",
+      "start": 1478,
+      "end": 1485,
+      "locator": {
+        "heading": "### 浙江主要城市地区",
+        "paragraph": 162,
+        "start": 1478,
+        "end": 1486
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_c4b0fe1abd",
+      "fact": "本资料声明数据仅供参考，不承担使用数据导致的损害赔偿。",
+      "tag": "F",
+      "quote": "仅供参考之用，在任何情况下，对于因使用本站数据信息而导致的任何损害赔偿，本站均不承担任何责任",
+      "start": 7152,
+      "end": 7198,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 726,
+        "start": 7141,
+        "end": 7228
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_c4b0fe1abd",
+      "fact": "依据本资料只能了解公交线路与站点，无法评估低碳交通政策效果。",
+      "tag": "I",
+      "quote": "浙江主要城市热搜查询",
+      "start": 263,
+      "end": 273,
+      "locator": {
+        "heading": "### 浙江主要城市地区",
+        "paragraph": 47,
+        "start": 263,
+        "end": 274
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_e09860323b",
+      "fact": "本资料是宁波公交线路与车站信息查询网站。",
+      "tag": "F",
+      "quote": "浙江省宁波范围内公交巴士线路、公交车站信息查询",
+      "start": 1332,
+      "end": 1355,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 182,
+        "start": 1324,
+        "end": 1357
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_e09860323b",
+      "fact": "本资料提供城市、车站、线路、换乘查询功能。",
+      "tag": "F",
+      "quote": "城市查询 车站查询 线路查询 换乘查询",
+      "start": 38,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 3,
+        "start": 38,
+        "end": 58
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_e09860323b",
+      "fact": "本资料设有今日热搜宁波公交线路栏目。",
+      "tag": "F",
+      "quote": "今日热搜宁波公交线路",
+      "start": 246,
+      "end": 256,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_e09860323b",
+      "fact": "本资料列出宁波多条公交线路及起终点。",
+      "tag": "F",
+      "quote": "662路 公交联丰新村站-公交洞桥站",
+      "start": 258,
+      "end": 276,
+      "locator": {
+        "heading": "### 今日热搜宁波公交线路",
+        "paragraph": 49,
+        "start": 258,
+        "end": 277
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_e09860323b",
+      "fact": "本资料列出多个宁波公交站点名称。",
+      "tag": "F",
+      "quote": "妇儿医院(南站西路)",
+      "start": 743,
+      "end": 753,
+      "locator": {
+        "heading": "### 今日查询公交站",
+        "paragraph": 73,
+        "start": 743,
+        "end": 754
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_e09860323b",
+      "fact": "本资料声明其数据仅供参考。",
+      "tag": "F",
+      "quote": "巴士网所提供的的数据，仅供参考之用",
+      "start": 1358,
+      "end": 1375,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 183,
+        "start": 1358,
+        "end": 1445
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_e09860323b",
+      "fact": "本资料声明对因使用其数据造成的损害不担责。",
+      "tag": "F",
+      "quote": "对于因使用本站数据信息而导致的任何损害赔偿，本站均不承担任何责任",
+      "start": 1383,
+      "end": 1415,
+      "locator": {
+        "heading": "### 友情链接",
+        "paragraph": 183,
+        "start": 1358,
+        "end": 1445
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_e09860323b",
+      "fact": "本资料未提供低碳交通政策效果或限制的评估证据。",
+      "tag": "I",
+      "quote": "宁波公交线路查询",
+      "start": 78,
+      "end": 86,
+      "locator": {
+        "heading": "",
+        "paragraph": 4,
+        "start": 59,
+        "end": 87
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_5481052264",
+      "fact": "本资料为新浪网门户页面，不含城市低碳交通政策的报道内容。",
+      "tag": "I",
+      "quote": "Copyright ©1996-2026 SINA Corporation, All Rights Reserved",
+      "start": 17003,
+      "end": 17061,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 642,
+        "start": 17003,
+        "end": 17062
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_5481052264",
+      "fact": "本资料提到9月新能源汽车预计卖111万辆，每10台新车近7台是电车。",
+      "tag": "F",
+      "quote": "9月新能源汽车预计卖111万辆 每10台新车近7台是电车",
+      "start": 7493,
+      "end": 7521,
+      "locator": {
+        "heading": "### 车研所",
+        "paragraph": 389,
+        "start": 7493,
+        "end": 7522
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_5481052264",
+      "fact": "本资料提到充电桩也要看“3C”了，涉及充电设施规范话题。",
+      "tag": "F",
+      "quote": "充电桩也要看“3C”了",
+      "start": 7480,
+      "end": 7491,
+      "locator": {
+        "heading": "### 车研所",
+        "paragraph": 388,
+        "start": 7480,
+        "end": 7492
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_5481052264",
+      "fact": "本资料引述蔚来李斌称2030年新车销量九成是新能源、其中九成是纯电。",
+      "tag": "F",
+      "quote": "蔚来李斌：到2030年，新车销量里90%是新能源，新能源里90%是纯电",
+      "start": 7301,
+      "end": 7336,
+      "locator": {
+        "heading": "### 车研所",
+        "paragraph": 379,
+        "start": 7301,
+        "end": 7337
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_5481052264",
+      "fact": "本资料称特斯拉将在欧洲投放超百台兆瓦级超充桩，服务电动半挂卡车。",
+      "tag": "F",
+      "quote": "特斯拉将在欧洲投放超百台兆瓦级超充桩，为 Semi 纯电半挂卡车交付铺路",
+      "start": 16630,
+      "end": 16666,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 624,
+        "start": 16630,
+        "end": 16667
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_5481052264",
+      "fact": "本资料称比亚迪拟在欧洲长期建设四座工厂，含三座整车组装厂及电池厂。",
+      "tag": "F",
+      "quote": "比亚迪拟在欧洲长期建设四座工厂 含三座整车组装厂及一座电池厂",
+      "start": 16708,
+      "end": 16738,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 626,
+        "start": 16708,
+        "end": 16739
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_5481052264",
+      "fact": "本资料称2026年8月韩国车市比亚迪暴涨713.6%、特斯拉上涨30.4%。",
+      "tag": "F",
+      "quote": "韩国2026年8月：比亚迪暴涨713.6%、特斯拉上涨30.4%",
+      "start": 16596,
+      "end": 16628,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 623,
+        "start": 16589,
+        "end": 16629
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_5481052264",
+      "fact": "本资料提到一起理想汽车被充电枪卡死3小时的投诉，涉及充电体验。",
+      "tag": "F",
+      "quote": "理想汽车遭安悦充电枪卡死3小时拔不出，是车的问题还是充电枪的问题？",
+      "start": 16412,
+      "end": 16445,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 617,
+        "start": 16412,
+        "end": 16446
+      },
+      "note": ""
+    }
+  ]
+}

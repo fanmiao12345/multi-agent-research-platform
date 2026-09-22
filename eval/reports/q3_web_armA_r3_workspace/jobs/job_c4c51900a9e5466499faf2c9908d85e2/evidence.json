@@ -1,0 +1,555 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_90b2de08d9",
+      "fact": "本资料仅呈现重庆拥堵指数，未直接涉及城市低碳交通政策的效果与限制。",
+      "tag": "I",
+      "quote": "重庆今日拥堵情况",
+      "start": 212,
+      "end": 220,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_90b2de08d9",
+      "fact": "实时拥堵指数为1.261，状态显示畅通。",
+      "tag": "F",
+      "quote": "1.261 (畅通)",
+      "start": 294,
+      "end": 304,
+      "locator": {
+        "heading": "# 重庆今日拥堵情况",
+        "paragraph": 30,
+        "start": 294,
+        "end": 324
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_90b2de08d9",
+      "fact": "长寿湖风景区拥堵指数6.637，属严重拥堵，较平日升476.1%。",
+      "tag": "F",
+      "quote": "长寿湖风景区 6.637 (严重拥堵) 476.1% ↑",
+      "start": 1248,
+      "end": 1276,
+      "locator": {
+        "heading": "### 重庆重点区域拥堵情况",
+        "paragraph": 50,
+        "start": 1246,
+        "end": 1301
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_90b2de08d9",
+      "fact": "渝中区在行政区域拥堵排名第一，指数1.281，状态畅通。",
+      "tag": "F",
+      "quote": "1 渝中区 1.281 畅通 35.54 0.22",
+      "start": 884,
+      "end": 909,
+      "locator": {
+        "heading": "### 重庆行政区域拥堵情况Top10",
+        "paragraph": 38,
+        "start": 884,
+        "end": 910
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_90b2de08d9",
+      "fact": "晚高峰(17-19时)拥堵指数列出1.232、1.266、1.655等数值。",
+      "tag": "F",
+      "quote": "晚高峰 (17-19时) 1.232 -40.1% ↓ 1.266 -31.9% ↓ 1.655 -14.5% ↓",
+      "start": 682,
+      "end": 739,
+      "locator": {
+        "heading": "### 重庆早晚高峰时间段拥堵指数",
+        "paragraph": 35,
+        "start": 682,
+        "end": 800
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_90b2de08d9",
+      "fact": "实时拥堵指数较上周同期下降0.8%。",
+      "tag": "F",
+      "quote": "较上周同期0.8%下降",
+      "start": 325,
+      "end": 336,
+      "locator": {
+        "heading": "# 重庆今日拥堵情况",
+        "paragraph": 31,
+        "start": 325,
+        "end": 360
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_90b2de08d9",
+      "fact": "数据更新时间标注为2022年12月10日15时15分。",
+      "tag": "F",
+      "quote": "更新时间：2022年12月10日 15时15分",
+      "start": 1158,
+      "end": 1181,
+      "locator": {
+        "heading": "### 重庆行政区域拥堵情况Top10",
+        "paragraph": 48,
+        "start": 1158,
+        "end": 1182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_90b2de08d9",
+      "fact": "免责声明称查询数据仅供参考，具体以官方数据为准。",
+      "tag": "F",
+      "quote": "免责声明：本网站查询数据仅供用户参考，具体请以官方数据为准",
+      "start": 1954,
+      "end": 1983,
+      "locator": {
+        "heading": "### 重庆重点区域拥堵情况",
+        "paragraph": 82,
+        "start": 1954,
+        "end": 2040
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_c084d3d01a",
+      "fact": "本资料页面显示为“Not Found”，提示请求的网址在服务器上未找到。",
+      "tag": "F",
+      "quote": "# Not Found",
+      "start": 14301,
+      "end": 14312,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_c084d3d01a",
+      "fact": "本资料页面未包含任何关于城市低碳交通政策效果或限制的内容。",
+      "tag": "F",
+      "quote": "The requested URL was not found on the server.",
+      "start": 14314,
+      "end": 14360,
+      "locator": {
+        "heading": "# Not Found",
+        "paragraph": 500,
+        "start": 14314,
+        "end": 14435
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_c084d3d01a",
+      "fact": "本资料正文为新浪网导航、栏目链接与各类资讯标题，属网站首页性质内容。",
+      "tag": "F",
+      "quote": "Copyright ©1996-2026 SINA Corporation, All Rights Reserved",
+      "start": 17049,
+      "end": 17107,
+      "locator": {
+        "heading": "### 佛学",
+        "paragraph": 631,
+        "start": 17049,
+        "end": 17108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_1e9f197e28",
+      "fact": "本资料为南京公交查询页面，提供换乘、线路、站点查询功能。",
+      "tag": "F",
+      "quote": "换乘查询 线路查询 站点查询",
+      "start": 37,
+      "end": 51,
+      "locator": {
+        "heading": "",
+        "paragraph": 3,
+        "start": 37,
+        "end": 52
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_1e9f197e28",
+      "fact": "本资料显示南京公交线路中存在停运线路1条。",
+      "tag": "F",
+      "quote": "停运线路 1条",
+      "start": 107,
+      "end": 114,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_1e9f197e28",
+      "fact": "本资料列出南京城际公交14条、夜间线路(Y)35条。",
+      "tag": "F",
+      "quote": "城际公交 14条 夜间线路(Y) 35条",
+      "start": 115,
+      "end": 135,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_1e9f197e28",
+      "fact": "本资料列出南京有轨道交通14条、轮渡线路3条。",
+      "tag": "F",
+      "quote": "轨道交通 14条 轮渡线路 3条",
+      "start": 273,
+      "end": 289,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_1e9f197e28",
+      "fact": "本资料显示江北线路199条、江南线路221条。",
+      "tag": "F",
+      "quote": "江北线路(400-699) 199条 江南线路(1-399) 221条",
+      "start": 198,
+      "end": 233,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_1e9f197e28",
+      "fact": "本资料显示南京生活信息中公交5319条、地铁55条。",
+      "tag": "F",
+      "quote": "🚌 公交 5319 🚇 地铁 55",
+      "start": 588,
+      "end": 605,
+      "locator": {
+        "heading": "",
+        "paragraph": 22,
+        "start": 567,
+        "end": 823
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_1e9f197e28",
+      "fact": "多方式公共交通供给或有助于低碳出行，但本资料未评估政策效果。",
+      "tag": "I",
+      "quote": "轨道交通 14条 轮渡线路 3条",
+      "start": 273,
+      "end": 289,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_1e9f197e28",
+      "fact": "停运线路1条或反映公交服务存在供给限制，但资料未说明原因。",
+      "tag": "I",
+      "quote": "停运线路 1条",
+      "start": 107,
+      "end": 114,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 97,
+        "end": 308
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_32c9477466",
+      "fact": "本资料是公交查询网站首页，提供全国公交城市列表入口。",
+      "tag": "F",
+      "quote": "全国公交城市列表",
+      "start": 50,
+      "end": 58,
+      "locator": {
+        "heading": "# 8684公交查询",
+        "paragraph": 4,
+        "start": 50,
+        "end": 59
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_32c9477466",
+      "fact": "本资料按城市名首字分类罗列各地公交查询链接。",
+      "tag": "F",
+      "quote": "北京公交 北屯公交 北海公交",
+      "start": 713,
+      "end": 727,
+      "locator": {
+        "heading": "### 北",
+        "paragraph": 42,
+        "start": 713,
+        "end": 728
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_32c9477466",
+      "fact": "本资料页面顶部设有公交、地铁、生活、火车、天气等栏目。",
+      "tag": "F",
+      "quote": "公交 地铁 生活 火车 天气",
+      "start": 8,
+      "end": 22,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 8,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_32c9477466",
+      "fact": "本资料收录范围覆盖大量城市，含港澳等地公交条目。",
+      "tag": "F",
+      "quote": "香格里拉公交 香港公交",
+      "start": 4844,
+      "end": 4855,
+      "locator": {
+        "heading": "### 香",
+        "paragraph": 299,
+        "start": 4844,
+        "end": 4856
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_32c9477466",
+      "fact": "本资料页脚标明版权方为南京宝地科技有限公司及备案号。",
+      "tag": "F",
+      "quote": "南京宝地科技有限公司 版权所有 苏ICP备2025158795号-7",
+      "start": 5052,
+      "end": 5086,
+      "locator": {
+        "heading": "### 龙",
+        "paragraph": 312,
+        "start": 5052,
+        "end": 5086
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_32c9477466",
+      "fact": "本资料仅为公交线路与站点查询工具，未涉及低碳交通政策。",
+      "tag": "F",
+      "quote": "公交查询 关于8684 免责声明",
+      "start": 5034,
+      "end": 5050,
+      "locator": {
+        "heading": "### 龙",
+        "paragraph": 311,
+        "start": 5034,
+        "end": 5051
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_32c9477466",
+      "fact": "本资料无法提供城市低碳交通政策效果与限制的任何证据。",
+      "tag": "I",
+      "quote": "8684公交查询",
+      "start": 24,
+      "end": 32,
+      "locator": {
+        "heading": "",
+        "paragraph": 2,
+        "start": 24,
+        "end": 33
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_ee3d9ec786",
+      "fact": "本资料为重庆市人民政府网站首页，内容以政务公开、政务服务导航为主。",
+      "tag": "F",
+      "quote": "市政府领导 机构职能 政府信息公开 政策文件库 政策解读 公开专题 惠民利企政策专区",
+      "start": 101,
+      "end": 143,
+      "locator": {
+        "heading": "",
+        "paragraph": 6,
+        "start": 101,
+        "end": 144
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_ee3d9ec786",
+      "fact": "本资料政策文件库所列规划涉及超大城市治理、教育科技人才、文化旅游等领域。",
+      "tag": "F",
+      "quote": "重庆市人民政府办公厅关于印发《重庆市“十五五”文化旅游发展规划（2026—2030年）》的通知",
+      "start": 1706,
+      "end": 1753,
+      "locator": {
+        "heading": "### 习近平就发展先进制造业作出重要指示",
+        "paragraph": 64,
+        "start": 1706,
+        "end": 1760
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_ee3d9ec786",
+      "fact": "本资料政策文件库中与交通相关者仅为高速公路收费站设置批复，未提低碳交通。",
+      "tag": "F",
+      "quote": "重庆市人民政府关于安康至来凤国家高速公路奉节至巫山（渝鄂界）段项目收费站设置的批复",
+      "start": 1554,
+      "end": 1595,
+      "locator": {
+        "heading": "### 习近平就发展先进制造业作出重要指示",
+        "paragraph": 61,
+        "start": 1554,
+        "end": 1602
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_ee3d9ec786",
+      "fact": "本资料所列市政府部门网站包含市交通运输委、市生态环境局等机构。",
+      "tag": "F",
+      "quote": "市生态环境局 市住房城乡建委 市城市管理局 市交通运输委 市水利局",
+      "start": 2965,
+      "end": 2998,
+      "locator": {
+        "heading": "### 习近平就发展先进制造业作出重要指示",
+        "paragraph": 122,
+        "start": 2899,
+        "end": 3176
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_ee3d9ec786",
+      "fact": "依据本资料无法评估城市低碳交通政策的效果与限制。",
+      "tag": "I",
+      "quote": "热搜词： 教育入学一件事 新生儿出生一件事 公积金 社会保障 政府工作报告",
+      "start": 52,
+      "end": 89,
+      "locator": {
+        "heading": "",
+        "paragraph": 3,
+        "start": 52,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_84088471e4",
+      "fact": "本资料页面栏目为“走进重庆—重庆概况”。",
+      "tag": "F",
+      "quote": "当前位置： 首页 > 走进重庆 > 重庆概况",
+      "start": 228,
+      "end": 250,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 228,
+        "end": 251
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_84088471e4",
+      "fact": "本资料正文主要列出重庆市行政区划信息。",
+      "tag": "F",
+      "quote": "重庆市辖37个区县（自治县）",
+      "start": 320,
+      "end": 334,
+      "locator": {
+        "heading": "",
+        "paragraph": 22,
+        "start": 320,
+        "end": 567
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_84088471e4",
+      "fact": "本资料列出1028个乡镇（街道）等行政区划数据。",
+      "tag": "F",
+      "quote": "1028个乡镇（街道）",
+      "start": 526,
+      "end": 537,
+      "locator": {
+        "heading": "",
+        "paragraph": 22,
+        "start": 320,
+        "end": 567
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_84088471e4",
+      "fact": "本资料未提供城市低碳交通政策效果与限制的内容。",
+      "tag": "I",
+      "quote": "重庆市辖37个区县（自治县）",
+      "start": 320,
+      "end": 334,
+      "locator": {
+        "heading": "",
+        "paragraph": 22,
+        "start": 320,
+        "end": 567
+      },
+      "note": ""
+    }
+  ]
+}

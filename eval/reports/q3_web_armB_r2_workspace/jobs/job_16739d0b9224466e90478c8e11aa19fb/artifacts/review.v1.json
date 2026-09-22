@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "各节把“可支持远程医疗…”等推断并入〔事实〕，如E-001至E-008、E-010，易误导。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-009原文仅称“记录远控全过程”，报告加“完整”并标〔事实〕，证据不直接支持该程度。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "综合归纳将“支持论据包括…”整体标〔事实〕，内含归纳判断，应改标〔推断〕或拆分。"
+  },
+  {
+   "severity": "warn",
+   "code": "conflict",
+   "message": "监管缺口称缺少“合规”材料，但E-003有合规审计、E-010有等保三级；应限定为缺医疗监管法规与责任认定。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论“可支持事实”列E-008降低上门成本，未加“资料称”，易把厂商主张读作已验证事实。"
+  }
+ ]
+}

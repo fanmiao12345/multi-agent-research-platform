@@ -1,0 +1,671 @@
+{
+  "source_id": "src_1b3cf2aaa8",
+  "kind": "url",
+  "display": "还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！ - 智源社区",
+  "original_address": "https://hub.baai.ac.cn/view/46037",
+  "title": "还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！ - 智源社区",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 15455,
+  "content_hash": "d20a4ea8c53f7c0c433c05d3fdbd18b15b66bb3d317e4e8f2bce67314b275361",
+  "normalized_hash": "6e4c627f4666d703b9ba5e055103f8cc4201f148c173f0da10c3eacee126fc3e",
+  "captured_at": "2026-09-20T11:47:33",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_1b3cf2aaa8.md",
+  "encoding": "utf-8",
+  "segment_count": 91,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 23,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 24,
+      "end": 30,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 2,
+      "start": 78,
+      "end": 82,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 3,
+      "start": 83,
+      "end": 89,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 4,
+      "start": 90,
+      "end": 93,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 5,
+      "start": 94,
+      "end": 118,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 6,
+      "start": 119,
+      "end": 143,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 7,
+      "start": 144,
+      "end": 279,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 8,
+      "start": 280,
+      "end": 314,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 9,
+      "start": 315,
+      "end": 467,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 10,
+      "start": 468,
+      "end": 619,
+      "page": null
+    },
+    {
+      "heading": "# 还傻傻分不清AI Agent和Agentic AI？康奈尔大学最新综述来了，一文读懂！",
+      "paragraph": 11,
+      "start": 620,
+      "end": 678,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 12,
+      "start": 732,
+      "end": 905,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 13,
+      "start": 906,
+      "end": 960,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 14,
+      "start": 961,
+      "end": 994,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 15,
+      "start": 995,
+      "end": 1103,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 16,
+      "start": 1104,
+      "end": 1204,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 17,
+      "start": 1205,
+      "end": 1326,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 18,
+      "start": 1327,
+      "end": 1534,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 19,
+      "start": 1535,
+      "end": 1682,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 20,
+      "start": 1683,
+      "end": 1748,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 21,
+      "start": 1749,
+      "end": 1855,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 22,
+      "start": 1856,
+      "end": 1903,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 23,
+      "start": 1904,
+      "end": 1937,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 24,
+      "start": 1938,
+      "end": 2081,
+      "page": null
+    },
+    {
+      "heading": "## 首先，AI Agent 和 Agentic AI 在定义等基本方面上存在明显不同。",
+      "paragraph": 25,
+      "start": 2082,
+      "end": 2349,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 26,
+      "start": 2403,
+      "end": 2413,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 27,
+      "start": 2414,
+      "end": 2494,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 28,
+      "start": 2495,
+      "end": 2569,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 29,
+      "start": 2570,
+      "end": 2641,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 30,
+      "start": 2642,
+      "end": 2701,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 31,
+      "start": 2702,
+      "end": 2716,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 32,
+      "start": 2717,
+      "end": 2773,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 33,
+      "start": 2774,
+      "end": 2831,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 34,
+      "start": 2832,
+      "end": 2895,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 35,
+      "start": 2896,
+      "end": 2972,
+      "page": null
+    },
+    {
+      "heading": "## 另外，AI Agent 和 Agentic AI 在应用场景方面也存在不同。如下：",
+      "paragraph": 36,
+      "start": 2973,
+      "end": 3016,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 37,
+      "start": 3066,
+      "end": 3188,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 38,
+      "start": 3189,
+      "end": 3234,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 39,
+      "start": 3235,
+      "end": 3309,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 40,
+      "start": 3310,
+      "end": 3367,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 41,
+      "start": 3368,
+      "end": 3427,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 42,
+      "start": 3428,
+      "end": 3483,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 43,
+      "start": 3484,
+      "end": 3579,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 44,
+      "start": 3580,
+      "end": 3624,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 45,
+      "start": 3625,
+      "end": 3673,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 46,
+      "start": 3674,
+      "end": 3733,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 47,
+      "start": 3734,
+      "end": 3784,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 48,
+      "start": 3785,
+      "end": 3837,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 49,
+      "start": 3838,
+      "end": 3886,
+      "page": null
+    },
+    {
+      "heading": "## 此外，AI Agent 和 Agentic AI 面临的挑战也不同。",
+      "paragraph": 50,
+      "start": 3887,
+      "end": 3934,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 51,
+      "start": 4003,
+      "end": 4136,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 52,
+      "start": 4137,
+      "end": 4249,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 53,
+      "start": 4250,
+      "end": 4409,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 54,
+      "start": 4410,
+      "end": 4525,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 55,
+      "start": 4526,
+      "end": 4589,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 56,
+      "start": 4590,
+      "end": 4712,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 57,
+      "start": 4713,
+      "end": 4837,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 58,
+      "start": 4838,
+      "end": 4982,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 59,
+      "start": 4983,
+      "end": 5094,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 60,
+      "start": 5095,
+      "end": 5189,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 61,
+      "start": 5190,
+      "end": 5234,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 62,
+      "start": 5235,
+      "end": 5266,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 63,
+      "start": 5267,
+      "end": 5316,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 64,
+      "start": 5317,
+      "end": 5512,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 65,
+      "start": 5513,
+      "end": 5745,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 66,
+      "start": 5746,
+      "end": 5890,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 67,
+      "start": 5891,
+      "end": 6041,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 68,
+      "start": 6042,
+      "end": 6048,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 69,
+      "start": 6049,
+      "end": 6070,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 70,
+      "start": 6071,
+      "end": 6098,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 71,
+      "start": 6099,
+      "end": 6116,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 72,
+      "start": 6117,
+      "end": 6122,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 73,
+      "start": 6123,
+      "end": 6132,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 74,
+      "start": 6133,
+      "end": 6138,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 75,
+      "start": 6139,
+      "end": 6144,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 76,
+      "start": 6145,
+      "end": 6150,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 77,
+      "start": 6151,
+      "end": 6156,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 78,
+      "start": 6157,
+      "end": 6162,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 79,
+      "start": 6163,
+      "end": 6168,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 80,
+      "start": 6169,
+      "end": 6172,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 81,
+      "start": 6173,
+      "end": 6182,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 82,
+      "start": 6183,
+      "end": 6189,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 83,
+      "start": 6190,
+      "end": 6193,
+      "page": null
+    },
+    {
+      "heading": "## 基于以上 AI Agent 和 Agentic AI 暴露出的问题，研究团队提出了多项改进策略：",
+      "paragraph": 84,
+      "start": 6194,
+      "end": 6197,
+      "page": null
+    },
+    {
+      "heading": "### 评论列表",
+      "paragraph": 85,
+      "start": 6208,
+      "end": 6215,
+      "page": null
+    },
+    {
+      "heading": "### 评论列表",
+      "paragraph": 86,
+      "start": 6216,
+      "end": 6220,
+      "page": null
+    },
+    {
+      "heading": "### 评论",
+      "paragraph": 87,
+      "start": 6229,
+      "end": 6239,
+      "page": null
+    },
+    {
+      "heading": "### 评论",
+      "paragraph": 88,
+      "start": 6240,
+      "end": 6247,
+      "page": null
+    },
+    {
+      "heading": "### 评论",
+      "paragraph": 89,
+      "start": 6248,
+      "end": 6263,
+      "page": null
+    },
+    {
+      "heading": "### 评论",
+      "paragraph": 90,
+      "start": 6264,
+      "end": 6268,
+      "page": null
+    }
+  ],
+  "final_url": "https://hub.baai.ac.cn/view/46037",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T11:47:33",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_b2dd5f6159",
+      "fact": "本资料全文仅为登录入口与就业意愿相关界面文案。",
+      "tag": "F",
+      "quote": "点击登录",
+      "start": 4,
+      "end": 8,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_b2dd5f6159",
+      "fact": "本资料提示登录后可获取个性化推荐职位。",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_b2dd5f6159",
+      "fact": "本资料包含“立即登录”入口文字。",
+      "tag": "F",
+      "quote": "立即登录",
+      "start": 24,
+      "end": 28,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 1,
+        "start": 24,
+        "end": 29
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_b2dd5f6159",
+      "fact": "本资料列出职位、招聘会、个性化推荐等栏目。",
+      "tag": "F",
+      "quote": "职位 招聘会 个性化推荐",
+      "start": 52,
+      "end": 64,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 2,
+        "start": 30,
+        "end": 87
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_b2dd5f6159",
+      "fact": "本资料说明就业意愿可在个人中心修改。",
+      "tag": "F",
+      "quote": "（可以在个人中心修改）",
+      "start": 93,
+      "end": 104,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 3,
+        "start": 88,
+        "end": 105
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_b2dd5f6159",
+      "fact": "本资料含一个“提交”按钮文字。",
+      "tag": "F",
+      "quote": "提交",
+      "start": 106,
+      "end": 108,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 4,
+        "start": 106,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_b2dd5f6159",
+      "fact": "本资料未提供知识管理系统检索与记忆设计的任何内容。",
+      "tag": "F",
+      "quote": "登录以获取个性化推荐职位",
+      "start": 10,
+      "end": 22,
+      "locator": {
+        "heading": "### 点击登录",
+        "paragraph": 0,
+        "start": 10,
+        "end": 23
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_702667b260",
+      "fact": "本资料认为“个人”一词的含义取决于具体语境。",
+      "tag": "F",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 307,
+      "end": 326,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 307,
+        "end": 329
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_702667b260",
+      "fact": "本资料举例：“我个人认为”中的“个人”明确指说话者自己。",
+      "tag": "F",
+      "quote": "如“我个人认为”或“我有个人的想法”，这里的“个人”明确指的是说话者自己。",
+      "start": 347,
+      "end": 384,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 340,
+        "end": 385
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_702667b260",
+      "fact": "本资料举例：“个人有个人的看法”中的“个人”指许多人中的每一个，不含说话者自己。",
+      "tag": "F",
+      "quote": "如“个人有个人的看法”或“每个人都有自己的选择”，这里的“个人”则是指代许多人中的每一个，即不包括说话者自己在内的其他人。",
+      "start": 403,
+      "end": 464,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 396,
+        "end": 483
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_702667b260",
+      "fact": "本资料总结“个人”既可指自己，也可指不包括自己在内的其他人。",
+      "tag": "F",
+      "quote": "“个人”既可以指代自己，也可以指代不包括自己在内的其他人",
+      "start": 487,
+      "end": 515,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_702667b260",
+      "fact": "本资料称“个人”的具体含义需根据上下文判断。",
+      "tag": "F",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 516,
+      "end": 530,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_702667b260",
+      "fact": "本资料称这种多义体现汉语表达的丰富性和灵活性。",
+      "tag": "F",
+      "quote": "这确实体现了汉语表达的丰富性和灵活性。",
+      "start": 532,
+      "end": 551,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_702667b260",
+      "fact": "检索含“个人”的内容时，仅看该词本身难以判断其指自己还是他人。",
+      "tag": "I",
+      "quote": "“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体含义需要根据上下文来判断",
+      "start": 487,
+      "end": 530,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_702667b260",
+      "fact": "为“个人”相关笔记补充上下文，可帮助还原其指代对象。",
+      "tag": "I",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 516,
+      "end": 530,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料称卡片盒由原子化笔记组成，以链接相连，结构从连接中浮现而非预设层级。",
+      "tag": "F",
+      "quote": "让结构从连接中浮现，而非预设层级",
+      "start": 479,
+      "end": 495,
+      "locator": {
+        "heading": "## 什么是卡片盒笔记法？",
+        "paragraph": 11,
+        "start": 402,
+        "end": 537
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料称卡片盒可作思考伙伴，向它提问并顺着链接找回早已忘记的想法。",
+      "tag": "F",
+      "quote": "顺着链接找到你早已忘记自己有过的想法",
+      "start": 517,
+      "end": 535,
+      "locator": {
+        "heading": "## 什么是卡片盒笔记法？",
+        "paragraph": 11,
+        "start": 402,
+        "end": 537
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料称永久笔记每张一个成形想法，写给未来的你并链入已有网络。",
+      "tag": "F",
+      "quote": "每张一个成形的想法，写给未来的你",
+      "start": 613,
+      "end": 629,
+      "locator": {
+        "heading": "## 三类笔记",
+        "paragraph": 12,
+        "start": 547,
+        "end": 664
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料强调每张笔记只装一个想法才能链入多种语境，并永远用自己的话写。",
+      "tag": "F",
+      "quote": "每张笔记只装一个想法（才能链入多种语境）",
+      "start": 689,
+      "end": 709,
+      "locator": {
+        "heading": "## 三类笔记",
+        "paragraph": 14,
+        "start": 677,
+        "end": 734
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料建议为每张新笔记至少链接一张旧笔记，并写一句说明二者关系。",
+      "tag": "F",
+      "quote": "为每张新笔记至少链一张旧笔记",
+      "start": 811,
+      "end": 825,
+      "locator": {
+        "heading": "## 如何开始卡片盒",
+        "paragraph": 15,
+        "start": 747,
+        "end": 876
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料建议写作时顺着链接走，让盒子替你浮现论证。",
+      "tag": "F",
+      "quote": "让盒子替你浮现论证",
+      "start": 852,
+      "end": 861,
+      "locator": {
+        "heading": "## 如何开始卡片盒",
+        "paragraph": 15,
+        "start": 747,
+        "end": 876
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料警告只收集不连接会让笔记只是一堆。",
+      "tag": "F",
+      "quote": "没链接的笔记只是一堆",
+      "start": 1127,
+      "end": 1137,
+      "locator": {
+        "heading": "## 常见误区",
+        "paragraph": 17,
+        "start": 1119,
+        "end": 1212
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_c1a1c6a863",
+      "fact": "本资料称 Flexnote 把原子笔记做成可在无限画布上摆放、连接的卡片。",
+      "tag": "F",
+      "quote": "可在无限画布上摆放、连接的卡片",
+      "start": 979,
+      "end": 994,
+      "locator": {
+        "heading": "## 2026 年最好的卡片盒工具",
+        "paragraph": 16,
+        "start": 896,
+        "end": 1109
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_cb7955910c",
+      "fact": "本资料标题为「百度首页」，正文是百度知道的问答页面",
+      "tag": "F",
+      "quote": "百度首页",
+      "start": 0,
+      "end": 4,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 5
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_cb7955910c",
+      "fact": "本资料讨论汉语词「个人」的指代含义，与知识管理无关",
+      "tag": "F",
+      "quote": "\"个人\"是指自己,还是一个人（不包括自己）",
+      "start": 71,
+      "end": 92,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_cb7955910c",
+      "fact": "资料称「个人」的含义取决于具体语境",
+      "tag": "F",
+      "quote": "“个人”这一词汇的含义取决于具体的语境",
+      "start": 307,
+      "end": 326,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 40,
+        "start": 307,
+        "end": 329
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_cb7955910c",
+      "fact": "在「我个人认为」等表达中，「个人」明确指说话者自己",
+      "tag": "F",
+      "quote": "如“我个人认为”或“我有个人的想法”，这里的“个人”明确指的是说话者自己",
+      "start": 347,
+      "end": 383,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 42,
+        "start": 340,
+        "end": 385
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_cb7955910c",
+      "fact": "在「个人有个人的看法」中，「个人」指不包括说话者在内的其他人",
+      "tag": "F",
+      "quote": "这里的“个人”则是指代许多人中的每一个，即不包括说话者自己在内的其他人",
+      "start": 428,
+      "end": 463,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 44,
+        "start": 396,
+        "end": 483
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_cb7955910c",
+      "fact": "资料结论是「个人」既可指自己也可指他人，需依上下文判断",
+      "tag": "F",
+      "quote": "具体含义需要根据上下文来判断",
+      "start": 516,
+      "end": 530,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 45,
+        "start": 484,
+        "end": 552
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_cb7955910c",
+      "fact": "该问答页面被归入「无分类」，未涉及检索与记忆设计",
+      "tag": "I",
+      "quote": "百度知道 > 无分类",
+      "start": 168,
+      "end": 178,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 30,
+        "start": 168,
+        "end": 179
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_cb7955910c",
+      "fact": "回答者为百度认证账号「文暄生活科普」，日期2025-05-24",
+      "tag": "F",
+      "quote": "2025-05-24 · 百度认证:宜昌文暄生活服务科技官方账号",
+      "start": 248,
+      "end": 280,
+      "locator": {
+        "heading": "# \"个人\"是指自己,还是一个人（不包括自己）",
+        "paragraph": 35,
+        "start": 248,
+        "end": 281
+      },
+      "note": ""
+    }
+  ]
+}

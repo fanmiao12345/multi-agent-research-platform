@@ -1,0 +1,142 @@
+{
+  "title": "个人知识管理系统中的检索与记忆设计：证据核查与缺口说明",
+  "sections": [
+    {
+      "heading": "报告范围与证据边界",
+      "purpose": "界定目标问题、可用资料与总体可答范围。",
+      "required_evidence": [
+        "E-006",
+        "E-017",
+        "E-024",
+        "E-025",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "来源主题相关性核查",
+      "purpose": "核查各来源是否涉及目标主题及自述无关情况。",
+      "required_evidence": [
+        "E-006",
+        "E-017",
+        "E-024",
+        "E-025",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "可观测检索入口",
+      "purpose": "整理搜索入口证据，说明其未描述检索机制。",
+      "required_evidence": [
+        "E-016",
+        "E-019"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "可观测记忆相关入口",
+      "purpose": "整理笔记与问答入口证据，说明仅见导航入口。",
+      "required_evidence": [
+        "E-020",
+        "E-021"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "个人中心功能线索",
+      "purpose": "说明登录、推荐、职位等线索与目标主题弱相关。",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "卡片类界面素材线索",
+      "purpose": "说明卡片UI与获取代码不能支撑知识记忆设计。",
+      "required_evidence": [
+        "E-018",
+        "E-022",
+        "E-023"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "「个人」指代语义证据",
+      "purpose": "说明词语释义无法支撑系统检索与记忆设计。",
+      "required_evidence": [
+        "E-007",
+        "E-008",
+        "E-009",
+        "E-026",
+        "E-027",
+        "E-028",
+        "E-029",
+        "E-030"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "彩票页面内容与目标无关",
+      "purpose": "说明开奖公告等材料不涉及目标系统设计。",
+      "required_evidence": [
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "检索机制设计缺口",
+      "purpose": "回答检索机制具体方案为何无法从现有资料得出。",
+      "required_evidence": [
+        "E-016",
+        "E-019",
+        "E-024",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "记忆设计缺口",
+      "purpose": "回答记忆模型或策略为何无法从现有资料得出。",
+      "required_evidence": [
+        "E-020",
+        "E-021",
+        "E-006",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "架构、数据模型与评估缺口",
+      "purpose": "说明缺少架构、数据模型、评估或用户研究证据。",
+      "required_evidence": [
+        "E-006",
+        "E-017",
+        "E-024",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与后续取证建议",
+      "purpose": "总结可答边界并列出需补充的目标主题资料。",
+      "required_evidence": [
+        "E-006",
+        "E-017",
+        "E-024",
+        "E-025",
+        "E-031"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

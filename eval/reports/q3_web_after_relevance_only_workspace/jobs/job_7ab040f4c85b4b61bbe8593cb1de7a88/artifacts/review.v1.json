@@ -1,0 +1,62 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "RPA边界推断称可被API/脚本/关键词匹配覆盖，E-019/E-020/E-023未支持该结论，易误导"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "缺口节将E-006与E-007并列支持“智能体成核心支撑”，E-006仅述TARS生成流程，引用过宽"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "范围说明未列出各E编号对应来源，仅称“给定证据”，证据来源交代不足"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "来源元数据缺口仅列E-017，E-018至E-023同标“该来源”，未汇总其元数据缺失"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "冲突节称E-001与E-004“存在矛盾”，E-001未否定自主决策，矛盾判断过强"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "跨系统节称E-008与E-017“存在冲突”，UI工具也属工具，无需API操作未必冲突"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论将待验证事项中的E-008标为〔事实〕，与其可验证性待查的表述易混淆"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "AI融合节把E-001“不具备自主学习和创新能力”简写为“自主能力”，含义有偏移"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "选型顺序把传统自动化置于Agent之前，E-018/E-020未直接比较二者，推断跨度较大"
+  }
+ ]
+}

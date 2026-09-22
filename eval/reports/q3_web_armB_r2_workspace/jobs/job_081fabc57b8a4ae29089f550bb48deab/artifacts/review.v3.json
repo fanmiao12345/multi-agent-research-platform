@@ -1,0 +1,67 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-005）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "E-012仅提氨脱除回收，未提气态膜；报告标为事实并称‘该技术’，属无依据添加，需改为资料缺口。"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "后续核查列‘生态环境部’及‘白名单’，证据未出现；属资料外事实，应删去或标为待查。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "‘核心议题之一’无证据；E-010仅列演讲主题含政策解析、合规，建议改为议题之一。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-001未称‘主办单位’；‘官网首页显示主办单位为’宜改为官网所属或来源标注，避免超出证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-013/E-014仅称本资料，未证明属论坛；‘论坛资料的数据分析栏’表述不严谨。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "正文出现‘上一稿’，报告应自足，建议删去此跨稿指涉。"
+  }
+ ]
+}

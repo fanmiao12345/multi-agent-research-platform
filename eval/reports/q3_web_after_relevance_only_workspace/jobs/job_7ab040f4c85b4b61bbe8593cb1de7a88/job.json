@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_7ab040f4c85b4b61bbe8593cb1de7a88",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 机器人流程自动化与智能体的边界：基于给定证据的整理\n## 范围与证据说明\n本报告仅依据素材包已核实证据整理RPA与智能体边界，不引入给定证据之外事实。证据按主题分组使用。标注规则：证据直接陈述标〔事实〕；由证据归纳、比较得出的标〔推断〕；证据未提供的标〔未知〕。RPA侧重流程自动化，核心是执行规则明确的重复性操作，不具备自主学习和创新能力【[E-001]】〔事实〕；AI核心是认知智能，能模拟学习、推理和决策，处理不确定性问题【[E-002]】〔事实〕。无交集资料中，一份标题为《超自然行动组》，自述为多人组队欢乐恐怖游戏【[E-009]】〔事实〕；其全文未出现机器人流程自动化、智能体及其边界相关表述【[E-011]】〔事实〕；资料与任务目标无内容交集，无法据此提取相关证据【[E-015]】〔事实〕；另一份主题为「大」字甲骨文金文篆文字形演变，未涉及RPA与智能体边界【[E-016]】〔事实〕。上述无交集资料不纳入边界分析〔推断〕。\n## RPA的定位与能力边界\nRPA侧重流程自动化，核心是执行规则明确的重复性操作，不具备自主学习和创新能力【[E-001]】〔事实〕。简单重复任务用传统自动化方案更高效【[E-018]】〔事实〕；能用API或脚本时就不用Agent【[E-019]】〔事实〕；先找API，找不到再考虑Agent【[E-020]】〔事实〕；传统客服机器人靠关键词匹配【[E-023]】〔事实〕。据此推断，RPA适用区间是规则明确、可重复的操作【[E-001]】【[E-018]】〔推断〕；实现手段上，证据支持API或脚本优先于Agent【[E-019]】【[E-020]】〔推断〕。关键词匹配是否属于RPA的替代实现路径，证据未说明〔未知〕。\n## AI认知能力与RPA融合\nAI核心是认知智能，能模拟学习、推理和决策，处理不确定性问题【[E-002]】〔事实〕。RPA与AI融合形成IPA，让RPA从执行工具升级为智能助手【[E-003]】〔事实〕。IDC称实在智能以TARS大模型实现自然语言生成流程，打破传统RPA规则依赖【[E-006]】〔事实〕。未来智能体技术将成为核心支撑，RPA升级为AI驱动的RPA【[E-007]】〔事实〕。由此可梳理升级线索：规则执行→引入认知能力→自然语言生成流程→AI驱动的RPA〔推断〕。融合是否改变RPA「不具备自主学习和创新能力」的定性【[E-001]】，证据未说明〔未知〕。\n## 智能体的自主决策与任务规划\n实在Agent是RPA的进阶形态，核心突破是自主决策能力【[E-004]】〔事实〕。实在Agent可据自然语言描述，自主拆解任务步骤、规划执行路径，无需预设详细流程【[E-005]】〔事实〕。Agent适合需要理解、规划、多步执行的复杂任务【[E-021]】〔事实〕。据此推断，智能体能力区间落在决策与规划层面，面向需理解、多步执行的复杂任务〔推断〕；其与RPA的定性关系见冲突节〔推断〕。\n## 跨系统操作与工具边界\n实在Agent无需依赖API即可跨系统协作，能操作各类软件和APP【[E-008]】〔事实〕。Agent的能力边界由工具决定【[E-017]】〔事实〕。Agent不是万能的【[E-022]】〔事实〕。若把可操作的软件与APP界面也计入「工具」范围，则E-008可由工具决定论解释，两条表述未必冲突〔推断〕；若「工具」仅指接口类工具，则两条表述存在张力〔推断〕。该术语歧义未获证据澄清〔未知〕。\n## 边界判断与选型准则\n简单重复任务用传统自动化方案更高效【[E-018]】〔事实〕；能用API或脚本时就不用Agent【[E-019]】〔事实〕；先找API，找不到再考虑Agent【[E-020]】〔事实〕；Agent适合需要理解、规划、多步执行的复杂任务【[E-021]】〔事实〕；Agent不是万能的【[E-022]】〔事实〕。据此，证据直接支撑：能用API或脚本时优先API或脚本，无API时再考虑Agent【[E-019]】【[E-020]】〔推断〕；任务需要理解、规划、多步执行时考虑Agent，并评估其工具条件与能力上限【[E-021]】【[E-022]】〔推断〕。E-018只提传统自动化方案，未明确其是否包含RPA，也未直接与Agent比较，故不将传统自动化与RPA等同，也不排序〔推断〕。\n## 冲突与未决问题\n一是RPA不具备自主学习和创新能力【[E-001]】，与实在Agent作为RPA进阶形态、核心突破为自主决策能力【[E-004]】之间存在张力；但E-001针对RPA，是否外延至其进阶形态并无证据说明，故不作「矛盾」判定〔推断〕。二是RPA与AI融合使RPA升级为智能助手【[E-003]】，是否改变E-001对RPA的定性尚不明确〔未知〕。三是能力边界由工具决定【[E-017]】与无需API即可操作各类软件和APP【[E-008]】的关系取决于「工具」含义，可能不冲突也可能有张力〔推断〕。四是Agent不是万能【[E-022]】与能操作各类软件和APP【[E-008]】之间存在张力〔推断〕。以上均保持开放，未获新证据前不作裁决〔推断〕。\n## 缺口与验证需求\n概念缺口：RPA、IPA与智能体的概念边界如何统一定义，缺少权威标准或多来源统一定义材料〔未知〕。量化缺口：RPA与智能体在具体任务上的边界如何量化，缺少量化基准、评测数据与业务案例〔未知〕。验证缺口：实在Agent无需依赖API即可跨系统协作、能操作各类软件和APP【[E-008]】〔事实〕，其可验证性缺少第三方测试或可复现实验材料〔未知〕；Agent能力上限【[E-022]】同样缺少量化与验证材料〔未知〕。来源元数据缺口：E-017、E-022等来源在素材中未附标题、作者、发布时间与链接等元数据【[E-017]】〔未知〕。落地路径缺口：自然语言生成流程【[E-006]】与智能体技术将成为核心支撑、RPA升级为AI驱动的RPA【[E-007]】如何落地，缺少落地案例、时间表与行业调研数据〔未知〕。\n## 无交集资料处理说明\n一份资料标题为《超自然行动组》，自述为多人组队欢乐恐怖游戏【[E-009]】〔事实〕；其为游戏官网首页，仅含新闻、公告、活动与下载入口等内容【[E-010]】〔事实〕；全文未出现机器人流程自动化、智能体及其边界相关表述【[E-011]】〔事实〕；最新一条新闻日期为2026-09-17，内容为版本更新速递【[E-012]】〔事实〕；提到该游戏日活跃用户突破一千万【[E-013]】〔事实〕；标注运营方为上海巨人网络科技有限公司，版本号1.13.3.001【[E-014]】〔事实〕。另一份资料主题为「大」字甲骨文金文篆文字形演变，未涉及RPA与智能体边界【[E-016]】〔事实〕。两份资料均与任务目标无内容交集，无法据此提取相关证据【[E-015]】〔事实〕，故不纳入本报告的边界分析〔推断〕。\n## 结论与适用边界\nRPA侧重规则明确的重复操作，不具备自主学习和创新能力【[E-001]】〔事实〕；AI核心是认知智能，处理不确定性问题【[E-002]】〔事实〕；实在Agent是RPA的进阶形态，具自主决策能力，并可依自然语言拆解任务、规划路径【[E-004]】【[E-005]】〔事实〕；Agent适合理解、规划、多步执行的复杂任务【[E-021]】〔事实〕；其能力边界由工具决定【[E-017]】〔事实〕，且Agent不是万能的【[E-022]】〔事实〕。选型上，简单重复任务用传统自动化方案更高效【[E-018]】〔事实〕；能用API或脚本时不用Agent【[E-019]】〔事实〕；先找API，找不到再考虑Agent【[E-020]】〔事实〕。适用条件：规则明确、可重复的任务与RPA定位一致【[E-001]】〔推断〕；需要理解、规划、多步执行且API不可得时考虑Agent【[E-020]】【[E-021]】〔推断〕。E-018的传统自动化方案是否包含RPA未明确，故不将其作为RPA选型依据〔未知〕。待验证事项包括：无需API即可操作各类软件和APP的说法【[E-008]】、概念统一、量化基准、来源元数据与落地路径〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 4,
+    "usable": 4,
+    "statuses": {
+      "ok": 4
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-18T14:04:09"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，2 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:04:20"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 7, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:05:12"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "10 个章节",
+        "finished_at": "2026-09-18T14:05:22"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（3152字）",
+        "finished_at": "2026-09-18T14:05:57"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 10,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-18T14:07:09"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 2,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-18T14:08:01"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-18T14:09:02"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 69,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 2 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://developer.aliyun.com/article/1687894",
+      "https://www.chaoziran.com/",
+      "https://www.chaoxing.com/",
+      "http://www.renlu.net/html/jiaguwenzidian_486.html"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "RPA 智能体 边界 架构",
+        "rank": 5,
+        "title": "RPA是什么？它能解决什么问题？一文读懂RPA的核心价值 ...",
+        "url": "https://developer.aliyun.com/article/1687894",
+        "snippet": "2025年11月7日 · 随着技术的不断创新和市场的持续成熟，RPA将成为企业数字化转型的基础设施，推动工作方式的根本性变革。 对 …",
+        "published_date": "2025-11-07",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "超自动化 智能体 RPA 协同",
+        "rank": 2,
+        "title": "超自然行动组",
+        "url": "https://www.chaoziran.com/",
+        "snippet": "2026年2月1日 · 《超自然行动组》 | 版本号：1.13.3.001 | 隐私政策 | 权限列表 上海巨人网络科技有限公司 ICP备案： 沪B2-20050107 …",
+        "published_date": "2026-02-01",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "超自动化 智能体 RPA 协同",
+        "rank": 3,
+        "title": "超星",
+        "url": "https://www.chaoxing.com/",
+        "snippet": "2026年6月23日 · 超星名师讲坛主讲老师为来自全国重点高校或机构的知名教授、学者；或为著名艺术家、作家、主持人、医生等；又 …",
+        "published_date": "2026-06-23",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大模型 RPA 流程自动化 局限",
+        "rank": 5,
+        "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+        "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+        "snippet": "2023年3月19日 · 大快人心 大失所望 大同小异 大相径庭 大愚若智 大智若愚 大智大勇 居简而行简，无乃大简乎？ ------《论语 . 雍也》 …",
+        "published_date": "2023-03-19",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "机器人流程自动化 智能体 区别",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "机器（由各种金属和非金属部件组装成的装置）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8/2275865",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "machine - 搜索 词典",
+            "url": "https://global.bing.com/dict/search?q=machine&FORM=BDVSP6&cc=cn",
+            "relevance": 0.05,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "机器（汉语词语）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8/65322532",
+            "relevance": 0.1,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "机器的意思_机器的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-6f28e722b",
+            "relevance": 0.1,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "machine是什么意思_machine的翻译_音标_读音_用法_例句 ...",
+            "url": "https://www.iciba.com/word?w=machine",
+            "relevance": 0.05,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.242,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "RPA 智能体 边界 架构",
+        "urls": [
+          "https://developer.aliyun.com/article/1687894"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "RPA 智能体 边界 架构",
+            "rank": 5,
+            "title": "RPA是什么？它能解决什么问题？一文读懂RPA的核心价值 ...",
+            "url": "https://developer.aliyun.com/article/1687894",
+            "snippet": "2025年11月7日 · 随着技术的不断创新和市场的持续成熟，RPA将成为企业数字化转型的基础设施，推动工作方式的根本性变革。 对 …",
+            "published_date": "2025-11-07",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "RPA 是什么？一文看懂机器人流程自动化（2026 最新实战 ...",
+            "url": "https://blog.csdn.net/Maydaycxc/article/details/161041706",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "RPA机器人流程自动化：一篇文章讲清楚（优缺点/怎么用 ...",
+            "url": "https://zhuanlan.zhihu.com/p/1931307956315624801",
+            "relevance": 0.2,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "影刀官网｜企业 AI Agent、组织 AI 与 RPA 自动化平台",
+            "url": "https://www.yingdao.com/",
+            "relevance": 0.2,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "9个最佳开源免费的 RPA工具 - 知乎",
+            "url": "https://zhuanlan.zhihu.com/p/681951594",
+            "relevance": 0.3,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.223,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "超自动化 智能体 RPA 协同",
+        "urls": [
+          "https://www.chaoziran.com/",
+          "https://www.chaoxing.com/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "超自动化 智能体 RPA 协同",
+            "rank": 2,
+            "title": "超自然行动组",
+            "url": "https://www.chaoziran.com/",
+            "snippet": "2026年2月1日 · 《超自然行动组》 | 版本号：1.13.3.001 | 隐私政策 | 权限列表 上海巨人网络科技有限公司 ICP备案： 沪B2-20050107 …",
+            "published_date": "2026-02-01",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "超自动化 智能体 RPA 协同",
+            "rank": 3,
+            "title": "超星",
+            "url": "https://www.chaoxing.com/",
+            "snippet": "2026年6月23日 · 超星名师讲坛主讲老师为来自全国重点高校或机构的知名教授、学者；或为著名艺术家、作家、主持人、医生等；又 …",
+            "published_date": "2026-06-23",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "超自然行动组",
+            "url": "https://www.chaoziran.com/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "超星",
+            "url": "https://www.chaoxing.com/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "超（汉语汉字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E8%B6%85/5261609",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "超的意思,超的解释,超的拼音,超的部首,超的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-36229",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "超 chāo、chào、chǎo、tiào - 漢典",
+            "url": "http://zdic.net/hant/%E8%B6%85",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.342,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "大模型 RPA 流程自动化 局限",
+        "urls": [
+          "http://www.renlu.net/html/jiaguwenzidian_486.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "大模型 RPA 流程自动化 局限",
+            "rank": 5,
+            "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+            "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+            "snippet": "2023年3月19日 · 大快人心 大失所望 大同小异 大相径庭 大愚若智 大智若愚 大智大勇 居简而行简，无乃大简乎？ ------《论语 . 雍也》 …",
+            "published_date": "2023-03-19",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "【大】的甲骨文金文篆文字形演变含义 - 甲骨文研究网 甲骨文 ...",
+            "url": "http://www.renlu.net/html/jiaguwenzidian_486.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "大（汉语文字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%A4%A7/34128",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "大的意思,大的解释,大的拼音,大的部首,大的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-22823",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大字笔画、笔顺、笔划 - 大字怎么写?",
+            "url": "https://www.hanzipi.com/%E5%A4%A7.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "大 - 维基词典，自由的多语言词典",
+            "url": "https://zh.wiktionary.org/wiki/%E5%A4%A7",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.206,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（机器人流程自动化与智能体的边界）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: mode 必须取已开放模式 ['dynamic_team']（收到 'fanout'）；fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: mode 必须取已开放模式 ['dynamic_team']（收到 'fanout'）；fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "dynamic_team"
+        ]
+      },
+      "scheduler_elapsed_seconds": 29.276,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

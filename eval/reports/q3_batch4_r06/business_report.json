@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.095694,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "ca02a2c4f336"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-20T13:23:28",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 353.79,
+  "results": [
+    {
+      "id": "r06",
+      "category": "research",
+      "attempt": 1,
+      "task": "比较团队从40人增到60人时甲乙首年费用，并说明预付和最低席位造成的差异。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 351.779,
+      "estimated_cost_usd": 0.09569424000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_45b6f83442dd449a87818ccc6c1ffcc9",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 70,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 团队40人增至60人：甲乙首年费用比较与预付、最低席位差异\n## 假设\n本报告假设团队人数等于需购买账号或席位数，即40人对应40席、60人对应60席〔推断〕；该对应关系尚未确认〔未知〕。方案甲每账号每月20元[E-001]〔事实〕，甲可按月支付且最低10个账号[E-002]〔事实〕。方案乙每账号每月15元[E-010]〔事实〕，乙费用按年预付[E-011]〔事实〕，乙最低需购买50个账号席位"
+    }
+  ],
+  "records": [
+    {
+      "id": "r06",
+      "category": "research",
+      "attempt": 1,
+      "task": "比较团队从40人增到60人时甲乙首年费用，并说明预付和最低席位造成的差异。",
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 351.779,
+      "estimated_cost_usd": 0.09569424000000001,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_45b6f83442dd449a87818ccc6c1ffcc9",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 3/3、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 70,
+        "unresolved_citations": 0,
+        "required_sections": 3,
+        "section_hits": 3,
+        "fact_hits": 1,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 3,
+        "required_section_hits": 3,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 团队40人增至60人：甲乙首年费用比较与预付、最低席位差异\n## 假设\n本报告假设团队人数等于需购买账号或席位数，即40人对应40席、60人对应60席〔推断〕；该对应关系尚未确认〔未知〕。方案甲每账号每月20元[E-001]〔事实〕，甲可按月支付且最低10个账号[E-002]〔事实〕。方案乙每账号每月15元[E-010]〔事实〕，乙费用按年预付[E-011]〔事实〕，乙最低需购买50个账号席位"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q3_batch4_r06\\samples",
+  "grader": {}
+}

@@ -1,0 +1,811 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_08a67cd183",
+      "fact": "本资料标题将影刀AI WorkOS与RPA并列为同一产品体系。",
+      "tag": "F",
+      "quote": "影刀 AI WorkOS & RPA",
+      "start": 61,
+      "end": 79,
+      "locator": {
+        "heading": "",
+        "paragraph": 5,
+        "start": 61,
+        "end": 80
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_08a67cd183",
+      "fact": "本资料称通过AI WorkOS与RPA帮助企业设计、管理并准确执行、进化AI员工。",
+      "tag": "F",
+      "quote": "通过AI WorkOS与RPA，帮助企业设计、管理、",
+      "start": 81,
+      "end": 107,
+      "locator": {
+        "heading": "",
+        "paragraph": 6,
+        "start": 81,
+        "end": 108
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_08a67cd183",
+      "fact": "本资料将影刀定位为迈向AI原生组织的AI基础设施。",
+      "tag": "F",
+      "quote": "迈向AI原生组织的AI基础设施",
+      "start": 123,
+      "end": 138,
+      "locator": {
+        "heading": "",
+        "paragraph": 8,
+        "start": 123,
+        "end": 139
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_08a67cd183",
+      "fact": "本资料把影刀AI WorkOS与影刀RPA作为两个并列入口列出。",
+      "tag": "F",
+      "quote": "影刀AI WorkOS",
+      "start": 165,
+      "end": 176,
+      "locator": {
+        "heading": "",
+        "paragraph": 13,
+        "start": 165,
+        "end": 177
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_08a67cd183",
+      "fact": "本资料设有客户案例栏目，但未展开说明具体流程或智能体能力。",
+      "tag": "F",
+      "quote": "客户案例",
+      "start": 22,
+      "end": 26,
+      "locator": {
+        "heading": "",
+        "paragraph": 1,
+        "start": 4,
+        "end": 43
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_08a67cd183",
+      "fact": "本资料未说明RPA与AI智能体各自的能力边界和适用场景。",
+      "tag": "I",
+      "quote": "影刀RPA",
+      "start": 158,
+      "end": 163,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 158,
+        "end": 164
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_08a67cd183",
+      "fact": "影刀总部位于杭州市未来科技城鼎创财富中心B1幢。",
+      "tag": "F",
+      "quote": "杭州市未来科技城鼎创财富中心B1幢（总部）",
+      "start": 345,
+      "end": 366,
+      "locator": {
+        "heading": "",
+        "paragraph": 43,
+        "start": 341,
+        "end": 403
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_08a67cd183",
+      "fact": "影刀在北京、上海、深圳、广州、成都、厦门、南京设有分部。",
+      "tag": "F",
+      "quote": "北京、上海、深圳、广州、成都、厦门、南京",
+      "start": 368,
+      "end": 388,
+      "locator": {
+        "heading": "",
+        "paragraph": 43,
+        "start": 341,
+        "end": 403
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_d489e047b5",
+      "fact": "RPA是模拟人类与计算机交互、自动执行重复性规则明确标准化业务流程的软件技术。",
+      "tag": "F",
+      "quote": "自动执行重复性、规则明确、标准化的业务流程",
+      "start": 1967,
+      "end": 1988,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 48,
+        "start": 1889,
+        "end": 2103
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_d489e047b5",
+      "fact": "RPA侧重流程自动化，执行规则明确重复操作，不具备自主学习和创新能力。",
+      "tag": "F",
+      "quote": "RPA侧重于“流程自动化”，核心是执行规则明确的重复性操作，不具备自主学习和创新能力",
+      "start": 2772,
+      "end": 2814,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_d489e047b5",
+      "fact": "AI核心是认知智能，模拟人类学习推理决策，能处理不确定性问题。",
+      "tag": "F",
+      "quote": "AI的核心是“认知智能”，通过算法模拟人类的学习、推理和决策能力，能够处理不确定性问题",
+      "start": 2833,
+      "end": 2876,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_d489e047b5",
+      "fact": "RPA与AI融合形成IPA，使RPA从执行工具升级为智能助手。",
+      "tag": "F",
+      "quote": "两者的融合形成了IPA（人工智能流程自动化），让RPA从“执行工具”升级为“智能助手”",
+      "start": 2897,
+      "end": 2940,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 54,
+        "start": 2739,
+        "end": 2960
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_d489e047b5",
+      "fact": "RPA是纯软件方案，运行于计算机系统，专注办公场景数字化流程。",
+      "tag": "F",
+      "quote": "与工业机器人相比，RPA是纯粹的软件解决方案，运行在计算机系统中，专注于处理办公场景中的数字化流程",
+      "start": 2961,
+      "end": 3010,
+      "locator": {
+        "heading": "# 一、RPA是什么？——从定义到技术本质的全面解析",
+        "paragraph": 55,
+        "start": 2961,
+        "end": 3116
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_d489e047b5",
+      "fact": "实在Agent是RPA进阶形态，全球首款具备“大脑和手脚”的通用智能体。",
+      "tag": "F",
+      "quote": "实在Agent是全球首款具备“大脑和手脚”的通用智能体产品",
+      "start": 6494,
+      "end": 6523,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 81,
+        "start": 6429,
+        "end": 6599
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_d489e047b5",
+      "fact": "与传统RPA相比，实在Agent核心突破是自主决策能力，基于TARS大模型。",
+      "tag": "F",
+      "quote": "与传统RPA相比，实在Agent的核心突破在于“自主决策能力”，它基于实在智能自研的TARS大模型",
+      "start": 6600,
+      "end": 6649,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 82,
+        "start": 6600,
+        "end": 6738
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_d489e047b5",
+      "fact": "IDC提及实在智能以自然语言生成流程，打破传统RPA对规则依赖的局限。",
+      "tag": "F",
+      "quote": "实在智能基于TARS大模型实现“自然语言生成流程”的技术创新，打破了传统RPA对规则依赖的局限",
+      "start": 9156,
+      "end": 9203,
+      "locator": {
+        "heading": "# 四、实在Agent：RPA的进阶形态，开启智能自动化新时代",
+        "paragraph": 103,
+        "start": 9144,
+        "end": 9336
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料称智能体自动化是智能体思考、机器人执行、人类领导的工作方式。",
+      "tag": "F",
+      "quote": "发现智能体思考、机器人执行、人类领导的工作方式。",
+      "start": 327,
+      "end": 351,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 32,
+        "start": 327,
+        "end": 352
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料称智能体思考、机器人执行、人类引导，以实现智能体自动化。",
+      "tag": "F",
+      "quote": "智能体思考、机器人执行、人类引导。",
+      "start": 2788,
+      "end": 2805,
+      "locator": {
+        "heading": "## 智能体 AI 可满足投资回报率",
+        "paragraph": 169,
+        "start": 2788,
+        "end": 2806
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料将“智能体 AI”列为平台构建能力之一。",
+      "tag": "F",
+      "quote": "智能体 AI",
+      "start": 457,
+      "end": 463,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 43,
+        "start": 457,
+        "end": 464
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料将“RPA 与 API”列为平台构建能力之一。",
+      "tag": "F",
+      "quote": "RPA 与 API",
+      "start": 465,
+      "end": 474,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 44,
+        "start": 465,
+        "end": 475
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料称可构建并集成 UiPath 智能体、第三方智能体、UI Automation 和基于 API 的工作流。",
+      "tag": "F",
+      "quote": "构建并集成 UiPath 智能体、第三方智能体、UI Automation 和基于 API 的工作流",
+      "start": 2852,
+      "end": 2902,
+      "locator": {
+        "heading": "### AI 流程革新",
+        "paragraph": 171,
+        "start": 2852,
+        "end": 2903
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料称智能体型工作流程可连接 AI 智能体、机器人和人类团队。",
+      "tag": "F",
+      "quote": "连接 AI 智能体、机器人和人类团队的智能体型工作流程。",
+      "start": 257,
+      "end": 285,
+      "locator": {
+        "heading": "###### 解决方案",
+        "paragraph": 29,
+        "start": 257,
+        "end": 286
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料将“智能体型编排”列为平台构建能力之一。",
+      "tag": "F",
+      "quote": "智能体型编排",
+      "start": 493,
+      "end": 499,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 47,
+        "start": 493,
+        "end": 500
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_67924f0e84",
+      "fact": "本资料未给出机器人流程自动化的定义，仅提供相关主题入口。",
+      "tag": "I",
+      "quote": "什么是机器人流程自动化？",
+      "start": 1121,
+      "end": 1133,
+      "locator": {
+        "heading": "###### 为什么选择智能体",
+        "paragraph": 90,
+        "start": 1121,
+        "end": 1134
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_044ffb3418",
+      "fact": "资料将 RPA 与 Agentic AI、API 并列为执行能力。",
+      "tag": "F",
+      "quote": "EXECUTION\n\nAgentic AI\n\nRPA\n\nAPI",
+      "start": 220,
+      "end": 251,
+      "locator": {
+        "heading": "###### Platform",
+        "paragraph": 10,
+        "start": 220,
+        "end": 230
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_044ffb3418",
+      "fact": "平台将执行层区分为：智能体推理、机器人行动、人介入判断。",
+      "tag": "F",
+      "quote": "Agents reason, robots act, and people step in where judgment matters",
+      "start": 3709,
+      "end": 3777,
+      "locator": {
+        "heading": "### Where the work gets done",
+        "paragraph": 138,
+        "start": 3709,
+        "end": 3835
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_044ffb3418",
+      "fact": "智能体负责录入分诊与承保风险评估。",
+      "tag": "F",
+      "quote": "Agents handle intake triage and underwriting risk assessment",
+      "start": 3887,
+      "end": 3947,
+      "locator": {
+        "heading": "#### Agents reason",
+        "paragraph": 141,
+        "start": 3887,
+        "end": 4002
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_044ffb3418",
+      "fact": "智能体每项决策都保持在定义的控制范围内。",
+      "tag": "F",
+      "quote": "with every decision staying within defined controls",
+      "start": 3949,
+      "end": 4000,
+      "locator": {
+        "heading": "#### Agents reason",
+        "paragraph": 141,
+        "start": 3887,
+        "end": 4002
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_044ffb3418",
+      "fact": "资料将机器人、API与智能体列为行动主体。",
+      "tag": "F",
+      "quote": "Robots, APIs, and agents act",
+      "start": 4142,
+      "end": 4170,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_044ffb3418",
+      "fact": "机器人、API与智能体的行动是记录系统上的确定性执行。",
+      "tag": "F",
+      "quote": "Deterministic execution on systems of record",
+      "start": 4172,
+      "end": 4216,
+      "locator": {
+        "heading": "#### Robots, APIs, and agents act",
+        "paragraph": 143,
+        "start": 4172,
+        "end": 4267
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_044ffb3418",
+      "fact": "人的判断是工作流中的一等步骤。",
+      "tag": "F",
+      "quote": "Human judgment is a first-class workflow step.",
+      "start": 4288,
+      "end": 4334,
+      "locator": {
+        "heading": "#### People decide",
+        "paragraph": 144,
+        "start": 4288,
+        "end": 4378
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_044ffb3418",
+      "fact": "编排层协调智能体、机器人与人员。",
+      "tag": "F",
+      "quote": "Orchestrate: agents, robots, people.",
+      "start": 2711,
+      "end": 2747,
+      "locator": {
+        "heading": "### From intake to outcome",
+        "paragraph": 125,
+        "start": 2711,
+        "end": 2748
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_189988a587",
+      "fact": "本资料将智能体自动化描述为智能体思考、机器人执行、人类领导。",
+      "tag": "F",
+      "quote": "发现智能体思考、机器人执行、人类领导的工作方式。",
+      "start": 327,
+      "end": 351,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 32,
+        "start": 327,
+        "end": 352
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_189988a587",
+      "fact": "本资料平台能力中提及“智能体 AI”。",
+      "tag": "F",
+      "quote": "智能体 AI",
+      "start": 457,
+      "end": 463,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 43,
+        "start": 457,
+        "end": 464
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-035",
+      "source_id": "src_189988a587",
+      "fact": "本资料平台能力中提及“RPA 与 API”。",
+      "tag": "F",
+      "quote": "RPA 与 API",
+      "start": 465,
+      "end": 474,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 44,
+        "start": 465,
+        "end": 475
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-036",
+      "source_id": "src_189988a587",
+      "fact": "本资料平台产品列表包含“Robots”。",
+      "tag": "F",
+      "quote": "Robots",
+      "start": 2277,
+      "end": 2283,
+      "locator": {
+        "heading": "###### 发现",
+        "paragraph": 180,
+        "start": 2277,
+        "end": 2284
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-037",
+      "source_id": "src_189988a587",
+      "fact": "本资料平台产品列表包含“Agent Builder”。",
+      "tag": "F",
+      "quote": "Agent Builder",
+      "start": 829,
+      "end": 842,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 72,
+        "start": 821,
+        "end": 843
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-038",
+      "source_id": "src_189988a587",
+      "fact": "本资料平台能力中列出“智能体型编排”。",
+      "tag": "F",
+      "quote": "智能体型编排",
+      "start": 493,
+      "end": 499,
+      "locator": {
+        "heading": "###### 平台",
+        "paragraph": 47,
+        "start": 493,
+        "end": 500
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-039",
+      "source_id": "src_189988a587",
+      "fact": "本资料称平台集成所有内容，实现集中管理和治理。",
+      "tag": "F",
+      "quote": "在同一平台上集成所有内容，实现集中管理和治理。",
+      "start": 1752,
+      "end": 1775,
+      "locator": {
+        "heading": "## 满足您在端到端业务流程中发现、自动化和运营方面的需要。",
+        "paragraph": 143,
+        "start": 1752,
+        "end": 1776
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-040",
+      "source_id": "src_189988a587",
+      "fact": "本资料称 AI 赋能自动化可与人类和各类系统无缝协作。",
+      "tag": "F",
+      "quote": "使其能与 人类 和各类系统无缝协作",
+      "start": 1855,
+      "end": 1872,
+      "locator": {
+        "heading": "## 自动化",
+        "paragraph": 145,
+        "start": 1839,
+        "end": 1886
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-041",
+      "source_id": "src_fbfad310ef",
+      "fact": "Studio将AI agents、RPA工作流、API集成、应用和流程建模汇聚在一起。",
+      "tag": "F",
+      "quote": "AI agents, RPA workflows, API integrations, apps, and process modeling",
+      "start": 2687,
+      "end": 2757,
+      "locator": {
+        "heading": "## The entire automation surface, all in Studio",
+        "paragraph": 134,
+        "start": 2673,
+        "end": 2810
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-042",
+      "source_id": "src_fbfad310ef",
+      "fact": "代理式流程在单一流程中协调agents、robots和人。",
+      "tag": "F",
+      "quote": "Coordinate agents, robots, and people in one process",
+      "start": 2896,
+      "end": 2948,
+      "locator": {
+        "heading": "### Agentic process",
+        "paragraph": 140,
+        "start": 2896,
+        "end": 2949
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-043",
+      "source_id": "src_fbfad310ef",
+      "fact": "AI agents为生产级，内置护栏。",
+      "tag": "F",
+      "quote": "Production-grade agents, with guardrails built in",
+      "start": 3220,
+      "end": 3269,
+      "locator": {
+        "heading": "### AI agents",
+        "paragraph": 142,
+        "start": 3220,
+        "end": 3270
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-044",
+      "source_id": "src_fbfad310ef",
+      "fact": "RPA工作流是行业领先的UI自动化，由agentic AI增强。",
+      "tag": "F",
+      "quote": "Industry-leading UI automation, supercharged by agentic AI",
+      "start": 3576,
+      "end": 3634,
+      "locator": {
+        "heading": "### RPA workflows",
+        "paragraph": 144,
+        "start": 3576,
+        "end": 3635
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-045",
+      "source_id": "src_fbfad310ef",
+      "fact": "API工作流可被agents和robots可靠调用。",
+      "tag": "F",
+      "quote": "Agents and robots call them reliably.",
+      "start": 4075,
+      "end": 4112,
+      "locator": {
+        "heading": "### API workflows",
+        "paragraph": 147,
+        "start": 3997,
+        "end": 4277
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-046",
+      "source_id": "src_fbfad310ef",
+      "fact": "编码自动化与编码应用用C#，编码agents用Python。",
+      "tag": "F",
+      "quote": "C# for coded automations and coded apps. Python for coded agents",
+      "start": 13157,
+      "end": 13221,
+      "locator": {
+        "heading": "###### What languages does UiPath Studio support?",
+        "paragraph": 363,
+        "start": 13157,
+        "end": 13376
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-047",
+      "source_id": "src_fbfad310ef",
+      "fact": "Studio Desktop是用于复杂RPA和桌面自动化的Windows IDE。",
+      "tag": "F",
+      "quote": "Studio Desktop is the Windows IDE for complex RPA, desktop automation",
+      "start": 12620,
+      "end": 12689,
+      "locator": {
+        "heading": "###### What’s the difference between Studio Desktop and Studio Web?",
+        "paragraph": 361,
+        "start": 12620,
+        "end": 12896
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-048",
+      "source_id": "src_fbfad310ef",
+      "fact": "Studio Web是基于浏览器的IDE，面向AI agents和API workflows。",
+      "tag": "F",
+      "quote": "Studio Web is the browser-based IDE for AI agents, API workflows",
+      "start": 12715,
+      "end": 12779,
+      "locator": {
+        "heading": "###### What’s the difference between Studio Desktop and Studio Web?",
+        "paragraph": 361,
+        "start": 12620,
+        "end": 12896
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-049",
+      "source_id": "src_7623ab64fc",
+      "fact": "本资料是一篇关于人类起源的科普长文，主题与机器人流程自动化无关。",
+      "tag": "F",
+      "quote": "深度长文：地球上本来并没有人类，第一个人是如何诞生的？",
+      "start": 72,
+      "end": 99,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-050",
+      "source_id": "src_7623ab64fc",
+      "fact": "本资料比较进化论、神创论与外星人创造论三种人类起源说法。",
+      "tag": "F",
+      "quote": "目前流传较广的人类起源理论还有两种",
+      "start": 447,
+      "end": 464,
+      "locator": {
+        "heading": "# 原创 深度长文：地球上本来并没有人类，第一个人是如何诞生的？",
+        "paragraph": 19,
+        "start": 376,
+        "end": 503
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-051",
+      "source_id": "src_7623ab64fc",
+      "fact": "本资料未出现机器人流程自动化或智能体相关内容，无法据此界定二者边界。",
+      "tag": "U",
+      "quote": "人类的诞生完全是 “偶然中的偶然”",
+      "start": 3417,
+      "end": 3434,
+      "locator": {
+        "heading": "# 原创 深度长文：地球上本来并没有人类，第一个人是如何诞生的？",
+        "paragraph": 43,
+        "start": 3366,
+        "end": 3437
+      },
+      "note": ""
+    }
+  ]
+}

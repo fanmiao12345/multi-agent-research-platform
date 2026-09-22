@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "root_job_id": "job_fee34beaaabd4283948175e0c3ea323c",
+  "topic": "是否应强制公开算法推荐规则",
+  "mode_requested": "fixed",
+  "orchestration": "debate",
+  "status": "finished",
+  "plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "选型失败，降级固定流程（已知最稳）",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "unspecified",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "writer",
+        "description": "按给定资料完成整理与成稿（是否应强制公开算法推荐规则）",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 60,
+      "max_cost_usd": 0.12,
+      "max_seconds": 1500.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.06,
+      "seconds": 750
+    }
+  },
+  "plan_meta": {
+    "scheduler": "fallback",
+    "failures": [
+      "第1次选型失败：PlanValidationError: mode 必须取已开放模式 ['debate']（收到 'fanout'）；fallback_mode 必须取已开放模式 ['debate']；subtasks 必须为 1~12 个的列表",
+      "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['debate']；subtasks 必须为 1~12 个的列表"
+    ],
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "debate"
+      ]
+    },
+    "scheduler_elapsed_seconds": 21.864,
+    "scheduler_calls": 2
+  },
+  "subtasks": [],
+  "draft_level": "unable",
+  "degraded": false,
+  "failures": [],
+  "execution_note": "受根账本锁限制，本轮子任务按序执行（并行开放见 D2-02）",
+  "termination_reason": "unable",
+  "message": "无法完成：素材仅含算法基础教程与无关词条，未涉及算法推荐规则或强制公开，无法形成任何论据。；缺失信息：支持强制公开的法律、政策或伦理依据、反对强制公开的商业秘密、安全风险、可操作性等理由、算法推荐规则应公开的范围、技术标准与披露粒度、强制公开的实际影响评估、案例或行业数据、平台、监管者、用户、专家等不同主体的立场（可用证据 12 条不足以支撑任务目标，按任务要求不编造内容）",
+  "unified": {
+    "schema_version": 2,
+    "root_job_id": "job_fee34beaaabd4283948175e0c3ea323c",
+    "draft_level": "unable",
+    "delivery_label": "无法完成",
+    "termination_reason": "unable",
+    "status": "partial",
+    "message": "无法完成：素材仅含算法基础教程与无关词条，未涉及算法推荐规则或强制公开，无法形成任何论据。；缺失信息：支持强制公开的法律、政策或伦理依据、反对强制公开的商业秘密、安全风险、可操作性等理由、算法推荐规则应公开的范围、技术标准与披露粒度、强制公开的实际影响评估、案例或行业数据、平台、监管者、用户、专家等不同主体的立场（可用证据 12 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

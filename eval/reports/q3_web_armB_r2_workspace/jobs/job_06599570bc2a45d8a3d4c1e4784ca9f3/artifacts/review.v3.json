@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "round": 3,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-025）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-026）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-028）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "第1节称可商用强调授权、开放权重强调可取权重，E-001/E-002/E-016未作此定义，超出证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第3节称本地AI栈“而非直接收费”，E-007/E-029未提LocalAIStack收费与否，推断过强。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第4节称本地免费是“基础入口”，E-013仅称本地模型始终免费，未见入口定位证据。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "第9节称研究输出“增强生态影响力与赞助合作基础”，E-030/E-031未建立该因果联系。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "全篇将来源自称/页面宣传标为〔事实〕，易读作已证实；建议标为来源主张或加限定。"
+  }
+ ]
+}

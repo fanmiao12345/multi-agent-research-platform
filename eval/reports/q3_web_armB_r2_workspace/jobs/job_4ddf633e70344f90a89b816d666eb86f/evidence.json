@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_e5b53ec0cb",
+      "fact": "本资料将远程协作与演示列为ToDesk使用场景之一。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_e5b53ec0cb",
+      "fact": "本资料将远程办公与专业设计列为使用场景之一。",
+      "tag": "F",
+      "quote": "远程办公与专业设计",
+      "start": 96,
+      "end": 105,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 96,
+        "end": 106
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_e5b53ec0cb",
+      "fact": "本资料称多人可同时控制一台设备并进行白板批注。",
+      "tag": "F",
+      "quote": "多人同时控制一台设备并可白板批注",
+      "start": 506,
+      "end": 522,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 506,
+        "end": 523
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_e5b53ec0cb",
+      "fact": "本资料引用用户称多指针功能使协作双方看到鼠标轨迹，沟通效率上升。",
+      "tag": "F",
+      "quote": "开启ToDesk的多指针功能，我们俩都能看到对方的鼠标轨迹。用ToDesk沟通效率直线上升！",
+      "start": 4816,
+      "end": 4862,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_e5b53ec0cb",
+      "fact": "本资料称团队版可统一管理席位、设备、连接与权益。",
+      "tag": "F",
+      "quote": "席位、设备、连接、权益统一管",
+      "start": 1114,
+      "end": 1128,
+      "locator": {
+        "heading": "",
+        "paragraph": 103,
+        "start": 1114,
+        "end": 1129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_e5b53ec0cb",
+      "fact": "本资料称企业版员工下载主控端登录即可无缝切换远程办公。",
+      "tag": "F",
+      "quote": "员工只需下载主控端并登录，即可无缝切换远程办公",
+      "start": 2222,
+      "end": 2245,
+      "locator": {
+        "heading": "## 安全的企业都选择 ToDesk企业版",
+        "paragraph": 190,
+        "start": 2222,
+        "end": 2246
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_e5b53ec0cb",
+      "fact": "本资料引用用户称远控时可开启语音通话功能与同事沟通。",
+      "tag": "F",
+      "quote": "远控时直接开启ToDesk的语音通话功能",
+      "start": 8268,
+      "end": 8288,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 402,
+        "start": 8260,
+        "end": 8320
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_3cad947404",
+      "fact": "本资料主题为分布式系统，未涉及远程办公对团队协作的研究。",
+      "tag": "F",
+      "quote": "这篇文章先把“分布式系统是什么”讲清楚。",
+      "start": 664,
+      "end": 684,
+      "locator": {
+        "heading": "# 分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+        "paragraph": 50,
+        "start": 664,
+        "end": 732
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_3cad947404",
+      "fact": "本资料将分布式系统定义为联网组件仅靠消息传递通信与协调。",
+      "tag": "F",
+      "quote": "位于联网计算机上的硬件或软件组件，仅通过消息传递进行通信并协调行动",
+      "start": 788,
+      "end": 821,
+      "locator": {
+        "heading": "## 什么是分布式系统？",
+        "paragraph": 52,
+        "start": 775,
+        "end": 823
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_3cad947404",
+      "fact": "本资料指出远程调用超时不能证明服务端没有执行。",
+      "tag": "F",
+      "quote": "超时只说明客户端在指定时间内没有收到响应，不能证明服务端没有执行",
+      "start": 5791,
+      "end": 5823,
+      "locator": {
+        "heading": "## 分布式系统难在哪里？",
+        "paragraph": 130,
+        "start": 5746,
+        "end": 5863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_3cad947404",
+      "fact": "本资料认为分布式系统节点只有局部视图，没有瞬时全局状态。",
+      "tag": "F",
+      "quote": "节点通常只有局部视图",
+      "start": 1491,
+      "end": 1501,
+      "locator": {
+        "heading": "## 什么是分布式系统？",
+        "paragraph": 63,
+        "start": 1476,
+        "end": 1502
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_3cad947404",
+      "fact": "本资料未出现远程办公、团队协作或相关近期研究的任何表述。",
+      "tag": "U",
+      "quote": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "start": 403,
+      "end": 430,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_3cad947404",
+      "fact": "本资料只讨论分布式系统的概念、架构、特征与学习路线，不涉及组织协作议题。",
+      "tag": "F",
+      "quote": "分布式系统不是某一种中间件，而是一类系统形态。",
+      "start": 4608,
+      "end": 4631,
+      "locator": {
+        "heading": "## 常见的分布式系统有哪些？",
+        "paragraph": 113,
+        "start": 4608,
+        "end": 4640
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_7d734dfa8a",
+      "fact": "本资料是远程职位平台的注册与招聘页面",
+      "tag": "F",
+      "quote": "Your dream job is already looking for you",
+      "start": 19,
+      "end": 60,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_7d734dfa8a",
+      "fact": "本资料展示远程职位，如软件工程师等类别",
+      "tag": "F",
+      "quote": "Top engineering jobs",
+      "start": 678,
+      "end": 698,
+      "locator": {
+        "heading": "# Your dream job is already looking for you",
+        "paragraph": 27,
+        "start": 678,
+        "end": 699
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_7d734dfa8a",
+      "fact": "本资料提供AI面试反馈，用于提升求职档案",
+      "tag": "F",
+      "quote": "AI interviews to boost your profile",
+      "start": 2693,
+      "end": 2728,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_7d734dfa8a",
+      "fact": "本资料宣传可在任何地方生活和工作",
+      "tag": "F",
+      "quote": "Live anywhere, work everywhere. Sign up for free",
+      "start": 3245,
+      "end": 3293,
+      "locator": {
+        "heading": "## AI interviews to boost your profile",
+        "paragraph": 121,
+        "start": 3245,
+        "end": 3294
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_7d734dfa8a",
+      "fact": "本资料未涉及远程办公对团队协作影响的近期研究",
+      "tag": "I",
+      "quote": "Remote work",
+      "start": 3411,
+      "end": 3422,
+      "locator": {
+        "heading": "## AI interviews to boost your profile",
+        "paragraph": 130,
+        "start": 3411,
+        "end": 3423
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_2c4843870b",
+      "fact": "本资料为 Remote 全球用工管理服务页面，主题不是远程办公协作研究。",
+      "tag": "F",
+      "quote": "全球用工管理，Remote 保驾护航",
+      "start": 339,
+      "end": 357,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_2c4843870b",
+      "fact": "本资料介绍 EOR、全球薪资、COR、PEO 等全球雇佣服务。",
+      "tag": "F",
+      "quote": "第三方雇佣托管服务 (EOR)",
+      "start": 483,
+      "end": 498,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_2c4843870b",
+      "fact": "本资料仅在人物职务中出现“远程招聘经理”，未讨论远程办公协作。",
+      "tag": "F",
+      "quote": "高级全球人员流动与远程招聘经理",
+      "start": 1757,
+      "end": 1772,
+      "locator": {
+        "heading": "## 客户评价",
+        "paragraph": 53,
+        "start": 1741,
+        "end": 1773
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_2c4843870b",
+      "fact": "本资料客户评价称可通过单一平台掌握全球薪资数据。",
+      "tag": "F",
+      "quote": "财务经理可通过单一平台全面掌握所有数据",
+      "start": 1921,
+      "end": 1940,
+      "locator": {
+        "heading": "## 客户评价",
+        "paragraph": 56,
+        "start": 1897,
+        "end": 1961
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_2c4843870b",
+      "fact": "本资料页脚列有“研究”栏目。",
+      "tag": "F",
+      "quote": "研究",
+      "start": 3389,
+      "end": 3391,
+      "locator": {
+        "heading": "## 全球雇佣的复杂度极高：我们自建专属基础设施，确保万无一失。",
+        "paragraph": 107,
+        "start": 3389,
+        "end": 3392
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_2c4843870b",
+      "fact": "依据本资料无法提取远程办公对团队协作影响的近期研究证据。",
+      "tag": "I",
+      "quote": "全球用工管理，Remote 保驾护航",
+      "start": 339,
+      "end": 357,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_b381b3024a284410aff9e3ea42099055",
+  "goal": "2026年人工智能治理政策的主要争议",
+  "started_at": "2026-09-20T10:46:51",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 27 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-20T10:47:45"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:48:00"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T10:48:09"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料没有任何直接讨论2026年人工智能治理政策争议的内容，仅有欧盟战略、开源社区和无关条目，无法支撑争议梳理。",
+        "finished_at": "2026-09-20T10:48:15"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料没有任何直接讨论2026年人工智能治理政策争议的内容，仅有欧盟战略、开源社区和无关条目，无法支撑争议梳理。；缺失信息：直接讨论2026年AI治理争议的政策文件、报道或研究、2026年各主要国家/地区在AI治理上的立场文件与谈判记录、2026年AI安全、开源、版权、算力等具体议题的案例、立法草案与行业评论、欧盟AI法案实施、修订或相关争议的一手材料、2026中国人工智能开源生态蓝皮书全文、目录或相关解读材料（可用证据 27 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

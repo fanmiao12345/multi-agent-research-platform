@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "root_job_id": "job_50d94c66ead346138ca55ed5c2bd4738",
+  "topic": "企业数据出境合规的主要变化",
+  "mode_requested": "fixed",
+  "orchestration": "dynamic_team",
+  "status": "finished",
+  "plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "选型失败，降级固定流程（已知最稳）",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "unspecified",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "writer",
+        "description": "按给定资料完成整理与成稿（企业数据出境合规的主要变化）",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 60,
+      "max_cost_usd": 0.12,
+      "max_seconds": 1500.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.06,
+      "seconds": 750
+    }
+  },
+  "plan_meta": {
+    "scheduler": "fallback",
+    "failures": [
+      "第1次选型失败：PlanValidationError: mode 必须取已开放模式 ['dynamic_team']（收到 'manager_worker'）；fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表",
+      "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['dynamic_team']；subtasks 必须为 1~12 个的列表"
+    ],
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "dynamic_team"
+      ]
+    },
+    "scheduler_elapsed_seconds": 28.222,
+    "scheduler_calls": 2
+  },
+  "subtasks": [],
+  "draft_level": "unable",
+  "degraded": false,
+  "failures": [],
+  "execution_note": "受根账本锁限制，本轮子任务按序执行（并行开放见 D2-02）",
+  "termination_reason": "unable",
+  "message": "无法完成：素材包现有资料均声明未涉及数据出境、跨境或合规监管内容，缺少任何一手监管与政策材料，完全无法支撑本任务目标。；缺失信息：数据出境相关法律法规、部门规章及规范性文件的原文与修订对照、合规变化的官方生效日期、过渡期条款及配套实施指南、监管机构发布的安全评估、标准合同、认证等操作细则与合规指引（可用证据 5 条不足以支撑任务目标，按任务要求不编造内容）",
+  "unified": {
+    "schema_version": 2,
+    "root_job_id": "job_50d94c66ead346138ca55ed5c2bd4738",
+    "draft_level": "unable",
+    "delivery_label": "无法完成",
+    "termination_reason": "unable",
+    "status": "partial",
+    "message": "无法完成：素材包现有资料均声明未涉及数据出境、跨境或合规监管内容，缺少任何一手监管与政策材料，完全无法支撑本任务目标。；缺失信息：数据出境相关法律法规、部门规章及规范性文件的原文与修订对照、合规变化的官方生效日期、过渡期条款及配套实施指南、监管机构发布的安全评估、标准合同、认证等操作细则与合规指引（可用证据 5 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

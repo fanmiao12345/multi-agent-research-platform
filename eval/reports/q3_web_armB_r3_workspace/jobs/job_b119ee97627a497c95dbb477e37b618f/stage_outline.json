@@ -1,0 +1,91 @@
+{
+  "title": "远程医疗推广中的支持与反对观点：现有资料证据梳理与缺口说明",
+  "sections": [
+    {
+      "heading": "资料范围与概念界定",
+      "purpose": "区分远程设备维护与远程医疗推广，界定可回答范围。",
+      "required_evidence": [
+        "E-003",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点：医疗场景远程维护可行",
+      "purpose": "梳理资料中医疗行业远程支持的正面证据。",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点：效率提升与成本降低",
+      "purpose": "归纳远程运维在效率与成本上的支持性论据。",
+      "required_evidence": [
+        "E-004",
+        "E-005",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点：操作便利与远程办公",
+      "purpose": "说明远程协助与办公的便利性证据及其适用边界。",
+      "required_evidence": [
+        "E-006",
+        "E-007"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持观点：隐私保护机制",
+      "purpose": "呈现远控隐私屏对隐私保护的支持性主张。",
+      "required_evidence": [
+        "E-008"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "反对观点：资料检索结果",
+      "purpose": "确认现有资料是否包含远程医疗推广的反对观点。",
+      "required_evidence": [
+        "E-001",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "缺口：反对意见与利益相关方陈述",
+      "purpose": "列出缺失的反对意见、批评报道与相关方材料。",
+      "required_evidence": [
+        "E-001"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "缺口：临床效果、安全与医患态度",
+      "purpose": "说明缺少临床结局、安全性及医患调研材料。",
+      "required_evidence": [],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "缺口：政策法规与伦理争议",
+      "purpose": "说明缺少监管、隐私伦理与合规分析材料。",
+      "required_evidence": [],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与证据强度评估",
+      "purpose": "总结支持观点证据有限，反对观点与关键争议缺失。",
+      "required_evidence": [
+        "E-001",
+        "E-009",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

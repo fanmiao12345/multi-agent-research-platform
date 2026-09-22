@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_c2d5ef58234548c6abff87c0ef5eca44",
+  "goal": "生成式人工智能在软件测试中的应用趋势",
+  "started_at": "2026-09-18T14:24:28",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 28 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:25:03"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:25:16"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 2, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-18T14:25:53"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包证据分别为AI视频生成器、LLM排行榜、AI工具导航站与甲骨文字形资料，均自述不涉及软件测试，无法支撑该主题的任何章节。",
+        "finished_at": "2026-09-18T14:25:55"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包证据分别为AI视频生成器、LLM排行榜、AI工具导航站与甲骨文字形资料，均自述不涉及软件测试，无法支撑该主题的任何章节。；缺失信息：生成式AI在软件测试中的具体应用案例、实践报告或项目数据、测试用例生成、缺陷预测等环节的研究、行业调查或趋势数据、面向软件测试的生成式AI工具与平台清单、产品文档或评测、应用效果与风险评估所需的实验数据、基准测试或风险分析材料、该主题在时间维度上的历年报告、时间序列数据或版本对比材料（可用证据 30 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

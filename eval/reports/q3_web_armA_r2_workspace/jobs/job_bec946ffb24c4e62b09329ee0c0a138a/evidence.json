@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_7e17e354ee",
+      "fact": "本资料为Kling AI首页，定位为AI创意工作室类产品页面。",
+      "tag": "F",
+      "quote": "Kling AI Home",
+      "start": 2,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_7e17e354ee",
+      "fact": "本资料页面列出创意圈、资产、Omni、生成、灵动画布、全部工具等入口。",
+      "tag": "F",
+      "quote": "创意圈",
+      "start": 17,
+      "end": 20,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 0,
+        "start": 17,
+        "end": 21
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_7e17e354ee",
+      "fact": "本资料全文未出现软件测试、测试用例或测试自动化等相关内容。",
+      "tag": "I",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_7e17e354ee",
+      "fact": "本资料无法为「生成式人工智能在软件测试中的应用趋势」提供任何直接证据。",
+      "tag": "I",
+      "quote": "灵动画布",
+      "start": 36,
+      "end": 40,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 4,
+        "start": 36,
+        "end": 41
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_ce99812741",
+      "fact": "本资料介绍生成式AI图像与视频创作工具，全文未涉及软件测试。",
+      "tag": "F",
+      "quote": "集 AI 图像生成、图片编辑与视频创作于一体的在线工作室。",
+      "start": 3959,
+      "end": 3988,
+      "locator": {
+        "heading": "## AI视频",
+        "paragraph": 189,
+        "start": 3959,
+        "end": 3989
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_ce99812741",
+      "fact": "本资料声称可用中文提示词或参考图在线生成图片，无需下载。",
+      "tag": "F",
+      "quote": "通过中文提示词或参考图生成图片",
+      "start": 819,
+      "end": 834,
+      "locator": {
+        "heading": "## GPT Image 2 在线绘画-无需 OpenAI 账号即可使用",
+        "paragraph": 28,
+        "start": 802,
+        "end": 863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_ce99812741",
+      "fact": "本资料称可用一句话完成修图，涵盖换装、换背景、扩图与局部调整。",
+      "tag": "F",
+      "quote": "用一句话完成精修、换装、换背景、扩图、风格转换和局部调整",
+      "start": 1760,
+      "end": 1788,
+      "locator": {
+        "heading": "### 自然语言修图",
+        "paragraph": 88,
+        "start": 1760,
+        "end": 1790
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_ce99812741",
+      "fact": "本资料提供图片生成视频能力，为静态画面加入动作与镜头感。",
+      "tag": "F",
+      "quote": "为静态画面加入可控动作、节奏和镜头感",
+      "start": 1803,
+      "end": 1821,
+      "locator": {
+        "heading": "### 图片生成视频",
+        "paragraph": 89,
+        "start": 1803,
+        "end": 1834
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_ce99812741",
+      "fact": "本资料称兼容模型最高支持 4K 高分辨率输出。",
+      "tag": "F",
+      "quote": "兼容模型最高支持 4K 高分辨率输出",
+      "start": 3578,
+      "end": 3596,
+      "locator": {
+        "heading": "## 开始创作前，你可能想了解这些",
+        "paragraph": 167,
+        "start": 3555,
+        "end": 3598
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_ce99812741",
+      "fact": "本资料博客中有一篇比较 GPT Image 2 与 2.5 是否值得切换工作流。",
+      "tag": "F",
+      "quote": "GPT Image 2 与 2.5 对比：是否值得切换工作流",
+      "start": 2660,
+      "end": 2690,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_ce99812741",
+      "fact": "本资料博客含一篇实测 GPT Image 2 透明背景功能的文章。",
+      "tag": "F",
+      "quote": "实测 GPT Image 2 透明背景功能",
+      "start": 2956,
+      "end": 2977,
+      "locator": {
+        "heading": "### GPT 免抠图功能实测，做海报再也不用去素材网站找PNG了",
+        "paragraph": 143,
+        "start": 2956,
+        "end": 3027
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_ce99812741",
+      "fact": "本资料内容集中在视觉创意与商业设计工作流，与软件测试无交集。",
+      "tag": "I",
+      "quote": "覆盖日常创意、专业内容与商业设计的轻量 AI 视觉工作流。",
+      "start": 1673,
+      "end": 1702,
+      "locator": {
+        "heading": "## 从一个想法，到一张可以使用的作品",
+        "paragraph": 86,
+        "start": 1673,
+        "end": 1703
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料称千问推进智能体AI战略，由被动回应转向主动行动。",
+      "tag": "F",
+      "quote": "阿里千问完成重大战略升级，正式推进Agentic AI（智能体AI）战略",
+      "start": 65,
+      "end": 101,
+      "locator": {
+        "heading": "## 核心定位：从回应式AI到行动式办事助手",
+        "paragraph": 3,
+        "start": 65,
+        "end": 407
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料称其旗舰模型参数规模突破2.4万亿级，实现底层技术革新。",
+      "tag": "F",
+      "quote": "参数规模突破2.4万亿级，实现底层技术全面革新",
+      "start": 468,
+      "end": 491,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料称该模型可仅凭文字指令在空白工程完成约16天工程量开发。",
+      "tag": "F",
+      "quote": "仅凭文字指令即可在空白工程环境下独立完成约16天体量的完整项目开发",
+      "start": 537,
+      "end": 570,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料称其模型具备长程任务处理与自主迭代闭环能力，少人工介入。",
+      "tag": "F",
+      "quote": "该模型具备极强的长程任务处理与自主迭代闭环能力",
+      "start": 492,
+      "end": 515,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料称模型原生支持128K上下文并无损扩展至100万Token。",
+      "tag": "F",
+      "quote": "原生支持128K上下文并无损扩展至100万Token",
+      "start": 591,
+      "end": 617,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料称模型搭载“执行—反馈—迭代”自适应闭环机制。",
+      "tag": "F",
+      "quote": "创新搭载“执行—反馈—迭代”自适应闭环机制",
+      "start": 618,
+      "end": 639,
+      "locator": {
+        "heading": "## 技术基座：Qwen3.8-Max赋能，斩获全球权威认可",
+        "paragraph": 4,
+        "start": 440,
+        "end": 829
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料称企业级Agent支持400多项办公任务，文件审阅压缩至一小时。",
+      "tag": "F",
+      "quote": "支持400多项办公任务，可将传统法务团队一周的文件审阅压缩至一小时",
+      "start": 1101,
+      "end": 1134,
+      "locator": {
+        "heading": "## 生态与功能：全场景深度打通，海量功能一键办事",
+        "paragraph": 5,
+        "start": 857,
+        "end": 1218
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_b03bae9b7b",
+      "fact": "本资料未提及软件测试场景，所列场景不含测试用例生成或缺陷检测。",
+      "tag": "I",
+      "quote": "全面覆盖生活、出行、购物、政务、工作、教育六大场景",
+      "start": 888,
+      "end": 913,
+      "locator": {
+        "heading": "## 生态与功能：全场景深度打通，海量功能一键办事",
+        "paragraph": 5,
+        "start": 857,
+        "end": 1218
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_5ff1240a86",
+      "fact": "本资料是生成式AI工具导航站，按用途分类收录全网免费AI工具。",
+      "tag": "F",
+      "quote": "汇聚全网最全的 免费AI 工具集合",
+      "start": 1226,
+      "end": 1243,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 147,
+        "start": 1216,
+        "end": 1338
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_5ff1240a86",
+      "fact": "该导航的分类覆盖AI写作、AI绘画、AI视频、AI办公等方向。",
+      "tag": "F",
+      "quote": "分类包括 AI写作 、 AI绘画 、 AI视频 、 AI办公",
+      "start": 2628,
+      "end": 2658,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_5ff1240a86",
+      "fact": "该导航设有AI编程工具这一开发类目。",
+      "tag": "F",
+      "quote": "AI编程工具",
+      "start": 828,
+      "end": 834,
+      "locator": {
+        "heading": "",
+        "paragraph": 101,
+        "start": 828,
+        "end": 835
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_5ff1240a86",
+      "fact": "该导航设有大语言模型、开发框架、开放平台等类目。",
+      "tag": "F",
+      "quote": "AI大语言模型",
+      "start": 836,
+      "end": 843,
+      "locator": {
+        "heading": "",
+        "paragraph": 102,
+        "start": 836,
+        "end": 844
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_5ff1240a86",
+      "fact": "该导航列举豆包、千问、即梦、DeepSeek、Kimi等工具。",
+      "tag": "F",
+      "quote": "豆包 、 千问 、 即梦 、 DeepSeek 、 Kimi 等 AI工具",
+      "start": 2757,
+      "end": 2794,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_5ff1240a86",
+      "fact": "该站提供免费AIGC视频课，含GPT进阶、AI绘画等教程。",
+      "tag": "F",
+      "quote": "AIGC教程涵盖了GPT进阶教程、AI绘画教程",
+      "start": 1354,
+      "end": 1377,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 149,
+        "start": 1354,
+        "end": 1425
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_5ff1240a86",
+      "fact": "本资料未出现软件测试相关分类、工具或应用场景的描述。",
+      "tag": "U",
+      "quote": "AIGC开发平台",
+      "start": 818,
+      "end": 826,
+      "locator": {
+        "heading": "",
+        "paragraph": 100,
+        "start": 818,
+        "end": 827
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_60b0aa76c5",
+      "fact": "本资料是即梦AI产品介绍页，主题为图像与视频生成，未涉及软件测试。",
+      "tag": "F",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_60b0aa76c5",
+      "fact": "本资料称输入简单文案或图片即可快速生成优质视频片段。",
+      "tag": "F",
+      "quote": "AI视频生成，输入简单的文案或图片，即可快速生成优质视频片段",
+      "start": 98,
+      "end": 128,
+      "locator": {
+        "heading": "## 灵感即刻成片",
+        "paragraph": 7,
+        "start": 98,
+        "end": 129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_60b0aa76c5",
+      "fact": "本资料称其支持按中文提示词创作，语义理解能力更好。",
+      "tag": "F",
+      "quote": "即梦AI支持根据中文提示词进行创作，拥有更好的语义理解能力",
+      "start": 301,
+      "end": 330,
+      "locator": {
+        "heading": "### 中文创作，得心应手",
+        "paragraph": 15,
+        "start": 301,
+        "end": 354
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-031",
+      "source_id": "src_60b0aa76c5",
+      "fact": "本资料介绍智能画布集成局部重绘、一键扩图、图像消除与抠图等功能。",
+      "tag": "F",
+      "quote": "提供局部重绘、一键扩图、图像消除和抠图等多功能强大操作",
+      "start": 679,
+      "end": 706,
+      "locator": {
+        "heading": "## 智能画布 多图AI融合",
+        "paragraph": 33,
+        "start": 655,
+        "end": 744
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-032",
+      "source_id": "src_60b0aa76c5",
+      "fact": "本资料提供首帧与尾帧图片输入方式，以增强视频生成可控性。",
+      "tag": "F",
+      "quote": "创新的首帧图片和尾帧图片输入方式，增强视频生成的可控性",
+      "start": 224,
+      "end": 251,
+      "locator": {
+        "heading": "### 从首帧到尾帧，",
+        "paragraph": 12,
+        "start": 224,
+        "end": 275
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-033",
+      "source_id": "src_60b0aa76c5",
+      "fact": "本资料全文未出现软件测试、测试用例或质量保障等相关表述。",
+      "tag": "F",
+      "quote": "开启智能创作",
+      "start": 1014,
+      "end": 1020,
+      "locator": {
+        "heading": "## 创意涌动 灵感绽放",
+        "paragraph": 72,
+        "start": 1014,
+        "end": 1021
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-034",
+      "source_id": "src_60b0aa76c5",
+      "fact": "生成式人工智能在软件测试中的应用趋势，本资料未提供任何依据。",
+      "tag": "U",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    }
+  ]
+}

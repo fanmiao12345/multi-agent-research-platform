@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_808d49c90058407e9c1e10542e2d64df",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 个人知识管理系统中的检索与记忆设计：证据核查与缺口说明\n\n## 报告范围与证据边界\n本报告的目标问题是个人知识管理系统中检索与记忆设计的具体方案、机制及其可核查证据〔推断〕。可用资料中，[E-006] 自述与个人知识管理系统的检索与记忆设计无直接关联〔事实〕；[E-017] 自述与目标主题无关、无法提供相关证据〔事实〕；[E-024] 未涉及个人知识管理系统的检索与记忆设计方法〔事实〕；[E-025] 围绕卡片模板、编辑、下载与分享，未涉及目标主题〔事实〕；[E-031] 未涉及个人知识管理系统中的检索与记忆设计〔事实〕。因此，总体可答范围限于来源相关性核查、可观测入口说明与缺口说明，不能据此给出检索机制、记忆模型或架构方案〔推断〕。上述具体设计内容属资料缺口〔推断〕。\n\n## 来源主题相关性核查\n[E-006] 自述与目标主题无直接关联〔事实〕；[E-017] 自述与目标主题无关且无法提供相关证据〔事实〕；[E-024] 未涉及目标主题方法〔事实〕；[E-025] 围绕卡片模板、编辑、下载与分享，未涉及目标主题〔事实〕；[E-031] 未涉及目标主题〔事实〕。由此推断，这些来源不能作为目标主题的直接设计证据〔推断〕；其与目标主题的实质关联缺少一手材料支撑〔推断〕，属资料缺口〔推断〕。\n\n## 可观测检索入口\n[E-019] 页面提供搜索功能入口〔事实〕；[E-016] 仅有搜索导航入口，未描述任何检索机制或记忆设计〔事实〕。因此只能确认存在搜索入口，不能据此推导检索算法、索引结构、排序策略或记忆调用方式〔推断〕。具体检索机制属资料缺口〔推断〕。\n\n## 可观测记忆相关入口\n[E-020] 页面导航包含笔记入口〔事实〕；[E-021] 页面导航包含问答入口〔事实〕。二者仅呈现导航入口，不能说明记忆模型、记忆策略或知识保持机制〔推断〕。笔记与问答如何存储、组织、复习与调用属资料缺口〔推断〕。\n\n## 个人中心功能线索\n[E-001] 为需登录页面，提示登录以获取个性化推荐职位〔事实〕；[E-002] 页面设有立即登录入口〔事实〕；[E-003] 列出职位、招聘会、个性化推荐等栏目〔事实〕；[E-004] 提示就业意愿可在个人中心修改〔事实〕；[E-005] 页面含一个提交操作〔事实〕。这些属就业服务与个人中心功能线索，与个人知识管理系统中的检索与记忆设计弱相关或无直接关系〔推断〕，不能说明知识检索与记忆设计〔推断〕。\n\n## 卡片类界面素材线索\n[E-018] 标题为开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材〔事实〕；[E-022] 将卡片作为一类UI元素并标注Card〔事实〕；[E-023] 卡片列表项提供获取代码入口〔事实〕。这些仅表明前端UI素材与代码获取入口，不能支撑知识记忆设计〔推断〕；其中未见知识卡片复习、记忆编码或检索机制证据〔推断〕。\n\n## 「个人」指代语义证据\n[E-007] 讨论汉语词汇个人在不同语境下的指代含义〔事实〕；[E-008] 认为在“我个人认为”一类语境中，个人明确指说话者自己〔事实〕；[E-009] 认为在“个人有个人的看法”一类语境中，个人指不包括说话者在内的其他人〔事实〕；[E-026] 为百度知道页面，主题是解释“个人”一词的含义〔事实〕；[E-027] 认为个人在不同语境下既可指自己，也可指不包括自己在内的他人〔事实〕；[E-028] 举例“我个人认为”，称其中个人明确指说话者自己〔事实〕；[E-029] 举例“每个人都有自己的选择”，称其中个人指许多人中的每一个〔事实〕；[E-030] 指出个人的具体含义需根据上下文判断〔事实〕。这些语义证据只能说明词语指代，无法支撑系统检索与记忆设计〔推断〕；其对系统设计的可用含义属资料缺口〔推断〕。\n\n## 彩票页面内容与目标无关\n[E-011] 为中国福利彩票发行管理中心官方网站页面〔事实〕；[E-012] 位于阳光开奖栏目下的开奖公告〔事实〕；[E-013] 含双色球一等奖中奖明细表，列出期数、开奖日期等字段〔事实〕；[E-014] 定义票面中奖金额为该张中奖票全部投注号码中得奖金总额〔事实〕；[E-015] 底部提示理性购彩、量力而行，禁止未成年人购彩兑奖〔事实〕。这些内容不涉及目标系统设计〔推断〕，不提供检索与记忆设计证据〔推断〕。\n\n## 检索机制设计缺口\n[E-019] 页面提供搜索功能入口〔事实〕；[E-016] 仅有搜索导航入口，未描述任何检索机制或记忆设计〔事实〕；[E-024] 未涉及检索与记忆设计方法〔事实〕；[E-031] 未涉及个人知识管理系统中的检索与记忆设计〔事实〕。因此无法从现有资料得出检索机制的具体方案〔推断〕；缺少个人知识管理系统中检索设计的直接资料〔推断〕，索引、查询、排序与反馈方案均属资料缺口〔推断〕。\n\n## 记忆设计缺口\n[E-020] 页面导航包含笔记入口〔事实〕；[E-021] 页面导航包含问答入口〔事实〕；[E-006] 自述与目标主题无直接关联〔事实〕；[E-025] 围绕卡片模板、编辑、下载与分享，未涉及目标主题〔事实〕。因此无法从现有资料得出记忆模型或策略〔推断〕；记忆模型、复习策略与知识组织方式属资料缺口〔推断〕。\n\n## 架构、数据模型与评估缺口\n[E-006] 自述与目标主题无直接关联〔事实〕；[E-017] 自述与目标主题无关且无法提供相关证据〔事实〕；[E-024] 未涉及目标主题〔事实〕；[E-031] 未涉及目标主题〔事实〕。据此无法获得目标系统的架构、数据模型、评估指标或用户研究证据〔推断〕；架构、数据模型、评估实验与用户研究均属资料缺口〔推断〕。\n\n## 结论与后续取证建议\n现有来源自述为无直接关联、无关或未涉及目标主题 [E-006][E-017][E-024][E-025][E-031]〔事实〕。与检索或记忆相关的可观测入口仅为搜索入口 [E-019]〔事实〕及笔记、问答入口 [E-020][E-021]〔事实〕；另有登录、卡片UI、彩票等页面线索 [E-001][E-018][E-011]〔事实〕，其与目标主题无关或弱相关〔推断〕。上述入口均不能用于推导检索机制或记忆设计〔推断〕，可答边界包括来源相关性核查、可观测入口说明与缺口说明〔推断〕。后续需补充目标主题一手网页或学术文献、检索机制设计资料、记忆模型与策略资料、系统架构与数据模型材料，以及评估与用户研究材料（均属资料缺口）。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 5,
+    "usable": 5,
+    "statuses": {
+      "ok": 5
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 25 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-20T10:41:19"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:41:36"
+      },
+      {
+        "stage": "repair",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "{'added_sources': 2, 'added_evidence': 6, 'remaining_gaps': 5}",
+        "finished_at": "2026-09-20T10:42:11"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "12 个章节",
+        "finished_at": "2026-09-20T10:42:26"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2590字）",
+        "finished_at": "2026-09-20T10:42:52"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 18,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-20T10:44:12"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-20T10:45:31"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 16,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-20T10:46:22"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 58,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.ncss.cn/student/m/resume/personcenter.html",
+      "https://zhidao.baidu.com/question/2002226940225630987.html",
+      "https://www.cwl.gov.cn/ygkj/ssq/ydjzjmx/",
+      "https://www.jztheme.com/card",
+      "https://zoviz.com/zh/card-maker"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 记忆",
+        "rank": 2,
+        "title": "个人中心-国家大学生就业服务平台",
+        "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+        "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 记忆",
+        "rank": 5,
+        "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+        "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+        "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+        "published_date": "2025-05-24",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "双链笔记 间隔重复 记忆",
+        "rank": 3,
+        "title": "双色球_中国福彩网",
+        "url": "https://www.cwl.gov.cn/ygkj/ssq/ydjzjmx/",
+        "snippet": "中国福彩网是由中国福利彩票发行管理中心主办的官方网站,服务社会公众,传播福彩公益,为彩民提供双色球、福彩3D、七乐彩、刮刮 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "卡片盒笔记法 知识图谱 检索",
+        "rank": 3,
+        "title": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端 ...",
+        "url": "https://www.jztheme.com/card",
+        "snippet": "开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "卡片盒笔记法 知识图谱 检索",
+        "rank": 4,
+        "title": "卡片制作器 - 在线快速创建自定义卡片！",
+        "url": "https://zoviz.com/zh/card-maker",
+        "snippet": "一体化在线卡片制作工具 在几分钟内为任何场合创建定制卡片。 使用Zoviz的免费在线卡片制作工具，每个设计都已准备好打印，数 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 检索 记忆",
+        "urls": [
+          "https://www.ncss.cn/student/m/resume/personcenter.html",
+          "https://zhidao.baidu.com/question/2002226940225630987.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 检索 记忆",
+            "rank": 2,
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "snippet": "国家大学生就业服务平台是由教育部主管、教育部学生服务与素质发展中心运营的服务于高校毕业生及用人单位的公共就业 ...",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 检索 记忆",
+            "rank": 5,
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "snippet": "2025年5月24日 · 它强调的是个体之间的差异性和独立性。 因此，“个人”既可以指代自己，也可以指代不包括自己在内的其他人，具体 …",
+            "published_date": "2025-05-24",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "个人中心-国家大学生就业服务平台",
+            "url": "https://www.ncss.cn/student/m/resume/personcenter.html",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "\"个人\"是指自己,还是一个人（不包括自己）_百度知道",
+            "url": "https://zhidao.baidu.com/question/2002226940225630987.html",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "个人的意思_个人的解释-汉语国学",
+            "url": "https://www.hanyuguoxue.com/cidian/ci-bd2f7f480",
+            "relevance": 0.143,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "自然人电子税务局",
+            "url": "https://etax.chinatax.gov.cn/webstatic/login",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "个体 - 百度百科",
+            "url": "https://baike.baidu.com/item/%E4%B8%AA%E4%BD%93/2667121",
+            "relevance": 0.071,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.225,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "双链笔记 间隔重复 记忆",
+        "urls": [
+          "https://www.cwl.gov.cn/ygkj/ssq/ydjzjmx/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "双链笔记 间隔重复 记忆",
+            "rank": 3,
+            "title": "双色球_中国福彩网",
+            "url": "https://www.cwl.gov.cn/ygkj/ssq/ydjzjmx/",
+            "snippet": "中国福彩网是由中国福利彩票发行管理中心主办的官方网站,服务社会公众,传播福彩公益,为彩民提供双色球、福彩3D、七乐彩、刮刮 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "双色球_中国福彩网",
+            "url": "https://www.cwl.gov.cn/ygkj/ssq/ydjzjmx/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "双（汉语文字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8F%8C/34082",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "双的意思,双的解释,双的拼音,双的部首,双的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-21452",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《双》的拼音,双字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/b27379b5.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "双怎么读_双的拼音 - 新华字典",
+            "url": "https://zidian.gushici.net/4/53cc.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.19,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "卡片盒笔记法 知识图谱 检索",
+        "urls": [
+          "https://www.jztheme.com/card",
+          "https://zoviz.com/zh/card-maker"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "卡片盒笔记法 知识图谱 检索",
+            "rank": 3,
+            "title": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端 ...",
+            "url": "https://www.jztheme.com/card",
+            "snippet": "开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "卡片盒笔记法 知识图谱 检索",
+            "rank": 4,
+            "title": "卡片制作器 - 在线快速创建自定义卡片！",
+            "url": "https://zoviz.com/zh/card-maker",
+            "snippet": "一体化在线卡片制作工具 在几分钟内为任何场合创建定制卡片。 使用Zoviz的免费在线卡片制作工具，每个设计都已准备好打印，数 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端 ...",
+            "url": "https://www.jztheme.com/card",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "卡片制作器 - 在线快速创建自定义卡片！",
+            "url": "https://zoviz.com/zh/card-maker",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "卡牌（记录信息的纸片）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8D%A1%E7%89%87/457308",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "卡片模板-卡片图片模板免费下载-创客贴",
+            "url": "https://www.chuangkit.com/tupian/kapian.html",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "卡片模板图片-卡片模板素材-卡片模板设计模板高清免费下载 ...",
+            "url": "https://www.58pic.com/tupian/kapianmoban.html",
+            "relevance": 0.111,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "第二大脑 PKM 工具 记忆",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "第（汉语汉字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E7%AC%AC/4418373",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "第的意思,第的解释,第的拼音,第的部首,第的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-31532",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《第》的拼音,第字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/b5de3107.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "第_第怎么读_第的意思 - 汉语字典",
+            "url": "https://www.chagushici.com/zidian/%E7%AC%AC",
+            "relevance": 0.083,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "第 - 维基词典，自由的多语言词典",
+            "url": "https://zh.wiktionary.org/wiki/%E7%AC%AC",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.214,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（个人知识管理系统中的检索与记忆设计）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 9.378,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

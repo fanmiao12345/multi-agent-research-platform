@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_9548f40d1b",
+      "fact": "本资料为新浪网404错误页面，不含任何新闻正文内容",
+      "tag": "F",
+      "quote": "# Not Found",
+      "start": 14101,
+      "end": 14112,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_9548f40d1b",
+      "fact": "本资料提示所请求的网址在服务器上不存在",
+      "tag": "F",
+      "quote": "The requested URL was not found on the server.",
+      "start": 14114,
+      "end": 14160,
+      "locator": {
+        "heading": "# Not Found",
+        "paragraph": 497,
+        "start": 14114,
+        "end": 14235
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_9548f40d1b",
+      "fact": "仅凭本资料无法整理新能源汽车电池回收行业现状与监管",
+      "tag": "I",
+      "quote": "# Not Found",
+      "start": 14101,
+      "end": 14112,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_14661f8128",
+      "fact": "本资料为新片场网站页面，主题是视频创作与正版素材服务。",
+      "tag": "F",
+      "quote": "专业的视频艺术学习教程，正版视觉素材交易等",
+      "start": 4197,
+      "end": 4218,
+      "locator": {
+        "heading": "## 「别被强迫性疑虑困住」创作心路干货",
+        "paragraph": 314,
+        "start": 4162,
+        "end": 4238
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_14661f8128",
+      "fact": "本资料所列内容为广告片、宣传片、纪录片等视频作品及创作人信息。",
+      "tag": "F",
+      "quote": "编辑精选 全球精选 广告片 宣传片 竖屏广告 AIGC AI画布",
+      "start": 1781,
+      "end": 1813,
+      "locator": {
+        "heading": "# 新片场 - 与百万创作人一起成长，用作品打动世界",
+        "paragraph": 154,
+        "start": 1781,
+        "end": 1869
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_14661f8128",
+      "fact": "本资料站内导航只有视频、音乐、图片素材与AI创作工具，无电池相关栏目。",
+      "tag": "I",
+      "quote": "视频素材 音乐素材 图片素材 Shotlab",
+      "start": 4275,
+      "end": 4297,
+      "locator": {
+        "heading": "## 「别被强迫性疑虑困住」创作心路干货",
+        "paragraph": 321,
+        "start": 4275,
+        "end": 4298
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_14661f8128",
+      "fact": "本资料未提供新能源汽车、动力电池回收或相关监管的任何信息，无法据此整理该主题。",
+      "tag": "I",
+      "quote": "Copyright © 2013 - 2026 新片场. All rights reserved.",
+      "start": 4393,
+      "end": 4442,
+      "locator": {
+        "heading": "## 「别被强迫性疑虑困住」创作心路干货",
+        "paragraph": 328,
+        "start": 4393,
+        "end": 4443
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_fe64b56261",
+      "fact": "本资料为退役军人事务部网站首页，内容均为退役军人事务相关栏目与新闻。",
+      "tag": "F",
+      "quote": "中华人民共和国退役军人事务部",
+      "start": 25,
+      "end": 39,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_fe64b56261",
+      "fact": "本资料全文未出现新能源汽车、动力电池回收及相关行业监管的任何内容。",
+      "tag": "I",
+      "quote": "主办单位：中华人民共和国退役军人事务部",
+      "start": 3357,
+      "end": 3376,
+      "locator": {
+        "heading": "## 首页",
+        "paragraph": 278,
+        "start": 3357,
+        "end": 3377
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_fe64b56261",
+      "fact": "本资料中唯一含“监管”的表述指政府网站监管，与电池回收行业监管无关。",
+      "tag": "I",
+      "quote": "退役军人事务部政府网站监管",
+      "start": 1614,
+      "end": 1627,
+      "locator": {
+        "heading": "### ×",
+        "paragraph": 82,
+        "start": 1614,
+        "end": 1642
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_278344bf15",
+      "fact": "本资料显示第11届中国动力电池回收利用产业发展论坛于2026年6月15日在杭州举办。",
+      "tag": "F",
+      "quote": "2026年6月15日，第11届中国动力电池回收利用产业发展论坛在杭州市太虚湖成功举办。",
+      "start": 1795,
+      "end": 1838,
+      "locator": {
+        "heading": "#### 6月15日第11届中国动力电池回收利用产业发展论坛在杭州成功举办",
+        "paragraph": 92,
+        "start": 1795,
+        "end": 1959
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_278344bf15",
+      "fact": "本资料显示工信部节能与资源综合利用司原司长黄利斌等出席该论坛。",
+      "tag": "F",
+      "quote": "工业和信息化部节能与资源综合利用司原司长黄利斌",
+      "start": 1838,
+      "end": 1861,
+      "locator": {
+        "heading": "#### 6月15日第11届中国动力电池回收利用产业发展论坛在杭州成功举办",
+        "paragraph": 92,
+        "start": 1795,
+        "end": 1959
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_278344bf15",
+      "fact": "本资料显示论坛演讲主题包括动力电池回收产业政策解析、行业合规与发展趋势。",
+      "tag": "F",
+      "quote": "动力电池回收产业政策解析、行业合规与发展趋势",
+      "start": 2329,
+      "end": 2351,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_278344bf15",
+      "fact": "本资料显示论坛演讲关注用消费者需求激活退役动力电池循环体系。",
+      "tag": "F",
+      "quote": "是新能源车主，也是“隐性矿主”：用消费者需求激活退役动力电池循环体系",
+      "start": 2230,
+      "end": 2264,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_278344bf15",
+      "fact": "本资料显示论坛演讲涉及动力电池回收料液或废水中氨脱除回收。",
+      "tag": "F",
+      "quote": "高效节能的气态膜脱氨技术用于动力电池回收行业料液或废水中的氨脱除回收",
+      "start": 2280,
+      "end": 2314,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_278344bf15",
+      "fact": "本资料数据分析栏目列出5月锂电池回收项目汇总。",
+      "tag": "F",
+      "quote": "5月锂电池回收项目汇总",
+      "start": 2098,
+      "end": 2109,
+      "locator": {
+        "heading": "## 数据分析",
+        "paragraph": 99,
+        "start": 2098,
+        "end": 2110
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_278344bf15",
+      "fact": "本资料数据分析栏目列出4月锂电池回收项目汇总。",
+      "tag": "F",
+      "quote": "4月锂电池回收项目汇总",
+      "start": 2123,
+      "end": 2134,
+      "locator": {
+        "heading": "## 数据分析",
+        "paragraph": 101,
+        "start": 2123,
+        "end": 2135
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_278344bf15",
+      "fact": "本资料资讯显示沧州拟建年处理6万吨磷酸铁黑粉资源综合再生改建项目。",
+      "tag": "F",
+      "quote": "沧州新建年处理6万吨磷酸铁黑粉项目",
+      "start": 624,
+      "end": 641,
+      "locator": {},
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-013）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-029）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-039）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-020）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-029）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-013）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-029）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "综合段用“可确认”表述来源主张，建议改为“资料显示/称”，避免当作已验证事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“双向链接/图谱/版本历史为检索或记忆提供入口/支持”属远距推断，建议标明仅为假设需验证。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "“资料全文未涉及”指代不清；E-004等为不同来源，应按来源分别表述。"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“间隔重复/记忆曲线”等未见于证据，作为验证方向应标为缺口类别而非资料事实。"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-034/E-036等来源观点在部分句子中未加“资料称/认为”，易被读作客观事实。"
+  }
+ ]
+}

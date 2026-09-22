@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "style",
+   "message": "多处将资料自述事实标为推断（E-006/E-017/E-024/E-025/E-031/E-016），标注不准确"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论称可答边界仅相关性核查与缺口说明，遗漏首节的可观测入口说明"
+  }
+ ]
+}

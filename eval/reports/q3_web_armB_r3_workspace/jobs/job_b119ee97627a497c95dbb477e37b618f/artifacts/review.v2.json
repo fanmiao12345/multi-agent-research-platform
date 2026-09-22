@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "round": 2,
+ "verdict": "needs_revision",
+ "issues": [
+  {
+   "severity": "error",
+   "code": "support",
+   "message": "“未见该案例之外的其他医疗行业落地案例【E-003】”是缺失性断言，E-003无法支持穷尽性，应标〔未知〕"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "结论“医疗端仅有单一设备维护案例【E-003】”同属缺失断言，E-003只能证明该案例存在"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "E-001、E-009系对资料范围的描述，却标〔推断〕，与断言性质不符，宜标〔事实〕"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "〔未知〕是提纲未列的第三类标注，全文未交代其含义与判定标准"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“效率与成本论据均来自企业IT运维情境”概括过宽：E-004讲维修派遣，非IT运维"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "“本资料”混指ToDesk与向日葵两个来源页面，未说明来源差异，易误导读者"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "“反对观点零记录”未交代检索范围与关键词，读者难以核验该结论"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "缺口章节未给出可补足反对意见、临床与合规材料的检索方向，实用性不足"
+  }
+ ]
+}

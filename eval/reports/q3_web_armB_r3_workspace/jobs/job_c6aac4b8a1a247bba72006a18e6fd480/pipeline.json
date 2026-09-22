@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_c6aac4b8a1a247bba72006a18e6fd480",
+  "goal": "开源大模型生态的商业模式",
+  "started_at": "2026-09-20T11:34:15",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 16 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:34:42"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:34:50"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:34:56"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料仅涉及代码托管、AI工具与社区治理，明确未提供开源大模型生态商业模式信息，无法支撑报告。",
+        "finished_at": "2026-09-20T11:35:03"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料仅涉及代码托管、AI工具与社区治理，明确未提供开源大模型生态商业模式信息，无法支撑报告。；缺失信息：开源大模型厂商的收入模式、定价与客户案例、模型即服务、API计费、托管与推理服务的收费证据、企业私有化部署报价、合同与支持服务材料、开源许可证、双重许可与开放核心策略案例、社区或基金会的资助结构、赞助与治理财务材料（可用证据 16 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

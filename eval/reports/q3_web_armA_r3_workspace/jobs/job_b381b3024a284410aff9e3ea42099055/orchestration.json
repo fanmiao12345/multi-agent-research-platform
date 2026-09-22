@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "root_job_id": "job_b381b3024a284410aff9e3ea42099055",
+  "topic": "2026年人工智能治理政策的主要争议",
+  "mode_requested": "fixed",
+  "orchestration": "single",
+  "status": "finished",
+  "plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "选型失败，降级固定流程（已知最稳）",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "unspecified",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "writer",
+        "description": "按给定资料完成整理与成稿（2026年人工智能治理政策的主要争议）",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 60,
+      "max_cost_usd": 0.12,
+      "max_seconds": 1500.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.06,
+      "seconds": 750
+    }
+  },
+  "plan_meta": {
+    "scheduler": "fallback",
+    "failures": [
+      "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+      "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+    ],
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "single"
+      ]
+    },
+    "scheduler_elapsed_seconds": 16.093,
+    "scheduler_calls": 2
+  },
+  "subtasks": [],
+  "draft_level": "unable",
+  "degraded": false,
+  "failures": [],
+  "execution_note": "受根账本锁限制，本轮子任务按序执行（并行开放见 D2-02）",
+  "termination_reason": "unable",
+  "message": "无法完成：现有资料没有任何直接讨论2026年人工智能治理政策争议的内容，仅有欧盟战略、开源社区和无关条目，无法支撑争议梳理。；缺失信息：直接讨论2026年AI治理争议的政策文件、报道或研究、2026年各主要国家/地区在AI治理上的立场文件与谈判记录、2026年AI安全、开源、版权、算力等具体议题的案例、立法草案与行业评论、欧盟AI法案实施、修订或相关争议的一手材料、2026中国人工智能开源生态蓝皮书全文、目录或相关解读材料（可用证据 27 条不足以支撑任务目标，按任务要求不编造内容）",
+  "unified": {
+    "schema_version": 2,
+    "root_job_id": "job_b381b3024a284410aff9e3ea42099055",
+    "draft_level": "unable",
+    "delivery_label": "无法完成",
+    "termination_reason": "unable",
+    "status": "partial",
+    "message": "无法完成：现有资料没有任何直接讨论2026年人工智能治理政策争议的内容，仅有欧盟战略、开源社区和无关条目，无法支撑争议梳理。；缺失信息：直接讨论2026年AI治理争议的政策文件、报道或研究、2026年各主要国家/地区在AI治理上的立场文件与谈判记录、2026年AI安全、开源、版权、算力等具体议题的案例、立法草案与行业评论、欧盟AI法案实施、修订或相关争议的一手材料、2026中国人工智能开源生态蓝皮书全文、目录或相关解读材料（可用证据 27 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

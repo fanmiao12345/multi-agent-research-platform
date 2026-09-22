@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_5d1d528b46e14782bc17db8867dc3461",
+  "goal": "生成式人工智能在软件测试中的应用趋势",
+  "started_at": "2026-09-20T10:51:41",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 35 条可定位证据，跳过 1 条问题摘录",
+        "finished_at": "2026-09-20T10:52:31"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T10:52:52"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T10:52:59"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：所给资料均为榜单、视觉创作、问答平台等无关内容，且多处明确未提及生成式AI与软件测试，无法支撑应用趋势。",
+        "finished_at": "2026-09-20T10:53:04"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：所给资料均为榜单、视觉创作、问答平台等无关内容，且多处明确未提及生成式AI与软件测试，无法支撑应用趋势。；缺失信息：测试用例生成的应用效果数据、缺陷检测与定位的落地案例、应用趋势与采用率的时间序列统计、代码模型能力映射到测试任务的评测数据、生成式AI测试工具或产品信息（可用证据 35 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

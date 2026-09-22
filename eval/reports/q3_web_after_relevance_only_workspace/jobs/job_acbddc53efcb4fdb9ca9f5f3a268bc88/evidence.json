@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_0eca0e5f90",
+      "fact": "本资料介绍一款将文字或图片生成带动态画面、对白和声音的AI视频工具。",
+      "tag": "F",
+      "quote": "免费将文字或图片生成带有动态画面、对白和声音的AI视频。",
+      "start": 55,
+      "end": 83,
+      "locator": {
+        "heading": "# 文字、图片、声音一体的AI视频生成器",
+        "paragraph": 5,
+        "start": 55,
+        "end": 84
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_0eca0e5f90",
+      "fact": "资料称MiniMax H3支持文生视频、图生视频，并同步生成对白、音效与环境音。",
+      "tag": "F",
+      "quote": "支持文生视频和图生视频。它可同步生成画面运动、对白、音效和环境音",
+      "start": 728,
+      "end": 760,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 31,
+        "start": 691,
+        "end": 774
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_0eca0e5f90",
+      "fact": "资料列出生成器可选模型包括AI Video Maker V3、Wan 2.7与Seedance 2.0。",
+      "tag": "F",
+      "quote": "AI Video Maker V3, Wan 2.7, and Seedance 2.0",
+      "start": 1357,
+      "end": 1401,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 48,
+        "start": 1310,
+        "end": 1442
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_0eca0e5f90",
+      "fact": "资料称每个视频片段平均约200秒生成完成。",
+      "tag": "F",
+      "quote": "平均每个片段约200秒。",
+      "start": 989,
+      "end": 1001,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 37,
+        "start": 989,
+        "end": 1002
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_0eca0e5f90",
+      "fact": "免费计划为5秒480p，付费计划提供720p高清视频。",
+      "tag": "F",
+      "quote": "免费计划：5秒，480p视频",
+      "start": 1019,
+      "end": 1033,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 39,
+        "start": 1017,
+        "end": 1035
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_0eca0e5f90",
+      "fact": "资料称生成内容默认私有，标准视频保留24小时。",
+      "tag": "F",
+      "quote": "出于隐私和安全考虑，标准视频保留 24 小时。",
+      "start": 1244,
+      "end": 1267,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 46,
+        "start": 1227,
+        "end": 1293
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_0eca0e5f90",
+      "fact": "资料列举的典型用例为营销人员、内容创作者和教育工作者。",
+      "tag": "F",
+      "quote": "营销人员：短广告、宣传片、产品预告。",
+      "start": 2063,
+      "end": 2081,
+      "locator": {
+        "heading": "## 关于 AI 视频生成器的常见问题",
+        "paragraph": 64,
+        "start": 2061,
+        "end": 2082
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_0eca0e5f90",
+      "fact": "本资料主题为AI视频生成，全文未提及软件测试，无法据此得出该趋势。",
+      "tag": "F",
+      "quote": "# 文字、图片、声音一体的AI视频生成器",
+      "start": 33,
+      "end": 53,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_3c6a639777",
+      "fact": "本资料全篇为汉字「大」的甲骨文、金文、篆文字形与字义考释，未提及生成式人工智能或软件测试。",
+      "tag": "F",
+      "quote": "大：大人。成年人。",
+      "start": 623,
+      "end": 632,
+      "locator": {
+        "heading": "## 摘要",
+        "paragraph": 28,
+        "start": 582,
+        "end": 650
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_72da1f2c70",
+      "fact": "本资料是生成式AI工具导航站，按用途分类收录免费AI工具。",
+      "tag": "F",
+      "quote": "汇聚全网最全的 免费AI 工具集合",
+      "start": 1226,
+      "end": 1243,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 147,
+        "start": 1216,
+        "end": 1338
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_72da1f2c70",
+      "fact": "本资料列出的AI工具分类包括AI写作、AI视频、AI办公等，不含软件测试。",
+      "tag": "F",
+      "quote": "分类包括 AI写作 、 AI绘画 、 AI视频 、 AI办公 、 AI数字人 、 AI设计",
+      "start": 2628,
+      "end": 2673,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_72da1f2c70",
+      "fact": "本资料自称收录最全的生成式AI工具导航，并列出AI编程等分类。",
+      "tag": "F",
+      "quote": "一个分类最全、收录最全的生成式AI工具导航",
+      "start": 2605,
+      "end": 2626,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_72da1f2c70",
+      "fact": "本资料提供免费AIGC视频课与教程，含GPT进阶、AI绘画等培训内容。",
+      "tag": "F",
+      "quote": "AIGC教程涵盖了GPT进阶教程、AI绘画教程",
+      "start": 1354,
+      "end": 1377,
+      "locator": {
+        "heading": "# 免费AI工具",
+        "paragraph": 149,
+        "start": 1354,
+        "end": 1425
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_72da1f2c70",
+      "fact": "本资料未提及软件测试，也无相关工具类别，本任务主题无依据可查。",
+      "tag": "F",
+      "quote": "AIGC检测 、 AI提示词 、 AI小说 、 AI编程 、 文本转语音 等 AI导航",
+      "start": 2711,
+      "end": 2754,
+      "locator": {
+        "heading": "### 即梦AI – 即刻造梦",
+        "paragraph": 185,
+        "start": 2570,
+        "end": 2795
+      },
+      "note": ""
+    }
+  ]
+}

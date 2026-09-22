@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_1cf536d13aee47b190bdfa6bd79ce2c9",
+  "goal": "企业数据出境合规的主要变化",
+  "started_at": "2026-09-18T14:26:52",
+  "hard_requirements": {},
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 10 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-18T14:27:01"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:27:06"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T14:27:14"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：素材包全部证据均标明不含数据出境、跨境传输或合规监管内容，无法支撑任何变化梳理。",
+        "finished_at": "2026-09-18T14:27:16"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：素材包全部证据均标明不含数据出境、跨境传输或合规监管内容，无法支撑任何变化梳理。；缺失信息：数据出境相关法律法规、监管规则及其修订文本、法规生效日期、施行安排与过渡期文件、主管部门解读、合规指引或典型执法案例、现行安全评估、标准合同、认证等规则文本（可用证据 10 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

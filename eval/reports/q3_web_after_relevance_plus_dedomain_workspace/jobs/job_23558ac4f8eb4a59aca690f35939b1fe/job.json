@@ -1,0 +1,530 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_23558ac4f8eb4a59aca690f35939b1fe",
+  "status": "completed",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 城市低碳交通政策的效果与限制评估提纲\n\n## 评估范围与证据基础\n本次评估可用资料覆盖政策目标、交通设施要求、浙江与宁波公交查询网站内容、新能源汽车与充电设施动态及若干缺口说明【E-001】【E-014】【E-022】【E-023】〔事实〕。全国城市名单资料未涉及城市低碳交通政策效果与限制【E-001】〔事实〕；浙江巴士网只能了解公交线路与站点，无法评估低碳交通政策效果【E-014】〔事实〕；宁波巴士网未提供低碳交通政策效果或限制的评估证据【E-022】〔事实〕；新浪网门户页面不含城市低碳交通政策报道内容【E-023】〔事实〕。因此，评估边界是政策文本与查询资料的范围说明，而非减排或出行改善的实证评估【推断】。\n\n## 绿色低碳交通政策目标\n文件提出推动城市发展绿色低碳转型【E-002】〔事实〕，要求优先发展城市公共交通，倡导绿色低碳出行【E-003】〔事实〕。文件提出健全现代化综合交通运输体系，提升城际、城内通勤效率【E-004】〔事实〕。主要目标提出绿色转型深入推进【E-008】〔事实〕，并包括到2035年现代化人民城市基本建成【E-009】〔事实〕。上述目标以方向性表述为主，材料中未见碳减排量或分担率等量化约束【推断】。\n\n## 交通体系与设施部署要求\n文件要求完善交通枢纽换乘换装设施布局【E-005】〔事实〕，加强停车位、充电桩等便民设施建设【E-006】〔事实〕，并坚持人口、产业、城镇、交通一体规划【E-007】〔事实〕。这些要求指向综合交通衔接与便民设施部署，但未在现有资料中给出投资安排、责任主体和建设时序【推断】。\n\n## 浙江公交查询资料的内容与边界\n浙江巴士网提供城市、车站、线路、换乘四类查询入口【E-010】〔事实〕，按浙江城市列出热门公交线路和公交站【E-011】〔事实〕，并列出杭州、宁波、温州等浙江城市及具体公交线路【E-012】〔事实〕。该网站声明数据仅供参考且不承担损害赔偿【E-013】〔事实〕。因此，浙江公交查询资料只能提供线路与站点参考，不能作为政策效果评估依据【推断】。\n\n## 宁波公交查询资料的内容与边界\n宁波巴士网是宁波公交线路与车站信息查询网站【E-015】〔事实〕，提供城市、车站、线路、换乘查询功能【E-016】〔事实〕，设有今日热搜宁波公交线路栏目【E-017】〔事实〕，列出宁波多条公交线路及起终点【E-018】〔事实〕，并列出多个宁波公交站点名称【E-019】〔事实〕。该网站声明其数据仅供参考【E-020】〔事实〕，并声明对因使用其数据造成的损害不担责【E-021】〔事实〕。边界仍是公交线路与站点信息，不能直接证明政策效果【推断】。\n\n## 新能源汽车与充电设施动态\n资料提到9月新能源汽车预计卖111万辆，每10台新车近7台是电车【E-024】〔事实〕；充电桩也要看“3C”了，涉及充电设施规范话题【E-025】〔事实〕。资料引述蔚来李斌称2030年新车销量九成是新能源、其中九成是纯电【E-026】〔事实〕；称特斯拉将在欧洲投放超百台兆瓦级超充桩，服务电动半挂卡车【E-027】〔事实〕；称比亚迪拟在欧洲长期建设四座工厂，含三座整车组装厂及电池厂【E-028】〔事实〕；称2026年8月韩国车市比亚迪暴涨713.6%、特斯拉上涨30.4%【E-029】〔事实〕；并提到一起理想汽车被充电枪卡死3小时的投诉，涉及充电体验【E-030】〔事实〕。这些内容多为市场、企业与充电体验动态，不是城市政策效果评估【推断】。\n\n## 政策效果评估的证据可行性\n现有资料中，浙江巴士网只能了解公交线路与站点，无法评估低碳交通政策效果【E-014】〔事实〕；宁波巴士网未提供低碳交通政策效果或限制的评估证据【E-022】〔事实〕；新浪网门户页面不含城市低碳交通政策的报道内容【E-023】〔事实〕；全国城市名单资料未涉及城市低碳交通政策效果与限制【E-001】〔事实〕。因此，凭现有资料不能支持减排与出行改善的量化评估【推断】；政策实施前后碳排放、公共交通分担率、出行效率等评估数据〔未知〕。\n\n## 政策落地限制与实施障碍\n关于政策落地限制，现有资料未提供财政投入、技术条件、部门协调、居民接受度等实施障碍资料【E-014】【E-022】【E-023】【E-001】〔未知〕。浙江巴士网只能了解线路与站点【E-014】〔事实〕，宁波巴士网未提供政策效果或限制评估证据【E-022】〔事实〕，新浪网门户页面不含相关报道【E-023】〔事实〕，全国城市名单资料未涉及该主题【E-001】〔事实〕。故无法从现有资料识别具体实施障碍及原因【推断】。\n\n## 公交查询数据与政策评估的适用边界\n浙江巴士网提供城市、车站、线路、换乘查询入口【E-010】〔事实〕，并声明数据仅供参考且不承担损害赔偿【E-013】〔事实〕；宁波巴士网提供城市、车站、线路、换乘查询功能【E-015】【E-016】〔事实〕，声明数据仅供参考【E-020】〔事实〕，并对使用其数据造成的损害不担责【E-021】〔事实〕。浙江资料只能了解线路与站点，无法评估政策效果【E-014】〔事实〕；宁波资料未提供政策效果或限制评估证据【E-022】〔事实〕。公交查询数据缺少客流、准点率、运营绩效、碳排放等评估指标，且其免责声明限制其作为评估依据【推断】。\n\n## 新能源汽车动态与政策归因边界\n新能源车与充电设施动态包括：销量预测【E-024】、充电设施规范【E-025】、企业长期判断【E-026】、欧洲超充布局【E-027】、欧洲工厂计划【E-028】、韩国车市变化【E-029】、充电体验投诉【E-030】〔事实〕。这些资料没有城市政策干预与新能源汽车销量、充电设施建设之间的因果分析，不能直接归因于某城市低碳交通政策【推断】；所需因果分析数据〔未知〕。\n\n## 结论与待补证据清单\n结论是：现有资料可梳理政策目标与设施要求，但浙江巴士网只能了解公交线路与站点，无法评估低碳交通政策效果【E-014】〔事实〕；宁波巴士网未提供政策效果或限制评估证据【E-022】〔事实〕；新浪网门户页面不含相关报道【E-023】〔事实〕；全国城市名单资料未涉及该主题【E-001】〔事实〕。因此，减排与出行改善效果、政策落地限制均不能由现有资料直接判断【推断】。待补证据包括：政策实施前后城市碳排放、公共交通分担率、出行效率、公交客流、准点率、运营绩效、财政投入、技术条件、部门协调、居民接受度、政策干预与新能源汽车及充电设施建设的因果分析、量化目标与考核指标〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 6,
+    "usable": 5,
+    "statuses": {
+      "ok": 5,
+      "empty": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "accepted",
+    "termination_reason": "success",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 30 条可定位证据，跳过 2 条问题摘录",
+        "finished_at": "2026-09-18T14:34:56"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "6 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-18T14:35:10"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 2,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-18T14:35:13"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "11 个章节",
+        "finished_at": "2026-09-18T14:35:27"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（2697字）",
+        "finished_at": "2026-09-18T14:35:54"
+      },
+      {
+        "stage": "review",
+        "status": "accepted",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 20,
+          "info": 0
+        },
+        "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+        "finished_at": "2026-09-18T14:36:50"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 65,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 0,
+      "required_section_hits": 0,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://www.sohu.com/a/923495885_100199096",
+      "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+      "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+      "https://www.bashi.cn/zhejiang/",
+      "https://www.bashi.cn/ningbo/",
+      "https://www.sina.com.cn/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 政策评估 碳减排",
+        "rank": 2,
+        "title": "全国694个城市名单来了，快来看看有无你家乡",
+        "url": "https://www.sohu.com/a/923495885_100199096",
+        "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+        "published_date": "2025-08-13",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 政策评估 碳减排",
+        "rank": 4,
+        "title": "中共中央 国务院关于推动城市高质量发展的意见",
+        "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+        "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+        "published_date": "2025-08-28",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 出行行为 实证",
+        "rank": 2,
+        "title": "百度地图交通出行大数据平台 - Baidu",
+        "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+        "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+        "published_date": "2026-09-11",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交优先 慢行交通 减排",
+        "rank": 1,
+        "title": "浙江公交查询_浙江城市地区公交线路查询 - 浙江巴士网",
+        "url": "https://www.bashi.cn/zhejiang/",
+        "snippet": "浙江巴士网提供浙江省城市地区公交车线路查询，包括浙江最近热搜线路、热搜公交站等信息。",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交优先 慢行交通 减排",
+        "rank": 5,
+        "title": "【宁波公交车】浙江宁波公交线路查询_宁波公交路线途经 ...",
+        "url": "https://www.bashi.cn/ningbo/",
+        "snippet": "宁波巴士网为您提供浙江省宁波范围内公交巴士线路及公交车站信息查询,您可通过公交车首数字或字母进行检索,查询您想要找的公交 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 政策局限 反弹效应",
+        "rank": 3,
+        "title": "新浪网",
+        "url": "https://www.sina.com.cn/",
+        "snippet": "6 小时之前 · 原油 美元 公募机构缘何扎堆申报智能驾驶主题ETF 次新基金快速建仓 机构密集调研寻找机会 产品端稳步创新 年内新发 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "城市低碳交通 政策评估 碳减排",
+        "urls": [
+          "https://www.sohu.com/a/923495885_100199096",
+          "https://www.gov.cn/zhengce/202508/content_7038144.htm"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "城市低碳交通 政策评估 碳减排",
+            "rank": 2,
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "snippet": "2025年8月13日 · 省会城市中，成都市下辖简阳市、都江堰市、彭州市、邛崃市、崇州市5个县级市。 州是我国旧时的一种行政区划， …",
+            "published_date": "2025-08-13",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "城市低碳交通 政策评估 碳减排",
+            "rank": 4,
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "snippet": "2025年8月28日 · 城市是现代化建设的重要载体、人民幸福生活的重要空间。 我国城镇化正从快速增长期转向稳定发展期，城市发展 …",
+            "published_date": "2025-08-28",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "全国694个城市名单来了，快来看看有无你家乡",
+            "url": "https://www.sohu.com/a/923495885_100199096",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "中共中央 国务院关于推动城市高质量发展的意见",
+            "url": "https://www.gov.cn/zhengce/202508/content_7038144.htm",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "城市（地理学名词）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%9F%8E%E5%B8%82/33549",
+            "relevance": 0.111,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "市（中华人民共和国行政区划）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%B8%82/7149823",
+            "relevance": 0.056,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "“城市不仅要有高度，更要有温度”——习近平总书记人民城市 ...",
+            "url": "https://www.gov.cn/yaowen/liebiao/202507/content_7031982.htm",
+            "relevance": 0.111,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.221,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "拥堵收费 出行行为 实证",
+        "urls": [
+          "https://jiaotong.baidu.com/congestion/city/urbanrealtime/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "拥堵收费 出行行为 实证",
+            "rank": 2,
+            "title": "百度地图交通出行大数据平台 - Baidu",
+            "url": "https://jiaotong.baidu.com/congestion/city/urbanrealtime/",
+            "snippet": "2026年9月11日 · 拥堵指数 为实际行程时间与畅通行程时间的比值，拥堵指数越大代表拥堵程度越高。 本页面“城市拥堵指数”反映的 …",
+            "published_date": "2026-09-11",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "拥堵_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%8B%A5%E5%A0%B5/9435866",
+            "relevance": 0.167,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "2025全国路网密度与拥堵报告出炉，西安排名19位！",
+            "url": "https://news.qq.com/rain/a/20251016A01PID00",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "全国城市拥堵情况查询-今日拥堵指数排行 - 秀车网",
+            "url": "https://www.showche.com/yongdu/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "今日西安拥堵情况-西安拥堵指数查询 - 查证宝",
+            "url": "https://www.chazhengbao.com/yongdu/xian/",
+            "relevance": 0.167,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.261,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "公交优先 慢行交通 减排",
+        "urls": [
+          "https://www.bashi.cn/zhejiang/",
+          "https://www.bashi.cn/ningbo/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "公交优先 慢行交通 减排",
+            "rank": 1,
+            "title": "浙江公交查询_浙江城市地区公交线路查询 - 浙江巴士网",
+            "url": "https://www.bashi.cn/zhejiang/",
+            "snippet": "浙江巴士网提供浙江省城市地区公交车线路查询，包括浙江最近热搜线路、热搜公交站等信息。",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "公交优先 慢行交通 减排",
+            "rank": 5,
+            "title": "【宁波公交车】浙江宁波公交线路查询_宁波公交路线途经 ...",
+            "url": "https://www.bashi.cn/ningbo/",
+            "snippet": "宁波巴士网为您提供浙江省宁波范围内公交巴士线路及公交车站信息查询,您可通过公交车首数字或字母进行检索,查询您想要找的公交 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "浙江公交查询_浙江城市地区公交线路查询 - 浙江巴士网",
+            "url": "https://www.bashi.cn/zhejiang/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "【宁波公交车】浙江宁波公交线路查询_宁波公交路线途经 ...",
+            "url": "https://www.bashi.cn/ningbo/",
+            "relevance": 0.143,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "高德地图",
+            "url": "https://gaode.com/",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "百度地图",
+            "url": "https://j.map.baidu.com/zHCsx",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          },
+          {
+            "title": "nbcxgj.net",
+            "url": "http://nbcxgj.net/cn/",
+            "relevance": 0.071,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.198,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "新能源汽车 政策局限 反弹效应",
+        "urls": [
+          "https://www.sina.com.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "新能源汽车 政策局限 反弹效应",
+            "rank": 3,
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "snippet": "6 小时之前 · 原油 美元 公募机构缘何扎堆申报智能驾驶主题ETF 次新基金快速建仓 机构密集调研寻找机会 产品端稳步创新 年内新发 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "新浪网",
+            "url": "https://www.sina.com.cn/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "新（汉语汉字）_百度百科",
+            "url": "https://baike.baidu.com/item/%E6%96%B0/34058",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "新的意思,新的解释,新的拼音,新的部首,新的笔顺-汉语国学",
+            "url": "https://www.hanyuguoxue.com/zidian/zi-26032",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "《新》的拼音,新字的意思、组词、部首、笔画、笔顺 - 汉语查",
+            "url": "https://www.hgcha.com/zidian/72f014d8.html",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          },
+          {
+            "title": "新_新怎么读_新的意思 - 汉语字典",
+            "url": "https://www.chagushici.com/zidian/%E6%96%B0",
+            "relevance": 0.0,
+            "reason": "词典/字词释义页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.217,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（城市低碳交通政策的效果与限制）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['manager_worker']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "manager_worker"
+        ]
+      },
+      "scheduler_elapsed_seconds": 28.793,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

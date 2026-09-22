@@ -1,0 +1,3282 @@
+{
+  "source_id": "src_fbfad310ef",
+  "kind": "url",
+  "display": "UiPath Studio | Design, Build, and Scale Automations",
+  "original_address": "https://www.uipath.com/product/studio",
+  "title": "UiPath Studio | Design, Build, and Scale Automations",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 15819,
+  "content_hash": "5f4c54a6bc4f9e08216a78e5d1eea57d384d3dabb84ca57ab45b9e04437a8d67",
+  "normalized_hash": "69ff3f22bb66f5a2d4d0739ec768ed4517f3047ca1abbdb863c8dbf9d4ed05f0",
+  "captured_at": "2026-09-18T14:41:40",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_fbfad310ef.md",
+  "encoding": "utf-8",
+  "segment_count": 464,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 18,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 19,
+      "end": 56,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 57,
+      "end": 70,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 3,
+      "start": 105,
+      "end": 126,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 4,
+      "start": 127,
+      "end": 135,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 5,
+      "start": 136,
+      "end": 144,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 6,
+      "start": 145,
+      "end": 159,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 7,
+      "start": 160,
+      "end": 183,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 8,
+      "start": 184,
+      "end": 205,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 9,
+      "start": 206,
+      "end": 219,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 10,
+      "start": 220,
+      "end": 230,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 11,
+      "start": 231,
+      "end": 242,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 12,
+      "start": 243,
+      "end": 247,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 13,
+      "start": 248,
+      "end": 252,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 14,
+      "start": 253,
+      "end": 285,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 15,
+      "start": 286,
+      "end": 297,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 16,
+      "start": 298,
+      "end": 320,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 17,
+      "start": 321,
+      "end": 333,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 18,
+      "start": 334,
+      "end": 343,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 19,
+      "start": 344,
+      "end": 355,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 20,
+      "start": 356,
+      "end": 365,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 21,
+      "start": 366,
+      "end": 370,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 22,
+      "start": 371,
+      "end": 379,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 23,
+      "start": 380,
+      "end": 393,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 24,
+      "start": 394,
+      "end": 407,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 25,
+      "start": 408,
+      "end": 419,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 26,
+      "start": 420,
+      "end": 427,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 27,
+      "start": 428,
+      "end": 453,
+      "page": null
+    },
+    {
+      "heading": "###### Platform",
+      "paragraph": 28,
+      "start": 454,
+      "end": 472,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 29,
+      "start": 509,
+      "end": 520,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 30,
+      "start": 521,
+      "end": 550,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 31,
+      "start": 551,
+      "end": 578,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 32,
+      "start": 579,
+      "end": 598,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 33,
+      "start": 599,
+      "end": 610,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 34,
+      "start": 611,
+      "end": 631,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 35,
+      "start": 632,
+      "end": 669,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 36,
+      "start": 670,
+      "end": 677,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 37,
+      "start": 678,
+      "end": 692,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 38,
+      "start": 693,
+      "end": 707,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 39,
+      "start": 708,
+      "end": 727,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 40,
+      "start": 728,
+      "end": 749,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 41,
+      "start": 750,
+      "end": 774,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 42,
+      "start": 775,
+      "end": 797,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 43,
+      "start": 798,
+      "end": 810,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 44,
+      "start": 811,
+      "end": 832,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 45,
+      "start": 833,
+      "end": 848,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 46,
+      "start": 849,
+      "end": 863,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 47,
+      "start": 864,
+      "end": 883,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 48,
+      "start": 884,
+      "end": 937,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 49,
+      "start": 938,
+      "end": 961,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 50,
+      "start": 998,
+      "end": 1010,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 51,
+      "start": 1011,
+      "end": 1024,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 52,
+      "start": 1025,
+      "end": 1039,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 53,
+      "start": 1040,
+      "end": 1057,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 54,
+      "start": 1058,
+      "end": 1069,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 55,
+      "start": 1070,
+      "end": 1080,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 56,
+      "start": 1081,
+      "end": 1093,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 57,
+      "start": 1094,
+      "end": 1112,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 58,
+      "start": 1113,
+      "end": 1128,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 59,
+      "start": 1129,
+      "end": 1142,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 60,
+      "start": 1143,
+      "end": 1159,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 61,
+      "start": 1160,
+      "end": 1177,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 62,
+      "start": 1178,
+      "end": 1183,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 63,
+      "start": 1184,
+      "end": 1189,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 64,
+      "start": 1190,
+      "end": 1199,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 65,
+      "start": 1200,
+      "end": 1219,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 66,
+      "start": 1220,
+      "end": 1229,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 67,
+      "start": 1230,
+      "end": 1245,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 68,
+      "start": 1246,
+      "end": 1254,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 69,
+      "start": 1255,
+      "end": 1275,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 70,
+      "start": 1276,
+      "end": 1290,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 71,
+      "start": 1291,
+      "end": 1299,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 72,
+      "start": 1300,
+      "end": 1316,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 73,
+      "start": 1317,
+      "end": 1334,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 74,
+      "start": 1335,
+      "end": 1345,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 75,
+      "start": 1346,
+      "end": 1368,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 76,
+      "start": 1369,
+      "end": 1378,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 77,
+      "start": 1379,
+      "end": 1402,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 78,
+      "start": 1403,
+      "end": 1418,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 79,
+      "start": 1419,
+      "end": 1436,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 80,
+      "start": 1437,
+      "end": 1461,
+      "page": null
+    },
+    {
+      "heading": "###### Resources",
+      "paragraph": 81,
+      "start": 1462,
+      "end": 1488,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 82,
+      "start": 1527,
+      "end": 1536,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 83,
+      "start": 1537,
+      "end": 1559,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 84,
+      "start": 1560,
+      "end": 1574,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 85,
+      "start": 1575,
+      "end": 1589,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 86,
+      "start": 1590,
+      "end": 1606,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 87,
+      "start": 1607,
+      "end": 1613,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 88,
+      "start": 1614,
+      "end": 1622,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 89,
+      "start": 1623,
+      "end": 1638,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 90,
+      "start": 1639,
+      "end": 1649,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 91,
+      "start": 1650,
+      "end": 1655,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 92,
+      "start": 1656,
+      "end": 1664,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 93,
+      "start": 1665,
+      "end": 1675,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 94,
+      "start": 1676,
+      "end": 1683,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 95,
+      "start": 1684,
+      "end": 1695,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 96,
+      "start": 1696,
+      "end": 1702,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 97,
+      "start": 1703,
+      "end": 1715,
+      "page": null
+    },
+    {
+      "heading": "###### Developers",
+      "paragraph": 98,
+      "start": 1716,
+      "end": 1724,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 99,
+      "start": 1775,
+      "end": 1783,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 100,
+      "start": 1784,
+      "end": 1800,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 101,
+      "start": 1801,
+      "end": 1825,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 102,
+      "start": 1826,
+      "end": 1839,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 103,
+      "start": 1840,
+      "end": 1860,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 104,
+      "start": 1861,
+      "end": 1873,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 105,
+      "start": 1874,
+      "end": 1890,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 106,
+      "start": 1891,
+      "end": 1899,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 107,
+      "start": 1900,
+      "end": 1911,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 108,
+      "start": 1912,
+      "end": 1919,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 109,
+      "start": 1920,
+      "end": 1924,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 110,
+      "start": 1925,
+      "end": 1936,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 111,
+      "start": 1937,
+      "end": 1943,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 112,
+      "start": 1944,
+      "end": 1949,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 113,
+      "start": 1950,
+      "end": 1956,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 114,
+      "start": 1957,
+      "end": 1968,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 115,
+      "start": 1969,
+      "end": 1977,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 116,
+      "start": 1978,
+      "end": 1994,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 117,
+      "start": 1995,
+      "end": 2014,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 118,
+      "start": 2015,
+      "end": 2022,
+      "page": null
+    },
+    {
+      "heading": "###### Software testing",
+      "paragraph": 119,
+      "start": 2023,
+      "end": 2037,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 120,
+      "start": 2109,
+      "end": 2223,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 121,
+      "start": 2224,
+      "end": 2252,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 122,
+      "start": 2253,
+      "end": 2270,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 123,
+      "start": 2271,
+      "end": 2282,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 124,
+      "start": 2283,
+      "end": 2298,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 125,
+      "start": 2299,
+      "end": 2320,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 126,
+      "start": 2321,
+      "end": 2338,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 127,
+      "start": 2339,
+      "end": 2349,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 128,
+      "start": 2350,
+      "end": 2366,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 129,
+      "start": 2367,
+      "end": 2375,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 130,
+      "start": 2376,
+      "end": 2390,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 131,
+      "start": 2462,
+      "end": 2576,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 132,
+      "start": 2577,
+      "end": 2605,
+      "page": null
+    },
+    {
+      "heading": "# Design, build, and scale agentic, robotic, and API-driven workflows",
+      "paragraph": 133,
+      "start": 2606,
+      "end": 2623,
+      "page": null
+    },
+    {
+      "heading": "## The entire automation surface, all in Studio",
+      "paragraph": 134,
+      "start": 2673,
+      "end": 2810,
+      "page": null
+    },
+    {
+      "heading": "## The entire automation surface, all in Studio",
+      "paragraph": 135,
+      "start": 2811,
+      "end": 2827,
+      "page": null
+    },
+    {
+      "heading": "## The entire automation surface, all in Studio",
+      "paragraph": 136,
+      "start": 2828,
+      "end": 2838,
+      "page": null
+    },
+    {
+      "heading": "## The entire automation surface, all in Studio",
+      "paragraph": 137,
+      "start": 2839,
+      "end": 2853,
+      "page": null
+    },
+    {
+      "heading": "## The entire automation surface, all in Studio",
+      "paragraph": 138,
+      "start": 2854,
+      "end": 2868,
+      "page": null
+    },
+    {
+      "heading": "## The entire automation surface, all in Studio",
+      "paragraph": 139,
+      "start": 2869,
+      "end": 2874,
+      "page": null
+    },
+    {
+      "heading": "### Agentic process",
+      "paragraph": 140,
+      "start": 2896,
+      "end": 2949,
+      "page": null
+    },
+    {
+      "heading": "### Agentic process",
+      "paragraph": 141,
+      "start": 2950,
+      "end": 3204,
+      "page": null
+    },
+    {
+      "heading": "### AI agents",
+      "paragraph": 142,
+      "start": 3220,
+      "end": 3270,
+      "page": null
+    },
+    {
+      "heading": "### AI agents",
+      "paragraph": 143,
+      "start": 3271,
+      "end": 3556,
+      "page": null
+    },
+    {
+      "heading": "### RPA workflows",
+      "paragraph": 144,
+      "start": 3576,
+      "end": 3635,
+      "page": null
+    },
+    {
+      "heading": "### RPA workflows",
+      "paragraph": 145,
+      "start": 3636,
+      "end": 3921,
+      "page": null
+    },
+    {
+      "heading": "### API workflows",
+      "paragraph": 146,
+      "start": 3941,
+      "end": 3996,
+      "page": null
+    },
+    {
+      "heading": "### API workflows",
+      "paragraph": 147,
+      "start": 3997,
+      "end": 4277,
+      "page": null
+    },
+    {
+      "heading": "### Apps",
+      "paragraph": 148,
+      "start": 4288,
+      "end": 4339,
+      "page": null
+    },
+    {
+      "heading": "### Apps",
+      "paragraph": 149,
+      "start": 4340,
+      "end": 4613,
+      "page": null
+    },
+    {
+      "heading": "### Apps",
+      "paragraph": 150,
+      "start": 4614,
+      "end": 4629,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 151,
+      "start": 4653,
+      "end": 4746,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 152,
+      "start": 4747,
+      "end": 4761,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 153,
+      "start": 4762,
+      "end": 4778,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 154,
+      "start": 4779,
+      "end": 4794,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 155,
+      "start": 4795,
+      "end": 4804,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 156,
+      "start": 4805,
+      "end": 4815,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 157,
+      "start": 4816,
+      "end": 4829,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 158,
+      "start": 4830,
+      "end": 4846,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 159,
+      "start": 4847,
+      "end": 4857,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 160,
+      "start": 4858,
+      "end": 4933,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 161,
+      "start": 4934,
+      "end": 4944,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 162,
+      "start": 4945,
+      "end": 4981,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 163,
+      "start": 4982,
+      "end": 5004,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 164,
+      "start": 5005,
+      "end": 5036,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 165,
+      "start": 5037,
+      "end": 5059,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 166,
+      "start": 5060,
+      "end": 5081,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 167,
+      "start": 5082,
+      "end": 5101,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 168,
+      "start": 5102,
+      "end": 5184,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 169,
+      "start": 5185,
+      "end": 5232,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 170,
+      "start": 5233,
+      "end": 5290,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 171,
+      "start": 5291,
+      "end": 5301,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 172,
+      "start": 5302,
+      "end": 5304,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 173,
+      "start": 5305,
+      "end": 5350,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 174,
+      "start": 5351,
+      "end": 5353,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 175,
+      "start": 5354,
+      "end": 5408,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 176,
+      "start": 5409,
+      "end": 5411,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 177,
+      "start": 5412,
+      "end": 5457,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 178,
+      "start": 5458,
+      "end": 5460,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 179,
+      "start": 5461,
+      "end": 5505,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 180,
+      "start": 5506,
+      "end": 5508,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 181,
+      "start": 5509,
+      "end": 5551,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 182,
+      "start": 5552,
+      "end": 5554,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 183,
+      "start": 5555,
+      "end": 5614,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 184,
+      "start": 5615,
+      "end": 5617,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 185,
+      "start": 5618,
+      "end": 5674,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 186,
+      "start": 5675,
+      "end": 5677,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 187,
+      "start": 5678,
+      "end": 5730,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 188,
+      "start": 5731,
+      "end": 5733,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 189,
+      "start": 5734,
+      "end": 5745,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 190,
+      "start": 5746,
+      "end": 5754,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 191,
+      "start": 5755,
+      "end": 5768,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 192,
+      "start": 5769,
+      "end": 5783,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 193,
+      "start": 5784,
+      "end": 5798,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 194,
+      "start": 5799,
+      "end": 5806,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 195,
+      "start": 5807,
+      "end": 5814,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 196,
+      "start": 5815,
+      "end": 5824,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 197,
+      "start": 5825,
+      "end": 5833,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 198,
+      "start": 5834,
+      "end": 5849,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 199,
+      "start": 5850,
+      "end": 5857,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 200,
+      "start": 5858,
+      "end": 5865,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 201,
+      "start": 5866,
+      "end": 5908,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 202,
+      "start": 5909,
+      "end": 5951,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 203,
+      "start": 5952,
+      "end": 5996,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 204,
+      "start": 5997,
+      "end": 6034,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 205,
+      "start": 6035,
+      "end": 6066,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 206,
+      "start": 6067,
+      "end": 6112,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 207,
+      "start": 6113,
+      "end": 6154,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 208,
+      "start": 6155,
+      "end": 6185,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 209,
+      "start": 6186,
+      "end": 6196,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 210,
+      "start": 6197,
+      "end": 6214,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 211,
+      "start": 6215,
+      "end": 6220,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 212,
+      "start": 6221,
+      "end": 6227,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 213,
+      "start": 6228,
+      "end": 6254,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 214,
+      "start": 6255,
+      "end": 6260,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 215,
+      "start": 6261,
+      "end": 6272,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 216,
+      "start": 6273,
+      "end": 6284,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 217,
+      "start": 6285,
+      "end": 6293,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 218,
+      "start": 6294,
+      "end": 6303,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 219,
+      "start": 6304,
+      "end": 6311,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 220,
+      "start": 6312,
+      "end": 6317,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 221,
+      "start": 6318,
+      "end": 6333,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 222,
+      "start": 6334,
+      "end": 6340,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 223,
+      "start": 6341,
+      "end": 6345,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 224,
+      "start": 6346,
+      "end": 6355,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 225,
+      "start": 6356,
+      "end": 6362,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 226,
+      "start": 6363,
+      "end": 6366,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 227,
+      "start": 6367,
+      "end": 6395,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 228,
+      "start": 6396,
+      "end": 6420,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 229,
+      "start": 6421,
+      "end": 6430,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 230,
+      "start": 6431,
+      "end": 6443,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 231,
+      "start": 6444,
+      "end": 6447,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 232,
+      "start": 6448,
+      "end": 6468,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 233,
+      "start": 6469,
+      "end": 6493,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 234,
+      "start": 6494,
+      "end": 6502,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 235,
+      "start": 6503,
+      "end": 6514,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 236,
+      "start": 6515,
+      "end": 6518,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 237,
+      "start": 6519,
+      "end": 6540,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 238,
+      "start": 6541,
+      "end": 6566,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 239,
+      "start": 6567,
+      "end": 6575,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 240,
+      "start": 6576,
+      "end": 6585,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 241,
+      "start": 6586,
+      "end": 6589,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 242,
+      "start": 6590,
+      "end": 6615,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 243,
+      "start": 6616,
+      "end": 6632,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 244,
+      "start": 6633,
+      "end": 6641,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 245,
+      "start": 6642,
+      "end": 6654,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 246,
+      "start": 6655,
+      "end": 6658,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 247,
+      "start": 6659,
+      "end": 6682,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 248,
+      "start": 6683,
+      "end": 6698,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 249,
+      "start": 6699,
+      "end": 6707,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 250,
+      "start": 6708,
+      "end": 6718,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 251,
+      "start": 6719,
+      "end": 6722,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 252,
+      "start": 6723,
+      "end": 6749,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 253,
+      "start": 6750,
+      "end": 6770,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 254,
+      "start": 6771,
+      "end": 6779,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 255,
+      "start": 6780,
+      "end": 6785,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 256,
+      "start": 6786,
+      "end": 6799,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 257,
+      "start": 6800,
+      "end": 6804,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 258,
+      "start": 6805,
+      "end": 6808,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 259,
+      "start": 6809,
+      "end": 6818,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 260,
+      "start": 6819,
+      "end": 6841,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 261,
+      "start": 6842,
+      "end": 6856,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 262,
+      "start": 6857,
+      "end": 6860,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 263,
+      "start": 6861,
+      "end": 6873,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 264,
+      "start": 6874,
+      "end": 6897,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 265,
+      "start": 6898,
+      "end": 6913,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 266,
+      "start": 6914,
+      "end": 6917,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 267,
+      "start": 6918,
+      "end": 6932,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 268,
+      "start": 6933,
+      "end": 6948,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 269,
+      "start": 6949,
+      "end": 6967,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 270,
+      "start": 6968,
+      "end": 6971,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 271,
+      "start": 6972,
+      "end": 6981,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 272,
+      "start": 6982,
+      "end": 6997,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 273,
+      "start": 6998,
+      "end": 7012,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 274,
+      "start": 7013,
+      "end": 7016,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 275,
+      "start": 7017,
+      "end": 7028,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 276,
+      "start": 7029,
+      "end": 7042,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 277,
+      "start": 7043,
+      "end": 7059,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 278,
+      "start": 7060,
+      "end": 7070,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 279,
+      "start": 7071,
+      "end": 7075,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 280,
+      "start": 7076,
+      "end": 7119,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 281,
+      "start": 7120,
+      "end": 7126,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 282,
+      "start": 7127,
+      "end": 7154,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 283,
+      "start": 7155,
+      "end": 7165,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 284,
+      "start": 7166,
+      "end": 7203,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 285,
+      "start": 7204,
+      "end": 7211,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 286,
+      "start": 7212,
+      "end": 7246,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 287,
+      "start": 7247,
+      "end": 7253,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 288,
+      "start": 7254,
+      "end": 7286,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 289,
+      "start": 7287,
+      "end": 7293,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 290,
+      "start": 7294,
+      "end": 7302,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 291,
+      "start": 7303,
+      "end": 7310,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 292,
+      "start": 7311,
+      "end": 7314,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 293,
+      "start": 7315,
+      "end": 7327,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 294,
+      "start": 7328,
+      "end": 7342,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 295,
+      "start": 7343,
+      "end": 7347,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 296,
+      "start": 7348,
+      "end": 7364,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 297,
+      "start": 7365,
+      "end": 7377,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 298,
+      "start": 7378,
+      "end": 7385,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 299,
+      "start": 7386,
+      "end": 7401,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 300,
+      "start": 7402,
+      "end": 7409,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 301,
+      "start": 7410,
+      "end": 7413,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 302,
+      "start": 7414,
+      "end": 7431,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 303,
+      "start": 7432,
+      "end": 7460,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 304,
+      "start": 7461,
+      "end": 7476,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 305,
+      "start": 7477,
+      "end": 7495,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 306,
+      "start": 7496,
+      "end": 7513,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 307,
+      "start": 7514,
+      "end": 7538,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 308,
+      "start": 7539,
+      "end": 7555,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 309,
+      "start": 7556,
+      "end": 7573,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 310,
+      "start": 7574,
+      "end": 7588,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 311,
+      "start": 7589,
+      "end": 7598,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 312,
+      "start": 7599,
+      "end": 7608,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 313,
+      "start": 7609,
+      "end": 7625,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 314,
+      "start": 7626,
+      "end": 7640,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 315,
+      "start": 7641,
+      "end": 7650,
+      "page": null
+    },
+    {
+      "heading": "## Preview Studio now",
+      "paragraph": 316,
+      "start": 7651,
+      "end": 7670,
+      "page": null
+    },
+    {
+      "heading": "## Build your way: low-code, code-first, AI-assisted, or a mix",
+      "paragraph": 317,
+      "start": 7735,
+      "end": 7839,
+      "page": null
+    },
+    {
+      "heading": "### AI-assisted",
+      "paragraph": 318,
+      "start": 7857,
+      "end": 7916,
+      "page": null
+    },
+    {
+      "heading": "### AI-assisted",
+      "paragraph": 319,
+      "start": 7917,
+      "end": 8167,
+      "page": null
+    },
+    {
+      "heading": "### Code-first",
+      "paragraph": 320,
+      "start": 8184,
+      "end": 8240,
+      "page": null
+    },
+    {
+      "heading": "### Code-first",
+      "paragraph": 321,
+      "start": 8241,
+      "end": 8501,
+      "page": null
+    },
+    {
+      "heading": "### Low-code",
+      "paragraph": 322,
+      "start": 8516,
+      "end": 8588,
+      "page": null
+    },
+    {
+      "heading": "### Low-code",
+      "paragraph": 323,
+      "start": 8589,
+      "end": 8812,
+      "page": null
+    },
+    {
+      "heading": "### AI-assisted",
+      "paragraph": 324,
+      "start": 8830,
+      "end": 8889,
+      "page": null
+    },
+    {
+      "heading": "### AI-assisted",
+      "paragraph": 325,
+      "start": 8890,
+      "end": 9140,
+      "page": null
+    },
+    {
+      "heading": "### Code-first",
+      "paragraph": 326,
+      "start": 9157,
+      "end": 9213,
+      "page": null
+    },
+    {
+      "heading": "### Code-first",
+      "paragraph": 327,
+      "start": 9214,
+      "end": 9474,
+      "page": null
+    },
+    {
+      "heading": "### Low-code",
+      "paragraph": 328,
+      "start": 9489,
+      "end": 9561,
+      "page": null
+    },
+    {
+      "heading": "### Low-code",
+      "paragraph": 329,
+      "start": 9562,
+      "end": 9785,
+      "page": null
+    },
+    {
+      "heading": "## Production-ready by default.",
+      "paragraph": 330,
+      "start": 9819,
+      "end": 9857,
+      "page": null
+    },
+    {
+      "heading": "## Production-ready by default.",
+      "paragraph": 331,
+      "start": 9858,
+      "end": 9964,
+      "page": null
+    },
+    {
+      "heading": "### Source control",
+      "paragraph": 332,
+      "start": 9985,
+      "end": 10060,
+      "page": null
+    },
+    {
+      "heading": "### Testing & quality",
+      "paragraph": 333,
+      "start": 10084,
+      "end": 10158,
+      "page": null
+    },
+    {
+      "heading": "### CI/CD pipelines",
+      "paragraph": 334,
+      "start": 10180,
+      "end": 10242,
+      "page": null
+    },
+    {
+      "heading": "### Reusable libraries",
+      "paragraph": 335,
+      "start": 10267,
+      "end": 10335,
+      "page": null
+    },
+    {
+      "heading": "### Governance & Ops",
+      "paragraph": 336,
+      "start": 10358,
+      "end": 10425,
+      "page": null
+    },
+    {
+      "heading": "### Environment mgmt",
+      "paragraph": 337,
+      "start": 10448,
+      "end": 10517,
+      "page": null
+    },
+    {
+      "heading": "### Environment mgmt",
+      "paragraph": 338,
+      "start": 10518,
+      "end": 10578,
+      "page": null
+    },
+    {
+      "heading": "### Environment mgmt",
+      "paragraph": 339,
+      "start": 10579,
+      "end": 10603,
+      "page": null
+    },
+    {
+      "heading": "## Two ways into Studio. Same Studio ecosystem.",
+      "paragraph": 340,
+      "start": 10653,
+      "end": 10764,
+      "page": null
+    },
+    {
+      "heading": "### Studio Desktop",
+      "paragraph": 341,
+      "start": 10785,
+      "end": 10837,
+      "page": null
+    },
+    {
+      "heading": "### Studio Desktop",
+      "paragraph": 342,
+      "start": 10838,
+      "end": 10936,
+      "page": null
+    },
+    {
+      "heading": "### Studio Desktop",
+      "paragraph": 343,
+      "start": 10937,
+      "end": 11174,
+      "page": null
+    },
+    {
+      "heading": "### Studio Desktop",
+      "paragraph": 344,
+      "start": 11175,
+      "end": 11203,
+      "page": null
+    },
+    {
+      "heading": "### Studio Web",
+      "paragraph": 345,
+      "start": 11220,
+      "end": 11275,
+      "page": null
+    },
+    {
+      "heading": "### Studio Web",
+      "paragraph": 346,
+      "start": 11276,
+      "end": 11360,
+      "page": null
+    },
+    {
+      "heading": "### Studio Web",
+      "paragraph": 347,
+      "start": 11361,
+      "end": 11491,
+      "page": null
+    },
+    {
+      "heading": "### Studio Web",
+      "paragraph": 348,
+      "start": 11492,
+      "end": 11518,
+      "page": null
+    },
+    {
+      "heading": "## Everything you need to go deeper",
+      "paragraph": 349,
+      "start": 11753,
+      "end": 11762,
+      "page": null
+    },
+    {
+      "heading": "##### Templates",
+      "paragraph": 350,
+      "start": 11780,
+      "end": 11855,
+      "page": null
+    },
+    {
+      "heading": "##### Templates",
+      "paragraph": 351,
+      "start": 11856,
+      "end": 11873,
+      "page": null
+    },
+    {
+      "heading": "##### Templates",
+      "paragraph": 352,
+      "start": 11874,
+      "end": 11883,
+      "page": null
+    },
+    {
+      "heading": "##### Documentation",
+      "paragraph": 353,
+      "start": 11905,
+      "end": 11974,
+      "page": null
+    },
+    {
+      "heading": "##### Documentation",
+      "paragraph": 354,
+      "start": 11975,
+      "end": 11989,
+      "page": null
+    },
+    {
+      "heading": "##### Documentation",
+      "paragraph": 355,
+      "start": 11990,
+      "end": 11999,
+      "page": null
+    },
+    {
+      "heading": "##### Developer Hub",
+      "paragraph": 356,
+      "start": 12021,
+      "end": 12078,
+      "page": null
+    },
+    {
+      "heading": "##### Developer Hub",
+      "paragraph": 357,
+      "start": 12079,
+      "end": 12095,
+      "page": null
+    },
+    {
+      "heading": "## UiPath Studio: common evaluation questions",
+      "paragraph": 358,
+      "start": 12143,
+      "end": 12218,
+      "page": null
+    },
+    {
+      "heading": "## UiPath Studio: common evaluation questions",
+      "paragraph": 359,
+      "start": 12219,
+      "end": 12232,
+      "page": null
+    },
+    {
+      "heading": "###### Is UiPath Studio free?",
+      "paragraph": 360,
+      "start": 12264,
+      "end": 12550,
+      "page": null
+    },
+    {
+      "heading": "###### What’s the difference between Studio Desktop and Studio Web?",
+      "paragraph": 361,
+      "start": 12620,
+      "end": 12896,
+      "page": null
+    },
+    {
+      "heading": "###### Does UiPath Studio work on Mac?",
+      "paragraph": 362,
+      "start": 12937,
+      "end": 13105,
+      "page": null
+    },
+    {
+      "heading": "###### What languages does UiPath Studio support?",
+      "paragraph": 363,
+      "start": 13157,
+      "end": 13376,
+      "page": null
+    },
+    {
+      "heading": "###### How is UiPath Studio governed and secured?",
+      "paragraph": 364,
+      "start": 13428,
+      "end": 13669,
+      "page": null
+    },
+    {
+      "heading": "###### Where can I run automations built in UiPath Studio?",
+      "paragraph": 365,
+      "start": 13730,
+      "end": 13910,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 366,
+      "start": 13936,
+      "end": 13964,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 367,
+      "start": 13965,
+      "end": 13982,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 368,
+      "start": 13983,
+      "end": 13994,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 369,
+      "start": 13995,
+      "end": 14003,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 370,
+      "start": 14004,
+      "end": 14012,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 371,
+      "start": 14013,
+      "end": 14021,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 372,
+      "start": 14022,
+      "end": 14030,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 373,
+      "start": 14031,
+      "end": 14040,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 374,
+      "start": 14041,
+      "end": 14051,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 375,
+      "start": 14052,
+      "end": 14060,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 376,
+      "start": 14061,
+      "end": 14066,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 377,
+      "start": 14067,
+      "end": 14071,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 378,
+      "start": 14072,
+      "end": 14077,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 379,
+      "start": 14078,
+      "end": 14083,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 380,
+      "start": 14084,
+      "end": 14093,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 381,
+      "start": 14094,
+      "end": 14122,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 382,
+      "start": 14123,
+      "end": 14141,
+      "page": null
+    },
+    {
+      "heading": "## Start building today",
+      "paragraph": 383,
+      "start": 14142,
+      "end": 14150,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 384,
+      "start": 14172,
+      "end": 14195,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 385,
+      "start": 14196,
+      "end": 14217,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 386,
+      "start": 14218,
+      "end": 14231,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 387,
+      "start": 14232,
+      "end": 14243,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 388,
+      "start": 14244,
+      "end": 14248,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 389,
+      "start": 14249,
+      "end": 14253,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 390,
+      "start": 14254,
+      "end": 14286,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 391,
+      "start": 14287,
+      "end": 14309,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 392,
+      "start": 14310,
+      "end": 14322,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 393,
+      "start": 14323,
+      "end": 14332,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 394,
+      "start": 14333,
+      "end": 14344,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 395,
+      "start": 14345,
+      "end": 14354,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 396,
+      "start": 14355,
+      "end": 14360,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 397,
+      "start": 14361,
+      "end": 14371,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 398,
+      "start": 14372,
+      "end": 14392,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 399,
+      "start": 14393,
+      "end": 14397,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 400,
+      "start": 14398,
+      "end": 14406,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 401,
+      "start": 14407,
+      "end": 14420,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 402,
+      "start": 14421,
+      "end": 14434,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 403,
+      "start": 14435,
+      "end": 14448,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 404,
+      "start": 14449,
+      "end": 14462,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 405,
+      "start": 14463,
+      "end": 14474,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 406,
+      "start": 14475,
+      "end": 14482,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 407,
+      "start": 14483,
+      "end": 14494,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 408,
+      "start": 14495,
+      "end": 14520,
+      "page": null
+    },
+    {
+      "heading": "###### Capabilities",
+      "paragraph": 409,
+      "start": 14521,
+      "end": 14543,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 410,
+      "start": 14562,
+      "end": 14574,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 411,
+      "start": 14575,
+      "end": 14589,
+      "page": null
+    },
+    {
+      "heading": "###### Solutions",
+      "paragraph": 412,
+      "start": 14590,
+      "end": 14606,
+      "page": null
+    },
+    {
+      "heading": "###### Learning",
+      "paragraph": 413,
+      "start": 14624,
+      "end": 14632,
+      "page": null
+    },
+    {
+      "heading": "###### Learning",
+      "paragraph": 414,
+      "start": 14633,
+      "end": 14648,
+      "page": null
+    },
+    {
+      "heading": "###### Learning",
+      "paragraph": 415,
+      "start": 14649,
+      "end": 14669,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 416,
+      "start": 14698,
+      "end": 14715,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 417,
+      "start": 14716,
+      "end": 14732,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 418,
+      "start": 14733,
+      "end": 14747,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 419,
+      "start": 14748,
+      "end": 14754,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 420,
+      "start": 14755,
+      "end": 14770,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 421,
+      "start": 14771,
+      "end": 14788,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 422,
+      "start": 14789,
+      "end": 14804,
+      "page": null
+    },
+    {
+      "heading": "###### Support & Community",
+      "paragraph": 423,
+      "start": 14805,
+      "end": 14817,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 424,
+      "start": 14842,
+      "end": 14847,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 425,
+      "start": 14848,
+      "end": 14864,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 426,
+      "start": 14865,
+      "end": 14878,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 427,
+      "start": 14879,
+      "end": 14892,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 428,
+      "start": 14893,
+      "end": 14902,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 429,
+      "start": 14903,
+      "end": 14913,
+      "page": null
+    },
+    {
+      "heading": "###### Resource Center",
+      "paragraph": 430,
+      "start": 14914,
+      "end": 14931,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 431,
+      "start": 14947,
+      "end": 14961,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 432,
+      "start": 14962,
+      "end": 14989,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 433,
+      "start": 14990,
+      "end": 15004,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 434,
+      "start": 15005,
+      "end": 15020,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 435,
+      "start": 15021,
+      "end": 15030,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 436,
+      "start": 15031,
+      "end": 15054,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 437,
+      "start": 15055,
+      "end": 15070,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 438,
+      "start": 15071,
+      "end": 15088,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 439,
+      "start": 15089,
+      "end": 15107,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 440,
+      "start": 15108,
+      "end": 15132,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 441,
+      "start": 15133,
+      "end": 15159,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 442,
+      "start": 15160,
+      "end": 15168,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 443,
+      "start": 15169,
+      "end": 15178,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 444,
+      "start": 15179,
+      "end": 15187,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 445,
+      "start": 15188,
+      "end": 15201,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 446,
+      "start": 15202,
+      "end": 15211,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 447,
+      "start": 15212,
+      "end": 15231,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 448,
+      "start": 15232,
+      "end": 15249,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 449,
+      "start": 15250,
+      "end": 15270,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 450,
+      "start": 15271,
+      "end": 15288,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 451,
+      "start": 15289,
+      "end": 15307,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 452,
+      "start": 15308,
+      "end": 15324,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 453,
+      "start": 15325,
+      "end": 15349,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 454,
+      "start": 15350,
+      "end": 15367,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 455,
+      "start": 15368,
+      "end": 15382,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 456,
+      "start": 15383,
+      "end": 15400,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 457,
+      "start": 15401,
+      "end": 15414,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 458,
+      "start": 15415,
+      "end": 15430,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 459,
+      "start": 15431,
+      "end": 15446,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 460,
+      "start": 15447,
+      "end": 15468,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 461,
+      "start": 15469,
+      "end": 15686,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 462,
+      "start": 15687,
+      "end": 15728,
+      "page": null
+    },
+    {
+      "heading": "###### Events",
+      "paragraph": 463,
+      "start": 15729,
+      "end": 15754,
+      "page": null
+    }
+  ],
+  "final_url": "https://www.uipath.com/product/studio",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-18T14:41:40",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

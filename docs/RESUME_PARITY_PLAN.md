@@ -27,7 +27,7 @@
 | **漂移趋势（滑动均值）** | `drift.detect_trend()`：滑动均值 z 分数离群（突发退化）+ 连续 N 批单边漂移（缓慢劣化）双通道，CLI `--history` | ✅ **R1 追加补齐** | 稳定序列不误报、尖峰/缓降都能抓住（各有测试） |
 | **A/B 实验 + Welch's t 检验** | `eval/experiment.py`：ExperimentRunner 控制变量对照 + 零依赖 Welch 检验（p 值用正则化不完全 Beta 连分式，不引 scipy） | ✅ **R1 追加补齐** | p 值对教科书参考值校验（t=2,df=10→0.0734）；显著性 + better 变体判定 |
 | **AutoOptimizer 参数反馈闭环** | `eval/auto_optimizer.py`：指标阈值规则→白名单参数（context_budget/max_output_tokens/max_calls）受控调整；CLI `python -m eval.auto_optimizer --metrics <报告>` | ✅ **R1 追加补齐（护栏版），已用真实数据演示** | 对 Q2 真实汇总跑 dry-run：p95=369.4s 正确触发时延护栏（8192→7782.4，未落盘）、accepted 占比 0.81 正确不触发质量规则；结果存 `eval/reports/auto_optimizer/demo_q2_dry_run.json`。三道护栏：白名单+硬边界夹取+默认 dry_run 审计日志；**是否采纳建议属 Q3 决策，未自动应用** |
-| **FastAPI + React** | `src/interfaces/web/fastapi_app.py`（同契约适配层 + `/vendor` 静态路由）+ `static/react/index.html`（React 18 本地 vendor，CDN 兜底） | ✅ **R1 新增，浏览器级已验收** | Playwright 1.63 + Chromium 153 真浏览器验收通过（渲染/逐键输入/提交/轮询到终态/截图/无控制台错误 + 离线回退提示），证据 `eval/reports/react_browser/`；验收揪出并修复 2 个真实缺陷（vendor 静态路由缺失、useState 解构错误）；HTTP 级 5 项测试真跑；默认入口仍是零依赖标准库工作台 |
+| **FastAPI + React** | 演示层已于 2026-09-22 整体移除出仓库（界面只保留标准库工作台；历史实现与浏览器验收记录见 git 历史 fceead2 之前后） | ⚠️ **已移除** | 简历如写 FastAPI/React：属开发期接口层实践，现仓库默认入口为标准库工作台，面试口径建议相应调整或展示 git 历史 |
 | **Prompt Cache 前缀不变** | `provider.py` + `compose_context(user_message_kinds)` + `memory_in_user_message` | ✅ **机制成立，O-15 已切换默认（2026-09-20）** | 实测（口径 4）：system 前缀逐字节稳定 ✅；O-15 历史窗口修复切换默认 True 后，记忆注入 User Message 的稳定前缀增益 **+28.9pp**（user 71.3% vs system 42.4%）得以兑现；切换后 616 项回归通过 + 真实冒烟 accepted；**简历可写"记忆注入用户消息保持提示缓存前缀稳定（实测前缀稳定度 +29 个百分点）"** |
 | 研究任务端到端完成率 85% | Q2-01 真实批次 | ❌ **无此读数** | 真实读数三分离：执行完成率 **97.0%**（96/99）、预期行为符合率 **70.8%**（90% 门槛未达标）、成品质量 **61.3%**（独立评测）/ **71.3%**（人工）；简历口径建议改用其一，勿写 85% |
 

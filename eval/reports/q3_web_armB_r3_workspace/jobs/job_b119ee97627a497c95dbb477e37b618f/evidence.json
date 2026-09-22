@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_ce19f47597",
+      "fact": "本资料未提供远程医疗推广的反对观点。",
+      "tag": "I",
+      "quote": "用户推荐 非常好用",
+      "start": 3447,
+      "end": 3456,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料将医疗保健列为行业解决方案之一。",
+      "tag": "F",
+      "quote": "医疗保健",
+      "start": 692,
+      "end": 696,
+      "locator": {
+        "heading": "",
+        "paragraph": 52,
+        "start": 692,
+        "end": 697
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料称飞利浦与向日葵方案实现对几内亚当地医院高端医疗设备的远程维护。",
+      "tag": "F",
+      "quote": "飞利浦和向日葵联合推出的“飞易联（Phi-Link）”方案，实现了对几内亚当地医院部署的高端医疗设备的远程维护。",
+      "start": 7897,
+      "end": 7953,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 647,
+        "start": 7896,
+        "end": 7955
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料称远程控制方案让技术人员更快提供技术支持，降低派遣维修员上门成本。",
+      "tag": "F",
+      "quote": "技术人员能够更快的提供技术支持，大幅降低派遣维修员上门的成本",
+      "start": 7639,
+      "end": 7669,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 634,
+        "start": 7611,
+        "end": 7671
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料称远程运维方案提升IT部门服务效率并省去沟通成本。",
+      "tag": "F",
+      "quote": "我们的IT部门人员为公司员工提供服务的效率大幅提升，让我们省去很多沟通的成本",
+      "start": 7773,
+      "end": 7811,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 641,
+        "start": 7758,
+        "end": 7813
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料称员工可在任何时间、任何地点通过远程发起协助和办公，操作友好。",
+      "tag": "F",
+      "quote": "我们的员工可以在任何时间、任何地点通过向日葵发起远程协助和办公，整体操作很友好，推荐使用",
+      "start": 7483,
+      "end": 7527,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 628,
+        "start": 7482,
+        "end": 7529
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料称远程控制支持IT运维、技术支持、远程办公等企业场景。",
+      "tag": "F",
+      "quote": "IT运维、技术支持、远程办公于一体的企业远程控制解决方案",
+      "start": 2811,
+      "end": 2839,
+      "locator": {
+        "heading": "### 远程IT运维解决方案",
+        "paragraph": 179,
+        "start": 2811,
+        "end": 2840
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料强调远控隐私屏可保护隐私信息、避免泄露。",
+      "tag": "F",
+      "quote": "保护远控隐私信息，避免泄露",
+      "start": 4682,
+      "end": 4695,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 330,
+        "start": 4682,
+        "end": 4696
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_c81d048f25",
+      "fact": "本资料涉及医疗的内容为远程维护医疗设备，未讨论远程医疗推广争议。",
+      "tag": "I",
+      "quote": "高端医疗设备的远程维护",
+      "start": 7941,
+      "end": 7952,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 647,
+        "start": 7896,
+        "end": 7955
+      },
+      "note": ""
+    }
+  ]
+}

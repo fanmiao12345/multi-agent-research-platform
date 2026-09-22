@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_b197f4193d",
+      "fact": "本资料为中国知网平台首页，仅呈现服务导航与平台动态，非研究文献。",
+      "tag": "F",
+      "quote": "中国知网（CNKI）",
+      "start": 4403,
+      "end": 4413,
+      "locator": {
+        "heading": "###### 标准质量评估服务平台重磅发布！",
+        "paragraph": 270,
+        "start": 4357,
+        "end": 4414
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_b197f4193d",
+      "fact": "本资料未包含任何关于远程办公或团队协作的研究内容与结论。",
+      "tag": "F",
+      "quote": "暂无词云分析",
+      "start": 2204,
+      "end": 2210,
+      "locator": {
+        "heading": "### “ ”词云",
+        "paragraph": 215,
+        "start": 2204,
+        "end": 2211
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_b197f4193d",
+      "fact": "本资料提供学术期刊、学位论文、会议、报纸等多类型文献检索入口。",
+      "tag": "F",
+      "quote": "学术期刊",
+      "start": 682,
+      "end": 686,
+      "locator": {
+        "heading": "###### 期刊社",
+        "paragraph": 56,
+        "start": 682,
+        "end": 697
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_b197f4193d",
+      "fact": "本资料列出文献综述、文献计量、学术趋势等辅助研究的功能入口。",
+      "tag": "F",
+      "quote": "文献综述",
+      "start": 2067,
+      "end": 2071,
+      "locator": {
+        "heading": "##### 学术评价",
+        "paragraph": 198,
+        "start": 2067,
+        "end": 2072
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_b197f4193d",
+      "fact": "本资料提到下载热榜以PDSI指数排序，反映学界关注热点与研究趋势。",
+      "tag": "F",
+      "quote": "反映学界关注热点与研究趋势",
+      "start": 2312,
+      "end": 2325,
+      "locator": {
+        "heading": "### “ ”词云",
+        "paragraph": 222,
+        "start": 2259,
+        "end": 2327
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_b197f4193d",
+      "fact": "要获得远程办公对团队协作影响的近期研究，需在本平台另行检索文献。",
+      "tag": "I",
+      "quote": "高级检索 > 出版物检索 > 增强检索",
+      "start": 1800,
+      "end": 1819,
+      "locator": {
+        "heading": "##### 学术评价",
+        "paragraph": 165,
+        "start": 1800,
+        "end": 1820
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_d04e367559",
+      "fact": "本资料主题为分布式系统核心概念、架构演进、典型特征与学习路线。",
+      "tag": "F",
+      "quote": "分布式系统详解：核心概念、架构演进、典型特征与学习路线",
+      "start": 403,
+      "end": 430,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_d04e367559",
+      "fact": "本资料以电商下单链路说明跨节点协作，而非团队协作研究。",
+      "tag": "F",
+      "quote": "用户点击“提交订单”，页面上只是一次请求",
+      "start": 1268,
+      "end": 1288,
+      "locator": {
+        "heading": "## 什么是分布式系统？",
+        "paragraph": 58,
+        "start": 1266,
+        "end": 1375
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_d04e367559",
+      "fact": "本资料未提供远程办公对团队协作影响的任何研究或数据。",
+      "tag": "I",
+      "quote": "分布式系统不是某一种中间件，而是一类系统形态。",
+      "start": 4608,
+      "end": 4631,
+      "locator": {
+        "heading": "## 常见的分布式系统有哪些？",
+        "paragraph": 113,
+        "start": 4608,
+        "end": 4640
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料为ToDesk产品介绍页，未含近期研究结论。",
+      "tag": "I",
+      "quote": "ToDesk企业版 ，为您提供系统化解决方案",
+      "start": 8903,
+      "end": 8925,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 432,
+        "start": 8903,
+        "end": 8926
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料将远程办公列为使用场景之一。",
+      "tag": "F",
+      "quote": "远程办公与专业设计",
+      "start": 96,
+      "end": 105,
+      "locator": {
+        "heading": "",
+        "paragraph": 12,
+        "start": 96,
+        "end": 106
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料将远程协作与演示列为使用场景。",
+      "tag": "F",
+      "quote": "远程协作与演示",
+      "start": 130,
+      "end": 137,
+      "locator": {
+        "heading": "",
+        "paragraph": 16,
+        "start": 130,
+        "end": 138
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料称多人协作支持多人同时控制一台设备并可白板批注。",
+      "tag": "F",
+      "quote": "多人同时控制一台设备并可白板批注",
+      "start": 506,
+      "end": 522,
+      "locator": {
+        "heading": "",
+        "paragraph": 50,
+        "start": 506,
+        "end": 523
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料称远程协助演示PPT时可用多指针功能，提升沟通效率。",
+      "tag": "F",
+      "quote": "远程协助同事演示PPT时，开启ToDesk的多指针功能",
+      "start": 4803,
+      "end": 4830,
+      "locator": {
+        "heading": "## 用户推荐 非常好用",
+        "paragraph": 306,
+        "start": 4803,
+        "end": 4863
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料称员工登录主控端即可无缝切换远程办公。",
+      "tag": "F",
+      "quote": "员工只需下载主控端并登录，即可无缝切换远程办公",
+      "start": 2222,
+      "end": 2245,
+      "locator": {
+        "heading": "## 安全的企业都选择 ToDesk企业版",
+        "paragraph": 190,
+        "start": 2222,
+        "end": 2246
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料称团队版可统一管理席位、设备、连接和权益。",
+      "tag": "F",
+      "quote": "席位、设备、连接、权益统一管",
+      "start": 1114,
+      "end": 1128,
+      "locator": {
+        "heading": "",
+        "paragraph": 103,
+        "start": 1114,
+        "end": 1129
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_b7abc7a7b2",
+      "fact": "本资料称团队管理覆盖成员、设备、权益和连接。",
+      "tag": "F",
+      "quote": "成员/设备/权益/连接统统都能管",
+      "start": 623,
+      "end": 639,
+      "locator": {
+        "heading": "",
+        "paragraph": 60,
+        "start": 623,
+        "end": 640
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_2ceb2e662e",
+      "fact": "本资料为向日葵远程控制产品首页，并非远程办公研究文献",
+      "tag": "F",
+      "quote": "首页",
+      "start": 0,
+      "end": 2,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 3
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_2ceb2e662e",
+      "fact": "本资料把企业远程办公与IT运维、技术支持并列为应用场景",
+      "tag": "F",
+      "quote": "IT运维、技术支持、远程办公于一体的企业远程控制解决方案",
+      "start": 2811,
+      "end": 2839,
+      "locator": {
+        "heading": "### 远程IT运维解决方案",
+        "paragraph": 179,
+        "start": 2811,
+        "end": 2840
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_2ceb2e662e",
+      "fact": "本资料将该企业远程办公功能表述为员工管理、部署快",
+      "tag": "F",
+      "quote": "员工管理 · 部署快",
+      "start": 132,
+      "end": 142,
+      "locator": {
+        "heading": "",
+        "paragraph": 13,
+        "start": 127,
+        "end": 147
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_2ceb2e662e",
+      "fact": "本资料引客户评价称员工可任意时间地点发起远程协助和办公",
+      "tag": "F",
+      "quote": "我们的员工可以在任何时间、任何地点通过向日葵发起远程协助和办公",
+      "start": 7483,
+      "end": 7514,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 628,
+        "start": 7482,
+        "end": 7529
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_2ceb2e662e",
+      "fact": "本资料称客户引入远程运维方案后IT服务效率大幅提升",
+      "tag": "F",
+      "quote": "我们的IT部门人员为公司员工提供服务的效率大幅提升",
+      "start": 7773,
+      "end": 7798,
+      "locator": {
+        "heading": "### 连锁零售",
+        "paragraph": 641,
+        "start": 7758,
+        "end": 7813
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_2ceb2e662e",
+      "fact": "本资料称已有2.3万+家企业选择其远控方案",
+      "tag": "F",
+      "quote": "已有 2.3万+家 企业选择",
+      "start": 4017,
+      "end": 4031,
+      "locator": {
+        "heading": "### IT运维",
+        "paragraph": 259,
+        "start": 4017,
+        "end": 4032
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_2ceb2e662e",
+      "fact": "本资料为产品宣传内容，未涉及远程办公对团队协作的研究",
+      "tag": "I",
+      "quote": "专业远程控制，每月稳定连接超150亿分钟",
+      "start": 3540,
+      "end": 3560,
+      "locator": {
+        "heading": "## 向日葵IT精英版",
+        "paragraph": 229,
+        "start": 3540,
+        "end": 3561
+      },
+      "note": ""
+    }
+  ]
+}

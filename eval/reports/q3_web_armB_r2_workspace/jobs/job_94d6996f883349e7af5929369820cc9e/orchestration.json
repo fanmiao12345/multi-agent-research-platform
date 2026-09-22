@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "root_job_id": "job_94d6996f883349e7af5929369820cc9e",
+  "topic": "生成式人工智能在软件测试中的应用趋势",
+  "mode_requested": "fixed",
+  "orchestration": "fanout",
+  "status": "finished",
+  "plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "选型失败，降级固定流程（已知最稳）",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "unspecified",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "writer",
+        "description": "按给定资料完成整理与成稿（生成式人工智能在软件测试中的应用趋势）",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 60,
+      "max_cost_usd": 0.12,
+      "max_seconds": 1500.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.06,
+      "seconds": 750
+    }
+  },
+  "plan_meta": {
+    "scheduler": "fallback",
+    "failures": [
+      "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks 必须为 1~12 个的列表",
+      "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['fanout']；subtasks[0].description 必须为非空文本；subtasks[1].description 必须为非空文本；subtasks[2].description 必须为非空文本；subtasks[3].description 必须为非空文本；subtasks[4].description 必须为非空文本；subtasks[5].description 必须为非空文本；subtasks[6].description 必须为非空文本"
+    ],
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 30.102,
+    "scheduler_calls": 2
+  },
+  "subtasks": [],
+  "draft_level": "unable",
+  "degraded": false,
+  "failures": [],
+  "execution_note": "受根账本锁限制，本轮子任务按序执行（并行开放见 D2-02）",
+  "termination_reason": "unable",
+  "message": "无法完成：素材包全部证据仅涉及生成式AI创意工具（图像与视频生成及编辑），且明确声明未提及软件测试、测试用例、缺陷检测或测试自动化，完全无法支撑本主题。；缺失信息：生成式AI在软件测试用例生成中的应用趋势：缺少软件测试用例生成相关研究、案例或数据、生成式AI在缺陷检测与缺陷预测中的应用趋势：缺少缺陷检测或缺陷预测相关文献、工具或实验数据、生成式AI在测试自动化脚本生成与维护中的应用趋势：缺少测试自动化脚本生成与维护的材料、生成式AI用于软件测试的效果与风险证据：缺少效果评估、准确率、局限与风险数据、生成式AI在软件测试中的产业采用趋势：缺少行业报告、企业案例或采用率统计（可用证据 18 条不足以支撑任务目标，按任务要求不编造内容）",
+  "unified": {
+    "schema_version": 2,
+    "root_job_id": "job_94d6996f883349e7af5929369820cc9e",
+    "draft_level": "unable",
+    "delivery_label": "无法完成",
+    "termination_reason": "unable",
+    "status": "partial",
+    "message": "无法完成：素材包全部证据仅涉及生成式AI创意工具（图像与视频生成及编辑），且明确声明未提及软件测试、测试用例、缺陷检测或测试自动化，完全无法支撑本主题。；缺失信息：生成式AI在软件测试用例生成中的应用趋势：缺少软件测试用例生成相关研究、案例或数据、生成式AI在缺陷检测与缺陷预测中的应用趋势：缺少缺陷检测或缺陷预测相关文献、工具或实验数据、生成式AI在测试自动化脚本生成与维护中的应用趋势：缺少测试自动化脚本生成与维护的材料、生成式AI用于软件测试的效果与风险证据：缺少效果评估、准确率、局限与风险数据、生成式AI在软件测试中的产业采用趋势：缺少行业报告、企业案例或采用率统计（可用证据 18 条不足以支撑任务目标，按任务要求不编造内容）"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "Meta投资者关系页面结构",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "资料为Meta投资者关系首页，仅含导航与栏目入口。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "页面列有季度财报入口，当前标注Q2 2026 Earnings。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "页面提供SEC文件与年度报告入口。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "页面设有投资者活动与新闻稿栏目。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "页面提供邮件提醒订阅，可订阅投资者新闻与SEC文件。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "页面底部版权标注为Meta 2025。"
+          }
+        ]
+      },
+      {
+        "name": "与开源大模型商业模式无关",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "资料通篇未出现开源大模型、许可或模型商业模式内容。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "开源大模型厂商如何获得收入？",
+        "missing": "缺少商业模式案例与收入数据"
+      },
+      {
+        "question": "模型许可条款如何影响商业化？",
+        "missing": "缺少开源许可文本与许可变更记录"
+      },
+      {
+        "question": "云、API或服务如何成为变现路径？",
+        "missing": "缺少定价、客户与合同材料"
+      },
+      {
+        "question": "开源与闭源策略对财务有何影响？",
+        "missing": "缺少财报分部数据与战略说明"
+      },
+      {
+        "question": "Meta等公司开源模型的商业化证据是什么？",
+        "missing": "缺少官方公告、财报或模型许可文本"
+      }
+    ],
+    "duplicates": []
+  }
+}

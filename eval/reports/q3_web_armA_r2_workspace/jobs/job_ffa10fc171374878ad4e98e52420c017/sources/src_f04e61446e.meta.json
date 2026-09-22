@@ -1,0 +1,888 @@
+{
+  "source_id": "src_f04e61446e",
+  "kind": "url",
+  "display": "Download - Obsidian",
+  "original_address": "https://obsidian.md/download",
+  "title": "Download - Obsidian",
+  "content_format": "md",
+  "status": "ok",
+  "status_message": "",
+  "byte_size": 1515,
+  "content_hash": "4ed32aded8566d0f28b1e158a6ca08501315a13d52bcff1036f5e4d2af03ee9c",
+  "normalized_hash": "450229d8ba9e7be5464605e52f2257b83c09cf484c7ee48e8acda3b564641c6b",
+  "captured_at": "2026-09-20T09:48:15",
+  "published_date": "unknown",
+  "duplicate_of": null,
+  "file_name": "sources/src_f04e61446e.md",
+  "encoding": "utf-8",
+  "segment_count": 122,
+  "segments": [
+    {
+      "heading": "",
+      "paragraph": 0,
+      "start": 0,
+      "end": 9,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 1,
+      "start": 10,
+      "end": 18,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 2,
+      "start": 19,
+      "end": 24,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 3,
+      "start": 25,
+      "end": 33,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 4,
+      "start": 34,
+      "end": 45,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 5,
+      "start": 46,
+      "end": 54,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 6,
+      "start": 55,
+      "end": 63,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 7,
+      "start": 64,
+      "end": 70,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 8,
+      "start": 71,
+      "end": 79,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 9,
+      "start": 80,
+      "end": 88,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 10,
+      "start": 89,
+      "end": 98,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 11,
+      "start": 99,
+      "end": 108,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 12,
+      "start": 109,
+      "end": 113,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 13,
+      "start": 114,
+      "end": 118,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 14,
+      "start": 119,
+      "end": 126,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 15,
+      "start": 127,
+      "end": 146,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 16,
+      "start": 147,
+      "end": 154,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 17,
+      "start": 155,
+      "end": 163,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 18,
+      "start": 164,
+      "end": 172,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 19,
+      "start": 173,
+      "end": 178,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 20,
+      "start": 179,
+      "end": 189,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 21,
+      "start": 190,
+      "end": 198,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 22,
+      "start": 199,
+      "end": 207,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 23,
+      "start": 208,
+      "end": 216,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 24,
+      "start": 217,
+      "end": 223,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 25,
+      "start": 224,
+      "end": 232,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 26,
+      "start": 233,
+      "end": 241,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 27,
+      "start": 242,
+      "end": 251,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 28,
+      "start": 252,
+      "end": 261,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 29,
+      "start": 262,
+      "end": 266,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 30,
+      "start": 267,
+      "end": 271,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 31,
+      "start": 272,
+      "end": 279,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 32,
+      "start": 280,
+      "end": 299,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 33,
+      "start": 300,
+      "end": 307,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 34,
+      "start": 308,
+      "end": 316,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 35,
+      "start": 317,
+      "end": 325,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 36,
+      "start": 326,
+      "end": 331,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 37,
+      "start": 332,
+      "end": 341,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 38,
+      "start": 342,
+      "end": 350,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 39,
+      "start": 351,
+      "end": 356,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 40,
+      "start": 357,
+      "end": 365,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 41,
+      "start": 366,
+      "end": 374,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 42,
+      "start": 375,
+      "end": 383,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 43,
+      "start": 384,
+      "end": 395,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 44,
+      "start": 396,
+      "end": 408,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 45,
+      "start": 409,
+      "end": 420,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 46,
+      "start": 421,
+      "end": 426,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 47,
+      "start": 427,
+      "end": 433,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 48,
+      "start": 434,
+      "end": 439,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 49,
+      "start": 440,
+      "end": 448,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 50,
+      "start": 449,
+      "end": 459,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 51,
+      "start": 460,
+      "end": 470,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 52,
+      "start": 471,
+      "end": 479,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 53,
+      "start": 480,
+      "end": 489,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 54,
+      "start": 490,
+      "end": 502,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 55,
+      "start": 503,
+      "end": 511,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 56,
+      "start": 512,
+      "end": 533,
+      "page": null
+    },
+    {
+      "heading": "",
+      "paragraph": 57,
+      "start": 534,
+      "end": 547,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 58,
+      "start": 556,
+      "end": 560,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 59,
+      "start": 561,
+      "end": 571,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 60,
+      "start": 572,
+      "end": 580,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 61,
+      "start": 581,
+      "end": 597,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 62,
+      "start": 598,
+      "end": 606,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 63,
+      "start": 607,
+      "end": 617,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 64,
+      "start": 618,
+      "end": 622,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 65,
+      "start": 623,
+      "end": 633,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 66,
+      "start": 634,
+      "end": 640,
+      "page": null
+    },
+    {
+      "heading": "## App",
+      "paragraph": 67,
+      "start": 641,
+      "end": 714,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 68,
+      "start": 731,
+      "end": 758,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 69,
+      "start": 759,
+      "end": 783,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 70,
+      "start": 784,
+      "end": 796,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 71,
+      "start": 797,
+      "end": 806,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 72,
+      "start": 807,
+      "end": 815,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 73,
+      "start": 816,
+      "end": 827,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 74,
+      "start": 828,
+      "end": 836,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 75,
+      "start": 837,
+      "end": 846,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 76,
+      "start": 847,
+      "end": 856,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 77,
+      "start": 857,
+      "end": 862,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 78,
+      "start": 863,
+      "end": 871,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 79,
+      "start": 872,
+      "end": 879,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 80,
+      "start": 880,
+      "end": 887,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 81,
+      "start": 888,
+      "end": 900,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 82,
+      "start": 901,
+      "end": 905,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 83,
+      "start": 906,
+      "end": 912,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 84,
+      "start": 913,
+      "end": 918,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 85,
+      "start": 919,
+      "end": 930,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 86,
+      "start": 931,
+      "end": 941,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 87,
+      "start": 942,
+      "end": 948,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 88,
+      "start": 949,
+      "end": 957,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 89,
+      "start": 958,
+      "end": 963,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 90,
+      "start": 964,
+      "end": 974,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 91,
+      "start": 975,
+      "end": 989,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 92,
+      "start": 990,
+      "end": 1007,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 93,
+      "start": 1008,
+      "end": 1025,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 94,
+      "start": 1026,
+      "end": 1041,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 95,
+      "start": 1042,
+      "end": 1051,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 96,
+      "start": 1052,
+      "end": 1062,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 97,
+      "start": 1063,
+      "end": 1071,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 98,
+      "start": 1072,
+      "end": 1079,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 99,
+      "start": 1080,
+      "end": 1088,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 100,
+      "start": 1089,
+      "end": 1102,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 101,
+      "start": 1103,
+      "end": 1115,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 102,
+      "start": 1116,
+      "end": 1133,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 103,
+      "start": 1134,
+      "end": 1144,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 104,
+      "start": 1145,
+      "end": 1201,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 105,
+      "start": 1202,
+      "end": 1210,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 106,
+      "start": 1211,
+      "end": 1219,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 107,
+      "start": 1220,
+      "end": 1228,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 108,
+      "start": 1229,
+      "end": 1235,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 109,
+      "start": 1236,
+      "end": 1244,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 110,
+      "start": 1245,
+      "end": 1253,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 111,
+      "start": 1254,
+      "end": 1263,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 112,
+      "start": 1264,
+      "end": 1273,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 113,
+      "start": 1274,
+      "end": 1278,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 114,
+      "start": 1279,
+      "end": 1283,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 115,
+      "start": 1284,
+      "end": 1291,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 116,
+      "start": 1292,
+      "end": 1311,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 117,
+      "start": 1312,
+      "end": 1319,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 118,
+      "start": 1320,
+      "end": 1328,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 119,
+      "start": 1329,
+      "end": 1337,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 120,
+      "start": 1338,
+      "end": 1343,
+      "page": null
+    },
+    {
+      "heading": "## Web Clipper",
+      "paragraph": 121,
+      "start": 1344,
+      "end": 1359,
+      "page": null
+    }
+  ],
+  "final_url": "https://obsidian.md/download",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "page_count": 0,
+  "source_version": 1,
+  "root_source_id": "",
+  "source_job_id": "",
+  "retrieved_at": "2026-09-20T09:48:15",
+  "withdrawn_at": "",
+  "withdrawal_reason": "",
+  "expires_at": "",
+  "superseded_by": "",
+  "supersedes": ""
+}

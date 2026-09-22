@@ -1,0 +1,132 @@
+{
+  "title": "算法推荐规则强制公开议题：证据梳理与缺口评估",
+  "sections": [
+    {
+      "heading": "议题界定与评估框架",
+      "purpose": "界定强制公开算法推荐规则，列出法律、成本、权益、比较法与披露范围标准",
+      "required_evidence": [
+        "E-007",
+        "E-012",
+        "E-013",
+        "E-019",
+        "E-020",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "欧盟数字政策背景",
+      "purpose": "梳理欧盟数字转型与政策支柱，判断是否涉及算法推荐公开",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-005",
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "欧盟近期立法与新闻",
+      "purpose": "整理欧盟近期立法动态，寻找算法透明度相关线索",
+      "required_evidence": [
+        "E-008",
+        "E-009",
+        "E-010",
+        "E-011"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "算法基础概念",
+      "purpose": "说明算法定义、特征与评价维度，为规则公开提供概念基础",
+      "required_evidence": [
+        "E-014",
+        "E-015",
+        "E-016",
+        "E-017",
+        "E-018"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "平台页面与公众讨论内容",
+      "purpose": "检查豆瓣页面内容是否涉及算法推荐规则公开",
+      "required_evidence": [
+        "E-021",
+        "E-022",
+        "E-023",
+        "E-024",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "核心议题直接证据盘点",
+      "purpose": "汇总现有资料对强制公开议题的提及与未提及情况",
+      "required_evidence": [
+        "E-007",
+        "E-012",
+        "E-013",
+        "E-019",
+        "E-020",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "支持强制公开的论据需求",
+      "purpose": "说明现有资料未提供支持强制公开的直接法律与效果证据",
+      "required_evidence": [
+        "E-007",
+        "E-012",
+        "E-013",
+        "E-019",
+        "E-020",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "反对强制公开的论据需求",
+      "purpose": "说明现有资料未提供反对强制公开的成本与商业秘密证据",
+      "required_evidence": [
+        "E-007",
+        "E-012",
+        "E-013",
+        "E-019",
+        "E-020",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "关键证据缺口汇总",
+      "purpose": "列出法律依据、成本收益、用户权益、比较法、披露范围缺口",
+      "required_evidence": [
+        "E-007",
+        "E-012",
+        "E-013",
+        "E-019",
+        "E-020",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "初步结论与后续研究",
+      "purpose": "在现有证据下给出条件性判断，提出需补材料",
+      "required_evidence": [
+        "E-007",
+        "E-012",
+        "E-013",
+        "E-019",
+        "E-020",
+        "E-025"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_92f01dd51382495584682237da9c7621",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 5,
+    "usable": 4,
+    "statuses": {
+      "ok": 4,
+      "read_failed": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "unable",
+    "final_artifact_id": "",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 19 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-20T11:55:59"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "5 个主题，0 个开放冲突，5 个缺口",
+        "finished_at": "2026-09-20T11:56:09"
+      },
+      {
+        "stage": "repair",
+        "status": "no_new_evidence",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "补做未产生可定位新证据",
+        "finished_at": "2026-09-20T11:56:28"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "无法完成：现有资料明确声明未涉及个人知识管理系统检索与记忆设计，其余内容为卡片制作站界面与无关安全漏洞，完全无法支撑任务目标。",
+        "finished_at": "2026-09-20T11:56:30"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 0,
+    "unresolved_citations": 0,
+    "hard_checks": {},
+    "message": "无法完成：现有资料明确声明未涉及个人知识管理系统检索与记忆设计，其余内容为卡片制作站界面与无关安全漏洞，完全无法支撑任务目标。；缺失信息：个人知识管理系统的检索机制与查询界面材料、记忆或复习机制（如间隔重复、复习调度）材料、知识条目、标签、双链等数据模型材料、检索行为或记忆效果评估数据、跨设备同步与检索记忆一致性材料（可用证据 19 条不足以支撑任务目标，按任务要求不编造内容）"
+  },
+  "web_search": {
+    "status": "ok",
+    "provider": "bing_scrape",
+    "added_urls": [
+      "https://bbs.360.cn/thread-16152985-1-1.html",
+      "https://bbs.360.cn/thread-16180116-1-1.html",
+      "https://www.jztheme.com/card",
+      "https://zoviz.com/zh/card-maker",
+      "https://wenshu.aiproducthub.cn/"
+    ],
+    "candidates": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 双向链接 知识图谱 Obsidian",
+        "rank": 1,
+        "title": "“你的组织使用了 Windows defender 应用程序控制来阻止此 ...",
+        "url": "https://bbs.360.cn/thread-16152985-1-1.html",
+        "snippet": "2025年2月10日 · “你的组织使用了 Windows defender 应用程序控制来阻止此应用”弹窗解决方案hi 360用户 近期陆续收到用户反馈， …",
+        "published_date": "2025-02-10",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 双向链接 知识图谱 Obsidian",
+        "rank": 4,
+        "title": "金山毒霸、360 安全卫士被曝存在内核驱动高危漏洞（2026 ...",
+        "url": "https://bbs.360.cn/thread-16180116-1-1.html",
+        "snippet": "2026年4月14日 · 金山毒霸、360 安全卫士被曝存在内核驱动高危漏洞（2026年04月14日）如题，求真相！360官方会有应急补丁修复 …",
+        "published_date": "2026-04-14",
+        "date_source": "snippet",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "卡片盒笔记法 间隔重复 遗忘曲线",
+        "rank": 3,
+        "title": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端 ...",
+        "url": "https://www.jztheme.com/card",
+        "snippet": "开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "卡片盒笔记法 间隔重复 遗忘曲线",
+        "rank": 4,
+        "title": "卡片制作器 - 在线快速创建自定义卡片！",
+        "url": "https://zoviz.com/zh/card-maker",
+        "snippet": "一体化在线卡片制作工具 在几分钟内为任何场合创建定制卡片。 使用Zoviz的免费在线卡片制作工具，每个设计都已准备好打印，数 …",
+        "published_date": "",
+        "date_source": "unavailable",
+        "mock": false
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识库 语义检索 向量检索 RAG",
+        "rank": 3,
+        "title": "中国裁判文书网 - 全国法院裁判文书公开平台｜司法案例查询",
+        "url": "https://wenshu.aiproducthub.cn/",
+        "snippet": "2026年7月5日 · 中国裁判文书网 (wenshu.court.gov.cn)由最高人民法院主办，是全国法院裁判文书统一公开平台。 免费查询各级法院 …",
+        "published_date": "2026-07-05",
+        "date_source": "snippet",
+        "mock": false
+      }
+    ],
+    "records": [
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 双向链接 知识图谱 Obsidian",
+        "urls": [
+          "https://bbs.360.cn/thread-16152985-1-1.html",
+          "https://bbs.360.cn/thread-16180116-1-1.html"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 双向链接 知识图谱 Obsidian",
+            "rank": 1,
+            "title": "“你的组织使用了 Windows defender 应用程序控制来阻止此 ...",
+            "url": "https://bbs.360.cn/thread-16152985-1-1.html",
+            "snippet": "2025年2月10日 · “你的组织使用了 Windows defender 应用程序控制来阻止此应用”弹窗解决方案hi 360用户 近期陆续收到用户反馈， …",
+            "published_date": "2025-02-10",
+            "date_source": "snippet",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识管理 双向链接 知识图谱 Obsidian",
+            "rank": 4,
+            "title": "金山毒霸、360 安全卫士被曝存在内核驱动高危漏洞（2026 ...",
+            "url": "https://bbs.360.cn/thread-16180116-1-1.html",
+            "snippet": "2026年4月14日 · 金山毒霸、360 安全卫士被曝存在内核驱动高危漏洞（2026年04月14日）如题，求真相！360官方会有应急补丁修复 …",
+            "published_date": "2026-04-14",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "“你的组织使用了 Windows defender 应用程序控制来阻止此 ...",
+            "url": "https://bbs.360.cn/thread-16152985-1-1.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "金山毒霸、360 安全卫士被曝存在内核驱动高危漏洞（2026 ...",
+            "url": "https://bbs.360.cn/thread-16180116-1-1.html",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "360主动防御模块无法结束进程/删除/停止/禁用，何解之？ - 知乎",
+            "url": "https://www.zhihu.com/question/52891841",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "电脑已经卸载360安全软件，但是发现启动任务里仍然有360 ...",
+            "url": "https://www.zhihu.com/question/1895409663685673775",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "360帮助中心",
+            "url": "https://faq.bbs.360.cn/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足"
+          }
+        ],
+        "elapsed_seconds": 0.217,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "卡片盒笔记法 间隔重复 遗忘曲线",
+        "urls": [
+          "https://www.jztheme.com/card",
+          "https://zoviz.com/zh/card-maker"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "卡片盒笔记法 间隔重复 遗忘曲线",
+            "rank": 3,
+            "title": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端 ...",
+            "url": "https://www.jztheme.com/card",
+            "snippet": "开源Card卡片UI元素，探索CSS/HTML与Tailwind前端特效素材",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          },
+          {
+            "provider": "bing_scrape",
+            "query": "卡片盒笔记法 间隔重复 遗忘曲线",
+            "rank": 4,
+            "title": "卡片制作器 - 在线快速创建自定义卡片！",
+            "url": "https://zoviz.com/zh/card-maker",
+            "snippet": "一体化在线卡片制作工具 在几分钟内为任何场合创建定制卡片。 使用Zoviz的免费在线卡片制作工具，每个设计都已准备好打印，数 …",
+            "published_date": "",
+            "date_source": "unavailable",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "卡片 - 开源Card卡片UI元素，探索CSS/HTML与Tailwind前端 ...",
+            "url": "https://www.jztheme.com/card",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "卡片制作器 - 在线快速创建自定义卡片！",
+            "url": "https://zoviz.com/zh/card-maker",
+            "relevance": 0.091,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "卡牌（记录信息的纸片）_百度百科",
+            "url": "https://baike.baidu.com/item/%E5%8D%A1%E7%89%87/457308",
+            "relevance": 0.045,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "卡片模板-卡片图片模板免费下载-创客贴",
+            "url": "https://www.chuangkit.com/tupian/kapian.html",
+            "relevance": 0.091,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "卡片模板图片-卡片模板素材-卡片模板设计模板高清免费下载 ...",
+            "url": "https://www.58pic.com/tupian/kapianmoban.html",
+            "relevance": 0.091,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.197,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识库 语义检索 向量检索 RAG",
+        "urls": [
+          "https://wenshu.aiproducthub.cn/"
+        ],
+        "candidates": [
+          {
+            "provider": "bing_scrape",
+            "query": "个人知识库 语义检索 向量检索 RAG",
+            "rank": 3,
+            "title": "中国裁判文书网 - 全国法院裁判文书公开平台｜司法案例查询",
+            "url": "https://wenshu.aiproducthub.cn/",
+            "snippet": "2026年7月5日 · 中国裁判文书网 (wenshu.court.gov.cn)由最高人民法院主办，是全国法院裁判文书统一公开平台。 免费查询各级法院 …",
+            "published_date": "2026-07-05",
+            "date_source": "snippet",
+            "mock": false
+          }
+        ],
+        "dropped": [
+          {
+            "title": "中国裁判文书网 - 全国法院裁判文书公开平台｜司法案例查询",
+            "url": "https://wenshu.aiproducthub.cn/",
+            "relevance": 0.0,
+            "reason": "查询关键词重合不足（按安全阀保留，待人工复核）",
+            "fallback": true
+          },
+          {
+            "title": "首页",
+            "url": "https://wenshu.court.gov.cn/",
+            "relevance": 0.0,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "登录/注册 - 中国裁判文书网",
+            "url": "https://wenshu.court.gov.cn/website/wenshu/181010CARHS5BS3C/index.html",
+            "relevance": 0.0,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "首页 - 人民法院案例库",
+            "url": "https://rmfyalk.court.gov.cn/",
+            "relevance": 0.0,
+            "reason": "产品官网/下载页，非研究材料"
+          },
+          {
+            "title": "首页 - 中华人民共和国最高人民法院",
+            "url": "https://www.court.gov.cn/index.html",
+            "relevance": 0.0,
+            "reason": "产品官网/下载页，非研究材料"
+          }
+        ],
+        "elapsed_seconds": 0.207,
+        "error": ""
+      },
+      {
+        "provider": "bing_scrape",
+        "query": "个人知识管理 认知负荷 检索界面 设计",
+        "urls": [],
+        "candidates": [],
+        "dropped": [
+          {
+            "title": "天津理工大学宿舍怎么样？四人寝环境？ - 知乎",
+            "url": "https://www.zhihu.com/question/283438617",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "天津理工大学的研究生怎么样？ - 知乎",
+            "url": "https://www.zhihu.com/question/60237989",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "桂林电子科技大学与天津理工大学比较？ - 知乎",
+            "url": "https://www.zhihu.com/question/52589745",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "天津理工大学中外合作办好不好? - 知乎",
+            "url": "https://www.zhihu.com/question/332363221",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          },
+          {
+            "title": "在天津理工大学中环信息学院就读是什么体验？ - 知乎",
+            "url": "https://www.zhihu.com/question/401647287",
+            "relevance": 0.0,
+            "reason": "站点已知/近期以 403 拒绝抓取，降权换源（O-14 B 方案）"
+          }
+        ],
+        "elapsed_seconds": 0.296,
+        "error": ""
+      }
+    ]
+  },
+  "orchestration": {
+    "plan": {
+      "schema_version": "1",
+      "mode": "fixed",
+      "reason": "选型失败，降级固定流程（已知最稳）",
+      "complexity_signals": {
+        "independent_subtopics": 1,
+        "work_type": "unspecified",
+        "material_ready": true,
+        "controversial": false
+      },
+      "subtasks": [
+        {
+          "id": "T1",
+          "role": "writer",
+          "description": "按给定资料完成整理与成稿（个人知识管理系统中的检索与记忆设计）",
+          "depends_on": [],
+          "parallel": false,
+          "covers_sections": []
+        }
+      ],
+      "needs_reviewer": true,
+      "max_parallel": 1,
+      "budget": {
+        "max_calls": 60,
+        "max_cost_usd": 0.12,
+        "max_seconds": 1500.0
+      },
+      "fallback_mode": "fixed",
+      "expected": {
+        "calls": 8,
+        "cost_usd": 0.06,
+        "seconds": 750
+      }
+    },
+    "plan_meta": {
+      "scheduler": "fallback",
+      "failures": [
+        "第1次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表",
+        "第2次选型失败：PlanValidationError: fallback_mode 必须取已开放模式 ['single']；subtasks 必须为 1~12 个的列表"
+      ],
+      "understanding": null,
+      "capability_catalog": {
+        "modes": [
+          {
+            "name": "single",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fixed",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "manager_worker",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "fanout",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "dynamic_team",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          },
+          {
+            "name": "debate",
+            "implemented": true,
+            "min_cost_usd": 0.0
+          }
+        ],
+        "allowed": [
+          "single"
+        ]
+      },
+      "scheduler_elapsed_seconds": 10.974,
+      "scheduler_calls": 2
+    },
+    "children": [],
+    "citation_lineage": [],
+    "degraded": false,
+    "failures": [],
+    "budget_split": {}
+  }
+}

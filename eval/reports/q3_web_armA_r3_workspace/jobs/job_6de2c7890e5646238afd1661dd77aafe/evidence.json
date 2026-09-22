@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_6b80df3e27",
+      "fact": "本资料标题为Kling AI主页，内容仅为产品导航栏目。",
+      "tag": "F",
+      "quote": "# Kling AI Home",
+      "start": 0,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_6b80df3e27",
+      "fact": "本资料出现的栏目名包括创意圈、资产、Omni、生成、灵动画布、全部工具。",
+      "tag": "F",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_6b80df3e27",
+      "fact": "本资料未出现教育、教学、学生、教师等任何教育场景表述。",
+      "tag": "F",
+      "quote": "生成",
+      "start": 32,
+      "end": 34,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 3,
+        "start": 32,
+        "end": 35
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_6b80df3e27",
+      "fact": "本资料未提供生成式AI在教育领域收益或风险的任何信息。",
+      "tag": "F",
+      "quote": "Kling AI Home",
+      "start": 2,
+      "end": 15,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_6b80df3e27",
+      "fact": "依据本资料无法提取教育领域使用生成式AI的收益与风险事实，此为明确缺口。",
+      "tag": "I",
+      "quote": "全部工具",
+      "start": 42,
+      "end": 46,
+      "locator": {
+        "heading": "# Kling AI Home",
+        "paragraph": 5,
+        "start": 42,
+        "end": 46
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_25d4d06fff",
+      "fact": "本资料为在线AI图像生成与图片编辑工具站点，内容不涉及教育领域或教学场景。",
+      "tag": "F",
+      "quote": "集 AI 图像生成、图片编辑与视频创作于一体的在线工作室。",
+      "start": 3959,
+      "end": 3988,
+      "locator": {
+        "heading": "## AI视频",
+        "paragraph": 189,
+        "start": 3959,
+        "end": 3989
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_25d4d06fff",
+      "fact": "本资料介绍的产品功能为文字生图、图片编辑与图生视频等视觉创作。",
+      "tag": "F",
+      "quote": "你可以文字生图、编辑上传图片、融合多张参考图",
+      "start": 3432,
+      "end": 3454,
+      "locator": {
+        "heading": "## 开始创作前，你可能想了解这些",
+        "paragraph": 163,
+        "start": 3432,
+        "end": 3476
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_25d4d06fff",
+      "fact": "本资料称使用其图像生成功能无需OpenAI账号，打开网页即可创作。",
+      "tag": "F",
+      "quote": "无需 OpenAI 账号即可使用",
+      "start": 771,
+      "end": 787,
+      "locator": {},
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_25d4d06fff",
+      "fact": "本资料提示AI生成结果在发布前需完成事实、权利与质量检查。",
+      "tag": "F",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_25d4d06fff",
+      "fact": "本资料未提供生成式AI在教育领域收益与风险的任何数据或论述。",
+      "tag": "F",
+      "quote": "为每个人打造的 AI 创作工作室",
+      "start": 511,
+      "end": 527,
+      "locator": {
+        "heading": "",
+        "paragraph": 15,
+        "start": 511,
+        "end": 528
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_25d4d06fff",
+      "fact": "该资料提及的事实与质量核查提示或可类推至教学材料使用，但资料未作教育场景说明。",
+      "tag": "I",
+      "quote": "AI 结果发布前请完成事实、权利与质量检查。",
+      "start": 4101,
+      "end": 4123,
+      "locator": {
+        "heading": "## 公司与政策",
+        "paragraph": 194,
+        "start": 4101,
+        "end": 4123
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_25d4d06fff",
+      "fact": "生成式AI用于教育需另行查证其他来源，本资料无法支撑该主题结论。",
+      "tag": "U",
+      "quote": "从提示词结构、参考图编辑到模型选择",
+      "start": 1161,
+      "end": 1178,
+      "locator": {
+        "heading": "## GPT Image 2.5 创作与使用指南",
+        "paragraph": 54,
+        "start": 1161,
+        "end": 1203
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_17dc5f42f6",
+      "fact": "本资料为即梦AI产品介绍，未涉及教育领域使用生成式AI的收益与风险。",
+      "tag": "I",
+      "quote": "文生图 视频生成 智能画布 探索 未来影像计划",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 24
+      },
+      "note": ""
+    }
+  ]
+}
