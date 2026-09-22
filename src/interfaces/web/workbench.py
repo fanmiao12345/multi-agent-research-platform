@@ -719,6 +719,9 @@ a:hover{text-decoration:underline}
 .navlabel{padding:0 10px 6px;color:var(--muted2);font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
 .navitem{display:flex;align-items:center;gap:10px;padding:9px 10px;margin:2px 0;border-radius:9px;color:#475467;font-size:12.5px;font-weight:650;text-decoration:none}
 .navitem:hover{background:var(--panel-soft);color:var(--text);text-decoration:none}
+.navitem.active{background:var(--accent-soft);color:var(--accent)}
+.navitem.active .ico{background:var(--accent);border-color:var(--accent);color:#fff}
+section.panel[hidden]{display:none}
 .navitem .ico{width:21px;height:21px;border:1px solid var(--line);border-radius:6px;display:grid;place-items:center;font:800 10px var(--mono);background:#fff;color:var(--muted)}
 .sidebar-foot{position:absolute;left:14px;right:14px;bottom:16px;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--panel-soft);color:var(--muted);font-size:10.5px}
 .sidebar-foot b{color:var(--text)}
@@ -923,7 +926,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       </details>
     </section>
 
-    <section class="metrics" aria-label="工作台概览">
+    <section class="metrics" id="metricsSection" aria-label="工作台概览">
       <div class="metric"><span>研究任务</span><strong id="metricJobs">0</strong><small id="metricJobsSub">暂无任务</small></div>
       <div class="metric"><span>运行记录</span><strong id="metricRuns">0</strong><small id="metricRunsSub">暂无运行</small></div>
       <div class="metric"><span>当前模型</span><strong id="metricModel" style="font-size:13px">—</strong><small id="metricProvider">配置未检查</small></div>
@@ -983,7 +986,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
           <div id="trace" class="trace-list"><div class="empty"><b>暂无轨迹</b>选择一个 run 后加载。</div></div>
         </section>
 
-        <section class="panel panel-pad">
+        <section class="panel panel-pad" id="toolsPanel">
           <div class="section-head"><span class="section-num">06</span><div class="section-title"><strong>工具与人工审批</strong><span>Tool activity / Human in the loop</span></div></div>
           <div id="tools"><div class="empty"><b>暂无工具调用</b></div></div>
           <div class="divider"></div>
@@ -1299,6 +1302,32 @@ async function loadEval(){
 }
 
 loadJobs();loadRuns();loadConfig();
+
+/* 视图路由：侧边栏每项对应独立功能视图，点谁显示谁 */
+const VIEW_GROUPS = {
+  newResearch: ["newResearch","metricsSection"],
+  jobsSection: ["jobsSection"],
+  sourcesSection: ["sourcesSection"],
+  runsSection: ["runsSection"],
+  traceSection: ["traceSection","toolsPanel"],
+  evalSection: ["evalSection"]
+};
+function showView(id){
+  const show = VIEW_GROUPS[id] ? VIEW_GROUPS[id] : VIEW_GROUPS.newResearch;
+  Object.entries(VIEW_GROUPS).forEach(([v, secs])=>{
+    secs.forEach(sec=>{
+      const el=document.getElementById(sec);
+      if(el) el.style.display = (show.indexOf(sec)>=0) ? "" : "none";
+    });
+  });
+  document.querySelectorAll(".navitem").forEach(a=>{
+    a.classList.toggle("active", a.getAttribute("href")==="#"+id);
+  });
+  if (location.hash !== "#"+id) history.replaceState(null, "", "#"+id);
+  window.scrollTo(0, 0);
+}
+window.addEventListener("hashchange", ()=>showView((location.hash||"#newResearch").slice(1)));
+showView((location.hash || "#newResearch").slice(1));
 </script>
 </body>
 </html>"""
