@@ -14,8 +14,11 @@ class TaskRequest:
     max_iterations: int = 8
     max_calls: int = 12
     max_output_tokens: int = 8192
-    max_seconds: float = 300
-    max_cost: float | None = None
+    # 预算默认值（Q3-02/O-04 校准，2026-09-20 用户拍板，见 docs/BUDGET_CALIBRATION.md）：
+    # max_seconds 300→600（Q2-01 p95=369s 超旧默认 23%）；max_cost None→0.15
+    # （1.5×实测 p95，消除真实模式无费用上限的裸奔；显式传参始终优先）
+    max_seconds: float = 600
+    max_cost: float | None = 0.15
     system_extra: str = ""
     # 本地资料：粘贴文本（内容）与本地文件路径（只读原文，从不回写）。
     texts: tuple[str, ...] = ()
