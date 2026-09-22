@@ -28,7 +28,12 @@ ID / 问题与用户影响 / 证据位置与版本 / 归属 Q 阶段 / 处理状
 | O-14 | **抓取被反爬拦截（可读率的真因，非解析问题）**：联网批 107 份来源里 `read_failed` 38 份（35.5%），逐条看 `status_message` **全部是 HTTP 403**（baike.baidu.com、zhihu.com、csdn、gov.cn 等），抓取器 UA 为 `agent-mvp/0.1 (local research import)`；`ok` 的 56 份提取质量正常（正文中位 4.2k 字、字符/字节 0.446），所以 52.3% 可读率不是解析缺陷 | `eval/reports/q2_web_workspace/jobs/*/sources/*.meta.json`（`status_message`）、`src/harness/ingest/url_policy.py`（`user_agent` 默认值） | Q3-02 联网专项 | **用户决策：B 方案（保持诚实 UA + 降权换源），已实施（2026-09-18）并经扩大样本定案（2026-09-20）**：`site_policy.py` 静态名单+任务内动态 403 实录，接线三条搜索路径。**六样本定案（每臂 36 题）**：accepted 率 B 30.6%（11/36） vs A 27.8%（10/36），两比例 z 检验 **p=0.795 无显著差异**——成稿质量等价；可读率 B 63.2% 略优、且少抓 403 站。**B 方案保留为默认**；单轮波动实锤（同配置轮间差 3 题 > 臂间差 1 题，单轮结论不可信）。证据：`eval/reports/q3_web_six_sample_summary.json` |
 | O-15 | **compose_context 的 messages 份额被 allocate 归一化挤占（Prompt Cache 收益的结构性上限）**：`allocate()` 对传入权重重新归一化，扣除 messages/reserve 后剩余权重合计 0.7 被放大回 1.0，`messages_lim = total - sum(limits) ≈ 0~2` → `keep_last` 恒为 2 条。后果：①多轮对话的既有历史几乎不进 prompt（上下文连续性受损）；②记忆注入 User Message 的前缀稳定收益没有体现载体（`eval/resume_metrics` 口径 4 实测两种注入位置增益 ≈0） | `src/harness/context/builder.py`（compose_context）、`src/harness/context/budget.py`（allocate 归一化）、`eval/reports/resume_metrics/resume_metrics.json`（口径 4 读数） | ~~Q3-02/Q4 之间~~ **已切换（2026-09-20）** | **已修复并切换默认**：`RuntimeContext.reserve_message_window` 默认 True（Q3 联网双臂批次收尾后启用），收益开关对照 +28.9pp（user 71.3% vs system 42.4%）；切换后全量 616 项回归通过（仅更新旧默认断言 + 1 例已知 Windows 偶发隔离复跑过），真实冒烟一题联网研究 accepted（6/8 来源、206s）。回退口：置 False 即恢复旧行为 |
 
-以下是功能缺口，不属于本清单的调优任务：子报告到原始证据的完整映射、真实并发/嵌套派工、Web/CLI 统一自动选型、工作台记忆管理页面。分别按 D6～D9 实施。
+以下是功能缺口，不属于本清单的调优任务：子报告到原始证据的完整映射、真实并发/嵌套派工、Web/CLI 统一自动选型、工作台记忆管理页面。
+分别按 D6～D9 实施。**交付格式与报告模板**（.md/.docx/.txt 可选、模板版式、导出带等级与局限等）按 2026-09-22 用户
+新增范围登记，设计见 [EXPORT_AND_REPORT_TEMPLATE_PLAN.md](EXPORT_AND_REPORT_TEMPLATE_PLAN.md)，不在本清单排期。
+
+与 O-06 的关系：O-06「浏览器流程易用性、详情信息量、查看来源与导出便利性」的**导出与阅读便利部分**以该方案为修复载体
+（P1 补齐导出格式与"保留等级/局限"，P2 补齐阅读器与版本对比）；完成后在此更新 O-06 状态与前后对照。
 
 ## 处理纪律
 
