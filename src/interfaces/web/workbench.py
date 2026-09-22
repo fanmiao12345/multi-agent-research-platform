@@ -683,12 +683,83 @@ def _tool_cards(run_dir: Path) -> list[dict]:
     return cards
 
 
-INDEX_HTML = """<!doctype html><html lang="zh"><meta charset="utf-8"><title>Agent Workbench</title>
-<style>body{font-family:system-ui;margin:24px;background:#0f1420;color:#dbe4f0}
-.card{background:#1a2233;border:1px solid #2c3a55;border-radius:10px;padding:14px;margin:10px 0}
-table{border-collapse:collapse;width:100%}td,th{border:1px solid #334;padding:6px;font-size:13px}
-pre{white-space:pre-wrap;font-size:12px}.mono{font-family:Consolas,monospace}</style>
-<h1>Agent Workbench（纯标准库 MVP）</h1>
+INDEX_HTML = """<!doctype html><html lang="zh"><meta charset="utf-8"><title>研究工作台 · Agent Workbench</title>
+<style>
+:root{--bg:#0f1813;--surface:#15231c;--surface2:#1a2b22;--line:#2b4134;
+  --ink:#dce7de;--dim:#93a89a;--amber:#e5b458;--seal:#d4553f;--celadon:#7fb69a;
+  --mono:Consolas,"Courier New",monospace}
+*{box-sizing:border-box}
+body{margin:0;padding:0 22px 48px;background:var(--bg);color:var(--ink);
+  font-family:"Microsoft YaHei UI","Microsoft YaHei",system-ui,sans-serif;
+  font-size:14px;line-height:1.7}
+::selection{background:var(--amber);color:#10231a}
+a{color:var(--celadon)}
+header.masthead{max-width:1280px;margin:0 auto;padding:30px 0 16px;
+  border-bottom:1px solid var(--line);display:flex;align-items:baseline;
+  gap:16px;flex-wrap:wrap}
+.masthead .seal{width:34px;height:34px;border:2px solid var(--seal);color:var(--seal);
+  border-radius:4px;display:inline-flex;align-items:center;justify-content:center;
+  font-family:"SimSun","STSong",serif;font-weight:700;font-size:15px;
+  letter-spacing:2px;text-indent:2px;transform:translateY(4px)}
+.masthead .brand{font-family:"SimSun","STSong","NSimSun",serif;font-size:27px;
+  font-weight:700;color:var(--ink);letter-spacing:.18em;margin:0}
+.masthead .eyebrow{font-family:var(--mono);font-size:11px;color:var(--amber);
+  letter-spacing:.22em;text-transform:uppercase}
+.masthead .sub{color:var(--dim);font-size:12px;letter-spacing:.06em}
+main.deck{max-width:1280px;margin:20px auto 0;display:grid;gap:16px;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,600px),1fr));
+  align-items:start}
+.card{background:linear-gradient(180deg,var(--surface2),var(--surface));
+  border:1px solid var(--line);border-radius:5px;padding:16px 18px 18px;margin:0;
+  box-shadow:0 1px 0 rgba(0,0,0,.4)}
+.card h3{margin:0 0 12px;padding-bottom:9px;font-size:14px;font-weight:700;
+  color:var(--amber);letter-spacing:.05em;border-bottom:1px dashed var(--line)}
+h1{font-size:1rem;margin:0;font-family:var(--mono);font-weight:700;
+  color:var(--amber);letter-spacing:.18em}
+p{margin:.5em 0}
+input,select,textarea{background:#0d1611;color:var(--ink);border:1px solid var(--line);
+  border-radius:3px;padding:5px 8px;font-family:inherit;font-size:13px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--amber);
+  outline-offset:1px;border-color:var(--amber)}
+textarea{resize:vertical}
+button{background:transparent;color:var(--amber);border:1px solid var(--amber);
+  border-radius:3px;padding:5px 14px;font-family:inherit;font-size:13px;
+  cursor:pointer;transition:background .15s,color .15s}
+button:hover:not(:disabled){background:var(--amber);color:#10231a}
+button:disabled{color:var(--dim);border-color:var(--line);cursor:not-allowed}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:2px solid var(--amber);outline-offset:2px}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid var(--line);padding:6px 8px;font-size:12.5px;text-align:left}
+th{color:var(--amber);font-weight:600;background:rgba(229,180,88,.06)}
+pre{white-space:pre-wrap;font-size:12px;background:#0d1611;border:1px solid var(--line);
+  border-left:3px solid var(--celadon);border-radius:3px;padding:10px 12px;
+  font-family:var(--mono);color:var(--ink)}
+.mono{font-family:var(--mono);font-size:12.5px}
+#status,#jobstate{color:var(--celadon)}
+.card label{color:var(--dim);font-size:12.5px}
+.card textarea{width:100%;display:block;margin-top:4px}
+.card input[type="number"]{width:76px}
+.card input:not([type]),.card input[type="text"]{width:min(100%,440px)}
+.card > div{margin:10px 0}
+.card p{color:var(--dim);font-size:12.5px;margin:.4em 0}
+#config{color:var(--celadon)}
+.vtok{display:inline-block;padding:0 7px;margin:0 2px;border:1.6px solid;
+  border-radius:3px;font-family:var(--mono);font-size:12px;font-weight:700;
+  letter-spacing:.08em;line-height:1.7;transform:rotate(-1.2deg)}
+.v-accepted{color:var(--celadon);border-color:var(--celadon)}
+.v-draft{color:var(--amber);border-color:var(--amber)}
+.v-unable{color:var(--seal);border-color:var(--seal)}
+@media (max-width:640px){body{padding:0 12px 32px}
+  main.deck{grid-template-columns:1fr}
+  .masthead .brand{font-size:22px;letter-spacing:.1em}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<header class="masthead"><span class="seal">验</span>
+<h1>AGENT WORKBENCH</h1>
+<span class="brand">研究工作台</span>
+<span class="sub">Multi-Agent Research Platform · 证据可回溯 · 成本可审计</span></header>
+<main class="deck">
 <div class="card"><h3>① Run Dashboard</h3><div id="runs"></div></div>
 <div class="card"><h3>⑪ Streaming：新任务</h3>
 任务：<input id="task" size="50" value="帮我计算 6*7">
@@ -702,8 +773,8 @@ pre{white-space:pre-wrap;font-size:12px}.mono{font-family:Consolas,monospace}</s
 <div>任务限制：
 <label>模型调用数 <input id="maxcalls" type="number" min="0" step="1" value="12" size="5"></label>
 <label>输出Token <input id="maxtokens" type="number" min="0" step="1" value="8192" size="6"></label>
-<label>运行秒数 <input id="maxseconds" type="number" min="0" value="300" size="5"></label>
-<label>估算美元阈值 <input id="maxcost" type="number" min="0" step="0.01" value="0.05" size="5"></label>
+<label>运行秒数 <input id="maxseconds" type="number" min="0" value="600" size="5"></label>
+<label>估算美元阈值 <input id="maxcost" type="number" min="0" step="0.01" value="0.15" size="5"></label>
 </div>
 <p>费用为本地参考估算，最后一笔可能越过阈值；时间限制在调用边界检查，不能强制终止后台工具。</p>
 <p>真实模式会将任务文本和工具结果发送到项目配置的模型服务。当前内置工具仅支持计算和时间；
@@ -743,6 +814,7 @@ B3/B4 已接入本地资料与用户指定网页链接导入（默认安全策�
 <div id="rtok"></div>
 <pre id="evidenceview"></pre></div>
 <div class="card"><h3>⑨ Eval Dashboard</h3><div id="eval"></div></div>
+</main>
 <script>
 const $=id=>document.getElementById(id);
 let viewVersion=0, configVersion=0, pendingRequest=null, jobShown='';
@@ -893,6 +965,35 @@ async function loadEval(){const mode=$('mode').value,d=await j('/api/eval?mode='
 loadRuns().catch(e=>$('status').textContent=e.message);
 loadJobs().catch(e=>$('jobnote').textContent=e.message);
 loadConfig();
+<script>
+/* 检定章：把交付等级词渲染成印章样式（纯展示，不改数据） */
+(function(){
+  var WORDS = {accepted:"v-accepted", draft:"v-draft", unable:"v-unable"};
+  function enhance(root){
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    var hits = [];
+    while (walker.nextNode()) {
+      var node = walker.currentNode;
+      if (!node.nodeValue || !node.parentNode || node.parentNode.closest(".vtok")) continue;
+      var word = node.nodeValue.trim();
+      if (WORDS[word]) hits.push([node, WORDS[word]]);
+    }
+    hits.forEach(function(pair){
+      var span = document.createElement("span");
+      span.className = "vtok " + pair[1];
+      span.textContent = pair[0].nodeValue.trim();
+      pair[0].parentNode.replaceChild(span, pair[0]);
+    });
+  }
+  function sweep(){
+    ["jobtbl","status","jobstate","runs","eval","reportview"].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) enhance(el);
+    });
+  }
+  setInterval(sweep, 1200);
+  document.addEventListener("DOMContentLoaded", sweep);
+})();
 </script></html>"""
 
 
