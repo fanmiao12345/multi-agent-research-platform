@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.075845,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "2776ac5c4b2f"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-22T10:23:02",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 284.39,
+  "results": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 282.481,
+      "estimated_cost_usd": 0.07584501,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_cf0e4d0109844b0f9d6cef75f0410530",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 95,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 关于是否扩大远程办公试点的管理建议与证据限制\n## 建议\n建议暂不扩大为全员推行，也不宜确定扩大试点〔推断〕[E-014][E-030]。管理层已建议先延长试点〔事实〕[E-021]，尚未批准全员推行〔事实〕[E-022]。会议口头称参与者满意率为90%〔事实〕[E-017]，但未说明分母〔事实〕[E-018]，也未附问卷统计〔事实〕[E-019]；本资料另有问卷统计：32人完成、24人满意，"
+    }
+  ],
+  "records": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 282.481,
+      "estimated_cost_usd": 0.07584501,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_cf0e4d0109844b0f9d6cef75f0410530",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 95,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 关于是否扩大远程办公试点的管理建议与证据限制\n## 建议\n建议暂不扩大为全员推行，也不宜确定扩大试点〔推断〕[E-014][E-030]。管理层已建议先延长试点〔事实〕[E-021]，尚未批准全员推行〔事实〕[E-022]。会议口头称参与者满意率为90%〔事实〕[E-017]，但未说明分母〔事实〕[E-018]，也未附问卷统计〔事实〕[E-019]；本资料另有问卷统计：32人完成、24人满意，"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q303_verify_r04\\samples",
+  "grader": {}
+}

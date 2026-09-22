@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.25,
+    "batch_max_cost_usd": 0.3,
+    "batch_spent_usd": 0.099392,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "2776ac5c4b2f"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-22T10:18:17",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 375.52,
+  "results": [
+    {
+      "id": "r02",
+      "category": "research",
+      "attempt": 1,
+      "task": "写一份研究简报，回答远程办公是否提升效率；区分相关关系、观察到的变化和因果结论。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 373.398,
+      "estimated_cost_usd": 0.09939217,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_fb14fa45edd9475a88b0a4263d75ef44",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 远程办公是否提升效率：相关、变化与因果的研究简报\n## 研究问题\n本简报回答远程办公是否提升效率，并区分相关关系、观察到的变化与因果结论〔推断〕。有来源称未报告效率变化，无法说明观察到的变化【E-006】〔事实〕；有来源称未报告远程办公与效率的相关关系数据【E-007】〔事实〕；有来源未报告客观产出指标【E-021】〔事实〕。因此，可核查的是是否存在相关、变化或因果证据，不能直接判定效率提升〔"
+    }
+  ],
+  "records": [
+    {
+      "id": "r02",
+      "category": "research",
+      "attempt": 1,
+      "task": "写一份研究简报，回答远程办公是否提升效率；区分相关关系、观察到的变化和因果结论。",
+      "status": "failed",
+      "draft_level": "draft",
+      "termination_reason": "incomplete",
+      "elapsed_seconds": 373.398,
+      "estimated_cost_usd": 0.09939217,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_fb14fa45edd9475a88b0a4263d75ef44",
+      "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 3,
+        "fact_total": 3,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 远程办公是否提升效率：相关、变化与因果的研究简报\n## 研究问题\n本简报回答远程办公是否提升效率，并区分相关关系、观察到的变化与因果结论〔推断〕。有来源称未报告效率变化，无法说明观察到的变化【E-006】〔事实〕；有来源称未报告远程办公与效率的相关关系数据【E-007】〔事实〕；有来源未报告客观产出指标【E-021】〔事实〕。因此，可核查的是是否存在相关、变化或因果证据，不能直接判定效率提升〔"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\eval\\reports\\q303_verify_r02\\samples",
+  "grader": {}
+}

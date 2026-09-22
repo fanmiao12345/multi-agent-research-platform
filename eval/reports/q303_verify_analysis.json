@@ -1,0 +1,129 @@
+{
+  "rows": [
+    {
+      "id": "o01",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "prior": [
+        "accepted",
+        "accepted"
+      ],
+      "cost": 0.03604951,
+      "elapsed": 138.713
+    },
+    {
+      "id": "o05",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "draft",
+      "prior": [
+        "accepted"
+      ],
+      "cost": 0.049253380000000006,
+      "elapsed": 178.699
+    },
+    {
+      "id": "r02",
+      "expected": "accepted",
+      "actual": "draft",
+      "ok": false,
+      "human": "accept",
+      "prior": [
+        "accepted"
+      ],
+      "cost": 0.09939217,
+      "elapsed": 373.398
+    },
+    {
+      "id": "r04",
+      "expected": "accepted",
+      "actual": "draft",
+      "ok": false,
+      "human": "draft",
+      "prior": [
+        "draft",
+        "accepted",
+        "accepted",
+        "accepted"
+      ],
+      "cost": 0.07584501,
+      "elapsed": 282.481
+    },
+    {
+      "id": "r07",
+      "expected": "unable",
+      "actual": "unable",
+      "ok": true,
+      "human": "accept",
+      "prior": [
+        "unable",
+        "unable",
+        "unable",
+        "unable"
+      ],
+      "cost": 0.03053745,
+      "elapsed": 127.025
+    },
+    {
+      "id": "o13",
+      "expected": "draft",
+      "actual": "accepted",
+      "ok": false,
+      "human": "-",
+      "prior": [
+        "unable",
+        "unable",
+        "accepted",
+        "accepted"
+      ],
+      "cost": 0.01980318,
+      "elapsed": 87.566
+    },
+    {
+      "id": "v02",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "prior": [
+        "accepted",
+        "accepted"
+      ],
+      "cost": 0.08701099,
+      "elapsed": 336.232
+    },
+    {
+      "id": "v04",
+      "expected": "accepted",
+      "actual": "accepted",
+      "ok": true,
+      "human": "accept",
+      "prior": [
+        "accepted",
+        "accepted"
+      ],
+      "cost": 0.050951640000000006,
+      "elapsed": 204.91
+    }
+  ],
+  "ok": 5,
+  "n": 8,
+  "signal_cases": {
+    "o05": {
+      "unfounded_conflict": 4
+    },
+    "r04": {
+      "unfounded_conflict": 5
+    },
+    "v02": {
+      "unfounded_conflict": 1
+    },
+    "v04": {
+      "revision_change_note": 2
+    }
+  },
+  "cost_total": 0.45
+}
