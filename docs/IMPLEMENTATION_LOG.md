@@ -1153,7 +1153,7 @@ Q3-03 第 1 项：全量离线回归 **617 项 / 0 失败 / 0 跳过**（junit e
 
 - 定向：`tests/test_workbench.py`、`test_workbench_b3.py`、`test_workbench_s5.py`、`test_d9_integration.py` 通过；新增回归 `test_d9_integration.py::test_waiting_input_held_while_worker_alive_then_requeued`（去掉 `hold_for_input` 单跑即失败：`assert 'completed' == 'waiting_input'`，证明该用例确实覆盖此缺陷）。
 - 全量离线回归：**611 项 / 0 失败 / 0 跳过**（`exit=0`）。中途一次全量出现 1 例 `test_workbench_s5::test_write_api_security_guards` 连接错误，隔离复跑 7 项通过——与 O-07 记录的高负载偶发连接错误同型。
-- 浏览器自检：用**合成任务数据**（临时 workspaces，不接触真实任务与真实模型）启动工作台，Playwright 走完整点击路径——切换四个视图、点任务行看交付与依据、勾选"允许联网研究 + 先看计划再开始"生成方案、待补充任务提交补充、**真实提交一次任务并确认自动跳到"任务与成果"且选中新任务**。截图 9 张；`problems` 为空（0 控制台错误、0 个 HTTP ≥400 响应）。证据与可重跑脚本：`eval/reports/workbench_ui_optimize/`（含 `ui_probe.py`、截图、`probe_result.txt`、README 说明）。
+- 浏览器自检：用**合成任务数据**（临时 workspaces，不接触真实任务与真实模型）启动工作台，Playwright 走完整点击路径——切换四个视图、点任务行看交付与依据、勾选"允许联网研究 + 先看计划再开始"生成方案、待补充任务提交补充、**真实提交一次任务并确认自动跳到"任务与成果"且选中新任务**。截图 9 张；`problems` 为空（0 控制台错误、0 个 HTTP ≥400 响应）。证据与可重跑脚本原本在 `eval/reports/workbench_ui_optimize/`；**该版界面已被同日的 Research Console V3 取代，目录随 V3 合并清理移除，当前证据见 `eval/reports/workbench_ui_v3/`**。
 - 待输入链路核查（桩模型，无真实调用）：worker 常驻时提交缺条件任务 → 停在 `waiting_input` 不执行 → 补充后 `queued` → worker 执行到 `completed`，`request_json.task` 已是合并后的目标。
 
 **限制与下一步**
@@ -1161,3 +1161,54 @@ Q3-03 第 1 项：全量离线回归 **617 项 / 0 失败 / 0 跳过**（junit e
 - 均为本地单用户离线自检；真实模型、真实资料的浏览器人工验收按 Q4 试用（用户本人执行）——不能把截图自检写成业务验收通过。
 - 任务列表只显示最近 20 行、统计只覆盖最近 50 条本地记录；"先看计划"用的是启发式方案（`llm=None`），与真实执行时的 LLM 选型可能不同，页面已按"方案"措辞而非"承诺"。
 - 待输入补充只支持"作为补充资料"或"补充到任务描述"，尚不支持按问题逐项结构化回答。
+
+## 2026-09-22 / 前端改用 Research Console V3（用户提供）+ 合并补齐 + 清理
+
+用户提供的第三版前端（`multi-agent-research-console-v3/`：`UI_PRODUCT_SPEC_V3.md` 产品说明、
+`research_console_v3.html` 设计源、`apply_research_console_v3.py` 一次性应用脚本）按上述版本融合进
+`src/interfaces/web/workbench.py` 的 `INDEX_HTML`。**后端接口与执行语义未改**，仅替换前端页。
+
+V3 的信息架构（相对上一版的变化）：`#/home` 首页（大输入区 + 资料/联网/先看计划/高级设置 + 最近任务 + 常见任务）
+→ `#/tasks` 任务中心（搜索 + 全部/进行中/已交付/需要处理 筛选）→ `#/job/<id>` 任务详情（默认"结果"Tab：
+长报告阅读器 + 右侧证据核验；另有 资料与产物 / 执行过程 / 版本与改稿）；`#/observe` 运行观测（Trace/Tool/Plan/
+事件流/人工审批）；`#/settings` 配置与评测。详情顶部固定"执行方式 / 交付等级 / 来源 / 用量费用"摘要条，
+不再把内部面板平铺在首页。
+
+**融合时补齐的差异**（V3 原始 HTML 没有、但文档或既有行为要求的部分）：
+
+1. **任务时间显示错乱**：`fmtTime` 把队列的 Unix 秒当毫秒 → 全部任务显示 1970 年。改为数字按秒、字符串按 ISO，
+   统一 `YYYY-MM-DD HH:MM`。
+2. **"先看计划"退化成一大坨 JSON**：启发式方案返回的是 `plan.subtasks`（V3 只读 `plan.tasks`），且理由在
+   `plan.reason` 而非 `meta.reason`。改为两者都读，并显示预算/预计用量；方式名走中文映射。
+3. **补充输入/恢复后轮询不重启**：`openJob` 有 `currentJob===id && currentJobProgress` 早退，`submitInput`/`resumeJob`
+   里 `jobPollToken++;openJob(...)` 会被早退吃掉 → 页面停在旧状态。新增 `reopenCurrentJob()`（清进度缓存后再进任务），
+   并把顶部"刷新"也接上。
+4. **刚提交的任务立刻报 404**：`openJob` 一进来就请求来源/产物/过程，而入队任务的任务目录由执行器创建。改为
+   `loadJobData()` 只在 `/progress` 返回的 `note` 为空（目录已就绪）时加载一次。
+5. **待补充"作为补充资料"会丢掉原资料**：改为把回答**追加**到原 `request_json.texts`，而不是整体替换。
+6. **配置页缺"数据边界"说明**（总计划 2.2 要求界面说明发送哪些内容）：在"配置与评测"页补一张
+   "安全与数据边界"卡（发送内容 / 留在本机 / 抓取边界 / 费用口径）。
+7. **阶段词直接暴露内部英文**：`finished`/`waiting_input`/`evidence`… 统一走 `stageLabel()` 中文展示（任务列表、
+   详情进度条）。
+8. **修上一轮引入的配置显示 bug**：`/api/config` 的联网搜索状态读的是 `self.state.settings`，而工作台进程默认
+   `settings=None`（配置由 `.env` 在内部回落解析），导致**已配置搜索也永远显示"未配置"**。新增 `_search_provider()`
+   按模型诊断相同口径回落到 `Settings()`。实测页面已从"未配置"变为 `bing_scrape`。
+
+设计源同步：合并后把 `INDEX_HTML` 回写进 `multi-agent-research-console-v3/research_console_v3.html`，
+再次运行 `apply_research_console_v3.py` 为**幂等**（已实测重跑后无额外差异），避免设计源与页面漂移。
+
+**验证**
+
+- `python -m py_compile src/interfaces/web/workbench.py` 通过。
+- 全量离线回归 **611 项 / 0 失败 / 0 跳过**（`exit=0`）。
+- 浏览器自检（合成任务数据，临时 workspaces）：首页→示例→高级设置抽屉→"先看计划"→任务中心筛选/搜索→
+  任务详情（结果 / 点击 `[E-001]` 看证据 / 资料与产物 / 执行过程 / 版本与改稿）→待补充任务提交补充（状态由
+  waiting_input 转 running）→**真实提交一次（Mock 模式）并跳转到 `/job/<新 id>`**→运行观测→配置与评测。
+  截图 13 张，`problems` 为空（0 控制台错误、0 个 HTTP ≥400）。证据与可重跑脚本：`eval/reports/workbench_ui_v3/`。
+
+**清理**：删除已被取代的 `multi-agent-research-console-v2/`（含设计源与 README）、一次性备份
+`workbench.py.before-research-console-v3.bak`、上一版界面证据 `eval/reports/workbench_ui_optimize/`，
+以及 `.tmp/` 下本轮自检产生的临时脚本与临时工作区。V3 设计源与产品说明保留入库（与 V2 时期"设计源入库"一致）。
+
+**限制**：仍是离线自检；真实模型 + 真实资料的浏览器人工验收按 Q4 试用由用户执行。V3 默认"真实模型"模式，
+`.env` 未配置时首页会明确显示"配置不可用"并禁用"开始任务"，这是有意行为而非缺陷。
