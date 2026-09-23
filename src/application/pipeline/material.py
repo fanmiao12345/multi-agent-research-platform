@@ -38,7 +38,8 @@ def run_material_stage(llm, goal: str, evidence_items: list[dict],
                            "对象（topics≤6、每主题 points≤6），不要围栏与解释。"}] \
                 + messages[1:]
         reply = model_call(llm, messages,
-                           purpose="material_pack", role="material")
+                           purpose="material_pack", role="material",
+                           disable_thinking=True)
         raw = reply.content or ""
         data = extract_json(raw)
         if data is not None:

@@ -553,3 +553,25 @@ def test_editor_role_exists_and_allowed_tools_validation():
     req = TaskRequest(task="t", allowed_tools=("calculator",))
     assert req.allowed_tools == ("calculator",)
     assert TaskRequest(task="t").allowed_tools is None   # 缺省=不限
+
+
+# ---- Q4-D1 修复：调度提示词必须携带契约级 schema（2026-09-23 拍板） ---------
+def test_scheduler_prompt_schema_example_is_contract_valid():
+    """真实模型自造字段（tasks/acceptance_criteria）导致选型 2/2 失败降级。
+
+    修复后：提示词内嵌与 plan_contract 完全一致的 schema 示例；示例本身必须
+    永远能通过 from_plan_dict 校验（防提示词与契约漂移），且明确 compact 输出。
+    """
+    import json as _json
+    from src.application.orchestration.scheduler import (
+        PLAN_SCHEMA_EXAMPLE, _SYSTEM_PROMPT)
+    plan = from_plan_dict(dict(PLAN_SCHEMA_EXAMPLE),
+                          allowed_modes=("fixed", "fanout"))
+    assert plan.mode == "fixed" and len(plan.subtasks) >= 1
+    # 字段名逐字出现在提示词里（模型不再需要猜键名）
+    for field in ("schema_version", "mode", "reason", "subtasks", "depends_on",
+                  "covers_sections", "needs_reviewer", "max_parallel",
+                  "budget", "fallback_mode", "expected"):
+        assert field in _SYSTEM_PROMPT, field
+    # 示例是紧凑单行 JSON（与 JSON_RULE 一致，避免候选方案输出膨胀到数千 token）
+    assert "\n" not in _json.dumps(PLAN_SCHEMA_EXAMPLE, ensure_ascii=False)

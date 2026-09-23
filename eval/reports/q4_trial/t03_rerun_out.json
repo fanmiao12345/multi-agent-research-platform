@@ -1,0 +1,140 @@
+{
+  "root_job_id": "job_3f36a695f0f24e1eab1029dabdbaf691",
+  "draft_level": "draft",
+  "termination_reason": "budget_exceeded",
+  "message": "根预算已停止（根任务已停止：output_token_limit）：保留已保存的阶段产物，不视为验收成功",
+  "degraded": false,
+  "process_record": "C:\\Users\\15480\\Desktop\\DeepSeek Harness\\agent-mvp\\workspaces\\jobs\\job_3f36a695f0f24e1eab1029dabdbaf691\\orchestration.json",
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "单点整理/成稿（一份综述初稿），结构固定为证据→素材→提纲→初稿→审校→修订，无互相独立的子题，固定链最省够用；用户约束限定 fixed/fanout，故取 fixed",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "research_report",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "researcher",
+        "description": "从已导入的 6 项来源（必要时补充联网检索到的真实页面）中提取与本地部署开源大模型选型相关的证据点，逐条编号为 [E-xxx]，记录来源标题与链接，不得编造",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T2",
+        "role": "organizer",
+        "description": "将证据点按主题归类整理为素材清单，并产出面向个人开发者的分节提纲（如硬件门槛、模型规模与量化、推理框架与显存、许可与商用限制、成本与维护）",
+        "depends_on": [
+          "T1"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T3",
+        "role": "writer",
+        "description": "依据提纲与素材清单撰写综述初稿，分节展开，每条关键结论后以 [E-xxx] 标注来源，不确定处显式留白不虚构",
+        "depends_on": [
+          "T2"
+        ],
+        "parallel": false,
+        "covers_sections": [
+          "硬件门槛",
+          "模型规模与量化",
+          "推理框架与显存",
+          "许可与商用限制",
+          "成本与维护"
+        ]
+      },
+      {
+        "id": "T4",
+        "role": "editor",
+        "description": "审校初稿：核对每条 [E-xxx] 是否可回溯到真实来源，检查是否出现编造的来源、日期或数据，评估分节结构与表述是否适配个人开发者读者",
+        "depends_on": [
+          "T3"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T5",
+        "role": "writer",
+        "description": "按审校意见修订初稿，补齐缺失标注、删除无来源支撑的表述，输出可交付的综述初稿定稿",
+        "depends_on": [
+          "T4"
+        ],
+        "parallel": false,
+        "covers_sections": [
+          "硬件门槛",
+          "模型规模与量化",
+          "推理框架与显存",
+          "许可与商用限制",
+          "成本与维护"
+        ]
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.075,
+      "seconds": 300
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fixed",
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 5.708,
+    "scheduler_calls": 1
+  }
+}

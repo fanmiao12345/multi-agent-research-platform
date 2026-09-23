@@ -4,6 +4,7 @@ from __future__ import annotations
 from contextlib import contextmanager
 from contextvars import ContextVar
 from dataclasses import asdict
+import inspect
 from pathlib import Path
 import json
 import threading
@@ -246,7 +247,7 @@ class JobLedger:
             self.run_ids.append(run_id)
             self.write()
 
-    def call(self, llm, messages, tools, purpose, role):
+    def call(self, llm, messages, tools, purpose, role, *, disable_thinking=False):
         with self.lock:
             self.check(llm)
             mock = getattr(llm, "run_mode", None) == "mock"
@@ -261,8 +262,13 @@ class JobLedger:
             try:
                 if hasattr(llm, "chat_limited"):
                     remaining = self.request.max_output_tokens - self.summary()["output_tokens"]
-                    reply = llm.chat_limited(messages, tools=tools, max_tokens=remaining,
+                    options = dict(messages=messages, tools=tools, max_tokens=remaining,
                         timeout=max(0.001, self.request.max_seconds - (self.clock() - self.started)))
+                    # Q4-D1：适配器不支持该参数时静默降级（只多花 token，不影响正确性）；
+                    # 用签名检查而非 try/TypeError，避免吞掉适配器内部的类型错误。
+                    if disable_thinking and _accepts_disable_thinking(llm.chat_limited):
+                        options["disable_thinking"] = True
+                    reply = llm.chat_limited(**options)
                 else:
                     reply = llm.chat(messages, tools=tools)
                 usage = reply.usage or {}
@@ -301,6 +307,14 @@ def check_root_budget(*, new_call=False):
             ledger.check(new_call=new_call)
 
 
+def _accepts_disable_thinking(func) -> bool:
+    """适配器显式声明 disable_thinking 参数，或用 **kwargs 透传时才下发该参数。"""
+    params = inspect.signature(func).parameters
+    if "disable_thinking" in params:
+        return True
+    return any(p.kind is inspect.Parameter.VAR_KEYWORD for p in params.values())
+
+
 def _assemble_messages(messages: list[dict]) -> tuple[list[dict], dict]:
     """D4-01：非工具续轮的模型调用统一过 Context Builder。
 
@@ -330,9 +344,11 @@ def _assemble_messages(messages: list[dict]) -> tuple[list[dict], dict]:
     return assembled, {"context_assembled": 1, **stats}
 
 
-def model_call(llm, messages, tools=None, *, purpose="agent", role=None):
+def model_call(llm, messages, tools=None, *, purpose="agent", role=None,
+               disable_thinking=False):
     assembled, _ = _assemble_messages(messages)
     ledger = ACTIVE_JOB.get()
     if ledger is None:
         return llm.chat(assembled, tools=tools)
-    return ledger.call(llm, assembled, tools, purpose, role)
+    return ledger.call(llm, assembled, tools, purpose, role,
+                       disable_thinking=disable_thinking)

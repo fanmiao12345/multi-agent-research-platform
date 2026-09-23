@@ -1,0 +1,157 @@
+{
+  "schema_version": "1",
+  "mode": "fixed",
+  "reason": "主题是单一综述初稿，产出结构固定，且存在明确的证据→素材→提纲→初稿→审校→修订上下游依赖；无多个互相独立的子题需要并行，按“够用的最省模式”选 fixed。证据阶段仅允许使用已导入材料或联网检索到的真实页面，并在全链路传递 [E-xxx] 台账，防止编造来源、日期或数据。",
+  "budget": {
+    "max_calls": 12,
+    "max_cost_usd": 0.15,
+    "max_seconds": 600
+  },
+  "expected": {
+    "calls": 9,
+    "cost_usd": 0.13,
+    "seconds": 495
+  },
+  "constraints": {
+    "audience": "个人开发者",
+    "structure": "分节结构",
+    "citation_style": "每条关键结论使用 [E-xxx] 标注",
+    "source_policy": "来源只能取自已导入材料或联网检索到的真实页面；禁止编造来源、日期或数据。"
+  },
+  "tasks": [
+    {
+      "id": "T1_evidence",
+      "role": "researcher",
+      "objective": "从已导入的 6 项材料和联网检索中提取可核验证据，形成 [E-xxx] 证据台账；仅记录真实页面标题、URL、日期与要点，禁止编造。",
+      "inputs": [
+        "已导入材料（6 项）",
+        "研究主题：本地部署开源大模型的选型要点",
+        "目标读者：个人开发者"
+      ],
+      "outputs": [
+        "evidence_ledger.md",
+        "evidence_ledger.json"
+      ],
+      "covers_sections": [],
+      "depends_on": [],
+      "expected": {
+        "calls": 2,
+        "cost_usd": 0.02,
+        "seconds": 90
+      }
+    },
+    {
+      "id": "T2_material",
+      "role": "organizer",
+      "objective": "将证据按选型维度归类为素材卡，维度包括硬件门槛、模型规模与能力、量化与显存、推理框架、许可与合规、社区维护、成本与易用性；标注证据覆盖与缺口。",
+      "inputs": [
+        "evidence_ledger.json"
+      ],
+      "outputs": [
+        "material_cards.md"
+      ],
+      "covers_sections": [],
+      "depends_on": [
+        "T1_evidence"
+      ],
+      "expected": {
+        "calls": 1,
+        "cost_usd": 0.01,
+        "seconds": 45
+      }
+    },
+    {
+      "id": "T3_outline",
+      "role": "organizer",
+      "objective": "生成面向个人开发者的分节综述提纲，每节列出拟用 [E-xxx] 和待补检索点，确保关键结论均有证据位。",
+      "inputs": [
+        "material_cards.md"
+      ],
+      "outputs": [
+        "outline.md"
+      ],
+      "covers_sections": [],
+      "depends_on": [
+        "T2_material"
+      ],
+      "expected": {
+        "calls": 1,
+        "cost_usd": 0.01,
+        "seconds": 45
+      }
+    },
+    {
+      "id": "T4_draft",
+      "role": "writer",
+      "objective": "按提纲撰写《本地部署开源大模型的选型要点》综述初稿，采用分节结构；每条关键结论用 [E-xxx] 标注来源；不编造来源、日期或数据。",
+      "inputs": [
+        "outline.md",
+        "material_cards.md",
+        "evidence_ledger.json"
+      ],
+      "outputs": [
+        "draft.md"
+      ],
+      "covers_sections": [],
+      "depends_on": [
+        "T3_outline"
+      ],
+      "expected": {
+        "calls": 2,
+        "cost_usd": 0.04,
+        "seconds": 150
+      }
+    },
+    {
+      "id": "T5_review",
+      "role": "editor",
+      "objective": "审校初稿：核验 [E-xxx] 与真实来源的对应关系，检查无编造来源、日期或数据，评估分节结构与个人开发者适用性，列出修改项。",
+      "inputs": [
+        "draft.md",
+        "evidence_ledger.json",
+        "material_cards.md"
+      ],
+      "outputs": [
+        "review_notes.md"
+      ],
+      "covers_sections": [],
+      "depends_on": [
+        "T4_draft"
+      ],
+      "expected": {
+        "calls": 2,
+        "cost_usd": 0.03,
+        "seconds": 90
+      }
+    },
+    {
+      "id": "T6_revise",
+      "role": "writer",
+      "objective": "根据审校意见修订，输出最终综述初稿；保留分节结构和 [E-xxx] 引用，删除或标注未证实内容，确保来源真实可查。",
+      "inputs": [
+        "draft.md",
+        "review_notes.md",
+        "evidence_ledger.json"
+      ],
+      "outputs": [
+        "final_review.md"
+      ],
+      "covers_sections": [],
+      "depends_on": [
+        "T5_review"
+      ],
+      "expected": {
+        "calls": 1,
+        "cost_usd": 0.02,
+        "seconds": 75
+      }
+    }
+  ],
+  "final_deliverable": "final_review.md",
+  "acceptance_criteria": [
+    "输出为分节结构的综述初稿",
+    "每条关键结论均有 [E-xxx] 标注",
+    "[E-xxx] 仅对应已导入材料或联网检索到的真实页面",
+    "无编造来源、日期或数据"
+  ]
+}

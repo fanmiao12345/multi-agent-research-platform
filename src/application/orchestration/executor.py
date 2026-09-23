@@ -417,7 +417,7 @@ class OrchestrationExecutor:
             "不得凭角色投票宣布事实成立，信息不足就明确写出缺口。")
         with (job_scope(root_ledger) if root_ledger is not None else nullcontext()):
             judge = model_call(self.llm, [{"role": "user", "content": judge_prompt}],
-                               purpose="judge", role="judge")
+                               purpose="judge", role="judge", disable_thinking=True)
         verdict = (judge.content or "").strip() or "（裁决者未输出）"
         if self._should_stop():
             self._mark_cancelled(record)

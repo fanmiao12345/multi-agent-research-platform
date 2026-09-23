@@ -38,7 +38,8 @@ def run_outline_stage(llm, goal: str, material_block: str,
                 "content": "上一次输出无法解析为 JSON。这次只输出一个紧凑、完整的 JSON"
                            "对象（sections 宁少勿多，最多8节），不要围栏与解释。"}] \
                 + messages[1:]
-        reply = model_call(llm, messages, purpose="outline", role="outline")
+        reply = model_call(llm, messages, purpose="outline", role="outline",
+                           disable_thinking=True)
         raw = reply.content or ""
         data = extract_json(raw)
         if data is not None:

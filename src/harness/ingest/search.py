@@ -382,7 +382,8 @@ def plan_queries(topic: str, llm=None, *, max_queries: int = 4,
         {"role": "user", "content": f"研究主题：{topic}\n请输出检索查询 JSON。"},
     ]
     try:
-        reply = model_call(llm, messages, purpose="search_planning", role="planner")
+        reply = model_call(llm, messages, purpose="search_planning", role="planner",
+                           disable_thinking=True)
         data = extract_json(getattr(reply, "content", "") or "")
         queries = [str(q).strip() for q in (data or {}).get("queries", [])
                    if str(q).strip()]

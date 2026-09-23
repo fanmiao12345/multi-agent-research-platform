@@ -98,7 +98,8 @@ def extract_source_evidence(llm, goal: str, source: dict) -> tuple[list[Evidence
                 "content": "上一次输出无法解析为 JSON（可能被截断）。这次只输出一个完整、"
                            "合法的 JSON 对象，items 数量宁少勿多（最多6条），不要任何解释。"}] \
                 + messages[1:]
-        reply = model_call(llm, messages, purpose="evidence_extract", role="evidence")
+        reply = model_call(llm, messages, purpose="evidence_extract", role="evidence",
+                           disable_thinking=True)
         data = extract_json(reply.content or "")
         if data and isinstance(data.get("items"), list):
             break

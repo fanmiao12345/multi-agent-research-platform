@@ -355,7 +355,8 @@ def model_review(llm, goal: str, report: str, evidence_index: str,
                 "content": "上一次输出无法解析为 JSON。这次只输出一个紧凑、完整、合法的"
                            "JSON 对象：issues 宁少勿多（最多8条），不要围栏与解释。"}] \
                 + messages[1:]
-        reply = model_call(llm, messages, purpose="review", role="reviewer")
+        reply = model_call(llm, messages, purpose="review", role="reviewer",
+                           disable_thinking=True)
         raw = reply.content or ""
         data = extract_json(raw)
         if data is not None:

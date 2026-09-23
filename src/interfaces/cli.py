@@ -116,8 +116,10 @@ def main():
     parser.add_argument("task", nargs="?")
     parser.add_argument("--mode", choices=("mock", "real"), default="mock")
     parser.add_argument("--profile")
-    parser.add_argument("--max-calls", type=int, default=12)
-    parser.add_argument("--max-output-tokens", type=int, default=8192)
+    parser.add_argument("--max-calls", type=int, default=40)
+    # Q3-02/O-04 校准（2026-09-20）后，Q4-D1（2026-09-23）再校准输出/调用兜底：
+    # 8192/12 是闭卷问答口径，研究链逐来源证据+写作在结构上必然触顶（见 docs/BUDGET_CALIBRATION.md）
+    parser.add_argument("--max-output-tokens", type=int, default=65536)
     # Q3-02/O-04 校准（2026-09-20 用户拍板，见 docs/BUDGET_CALIBRATION.md）：
     # 300→600（Q2-01 p95=369s 超旧默认 23%）；费用兜底 0.15（原 None=真实模式不传参不封顶）
     parser.add_argument("--max-seconds", type=float, default=600)

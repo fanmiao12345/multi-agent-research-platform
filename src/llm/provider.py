@@ -40,7 +40,8 @@ class OpenAICompatibleLLM(LLMAdapter):
     def chat(self, messages: list[dict], tools: list | None = None) -> ChatResult:
         return self.chat_limited(messages, tools)
 
-    def chat_limited(self, messages, tools=None, *, max_tokens=None, timeout=None) -> ChatResult:
+    def chat_limited(self, messages, tools=None, *, max_tokens=None, timeout=None,
+                     disable_thinking=False) -> ChatResult:
         kwargs = {
             "model": self.model_name,
             "messages": messages,
@@ -52,10 +53,24 @@ class OpenAICompatibleLLM(LLMAdapter):
         if tools:
             kwargs["tools"] = tools
             kwargs["tool_choice"] = "auto"
-        try:
-            resp = self._client.chat.completions.create(**kwargs)
-        except Exception:  # 不把供应商响应体、认证头或异常链带入控制台。
-            raise RuntimeError("LLM 调用失败，请检查认证、模型名称、网络和服务额度") from None
+        # Q4-D1：推理型模型的思维链计入 completion 但不进 content——证据抽取
+        # 实测可见载荷 ~1k 字符被计费 3.8k token。结构化短输出阶段据此关闭
+        # thinking；端点不支持该参数时退回一次不带参数的调用（只多花 token）。
+        # 无参数路径不做任何隐藏重试：一次调用意图对应一次请求尝试。
+        if disable_thinking:
+            try:
+                resp = self._client.chat.completions.create(
+                    **{**kwargs, "extra_body": {"thinking": {"type": "disabled"}}})
+            except Exception:
+                try:
+                    resp = self._client.chat.completions.create(**kwargs)
+                except Exception:  # 不把供应商响应体、认证头或异常链带入控制台。
+                    raise RuntimeError("LLM 调用失败，请检查认证、模型名称、网络和服务额度") from None
+        else:
+            try:
+                resp = self._client.chat.completions.create(**kwargs)
+            except Exception:  # 不把供应商响应体、认证头或异常链带入控制台。
+                raise RuntimeError("LLM 调用失败，请检查认证、模型名称、网络和服务额度") from None
 
         msg = resp.choices[0].message
         tool_calls = []

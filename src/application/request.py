@@ -12,8 +12,12 @@ class TaskRequest:
     mode: str = "mock"
     profile: str | None = None
     max_iterations: int = 8
-    max_calls: int = 12
-    max_output_tokens: int = 8192
+    # Q4-D1（2026-09-23 拍板）：8192/12 按 agent 闭卷问答校准，研究写作链的前置
+    # 阶段（选型+检索规划+逐来源证据抽取）就需要 ~20 次调用/数万输出 token，
+    # D1 实测 T01/T03/T03r 全部 output_token_limit 停止且无产物。上调默认兜底；
+    # 费用/时间护栏（0.15/600s）不变，失控任务仍会被 cost_limit 截停。
+    max_calls: int = 40
+    max_output_tokens: int = 65536
     # 预算默认值（Q3-02/O-04 校准，2026-09-20 用户拍板，见 docs/BUDGET_CALIBRATION.md）：
     # max_seconds 300→600（Q2-01 p95=369s 超旧默认 23%）；max_cost None→0.15
     # （1.5×实测 p95，消除真实模式无费用上限的裸奔；显式传参始终优先）

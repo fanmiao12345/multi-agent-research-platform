@@ -81,8 +81,8 @@ def _revision_payload(workspaces: Path, job_id: str, instruction: str) -> dict:
     return {"task": instruction, "mode": snapshot.get("mode") or "mock",
             "flow": "research", "texts": texts, "base_draft": base_draft,
             "revises_job": job_id,
-            "max_calls": int(snapshot.get("max_calls") or 12),
-            "max_output_tokens": int(snapshot.get("max_output_tokens") or 8192),
+            "max_calls": int(snapshot.get("max_calls") or 40),
+            "max_output_tokens": int(snapshot.get("max_output_tokens") or 65536),
             "max_seconds": float(snapshot.get("max_seconds") or 300)}
 
 
@@ -1306,8 +1306,8 @@ tbody tr{cursor:pointer}tbody tr:hover td{background:#fafbfc}tr:last-child td{bo
         <label class="field"><span>运行入口</span><select id="flow"><option value="research" selected>智能研究 / 自动编排</option><option value="agent">通用Agent循环</option></select></label>
         <label class="field"><span>编排方式</span><select id="orchestration"><option value="auto" selected>Auto（推荐）</option><option value="single">Single</option><option value="fixed">Fixed</option><option value="manager_worker">Manager-Worker</option><option value="fanout">Fan-out</option><option value="dynamic_team">Dynamic Team</option><option value="debate">Debate</option></select></label>
         <label class="field"><span>交付类型</span><select id="deliveryKind"><option value="auto" selected>自动判断</option><option value="collection">资料整理</option><option value="analysis">分析</option><option value="report">报告</option></select></label>
-        <label class="field"><span>最大模型调用</span><input id="maxcalls" type="number" min="0" value="12"></label>
-        <label class="field"><span>最大输出Token</span><input id="maxtokens" type="number" min="0" value="8192"></label>
+        <label class="field"><span>最大模型调用</span><input id="maxcalls" type="number" min="0" value="40"></label>
+        <label class="field"><span>最大输出Token</span><input id="maxtokens" type="number" min="0" value="65536"></label>
         <label class="field"><span>最大运行秒数</span><input id="maxseconds" type="number" min="0" value="600"></label>
         <label class="field"><span>费用阈值($)</span><input id="maxcost" type="number" min="0" step="0.01" value="0.15"></label>
       </div>

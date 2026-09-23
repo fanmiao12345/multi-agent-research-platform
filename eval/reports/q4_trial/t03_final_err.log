@@ -1,0 +1,103 @@
+{
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "单点综述成稿，结构固定（分节+来源标注），无独立子题，固定链最省够用",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "research_report",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "organizer",
+        "description": "梳理已导入的6项来源，提取本地部署开源大模型选型要点并建立[E-xxx]来源索引",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T2",
+        "role": "writer",
+        "description": "按分节结构撰写面向个人开发者的选型要点综述初稿，每条关键结论标注[E-xxx]来源",
+        "depends_on": [
+          "T1"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T3",
+        "role": "editor",
+        "description": "审校初稿，核对来源标注真实性与结构完整性，输出修订稿",
+        "depends_on": [
+          "T2"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.075,
+      "seconds": 300
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fixed",
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 2.34,
+    "scheduler_calls": 1
+  },
+  "root_job_id": "job_a45919d755e04a898be374955470c63f"
+}

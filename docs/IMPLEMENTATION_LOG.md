@@ -750,7 +750,7 @@
 
 ## 2026-09-16 / Q3-01 第 2 批：三项程序检查的实测校准（一次口径纠偏）+ 内部标识泄漏的根因修复
 
-**第 2 批复跑（8 题 ×1，8 题全部跑完，$0.64）**：受影响 5 例 + 对照 3 例，逐例与 **20 例人工确认批次的人工判定**对照（口径见 `eval/reports/gate_real_batch_human_confirmed.json`，不另起口径）：
+**第 2 批复跑（8 题 ×1，8 题全部跑完，$0.57）**：受影响 5 例 + 对照 3 例，逐例与 **20 例人工确认批次的人工判定**对照（口径见 `eval/reports/gate_real_batch_human_confirmed.json`，不另起口径）：
 
 | 案例 | 第 2 批等级 | 命中（error 级） | 20 例人工判定 | 结论 |
 |---|---|---|---|---|
@@ -835,9 +835,10 @@
 | o01 | draft | **accepted** | 无 | 无 | draft |
 | r05 | draft（误伤） | **accepted** | 无 | 无 | accept |
 
-- **实测确认根因修复生效**：第 2 批 8 题里 5 题命中 `internal_leak`（`src_` id 泄漏进提纲标题/正文/去重记录），第 3 批**全部 0 命中**、成品里 0 内部标识，交付等级随之从 draft 回到 accepted；v01（任务要求"保留来源"，第 2 批被误封顶）恢复 accepted，与人工判定一致。
-- **口径纠偏生效**：`fact_label` 降为 warn 后，第 3 批只剩 warn（0/1/3/4/6/9 处），不再把等级压到 draft；`source_count`（error）本轮 0 命中。
-- **成本/时延同步下降**：同 8 题 $0.64 → **$0.40**（-37%），单题中位 216s → 約 220s（无实质变化，主要省在少一轮改稿）。
+- **实测确认根因修复生效**：第 2 批 8 题里 5 题命中 `internal_leak`（`src_` id 泄漏进提纲标题/正文/去重记录），第 3 批**全部 0 命中**、成品里 0 内部标识，交付等级随之从 draft 回到 accepted（**6 题**：o03 / v01 / o05 / r02 / o01 / r05）；v01（任务要求"保留来源"，第 2 批被误封顶）恢复 accepted，与人工判定一致。
+- **口径纠偏生效**：`fact_label` 降为 warn 后，第 3 批只剩 warn（各题 0/1/3/4/6/9 处），不再把等级压到 draft；`source_count`（error）本轮 0 命中。
+- **成本/时延同步下降**：同 8 题 **$0.57 → $0.40（-30%）**，单题耗时中位 **274s → 193s（-29%）**——主因是少了一轮"泄漏→改稿→重审"的循环。
+- **交叉核对**：批 3 的「最后一轮审校」逐题复查与等级自洽（o01 三轮 review：v1/v2 有 error、v3 只剩 warn 且 verdict=accepted → 等级 accepted），复核工作表 `eval/reports/q3_batch3_review_sheet.md` 只列最后一轮，避免把改稿中已修掉的问题误读成遗留问题。
 - **诚实边界（必须人工再看一次）**：这 8 题的新报告是**修复后新写的**，第 3 批的 accepted **不能**用旧报告的人工判定当验收依据——旧判定针对的是含泄漏的旧稿。人工复核口径：`eval/reports/q3_batch3_<case>/samples/`（第 3 批 accepted 的题会把最终稿放在 `workspace/jobs/<job>/artifacts/report.v*.md`）。已抽查 v01（摘要 105 汉字，满足 180 字上限 + 保留来源）与 o05（满意率分母已改为"未明，需原始交叉表"〔未知〕，不再把分母当事实）两例，符合预期。
 - o07 仍是 draft 且命中 1 条模型层 `support` error（"已知信息用 E-006 支持…"），与人工判定 draft 一致。
 
@@ -1292,3 +1293,22 @@ SR-09 来源可用率、SR-10 撤回/过期状态。
 
 同步更新：方案 §1 约束段、§6.4（SR 表重写 + "明确不做" + R8）、§7 验收、主计划 §11、TRACKER（SR 行与作废说明）、
 EXECUTION_STATUS。**本步仅文档变更，无代码改动，未运行测试。**
+
+## 2026-09-23 / Q4-D1：研究链 output_token_limit 阻塞修复（用户授权拍板）
+
+D1（09-22）晚 T01/T03 全部 draft 且无产物，用户要求拍板阻塞问题。按 systematic-debugging 完成根因定位，**不是"文本太长被截断"，而是三层叠加**：
+
+- **① 调度选型 schema 缺陷（放大器）**：`_SYSTEM_PROMPT` 缺字段级 schema，真实模型自造键名（`tasks`/`acceptance_criteria`/`final_deliverable`），契约要求 `subtasks` → 校验 2/2 失败降级 fixed，每次白烧 5.1~6.3k 输出 token（占 8192 预算的 62-77%）。诊断复跑（1 次调用）证实：选型模式正确、JSON 可提取，纯字段名不匹配。诊断样本：`eval/reports/q4_trial/diag_scheduler_raw.txt`。
+- **② 预算口径错配（主因）**：`max_output_tokens=8192`/`max_calls=12` 是 Q2-01 **闭卷问答**口径的每任务累计上限；研究链前置阶段（选型+检索规划+**逐来源**证据抽取）本身就需要 ~20 次调用、数万 token，14 来源任务在结构上必然先于写作阶段耗尽——提高上限只是把墙后挪（T03r 8192→16384 同比例触顶已证）。
+- **③ 推理型模型隐形思维链**：deepseek-v4-flash 默认 thinking，reasoning token 计入 completion 但不进 content。证据抽取同输入对照：可见载荷 1,007 字符（8 条合规摘录）计费 **3,861** token；`thinking:{"type":"disabled"}` 后 **446**（-8.7×）。第二次数扛 65536 仍触顶（证据阶段 ~5 万）即此根因。对照样本：`eval/reports/q4_trial/diag_evidence_raw.txt`、jobs `job_3f36a695*` 账本。
+
+**修改**（三件套，TDD）：
+1. `scheduler.py`：提示词内嵌与 `plan_contract` 逐字对齐的 `PLAN_SCHEMA_EXAMPLE`（单测保证示例永远能通过 `from_plan_dict`，防漂移）+ 禁额外字段/紧凑单行/reason≤80 字。
+2. 预算默认值 `max_calls` 12→**40**、`max_output_tokens` 8192→**65536**（`TaskRequest`/CLI/续跑与改稿快照兜底/工作台预填同步）；**`max_cost` $0.15、`max_seconds` 600 不变**（钱与时间护栏不动，失控仍被 cost_limit 截停）。依据补记 `docs/BUDGET_CALIBRATION.md` §五。
+3. thinking 控制：`provider.chat_limited(disable_thinking=)`（端点拒参数自动退回一次；普通路径不引入隐藏重试）、`model_gateway` 签名检查后透传（`**kwargs` 型适配器兼容）；7 个结构化短输出阶段关闭（选型/检索规划/证据/素材/提纲/审校/派工裁决），**初稿写作与 agent 流保留**。
+
+**验证**：
+- 离线：新增 `test_budget_defaults.py`、`test_thinking_control.py`（provider 参数/退回降级、网关透传/旧适配器兼容、7+1 调用点断言）、`test_orchestration_s8` schema 契约测试；全量回归 **613 项 0 失败（exit=0）**。
+- 真实（约 \$0.16 总诊断+验证成本）：调度单调用 **1 次通过**（1,151 token，attempts=1，此前 2/2 失败）；证据单调用 3,861→**446** token；T03 全链复跑（14 来源+联网）**accepted**：71 处引用 0 未解析、2683 字、1 轮修订、19 次调用 / 21,723 token / **\$0.0396** / **99.7s**（job `job_a45919d7*`）。对照 D1 原始 T03：4 次/8,192 触顶/无产物。
+
+**限制与下一步**：检索相关性（返回门户首页级噪声 URL）未修，归 O-11 口径在 Q4 观察期积累；thinking 参数兼容性靠 provider 退回降级兜底；D2 起任务若再出现预算/时间停止，按 Q4-02 修复批次口径处理。T01（6 文件，collection 短路径）未复跑——其结构与 T03 同根因，由同批修复覆盖，留待 D2 按计划自然验证。
