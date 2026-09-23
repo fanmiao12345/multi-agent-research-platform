@@ -10,7 +10,8 @@
       "intervention_minutes": 0.0,
       "revision_minutes": 0.0,
       "notes": "real 模式端到端冒烟通过;结果正确(0.5 美元/百万,1 亿 token=50 美元);轻微多余:自行追加了人民币换算,未在指令内;job_id=job_1ad533776f7448a3ba2be19beaf7c09e",
-      "recorded_at": "2026-09-22T11:42:28"
+      "recorded_at": "2026-09-22T11:42:28",
+      "kind": "plan"
     },
     {
       "id": "trial_8200d496",
@@ -21,7 +22,8 @@
       "intervention_minutes": 0.0,
       "revision_minutes": 0.0,
       "notes": "draft 原因:1)编排选型连续2次 JSON 校验失败后降级 fixed;2)单次输出顶满 8192 token 上限被截断(stop_reason=output_token_limit),无最终产物;3次调用/8192 输出token/约0.0119美元/10.3s;job_id=job_2b0aabe7a18f498dab26b103e2d33fc2",
-      "recorded_at": "2026-09-22T21:04:15"
+      "recorded_at": "2026-09-22T21:04:15",
+      "kind": "plan"
     },
     {
       "id": "trial_89f19ea3",
@@ -32,7 +34,8 @@
       "intervention_minutes": 0.0,
       "revision_minutes": 0.0,
       "notes": "draft 原因同 T01:选型 2 次校验失败降级 fixed + 输出顶满 8192 上限截断(stop_reason=output_token_limit),无最终产物;4次调用/8192 输出token/约0.0119美元/27.2s;导入 14 个来源;job_id=job_0b2396c3f4234cbfb1aeebaaacdf7f95",
-      "recorded_at": "2026-09-22T21:04:18"
+      "recorded_at": "2026-09-22T21:04:18",
+      "kind": "plan"
     },
     {
       "id": "trial_f3ca499a",
@@ -43,7 +46,8 @@
       "intervention_minutes": 0.0,
       "revision_minutes": 0.0,
       "notes": "诊断(非计划内任务):提高单次输出上限后仍 stop_reason=output_token_limit,被截断 token 数同比例 8192->16384,说明是'输出预算顶满即停'而非'文本太长';6次调用(2选型失败+1检索规划+3联网检索+3证据抽取),8192->16384 输出,约0.0240美元,54.6s;联网检索成功(bing_scrape 返回真实URL);job_id=job_bdd94486b6ba4d46b8588b8695ff48f7",
-      "recorded_at": "2026-09-22T21:06:02"
+      "recorded_at": "2026-09-22T21:06:02",
+      "kind": "diagnostic"
     },
     {
       "id": "trial_354be32a",
@@ -54,7 +58,8 @@
       "intervention_minutes": 0.0,
       "revision_minutes": 0.0,
       "notes": "诊断(非计划内):schema与预算修复后跑通到提纲,但65536仍output_token_limit触顶(证据阶段~5万token);对照样本定位第二根因=deepseek-v4-flash隐形思维链(证据抽取可见载荷1007字符计费3861token,thinking disabled后446);19次调用/65536输出/约0.0865美元/285.9s;job_id=job_3f36a695f0f24e1eab1029dabdbaf691",
-      "recorded_at": "2026-09-23T10:06:06"
+      "recorded_at": "2026-09-23T10:06:06",
+      "kind": "diagnostic"
     },
     {
       "id": "trial_a759b09a",
@@ -65,7 +70,8 @@
       "intervention_minutes": 0.0,
       "revision_minutes": 0.0,
       "notes": "阻塞修复验收(非计划内):调度1次通过(355token)+证据单来源290-442token(thinking已关)+预算余量充足;accepted双层审校通过,71引用0未解析,2683字,1轮修订;19次调用/21723token/约0.0396美元/99.7s;对比D1原始T03(4次/8192触顶/无产物);job_id=job_a45919d755e04a898be374955470c63f",
-      "recorded_at": "2026-09-23T10:06:06"
+      "recorded_at": "2026-09-23T10:06:06",
+      "kind": "diagnostic"
     }
   ]
 }

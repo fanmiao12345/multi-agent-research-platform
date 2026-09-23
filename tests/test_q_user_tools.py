@@ -49,6 +49,26 @@ def test_trial_log_status_requires_seven_days_and_twenty_tasks(tmp_path, monkeyp
     assert status["days"]==7 and status["tasks"]==21 and status["ready"] is True
 
 
+def test_trial_log_diagnostics_excluded_from_acceptance_counts(tmp_path, monkeypatch):
+    """P0-1（2026-09-23）：诊断/修复验证记录不得凑「20 任务/7 天」的签收口径。"""
+    monkeypatch.setattr(trial_log, "PATH", tmp_path / "trial.json")
+    data = {"schema_version": 1, "tasks": []}
+    for day in range(7):
+        for index in range(3):
+            data["tasks"].append({"date": f"2026-09-{day+1:02d}", "id": f"p{day}-{index}",
+                                  "kind": "plan"})
+    for index in range(5):   # 诊断记录再多也不能补数
+        data["tasks"].append({"date": "2026-09-08", "id": f"d{index}",
+                              "kind": "diagnostic"})
+    status = trial_log.status(data)
+    assert status["tasks"] == 21 and status["ready"] is True
+    assert status["diagnostic_tasks"] == 5 and status["all_tasks"] == 26
+    assert status["days"] == 7 and status["all_days"] == 8
+    # 缺 kind 的存量记录按 plan（向后兼容）
+    legacy = {"tasks": [{"date": "2026-09-01", "id": "old"}]}
+    assert trial_log.status(legacy)["tasks"] == 1
+
+
 def test_user_runbook_and_scripts_exist():
     for path in ("docs/Q2_Q4_USER_RUNBOOK.md","scripts/q2_real.ps1","scripts/q2_web.ps1",
                  "scripts/q2_ingest.ps1","scripts/q3_compare.ps1","scripts/q4_trial.ps1",
