@@ -2,13 +2,11 @@
 
 > 完整目标与唯一开发排期见 [开发总计划](docs/PROJECT_MASTER_PLAN.md)，当前逐项状态见 [实施清单](docs/IMPLEMENTATION_TRACKER.md)，代码基线与限制见 [执行状态](docs/EXECUTION_STATUS.md)，可用技能见 [技能目录](docs/SKILL_CATALOG.md)。研究写作是首个完整落地场景；旧版零依赖实现保留在 `legacy/`。
 
-## 整体目标与当前开发阶段（2026-09-11）
+## 项目简介
 
-用户提出目标，系统自行判断所需资料与工具、选择单智能体或多智能体工作方式、安排执行、检查并交付成果。最终覆盖 single/fixed/manager_worker/fanout/dynamic_team/debate、有界嵌套派工，以及统一上下文、技能、记忆、预算、恢复和工作台。
+给一个目标，系统自行判断所需资料与工具、选择单智能体或多智能体协作方式、安排执行、检查并交付成果。支持 single / fixed / manager_worker / fanout / dynamic_team / debate 六种协作方式与有界嵌套派工，配套统一上下文、技能、记忆、预算护栏、崩溃恢复和研究工作台。
 
-按用户最新要求：**先完成 48 个功能开发步骤（D0～D10），冻结全功能候选版，再执行 12 个整体测试与优化步骤（Q1～Q4）**。D 阶段只做最小功能验证和阻塞性修复，不边扩功能边反复调优。非阻塞问题进入 [优化待办](docs/OPTIMIZATION_BACKLOG.md)。
-
-截至本次更新（2026-09-28），**开发主线全部完成**：D0～D10 功能冻结，Q1～Q3 测试优化关闭，Q4-01 七天试用（21 任务/7 天）→ Q4-02 集中修复与 P1 功能批次（三格式导出/报告模板/来源入口，缺陷修复均经真实复验）→ Q4-03 已签收（`eval/reports/q4_signoff.json`，含"任务由 AI 生成执行"口径声明）。剩余为增强项（P2/P3、O-21 口径实施等），按用户优先级另行排期，见 [优化待办](docs/OPTIMIZATION_BACKLOG.md)。
+功能开发与四轮整体测试优化均已完成，并通过连续 7 天真实任务试用与最终签收。开发过程细节见 [执行状态](docs/EXECUTION_STATUS.md)，历史遗留的增强项见 [优化待办](docs/OPTIMIZATION_BACKLOG.md)。
 
 ## 当前能做什么（用户视角）
 
@@ -33,7 +31,8 @@
 .venv\Scripts\python -m src.interfaces.web.workbench --port 8765
 ```
 
-注意：Mock（默认）用于离线演示，不能当真实研究；离线工具演示可用 `--flow agent "计算6*7"`。CLI 已有 auto 初版及 fixed/fanout 路径，统一请求、根任务账本和搜索记账已接通；其余协作方式、嵌套派工与 Web 自动选型仍未完成。bing_scrape 真实搜索已接通：配置 SEARCH_PROVIDER=bing_scrape 并使用 --mode real --allow-network 后，只给主题可以自动搜索并读取正文；PDF 输入使用 pypdf 提取文本和页码，扫描件不执行 OCR。抓取和分析仍受外部结构、模型与预算影响，失败会明确记录。
+注意：Mock（默认）用于离线演示，不能当真实研究；离线工具演示可用 `--flow agent "计算6*7"`。
+真实模式（`.env` 配好 Key）下六种协作方式均可用：`--orchestration auto` 由调度智能体按任务结构自动选型（失败自动降级 fixed），也可显式指定 fixed/fanout/manager_worker/dynamic_team/debate/single。真实搜索配置 `SEARCH_PROVIDER=bing_scrape` 并使用 `--mode real --allow-network` 后，只给主题即可自动搜索并读取正文；PDF 输入使用 pypdf 提取文本和页码，扫描件不执行 OCR。抓取和分析受外部结构、模型与预算影响，失败会明确记录。
 
 ## 这是什么（架构定位）
 
@@ -87,8 +86,8 @@ Web默认选择 **Mock离线演示**，可切换到真实模型。配置区显�
 agent 任务仍直跑（页面入口随 S5 已提供）。
 
 B2已接入统一任务入口与根账本。Web可设置调用次数、输出Token、运行秒数和费用阈值，
-最终回答下方显示整项任务用量。CLI默认上限为12次调用、8192输出Token、300秒；
-真实模式未指定费用阈值时默认0.05美元参考估算。`--max-calls 0`可验证零调用停止。
+最终回答下方显示整项任务用量。出厂默认预算（研究链口径）：单任务 40 次调用、
+65536 输出 Token、600 秒、$0.15 费用护栏；`--max-calls 0`可验证零调用停止。
 时间在调用边界检查，不能强杀后台工具；费用不是账单硬封顶。模型SDK隐藏重试已关闭。
 详细用法、数据位置与限制见`docs/B2_DELIVERY.md`。
 
@@ -194,7 +193,7 @@ S6 说明与限制见`docs/S6_DELIVERY.md`。
 | `docs/` | 技术报告与架构文档 |
 | `legacy/` | 旧零依赖实现（保留） |
 
-## Demo 配方（组件演示，不代表完整业务流程已接通）
+## Demo 配方（组件演示）
 
 - 复杂研究写作：Planner → TaskGraph → Fan-out → Reviewer（`orchestration/manager_worker`）
 - 失败恢复：durable resume 实验 → Web 面板看 trace
