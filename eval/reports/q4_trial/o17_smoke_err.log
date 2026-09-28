@@ -1,0 +1,84 @@
+{
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "选型失败，降级固定流程（已知最稳）",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "unspecified",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "writer",
+        "description": "按给定资料完成整理与成稿（把导入的 4 份公开页面做去重与冲突登记：1) 判断哪些页面是同一事件或同一批数）",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.075,
+      "seconds": 300
+    }
+  },
+  "plan_meta": {
+    "scheduler": "fallback",
+    "failures": [
+      "第1次选型失败：PlanValidationError: max_parallel 必须为 1~3 的整数",
+      "第2次选型失败：PlanValidationError: max_parallel 必须为 1~3 的整数"
+    ],
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 5.41,
+    "scheduler_calls": 2
+  },
+  "root_job_id": "job_4f013a2b030c4812922100c5dd3be6dd"
+}

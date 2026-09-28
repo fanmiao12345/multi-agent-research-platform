@@ -1364,3 +1364,49 @@ D1（09-22）晚 T01/T03 全部 draft 且无产物，用户要求拍板阻塞问
   复核；③ 下一步 Q4-02 集中修复以 §3.2 + O-17～O-24 为输入（与已拍板的 P1 导出/模板/SR 批次
   合并），修后复验，再走 Q4-03 最终签收——签收表述必须按计划 §0 口径如实标注
   「任务由 AI 生成执行、材料由 AI 从公开来源抓取，非用户个人日常工作任务」。
+
+
+## 2026-09-28 / Q4-02 集中修复批次（缺陷部分）：O-17/O-18/O-19/O-20/O-24 修复 + 真实冒烟验收
+
+按 O-17～O-24 优先序执行（与 P1 合并的导出/模板/SR 功能部分未动，待后续）。
+全部修复走 systematic-debugging（先根因后改码）+ TDD（先红后绿）：
+
+- **O-17 间歇性丢请求参数（`6b73f12`+`93b1aa7`，最高优先）**：根因=CLI 未传 --workspace 时
+  `OrchestrationExecutor(workspace_root=None)` 编排层静默失效——共享来源库不建、根记录不落盘，
+  fanout 子任务与成稿拿到 files=()/allow_network=False 的空派生请求报"没有可用资料"；成稿以
+  预留预算（根×0.4=16次/$0.06/240s，与 5 个失败 job 落盘完全吻合）复用根 job_id 运行并覆盖
+  request.json，即"参数丢失"假象。"间歇性"实为 **未传 --workspace × 选型 fanout** 的组合
+  （fixed 原请求直跑不受影响）。修复：executor 构造时按 ResearchApplication 同语义兜底
+  settings.workspace_dir。回归测试 test_executor_fanout_falls_back_to_settings_workspace_when_root_none。
+- **O-18 机器休眠计入 max_seconds（`e70f372`）**：JobLedger 用 time.monotonic 计预算
+  （Windows 单调时钟休眠期间照走），恢复后一次 check 即 time_limit 误杀（T10：有效 29s/
+  墙钟 13970s；T17 挂 17.6h）。修复：账本内置唤醒感知时钟——相邻读数间隔超过
+  max_seconds+60s（单次调用受 timeout ≤ max_seconds 约束，超限间隔只可能是休眠）整段剔除。
+  测试 test_time_budget_ignores_system_sleep_gap（T10 场景复刻）。
+- **O-19 改稿链缺口（`617b917`）**：①入口只接受 report.* → analysis 类交付两连 unable、
+  D7 合并未执行——原稿扩展到 analysis（report 优先；collection 素材类不作原稿），CLI/Web 同口径；
+  ②analysis 短交付无审校层（T08/T11 实录三阶段判 accepted）——补双层审校+至多一轮修订，
+  与报告链同口径定级，审校不可用按 O-13 同型降级不丢稿。已知限制如实登记：collection 原任务
+  不可作改稿原稿；改稿指令满足性靠审校模型层，无独立程序判据。
+- **O-20 冲突判定过宽（`165d3b9`）**：素材提示词收窄冲突口径——仅同一事实点直接互斥断言
+  可登记为开放冲突，条件/口径/版本/范围差异与互补信息不算（T09r/T10/T11 三例人工误判同族，
+  生成侧补口；程序侧 conflict_under_cited Q3-01 已收窄不动）。
+- **O-24 手册（`93b1aa7`）**：改稿示例补 --workspace/--revise-text，写作示例补 --workspace 说明。
+
+**真实冒烟验收（3 次迭代，复刻 T18 失败条件：4 文件/无 --workspace/fanout）**：
+第 1 次跑通但选型 2/2 失败降级 fixed（"max_parallel 必须为 1~3 的整数"——T06 同族缺陷第 3 次命中），
+当场修复：该字段为执行建议改钳制不作废计划（提示词同步补约束）；第 2 次暴露成稿防重复检查
+把编排器共享来源误判为执行产物——白名单放行 shared_sources/source_library.json（D1-02×D3-05
+接缝缺陷，此前 fanout 走不到该步故未显形）；第 3 次全链跑通：选型 1 次通过、fanout 计划正确、
+3 个子任务真实执行（各有 child job）、共享来源生效、8 次调用/$0.063/47.9s 修正时钟。
+终态 draft=cost_limit 护栏正确截停——**fanout 模式在 $0.15 默认预算下偏紧**，属配置读数非缺陷，
+是否上调留用户定夺。
+
+**O-21/O-22/O-23 不动代码（如实定案）**：O-21 拒答 vs 有条件推荐属业务口径决策，待用户拍板；
+O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（程序侧 support/fact_label 检查已存在，
+不做提示词定制），继续审校层+人工抽查口径。
+
+**验证**：新增/更新回归 6 项（max_parallel 钳制、共享来源白名单、analysis 审校层、analysis 改稿、
+冲突口径、休眠时钟）；全量回归 **627 项 0 失败**（含一次 workbench O-07 型偶发，隔离复跑过）；
+真实冒烟即业务验收（上）。本批未动：P1 功能（导出/模板/SR）、O-21/O-22/O-23、fanout 预算档位决策。
+下一步：P1 功能实施 → 真实复验批次 → Q4-03 最终签收（T16r CONDITIONAL 后半条件仍待用户补全）。

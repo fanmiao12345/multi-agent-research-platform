@@ -1,0 +1,120 @@
+{
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fanout",
+    "reason": "4份页面去重与冲突登记可拆为互相独立的子题（重复组判定、唯一信息提取、冲突比对），并行研究后汇总，且用户约束限定fanout",
+    "complexity_signals": {
+      "independent_subtopics": 3,
+      "work_type": "research_report",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "researcher",
+        "description": "逐页比对4份导入材料，判断哪些页面属同一事件或同一批数据的重复报道，输出重复组清单",
+        "depends_on": [],
+        "parallel": true,
+        "covers_sections": [
+          "重复组"
+        ]
+      },
+      {
+        "id": "T2",
+        "role": "researcher",
+        "description": "对每个重复组提取可用的唯一信息，剔除重复内容，仅依据导入材料",
+        "depends_on": [],
+        "parallel": true,
+        "covers_sections": [
+          "唯一信息"
+        ]
+      },
+      {
+        "id": "T3",
+        "role": "researcher",
+        "description": "逐项比对页面间互相矛盾或不一致的说法，无冲突则记录'未发现冲突'",
+        "depends_on": [],
+        "parallel": true,
+        "covers_sections": [
+          "冲突登记"
+        ]
+      },
+      {
+        "id": "T4",
+        "role": "writer",
+        "description": "汇总T1-T3结果，按重复组、唯一信息、冲突登记三部分成稿，仅依据导入材料不编造",
+        "depends_on": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "parallel": false,
+        "covers_sections": [
+          "重复组",
+          "唯一信息",
+          "冲突登记"
+        ]
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 3,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fanout",
+    "expected": {
+      "calls": 10,
+      "cost_usd": 0.09,
+      "seconds": 360
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 2.467,
+    "scheduler_calls": 1
+  },
+  "root_job_id": "job_fe91f1bf47704daeb5afb3693c3d7417"
+}
