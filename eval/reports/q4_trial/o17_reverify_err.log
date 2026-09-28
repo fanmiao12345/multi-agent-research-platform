@@ -1,0 +1,130 @@
+{
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fanout",
+    "reason": "4份页面需分别独立提取信息，再汇总做去重与冲突登记，子任务互相独立，fanout并行最省",
+    "complexity_signals": {
+      "independent_subtopics": 4,
+      "work_type": "research_report",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "researcher",
+        "description": "提取页面1的事件/数据要点、唯一信息与可疑说法",
+        "depends_on": [],
+        "parallel": true,
+        "covers_sections": []
+      },
+      {
+        "id": "T2",
+        "role": "researcher",
+        "description": "提取页面2的事件/数据要点、唯一信息与可疑说法",
+        "depends_on": [],
+        "parallel": true,
+        "covers_sections": []
+      },
+      {
+        "id": "T3",
+        "role": "researcher",
+        "description": "提取页面3的事件/数据要点、唯一信息与可疑说法",
+        "depends_on": [],
+        "parallel": true,
+        "covers_sections": []
+      },
+      {
+        "id": "T4",
+        "role": "researcher",
+        "description": "提取页面4的事件/数据要点、唯一信息与可疑说法",
+        "depends_on": [],
+        "parallel": true,
+        "covers_sections": []
+      },
+      {
+        "id": "T5",
+        "role": "organizer",
+        "description": "汇总四页要点，判定重复组并整理每组唯一信息",
+        "depends_on": [
+          "T1",
+          "T2",
+          "T3",
+          "T4"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T6",
+        "role": "writer",
+        "description": "登记页面间矛盾或不一致说法，无则写'未发现冲突'，仅依据导入材料成稿",
+        "depends_on": [
+          "T5"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 3,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 10,
+      "cost_usd": 0.09,
+      "seconds": 360
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fixed",
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 3.154,
+    "scheduler_calls": 1
+  },
+  "root_job_id": "job_1caf53e7cc9547a4be22d2bf796fee66"
+}

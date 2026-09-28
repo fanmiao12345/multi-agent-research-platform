@@ -350,6 +350,42 @@
       "revision_minutes": 0.0,
       "notes": "D7;14次调用/40758输出token/约0.0556美元/158.5s;5 份周内产物全部导入成功(files=5);产物 report.v3,双层审校通过;用途:对 T01/T03/T07/T13/T20 的代表性产物做归档索引与可追溯性结论",
       "recorded_at": "2026-09-28T08:59:25"
+    },
+    {
+      "id": "trial_c7aef34e",
+      "date": "2026-09-28",
+      "kind": "diagnostic",
+      "task": "T19r Q4-02复验:O-19修复后补跑最终简报改稿(collection形态)",
+      "result": "accepted,引用可定位;analysis原稿成功进入改稿链(修复验证通过)",
+      "status": "completed",
+      "intervention_minutes": 0,
+      "revision_minutes": 0,
+      "notes": "指令含'整理'触发collection推断,素材包形态accepted,11来源ok;job_id=job_f44b33f3f8e549c98294db108d967e93",
+      "recorded_at": "2026-09-28T13:53:48"
+    },
+    {
+      "id": "trial_83efe9f1",
+      "date": "2026-09-28",
+      "kind": "diagnostic",
+      "task": "T19r2 Q4-02复验:O-19修复后补跑最终简报改稿(正文形态)",
+      "result": "draft,O-19b审校层真实生效:审校未通过如实降级,不再盲目accepted",
+      "status": "completed",
+      "intervention_minutes": 0,
+      "revision_minutes": 0,
+      "notes": "正文形态正确(结论+选型要点+局限反方,800字内,事实/推断/未知标注);job_id=job_2fed7bfba44245efb646ed2963038fe1",
+      "recorded_at": "2026-09-28T13:53:49"
+    },
+    {
+      "id": "trial_7916d199",
+      "date": "2026-09-28",
+      "kind": "diagnostic",
+      "task": "O-17r Q4-02复验:auto编排fanout全链(复刻T18失败条件)",
+      "result": "draft,全链健康执行:选型1次通过,5子任务真实执行无失败,不再'没有可用资料'秒死",
+      "status": "completed",
+      "intervention_minutes": 0,
+      "revision_minutes": 0,
+      "notes": "13次调用/0.0599美元/132.8s;6子任务计划(4researcher并行+organizer+writer);draft=审校如实降级;job_id=job_1caf53e7cc9547a4be22d2bf796fee66",
+      "recorded_at": "2026-09-28T13:53:49"
     }
   ]
 }
