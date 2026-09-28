@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "stage": "Q4-03 最终签收",
+  "signed_at": "2026-09-28",
+  "checks": {
+    "freeze": true,
+    "q1": true,
+    "faults": true,
+    "browser_install": true,
+    "q2_ready": true,
+    "trial_7d_20tasks": true
+  },
+  "trial": {
+    "days": 7,
+    "tasks": 23,
+    "diagnostic_tasks": 8
+  },
+  "user_signoff": true,
+  "signoff_basis": "用户 2026-09-28 确认四项收尾并指示完成签收流程：① P1 三格式人工验收通过（Word/WPS、记事本、VS Code 实开，样例 eval/reports/p1_export/manual_check/）；② T16r 条件确认为\"仅限基于现有材料\"，判定通过；③ O-21 口径拍板为\"有条件推荐优先\"（实施排 Q4-03 后独立批次）；④ Q3 批 3 八份报告复核全部通过。",
+  "scope": "Q4 阶段（Q4-01 七天试用 + Q4-02 集中修复与 P1 功能批次 + Q4-03 签收）全部完成；Q1～Q3 此前已关闭。",
+  "caliber_statement": "【口径声明（Q4_TRIAL_PLAN.md §0）】七天试用的任务由 AI 生成、材料由 AI 从公开来源抓取、结果由 AI 系统真实执行产出——任务真实、来源真实、产出真实，但不代表用户个人日常工作任务；本签收不等同于\"用户日常工作已由系统替代\"。",
+  "known_limits_carried": [
+    "O-21 已拍板\"有条件推荐优先\"，业务/评测两侧校准排 Q4-03 后独立批次（行为变更需复验）",
+    "O-22/O-23 属模型行为质量范畴，无程序修复点，继续审校层+人工抽查口径",
+    "fanout 模式在 $0.15 默认预算下偏紧（cost_limit 如实降级 draft），预算档位留用户后续定夺",
+    "P2/P3（EX-01/06/08/09、TP-04、UX-03～14、SR-07/09/10）在签收后按用户优先级排期",
+    "改稿交付形态受指令措辞影响推断（collection/analysis/report），需要特定形态时显式指定"
+  ],
+  "note": "本文件为正式签收记录；q4_signoff_draft.json 保留自动检查草稿机制不变。"
+}
