@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checks": {
+    "freeze": true,
+    "q1": true,
+    "faults": true,
+    "browser_install": true,
+    "q2_ready": true,
+    "trial_7d_20tasks": true
+  },
+  "trial": {
+    "days": 7,
+    "tasks": 23,
+    "diagnostic_tasks": 5
+  },
+  "user_signoff": false,
+  "note": "自动检查不代替用户对最终 1.0 的签收"
+}
