@@ -58,6 +58,11 @@ class OrchestrationExecutor:
 
     def __init__(self, *, workspace_root, settings=None, llm=None, app_factory=None,
                  state_queue=None):
+        # O-17：workspace_root=None 时编排层曾整体静默失效（共享来源不建、根记录不落盘），
+        # fanout 子任务与成稿拿到空派生请求报"没有可用资料"；与 ResearchApplication 的
+        # `workspace_root or settings.workspace_dir` 兜底语义对齐。
+        if workspace_root is None and settings is not None:
+            workspace_root = settings.workspace_dir
         self.workspace_root = workspace_root
         self.settings = settings
         self.llm = llm

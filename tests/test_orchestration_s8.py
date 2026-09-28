@@ -290,6 +290,49 @@ def test_executor_fanout_materializes_shared_sources_and_integrates_outputs(tmp_
     assert rec["status"] == "finished"
 
 
+def test_executor_fanout_falls_back_to_settings_workspace_when_root_none(tmp_path):
+    """O-17 根因回归：CLI 未传 --workspace 时 workspace_root=None，编排层此前静默失效——
+    共享来源库不建、根编排记录不落盘，fanout 子任务与成稿拿到 files=()/allow_network=False
+    的空派生请求，报"没有可用资料"，且 request.json 被成稿派生请求覆盖（T09/T16×2/T18×2 实录：
+    落库 max_calls=16/max_cost=0.06/max_seconds=240 恰为成稿预留=根预算×0.4）。
+    修复后：编排层与 ResearchApplication 同语义兜底 settings.workspace_dir。"""
+    material = tmp_path / "a.md"
+    material.write_text("# 文件资料\n\n共享文件正文。\n", encoding="utf-8")
+
+    def script(req):
+        if "子题一" in req.task:
+            return ("job_s1", "子题一小节", "accepted")
+        if "子题二" in req.task:
+            return ("job_s2", "子题二小节", "accepted")
+        return ("job_root", "最终报告", "accepted")
+
+    req = _req(files=(str(material),), allow_network=False)
+    root = "job_" + "b" * 32
+    requests, runs = [], []
+
+    def factory(workspace_root, settings, llm):
+        def build(request):
+            requests.append(request)
+            return _FakeApp(requests, script, runs)
+        return build
+
+    from config.settings import Settings
+    executor = OrchestrationExecutor(
+        workspace_root=None, settings=Settings(workspace_dir=str(tmp_path)),
+        app_factory=factory)
+    plan = from_plan_dict(_fanout_plan_dict())
+    record = executor.execute_plan(req, plan, budget_caps=CAPS, root_job_id=root)
+    import json
+    # 兜底生效：共享来源库与根编排记录都落在 settings.workspace_dir 下
+    assert (tmp_path / "jobs" / root / "shared_sources" / "sources.json").exists()
+    rec = json.loads((tmp_path / "jobs" / root / "orchestration.json")
+                     .read_text(encoding="utf-8"))
+    assert rec["status"] == "finished" and rec["plan"]["mode"] == "fanout"
+    # 子任务与成稿都拿到共享正文（不再空来源空转）
+    assert "共享文件正文" in "\n".join(requests[0].texts)
+    assert "共享文件正文" in "\n".join(requests[-1].texts)
+
+
 def test_executor_subtask_retry_then_degrade_not_silent(tmp_path):
     calls = {"n": 0}
 
