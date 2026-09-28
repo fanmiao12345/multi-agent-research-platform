@@ -92,6 +92,15 @@ def _hard_requirement_failures(body: str, request: dict) -> list:
     return failures
 
 
+def _source_label(src: dict) -> str:
+    """来源显示名：title 缺失或本身就是 URL（未抓到网页标题的落盘形态）时，
+    不在导出中展示地址（R8：导出内不含链接或 URL），改用来源 id 代称。"""
+    label = str(src.get("title") or src.get("display") or "").strip()
+    if not label or re.search(r"https?://", label, re.I):
+        label = f"网页来源（{str(src.get('source_id') or '')[:12]}）"
+    return label
+
+
 def build_export_document(job_dir: Path, artifact_id: str | None = None,
                           *, appendix: str = "sources") -> ExportDoc:
     job_dir = Path(job_dir)
@@ -188,7 +197,7 @@ def build_export_document(job_dir: Path, artifact_id: str | None = None,
         locator = ev.get("locator") or {}
         where = (f"第 {locator['paragraph']} 段" if locator.get("paragraph")
                  else (f"第 {locator.get('page')} 页" if locator.get("page") else ""))
-        label = src.get("title") or src.get("display") or src.get("source_id") or "未知来源"
+        label = _source_label(src)
         status = "" if src.get("status") == "ok" else f" · 状态 {src.get('status', '—')}"
         source_lines.append(
             f"{n}. {label}" + (f" · {where}" if where else "")
@@ -201,7 +210,7 @@ def build_export_document(job_dir: Path, artifact_id: str | None = None,
     if appendix == "sources":
         rows = []
         for s in sources_index:
-            label = s.get("title") or s.get("display") or s.get("source_id")
+            label = _source_label(s)
             kind = {"url": "网页", "file": "文件", "paste": "粘贴"}.get(
                 s.get("kind"), s.get("kind") or "—")
             rows.append((None, f"- {label}（{kind} · {s.get('status', '—')}"
