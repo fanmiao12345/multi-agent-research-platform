@@ -509,6 +509,39 @@ class Handler(BaseHTTPRequestHandler):
             index = _load(job_dir / "evidence.json") or {}
             items = index.get("items", []) if isinstance(index, dict) else []
             return self._send(200, {"evidence": items})
+        if len(segments) == 2 and segments[1] == "export":
+            # P1 EX-10：三格式导出（md/txt/docx）+ EX-05 可读文件名 + TP-01/02/06 骨架。
+            # 只读派生层；R8：导出内容不含链接或 URL（export_kit 内逐格式断言）。
+            from src.harness.storage.export_kit import (build_export_document,
+                                                        content_disposition,
+                                                        render_docx, render_md,
+                                                        render_txt)
+            query = parse_qs(urlparse(self.path).query)
+            fmt = (query.get("format") or ["md"])[0].lower()
+            if fmt not in ("md", "txt", "docx"):
+                return self._send(400, {"error": "format 只支持 md/txt/docx"})
+            appendix = (query.get("appendix") or ["sources"])[0].lower()
+            if appendix not in ("sources", "none"):
+                return self._send(400, {"error": "appendix 只支持 sources/none"})
+            artifact_id = (query.get("artifact_id") or [None])[0]
+            try:
+                doc = build_export_document(job_dir, artifact_id,
+                                            appendix=appendix)
+            except FileNotFoundError as e:
+                return self._send(404, {"error": str(e)})
+            except ValueError as e:
+                return self._send(422, {"error": str(e)})
+            render = {"md": render_md, "txt": render_txt, "docx": render_docx}[fmt]
+            raw = render(doc)
+            when = time.strftime("%Y-%m-%dT%H:%M:%S")
+            disposition = content_disposition(
+                doc.blocks[0].text if doc.blocks else "export", doc.meta["level"],
+                doc.meta["version"], when, fmt, fallback_id=segments[0])
+            ctype = ("application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                     if fmt == "docx" else "text/plain; charset=utf-8")
+            return self._send(200, raw, ctype, extra_headers={
+                "Content-Disposition": disposition,
+                "X-Content-Type-Options": "nosniff"})
         if len(segments) == 2 and segments[1] == "export.html":
             import html
             index = _load(job_dir / "artifacts.json") or {}
@@ -1128,7 +1161,9 @@ tbody tr{cursor:pointer}tbody tr:hover td{background:#fafbfc}tr:last-child td{bo
           <div class="detail-actions">
             <button class="btn btn-danger" id="btncancel" onclick="cancelJob()" disabled>停止任务</button>
             <button class="btn" id="btnresume" onclick="resumeJob()" disabled>恢复</button>
-            <button class="btn" id="btnexport" onclick="exportReport()" disabled>下载Markdown</button>
+            <button class="btn" id="btnexport" onclick="exportReport('md')" disabled>导出 Markdown</button>
+            <button class="btn" id="btnexportdocx" onclick="exportReport('docx')" disabled>导出 Word</button>
+            <button class="btn" id="btnexporttxt" onclick="exportReport('txt')" disabled>导出 TXT</button>
             <button class="btn hidden" id="btnhtml" onclick="exportHtml()">导出HTML</button>
           </div>
         </div>
@@ -1567,9 +1602,9 @@ async function submitInput(inputId){
 async function renderJobResults(id){
   await loadJobData(id);
   const reports=currentArtifacts.filter(a=>['report','analysis','collection'].includes(a.kind)).sort((a,b)=>(a.version||0)-(b.version||0));
-  $('btnexport').disabled=!reports.length;$('btnhtml').classList.toggle('hidden',!reports.length);$('btnrevise').disabled=!reports.length;
+  $('btnexport').disabled=!reports.length;$('btnexportdocx').disabled=!reports.length;$('btnexporttxt').disabled=!reports.length;$('btnhtml').classList.toggle('hidden',!reports.length);$('btnrevise').disabled=!reports.length;
   const toolbar=$('reportview');toolbar.replaceChildren();
-  if(reports.length){toolbar.append(node('span','版本','badge'));reports.forEach(a=>{const b=node('button','v'+(a.version||'?'),'btn btn-small');b.onclick=()=>viewArtifact(id,a.artifact_id);toolbar.append(b)});await viewArtifact(id,reports[reports.length-1].artifact_id)}
+  if(reports.length){toolbar.append(node('span','版本','badge'));reports.forEach(a=>{const b=node('button','v'+(a.version||'?'),'btn btn-small');b.onclick=()=>viewArtifact(id,a.artifact_id);toolbar.append(b);const d=node('button','导出','btn btn-small');d.title='导出这一版本（Markdown）';d.onclick=()=>location.href='/api/jobs/'+encodeURIComponent(currentJob)+'/export?format=md&artifact_id='+encodeURIComponent(a.artifact_id);toolbar.append(d)});await viewArtifact(id,reports[reports.length-1].artifact_id)}
   else $('rtok').replaceChildren(empty('没有报告产物','该任务可能失败、取消，或交付类型不是报告。'));
   renderVersions();
 }
@@ -1581,14 +1616,15 @@ async function loadLibrary(job){
 }
 function renderSourceList(){
   const sHost=$('srclist');sHost.replaceChildren();if(!currentSources.length)sHost.append(empty('暂无来源'));
-  currentSources.forEach(s=>{const r=node('div',null,'source-item');r.onclick=()=>viewSource(s,r);r.append(node('strong',s.display||s.title||s.source_id));const m=node('span');m.append(badge(s.status),document.createTextNode(' '+(s.source_id||'')));r.append(m);sHost.append(r)});
+  currentSources.forEach(s=>{const r=node('div',null,'source-item');r.dataset.sid=s.source_id||'';r.onclick=()=>viewSource(s,r);r.append(node('strong',s.display||s.title||s.source_id));const m=node('span');m.append(badge(s.status),document.createTextNode(' '+(s.source_id||'')));r.append(m);const url=sourceUrl(s);if(url){const open=node('button','打开网页 ↗','btn btn-small');open.title='回原始出处（以本机存档全文为权威依据）';open.onclick=(ev)=>{ev.stopPropagation();openSourceLink(url)};r.append(open)}if(s.withdrawn_at){r.append(node('span','已撤回 '+String(s.withdrawn_at).slice(0,10),'small'))}sHost.append(r)});
   const aHost=$('artlist');aHost.replaceChildren();if(!currentArtifacts.length)aHost.append(empty('暂无产物'));
   currentArtifacts.forEach(a=>{const r=node('div',null,'source-item');r.onclick=()=>viewArtifactInSource(a,r);r.append(node('strong',a.artifact_id));r.append(node('span',`${a.kind||'artifact'} · v${a.version||'?'} · ${a.producer||'—'}`));aHost.append(r)})
 }
-async function viewSource(s,el){document.querySelectorAll('.source-item').forEach(x=>x.classList.remove('active'));el.classList.add('active');$('sourceViewerTitle').textContent=s.display||s.title||s.source_id;if(!s.file_name){$('sourceViewer').textContent=s.status_message||'该来源没有可读取正文。';return}try{$('sourceViewer').textContent=await apiText('/api/jobs/'+encodeURIComponent(currentJob)+'/sources/'+encodeURIComponent(s.source_id)+'/text')}catch(e){$('sourceViewer').textContent=e.message}}
+async function viewSource(s,el){document.querySelectorAll('.source-item').forEach(x=>x.classList.remove('active'));if(el)el.classList.add('active');$('sourceViewerTitle').textContent=s.display||s.title||s.source_id;if(!s.file_name){$('sourceViewer').textContent=s.status_message||'该来源没有可读取正文。';return}try{$('sourceViewer').textContent=await apiText('/api/jobs/'+encodeURIComponent(currentJob)+'/sources/'+encodeURIComponent(s.source_id)+'/text')}catch(e){$('sourceViewer').textContent=e.message}}
 async function viewArtifactInSource(a,el){document.querySelectorAll('.source-item').forEach(x=>x.classList.remove('active'));el.classList.add('active');$('sourceViewerTitle').textContent=a.artifact_id;try{$('sourceViewer').textContent=await apiText('/api/jobs/'+encodeURIComponent(currentJob)+'/artifacts/'+encodeURIComponent(a.artifact_id)+'/content')}catch(e){$('sourceViewer').textContent=e.message}}
 function renderEvidenceChips(){const h=$('evidenceview');h.replaceChildren();Object.values(currentEvidence).slice(0,80).forEach(e=>{const b=node('button',e.evidence_id,'evidence-chip');b.title=(e.fact||e.quote||'').slice(0,120);b.onclick=()=>showEvidence(e);h.append(b)});if(!h.childElementCount)h.append(node('span','暂无证据','small'))}
-function showEvidence(e){$('docview').classList.remove('empty-state');$('docview').textContent=[e.evidence_id||'',e.fact&&('事实：'+e.fact),e.tag&&('标注：'+e.tag),e.quote&&('原文：'+e.quote),e.source_id&&('来源：'+e.source_id),e.locator&&('定位：'+JSON.stringify(e.locator)),e.note&&('说明：'+e.note)].filter(Boolean).join('\n')}
+function showEvidence(e){$('docview').classList.remove('empty-state');$('docview').replaceChildren();const box=node('div');box.append(node('strong',e.evidence_id||''));box.append(node('div',[e.fact&&('事实：'+e.fact),e.tag&&('标注：'+e.tag),e.quote&&('原文：'+e.quote),e.source_id&&('来源：'+e.source_id),e.locator&&('定位：'+(e.locator.paragraph?('第 '+e.locator.paragraph+' 段'):(e.locator.page?('第 '+e.locator.page+' 页'):''))),e.note&&('说明：'+e.note)].filter(Boolean).join('\n')));const src=currentSources.find(s=>s.source_id===e.source_id)||null;const actions=node('div');actions.style.marginTop='6px';const viewBtn=node('button','查看已保存全文','btn btn-small');viewBtn.onclick=()=>focusSource(e);actions.append(viewBtn);const url=src?sourceUrl(src):'';if(url){const openBtn=node('button','打开原始网页 ↗','btn btn-small');openBtn.title=String(url);openBtn.onclick=()=>openSourceLink(url);actions.append(openBtn)}else{actions.append(node('span','（本地/粘贴来源以本机存档全文为权威依据）','small'))}box.append(actions);$('docview').append(box)}
+async function focusSource(e){switchJobTab('sources',document.querySelector('[data-jobtab="sources"]'));const src=currentSources.find(s=>s.source_id===e.source_id);if(!src){toast('证据库未找到该来源');return}await viewSource(src,document.querySelector('.source-item[data-sid="'+(e.source_id||'')+'"]'));const quote=e.quote||'';const viewer=$('sourceViewer');if(quote&&viewer&&viewer.textContent.includes(quote)){const parts=viewer.textContent.split(quote);viewer.replaceChildren();parts.forEach((p,i)=>{viewer.append(document.createTextNode(p));if(i<parts.length-1){const m=node('mark',quote);viewer.append(m)}})}}
 function renderReportMarkdown(md){
   const box=$('rtok');box.replaceChildren();
   String(md||'').split(/\r?\n/).forEach(line=>{
@@ -1624,8 +1660,10 @@ function switchJobTab(name,btn){document.querySelectorAll('[data-jobtab]').forEa
 async function cancelJob(){if(!currentJob)return;try{const d=await api('/api/jobs/'+encodeURIComponent(currentJob)+'/cancel',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});toast(d.status==='stopped'?'任务已停止':'已请求停止')}catch(e){toast(e.message)}}
 async function resumeJob(){if(!currentJob)return;try{await api('/api/jobs/'+encodeURIComponent(currentJob)+'/resume',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});toast('任务已进入恢复流程');reopenCurrentJob()}catch(e){toast(e.message)}}
 async function reviseJob(){const instruction=$('revinstr').value.trim();if(!instruction){toast('请填写改稿要求');return}try{const d=await api('/api/jobs/'+encodeURIComponent(currentJob)+'/revise',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({instruction})});$('revinstr').value='';toast('已创建改稿任务');await loadJobs();go('/job/'+d.job_id)}catch(e){toast(e.message)}}
-async function exportReport(){const reports=currentArtifacts.filter(a=>['report','analysis','collection'].includes(a.kind)).sort((a,b)=>(a.version||0)-(b.version||0));if(!reports.length){toast('没有可下载的交付产物');return}const a=reports[reports.length-1];if(DEMO){toast('预览模式不下载文件');return}location.href='/api/jobs/'+encodeURIComponent(currentJob)+'/artifacts/'+encodeURIComponent(a.artifact_id)+'/download'}
+function exportReport(fmt){const reports=currentArtifacts.filter(a=>['report','analysis','collection'].includes(a.kind)).sort((a,b)=>(a.version||0)-(b.version||0));if(!reports.length){toast('没有可下载的交付产物');return}if(DEMO){toast('预览模式不下载文件');return}const a=reports[reports.length-1];location.href='/api/jobs/'+encodeURIComponent(currentJob)+'/export?format='+encodeURIComponent(fmt||'md')+'&artifact_id='+encodeURIComponent(a.artifact_id)}
 function exportHtml(){if(!currentJob)return false;if(DEMO){toast('预览模式不下载文件');return false}location.href='/api/jobs/'+encodeURIComponent(currentJob)+'/export.html';return false}
+function openSourceLink(url){if(DEMO){toast('预览模式不打开外链');return false}window.open(url,'_blank','noopener,noreferrer');return false}
+function sourceUrl(s){try{const u=String(s.final_url||s.original_address||'');if(!/^https?:\/\//i.test(u))return '';const h=new URL(u).hostname;if(/^(localhost|127\.0\.0\.1|\[::1\]|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/i.test(h))return '';return u}catch(e){return ''}}
 
 async function loadRuns(){
   const host=$('runs');if(!host)return;

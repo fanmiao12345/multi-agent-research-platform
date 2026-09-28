@@ -1410,3 +1410,39 @@ O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（�
 冲突口径、休眠时钟）；全量回归 **627 项 0 失败**（含一次 workbench O-07 型偶发，隔离复跑过）；
 真实冒烟即业务验收（上）。本批未动：P1 功能（导出/模板/SR）、O-21/O-22/O-23、fanout 预算档位决策。
 下一步：P1 功能实施 → 真实复验批次 → Q4-03 最终签收（T16r CONDITIONAL 后半条件仍待用户补全）。
+
+
+## 2026-09-28 / P1 功能批次：三格式导出 + 模板骨架 + 界面内来源入口（EX/TP/UX/SR）
+
+设计依据 docs/EXPORT_AND_REPORT_TEMPLATE_PLAN.md（2026-09-22 定稿）。全部零依赖实现。
+
+- **导出套件 `src/harness/storage/export_kit.py`（新）**：① 内容组装 `build_export_document`
+  ——TP-01 骨架（标题/一句话结论/交付信息/正文/局限与未决问题/参考来源），TP-02 元信息
+  （等级/版本谱系/时间/方式与模型/引用与来源计数/用量费用，全部取自任务目录已落盘数据，
+  只读派生）；TP-06 导出前硬约束复验，未通过在文件头显式标注"草稿：未通过项…"；
+  正文无"局限"章节时按账目生成基础局限块。② `render_md`（UTF-8 无 BOM）/`render_txt`
+  （UTF-8 带 BOM、「一、」标题层级、「· 」列表、≈100 字软换行）/`render_docx`（**零依赖
+  最小 OOXML**：Content_Types+rels+document.xml 三件套，标题 16pt/小标题 14pt/正文 11pt、
+  1.5 行距、页边距 2.54cm、等线/Calibri——路线 A，已拍板不引入 python-docx）。
+  ③ EX-05 文件名 `<任务短名≤40>_<等级>_v<版本>_<YYYYMMDD-HHmm>.<ext>`，非法字符净化 +
+  ASCII 回退 + RFC 5987（中文不乱码）。④ **验收⑧硬断言 `assert_no_urls`**：对 md/txt 全文
+  与 docx 的 w:t 可见文本逐格式断言无链接或 URL（R8：参考来源保持纯文本；docx 无超链接
+  关系件；XML 命名空间声明属结构必需不计）。
+- **端点 `GET /api/jobs/<id>/export`（EX-10）**：参数 artifact_id（EX-07 任意版本）/
+  format=md|txt|docx/appendix=sources|none；Content-Disposition 双名 + nosniff；
+  旧 `/artifacts/<aid>/download` 与 `/export.html` 原样保留（验收④）。
+- **前端**：导出按钮扩为 Markdown/Word/TXT 三个（EX-05/UX-01/02），版本行逐版本加「导出」；
+  **SR-01～06 界面内来源入口**：证据面板加「查看已保存全文」（切到资料与产物 + 载入存档
+  全文 + 摘录 mark 高亮定位）与「打开原始网页 ↗」（仅 web 来源）；来源列表每行加「打开网页 ↗」
+  与撤回日期；`sourceUrl()` 安全判定——只信 sources.json 的 final_url/original_address，
+  仅 http(s)、私网/回环/localhost 不给外链、统一 target=_blank rel=noopener noreferrer、
+  本地/粘贴来源不给 file:// 只走应用内查看；外链旁始终提示"以本机存档全文为权威依据"（SR-05）。
+- **验证**：`tests/test_export_kit.py` 9 项（骨架/复验/BOM/中文层级/OOXML 结构/文件名/
+  URL 断言器/端点三格式/任意版本/旧端点回归）；Playwright 浏览器自检（合成任务真实服务）：
+  0 控制台错误，docx 建议文件名「月度综述：试点满意率_accepted_v2_20260928-1147.docx」，
+  存档全文高亮 mark=1，证据面板两动作与来源列表入口齐备，截图证据
+  `eval/reports/p1_export/`；全量回归 **636 项 0 失败**。
+- **限制与待验收**：① 验收①"用记事本/VS Code/Word/WPS 各打开一次"属人工验收，docx 仅
+  程序侧验证 OOXML 结构；② EX-01 完整交互（格式记忆 localStorage）与 TP-04 三档模板、
+  EX-06 附录开关、EX-08 打包、EX-09 复制属 P2；③ SR-07/09/10（收起/可用率读数/失效状态）
+  P2，撤回日期已先行显示；④ R6（txt 带 BOM/md 不带）按设计默认执行待用户确认。
