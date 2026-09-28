@@ -69,6 +69,10 @@ def build_material_messages(goal: str, evidence_block: str) -> list[dict]:
     return [
         _s(GOAL_RULES + " 你是素材整理器。按主题组织证据；可以指出冲突与缺口，"
            "但【禁止】无依据地消解矛盾：冲突的 status 只能是 open。"
+           "【冲突判定口径】只有两条证据对同一事实点给出直接互斥的断言"
+           "（同一指标在同一条件下数值或结论相反）才可记入 conflicts；"
+           "不同条件/口径/版本/适用范围下的差异、互补信息、不同对象之间的对比，"
+           "都不是冲突，不得登记。"
            "evidence_id 只能使用给定列表中的。"
            "【数量】topics≤10、每主题 points≤8、conflicts≤5、gaps≤5，statement 一句话≤60字。"
            + JSON_RULE + f' 输出结构：{schema}'),
