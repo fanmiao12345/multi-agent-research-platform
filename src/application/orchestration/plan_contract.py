@@ -180,11 +180,16 @@ def from_plan_dict(data: dict, *, allowed_modes: tuple[str, ...] = FIRST_VERSION
     for node in graph:
         visit(node, [])
 
-    max_parallel = data.get("max_parallel", 1)
-    if isinstance(max_parallel, bool) or not isinstance(max_parallel, int) \
-            or not (1 <= max_parallel <= MAX_PARALLEL):
-        errors.append(f"max_parallel 必须为 1~{MAX_PARALLEL} 的整数")
-        max_parallel = 1
+    # O-17 同族容错（T06 + Q4-02 冒烟共 3 次命中）：max_parallel 只是并发执行建议
+    # （执行器用侧还会按任务数再钳制），值非法时钳入 1~MAX_PARALLEL 即可，
+    # 不再因此拒绝整个计划——此前模型输出超范围值导致 2/2 选型失败白烧降级 fixed。
+    raw_parallel = data.get("max_parallel", 1)
+    if isinstance(raw_parallel, bool) or not isinstance(raw_parallel, int):
+        try:
+            raw_parallel = int(str(raw_parallel).strip())
+        except (ValueError, TypeError):
+            raw_parallel = 1
+    max_parallel = min(max(int(raw_parallel), 1), MAX_PARALLEL)
     raw_budget = data.get("budget") or {}
     if not isinstance(raw_budget, dict):
         errors.append("budget 必须为对象")

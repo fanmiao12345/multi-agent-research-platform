@@ -325,8 +325,11 @@ class ResearchApplication:
             # orchestration.json/request.json/ledger.json（D2-01 调度入账）；
             # D8-04：待输入挂起时入口层写 input_request.json，也是执行前标记；
             # 出现链执行产物（pipeline/sources/artifacts/阶段检查点等）仍拒绝。
+            # O-17 冒烟实录：编排器共享来源库（D3-05）也写在根目录，fanout 成稿
+            # 复用根 job_id 时不得被本检查误判为执行产物。
             pre_schedule = {"orchestration.json", "request.json", "ledger.json",
-                            "input_request.json"}
+                            "input_request.json",
+                            "shared_sources", "source_library.json"}
             reserved = {p.name for p in directory.iterdir()} - pre_schedule
             if reserved:
                 raise FileExistsError(

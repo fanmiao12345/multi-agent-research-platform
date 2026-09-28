@@ -56,7 +56,6 @@ def test_contract_accepts_valid_plan_and_rejects_illegal_ones():
             {"id": "T1", "role": "writer", "description": "x", "depends_on": ["T9"]}]}),
         ("依赖自身", _fanout_plan_dict() | {"subtasks": [
             {"id": "T1", "role": "writer", "description": "x", "depends_on": ["T1"]}]}),
-        ("max_parallel 必须为", _fanout_plan_dict(max_parallel=9)),
         ("max_calls 必须为非负整数",
          _fanout_plan_dict(budget={"max_calls": -1, "max_cost_usd": 0, "max_seconds": 0})),
         ("reason 必须为非空文本", _fanout_plan_dict(reason="  ")),
@@ -65,6 +64,39 @@ def test_contract_accepts_valid_plan_and_rejects_illegal_ones():
     for match_text, data in bad_cases:
         with pytest.raises(PlanValidationError):
             from_plan_dict(data)
+
+
+def test_contract_clamps_out_of_range_max_parallel():
+    """O-17 同族（T06 + Q4-02 冒烟共 3 次命中）：max_parallel 只是并发执行建议
+    （执行器用侧还会按任务数钳制），超范围/非整数/布尔值应钳入 1~3 而非拒绝
+    整个计划——此前模型输出超范围值导致 2/2 选型校验失败白烧降级 fixed。"""
+    assert from_plan_dict(_fanout_plan_dict(max_parallel=9)).max_parallel == 3
+    assert from_plan_dict(_fanout_plan_dict(max_parallel="2")).max_parallel == 2
+    assert from_plan_dict(_fanout_plan_dict(max_parallel=0)).max_parallel == 1
+    assert from_plan_dict(_fanout_plan_dict(max_parallel=True)).max_parallel == 1
+
+
+def test_run_accepts_orchestrator_shared_source_files(tmp_path):
+    """O-17 冒烟实录：编排器在根任务目录写共享来源库（D3-05 的 shared_sources/
+    source_library.json）后，fanout 成稿复用根 job_id 运行曾被防重复检查误判为
+    "目录已存在且含执行产物"而拒绝——白名单必须放行编排器写入的条目。"""
+    import json as _json
+    from src.application.request import TaskRequest
+    from src.application.research import ResearchApplication
+    from tests._s4_pipeline_brain import S4Brain
+
+    job_id = "job_" + "c" * 32
+    d = tmp_path / "jobs" / job_id
+    d.mkdir(parents=True)
+    (d / "orchestration.json").write_text("{}", encoding="utf-8")
+    (d / "shared_sources").mkdir()
+    (d / "source_library.json").write_text(_json.dumps({"sources": []}),
+                                           encoding="utf-8")
+    request = TaskRequest("整理要点", flow="research",
+                          texts=("试点40人，满意率75%[来源甲]。\n",))
+    outcome = ResearchApplication(request, llm=S4Brain(),
+                                  workspace_root=tmp_path).run(job_id=job_id)
+    assert outcome.draft_level in ("accepted", "draft")
 
 
 def test_first_version_mode_catalog_is_filtered():

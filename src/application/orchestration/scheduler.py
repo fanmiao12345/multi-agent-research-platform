@@ -70,6 +70,7 @@ _SYSTEM_PROMPT = f"""你是研究任务的调度智能体：分析主题，选�
 - 不得添加示例之外的字段（如 acceptance_criteria、final_deliverable）；
 - mode/fallback_mode 必须按判据从可选模式里独立选择，不要照抄示例里的 fixed；
 - subtasks 1~12 个；每项必须含 id/role/description；depends_on 只能引用已定义的 id，不得自依赖或循环；
+- max_parallel 必须为 1~3 的整数（fanout/manager_worker/dynamic_team/debate 建议 ≥2，其余为 1）；
 - role 只能取 researcher/organizer/writer/editor/agent；
 - budget 照抄输入给出的预算上限；expected 为预计 calls/cost_usd/seconds；
 - 任务给出的必需章节必须被至少一个子任务的 covers_sections 覆盖；

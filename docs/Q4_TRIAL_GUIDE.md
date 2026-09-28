@@ -31,15 +31,19 @@
 ### ② 或者用 CLI（适合脚本习惯）
 
 ```powershell
-# 研究写作类（允许联网搜索）
+# 研究写作类（允许联网搜索）。--workspace 建议始终显式传：缺省时 fanout 编排的
+# 共享来源/根记录会落到默认工作区，排查时容易对不上目录（O-17 教训）
 .venv\Scripts\python -m src.interfaces.cli "把这三份周报整理成一份月度综述" ^
-  --mode real --flow research --allow-network --import-file 周报1.txt --import-file 周报2.txt
+  --mode real --flow research --allow-network --workspace workspaces ^
+  --import-file 周报1.txt --import-file 周报2.txt
 
 # 简单问答/计算/单点处理
 .venv\Scripts\python -m src.interfaces.cli "27*43 等于多少" --mode real
 
-# 基于原稿改稿
-.venv\Scripts\python -m src.interfaces.cli "把报告压缩到180字以内" --mode real --revise-job <上次job_id>
+# 基于原稿改稿：--revise-job 指向源任务的实际 job_id，改稿指令必须放在
+# --revise-text（第一个位置参数会被当作新任务而非改稿指令）
+.venv\Scripts\python -m src.interfaces.cli --mode real --workspace workspaces ^
+  --revise-job <上次job_id> --revise-text "把报告压缩到180字以内"
 ```
 
 不加 `--max-cost/--max-seconds` 也可以：出厂默认已落定（$0.15 / 600s）。
