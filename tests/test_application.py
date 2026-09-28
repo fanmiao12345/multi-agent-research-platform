@@ -119,6 +119,23 @@ def test_output_limit_and_elapsed_time_stop(tmp_path):
         model_call(MockLLM(), [])
 
 
+def test_time_budget_ignores_system_sleep_gap(tmp_path):
+    """O-18：系统休眠造成的时钟大跳跃不计入 max_seconds（T10 实录：有效模型时长约 29s、
+    墙钟 elapsed=13970s 被 time_limit 误杀；T17 挂 17.6h 后调用失败）。
+    单次模型调用受 timeout ≤ max_seconds 约束，超过 max_seconds+余量 的时钟间隔
+    只可能是休眠/挂起，整段剔除；正常流逝照常累计、超限仍然照常截停。"""
+    now = [0.0]
+    ledger = JobLedger(tmp_path / "sleep", TaskRequest("test", max_seconds=600),
+                       clock=lambda: now[0])
+    now[0] = 29.0
+    ledger.check()                    # 有效工作 29s：正常通过
+    now[0] = 29.0 + 13941.0           # 休眠约 3.9h 后唤醒（T10 场景）
+    ledger.check()                    # 修复后：跳跃段剔除，不得触发 time_limit
+    now[0] += 580.0                   # 真实工作再流逝 580s：累计 609 ≥ 600
+    with pytest.raises(BudgetStop, match="time_limit"):
+        ledger.check()
+
+
 def test_parallel_stages_inherit_one_root_and_serialize_budget(tmp_path):
     from src.orchestration.fanout import run_fanout
     ledger = JobLedger(tmp_path / "parallel", TaskRequest("test", mode="real", max_calls=1))

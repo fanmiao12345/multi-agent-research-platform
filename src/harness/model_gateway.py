@@ -50,7 +50,14 @@ class JobLedger:
         directory.mkdir(parents=True, exist_ok=True)
         self.request = request
         self.clock = clock
-        self.started = clock()
+        # O-18：机器休眠/挂起时单调时钟照走，恢复后一次 check 即被 time_limit 误杀
+        # （T10：有效模型时长约 29s、墙钟 elapsed=13970s）。单次模型调用受
+        # timeout ≤ max_seconds 约束，超过 max_seconds+余量 的时钟间隔只可能是
+        # 休眠/挂起——整段剔除，正常流逝照常累计。
+        self._sleep_gap = max(float(request.max_seconds) + 60.0, 120.0)
+        self._last_raw = clock()
+        self._elapsed = 0.0
+        self.started = self._clock()
         # B2在同一根任务内串行发起模型请求，避免费用/Token预留竞争。
         self.lock = threading.RLock()
         # D2-01：同一 job 目录的多阶段账本续接——调度、链、工具阶段的调用
@@ -79,6 +86,16 @@ class JobLedger:
     def job_id(self):
         return self.directory.name
 
+    def _clock(self):
+        """唤醒感知的预算时钟：相邻两次读数的间隔超过 sleep_gap 即视为休眠段，
+        整段剔除；其余照常累计。返回修正后的累计运行秒数（原点=账本创建）。"""
+        now = self.clock()
+        delta = now - self._last_raw
+        self._last_raw = now
+        if delta <= self._sleep_gap:
+            self._elapsed += delta
+        return self._elapsed
+
     def _model_calls(self):
         """参与调用数/Token/未知统计的条目（child_run 汇总与 search 记账不计调用次数）。"""
         return [c for c in self.calls if c.get("kind") not in ("child_run", "search")]
@@ -98,7 +115,7 @@ class JobLedger:
                 "reservations": self.reservations,
                 "estimated_cost_usd": None if uncertain else known,
                 "unknown_usage_calls": uncertain, "price_version": PRICE_VERSION,
-                "elapsed_seconds": round(self.clock() - self.started, 4),
+                "elapsed_seconds": round(self._clock() - self.started, 4),
                 "limits": {"max_calls": self.request.max_calls,
                            "max_output_tokens": self.request.max_output_tokens,
                            "max_seconds": self.request.max_seconds, "max_cost": self.max_cost},
@@ -222,7 +239,7 @@ class JobLedger:
         reason = self.stop_reason
         if self.closed:
             reason = reason or "job_closed"
-        elif self.clock() - self.started >= self.request.max_seconds:
+        elif self._clock() - self.started >= self.request.max_seconds:
             reason = reason or "time_limit"
         elif new_call and len(model_calls) >= self.request.max_calls:
             reason = reason or "call_limit"
@@ -258,12 +275,12 @@ class JobLedger:
                      "usage_complete": False, "estimated_cost_usd": None}
             self.calls.append(entry)
             self.write()  # 失败时不发请求；进程中断时保留未确定的调用意图。
-            started = self.clock()
+            started = self._clock()
             try:
                 if hasattr(llm, "chat_limited"):
                     remaining = self.request.max_output_tokens - self.summary()["output_tokens"]
                     options = dict(messages=messages, tools=tools, max_tokens=remaining,
-                        timeout=max(0.001, self.request.max_seconds - (self.clock() - self.started)))
+                        timeout=max(0.001, self.request.max_seconds - (self._clock() - self.started)))
                     # Q4-D1：适配器不支持该参数时静默降级（只多花 token，不影响正确性）；
                     # 用签名检查而非 try/TypeError，避免吞掉适配器内部的类型错误。
                     if disable_thinking and _accepts_disable_thinking(llm.chat_limited):
@@ -290,7 +307,7 @@ class JobLedger:
                     self.stop_reason = "call_failed_usage_unknown"
                 raise
             finally:
-                entry["elapsed_seconds"] = round(self.clock() - started, 4)
+                entry["elapsed_seconds"] = round(self._clock() - started, 4)
                 self.write()
 
     def finish(self, status):
