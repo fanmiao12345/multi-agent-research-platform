@@ -341,21 +341,80 @@ def run_research_pipeline(*, llm, job_dir: Path, store, goal: str,
                 requirements_block=requirements_block)
             artifact = artifacts.save("analysis", analysis,
                                       producer="pipeline-analysis")
-            program = program_checks(analysis, evidence_ids, sections,
-                                     requirements=requirements)
-            errors = [issue for issue in program if issue.severity == "error"]
+            # O-19b：短交付此前无审校层（T08/T11 实录：写作完直接判 accepted，
+            # 改稿指令满足性与冲突误判无人复核）。补双层审校 + 至多一轮修订，
+            # 与报告链同口径：无 error 且模型 verdict=accepted 才交付 accepted。
+            evidence_index = "\n".join(
+                f"- {item['evidence_id']} {item.get('fact', '')}"
+                f"（来源 {source_labels.get(item.get('source_id') or '', '该来源')}）"
+                for item in evidence_items)
+            verdict = "needs_revision"
+            final_issues: list = []
+            review_unavailable = ""
+            for round_index in range(2):
+                program = program_checks(analysis, evidence_ids, sections,
+                                         requirements=requirements)
+                try:
+                    model_issues, verdict = model_review(llm, goal, analysis,
+                                                         evidence_index, sections,
+                                                         requirements_block=requirements_block)
+                except StageError as e:
+                    # O-13 同型：审校不可用时保留已写好的分析稿，降级交付不丢稿
+                    if e.stage != "review":
+                        raise
+                    review_unavailable = str(e)
+                    final_issues = list(program)
+                    record_stage("review", "reviewer_unavailable",
+                                 issues=[i.as_dict() for i in program],
+                                 message=f"审校不可用：{review_unavailable[:120]}")
+                    break
+                issues = program + model_issues
+                final_issues = issues
+                review_artifact = artifacts.save(
+                    "review", json.dumps(
+                        {"schema_version": 1, "delivery": "analysis",
+                         "round": round_index + 1, "verdict": verdict,
+                         "issues": [i.as_dict() for i in issues]},
+                        ensure_ascii=False, indent=1),
+                    ext="json", producer="pipeline-review")
+                errors = [i for i in issues if i.severity == "error"]
+                if not errors and verdict == "accepted":
+                    break
+                if round_index >= 1:
+                    record_stage("review", "needs_revision",
+                                 [review_artifact["artifact_id"]], issues=issues,
+                                 message="分析稿审校未通过，按草稿交付")
+                    break
+                progress("delivery", "按审校意见修订分析稿")
+                analysis = run_draft_stage(
+                    llm, goal, sections, "分析", pack.as_dict(),
+                    previous_report=analysis,
+                    issues_block=format_issues(issues),
+                    requirements_block=requirements_block)
+                artifact = artifacts.save("analysis", analysis,
+                                          producer="pipeline-analysis",
+                                          parent_version=_version_of(
+                                              result.final_artifact_id))
+            errors = [i for i in final_issues if i.severity == "error"]
+            accepted = (not review_unavailable and not errors
+                        and verdict == "accepted")
             result.final_artifact_id = artifact["artifact_id"]
             result.final_text = analysis
             result.hard_checks = hard_requirement_stats(analysis, requirements)
             result.total_citations = len(collect_citations(analysis))
             result.unresolved_citations = len(
                 {c for c in collect_citations(analysis) if c not in evidence_ids})
-            result.draft_level = "accepted" if not errors else "draft"
-            result.termination_reason = "success" if not errors else "incomplete"
-            result.message = ("分析交付完成" if not errors else
-                              "已交付待完善分析，仍有引用或覆盖问题")
-            record_stage("delivery", "completed" if not errors else "needs_revision",
-                         [artifact["artifact_id"]], issues=[i.as_dict() for i in program],
+            result.draft_level = "accepted" if accepted else "draft"
+            result.termination_reason = "success" if accepted else "incomplete"
+            if review_unavailable:
+                result.message = ("审校不可用（模型层输出无法解析）：保留已写好的分析稿，"
+                                  "仅按程序层结论交付，不视为验收成功")
+            elif accepted:
+                result.message = "分析交付完成（含审校复核）"
+            else:
+                result.message = "已交付待完善分析，仍有引用、覆盖或审校未通过问题"
+            record_stage("delivery", "completed" if accepted else "needs_revision",
+                         [artifact["artifact_id"]], issues=[i.as_dict() for i in final_issues],
                          message=result.message)
             snapshot()
             return result

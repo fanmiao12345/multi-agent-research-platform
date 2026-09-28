@@ -64,6 +64,48 @@ def test_follow_up_revision_missing_report_or_job(tmp_path):
                            instruction="改", llm=S4Brain())
 
 
+def _seed_analysis_job(tmp_path):
+    """T13/T11 型交付：任务产物为 analysis 类（无 report）。"""
+    request = TaskRequest("整理要点分析", flow="research", delivery_kind="analysis",
+                          texts=("试点40人，满意率75%[来源甲]。\n",))
+    result = ResearchApplication(request, llm=S4Brain(), workspace_root=tmp_path).run()
+    assert result.draft_level == "accepted"
+    job = tmp_path / "jobs" / result.root_job_id
+    from src.harness.storage.artifacts import ArtifactStore
+    kinds = [a["kind"] for a in ArtifactStore(job).list()]
+    assert "analysis" in kinds and "report" not in kinds
+    return result.root_job_id
+
+
+def test_follow_up_revision_accepts_analysis_delivery(tmp_path):
+    """O-19/T14/T19 回归：改稿入口此前只接受 report.* 产物，analysis 类交付被
+    SourceImportError('没有报告产物') 直接拒绝——改稿链对 analysis 交付完全不可用，
+    T19（D7 最终合并）因此无法执行。修复后 analysis 正文可作为原稿。"""
+    job_id = _seed_analysis_job(tmp_path)
+    outcome = follow_up_revision(workspace_root=tmp_path, job_id=job_id,
+                                 instruction="把分析压缩成3条要点",
+                                 llm=S4Brain())
+    assert outcome.draft_level == "accepted"
+    assert getattr(outcome, "revises_job", None) == job_id
+
+
+def test_analysis_delivery_runs_review_layer(tmp_path):
+    """O-19b/T08/T11 回归：短交付（analysis）此前无审校层——写作完直接判 accepted
+    （T08 实录：evidence→material→delivery 三阶段、revised_rounds=0、hard_checks 全 0、
+    改稿指令未满足仍 accepted）。修复后 analysis 交付也过模型审校并落盘审校产物。"""
+    from src.harness.storage.artifacts import ArtifactStore
+    brain = S4Brain()
+    request = TaskRequest("研判资料并给出结论", flow="research",
+                          delivery_kind="analysis",
+                          texts=("试点40人，满意率75%[来源甲]。\n",))
+    result = ResearchApplication(request, llm=brain, workspace_root=tmp_path).run()
+    assert result.draft_level == "accepted"
+    assert "review" in brain.purposes            # 审校层确实运行
+    job = tmp_path / "jobs" / result.root_job_id
+    kinds = [a["kind"] for a in ArtifactStore(job).list()]
+    assert "review" in kinds                      # 审校产物落盘可查
+
+
 def test_cli_revise_flag_semantics(tmp_path):
     job_id = _seed_report_job(tmp_path)
     proc = subprocess.run(

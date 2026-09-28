@@ -64,11 +64,16 @@ def _revision_payload(workspaces: Path, job_id: str, instruction: str) -> dict:
     if not texts:
         raise ValueError("原任务没有可用来源全文，无法追问改稿")
     try:
-        reports = [a for a in ArtifactStore(job_dir).list() if a.get("kind") == "report"]
-        if not reports:
-            raise ValueError("原任务没有报告产物，无法作为改稿原稿")
-        latest = sorted(reports, key=lambda a: a.get("version") or 0)[-1]
+        # O-19：与 CLI 改稿入口同口径——analysis 类正文交付也可作为原稿，report 优先
+        versions = [a for a in ArtifactStore(job_dir).list()
+                    if a.get("kind") in ("report", "analysis")]
+        if not versions:
+            raise ValueError("原任务没有报告/分析产物，无法作为改稿原稿")
+        latest = sorted(versions, key=lambda a: (a.get("kind") != "report",
+                                                 a.get("version") or 0))[-1]
         base_draft = ArtifactStore(job_dir).read(latest["artifact_id"]).get("text", "")
+    except ValueError:
+        raise
     except Exception as e:
         raise ValueError(f"读取原任务报告失败：{type(e).__name__}") from e
     snapshot = {}

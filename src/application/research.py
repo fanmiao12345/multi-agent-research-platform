@@ -55,9 +55,9 @@ def follow_up_revision(*, workspace_root, job_id: str, instruction: str,
              for text in [store.full_text(source["source_id"])] if text]
     if not texts:
         raise SourceImportError(f"任务 {job_id} 没有可用来源全文，无法追问改稿")
-    artifacts = _latest_report_text(origin)
+    artifacts = _latest_report_text(origin, kinds=("report", "analysis"))
     if artifacts is None:
-        raise SourceImportError(f"任务 {job_id} 没有报告产物，无法作为原稿")
+        raise SourceImportError(f"任务 {job_id} 没有报告/分析产物，无法作为原稿")
     base_draft, base_kind = artifacts
     snapshot = {}
     request_path = origin / "request.json"
@@ -103,9 +103,9 @@ def revise_with_source_update(*, workspace_root, job_id: str, source_id: str,
             texts.append(text)
     if not texts:
         raise SourceImportError("撤回来源后已没有可用资料，拒绝继续改稿")
-    latest = _latest_report_text(origin)
+    latest = _latest_report_text(origin, kinds=("report", "analysis"))
     if latest is None:
-        raise SourceImportError(f"任务 {job_id} 没有报告产物，无法基于来源更新改稿")
+        raise SourceImportError(f"任务 {job_id} 没有报告/分析产物，无法基于来源更新改稿")
     base_draft, _ = latest
     snapshot = {}
     request_path = origin / "request.json"
@@ -140,17 +140,23 @@ def revise_with_source_update(*, workspace_root, job_id: str, source_id: str,
     setattr(outcome, "source_update", {"withdrawn": source_id, "reason": reason})
     return outcome
 
-def _latest_report_text(job_dir: Path):
-    """返回 (文本, artifact_id)；没有 report 产物返回 None。"""
+def _latest_report_text(job_dir: Path, kinds=("report",)):
+    """返回 (文本, artifact_id)；没有指定 kinds 的产物返回 None。
+
+    O-19：改稿原稿扩展到 analysis 类正文交付（T14/T19 实录：analysis 交付被入口
+    直接拒绝，改稿链对 analysis 交付完全不可用，D7 最终合并因此无法执行）。
+    多类共存时 report 优先；同类内取最新版本；collection 为素材目录类，不作原稿。
+    """
     from src.harness.storage.artifacts import ArtifactStore
     try:
         store = ArtifactStore(job_dir)
     except Exception:
         return None
-    versions = [a for a in store.list() if a.get("kind") == "report"]
+    versions = [a for a in store.list() if a.get("kind") in kinds]
     if not versions:
         return None
-    latest = sorted(versions, key=lambda a: a.get("version") or 0)[-1]
+    latest = sorted(versions, key=lambda a: (a.get("kind") != "report",
+                                             a.get("version") or 0))[-1]
     try:
         return store.read(latest["artifact_id"]).get("text", ""), latest["artifact_id"]
     except Exception:
