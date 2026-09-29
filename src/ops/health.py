@@ -24,8 +24,8 @@ def run_checks(workspace_root: str | Path | None = None,
     def add(name: str, ok: bool, detail: str = ""):
         checks.append({"name": name, "ok": ok, "detail": detail})
 
-    add("python 版本", sys.version_info >= (3, 10),
-        f"{sys.version.split()[0]}（项目开发于 3.14）")
+    add("python 版本", sys.version_info >= (3, 11),
+        f"{sys.version.split()[0]}（pyproject 要求 >=3.11；项目开发于 3.14）")
     env_file = PROJECT_ROOT / ".env"
     add("环境文件", env_file.exists() or bool(os.environ.get("MODEL_PROVIDER")),
         "存在 .env 或已注入环境变量（不读取其中密钥）" if (env_file.exists() or os.environ.get("MODEL_PROVIDER")) else "未发现 .env；真实模式将不可用")
@@ -36,6 +36,14 @@ def run_checks(workspace_root: str | Path | None = None,
             "；".join(report.get("errors", []))[:200] if not report.get("ready") else "ready（未连接验证）")
     except Exception as e:  # noqa: BLE001
         add("真实模式配置", False, f"{type(e).__name__}")
+    provider = (settings.search_provider or "").strip()
+    if not provider:
+        add("搜索配置", True, "SEARCH_PROVIDER 未配置——联网搜索明确禁用（研究任务仍可用指定链接/本地资料）")
+    elif provider in ("mock", "bing_scrape"):
+        add("搜索配置", True, f"SEARCH_PROVIDER={provider}（联网搜索可用；真实模式配合 --allow-network 生效）")
+    else:
+        add("搜索配置", False,
+            f"SEARCH_PROVIDER={provider} 尚未接入；可用值：mock、bing_scrape")
     workspaces = Path(root)
     try:
         workspaces.mkdir(parents=True, exist_ok=True)

@@ -1,6 +1,7 @@
 # 架构说明（architecture）
 
-> 更新说明（2026-09-11）：下文保留组件分层与设计背景，不能据此认为每项已接入用户主流程。完整应用接入目标见 [PROJECT_MASTER_PLAN.md](PROJECT_MASTER_PLAN.md)，状态见 [EXECUTION_STATUS.md](EXECUTION_STATUS.md)。当前只有初版 CLI fixed/fanout 编排，Web 仍直跑固定链；全部方式、根预算与原始证据交接在 D 阶段补齐，整体测试与性能优化在功能冻结后进行。
+> 更新说明（2026-09-11）：下文保留组件分层与设计背景，不能据此认为每项已接入用户主流程。完整应用接入目标见 [PROJECT_MASTER_PLAN.md](PROJECT_MASTER_PLAN.md)，状态见 [EXECUTION_STATUS.md](EXECUTION_STATUS.md)。
+> **状态补记（2026-09-29）**：上文"只有初版 CLI fixed/fanout 编排、Web 仍直跑固定链"已过时——六种协作方式均已接入统一根任务（D6-01～08），Web 工作台走同一提交入口与队列（D9，界面为 Research Console V3），项目主线已签收收官。分层图与数据流描述仍然有效。
 
 ## 分层
 

@@ -28,6 +28,8 @@
 | G14 MCP 与扩展接口 | MCP bootstrap/security/local server | 完成 | `test_mcp_bootstrap.py`、`docs/MCP_USAGE.md` |
 | G15 安装运维与可信评估 | ops health/verify/backup/restore、业务评测 | 完成 | `test_ops_s6.py`、`docs/INSTALL_AND_RECOVERY.md` |
 
+> **G13 冻结记录修正（2026-09-29，按主计划 §9/§11 要求）**：D9-03-b（导出保留交付等级与局限）属既定目标遗漏，2026-09-22 登记补做，已于 2026-09-28 随 P1 批次交付（三格式导出 + 等级/局限，提交 083c593，用户人工验收通过）。G13 的"完成"以本注记为准补全；补做前的导出确实只有正文。
+
 ## 冻结边界
 
 - 已实现：D0～D10 的开发功能最小接入与离线验证。

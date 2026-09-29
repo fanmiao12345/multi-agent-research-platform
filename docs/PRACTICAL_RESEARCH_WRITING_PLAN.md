@@ -2,7 +2,7 @@
 
 更新：2026-09-11。本文是场景专项说明，完整项目目标与唯一排期见 [PROJECT_MASTER_PLAN.md](PROJECT_MASTER_PLAN.md)。
 
-旧版固定写作主线与逐批优化安排已替换；原文保存在 [历史计划](history/PRACTICAL_RESEARCH_WRITING_PLAN_2026-09-10.md)，仅用于追溯，不再指挥当前开发。
+旧版固定写作主线与逐批优化安排已替换；原稿（history/PRACTICAL_RESEARCH_WRITING_PLAN_2026-09-10.md）已于 2026-09-29 归档删除，git 历史可查，仅用于追溯，不再指挥当前开发。
 
 ## 1. 场景在整体项目中的位置
 

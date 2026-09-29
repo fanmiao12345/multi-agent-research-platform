@@ -8,14 +8,15 @@
 ## 0. 开工前一次性检查（第 1 天开始前做一遍）
 
 ```powershell
-# ① 配置就绪（应显示 model/search 已配置；不要把 Key 发给任何人）
+# ① 配置就绪（应显示真实模式配置 ready、搜索配置 bing_scrape 可用；不要把 Key 发给任何人）
 .venv\Scripts\python -m src.ops.health
-# ② 备份当前工作区（可选但推荐）
-.venv\Scripts\python -m src.ops.backup
+# ② 备份当前工作区（可选但推荐；-Out 指定备份目录）
+.venv\Scripts\python -m src.ops.backup --workspace workspaces --out .tmp\backup
 ```
 
 - `.env` 已配置（MODEL_API_KEY / SEARCH_PROVIDER=bing_scrape）✅
-- 全量回归 617 项 0 失败 ✅（Q3-03 已验证）
+- 全量回归 636 项 0 失败 ✅（2026-09-28 P1 批次后基线；Q3-03 时为 617 项）
+- 口径说明：本指南原按"用户本人真实任务"编写；Q4 实际执行按 2026-09-22 用户指示改为"任务由 AI 生成执行、材料由 AI 抓取"，签收已按该口径声明（见 Q4_TRIAL_PLAN §0），保留本节原口径供后续真实个人试用参照。
 
 ## 1. 每天的操作流程
 

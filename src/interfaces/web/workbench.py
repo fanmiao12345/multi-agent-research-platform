@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-interfaces/web/workbench.py —— Web Agent Workbench（DEV_PLAN K1-K9 / 111-119）
+interfaces/web/workbench.py —— Web 工作台（Research Console V3，DEV_PLAN K1-K9 / 111-119）
 
-纯标准库（http.server）实现，把新 Harness 的运行产物（workspaces/run.json +
-trace.jsonl + usage.json + plan.json）暴露成 9 个面板的 API，并托管一页最小
-前端（Dashboard/Timeline/Streaming/Tool Cards/Plan/Workspace/Trace/HITL/Eval）。
+纯标准库（http.server）实现：把运行产物（workspaces/run.json + trace.jsonl +
+usage.json + plan.json）与研究任务（SQLite 队列/阶段/证据/版本/导出）暴露成
+REST API，并托管内嵌单页前端 INDEX_HTML（hash 路由五视图：#/home 首页、
+#/tasks 任务中心、#/job/<id> 任务详情、#/observe 运行观测、#/settings 配置与评测）。
+界面源设计与回写脚本见 multi-agent-research-console-v3/（2026-09-22 合入 V3）。
 
 启动：python -m src.interfaces.web.workbench [--port 8765]
 页面：http://127.0.0.1:8765/

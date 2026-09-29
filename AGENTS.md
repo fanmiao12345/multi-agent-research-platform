@@ -10,11 +10,12 @@
 
 ## 第一条：一切改动都属于「这个项目」
 
-- 用户说「给这个项目加 / 改 / 配 / 写一个…」时，一律指 **本目录（agent-mvp）** 内的内容：
-  `agent.py`、`llm.py`、`tools.py`、`config.py`、`config.ini`、`skills/`、`questions.txt`、
-  `README.md` 以及后续新增的任何文件。
+- 用户说「给这个项目加 / 改 / 配 / 写一个…」时，一律指 **本目录（agent-mvp）** 内的内容（2026-09-29 更新为当前布局）：
+  `src/`（主代码：harness/orchestration/application/interfaces/mcp/ops/eval）、`config/`、`.env.example`、
+  `skills/`、`knowledge/`、`scripts/`、`tests/`、`docs/`、`README.md` 以及后续新增的任何文件。
+  旧版零依赖实现（agent.py、llm.py、tools.py 等）已整体迁入 `legacy/` 仅作保留，不再在其上开发。
 - 用户后续要求添加的功能、技能、配置、文档，默认都保存到 `agent-mvp/` 下面，
-  并尽量保持「零第三方依赖、结构简单、注释教学化」的现有风格。
+  并尽量保持「结构简单、注释教学化」的现有风格（主代码经 LangGraph 栈，锁定的第三方依赖见 requirements.lock.txt）。
 
 ## 第二条：不要动「本体」
 

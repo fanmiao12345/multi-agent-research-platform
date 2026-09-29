@@ -1,5 +1,5 @@
 # 最终实验报告（Final Report）
-- 生成：2026-09-09T17:18:56｜大脑：mock-rule-v1（全离线，无 token 消耗）
+- 生成：2026-09-29T09:58:18｜大脑：mock-rule-v1（全离线，无 token 消耗）
 
 ## 1. 组件指标
 - Agent Benchmark：executed 5，成功率 100.0%，Tool Selection 100.0%，Tool Argument 100.0%
@@ -8,19 +8,19 @@
 ## 2. Orchestration 策略对比（同一任务集）
 | 策略 | 成功 | 平均 worker 调用 | 平均产出长度 |
 |---|---|---|---|
-| debate | 2/2 | 2.0 | 252 |
-| dynamic_team | 2/2 | 3.0 | 291 |
-| fanout | 2/2 | 3.0 | 256 |
-| manager_worker | 2/2 | 3.0 | 272 |
-| pipeline | 2/2 | 4.0 | 71 |
-| single | 2/2 | 1.0 | 71 |
+| debate | 0/2 | -1.0 | 0 |
+| dynamic_team | 2/2 | 3.0 | 234 |
+| fanout | 0/2 | -1.0 | 0 |
+| manager_worker | 2/2 | 3.0 | 215 |
+| pipeline | 2/2 | 4.0 | 89 |
+| single | 2/2 | 1.0 | 50 |
 
 ## 3. Model/Budget 三档策略（I 阶段验收）
 | mode | profile | iterations | final_len |
 |---|---|---|---|
-| low_budget | cheap | 2 | 71 |
-| balanced | balanced | 2 | 71 |
-| high_quality | balanced | 2 | 71 |
+| low_budget | cheap | 1 | 34 |
+| balanced | balanced | 1 | 34 |
+| high_quality | balanced | 1 | 34 |
 
 ## 4. Ablation 问答（文档第 16 节）
 - **No Planning vs Planning**：Planning 侧落地（M3）：5 步任务可自动成图并差异式重规划救回失败（实验：T3 失败→replan→3/3 完成）。Mock 下质量差异需真实模型补跑。

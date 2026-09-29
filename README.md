@@ -74,7 +74,7 @@ copy .env.example .env          # 填 MODEL_API_KEY / MODEL_PROVIDER 等
 .venv\Scripts\python -m eval.benchmark_model
 .venv\Scripts\python -m eval.final_report           # 汇总 + TECH_REPORT
 
-# 6) Web Agent Workbench（9 面板：Dashboard/Timeline/ToolCards/Plan/…）
+# 6) Web 工作台（Research Console V3：首页/任务中心/任务详情/运行观测/配置与评测）
 .venv\Scripts\python -m src.interfaces.web.workbench --port 8765
 #   打开 http://127.0.0.1:8765/
 ```
@@ -82,26 +82,26 @@ copy .env.example .env          # 填 MODEL_API_KEY / MODEL_PROVIDER 等
 Web默认选择 **Mock离线演示**，可切换到真实模型。配置区显示实际模型并阻止无效配置；
 静态检查通过不代表已经验证网络、认证或工具能力。修改`.env`后需要重启服务。
 当前内置工具仅有计算和时间；B3/B4 资料导入、B5 研究写作链、S4 状态库/阶段恢复、
-**S5 研究任务工作台**（队列/进度/停止/恢复/证据引用对照/版本/导出/写接口安全）均已接入；
-agent 任务仍直跑（页面入口随 S5 已提供）。
+研究任务工作台（队列/进度/停止/恢复/证据引用对照/版本/导出/写接口安全）均已接入；
+agent 任务仍直跑（页面入口已提供）。
 
 B2已接入统一任务入口与根账本。Web可设置调用次数、输出Token、运行秒数和费用阈值，
 最终回答下方显示整项任务用量。出厂默认预算（研究链口径）：单任务 40 次调用、
 65536 输出 Token、600 秒、$0.15 费用护栏；`--max-calls 0`可验证零调用停止。
 时间在调用边界检查，不能强杀后台工具；费用不是账单硬封顶。模型SDK隐藏重试已关闭。
-详细用法、数据位置与限制见`docs/B2_DELIVERY.md`。
+详细用法、数据位置与限制见`docs/EXECUTION_STATUS.md`历史分区（各批交付说明已归档，记录以[实施日志](docs/IMPLEMENTATION_LOG.md)为准）。
 
 ```powershell
 # B3/B4：带资料运行（粘贴文本 / TXT/Markdown 文件只读 / 用户指定网页链接）
 .venv\Scripts\python -m src.interfaces.cli "整理资料" --import-file D:\资料\笔记.md --import-text "补充粘贴。" --import-url https://example.com/article
 # 资料登记在 workspaces\jobs\job_<id>\sources.json；全文在 sources\，段落定位在 <id>.meta.json
-# Web 运行带资料的任务后，⑳面板可查看来源解析状态、去重结果与完整产物
+# Web 运行带资料的任务后，任务详情页「资料与产物」区可查看来源解析状态、去重结果与完整产物
 ```
 资料分类：ok/partial/duplicate/empty/unsupported/too_large/read_failed 全部可查；
 单任务≤20来源、单来源≤2MB、单页下载≤10MB，超限明确拒绝不静默截断；同文转载自动去重。
 网页抓取默认安全策略：仅 http(s)、拒绝私网/回环/链路本地地址、重定向逐跳复检；
 配置 SEARCH_PROVIDER=bing_scrape 后，真实模式配合 --allow-network 会先搜索候选再读取正文；未配置时明确禁用（不会假装搜过）。
-完整说明见`docs/B3_DELIVERY.md`与`docs/B4_DELIVERY.md`。
+完整说明见`docs/EXECUTION_STATUS.md`历史分区与[实施日志](docs/IMPLEMENTATION_LOG.md)。
 
 ```powershell
 # B5：研究写作链（带可核查引用的报告；默认Mock下请在真实模式前使用真实模型或桩评测）
@@ -113,7 +113,7 @@ B2已接入统一任务入口与根账本。Web可设置调用次数、输出Tok
 ```
 链的每条断言都带 [E-编号]，可在 evidence.json 找到来源与原文定位；审校先由程序检查
 引用/章节/覆盖，再由模型检查支持关系；最多修订 2 轮并保留全部版本。
-说明与限制见`docs/B5_DELIVERY.md`。
+说明与限制见`docs/EXECUTION_STATUS.md`历史分区与[实施日志](docs/IMPLEMENTATION_LOG.md)。
 
 ```powershell
 # S6-05 对齐：任务硬约束（必需章节/禁止表述/关键事实）由链内程序层复验
@@ -123,7 +123,7 @@ B2已接入统一任务入口与根账本。Web可设置调用次数、输出Tok
 # 必需章节缺失或禁止表述出现 = 阻塞问题（不能判 accepted，交付 draft）；
 # 关键事实未逐字覆盖记 warn（语义覆盖由评测/人工判定）。
 # 硬要求会注入提纲/初稿/审校提示词，模型提纲缺必需章节时由程序补入同名章节；
-# 复验读数写入 pipeline.json 的 hard_checks，Web ㉑卡与评测报告都会展示。
+# 复验读数写入 pipeline.json 的 hard_checks，Web 任务详情页与评测报告都会展示。
 ```
 Web 表单同一位置可填写这三个字段（每行一条）。
 
@@ -133,14 +133,14 @@ Web 表单同一位置可填写这三个字段（每行一条）。
 # 状态库：workspaces/state.sqlite（任务/会话/审批/操作账本）
 # 阶段检查点：workspaces/jobs/<job_id>/stage_*.json —— 产物先落盘、状态后提交
 ```
-S4 说明与限制见`docs/S4_DELIVERY.md`。
+S4 说明与限制见`docs/EXECUTION_STATUS.md`历史分区与[实施日志](docs/IMPLEMENTATION_LOG.md)。
 
 ```powershell
 # S5：页面研究任务（Mock 离线演示不能产出链式结构化内容，会明确失败；真实模式需 .env）
 .venv\Scripts\python -m src.interfaces.web.workbench --port 8765
-# → 表单流程选“研究写作链”→ ㉑研究任务卡跟踪进度/停止/恢复，正文 [E-编号] 引用点开证据原文定位
+# → 表单流程选“研究写作链”→ 任务详情页跟踪进度/停止/恢复，正文 [E-编号] 引用点开证据原文定位
 ```
-S5 说明与限制见`docs/S5_DELIVERY.md`。
+S5 说明与限制见`docs/EXECUTION_STATUS.md`历史分区与[实施日志](docs/IMPLEMENTATION_LOG.md)。
 
 ```powershell
 # S6：业务评测（真实模式需 .env；缺Key整批 not_executed，不拿 Mock 顶替）
@@ -158,7 +158,7 @@ S5 说明与限制见`docs/S5_DELIVERY.md`。
 .venv\Scripts\python -m src.ops.verify
 .venv\Scripts\python -m pip install -r requirements.lock.txt
 ```
-S6 说明与限制见`docs/S6_DELIVERY.md`。
+S6 说明与限制见`docs/EXECUTION_STATUS.md`历史分区与[实施日志](docs/IMPLEMENTATION_LOG.md)。
 
 ```powershell
 # 只检查配置，不发送模型请求
@@ -191,6 +191,7 @@ S6 说明与限制见`docs/S6_DELIVERY.md`。
 | `knowledge/` `skills/` | 知识库与技能（数据驱动、热插拔） |
 | `workspaces/` | 每次运行的 run.json/trace.jsonl/usage.json/plan.json |
 | `docs/` | 技术报告与架构文档 |
+| `multi-agent-research-console-v3/` | V3 界面设计源（UI 规格、HTML 设计稿、回写脚本），已合入 workbench |
 | `legacy/` | 旧零依赖实现（保留） |
 
 ## Demo 配方（组件演示）
@@ -234,13 +235,6 @@ S6 说明与限制见`docs/S6_DELIVERY.md`。
 - `docs/PRACTICAL_RESEARCH_WRITING_PLAN.md`：**首个落地场景说明**——资料整理/研究写作的输入、交付与 D/Q 对应关系，不代替整体目标。
 - `docs/IMPLEMENTATION_TRACKER.md`：**完整实施清单**——72项计划的当前状态、阶段顺序和未完成点。
 - `docs/IMPLEMENTATION_LOG.md`：**逐步实施日志**——每完成一步追加改动、验证证据、限制与下一步。
-- `docs/B2_DELIVERY.md`：**B2交付说明**——统一入口、根账本、限制、用法与兼容性。
-- `docs/B3_DELIVERY.md`：**B3交付说明**——本地资料导入、来源登记/去重/定位、受控产物存储、路径边界。
-- `docs/B4_DELIVERY.md`：**B4交付说明**——URL抓取与正文提取、网络安全边界、搜索占位网关。
-- `docs/B5_DELIVERY.md`：**B5交付说明**——研究写作链（证据→素材→提纲→初稿→双层审校→有限修订）、引用可定位与草稿分级。
-- `docs/S4_DELIVERY.md`：**S4交付说明**——SQLite状态库/队列租约/审批/操作账本、两段取消与阶段恢复。
-- `docs/S5_DELIVERY.md`：**S5交付说明**——研究任务 Web 工作台（队列/进度/停止/恢复/引用对照/版本/导出/写接口安全）。
-- `docs/S6_DELIVERY.md`：**S6交付说明**——真实评测运行器/人工评分表/运维工具/试用模板（离线验收；真实执行待 Key）。
 - `docs/DYNAMIC_ORCHESTRATION_PLAN.md`：**完整编排接入设计**——六方式、嵌套派工、共享契约/预算/证据/恢复，功能完成后统一比较效果。
 - `docs/TRIAL_LOG_TEMPLATE.md`：**7 天个人试用日志模板**（S6-10，待真实执行）。
 - `docs/RESEARCH_WRITING_ACCEPTANCE.md`：**业务验收基线**——20个业务案例、10个故障案例、评分和模式边界；业务尚未执行。

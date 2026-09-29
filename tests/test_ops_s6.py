@@ -171,6 +171,25 @@ def test_health_checks_run(tmp_path):
     assert isinstance(result["ok"], bool)
 
 
+def test_health_reports_search_configuration(monkeypatch, tmp_path):
+    from src.ops.health import run_checks
+    from config.settings import Settings
+    monkeypatch.setenv("SEARCH_PROVIDER", "bing_scrape")
+    result = run_checks(tmp_path, Settings())
+    check = next(c for c in result["checks"] if c["name"] == "搜索配置")
+    assert check["ok"] and "bing_scrape" in check["detail"]
+
+    monkeypatch.setenv("SEARCH_PROVIDER", "not_a_provider")
+    result = run_checks(tmp_path, Settings())
+    check = next(c for c in result["checks"] if c["name"] == "搜索配置")
+    assert not check["ok"]
+
+    monkeypatch.setenv("SEARCH_PROVIDER", "")
+    result = run_checks(tmp_path, Settings())
+    check = next(c for c in result["checks"] if c["name"] == "搜索配置")
+    assert check["ok"] and "禁用" in check["detail"]
+
+
 def test_backup_restore_roundtrip(tmp_path):
     from src.ops.backup import backup_workspace
     from src.harness.state.db import StateDb, verify_backup

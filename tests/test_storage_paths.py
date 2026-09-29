@@ -43,9 +43,11 @@ def test_ensure_under_rejects_root_itself_and_sibling(tmp_path):
 def _make_junction(link: Path, target: Path):
     """Windows junction 不需要管理员权限；失败时返回 None。"""
     try:
+        # cmd 在中文 Windows 输出 GBK，显式容错解码，避免读取线程 UnicodeDecodeError
         proc = subprocess.run(
             ["cmd", "/c", "mklink", "/J", str(link), str(target)],
-            capture_output=True, text=True, timeout=10)
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=10)
     except Exception:
         return False
     return proc.returncode == 0

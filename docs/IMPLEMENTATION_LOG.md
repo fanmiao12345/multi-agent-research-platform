@@ -1,6 +1,6 @@
 # 实施日志
 
-本文件追加记录完成步骤；已有历史证据保留在EXECUTION_STATUS.md与B1_BASELINE.json。
+本文件追加记录完成步骤；已有历史证据保留在EXECUTION_STATUS.md（B1_BASELINE.json 已于 2026-09-29 归档删除，git 历史可查）。
 
 ## 2026-09-09 / P00：完整计划梳理
 
@@ -1490,3 +1490,14 @@ O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（�
   六项检查全 true。本步仅文档与签收记录，无代码改动。
 - **项目状态**：D0～D10 功能冻结 → Q1～Q3 关闭 → Q4 签收完成，**开发主线收官**。
   后续均为按用户优先级排期的增强项（P2/P3、O-21 实施、fanout 预算档位等），无阻塞主线。
+
+## 2026-09-29 / 收官清理批次：过时测试文档归档删除 + 全仓文档状态同步 + 文档-代码落差修复
+
+- **背景**：用户要求删除"无关紧要的测试文档"，检查仓库其他无用文件，随后按审查发现的问题清单收口。远端 `origin/master`（github.com/fanmiao12345/multi-agent-research-platform）与本地完全同步（0/0 分叉），本地清理即覆盖 GitHub 内容（待推送）。
+- **删除（git rm，git 历史可恢复）**：`docs/B1_BASELINE.json`、`docs/B2～B5_DELIVERY.md`、`docs/S4～S6_DELIVERY.md`（B/S 阶段 Mock 时代交付说明，内容已被本日志与 EXECUTION_STATUS 历史分区覆盖）、`docs/history/` 两份 2026-09-10 计划快照、`eval/reports/q4_trial/` 两个 0 字节空日志。其余扫描结论：无 .bak/.tmp/.DS_Store 等垃圾；中文文件名的 p1_manual_check/q3 复核证据、q4_trial 非空 err 日志保留（属签收批次证据）。
+- **悬挂引用清理**：README 7 处"见 B*_DELIVERY/S*_DELIVERY"改指 EXECUTION_STATUS 历史分区与本日志，文档地图移除 7 条对应条目；EXECUTION_STATUS 历史分区加归档说明（不重写历史条目）；TRACKER 历史区段加同类说明；本日志头部第 3 行同步。
+- **文档状态同步（以 EXECUTION_STATUS 为权威源）**：① TRACKER 头部"下一步 Q2-01/当前进入 Q1-02"的过期状态改为收官状态+后续优先序；Q 阶段表 Q2-01～Q4-03 九项由"待用户执行"改为最终结果；「新增范围」表 P1 各项（D9-03-b、EX-02/03/04/05/07/10、TP-01/02/06、UX-01/02、SR-01～06、SR-不写入报告）改"已实施（2026-09-28）"，P2/P3 保持待排期。② 主计划头部加收官补记、§10"下一步固定为 D1-01"加补记、§11 五行状态更新（D9-03-b 标"已补回并交付"）。③ FEATURE_FREEZE 按 §11 要求补 G13 冻结记录修正注记（D9-03-b 已随 P1 交付）。④ architecture/DYNAMIC_ORCHESTRATION_PLAN/RESEARCH_WRITING_ACCEPTANCE 的"当前只有初版 fixed/fanout"等陈旧段落加状态补记；RESUME_PARITY_PLAN 修正自相矛盾三处（fastapi_app 命令删除、§六-3 与 O-15 现状对齐、85% 条收口）；Q4_TRIAL_GUIDE 修正备份命令（补 --workspace/--out）、测试数 617→636、补口径说明。
+- **Q3 带入限制销账（OPTIMIZATION_BACKLOG）**：O-01/O-02/O-03/O-04/O-06/O-10/O-12 状态收口；O-08 巨格（四轮追加拼接）折叠为终局定案+剩余开放项；**新增 O-25（引用谱系真实批次为 0，"另案"此前无排期，补登记待排期）**；O-07 明确"三次隔离复跑通过但未根治"并列为签收后待根治项；尾注功能缺口清单逐项标注现状（选型已完成/引用谱系→O-25/记忆管理页仍未做/真实 LLM 并行对照未做）；头部新增待办优先序（O-21 第一位）。
+- **文档-代码落差修复（代码改动）**：① `src/ops/health.py` 新增"搜索配置"检查项（未配置=明确禁用、bing_scrape/mock=可用、未知值=FAIL），python 版本门槛 (3,10)→(3,11) 对齐 pyproject；新增测试 `test_health_reports_search_configuration`（3 断言分支）。② `.env.example` 补 4 个已生效键：SEARCH_BLOCKED_DOMAINS、MCP_SERVERS（含本地 server 示例）、KNOWLEDGE_DIR、SKILLS_DIR（settings.py docstring 自此与实例文件一致）。③ README 与 `workbench.py` docstring 的"9 面板"旧 UI 描述更新为 Research Console V3 五视图，⑳/㉑ 旧面板编号引用改为任务详情页描述；README 目录速览补 multi-agent-research-console-v3 条目。④ `docs/SKILL_CATALOG.md` 修复表格断裂（9 行无表头），新增"工具可用性"节如实标注：默认入口仅注册 calculator/current_time，`fetch_page`/`web_search` 无注册工具实现、`workspace_search` 需 MCP 配置。⑤ `AGENTS.md` 第一条文件布局更新为当前 src/ 结构（旧 agent.py/llm.py 等注明已在 legacy/）。⑥ `multi-agent-research-console-v3/` 新增 README（目录用途、与 workbench 关系）。⑦ `tests/test_storage_paths.py` junction 辅助函数补 `encoding="utf-8", errors="replace"`——消除中文 Windows 下 mklink GBK 输出导致的子进程读取线程 UnicodeDecodeError 警告。⑧ `eval/final_report.py` 模板修正（M11"9 面板"→V3、尾注"待补跑"→指向真实批次报告），TECH_REPORT.md 重新生成（637 passed 读数）。
+- **验证**：`pytest tests/` 全量 **637 项 0 失败**（新增 1 项）；`py_compile` workbench.py 通过；health 实跑输出含"搜索配置"项；eval.final_report 重新生成成功。
+- **限制与下一步**：本次全部为文档/测试辅助/诊断类改动，未触碰业务执行语义；O-07 未根治（仅定性）；引用谱系断点未定位（O-25 待排期）；O-21 校准批次需真实预算，待用户启动；GitHub 远端未推送（待用户指示）。
