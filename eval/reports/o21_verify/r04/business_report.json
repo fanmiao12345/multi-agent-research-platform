@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "name": "research_writing_v1",
+    "dataset_version": 2,
+    "mode": "real",
+    "real_config_ready": true,
+    "real_config_reason": "",
+    "repeats": 1,
+    "fault_rounds": 1,
+    "max_cost_usd": 0.15,
+    "batch_max_cost_usd": 0.6,
+    "batch_spent_usd": 0.008153,
+    "batch_stop_reason": "",
+    "batch_cost_note": "max_cost_usd 为单任务上限；batch_max_cost_usd 为整批累计上限（O-09）；两者均为本地保守估算，非账单",
+    "open_book": false,
+    "open_book_note": "闭卷：关键事实/禁止断言留在评测端（S8-B 默认）",
+    "versions": {
+      "python": "3.14.7",
+      "packages": {
+        "langgraph": "1.2.11",
+        "langchain-core": "1.6.1",
+        "openai": "3.8.0",
+        "pytest": "9.1.1",
+        "python-dotenv": "1.2.3"
+      },
+      "code_revision": "ddd6d44919a3"
+    },
+    "config": {
+      "mode": "real",
+      "tools": [
+        "calculator",
+        "current_time"
+      ],
+      "note": "使用默认环境配置（未注入 settings 对象）"
+    },
+    "generated_at": "2026-09-29T13:45:16",
+    "scope": "business_acceptance_pending_human_scoring"
+  },
+  "totals": {
+    "attempts_total": 1,
+    "passed": 1,
+    "failed": 0,
+    "skipped_or_not_executed": 0,
+    "revision_skipped": 0,
+    "fault_rounds_executed": 0,
+    "note": "passed 只计 accepted 尝试；草稿/失败均为 failed；人工评分通过后才会更新业务通过率"
+  },
+  "elapsed_seconds": 114.02,
+  "results": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实#1、#2未被违反，禁止项未出现，整体结论克制；但正文多处将证据列表中的 I/U 条目标为〔事实〕，如 E-022、E-029、E-005、E-006、E-013、E-014、E-015，部分为推断或缺口判断；E-006/E-015的原始quote仅为‘本材料为合成验收数据’，不能直接支持具体‘未提供成本/对照/产出数据’的事实断言；‘75%与90%两方口径互斥’也偏强，因90%未说明分母",
+            "cited_evidence_ids": [
+              "E-020",
+              "E-021",
+              "E-027",
+              "E-022",
+              "E-029",
+              "E-005",
+              "E-006",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-017"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "四个必需章节（建议、依据、冲突、下一步采集）齐全且顺序清晰，每段围绕标题目的展开。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用均可在证据列表定位，未发现编造来源或无法定位引用；但部分引用用于I/U条目并被标为事实，属于引用的语义恰当性瑕疵，已计入正确性。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-004",
+              "E-006",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-014",
+              "E-015",
+              "E-017",
+              "E-020",
+              "E-021",
+              "E-022",
+              "E-025",
+              "E-027",
+              "E-029"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖是否扩大试点的建议、现有依据、冲突数据、下一步需采集信息；包含关键事实#1、#2，未使用禁止项，缺口如实声明。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-004",
+              "E-006",
+              "E-009",
+              "E-011",
+              "E-014",
+              "E-017",
+              "E-020",
+              "E-021",
+              "E-025",
+              "E-027"
+            ]
+          }
+        },
+        "issues": [
+          "正文将多个I/U类条目标为〔事实〕：E-022、E-029、E-005、E-006、E-013、E-014、E-015等；其中E-006/E-015的来源quote仅为‘本材料为合成验收数据’，不能直接支持具体缺失数据的事实断言。",
+          "冲突部分称‘75%与90%两方口径互斥’过强，因90%未说明分母，只能说存在不一致/冲突，不能严格证明互斥。",
+          "建议与依据中部分结论（如扩大试点依据不足、不能归因）虽标注〔推断〕或〔事实〕，但证据列表为I/U，应作为推断/缺口说明而非事实引用。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.017996610000000003,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-29T13:45:16",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 111.782,
+      "estimated_cost_usd": 0.008152770000000002,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_e6a1b7ef89c14f789909cfb50b2f0608",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 关于是否扩大星桥团队远程办公试点的管理层建议提纲\n\n## 建议\n\n有条件建议：暂不扩大全员试点，先延长试点并补齐关键数据。管理层已建议先延长试点【E-020】〔事实〕，但尚未批准全员推行【E-021】〔事实〕；满意率仅口头提出且无统计支撑，据此扩大试点依据不足【E-022】〔事实〕；访谈非随机抽样，资料不支持据此推断全员比例或扩大试点【E-029】〔事实〕；资料未给出是否扩大试点的结论【E-0"
+    }
+  ],
+  "records": [
+    {
+      "id": "r04",
+      "category": "research",
+      "attempt": 1,
+      "task": "根据现有数据给管理层写建议：是否扩大试点、还需收集什么信息。引用冲突数据并限制结论。",
+      "grader": {
+        "grader": "agent",
+        "human_confirmed": false,
+        "overall_verdict": "draft",
+        "computed_verdict": "draft",
+        "dimensions": {
+          "correctness": {
+            "score": 3,
+            "rationale": "关键事实#1、#2未被违反，禁止项未出现，整体结论克制；但正文多处将证据列表中的 I/U 条目标为〔事实〕，如 E-022、E-029、E-005、E-006、E-013、E-014、E-015，部分为推断或缺口判断；E-006/E-015的原始quote仅为‘本材料为合成验收数据’，不能直接支持具体‘未提供成本/对照/产出数据’的事实断言；‘75%与90%两方口径互斥’也偏强，因90%未说明分母",
+            "cited_evidence_ids": [
+              "E-020",
+              "E-021",
+              "E-027",
+              "E-022",
+              "E-029",
+              "E-005",
+              "E-006",
+              "E-013",
+              "E-014",
+              "E-015",
+              "E-017"
+            ]
+          },
+          "structure": {
+            "score": 5,
+            "rationale": "四个必需章节（建议、依据、冲突、下一步采集）齐全且顺序清晰，每段围绕标题目的展开。",
+            "cited_evidence_ids": []
+          },
+          "citations": {
+            "score": 5,
+            "rationale": "正文引用均可在证据列表定位，未发现编造来源或无法定位引用；但部分引用用于I/U条目并被标为事实，属于引用的语义恰当性瑕疵，已计入正确性。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-004",
+              "E-006",
+              "E-010",
+              "E-011",
+              "E-012",
+              "E-014",
+              "E-015",
+              "E-017",
+              "E-020",
+              "E-021",
+              "E-022",
+              "E-025",
+              "E-027",
+              "E-029"
+            ]
+          },
+          "completeness": {
+            "score": 5,
+            "rationale": "覆盖是否扩大试点的建议、现有依据、冲突数据、下一步需采集信息；包含关键事实#1、#2，未使用禁止项，缺口如实声明。",
+            "cited_evidence_ids": [
+              "E-001",
+              "E-004",
+              "E-006",
+              "E-009",
+              "E-011",
+              "E-014",
+              "E-017",
+              "E-020",
+              "E-021",
+              "E-025",
+              "E-027"
+            ]
+          }
+        },
+        "issues": [
+          "正文将多个I/U类条目标为〔事实〕：E-022、E-029、E-005、E-006、E-013、E-014、E-015等；其中E-006/E-015的来源quote仅为‘本材料为合成验收数据’，不能直接支持具体缺失数据的事实断言。",
+          "冲突部分称‘75%与90%两方口径互斥’过强，因90%未说明分母，只能说存在不一致/冲突，不能严格证明互斥。",
+          "建议与依据中部分结论（如扩大试点依据不足、不能归因）虽标注〔推断〕或〔事实〕，但证据列表为I/U，应作为推断/缺口说明而非事实引用。"
+        ],
+        "fabrication_flags": [],
+        "program_problems": [],
+        "meta": {
+          "grader_model": "deepseek-v4-pro",
+          "writer_model": "deepseek-v4-flash",
+          "independence": "different",
+          "mode": "real",
+          "model": "deepseek-v4-pro",
+          "call_count": 1,
+          "estimated_cost_usd": 0.017996610000000003,
+          "unknown_usage_calls": 0,
+          "graded_at": "2026-09-29T13:45:16",
+          "note": "初步自动评分；最终业务验收需人工确认（human_confirmed=false）"
+        }
+      },
+      "status": "passed",
+      "draft_level": "accepted",
+      "termination_reason": "success",
+      "elapsed_seconds": 111.782,
+      "estimated_cost_usd": 0.008152770000000002,
+      "unknown_usage_calls": 0,
+      "root_job_id": "job_e6a1b7ef89c14f789909cfb50b2f0608",
+      "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）；任务硬约束复验：必需章节 4/4、禁语命中 0、关键事实 0/0",
+      "machine_checks": {
+        "citation_tokens": 0,
+        "unresolved_citations": 0,
+        "required_sections": 4,
+        "section_hits": 4,
+        "fact_hits": 2,
+        "fact_total": 2,
+        "forbidden_claim_hits": 0,
+        "forbidden_claims": [],
+        "note": "机器检查仅供参考；事实支持/语义正确需人工评分"
+      },
+      "chain_hard_checks": {
+        "required_sections_total": 4,
+        "required_section_hits": 4,
+        "forbidden_total": 0,
+        "forbidden_hits": 0,
+        "fact_total": 0,
+        "fact_hits": 0
+      },
+      "revision_of": null,
+      "changed": true,
+      "final_text_head": "# 关于是否扩大星桥团队远程办公试点的管理层建议提纲\n\n## 建议\n\n有条件建议：暂不扩大全员试点，先延长试点并补齐关键数据。管理层已建议先延长试点【E-020】〔事实〕，但尚未批准全员推行【E-021】〔事实〕；满意率仅口头提出且无统计支撑，据此扩大试点依据不足【E-022】〔事实〕；访谈非随机抽样，资料不支持据此推断全员比例或扩大试点【E-029】〔事实〕；资料未给出是否扩大试点的结论【E-0"
+    }
+  ],
+  "fault_rows": [],
+  "samples_dir": "eval\\reports\\o21_verify\\r04\\samples",
+  "grader": {
+    "graded": 1,
+    "grader_accept": 0,
+    "dimension_means": {
+      "correctness": 3.0,
+      "structure": 5.0,
+      "citations": 5.0,
+      "completeness": 5.0
+    },
+    "writer_model": "deepseek-v4-flash",
+    "grader_model": "deepseek-v4-pro",
+    "human_confirmed": false,
+    "note": "专职评测 Agent 初步自动评分；最终业务验收需人工确认或显式策略放行"
+  }
+}

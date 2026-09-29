@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-007,E-016）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "error",
+   "code": "section",
+   "message": "章节「证据缺口」要求区分事实/推断/未知，但正文没有标注"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "结论与限制称“不足以批准”为〔事实〕，实为基于合成资料的推断，标注不当"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "证据缺口段整体标〔事实/未知〕，其中待补问题属推断，标注不精确"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "批准条件“现阶段不得批准”标〔推断〕，属有条件推荐结论，标注可接受但宜统一"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "数据保存与删除引E-015支撑“无法独立验证”，E-015仅指无审计报告，支撑偏弱"
+  }
+ ]
+}

@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_e031617eeb",
+      "fact": "本资料为合成验收数据，星桥团队试点共40人。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。星桥团队试点共40人",
+      "start": 0,
+      "end": 21,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_e031617eeb",
+      "fact": "观察期为2026年7月1日至7月31日。",
+      "tag": "F",
+      "quote": "观察期为2026年7月1日至7月31日",
+      "start": 22,
+      "end": 41,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_e031617eeb",
+      "fact": "试点期间所有人每周远程办公2天。",
+      "tag": "F",
+      "quote": "所有人每周远程办公2天",
+      "start": 42,
+      "end": 53,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_e031617eeb",
+      "fact": "本资料未设置对照组。",
+      "tag": "F",
+      "quote": "没有设置对照组",
+      "start": 54,
+      "end": 61,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_e031617eeb",
+      "fact": "因无对照组，无法将试点效果与其他安排区分。",
+      "tag": "I",
+      "quote": "没有设置对照组",
+      "start": 54,
+      "end": 61,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_e031617eeb",
+      "fact": "本资料未提供扩大试点与否所需的产出或绩效数据。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据",
+      "start": 0,
+      "end": 10,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_e031617eeb",
+      "fact": "本资料未说明还需收集哪些信息。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据",
+      "start": 0,
+      "end": 10,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_e031617eeb",
+      "fact": "本资料未给出是否扩大试点的结论。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据",
+      "start": 0,
+      "end": 10,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_3957476c52",
+      "fact": "本资料为合成验收数据，非真实业务数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_3957476c52",
+      "fact": "40名参与者中32人完成问卷，问卷回收率为80%。",
+      "tag": "F",
+      "quote": "40名参与者中32人完成问卷",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_3957476c52",
+      "fact": "32名答卷者中24人表示满意，答卷者满意率为75%。",
+      "tag": "F",
+      "quote": "24名答卷者表示满意",
+      "start": 26,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_3957476c52",
+      "fact": "观察期工单平均处理时长从10小时降至8小时。",
+      "tag": "F",
+      "quote": "观察期工单平均处理时长从10小时变为8小时",
+      "start": 58,
+      "end": 79,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_3957476c52",
+      "fact": "处理时长变化未控制工单难度变化，故不能归因于试点。",
+      "tag": "I",
+      "quote": "未控制工单难度变化",
+      "start": 80,
+      "end": 89,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_3957476c52",
+      "fact": "满意率仅基于32名答卷者，未答卷的8人意见未知。",
+      "tag": "I",
+      "quote": "40名参与者中32人完成问卷",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_3957476c52",
+      "fact": "是否扩大试点，本资料未提供成本、对照或统计显著性信息。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 90
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_f80884c6bf",
+      "fact": "本资料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_f80884c6bf",
+      "fact": "会议口头称参与者满意率为90%。",
+      "tag": "F",
+      "quote": "会议口头称参与者满意率为90%",
+      "start": 11,
+      "end": 26,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_f80884c6bf",
+      "fact": "该满意率未说明分母。",
+      "tag": "F",
+      "quote": "但未说明分母",
+      "start": 27,
+      "end": 33,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_f80884c6bf",
+      "fact": "该满意率未附问卷统计。",
+      "tag": "F",
+      "quote": "也未附问卷统计",
+      "start": 34,
+      "end": 41,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_f80884c6bf",
+      "fact": "管理层建议先延长试点。",
+      "tag": "F",
+      "quote": "管理层建议先延长试点",
+      "start": 42,
+      "end": 52,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_f80884c6bf",
+      "fact": "管理层尚未批准全员推行。",
+      "tag": "F",
+      "quote": "尚未批准全员推行",
+      "start": 53,
+      "end": 61,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_f80884c6bf",
+      "fact": "满意率仅口头提出且无统计支撑，据此扩大试点依据不足。",
+      "tag": "I",
+      "quote": "会议口头称参与者满意率为90%，但未说明分母，也未附问卷统计。",
+      "start": 11,
+      "end": 42,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_f80884c6bf",
+      "fact": "资料未说明还需收集哪些信息。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 62
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-024",
+      "source_id": "src_a410a2090d",
+      "fact": "本资料为合成验收数据。",
+      "tag": "F",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-025",
+      "source_id": "src_a410a2090d",
+      "fact": "5名受访者中3人表示通勤减少。",
+      "tag": "F",
+      "quote": "5名受访者中3人表示通勤减少",
+      "start": 11,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-026",
+      "source_id": "src_a410a2090d",
+      "fact": "2人提到跨组沟通等待。",
+      "tag": "F",
+      "quote": "2人提到跨组沟通等待。",
+      "start": 26,
+      "end": 37,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-027",
+      "source_id": "src_a410a2090d",
+      "fact": "访谈不是随机抽样，不能用于估计全员比例。",
+      "tag": "F",
+      "quote": "访谈不是随机抽样，不能用于估计全员比例。",
+      "start": 37,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-028",
+      "source_id": "src_a410a2090d",
+      "fact": "通勤减少与跨组沟通等待两类反馈并存，构成冲突数据。",
+      "tag": "I",
+      "quote": "3人表示通勤减少，2人提到跨组沟通等待",
+      "start": 17,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-029",
+      "source_id": "src_a410a2090d",
+      "fact": "因非随机抽样，本资料不支持据此推断全员比例或扩大试点。",
+      "tag": "I",
+      "quote": "不能用于估计全员比例",
+      "start": 46,
+      "end": 56,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-030",
+      "source_id": "src_a410a2090d",
+      "fact": "本资料未说明还需收集哪些信息。",
+      "tag": "U",
+      "quote": "本材料为合成验收数据。",
+      "start": 0,
+      "end": 11,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 57
+      },
+      "note": ""
+    }
+  ]
+}

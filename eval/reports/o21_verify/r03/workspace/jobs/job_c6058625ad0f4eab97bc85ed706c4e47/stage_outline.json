@@ -1,0 +1,106 @@
+{
+  "title": "采购尽调报告：方案甲与方案乙的批准条件与证据缺口",
+  "sections": [
+    {
+      "heading": "资料性质与可用性",
+      "purpose": "说明资料为合成验收数据，不能作为真实采购依据",
+      "required_evidence": [
+        "E-001",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "已知承诺",
+      "purpose": "汇总两方案商务条件、功能与供应商关于数据存储的承诺",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "方案比较与初步判断",
+      "purpose": "基于已知承诺比较两方案，给出有条件、带不确定性的倾向",
+      "required_evidence": [
+        "E-002",
+        "E-003",
+        "E-004",
+        "E-010",
+        "E-011",
+        "E-012",
+        "E-013"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "数据保存与删除",
+      "purpose": "说明保存地区与删除周期均未说明，供应商所称无法独立验证",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-014"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "敏感资料处理",
+      "purpose": "说明资料未涉及内部敏感资料处理要求及批准前证据",
+      "required_evidence": [
+        "E-007",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "审计与独立验证",
+      "purpose": "说明没有独立审计报告，合规性缺乏独立验证",
+      "required_evidence": [
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "证据缺口",
+      "purpose": "逐项列出批准前缺少的证据及待补问题",
+      "required_evidence": [
+        "E-005",
+        "E-006",
+        "E-007",
+        "E-008",
+        "E-015",
+        "E-016"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "批准条件",
+      "purpose": "给出有条件推荐：补齐证据前不得批准，并声明适用条件与缺口",
+      "required_evidence": [
+        "E-001",
+        "E-008",
+        "E-009",
+        "E-014",
+        "E-015"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "结论与限制",
+      "purpose": "明确现有资料不足以批准，结论为有条件、待验证",
+      "required_evidence": [
+        "E-001",
+        "E-008",
+        "E-009"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

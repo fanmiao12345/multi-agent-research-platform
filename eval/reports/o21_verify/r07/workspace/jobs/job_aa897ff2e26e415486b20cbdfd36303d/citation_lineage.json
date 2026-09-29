@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "root_job_id": "job_aa897ff2e26e415486b20cbdfd36303d",
+  "lineage": [
+    {
+      "root_evidence_id": "E-001",
+      "root_source_id": "src_2e6a6497fd",
+      "fact": "本资料为合成验收数据，非真实研究。",
+      "quote_head": "本材料为合成验收数据。",
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "source_job_id": "job_aa897ff2e26e415486b20cbdfd36303d",
+      "source_id": "src_2e6a6497fd",
+      "original_root_source_id": "",
+      "source_version": 1,
+      "source_title": "本材料为合成验收数据。观察研究覆盖120人，为期4周；远程办公与自评专注度上升存在相关关系。样本自愿加入，未随机分组。没有报告客观产出指标或长期效果。",
+      "original_address": "paste:1",
+      "final_url": "",
+      "source_status": "ok",
+      "child_job_id": "",
+      "child_evidence_id": ""
+    },
+    {
+      "root_evidence_id": "E-002",
+      "root_source_id": "src_2e6a6497fd",
+      "fact": "观察研究覆盖120人，为期4周。",
+      "quote_head": "观察研究覆盖120人，为期4周；",
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "source_job_id": "job_aa897ff2e26e415486b20cbdfd36303d",
+      "source_id": "src_2e6a6497fd",
+      "original_root_source_id": "",
+      "source_version": 1,
+      "source_title": "本材料为合成验收数据。观察研究覆盖120人，为期4周；远程办公与自评专注度上升存在相关关系。样本自愿加入，未随机分组。没有报告客观产出指标或长期效果。",
+      "original_address": "paste:1",
+      "final_url": "",
+      "source_status": "ok",
+      "child_job_id": "",
+      "child_evidence_id": ""
+    },
+    {
+      "root_evidence_id": "E-003",
+      "root_source_id": "src_2e6a6497fd",
+      "fact": "远程办公与自评专注度上升存在相关关系。",
+      "quote_head": "远程办公与自评专注度上升存在相关关系。",
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "source_job_id": "job_aa897ff2e26e415486b20cbdfd36303d",
+      "source_id": "src_2e6a6497fd",
+      "original_root_source_id": "",
+      "source_version": 1,
+      "source_title": "本材料为合成验收数据。观察研究覆盖120人，为期4周；远程办公与自评专注度上升存在相关关系。样本自愿加入，未随机分组。没有报告客观产出指标或长期效果。",
+      "original_address": "paste:1",
+      "final_url": "",
+      "source_status": "ok",
+      "child_job_id": "",
+      "child_evidence_id": ""
+    },
+    {
+      "root_evidence_id": "E-004",
+      "root_source_id": "src_2e6a6497fd",
+      "fact": "样本自愿加入，未随机分组。",
+      "quote_head": "样本自愿加入，未随机分组。",
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "source_job_id": "job_aa897ff2e26e415486b20cbdfd36303d",
+      "source_id": "src_2e6a6497fd",
+      "original_root_source_id": "",
+      "source_version": 1,
+      "source_title": "本材料为合成验收数据。观察研究覆盖120人，为期4周；远程办公与自评专注度上升存在相关关系。样本自愿加入，未随机分组。没有报告客观产出指标或长期效果。",
+      "original_address": "paste:1",
+      "final_url": "",
+      "source_status": "ok",
+      "child_job_id": "",
+      "child_evidence_id": ""
+    },
+    {
+      "root_evidence_id": "E-005",
+      "root_source_id": "src_2e6a6497fd",
+      "fact": "没有报告客观产出指标或长期效果。",
+      "quote_head": "没有报告客观产出指标或长期效果。",
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "source_job_id": "job_aa897ff2e26e415486b20cbdfd36303d",
+      "source_id": "src_2e6a6497fd",
+      "original_root_source_id": "",
+      "source_version": 1,
+      "source_title": "本材料为合成验收数据。观察研究覆盖120人，为期4周；远程办公与自评专注度上升存在相关关系。样本自愿加入，未随机分组。没有报告客观产出指标或长期效果。",
+      "original_address": "paste:1",
+      "final_url": "",
+      "source_status": "ok",
+      "child_job_id": "",
+      "child_evidence_id": ""
+    },
+    {
+      "root_evidence_id": "E-006",
+      "root_source_id": "src_2e6a6497fd",
+      "fact": "本资料未提供截至2026年9月7日的新增独立研究。",
+      "quote_head": "本材料为合成验收数据。",
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 75
+      },
+      "source_job_id": "job_aa897ff2e26e415486b20cbdfd36303d",
+      "source_id": "src_2e6a6497fd",
+      "original_root_source_id": "",
+      "source_version": 1,
+      "source_title": "本材料为合成验收数据。观察研究覆盖120人，为期4周；远程办公与自评专注度上升存在相关关系。样本自愿加入，未随机分组。没有报告客观产出指标或长期效果。",
+      "original_address": "paste:1",
+      "final_url": "",
+      "source_status": "ok",
+      "child_job_id": "",
+      "child_evidence_id": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "task": "判断能否据现有资料批准采购并处理内部敏感资料，写尽调报告并列出批准前缺少的证据。",
+  "mode": "real",
+  "profile": null,
+  "max_iterations": 8,
+  "max_calls": 60,
+  "max_output_tokens": 200000,
+  "max_seconds": 1500,
+  "max_cost": 0.15,
+  "system_extra": "资料标题提示：方案甲报价；方案乙报价",
+  "files": [],
+  "urls": [],
+  "allow_network": false,
+  "flow": "research",
+  "delivery_kind": "auto",
+  "orchestration": "auto",
+  "revises_job": "",
+  "required_sections": [
+    "已知承诺",
+    "证据缺口",
+    "批准条件"
+  ],
+  "forbidden_claims": [],
+  "key_facts": [],
+  "allowed_tools": null,
+  "effective_max_cost": 0.15
+}

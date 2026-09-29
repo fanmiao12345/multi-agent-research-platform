@@ -1,0 +1,33 @@
+{
+  "title": "截至2026年9月7日新增独立研究的核查提纲（基于旧摘要）",
+  "sections": [
+    {
+      "heading": "已有证据",
+      "purpose": "梳理现有资料能支撑的事实与关系",
+      "required_evidence": [
+        "E-001",
+        "E-002",
+        "E-003",
+        "E-004"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "无法完成的部分",
+      "purpose": "说明新增独立研究检索与最新结论无法给出",
+      "required_evidence": [
+        "E-006"
+      ],
+      "require_fact_markers": true
+    },
+    {
+      "heading": "后续所需",
+      "purpose": "列出补齐缺口所需的研究与数据",
+      "required_evidence": [
+        "E-005"
+      ],
+      "require_fact_markers": true
+    }
+  ],
+  "cannot_answer": null
+}

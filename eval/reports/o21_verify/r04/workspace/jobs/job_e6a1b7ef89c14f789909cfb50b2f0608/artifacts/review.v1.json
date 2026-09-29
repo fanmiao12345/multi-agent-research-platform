@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-022）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-029）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-008）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-013）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-014）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-006）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "fact_label",
+   "message": "整句仅引用推断/未知证据（E-015）却标注为〔事实〕：建议改为〔推断〕/〔未知〕（仅供参考，不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "unfounded_conflict",
+   "message": "疑似自造冲突：冲突声明仅引用 1 处证据（<2）（O-08 ① 模式，请人工核实冲突是否真实存在；不影响交付等级）"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "正文标题含“关于是否扩大…提纲”，与要求的逐字章节名并存，建议仅保留四个规定标题"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "“建议”段“暂不扩大全员试点”与“暂不扩大、继续观察”表述不一，建议统一口径"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“依据”段将E-001、E-002、E-003列为支持扩大信号，但三者仅为试点背景，不构成支持"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "E-025仅3/5受访者通勤减少且非随机，列为支持扩大信号偏强，宜标注局限"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "“冲突”段E-014后同时标〔事实〕〔未知〕，标注重复且口径不清，建议只标〔事实〕"
+  },
+  {
+   "severity": "warn",
+   "code": "missing",
+   "message": "“下一步采集”未覆盖E-009“合成验收数据”对适用条件的限制，仅列事实未说明影响"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "“下一步采集”建议补充项未逐条对应E-004/E-005/E-006/E-015，读者难核对覆盖"
+  },
+  {
+   "severity": "warn",
+   "code": "support",
+   "message": "“补齐后也不自动等于批准扩大”为合理推断，但未说明依据，建议标注为管理程序推断"
+  }
+ ]
+}

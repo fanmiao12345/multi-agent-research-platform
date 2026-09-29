@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "round": 1,
+ "verdict": "accepted",
+ "issues": [
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "正文标题“缺口与后续取证条件”非任务指定章节名，指定为“无法完成的部分；已有行业背景”"
+  },
+  {
+   "severity": "warn",
+   "code": "style",
+   "message": "“无法完成的部分”中“无法给出单价”标〔事实〕，宜标〔推断〕或〔未知〕"
+  }
+ ]
+}

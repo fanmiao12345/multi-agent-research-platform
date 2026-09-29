@@ -1,0 +1,165 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "试点基本设计",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "星桥团队试点共40人，资料为合成验收数据。"
+          },
+          {
+            "evidence_id": "E-002",
+            "statement": "观察期为2026年7月1日至7月31日。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "试点期间所有人每周远程办公2天。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "本资料未设置对照组。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "因无对照组，无法将试点效果与其他安排区分。"
+          }
+        ]
+      },
+      {
+        "name": "问卷满意率",
+        "points": [
+          {
+            "evidence_id": "E-010",
+            "statement": "40名参与者中32人完成问卷，回收率80%。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "32名答卷者中24人满意，答卷者满意率75%。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "满意率仅基于32名答卷者，未答卷8人意见未知。"
+          },
+          {
+            "evidence_id": "E-017",
+            "statement": "会议口头称参与者满意率为90%。"
+          },
+          {
+            "evidence_id": "E-018",
+            "statement": "该口头满意率未说明分母。"
+          },
+          {
+            "evidence_id": "E-019",
+            "statement": "该口头满意率未附问卷统计。"
+          },
+          {
+            "evidence_id": "E-022",
+            "statement": "满意率仅口头提出且无统计支撑，据此扩大试点依据不足。"
+          }
+        ]
+      },
+      {
+        "name": "工单处理时长",
+        "points": [
+          {
+            "evidence_id": "E-012",
+            "statement": "观察期工单平均处理时长从10小时降至8小时。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "处理时长变化未控制工单难度变化，不能归因于试点。"
+          }
+        ]
+      },
+      {
+        "name": "访谈反馈",
+        "points": [
+          {
+            "evidence_id": "E-025",
+            "statement": "5名受访者中3人表示通勤减少。"
+          },
+          {
+            "evidence_id": "E-026",
+            "statement": "2人提到跨组沟通等待。"
+          },
+          {
+            "evidence_id": "E-027",
+            "statement": "访谈不是随机抽样，不能用于估计全员比例。"
+          },
+          {
+            "evidence_id": "E-029",
+            "statement": "因非随机抽样，资料不支持据此推断全员比例或扩大试点。"
+          }
+        ]
+      },
+      {
+        "name": "管理层倾向",
+        "points": [
+          {
+            "evidence_id": "E-020",
+            "statement": "管理层建议先延长试点。"
+          },
+          {
+            "evidence_id": "E-021",
+            "statement": "管理层尚未批准全员推行。"
+          }
+        ]
+      },
+      {
+        "name": "数据性质与结论缺口",
+        "points": [
+          {
+            "evidence_id": "E-009",
+            "statement": "本资料为合成验收数据，非真实业务数据。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "资料未提供扩大试点与否所需的产出或绩效数据。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "资料未给出是否扩大试点的结论。"
+          },
+          {
+            "evidence_id": "E-015",
+            "statement": "是否扩大试点，资料未提供成本、对照或统计显著性信息。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "statement": "参与者满意率是75%还是90%，两方口径互斥。",
+        "evidence_ids": [
+          "E-011",
+          "E-017"
+        ],
+        "status": "open"
+      }
+    ],
+    "gaps": [
+      {
+        "question": "扩大试点需要哪些产出或绩效数据？",
+        "missing": "产出与绩效指标数据"
+      },
+      {
+        "question": "还需收集哪些信息才能决定是否扩大试点？",
+        "missing": "资料未说明的信息清单"
+      },
+      {
+        "question": "试点成本与统计显著性如何？",
+        "missing": "成本数据与统计显著性检验"
+      },
+      {
+        "question": "未答卷8人的意见如何？",
+        "missing": "未答卷者的问卷或访谈记录"
+      },
+      {
+        "question": "口头90%满意率的分母与统计依据是什么？",
+        "missing": "该满意率的问卷统计与分母说明"
+      }
+    ],
+    "duplicates": []
+  }
+}

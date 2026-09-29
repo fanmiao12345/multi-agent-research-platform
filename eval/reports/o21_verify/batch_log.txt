@@ -1,0 +1,472 @@
+=== O-21 verify batch start Tue Sep 29 13:20:14     2026 ===
+--- business_eval r03 start Tue Sep 29 13:20:14     2026 ---
+usage: python.exe -m eval.business_eval [-h] [--mode {mock,real}]
+                                        [--repeats REPEATS]
+                                        [--fault-rounds FAULT_ROUNDS]
+                                        [--task TASK] [--max-cost MAX_COST]
+                                        [--batch-max-cost BATCH_MAX_COST]
+                                        [--out OUT] [--grade]
+                                        [--grader-model GRADER_MODEL]
+                                        [--open-book]
+python.exe -m eval.business_eval: error: fault_rounds 必须 ≥1
+--- business_eval r03 exit=2 Tue Sep 29 13:20:14     2026 ---
+--- business_eval r04 start Tue Sep 29 13:20:14     2026 ---
+usage: python.exe -m eval.business_eval [-h] [--mode {mock,real}]
+                                        [--repeats REPEATS]
+                                        [--fault-rounds FAULT_ROUNDS]
+                                        [--task TASK] [--max-cost MAX_COST]
+                                        [--batch-max-cost BATCH_MAX_COST]
+                                        [--out OUT] [--grade]
+                                        [--grader-model GRADER_MODEL]
+                                        [--open-book]
+python.exe -m eval.business_eval: error: fault_rounds 必须 ≥1
+--- business_eval r04 exit=2 Tue Sep 29 13:20:14     2026 ---
+--- business_eval r07 start Tue Sep 29 13:20:14     2026 ---
+usage: python.exe -m eval.business_eval [-h] [--mode {mock,real}]
+                                        [--repeats REPEATS]
+                                        [--fault-rounds FAULT_ROUNDS]
+                                        [--task TASK] [--max-cost MAX_COST]
+                                        [--batch-max-cost BATCH_MAX_COST]
+                                        [--out OUT] [--grade]
+                                        [--grader-model GRADER_MODEL]
+                                        [--open-book]
+python.exe -m eval.business_eval: error: fault_rounds 必须 ≥1
+--- business_eval r07 exit=2 Tue Sep 29 13:20:14     2026 ---
+--- business_eval r12 start Tue Sep 29 13:20:14     2026 ---
+usage: python.exe -m eval.business_eval [-h] [--mode {mock,real}]
+                                        [--repeats REPEATS]
+                                        [--fault-rounds FAULT_ROUNDS]
+                                        [--task TASK] [--max-cost MAX_COST]
+                                        [--batch-max-cost BATCH_MAX_COST]
+                                        [--out OUT] [--grade]
+                                        [--grader-model GRADER_MODEL]
+                                        [--open-book]
+python.exe -m eval.business_eval: error: fault_rounds 必须 ≥1
+--- business_eval r12 exit=2 Tue Sep 29 13:20:15     2026 ---
+=== T08-A CLI start Tue Sep 29 13:20:15     2026 ===
+{
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "单点采购建议，结构固定，固定链最省够用",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "recommendation",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "organizer",
+        "description": "整理资料中甲乙两台笔记本的关键参数与差异",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T2",
+        "role": "writer",
+        "description": "基于整理结果撰写采购建议并给出明确倾向",
+        "depends_on": [
+          "T1"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T3",
+        "role": "editor",
+        "description": "审校建议的逻辑与倾向明确性并修订成稿",
+        "depends_on": [
+          "T2"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.075,
+      "seconds": 300
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fixed",
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 2.83,
+    "scheduler_calls": 1
+  },
+  "root_job_id": "job_3ee86aa07c814337b09b3316c1714a43"
+}
+{
+  "root_job_id": "job_3ee86aa07c814337b09b3316c1714a43",
+  "draft_level": "accepted",
+  "termination_reason": "success",
+  "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+  "degraded": false,
+  "process_record": "workspaces\\jobs\\job_3ee86aa07c814337b09b3316c1714a43\\orchestration.json",
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "单点采购建议，结构固定，固定链最省够用",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "recommendation",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "organizer",
+        "description": "整理资料中甲乙两台笔记本的关键参数与差异",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T2",
+        "role": "writer",
+        "description": "基于整理结果撰写采购建议并给出明确倾向",
+        "depends_on": [
+          "T1"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T3",
+        "role": "editor",
+        "description": "审校建议的逻辑与倾向明确性并修订成稿",
+        "depends_on": [
+          "T2"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 8,
+      "cost_usd": 0.075,
+      "seconds": 300
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fixed",
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 2.83,
+    "scheduler_calls": 1
+  }
+}
+=== T08-A exit=0 Tue Sep 29 13:20:49     2026 ===
+=== T08-B CLI start Tue Sep 29 13:20:49     2026 ===
+{
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "单点决策建议，结构固定，固定链最省够用",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "decision_advice",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "organizer",
+        "description": "整理 U 与 V 的对比要点与关键差异",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T2",
+        "role": "writer",
+        "description": "基于整理要点给出明确选择建议及理由",
+        "depends_on": [
+          "T1"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T3",
+        "role": "editor",
+        "description": "审校建议的清晰度与一致性并修订",
+        "depends_on": [
+          "T2"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 6,
+      "cost_usd": 0.06,
+      "seconds": 240
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fixed",
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 1.841,
+    "scheduler_calls": 1
+  },
+  "root_job_id": "job_1bc30c3fdc1e4101b341df659f2eac60"
+}
+{
+  "root_job_id": "job_1bc30c3fdc1e4101b341df659f2eac60",
+  "draft_level": "accepted",
+  "termination_reason": "success",
+  "message": "双层审校通过（引用可定位、章节齐全、无阻塞问题）",
+  "degraded": false,
+  "process_record": "workspaces\\jobs\\job_1bc30c3fdc1e4101b341df659f2eac60\\orchestration.json",
+  "orchestration_plan": {
+    "schema_version": "1",
+    "mode": "fixed",
+    "reason": "单点决策建议，结构固定，固定链最省够用",
+    "complexity_signals": {
+      "independent_subtopics": 1,
+      "work_type": "decision_advice",
+      "material_ready": true,
+      "controversial": false
+    },
+    "subtasks": [
+      {
+        "id": "T1",
+        "role": "organizer",
+        "description": "整理 U 与 V 的对比要点与关键差异",
+        "depends_on": [],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T2",
+        "role": "writer",
+        "description": "基于整理要点给出明确选择建议及理由",
+        "depends_on": [
+          "T1"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      },
+      {
+        "id": "T3",
+        "role": "editor",
+        "description": "审校建议的清晰度与一致性并修订",
+        "depends_on": [
+          "T2"
+        ],
+        "parallel": false,
+        "covers_sections": []
+      }
+    ],
+    "needs_reviewer": true,
+    "max_parallel": 1,
+    "budget": {
+      "max_calls": 40,
+      "max_cost_usd": 0.15,
+      "max_seconds": 600.0
+    },
+    "fallback_mode": "fixed",
+    "expected": {
+      "calls": 6,
+      "cost_usd": 0.06,
+      "seconds": 240
+    }
+  },
+  "plan_meta": {
+    "scheduler": "llm",
+    "failures": [],
+    "attempts": 1,
+    "understanding": null,
+    "capability_catalog": {
+      "modes": [
+        {
+          "name": "single",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fixed",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "manager_worker",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "fanout",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "dynamic_team",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        },
+        {
+          "name": "debate",
+          "implemented": true,
+          "min_cost_usd": 0.0
+        }
+      ],
+      "allowed": [
+        "fixed",
+        "fanout"
+      ]
+    },
+    "scheduler_elapsed_seconds": 1.841,
+    "scheduler_calls": 1
+  }
+}
+=== T08-B exit=0 Tue Sep 29 13:21:26     2026 ===
+=== batch end Tue Sep 29 13:21:26     2026 ===

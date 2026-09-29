@@ -1,0 +1,27 @@
+{
+  "task": "查询截至2026年9月7日新增的独立研究并给出最新结论。本例搜索服务不可用，只提供一份旧摘要。",
+  "mode": "real",
+  "profile": null,
+  "max_iterations": 8,
+  "max_calls": 60,
+  "max_output_tokens": 200000,
+  "max_seconds": 1500,
+  "max_cost": 0.15,
+  "system_extra": "资料标题提示：外部观察摘要",
+  "files": [],
+  "urls": [],
+  "allow_network": false,
+  "flow": "research",
+  "delivery_kind": "auto",
+  "orchestration": "auto",
+  "revises_job": "",
+  "required_sections": [
+    "无法完成的部分",
+    "已有证据",
+    "后续所需"
+  ],
+  "forbidden_claims": [],
+  "key_facts": [],
+  "allowed_tools": null,
+  "effective_max_cost": 0.15
+}

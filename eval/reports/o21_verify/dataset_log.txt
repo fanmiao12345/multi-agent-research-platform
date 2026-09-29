@@ -1,0 +1,14 @@
+=== O-21 dataset batch start Tue Sep 29 13:41:00     2026 ===
+--- business_eval r03 start Tue Sep 29 13:41:00     2026 ---
+attempts=1 passed=0 failed=1 skipped/not_executed=0 | 报告：eval\reports\o21_verify\r03\business_report.json
+--- business_eval r03 exit=0 Tue Sep 29 13:43:22     2026 ---
+--- business_eval r04 start Tue Sep 29 13:43:22     2026 ---
+attempts=1 passed=1 failed=0 skipped/not_executed=0 | 报告：eval\reports\o21_verify\r04\business_report.json
+--- business_eval r04 exit=0 Tue Sep 29 13:45:17     2026 ---
+--- business_eval r07 start Tue Sep 29 13:45:17     2026 ---
+attempts=1 passed=0 failed=1 skipped/not_executed=0 | 报告：eval\reports\o21_verify\r07\business_report.json
+--- business_eval r07 exit=0 Tue Sep 29 13:46:32     2026 ---
+--- business_eval r12 start Tue Sep 29 13:46:32     2026 ---
+attempts=1 passed=0 failed=1 skipped/not_executed=0 | 报告：eval\reports\o21_verify\r12\business_report.json
+--- business_eval r12 exit=0 Tue Sep 29 13:47:20     2026 ---
+=== dataset batch end Tue Sep 29 13:47:20     2026 ===

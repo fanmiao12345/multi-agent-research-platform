@@ -1,0 +1,52 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "资料性质与范围",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "本资料为合成验收数据。"
+          },
+          {
+            "evidence_id": "E-004",
+            "statement": "本资料不包含任何具体供应商的报价信息。"
+          },
+          {
+            "evidence_id": "E-005",
+            "statement": "本资料未提供竞品X在2026年的坐席单价。"
+          }
+        ]
+      },
+      {
+        "name": "行业收费与功能背景",
+        "points": [
+          {
+            "evidence_id": "E-002",
+            "statement": "客服工具行业通常按坐席数分档收费。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "客服工具常见功能包括工单、报表与知识库。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "竞品X在2026年的坐席单价是多少？",
+        "missing": "竞品X 2026年具体报价单或定价页"
+      },
+      {
+        "question": "竞品X按坐席数分档的具体档位与价格如何？",
+        "missing": "竞品X分档收费档位与对应单价材料"
+      },
+      {
+        "question": "竞品X报价的适用条件（版本、计费周期、币种）是什么？",
+        "missing": "竞品X定价条款与计费口径说明"
+      }
+    ],
+    "duplicates": []
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "pack": {
+    "topics": [
+      {
+        "name": "资料性质与可用性",
+        "points": [
+          {
+            "evidence_id": "E-001",
+            "statement": "本资料为合成验收数据，非真实采购依据。"
+          },
+          {
+            "evidence_id": "E-009",
+            "statement": "本资料为合成验收数据，非真实供应商资料。"
+          }
+        ]
+      },
+      {
+        "name": "方案甲商务条件",
+        "points": [
+          {
+            "evidence_id": "E-002",
+            "statement": "方案甲每账号每月20元。"
+          },
+          {
+            "evidence_id": "E-003",
+            "statement": "方案甲可按月支付，最低10个账号。"
+          }
+        ]
+      },
+      {
+        "name": "方案甲功能",
+        "points": [
+          {
+            "evidence_id": "E-004",
+            "statement": "方案甲支持Markdown导出。"
+          }
+        ]
+      },
+      {
+        "name": "方案乙商务条件",
+        "points": [
+          {
+            "evidence_id": "E-010",
+            "statement": "方案乙定价为每账号每月15元，按年预付。"
+          },
+          {
+            "evidence_id": "E-011",
+            "statement": "方案乙最低采购50个账号。"
+          }
+        ]
+      },
+      {
+        "name": "方案乙功能",
+        "points": [
+          {
+            "evidence_id": "E-012",
+            "statement": "方案乙支持TXT导出。"
+          },
+          {
+            "evidence_id": "E-013",
+            "statement": "Markdown导出尚未提供。"
+          }
+        ]
+      },
+      {
+        "name": "数据保存与删除",
+        "points": [
+          {
+            "evidence_id": "E-005",
+            "statement": "本资料未说明数据保存地区。"
+          },
+          {
+            "evidence_id": "E-006",
+            "statement": "本资料未说明数据删除周期。"
+          },
+          {
+            "evidence_id": "E-014",
+            "statement": "供应商称数据存储在本地地区。"
+          }
+        ]
+      },
+      {
+        "name": "敏感资料处理",
+        "points": [
+          {
+            "evidence_id": "E-007",
+            "statement": "本资料未涉及内部敏感资料处理要求。"
+          },
+          {
+            "evidence_id": "E-016",
+            "statement": "本资料未涉及内部敏感资料处理要求及批准前所需证据。"
+          }
+        ]
+      },
+      {
+        "name": "审计与批准前证据",
+        "points": [
+          {
+            "evidence_id": "E-015",
+            "statement": "本资料没有独立审计报告。"
+          },
+          {
+            "evidence_id": "E-008",
+            "statement": "批准前缺少数据保存地区、删除周期及敏感资料处理等证据。"
+          }
+        ]
+      }
+    ],
+    "conflicts": [],
+    "gaps": [
+      {
+        "question": "数据实际保存地区是否与供应商所称一致？",
+        "missing": "数据保存地区的独立证明或合同条款"
+      },
+      {
+        "question": "数据删除周期如何约定？",
+        "missing": "删除周期说明或数据处理协议"
+      },
+      {
+        "question": "内部敏感资料处理要求是否满足？",
+        "missing": "敏感资料处理规范与合规评估材料"
+      },
+      {
+        "question": "能否据现有资料批准采购？",
+        "missing": "真实供应商资料及采购依据"
+      },
+      {
+        "question": "供应商合规性是否有独立验证？",
+        "missing": "独立审计报告或等效合规证明"
+      }
+    ],
+    "duplicates": []
+  }
+}
