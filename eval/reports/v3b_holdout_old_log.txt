@@ -1,0 +1,3 @@
+=== v3b holdout OLD-prompts start Tue Sep 29 17:03:12     2026 ===
+attempts=12 passed=10 failed=2 skipped/not_executed=0 | 报告：eval\reports\v3b_holdout_old\business_report.json
+=== exit=0 Tue Sep 29 17:11:57     2026 ===

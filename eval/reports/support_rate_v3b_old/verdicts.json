@@ -1,0 +1,1354 @@
+{
+ "63f4868a9763": {
+  "verdict": "supported",
+  "reason": "证据直接列出该标准，支持按此筛选。"
+ },
+ "704b50ef4df5": {
+  "verdict": "supported",
+  "reason": "证据直接说明兼顾孕妇与婴儿营养。"
+ },
+ "03d84e80b159": {
+  "verdict": "supported",
+  "reason": "证据直接说明按不同阶段搭配。"
+ },
+ "6143c79e0e4a": {
+  "verdict": "supported",
+  "reason": "证据直接说明富含叶酸及对胎儿和红血球的作用。"
+ },
+ "2f31d4e5f495": {
+  "verdict": "supported",
+  "reason": "证据直接说明亚麻酸、亚油酸转化及对胎儿脑眼发育的作用。"
+ },
+ "0f8360c1226a": {
+  "verdict": "supported",
+  "reason": "证据直接给出“还是不错的”评价。"
+ },
+ "d4c0b4afb282": {
+  "verdict": "partial",
+  "reason": "证据仅提供营养标准，未直接支持“部分符合”推断。"
+ },
+ "bf2654db5a58": {
+  "verdict": "partial",
+  "reason": "证据仅说明兼顾营养，未直接支持“部分符合”推断。"
+ },
+ "4838c2b116f3": {
+  "verdict": "partial",
+  "reason": "证据仅提及叶酸，未涉及营养选择方向或品牌比较。"
+ },
+ "90219eb7f171": {
+  "verdict": "partial",
+  "reason": "证据仅提及亚麻酸、亚油酸，未涉及营养选择方向或品牌比较。"
+ },
+ "5c1636e15edc": {
+  "verdict": "supported",
+  "reason": "证据直接表明一位孕妇自己购买了美纳多孕产妇奶粉。"
+ },
+ "5110d3daba87": {
+  "verdict": "supported",
+  "reason": "证据直接陈述孕妇奶粉利于胎儿发育及乳汁微量元素含量较高。"
+ },
+ "bda88cec63a1": {
+  "verdict": "supported",
+  "reason": "证据逐字列出适合孕妇的奶粉营养素，与断言一致。"
+ },
+ "f2897f409f1c": {
+  "verdict": "partial",
+  "reason": "证据仅说明适合的营养素，未明确表述可作为筛选标准。"
+ },
+ "2cea34280e95": {
+  "verdict": "supported",
+  "reason": "证据直接表明合生元孕妇系列奶粉兼顾孕妇和婴儿营养。"
+ },
+ "641807b7bb6b": {
+  "verdict": "supported",
+  "reason": "证据直接陈述合生元孕妇奶粉根据婴儿和妈妈不同阶段搭配。"
+ },
+ "7906890e8c53": {
+  "verdict": "supported",
+  "reason": "证据直接支持断言中关于叶酸、胎儿发育和红血球制造的内容。"
+ },
+ "39f5fd25efeb": {
+  "verdict": "supported",
+  "reason": "证据直接支持断言中亚麻酸、亚油酸转化及助胎儿脑眼发育的内容。"
+ },
+ "f8b2ca1df100": {
+  "verdict": "supported",
+  "reason": "证据直接支持断言中“还是不错的”这一评价。"
+ },
+ "07cd55c7c9eb": {
+  "verdict": "supported",
+  "reason": "证据直接支持断言中孕妇自己购买美纳多孕产妇奶粉的内容。"
+ },
+ "20d38256076e": {
+  "verdict": "partial",
+  "reason": "证据列出适合孕妇的营养素，但未提及筛选或合生元备选。"
+ },
+ "cc5640a61370": {
+  "verdict": "partial",
+  "reason": "证据提到合生元考虑营养，但未涉及低乳糖筛选或备选判断。"
+ },
+ "a8740d6d1074": {
+  "verdict": "partial",
+  "reason": "证据提到分阶段搭配，但未涉及低乳糖筛选或备选判断。"
+ },
+ "5dea06aa687b": {
+  "verdict": "partial",
+  "reason": "证据提到叶酸等营养，但未涉及低乳糖筛选或备选判断。"
+ },
+ "3e033a7b4690": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及亚麻酸、亚油酸转化DHA，未涉及低乳糖、营养素筛选或合生元作为备选考虑。"
+ },
+ "5aadf18605b7": {
+  "verdict": "unrelated",
+  "reason": "证据仅笼统评价合生元奶粉不错，未涉及低乳糖、营养素筛选或备选考虑。"
+ },
+ "da0432754600": {
+  "verdict": "supported",
+  "reason": "证据直接说明饮食正从乳类为主转向粮食、蔬菜、肉类为主食。"
+ },
+ "be975367424b": {
+  "verdict": "supported",
+  "reason": "证据直接说明每天3餐饭再加1、2顿点心。"
+ },
+ "a645e36e7292": {
+  "verdict": "supported",
+  "reason": "证据直接说明一天奶量约300~500毫升。"
+ },
+ "06c2d08844ae": {
+  "verdict": "supported",
+  "reason": "证据直接说明因食量有偏差，奶量为区间而非定值。"
+ },
+ "025921a8517b": {
+  "verdict": "supported",
+  "reason": "证据直接说明饮食以粮食、蔬菜、肉类为主。"
+ },
+ "6898a7ea4178": {
+  "verdict": "supported",
+  "reason": "证据直接说明每日3餐饭加1、2顿点心。"
+ },
+ "e1e0b26542f9": {
+  "verdict": "supported",
+  "reason": "证据直接给出300~500毫升/天的奶量区间。"
+ },
+ "376b14b59fdd": {
+  "verdict": "supported",
+  "reason": "证据直接陈述早6点及晚10点各一杯配方奶。"
+ },
+ "57a0613a21ad": {
+  "verdict": "partial",
+  "reason": "证据仅给奶量区间，未涉及结论性质或个体化建议。"
+ },
+ "18fb36f331c8": {
+  "verdict": "supported",
+  "reason": "证据直接支持奶量区间及食量偏差说明。"
+ },
+ "82592dff8402": {
+  "verdict": "supported",
+  "reason": "证据直接支持每日两次配方奶的喂养次数。"
+ },
+ "b920c7a813f6": {
+  "verdict": "partial",
+  "reason": "证据仅说明饮食转型，未直接涉及奶量数值。"
+ },
+ "7b9bc4a9f01e": {
+  "verdict": "partial",
+  "reason": "证据仅说明餐次安排，未直接涉及奶量结论。"
+ },
+ "13da42230b49": {
+  "verdict": "supported",
+  "reason": "证据直接给出奶量量化依据。"
+ },
+ "172ac77bb2b4": {
+  "verdict": "partial",
+  "reason": "证据仅提及喂养次数，未涵盖饮食结构转变和餐次安排。"
+ },
+ "4bf12bf3acf6": {
+  "verdict": "partial",
+  "reason": "证据仅涉及饮食结构转变，未涵盖喂养次数和餐次安排。"
+ },
+ "1ad95bd3b6e0": {
+  "verdict": "partial",
+  "reason": "证据仅涉及餐次安排，未涵盖喂养次数和饮食结构转变。"
+ },
+ "6109f3e42b26": {
+  "verdict": "supported",
+  "reason": "证据直接支持发汇限额依对方国兑付限额和我国外汇管理政策执行。"
+ },
+ "e6800c020b20": {
+  "verdict": "supported",
+  "reason": "证据直接支持我国个人外汇出口限额为每人每次2000美元（含）。"
+ },
+ "2a5af72fc841": {
+  "verdict": "unsupported",
+  "reason": "证据仅陈述限额，未说明出口是否等同西联发汇方向或适用性。"
+ },
+ "3d517900922d": {
+  "verdict": "supported",
+  "reason": "证据直接支持一年最多只能汇1万美元。"
+ },
+ "5adc84c549e9": {
+  "verdict": "unsupported",
+  "reason": "证据仅陈述限额，未说明渠道与对象，不能直接认定为西联限额。"
+ },
+ "10796e7a7a5e": {
+  "verdict": "supported",
+  "reason": "证据直接陈述最高限额为9000美元。"
+ },
+ "a02a5a7b114b": {
+  "verdict": "supported",
+  "reason": "证据直接陈述西联汇款到美国限额一万美元。"
+ },
+ "cfc1c02db4d7": {
+  "verdict": "unsupported",
+  "reason": "证据仅提9000美元，未说明口径或是否西联。"
+ },
+ "e8e68b6e68df": {
+  "verdict": "unsupported",
+  "reason": "证据仅提一万美元，未说明口径或是否西联。"
+ },
+ "d764f0a18e46": {
+  "verdict": "partial",
+  "reason": "证据支持限额2000美元，但假设与结论为推断。"
+ },
+ "4c502c84c865": {
+  "verdict": "unsupported",
+  "reason": "证据仅陈述限额，未提及假设未经确认。"
+ },
+ "bb1d07be5f03": {
+  "verdict": "unsupported",
+  "reason": "证据仅提9000美元，未说明不能确认。"
+ },
+ "0b824e1d281e": {
+  "verdict": "unsupported",
+  "reason": "证据仅提一万美元，未说明不能确认。"
+ },
+ "0283c17866e9": {
+  "verdict": "unrelated",
+  "reason": "证据仅述发汇限额规定，未提及需复核的E项。"
+ },
+ "5186637842ec": {
+  "verdict": "unrelated",
+  "reason": "证据仅述个人外汇出口限额，未提及需复核的E项。"
+ },
+ "09d0208d21ca": {
+  "verdict": "unrelated",
+  "reason": "证据仅述年度汇款限额，未提及需复核的E项。"
+ },
+ "4dd47cd3cdaf": {
+  "verdict": "unrelated",
+  "reason": "证据仅述最高限额，未提及需复核的E项。"
+ },
+ "f5428287a2b0": {
+  "verdict": "unrelated",
+  "reason": "证据仅述西联汇款限额，未提及需复核的E项。"
+ },
+ "c4454f07f392": {
+  "verdict": "supported",
+  "reason": "证据原文与断言表述一致。"
+ },
+ "01d657e85524": {
+  "verdict": "supported",
+  "reason": "证据仅述限额，未涉及西联、叠加或变化，与断言相符。"
+ },
+ "32722505a95a": {
+  "verdict": "supported",
+  "reason": "证据原文与断言表述一致。"
+ },
+ "3e534168257f": {
+  "verdict": "unrelated",
+  "reason": "证据仅述1万美元限额，未涉及断言所列对象、渠道等未知项。"
+ },
+ "1811bb5391be": {
+  "verdict": "supported",
+  "reason": "证据直接说明最高限额为9000美元，支持断言核心内容。"
+ },
+ "25468fd932b1": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及9000美元限额，未说明断言所列未知项。"
+ },
+ "5c97bf202b3b": {
+  "verdict": "supported",
+  "reason": "证据与断言内容一致，直接支持西联汇款到美国限额一万美元。"
+ },
+ "d83042289bf6": {
+  "verdict": "unrelated",
+  "reason": "证据仅述限额，未涉及断言所列适用对象、时间等未知项。"
+ },
+ "6a2c2440e767": {
+  "verdict": "supported",
+  "reason": "证据直接支持发汇限额依对方国兑付限额和我国外汇政策执行。"
+ },
+ "dd7bca88cbe5": {
+  "verdict": "unrelated",
+  "reason": "证据仅述发汇限额依据，未说明断言所列未知项。"
+ },
+ "4f0f8c948e0d": {
+  "verdict": "partial",
+  "reason": "证据仅支持2000美元出处，其余限额及框架约束为推断。"
+ },
+ "999396d6385d": {
+  "verdict": "partial",
+  "reason": "证据仅支持一年1万美元限额，未涉及其他金额及框架约束。"
+ },
+ "418c8837562c": {
+  "verdict": "partial",
+  "reason": "证据仅支持9000美元限额，未涉及其他金额及框架约束。"
+ },
+ "d73210c87a49": {
+  "verdict": "partial",
+  "reason": "证据仅支持美国方向一万美元限额，未涉及其他金额及框架约束。"
+ },
+ "7caba461eb38": {
+  "verdict": "partial",
+  "reason": "证据支持框架约束，但未涉及具体金额出处。"
+ },
+ "5659b2bad1d2": {
+  "verdict": "partial",
+  "reason": "证据仅说明限额依据，未直接支持不能合并为唯一限额。"
+ },
+ "48fde2f8cb7d": {
+  "verdict": "partial",
+  "reason": "证据仅提供2000美元限额，未直接支持不能合并为唯一限额。"
+ },
+ "ebde4fcfc11b": {
+  "verdict": "partial",
+  "reason": "证据仅提供一年1万美元限额，未直接支持不能合并为唯一限额。"
+ },
+ "ad23acfee262": {
+  "verdict": "partial",
+  "reason": "证据仅提供9000美元限额，未直接支持不能合并为唯一限额。"
+ },
+ "58b6971d077e": {
+  "verdict": "unsupported",
+  "reason": "证据仅述一万美元限额，未涉合并或适用条件不完整。"
+ },
+ "2005a91713d0": {
+  "verdict": "unsupported",
+  "reason": "证据仅述9000美元，未提及与一万美元矛盾。"
+ },
+ "8474e87223b6": {
+  "verdict": "unsupported",
+  "reason": "证据仅述一万美元，未提及与9000美元矛盾。"
+ },
+ "e737ef925f12": {
+  "verdict": "supported",
+  "reason": "证据仅述9000美元，未明示与西联或美国相关，支持该推断。"
+ },
+ "9b55e91db637": {
+  "verdict": "supported",
+  "reason": "证据仅述一万美元限额，未说明权威性、时间与对象。"
+ },
+ "1f4a2cb1ac0b": {
+  "verdict": "unsupported",
+  "reason": "证据仅述9000美元，未提及不作裁决。"
+ },
+ "7edceccc301a": {
+  "verdict": "unsupported",
+  "reason": "证据仅述一万美元，未提及不作裁决。"
+ },
+ "bde02345f501": {
+  "verdict": "unsupported",
+  "reason": "证据仅述9000美元，未提及无法确认限额。"
+ },
+ "aa9ae0cce205": {
+  "verdict": "supported",
+  "reason": "证据明确给出美国方向限额为一万美元，支持无法确认9000美元的说法。"
+ },
+ "0ecd11debf5c": {
+  "verdict": "supported",
+  "reason": "证据仅给出框架性规定，未说明适用对象，支持断言。"
+ },
+ "421a1bcbf7fc": {
+  "verdict": "supported",
+  "reason": "证据明确写明我国个人外汇出口限额为2000美元，支持断言。"
+ },
+ "dc18d56ee331": {
+  "verdict": "supported",
+  "reason": "证据仅写一年最多汇1万美元，未说明个人或机构，支持断言。"
+ },
+ "d6d66f9c30ad": {
+  "verdict": "supported",
+  "reason": "证据要点明确为美国政府规定，支持主体为政府而非个人。"
+ },
+ "bf2743a8cc73": {
+  "verdict": "supported",
+  "reason": "证据仅写汇款到美国限额一万美元，未说明发汇人、收汇人身份。"
+ },
+ "dbbe97356d54": {
+  "verdict": "supported",
+  "reason": "证据仅写发汇限额，未区分汇入或汇出，支持方向缺失。"
+ },
+ "3a1fb271a8cf": {
+  "verdict": "supported",
+  "reason": "证据写出口限额，未说明是否等同西联发汇，支持未明。"
+ },
+ "765f5192e885": {
+  "verdict": "supported",
+  "reason": "证据直接说明一年最多汇1万美元。"
+ },
+ "81b02c56645d": {
+  "verdict": "supported",
+  "reason": "证据仅提9000美元，未提汇往美国，支持未明。"
+ },
+ "130ef582f508": {
+  "verdict": "supported",
+  "reason": "证据明确汇款到美国限额一万美元。"
+ },
+ "36cecd17fab0": {
+  "verdict": "supported",
+  "reason": "证据未给时间口径，支持框架性说法。"
+ },
+ "64206252a4f9": {
+  "verdict": "supported",
+  "reason": "证据明确每人每次2000美元。"
+ },
+ "f4776c9e2642": {
+  "verdict": "supported",
+  "reason": "证据明确一年最多汇1万美元。"
+ },
+ "fd3f2d038b0d": {
+  "verdict": "partial",
+  "reason": "证据仅提9000美元，未提时间口径及另一说法。"
+ },
+ "60a61f5b4397": {
+  "verdict": "partial",
+  "reason": "证据仅提一万美元限额，未提时间口径及另一说法。"
+ },
+ "23f195dd5a63": {
+  "verdict": "supported",
+  "reason": "证据仅提2000美元限额，未提西联渠道，支持渠道缺失的说法。"
+ },
+ "5dc5c5fee18d": {
+  "verdict": "supported",
+  "reason": "证据仅提一年1万美元限额，未提渠道，支持渠道未明。"
+ },
+ "2dbdf249b42a": {
+  "verdict": "supported",
+  "reason": "证据仅提9000美元限额，未提执行主体，支持主体未明。"
+ },
+ "fdc6eb8a8a86": {
+  "verdict": "supported",
+  "reason": "证据仅说明限额依据，未说明各限额间关系，支持未说明。"
+ },
+ "8b9472a01349": {
+  "verdict": "supported",
+  "reason": "证据仅提2000美元限额，未说明与其他限额关系。"
+ },
+ "258fb33ec91a": {
+  "verdict": "supported",
+  "reason": "证据仅提一年1万美元限额，未说明与其他限额关系。"
+ },
+ "a4147f477bff": {
+  "verdict": "supported",
+  "reason": "证据仅提9000美元限额，未说明与其他限额关系。"
+ },
+ "9aa332fadb84": {
+  "verdict": "supported",
+  "reason": "证据仅提美国方向一万美元限额，未说明与其他限额关系。"
+ },
+ "4ddd22ea54b5": {
+  "verdict": "partial",
+  "reason": "证据仅说明限额依据，未涉及需复核的各数字属性。"
+ },
+ "fab0cab5a406": {
+  "verdict": "partial",
+  "reason": "证据给出一个限额数字，但未涉及生效时间、渠道等复核项。"
+ },
+ "f1174a125b99": {
+  "verdict": "partial",
+  "reason": "证据给出年度限额数字，但未涉及适用国家、币种等复核项。"
+ },
+ "de2d9ff53ab8": {
+  "verdict": "partial",
+  "reason": "证据给出美国最高限额数字，但未涉及渠道、个人对个人等复核项。"
+ },
+ "5ca729ce696d": {
+  "verdict": "partial",
+  "reason": "证据给出西联汇款限额数字，但未涉及生效时间、币种等复核项。"
+ },
+ "404a2788d508": {
+  "verdict": "partial",
+  "reason": "证据说明限额依据，但未直接支持不宜断言唯一限额的推断。"
+ },
+ "7fcf5cfe857a": {
+  "verdict": "partial",
+  "reason": "证据给出一个限额数字，但未直接支持不宜断言唯一限额的推断。"
+ },
+ "5996e4e6fb4d": {
+  "verdict": "partial",
+  "reason": "证据给出年度限额数字，但未直接支持不宜断言唯一限额的推断。"
+ },
+ "13087d2d6bca": {
+  "verdict": "unrelated",
+  "reason": "证据仅陈述9000美元限额，未涉及缺口补齐或不宜断言唯一限额。"
+ },
+ "d359af9834a1": {
+  "verdict": "unrelated",
+  "reason": "证据仅陈述西联汇款限额，未涉及缺口补齐或不宜断言唯一限额。"
+ },
+ "105a040417f3": {
+  "verdict": "supported",
+  "reason": "证据直接说明RA是Regional Adviser缩写，中文为区域顾问。"
+ },
+ "ea704affad5c": {
+  "verdict": "supported",
+  "reason": "证据直接说明酒店RA职位是酒店顾问。"
+ },
+ "77d44141b476": {
+  "verdict": "partial",
+  "reason": "证据仅支持区域顾问含义，未涉及冲突或未作裁决的表述。"
+ },
+ "2dfbd0b6bb0a": {
+  "verdict": "partial",
+  "reason": "证据仅支持酒店顾问含义，未涉及冲突或未作裁决的表述。"
+ },
+ "10494c3afb41": {
+  "verdict": "partial",
+  "reason": "证据支持区域顾问含义，但条件性优先判断为引申。"
+ },
+ "a73c4b315493": {
+  "verdict": "partial",
+  "reason": "证据支持酒店顾问称谓，但行业定义缺失为额外判断。"
+ },
+ "a27c2421dd16": {
+  "verdict": "supported",
+  "reason": "证据逐字对应断言，直接支持RA缩写及中文含义。"
+ },
+ "afe612c99ec1": {
+  "verdict": "supported",
+  "reason": "证据与断言完全一致，直接支持酒店RA职位为酒店顾问。"
+ },
+ "5f1c70b0b0e5": {
+  "verdict": "supported",
+  "reason": "证据列出相同服务内容，直接支持顾问团队职责。"
+ },
+ "0671bce99eea": {
+  "verdict": "supported",
+  "reason": "证据原文与断言表述一致，直接支持驻店方式。"
+ },
+ "50fe4a14cdec": {
+  "verdict": "supported",
+  "reason": "证据与断言内容一致，直接支持专家储备要求。"
+ },
+ "350c90bc8aa8": {
+  "verdict": "supported",
+  "reason": "证据完整包含断言内容，直接支持顾问管理定义。"
+ },
+ "daf4c5dfc158": {
+  "verdict": "supported",
+  "reason": "证据与断言核心一致，直接支持顾问咨询定义。"
+ },
+ "eb07506c279a": {
+  "verdict": "partial",
+  "reason": "证据支持放款时限，但未提及沈阳地区限定。"
+ },
+ "580580d28759": {
+  "verdict": "supported",
+  "reason": "证据直接支持放款时限，且未明确地区，符合断言。"
+ },
+ "f11e63af607f": {
+  "verdict": "supported",
+  "reason": "证据直接支持放款时限为20到25个工作日。"
+ },
+ "fd7e6536b505": {
+  "verdict": "supported",
+  "reason": "证据未提及沈阳地区，支持未明确专指该地区。"
+ },
+ "54febbb15c87": {
+  "verdict": "supported",
+  "reason": "证据直接支持连续缴纳满一年为办理条件之一。"
+ },
+ "d5a59f5bda6a": {
+  "verdict": "supported",
+  "reason": "证据列出全部所需材料，直接支持断言。"
+ },
+ "93078693472f": {
+  "verdict": "supported",
+  "reason": "证据直接支持流程包括到银行填写申请并提交材料。"
+ },
+ "ef8a4c594653": {
+  "verdict": "supported",
+  "reason": "证据直接支持银行接到申请后进行确认和审核。"
+ },
+ "cf1d51bee830": {
+  "verdict": "supported",
+  "reason": "证据直接支持审核后银行联系贷款人签订合同。"
+ },
+ "6f749d62b50e": {
+  "verdict": "supported",
+  "reason": "证据直接陈述银行放款后贷款人履行还款责任。"
+ },
+ "6bea8880b629": {
+  "verdict": "supported",
+  "reason": "证据直接给出公积金贷款20到25个工作日的时限。"
+ },
+ "837994ff2516": {
+  "verdict": "supported",
+  "reason": "证据未明确该时限是否专指沈阳，与断言一致。"
+ },
+ "7886442ef888": {
+  "verdict": "partial",
+  "reason": "证据支持早晚各一次，但未提及洁肤后时间窗口。"
+ },
+ "286f19a05276": {
+  "verdict": "supported",
+  "reason": "证据直接说明早晚洁肤后使用眼霜。"
+ },
+ "f0179d5f8099": {
+  "verdict": "unsupported",
+  "reason": "证据仅给出推荐，未涉及对比或唯一性讨论。"
+ },
+ "8335d2789d1d": {
+  "verdict": "unsupported",
+  "reason": "证据仅说明使用时间，未涉及对比或唯一性。"
+ },
+ "225926a66a2b": {
+  "verdict": "supported",
+  "reason": "证据直接支持早晚各一次的结论。"
+ },
+ "0a57a1c8aca9": {
+  "verdict": "supported",
+  "reason": "证据直接说明早晚洁肤后使用眼霜。"
+ },
+ "4370ec64c490": {
+  "verdict": "supported",
+  "reason": "证据仅说明取用量与工具，未涉及使用时间。"
+ },
+ "395305defa0d": {
+  "verdict": "supported",
+  "reason": "证据仅说明涂抹前加温步骤，未涉及使用时间。"
+ },
+ "f8c428ed02fb": {
+  "verdict": "supported",
+  "reason": "证据仅说明涂抹手法，未涉及使用时间。"
+ },
+ "3e676ea12aac": {
+  "verdict": "supported",
+  "reason": "证据仅说明涂抹区域，未涉及使用时间。"
+ },
+ "5b97ed74e419": {
+  "verdict": "supported",
+  "reason": "证据仅说明特别护理加眼膜，未提日常使用时间。"
+ },
+ "b1c65c86db4c": {
+  "verdict": "unsupported",
+  "reason": "证据仅称其为电影导演，未提及具体影片。"
+ },
+ "fcf80ebc661c": {
+  "verdict": "supported",
+  "reason": "证据直接说明该片由她编剧并执导。"
+ },
+ "4271e502a093": {
+  "verdict": "supported",
+  "reason": "证据直接称其常驻纽约市格林威治村。"
+ },
+ "f4195948d5df": {
+  "verdict": "supported",
+  "reason": "证据支持基于纽约市及格林威治村的结论。"
+ },
+ "a0bd9e74947b": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及编剧导演，未涉及定居城市。"
+ },
+ "24f9a50433a3": {
+  "verdict": "partial",
+  "reason": "证据支持城市信息，但未说明存在冲突。"
+ },
+ "338d17ce2eaa": {
+  "verdict": "partial",
+  "reason": "证据支持纽约市，但未涉及条件性结论。"
+ },
+ "f0f9f3001e70": {
+  "verdict": "unrelated",
+  "reason": "证据未涉及定居城市或未明事项。"
+ },
+ "75abde24077b": {
+  "verdict": "unsupported",
+  "reason": "证据未提及《Big Stone Gap》导演身份。"
+ },
+ "630637fc3806": {
+  "verdict": "supported",
+  "reason": "证据直接称其编剧并执导该片。"
+ },
+ "b0b5ef666d05": {
+  "verdict": "supported",
+  "reason": "证据直接说明其常驻纽约市格林威治村。"
+ },
+ "94aa9d01e036": {
+  "verdict": "supported",
+  "reason": "证据仅提导演身份，未提定居城市，支持缺口判断。"
+ },
+ "aa695d2028d9": {
+  "verdict": "supported",
+  "reason": "证据仅定位地名，未涉及导演居住地。"
+ },
+ "2f33fb5f152b": {
+  "verdict": "supported",
+  "reason": "证据未提及该片导演，支持无关或缺口判断。"
+ },
+ "85ba202a96d4": {
+  "verdict": "partial",
+  "reason": "证据涉及城市层级，但未直接呈现冲突内容。"
+ },
+ "d6fabc392b8c": {
+  "verdict": "partial",
+  "reason": "证据未说明城市，仅能间接关联层级冲突。"
+ },
+ "2e048fc313c0": {
+  "verdict": "partial",
+  "reason": "证据只支持出道专辑，未涉及组建方。"
+ },
+ "d041f1f2fbf7": {
+  "verdict": "supported",
+  "reason": "证据直接说明由YG Entertainment组建。"
+ },
+ "046f2efd5637": {
+  "verdict": "supported",
+  "reason": "证据直接称2014 S/S是WINNER的出道专辑。"
+ },
+ "974ec277f126": {
+  "verdict": "unsupported",
+  "reason": "证据仅列BTS作品目录，未提及2014 S/S。"
+ },
+ "4615ae2d1f12": {
+  "verdict": "supported",
+  "reason": "证据未说明BTS由谁组建，与断言一致。"
+ },
+ "dadcd7d54d34": {
+  "verdict": "supported",
+  "reason": "证据明确称Winner由YG Entertainment组建。"
+ },
+ "f7c5cc216423": {
+  "verdict": "supported",
+  "reason": "证据未说明WINNER由谁组建，与断言一致。"
+ },
+ "51fe95a66027": {
+  "verdict": "supported",
+  "reason": "证据直接称Winner于2014年出道。"
+ },
+ "74a6057e9bb9": {
+  "verdict": "unsupported",
+  "reason": "证据仅称专辑属WINNER，未涉及BTS组建方。"
+ },
+ "71547f7e7ad1": {
+  "verdict": "unsupported",
+  "reason": "证据仅称Winner由YG组建，未涉及BTS组建方。"
+ },
+ "daf7e16d4024": {
+  "verdict": "unrelated",
+  "reason": "证据仅提Winner出道年份，未涉BTS或组建方。"
+ },
+ "331b6777f382": {
+  "verdict": "unrelated",
+  "reason": "证据仅介绍BTS唱片目录，未涉组建方。"
+ },
+ "d49be711eca5": {
+  "verdict": "unrelated",
+  "reason": "证据仅提WINNER出道专辑，未涉BTS组建方。"
+ },
+ "ae6e96274d0f": {
+  "verdict": "unrelated",
+  "reason": "证据仅提BTS出道信息，未涉组建方。"
+ },
+ "fcba8297ecb4": {
+  "verdict": "supported",
+  "reason": "证据直接支持2014 S/S为WINNER出道专辑。"
+ },
+ "597feae2508d": {
+  "verdict": "supported",
+  "reason": "证据直接支持2014 S/S专辑归属WINNER。"
+ },
+ "47f8c1061dca": {
+  "verdict": "supported",
+  "reason": "证据直接支持Winner由YG于2013年组建。"
+ },
+ "9632ac68324d": {
+  "verdict": "supported",
+  "reason": "证据直接支持WINNER组建方为YG。"
+ },
+ "c041493bb636": {
+  "verdict": "unsupported",
+  "reason": "证据仅说明专辑归属，未涉及组建方或复核关系。"
+ },
+ "fa3b5e600358": {
+  "verdict": "supported",
+  "reason": "证据直接说明Winner于2014年出道。"
+ },
+ "712ac453cb3b": {
+  "verdict": "unsupported",
+  "reason": "证据只提2014年出道，未涉及组建方主题。"
+ },
+ "574127a7137a": {
+  "verdict": "unsupported",
+  "reason": "证据仅说明BTS唱片目录，未提及2014 S/S专辑。"
+ },
+ "07243e21f6ec": {
+  "verdict": "unsupported",
+  "reason": "证据只涉及BTS唱片目录，未提成员或出道信息。"
+ },
+ "d996be69905f": {
+  "verdict": "unsupported",
+  "reason": "证据仅说明专辑归属，未涉及冲突或裁决。"
+ },
+ "479e19d60aa6": {
+  "verdict": "supported",
+  "reason": "证据确实未说明WINNER由谁组建。"
+ },
+ "a1626c9228d3": {
+  "verdict": "unsupported",
+  "reason": "证据未涉及组建方主题，仅说明专辑归属。"
+ },
+ "e42a63b4afea": {
+  "verdict": "partial",
+  "reason": "证据仅说明组建方，未涉及“未说明项需复核”的推断。"
+ },
+ "4d334e3c063a": {
+  "verdict": "supported",
+  "reason": "证据只给出出道信息，确实未说明组建方。"
+ },
+ "6b8f65ff0cc2": {
+  "verdict": "partial",
+  "reason": "证据支持“未说明组建方”，但“定位”表述超出证据。"
+ },
+ "26c4b802d3b9": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及BTS唱片目录，与组建方归属无关。"
+ },
+ "d056fbfdd565": {
+  "verdict": "supported",
+  "reason": "证据未说明两者是否同街区，支持“不能直接确认”。"
+ },
+ "fd344e75acb2": {
+  "verdict": "supported",
+  "reason": "证据未提及位置关系，支持“不能直接确认”。"
+ },
+ "fcd575e1d54b": {
+  "verdict": "supported",
+  "reason": "证据直接说明清真寺位于拉莱利、法提赫、伊斯坦布尔。"
+ },
+ "f6dfd356b493": {
+  "verdict": "supported",
+  "reason": "证据直接说明宅邸位于伊斯坦布尔奥尔塔柯伊街区。"
+ },
+ "debae91b2d73": {
+  "verdict": "partial",
+  "reason": "证据仅给出拉莱利位置，未直接比较两处街区。"
+ },
+ "92ab6bc3bb3c": {
+  "verdict": "partial",
+  "reason": "证据仅给出奥尔塔柯伊位置，未直接比较两处街区。"
+ },
+ "ce34fd36aa0b": {
+  "verdict": "unsupported",
+  "reason": "证据未涉及街区位置，无法支持有条件结论。"
+ },
+ "6475d69e1961": {
+  "verdict": "unsupported",
+  "reason": "证据未涉及街区位置，无法支持有条件结论。"
+ },
+ "832e76271f34": {
+  "verdict": "supported",
+  "reason": "证据直接说明清真寺位于法提赫区拉莱利。"
+ },
+ "33a04e4243ce": {
+  "verdict": "supported",
+  "reason": "证据仅提及清真寺，未提及埃斯玛宅邸及街区。"
+ },
+ "27fa8edda9f1": {
+  "verdict": "supported",
+  "reason": "证据直接说明宅邸位于奥尔塔柯伊街区。"
+ },
+ "feaf0b380c9e": {
+  "verdict": "supported",
+  "reason": "证据仅提及宅邸，未提及清真寺及街区。"
+ },
+ "1da5efd3b0f3": {
+  "verdict": "supported",
+  "reason": "证据仅介绍人物，未说明街区关系。"
+ },
+ "fc114c0681d4": {
+  "verdict": "supported",
+  "reason": "证据仅介绍人物，未说明街区关系。"
+ },
+ "0b81815150aa": {
+  "verdict": "supported",
+  "reason": "证据明确拉莱利清真寺位于法提赫区拉莱利。"
+ },
+ "fb9912b68f95": {
+  "verdict": "supported",
+  "reason": "证据明确宅邸位于奥尔塔柯伊街区。"
+ },
+ "76ef9edda765": {
+  "verdict": "supported",
+  "reason": "证据仅介绍人物，未提及位置信息。"
+ },
+ "6541dac0372b": {
+  "verdict": "supported",
+  "reason": "证据仅介绍阿尔及尔清真寺，未提及目标。"
+ },
+ "dc1f4be993a3": {
+  "verdict": "supported",
+  "reason": "证据仅介绍人物，未提及所在街区。"
+ },
+ "adc53555dc6e": {
+  "verdict": "supported",
+  "reason": "证据仅介绍人物身份，未提及清真寺。"
+ },
+ "532972ac4aca": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及收养关系，与宅邸位置无关。"
+ },
+ "a92678d8b13a": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及清真寺名称，未涉及其他建筑。"
+ },
+ "6fbedc34a4ee": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及人名，与清真寺无关。"
+ },
+ "afa865045294": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及人名，与宅邸无关。"
+ },
+ "5633857c5f22": {
+  "verdict": "supported",
+  "reason": "证据直接说明Esma Sultan是三位苏丹女儿的名字。"
+ },
+ "9a8b9fb6ad7c": {
+  "verdict": "partial",
+  "reason": "证据仅介绍生平，未提及清真寺或宅邸。"
+ },
+ "43d2dd16cd9a": {
+  "verdict": "unsupported",
+  "reason": "证据仅说明名字，未涉及定位或街区判断。"
+ },
+ "f409e6e56934": {
+  "verdict": "unsupported",
+  "reason": "证据仅介绍生平，未涉及定位或街区判断。"
+ },
+ "8566d64422cf": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及Esma Sultan身份，与街区比较缺口无关。"
+ },
+ "95c866a8e9e0": {
+  "verdict": "unrelated",
+  "reason": "证据仅给出人物生卒与身份，未涉及街区信息。"
+ },
+ "e10d04ae5493": {
+  "verdict": "supported",
+  "reason": "证据直接说明雪莉·邓波儿饰演科利斯·阿彻。"
+ },
+ "d16d03b670e5": {
+  "verdict": "supported",
+  "reason": "证据直接说明其曾任驻加纳和捷克斯洛伐克大使。"
+ },
+ "9a326f895567": {
+  "verdict": "supported",
+  "reason": "证据直接说明其担任过美国礼宾司司长。"
+ },
+ "d31f49776037": {
+  "verdict": "supported",
+  "reason": "证据仅述电影角色，未提政府职务，支持该不确定性。"
+ },
+ "e26728ed9d54": {
+  "verdict": "supported",
+  "reason": "证据仅提广播节目，未提及电影女演员，支持该说法。"
+ },
+ "f35e6c9d6366": {
+  "verdict": "supported",
+  "reason": "证据仅称其为续集，未说明女演员，支持该不确定性。"
+ },
+ "296e682efc86": {
+  "verdict": "supported",
+  "reason": "证据直接说明雪莉·邓波儿饰演科利斯·阿彻。"
+ },
+ "646c19515a41": {
+  "verdict": "supported",
+  "reason": "证据直接说明其主演、最后主演角色及最后银幕亮相。"
+ },
+ "e4b96e4d9893": {
+  "verdict": "supported",
+  "reason": "证据直接说明该片是《Kiss and Tell》的续集。"
+ },
+ "c803a14c9b72": {
+  "verdict": "supported",
+  "reason": "证据直接说明其曾任驻加纳和捷克斯洛伐克大使。"
+ },
+ "fa76c860ed57": {
+  "verdict": "supported",
+  "reason": "证据直接说明其担任过美国礼宾司司长。"
+ },
+ "a051fef53ff9": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及电影主演信息，未涉及政府职务。"
+ },
+ "989f1892e5ad": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及广播节目，未涉及电影扮演者。"
+ },
+ "682671ce20a0": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及演员身份，未涉及电影或角色。"
+ },
+ "615d26859451": {
+  "verdict": "supported",
+  "reason": "证据摘录未提及该女演员，与断言一致。"
+ },
+ "445a404adb6b": {
+  "verdict": "supported",
+  "reason": "证据摘录仅提及续集关系，未说明女演员。"
+ },
+ "89feaea46089": {
+  "verdict": "supported",
+  "reason": "证据摘录未提及任何政府职位。"
+ },
+ "70d8918fd58d": {
+  "verdict": "supported",
+  "reason": "证据摘录未说明该女演员担任政府职务。"
+ },
+ "81fac2329dd3": {
+  "verdict": "supported",
+  "reason": "证据摘录未说明该女性担任政府职位。"
+ },
+ "573ca3c490ca": {
+  "verdict": "supported",
+  "reason": "证据摘录未提及该女演员或其政府职位。"
+ },
+ "4754a35bc202": {
+  "verdict": "supported",
+  "reason": "证据摘录未提供该女演员政府职位信息。"
+ },
+ "394153e5a4a8": {
+  "verdict": "supported",
+  "reason": "证据摘录直接支持Janet Marie Waldo担任标题角色。"
+ },
+ "729ac8cc412d": {
+  "verdict": "supported",
+  "reason": "证据仅说明其为广播和配音演员，未提及该电影。"
+ },
+ "77f6b63f9fd9": {
+  "verdict": "supported",
+  "reason": "证据只列出动画配音角色，未提及任何政府职位。"
+ },
+ "2213b42ee011": {
+  "verdict": "supported",
+  "reason": "证据仅提及剧名，未说明演员。"
+ },
+ "1bff4628cbe6": {
+  "verdict": "supported",
+  "reason": "证据只介绍政府职位，未关联任何演员。"
+ },
+ "da301e1cb6e0": {
+  "verdict": "supported",
+  "reason": "证据只介绍电影信息，未提及女演员政府职务。"
+ },
+ "4dbb4aedd103": {
+  "verdict": "supported",
+  "reason": "证据只介绍政府职位，未提及Corliss Archer或该电影。"
+ },
+ "3377e35878d6": {
+  "verdict": "supported",
+  "reason": "证据只介绍乡村会计职位，未提及电影或女演员。"
+ },
+ "65a744de7051": {
+  "verdict": "supported",
+  "reason": "证据仅提及剧名，未提及该电影或女演员。"
+ },
+ "6c63a5edd2bd": {
+  "verdict": "supported",
+  "reason": "证据直接表明雪莉·邓波儿饰演科利斯·阿彻。"
+ },
+ "20818d50b595": {
+  "verdict": "supported",
+  "reason": "证据直接提到其担任美国驻加纳和捷克斯洛伐克大使。"
+ },
+ "e763fb97125b": {
+  "verdict": "supported",
+  "reason": "证据直接提到其担任美国礼宾司司长。"
+ },
+ "80fb94c218c4": {
+  "verdict": "supported",
+  "reason": "证据直接说明该系列由两人合写。"
+ },
+ "810c71a11821": {
+  "verdict": "supported",
+  "reason": "证据直接说明第一人称及六位主角轮流叙述。"
+ },
+ "bff446803fa6": {
+  "verdict": "supported",
+  "reason": "证据直接说明该书是第二本companion book。"
+ },
+ "507c33e7b630": {
+  "verdict": "supported",
+  "reason": "证据直接说明该书由K. A. Applegate所写。"
+ },
+ "20eee612a433": {
+  "verdict": "supported",
+  "reason": "证据直接说明该书由Tobias引入并飞往山谷。"
+ },
+ "a6632877ffa2": {
+  "verdict": "supported",
+  "reason": "证据直接支持Jara Hamee讲述Yeerks奴役Hork-Bajir的故事。"
+ },
+ "41f8617d544a": {
+  "verdict": "supported",
+  "reason": "证据直接支持Aldrea和Dak Hamee试图拯救世界。"
+ },
+ "c55130dc3ebc": {
+  "verdict": "supported",
+  "reason": "证据直接支持由三人视角交替叙述。"
+ },
+ "f18241016322": {
+  "verdict": "supported",
+  "reason": "证据仅称系列为Animorphs，未说明类型，支持未知结论。"
+ },
+ "dd00fde443a2": {
+  "verdict": "unrelated",
+  "reason": "证据提及Tobias介绍书籍，与是否第一人称叙述无关。"
+ },
+ "9f03987cdd35": {
+  "verdict": "unrelated",
+  "reason": "证据讨论系列主题，未涉及配套书。"
+ },
+ "b85707f042d2": {
+  "verdict": "supported",
+  "reason": "证据直接支持科幻奇幻青少年系列及作者。"
+ },
+ "ace90528411a": {
+  "verdict": "supported",
+  "reason": "证据直接支持第一人称及六位主角轮流叙述。"
+ },
+ "8f563644329f": {
+  "verdict": "supported",
+  "reason": "证据直接说明该书是系列第二本companion book。"
+ },
+ "1467429c0179": {
+  "verdict": "supported",
+  "reason": "证据直接说明该书由K. A. Applegate所写。"
+ },
+ "5390d1fb8f95": {
+  "verdict": "supported",
+  "reason": "证据直接说明Tobias引入并飞往自由Hork-Bajir山谷。"
+ },
+ "ef65b2d64968": {
+  "verdict": "supported",
+  "reason": "证据直接说明Jara Hamee讲述Yeerks奴役Hork-Bajir。"
+ },
+ "a1d67a019a69": {
+  "verdict": "supported",
+  "reason": "证据直接说明Aldrea和Dak Hamee试图拯救世界。"
+ },
+ "6941f585d1dd": {
+  "verdict": "supported",
+  "reason": "证据直接说明故事由三人的视角叙述。"
+ },
+ "4b1569e8d31a": {
+  "verdict": "supported",
+  "reason": "证据仅称系列为Animorphs，未提类型，支持缺口判断。"
+ },
+ "96f8d499032b": {
+  "verdict": "supported",
+  "reason": "证据未说明第一人称叙述，支持覆盖不足判断。"
+ },
+ "67b54e6e7f15": {
+  "verdict": "unrelated",
+  "reason": "证据仅列主题，未涉及配套书或覆盖不足。"
+ },
+ "023756fadcfb": {
+  "verdict": "supported",
+  "reason": "证据直接说明她是美国青少年奇幻小说家。"
+ },
+ "408e8a331059": {
+  "verdict": "supported",
+  "reason": "证据明确称三本书互为配套书。"
+ },
+ "e59e7760544f": {
+  "verdict": "unrelated",
+  "reason": "证据只介绍作者身份，未涉及叙述人称。"
+ },
+ "5a1c33317604": {
+  "verdict": "unrelated",
+  "reason": "证据只提新书为系列续作，未涉配套书。"
+ },
+ "448560104924": {
+  "verdict": "supported",
+  "reason": "证据直接说明其为Elizabeth Kay的奇幻青少年三部曲。"
+ },
+ "69c5cfca4096": {
+  "verdict": "unrelated",
+  "reason": "证据只提故事发生在平行宇宙，未涉叙述人称。"
+ },
+ "afef8e63c363": {
+  "verdict": "unrelated",
+  "reason": "证据仅列三本书名，未涉配套书内容。"
+ },
+ "fac8277fa9fc": {
+  "verdict": "supported",
+  "reason": "证据直接陈述该书为2015年美国都市奇幻青少年小说。"
+ },
+ "3ffd3f681bff": {
+  "verdict": "supported",
+  "reason": "证据仅介绍该书，未提及科学奇幻系列或伴读书。"
+ },
+ "81ed645aee5f": {
+  "verdict": "supported",
+  "reason": "证据仅描述主角，未说明是否第一人称叙述。"
+ },
+ "4b2294bfd429": {
+  "verdict": "supported",
+  "reason": "证据仅解释shadowshaper含义，未提及被奴役世界或外星物种。"
+ },
+ "99f6845f734b": {
+  "verdict": "supported",
+  "reason": "证据直接说明该系列面向青年读者市场。"
+ },
+ "8304b07bd189": {
+  "verdict": "supported",
+  "reason": "证据仅说明系列构成，未提及被奴役世界或外星物种伴读本。"
+ },
+ "0fc2f071fb3d": {
+  "verdict": "unrelated",
+  "reason": "证据涉及Square Enix伴读书，与科幻奇幻青少年系列无关。"
+ },
+ "187d581a5f42": {
+  "verdict": "supported",
+  "reason": "证据仅介绍奖项本身，未提及科幻奇幻青少年系列或伴读书。"
+ },
+ "20e63c4924a2": {
+  "verdict": "unrelated",
+  "reason": "证据只提到《Science Fantasy》杂志，与断言中的青少年系列无关。"
+ },
+ "6d63b6c3a459": {
+  "verdict": "supported",
+  "reason": "证据直接说明该书是盖尔·卡里格的青少年蒸汽朋克小说。"
+ },
+ "1272ea92cbe7": {
+  "verdict": "unrelated",
+  "reason": "证据只提到青少年蒸汽朋克小说，未涉及科学奇幻或第一人称叙述。"
+ },
+ "3b6c62bacdf1": {
+  "verdict": "unrelated",
+  "reason": "证据只提到同一宇宙设定，未涉及被奴役世界或外星物种配套书。"
+ },
+ "762d22fd65b6": {
+  "verdict": "partial",
+  "reason": "证据只出现系列名，未说明类型或读者定位，与断言部分相关。"
+ },
+ "8f5da22dbfee": {
+  "verdict": "unsupported",
+  "reason": "证据提到由Tobias引入，但未说明是否第一人称叙述。"
+ },
+ "f8f3a7075aea": {
+  "verdict": "unrelated",
+  "reason": "证据只列系列核心主题，未涉及配套书或奴役世界故事。"
+ },
+ "e9008131f0e9": {
+  "verdict": "supported",
+  "reason": "证据直接说明该书是系列第二本companion book。"
+ },
+ "0330591268ef": {
+  "verdict": "supported",
+  "reason": "证据直接说明其为美国导演、编剧和制片人。"
+ },
+ "d8cca4179386": {
+  "verdict": "supported",
+  "reason": "证据直接称其为美国电影制作人。"
+ },
+ "55bc25413bc0": {
+  "verdict": "supported",
+  "reason": "证据仅提及Ed Wood，未说明国籍。"
+ },
+ "e5dacc1d72a9": {
+  "verdict": "supported",
+  "reason": "证据提到埃德·伍德，但未说明国籍。"
+ },
+ "9ad672767588": {
+  "verdict": "supported",
+  "reason": "证据仅提及德里克森，无法判断国籍异同。"
+ },
+ "9cd2696a5bef": {
+  "verdict": "supported",
+  "reason": "证据直接说明其为美国导演、编剧和制片人。"
+ },
+ "9d99c8ce51f6": {
+  "verdict": "supported",
+  "reason": "证据直接说明其执导该2014年美国超自然恐怖片。"
+ },
+ "492e21ac34d8": {
+  "verdict": "supported",
+  "reason": "证据直接说明其为2016年美国超级英雄电影。"
+ },
+ "49c9d586480b": {
+  "verdict": "supported",
+  "reason": "证据直接说明该片由Scott Derrickson执导。"
+ },
+ "5e1f4a1362db": {
+  "verdict": "supported",
+  "reason": "证据直接说明其为美国电影制作人。"
+ },
+ "66b38f5f8472": {
+  "verdict": "supported",
+  "reason": "证据直接说明Ed Wood是1994年美国传记喜剧剧情片。"
+ },
+ "a22804fe4e0d": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及主演，未涉及Ed Wood国籍。"
+ },
+ "670366654cde": {
+  "verdict": "unrelated",
+  "reason": "证据仅出现人名，未涉及国籍信息。"
+ },
+ "c88c3a584b63": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及短片，未涉及国籍信息。"
+ },
+ "1835f6e602ad": {
+  "verdict": "supported",
+  "reason": "证据说明其执导《险恶》，且未提国籍。"
+ },
+ "14cfd5e32412": {
+  "verdict": "unrelated",
+  "reason": "证据仅提及埃德·伍德电影，未涉及其国籍。"
+ },
+ "0d0287ac7763": {
+  "verdict": "unrelated",
+  "reason": "证据只介绍Ed Wood电影，未提及Scott Derrickson。"
+ },
+ "5273e0ce5e57": {
+  "verdict": "unrelated",
+  "reason": "证据只介绍Scott Derrickson，未提及艾德·伍德。"
+ },
+ "1b3a8014d438": {
+  "verdict": "unrelated",
+  "reason": "证据只出现Edward Davis Wood Jr.，未提及斯科特·德里克森。"
+ },
+ "6b9f52b01818": {
+  "verdict": "unrelated",
+  "reason": "证据只介绍Woodson地名，未比较两人国籍。"
+ },
+ "cced65952018": {
+  "verdict": "unrelated",
+  "reason": "证据只介绍Sinister电影，未提及艾德·伍德。"
+ },
+ "4e81f6e00865": {
+  "verdict": "supported",
+  "reason": "证据直接说明Ed Wood Sr.是Woodson等地名的命名来源。"
+ },
+ "03d47b3594d3": {
+  "verdict": "supported",
+  "reason": "证据直接描述Ed Wood Sr.为种植园主、商人和商人。"
+ },
+ "603c3c143faa": {
+  "verdict": "unrelated",
+  "reason": "证据只介绍Woodson地名，未说明Ed Wood Sr.国籍。"
+ },
+ "5f57bb6fa340": {
+  "verdict": "supported",
+  "reason": "证据摘录内容与断言一致，均未提及Scott Derrickson。"
+ },
+ "f78ef6e0aee0": {
+  "verdict": "unsupported",
+  "reason": "证据明确标注其为美国人，与断言中缺少独立来源的说法不符。"
+ }
+}

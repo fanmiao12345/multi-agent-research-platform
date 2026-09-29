@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_739e8a8160",
+      "fact": "本资料称该韩国男子组合由S.M. Entertainment组建。",
+      "tag": "F",
+      "quote": "The group was formed by S.M. Entertainment in 2008",
+      "start": 97,
+      "end": 147,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 1169
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_739e8a8160",
+      "fact": "本资料未提及2014 S/S专辑或任何2014年出道专辑。",
+      "tag": "U",
+      "quote": "South Korean boy group Shinee have received several awards and nominations for their music work.",
+      "start": 0,
+      "end": 96,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 1169
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_63351bf9cd",
+      "fact": "本资料称曹圭贤是韩国男子组合Super Junior的成员。",
+      "tag": "F",
+      "quote": "He is best known as a member of South Korean boy group Super Junior",
+      "start": 128,
+      "end": 195,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 397
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_63351bf9cd",
+      "fact": "本资料未提及2014 S/S专辑及其所属组合。",
+      "tag": "U",
+      "quote": "He is best known as a member of South Korean boy group Super Junior",
+      "start": 128,
+      "end": 195,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 397
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_2eca6bb0d2",
+      "fact": "本资料称2014 S/S是韩国组合WINNER的出道专辑。",
+      "tag": "F",
+      "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+      "start": 0,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 237
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_2eca6bb0d2",
+      "fact": "本资料未说明WINNER由谁组建。",
+      "tag": "U",
+      "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+      "start": 0,
+      "end": 57,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 237
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_d475a55d8e",
+      "fact": "本资料称History是2013年由LOEN Entertainment组建的韩国男子组合。",
+      "tag": "F",
+      "quote": "History (Korean: 히스토리 ) was a South Korean boy group formed by LOEN Entertainment in 2013.",
+      "start": 0,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 275
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_d475a55d8e",
+      "fact": "本资料未提及2014 S/S这张专辑。",
+      "tag": "U",
+      "quote": "They debuted on April 26, 2013 with \"Dreamer\", featuring the narration of their labelmate IU.",
+      "start": 91,
+      "end": 184,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 275
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-009",
+      "source_id": "src_10c0188867",
+      "fact": "本资料称Winner是2013年由YG Entertainment组建的韩国男子组合。",
+      "tag": "F",
+      "quote": "is a South Korean boy group formed in 2013 by YG Entertainment",
+      "start": 47,
+      "end": 109,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 304
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-010",
+      "source_id": "src_10c0188867",
+      "fact": "本资料称Winner于2014年出道。",
+      "tag": "F",
+      "quote": "and debuted in 2014",
+      "start": 110,
+      "end": 129,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 304
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-011",
+      "source_id": "src_10c0188867",
+      "fact": "本资料未直接提及2014 S/S是该组合的出道专辑。",
+      "tag": "U",
+      "quote": "debuted in 2014",
+      "start": 114,
+      "end": 129,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 304
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-012",
+      "source_id": "src_16b8161888",
+      "fact": "Madtown是2014年由J. Tune Camp组建的韩国男子组合。",
+      "tag": "F",
+      "quote": "is a South Korean boy group formed in 2014 by J. Tune Camp",
+      "start": 52,
+      "end": 110,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 494
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-013",
+      "source_id": "src_16b8161888",
+      "fact": "本资料未提及2014 S/S这一专辑。",
+      "tag": "U",
+      "quote": "Their debut album, \"Mad Town\", was released on October 6, 2014",
+      "start": 188,
+      "end": 250,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 494
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-014",
+      "source_id": "src_197e25a6cb",
+      "fact": "本资料称Ravi于2012年作为韩国男子组合VIXX的成员开始说唱歌手生涯。",
+      "tag": "F",
+      "quote": "He began his career as a rapper in 2012 in the South Korean boy group VIXX",
+      "start": 94,
+      "end": 168,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 628
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-015",
+      "source_id": "src_197e25a6cb",
+      "fact": "本资料未说明VIXX由谁创立。",
+      "tag": "U",
+      "quote": "He began his career as a rapper in 2012 in the South Korean boy group VIXX",
+      "start": 94,
+      "end": 168,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 628
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-016",
+      "source_id": "src_dcbfcf7969",
+      "fact": "SF9是由FNC Entertainment组建的韩国男子组合。",
+      "tag": "F",
+      "quote": "is a South Korean boy group formed by FNC Entertainment",
+      "start": 60,
+      "end": 115,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 271
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-017",
+      "source_id": "src_dcbfcf7969",
+      "fact": "SF9于2016年10月5日出道，发行首张单曲专辑《Feeling Sensation》。",
+      "tag": "F",
+      "quote": "SF9 debuted on October 5, 2016 with the release of their first single album \"Feeling Sensation\"",
+      "start": 175,
+      "end": 270,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 271
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-018",
+      "source_id": "src_dcbfcf7969",
+      "fact": "本资料未提及2014 S/S这张专辑。",
+      "tag": "U",
+      "quote": "SF9 debuted on October 5, 2016",
+      "start": 175,
+      "end": 205,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 271
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-019",
+      "source_id": "src_1fd9a2c09f",
+      "fact": "本资料称Seventeen是由Pledis Entertainment组建的韩国男团。",
+      "tag": "F",
+      "quote": "is a South Korean boy group formed by Pledis Entertainment in 2015",
+      "start": 121,
+      "end": 187,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 231
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-020",
+      "source_id": "src_1fd9a2c09f",
+      "fact": "本资料称Seventeen于2015年组建。",
+      "tag": "F",
+      "quote": "formed by Pledis Entertainment in 2015",
+      "start": 149,
+      "end": 187,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 231
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-021",
+      "source_id": "src_1fd9a2c09f",
+      "fact": "本资料未提及2014 S/S或任何出道专辑。",
+      "tag": "U",
+      "quote": "They have released one album and four EPs.",
+      "start": 189,
+      "end": 231,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 231
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-022",
+      "source_id": "src_1df2905c59",
+      "fact": "本资料称2014 S/S是韩国男子组合BTS的首张专辑。",
+      "tag": "U",
+      "quote": "The following is the discography of South Korean boy group BTS.",
+      "start": 0,
+      "end": 63,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 771
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-023",
+      "source_id": "src_1df2905c59",
+      "fact": "本资料未说明BTS由谁组建。",
+      "tag": "U",
+      "quote": "The group debuted in South Korea on June 2013 with single album, \"2 Cool 4 Skool\", at number 5 on South Korean Week 31 Gaon Weekly Chart.",
+      "start": 64,
+      "end": 201,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 771
+      },
+      "note": ""
+    }
+  ]
+}

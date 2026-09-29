@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_8cc99333d4",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "1.发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。2.我国个人外汇出口限额为每人每次2000美元（含2000美元）。3.一年最多只能汇1万美元。汇款方法：A、汇款人前往就近的中国邮政(或中国农业银行)西联汇款代理网点，认明西联",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 1637,
+      "content_hash": "97d6c0290d311e208bf8cb6187d04359bb0badd7a1cbaf7ee259907a885df19d",
+      "normalized_hash": "97d6c0290d311e208bf8cb6187d04359bb0badd7a1cbaf7ee259907a885df19d",
+      "captured_at": "2026-09-29T17:03:46",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_8cc99333d4.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T17:03:46",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

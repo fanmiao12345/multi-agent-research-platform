@@ -1,0 +1,2737 @@
+{
+ "meta": {
+  "generated_by": "eval.support_rate",
+  "mode": "real",
+  "judge_model": "deepseek-v4-pro",
+  "independence": "independent_grader_model",
+  "reports": [
+   "eval/reports/v3b_holdout_new/business_report.json"
+  ],
+  "note": "测量读数，不构成验收结论；判分需人工抽检校准"
+ },
+ "usage": {
+  "call_count": 24,
+  "estimated_cost_usd": 0.0316487,
+  "budget_stopped": false,
+  "batches": 24,
+  "invalid_records": 0,
+  "unparsable_batches": 0,
+  "unknown_usage_calls": 0
+ },
+ "missing_evidence": [],
+ "skipped_units": {
+  "citation_only": 34,
+  "bookkeeping": 0
+ },
+ "pairs": [
+  {
+   "id": "6d377a05507b",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-001称孕妇奶粉利于胎儿发育，并与乳汁锌铁铜含量较高相关〔事实〕【[E-001]】；",
+   "evidence_id": "E-001",
+   "quote": "孕妇奶粉利于胎儿发育，孕妇食用奶粉，在分娩后乳汁中微量元素锌、铁、铜的含量较高",
+   "fact": "本资料称孕妇奶粉利于胎儿发育，孕妇食用后乳汁中锌、铁、铜含量较高。",
+   "tag": "F"
+  },
+  {
+   "id": "c960fa231151",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-002称孕妇适合低乳糖且富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁锌钙和维生素B12的奶粉〔事实〕【[E-002]】；",
+   "evidence_id": "E-002",
+   "quote": "孕妇比较适合低乳糖，富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁质、锌质、钙质和维生素B12等营养素的奶粉",
+   "fact": "本资料称孕妇比较适合低乳糖且富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁锌钙和维生素B12的奶粉。",
+   "tag": "F"
+  },
+  {
+   "id": "66cf8b940c16",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "由该配方描述可推断，可把低乳糖且含上述成分作为筛选方向之一〔推断〕【[E-002]】。",
+   "evidence_id": "E-002",
+   "quote": "孕妇比较适合低乳糖，富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁质、锌质、钙质和维生素B12等营养素的奶粉",
+   "fact": "本资料称孕妇比较适合低乳糖且富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁锌钙和维生素B12的奶粉。",
+   "tag": "F"
+  },
+  {
+   "id": "2923e5a95879",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "合生元方面：E-003称其奶粉及孕妇系列兼顾孕妇与婴儿所需营养〔事实〕【[E-003]】；",
+   "evidence_id": "E-003",
+   "quote": "合生元奶粉、合生元孕妇系列奶粉不仅考虑到孕妇所需营养，而且考虑到婴儿所许营养",
+   "fact": "本资料提到合生元奶粉、合生元孕妇系列奶粉兼顾孕妇与婴儿所需营养。",
+   "tag": "F"
+  },
+  {
+   "id": "fc0edc77820a",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-004称其孕妇奶粉按婴儿和妈妈不同阶段搭配〔事实〕【[E-004]】；",
+   "evidence_id": "E-004",
+   "quote": "合生元孕妇奶粉根据婴儿和妈妈不同的阶段进行搭配",
+   "fact": "本资料称合生元孕妇奶粉按婴儿和妈妈不同阶段进行搭配。",
+   "tag": "F"
+  },
+  {
+   "id": "c93c428d5485",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-005称其孕妇奶粉富含叶酸，助胎儿健康发育，对红血球制造重要〔事实〕【[E-005]】；",
+   "evidence_id": "E-005",
+   "quote": "合生元孕妇奶粉在保证孕妇所需的营养上还富有叶酸，可帮助胎儿健康发育，对红血球的制造非常重要",
+   "fact": "本资料称合生元孕妇奶粉富含叶酸，可帮助胎儿健康发育，对红血球制造重要。",
+   "tag": "F"
+  },
+  {
+   "id": "f3f2ce32b987",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-006称其奶粉中亚麻酸、亚油酸可转化为DHA和AA，助胎儿脑眼发育〔事实〕【[E-006]】；",
+   "evidence_id": "E-006",
+   "quote": "合生元奶粉里面的亚麻酸、亚油酸也能在孕妇身体内将转化为DHA(二十二碳六烯酸)和AA(花生四烯酸)，有助于胎儿脑部和眼睛发育",
+   "fact": "本资料称合生元奶粉中的亚麻酸、亚油酸可在孕妇体内转化为DHA和AA，有助胎儿脑部和眼睛发育。",
+   "tag": "F"
+  },
+  {
+   "id": "bf60778c3c81",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-007为资料中“合生元孕妇奶粉还是不错的”评价性表述〔事实〕【[E-007]】。",
+   "evidence_id": "E-007",
+   "quote": "因此合生元孕妇奶粉还是不错的",
+   "fact": "本资料称合生元孕妇奶粉还是不错的。",
+   "tag": "F"
+  },
+  {
+   "id": "df7599851a46",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "依据分阶段搭配描述，可推断合生元孕妇奶粉可作为候选之一〔推断〕【[E-004]】；",
+   "evidence_id": "E-004",
+   "quote": "合生元孕妇奶粉根据婴儿和妈妈不同的阶段进行搭配",
+   "fact": "本资料称合生元孕妇奶粉按婴儿和妈妈不同阶段进行搭配。",
+   "tag": "F"
+  },
+  {
+   "id": "23e194078898",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "依据叶酸与脑眼发育成分描述，可进一步支持该候选定位〔推断〕【[E-005]】。",
+   "evidence_id": "E-005",
+   "quote": "合生元孕妇奶粉在保证孕妇所需的营养上还富有叶酸，可帮助胎儿健康发育，对红血球的制造非常重要",
+   "fact": "本资料称合生元孕妇奶粉富含叶酸，可帮助胎儿健康发育，对红血球制造重要。",
+   "tag": "F"
+  },
+  {
+   "id": "0a718796fbcc",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "但E-007的评价不能证明合生元优于其他品牌〔推断〕【[E-007]】；",
+   "evidence_id": "E-007",
+   "quote": "因此合生元孕妇奶粉还是不错的",
+   "fact": "本资料称合生元孕妇奶粉还是不错的。",
+   "tag": "F"
+  },
+  {
+   "id": "57df01a58f65",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "其他品牌：E-008称有人怀孕后自行购买了美纳多孕产妇奶粉〔事实〕【[E-008]】；",
+   "evidence_id": "E-008",
+   "quote": "后来就自己去买了美纳多孕产妇奶粉",
+   "fact": "本资料提到有人怀孕后自行购买了美纳多孕产妇奶粉。",
+   "tag": "F"
+  },
+  {
+   "id": "05962d4da498",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "购买行为不能推断美纳多适合孕妇或效果良好〔推断〕【[E-008]】；",
+   "evidence_id": "E-008",
+   "quote": "后来就自己去买了美纳多孕产妇奶粉",
+   "fact": "本资料提到有人怀孕后自行购买了美纳多孕产妇奶粉。",
+   "tag": "F"
+  },
+  {
+   "id": "9d23f36e5d91",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "美纳多成分、适用性及评价材料未提供〔未知〕，不能据此推荐美纳多〔推断〕【[E-008]】。",
+   "evidence_id": "E-008",
+   "quote": "后来就自己去买了美纳多孕产妇奶粉",
+   "fact": "本资料提到有人怀孕后自行购买了美纳多孕产妇奶粉。",
+   "tag": "F"
+  },
+  {
+   "id": "2d9544996c70",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-001：孕妇奶粉利于胎儿发育，并与乳汁锌铁铜含量较高相关〔事实〕【[E-001]】。",
+   "evidence_id": "E-001",
+   "quote": "孕妇奶粉利于胎儿发育，孕妇食用奶粉，在分娩后乳汁中微量元素锌、铁、铜的含量较高",
+   "fact": "本资料称孕妇奶粉利于胎儿发育，孕妇食用后乳汁中锌、铁、铜含量较高。",
+   "tag": "F"
+  },
+  {
+   "id": "240e90525956",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-002：孕妇适合低乳糖且富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁锌钙和维生素B12的奶粉〔事实〕【[E-002]】。",
+   "evidence_id": "E-002",
+   "quote": "孕妇比较适合低乳糖，富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁质、锌质、钙质和维生素B12等营养素的奶粉",
+   "fact": "本资料称孕妇比较适合低乳糖且富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁锌钙和维生素B12的奶粉。",
+   "tag": "F"
+  },
+  {
+   "id": "69f5de2744c7",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-003：合生元奶粉及孕妇系列兼顾孕妇与婴儿所需营养〔事实〕【[E-003]】。",
+   "evidence_id": "E-003",
+   "quote": "合生元奶粉、合生元孕妇系列奶粉不仅考虑到孕妇所需营养，而且考虑到婴儿所许营养",
+   "fact": "本资料提到合生元奶粉、合生元孕妇系列奶粉兼顾孕妇与婴儿所需营养。",
+   "tag": "F"
+  },
+  {
+   "id": "d70e6570db5c",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-004：合生元孕妇奶粉按婴儿和妈妈不同阶段搭配〔事实〕【[E-004]】。",
+   "evidence_id": "E-004",
+   "quote": "合生元孕妇奶粉根据婴儿和妈妈不同的阶段进行搭配",
+   "fact": "本资料称合生元孕妇奶粉按婴儿和妈妈不同阶段进行搭配。",
+   "tag": "F"
+  },
+  {
+   "id": "d0a867c50c50",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-005：合生元孕妇奶粉富含叶酸，助胎儿健康发育，对红血球制造重要〔事实〕【[E-005]】。",
+   "evidence_id": "E-005",
+   "quote": "合生元孕妇奶粉在保证孕妇所需的营养上还富有叶酸，可帮助胎儿健康发育，对红血球的制造非常重要",
+   "fact": "本资料称合生元孕妇奶粉富含叶酸，可帮助胎儿健康发育，对红血球制造重要。",
+   "tag": "F"
+  },
+  {
+   "id": "26dc6658c242",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-006：合生元奶粉中亚麻酸、亚油酸可转化为DHA和AA，助胎儿脑眼发育〔事实〕【[E-006]】。",
+   "evidence_id": "E-006",
+   "quote": "合生元奶粉里面的亚麻酸、亚油酸也能在孕妇身体内将转化为DHA(二十二碳六烯酸)和AA(花生四烯酸)，有助于胎儿脑部和眼睛发育",
+   "fact": "本资料称合生元奶粉中的亚麻酸、亚油酸可在孕妇体内转化为DHA和AA，有助胎儿脑部和眼睛发育。",
+   "tag": "F"
+  },
+  {
+   "id": "a1d44ff68895",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-007：资料称合生元孕妇奶粉还是不错的〔事实〕【[E-007]】。",
+   "evidence_id": "E-007",
+   "quote": "因此合生元孕妇奶粉还是不错的",
+   "fact": "本资料称合生元孕妇奶粉还是不错的。",
+   "tag": "F"
+  },
+  {
+   "id": "d6b6ad5e1cc7",
+   "case_id": "pd01",
+   "job_id": "job_96f55c771aa8486585a2c74ccf4e76ac",
+   "unit": "E-008：有人怀孕后自行购买了美纳多孕产妇奶粉〔事实〕【[E-008]】。",
+   "evidence_id": "E-008",
+   "quote": "后来就自己去买了美纳多孕产妇奶粉",
+   "fact": "本资料提到有人怀孕后自行购买了美纳多孕产妇奶粉。",
+   "tag": "F"
+  },
+  {
+   "id": "7de5bc110876",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "在现有材料下，可给出有条件结论：一岁半宝宝一天奶量约300~500毫升【E-004】〔事实〕；",
+   "evidence_id": "E-004",
+   "quote": "因各宝宝食量有偏差,一天奶量约300~500毫升",
+   "fact": "因各宝宝食量有偏差，一天奶量约300~500毫升",
+   "tag": "F"
+  },
+  {
+   "id": "ca04279feab7",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "该范围需结合各宝宝食量有偏差这一前提使用【E-004】〔推断〕。",
+   "evidence_id": "E-004",
+   "quote": "因各宝宝食量有偏差,一天奶量约300~500毫升",
+   "fact": "因各宝宝食量有偏差，一天奶量约300~500毫升",
+   "tag": "F"
+  },
+  {
+   "id": "627efe81f915",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "若按材料所述早6点及晚10点各一杯配方奶安排【E-003】〔事实〕，因缺少每杯配方奶容量的量化说明，无法核对两杯合计是否落在300~500毫升内〔未知〕。",
+   "evidence_id": "E-003",
+   "quote": "早6点及晚10点各一杯配方奶",
+   "fact": "早6点及晚10点各一杯配方奶",
+   "tag": "F"
+  },
+  {
+   "id": "8cc7f76c97ed",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "材料提到一岁半宝宝可以用豆浆替代一部分奶【E-005】〔事实〕，但300~500毫升是否包含豆浆等替代品尚未界定〔未知〕。",
+   "evidence_id": "E-005",
+   "quote": "可以用豆浆替代一部分奶",
+   "fact": "可以用豆浆替代一部分奶",
+   "tag": "F"
+  },
+  {
+   "id": "5fb8edd6d746",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "- 关于300~500毫升：材料直接给出“因各宝宝食量有偏差，一岁半宝宝一天奶量约300~500毫升”【E-004】〔事实〕；",
+   "evidence_id": "E-004",
+   "quote": "因各宝宝食量有偏差,一天奶量约300~500毫升",
+   "fact": "因各宝宝食量有偏差，一天奶量约300~500毫升",
+   "tag": "F"
+  },
+  {
+   "id": "0675eb6771c8",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "- 关于早晚配方奶：材料提到“一岁半宝宝早6点及晚10点各一杯配方奶”【E-003】〔事实〕；",
+   "evidence_id": "E-003",
+   "quote": "早6点及晚10点各一杯配方奶",
+   "fact": "早6点及晚10点各一杯配方奶",
+   "tag": "F"
+  },
+  {
+   "id": "082d0096f226",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "- 关于饮食结构：材料指出一岁半孩子饮食正从乳类为主转到以粮食、蔬菜、肉类为主食【E-001】〔事实〕；",
+   "evidence_id": "E-001",
+   "quote": "饮食正从乳类为主转到以粮食、蔬菜、肉类为主食的阶段",
+   "fact": "一岁半孩子饮食正从乳类为主转到以粮食、蔬菜、肉类为主食",
+   "tag": "F"
+  },
+  {
+   "id": "bc15e490c868",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "- 关于餐点安排：材料指出一岁半孩子每天3餐饭，再加1、2顿点心【E-002】〔事实〕；",
+   "evidence_id": "E-002",
+   "quote": "每天3餐饭，再加1、2顿点心",
+   "fact": "一岁半孩子每天3餐饭，再加1、2顿点心",
+   "tag": "F"
+  },
+  {
+   "id": "00c38c6b30c3",
+   "case_id": "pd02",
+   "job_id": "job_4d8dd31716024f9daa45a23b6515761b",
+   "unit": "- 关于豆浆替代：材料指出一岁半宝宝可以用豆浆替代一部分奶【E-005】〔事实〕；",
+   "evidence_id": "E-005",
+   "quote": "可以用豆浆替代一部分奶",
+   "fact": "可以用豆浆替代一部分奶",
+   "tag": "F"
+  },
+  {
+   "id": "cb3f6a04b605",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "资料中存在多种限额口径：我国个人外汇出口限额为每人每次2000美元（含2000美元）〔事实〕[E-001]；",
+   "evidence_id": "E-001",
+   "quote": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+   "fact": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+   "tag": "F"
+  },
+  {
+   "id": "482a2d778e0f",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "一年最多只能汇1万美元〔事实〕[E-002]；",
+   "evidence_id": "E-002",
+   "quote": "一年最多只能汇1万美元。",
+   "fact": "一年最多只能汇1万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "dde307fac7f4",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "用西联汇款汇款到美国限额是一万美元〔事实〕[E-003]；",
+   "evidence_id": "E-003",
+   "quote": "用西联汇款汇款到美国限额是一万美元。",
+   "fact": "用西联汇款汇款到美国限额是一万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "bc3139bbcd01",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "西联汇款金额最多只能是一万美元〔事实〕[E-004]；",
+   "evidence_id": "E-004",
+   "quote": "汇款金额最多只能是一万美元",
+   "fact": "西联汇款金额最多只能是一万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "8468f571721c",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "资料提到9000美元是美国政府规定的最高限额，多了那边收不了〔事实〕[E-005]；",
+   "evidence_id": "E-005",
+   "quote": "最高限额就是9000美元。多了那边收不了。",
+   "fact": "资料提到9000美元是美国政府规定的最高限额，多了那边收不了。",
+   "tag": "F"
+  },
+  {
+   "id": "56e5ccfd48fd",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行〔事实〕[E-006]；",
+   "evidence_id": "E-006",
+   "quote": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+   "fact": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+   "tag": "F"
+  },
+  {
+   "id": "db2acd738fbc",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "资料中2000美元、1万美元、9000美元等限额表述并存，未说明彼此关系〔事实〕[E-008]。",
+   "evidence_id": "E-008",
+   "quote": "最高限额就是9000美元。",
+   "fact": "资料中2000美元、1万美元、9000美元等限额表述并存，未说明彼此关系。",
+   "tag": "I"
+  },
+  {
+   "id": "7dec605d58f9",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "西联汇款只受理个人对个人的汇款〔事实〕[E-007]。",
+   "evidence_id": "E-007",
+   "quote": "只受理个人对个人的汇款。",
+   "fact": "西联汇款只受理个人对个人的汇款。",
+   "tag": "F"
+  },
+  {
+   "id": "beb68fdf5caa",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "有条件结论：若问题问的是西联汇款金额上限，且采用“西联汇款金额最多只能是一万美元”的表述，则该表述给出的上限为一万美元〔事实〕[E-004]；",
+   "evidence_id": "E-004",
+   "quote": "汇款金额最多只能是一万美元",
+   "fact": "西联汇款金额最多只能是一万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "292a6e7ccd9e",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "若问题问的是汇款到美国，资料亦有“限额是一万美元”的表述〔事实〕[E-003]；",
+   "evidence_id": "E-003",
+   "quote": "用西联汇款汇款到美国限额是一万美元。",
+   "fact": "用西联汇款汇款到美国限额是一万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "0305d23c2310",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "但同一资料中又有“9000美元是美国政府规定的最高限额”的表述〔事实〕[E-005]；",
+   "evidence_id": "E-005",
+   "quote": "最高限额就是9000美元。多了那边收不了。",
+   "fact": "资料提到9000美元是美国政府规定的最高限额，多了那边收不了。",
+   "tag": "F"
+  },
+  {
+   "id": "0cb0cfd50c75",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "若问题问的是年度累计，资料有“一年最多只能汇1万美元”的表述〔事实〕[E-002]；",
+   "evidence_id": "E-002",
+   "quote": "一年最多只能汇1万美元。",
+   "fact": "一年最多只能汇1万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "18bf102fceee",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "若涉及我国个人外汇出口，资料有每人每次2000美元（含）的表述〔事实〕[E-001]；",
+   "evidence_id": "E-001",
+   "quote": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+   "fact": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+   "tag": "F"
+  },
+  {
+   "id": "c0132684e3e9",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "若涉及对方国兑付或我国外汇管理政策，资料称发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行〔事实〕[E-006]。",
+   "evidence_id": "E-006",
+   "quote": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+   "fact": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+   "tag": "F"
+  },
+  {
+   "id": "d92f1340619b",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "〔事实〕[E-001] 该条定位在我国个人外汇出口限额口径，是否直接适用于西联汇款〔未知〕。",
+   "evidence_id": "E-001",
+   "quote": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+   "fact": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+   "tag": "F"
+  },
+  {
+   "id": "8cd23e986ceb",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "〔事实〕[E-002] 该条定位为年度累计限额表述，适用对象、渠道及是否针对西联〔未知〕。",
+   "evidence_id": "E-002",
+   "quote": "一年最多只能汇1万美元。",
+   "fact": "一年最多只能汇1万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "2baf7a32b657",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "〔事实〕[E-003] 该条定位为西联汇款至美国方向的一万美元限额表述，与9000美元最高限额的关系〔未知〕。",
+   "evidence_id": "E-003",
+   "quote": "用西联汇款汇款到美国限额是一万美元。",
+   "fact": "用西联汇款汇款到美国限额是一万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "b5ff612674c7",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "〔事实〕[E-004] 该条定位为西联汇款金额上限的一万美元表述，是否涵盖所有国家或所有场景〔未知〕。",
+   "evidence_id": "E-004",
+   "quote": "汇款金额最多只能是一万美元",
+   "fact": "西联汇款金额最多只能是一万美元。",
+   "tag": "F"
+  },
+  {
+   "id": "55817e83fbd3",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "〔事实〕[E-005] 该条定位为美国方面或收款端最高限额的9000美元表述；",
+   "evidence_id": "E-005",
+   "quote": "最高限额就是9000美元。多了那边收不了。",
+   "fact": "资料提到9000美元是美国政府规定的最高限额，多了那边收不了。",
+   "tag": "F"
+  },
+  {
+   "id": "3a8d46961f8f",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "〔事实〕[E-006] 据此，西联发汇限额可能需结合对方国兑付限额与我国外汇管理政策判断〔推断〕。",
+   "evidence_id": "E-006",
+   "quote": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+   "fact": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+   "tag": "F"
+  },
+  {
+   "id": "61e0fcfcc8c2",
+   "case_id": "pd03",
+   "job_id": "job_a4832c017c5c402887e57db4ce10811e",
+   "unit": "〔事实〕[E-008] 该条定位为口径冲突与关系缺口，三者适用条件与优先关系〔未知〕。",
+   "evidence_id": "E-008",
+   "quote": "最高限额就是9000美元。",
+   "fact": "资料中2000美元、1万美元、9000美元等限额表述并存，未说明彼此关系。",
+   "tag": "I"
+  },
+  {
+   "id": "a862dffabf95",
+   "case_id": "pd04",
+   "job_id": "job_d832feef038d4e9b9db2776ad1e4e389",
+   "unit": "- RA是Regional Adviser的缩写，其中文为区域顾问【E-001】〔事实〕。",
+   "evidence_id": "E-001",
+   "quote": "RA英文(Regional Adviser)的缩写，中文意思：区域顾问。",
+   "fact": "本资料称RA是Regional Adviser的缩写，中文意思为区域顾问。",
+   "tag": "F"
+  },
+  {
+   "id": "c31e492c990a",
+   "case_id": "pd04",
+   "job_id": "job_d832feef038d4e9b9db2776ad1e4e389",
+   "unit": "- 在酒店语境下，酒店RA职位是酒店顾问【E-002】〔事实〕。",
+   "evidence_id": "E-002",
+   "quote": "酒店RA职位是酒店顾问。",
+   "fact": "本资料称酒店RA职位是酒店顾问。",
+   "tag": "F"
+  },
+  {
+   "id": "b3e63226d323",
+   "case_id": "pd04",
+   "job_id": "job_d832feef038d4e9b9db2776ad1e4e389",
+   "unit": "- 因此，对“RA是什么职位”的回答属于有条件结论：条件一，问的是通用缩写，则答为区域顾问【E-001】〔事实〕；",
+   "evidence_id": "E-001",
+   "quote": "RA英文(Regional Adviser)的缩写，中文意思：区域顾问。",
+   "fact": "本资料称RA是Regional Adviser的缩写，中文意思为区域顾问。",
+   "tag": "F"
+  },
+  {
+   "id": "a3fd9f030764",
+   "case_id": "pd04",
+   "job_id": "job_d832feef038d4e9b9db2776ad1e4e389",
+   "unit": "条件二，问的是酒店岗位，则答为酒店顾问【E-002】〔事实〕。",
+   "evidence_id": "E-002",
+   "quote": "酒店RA职位是酒店顾问。",
+   "fact": "本资料称酒店RA职位是酒店顾问。",
+   "tag": "F"
+  },
+  {
+   "id": "f8757304d4d6",
+   "case_id": "pd04",
+   "job_id": "job_d832feef038d4e9b9db2776ad1e4e389",
+   "unit": "- 依据一（RA职位含义部分）：RA是Regional Adviser缩写，中文为区域顾问【E-001】〔事实〕。",
+   "evidence_id": "E-001",
+   "quote": "RA英文(Regional Adviser)的缩写，中文意思：区域顾问。",
+   "fact": "本资料称RA是Regional Adviser的缩写，中文意思为区域顾问。",
+   "tag": "F"
+  },
+  {
+   "id": "50cee887ce0a",
+   "case_id": "pd04",
+   "job_id": "job_d832feef038d4e9b9db2776ad1e4e389",
+   "unit": "- 依据二（RA职位含义部分）：酒店RA职位是酒店顾问【E-002】〔事实〕。",
+   "evidence_id": "E-002",
+   "quote": "酒店RA职位是酒店顾问。",
+   "fact": "本资料称酒店RA职位是酒店顾问。",
+   "tag": "F"
+  },
+  {
+   "id": "7a8b1e632a3a",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "- 现有材料称，公积金贷款一般20到25个工作日放款〔事实〕[E-001]。",
+   "evidence_id": "E-001",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料称公积金贷款一般是20到25个工作日放款。",
+   "tag": "F"
+  },
+  {
+   "id": "e9950e6d66af",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "- 现有材料未明确该放款时间是否特指沈阳〔事实〕[E-002]。",
+   "evidence_id": "E-002",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料未明确该放款时间是否特指沈阳。",
+   "tag": "U"
+  },
+  {
+   "id": "8ad630b294f5",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "- 若上述一般时限可适用于沈阳，则可将其作为沈阳公积金贷款放款时间的参考区间，即20到25个工作日〔推断〕[E-001]。",
+   "evidence_id": "E-001",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料称公积金贷款一般是20到25个工作日放款。",
+   "tag": "F"
+  },
+  {
+   "id": "3ff7b22701b9",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "- 但该适用条件尚未由材料确认，因为资料未明确是否特指沈阳〔事实〕[E-002]。",
+   "evidence_id": "E-002",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料未明确该放款时间是否特指沈阳。",
+   "tag": "U"
+  },
+  {
+   "id": "d638649a6848",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "- E-001：资料称公积金贷款一般20到25个工作日放款〔事实〕[E-001]。",
+   "evidence_id": "E-001",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料称公积金贷款一般是20到25个工作日放款。",
+   "tag": "F"
+  },
+  {
+   "id": "5a36bdfd3f22",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "- E-002：资料未明确该放款时间是否特指沈阳〔事实〕[E-002]。",
+   "evidence_id": "E-002",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料未明确该放款时间是否特指沈阳。",
+   "tag": "U"
+  },
+  {
+   "id": "24fa678adaa0",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "- 综合判断：若E-001所述一般时限可适用于沈阳，则该区间可作为沈阳放款时长的参考〔推断〕[E-001]；",
+   "evidence_id": "E-001",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料称公积金贷款一般是20到25个工作日放款。",
+   "tag": "F"
+  },
+  {
+   "id": "e10f7ad91cc0",
+   "case_id": "pd05",
+   "job_id": "job_60b8a062f7b044e583675018e5d9be61",
+   "unit": "但E-002表明该适用性未明确〔事实〕[E-002]。",
+   "evidence_id": "E-002",
+   "quote": "一般是20到25个工作日放款。",
+   "fact": "本资料未明确该放款时间是否特指沈阳。",
+   "tag": "U"
+  },
+  {
+   "id": "3caaf9e85501",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 有条件的使用时间建议：按现有资料，眼霜建议早晚各用一次【E-001】〔事实〕。",
+   "evidence_id": "E-001",
+   "quote": "眼霜应该早晚各用一次。",
+   "fact": "本资料建议眼霜应该早晚各用一次。",
+   "tag": "F"
+  },
+  {
+   "id": "2cd246bb1b7d",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 使用时机建议落在早晚洁肤后【E-002】〔事实〕。",
+   "evidence_id": "E-002",
+   "quote": "在早晚洁肤后，用无名指取绿豆大小的眼霜",
+   "fact": "本资料建议在早晚洁肤后使用眼霜。",
+   "tag": "F"
+  },
+  {
+   "id": "70389815b89e",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 结合早晚各一次的频率表述【E-001】与早晚洁肤后的时机表述【E-002】，可推断一天中可在早晨洁肤后与晚间洁肤后各使用一次〔推断〕。",
+   "evidence_id": "E-001",
+   "quote": "眼霜应该早晚各用一次。",
+   "fact": "本资料建议眼霜应该早晚各用一次。",
+   "tag": "F"
+  },
+  {
+   "id": "4b0ba470024f",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 结合早晚各一次的频率表述【E-001】与早晚洁肤后的时机表述【E-002】，可推断一天中可在早晨洁肤后与晚间洁肤后各使用一次〔推断〕。",
+   "evidence_id": "E-002",
+   "quote": "在早晚洁肤后，用无名指取绿豆大小的眼霜",
+   "fact": "本资料建议在早晚洁肤后使用眼霜。",
+   "tag": "F"
+  },
+  {
+   "id": "73dc385825c1",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 因此本结论为有条件推荐：前提是采用资料中“早晚各用一次【E-001】、早晚洁肤后使用【E-002】”的表述；",
+   "evidence_id": "E-001",
+   "quote": "眼霜应该早晚各用一次。",
+   "fact": "本资料建议眼霜应该早晚各用一次。",
+   "tag": "F"
+  },
+  {
+   "id": "9a678118726f",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 因此本结论为有条件推荐：前提是采用资料中“早晚各用一次【E-001】、早晚洁肤后使用【E-002】”的表述；",
+   "evidence_id": "E-002",
+   "quote": "在早晚洁肤后，用无名指取绿豆大小的眼霜",
+   "fact": "本资料建议在早晚洁肤后使用眼霜。",
+   "tag": "F"
+  },
+  {
+   "id": "1ac9728bea9f",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 使用频率依据：资料建议眼霜早晚各用一次，定位为眼霜使用时间主题下的使用频率表述【E-001】〔事实〕。",
+   "evidence_id": "E-001",
+   "quote": "眼霜应该早晚各用一次。",
+   "fact": "本资料建议眼霜应该早晚各用一次。",
+   "tag": "F"
+  },
+  {
+   "id": "552679c3d791",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 使用时机依据：资料建议在早晚洁肤后使用眼霜，定位为眼霜使用时间主题下的使用时机表述【E-002】〔事实〕。",
+   "evidence_id": "E-002",
+   "quote": "在早晚洁肤后，用无名指取绿豆大小的眼霜",
+   "fact": "本资料建议在早晚洁肤后使用眼霜。",
+   "tag": "F"
+  },
+  {
+   "id": "641ab5769cdc",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 合并定位推断：由早晚各用一次【E-001】与早晚洁肤后使用【E-002】可推断，可在早晨洁肤后与晚间洁肤后各使用一次〔推断〕。",
+   "evidence_id": "E-001",
+   "quote": "眼霜应该早晚各用一次。",
+   "fact": "本资料建议眼霜应该早晚各用一次。",
+   "tag": "F"
+  },
+  {
+   "id": "9403ded93213",
+   "case_id": "pd06",
+   "job_id": "job_96691302abb54622b83e490abf8da719",
+   "unit": "- 合并定位推断：由早晚各用一次【E-001】与早晚洁肤后使用【E-002】可推断，可在早晨洁肤后与晚间洁肤后各使用一次〔推断〕。",
+   "evidence_id": "E-002",
+   "quote": "在早晚洁肤后，用无名指取绿豆大小的眼霜",
+   "fact": "本资料建议在早晚洁肤后使用眼霜。",
+   "tag": "F"
+  },
+  {
+   "id": "016d10bdbdf7",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 关于导演身份，资料称《Big Stone Gap》由 Adriana Trigiani 编剧并执导【[E-013]】〔事实〕；",
+   "evidence_id": "E-013",
+   "quote": "written and directed by Adriana Trigiani",
+   "fact": "本资料称《Big Stone Gap》由Adriana Trigiani编剧并执导。",
+   "tag": "F"
+  },
+  {
+   "id": "abf2b6750529",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "另有资料条目指向 Adriana Trigiani 是该片导演【[E-005]】〔推断〕。",
+   "evidence_id": "E-005",
+   "quote": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entr",
+   "fact": "本资料称Adriana Trigiani是浪漫喜剧《Big Stone Gap》的导演。",
+   "tag": "U"
+  },
+  {
+   "id": "2399a18f78cf",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 关于其纽约所在城市，资料称 Adriana Trigiani 常驻纽约市格林威治村【[E-006]】〔事实〕；",
+   "evidence_id": "E-006",
+   "quote": "entrepreneur based in Greenwich Village, New York City",
+   "fact": "本资料称Adriana Trigiani常驻纽约市格林威治村。",
+   "tag": "F"
+  },
+  {
+   "id": "da68a5bf1335",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 关于定居纽约具体城市，可定位到证据 [E-014]；",
+   "evidence_id": "E-014",
+   "quote": "written and directed by Adriana Trigiani",
+   "fact": "本资料未说明Adriana Trigiani定居于纽约哪座城市。",
+   "tag": "U"
+  },
+  {
+   "id": "b8e82477dd53",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "城市结论亦受 [E-014] 缺口限制，故整体为有条件结论〔未知〕。",
+   "evidence_id": "E-014",
+   "quote": "written and directed by Adriana Trigiani",
+   "fact": "本资料未说明Adriana Trigiani定居于纽约哪座城市。",
+   "tag": "U"
+  },
+  {
+   "id": "eb7afb9d21b2",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 导演身份支持位置：E-013 称该片由 Adriana Trigiani 编剧并执导【[E-013]】〔事实〕；",
+   "evidence_id": "E-013",
+   "quote": "written and directed by Adriana Trigiani",
+   "fact": "本资料称《Big Stone Gap》由Adriana Trigiani编剧并执导。",
+   "tag": "F"
+  },
+  {
+   "id": "dc9fc6ac03a9",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "E-005 称 Adriana Trigiani 是导演【[E-005]】〔推断〕；",
+   "evidence_id": "E-005",
+   "quote": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entr",
+   "fact": "本资料称Adriana Trigiani是浪漫喜剧《Big Stone Gap》的导演。",
+   "tag": "U"
+  },
+  {
+   "id": "316ad06ce4dd",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 城市支持位置：E-006 称 Adriana Trigiani 常驻纽约市格林威治村【[E-006]】〔事实〕；",
+   "evidence_id": "E-006",
+   "quote": "entrepreneur based in Greenwich Village, New York City",
+   "fact": "本资料称Adriana Trigiani常驻纽约市格林威治村。",
+   "tag": "F"
+  },
+  {
+   "id": "4e81395b4ebb",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 城市缺口位置：可定位到证据 [E-014]；",
+   "evidence_id": "E-014",
+   "quote": "written and directed by Adriana Trigiani",
+   "fact": "本资料未说明Adriana Trigiani定居于纽约哪座城市。",
+   "tag": "U"
+  },
+  {
+   "id": "cc432eadcbf0",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 地名排除位置：E-003 提到 Big Stone Gap 位于弗吉尼亚州，而非纽约州城市【[E-003]】〔事实〕；",
+   "evidence_id": "E-003",
+   "quote": "Big Stone Gap, Virginia",
+   "fact": "本资料提到Big Stone Gap位于弗吉尼亚州，而非纽约州城市。",
+   "tag": "F"
+  },
+  {
+   "id": "79ed64679d04",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "E-010 只介绍明尼苏达州大石县克林顿市，与问题无关【[E-010]】〔事实〕。",
+   "evidence_id": "E-010",
+   "quote": "Clinton is a city in Big Stone County, Minnesota, United States.",
+   "fact": "本资料只介绍明尼苏达州大石县克林顿市，与问题无关。",
+   "tag": "F"
+  },
+  {
+   "id": "8fdfd363fb28",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "- 无关资料排除位置：可定位到证据 [E-001]；",
+   "evidence_id": "E-001",
+   "quote": "Just Another Romantic Wrestling Comedy is a 2006 film starring April Hunter and Joanie Laurer.",
+   "fact": "本资料未提及电影《Big Stone Gap》或其导演。",
+   "tag": "U"
+  },
+  {
+   "id": "e42f753888ca",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "可定位到证据 [E-002]；",
+   "evidence_id": "E-002",
+   "quote": "Kingston Morning is Dave Eggar's 4th solo release recorded in Brooklyn, New York; Kingston, Jamaica; and Big Stone Gap, Virginia",
+   "fact": "本资料未说明浪漫喜剧《Big Stone Gap》的导演是谁。",
+   "tag": "U"
+  },
+  {
+   "id": "f0b5fa795f4c",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "可定位到证据 [E-004]；",
+   "evidence_id": "E-004",
+   "quote": "Nola is a 2003 American romantic comedy film written and directed by Alan Hruska.",
+   "fact": "本资料未提及电影《Big Stone Gap》或其导演。",
+   "tag": "U"
+  },
+  {
+   "id": "05c1ca1d54df",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "可定位到证据 [E-007]；",
+   "evidence_id": "E-007",
+   "quote": "Great Eastern Conventions, Inc. was an entertainment company which produced comic book conventions",
+   "fact": "本资料未提及浪漫喜剧《Big Stone Gap》或其导演。",
+   "tag": "U"
+  },
+  {
+   "id": "9ff3cfcb9704",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "可定位到证据 [E-008]；",
+   "evidence_id": "E-008",
+   "quote": "The New York Society of Model Engineers (NYSME) was originally incorporated in 1926 in New York City.",
+   "fact": "本资料未提及浪漫喜剧《Big Stone Gap》或其导演。",
+   "tag": "U"
+  },
+  {
+   "id": "f5f45d3bf158",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "可定位到证据 [E-009]；",
+   "evidence_id": "E-009",
+   "quote": "Clinton is a city in Big Stone County, Minnesota, United States.",
+   "fact": "本资料未提及浪漫喜剧《Big Stone Gap》或其导演。",
+   "tag": "U"
+  },
+  {
+   "id": "f9be4f893bc4",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "可定位到证据 [E-011]；",
+   "evidence_id": "E-011",
+   "quote": "Hamish & Andy's Gap Year is a Logie Award winning comedy series",
+   "fact": "本资料未提及电影《Big Stone Gap》或其导演。",
+   "tag": "U"
+  },
+  {
+   "id": "a1f9e6049c05",
+   "case_id": "ph01",
+   "job_id": "job_fe0601969edc407a9e27b51e0bf1eb21",
+   "unit": "可定位到证据 [E-012]；",
+   "evidence_id": "E-012",
+   "quote": "I Love NY, also known as I Love New Year, is an Indian romantic comedy film directed by Radhika Rao and Vinay Sapru star",
+   "fact": "本资料未提及《Big Stone Gap》及其导演。",
+   "tag": "U"
+  },
+  {
+   "id": "c3a16ccb3739",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "- 有条件结论：若采信“2014 S/S是韩国组合WINNER的出道专辑”[E-004]〔事实〕，并采信“Winner是2013年由YG Entertainment组建的韩国男子组合”[E-008]〔事实〕，则可回答：该组合由 YG Entertainment 组建〔推断〕。",
+   "evidence_id": "E-004",
+   "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+   "fact": "本资料称2014 S/S是韩国组合WINNER的出道专辑。",
+   "tag": "F"
+  },
+  {
+   "id": "f0874865554f",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "- 有条件结论：若采信“2014 S/S是韩国组合WINNER的出道专辑”[E-004]〔事实〕，并采信“Winner是2013年由YG Entertainment组建的韩国男子组合”[E-008]〔事实〕，则可回答：该组合由 YG Entertainment 组建〔推断〕。",
+   "evidence_id": "E-008",
+   "quote": "is a South Korean boy group formed in 2013 by YG Entertainment",
+   "fact": "本资料称Winner是2013年由YG Entertainment组建的韩国男子组合。",
+   "tag": "F"
+  },
+  {
+   "id": "16224da1186c",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "- 冲突与不确定性：材料中还有一条缺口记录[E-010]〔事实〕，其缺口内容为“资料未提及2014 S/S是该组合的出道专辑”〔未知〕；",
+   "evidence_id": "E-010",
+   "quote": "and debuted in 2014",
+   "fact": "本资料未提及2014 S/S是该组合的出道专辑。",
+   "tag": "U"
+  },
+  {
+   "id": "1a4e2b7f0897",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "另有一条缺口记录[E-005]〔事实〕，其缺口内容为“资料未说明WINNER由谁组建”〔未知〕。",
+   "evidence_id": "E-005",
+   "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+   "fact": "本资料未说明WINNER由谁组建。",
+   "tag": "U"
+  },
+  {
+   "id": "dddfb07bb0eb",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "- E-004：该条直接称“2014 S/S是韩国组合WINNER的出道专辑”[E-004]〔事实〕，支持结论中的专辑归属子句〔事实〕。",
+   "evidence_id": "E-004",
+   "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+   "fact": "本资料称2014 S/S是韩国组合WINNER的出道专辑。",
+   "tag": "F"
+  },
+  {
+   "id": "e165a710d153",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "- E-008：该条直接称“Winner是2013年由YG Entertainment组建的韩国男子组合”[E-008]〔事实〕，支持结论中的组建方子句〔事实〕。",
+   "evidence_id": "E-008",
+   "quote": "is a South Korean boy group formed in 2013 by YG Entertainment",
+   "fact": "本资料称Winner是2013年由YG Entertainment组建的韩国男子组合。",
+   "tag": "F"
+  },
+  {
+   "id": "df2174d3997c",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "- E-005：该条本身为缺口记录[E-005]〔事实〕；",
+   "evidence_id": "E-005",
+   "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+   "fact": "本资料未说明WINNER由谁组建。",
+   "tag": "U"
+  },
+  {
+   "id": "958d98f4a3ed",
+   "case_id": "ph02",
+   "job_id": "job_1351c65d20b543b198422b4297fe2fef",
+   "unit": "- E-010：该条本身为缺口记录[E-010]〔事实〕；",
+   "evidence_id": "E-010",
+   "quote": "and debuted in 2014",
+   "fact": "本资料未提及2014 S/S是该组合的出道专辑。",
+   "tag": "U"
+  },
+  {
+   "id": "db665f961929",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "拉莱利清真寺位于土耳其伊斯坦布尔法提赫区的拉莱利【[E-008]】。",
+   "evidence_id": "E-008",
+   "quote": "located in Laleli, Fatih, Istanbul, Turkey.",
+   "fact": "本资料仅说明拉莱利清真寺位于土耳其伊斯坦布尔法提赫区的拉莱利。",
+   "tag": "F"
+  },
+  {
+   "id": "b82ba2980396",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "〔事实〕埃斯玛苏丹宅邸位于伊斯坦布尔奥尔塔科伊街区【[E-010]】。",
+   "evidence_id": "E-010",
+   "quote": "located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey",
+   "fact": "本资料说明埃斯玛苏丹宅邸位于伊斯坦布尔奥尔塔科伊街区。",
+   "tag": "F"
+  },
+  {
+   "id": "5327583573c0",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "〔事实〕资料 E-007 未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区【[E-007]】。",
+   "evidence_id": "E-007",
+   "quote": "It sits next to the Hagia Sophia, another popular tourist site.",
+   "fact": "本资料未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区。",
+   "tag": "U"
+  },
+  {
+   "id": "90b74fd34a67",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "〔事实〕资料 E-015 未说明两者是否位于同一街区【[E-015]】。",
+   "evidence_id": "E-015",
+   "quote": "Esma Sultan is the name of three daughters of three Ottoman Sultans:",
+   "fact": "本资料未说明两者是否位于同一街区。",
+   "tag": "U"
+  },
+  {
+   "id": "92c37e75c70c",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "〔事实〕资料 E-018 未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区【[E-018]】。",
+   "evidence_id": "E-018",
+   "quote": "She was the half-sister of Sultan Mustafa III and Abdul Hamid I.",
+   "fact": "本资料未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区。",
+   "tag": "U"
+  },
+  {
+   "id": "7d8fcda7d3a4",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 拉莱利清真寺位于土耳其伊斯坦布尔法提赫区的拉莱利【[E-008]】。",
+   "evidence_id": "E-008",
+   "quote": "located in Laleli, Fatih, Istanbul, Turkey.",
+   "fact": "本资料仅说明拉莱利清真寺位于土耳其伊斯坦布尔法提赫区的拉莱利。",
+   "tag": "F"
+  },
+  {
+   "id": "6b33c356c828",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-011 未提及拉莱利清真寺或其所在街区【[E-011]】。",
+   "evidence_id": "E-011",
+   "quote": "The Esma Sultan Mansion",
+   "fact": "本资料未提及拉莱利清真寺或其所在街区。",
+   "tag": "U"
+  },
+  {
+   "id": "4bc614684ec3",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-013 未提及 Laleli Mosque【[E-013]】。",
+   "evidence_id": "E-013",
+   "quote": "Esma Sultan is the name of three daughters of three Ottoman Sultans:",
+   "fact": "本资料未提及Laleli Mosque。",
+   "tag": "U"
+  },
+  {
+   "id": "e091d4fe2f43",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 埃斯玛苏丹宅邸位于伊斯坦布尔奥尔塔科伊街区【[E-010]】。",
+   "evidence_id": "E-010",
+   "quote": "located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey",
+   "fact": "本资料说明埃斯玛苏丹宅邸位于伊斯坦布尔奥尔塔科伊街区。",
+   "tag": "F"
+  },
+  {
+   "id": "d2cff2eab598",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-009 未提及埃斯玛苏丹宅邸【[E-009]】。",
+   "evidence_id": "E-009",
+   "quote": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" )",
+   "fact": "本资料未提及埃斯玛苏丹宅邸。",
+   "tag": "U"
+  },
+  {
+   "id": "f3f1bf1c4111",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-004 只提到 Esma Sultan 是奥斯曼公主，未说明其宅邸所在街区【[E-004]】。",
+   "evidence_id": "E-004",
+   "quote": "he married an Ottoman princess, Esma Sultan",
+   "fact": "本资料只提到Esma Sultan是奥斯曼公主，未说明其宅邸所在街区。",
+   "tag": "F"
+  },
+  {
+   "id": "ddf040b56d69",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-014 未提及 Esma Sultan Mansion【[E-014]】。",
+   "evidence_id": "E-014",
+   "quote": "Esma Sultan is the name of three daughters of three Ottoman Sultans:",
+   "fact": "本资料未提及Esma Sultan Mansion。",
+   "tag": "U"
+  },
+  {
+   "id": "53028918537e",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-007 未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区【[E-007]】。",
+   "evidence_id": "E-007",
+   "quote": "It sits next to the Hagia Sophia, another popular tourist site.",
+   "fact": "本资料未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区。",
+   "tag": "U"
+  },
+  {
+   "id": "898c187e10e0",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-015 未说明两者是否位于同一街区【[E-015]】。",
+   "evidence_id": "E-015",
+   "quote": "Esma Sultan is the name of three daughters of three Ottoman Sultans:",
+   "fact": "本资料未说明两者是否位于同一街区。",
+   "tag": "U"
+  },
+  {
+   "id": "1828bcf6dfb8",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-018 未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区【[E-018]】。",
+   "evidence_id": "E-018",
+   "quote": "She was the half-sister of Sultan Mustafa III and Abdul Hamid I.",
+   "fact": "本资料未说明拉莱利清真寺与埃斯玛苏丹宅邸是否位于同一街区。",
+   "tag": "U"
+  },
+  {
+   "id": "74f3e00474e2",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-001 未提及 Laleli Mosque 或 Esma Sultan Mansion 的位置【[E-001]】。",
+   "evidence_id": "E-001",
+   "quote": "Esma Sultan (21 March 1873 – 7 May 1899) was an Ottoman princess",
+   "fact": "本资料未提及Laleli Mosque或Esma Sultan Mansion的位置。",
+   "tag": "U"
+  },
+  {
+   "id": "591a2cdc048e",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-003 未提及 Laleli Mosque 或 Esma Sultan Mansion 的位置【[E-003]】。",
+   "evidence_id": "E-003",
+   "quote": "Küçük Hüseyin Pasha (1757 – 7 December 1803)",
+   "fact": "本资料未提及Laleli Mosque或Esma Sultan Mansion的位置。",
+   "tag": "U"
+  },
+  {
+   "id": "807f5a5196e0",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-005 未提及 Laleli Mosque 或 Esma Sultan Mansion 的位置信息【[E-005]】。",
+   "evidence_id": "E-005",
+   "quote": "Esma Sultan (17 July 1778 – 4 June 1848) was an Ottoman princess",
+   "fact": "本资料未提及Laleli Mosque或Esma Sultan Mansion的位置信息。",
+   "tag": "U"
+  },
+  {
+   "id": "1c73eec39f6a",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-002 只介绍阿尔及尔的清真寺，未提及拉莱利清真寺或埃斯玛苏丹宅邸【[E-002]】。",
+   "evidence_id": "E-002",
+   "quote": "The Great Mosque of Algiers",
+   "fact": "本资料只介绍阿尔及尔的清真寺，未提及拉莱利清真寺或埃斯玛苏丹宅邸。",
+   "tag": "U"
+  },
+  {
+   "id": "d82e8465123e",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-006 只介绍苏丹艾哈迈德清真寺，未提及拉莱利清真寺或埃斯玛苏丹宅邸【[E-006]】。",
+   "evidence_id": "E-006",
+   "quote": "The Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey.",
+   "fact": "本资料只介绍苏丹艾哈迈德清真寺，未提及拉莱利清真寺或埃斯玛苏丹宅邸。",
+   "tag": "F"
+  },
+  {
+   "id": "7d8911a54bdb",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-012 仅说明 Esma Sultan 是三位奥斯曼苏丹女儿的名字【[E-012]】。",
+   "evidence_id": "E-012",
+   "quote": "Esma Sultan is the name of three daughters of three Ottoman Sultans:",
+   "fact": "本资料仅说明Esma Sultan是三位奥斯曼苏丹女儿的名字。",
+   "tag": "F"
+  },
+  {
+   "id": "55ce3eb9b78c",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-016 仅说明 Gevheri Kadın 是 Esma Sultan 的母亲，未提及两处建筑的位置【[E-016]】。",
+   "evidence_id": "E-016",
+   "quote": "She was the mother of Şehzade Mehmed Seyfeddin and Esma Sultan of the Ottoman Empire.",
+   "fact": "本资料仅说明Gevheri Kadın是Esma Sultan的母亲，未提及Laleli Mosque或Esma Sultan Mansion的位置。",
+   "tag": "F"
+  },
+  {
+   "id": "b4e4bbd0ca67",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 资料 E-017 仅介绍埃斯玛苏丹的身份与亲属关系，未提及两处建筑【[E-017]】。",
+   "evidence_id": "E-017",
+   "quote": "Esma Sultan (14 March 1726 – 13 August 1788) was an Ottoman princess, daughter of Sultan Ahmed III and his consort Zeynep Kadın.",
+   "fact": "本资料仅介绍埃斯玛苏丹的身份与亲属关系，未提及拉莱利清真寺或埃斯玛苏丹宅邸。",
+   "tag": "F"
+  },
+  {
+   "id": "d34a5c098045",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "- 就可比较的位置描述而言，拉莱利清真寺在法提赫区的拉莱利【[E-008]】；",
+   "evidence_id": "E-008",
+   "quote": "located in Laleli, Fatih, Istanbul, Turkey.",
+   "fact": "本资料仅说明拉莱利清真寺位于土耳其伊斯坦布尔法提赫区的拉莱利。",
+   "tag": "F"
+  },
+  {
+   "id": "f9f2b398518e",
+   "case_id": "ph03",
+   "job_id": "job_3ee8b50cf51946ac9496a7e88f9ae695",
+   "unit": "埃斯玛苏丹宅邸在奥尔塔科伊街区【[E-010]】；",
+   "evidence_id": "E-010",
+   "quote": "located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey",
+   "fact": "本资料说明埃斯玛苏丹宅邸位于伊斯坦布尔奥尔塔科伊街区。",
+   "tag": "F"
+  },
+  {
+   "id": "3132b6e6f99a",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该推断依赖以下分别记载：资料称雪莉·邓波儿在电影中饰演科利斯·阿彻〔事实〕[E-019]；",
+   "evidence_id": "E-019",
+   "quote": "starring then 17-year-old Shirley Temple as Corliss Archer",
+   "fact": "本资料称雪莉·邓波儿在电影中饰演科利斯·阿彻。",
+   "tag": "F"
+  },
+  {
+   "id": "47eda1e4b60b",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "资料称秀兰·邓波儿是演员、歌手、舞蹈家、商人和外交官〔事实〕[E-003]；",
+   "evidence_id": "E-003",
+   "quote": "was an American actress, singer, dancer, businesswoman, and diplomat",
+   "fact": "本资料称秀兰·邓波儿是演员、歌手、舞蹈家、商人和外交官。",
+   "tag": "F"
+  },
+  {
+   "id": "176bc65c76b7",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "资料称她成年后出任美国驻加纳和捷克斯洛伐克大使〔事实〕[E-004]；",
+   "evidence_id": "E-004",
+   "quote": "she was named United States ambassador to Ghana and to Czechoslovakia",
+   "fact": "本资料称她成年后出任美国驻加纳和捷克斯洛伐克大使。",
+   "tag": "F"
+  },
+  {
+   "id": "7e5a07625e86",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "资料称她还担任过美国礼宾司司长〔事实〕[E-005]。",
+   "evidence_id": "E-005",
+   "quote": "also served as Chief of Protocol of the United States",
+   "fact": "本资料称她还担任过美国礼宾司司长。",
+   "tag": "F"
+  },
+  {
+   "id": "12b6e8839d96",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该记载对政府职务问题不构成支持〔事实〕[E-020]。",
+   "evidence_id": "E-020",
+   "quote": "Kiss and Tell is a 1945 American comedy film",
+   "fact": "本资料未说明雪莉·邓波儿担任过任何政府职务。",
+   "tag": "U"
+  },
+  {
+   "id": "3bfa22887699",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该记载对饰演者定位不构成支持〔事实〕[E-017]。",
+   "evidence_id": "E-017",
+   "quote": "It is a sequel to the 1945 film \"Kiss and Tell\".",
+   "fact": "本资料未说明在《Kiss and Tell》中饰演Corliss Archer的女演员是谁。",
+   "tag": "U"
+  },
+  {
+   "id": "7fa672d42163",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该记载对饰演者定位不构成支持〔事实〕[E-001]。",
+   "evidence_id": "E-001",
+   "quote": "Meet Corliss Archer, a program from radio's Golden Age",
+   "fact": "本资料未提及任何在电影《Kiss and Tell》中饰演Corliss Archer的女性。",
+   "tag": "U"
+  },
+  {
+   "id": "05c118e0cd59",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该记载对饰演者定位不构成支持〔事实〕[E-011]。",
+   "evidence_id": "E-011",
+   "quote": "Meet Corliss Archer is an American television sitcom",
+   "fact": "本资料未提及电影《Kiss and Tell》或其中饰演Corliss Archer的女演员。",
+   "tag": "U"
+  },
+  {
+   "id": "913b38559d20",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "- 饰演者定位：资料称雪莉·邓波儿在电影中饰演科利斯·阿彻〔事实〕[E-019]。",
+   "evidence_id": "E-019",
+   "quote": "starring then 17-year-old Shirley Temple as Corliss Archer",
+   "fact": "本资料称雪莉·邓波儿在电影中饰演科利斯·阿彻。",
+   "tag": "F"
+  },
+  {
+   "id": "7a660669656f",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "- 政府职务定位：资料称秀兰·邓波儿是演员、歌手、舞蹈家、商人和外交官〔事实〕[E-003]。",
+   "evidence_id": "E-003",
+   "quote": "was an American actress, singer, dancer, businesswoman, and diplomat",
+   "fact": "本资料称秀兰·邓波儿是演员、歌手、舞蹈家、商人和外交官。",
+   "tag": "F"
+  },
+  {
+   "id": "7e596ca1bb3b",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "资料称她成年后出任美国驻加纳和捷克斯洛伐克大使〔事实〕[E-004]。",
+   "evidence_id": "E-004",
+   "quote": "she was named United States ambassador to Ghana and to Czechoslovakia",
+   "fact": "本资料称她成年后出任美国驻加纳和捷克斯洛伐克大使。",
+   "tag": "F"
+  },
+  {
+   "id": "8750169c30c3",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "- 广播版线索：资料称珍妮特·玛丽·沃尔多是一位美国广播与配音女演员〔事实〕[E-007]。",
+   "evidence_id": "E-007",
+   "quote": "Janet Marie Waldo (February 4, 1920 – June 12, 2016) was an American radio and voice actress.",
+   "fact": "本资料称珍妮特·玛丽·沃尔多是一位美国广播与配音女演员。",
+   "tag": "F"
+  },
+  {
+   "id": "98c2cdc9bc70",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "资料称她在广播中为《Meet Corliss Archer》的主角配音〔事实〕[E-008]。",
+   "evidence_id": "E-008",
+   "quote": "on radio as the title character in \"Meet Corliss Archer\"",
+   "fact": "本资料称她在广播中为《Meet Corliss Archer》的主角配音。",
+   "tag": "F"
+  },
+  {
+   "id": "552fe6840826",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该记载对政府职务问题不构成支持〔事实〕[E-010]。",
+   "evidence_id": "E-010",
+   "quote": "on radio as the title character in \"Meet Corliss Archer\"",
+   "fact": "本资料未说明该女性担任过任何政府职务。",
+   "tag": "U"
+  },
+  {
+   "id": "a492ea099d5d",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该记载对饰演者定位不构成支持〔事实〕[E-009]。",
+   "evidence_id": "E-009",
+   "quote": "Janet Marie Waldo (February 4, 1920 – June 12, 2016) was an American radio and voice actress.",
+   "fact": "本资料未提及电影《Kiss and Tell》或其演员。",
+   "tag": "U"
+  },
+  {
+   "id": "b45a09ef83f4",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "- 续集线索：资料称《A Kiss for Corliss》是1945年电影《Kiss and Tell》的续集〔事实〕[E-016]。",
+   "evidence_id": "E-016",
+   "quote": "It is a sequel to the 1945 film \"Kiss and Tell\".",
+   "fact": "本资料称《A Kiss for Corliss》是1945年电影《Kiss and Tell》的续集。",
+   "tag": "F"
+  },
+  {
+   "id": "6f0ecfcb83a6",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "资料称《A Kiss for Corliss》由Shirley Temple主演，是其最后一个主演角色〔事实〕[E-015]。",
+   "evidence_id": "E-015",
+   "quote": "It stars Shirley Temple in her final starring role as well as her final film appearance.",
+   "fact": "本资料称《A Kiss for Corliss》由Shirley Temple主演，是其最后一个主演角色及最后一次银幕亮相。",
+   "tag": "F"
+  },
+  {
+   "id": "b88dcdbeaa7b",
+   "case_id": "ph04",
+   "job_id": "job_d6d0c37d687f4a8fa459e4e1495e76d7",
+   "unit": "该记载对政府职务问题不构成支持〔事实〕[E-018]。",
+   "evidence_id": "E-018",
+   "quote": "A Kiss for Corliss is a 1949 American comedy film directed by Richard Wallace and written by Howard Dimsdale.",
+   "fact": "本资料未说明任何饰演Corliss Archer者所担任的政府职务。",
+   "tag": "U"
+  },
+  {
+   "id": "d1c7d456ff8d",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "Animorphs 是 Katherine Applegate 与 Michael Grant 合写的科学奇幻青少年系列〔事实〕【[E-030]】。",
+   "evidence_id": "E-030",
+   "quote": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant",
+   "fact": "本资料称Animorphs是由Katherine Applegate与丈夫Michael Grant合写的科学奇幻青少年系列。",
+   "tag": "F"
+  },
+  {
+   "id": "0056fef22379",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "该系列以第一人称讲述〔事实〕【[E-031]】。",
+   "evidence_id": "E-031",
+   "quote": "It is told in first person",
+   "fact": "本资料称该系列以第一人称讲述。",
+   "tag": "F"
+  },
+  {
+   "id": "2e5c40bf83de",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "六位主角轮流以各自视角叙述〔事实〕【[E-032]】。",
+   "evidence_id": "E-032",
+   "quote": "with all six main characters taking turns narrating the books through their own perspectives",
+   "fact": "本资料称六位主角轮流以自己的视角叙述故事。",
+   "tag": "F"
+  },
+  {
+   "id": "4f6faf3e011e",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "《The Hork-Bajir Chronicles》是 Animorphs 第二本 companion book，作者 K. A. Applegate〔事实〕【[E-008]】。",
+   "evidence_id": "E-008",
+   "quote": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate.",
+   "fact": "本资料称《The Hork-Bajir Chronicles》是《Animorphs》系列的第二本companion book，作者K. A. Applegat",
+   "tag": "F"
+  },
+  {
+   "id": "d3aa9b0f2af1",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "该书讲述 Yeerks 奴役 Hork-Bajir 及 Aldrea 与 Dak Hamee 试图拯救其世界〔事实〕【[E-009]】。",
+   "evidence_id": "E-009",
+   "quote": "the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion.",
+   "fact": "本资料称该书讲述Yeerks如何奴役Hork-Bajir，以及Aldrea与Dak Hamee试图拯救其世界。",
+   "tag": "F"
+  },
+  {
+   "id": "a6e0fdea55ae",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "该书由 Tobias 引入，他飞往自由 Hork-Bajir 山谷听 Jara Hamee 讲故事〔事实〕【[E-010]】。",
+   "evidence_id": "E-010",
+   "quote": "The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story",
+   "fact": "本资料称该书由Tobias引入，他飞往自由Hork-Bajir的山谷听Jara Hamee讲故事。",
+   "tag": "F"
+  },
+  {
+   "id": "8302a3b172c3",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "Jara Hamee 的故事由 Aldrea、Dak Hamee 和 Esplin 9466 视角交替叙述〔事实〕【[E-011]】。",
+   "evidence_id": "E-011",
+   "quote": "Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+   "fact": "本资料称Jara Hamee的故事由Aldrea、Dak Hamee和Esplin 9466的视角交替叙述。",
+   "tag": "F"
+  },
+  {
+   "id": "adcf6f0207ee",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "但 Animorphs 资料未提及叙述被奴役世界与外星物种故事的配套书〔事实〕【[E-033]】。",
+   "evidence_id": "E-033",
+   "quote": "Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+   "fact": "本资料未提及叙述被奴役世界与外星物种故事的配套书。",
+   "tag": "U"
+  },
+  {
+   "id": "a39466f80b18",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "Animorphs 资料未提及叙述被奴役世界与外星物种故事的配套书〔事实〕【[E-033]】。",
+   "evidence_id": "E-033",
+   "quote": "Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+   "fact": "本资料未提及叙述被奴役世界与外星物种故事的配套书。",
+   "tag": "U"
+  },
+  {
+   "id": "ace2152b120e",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "Victoria Hanley 是美国青少年奇幻小说家〔事实〕【[E-004]】。",
+   "evidence_id": "E-004",
+   "quote": "Victoria Hanley is an American young adult fantasy novelist.",
+   "fact": "本资料介绍Victoria Hanley是美国青少年奇幻小说家。",
+   "tag": "F"
+  },
+  {
+   "id": "7bc1d065ba27",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "她的前三本书互为配套书〔事实〕【[E-005]】。",
+   "evidence_id": "E-005",
+   "quote": "\"The Seer And The Sword\", \"The Healer's Keep\" and \"The Light Of The Oracle\" are companion books to one another.",
+   "fact": "本资料称她的前三本书互为配套书。",
+   "tag": "F"
+  },
+  {
+   "id": "7cf954c68390",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料未说明这些配套书是否以第一人称叙述〔事实〕【[E-006]】。",
+   "evidence_id": "E-006",
+   "quote": "are companion books to one another",
+   "fact": "本资料未说明这些配套书是否以第一人称叙述。",
+   "tag": "U"
+  },
+  {
+   "id": "3aa9780211d2",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料未提及关于被奴役世界或外星物种的配套书〔事实〕【[E-007]】。",
+   "evidence_id": "E-007",
+   "quote": "Her newest book (released March 2012) is the sequel of a series, called \"Indigo Magic\", published by Egmont USA.",
+   "fact": "本资料未提及任何关于被奴役世界或外星物种的配套书。",
+   "tag": "U"
+  },
+  {
+   "id": "98ac62cf821f",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "《Left Behind: The Kids》由 Jerry B. Jenkins、Tim LaHaye 和 Chris Fabry 创作〔事实〕【[E-014]】。",
+   "evidence_id": "E-014",
+   "quote": "\"Left Behind: The Kids (stylized as LEFT BEHIND >THE KIDS<)\" is a series written by Jerry B. Jenkins, Tim LaHaye, and Chris Fabry.",
+   "fact": "本资料介绍的是《Left Behind: The Kids》系列，作者为Jerry B. Jenkins、Tim LaHaye和Chris Fabry。",
+   "tag": "F"
+  },
+  {
+   "id": "b9adba0c2c24",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "该系列由40部短篇小说组成，面向青年读者市场〔事实〕【[E-015]】。",
+   "evidence_id": "E-015",
+   "quote": "The series consists of 40 short novels aimed primarily at the young adult market",
+   "fact": "本资料称该系列由40部短篇小说组成，主要面向青年读者市场。",
+   "tag": "F"
+  },
+  {
+   "id": "f13bb7e22a93",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料未提及该系列是否以第一人称叙述〔事实〕【[E-020]】。",
+   "evidence_id": "E-020",
+   "quote": "\"Left Behind: The Kids (stylized as LEFT BEHIND >THE KIDS<)\" is a series written by Jerry B. Jenkins, Tim LaHaye, and Chris Fabry.",
+   "fact": "本资料未提及该系列是否以第一人称叙述。",
+   "tag": "U"
+  },
+  {
+   "id": "fdb662f2c0f6",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料未提及讲述被奴役世界和外星物种故事的配套书〔事实〕【[E-021]】。",
+   "evidence_id": "E-021",
+   "quote": "The series consists of 40 short novels aimed primarily at the young adult market",
+   "fact": "本资料未提及任何讲述被奴役世界和外星物种故事的配套书。",
+   "tag": "U"
+  },
+  {
+   "id": "d77bf0573501",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料介绍安德烈·诺顿奖，未提及任何具体系列作品〔事实〕【[E-001]】。",
+   "evidence_id": "E-001",
+   "quote": "The Andre Norton Award for Young Adult Science Fiction and Fantasy is an annual award",
+   "fact": "本资料介绍安德烈·诺顿奖，未提及任何具体系列作品。",
+   "tag": "F"
+  },
+  {
+   "id": "4854719d2993",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料未说明哪部科幻奇幻青少年系列以第一人称叙述〔事实〕【[E-002]】。",
+   "evidence_id": "E-002",
+   "quote": "Any published young adult or middle grade science fiction or fantasy novel is eligible for the prize",
+   "fact": "本资料未说明哪部科幻奇幻青少年系列以第一人称叙述。",
+   "tag": "U"
+  },
+  {
+   "id": "4f774a3e5177",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料未提及关于被奴役世界或外星物种的配套书〔事实〕【[E-003]】。",
+   "evidence_id": "E-003",
+   "quote": "including graphic novels",
+   "fact": "本资料未提及任何关于被奴役世界或外星物种的配套书。",
+   "tag": "U"
+  },
+  {
+   "id": "92d3ffb313d9",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料介绍《Shadowshaper》，2015年美国都市奇幻青少年小说〔事实〕【[E-012]】。",
+   "evidence_id": "E-012",
+   "quote": "Shadowshaper is a 2015 American urban fantasy young adult novel written by Daniel José Older.",
+   "fact": "本资料介绍的是《Shadowshaper》，一部2015年美国都市奇幻青少年小说。",
+   "tag": "F"
+  },
+  {
+   "id": "f6579e8a06a2",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料未提及任何科学奇幻系列或伴读书〔事实〕【[E-013]】。",
+   "evidence_id": "E-013",
+   "quote": "Shadowshaper is a 2015 American urban fantasy young adult novel written by Daniel José Older.",
+   "fact": "本资料未提及任何科学奇幻系列或伴读书。",
+   "tag": "U"
+  },
+  {
+   "id": "564c822575db",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料只涉及Square Enix电子游戏配套书，未提及科幻奇幻青少年小说系列〔事实〕【[E-022]】。",
+   "evidence_id": "E-022",
+   "quote": "Dozens of Square Enix companion books have been produced since 1998",
+   "fact": "本资料只涉及Square Enix的电子游戏配套书，未提及任何科幻奇幻青少年小说系列。",
+   "tag": "F"
+  },
+  {
+   "id": "8fdf519521d6",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料介绍Elizabeth Kay的奇幻青少年小说三部曲The Divide trilogy〔事实〕【[E-024]】。",
+   "evidence_id": "E-024",
+   "quote": "The Divide trilogy is a fantasy young adult novel trilogy by Elizabeth Kay",
+   "fact": "本资料介绍的是Elizabeth Kay创作的奇幻青少年小说三部曲The Divide trilogy。",
+   "tag": "F"
+  },
+  {
+   "id": "23d93ee81568",
+   "case_id": "ph05",
+   "job_id": "job_9205a583319247039d0a0b5e1a4d9792",
+   "unit": "资料介绍英国奇幻与科幻杂志《Science Fantasy》，未提及青少年系列小说〔事实〕【[E-028]】。",
+   "evidence_id": "E-028",
+   "quote": "Science Fantasy, which also appeared under the titles Impulse and SF Impulse, was a British fantasy and science fiction magazine",
+   "fact": "本资料介绍的是英国奇幻与科幻杂志《Science Fantasy》，未提及任何青少年系列小说。",
+   "tag": "F"
+  },
+  {
+   "id": "4b2993c086f0",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "德里克森方面，资料称斯科特·德里克森是美国导演、编剧和制片人【[E-003]】〔事实〕，据此可推断其国籍为美国〔推断〕。",
+   "evidence_id": "E-003",
+   "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+   "fact": "本资料称斯科特·德里克森是美国导演、编剧和制片人。",
+   "tag": "F"
+  },
+  {
+   "id": "c0dc7f5dadaa",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "伍德方面，资料称爱德华·戴维斯·伍德二世是美国电影制作人【[E-010]】〔事实〕，据此可推断其国籍为美国〔推断〕。",
+   "evidence_id": "E-010",
+   "quote": "was an American filmmaker, actor, writer, producer, and director.",
+   "fact": "本资料称爱德华·戴维斯·伍德二世是美国电影制作人。",
+   "tag": "F"
+  },
+  {
+   "id": "121fa02cffce",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "资料称埃德·伍德是邪典电影制作人【[E-002]】〔事实〕，但未直接说明其国籍〔未知〕，也未说明该名称与爱德华·戴维斯·伍德二世为同一人〔未知〕。",
+   "evidence_id": "E-002",
+   "quote": "starring Johnny Depp as cult filmmaker Ed Wood",
+   "fact": "本资料称埃德·伍德是邪典电影制作人，但未直接说明其国籍。",
+   "tag": "F"
+  },
+  {
+   "id": "0ccc045b3f60",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "资料提到 Ed Wood【[E-018]】〔事实〕，但未说明其国籍〔未知〕，也未说明其与上述名称的同一性〔未知〕。",
+   "evidence_id": "E-018",
+   "quote": "He got his start in movies appearing in Ed Wood films",
+   "fact": "本资料提到Ed Wood，但未说明其国籍。",
+   "tag": "U"
+  },
+  {
+   "id": "6383e4bd3c2a",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "条件：若接受分别来源（[E-003]与[E-010]）标明美国国籍，并接受相关名称指向同一人，则可判断二人同为美国国籍〔推断〕；",
+   "evidence_id": "E-003",
+   "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+   "fact": "本资料称斯科特·德里克森是美国导演、编剧和制片人。",
+   "tag": "F"
+  },
+  {
+   "id": "b87f42125e04",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "条件：若接受分别来源（[E-003]与[E-010]）标明美国国籍，并接受相关名称指向同一人，则可判断二人同为美国国籍〔推断〕；",
+   "evidence_id": "E-010",
+   "quote": "was an American filmmaker, actor, writer, producer, and director.",
+   "fact": "本资料称爱德华·戴维斯·伍德二世是美国电影制作人。",
+   "tag": "F"
+  },
+  {
+   "id": "cebc72cad03e",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "支持德里克森国籍：资料称斯科特·德里克森是美国导演、编剧和制片人【[E-003]】〔事实〕。",
+   "evidence_id": "E-003",
+   "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+   "fact": "本资料称斯科特·德里克森是美国导演、编剧和制片人。",
+   "tag": "F"
+  },
+  {
+   "id": "52267816b61c",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "辅助定位（不单独证明本人国籍）：资料称德里克森执导2014年美国超自然恐怖片《驱魔警探》【[E-012]】〔事实〕；",
+   "evidence_id": "E-012",
+   "quote": "Deliver Us from Evil is a 2014 American supernatural horror film directed by Scott Derrickson",
+   "fact": "本资料称斯科特·德里克森执导了一部2014年美国超自然恐怖片。",
+   "tag": "F"
+  },
+  {
+   "id": "e61311d820d4",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "资料称《奇异博士》是2016年美国超级英雄电影【[E-020]】〔事实〕；",
+   "evidence_id": "E-020",
+   "quote": "Doctor Strange is a 2016 American superhero film",
+   "fact": "本资料称《Doctor Strange》是2016年美国超级英雄电影。",
+   "tag": "F"
+  },
+  {
+   "id": "513d35d47a60",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "资料称《奇异博士》由斯科特·德里克森执导【[E-021]】〔事实〕。",
+   "evidence_id": "E-021",
+   "quote": "The film was directed by Scott Derrickson",
+   "fact": "本资料称该片由Scott Derrickson执导。",
+   "tag": "F"
+  },
+  {
+   "id": "fc0f17489b58",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "支持伍德国籍：资料称爱德华·戴维斯·伍德二世是美国电影制作人【[E-010]】〔事实〕。",
+   "evidence_id": "E-010",
+   "quote": "was an American filmmaker, actor, writer, producer, and director.",
+   "fact": "本资料称爱德华·戴维斯·伍德二世是美国电影制作人。",
+   "tag": "F"
+  },
+  {
+   "id": "088e562b4ea8",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "补充但未直接支持国籍：资料称埃德·伍德是邪典电影制作人【[E-002]】〔事实〕，未直接说明国籍〔未知〕，也未说明与爱德华·戴维斯·伍德二世为同一人〔未知〕；",
+   "evidence_id": "E-002",
+   "quote": "starring Johnny Depp as cult filmmaker Ed Wood",
+   "fact": "本资料称埃德·伍德是邪典电影制作人，但未直接说明其国籍。",
+   "tag": "F"
+  },
+  {
+   "id": "25e4a5da118b",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "资料提到 Ed Wood【[E-018]】〔事实〕，未说明国籍〔未知〕，也未说明同一性〔未知〕。",
+   "evidence_id": "E-018",
+   "quote": "He got his start in movies appearing in Ed Wood films",
+   "fact": "本资料提到Ed Wood，但未说明其国籍。",
+   "tag": "U"
+  },
+  {
+   "id": "b0e2bb3ea001",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "未用于支持国籍判断的材料（仅列覆盖，不作国籍依据）：[E-004]、[E-007]、[E-011]、[E-019]。",
+   "evidence_id": "E-004",
+   "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+   "fact": "本资料未提及艾德·伍德，也未说明其国籍。",
+   "tag": "U"
+  },
+  {
+   "id": "e121869b8aec",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "未用于支持国籍判断的材料（仅列覆盖，不作国籍依据）：[E-004]、[E-007]、[E-011]、[E-019]。",
+   "evidence_id": "E-007",
+   "quote": "Woodson is a census-designated place (CDP) in Pulaski County, Arkansas, in the United States.",
+   "fact": "本资料未提供Scott Derrickson的任何信息。",
+   "tag": "U"
+  },
+  {
+   "id": "b5864e5f427b",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "未用于支持国籍判断的材料（仅列覆盖，不作国籍依据）：[E-004]、[E-007]、[E-011]、[E-019]。",
+   "evidence_id": "E-011",
+   "quote": "Edward Davis Wood Jr.",
+   "fact": "本资料未提及斯科特·德里克森及其国籍。",
+   "tag": "U"
+  },
+  {
+   "id": "1977b767d8de",
+   "case_id": "ph06",
+   "job_id": "job_8605d9c239f34e089060f041fab0d395",
+   "unit": "未用于支持国籍判断的材料（仅列覆盖，不作国籍依据）：[E-004]、[E-007]、[E-011]、[E-019]。",
+   "evidence_id": "E-019",
+   "quote": "Conrad Brooks (born Conrad Biedrzycki on January 3, 1931 in Baltimore, Maryland) is an American actor.",
+   "fact": "本资料未提及Scott Derrickson。",
+   "tag": "U"
+  }
+ ],
+ "verdicts": {
+  "6d377a05507b": {
+   "verdict": "supported",
+   "reason": "证据直接陈述孕妇奶粉利于胎儿发育及乳汁锌铁铜含量较高。"
+  },
+  "c960fa231151": {
+   "verdict": "supported",
+   "reason": "证据逐项列出孕妇适合低乳糖且富含叶酸、SA、亚麻酸等成分。"
+  },
+  "66cf8b940c16": {
+   "verdict": "partial",
+   "reason": "证据仅说明适合该成分，未直接提出作为筛选方向。"
+  },
+  "2923e5a95879": {
+   "verdict": "supported",
+   "reason": "证据明确称合生元奶粉兼顾孕妇与婴儿所需营养。"
+  },
+  "fc0edc77820a": {
+   "verdict": "supported",
+   "reason": "证据直接称合生元孕妇奶粉按婴儿和妈妈不同阶段搭配。"
+  },
+  "c93c428d5485": {
+   "verdict": "supported",
+   "reason": "证据直接陈述富含叶酸、助胎儿发育及对红血球制造重要。"
+  },
+  "f3f2ce32b987": {
+   "verdict": "supported",
+   "reason": "证据直接说明亚麻酸、亚油酸转化为DHA和AA，助脑眼发育。"
+  },
+  "bf60778c3c81": {
+   "verdict": "supported",
+   "reason": "证据原文即评价性表述“合生元孕妇奶粉还是不错的”。"
+  },
+  "df7599851a46": {
+   "verdict": "partial",
+   "reason": "证据仅说明分阶段搭配，未直接支持“可作为候选之一”的推断。"
+  },
+  "23e194078898": {
+   "verdict": "partial",
+   "reason": "证据提及叶酸和胎儿发育，但未涉及“脑眼发育成分”或候选定位。"
+  },
+  "0a718796fbcc": {
+   "verdict": "supported",
+   "reason": "证据仅给出正面评价，未与其他品牌比较，支持“不能证明优于其他品牌”。"
+  },
+  "57df01a58f65": {
+   "verdict": "supported",
+   "reason": "证据直接表明有人自行购买美纳多孕产妇奶粉。"
+  },
+  "05962d4da498": {
+   "verdict": "supported",
+   "reason": "证据仅描述购买行为，未提供效果或适合性信息，支持该推断。"
+  },
+  "9d23f36e5d91": {
+   "verdict": "supported",
+   "reason": "证据未提供成分、适用性或评价，支持“材料未提供”的结论。"
+  },
+  "2d9544996c70": {
+   "verdict": "supported",
+   "reason": "证据直接陈述孕妇奶粉利于胎儿发育及乳汁微量元素含量较高。"
+  },
+  "240e90525956": {
+   "verdict": "supported",
+   "reason": "证据逐字列出孕妇适合的奶粉成分，与断言完全一致。"
+  },
+  "69f5de2744c7": {
+   "verdict": "supported",
+   "reason": "证据直接说明兼顾孕妇与婴儿所需营养。"
+  },
+  "d70e6570db5c": {
+   "verdict": "supported",
+   "reason": "证据直接说明按婴儿和妈妈不同阶段搭配。"
+  },
+  "d0a867c50c50": {
+   "verdict": "supported",
+   "reason": "证据直接说明富含叶酸、助胎儿发育及红血球制造。"
+  },
+  "26dc6658c242": {
+   "verdict": "supported",
+   "reason": "证据直接说明亚麻酸、亚油酸转化DHA和AA助脑眼发育。"
+  },
+  "a1d44ff68895": {
+   "verdict": "supported",
+   "reason": "证据直接称合生元孕妇奶粉还是不错的。"
+  },
+  "d6b6ad5e1cc7": {
+   "verdict": "supported",
+   "reason": "证据直接提到自行购买美纳多孕产妇奶粉。"
+  },
+  "7de5bc110876": {
+   "verdict": "supported",
+   "reason": "证据直接给出一岁半宝宝一天奶量约300~500毫升。"
+  },
+  "ca04279feab7": {
+   "verdict": "supported",
+   "reason": "证据直接说明该范围需结合食量偏差前提。"
+  },
+  "627efe81f915": {
+   "verdict": "supported",
+   "reason": "证据直接支持早6点及晚10点各一杯配方奶的安排。"
+  },
+  "8cc7f76c97ed": {
+   "verdict": "supported",
+   "reason": "证据直接支持可以用豆浆替代一部分奶。"
+  },
+  "5fb8edd6d746": {
+   "verdict": "supported",
+   "reason": "证据直接支持一天奶量约300~500毫升。"
+  },
+  "0675eb6771c8": {
+   "verdict": "supported",
+   "reason": "证据直接支持早6点及晚10点各一杯配方奶。"
+  },
+  "082d0096f226": {
+   "verdict": "supported",
+   "reason": "证据直接支持饮食结构转变的表述。"
+  },
+  "bc15e490c868": {
+   "verdict": "supported",
+   "reason": "证据直接支持每天3餐饭加1、2顿点心。"
+  },
+  "00c38c6b30c3": {
+   "verdict": "supported",
+   "reason": "证据直接支持可以用豆浆替代一部分奶。"
+  },
+  "cb3f6a04b605": {
+   "verdict": "supported",
+   "reason": "证据直接支持个人外汇出口限额为2000美元。"
+  },
+  "482a2d778e0f": {
+   "verdict": "supported",
+   "reason": "证据逐字一致，直接支持断言。"
+  },
+  "dde307fac7f4": {
+   "verdict": "supported",
+   "reason": "证据逐字一致，直接支持断言。"
+  },
+  "bc3139bbcd01": {
+   "verdict": "supported",
+   "reason": "证据与断言核心内容一致。"
+  },
+  "8468f571721c": {
+   "verdict": "partial",
+   "reason": "证据仅提9000美元限额，未提美国政府规定。"
+  },
+  "56e5ccfd48fd": {
+   "verdict": "supported",
+   "reason": "证据逐字一致，直接支持断言。"
+  },
+  "db2acd738fbc": {
+   "verdict": "unsupported",
+   "reason": "证据仅提9000美元，未提其他限额并存。"
+  },
+  "7dec605d58f9": {
+   "verdict": "supported",
+   "reason": "证据与断言核心内容一致。"
+  },
+  "beb68fdf5caa": {
+   "verdict": "supported",
+   "reason": "证据直接支持上限为一万美元的表述。"
+  },
+  "292a6e7ccd9e": {
+   "verdict": "supported",
+   "reason": "证据直接表述西联汇款到美国限额一万美元。"
+  },
+  "0305d23c2310": {
+   "verdict": "partial",
+   "reason": "证据提到9000美元最高限额，但未明确是美国政府规定。"
+  },
+  "0cb0cfd50c75": {
+   "verdict": "supported",
+   "reason": "证据直接表述一年最多只能汇1万美元。"
+  },
+  "18bf102fceee": {
+   "verdict": "supported",
+   "reason": "证据直接表述我国个人外汇出口每人每次2000美元。"
+  },
+  "c0132684e3e9": {
+   "verdict": "supported",
+   "reason": "证据直接表述发汇限额根据对方国及我国政策执行。"
+  },
+  "d92f1340619b": {
+   "verdict": "supported",
+   "reason": "证据直接表述我国个人外汇出口限额口径。"
+  },
+  "8cd23e986ceb": {
+   "verdict": "supported",
+   "reason": "证据直接表述年度累计限额一万美元。"
+  },
+  "2baf7a32b657": {
+   "verdict": "supported",
+   "reason": "证据直接表述西联汇款至美国限额一万美元。"
+  },
+  "b5ff612674c7": {
+   "verdict": "supported",
+   "reason": "证据直接陈述一万美元上限，与断言核心一致。"
+  },
+  "55817e83fbd3": {
+   "verdict": "supported",
+   "reason": "证据明确提到9000美元最高限额，支持断言。"
+  },
+  "3a8d46961f8f": {
+   "verdict": "supported",
+   "reason": "证据直接说明发汇限额依据对方国及我国政策。"
+  },
+  "61e0fcfcc8c2": {
+   "verdict": "unsupported",
+   "reason": "证据仅提9000美元，未涉及口径冲突或关系缺口。"
+  },
+  "a862dffabf95": {
+   "verdict": "supported",
+   "reason": "证据直接给出RA全称及中文含义，与断言一致。"
+  },
+  "c31e492c990a": {
+   "verdict": "supported",
+   "reason": "证据明确说明酒店RA职位是酒店顾问。"
+  },
+  "b3e63226d323": {
+   "verdict": "supported",
+   "reason": "证据支持通用缩写RA为区域顾问的条件结论。"
+  },
+  "a3fd9f030764": {
+   "verdict": "supported",
+   "reason": "证据直接支持酒店岗位RA为酒店顾问。"
+  },
+  "f8757304d4d6": {
+   "verdict": "supported",
+   "reason": "证据直接给出RA全称及中文含义。"
+  },
+  "50cee887ce0a": {
+   "verdict": "supported",
+   "reason": "证据直接说明酒店RA职位是酒店顾问。"
+  },
+  "7a8b1e632a3a": {
+   "verdict": "supported",
+   "reason": "证据直接给出20到25个工作日放款。"
+  },
+  "e9950e6d66af": {
+   "verdict": "supported",
+   "reason": "证据未提及沈阳，支持未明确说法。"
+  },
+  "8ad630b294f5": {
+   "verdict": "partial",
+   "reason": "证据仅给一般时限，未确认适用沈阳。"
+  },
+  "3ff7b22701b9": {
+   "verdict": "supported",
+   "reason": "证据未明确沈阳，支持适用未确认。"
+  },
+  "d638649a6848": {
+   "verdict": "supported",
+   "reason": "证据直接给出一般放款时限。"
+  },
+  "5a36bdfd3f22": {
+   "verdict": "supported",
+   "reason": "证据未提及沈阳，支持未明确说法。"
+  },
+  "24fa678adaa0": {
+   "verdict": "partial",
+   "reason": "证据给出一般时限，但未提及沈阳适用性，断言含推断。"
+  },
+  "e10f7ad91cc0": {
+   "verdict": "supported",
+   "reason": "证据未明确是否特指沈阳，支持适用性未明确。"
+  },
+  "3caaf9e85501": {
+   "verdict": "supported",
+   "reason": "证据直接建议早晚各用一次，支持断言。"
+  },
+  "2cd246bb1b7d": {
+   "verdict": "supported",
+   "reason": "证据明确建议早晚洁肤后使用，支持断言。"
+  },
+  "70389815b89e": {
+   "verdict": "partial",
+   "reason": "证据仅支持频率，未提及洁肤后时机，推断超出证据。"
+  },
+  "4b0ba470024f": {
+   "verdict": "partial",
+   "reason": "证据仅支持时机，未提及频率，推断超出证据。"
+  },
+  "73dc385825c1": {
+   "verdict": "partial",
+   "reason": "证据仅支持频率部分，未包含时机表述。"
+  },
+  "9a678118726f": {
+   "verdict": "partial",
+   "reason": "证据仅支持时机部分，未包含频率表述。"
+  },
+  "1ac9728bea9f": {
+   "verdict": "supported",
+   "reason": "证据直接说明早晚各用一次，支持使用频率表述。"
+  },
+  "552679c3d791": {
+   "verdict": "supported",
+   "reason": "证据明确建议早晚洁肤后使用，支持使用时机表述。"
+  },
+  "641ab5769cdc": {
+   "verdict": "partial",
+   "reason": "证据仅支持频率，未包含洁肤后时机，推断超出证据。"
+  },
+  "9403ded93213": {
+   "verdict": "partial",
+   "reason": "证据仅支持洁肤后时机，未包含早晚各一次频率，推断超出证据。"
+  },
+  "016d10bdbdf7": {
+   "verdict": "supported",
+   "reason": "证据直接说明编剧并执导，支持导演身份表述。"
+  },
+  "abf2b6750529": {
+   "verdict": "partial",
+   "reason": "证据称其为电影导演，但未明确指向该片，属引申推断。"
+  },
+  "2399a18f78cf": {
+   "verdict": "supported",
+   "reason": "证据直接说明常驻纽约市格林威治村，支持表述。"
+  },
+  "da68a5bf1335": {
+   "verdict": "unrelated",
+   "reason": "证据仅涉及编剧导演，未提及定居城市信息。"
+  },
+  "b8e82477dd53": {
+   "verdict": "unsupported",
+   "reason": "证据仅列导演信息，未涉及城市结论或缺口限制。"
+  },
+  "eb7afb9d21b2": {
+   "verdict": "supported",
+   "reason": "证据明确称该片由Adriana Trigiani编剧并执导。"
+  },
+  "dc9fc6ac03a9": {
+   "verdict": "supported",
+   "reason": "证据称其为电影导演，支持导演身份。"
+  },
+  "316ad06ce4dd": {
+   "verdict": "supported",
+   "reason": "证据明确称其常驻纽约市格林威治村。"
+  },
+  "4e81395b4ebb": {
+   "verdict": "unsupported",
+   "reason": "证据未说明定居城市，无法定位城市缺口。"
+  },
+  "cc432eadcbf0": {
+   "verdict": "supported",
+   "reason": "证据明确提到Big Stone Gap位于弗吉尼亚州。"
+  },
+  "79ed64679d04": {
+   "verdict": "supported",
+   "reason": "证据仅介绍明尼苏达州克林顿市，与问题无关。"
+  },
+  "8fdfd363fb28": {
+   "verdict": "supported",
+   "reason": "证据未提及《Big Stone Gap》或其导演，支持排除。"
+  },
+  "e42f753888ca": {
+   "verdict": "unrelated",
+   "reason": "证据仅提及专辑录制地点，未涉及断言所指内容。"
+  },
+  "f0b5fa795f4c": {
+   "verdict": "unrelated",
+   "reason": "证据描述另一部电影，与断言所指内容无关。"
+  },
+  "05c1ca1d54df": {
+   "verdict": "unrelated",
+   "reason": "证据关于娱乐公司，与断言主题无关。"
+  },
+  "9ff3cfcb9704": {
+   "verdict": "unrelated",
+   "reason": "证据关于模型工程师协会，与断言无关。"
+  },
+  "f5f45d3bf158": {
+   "verdict": "unrelated",
+   "reason": "证据关于明尼苏达州城市，与断言无关。"
+  },
+  "f9be4f893bc4": {
+   "verdict": "unrelated",
+   "reason": "证据关于喜剧系列，与断言主题无关。"
+  },
+  "a1f9e6049c05": {
+   "verdict": "unrelated",
+   "reason": "证据关于印度电影，与断言所指内容无关。"
+  },
+  "c3a16ccb3739": {
+   "verdict": "supported",
+   "reason": "证据直接支持2014 S/S是WINNER出道专辑。"
+  },
+  "f0874865554f": {
+   "verdict": "supported",
+   "reason": "证据直接支持组合由YG Entertainment组建。"
+  },
+  "16224da1186c": {
+   "verdict": "unsupported",
+   "reason": "证据仅提及2014年出道，未涉及缺口记录内容。"
+  },
+  "1a4e2b7f0897": {
+   "verdict": "unsupported",
+   "reason": "证据仅说明专辑归属，未说明组建方。"
+  },
+  "dddfb07bb0eb": {
+   "verdict": "supported",
+   "reason": "证据直接支持专辑归属子句。"
+  },
+  "e165a710d153": {
+   "verdict": "supported",
+   "reason": "证据直接支持组建方子句。"
+  },
+  "df2174d3997c": {
+   "verdict": "unsupported",
+   "reason": "证据未说明组建方，无法支持缺口记录。"
+  },
+  "958d98f4a3ed": {
+   "verdict": "unsupported",
+   "reason": "证据未提及专辑为出道专辑，无法支持缺口记录。"
+  },
+  "db665f961929": {
+   "verdict": "supported",
+   "reason": "证据直接支持清真寺位置。"
+  },
+  "b82ba2980396": {
+   "verdict": "supported",
+   "reason": "证据直接说明位于伊斯坦布尔奥尔塔科伊街区。"
+  },
+  "5327583573c0": {
+   "verdict": "unrelated",
+   "reason": "证据仅提及圣索菲亚，未涉及拉莱利清真寺或街区。"
+  },
+  "90b74fd34a67": {
+   "verdict": "unrelated",
+   "reason": "证据仅介绍埃斯玛苏丹名字来源，未涉及街区。"
+  },
+  "92c37e75c70c": {
+   "verdict": "unrelated",
+   "reason": "证据仅说明亲属关系，未涉及清真寺或街区。"
+  },
+  "7d8fcda7d3a4": {
+   "verdict": "supported",
+   "reason": "证据直接说明位于法提赫区拉莱利。"
+  },
+  "6b33c356c828": {
+   "verdict": "supported",
+   "reason": "证据仅提及宅邸名称，未提及清真寺或街区。"
+  },
+  "4bc614684ec3": {
+   "verdict": "supported",
+   "reason": "证据仅提及埃斯玛苏丹，未提及Laleli Mosque。"
+  },
+  "e091d4fe2f43": {
+   "verdict": "supported",
+   "reason": "证据直接说明位于伊斯坦布尔奥尔塔科伊街区。"
+  },
+  "d2cff2eab598": {
+   "verdict": "supported",
+   "reason": "证据仅提及拉莱利清真寺，未提及埃斯玛苏丹宅邸。"
+  },
+  "f3f1bf1c4111": {
+   "verdict": "supported",
+   "reason": "证据仅称其为奥斯曼公主，未说明宅邸所在街区。"
+  },
+  "ddf040b56d69": {
+   "verdict": "supported",
+   "reason": "证据仅提及三位苏丹之女，未提及宅邸。"
+  },
+  "53028918537e": {
+   "verdict": "supported",
+   "reason": "证据仅提及与圣索菲亚相邻，未涉及两者街区关系。"
+  },
+  "898c187e10e0": {
+   "verdict": "supported",
+   "reason": "证据仅提及三位苏丹之女，未说明两者街区关系。"
+  },
+  "1828bcf6dfb8": {
+   "verdict": "supported",
+   "reason": "证据仅提及亲属关系，未涉及两者街区关系。"
+  },
+  "74f3e00474e2": {
+   "verdict": "supported",
+   "reason": "证据仅提及公主身份，未提及两处位置。"
+  },
+  "591a2cdc048e": {
+   "verdict": "supported",
+   "reason": "证据仅提及人物姓名，未提及两处位置。"
+  },
+  "807f5a5196e0": {
+   "verdict": "supported",
+   "reason": "证据摘录仅提及Esma Sultan身份，未含两处建筑位置信息。"
+  },
+  "1c73eec39f6a": {
+   "verdict": "supported",
+   "reason": "证据摘录仅提及阿尔及尔清真寺，未含拉莱利清真寺或埃斯玛苏丹宅邸。"
+  },
+  "d82e8465123e": {
+   "verdict": "supported",
+   "reason": "证据摘录仅介绍苏丹艾哈迈德清真寺，未含拉莱利清真寺或埃斯玛苏丹宅邸。"
+  },
+  "7d8911a54bdb": {
+   "verdict": "supported",
+   "reason": "证据摘录直接说明Esma Sultan是三位奥斯曼苏丹女儿的名字。"
+  },
+  "55ce3eb9b78c": {
+   "verdict": "supported",
+   "reason": "证据摘录仅说明Gevheri Kadın是Esma Sultan的母亲，未含两处建筑位置。"
+  },
+  "b4e4bbd0ca67": {
+   "verdict": "supported",
+   "reason": "证据摘录仅介绍埃斯玛苏丹身份与亲属关系，未含两处建筑。"
+  },
+  "d34a5c098045": {
+   "verdict": "supported",
+   "reason": "证据摘录直接说明拉莱利清真寺位于法提赫区的拉莱利。"
+  },
+  "f9f2b398518e": {
+   "verdict": "supported",
+   "reason": "证据摘录直接说明埃斯玛苏丹宅邸位于奥尔塔科伊街区。"
+  },
+  "3132b6e6f99a": {
+   "verdict": "supported",
+   "reason": "证据直接说明她饰演该角色。"
+  },
+  "47eda1e4b60b": {
+   "verdict": "supported",
+   "reason": "证据逐项列出其多重身份。"
+  },
+  "176bc65c76b7": {
+   "verdict": "supported",
+   "reason": "证据明确记载其出任两国大使。"
+  },
+  "7e5a07625e86": {
+   "verdict": "supported",
+   "reason": "证据直接说明其担任礼宾司司长。"
+  },
+  "12b6e8839d96": {
+   "verdict": "unrelated",
+   "reason": "证据仅提及电影，与政府职务无关。"
+  },
+  "3bfa22887699": {
+   "verdict": "unrelated",
+   "reason": "证据仅说明续集关系，未涉饰演者。"
+  },
+  "7fa672d42163": {
+   "verdict": "unrelated",
+   "reason": "证据仅提及广播节目，未涉电影角色。"
+  },
+  "05c118e0cd59": {
+   "verdict": "unrelated",
+   "reason": "证据仅提及电视情景喜剧，未涉电影。"
+  },
+  "913b38559d20": {
+   "verdict": "supported",
+   "reason": "证据直接说明邓波儿饰演科利斯·阿彻。"
+  },
+  "7a660669656f": {
+   "verdict": "supported",
+   "reason": "证据逐项列出演员、歌手、舞蹈家、商人和外交官。"
+  },
+  "7e596ca1bb3b": {
+   "verdict": "supported",
+   "reason": "证据明确称其被任命为驻加纳和捷克斯洛伐克大使。"
+  },
+  "8750169c30c3": {
+   "verdict": "supported",
+   "reason": "证据直接称其为美国广播与配音女演员。"
+  },
+  "98c2cdc9bc70": {
+   "verdict": "supported",
+   "reason": "证据明确称其在广播中为该剧主角配音。"
+  },
+  "552fe6840826": {
+   "verdict": "unrelated",
+   "reason": "证据仅涉及广播配音，未提及政府职务。"
+  },
+  "a492ea099d5d": {
+   "verdict": "unrelated",
+   "reason": "证据仅介绍广播配音演员，未提及电影或演员。"
+  },
+  "b45a09ef83f4": {
+   "verdict": "supported",
+   "reason": "证据直接称其为1945年电影的续集。"
+  },
+  "6f0ecfcb83a6": {
+   "verdict": "supported",
+   "reason": "证据直接支持主演及最后主演角色。"
+  },
+  "b88dcdbeaa7b": {
+   "verdict": "unrelated",
+   "reason": "证据仅介绍影片基本信息，未涉及政府职务。"
+  },
+  "d1c7d456ff8d": {
+   "verdict": "supported",
+   "reason": "证据直接支持合写及系列类型。"
+  },
+  "0056fef22379": {
+   "verdict": "supported",
+   "reason": "证据直接支持第一人称叙述。"
+  },
+  "2e5c40bf83de": {
+   "verdict": "supported",
+   "reason": "证据直接支持六位主角轮流叙述。"
+  },
+  "4f6faf3e011e": {
+   "verdict": "supported",
+   "reason": "证据直接支持第二本companion book及作者。"
+  },
+  "d3aa9b0f2af1": {
+   "verdict": "supported",
+   "reason": "证据直接支持奴役及拯救世界情节。"
+  },
+  "a6e0fdea55ae": {
+   "verdict": "supported",
+   "reason": "证据直接支持Tobias引入及听故事。"
+  },
+  "8302a3b172c3": {
+   "verdict": "supported",
+   "reason": "证据直接说明由三人视角交替叙述。"
+  },
+  "adcf6f0207ee": {
+   "verdict": "unrelated",
+   "reason": "证据只谈系列核心主题，未涉及配套书。"
+  },
+  "a39466f80b18": {
+   "verdict": "unrelated",
+   "reason": "证据只谈系列核心主题，未涉及配套书。"
+  },
+  "ace2152b120e": {
+   "verdict": "supported",
+   "reason": "证据直接说明她是美国青少年奇幻小说家。"
+  },
+  "7bc1d065ba27": {
+   "verdict": "supported",
+   "reason": "证据直接说明三本书互为配套书。"
+  },
+  "7cf954c68390": {
+   "verdict": "unrelated",
+   "reason": "证据只说明互为配套书，未涉及叙述人称。"
+  },
+  "3aa9780211d2": {
+   "verdict": "unrelated",
+   "reason": "证据只介绍新书，未提及被奴役世界或外星物种。"
+  },
+  "98ac62cf821f": {
+   "verdict": "supported",
+   "reason": "证据直接列出三位作者姓名。"
+  },
+  "b9adba0c2c24": {
+   "verdict": "supported",
+   "reason": "证据直接陈述系列由40部短篇小说组成，面向青年读者市场。"
+  },
+  "f13bb7e22a93": {
+   "verdict": "supported",
+   "reason": "证据仅介绍系列作者，未提及第一人称叙述，与断言一致。"
+  },
+  "fdb662f2c0f6": {
+   "verdict": "supported",
+   "reason": "证据仅描述系列构成，未提及被奴役世界或外星物种配套书。"
+  },
+  "d77bf0573501": {
+   "verdict": "supported",
+   "reason": "证据仅介绍奖项本身，未提及任何具体系列作品。"
+  },
+  "4854719d2993": {
+   "verdict": "supported",
+   "reason": "证据仅说明参评资格，未说明哪部系列以第一人称叙述。"
+  },
+  "4f774a3e5177": {
+   "verdict": "supported",
+   "reason": "证据仅提及包含图像小说，未提及被奴役世界或外星物种配套书。"
+  },
+  "92d3ffb313d9": {
+   "verdict": "supported",
+   "reason": "证据直接陈述《Shadowshaper》为2015年美国都市奇幻青少年小说。"
+  },
+  "f6579e8a06a2": {
+   "verdict": "supported",
+   "reason": "证据仅介绍单部小说，未提及任何科学奇幻系列或伴读书。"
+  },
+  "564c822575db": {
+   "verdict": "supported",
+   "reason": "证据直接说明只涉及Square Enix配套书，未提及其他系列。"
+  },
+  "8fdf519521d6": {
+   "verdict": "supported",
+   "reason": "证据明确称The Divide trilogy为Elizabeth Kay的奇幻青少年小说三部曲。"
+  },
+  "23d93ee81568": {
+   "verdict": "supported",
+   "reason": "证据直接介绍《Science Fantasy》为英国奇幻科幻杂志，未提青少年系列。"
+  },
+  "4b2993c086f0": {
+   "verdict": "supported",
+   "reason": "证据直接称斯科特·德里克森为美国导演、编剧和制片人。"
+  },
+  "c0dc7f5dadaa": {
+   "verdict": "supported",
+   "reason": "证据直接称其为美国电影制作人。"
+  },
+  "121fa02cffce": {
+   "verdict": "supported",
+   "reason": "证据称Ed Wood为邪典电影制作人，未提国籍或同一性。"
+  },
+  "0ccc045b3f60": {
+   "verdict": "supported",
+   "reason": "证据仅提到Ed Wood，未说明国籍或同一性。"
+  },
+  "6383e4bd3c2a": {
+   "verdict": "partial",
+   "reason": "证据只支持德里克森国籍，未提供伍德国籍或同一性信息。"
+  },
+  "b87f42125e04": {
+   "verdict": "partial",
+   "reason": "证据支持伍德国籍，但断言中的同一性推断超出证据范围。"
+  },
+  "cebc72cad03e": {
+   "verdict": "supported",
+   "reason": "证据直接说明斯科特·德里克森是美国导演、编剧和制片人。"
+  },
+  "52267816b61c": {
+   "verdict": "supported",
+   "reason": "证据直接说明德里克森执导了2014年美国超自然恐怖片。"
+  },
+  "e61311d820d4": {
+   "verdict": "supported",
+   "reason": "证据直接说明《Doctor Strange》是2016年美国超级英雄电影。"
+  },
+  "513d35d47a60": {
+   "verdict": "supported",
+   "reason": "证据直接说明该片由Scott Derrickson执导。"
+  },
+  "fc0f17489b58": {
+   "verdict": "supported",
+   "reason": "证据直接说明爱德华·戴维斯·伍德二世是美国电影制作人。"
+  },
+  "088e562b4ea8": {
+   "verdict": "supported",
+   "reason": "证据直接说明埃德·伍德是邪典电影制作人，未涉国籍。"
+  },
+  "25e4a5da118b": {
+   "verdict": "supported",
+   "reason": "证据提到Ed Wood，未说明国籍，与断言一致。"
+  },
+  "b0e2bb3ea001": {
+   "verdict": "unrelated",
+   "reason": "证据仅说明Scott Derrickson为美国人，与断言中列出的材料编号无关。"
+  },
+  "e121869b8aec": {
+   "verdict": "unrelated",
+   "reason": "证据描述阿肯色州地名，与断言中列出的材料编号无关。"
+  },
+  "b5864e5f427b": {
+   "verdict": "unrelated",
+   "reason": "证据仅出现人名，与断言中列出的材料编号无关。"
+  },
+  "1977b767d8de": {
+   "verdict": "unrelated",
+   "reason": "证据仅说明Conrad Brooks为美国演员，与断言中列出的材料编号无关。"
+  }
+ },
+ "summary": {
+  "total_pairs": 188,
+  "judged": 188,
+  "unjudged": 0,
+  "verdict_distribution": {
+   "supported": 138,
+   "partial": 16,
+   "unsupported": 8,
+   "unrelated": 26
+  },
+  "strict_support_rate": 0.734,
+  "lenient_support_rate": 0.8191,
+  "per_case": {
+   "pd01": {
+    "judged": 22,
+    "supported": 19,
+    "case_rate": 0.864
+   },
+   "pd02": {
+    "judged": 9,
+    "supported": 9,
+    "case_rate": 1.0
+   },
+   "pd03": {
+    "judged": 21,
+    "supported": 17,
+    "case_rate": 0.81
+   },
+   "pd04": {
+    "judged": 6,
+    "supported": 6,
+    "case_rate": 1.0
+   },
+   "pd05": {
+    "judged": 8,
+    "supported": 6,
+    "case_rate": 0.75
+   },
+   "pd06": {
+    "judged": 10,
+    "supported": 4,
+    "case_rate": 0.4
+   },
+   "ph01": {
+    "judged": 19,
+    "supported": 8,
+    "case_rate": 0.421
+   },
+   "ph02": {
+    "judged": 8,
+    "supported": 4,
+    "case_rate": 0.5
+   },
+   "ph03": {
+    "judged": 25,
+    "supported": 22,
+    "case_rate": 0.88
+   },
+   "ph04": {
+    "judged": 18,
+    "supported": 11,
+    "case_rate": 0.611
+   },
+   "ph05": {
+    "judged": 25,
+    "supported": 21,
+    "case_rate": 0.84
+   },
+   "ph06": {
+    "judged": 17,
+    "supported": 11,
+    "case_rate": 0.647
+   }
+  }
+ }
+}

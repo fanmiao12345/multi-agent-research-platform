@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_8cc99333d4",
+      "fact": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+      "tag": "F",
+      "quote": "发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。",
+      "start": 2,
+      "end": 32,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 577
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_8cc99333d4",
+      "fact": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+      "tag": "F",
+      "quote": "我国个人外汇出口限额为每人每次2000美元（含2000美元）。",
+      "start": 34,
+      "end": 65,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 577
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_8cc99333d4",
+      "fact": "一年最多只能汇1万美元。",
+      "tag": "F",
+      "quote": "一年最多只能汇1万美元。",
+      "start": 67,
+      "end": 79,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 577
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_8cc99333d4",
+      "fact": "本资料提到美国政府的规定的最高限额是9000美元。",
+      "tag": "F",
+      "quote": "最高限额就是9000美元。",
+      "start": 299,
+      "end": 312,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 577
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_8cc99333d4",
+      "fact": "本资料称用西联汇款汇款到美国限额是一万美元。",
+      "tag": "F",
+      "quote": "用西联汇款汇款到美国限额是一万美元。",
+      "start": 321,
+      "end": 339,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 577
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_8cc99333d4",
+      "fact": "本资料称西联汇款只受理个人对个人的汇款。",
+      "tag": "F",
+      "quote": "只受理个人对个人的汇款。",
+      "start": 534,
+      "end": 546,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 577
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_8cc99333d4",
+      "fact": "本资料称非洲地区暂不开办西联汇款此业务。",
+      "tag": "F",
+      "quote": "非洲地区暂不开办此业务。",
+      "start": 565,
+      "end": 577,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 577
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,1088 @@
+{
+ "meta": {
+  "name": "research_writing_v3b_holdout",
+  "version": 3,
+  "created": "2026-09-29",
+  "data_policy": "留出集（泛化性对照）：两个规则设计时未接触的数据源。HotpotQA CC BY-SA 4.0；DuReader_robust 仅供研究用途。v1 冻结分母与 v2/v3 均不受影响。",
+  "execution_status": "not_run",
+  "counts": {
+   "research": 12,
+   "fault": 0
+  },
+  "v1_baseline": {
+   "frozen_ids": []
+  },
+  "extension_note": "确定性采样 seed=20260929；HotpotQA 每例 10 段含干扰段，句子级 supporting facts 作 quote；quote 逐字命中已逐例断言。",
+  "provenance": {
+   "dureader_robust_train": {
+    "file": "train.json",
+    "license": "研究用途（随包 License.docx）"
+   },
+   "hotpotqa": {
+    "distribution": "HF datasets-server hotpotqa/hotpot_qa distractor validation",
+    "license": "CC BY-SA 4.0"
+   }
+  },
+  "conversion": {
+   "script": "scripts/build_v3b_holdout.py",
+   "seed": 20260929,
+   "pools": {
+    "dureader_train": 5144,
+    "hotpot": 6
+   },
+   "raw_ids": {
+    "pd01": "0f0d8477e945c16e2a83102c037682f2",
+    "pd02": "df4577ad0c683b6098d30a9c379f6135",
+    "pd03": "3f89bca197395d05431e561cadf849c4",
+    "pd04": "33558750a9a2b8f6dce1b254f02114f7",
+    "pd05": "410ffe8ef51fb2abd0bcfe12ee3915ee",
+    "pd06": "8aa47a0d8c1652755f05f8129ca1004e",
+    "ph01": "5a8e3ea95542995a26add48d",
+    "ph02": "5abd94525542992ac4f382d2",
+    "ph03": "5adbf0a255429947ff17385a",
+    "ph04": "5a8c7595554299585d9e36b6",
+    "ph05": "5a85ea095542994775f606a8",
+    "ph06": "5a8b57f25542995d1e6f1371"
+   }
+  }
+ },
+ "sources": [
+  {
+   "id": "s701",
+   "title": "DuReader-train ",
+   "date": "unknown",
+   "text": "孕妇奶粉利于胎儿发育，孕妇食用奶粉，在分娩后乳汁中微量元素锌、铁、铜的含量较高，有利于宝宝的生长。|孕妇比较适合低乳糖，富含叶酸、唾液酸SA、亚麻酸、亚油酸、铁质、锌质、钙质和维生素B12等营养素的奶粉。合生元奶粉、合生元孕妇系列奶粉不仅考虑到孕妇所需营养，而且考虑到婴儿所许营养，合生元孕妇奶粉根据婴儿和妈妈不同的阶段进行搭配，合生元孕妇奶粉在保证孕妇所需的营养上还富有叶酸，可帮助胎儿健康发育，对红血球的制造非常重要；合生元奶粉里面的亚麻酸、亚油酸也能在孕妇身体内将转化为DHA(二十二碳六烯酸)和AA(花生四烯酸)，有助于胎儿脑部和眼睛发育，因此合生元孕妇奶粉还是不错的。|我怀孕后老公给我买了一罐孕妇奶粉，可是我不喜欢，后来就自己去买了美纳多孕产妇奶粉，哈哈哈，老公说以后要让我过目再买，不敢造次了。",
+   "origin": "public_dataset:dureader_robust_train",
+   "url": "https://github.com/PaddlePaddle/DuReader-robust/issues"
+  },
+  {
+   "id": "s702",
+   "title": "DuReader-train ",
+   "date": "unknown",
+   "text": "一岁半的孩子，饮食正从乳类为主转到以粮食、蔬菜、肉类为主食的阶段，孩子的食物种类和烹调方法将逐渐过渡到与成人相同。每天3餐饭，再加1、2顿点心，早6点及晚10点各一杯配方奶。因各宝宝食量有偏差,一天奶量约300~500毫升。 孩子一日三餐的配餐原则 ·每天吃的食物品种尽量多 ·每天的蔬菜黄绿色占一半以上 ·给孩子的饭菜要花样翻新 ·尽量软烂、肉和菜要切细，饭要软 ·可以用豆浆替代一部分奶 ·粗细搭配，适当吃些粗粮 ·水果不能代替蔬菜 ·不宜油炸",
+   "origin": "public_dataset:dureader_robust_train",
+   "url": "https://github.com/PaddlePaddle/DuReader-robust/issues"
+  },
+  {
+   "id": "s703",
+   "title": "DuReader-train ",
+   "date": "unknown",
+   "text": "1.发汇限额根据对方国兑付限额规定和我国外汇管理政策的规定执行。2.我国个人外汇出口限额为每人每次2000美元（含2000美元）。3.一年最多只能汇1万美元。汇款方法：A、汇款人前往就近的中国邮政(或中国农业银行)西联汇款代理网点，认明西联汇款标识，填写发汇单。B、将填妥的表格及款项递交邮局办理C、汇款办理完毕，收妥发汇单，并将汇款信息及汇款监控号码告(MTCN#)之收款人。若汇款人预留收款人的验证身份问题（验证身份问题视同取款密码），应一并告之收款人。双方在通知过程中应注意汇款信息的保密。指定的收款人就可在全球任何一家西联汇款代理网点领取该笔汇款。|9000美元。这个规定是美国政府的规定。最高限额就是9000美元。多了那边收不了。|用西联汇款汇款到美国限额是一万美元。汇款（Remittance）也称为汇付，是付款方通过银行，使用一定的结算工具（票据），将款项交收款方的结算方式。汇款主要是用于贸易中的货款、预付款、佣金等方面，是支付货款最简便的方式。汇付方式可分为信汇、电汇和票汇三种。西联汇款最大的特点就是汇款速度快、办理的网点多，不需要开立银行账户，没有中间行费用，钞汇同价。此种汇款方式的遗憾在于可办理的外币还仅限于美元，汇款金额最多只能是一万美元，只受理个人对个人的汇款。办理时，客户要带好身份证明和用途证明。非洲地区暂不开办此业务。",
+   "origin": "public_dataset:dureader_robust_train",
+   "url": "https://github.com/PaddlePaddle/DuReader-robust/issues"
+  },
+  {
+   "id": "s704",
+   "title": "DuReader-train ",
+   "date": "unknown",
+   "text": "RA英文(Regional Adviser)的缩写，中文意思：区域顾问。酒店RA职位是酒店顾问。一、酒店顾问公司应具备条件:1、顾问公司必须拥有专业顾问团队，根据项目企业需求，提供相关技术支援、分析论证、方案策划、决策制定及执行监管等，短期驻店或者无须常驻酒店；2、酒店管理有限公司必须有国内外五星酒店管理专家储备，随时国际酒店管理理念与中国酒店、餐饮、娱乐文化相结合。为酒店、餐饮娱乐企业和准备投资酒店或餐饮企业娱乐的业主公司提供高水平管理顾问服务；3、有资深的管理人才才有高水平的顾问服务。拥有有着丰富管理经验的著名酒店管理专家组成的顾问团队负责对项目的筹备设计和营运策划提供优质的顾问服务，通过对项目的分析论证，进行方案策划，保证项目的设计实用性，控制项目的经营设计成本，提高项目的工作效率和盈利能力。二、酒店顾问公司服务内容应包括:1、酒店顾问范围：酒店、产权式酒店、会所、度假村、餐饮、娱乐、康乐休闲 ；2、顾问管理：与成员酒店签署顾问管理合同，并且根据成员酒店的具体要求，委派专业顾问，就成员酒店特定的各种专业化问题，如:酒店硬件设施改造、装修改造设计、财务管理、服务规范等进行顾问管理；3、顾问咨询：根据客户的要求与客户签署顾问咨询合同，委派专业顾问或团队，就客户特定的各种酒店专业化问题及业务，如酒店在规划及建设方面的可行性报告;酒店在设计、建筑及内部装修方面的咨询和技术支持;酒店筹备指导;酒店营销、广告、促销指导等方面提供专业顾问咨询和指导。",
+   "origin": "public_dataset:dureader_robust_train",
+   "url": "https://github.com/PaddlePaddle/DuReader-robust/issues"
+  },
+  {
+   "id": "s705",
+   "title": "DuReader-train ",
+   "date": "unknown",
+   "text": "一般是20到25个工作日放款。住房公积金贷款所需材料：1.借款人及其配偶的户口簿;2.借款人及其配偶的居民身份证;3.借款人婚姻状况证明;4.购房首付款证明;5.银行打印的借款人及其配偶的信用状况报告;6.符合法律规定的房屋买卖合同或协议。住房公积金办理条件：1.个人与所在单位必须连续缴纳住房公积金满一年；2.借款人有稳定的经济收入、信用良好、有偿还贷款本息的能力；3.借款人购买商品房的,必须有不少于总房价30%。住房公积金办理流程：1.贷款人准备相关资料，到银行填写贷款申请，并提交材料；2.贷款银行接到申请后进行资料的确认和审核；3.审核过后，贷款银行联系贷款人，签订相关合同；4.银行放款，贷款人履行还款责任。",
+   "origin": "public_dataset:dureader_robust_train",
+   "url": "https://github.com/PaddlePaddle/DuReader-robust/issues"
+  },
+  {
+   "id": "s706",
+   "title": "DuReader-train ",
+   "date": "unknown",
+   "text": "眼霜应该早晚各用一次。眼霜的正确涂抹方法：1.在早晚洁肤后，用无名指取绿豆大小的眼霜，两个无名指指腹相互揉搓，给眼霜加温，使之更容易被肌肤吸收。2.以弹钢琴的方式，均匀地轻轻将眼霜拍打在眼周肌肤上。着重在下眼窝和眼尾至太阳穴的延伸部位多加涂抹。3.先从眼部下方，由睛明穴向眼尾轻轻按压。然后从眼部上方，由内向外轻轻按压。4.用中指指腹从眉头下方开始，轻轻按压。再沿着眼眶，由内向外轻轻按压。5.用中指指尖，轻轻按压鼻翼两旁的迎香穴，促进眼部肌肤的血液循环。6.在每周的特别护理中，也可以在最后的步骤里加入眼膜的使用，帮助减缓眼部的压力。",
+   "origin": "public_dataset:dureader_robust_train",
+   "url": "https://github.com/PaddlePaddle/DuReader-robust/issues"
+  },
+  {
+   "id": "s810",
+   "title": "HotpotQA Just Another Romantic Wrestlin",
+   "date": "unknown",
+   "text": "Just Another Romantic Wrestling Comedy is a 2006 film starring April Hunter and Joanie Laurer. This Romantic comedy film was premiered at New Jersey and New York City on December 1, 2006 and was released on DVD in the United States and the United Kingdom on April 17, 2007. After the film's DVD release \"Just Another Romantic Wrestling Comedy\" won an \"Honorable Mention\" award at the New Jersey International Festival awards. The release is being handled by \"Victory Multimedia\".",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s811",
+   "title": "HotpotQA Kingston Morning",
+   "date": "unknown",
+   "text": "Kingston Morning is Dave Eggar's 4th solo release recorded in Brooklyn, New York; Kingston, Jamaica; and Big Stone Gap, Virginia; and released by Domo Records. \"Itsbynne Reel\" was nominated at the 53rd Grammy Awards for \"Best Instrumental Arrangement\".",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s812",
+   "title": "HotpotQA Nola (film)",
+   "date": "unknown",
+   "text": "Nola is a 2003 American romantic comedy film written and directed by Alan Hruska. It depicts the struggle of a young woman trying to survive in New York City while looking for her birth father. It premiered in New York City on July 23, 2004.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s813",
+   "title": "HotpotQA Adriana Trigiani",
+   "date": "unknown",
+   "text": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City. Trigiani has published a novel a year since 2000.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s814",
+   "title": "HotpotQA Great Eastern Conventions",
+   "date": "unknown",
+   "text": "Great Eastern Conventions, Inc. was an entertainment company which produced comic book conventions, most actively during the years 1987-1996. In New York City, the Great Eastern shows filled the gap between the mid-1980s demise of the annual Comic Art Convention and Creation Conventions, and the establishment of promoter Michael Carbonaro's annual Big Apple Comic Con in 1996. From 1993–1995, Great Eastern hosted two New York City shows annually at the Jacob K. Javits Convention Center. Great Eastern also ran shows in New Jersey, Pennsylvania, Massachusetts, Oregon, Minnesota, and Texas.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s815",
+   "title": "HotpotQA New York Society of Model Engi",
+   "date": "unknown",
+   "text": "The New York Society of Model Engineers (NYSME) was originally incorporated in 1926 in New York City. There are published records that show the Society existed as early as 1905. In its early years, the organization moved to and from various locations throughout Manhattan. AT that time it was basically a gentlemen's club of members who were interested in all types of model building. In 1926 the Society was formalized and incorporated under the laws of the State of New York. This was done so that the Society could obtain a permit to use a lake in New York City's Central Park for model motor boat races. It was also at this time that the Society began construction of its first Model Railroad \" The Union Connecting\". Over the next twenty years, the Society moved from its original location to two other locations. Each move doubling the size of the previous location and of course doubling the size of the model train layout. During WW2 many Society members were called to service in the Armed Forces. Regrettably, the largest of the layouts had to be dismantled. The location of the layout in the basement of the Astor Building was requested for the war effort. The dismantling was done with care, with salvaged usable materials going into scrap drives for the War effort. As members returned after the War a new location was searched for. This led to an invitation from the Lackawanna Railroad to move into their Passenger Terminal in Hoboken,NJ. They had the space for what would become the largest model railroad in the world at that time. The space? Only the ornate waiting room for the recently discontinued ferry boats to 23rd Street in New York City. Here the layout was built. It was based on the Lackawanna Railroad from Hoboken to Scranton, Pa. It was magnificent; from the scale model of the Hoboken Terminal to the soaring Delaware Water Gap. During the early-1950s the organization moved to its current location in Carlstadt, New Jersey.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s816",
+   "title": "HotpotQA Clinton, Minnesota",
+   "date": "unknown",
+   "text": "Clinton is a city in Big Stone County, Minnesota, United States. The city was named for New York Governor DeWitt Clinton. The population was 449 at the 2010 census.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s817",
+   "title": "HotpotQA Hamish and Andy's Gap Year",
+   "date": "unknown",
+   "text": "Hamish & Andy's Gap Year is a Logie Award winning comedy series following Hamish Blake and Andy Lee, a pair of Australian comedians, on their trips to various international locations. The first season saw the boys visiting America for ten episodes and broadcast their show weekly from New York City. In its second season in 2012, the show was titled \"Hamish & Andy's Euro Gap Year\" and seven episodes were broadcast from The Lord Stanley, a disused pub in East London, England. The third season known as \"Hamish and Andy's Gap Year Asia\" in 2013 was broadcast from a bar in Bangkok, Thailand, called 'The Raintree'.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s818",
+   "title": "HotpotQA I Love NY (2015 film)",
+   "date": "unknown",
+   "text": "I Love NY, also known as I Love New Year, is an Indian romantic comedy film directed by Radhika Rao and Vinay Sapru starring Sunny Deol and Kangana Ranaut in lead roles. The film is produced by Bhushan Kumar and Krishan Kumar under the banner of Super Cassettes Industries Ltd. The film was extensively shot in Mumbai, New York City and Bangkok. The main plot was taken from the Russian romantic comedy \"The Irony of Fate\" (1976). After numerous delays, the film released on 10 July 2015.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s819",
+   "title": "HotpotQA Big Stone Gap (film)",
+   "date": "unknown",
+   "text": "Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society. Based on Trigiani's 2000 best-selling novel of the same name, the story is set in the actual Virginia town of Big Stone Gap circa 1970s. The film had its world premiere at the Virginia Film Festival on November 6, 2014.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s820",
+   "title": "HotpotQA List of awards and nominations",
+   "date": "unknown",
+   "text": "South Korean boy group Shinee have received several awards and nominations for their music work. The group was formed by S.M. Entertainment in 2008 and released their first full-length album, \"The Shinee World\", on August 28, 2008, which won the Newcomer Album of the Year at the 23rd Golden Disk Awards. The first single released from the album was \"Sanso Gateun Neo (Love Like Oxygen)\" and won first place on \"M Countdown\" on September 18, 2008 making it the group's first win on Korean music shows since debut. Their second album \"Lucifer\" (2010) produced two singles, \"Lucifer\" and \"Hello\". For their outstanding choreography the group was nominated for the Best Dance Performance Award at the Mnet Asian Music Awards in 2010. \"Lucifer\" also won the Disk Bonsang Award at the 25th Golden Disk Awards as well as the Popularity Award. On March 21, 2012 the group released their fourth EP \"Sherlock\" for which the group was awarded another Disk Bonsang Award at the 27th Golden Disc Awards and the Bonsang Award at the 22nd Seoul Music Award. Also following the success of the lead single it was also nominated for Song of the Year at the 2012 Mnet Asian Music Awards.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s821",
+   "title": "HotpotQA Cho Kyuhyun",
+   "date": "unknown",
+   "text": "Cho Kyu-hyun (born February 3, 1988), better known mononymously as Kyuhyun, is a South Korean singer and musical theatre actor. He is best known as a member of South Korean boy group Super Junior, its sub-groups Super Junior-K.R.Y., Super Junior-M and a former member of the South Korean ballad group S.M. the Ballad. He is one of the first four Korean artists to appear on Chinese postage stamps.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s822",
+   "title": "HotpotQA 2014 S/S",
+   "date": "unknown",
+   "text": "2014 S/S is the debut album of South Korean group WINNER. It was released on August 12, 2014 by the group's record label, YG Entertainment. The members were credited for writing the lyrics and composing the majority of the album's songs.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s823",
+   "title": "HotpotQA History (band)",
+   "date": "unknown",
+   "text": "History (Korean: 히스토리 ) was a South Korean boy group formed by LOEN Entertainment in 2013. They debuted on April 26, 2013 with \"Dreamer\", featuring the narration of their labelmate IU. They were LOEN Entertainment's first boy group. They officially disbanded on May 12, 2017.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s824",
+   "title": "HotpotQA Winner (band)",
+   "date": "unknown",
+   "text": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014. It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon. Originally a five-piece group with Taehyun, who later departed from the group in November 2016.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s825",
+   "title": "HotpotQA Madtown",
+   "date": "unknown",
+   "text": "Madtown (Hangul: 매드타운 ), often stylized as MADTOWN, is a South Korean boy group formed in 2014 by J. Tune Camp. The group consists of Moos, Daewon, Lee Geon, Jota, Heo Jun, Buffy and H.O. Their debut album, \"Mad Town\", was released on October 6, 2014. Two of the members, Moos and Buffy, originally debuted as the hip hop duo \"Pro C\" in 2013. Madtown's official fan-base name is Mad-people. Starting December 22, 2016, MADTOWN's contract was sold to GNI Entertainment after J. Tune Camp closed.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s826",
+   "title": "HotpotQA List of songs written by Ravi",
+   "date": "unknown",
+   "text": "Ravi is a South Korean rapper, songwriter and producer, signed under Jellyfish Entertainment. He began his career as a rapper in 2012 in the South Korean boy group VIXX, and later formed VIXX's first sub-unit VIXX LR with band mate Leo in 2015. Ravi's songwriting career began with his participation in co-writing VIXX's debut single \"Super Hero\". As of November 2016 with the release of \"VIXX 2016 Conception Ker\", Ravi has contributed to the writing and composing of over 46 songs recorded by VIXX. Ravi is widely known for his participation of composing and songwriting rap portions for the group as well as lyrics and music.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s827",
+   "title": "HotpotQA SF9 (band)",
+   "date": "unknown",
+   "text": "SF9 (Korean: 에스에프나인 ; shortened from Sensational Feeling 9) is a South Korean boy group formed by FNC Entertainment. SF9 is the company's first dance boy group to ever debut. SF9 debuted on October 5, 2016 with the release of their first single album \"Feeling Sensation\".",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s828",
+   "title": "HotpotQA Seventeen discography",
+   "date": "unknown",
+   "text": "This is the discography of South Korean boy group Seventeen. Seventeen (Hangul: 세븐틴), also stylized as SEVENTEEN or SVT, is a South Korean boy group formed by Pledis Entertainment in 2015. They have released one album and four EPs.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s829",
+   "title": "HotpotQA BTS discography",
+   "date": "unknown",
+   "text": "The following is the discography of South Korean boy group BTS. The group debuted in South Korea on June 2013 with single album, \"2 Cool 4 Skool\", at number 5 on South Korean Week 31 Gaon Weekly Chart. They made a comeback on September 2013 with an extended play, \"O!RUL8,2?\", which peaked at number 4 on Week 38 Gaon Weekly Chart. BTS then released their second extended play, \"Skool Luv Affair\", in February 2014, where it charted at number 1 on Week 18 Gaon Weekly Chart. This also marked the first time their album charted on international charts, Billboard World Albums and Japan's Oricon Chart, specifically. A repackaged version of the album, \"Skool Luv Affair Special Addition\" which was released in May 2014, also peaked at number 1 on Week 21 Gaon Weekly Chart.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s830",
+   "title": "HotpotQA Esma Sultan (daughter of Abdül",
+   "date": "unknown",
+   "text": "Esma Sultan (21 March 1873 – 7 May 1899) was an Ottoman princess, the daughter of Sultan Abdülaziz and his wife Gevheri Kadın, herself the daughter of Salih Bey Svatnba. She was the half-sister of Abdülmecid II, the last Caliph of the Muslim world.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s831",
+   "title": "HotpotQA Djamaâ el Kebir",
+   "date": "unknown",
+   "text": "The Great Mosque of Algiers (Arabic: الجامع الكبير‎ ‎ , \"Jemaa Kebir\") or “Djama’a al-Kebir” (meaning Great Mosque) is a mosque in Algiers, Algeria, located very close to Algiers Harbor. An inscription on the minbar (منبر) or the pulpit testifies to fact that the mosque was built in 1097. It is also known by several other names such as Grand Mosque d'Alger, Djamaa al-Kebir, El Kebir Mosque and Jami Masjid. It is one of the few remaining examples of Almoravid architecture. It is the oldest mosque in Algiers and is said to be the oldest mosque in Algeria after Sidi Okba Mosque. It was built under sultan Ali ibn Yusuf. Its minaret dates from 1332 (1324 in some sources) and was built by the Ziyyanid Sultan of Tlemcen. The gallery at the outside of the mosque was built in 1840. Its construction was a consequence of a complete reconstruction of the street by the French.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s832",
+   "title": "HotpotQA Küçük Hüseyin Pasha",
+   "date": "unknown",
+   "text": "Küçük Hüseyin Pasha (1757 – 7 December 1803), also known as Tayazade Damat Küçük Hüseyin Pasha, was an Ottoman statesman and admiral who was Kapudan Pasha (Grand Admiral of the Ottoman Navy) from 11 March 1792 to 7 December 1803. He was a \"damat\" (\"bridegroom\") to the Ottoman dynasty after he married an Ottoman princess, Esma Sultan.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s833",
+   "title": "HotpotQA Esma Sultan (daughter of Abdul",
+   "date": "unknown",
+   "text": "Esma Sultan (17 July 1778 – 4 June 1848) was an Ottoman princess, daughter of Sultan Abdul Hamid I, sister of Sultan Mustafa IV and Sultan Mahmud II. She was the adoptive mother of Bezmiâlem Sultan and Rahime Perestu Sultan.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s834",
+   "title": "HotpotQA Sultan Ahmed Mosque",
+   "date": "unknown",
+   "text": "The Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey. A popular tourist site, the Sultan Ahmed Mosque continues to function as a mosque today; men still kneel in prayer on the mosque's lush red carpet after the call to prayer. The Blue Mosque, as it is popularly known, was constructed between 1609 and 1616 during the rule of Ahmed I. Its Külliye contains Ahmed's tomb, a madrasah and a hospice. Hand-painted blue tiles adorn the mosque’s interior walls, and at night the mosque is bathed in blue as lights frame the mosque’s five main domes, six minarets and eight secondary domes. It sits next to the Hagia Sophia, another popular tourist site.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s835",
+   "title": "HotpotQA Laleli Mosque",
+   "date": "unknown",
+   "text": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s836",
+   "title": "HotpotQA Esma Sultan Mansion",
+   "date": "unknown",
+   "text": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s837",
+   "title": "HotpotQA Esma Sultan",
+   "date": "unknown",
+   "text": "Esma Sultan is the name of three daughters of three Ottoman Sultans:",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s838",
+   "title": "HotpotQA Gevheri Kadın",
+   "date": "unknown",
+   "text": "Gevheri Kadın (8 July 1856 – 6 September 1884) was the fifth wife of 32nd Ottoman Sultan Abdülaziz. She was the mother of Şehzade Mehmed Seyfeddin and Esma Sultan of the Ottoman Empire.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s839",
+   "title": "HotpotQA Esma Sultan (daughter of Ahmed",
+   "date": "unknown",
+   "text": "Esma Sultan (14 March 1726 – 13 August 1788) was an Ottoman princess, daughter of Sultan Ahmed III and his consort Zeynep Kadın. She was the half-sister of Sultan Mustafa III and Abdul Hamid I.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s840",
+   "title": "HotpotQA Meet Corliss Archer",
+   "date": "unknown",
+   "text": "Meet Corliss Archer, a program from radio's Golden Age, ran from January 7, 1943 to September 30, 1956. Although it was CBS's answer to NBC's popular \"A Date with Judy\", it was also broadcast by NBC in 1948 as a summer replacement for \"The Bob Hope Show\". From October 3, 1952 to June 26, 1953, it aired on ABC, finally returning to CBS. Despite the program's long run, fewer than 24 episodes are known to exist.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s841",
+   "title": "HotpotQA Shirley Temple",
+   "date": "unknown",
+   "text": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938. As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s842",
+   "title": "HotpotQA Janet Waldo",
+   "date": "unknown",
+   "text": "Janet Marie Waldo (February 4, 1920 – June 12, 2016) was an American radio and voice actress. She is best known in animation for voicing Judy Jetson, Nancy in \"Shazzan\", Penelope Pitstop, and Josie in \"Josie and the Pussycats\", and on radio as the title character in \"Meet Corliss Archer\".",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s843",
+   "title": "HotpotQA Meet Corliss Archer (TV series",
+   "date": "unknown",
+   "text": "Meet Corliss Archer is an American television sitcom that aired on CBS (July 13, 1951 - August 10, 1951) and in syndication via the Ziv Company from April to December 1954. The program was an adaptation of the radio series of the same name, which was based on a series of short stories by F. Hugh Herbert.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s844",
+   "title": "HotpotQA Lord High Treasurer",
+   "date": "unknown",
+   "text": "The post of Lord High Treasurer or Lord Treasurer was an English government position and has been a British government position since the Acts of Union of 1707. A holder of the post would be the third-highest-ranked Great Officer of State, below the Lord High Steward and the Lord High Chancellor.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s845",
+   "title": "HotpotQA A Kiss for Corliss",
+   "date": "unknown",
+   "text": "A Kiss for Corliss is a 1949 American comedy film directed by Richard Wallace and written by Howard Dimsdale. It stars Shirley Temple in her final starring role as well as her final film appearance. It is a sequel to the 1945 film \"Kiss and Tell\". \"A Kiss for Corliss\" was retitled \"Almost a Bride\" before release and this title appears in the title sequence. The film was released on November 25, 1949, by United Artists.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s846",
+   "title": "HotpotQA Kiss and Tell (1945 film)",
+   "date": "unknown",
+   "text": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer. In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys. The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s847",
+   "title": "HotpotQA Secretary of State for Constit",
+   "date": "unknown",
+   "text": "The office of Secretary of State for Constitutional Affairs was a British Government position, created in 2003. Certain functions of the Lord Chancellor which related to the Lord Chancellor's Department were transferred to the Secretary of State. At a later date further functions were also transferred to the Secretary of State for Constitutional Affairs from the First Secretary of State, a position within the government held by the Deputy Prime Minister.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s848",
+   "title": "HotpotQA Village accountant",
+   "date": "unknown",
+   "text": "The Village Accountant (variously known as \"Patwari\", \"Talati\", \"Patel\", \"Karnam\", \"Adhikari\", \"Shanbogaru\",\"Patnaik\" etc.) is an administrative government position found in rural parts of the Indian sub-continent. The office and the officeholder are called the \"patwari\" in Telangana, Bengal, North India and in Pakistan while in Sindh it is called \"tapedar\". The position is known as the \"karnam\" in Andhra Pradesh, \"patnaik\" in Orissa or \"adhikari\" in Tamil Nadu, while it is commonly known as the \"talati\" in Karnataka, Gujarat and Maharashtra. The position was known as the \"kulkarni\" in Northern Karnataka and Maharashtra. The position was known as the \"shanbogaru\" in South Karnataka.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s849",
+   "title": "HotpotQA Charles Craft",
+   "date": "unknown",
+   "text": "Charles Craft (May 9, 1902 – September 19, 1968) was an English-born American film and television editor. Born in the county of Hampshire in England on May 9, 1902, Craft would enter the film industry in Hollywood in 1927. The first film he edited was the Universal Pictures silent film, \"Painting the Town\". Over the next 25 years, Craft would edit 90 feature-length films. In the early 1950s he would switch his focus to the small screen, his first show being \"Racket Squad\", from 1951–53, for which he was the main editor, editing 93 of the 98 episodes. He would work on several other series during the 1950s, including \"Meet Corliss Archer\" (1954), \"Science Fiction Theatre\" (1955–56), and \"Highway Patrol\" (1955–57). In the late 1950s and early 1960s he was one of the main editors on \"Sea Hunt\", starring Lloyd Bridges, editing over half of the episodes. His final film work would be editing \"Flipper's New Adventure\" (1964, the sequel to 1963's \"Flipper\". When the film was made into a television series, Craft would begin the editing duties on that show, editing the first 28 episodes before he retired in 1966. Craft died on September 19, 1968 in Los Angeles, California.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s850",
+   "title": "HotpotQA Andre Norton Award",
+   "date": "unknown",
+   "text": "The Andre Norton Award for Young Adult Science Fiction and Fantasy is an annual award presented by the Science Fiction and Fantasy Writers of America (SFWA) to the author of the best young adult or middle grade science fiction or fantasy book published in the United States in the preceding year. It is named to honor prolific science fiction and fantasy author Andre Norton (1912–2005), and it was established by then SFWA president Catherine Asaro and the SFWA Young Adult Fiction committee and announced on February 20, 2005. Any published young adult or middle grade science fiction or fantasy novel is eligible for the prize, including graphic novels. There is no limit on word count. The award is presented along with the Nebula Awards and follows the same rules for nominations and voting; as the awards are separate, works may be simultaneously nominated for both the Andre Norton award and a Nebula Award.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s851",
+   "title": "HotpotQA Victoria Hanley",
+   "date": "unknown",
+   "text": "Victoria Hanley is an American young adult fantasy novelist. Her first three books, \"The Seer And The Sword\", \"The Healer's Keep\" and \"The Light Of The Oracle\" are companion books to one another. Her newest book (released March 2012) is the sequel of a series, called \"Indigo Magic\", published by Egmont USA. She's also published two non-fiction books through Cotton Wood Press; called \"Seize the Story: A Handbook For Teens Who Like To Write\", and \"Wild Ink: A Grownups Guide To Writing Fiction For Teens\".",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s852",
+   "title": "HotpotQA The Hork-Bajir Chronicles",
+   "date": "unknown",
+   "text": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate. With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\". The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion. Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s853",
+   "title": "HotpotQA Shadowshaper",
+   "date": "unknown",
+   "text": "Shadowshaper is a 2015 American urban fantasy young adult novel written by Daniel José Older. It follows Sierra Santiago, an Afro-Boricua teenager living in Brooklyn. She is the granddaughter of a \"shadowshaper\", or a person who infuses art with ancestral spirits. As forces of gentrification invade their community and a mysterious being who appropriates their magic begins to hunt the aging shadowshapers, Sierra must learn about her artistic and spiritual heritage to foil the killer.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s854",
+   "title": "HotpotQA Left Behind: The Kids",
+   "date": "unknown",
+   "text": "\"Left Behind: The Kids (stylized as LEFT BEHIND >THE KIDS<)\" is a series written by Jerry B. Jenkins, Tim LaHaye, and Chris Fabry. The series consists of 40 short novels aimed primarily at the young adult market based on the adult series Left Behind also written by Jerry B. Jenkins. It follows a core group of teenagers as they experience the rapture and tribulation, based on scriptures found in the Bible, and background plots introduced in the adult novels. Like the adult series, the books were published by Tyndale House Publishing, and released over the 7 year period of 1997-2004. The series has sold over 11 million copies worldwide.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s855",
+   "title": "HotpotQA List of Square Enix companion ",
+   "date": "unknown",
+   "text": "Dozens of Square Enix companion books have been produced since 1998, when video game developer Square began to produce books that focused on artwork, developer interviews, and background information on the fictional worlds and characters in its games rather than on gameplay details. The first series of these books was the \"Perfect Works\" series, written and published by Square subsidiary DigiCube. They produced three books between 1998 and 1999 before the line was stopped in favor of the \"Ultimania\" (アルティマニア , Arutimania ) series, a portmanteau of ultimate and mania. This series of books is written by Studio BentStuff, which had previously written game guides for Square for \"Final Fantasy VII\". They were published by DigiCube until the company was dissolved in 2003. Square merged with video game publisher Enix on April 1, 2003 to form Square Enix, which resumed publication of the companion books.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s856",
+   "title": "HotpotQA The Divide trilogy",
+   "date": "unknown",
+   "text": "The Divide trilogy is a fantasy young adult novel trilogy by Elizabeth Kay, which takes place in an alternate universe. The three books are \"The Divide\" (2002), \"Back to The Divide\" (2005), and \"Jinx on The Divide\" (2006). The first novel was originally published by the small press publisher Chicken House (now a division of Scholastic), with subsequent volumes published by Scholastic, which also reprinted the first novel. The books have been translated into French, German, Spanish, Finnish, Chinese, Japanese, Portuguese, Italian, Romanian and Dutch. Interior illustrations are by Ted Dewan.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s857",
+   "title": "HotpotQA Science Fantasy (magazine)",
+   "date": "unknown",
+   "text": "Science Fantasy, which also appeared under the titles Impulse and SF Impulse, was a British fantasy and science fiction magazine, launched in 1950 by Nova Publications as a companion to Nova's \"New Worlds\". Walter Gillings was editor for the first two issues, and was then replaced by John Carnell, the editor of \"New Worlds\", as a cost-saving measure. Carnell edited both magazines until Nova went out of business in early 1964. The titles were acquired by Roberts & Vinter, who hired Kyril Bonfiglioli to edit \"Science Fantasy\"; Bonfiglioli changed the title to \"Impulse\" in early 1966, but the new title led to confusion with the distributors and sales fell, though the magazine remained profitable. The title was changed again to \"SF Impulse\" for the last few issues. \"Science Fantasy\" ceased publication the following year, when Roberts & Vinter came under financial pressure after their printer went bankrupt.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s858",
+   "title": "HotpotQA Animorphs",
+   "date": "unknown",
+   "text": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic. It is told in first person, with all six main characters taking turns narrating the books through their own perspectives. Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s859",
+   "title": "HotpotQA Etiquette &amp; Espionage",
+   "date": "unknown",
+   "text": "Etiquette & Espionage is a young adult steampunk novel by Gail Carriger. It is her first young adult novel, and is set in the same universe as her bestselling Parasol Protectorate adult series.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s860",
+   "title": "HotpotQA Ed Wood (film)",
+   "date": "unknown",
+   "text": "Ed Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood. The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau. Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s861",
+   "title": "HotpotQA Scott Derrickson",
+   "date": "unknown",
+   "text": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer. He lives in Los Angeles, California. He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s862",
+   "title": "HotpotQA Woodson, Arkansas",
+   "date": "unknown",
+   "text": "Woodson is a census-designated place (CDP) in Pulaski County, Arkansas, in the United States. Its population was 403 at the 2010 census. It is part of the Little Rock–North Little Rock–Conway Metropolitan Statistical Area. Woodson and its accompanying Woodson Lake and Wood Hollow are the namesake for Ed Wood Sr., a prominent plantation owner, trader, and businessman at the turn of the 20th century. Woodson is adjacent to the Wood Plantation, the largest of the plantations own by Ed Wood Sr.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s863",
+   "title": "HotpotQA Tyler Bates",
+   "date": "unknown",
+   "text": "Tyler Bates (born June 5, 1965) is an American musician, music producer, and composer for films, television, and video games. Much of his work is in the action and horror film genres, with films like \"Dawn of the Dead, 300, Sucker Punch,\" and \"John Wick.\" He has collaborated with directors like Zack Snyder, Rob Zombie, Neil Marshall, William Friedkin, Scott Derrickson, and James Gunn. With Gunn, he has scored every one of the director's films; including \"Guardians of the Galaxy\", which became one of the highest grossing domestic movies of 2014, and its 2017 sequel. In addition, he is also the lead guitarist of the American rock band Marilyn Manson, and produced its albums \"The Pale Emperor\" and \"Heaven Upside Down\".",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s864",
+   "title": "HotpotQA Ed Wood",
+   "date": "unknown",
+   "text": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s865",
+   "title": "HotpotQA Deliver Us from Evil (2014 fil",
+   "date": "unknown",
+   "text": "Deliver Us from Evil is a 2014 American supernatural horror film directed by Scott Derrickson and produced by Jerry Bruckheimer. The film is officially based on a 2001 non-fiction book entitled \"Beware the Night\" by Ralph Sarchie and Lisa Collier Cool, and its marketing campaign highlighted that it was \"inspired by actual accounts\". The film stars Eric Bana, Édgar Ramírez, Sean Harris, Olivia Munn, and Joel McHale in the main roles and was released on July 2, 2014.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s866",
+   "title": "HotpotQA Adam Collis",
+   "date": "unknown",
+   "text": "Adam Collis is an American filmmaker and actor. He attended the Duke University from 1986 to 1990 and the University of California, Los Angeles from 2007 to 2010. He also studied cinema at the University of Southern California from 1991 to 1997. Collis first work was the assistant director for the Scott Derrickson's short \"Love in the Ruins\" (1995). In 1998, he played \"Crankshaft\" in Eric Koyanagi's \"Hundred Percent\".",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s867",
+   "title": "HotpotQA Sinister (film)",
+   "date": "unknown",
+   "text": "Sinister is a 2012 supernatural horror film directed by Scott Derrickson and written by Derrickson and C. Robert Cargill. It stars Ethan Hawke as fictional true-crime writer Ellison Oswalt who discovers a box of home movies in his attic that puts his family in danger.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s868",
+   "title": "HotpotQA Conrad Brooks",
+   "date": "unknown",
+   "text": "Conrad Brooks (born Conrad Biedrzycki on January 3, 1931 in Baltimore, Maryland) is an American actor. He moved to Hollywood, California in 1948 to pursue a career in acting. He got his start in movies appearing in Ed Wood films such as \"Plan 9 from Outer Space\", \"Glen or Glenda\", and \"Jail Bait.\" He took a break from acting during the 1960s and 1970s but due to the ongoing interest in the films of Ed Wood, he reemerged in the 1980s and has become a prolific actor. He also has since gone on to write, produce and direct several films.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  },
+  {
+   "id": "s869",
+   "title": "HotpotQA Doctor Strange (2016 film)",
+   "date": "unknown",
+   "text": "Doctor Strange is a 2016 American superhero film based on the Marvel Comics character of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the fourteenth film of the Marvel Cinematic Universe (MCU). The film was directed by Scott Derrickson, who wrote it with Jon Spaihts and C. Robert Cargill, and stars Benedict Cumberbatch as Stephen Strange, along with Chiwetel Ejiofor, Rachel McAdams, Benedict Wong, Michael Stuhlbarg, Benjamin Bratt, Scott Adkins, Mads Mikkelsen, and Tilda Swinton. In \"Doctor Strange\", surgeon Strange learns the mystic arts after a career-ending car accident.",
+   "origin": "public_dataset:hotpotqa_distractor",
+   "url": "https://hotpotqa.github.io/"
+  }
+ ],
+ "tasks": [
+  {
+   "id": "pd01",
+   "category": "research",
+   "title": "孕妈喝什么奶粉好",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s701"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：孕妈喝什么奶粉好",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s701",
+     "quote": "美纳多孕产妇",
+     "claim": "美纳多孕产妇"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location"
+   ]
+  },
+  {
+   "id": "pd02",
+   "category": "research",
+   "title": "一岁半宝宝一天奶量",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s702"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：一岁半宝宝一天奶量",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s702",
+     "quote": "约300~500毫升",
+     "claim": "约300~500毫升"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location"
+   ]
+  },
+  {
+   "id": "pd03",
+   "category": "research",
+   "title": "西联汇款限额多少",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s703"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：西联汇款限额多少",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s703",
+     "quote": "9000美元",
+     "claim": "9000美元"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location"
+   ]
+  },
+  {
+   "id": "pd04",
+   "category": "research",
+   "title": "ra是什么职位",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s704"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：ra是什么职位",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s704",
+     "quote": "区域顾问",
+     "claim": "区域顾问"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location"
+   ]
+  },
+  {
+   "id": "pd05",
+   "category": "research",
+   "title": "沈阳公积金贷款多久放款",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s705"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：沈阳公积金贷款多久放款",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s705",
+     "quote": "20到25个工作日",
+     "claim": "20到25个工作日"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location"
+   ]
+  },
+  {
+   "id": "pd06",
+   "category": "research",
+   "title": "眼霜什么时间用最好",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s706"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：眼霜什么时间用最好",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s706",
+     "quote": "早晚各用一次",
+     "claim": "早晚各用一次"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location"
+   ]
+  },
+  {
+   "id": "ph01",
+   "category": "research",
+   "title": "The director of the romantic c",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s810",
+    "s811",
+    "s812",
+    "s813",
+    "s814",
+    "s815",
+    "s816",
+    "s817",
+    "s818",
+    "s819"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s819",
+     "quote": "Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.",
+     "claim": "Big Stone Gap is a 2014 American drama romantic comedy film "
+    },
+    {
+     "source_id": "s813",
+     "quote": "Adriana Trigiani is an Italian American best-selling author of sixteen books, television writer, film director, and entrepreneur based in Greenwich Village, New York City.",
+     "claim": "Adriana Trigiani is an Italian American best-selling author "
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location",
+    "subtopic_decomposition"
+   ]
+  },
+  {
+   "id": "ph02",
+   "category": "research",
+   "title": "2014 S/S is the debut album of",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s820",
+    "s821",
+    "s822",
+    "s823",
+    "s824",
+    "s825",
+    "s826",
+    "s827",
+    "s828",
+    "s829"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s822",
+     "quote": "2014 S/S is the debut album of South Korean group WINNER.",
+     "claim": "2014 S/S is the debut album of South Korean group WINNER."
+    },
+    {
+     "source_id": "s824",
+     "quote": "Winner (Hangul: 위너), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014.",
+     "claim": "Winner (Hangul: 위너), often stylized as WINNER, is a South Ko"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location",
+    "subtopic_decomposition"
+   ]
+  },
+  {
+   "id": "ph03",
+   "category": "research",
+   "title": "Are the Laleli Mosque and Esma",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s830",
+    "s831",
+    "s832",
+    "s833",
+    "s834",
+    "s835",
+    "s836",
+    "s837",
+    "s838",
+    "s839"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s835",
+     "quote": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+     "claim": "The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" "
+    },
+    {
+     "source_id": "s836",
+     "quote": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+     "claim": "The Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a "
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location",
+    "subtopic_decomposition"
+   ]
+  },
+  {
+   "id": "ph04",
+   "category": "research",
+   "title": "What government position was h",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s840",
+    "s841",
+    "s842",
+    "s843",
+    "s844",
+    "s845",
+    "s846",
+    "s847",
+    "s848",
+    "s849"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s846",
+     "quote": "Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.",
+     "claim": "Kiss and Tell is a 1945 American comedy film starring then 1"
+    },
+    {
+     "source_id": "s841",
+     "quote": "Shirley Temple Black (April 23, 1928 – February 10, 2014) was an American actress, singer, dancer, businesswoman, and diplomat who was Hollywood's number one box-office draw as a child actress from 1935 to 1938.",
+     "claim": "Shirley Temple Black (April 23, 1928 – February 10, 2014) wa"
+    },
+    {
+     "source_id": "s841",
+     "quote": "As an adult, she was named United States ambassador to Ghana and to Czechoslovakia and also served as Chief of Protocol of the United States.",
+     "claim": "As an adult, she was named United States ambassador to Ghana"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location",
+    "subtopic_decomposition"
+   ]
+  },
+  {
+   "id": "ph05",
+   "category": "research",
+   "title": "What science fantasy young adu",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s850",
+    "s851",
+    "s852",
+    "s853",
+    "s854",
+    "s855",
+    "s856",
+    "s857",
+    "s858",
+    "s859"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s852",
+     "quote": "The Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate.",
+     "claim": "The Hork-Bajir Chronicles is the second companion book to th"
+    },
+    {
+     "source_id": "s852",
+     "quote": "With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\".",
+     "claim": "With respect to continuity within the series, it takes place"
+    },
+    {
+     "source_id": "s852",
+     "quote": "The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion.",
+     "claim": "The book is introduced by Tobias, who flies to the valley of"
+    },
+    {
+     "source_id": "s858",
+     "quote": "Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic.",
+     "claim": "Animorphs is a science fantasy series of young adult books w"
+    },
+    {
+     "source_id": "s858",
+     "quote": "It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.",
+     "claim": "It is told in first person, with all six main characters tak"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location",
+    "subtopic_decomposition"
+   ]
+  },
+  {
+   "id": "ph06",
+   "category": "research",
+   "title": "Were Scott Derrickson and Ed W",
+   "status": "not_run",
+   "input_kind": "local",
+   "source_ids": [
+    "s860",
+    "s861",
+    "s862",
+    "s863",
+    "s864",
+    "s865",
+    "s866",
+    "s867",
+    "s868",
+    "s869"
+   ],
+   "request": "根据材料回答问题，并给出可定位的依据：Were Scott Derrickson and Ed Wood of the same nationality?",
+   "sections": [
+    "结论",
+    "依据与定位"
+   ],
+   "facts": [
+    {
+     "source_id": "s861",
+     "quote": "Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.",
+     "claim": "Scott Derrickson (born July 16, 1966) is an American directo"
+    },
+    {
+     "source_id": "s864",
+     "quote": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+     "claim": "Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978)"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [],
+   "forbidden_claims": [
+    "编造材料中不存在的数字或细节",
+    "虚构出处、页码或作者"
+   ],
+   "expected_outcome": "final",
+   "batch": "v3b",
+   "mechanisms": [
+    "evidence_location",
+    "subtopic_decomposition"
+   ]
+  }
+ ],
+ "faults": []
+}
