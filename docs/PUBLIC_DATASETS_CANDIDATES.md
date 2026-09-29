@@ -207,8 +207,8 @@
    - CFEVER：同一维基实体的 SUPPORTS/REFUTES 成对 6 例（`conflict_attribution`）+ NEI 5 例（→`draft`，`conservative_grading`/`gap_declaration`）+ SUPPORTS 4 例对照。
    - 注意 quote 必须用证据句而非 claim（claim 为改写）。
 3. **批次 C（语义支持率首个读数，评测端建设）**
-   - 先在 ALCE 的 ASQA 子集（20 题）上跑通"报告引用 → 解析回来源 → 逐句 NLI"判分脚本；验证后把同一脚本应用到批次 A/B 的中文交付上（换中文 NLI 模型），产出项目首个**语义支持率读数**并记入 EXECUTION_STATUS，与 ≥95% 门槛对照。
-   - 该读数在批次 A/B 真实跑通前不得写进任何验收结论。
+   - **✅ 已完成（2026-09-29，口径有偏离）**：未走 ASQA 子集（批次 A 已产出真实中文报告，改为对 34 份真实报告直接建口径并用 20 对人工抽检校准判分一致性 ≈85%）。产出 `eval/support_rate.py` 与首个读数：**严格 66.0% / 宽口径 84.7%**（544 对，deepseek-v4-pro 独立判定），远低于 ≥95%——O-22（引用与断言支持性）确认为最大质量缺口。读数为测量值，不构成验收结论。
+   - （原计划：先在 ALCE 的 ASQA 子集（20 题）上跑通"报告引用 → 解析回来源 → 逐句 NLI"判分脚本；验证后把同一脚本应用到批次 A/B 的中文交付上（换中文 NLI 模型），产出项目首个**语义支持率读数**并记入 EXECUTION_STATUS，与 ≥95% 门槛对照；该读数在批次 A/B 真实跑通前不得写进任何验收结论。）
 
 执行与记录：三批合计约 45 例，按 `eval.business_eval --mode real` 单批成本口径先估预算再跑；结果进 `eval/reports/`，日期+批次+限制照例记 `docs/IMPLEMENTATION_LOG.md`，状态同步 `docs/EXECUTION_STATUS.md` 与 `docs/IMPLEMENTATION_TRACKER.md`。若某公开集质量不达标（quote 无法逐字对齐、材料过期腐化），只砍该集不换机制——缺口登记 `docs/OPTIMIZATION_BACKLOG.md`。
 

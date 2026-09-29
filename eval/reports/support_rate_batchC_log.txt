@@ -1,0 +1,41 @@
+=== support rate batch C (fixed parser) start Tue Sep 29 15:31:01     2026 ===
+{
+ "meta": {
+  "generated_by": "eval.support_rate",
+  "mode": "real",
+  "judge_model": "deepseek-v4-pro",
+  "independence": "independent_grader_model",
+  "reports": [
+   "eval/reports/v3_public_batch/business_report.json",
+   "eval/reports/v3_public_batch_pc10_retry/business_report.json",
+   "eval/reports/o21_verify/r03/business_report.json",
+   "eval/reports/o21_verify/r04/business_report.json",
+   "eval/reports/o21_verify/r07/business_report.json",
+   "eval/reports/o21_verify/r12/business_report.json"
+  ],
+  "note": "测量读数，不构成验收结论；判分需人工抽检校准"
+ },
+ "usage": {
+  "call_count": 71,
+  "estimated_cost_usd": 0.09549242,
+  "budget_stopped": false,
+  "batches": 71,
+  "invalid_records": 0,
+  "unparsable_batches": 0,
+  "unknown_usage_calls": 0
+ },
+ "summary": {
+  "total_pairs": 562,
+  "judged": 562,
+  "unjudged": 0,
+  "verdict_distribution": {
+   "partial": 102,
+   "supported": 370,
+   "unsupported": 56,
+   "unrelated": 34
+  },
+  "strict_support_rate": 0.6584,
+  "lenient_support_rate": 0.8399
+ }
+}
+=== exit=0 Tue Sep 29 15:36:14     2026 ===
