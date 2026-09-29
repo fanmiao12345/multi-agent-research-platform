@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_ae33b38963",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "九号风球（）。为澳门第二高的热带气旋警告。高一级的信号为十号风球，低一级为八号风球。最近一次是受台风天鸽影响而于2017年8月23日上午10时45分悬挂。当热带气旋中心继续逼近澳门特别行政区，预料其强度足以使澳门特别行政区受严重影响。「严重",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 1347,
+      "content_hash": "9886df25dd5c79226c0da73a7fde08e51678b1064753e8cb8d7ff56266a1e24b",
+      "normalized_hash": "9886df25dd5c79226c0da73a7fde08e51678b1064753e8cb8d7ff56266a1e24b",
+      "captured_at": "2026-09-29T16:22:58",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_ae33b38963.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T16:22:58",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

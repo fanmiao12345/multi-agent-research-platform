@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_5df74233ced94ab0a9ebc46ff7768f43",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 顶管定额套用依据整理报告\n\n## 已有信息\n- 顶管安装可套用市政排水工程“顶管安装”定额【E-001】。〔事实〕\n- 定额是生产合格单位产品所消耗人力物力财力时间的数量标准【E-002】。〔事实〕\n- 定额是合理条件下预先规定完成单位合格产品所耗资源数量的标准【E-003】。〔事实〕\n- 定额反映一定时期社会生产力水平的高低【E-004】。〔事实〕\n- 每个施工项目都测算用工量，包括基本工和其它用工【E-005】。〔事实〕\n- 项目还要加上材料，包括基本用料和其它材料【E-006】。〔事实〕\n- 用工单价由当地根据当时不同工种劳动力价值规定【E-007】。〔事实〕\n- 材料价值是根据前期市场价格制定的预算价格【E-008】。〔事实〕\n- 在现有材料范围内，顶管套用定额方向可推断为市政排水工程“顶管安装”定额【E-001】〔推断〕；其测算涉及用工量【E-005】〔推断〕；也涉及材料【E-006】〔推断〕；并受当地用工单价影响【E-007】〔推断〕；还受材料预算价格影响【E-008】〔推断〕。\n\n## 无法完成的部分\n- 现有材料只支持到“顶管安装可套用市政排水工程‘顶管安装’定额”这一层级【E-001】〔事实〕。\n- 具体应选哪一册、哪一子目及换算规则，材料未提供，无法确认〔未知〕。\n- 不同地区或版本定额对顶管套用是否有差异，材料未提供对比，无法判断〔未知〕。\n- 因此，在现有限制下可作有条件推荐：先按市政排水工程“顶管安装”定额方向套用【E-001】〔推断〕；待补齐册别、子目编号、适用条件及地区版本差异资料后，再复核精确套用条目与换算规则〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 8 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T16:29:47"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，2 个缺口",
+        "finished_at": "2026-09-29T16:29:49"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T16:29:50"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（689字）",
+        "finished_at": "2026-09-29T16:30:03"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T16:30:05"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 15,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

@@ -124,12 +124,17 @@ def build_draft_messages(goal: str, outline_block: str, material_block: str,
                    "照常成稿：有据部分给出结论并标注引用；推荐类内容写明条件、前提与"
                    "不确定性，关键缺口显式声明（缺什么、补齐后需复核什么）；"
                    "不得编造缺失数据，也不得因部分缺失整体拒写。")
+    citation = ("【引用纪律（O-22，逐条对应）】每个引用标记只挂它直接支撑的那个子句：\n"
+                "- 一个子句只有一个依据时只引那一条；不要把整段依据一次性挂在综合句末尾；\n"
+                "- 复合结论需要多个依据时，拆成多个子句，各自紧跟自己的引用；\n"
+                "- 缺口、未提供、无法确认类表述不挂引用标记（引用只能指向材料中存在的依据）；\n"
+                "- 宁可少引、精确引，不要堆引用。")
     return [
         _s(GOAL_RULES + " 你是报告写作者。按提纲逐节写作；每个事实性断言后标注引用标记"
            "【[E-编号]】（只能使用素材包与提纲中出现的证据）；要求标注事实/推断的章节，"
            "在相应表述后加〔事实〕/〔推断〕/〔未知〕。章节标题必须与提纲一致（逐字使用，"
            "不要自行添加编号前缀或改写），不能缺节。"
-           + NO_INTERNAL_ID_RULE + hard + conditional +
+           + NO_INTERNAL_ID_RULE + hard + conditional + citation +
            "【篇幅】只写提纲要求的章节；整份 Markdown 正文尽量控制在 2500 字以内，超长请精简；"
            "引号等特殊字符无需转义（JSON 字符串内直接写中文标点）。"
            + JSON_RULE + f" 输出结构：{schema}"),
@@ -154,6 +159,8 @@ def build_review_messages(goal: str, report: str, evidence_index: str,
            "error=会导致读者被误导/要求未满足；warn=建议改进。verdict：存在 error 必须 needs_revision。"
            "注意：报告显式声明的资料缺口与有条件、带不确定性的结论/推荐（O-21 口径）"
            "是诚实交付，不算 missing；只有任务要求的内容确实缺失且未声明时才报 missing。"
+           "support 从严（O-22）：断言超出所引证据的内容、把多个依据一次性挂在同一综合句上、"
+           "或在缺口/未提供表述上挂引用标记，都报 support/warn 并给出位置。"
            "issues≤15 条且每条 message≤80字。"
            + JSON_RULE + f" 输出结构：{schema}"),
         _u(_join_blocks(f"任务目标：{goal}", hard,

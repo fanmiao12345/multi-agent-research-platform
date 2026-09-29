@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_8c2d13bce3",
+      "fact": "本资料称一带一路国际合作高峰论坛开幕式于5月14日上午在北京举行",
+      "tag": "F",
+      "quote": "“一带一路”国际合作高峰论坛开幕式将于5月14日上午在北京举行。",
+      "start": 523,
+      "end": 555,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_8c2d13bce3",
+      "fact": "本资料提及网上传言称论坛于今年5月14日至15日在北京举行",
+      "tag": "F",
+      "quote": "‘一带一路’国际合作高峰论坛将于今年5月14日至15日在北京举行。",
+      "start": 33,
+      "end": 66,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_8c2d13bce3",
+      "fact": "本资料称该传言中峰会为真，但放假未知",
+      "tag": "F",
+      "quote": "峰会是真,放假未知,不排除放假哈",
+      "start": 78,
+      "end": 94,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_8c2d13bce3",
+      "fact": "本资料称近20国领导人确认参会",
+      "tag": "F",
+      "quote": "近20国领导人确认参会。",
+      "start": 66,
+      "end": 78,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_8c2d13bce3",
+      "fact": "本资料未说明该论坛的闭幕时间",
+      "tag": "U",
+      "quote": "“一带一路”国际合作高峰论坛开幕式将于5月14日上午在北京举行。",
+      "start": 523,
+      "end": 555,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    }
+  ]
+}

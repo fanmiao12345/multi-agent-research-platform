@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_bcb0cca08f",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "您好,空腹血糖正常值为4.0-6.1mmol/L,正常餐后两小时血糖范围是 3.9-7.8mmol/L。如果出现高血糖,要及时控制好,要注意定时定餐饮食,避免大量高糖饮食。如果与必要监测血糖,建议可以使用三诺安稳+血糖仪,实时监测血糖波动,",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 715,
+      "content_hash": "ce91c008e8098aa83cab7101b0a3d72557dc6e1282879f6f5f65dec3ac90bf90",
+      "normalized_hash": "ce91c008e8098aa83cab7101b0a3d72557dc6e1282879f6f5f65dec3ac90bf90",
+      "captured_at": "2026-09-29T16:29:26",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_bcb0cca08f.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T16:29:26",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

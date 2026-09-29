@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_ad24b891758f4b1ea144185ae54cbb76",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 病女含义的资料整理报告\n\n## 已有信息\n据本资料，病女是一个摄影师【E-001】〔事实〕。本资料称，起初有人模仿病女照片，把病女当作概括的群体【E-002】〔事实〕。本资料称，后来很多没看过病女摄影作品的人也把自己定义为病女【E-003】〔事实〕。本资料称，再后来一群“跟风狗”（材料原文用语）建立了病女吧、病女风格之类【E-004】〔事实〕。综合这些表述可推断，病女在材料中指涉一个摄影师，并在后续表述中被泛化为群体称呼、自我标签及命名来源；不过，该推断只描述材料呈现的层面，未确定各层含义的严格定义和因果关系〔推断〕。\n\n## 无法完成的部分\n材料缺少说明病女与C.K之间关系的材料，因此无法确认二者关系〔未知〕。材料中与C.K有关的信息包括：作者喜欢C.K多年，称C.K生前低调、不是非主流【E-005】〔事实〕。除此之外，材料未说明病女与C.K的关系〔未知〕。材料缺少病女作为摄影师的具体身份信息，包括姓名、作品等具体资料，因此无法确认其具体身份〔未知〕。材料提到病女吧、病女风格之类【E-004】〔事实〕；但材料未提供其具体内容、形成时间、影响范围等信息，故这些方面无法确认〔未知〕。因上述缺口，病女含义的完整边界、病女与C.K是否存在关联，以及病女相关称呼在具体社群中的实际使用情况，均无法进一步核实〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v2",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 6 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T16:28:08"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，2 个缺口",
+        "finished_at": "2026-09-29T16:28:09"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T16:28:10"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（557字）",
+        "finished_at": "2026-09-29T16:28:24"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 9,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-29T16:28:47"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 5,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T16:28:48"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 1,
+    "total_citations": 6,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

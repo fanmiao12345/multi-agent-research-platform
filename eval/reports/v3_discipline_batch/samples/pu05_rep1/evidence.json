@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_16598438c2",
+      "fact": "本资料称病女是一个摄影师。",
+      "tag": "F",
+      "quote": "病女是一个摄影师。",
+      "start": 0,
+      "end": 9,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_16598438c2",
+      "fact": "本资料称起初有人模仿病女的照片，把病女当作一个概括的群体。",
+      "tag": "F",
+      "quote": "起初是模仿病女的照片，把“病女”当做一个概括的群体",
+      "start": 33,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_16598438c2",
+      "fact": "本资料称后来很多没看过病女摄影作品的人也把自己定义为病女。",
+      "tag": "F",
+      "quote": "很多没有看过病女摄影作品的跟风狗，也把自己定义为“病女”",
+      "start": 62,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_16598438c2",
+      "fact": "本资料称再后来一群跟风狗建立了病女吧、病女风格之类。",
+      "tag": "F",
+      "quote": "一群跟风狗建立了“病女吧”，“病女风格”之类的",
+      "start": 96,
+      "end": 119,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_16598438c2",
+      "fact": "本资料提到作者喜欢C.K很多年，并称C.K生前低调、不是非主流。",
+      "tag": "F",
+      "quote": "我喜欢C.K很多年了，不是脑残粉。C.K生前几位低调，也不是什么非主流等。",
+      "start": 128,
+      "end": 165,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_16598438c2",
+      "fact": "本资料未说明病女与C.K之间是什么关系。",
+      "tag": "U",
+      "quote": "病女是一个摄影师。",
+      "start": 0,
+      "end": 9,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_79f1714b848041159963dfef7d52a79b",
+  "goal": "根据材料回答问题，并给出可定位的依据：血糖值的正常范围",
+  "started_at": "2026-09-29T16:29:26",
+  "hard_requirements": {
+    "required_sections": [
+      "已有信息",
+      "无法完成的部分"
+    ],
+    "forbidden_claims": [],
+    "key_facts": []
+  },
+  "result": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 6 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T16:29:27"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，2 个缺口",
+        "finished_at": "2026-09-29T16:29:28"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个章节",
+        "finished_at": "2026-09-29T16:29:29"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1185字）",
+        "finished_at": "2026-09-29T16:29:43"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 8,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T16:29:45"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 14,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

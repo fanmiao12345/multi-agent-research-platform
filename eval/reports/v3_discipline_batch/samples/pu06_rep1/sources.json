@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_3c7a6c4a60",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "王者荣耀新赛季出现了众多的英雄但无论英雄多少，每个阵容的英雄分类还是以射手为中心，今天就为大家带来王者荣耀新赛季射手排行介绍。狄仁杰：狄仁杰是很多新手玩家最爱的射手，因为他有很好的输出能力和控制能力，在低段位的排位赛中，狄仁杰可以在后期打出",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 1183,
+      "content_hash": "90f0e3fd89c4a63791ebc15244d8f773beebd3a763ad796e4c68d8b1d4ddcf75",
+      "normalized_hash": "90f0e3fd89c4a63791ebc15244d8f773beebd3a763ad796e4c68d8b1d4ddcf75",
+      "captured_at": "2026-09-29T16:28:48",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_3c7a6c4a60.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T16:28:48",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

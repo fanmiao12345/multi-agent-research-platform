@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_5f8055c5ac",
+      "fact": "本资料以QQ浏览器为例说明保存视频文件地址为SD卡→QQBrowser→视频",
+      "tag": "F",
+      "quote": "以QQ浏览器为例: 保存视频文件地址【SD卡→QQBrowser→视频】",
+      "start": 0,
+      "end": 36,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 211
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_5f8055c5ac",
+      "fact": "本资料称保存方法为打开视频后点击右下角下载按钮",
+      "tag": "F",
+      "quote": "打开视频后,点击右下角下载按钮",
+      "start": 47,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 211
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_5f8055c5ac",
+      "fact": "本资料称在弹出页面中点击此视频即可下载",
+      "tag": "F",
+      "quote": "在弹出页面中点击此视频",
+      "start": 63,
+      "end": 74,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 211
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_5f8055c5ac",
+      "fact": "本资料称下载成功后视频保存到手机SD卡→QQBrowser→视频中",
+      "tag": "F",
+      "quote": "下载成功,及保存到手机【SD卡→QQBrowser→视频】中",
+      "start": 75,
+      "end": 105,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 211
+      },
+      "note": ""
+    }
+  ]
+}

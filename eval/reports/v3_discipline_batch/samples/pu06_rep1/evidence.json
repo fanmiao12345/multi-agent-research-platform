@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料称每个阵容的英雄分类以射手为中心",
+      "tag": "F",
+      "quote": "每个阵容的英雄分类还是以射手为中心",
+      "start": 23,
+      "end": 40,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料介绍的是王者荣耀新赛季射手排行",
+      "tag": "F",
+      "quote": "今天就为大家带来王者荣耀新赛季射手排行介绍",
+      "start": 41,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料称狄仁杰是很多新手玩家最爱的射手",
+      "tag": "F",
+      "quote": "狄仁杰是很多新手玩家最爱的射手",
+      "start": 67,
+      "end": 82,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料称狄仁杰有很好的输出能力和控制能力",
+      "tag": "F",
+      "quote": "因为他有很好的输出能力和控制能力",
+      "start": 83,
+      "end": 99,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料称后羿操作要求较低且后期爆发能力极强",
+      "tag": "F",
+      "quote": "后羿的操作要求较低，后期爆发能力极强",
+      "start": 213,
+      "end": 231,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料称马可波罗是目前版本非常强势的射手",
+      "tag": "F",
+      "quote": "马可波罗作为目前版本非常强势的射手",
+      "start": 276,
+      "end": 293,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料称孙尚香机动性极高，有强势的输出地位和生存能力",
+      "tag": "F",
+      "quote": "孙尚香作为一个机动性极高的射手",
+      "start": 353,
+      "end": 368,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_3c7a6c4a60",
+      "fact": "本资料未给出射手的明确排名顺序",
+      "tag": "I",
+      "quote": "今天就为大家带来王者荣耀新赛季射手排行介绍",
+      "start": 41,
+      "end": 62,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 395
+      },
+      "note": ""
+    }
+  ]
+}

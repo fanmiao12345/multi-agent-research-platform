@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_d594a67a7d8049c6a7e7bfdd2ab63540",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 一带一路峰会时间：可定位依据与缺口说明\n\n## 已有信息\n- 材料记载，开幕式于5月14日上午在北京举行【E-001】〔事实〕。\n- 材料记载，网上传言称论坛于今年5月14日至15日在北京举行【E-002】〔事实〕。\n- 资料称传言中峰会为真【E-003】〔事实〕。\n- 同一资料同时称放假未知【E-003】〔事实〕；因此现有材料对是否放假没有确定答案〔推断〕。\n- 材料记载，近20国领导人确认参会【E-004】〔事实〕；这可作为峰会已获一定确认的旁证〔推断〕，但不直接给出闭幕或放假时间。\n- 材料内有一条记录明确称：资料未说明该论坛的闭幕时间【E-005】〔事实〕；因此已有信息只能定位到开幕式日期与传言会期，不能据此确认完整会期〔推断〕。\n\n## 无法完成的部分\n- 关于闭幕时间：材料未说明该论坛的闭幕时间【E-005】〔事实〕；所以无法给出闭幕时间的确定结论，也无法确认闭幕日是否为5月14日、5月15日或其他日期〔推断〕。\n- 关于放假安排：材料只称放假未知【E-003】〔事实〕；同时缺少官方放假安排或相关通知材料，故无法判断论坛是否安排放假或具体放假日期〔推断〕。\n- 若要补齐结论，需要两类材料：论坛闭幕时间或完整会期的明确材料；官方放假安排或相关通知材料。补齐后应复核闭幕日期是否与传言中的5月14日至15日一致【E-002】〔推断〕。\n- 在补齐上述材料前，不能把传言中的5月14日至15日直接等同于官方完整会期，也不能给出闭幕与放假的确定结论〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 5 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T16:29:08"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "1 个主题，0 个开放冲突，2 个缺口",
+        "finished_at": "2026-09-29T16:29:09"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T16:29:10"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（641字）",
+        "finished_at": "2026-09-29T16:29:24"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 6,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T16:29:26"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 9,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

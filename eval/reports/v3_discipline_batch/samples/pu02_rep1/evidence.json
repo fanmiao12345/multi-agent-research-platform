@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称从睡感上讲山棕床垫最好，硬中带软，档次也高",
+      "tag": "F",
+      "quote": "要从睡感上来讲是山棕床垫最好，硬中带软，档次也高。",
+      "start": 0,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称乳胶床垫属于软床垫，棕垫属于硬床垫",
+      "tag": "F",
+      "quote": "乳胶床垫属于软床垫，棕垫属于硬床垫。",
+      "start": 25,
+      "end": 43,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称乳胶床垫有气孔、透气，气孔表面平滑故螨虫无法附着",
+      "tag": "F",
+      "quote": "其本身有无数的气孔，有一定性的透气性，因气孔的表面是平滑的，故螨虫等无法附着",
+      "start": 55,
+      "end": 93,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称乳胶弹性极佳、不变形、可清洗、经久耐用",
+      "tag": "F",
+      "quote": "弹性极佳，不变形，可清洗，经久耐用。",
+      "start": 126,
+      "end": 144,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称乳胶无法阻止氧化，接触紫外线时氧化更快",
+      "tag": "F",
+      "quote": "乳胶本身无法阻止氧化过程，尤其是接触紫外线时，氧化过程更快。",
+      "start": 150,
+      "end": 180,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称乳胶床垫支撑性取决于密度，密度越高支撑性越好、价格越贵",
+      "tag": "F",
+      "quote": "乳胶床垫的支撑性取决于它的密度，密度越高支撑性越好，密度越大价格越贵",
+      "start": 180,
+      "end": 214,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称椰棕含糖，虽经处理但不能百分百不生虫",
+      "tag": "F",
+      "quote": "椰棕的缺点是含糖，虽然经过处理但不能百分百不生虫。",
+      "start": 381,
+      "end": 406,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_15342b1553",
+      "fact": "本资料称山棕丝比椰棕丝长且粗，粘合后较软、弹性足、支撑性强、睡感比椰棕好",
+      "tag": "F",
+      "quote": "山棕丝比椰棕丝要长，要粗一些，天然乳胶粘合后比硬棕要软一些，而且弹性足，支撑性强，睡感比椰棕好",
+      "start": 446,
+      "end": 493,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_9b06567a77024e2384fabc06aa79b5e7",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 网页缓存视频保存位置：基于现有材料的可定位说明\n\n## 已有信息\n- 以QQ浏览器为例，保存视频文件的地址为SD卡→QQBrowser→视频【E-001】〔事实〕。\n- 下载成功后，视频保存到手机SD卡→QQBrowser→视频中【E-004】〔事实〕。\n- 下载操作上，打开视频后点击右下角下载按钮【E-002】〔事实〕。\n- 在弹出页面中点击此视频即可下载【E-003】〔事实〕。\n- 因此，在具备SD卡的手机且使用QQ浏览器时，网页缓存视频的保存位置可定位到SD卡→QQBrowser→视频【E-001】；下载完成后也落在该路径【E-004】〔推断〕。\n\n## 无法完成的部分\n- 其他浏览器或非QQ浏览器的网页缓存视频保存在哪里，现有材料未提供其他浏览器保存路径的说明，不能据此确认【未知】。\n- iOS或非SD卡设备的网页缓存视频保存在哪里，现有材料未提供非SD卡设备保存路径的说明，不能据此确认【未知】。\n- 现有材料只给出以QQ浏览器为例的路径【E-001】，并描述下载成功后保存到手机SD卡路径【E-004】；因此上述保存位置结论以QQ浏览器、手机且具备SD卡为条件〔推断〕。\n- 若需扩展到其他浏览器或非SD卡设备，应补齐对应保存路径材料，并对该条件下的最终位置进行复核〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 4 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T16:30:06"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，2 个缺口",
+        "finished_at": "2026-09-29T16:30:07"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T16:30:09"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（551字）",
+        "finished_at": "2026-09-29T16:30:21"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T16:30:22"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 8,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

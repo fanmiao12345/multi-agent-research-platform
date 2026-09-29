@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_0d10bd2d46",
+      "fact": "本资料建议胡子少的人使用双刀头的剃须刀",
+      "tag": "F",
+      "quote": "双刀头的剃须刀适合胡子少的人来用",
+      "start": 58,
+      "end": 74,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 152
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_0d10bd2d46",
+      "fact": "本资料建议经常外出时使用干电池款剃须刀",
+      "tag": "F",
+      "quote": "干电池可以经常外出时候带着使用",
+      "start": 75,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 152
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_0d10bd2d46",
+      "fact": "本资料建议一般在家剃胡子时买充电式剃须刀",
+      "tag": "F",
+      "quote": "如果一般在家剃胡子，还是买充电式的吧",
+      "start": 91,
+      "end": 109,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 152
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_0d10bd2d46",
+      "fact": "本资料个人建议购买HQ912或HQ916",
+      "tag": "F",
+      "quote": "个人建议你买HQ912或者HQ916",
+      "start": 111,
+      "end": 129,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 152
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_0d10bd2d46",
+      "fact": "本资料称HQ912和HQ916外观时尚、性能好、可水洗且较耐用",
+      "tag": "F",
+      "quote": "这两款外观时尚，性能好，可以水洗也比较耐用",
+      "start": 130,
+      "end": 151,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 152
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_0d10bd2d46",
+      "fact": "本资料未说明HQ912或HQ916是干电池还是充电式",
+      "tag": "U",
+      "quote": "个人建议你买HQ912或者HQ916",
+      "start": 111,
+      "end": 129,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 152
+      },
+      "note": ""
+    }
+  ]
+}

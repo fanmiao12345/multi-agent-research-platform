@@ -522,6 +522,19 @@ def test_prompts_carry_conditional_recommendation_policy():
     assert "不得编造缺失数据" in draft_sys
     review_sys = build_review_messages("目标", "报告", "证据索引", "")[0]["content"]
     assert "不算 missing" in review_sys
+    assert "support 从严" in review_sys          # O-22 引用纪律：审校层引用恰当性从严
+
+
+def test_draft_prompt_carries_citation_discipline():
+    """O-22 引用纪律进初稿提示词，由单测锁定（对比基线：批次 C 严格 66.0%/宽 84.7%）。
+
+    三条规则对应判分低读数的三个主因：一句多引、综合句堆引用、缺口声明挂引用。
+    """
+    from src.application.pipeline.prompts import build_draft_messages
+    draft_sys = build_draft_messages("目标", "提纲", "素材")[0]["content"]
+    assert "只挂它直接支撑的那个子句" in draft_sys
+    assert "拆成多个子句，各自紧跟自己的引用" in draft_sys
+    assert "缺口、未提供、无法确认类表述不挂引用标记" in draft_sys
 
 
 def test_pipeline_self_declared_inability_caps_delivery(tmp_path):

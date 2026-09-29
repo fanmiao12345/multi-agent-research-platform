@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_5f8055c5ac",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "以QQ浏览器为例: 保存视频文件地址【SD卡→QQBrowser→视频】 保存方法步骤如下: 打开视频后,点击右下角下载按钮 在弹出页面中点击此视频 下载成功,及保存到手机【SD卡→QQBrowser→视频】中以QQ浏览器为例:保存视频文件",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 503,
+      "content_hash": "c601e0cdd221064f244028ba1b96b699a519bc66d85c20b6ff626b04cc917514",
+      "normalized_hash": "c601e0cdd221064f244028ba1b96b699a519bc66d85c20b6ff626b04cc917514",
+      "captured_at": "2026-09-29T16:30:05",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_5f8055c5ac.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T16:30:05",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

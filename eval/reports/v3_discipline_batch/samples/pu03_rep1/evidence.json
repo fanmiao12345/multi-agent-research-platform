@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_9040ab6a62",
+      "fact": "本资料给出成年女子标准体重公式为身高(CM)减105",
+      "tag": "F",
+      "quote": "成年女子标准体重(Kg)=身高(CM)-105",
+      "start": 25,
+      "end": 48,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_9040ab6a62",
+      "fact": "本资料按该公式算出女性身高170CM的标准体重为65公斤",
+      "tag": "F",
+      "quote": "身高170CM,标准体重应为:170-105=65公斤",
+      "start": 72,
+      "end": 99,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_9040ab6a62",
+      "fact": "本资料称低于标准体重10%为偏瘦",
+      "tag": "F",
+      "quote": "低于10%为偏瘦",
+      "start": 50,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_9040ab6a62",
+      "fact": "本资料称高于标准体重10%为偏胖",
+      "tag": "F",
+      "quote": "高10%为偏胖",
+      "start": 59,
+      "end": 66,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_9040ab6a62",
+      "fact": "本资料算出低于58.5公斤即偏瘦",
+      "tag": "F",
+      "quote": "要是少于(65-6.5)=58.5公斤就偏瘦",
+      "start": 100,
+      "end": 122,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_9040ab6a62",
+      "fact": "本资料算出超过71.5公斤即过胖",
+      "tag": "F",
+      "quote": "要是超过(65+6.5)=71.5公斤就过胖了",
+      "start": 123,
+      "end": 146,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_9040ab6a62",
+      "fact": "本资料称不低于58.5公斤就算正常",
+      "tag": "F",
+      "quote": "你只要不低于58.5公斤,就算正常",
+      "start": 147,
+      "end": 164,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    }
+  ]
+}
