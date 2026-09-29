@@ -1582,3 +1582,11 @@ O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（�
   独立评测（deepseek-v4-pro）仅作参考分（human_confirmed=false，人工评分未做——本批为行为复验而非业务验收）。
 - **状态变更**：O-21 关闭（复验通过）。遗留观察：r04 的 I/U 标注纪律批评归 O-22；o13 封顶边界本轮
   稳定未摆动（r04 accepted / r03 draft 均正确），仍按 O-12 待批次数据。全量测试基线不变（641 项，本批无代码改动）。
+
+## 2026-09-29 / 调研：公开评测数据集候选清单（docs/PUBLIC_DATASETS_CANDIDATES.md，纯文档）
+
+- **做了什么**：对照一手来源（GitHub API license 字段、fever.ai / hotpotqa.github.io / rajpurkar.github.io / nyu-mll.github.io 等官方页、arXiv 摘要）逐个核实约 30 个候选公开数据集的链接、规模、语言、许可证与标注形态，按项目 12 项机制（证据定位/去重/冲突/无据拒答/保守分级/时效/联网/PDF/改稿链/指令注入/简单问答/语义支持率）给出第一梯队/第二梯队/不建议分级，并写出 v1/v2 schema → 公开数据集的字段映射通则。
+- **修改**：仅新增 `docs/PUBLIC_DATASETS_CANDIDATES.md` 一个文件；不涉及任何代码、数据集或配置改动。
+- **验证结果**：文档层面核对（链接可点、逐字段标注来源与"未核实"）；未运行任何评测。HuggingFace 站点本次调研被限流（429/403），凡引自 HF 页面的字段（QASPER/ASQA/GAIA/MP-DocVQA 许可证等）均标注"搜索快照，未直接复核"，接入前必须重新打开数据页确认。
+- **限制**：本文只是候选调研，未接入、未运行、未验收；许可证为 null/NOASSERTION/Other 的数据集（DRCD、CHEF、SciFact、MultiNews、WikiAtomicEdits、TAT-DQA 等）在清单第五节单列，接入前必须确认；中文改稿链公开数据集未发现，该机制继续依赖合成案例。
+- **下一步**（如采纳）：按文档第四节落地——批次 A（CMRC 2018 dev 20 例 + DuReader_robust unanswerable 10 例，进 `batch="v3"`，不动 v1 冻结分母）→ 批次 B（CFEVER 冲突/NEI 15 例）→ 批次 C（用 ALCE 口径给"语义支持率 ≥95%"产出首个自动读数）；转换脚本放 `scripts/`，逐例断言 quote 逐字命中。
