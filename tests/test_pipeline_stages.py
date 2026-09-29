@@ -493,6 +493,36 @@ def test_delivery_cap_from_report_self_declaration():
                      "## 下一步采集\n\n扩大试点前宜补充基线与对照〔推断〕。\n")
     assert delivery_cap(report_advice, [OutlineSection("建议")])[0] == "accepted"
 
+    # ⑥ O-21 拍板口径：部分支撑时的有条件推荐+缺口声明是诚实交付，不得封顶
+    #（T08 实录：资料能支撑部分结论时给出有条件、带不确定性的推荐是期望行为，不是"该拒未拒"）
+    report_cond = ("# 选型建议\n\n## 建议\n\n在资料能支撑的范围内，建议优先方案甲〔推断〕"
+                   "【E-001】；该结论的前提是两家均按行业惯例按坐席分档计费【E-002】〔事实〕；"
+                   "缺口：两家针对本场景的实测报价缺失，已声明，补齐后需复核〔未知〕。\n"
+                   "## 资料缺口\n\n本任务要求的实测单价未提供；本节不给出编造数字。\n")
+    cap, reason = delivery_cap(
+        report_cond, [OutlineSection("建议"), OutlineSection("资料缺口")])
+    assert cap == "accepted", reason
+
+
+def test_prompts_carry_conditional_recommendation_policy():
+    """O-21 拍板口径（2026-09-28"有条件推荐优先"）进业务提示词，由单测锁定。
+
+    先例：Q4-D1 调度 schema 即由单测锁定。防回归：部分支撑时模型应交付
+    有条件结论+缺口声明，而不是整体拒答（T08 失败模式）；审校不得把
+    "如实声明的缺口与有条件结论"当 missing 打回，逼模型编造或整体拒绝。
+    """
+    from src.application.pipeline.prompts import (
+        build_draft_messages, build_outline_messages, build_review_messages)
+    outline_sys = build_outline_messages("目标", "素材")[0]["content"]
+    assert "完全无法支撑" in outline_sys          # 既有"完全无据才拒"口径保持
+    assert "有条件、带不确定性" in outline_sys     # O-21 正向口径
+    assert "不得因关键部分缺失而整体拒绝" in outline_sys
+    draft_sys = build_draft_messages("目标", "提纲", "素材")[0]["content"]
+    assert "不得因部分缺失整体拒写" in draft_sys
+    assert "不得编造缺失数据" in draft_sys
+    review_sys = build_review_messages("目标", "报告", "证据索引", "")[0]["content"]
+    assert "不算 missing" in review_sys
+
 
 def test_pipeline_self_declared_inability_caps_delivery(tmp_path):
     """链内集成：写作者自述无法完成 → 交付等级被程序层封顶，不再判 accepted。"""

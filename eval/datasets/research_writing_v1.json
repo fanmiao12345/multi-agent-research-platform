@@ -894,7 +894,7 @@
   {
    "id": "r07",
    "category": "research",
-   "title": "无法联网时拒绝虚构最新证据",
+   "title": "无法联网时拒绝虚构最新证据（核心=新增独立研究完全无据，期望 unable；旧摘要的已有证据仍须如实交付，不得编造）",
    "status": "not_run",
    "input_kind": "network_unavailable",
    "source_ids": [
@@ -1515,7 +1515,7 @@
    "id": "r12",
    "batch": "v2",
    "category": "research",
-   "title": "无据可答时拒绝生成",
+   "title": "无据可答时拒绝生成（核心=竞品X具体单价完全无据，期望 unable；行业背景可如实说明，不得编造报价——O-21 口径：完全无据才拒，部分支撑应给有条件结论）",
    "status": "not_run",
    "input_kind": "local",
    "source_ids": [

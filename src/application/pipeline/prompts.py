@@ -93,7 +93,11 @@ def build_outline_messages(goal: str, material_block: str,
             "（可另加章节，但不能改名或省略）。" if requirements_block else "")
     refuse = ("【无法完成出口】只有当素材包证据完全无法支撑任务目标（不是部分不足）"
               "时，才可省略 sections 并输出 cannot_answer，reason≤80字，"
-              "missing 列出缺失信息；不得为了省事而拒绝能完成的任务。")
+              "missing 列出缺失信息；不得为了省事而拒绝能完成的任务。"
+              "【有条件结论（O-21 拍板：有条件推荐优先）】资料只能支撑部分结论时"
+              "必须照常给出提纲交付：在能支撑的范围内规划有条件、带不确定性的结论/推荐，"
+              "并要求正文明确声明缺口与适用条件；不得因关键部分缺失而整体拒绝，"
+              "也不得把推断或不确定内容规划成事实。")
     return [
         _s(GOAL_RULES + " 你是提纲规划器。根据素材包设计固定顺序的报告提纲；"
            "每个章节给出必须覆盖的证据 id 与是否要求正文标注事实/推断/未知。"
@@ -116,12 +120,16 @@ def build_draft_messages(goal: str, outline_block: str, material_block: str,
                  f"\n\n问题清单：\n{revision_notes}")
     hard = ("【任务硬性要求】必须逐条满足：必需章节的标题要与要求逐字一致"
             "（不要加序号或改写），禁止表述一律不得出现。" if requirements_block else "")
+    conditional = ("【部分支撑口径（O-21 拍板：有条件推荐优先）】资料只能支撑部分结论时"
+                   "照常成稿：有据部分给出结论并标注引用；推荐类内容写明条件、前提与"
+                   "不确定性，关键缺口显式声明（缺什么、补齐后需复核什么）；"
+                   "不得编造缺失数据，也不得因部分缺失整体拒写。")
     return [
         _s(GOAL_RULES + " 你是报告写作者。按提纲逐节写作；每个事实性断言后标注引用标记"
            "【[E-编号]】（只能使用素材包与提纲中出现的证据）；要求标注事实/推断的章节，"
            "在相应表述后加〔事实〕/〔推断〕/〔未知〕。章节标题必须与提纲一致（逐字使用，"
            "不要自行添加编号前缀或改写），不能缺节。"
-           + NO_INTERNAL_ID_RULE + hard +
+           + NO_INTERNAL_ID_RULE + hard + conditional +
            "【篇幅】只写提纲要求的章节；整份 Markdown 正文尽量控制在 2500 字以内，超长请精简；"
            "引号等特殊字符无需转义（JSON 字符串内直接写中文标点）。"
            + JSON_RULE + f" 输出结构：{schema}"),
@@ -144,6 +152,8 @@ def build_review_messages(goal: str, report: str, evidence_index: str,
         _s(GOAL_RULES + " 你是审校员。逐条检查：引用是否真的支持该断言（support）、"
            "必需内容是否缺失（missing）、是否有未标注的矛盾（conflict）、表述与格式（style）。"
            "error=会导致读者被误导/要求未满足；warn=建议改进。verdict：存在 error 必须 needs_revision。"
+           "注意：报告显式声明的资料缺口与有条件、带不确定性的结论/推荐（O-21 口径）"
+           "是诚实交付，不算 missing；只有任务要求的内容确实缺失且未声明时才报 missing。"
            "issues≤15 条且每条 message≤80字。"
            + JSON_RULE + f" 输出结构：{schema}"),
         _u(_join_blocks(f"任务目标：{goal}", hard,
