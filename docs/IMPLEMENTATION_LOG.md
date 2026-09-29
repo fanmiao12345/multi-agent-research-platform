@@ -1590,3 +1590,29 @@ O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（�
 - **验证结果**：文档层面核对（链接可点、逐字段标注来源与"未核实"）；未运行任何评测。HuggingFace 站点本次调研被限流（429/403），凡引自 HF 页面的字段（QASPER/ASQA/GAIA/MP-DocVQA 许可证等）均标注"搜索快照，未直接复核"，接入前必须重新打开数据页确认。
 - **限制**：本文只是候选调研，未接入、未运行、未验收；许可证为 null/NOASSERTION/Other 的数据集（DRCD、CHEF、SciFact、MultiNews、WikiAtomicEdits、TAT-DQA 等）在清单第五节单列，接入前必须确认；中文改稿链公开数据集未发现，该机制继续依赖合成案例。
 - **下一步**（如采纳）：按文档第四节落地——批次 A（CMRC 2018 dev 20 例 + DuReader_robust unanswerable 10 例，进 `batch="v3"`，不动 v1 冻结分母）→ 批次 B（CFEVER 冲突/NEI 15 例）→ 批次 C（用 ALCE 口径给"语义支持率 ≥95%"产出首个自动读数）；转换脚本放 `scripts/`，逐例断言 quote 逐字命中。
+
+## 2026-09-29 / 批次 A：公开数据集接入（CMRC 2018 + DuReader_robust → v3 独立数据文件）
+
+- **产出**：`eval/datasets/research_writing_v3_public.json`——30 例真实材料案例（batch="v3"）：
+  CMRC 2018 dev 20 例（answerable，expected=final，mechanisms=["evidence_location"]，答案 span 作
+  facts.quote）+ DuReader_robust test1 10 例（unanswerable 构造题，expected=unable，
+  mechanisms=["refuse_without_evidence"]，材料首句作"已有信息"锚点事实——沿用 v1 r07/r12 模式）。
+  **v1 冻结分母与 v2 扩充完全不动**（独立文件；测试继续锁定 33+10/version=2）。
+- **转换脚本**：`scripts/build_v3_from_public.py`（纯标准库；确定性采样 seed=20260929，
+  uuid5 稳定排序不依赖平台 random；只取多名标注完全一致的 CMRC 答案；逐例断言 quote 逐字命中；
+  映射记录入 meta.conversion.raw_ids；出处/许可证入 meta.provenance——CMRC CC BY-SA 4.0、
+  DuReader_robust 仅供研究用途）。
+- **实施中核实的两处事实修正（对照 PUBLIC_DATASETS_CANDIDATES.md）**：① 调研文档给的官方仓库
+  `PaddlePaddle/DuReader-robust` / `baidu/DuReader` 均已 404，数据实际经官方 BOS CDN 分发；
+  ② DuReader_robust 的 train/dev **只含 answerable**（1417/14520 例，无 unanswerable 标注），
+  不可回答构造题在 test1.json（5 万例 answers 全空）——已改用 test1 并在调研文档登记修正。
+- **评测工具配套（向后兼容）**：`eval.research_cases` 的 `load_dataset(path)` 支持可选路径参数、
+  命令行可指定数据集文件；`eval.business_eval` 新增 `--dataset`（默认不变仍为 v1 文件）。
+  不传参数的行为与历史完全一致。
+- **验证**：`eval.research_cases`（v1 与 v3 两份文件）均 definition_valid=true；离线冒烟
+  （`--mode mock --dataset v3 --task pu01`）打通统一业务入口；新增 2 项测试（v3 文件校验锁定 +
+  自定义路径加载）；全量回归 **643 项 0 失败**。
+- **限制与下一步**：v3 尚未真实运行（30 例 × real，按 O-21 批次单例实测 $0.004~0.02 估算约
+  $0.1~0.6，待预算批准）；批次 B（CFEVER）与批次 C（ALCE 语义支持率读数）未开始；CMRC 答案
+  span 逐字口径已锁定，但"问题改写句 request"与原问句语义一致性靠包装句式保证（原问句保留在
+  request 尾部，映射记录可回溯）。

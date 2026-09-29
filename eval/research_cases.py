@@ -1,15 +1,22 @@
-"""业务验收材料校验；不调用模型，不把结构有效计为业务通过。"""
+# -*- coding: utf-8 -*-
+"""业务验收材料校验；不调用模型，不把结构有效计为业务通过。
+
+可选命令行参数指定数据集路径（默认 research_writing_v1.json）：
+  python -m eval.research_cases [eval/datasets/research_writing_v3_public.json]
+"""
 from __future__ import annotations
 
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
 DATASET_PATH = Path(__file__).parent / "datasets" / "research_writing_v1.json"
 
 
-def load_dataset():
-    return json.loads(DATASET_PATH.read_text(encoding="utf-8"))
+def load_dataset(path: str | None = None):
+    file = Path(path) if path else DATASET_PATH
+    return json.loads(file.read_text(encoding="utf-8"))
 
 
 def validate_dataset(data: dict) -> list[str]:
@@ -58,10 +65,12 @@ def validate_dataset(data: dict) -> list[str]:
 
 
 def main():
-    dataset = load_dataset()
+    path = sys.argv[1] if len(sys.argv) > 1 else None
+    dataset = load_dataset(path)
     errors = validate_dataset(dataset)
     print(json.dumps({"dataset": dataset["meta"]["name"],
                       "dataset_version": dataset["meta"].get("version", 1),
+                      "file": str(path) if path else DATASET_PATH.name,
                       "definition_valid": not errors,
                       "business_tasks": len(dataset["tasks"]), "fault_cases": len(dataset["faults"]),
                       "v1_frozen_baseline": len(dataset["meta"].get("v1_baseline",

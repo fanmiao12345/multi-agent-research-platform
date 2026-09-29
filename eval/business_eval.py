@@ -128,7 +128,8 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                       grader_llm=None, grade: bool = False,
                       grader_model: str | None = None,
                       open_book: bool = False,
-                      batch_max_cost: float | None = None) -> dict:
+                      batch_max_cost: float | None = None,
+                      dataset_path: str | None = None) -> dict:
     if mode not in ("mock", "real"):
         raise ValueError("mode 必须为 mock 或 real")
     if repeats < 1:
@@ -143,7 +144,7 @@ def run_business_eval(*, workspace_root, mode: str = "mock", llm=None,
                                        or not math.isfinite(batch_max_cost)
                                        or batch_max_cost < 0):
         raise ValueError("--batch-max-cost 必须为非负有限数（整批累计美元估算停止阈值）")
-    dataset = load_dataset()
+    dataset = load_dataset(dataset_path)
     meta = dataset["meta"]
     started = time.time()
     root = Path(workspace_root)
@@ -480,6 +481,9 @@ def main() -> None:
     parser.add_argument("--open-book", action="store_true",
                         help="对照开关：把数据集关键事实/禁止断言注入写作端（开卷）；"
                              "默认闭卷（S8-B），开卷批次在 meta 标记、不可与闭卷合并比较")
+    parser.add_argument("--dataset", default=None,
+                        help="自定义数据集 JSON 路径（默认 research_writing_v1.json；"
+                             "v3 公开数据批次用 research_writing_v3_public.json）")
     args = parser.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -490,7 +494,8 @@ def main() -> None:
                                    out_dir=out, grade=args.grade,
                                    grader_model=args.grader_model,
                                    open_book=args.open_book,
-                                   batch_max_cost=args.batch_max_cost)
+                                   batch_max_cost=args.batch_max_cost,
+                                   dataset_path=args.dataset)
     except ValueError as e:
         parser.error(str(e))
     (out / "business_report.json").write_text(
