@@ -1,6 +1,6 @@
 # 执行状态总账（当前主线）
 
-最近更新：2026-09-29（收官清理批次）。**Q4 已于 2026-09-28 签收，主线收官状态不变**；本批次删除过时交付文档（B1_BASELINE、B2～B5/S4～S6_DELIVERY、history/ 快照——内容以 IMPLEMENTATION_LOG 为准）、同步全部文档状态至签收后口径（TRACKER/主计划/backlog/FREEZE 等）、修复文档-代码落差（health 搜索检查、.env.example 补键、UI 描述、SKILL_CATALOG 工具可用性说明），全量回归 637 项 0 失败。详见 IMPLEMENTATION_LOG 2026-09-29 条目。Q4 收官记录如下：Q4-01 七天试用（7 天/23 计划任务）→ Q4-02 集中修复（O-17/O-18/O-19/O-20/O-24 修复+真实复验，P1 导出/模板/SR 功能同批交付）→ Q4-03 正式签收（`eval/reports/q4_signoff.json`，user_signoff=true，含"AI 生成执行"口径声明）。后续为 O-21 实施与 P2/P3 等增强项，按用户优先级另行排期，无阻塞主线。
+最近更新：2026-09-29（收官清理 + 首批修复）。**Q4 已于 2026-09-28 签收，主线收官状态不变**。当日两批：① 清理批次——删除过时交付文档（B1_BASELINE、B2～B5/S4～S6_DELIVERY、history/ 快照，内容以 IMPLEMENTATION_LOG 为准）、全部文档状态同步至签收后口径、文档-代码落差修复；② 修复批次——**O-25 引用谱系回补**（以"证据→原始来源"确定性映射为基底，fixed/单任务/续跑/编排四条路径统一落盘 citation_lineage.json）与 **O-07 偶发测试根治**（拒绝路径排空请求体消除 RST 竞态），全量回归 **640 项 0 失败**。详见 IMPLEMENTATION_LOG 2026-09-29 两条。剩余待办以 backlog 优先序为准（O-21 口径校准第一位）。Q4 收官记录：Q4-01 七天试用（7 天/23 计划任务）→ Q4-02 集中修复（O-17/O-18/O-19/O-20/O-24 修复+真实复验，P1 导出/模板/SR 功能同批交付）→ Q4-03 正式签收（`eval/reports/q4_signoff.json`，user_signoff=true，含"AI 生成执行"口径声明）。
 
 ## 唯一当前计划
 

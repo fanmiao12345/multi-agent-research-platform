@@ -38,6 +38,7 @@ _JOB_ID = re.compile(r"^job_[0-9a-f]{32}$")
 _ITEM_ID = re.compile(r"^[A-Za-z0-9._-]{1,64}$")
 _WORKER_OWNER = "web-worker"
 _MAX_POST_BYTES = 1024 * 1024   # S5-09：请求体上限
+_MAX_DRAIN_BYTES = 16 * 1024 * 1024  # O-07：拒绝路径最多排空的请求体字节数
 _ALLOWED_HOSTS = {"127.0.0.1", "localhost", "::1"}
 
 
@@ -334,6 +335,34 @@ class Handler(BaseHTTPRequestHandler):
     state: WorkbenchState = WorkbenchState(DEFAULT_WORKSPACES)
 
     # ---- helpers ----
+    def _drain_body(self) -> None:
+        """拒绝型响应前排空未消费的请求体（O-07 根因修复）。
+
+        403/413/415 等拒绝若不读 body 就关闭连接，TCP 因接收缓冲仍有未读
+        数据而发 RST；高负载下 body 字节晚到，RST 恰落在客户端读响应窗口内，
+        表现为偶发 ConnectionReset。排空已知长度的 body 后再响应；长度未知
+        或超过排空上限时置 close_connection（HTTP/1.0 下客户端按响应后关闭
+        处理，自动重连，不保连接复用）。
+        """
+        if getattr(self, "_body_consumed", False):
+            return
+        try:
+            length = int(self.headers.get("Content-Length") or 0)
+        except ValueError:
+            self.close_connection = True
+            return
+        remaining = min(length, _MAX_DRAIN_BYTES)
+        while remaining > 0:
+            try:
+                chunk = self.rfile.read(min(remaining, 65536))
+            except OSError:
+                break
+            if not chunk:
+                break
+            remaining -= len(chunk)
+        if length > _MAX_DRAIN_BYTES:
+            self.close_connection = True
+
     def _send(self, code: int, payload, content_type="application/json; charset=utf-8",
               extra_headers: dict | None = None):
         if isinstance(payload, bytes):
@@ -352,6 +381,7 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def _body(self) -> dict:
+        self._body_consumed = True
         length = int(self.headers.get("Content-Length") or 0)
         if not length:
             return {}
@@ -669,17 +699,23 @@ class Handler(BaseHTTPRequestHandler):
         return self._send(404, {"error": f"未知路径 {self.path}"})
 
     def do_POST(self):  # noqa: N802
+        self._body_consumed = False
         # S5-09：写接口只接受本机回环 Host；限制请求体大小；正文必须 JSON
+        # （拒绝路径先排空请求体再响应，O-07：未读 body 就关闭会以 RST 打断客户端）
         if not _host_ok(self.headers.get("Host", "")):
+            self._drain_body()
             return self._send(403, {"error": "写接口只接受本机回环 Host（127.0.0.1/localhost）"})
         try:
             length = int(self.headers.get("Content-Length") or 0)
         except ValueError:
+            self._drain_body()
             return self._send(400, {"error": "Content-Length 无效"})
         if length > _MAX_POST_BYTES:
+            self._drain_body()
             return self._send(413, {"error": f"请求体超过 {_MAX_POST_BYTES} 字节上限"})
         content_type = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
         if content_type not in ("application/json", ""):
+            self._drain_body()
             return self._send(415, {"error": "写接口只接受 application/json"})
         url = urlparse(self.path)
         if url.path == "/api/runs":
@@ -741,6 +777,7 @@ class Handler(BaseHTTPRequestHandler):
             except LookupError as e:
                 return self._send(409, {"error": str(e)})
             return self._send(200, {"status": "recorded"})
+        self._drain_body()
         return self._send(404, {"error": "未知路径"})
 
     def log_message(self, *args):  # noqa: D401 —— 安静

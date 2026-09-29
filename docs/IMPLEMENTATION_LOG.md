@@ -1501,3 +1501,31 @@ O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（�
 - **文档-代码落差修复（代码改动）**：① `src/ops/health.py` 新增"搜索配置"检查项（未配置=明确禁用、bing_scrape/mock=可用、未知值=FAIL），python 版本门槛 (3,10)→(3,11) 对齐 pyproject；新增测试 `test_health_reports_search_configuration`（3 断言分支）。② `.env.example` 补 4 个已生效键：SEARCH_BLOCKED_DOMAINS、MCP_SERVERS（含本地 server 示例）、KNOWLEDGE_DIR、SKILLS_DIR（settings.py docstring 自此与实例文件一致）。③ README 与 `workbench.py` docstring 的"9 面板"旧 UI 描述更新为 Research Console V3 五视图，⑳/㉑ 旧面板编号引用改为任务详情页描述；README 目录速览补 multi-agent-research-console-v3 条目。④ `docs/SKILL_CATALOG.md` 修复表格断裂（9 行无表头），新增"工具可用性"节如实标注：默认入口仅注册 calculator/current_time，`fetch_page`/`web_search` 无注册工具实现、`workspace_search` 需 MCP 配置。⑤ `AGENTS.md` 第一条文件布局更新为当前 src/ 结构（旧 agent.py/llm.py 等注明已在 legacy/）。⑥ `multi-agent-research-console-v3/` 新增 README（目录用途、与 workbench 关系）。⑦ `tests/test_storage_paths.py` junction 辅助函数补 `encoding="utf-8", errors="replace"`——消除中文 Windows 下 mklink GBK 输出导致的子进程读取线程 UnicodeDecodeError 警告。⑧ `eval/final_report.py` 模板修正（M11"9 面板"→V3、尾注"待补跑"→指向真实批次报告），TECH_REPORT.md 重新生成（637 passed 读数）。
 - **验证**：`pytest tests/` 全量 **637 项 0 失败**（新增 1 项）；`py_compile` workbench.py 通过；health 实跑输出含"搜索配置"项；eval.final_report 重新生成成功。
 - **限制与下一步**：本次全部为文档/测试辅助/诊断类改动，未触碰业务执行语义；O-07 未根治（仅定性）；引用谱系断点未定位（O-25 待排期）；O-21 校准批次需真实预算，待用户启动；GitHub 远端未推送（待用户指示）。
+
+## 2026-09-29 / 收官后第一批修复：O-25 引用谱系回补 + O-07 偶发测试根治（均离线）
+
+- **O-25（引用谱系真实批次为 0）断点定位**：① `citation_lineage.json` 此前只有编排器
+  `_adopt_root_payload` 一个写点——fixed/单任务链（Q2-02 联网基线的主体路径、草稿与改稿）
+  从未写过该文件；② 编排路径的 `build_root_lineage` 依赖"根证据摘录前缀 = 子证据 quote_head"
+  匹配，真实运行中根报告证据是交付链重新抽取的，前缀基本不匹配→整体为空。组件级定向测试
+  （97 项）用构造数据恰好命中匹配，故 D7-01 标"功能完成"而真实批次读数恒 0。
+- **O-25 修复**：`refs.build_citation_lineage` 以"证据→原始来源"为基底——证据抽取时程序已对
+  quote 逐字定位（S3-04），证据 → 其 source_id 在 sources.json 的登记记录是确定性可核查映射，
+  不依赖模型输出或匹配；每条证据恰一条谱系条目（含 original_address/final_url/title/locator/
+  source_version/root_source_id），编排子任务匹配命中时补充 child_job_id/child_evidence_id
+  中间溯源，不匹配留空不编造。写盘统一为 `write_citation_lineage`（schema_version=2；
+  无 evidence.json 不写文件，不冒充）。三个出口接线：ResearchApplication.run 研究链完成后、
+  resume_research_job 续跑完成后、编排器收养时（以子任务结果增强后覆写）。
+- **O-07（workbench 安全用例偶发连接错误）根因定位**：拒绝型响应（403 Host / 413 超限 /
+  415 类型 / 未知路径 404）不读请求体就关闭连接；TCP 在接收缓冲仍有未读数据时关闭会发 RST，
+  高负载下 body 字节晚到、RST 恰落在客户端读响应窗口内→偶发 ConnectionReset——与
+  "隔离复跑必过、全量偶发"的现象完全吻合（09-09/09-20/09-22/09-28 四次记录同因）。
+- **O-07 修复**：workbench `Handler._drain_body()`——do_POST 四个拒绝点与未知路径 404 在
+  响应前排空已知长度的请求体（上限 16MB；长度未知或超限置 close_connection 干净收尾，
+  HTTP/1.0 下客户端自动重连）；`_body()` 记录消费标记，已读过 body 的路径不重复排空（防阻塞）。
+- **验证**：新增测试 3 项（谱系基底映射/子任务匹配/应用层落盘锁定，均先红后绿）；
+  `test_write_api_security_guards` 隔离连跑 10/10、workbench 全套件连跑 3 遍全绿；
+  全量回归 640 项 0 失败。改动未触碰链执行语义与评测口径；web_baseline/q2_summary 的
+  lineage 读数口径不变（读 citation_lineage.json 的 lineage 数组）。
+- **限制与下一步**：真实 LLM 下的联网/改稿批次未重跑——引用谱系的真实读数（此前恒 0）
+  待后续真实任务积累验证；O-21 口径校准批次仍待用户定预算启动。

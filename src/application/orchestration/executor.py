@@ -215,9 +215,15 @@ class OrchestrationExecutor:
         if not job_json.exists():
             return
         payload = json.loads(job_json.read_text(encoding="utf-8"))
-        from src.application.orchestration.refs import build_root_lineage
-        lineage = build_root_lineage(job_dir.parent.parent, job_dir.name,
-                                     record.get("subtasks", []))
+        from src.application.orchestration.refs import write_citation_lineage
+        # O-25：谱系以"证据→原始来源"为基底（每条证据一条），子任务摘录匹配
+        # 命中时补充中间溯源——真实运行中根证据为重新抽取、前缀常不匹配，
+        # 旧实现因此整体为空；基底映射不依赖匹配，不再为 0。
+        write_citation_lineage(job_dir, record.get("subtasks", []))
+        lineage = []
+        lineage_path = job_dir / "citation_lineage.json"
+        if lineage_path.exists():
+            lineage = json.loads(lineage_path.read_text(encoding="utf-8")).get("lineage", [])
         payload["orchestration"] = {
             "plan": plan.as_dict(), "plan_meta": record.get("plan_meta") or {},
             "children": record.get("subtasks", []),
@@ -225,9 +231,6 @@ class OrchestrationExecutor:
             "degraded": record.get("degraded", False),
             "failures": record.get("failures", []),
             "budget_split": record.get("budget_split") or {}}
-        write_json(job_dir / "citation_lineage.json", {
-            "schema_version": 1, "root_job_id": job_dir.name,
-            "lineage": lineage})
         write_json(job_json, payload)
 
     # ---- D3-05：根任务共享来源库 -------------------------------------------

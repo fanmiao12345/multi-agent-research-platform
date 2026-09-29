@@ -240,6 +240,9 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
     if result is not None:
         payload["pipeline"] = result.as_dict()
     write_json(job_dir / "job.json", payload)
+    # O-25 回补：续跑完成后同样刷新引用谱系（evidence.json 为权威，重算幂等）
+    from src.application.orchestration.refs import write_citation_lineage
+    write_citation_lineage(job_dir)
     if result is not None:
         result.root_job_id = job_id
         result.run_id = None
@@ -410,6 +413,10 @@ class ResearchApplication:
                     outcome.root_job_id = ledger.job_id
                     outcome.run_id = None
                     status = _CHAIN_TO_STATUS.get(chain_result.termination_reason, "failed")
+                    # O-25 回补：研究链完成后落盘引用谱系（证据→原始来源确定性映射）；
+                    # 编排路径随后由执行器 _adopt_root_payload 覆写为带子任务溯源的版本。
+                    from src.application.orchestration.refs import write_citation_lineage
+                    write_citation_lineage(ledger.directory)
                 else:
                     context = RuntimeContext.from_settings(self.settings,
                         max_iterations=request.max_iterations, workspace_path=self.root,

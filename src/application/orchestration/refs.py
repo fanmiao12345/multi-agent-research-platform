@@ -136,6 +136,17 @@ def collect_child_refs(workspace_root, child_job_id: str, *,
                                       + "；sources.json 读取失败").lstrip("；")
     return result
 
+def _match_child_by_quote(quote: str, children: list[dict] | None):
+    """按摘录前缀在编排子结果中找中间溯源；匹配不上返回 None（不编造）。"""
+    for child in children or []:
+        result = child.get("result") or {}
+        for ref in result.get("evidence_refs") or []:
+            head = str(ref.get("quote_head") or "")
+            if head and (quote.startswith(head) or head.startswith(quote[:80])):
+                return ref
+    return None
+
+
 def build_root_lineage(workspace_root, root_job_id: str, children: list[dict]) -> list[dict]:
     """把根报告证据按摘录匹配回子证据与原始来源，形成可核查引用谱系。"""
     from pathlib import Path
@@ -152,26 +163,88 @@ def build_root_lineage(workspace_root, root_job_id: str, children: list[dict]) -
     lineage = []
     for item in root_items:
         quote = str(item.get("quote") or "")
-        for child in children or []:
-            result = child.get("result") or {}
-            matched = None
-            for ref in result.get("evidence_refs") or []:
-                head = str(ref.get("quote_head") or "")
-                if head and (quote.startswith(head) or head.startswith(quote[:80])):
-                    matched = ref
-                    break
-            if matched is not None:
-                lineage.append({
-                    "root_evidence_id": item.get("evidence_id", ""),
-                    "root_source_id": item.get("source_id", ""),
-                    "child_job_id": matched.get("job_id", ""),
-                    "child_evidence_id": matched.get("evidence_id", ""),
-                    "source_job_id": matched.get("source_job_id", ""),
-                    "source_id": matched.get("source_id", ""),
-                    "original_root_source_id": matched.get("root_source_id", ""),
-                    "source_version": matched.get("source_version", 1),
-                    "locator": matched.get("locator") or {},
-                    "quote_head": matched.get("quote_head", ""),
-                })
-                break
+        matched = _match_child_by_quote(quote, children)
+        if matched is not None:
+            lineage.append({
+                "root_evidence_id": item.get("evidence_id", ""),
+                "root_source_id": item.get("source_id", ""),
+                "child_job_id": matched.get("job_id", ""),
+                "child_evidence_id": matched.get("evidence_id", ""),
+                "source_job_id": matched.get("source_job_id", ""),
+                "source_id": matched.get("source_id", ""),
+                "original_root_source_id": matched.get("root_source_id", ""),
+                "source_version": matched.get("source_version", 1),
+                "locator": matched.get("locator") or {},
+                "quote_head": matched.get("quote_head", ""),
+            })
     return lineage
+
+
+def build_citation_lineage(job_dir, children: list[dict] | None = None) -> list[dict]:
+    """O-25 回补（D7-01 真实路径）：以"证据→原始来源"为基底的引用谱系。
+
+    证据抽取时程序已对 quote 做逐字定位（S3-04），因此"证据 → 其 source_id 在
+    sources.json 的登记记录"是确定性可核查映射，不依赖模型输出或子任务匹配；
+    每条证据恰一条谱系条目。编排子任务（children）按摘录前缀匹配补充
+    "经哪个子任务"的中间溯源，匹配不上相应字段留空。
+    """
+    from pathlib import Path
+    import json
+
+    base = Path(job_dir)
+    evidence_path = base / "evidence.json"
+    if not evidence_path.exists():
+        return []
+    try:
+        items = json.loads(evidence_path.read_text(encoding="utf-8")).get("items", [])
+    except Exception:
+        return []
+    sources_by_id = {}
+    sources_path = base / "sources.json"
+    if sources_path.exists():
+        try:
+            records = json.loads(sources_path.read_text(encoding="utf-8")).get("sources", [])
+            sources_by_id = {str(r.get("source_id")): r for r in records}
+        except (ValueError, TypeError):
+            sources_by_id = {}
+    lineage = []
+    for item in items:
+        source_id = str(item.get("source_id", ""))
+        record = sources_by_id.get(source_id, {})
+        quote = str(item.get("quote") or "")
+        matched = _match_child_by_quote(quote, children)
+        lineage.append({
+            "root_evidence_id": item.get("evidence_id", ""),
+            "root_source_id": source_id,
+            "fact": str(item.get("fact", ""))[:120],
+            "quote_head": quote[:80],
+            "locator": dict(item.get("locator") or {}),
+            "source_job_id": str(record.get("source_job_id") or base.name),
+            "source_id": source_id,
+            "original_root_source_id": str(record.get("root_source_id") or ""),
+            "source_version": int(record.get("source_version") or 1),
+            "source_title": str(record.get("title") or ""),
+            "original_address": str(record.get("original_address") or ""),
+            "final_url": str(record.get("final_url") or ""),
+            "source_status": str(record.get("status") or ""),
+            "child_job_id": str((matched or {}).get("job_id", "")),
+            "child_evidence_id": str((matched or {}).get("evidence_id", "")),
+        })
+    return lineage
+
+
+def write_citation_lineage(job_dir, children: list[dict] | None = None) -> int:
+    """把引用谱系写入 job_dir/citation_lineage.json（O-25）。
+
+    无 evidence.json 时不动文件——没有证据就没有可追溯内容，不写空文件冒充。
+    返回谱系条目数。
+    """
+    from pathlib import Path
+    from src.harness.run_store import write_json
+    base = Path(job_dir)
+    if not (base / "evidence.json").exists():
+        return 0
+    lineage = build_citation_lineage(base, children)
+    write_json(base / "citation_lineage.json", {
+        "schema_version": 2, "root_job_id": base.name, "lineage": lineage})
+    return len(lineage)
