@@ -1,0 +1,3 @@
+=== v3 public batch start Tue Sep 29 14:49:19     2026 ===
+attempts=30 passed=17 failed=13 skipped/not_executed=0 | 报告：eval\reports\v3_public_batch\business_report.json
+=== v3 batch exit=0 Tue Sep 29 15:02:41     2026 ===

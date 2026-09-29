@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_31bf663689",
+      "fact": "本资料指出九号风球低一级的信号为八号风球。",
+      "tag": "F",
+      "quote": "低一级为八号风球",
+      "start": 33,
+      "end": 41,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 483
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称从睡感上讲山棕床垫最好，硬中带软，档次也高",
+      "tag": "F",
+      "quote": "要从睡感上来讲是山棕床垫最好，硬中带软，档次也高。",
+      "start": 0,
+      "end": 25,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称乳胶床垫属于软床垫，棕垫属于硬床垫",
+      "tag": "F",
+      "quote": "乳胶床垫属于软床垫，棕垫属于硬床垫。",
+      "start": 25,
+      "end": 43,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称乳胶床垫有气孔、有透气性，螨虫等无法附着",
+      "tag": "F",
+      "quote": "其本身有无数的气孔，有一定性的透气性，因气孔的表面是平滑的，故螨虫等无法附着",
+      "start": 55,
+      "end": 93,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称乳胶本身无法阻止氧化，接触紫外线时氧化更快",
+      "tag": "F",
+      "quote": "但要注意的是乳胶本身无法阻止氧化过程，尤其是接触紫外线时，氧化过程更快。",
+      "start": 144,
+      "end": 180,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称乳胶床垫密度越高支撑性越好、价格越贵，不宜选太厚",
+      "tag": "F",
+      "quote": "密度越高支撑性越好，密度越大价格越贵，市场上大部分密度都一般，所以购买乳胶床垫时不宜选太厚",
+      "start": 196,
+      "end": 241,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称椰棕有硬棕和软棕之分，取决于天然乳胶的多少",
+      "tag": "F",
+      "quote": "椰棕有硬棕和软棕之分，主要取决于天然乳胶的多少",
+      "start": 293,
+      "end": 316,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称椰棕含糖，虽经处理但不能百分百不生虫",
+      "tag": "F",
+      "quote": "椰棕的缺点是含糖，虽然经过处理但不能百分百不生虫。",
+      "start": 381,
+      "end": 406,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_ad2502e964",
+      "fact": "本资料称山棕睡感比椰棕好、不生虫，但材料稀缺价格高",
+      "tag": "F",
+      "quote": "睡感比椰棕好，山棕片丝本身不含糖，经过处理后不生虫，但因为材料稀缺价格高",
+      "start": 487,
+      "end": 523,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 575
+      },
+      "note": ""
+    }
+  ]
+}

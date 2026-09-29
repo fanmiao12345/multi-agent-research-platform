@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_d8d74cf76f",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "顶管安装可以套用市政排水工程“顶管安装”定额。 定额是指在一定的技术和组织条件下,生产质量合格的单位产品所消耗的人力、物力、财力和时间等的数量标准。即在合理的劳动组织和合理地使用材料和机械的条件下,预先规定完成单位合格产品所消耗的资源数量的",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 728,
+      "content_hash": "4e4768e71d9ef4b8ee4f9d8632a81208980c0374f1175d3c4d8614c7ef708722",
+      "normalized_hash": "4e4768e71d9ef4b8ee4f9d8632a81208980c0374f1175d3c4d8614c7ef708722",
+      "captured_at": "2026-09-29T15:02:12",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_d8d74cf76f.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T15:02:12",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

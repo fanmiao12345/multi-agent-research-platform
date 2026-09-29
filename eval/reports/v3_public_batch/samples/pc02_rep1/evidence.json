@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_3d83f3f4ef",
+      "fact": "1969年杨群凭《扬子江风云》获得第七届台湾金马奖最佳男主角。",
+      "tag": "F",
+      "quote": "1969年他凭《扬子江风云》一片获得第七届台湾金马奖最佳男主角。",
+      "start": 184,
+      "end": 216,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 516
+      },
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_1660e8f45d33407ea8ac6cfe243ad79e",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 血糖值正常范围：可定位依据与缺口说明\n\n## 已有信息\n- 空腹血糖正常值为4.0-6.1 mmol/L【E-001】〔事实〕。\n- 正常餐后两小时血糖范围为3.9-7.8 mmol/L【E-002】〔事实〕。\n- 上述数值分别对应空腹与餐后两小时两个时点；资料未说明它们可外推到其他时点或所有人群体，因此不能直接视为全部血糖指标的通用正常范围【E-001】【E-002】〔推断〕。\n\n## 无法完成的部分\n- 除空腹和餐后两小时外，其他时点（如随机血糖、糖化血红蛋白）的正常范围无法给出，因为缺少其他血糖指标正常范围的资料【E-001】【E-002】〔未知〕。\n- 上述正常范围适用于哪些人群（如成人、孕妇、儿童）无法确认，因为缺少适用人群与条件说明的材料【E-001】【E-002】〔未知〕。\n- 因此，本报告不能完成对全部血糖指标、全部人群正常范围的完整回答【E-001】【E-002】〔推断〕。\n\n## 血糖管理建议\n- 出现高血糖要及时控制好【E-003】〔事实〕。\n- 注意定时定餐饮食，避免大量高糖饮食【E-004】〔事实〕。\n- 必要时可使用三诺安稳+血糖仪实时监测血糖波动【E-005】〔事实〕。\n- 血糖数值严重偏高时立即到专业医院就诊【E-006】〔事实〕。\n- 上述建议未给出具体阈值、监测频次、控制目标或个体化方案，执行时需结合医生意见和实际检测结果【E-003】【E-004】【E-005】【E-006】〔推断〕。\n\n## 结论与适用条件\n- 有条件结论：在现有资料范围内，空腹血糖正常值为4.0-6.1 mmol/L，正常餐后两小时血糖范围为3.9-7.8 mmol/L【E-001】【E-002】〔事实〕。\n- 适用条件与不确定性：该结论仅覆盖空腹和餐后两小时两个时点；未覆盖随机血糖、糖化血红蛋白等其他指标，也未说明成人、孕妇、儿童等适用人群【E-001】【E-002】〔未知〕。\n- 使用范围：若处于空腹或餐后两小时场景，可参考上述范围；若涉及其他时点或特殊人群，现有资料不足以判断，需补充资料后复核【E-001】【E-002】〔推断〕。\n- 关键缺口：缺少其他血糖指标正常范围以及适用人群与条件说明材料【E-001】【E-002】〔未知〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 6 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T15:02:00"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个主题，0 个开放冲突，2 个缺口",
+        "finished_at": "2026-09-29T15:02:02"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "4 个章节",
+        "finished_at": "2026-09-29T15:02:03"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（941字）",
+        "finished_at": "2026-09-29T15:02:12"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T15:02:12"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 26,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

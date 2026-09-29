@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_2279b1f296",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "成年男子标准体重(Kg)=身高(CM)-100 ;成年女子标准体重(Kg)=身高(CM)-105 ,低于10%为偏瘦,高10%为偏胖.你是女性,身高170CM,标准体重应为:170-105=65公斤,要是少于(65-6.5)=58.5公斤就",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 352,
+      "content_hash": "a78c394a4c11b125259601d85947fae39c4dd28a3a3834fddae3c0f894830a8a",
+      "normalized_hash": "a78c394a4c11b125259601d85947fae39c4dd28a3a3834fddae3c0f894830a8a",
+      "captured_at": "2026-09-29T15:00:14",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_2279b1f296.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T15:00:14",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

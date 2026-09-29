@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_a32b19a8223a4fb7ab28b70b8dc468b6",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 风球信号等级问题报告\n\n## 结论\n比九号风球低一级的信号是八号风球【[E-001]】。〔事实〕\n\n## 依据与定位\n依据为已核实证据【[E-001]】：九号风球低一级的信号为八号风球【[E-001]】。该证据直接定位到风球信号等级主题，可据此确定低于九号风球一级的信号为八号风球。〔事实〕",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "draft",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v3",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 1 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T14:56:38"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "1 个主题，0 个开放冲突，0 个缺口",
+        "finished_at": "2026-09-29T14:56:39"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T14:56:39"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（125字）",
+        "finished_at": "2026-09-29T14:56:44"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v1",
+          "report.v2"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "第 1 轮修订后重审",
+        "finished_at": "2026-09-29T14:57:03"
+      },
+      {
+        "stage": "review",
+        "status": "revised",
+        "artifact_ids": [
+          "review.v2",
+          "report.v3"
+        ],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "第 2 轮修订后重审",
+        "finished_at": "2026-09-29T14:57:06"
+      },
+      {
+        "stage": "review",
+        "status": "needs_revision",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 1,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功",
+        "finished_at": "2026-09-29T14:57:07"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 2,
+    "total_citations": 3,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付待完善草稿：仍有 1 个阻塞问题或审校未通过（详见 review 产物），不视为验收成功"
+  }
+}

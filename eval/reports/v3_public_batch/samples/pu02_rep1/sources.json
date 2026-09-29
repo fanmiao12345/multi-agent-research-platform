@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_ad2502e964",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "要从睡感上来讲是山棕床垫最好，硬中带软，档次也高。乳胶床垫属于软床垫，棕垫属于硬床垫。乳胶床垫由蒸发模塑成型，其本身有无数的气孔，有一定性的透气性，因气孔的表面是平滑的，故螨虫等无法附着，而且乳胶汁有个很重要的特点就是它散发的香味令许多蚊虫",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 1721,
+      "content_hash": "9d27309110690875af0a9779ec97fa27417eb626c6e463eda275cbcaf94fb6f1",
+      "normalized_hash": "9d27309110690875af0a9779ec97fa27417eb626c6e463eda275cbcaf94fb6f1",
+      "captured_at": "2026-09-29T14:59:34",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_ad2502e964.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T14:59:34",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_260871b4e2",
+      "fact": "剑魔选择异界套的标准是看哪套对单一技能加强得比较好",
+      "tag": "F",
+      "quote": "剑魔选择异界套的标准就是看哪套对单一技能加强的比较好",
+      "start": 0,
+      "end": 26,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_260871b4e2",
+      "fact": "剑魔二觉之后异界套都会选择恶魔异界套，即戳9异界套",
+      "tag": "F",
+      "quote": "剑魔二觉之后异界套都会选择恶魔异界套,也就是人们常说的戳9异界套",
+      "start": 27,
+      "end": 59,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_260871b4e2",
+      "fact": "恶魔9件套把破这个技能极限加强，是异界套装中加强最大的技能之一",
+      "tag": "F",
+      "quote": "直接把破这个技能极限加强,差不多是所有异界套装加强最大的一个技能",
+      "start": 72,
+      "end": 104,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_260871b4e2",
+      "fact": "恶魔9件套使破技能百分比超高、CD缩短到非常短",
+      "tag": "F",
+      "quote": "百分比超高,CD缩短到非常短的一个时间",
+      "start": 125,
+      "end": 144,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_260871b4e2",
+      "fact": "恶魔9件套爆发不行，但持续输出伤害很好用",
+      "tag": "F",
+      "quote": "虽然爆发不行,但是在持续输出伤害上面还是非常好用的",
+      "start": 145,
+      "end": 170,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_260871b4e2",
+      "fact": "剑魔也可以选择血祭异界套装，灵活性、爆发比恶魔套差一点",
+      "tag": "F",
+      "quote": "剑魔可以选择这套血祭异界套装,虽然比上面一套灵活性差一点,爆发差一点",
+      "start": 172,
+      "end": 206,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_260871b4e2",
+      "fact": "血祭9件套对剑魔大范围技能进行加成，特别是血饮狂舞",
+      "tag": "F",
+      "quote": "血祭9件套对于剑魔大范围的技能都进行了加成,特别是里面的血饮狂舞",
+      "start": 222,
+      "end": 254,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-008",
+      "source_id": "src_260871b4e2",
+      "fact": "血祭异界套能减少技能CD、缩短真空期，清怪刷图快",
+      "tag": "F",
+      "quote": "这个异界套最好的地方就是在于减少技能CD,让剑魔的技能真空期缩短",
+      "start": 278,
+      "end": 310,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 687
+      },
+      "note": ""
+    }
+  ]
+}

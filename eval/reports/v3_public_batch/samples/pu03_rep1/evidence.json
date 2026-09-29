@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_2279b1f296",
+      "fact": "本资料给出成年女子标准体重公式为身高(CM)减105。",
+      "tag": "F",
+      "quote": "成年女子标准体重(Kg)=身高(CM)-105",
+      "start": 25,
+      "end": 48,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_2279b1f296",
+      "fact": "本资料按该公式算出女性身高170CM的标准体重为65公斤。",
+      "tag": "F",
+      "quote": "身高170CM,标准体重应为:170-105=65公斤",
+      "start": 72,
+      "end": 99,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_2279b1f296",
+      "fact": "本资料称低于标准体重10%为偏瘦，高于10%为偏胖。",
+      "tag": "F",
+      "quote": "低于10%为偏瘦,高10%为偏胖",
+      "start": 50,
+      "end": 66,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_2279b1f296",
+      "fact": "本资料算出低于58.5公斤就偏瘦，超过71.5公斤就过胖。",
+      "tag": "F",
+      "quote": "要是少于(65-6.5)=58.5公斤就偏瘦,要是超过(65+6.5)=71.5公斤就过胖了",
+      "start": 100,
+      "end": 146,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_2279b1f296",
+      "fact": "本资料称只要不低于58.5公斤就算正常。",
+      "tag": "F",
+      "quote": "你只要不低于58.5公斤,就算正常",
+      "start": 147,
+      "end": 164,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_2279b1f296",
+      "fact": "本资料称提问者现在40kg，属于纯骨感美女。",
+      "tag": "F",
+      "quote": "你现在才40kg,属于纯骨感美女!",
+      "start": 165,
+      "end": 182,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 182
+      },
+      "note": ""
+    }
+  ]
+}

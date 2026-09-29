@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_46a739d010aa4d90ae23acf56f572e19",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 胡子少的人适用的剃须刀：资料整理与缺口说明\n\n## 已有信息\n- 对胡子少者，资料给出的直接建议是使用双刀头剃须刀【E-001】〔事实〕。\n- 按使用场景，资料建议经常外出时使用干电池款剃须刀【E-002】〔事实〕；一般在家剃胡子时买充电式剃须刀【E-003】〔事实〕。\n- 具体型号方面，资料个人建议购买HQ912或HQ916【E-004】〔事实〕；资料称HQ912和HQ916外观时尚、性能好【E-005】〔事实〕；资料称HQ912和HQ916可以水洗也比较耐用【E-006】〔事实〕。\n- 综合以上建议，若胡子少且经常外出，可优先考虑双刀头加干电池款的方向【E-001】【E-002】〔推断〕；若主要在家使用，可优先考虑双刀头加充电式的方向【E-001】【E-003】〔推断〕。HQ912或HQ916可作为候选型号，但该判断以资料称其外观、性能、可水洗和耐用为前提【E-004】【E-005】【E-006】〔推断〕。\n\n## 无法完成的部分\n- 资料个人建议购买HQ912或HQ916【E-004】〔事实〕，并称其外观时尚、性能好【E-005】〔事实〕、可以水洗也比较耐用【E-006】〔事实〕，但缺少HQ912与HQ916的供电方式说明〔未知〕，也缺少HQ912与HQ916的价格信息〔未知〕。\n- 因此，无法判断HQ912或HQ916属于干电池款还是充电式，也无法确认其是否匹配经常外出的干电池款建议【E-002】或一般在家使用的充电式建议【E-003】〔推断〕。\n- 同时，无法完成HQ912与HQ916之间的价格比较、预算判断或性价比结论〔推断〕。要补齐的是：HQ912与HQ916的供电方式说明、HQ912与HQ916的具体价位；补齐后需要复核其与外出或在家场景的匹配关系，以及是否仍可作为胡子少者的推荐候选【E-004】【E-005】【E-006】〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 8 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T15:00:45"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，2 个缺口",
+        "finished_at": "2026-09-29T15:00:46"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T15:00:47"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（790字）",
+        "finished_at": "2026-09-29T15:00:57"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 1,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T15:00:58"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 21,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

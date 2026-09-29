@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_3d83f3f4ef",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "杨群（，），哈尔滨人，香港知名老牌演员，属邵氏元老之一。他获得过第七届（1969年）和第十一届（1973年）台湾金马奖最佳男主角，现居美国洛杉矶。出生于哈尔滨的杨群年幼时曾居于北京和上海，其后移居香港。他于1950年代已投身影坛，参与的首部",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 1460,
+      "content_hash": "41267b909b6542b21938ec1ca1978cc591e5c87e729ee6ed9e9a3db769979851",
+      "normalized_hash": "41267b909b6542b21938ec1ca1978cc591e5c87e729ee6ed9e9a3db769979851",
+      "captured_at": "2026-09-29T14:49:40",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_3d83f3f4ef.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T14:49:40",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

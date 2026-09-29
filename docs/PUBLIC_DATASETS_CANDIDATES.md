@@ -197,7 +197,7 @@
 
 原则：**v1 的 20 例冻结分母不动**（跨批次对比仍用该子集）；新公开数据全部进 `batch="v3"`，并在 `meta.extension_note` 登记先例（参照 v2 扩充）。以下三批均可单机完成，无训练，只有转换脚本 + 评测调用。
 
-1. **批次 A（中文证据定位 + 无据拒答，约 30 例）——✅ 已完成（2026-09-29）**：产出 `eval/datasets/research_writing_v3_public.json`（CMRC 20 + DuReader_robust unanswerable 10，quote 逐字命中逐例断言，`eval.research_cases` 校验通过，转换脚本 `scripts/build_v3_from_public.py`，确定性采样 seed=20260929）。实施中核实的两处事实修正：① 官方仓库 `PaddlePaddle/DuReader-robust` 与 `baidu/DuReader` 均已 404，数据实际经官方 BOS CDN 分发（`dataset-bj.cdn.bcebos.com/dureader_robust/data/`，随包 License.docx 为研究用途协议）；② **train/dev 仅含 answerable，unanswerable 构造题在 test1.json**（5 万例 answers 全空，本文原表"取 unanswerable 子集于 dev"的设想不成立，已按 test1 执行）。真实批次待预算批准后运行（单例实测成本 $0.004~0.02）。
+1. **批次 A（中文证据定位 + 无据拒答，约 30 例）——✅ 已完成（2026-09-29）**：产出 `eval/datasets/research_writing_v3_public.json`（CMRC 20 + DuReader_robust unanswerable 10，quote 逐字命中逐例断言，`eval.research_cases` 校验通过，转换脚本 `scripts/build_v3_from_public.py`，确定性采样 seed=20260929）。实施中核实的两处事实修正：① 官方仓库 `PaddlePaddle/DuReader-robust` 与 `baidu/DuReader` 均已 404，数据实际经官方 BOS CDN 分发（`dataset-bj.cdn.bcebos.com/dureader_robust/data/`，随包 License.docx 为研究用途协议）；② **train/dev 仅含 answerable，unanswerable 构造题在 test1.json**（5 万例 answers 全空，本文原表"取 unanswerable 子集于 dev"的设想不成立，已按 test1 执行）。真实批次已跑（2026-09-29）：预期符合 27/30=90%（DuReader 拒答 10/10、pc10 瞬时失败复跑accepted、2 例保守格式失配），引用 184 条 0 未解析，$0.21；简单案例集口径，不与 v1 分母比较。（原注：单例实测成本 $0.004~0.02。）
 1.（原第 1 条，历史表述）**批次 A（中文证据定位 + 无据拒答，约 30 例，最先做）**
    - CMRC 2018 dev 20 题（answerable → `final`，quote=抽取答案）+ DuReader_robust unanswerable 10 例（→ `unable`）。
    - 机制标签：`evidence_location`、`refuse_without_evidence`；顺带把 DuReader_robust 的 distracting 2~3 例打上 `fact_fidelity`。

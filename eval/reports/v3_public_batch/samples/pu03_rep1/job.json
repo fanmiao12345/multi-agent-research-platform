@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_c27cc47b421e49cfb8f3319e95010e35",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 170cm标准体重：已有信息与无法完成的部分\n## 已有信息\n- 资料给出成年女子标准体重公式为身高(CM)减105【E-001】〔事实〕；按该公式，身高170CM女性标准体重为65公斤【E-002】〔事实〕。\n- 资料称低于标准体重10%为偏瘦，高于10%为偏胖【E-003】〔事实〕；资料算出低于58.5公斤偏瘦，超过71.5公斤过胖【E-004】〔事实〕；资料称只要不低于58.5公斤就算正常【E-005】〔事实〕。据此，170cm女性标准体重为65公斤，偏瘦下限为58.5公斤，过胖阈值为71.5公斤；若采用该资料口径，正常与偏瘦的分界为58.5公斤【E-002】【E-003】【E-004】【E-005】〔推断〕。\n- 提问者现在40kg，资料称属于纯骨感美女【E-006】〔事实〕；数字上40kg低于58.5kg【E-004】【E-005】【E-006】〔推断〕，但资料没有直接判定40kg与偏瘦下限的关系【未知】。\n## 无法完成的部分\n- 男性标准体重无法给出：资料只提供成年女子公式【E-001】〔事实〕，并按该公式得到170cm女性65公斤【E-002】〔事实〕，未提供男性公式或数据，所以170cm男性标准体重未知〔未知〕。补齐男性公式或数据后，需复核性别适用范围、年龄地区、单位与阈值。\n- 公式出处无法核实：资料只称公式为身高减105【E-001】〔事实〕，未给出公式来源、适用年龄与地区范围【未知】；虽然资料用该公式得出女性65公斤【E-002】〔事实〕，并给出10%偏瘦/偏胖规则【E-003】〔事实〕，但无法确认其适用边界〔推断〕。补齐出处后，需复核公式来源、适用年龄、地区、样本与四舍五入规则。\n- 40kg判定缺口：资料称提问者现在40kg，属于纯骨感美女【E-006】〔事实〕；资料算出低于58.5公斤偏瘦、超过71.5公斤过胖【E-004】〔事实〕，并称只要不低于58.5公斤就算正常【E-005】〔事实〕；但缺少对提问者体重与偏瘦阈值关系的直接判定【未知】。按数字可推断40kg低于58.5kg偏瘦下限【推断】，是否应判为偏瘦或需健康评估，资料未直接说明【未知】。补齐直接判定或专业评估后，需复核40kg相对58.5公斤阈值及健康风险。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 6 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T15:00:16"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，3 个缺口",
+        "finished_at": "2026-09-29T15:00:17"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T15:00:18"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（941字）",
+        "finished_at": "2026-09-29T15:00:42"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 3,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T15:00:43"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 21,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

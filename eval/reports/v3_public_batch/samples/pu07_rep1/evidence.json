@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_18894635d9",
+      "fact": "本资料称“一带一路”国际合作高峰论坛开幕式将于5月14日上午在北京举行",
+      "tag": "F",
+      "quote": "“一带一路”国际合作高峰论坛开幕式将于5月14日上午在北京举行。",
+      "start": 523,
+      "end": 555,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_18894635d9",
+      "fact": "本资料提到网上传言称论坛于今年5月14日至15日在北京举行",
+      "tag": "F",
+      "quote": "‘一带一路’国际合作高峰论坛将于今年5月14日至15日在北京举行。",
+      "start": 33,
+      "end": 66,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_18894635d9",
+      "fact": "本资料标题提及2017北京一带一路峰会时间地点及放假安排",
+      "tag": "F",
+      "quote": "2017北京一带一路峰会时间地点及放假安排",
+      "start": 0,
+      "end": 21,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_18894635d9",
+      "fact": "本资料称放假未知，不排除放假",
+      "tag": "F",
+      "quote": "峰会是真,放假未知,不排除放假哈",
+      "start": 78,
+      "end": 94,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_18894635d9",
+      "fact": "本资料未明确说明峰会闭幕日期",
+      "tag": "U",
+      "quote": "峰会是真,放假未知,不排除放假哈",
+      "start": 78,
+      "end": 94,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 555
+      },
+      "note": ""
+    }
+  ]
+}

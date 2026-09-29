@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_45016c8cd8",
+      "fact": "本资料称病女是一个摄影师。",
+      "tag": "F",
+      "quote": "病女是一个摄影师。",
+      "start": 0,
+      "end": 9,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_45016c8cd8",
+      "fact": "本资料称起初有人模仿病女的照片，把病女当作一个概括的群体。",
+      "tag": "F",
+      "quote": "起初是模仿病女的照片，把“病女”当做一个概括的群体",
+      "start": 33,
+      "end": 58,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_45016c8cd8",
+      "fact": "本资料称后来很多没看过病女摄影作品的人也把自己定义为病女。",
+      "tag": "F",
+      "quote": "很多没有看过病女摄影作品的跟风狗，也把自己定义为“病女”",
+      "start": 62,
+      "end": 90,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_45016c8cd8",
+      "fact": "本资料称再后来一群跟风狗建立了病女吧、病女风格之类。",
+      "tag": "F",
+      "quote": "一群跟风狗建立了“病女吧”，“病女风格”之类的",
+      "start": 96,
+      "end": 119,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_45016c8cd8",
+      "fact": "本资料认为模仿源于青春期小孩喜欢模仿、猎奇心理重。",
+      "tag": "F",
+      "quote": "青春期的小孩子都喜欢模仿喜欢的事物，猎奇心理重",
+      "start": 9,
+      "end": 32,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_45016c8cd8",
+      "fact": "本资料未说明病女本人的真实身份、作品内容或病女一词的正式定义。",
+      "tag": "U",
+      "quote": "病女是一个摄影师。",
+      "start": 0,
+      "end": 9,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 197
+      },
+      "note": ""
+    }
+  ]
+}

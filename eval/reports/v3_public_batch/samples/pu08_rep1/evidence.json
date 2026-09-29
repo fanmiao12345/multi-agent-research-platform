@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_714411151f",
+      "fact": "本资料称空腹血糖正常值为4.0-6.1mmol/L",
+      "tag": "F",
+      "quote": "空腹血糖正常值为4.0-6.1mmol/L",
+      "start": 3,
+      "end": 24,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 289
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_714411151f",
+      "fact": "本资料称正常餐后两小时血糖范围为3.9-7.8mmol/L",
+      "tag": "F",
+      "quote": "正常餐后两小时血糖范围是 3.9-7.8mmol/L",
+      "start": 25,
+      "end": 51,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 289
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_714411151f",
+      "fact": "本资料建议出现高血糖要及时控制好",
+      "tag": "F",
+      "quote": "如果出现高血糖,要及时控制好",
+      "start": 52,
+      "end": 66,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 289
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_714411151f",
+      "fact": "本资料建议注意定时定餐饮食，避免大量高糖饮食",
+      "tag": "F",
+      "quote": "要注意定时定餐饮食,避免大量高糖饮食",
+      "start": 67,
+      "end": 85,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 289
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_714411151f",
+      "fact": "本资料建议必要时可使用三诺安稳+血糖仪实时监测血糖波动",
+      "tag": "F",
+      "quote": "建议可以使用三诺安稳+血糖仪,实时监测血糖波动",
+      "start": 96,
+      "end": 119,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 289
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_714411151f",
+      "fact": "本资料建议血糖数值严重偏高时立即到专业医院就诊",
+      "tag": "F",
+      "quote": "如果出现血糖数值严重偏高,要立即到专业医院就诊",
+      "start": 120,
+      "end": 143,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 289
+      },
+      "note": ""
+    }
+  ]
+}

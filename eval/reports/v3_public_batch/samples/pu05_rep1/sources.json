@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "src_45016c8cd8",
+      "kind": "paste",
+      "display": "粘贴文本 1",
+      "original_address": "paste:1",
+      "title": "病女是一个摄影师。青春期的小孩子都喜欢模仿喜欢的事物，猎奇心理重，起初是模仿病女的照片，把“病女”当做一个概括的群体，再后来很多没有看过病女摄影作品的跟风狗，也把自己定义为“病女”，再后来就是一群跟风狗建立了“病女吧”，“病女风格”之类的。",
+      "content_format": "txt",
+      "status": "ok",
+      "status_message": "",
+      "byte_size": 565,
+      "content_hash": "1ee77faadac11c42f36940bdb71d42c22e4446c23fa5e71918b5ed45bf9a19b4",
+      "normalized_hash": "1ee77faadac11c42f36940bdb71d42c22e4446c23fa5e71918b5ed45bf9a19b4",
+      "captured_at": "2026-09-29T15:00:58",
+      "published_date": "unknown",
+      "duplicate_of": null,
+      "file_name": "sources/src_45016c8cd8.txt",
+      "encoding": "utf-8",
+      "segment_count": 1,
+      "final_url": "",
+      "http_status": null,
+      "content_type": "",
+      "page_count": 0,
+      "source_version": 1,
+      "root_source_id": "",
+      "source_job_id": "",
+      "retrieved_at": "2026-09-29T15:00:58",
+      "withdrawn_at": "",
+      "withdrawal_reason": "",
+      "expires_at": "",
+      "superseded_by": "",
+      "supersedes": ""
+    }
+  ]
+}

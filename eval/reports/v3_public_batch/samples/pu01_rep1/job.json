@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "root_job_id": "job_a5d8de20aab14a44bb5ed74ab09adea2",
+  "status": "partial",
+  "mode": "real",
+  "model": "deepseek-v4-flash",
+  "run_ids": [],
+  "error": null,
+  "stop_reason": null,
+  "final_text": "# 剑魔传说套选择依据整理\n\n## 已有信息\n- 给定材料未出现“传说套”的名称、属性、获取或搭配信息，因此不能直接回答“剑魔做啥传说套”〔未知〕；以下只能整理材料中关于剑魔异界套选择的信息〔事实〕。\n- 选择标准：剑魔选择异界套的标准是看哪套对单一技能加强得比较好【E-001】〔事实〕；据此可推断，选套时应优先比较核心单技能的强化幅度【E-001】〔推断〕。\n- 恶魔异界套（戳9）：剑魔二觉之后异界套都会选择恶魔异界套，即戳9异界套【E-002】〔事实〕；恶魔9件套把破技能极限加强，是异界套装中加强最大的技能之一【E-003】〔事实〕；并使破技能百分比超高、CD缩短到非常短【E-004】〔事实〕；但恶魔9件套爆发不行，持续输出伤害很好用【E-005】〔事实〕。综合可推断，恶魔套偏破技能极限强化与短CD持续输出，而非爆发取向【E-002】【E-003】【E-004】【E-005】〔推断〕。\n- 血祭异界套：剑魔也可以选择血祭异界套装，灵活性、爆发比恶魔套差一点【E-006】〔事实〕；血祭9件套对剑魔大范围技能进行加成，特别是血饮狂舞【E-007】〔事实〕；血祭异界套能减少技能CD、缩短真空期，清怪刷图快【E-008】〔事实〕。据此可推断，血祭套偏大范围技能、清怪刷图与CD循环【E-006】【E-007】【E-008】〔推断〕。\n- 小结：按材料给出的标准【E-001】，恶魔套对“破”单技能强化突出【E-003】【E-004】，但爆发不行、持续输出好【E-005】；血祭套可作备选，9件套强化大范围技能特别是血饮狂舞【E-007】，且减CD、缩短真空期、清怪刷图快【E-008】，但灵活性、爆发比恶魔套差一点【E-006】。由于缺少适用场景与优先级对比材料，不能据此裁定最终应选哪套〔未知〕。\n\n## 无法完成的部分\n- 无法确定“剑魔做啥传说套”：材料中【E-001】只给出异界套选择标准，【E-002】至【E-005】均围绕恶魔异界套或戳9，【E-006】至【E-008】均围绕血祭异界套，均未提供传说套名称、属性、获取或搭配信息〔未知〕。\n- 无法给出最终应选恶魔套还是血祭套：缺少两套异界套的适用场景与优先级对比材料〔未知〕。现有材料只能说明：恶魔套是二觉后常选、即戳9【E-002】，9件套极限加强破【E-003】，使破百分比超高、CD很短【E-004】，爆发不行但持续输出好用【E-005】〔事实〕；血祭套也可选，灵活性、爆发比恶魔套差一点【E-006】，9件套加成大范围技能特别是血饮狂舞【E-007】，并能减CD、缩短真空期、清怪刷图快【E-008】〔事实〕。\n- 按【E-001】的单技能强化标准可推断恶魔套更偏单技能极限强化，但该推断不足以替代两套适用场景与优先级对比【E-001】【E-002】【E-003】【E-004】【E-005】【E-006】【E-007】【E-008】〔推断〕。\n- 补齐条件：若要给出最终选择，需要补充传说套与异界套关系信息，以及恶魔套、血祭套在爆发、持续输出、清怪、机动、CD循环、适用场景和优先级方面的对比材料〔未知〕；补齐后需按【E-001】标准复核，并重新比较【E-002】【E-003】【E-004】【E-005】【E-006】【E-007】【E-008】所涉套装表现〔推断〕。",
+  "business_acceptance": "not_evaluated",
+  "import": {
+    "total": 1,
+    "usable": 1,
+    "statuses": {
+      "ok": 1
+    }
+  },
+  "pipeline": {
+    "draft_level": "unable",
+    "termination_reason": "incomplete",
+    "final_artifact_id": "report.v1",
+    "delivery_kind": "report",
+    "stages": [
+      {
+        "stage": "evidence",
+        "status": "completed",
+        "artifact_ids": [],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "提取 8 条可定位证据，跳过 0 条问题摘录",
+        "finished_at": "2026-09-29T14:59:13"
+      },
+      {
+        "stage": "material",
+        "status": "completed",
+        "artifact_ids": [
+          "material_pack.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "3 个主题，0 个开放冲突，1 个缺口",
+        "finished_at": "2026-09-29T14:59:14"
+      },
+      {
+        "stage": "outline",
+        "status": "completed",
+        "artifact_ids": [
+          "outline.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "2 个章节",
+        "finished_at": "2026-09-29T14:59:15"
+      },
+      {
+        "stage": "draft",
+        "status": "completed",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 0,
+          "info": 0
+        },
+        "message": "新写初稿（1378字）",
+        "finished_at": "2026-09-29T14:59:32"
+      },
+      {
+        "stage": "review",
+        "status": "self_declared_cap",
+        "artifact_ids": [
+          "report.v1"
+        ],
+        "issue_counts": {
+          "error": 0,
+          "warn": 4,
+          "info": 0
+        },
+        "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）",
+        "finished_at": "2026-09-29T14:59:33"
+      }
+    ],
+    "issue_counts": {},
+    "revised_rounds": 0,
+    "total_citations": 52,
+    "unresolved_citations": 0,
+    "hard_checks": {
+      "required_sections_total": 2,
+      "required_section_hits": 2,
+      "forbidden_total": 0,
+      "forbidden_hits": 0,
+      "fact_total": 0,
+      "fact_hits": 0
+    },
+    "message": "交付等级按报告自述封顶为「unable」：任务要求的「无法完成的部分」章节自述无法给出核心交付内容（程序层自述一致性检查；不视为验收成功）"
+  }
+}

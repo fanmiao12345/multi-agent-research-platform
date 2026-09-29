@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "evidence_id": "E-001",
+      "source_id": "src_d8d74cf76f",
+      "fact": "顶管安装可以套用市政排水工程“顶管安装”定额。",
+      "tag": "F",
+      "quote": "顶管安装可以套用市政排水工程“顶管安装”定额。",
+      "start": 0,
+      "end": 23,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 250
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-002",
+      "source_id": "src_d8d74cf76f",
+      "fact": "定额是在一定技术和组织条件下生产合格单位产品所消耗资源数量的标准。",
+      "tag": "F",
+      "quote": "定额是指在一定的技术和组织条件下,生产质量合格的单位产品所消耗的人力、物力、财力和时间等的数量标准。",
+      "start": 24,
+      "end": 74,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 250
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-003",
+      "source_id": "src_d8d74cf76f",
+      "fact": "定额反映一定时期社会生产力水平的高低。",
+      "tag": "F",
+      "quote": "它反映一定时期的社会生产力水平的高低。",
+      "start": 123,
+      "end": 142,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 250
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-004",
+      "source_id": "src_d8d74cf76f",
+      "fact": "每个施工项目都测算用工量，包括基本工和其它用工。",
+      "tag": "F",
+      "quote": "对于每一个施工项目,都测算出用工量,包括基本工和其它用工。",
+      "start": 143,
+      "end": 172,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 250
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-005",
+      "source_id": "src_d8d74cf76f",
+      "fact": "项目材料包括基本用料和其它材料。",
+      "tag": "F",
+      "quote": "再加上这个项目的材料,包括基本用料和其它材料。",
+      "start": 173,
+      "end": 196,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 250
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-006",
+      "source_id": "src_d8d74cf76f",
+      "fact": "用工单价由当地根据当时不同工种的劳动力价值规定。",
+      "tag": "F",
+      "quote": "对于用工的单价,是当地根据当时不同工种的劳动力价值规定的",
+      "start": 196,
+      "end": 224,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 250
+      },
+      "note": ""
+    },
+    {
+      "evidence_id": "E-007",
+      "source_id": "src_d8d74cf76f",
+      "fact": "材料价值根据前期市场价格制定预算价格。",
+      "tag": "F",
+      "quote": "材料的价值是根据前期的市场价格制定出来的预算价格。",
+      "start": 225,
+      "end": 250,
+      "locator": {
+        "heading": "",
+        "paragraph": 0,
+        "start": 0,
+        "end": 250
+      },
+      "note": ""
+    }
+  ]
+}
