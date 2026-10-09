@@ -191,7 +191,7 @@ S6 说明与限制见`docs/EXECUTION_STATUS.md`历史分区与[实施日志](doc
 | `knowledge/` `skills/` | 知识库与技能（数据驱动、热插拔） |
 | `workspaces/` | 每次运行的 run.json/trace.jsonl/usage.json/plan.json |
 | `docs/` | 技术报告与架构文档 |
-| `multi-agent-research-console-v3/` | V3 界面设计源（UI 规格、HTML 设计稿、回写脚本），已合入 workbench |
+| `multi-agent-research-console-v3/` | V3 界面设计源（UI 规格、HTML 设计稿、回写脚本），已合入 workbench；当前主题 Deep Space 深空玻璃风（2026-10，参照 DeepreSearch） |
 | `legacy/` | 旧零依赖实现（保留） |
 
 ## Demo 配方（组件演示）

@@ -1718,3 +1718,32 @@ O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（�
 - **下一步**：纪律版保留为默认（已提交）；多来源难材料上的支持率提升归入长期观察（更多批次
   数据积累后再决定是否需要"多来源综合句"的专门引用规范）；批次 B（CFEVER 替代品待选，原计划
   受 CFEVER 无内联证据影响需改选 CHEF 或其他）按需另排。
+
+
+## 2026-10-09 / 界面主题重塑：Deep Space 深空玻璃风格（用户要求参照 DeepreSearch）
+
+- **动因**：用户提供 github.com/fanmiao12345/DeepreSearch（另一多智能体项目，React + Tailwind），
+  认为其前端样式更好，要求按该风格优化本工作台界面。其设计语言（提取自该仓库
+  `frontend/tailwind.config.ts` 与 `src/index.css`）：深空色板（bg `#0f1217` / 面板 `#171c23` /
+  表面 `#202732` / 边框 `#2c3644` / 强调青绿 `#68b8a7` / 亮青 `#91d1c6`）、Space Grotesk（标题）+
+  IBM Plex Sans（正文）+ JetBrains Mono（等宽）+ 阿里普惠体（中文）、玻璃拟态面板
+  （渐变底 + 描边 + 背景模糊 + 深投影）、48px 暗网格与鼠标跟随环境光晕氛围背景、
+  mono 大写字距小标签、状态圆点光晕、页面切入动效。
+- **修改**：`src/interfaces/web/workbench.py` 内嵌 `INDEX_HTML` 的 `<style>` 块整体替换为同套设计令牌
+  （旧变量名全部保留，HTML 内联样式零改动）；`<body>` 开头插入装饰层 `.particle-bg`（aria-hidden），
+  启动脚本前插入 3 行鼠标跟随 `--mx/--my`（`pointer:fine` 且未开启减少动效时才生效）；
+  全部元素 id / 类名 / JS 逻辑 / 布局断点保持原样（含测试断言目标 `reportview` / `btnexport`）。
+  顺手修复一个继承自旧浅色主题的显示缺陷：来源条目内状态徽章被 `.source-item span`（特异性 0,1,1）
+  压过 `.badge`（0,1,0）变成块级拉满整行，补 `.source-item span.badge{display:inline-flex;margin-top:0}`。
+  设计源 `multi-agent-research-console-v3/research_console_v3.html` 与内嵌版重新同步（此前已分叉：
+  内嵌版多出三格式导出按钮、证据交互等约 2.6KB 更新），`apply_research_console_v3.py` 回写不再倒退。
+  补丁脚本与备份在用户目录：`~/.zcode/scripts/restyle_workbench_dark_space.py`、
+  `restyle_dark_space.css`、`workbench.py.before-dark-space.bak`（不入仓库）。
+- **验证**：py_compile 通过；Playwright `file:` 预览模式渲染 #/home、#/tasks、#/job/job_demo001
+  （结果/资料与产物/执行过程三标签）、#/observe、#/settings + 390px 移动端视口，截图逐张人工检查
+  布局与可读性正常、0 JS 错误；`pytest tests/test_workbench.py tests/test_workbench_s5.py
+  tests/test_workbench_b3.py tests/test_d9_integration.py` 全部通过（exit=0）。
+- **限制与下一步**：① Google Fonts / 阿里普惠体为在线加载，离线回退系统字体（仅字重字型略异，
+  布局不受影响）；`file://` 直开 HTML 时 alicdn 字体因 origin null 被 CORS 拒载，经
+  http://127.0.0.1:8765 正常（与 DeepreSearch 同款加载方式）。② 深色主题为用户口味决策，
+  未做多主题切换（如需要可登记 OPTIMIZATION_BACKLOG）。③ 真实浏览器人工验收待用户执行。

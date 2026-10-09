@@ -335,3 +335,10 @@ Web 待审批请求只在当前服务进程中有效。真实模型费用和质�
 - **正面结论**：缺口声明（T20 如实写"未覆盖 Mixtral"）、诚实拒绝（T16r 未编造电价）、检索噪声拦截（T12 判定政务服务网页面无关并建议剔除）、accepted 产物引用可定位 100%（0 未解析）。
 - **问题登记**：试用发现 11 项输入清单（§3.2）已登记 `docs/OPTIMIZATION_BACKLOG.md` **O-17～O-24**（O-11 追加 T16 读数），全部排期 Q4-02；最高优先 O-17 间歇性丢失请求参数（5 次命中制造 3 个 unable），其余：O-18 休眠计入 max_seconds、O-19 改稿链不接受 analysis 且无审校层、O-20 冲突判定过宽（疑似回归）、O-21 "拒答 vs 有条件推荐"口径待拍板、O-22 引用与来源脱节、O-23 简单问答不稳定、O-24 手册遗留。
 - **Q4-02/Q4-03 收官（2026-09-28）**：① 集中修复 O-17/O-18/O-19/O-20/O-24 完成并真实复验通过（O-19 补跑试用期无法执行的 T19 最终合并、O-17 fanout 全链复验，见 IMPLEMENTATION_LOG）；② P1 功能批次（三格式导出/模板骨架/SR-01～06）交付并经用户人工验收通过；③ 四项收尾结论入账：T16r 闭环（限现有材料，通过）、O-21 拍板"有条件推荐优先"（实施排后续批次）、Q3 批 3 八份复核全部通过（挂账清除）；④ **Q4-03 正式签收完成**：`eval/reports/q4_signoff.json`，六项自动检查全 true、user_signoff=true、含"任务由 AI 生成执行"口径声明与已知限制清单。**Q4 阶段关闭。**
+
+
+## 界面主题重塑：Deep Space 深空玻璃风格（2026-10-09）
+
+- 用户要求参照 DeepreSearch（github.com/fanmiao12345/DeepreSearch）的前端风格优化工作台。`workbench.py` 内嵌 `INDEX_HTML` 的 `<style>` 整体替换为 Deep Space 主题：深空色板（bg `#0f1217` / 青绿强调 `#68b8a7`）、Space Grotesk + IBM Plex Sans + JetBrains Mono + 阿里普惠体、玻璃拟态面板、48px 暗网格与鼠标跟随环境光晕、页面切换动效（尊重 `prefers-reduced-motion`）。
+- **结构与功能零改动**：全部元素 id / 类名 / JS 保持原样；仅修复旧主题遗留的来源条目徽章被拉满整行的显示缺陷。设计源 `research_console_v3.html` 已与内嵌版重新同步（此前分叉），回写脚本不会再造成样式倒退。
+- 验证：py_compile 通过；Playwright 合成数据渲染 5 视图 + 移动端 + 任务详情 3 标签截图检查正常；workbench 相关 4 个测试文件全部通过。**真实浏览器人工验收待用户执行**（`python -m src.interfaces.web.workbench --port 8765`）。
