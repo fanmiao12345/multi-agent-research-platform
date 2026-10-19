@@ -162,7 +162,8 @@ def _latest_report_text(job_dir: Path, kinds=("report",)):
     except Exception:
         return None
 def resume_research_job(*, workspace_root, job_id: str, llm=None,
-                        settings=None, state_db=None) -> object:
+                        settings=None, state_db=None, on_progress=None,
+                        stage_hook=None, should_stop=None) -> object:
     """S4-12：对已有研究任务在同一 job 目录内续跑（按检查点跳过已完成阶段）。
 
     账本续接：新开续跑账本并把原账本调用条目载入（次数/输出Token/费用延续原上限），
@@ -222,6 +223,8 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
             result = run_research_pipeline(
                 llm=llm, job_dir=job_dir, store=SourceStore(job_dir),
                 goal=request.task, max_revision_rounds=2, resume=True,
+                on_progress=on_progress, stage_hook=stage_hook,
+                should_stop=should_stop,
                 hard_requirements=_hard_requirements(request),
                 delivery_kind=request.delivery_kind,
                 repair_callback=None)

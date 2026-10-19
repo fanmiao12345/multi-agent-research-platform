@@ -115,6 +115,21 @@ def test_queue_lease_expiry_and_startup_scan(db, monkeypatch):
     assert queue.startup_scan(lease_seconds=30) == []
 
 
+def test_startup_scan_marks_waiting_human_failed(db):
+    """审批状态不跨进程：重启扫描后等待审批的任务转 failed，等人工重新发起。"""
+    queue = JobQueue(db)
+    job_id = queue.submit(request={"task": "t"})
+    queue.claim("worker-a", lease_seconds=30)
+    with db.write_tx() as conn:
+        conn.execute("UPDATE jobs SET status=? WHERE job_id=?",
+                     (states.WAITING_HUMAN, job_id))
+    assert queue.startup_scan() == [{"job_id": job_id}]
+    row = queue.get(job_id)
+    assert row["status"] == states.FAILED
+    assert row["error"] == "approval_not_persistent"
+    assert queue.claim("worker-b", lease_seconds=30) == []
+
+
 def test_queue_concurrent_claims_single_winner(db):
     queue = JobQueue(db)
     for index in range(6):

@@ -40,6 +40,10 @@ _WORKER_OWNER = "web-worker"
 _MAX_POST_BYTES = 1024 * 1024   # S5-09：请求体上限
 _MAX_DRAIN_BYTES = 16 * 1024 * 1024  # O-07：拒绝路径最多排空的请求体字节数
 _ALLOWED_HOSTS = {"127.0.0.1", "localhost", "::1"}
+# 研究任务目录在“调度前预留”阶段允许存在的文件；其余文件说明已进入执行。
+_PRESCHEDULE_NAMES = {"orchestration.json", "request.json", "ledger.json",
+                      "input_request.json", "shared_sources",
+                      "source_library.json"}
 
 
 def _load(path: Path) -> dict | list | None:
@@ -137,6 +141,17 @@ class WorkbenchState:
     def stop_worker(self):
         self._worker_stop.set()
 
+    def start_background(self) -> list[dict]:
+        """服务启动恢复：扫描过期租约，并启动常驻队列 worker。
+
+        只做本地单实例恢复：租约未过期的 running 任务仍由原租约保护，不强行接管；
+        running/cancel_requested 仅在租约过期后标记 interrupted；所有 waiting_human
+        标记 failed（审批不跨进程），随后由 worker 按恢复策略领取。
+        """
+        recovered = self.queue.startup_scan()
+        self._ensure_worker()
+        return recovered
+
     # ---- S5 研究任务执行器（S4-03 接线：submit→claim→run→release） ----------
     def _worker_loop(self):
         while not self._worker_stop.is_set():
@@ -164,13 +179,20 @@ class WorkbenchState:
 
     def _execute_claim(self, claim) -> None:
         from src.application.request import TaskRequest
-        from src.application.research import ResearchApplication
+        from src.application.research import ResearchApplication, resume_research_job
         from src.harness.models import factory
         payload = json.loads(claim.request_json or "{}")
         request = TaskRequest.from_payload(payload)
         if request.flow != "research":
             self.queue.release(_WORKER_OWNER, claim.job_id, to="failed",
                                message="队列只接受 research 流程")
+            return
+        # 审批状态不跨进程保留：重启前在等待审批的任务不能借恢复流程绕过人工确认。
+        if claim.previous_status == "waiting_human":
+            self.queue.release(
+                _WORKER_OWNER, claim.job_id, to="failed", stage="finished",
+                error="approval_not_persistent",
+                message="任务在重启前等待审批；审批状态不跨进程保留，请人工重新发起")
             return
         llm = factory.build_adapter(request.profile, self.settings, mode=request.mode)
         if getattr(llm, "run_mode", None) != request.mode:
@@ -190,11 +212,29 @@ class WorkbenchState:
             except Exception:  # noqa: BLE001
                 pass
 
-        app = ResearchApplication(request, settings=self.settings,
-                                  workspace_root=self.workspaces, llm=llm)
-        result = app.run(job_id=claim.job_id, stage_hook=stage_hook,
-                         should_stop=should_stop)
+        job_dir = self.workspaces / "jobs" / claim.job_id
+        action, reason = self._resume_decision(job_dir)
+        if action == "completed":
+            self.queue.release(_WORKER_OWNER, claim.job_id, to="completed",
+                               stage="finished", message=reason)
+            return
+        if action == "blocked":
+            self.queue.release(_WORKER_OWNER, claim.job_id, to="failed",
+                               stage="finished", error="resume_blocked",
+                               message=reason)
+            return
+        if action == "resume":
+            result = resume_research_job(
+                workspace_root=self.workspaces, job_id=claim.job_id,
+                llm=llm, settings=self.settings, state_db=self.state_db,
+                stage_hook=stage_hook, should_stop=should_stop)
+        else:
+            app = ResearchApplication(request, settings=self.settings,
+                                      workspace_root=self.workspaces, llm=llm)
+            result = app.run(job_id=claim.job_id, stage_hook=stage_hook,
+                             should_stop=should_stop)
         mapping = {"success": "completed", "incomplete": "partial",
+                   "unable": "partial",
                    "budget_exceeded": "cancelled", "cancelled": "cancelled",
                    "error": "failed"}
         target = mapping.get(getattr(result, "termination_reason", ""), "failed")
@@ -202,6 +242,39 @@ class WorkbenchState:
                            stage="finished",
                            message=getattr(result, "message", "")[:300])
 
+    def _resume_decision(self, job_dir: Path) -> tuple[str, str]:
+        """决定领取后的动作：fresh / resume / completed / blocked。
+
+        只有存在阶段检查点、资料仍在、且没有 unknown 外部操作时才自动续跑；
+        其余情况保持人工处理，避免把不确定副作用当成未执行重放。
+        """
+        if not job_dir.exists():
+            return "fresh", ""
+        job_file = _load(job_dir / "job.json") or {}
+        if not isinstance(job_file, dict):
+            job_file = {}
+        pipeline = job_file.get("pipeline") or {}
+        if not isinstance(pipeline, dict):
+            pipeline = {}
+        if pipeline.get("draft_level") == "accepted":
+            return "completed", "任务已完成验收，无需恢复"
+        has_checkpoint = ((job_dir / "evidence.json").exists()
+                          or any(job_dir.glob("stage_*.json")))
+        from src.harness.state.resume import inspect_resume_state
+        state = inspect_resume_state(job_dir, state_db=self.state_db)
+        if state.get("unknown_operations"):
+            return "blocked", "存在结果未知的外部操作，需人工核实后再恢复"
+        if has_checkpoint:
+            if not (job_dir / "sources.json").exists():
+                return "blocked", "存在阶段检查点但缺少 sources.json，需人工处理"
+            return "resume", ""
+        if ((job_dir / "orchestration.json").exists()
+                or (job_dir / "source_library.json").exists()):
+            return "blocked", "多智能体编排任务暂不支持自动恢复，需人工处理"
+        reserved = {p.name for p in job_dir.iterdir()} - _PRESCHEDULE_NAMES
+        if reserved:
+            return "blocked", "任务目录已有执行产物但无阶段检查点，需人工处理"
+        return "fresh", ""
 
     def list_runs(self) -> list[dict]:
         out = []
@@ -452,8 +525,16 @@ class Handler(BaseHTTPRequestHandler):
         if not directory.is_dir():
             return self._send(404, {"error": "job 不存在"})
         job_file = _load(directory / "job.json") or {}
-        if (job_file.get("pipeline") or {}).get("draft_level") == "accepted":
+        if not isinstance(job_file, dict):
+            job_file = {}
+        pipeline = job_file.get("pipeline") or {}
+        if not isinstance(pipeline, dict):
+            pipeline = {}
+        if pipeline.get("draft_level") == "accepted":
             return self._send(409, {"error": "任务已完成验收，无需恢复"})
+        row = self.state.queue.get(job_id) or {}
+        if row.get("status") == "running":
+            return self._send(409, {"error": "任务正在运行或恢复中"})
         if not (directory / "stage_draft.json").exists() \
                 and not (directory / "evidence.json").exists():
             return self._send(409, {"error": "没有可恢复的阶段产物；请重新提交任务"})
@@ -1824,7 +1905,22 @@ def make_server(workspaces: Path | None = None, port: int = 8765, *,
     class BoundHandler(Handler):
         state = WorkbenchState(Path(workspaces) if workspaces else DEFAULT_WORKSPACES,
                                tool_registry, approval_timeout, settings)
-    return ThreadingHTTPServer(("127.0.0.1", port), BoundHandler)
+    server = ThreadingHTTPServer(("127.0.0.1", port), BoundHandler)
+    state = BoundHandler.state
+    try:
+        # 启动恢复：过期租约收敛 + 常驻 worker 处理 queued/可恢复的中断任务。
+        state.start_background()
+    except Exception:
+        server.server_close()
+        raise
+    original_close = server.server_close
+
+    def close_with_worker():
+        state.stop_worker()
+        original_close()
+
+    server.server_close = close_with_worker
+    return server
 
 
 def main() -> None:

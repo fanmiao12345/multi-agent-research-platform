@@ -42,6 +42,9 @@ class QueueClaim:
     message: str = ""
     parent_job_id: str = ""
     plan_version: int = 1
+    # 领取前的队列状态（running/interrupted/queued/...），供恢复入口区分
+    # “中断任务”和“重启前仍在等待审批”的任务，避免把后者自动重放。
+    previous_status: str = ""
 
     def as_dict(self) -> dict:
         return {"job_id": self.job_id, "session_id": self.session_id,
@@ -49,7 +52,8 @@ class QueueClaim:
                 "cancel_requested": self.cancel_requested,
                 "lease_owner": self.lease_owner, "message": self.message,
                 "parent_job_id": self.parent_job_id,
-                "plan_version": self.plan_version}
+                "plan_version": self.plan_version,
+                "previous_status": self.previous_status}
 
 
 class JobQueue:
@@ -116,7 +120,8 @@ class JobQueue:
                 cancel_requested=bool(candidate["cancel_requested"]),
                 lease_owner=owner,
                 parent_job_id=candidate["parent_job_id"] or "",
-                plan_version=int(candidate["plan_version"] or 1)))
+                plan_version=int(candidate["plan_version"] or 1),
+                previous_status=candidate["status"]))
         return rows
 
     def heartbeat(self, owner: str, job_id: str, *, lease_seconds: float) -> bool:
@@ -260,15 +265,29 @@ class JobQueue:
 
     # ---- 启动扫描（S4-03） ------------------------------------------------
     def startup_scan(self, *, lease_seconds: float = 120.0) -> list[dict]:
-        """把租约过期的运行中任务标记 interrupted；有效租约的任务不碰。"""
+        """收敛重启时需要人工或可恢复的任务；有效租约的 running 不碰。
+
+        waiting_human → failed（审批状态不跨进程保留，启动即失效，必须人工重新发起）；
+        running / cancel_requested 仅在租约过期后 → interrupted。
+        """
         now = self.db.now()
         rows = []
         with self.db.write_tx() as conn:
+            # 审批是进程内状态：服务启动时所有 waiting_human 都不能继续等待。
             for row in conn.execute(
-                    "SELECT job_id FROM jobs WHERE status IN (?,?,?) "
+                    "SELECT job_id FROM jobs WHERE status=?",
+                    (states.WAITING_HUMAN,)):
+                conn.execute(
+                    "UPDATE jobs SET status=?, lease_owner='', lease_expires=0,"
+                    " error=?, message=?, updated_at=? WHERE job_id=?",
+                    (states.FAILED, "approval_not_persistent",
+                     "重启扫描：审批状态不跨进程保留，请人工重新发起",
+                     now, row["job_id"]))
+                rows.append({"job_id": row["job_id"]})
+            for row in conn.execute(
+                    "SELECT job_id FROM jobs WHERE status IN (?,?) "
                     "AND lease_expires < ? ORDER BY created_at",
-                    (states.RUNNING, states.WAITING_HUMAN,
-                     states.CANCEL_REQUESTED, now)):
+                    (states.RUNNING, states.CANCEL_REQUESTED, now)):
                 conn.execute(
                     "UPDATE jobs SET status=?, lease_owner='', lease_expires=0,"
                     " updated_at=? WHERE job_id=? AND lease_expires < ?",

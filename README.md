@@ -4,6 +4,10 @@
 
 ## 项目简介
 
+项目学习与面试复习见 [项目知识手册](docs/PROJECT_KNOWLEDGE_HANDBOOK.md)（2026-10-10，v3）：25 章，覆盖架构、实现、10 组实验指标与 71 个数据追问、30 个技术扩展回答、32 个基础主题和连续问答。指标明确分子分母、实验配置与统计局限。
+
+可编辑、打印的 [Word 版项目知识手册](output/documents/多Agent研究平台项目知识手册_v3.docx) 已同步完整内容，含可点击目录、分级标题与页码（本机 Word 渲染 73 页）。
+
 给一个目标，系统自行判断所需资料与工具、选择单智能体或多智能体协作方式、安排执行、检查并交付成果。支持 single / fixed / manager_worker / fanout / dynamic_team / debate 六种协作方式与有界嵌套派工，配套统一上下文、技能、记忆、预算护栏、崩溃恢复和研究工作台。
 
 功能开发与四轮整体测试优化均已完成，并通过连续 7 天真实任务试用与最终签收。开发过程细节见 [执行状态](docs/EXECUTION_STATUS.md)，历史遗留的增强项见 [优化待办](docs/OPTIMIZATION_BACKLOG.md)。
@@ -217,6 +221,15 @@ S6 说明与限制见`docs/EXECUTION_STATUS.md`历史分区与[实施日志](doc
 - **崩溃恢复**：`resume_plan` 保留已完成结果；遗留 `RUNNING` 时会明确报错，
   确认原进程已退出、任务幂等或已核实副作用后，用 `resume_plan(run_dir, worker, retry_interrupted=True)` 重跑剩余任务。
   计划采用原子写入。恢复要求单个调用方持有计划，不提供跨进程锁或外部操作的 exactly-once 保证。
+- **LangGraph checkpoint 边界**：短期会话状态由 `MemorySaver` 保存在进程内存，
+  相同 `thread_id` 只在同一 `AgentRuntime` 实例内复用；进程重启后 checkpoint 不会保留，
+  也不会自动恢复图会话或全部任务。
+- **研究任务重启恢复**：Web 服务启动时扫描过期租约并启动常驻 worker，`queued` 任务自动执行。
+  （租约未过期的 `running` 任务仍等租约到期，默认最长 600 秒，避免两个执行者同时接管。）
+  中断任务只有在存在 `evidence.json`/`stage_*.json`、`sources.json` 仍在、且没有 `unknown`
+  操作时才自动走阶段续跑（复用已提交证据/素材/提纲/初稿，审校按现有语义重跑）；
+  其余转 `failed` 等人工处理。手动入口仍保留（Web「恢复」或 CLI `--resume-job`）。
+  多智能体编排子任务、审批和 Agent run 不自动重放；审批等待不跨进程，重启后转 `failed`。
 - **审批**：`HIGH` 或 `requires_approval=True` 任一条件成立都要审批。
   `AgentRuntime(..., tool_executor=executor)` 可接自定义工具，`run_task(..., approval_handler=handler)`
   中的 `handler(spec, arguments)` 只有返回 `True` 才放行。

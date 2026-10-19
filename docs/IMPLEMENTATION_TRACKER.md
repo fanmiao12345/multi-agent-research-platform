@@ -161,7 +161,7 @@ B1基线174项，B2后199项，B3后255项，B4后330项，B5后347项，S4后37
 | S3-13 | 给计划增加完整校验：重复 id、未知依赖、循环、空计划、失败传播；重规划后重验，受影响旧产物标记失效。 | 部分完成 | B5：链内契约校验（引用/证据id/空章节/失败传播）；链为固定顺序不生成任意图；DAG级校验在 planning 模块既有测试覆盖 |
 | S4-01 | 用标准库 SQLite 保存任务/会话/阶段/审批/操作账本，提供 schema_version、迁移和备份。 | 已验收（离线） | src/harness/state/db.py：jobs/sessions/approvals/operations/meta；schema_version=1，高版本拒绝写入；在线备份+verify；损坏显式StateDbError不伪装空库 |
 | S4-02 | 定义 queued、running、waiting_human、cancel_requested、completed、partial、failed、cancelled、interrupted，与底层 Run 状态显式映射。 | 已验收（离线） | states.py：9状态词+合法迁移表+底层Run映射+终态不可回写 |
-| S4-03 | 有界队列、持久化领取/租约、启动扫描；禁止两个执行者同时恢复同一任务。 | 部分完成 | 队列组件已验收：原子领取、心跳、过期回收、startup_scan→interrupted、并发唯一赢家测试；常驻执行器与Web提交接线随S5 |
+| S4-03 | 有界队列、持久化领取/租约、启动扫描；禁止两个执行者同时恢复同一任务。 | 已验收（离线） | 队列组件：原子领取、心跳接口、过期回收、startup_scan、并发唯一赢家测试；Web `make_server` 启动时执行扫描并拉起常驻 worker，queued 自动执行，可恢复的中断研究任务自动续跑（2026-10-19 REC-01） |
 | S4-04 | 产物保存后才提交阶段成功；对账“产物已写、状态未提交”等崩溃窗口，避免盲目全量重跑。 | 已验收（离线） | runner顺序=产物→检查点→stage_hook外部状态；已有检查点拒绝无意识重跑；resume按文件恢复；操作账本 unknown 显式标记 |
 | S4-05 | 加载本会话的目标、有效材料、当前版本及必要历史完成续写，默认不串用其他会话资料。 | 部分完成 | SessionStore+材料快照+跨会话隔离测试通过；链续写加载与版本恢复的完整接线随S5会话页 |
 | S4-06 | 实现分阶段取消，停止新调用；已发送请求不能保证撤回，区分“正在停止”和“已停止”。 | 部分完成 | 队列两段取消+research链阶段边界收敛已验收（requested→cancelled/partial）；通用Agent循环取消门随S5执行器 |

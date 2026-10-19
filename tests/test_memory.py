@@ -49,6 +49,23 @@ def test_checkpointer_keeps_state_across_calls_same_thread():
     assert second["iteration"] == 2          # 第二轮独立收敛
 
 
+def test_checkpointer_state_does_not_cross_instances():
+    """MemorySaver 是进程内状态：新 checkpointer 同 thread_id 也读不到旧历史。"""
+    cfg = thread_config("thread-m6-local")
+    first_app = build_agent_graph(MockLLM(), max_iterations=3,
+                                  checkpointer=make_checkpointer())
+    from src.graph.state import new_state
+    first_app.invoke(new_state("第一轮暗号ALPHA", run_id="r", max_iterations=3),
+                     config=cfg)
+
+    second_app = build_agent_graph(MockLLM(), max_iterations=3,
+                                   checkpointer=make_checkpointer())
+    result = second_app.invoke(new_state("第二轮", run_id="r", max_iterations=3),
+                               config=cfg)
+    joined = "".join(str(m.get("content")) for m in result["messages"])
+    assert "ALPHA" not in joined
+
+
 # ---------- 67 Long-term Store ----------
 def test_store_crud_and_search(store):
     a = store.remember(KIND_SEMANTIC, "用户喜欢美式咖啡", source="chat", confidence=0.9)

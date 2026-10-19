@@ -59,7 +59,8 @@ def build_agent_graph(llm: LLMAdapter, max_iterations: int = 5,
     工具执行默认走 ToolExecutor（ToolRegistry 内置两工具）；传 permissions 后
     Executor 会做权限检查（RuntimeContext.permissions 接入点，步骤 24）。
     usage：UsageTracker（步骤 29）；on_event：实时事件回调（步骤 30 streaming）。
-    checkpointer：LangGraph Checkpointer（步骤 66）——同一 thread 跨调用保持 State。
+    checkpointer：LangGraph Checkpointer（步骤 66）——同一实例、同一 thread
+    跨调用保持 State；MemorySaver 不跨进程持久化。
     """
     executor = tool_executor or ToolExecutor(ToolRegistry.with_builtins())
     if tool_executor:
@@ -167,7 +168,7 @@ def build_agent_graph(llm: LLMAdapter, max_iterations: int = 5,
     graph.add_conditional_edges(
         "agent", should_continue, {"tools": "tools", "timeout": "timeout", "end": END})
     if checkpointer is not None:
-        return graph.compile(checkpointer=checkpointer)   # 66：thread 持久化
+        return graph.compile(checkpointer=checkpointer)   # 66：进程内 thread 状态
     return graph.compile()
 
 

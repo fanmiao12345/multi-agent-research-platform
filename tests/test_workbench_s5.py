@@ -255,3 +255,157 @@ def test_research_job_hard_requirements_round_trip(client):
     assert pipeline["hard_requirements"]["required_sections"] == ["资料目录", "覆盖范围"]
     # 进度端点也把硬约束读数暴露给页面
     assert (progress.get("pipeline") or {}).get("result", {}).get("hard_checks")
+
+
+def _stop_worker(state):
+    state.stop_worker()
+    with state.lock:
+        worker = state._worker_thread
+    if worker is not None:
+        worker.join(timeout=3)
+
+
+def _interrupt_research_job(conn, server, *, unknown_operation=False):
+    """跑完一次研究任务后模拟“进程中断”：删除终态文件、队列置 interrupted。"""
+    job_id = _submit_research(conn)
+    _wait_job(conn, job_id,
+              lambda d: (d.get("job_file") or {}).get("status") == "completed")
+    state = server.RequestHandlerClass.state
+    _stop_worker(state)
+    job_dir = Path(state.workspaces) / "jobs" / job_id
+    (job_dir / "job.json").unlink()
+    if unknown_operation:
+        from src.harness.state.ops import OperationLedger
+        OperationLedger(state.state_db, job_id).record(
+            "external", "unknown", {"action": "test"})
+    with state.state_db.write_tx() as db_conn:
+        db_conn.execute(
+            "UPDATE jobs SET status='interrupted', lease_owner='',"
+            " lease_expires=0 WHERE job_id=?", (job_id,))
+    return job_id, job_dir
+
+
+def test_start_background_scans_then_starts_worker(tmp_path):
+    from src.interfaces.web.workbench import WorkbenchState
+    state = WorkbenchState(tmp_path)
+    calls = []
+    state.queue.startup_scan = lambda: calls.append("scan") or []
+    state._ensure_worker = lambda: calls.append("worker")
+    try:
+        assert state.start_background() == []
+        assert calls == ["scan", "worker"]
+    finally:
+        state.state_db.close()
+
+
+def test_resume_decision_keeps_orchestration_jobs_manual(tmp_path):
+    from src.interfaces.web.workbench import WorkbenchState
+    state = WorkbenchState(tmp_path)
+    job_dir = tmp_path / "jobs" / ("job_" + "a" * 32)
+    job_dir.mkdir(parents=True)
+    (job_dir / "orchestration.json").write_text("{}", encoding="utf-8")
+    try:
+        action, reason = state._resume_decision(job_dir)
+        assert action == "blocked" and "人工" in reason
+    finally:
+        state.state_db.close()
+
+
+def test_queued_job_runs_when_server_starts(tmp_path, monkeypatch):
+    from config.settings import Settings
+    from src.application.request import TaskRequest
+    from src.interfaces.web.workbench import WorkbenchState
+    monkeypatch.setattr("src.harness.models.factory.build_adapter",
+                        lambda *a, **kw: S4Brain())
+    settings = Settings(workspace_dir=tmp_path)
+    seed = WorkbenchState(tmp_path, settings=settings)
+    request = TaskRequest(task="写一份带引用的整理报告", mode="mock",
+                          texts=("甲资料：结论甲为 42%。\n乙资料：方法乙可复现。\n",),
+                          flow="research", max_calls=20)
+    payload = request.snapshot()
+    payload["texts"] = list(request.texts)
+    job_id = seed.queue.submit(kind="research", request=payload, stage="queued")
+    seed.state_db.close()
+    server = make_server(workspaces=tmp_path, port=0, settings=settings)
+    try:
+        row = {}
+        deadline = time.monotonic() + 30
+        while time.monotonic() < deadline:
+            row = server.RequestHandlerClass.state.queue.get(job_id) or {}
+            if row.get("status") == "completed":
+                break
+            time.sleep(0.1)
+        assert row.get("status") == "completed", row
+        job_file = json.loads(
+            (tmp_path / "jobs" / job_id / "job.json").read_text(encoding="utf-8"))
+        assert (job_file.get("pipeline") or {}).get("draft_level") == "accepted"
+    finally:
+        server.RequestHandlerClass.state.stop_worker()
+        server.server_close()
+
+
+def test_interrupted_research_job_auto_resumes_on_restart(client):
+    conn, ws, server, _ = client
+    job_id, job_dir = _interrupt_research_job(conn, server)
+    second = make_server(workspaces=ws, port=0)
+    try:
+        row = {}
+        job_file = {}
+        deadline = time.monotonic() + 30
+        while time.monotonic() < deadline:
+            row = second.RequestHandlerClass.state.queue.get(job_id) or {}
+            try:
+                job_file = json.loads(
+                    (job_dir / "job.json").read_text(encoding="utf-8"))
+            except (FileNotFoundError, ValueError):
+                job_file = {}
+            if row.get("status") == "completed" and job_file.get("resume") is True:
+                break
+            time.sleep(0.1)
+        assert row.get("status") == "completed", row
+        assert job_file.get("resume") is True
+        pipeline = job_file.get("pipeline") or {}
+        assert pipeline.get("draft_level") == "accepted"
+        assert any(stage.get("status") == "resumed"
+                   for stage in pipeline.get("stages") or [])
+    finally:
+        _stop_worker(second.RequestHandlerClass.state)
+        second.server_close()
+
+
+def test_interrupted_research_job_with_unknown_operation_stays_manual(client):
+    conn, ws, server, _ = client
+    job_id, job_dir = _interrupt_research_job(conn, server, unknown_operation=True)
+    second = make_server(workspaces=ws, port=0)
+    try:
+        row = {}
+        deadline = time.monotonic() + 30
+        while time.monotonic() < deadline:
+            row = second.RequestHandlerClass.state.queue.get(job_id) or {}
+            if row.get("status") == "failed":
+                break
+            time.sleep(0.1)
+        assert row.get("status") == "failed", row
+        assert row.get("error") == "resume_blocked"
+        assert "人工" in (row.get("message") or "")
+        assert not (job_dir / "job.json").exists()
+    finally:
+        _stop_worker(second.RequestHandlerClass.state)
+        second.server_close()
+
+
+def test_manual_resume_rejected_while_worker_owns_job(client):
+    conn, ws, server, _ = client
+    job_id = _submit_research(conn)
+    _wait_job(conn, job_id,
+              lambda d: (d.get("job_file") or {}).get("status") == "completed")
+    state = server.RequestHandlerClass.state
+    job_dir = Path(ws) / "jobs" / job_id
+    (job_dir / "job.json").unlink()
+    with state.state_db.write_tx() as db_conn:
+        db_conn.execute(
+            "UPDATE jobs SET status='running', lease_owner='other',"
+            " lease_expires=? WHERE job_id=?",
+            (time.time() + 600, job_id))
+    status, info, _ = _post(conn, f"/api/jobs/{job_id}/resume", {})
+    assert status == 409 and "运行" in info["error"]
