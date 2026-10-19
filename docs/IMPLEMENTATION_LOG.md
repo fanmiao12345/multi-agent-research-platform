@@ -1794,3 +1794,12 @@ O-22/O-23 经分析属模型行为质量范畴，无低风险程序修复点（�
 - **安全边界**：只对有阶段资产且无 `unknown` 外部操作的任务自动续跑；缺 `sources.json`、无检查点但有执行产物、编排根任务均转 `failed` 等人工；不会静默重放未知副作用，也不会把 LangGraph `MemorySaver` 当成跨进程持久化。
 - **验证**：`tests/test_state_core.py` 15 项 + `tests/test_workbench_s5.py` 13 项 = 28 项；Web/队列/续跑/运行时 10 个测试文件 102 项；合计 130 项通过。新增用例覆盖启动扫描接线、queued 自动执行、中断阶段续跑（含 resumed 阶段）、unknown 阻断、编排转人工、waiting_human→failed、运行中拒绝重复手动恢复；py_compile 与 git diff --check 通过。
 - **限制与下一步**：worker 仍未周期心跳续租，长于租约（600s）的任务存在再次被领取的理论窗口；快速重启时租约未过期的 `running` 任务要等租约到期（默认最长 600s）才接管；审校阶段仍无检查点会重跑；多智能体子任务恢复、持久审批和 Agent run 续跑未做。
+
+## 2026-10-19 / MODEL-UI-01：前端模型接入（厂商目录、Key、模型列表、即时启用）
+
+- **需求**：用户要求在前端直接配置模型，提供多家厂商选择，未列出的厂商可自定义；API Key 必须由用户填写；支持拉取厂商模型列表；保存后即可使用。
+- **后端**：新增 `config/model_providers.py`（OpenAI/DeepSeek/百炼/Kimi/GLM/SiliconFlow/OpenRouter/Groq/Together/xAI/Gemini OpenAI 兼容/Mistral/自定义目录、`/models` 拉取与失败回退）和 `config/model_config.py`（原子写入 `config/model_config.local.json`，Key 仅落本机、git 忽略）。新增 `GET /api/model/config`、`POST /api/model/models`、`POST /api/model/config`；Key 不出现在任何 GET 响应中；拉取失败显示推荐模型并允许手填。
+- **运行时**：`load_settings()` 将本地配置叠加到环境配置；Web 保存后更新 `WorkbenchState.settings`，新任务/新队列领取立即使用；运行中任务保持旧配置。CLI 与应用入口默认使用 `load_settings()`，重启后仍生效。
+- **前端**：设置页新增“模型接入”卡片：厂商下拉、原生模型下拉（初始只显示当前模型，点击获取后由厂商列表填充）、手动模型名输入、接口地址、密码型 Key、获取模型列表、保存并启用；厂商接口失败时只显示带“内置示例”警示的推荐列表，不冒充厂商最新列表。设计源 `research_console_v3.html` 与内嵌 `INDEX_HTML` 已同步。
+- **验证**：新增 `tests/test_model_providers.py`（目录/URL/模型解析/本地配置/环境 Key 隔离）与 Web 配置接口测试（保存、Key 不回显、留空沿用、换厂商缺 Key 拒绝、模型列表接口）；相关 13 个测试文件 **148 项通过**。真实服务上 DeepSeek `/models` 返回 `deepseek-flash`、`deepseek-v4-pro` 两个模型，页面显示“厂商返回”；智谱静态兜底已按官方文档更新为 `glm-5.3`、`glm-5.2`、`glm-5.3-flash`，且明确标注为内置示例。
+- **限制与下一步**：当前统一走 OpenAI 兼容协议；Claude 原生 Messages API 未单独适配，可通过 OpenRouter 或自定义兼容网关。部分厂商（百炼/GLM/Gemini）模型列表接口可能不可用，会回退推荐列表并允许手填。Key 存在项目内本地文件而非系统密钥链；共享电脑上应限制目录访问。

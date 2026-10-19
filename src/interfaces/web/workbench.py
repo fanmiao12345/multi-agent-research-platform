@@ -21,11 +21,16 @@ import re
 import threading
 import time
 import uuid
+from dataclasses import replace
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from config.settings import PROJECT_ROOT
+from config.model_config import load_model_config, save_model_config
+from config.model_providers import (canonical_provider, fetch_models,
+                                    get_provider, list_providers,
+                                    normalize_base_url)
+from config.settings import PROJECT_ROOT, load_settings
 from src.harness.models.factory import ModelConfigError, diagnose_config
 from src.harness.run_store import write_json
 from src.harness.storage.paths import resolve_under
@@ -140,6 +145,101 @@ class WorkbenchState:
 
     def stop_worker(self):
         self._worker_stop.set()
+
+    # ---- 模型接入（前端保存到项目内本地配置，Key 不回显） ------------------
+    def model_config_view(self) -> dict:
+        settings = self.settings or load_settings()
+        provider = canonical_provider(settings.model_provider)
+        mode = "mock" if settings.is_mock else "real"
+        diag = diagnose_config(settings, mode=mode)
+        local = load_model_config()
+        source = ("local" if local
+                  and canonical_provider(local["provider"]) == provider
+                  and local["model"] == settings.model_name else "settings")
+        return {
+            "provider": provider,
+            "provider_label": diag.get("provider_label", provider),
+            "base_url": settings.model_base_url,
+            "model": settings.model_name,
+            "key_configured": bool(settings.model_api_key.strip()),
+            "source": source,
+            "ready": bool(diag.get("ready")),
+            "errors": diag.get("errors") or [],
+            "providers": list_providers(),
+        }
+
+    def fetch_model_list(self, body: dict) -> dict:
+        provider = canonical_provider(str(body.get("provider") or ""))
+        meta = get_provider(provider)
+        if meta is None:
+            raise ValueError("未知厂商，请从列表选择或使用自定义接口")
+        try:
+            base_url = normalize_base_url(
+                str(body.get("base_url") or "").strip() or meta["base_url"])
+        except ValueError as exc:
+            raise ValueError(str(exc)) from None
+        if not base_url:
+            raise ValueError("请填写接口地址")
+        key = str(body.get("api_key") or "").strip()
+        if not key:
+            local = load_model_config()
+            if local and canonical_provider(local["provider"]) == provider:
+                key = local["api_key"]
+        settings = self.settings or load_settings()
+        if not key and canonical_provider(settings.model_provider) == provider:
+            key = settings.model_api_key
+        if not key:
+            raise ValueError("请填写 API Key 后再获取模型列表")
+        return fetch_models(provider, base_url, key)
+
+    def apply_model_config(self, body: dict) -> dict:
+        provider = canonical_provider(str(body.get("provider") or ""))
+        meta = get_provider(provider)
+        if meta is None:
+            raise ValueError("未知厂商，请从列表选择或使用自定义接口")
+        model = str(body.get("model") or "").strip()
+        if not model:
+            raise ValueError("请选择或填写模型名")
+        try:
+            base_url = normalize_base_url(
+                str(body.get("base_url") or "").strip() or meta["base_url"])
+        except ValueError as exc:
+            raise ValueError(str(exc)) from None
+        if not base_url:
+            raise ValueError("自定义厂商必须填写接口地址")
+        settings = self.settings or load_settings()
+        typed_key = str(body.get("api_key") or "").strip()
+        local = load_model_config()
+        local_key = ""
+        if local and canonical_provider(local["provider"]) == provider:
+            local_key = local["api_key"]
+        env_key = (settings.model_api_key
+                   if canonical_provider(settings.model_provider) == provider
+                   else "")
+        resolved_key = typed_key or local_key or env_key
+        if not resolved_key:
+            raise ValueError("请填写 API Key")
+        # 不把 .env 里的 Key 复制进本地文件；用户明确输入或本地已有 Key 才持久化。
+        save_model_config({
+            "provider": provider,
+            "base_url": base_url,
+            "model": model,
+            "api_key": typed_key or local_key,
+        })
+        self.settings = replace(
+            settings, model_provider=provider, model_name=model,
+            model_base_url=base_url, model_api_key=resolved_key)
+        diag = diagnose_config(self.settings, mode="real")
+        return {
+            "ok": True,
+            "provider": provider,
+            "provider_label": meta["label"],
+            "model": model,
+            "key_configured": True,
+            "source": "local",
+            "ready": bool(diag.get("ready")),
+            "errors": diag.get("errors") or [],
+        }
 
     def start_background(self) -> list[dict]:
         """服务启动恢复：扫描过期租约，并启动常驻队列 worker。
@@ -492,13 +592,10 @@ class Handler(BaseHTTPRequestHandler):
 
     def _search_provider(self) -> str:
         """联网搜索是否配置：settings 未注入时按模型诊断同样口径回落到项目 .env。"""
-        settings = self.state.settings
-        if settings is None:
-            try:
-                from config.settings import Settings
-                settings = Settings()
-            except Exception:  # noqa: BLE001 —— 配置无效时如实按"未配置"展示
-                return ""
+        try:
+            settings = self.state.settings or load_settings()
+        except Exception:  # noqa: BLE001 —— 配置无效时如实按"未配置"展示
+            return ""
         return (getattr(settings, "search_provider", "") or "").strip()
 
     def _job_progress(self, job_id: str):
@@ -723,6 +820,8 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, INDEX_HTML, "text/html; charset=utf-8")
         if url.path == "/api/runs":
             return self._send(200, {"runs": self.state.list_runs()})
+        if url.path == "/api/model/config":
+            return self._send(200, self.state.model_config_view())
         if url.path == "/api/config":
             query = parse_qs(url.query, keep_blank_values=True)
             info = diagnose_config(
@@ -799,6 +898,16 @@ class Handler(BaseHTTPRequestHandler):
             self._drain_body()
             return self._send(415, {"error": "写接口只接受 application/json"})
         url = urlparse(self.path)
+        if url.path == "/api/model/models":
+            try:
+                return self._send(200, self.state.fetch_model_list(self._body()))
+            except ValueError as e:
+                return self._send(400, {"error": str(e)})
+        if url.path == "/api/model/config":
+            try:
+                return self._send(200, self.state.apply_model_config(self._body()))
+            except ValueError as e:
+                return self._send(400, {"error": str(e)})
         if url.path == "/api/runs":
             try:
                 info = self.state.start_run(self._body())
@@ -1482,8 +1591,24 @@ tbody tr{cursor:pointer;transition:.12s}tbody tr:hover td{background:rgba(32,39,
       <section class="page settings-page" id="page-settings">
         <div class="page-title"><div><h1>配置与评测</h1><p>面向使用者展示“能不能运行”和必要的质量/模式信息，不展示密钥内容。</p></div></div>
         <div class="settings-grid">
+          <div class="card card-pad wide">
+            <div class="section-title"><div class="grow"><h2>模型接入</h2><p>选择厂商或自定义 OpenAI 兼容接口；API Key 只保存在本机，不进入页面回显。</p></div></div>
+            <div class="settings-grid">
+              <label class="field"><span>厂商</span><select id="modelProvider" onchange="onModelProviderChange()"></select></label>
+              <label class="field"><span>模型</span><select id="modelName" onchange="onModelSelectChange()"></select></label>
+              <label class="field wide"><span>手动模型名（可选）</span><input id="modelNameCustom" placeholder="下拉列表没有时填写；填写后优先使用"></label>
+              <label class="field wide"><span>接口地址</span><input id="modelBaseUrl" placeholder="https://api.example.com/v1"></label>
+              <label class="field wide"><span>API Key</span><input id="modelApiKey" type="password" autocomplete="new-password" placeholder="只保存在本机；已保存时留空表示保持不变"></label>
+              <div class="wide" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+                <button class="btn" id="btnFetchModels" onclick="fetchModelList()">获取模型列表</button>
+                <button class="btn btn-primary" id="btnSaveModel" onclick="saveModelConfig()">保存并启用</button>
+                <span id="modelConfigMsg" style="font-size:10px;color:var(--muted)">正在读取配置…</span>
+              </div>
+              <div id="modelProviderHint" class="config-line wide" style="margin:0;max-width:none"></div>
+            </div>
+          </div>
           <div class="card card-pad">
-            <div class="section-title"><div class="grow"><h2>运行配置</h2><p>修改.env后需要重启服务。</p></div><button class="btn btn-small" onclick="loadConfig()">重新检查</button></div>
+            <div class="section-title"><div class="grow"><h2>当前生效配置</h2><p>保存模型配置后新任务立即使用；运行中的任务不受影响。</p></div><button class="btn btn-small" onclick="loadConfig()">重新检查</button></div>
             <div id="configDiag" class="kv-grid"></div>
           </div>
           <div class="card card-pad">
@@ -1497,8 +1622,8 @@ tbody tr{cursor:pointer;transition:.12s}tbody tr:hover td{background:rgba(32,39,
           <div class="card card-pad wide">
             <div class="section-title"><div class="grow"><h2>安全与数据边界</h2><p>说明真实模式下什么内容会离开本机（总计划 2.2）。</p></div></div>
             <div class="kv-grid">
-              <div class="kv"><span>发送内容</span><strong>真实模式下，任务文本、资料全文与工具结果会发送到项目在 .env 中配置的模型服务。</strong></div>
-              <div class="kv"><span>留在本机</span><strong>来源全文、证据、产物与任务账本保存在 workspaces/；密钥不进入页面、日志或产物。</strong></div>
+              <div class="kv"><span>发送内容</span><strong>真实模式下，任务文本、资料全文与工具结果会发送到当前启用的模型服务（.env 或前端保存的本地配置）。</strong></div>
+              <div class="kv"><span>留在本机</span><strong>来源全文、证据、产物与任务账本保存在 workspaces/；API Key 保存在本机 config/model_config.local.json，页面不回显，也不进入 Git。</strong></div>
               <div class="kv"><span>抓取边界</span><strong>网页抓取仅 http(s)，默认拒绝私网 / 回环 / 链路本地地址，重定向逐跳复检。</strong></div>
               <div class="kv"><span>费用口径</span><strong>费用是本地估算停止阈值，不是账单硬封顶；未知用量不会按 0 处理。</strong></div>
             </div>
@@ -1562,7 +1687,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const DEMO=location.protocol==='file:';
 let jobsCache=[],taskFilter='all',currentJob='',currentJobProgress=null,currentSources=[],currentArtifacts=[],currentEvidence={},currentProcess=null;
 let jobPollToken=0,runPollToken=0,currentRun='',pendingRequest=null,allowNetwork=false,planOnly=false;
-let configCache=null,libLoadedJob='';
+let configCache=null,modelConfigCache=null,libLoadedJob='';
 
 const DEMO_JOBS=[
   {job_id:'job_demo001',task:'比较GraphRAG与Agentic RAG在企业知识问答中的适用场景',status:'completed',stage:'finished',created_at:'2026-09-22T08:10:00Z',updated_at:'2026-09-22T08:18:00Z'},
@@ -1582,6 +1707,8 @@ async function apiText(url){
   const r=await fetch(url);if(!r.ok)throw new Error('HTTP '+r.status);return r.text();
 }
 async function demoApi(url,opt){
+  if(url==='/api/model/config')return {provider:'deepseek',provider_label:'DeepSeek',base_url:'https://api.deepseek.com',model:'deepseek-chat',key_configured:true,ready:true,source:'demo',errors:[],providers:[{id:'deepseek',label:'DeepSeek',base_url:'https://api.deepseek.com',models:['deepseek-chat','deepseek-reasoner'],docs:'',note:'预览模式'},{id:'custom',label:'自定义（OpenAI 兼容）',base_url:'',models:[],docs:'',note:'填写 OpenAI 兼容接口'}]};
+  if(url==='/api/model/models')return {models:['deepseek-chat','deepseek-reasoner'],source:'static',warning:'预览模式不请求厂商接口'};
   if(url.startsWith('/api/config'))return {ready:true,mode:'real',provider:'demo-provider',model:'demo-model',key_configured:true,search_provider:'bing_scrape'};
   if(url==='/api/jobs')return {jobs:DEMO_JOBS};
   if(url.includes('/progress'))return {job:DEMO_JOBS.find(x=>url.includes(x.job_id))||DEMO_JOBS[0],pipeline:{result:{draft_level:'accepted',stages:[{stage:'evidence',status:'completed',message:'证据提取完成'},{stage:'material',status:'completed',message:'素材整理完成'},{stage:'outline',status:'completed',message:'提纲完成'},{stage:'draft',status:'completed',message:'初稿完成'},{stage:'review',status:'completed',message:'审校完成'}],total_citations:8,unresolved_citations:0,revised_rounds:1}},ledger:{call_count:9,output_tokens:6120,estimated_cost_usd:0.084},pending_inputs:[]};
@@ -1625,7 +1752,7 @@ function route(){
   if(name==='tasks'){showPage('tasks');title='任务中心';loadJobs()}
   else if(name==='job'&&parts[1]){showPage('job');title='任务详情';openJob(parts[1])}
   else if(name==='observe'){showPage('observe');title='运行观测';loadRuns()}
-  else if(name==='settings'){showPage('settings');title='配置与评测';loadConfig();renderStats();loadEval()}
+  else if(name==='settings'){showPage('settings');title='配置与评测';loadConfig();loadModelConfig();renderStats();loadEval()}
   else{showPage('home');title='首页';loadJobs()}
   $('breadcrumb').innerHTML='';$('breadcrumb').append(node('span','Research Console'),node('span','/'),node('strong',title));
   window.scrollTo(0,0);
@@ -1653,6 +1780,84 @@ async function loadConfig(){
 function renderConfigDiag(d){
   const host=$('configDiag');if(!host)return;host.replaceChildren();
   host.append(kv('状态',d?.ready?'可运行':'不可用'),kv('模式',d?.mode||$('mode').value),kv('Provider',d?.provider||'—'),kv('模型',d?.model||'—'),kv('API Key',d?.key_configured===true?'已配置（已隐藏）':d?.key_configured===false?'未配置':'未检查'),kv('搜索',d?.search_provider||'未配置'));
+}
+
+async function loadModelConfig(){
+  try{
+    const d=await api('/api/model/config');modelConfigCache=d;
+    const select=$('modelProvider'),current=d.provider||'deepseek',providers=(d.providers||[]).slice();
+    if(!providers.some(p=>p.id===current))providers.push({id:current,label:(current+'（当前配置）'),base_url:d.base_url||'',models:[],docs:'',note:''});
+    modelConfigCache.providers=providers;
+    select.replaceChildren();
+    providers.forEach(p=>{const o=document.createElement('option');o.value=p.id;o.textContent=p.label;select.append(o)});
+    select.value=current;
+    $('modelBaseUrl').value=d.base_url||'';
+    $('modelNameCustom').value='';
+    $('modelApiKey').value='';
+    $('modelApiKey').placeholder=d.key_configured?'已保存，留空表示保持不变':'请填写厂商 API Key';
+    renderModelOptions([],d.model||'');
+    updateModelHint();
+    $('modelConfigMsg').style.color='var(--muted)';
+    $('modelConfigMsg').textContent=d.ready?`当前配置可用（${d.provider_label||d.provider||'—'} / ${d.model||'—'}）`:(d.errors||[]).join('；');
+  }catch(e){$('modelConfigMsg').textContent=e.message}
+}
+function currentModelProvider(){return (modelConfigCache?.providers||[]).find(p=>p.id===$('modelProvider').value)}
+function updateModelHint(){
+  const p=currentModelProvider(),hint=$('modelProviderHint');
+  if(!p){hint.textContent='';return}
+  hint.textContent=(p.note||'')+(p.docs?`  文档：${p.docs}`:'');
+}
+function renderModelOptions(models,current){
+  const select=$('modelName'),list=(models||[]).slice();
+  if(current&&!list.includes(current))list.unshift(current);
+  select.replaceChildren();
+  if(!list.length){const o=document.createElement('option');o.value='';o.textContent='请先获取模型或手动填写';select.append(o);return}
+  list.forEach(m=>{const o=document.createElement('option');o.value=m;o.textContent=m;select.append(o)});
+  select.value=current&&list.includes(current)?current:list[0];
+}
+function onModelSelectChange(){
+  $('modelNameCustom').value='';
+}
+function onModelProviderChange(){
+  const p=currentModelProvider();
+  $('modelApiKey').value='';
+  $('modelNameCustom').value='';
+  const active=p&&p.id===modelConfigCache?.provider&&modelConfigCache?.key_configured;
+  $('modelApiKey').placeholder=active?'已保存，留空表示保持不变':'请填写该厂商 API Key';
+  if(p&&p.id!=='custom'){
+    $('modelBaseUrl').value=p.base_url||'';
+    renderModelOptions([]);
+  }else if(p&&p.id==='custom'){
+    $('modelBaseUrl').value='';renderModelOptions([]);
+  }
+  updateModelHint();
+}
+async function fetchModelList(){
+  const provider=$('modelProvider').value,base_url=$('modelBaseUrl').value.trim(),api_key=$('modelApiKey').value;
+  const canUseSaved=modelConfigCache?.key_configured&&modelConfigCache?.provider===provider;
+  if(!api_key&&!canUseSaved){toast('请填写该厂商 API Key');return}
+  $('modelConfigMsg').textContent='正在获取模型列表…';
+  try{
+    const d=await api('/api/model/models',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({provider,base_url,api_key})});
+    renderModelOptions(d.models||[],$('modelName').value);
+    const isStatic=d.source!=='remote';
+    $('modelConfigMsg').style.color=isStatic?'var(--amber)':'var(--muted)';
+    $('modelConfigMsg').textContent=isStatic
+      ?`厂商列表获取失败，显示 ${d.models?.length||0} 个内置示例；${d.warning||'请检查 Key 或手动填写最新模型名'}`
+      :`获取 ${d.models?.length||0} 个模型（厂商返回）`;
+  }catch(e){$('modelConfigMsg').textContent=e.message}
+}
+async function saveModelConfig(){
+  const provider=$('modelProvider').value,base_url=$('modelBaseUrl').value.trim(),model=($('modelNameCustom').value.trim()||$('modelName').value||'').trim(),api_key=$('modelApiKey').value;
+  if(!model){toast('请选择或填写模型名');return}
+  $('modelConfigMsg').textContent='正在保存…';
+  try{
+    await api('/api/model/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({provider,base_url,model,api_key})});
+    $('modelApiKey').value='';$('modelApiKey').placeholder='已保存，留空表示保持不变';
+    $('modelConfigMsg').textContent='已保存并启用';
+    toast('模型配置已保存，新任务将使用该模型');
+    await loadModelConfig();await loadConfig();
+  }catch(e){$('modelConfigMsg').textContent=e.message}
 }
 
 async function startRun(){

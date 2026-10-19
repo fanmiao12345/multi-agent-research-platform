@@ -111,6 +111,74 @@ def test_config_api_omits_key_and_endpoint(client, monkeypatch):
     assert "api.example" not in json.dumps(report)
 
 
+def test_settings_page_has_model_config_panel(client):
+    conn, ws = client
+    conn.request("GET", "/")
+    resp = conn.getresponse()
+    html = resp.read().decode("utf-8")
+    for marker in ('id="modelProvider"', 'id="modelBaseUrl"', 'id="modelApiKey"',
+                   'id="modelName"', 'id="modelNameCustom"',
+                   'id="btnFetchModels"', 'id="btnSaveModel"',
+                   "loadModelConfig"):
+        assert marker in html
+
+
+def test_model_config_api_saves_and_masks_key(client, tmp_path, monkeypatch):
+    conn, ws = client
+    import config.model_config as model_config
+    monkeypatch.setattr(model_config, "LOCAL_MODEL_CONFIG",
+                        tmp_path / "model_config.local.json")
+    monkeypatch.setenv("MODEL_PROVIDER", "deepseek")
+    monkeypatch.setenv("MODEL_NAME", "deepseek-chat")
+    monkeypatch.setenv("MODEL_API_KEY", "")
+    monkeypatch.setenv("MODEL_BASE_URL", "https://api.deepseek.com")
+
+    status, view = _get(conn, "/api/model/config")
+    assert status == 200
+    assert {p["id"] for p in view["providers"]} >= {"openai", "deepseek", "custom"}
+    assert "YOUR_API_KEY_HERE" not in json.dumps(view)
+
+    status, saved = _post(conn, "/api/model/config", {
+        "provider": "openai", "base_url": "https://api.openai.com/v1",
+        "model": "gpt-4o", "api_key": "YOUR_API_KEY_HERE"})
+    assert status == 200 and saved["ok"] is True
+    assert "YOUR_API_KEY_HERE" not in json.dumps(saved)
+
+    status, view = _get(conn, "/api/model/config")
+    assert status == 200 and view["provider"] == "openai"
+    assert view["model"] == "gpt-4o" and view["key_configured"] is True
+    assert view["source"] == "local"
+    assert "YOUR_API_KEY_HERE" not in json.dumps(view)
+
+    status, report = _get(conn, "/api/config?mode=real")
+    assert status == 200 and report["ready"] is True
+    assert report["provider"] == "openai" and report["model"] == "gpt-4o"
+    assert "YOUR_API_KEY_HERE" not in json.dumps(report)
+
+    # 留空 Key 表示沿用已保存的 Key；换厂商且没有 Key 时必须拒绝。
+    status, saved = _post(conn, "/api/model/config", {
+        "provider": "openai", "base_url": "https://api.openai.com/v1",
+        "model": "gpt-4o-mini", "api_key": ""})
+    assert status == 200 and saved["model"] == "gpt-4o-mini"
+    status, error = _post(conn, "/api/model/config", {
+        "provider": "moonshot", "base_url": "https://api.moonshot.cn/v1",
+        "model": "moonshot-v1-8k", "api_key": ""})
+    assert status == 400 and "API Key" in error["error"]
+
+
+def test_model_list_api_does_not_echo_key(client, monkeypatch):
+    conn, ws = client
+    monkeypatch.setattr(
+        "src.interfaces.web.workbench.fetch_models",
+        lambda provider, base_url, api_key: {
+            "models": ["gpt-4o", "gpt-4o-mini"], "source": "remote", "warning": ""})
+    status, data = _post(conn, "/api/model/models", {
+        "provider": "openai", "base_url": "https://api.openai.com/v1",
+        "api_key": "YOUR_API_KEY_HERE"})
+    assert status == 200 and data["models"] == ["gpt-4o", "gpt-4o-mini"]
+    assert "YOUR_API_KEY_HERE" not in json.dumps(data)
+
+
 def test_real_eval_does_not_display_mock_report(client, monkeypatch):
     conn, ws = client
     root = Path(ws)

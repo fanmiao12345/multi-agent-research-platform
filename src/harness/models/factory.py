@@ -9,7 +9,9 @@ import math
 from dataclasses import replace
 from urllib.parse import urlsplit
 
-from config.settings import Settings
+from config.model_providers import (canonical_provider, get_provider,
+                                    is_supported_provider)
+from config.settings import load_settings
 from src.harness.models.profiles import get_profile
 from src.llm.mock import MockLLM
 
@@ -26,7 +28,7 @@ def _resolve(profile_name=None, settings=None, *, mode=None, force_mock=False):
     if force_mock and mode == "real":
         raise ModelConfigError("真实模式与 force_mock 冲突，请只选择一种模式")
     try:
-        s = settings or Settings()
+        s = settings or load_settings()
     except (ValueError, TypeError):
         raise ModelConfigError("配置数值无效，请检查 TEMPERATURE 和 MAX_TOKENS") from None
     selected = "mock" if force_mock else mode or ("mock" if s.is_mock else "real")
@@ -38,10 +40,15 @@ def _resolve(profile_name=None, settings=None, *, mode=None, force_mock=False):
             raise ModelConfigError("未知模型档案，请选择 fast、balanced、deep 或 cheap") from None
     if selected == "mock":
         return s, selected
-    if s.model_provider.lower() not in ("deepseek", "openai", "openai-compatible"):
-        raise ModelConfigError("真实模式需要 MODEL_PROVIDER=deepseek、openai 或 openai-compatible")
+    if not is_supported_provider(s.model_provider):
+        raise ModelConfigError(
+            "MODEL_PROVIDER 不受支持：请在前端选择厂商，或使用自定义 OpenAI 兼容接口")
+    provider_meta = get_provider(s.model_provider)
+    if provider_meta and not s.model_base_url.strip():
+        s = replace(s, model_base_url=provider_meta["base_url"])
     if not s.model_api_key.strip():
-        raise ModelConfigError("MODEL_API_KEY 为空，请在项目 .env 中配置；离线演示请选择 Mock")
+        raise ModelConfigError(
+            "MODEL_API_KEY 为空，请在前端填写 API Key 或配置 .env；离线演示请选择 Mock")
     if profile:
         if profile.provider != s.model_provider.lower():
             raise ModelConfigError("模型档案与供应商不匹配，请不指定档案以使用项目基础配置")
@@ -75,11 +82,30 @@ def diagnose_config(settings=None, *, mode=None, profile_name=None) -> dict:
     except ModelConfigError as e:
         result["errors"] = [str(e)]
         return result
+    provider = ("mock" if selected == "mock"
+                else canonical_provider(s.model_provider))
+    provider_meta = get_provider(provider) if selected == "real" else None
+    local = None
+    if selected == "real":
+        try:
+            from config.model_config import load_model_config
+            local = load_model_config()
+        except Exception:
+            local = None
+    if profile_name and selected == "real":
+        source = "profile"
+    elif (local and canonical_provider(local["provider"]) == provider
+          and local["model"] == s.model_name):
+        source = "local"
+    else:
+        source = "settings"
     result.update(ready=True, mode=selected,
-                  provider="mock" if selected == "mock" else s.model_provider.lower(),
+                  provider=provider,
+                  provider_label=(provider_meta or {}).get(
+                      "label", "Mock离线演示" if selected == "mock" else provider),
                   model=MockLLM.model_name if selected == "mock" else s.model_name,
                   key_configured=bool(s.model_api_key.strip()),
-                  configuration_source="profile" if profile_name and selected == "real" else "settings")
+                  configuration_source=source)
     return result
 
 

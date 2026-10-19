@@ -15,6 +15,7 @@ dist/
 
 # --- 密钥（只放字段名，绝不提交真实值）---
 .env
+config/model_config.local.json
 
 # --- 运行产物（Run 工作区 / Trace / 旧实现产物）---
 workspaces/

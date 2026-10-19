@@ -11,14 +11,14 @@ from src.harness.models.factory import ModelConfigError
 
 def _print_result(result, *, workspace=None) -> int:
     from pathlib import Path
-    from config.settings import Settings
+    from config.settings import load_settings
     payload = {"root_job_id": result.root_job_id, "run_id": getattr(result, "run_id", None),
                "termination_reason": result.termination_reason,
                "final_text": result.final_text}
     if getattr(result, "draft_level", None):
         payload["draft_level"] = result.draft_level
         payload["message"] = getattr(result, "message", "")
-    root = Path(workspace) if workspace else Settings().workspace_dir
+    root = Path(workspace) if workspace else load_settings().workspace_dir
     index_path = root / "jobs" / (result.root_job_id or "") / "sources.json"
     if index_path.exists():
         try:
@@ -44,13 +44,13 @@ def _run_orchestrated(request, *, workspace, plan_only) -> int:
     import uuid
     from pathlib import Path
 
-    from config.settings import Settings
+    from config.settings import load_settings
     from src.application.orchestration import (OrchestrationExecutor,
                                                OrchestrationScheduler,
                                                caps_of)
     from src.harness.run_store import write_json
 
-    settings = Settings()
+    settings = load_settings()
     llm = None
     if request.mode == "real":
         from src.harness.models import factory

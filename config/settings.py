@@ -3,8 +3,9 @@
 config/settings.py —— 配置系统（DEV_PLAN A0.3）
 
 原则：
-- 配置不散落在源码里：统一从环境变量读取（可经由项目根 .env 注入）；
-- API Key 只从环境读取；.env.example 只放字段名；
+- 配置不散落在源码里：环境变量（可经由项目根 .env 注入）是基础配置；
+- 前端保存的模型配置写入 config/model_config.local.json（git 忽略），
+  load_settings() 会用它覆盖模型字段；API Key 只保存在本机，不进入页面响应；
 - MODEL_PROVIDER=mock 时可以在没有 API Key 的情况下离线运行。
 
 支持的键（详见根目录 .env.example）：
@@ -15,7 +16,7 @@ TEMPERATURE / MAX_TOKENS / TRACE_LEVEL / WORKSPACE_DIR
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from pathlib import Path
 
 try:
@@ -94,4 +95,23 @@ class Settings:
 
 
 def get_settings() -> Settings:
-    return Settings()
+    return load_settings()
+
+
+def load_settings() -> Settings:
+    """环境配置 + 前端保存的本地模型配置（模型字段以后者优先）。"""
+    settings = Settings()
+    try:
+        from config.model_config import load_model_config
+        local = load_model_config()
+    except Exception:
+        local = None
+    if not local:
+        return settings
+    provider = local["provider"]
+    same_provider = provider == settings.model_provider.lower()
+    # 本地文件没有 Key 时，只有同一厂商才回退到 .env，避免把 A 厂 Key 用在 B 厂。
+    api_key = local["api_key"] or (settings.model_api_key if same_provider else "")
+    base_url = local["base_url"] or (settings.model_base_url if same_provider else "")
+    return replace(settings, model_provider=provider, model_name=local["model"],
+                   model_api_key=api_key, model_base_url=base_url)

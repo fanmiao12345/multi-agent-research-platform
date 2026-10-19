@@ -5,7 +5,7 @@ import json
 import re
 import uuid
 
-from config.settings import Settings
+from config.settings import load_settings
 from src.application.imports import import_request_sources
 from src.application.pipeline.model import HardRequirements
 from src.application.pipeline.runner import run_research_pipeline
@@ -79,7 +79,7 @@ def follow_up_revision(*, workspace_root, job_id: str, instruction: str,
                           required_sections=tuple(snapshot.get("required_sections") or ()),
                           forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
                           key_facts=tuple(snapshot.get("key_facts") or ()))
-    app = ResearchApplication(request, settings=settings or Settings(),
+    app = ResearchApplication(request, settings=settings or load_settings(),
                               workspace_root=root, llm=llm)
     outcome = app.run()
     setattr(outcome, "revises_job", job_id)
@@ -127,7 +127,7 @@ def revise_with_source_update(*, workspace_root, job_id: str, source_id: str,
         required_sections=tuple(snapshot.get("required_sections") or ()),
         forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
         key_facts=tuple(snapshot.get("key_facts") or ()))
-    app = ResearchApplication(request, settings=settings or Settings(),
+    app = ResearchApplication(request, settings=settings or load_settings(),
                               workspace_root=root, llm=llm)
     outcome = app.run()
     new_job = root / "jobs" / outcome.root_job_id
@@ -201,7 +201,7 @@ def resume_research_job(*, workspace_root, job_id: str, llm=None,
                           required_sections=tuple(snapshot.get("required_sections") or ()),
                           forbidden_claims=tuple(snapshot.get("forbidden_claims") or ()),
                           key_facts=tuple(snapshot.get("key_facts") or ()))
-    settings = settings or Settings()
+    settings = settings or load_settings()
     llm = llm if llm is not None else factory.build_adapter(
         request.profile, settings, mode=request.mode)
     jobs = root / "jobs"
@@ -260,7 +260,7 @@ class ResearchApplication:
         self.llm = llm if llm is not None else factory.build_adapter(request.profile, settings, mode=request.mode)
         if getattr(self.llm, "run_mode", None) != request.mode:
             raise factory.ModelConfigError("实际适配器与请求模式不一致，已停止")
-        self.settings = settings or Settings()
+        self.settings = settings or load_settings()
         self.root = Path(workspace_root or self.settings.workspace_dir)
         self.executor = tool_executor or ToolExecutor(ToolRegistry.with_builtins())
         # B4：抓取地址策略。默认拒绝私网/回环/链路本地；测试或受信intranet

@@ -63,8 +63,8 @@ LLM Adapter / Tools / MCP / 外部服务
 python -m venv .venv
 .venv\Scripts\python -m pip install langgraph langchain-core openai pytest python-dotenv pypdf
 
-# 2) 配置（真实模式必需；离线演示需明确选择 Mock）
-copy .env.example .env          # 填 MODEL_API_KEY / MODEL_PROVIDER 等
+# 2) 配置（真实模式必需；也可启动 Web 后在“配置与评测 → 模型接入”填写）
+copy .env.example .env          # 或直接在 Web 设置页选择厂商、填写 Key、拉取模型并保存
 
 # 3) 测试（全离线）
 .venv\Scripts\python -m pytest
@@ -84,7 +84,15 @@ copy .env.example .env          # 填 MODEL_API_KEY / MODEL_PROVIDER 等
 ```
 
 Web默认选择 **Mock离线演示**，可切换到真实模型。配置区显示实际模型并阻止无效配置；
-静态检查通过不代表已经验证网络、认证或工具能力。修改`.env`后需要重启服务。
+静态检查通过不代表已经验证网络、认证或工具能力。`配置与评测 → 模型接入`支持选择厂商、
+填写自己的 API Key、从厂商 `/models` 拉取模型列表并保存；保存后新任务立即使用，无需重启。
+`.env` 仍可作为基础配置，前端保存的模型字段优先。
+API Key 只写入本机 `config/model_config.local.json`（git 忽略），页面不回显。
+模型下拉初始只显示当前模型；点击“获取模型列表”后以厂商 `/models` 返回为准，失败时才显示
+标注为“内置示例”的推荐列表，并可在“手动模型名”填写最新模型 ID。
+当前接入 OpenAI、DeepSeek、阿里云百炼、Kimi、智谱 GLM、SiliconFlow、OpenRouter、
+Groq、Together、xAI、Gemini（OpenAI 兼容）、Mistral 与自定义 OpenAI 兼容接口；
+Claude 可通过 OpenRouter 或自定义兼容网关使用。
 当前内置工具仅有计算和时间；B3/B4 资料导入、B5 研究写作链、S4 状态库/阶段恢复、
 研究任务工作台（队列/进度/停止/恢复/证据引用对照/版本/导出/写接口安全）均已接入；
 agent 任务仍直跑（页面入口已提供）。

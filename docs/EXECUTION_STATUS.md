@@ -382,3 +382,10 @@ Web 待审批请求只在当前服务进程中有效。真实模型费用和质�
 - **范围**：Web 服务启动时执行 `startup_scan()` 并拉起常驻 worker；`queued` 研究任务自动执行。租约过期的 `running` 任务标记 `interrupted`，有 `evidence.json`/`stage_*.json`、`sources.json` 仍在且无 `unknown` 操作时自动走 `resume_research_job` 阶段续跑；缺少检查点、缺资料、有未知外部操作或编排根任务转 `failed` 等人工处理。
 - **审批与子任务**：`waiting_human` 重启扫描转 `failed`（审批不跨进程保留）；多智能体子任务不自动重派；Agent run 仍无可续跑入口。LangGraph `MemorySaver` 仍是进程内状态，不随本功能变成持久化。
 - **验证**：新增启动扫描/queued 自动执行/中断续跑（含 resumed 阶段）/unknown 阻断/编排转人工/重复恢复防护测试；相关 12 个测试文件合计 130 项通过（28+102），py_compile 与 git diff --check 通过（详见 IMPLEMENTATION_LOG 同日条目）。
+
+## 前端模型接入（2026-10-19）
+
+- 设置页新增“模型接入”：厂商目录（OpenAI、DeepSeek、百炼、Kimi、GLM、SiliconFlow、OpenRouter、Groq、Together、xAI、Gemini OpenAI 兼容、Mistral、自定义）、接口地址、密码型 API Key、模型列表拉取/手填、保存并启用。
+- 新增 `GET /api/model/config`、`POST /api/model/models`、`POST /api/model/config`；Key 不回显；本地配置写入 `config/model_config.local.json`（git 忽略），保存后新任务立即使用，重启后由 `load_settings()` 继续生效。
+- 模型下拉初始只显示当前模型；点击获取后以厂商 `/models` 返回为准，失败时才显示带“内置示例”警示的推荐列表，并可在“手动模型名”填写最新 ID。智谱静态兜底已更新为 GLM-5.3/5.2/5.3-Flash。当前统一 OpenAI 兼容协议，Claude 可通过 OpenRouter 或自定义兼容网关。
+- 验证：厂商目录/URL/模型解析/本地配置/环境 Key 隔离与 Web 配置接口测试通过，相关 Web/模型/续跑/运维 13 个测试文件 **148 项**全绿；真实 DeepSeek 模型列表拉取成功（`deepseek-flash`、`deepseek-v4-pro`）。
